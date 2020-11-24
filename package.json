@@ -1,0 +1,22 @@
+{
+  "name": "pogo-web-backend",
+  "version": "1.0.0",
+  "description": "Express backend for PoGo web",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeveloperKhan/pogo-web-backend.git"
+  },
+  "author": "AdibKhan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DeveloperKhan/pogo-web-backend/issues"
+  },
+  "homepage": "https://github.com/DeveloperKhan/pogo-web-backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
