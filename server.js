@@ -2,7 +2,9 @@
 const
     http = require("http"),
     express = require("express"),
-    socketio = require("socket.io");
+    socketio = require("socket.io"),
+    pokemon = require("./data/pokemon.json"),
+    moves = require("./data/moves.json");
 
 const SERVER_PORT = 3000;
 
@@ -26,6 +28,7 @@ function onNewWebsocketConnection(socket) {
 function startServer() {
     // create a new express app
     const app = express();
+
     // create http server and wrap the express app
     const server = http.createServer(app);
     // bind socket.io to that server
@@ -36,6 +39,26 @@ function startServer() {
 
     // will fire for every new websocket connection
     io.on("connection", onNewWebsocketConnection);
+
+    // create pokemon path
+    app.get("/pokemon/:id", (req, res) => {
+        const payload = pokemon[req.params.id];
+        if (payload === null || payload === undefined) {
+            throw new Error(`Could not find Pokemon of id: ${req.params.id}`);
+        } else {
+            res.send(payload);
+        }
+    })
+
+    // create moves path
+    app.get("/moves/:id", (req, res) => {
+        const payload = moves[req.params.id];
+        if (payload === null || payload === undefined) {
+            throw new Error(`Could not find move of id: ${req.params.id}`);
+        } else {
+            res.send(payload);
+        }
+    })
 
     // important! must listen from `server`, not `app`, otherwise socket.io won't function correctly
     server.listen(SERVER_PORT, () => console.info(`Listening on port ${SERVER_PORT}.`));
