@@ -42,22 +42,44 @@ function startServer() {
 
     // create pokemon path
     app.get("/pokemon/:id", (req, res) => {
-        const payload = pokemon[req.params.id];
-        if (payload === null || payload === undefined) {
-            throw new Error(`Could not find Pokemon of id: ${req.params.id}`);
+        let payload;
+        const arr = req.params.id.split(",");
+        if (arr.length > 1) {
+            payload = [];
+            for (r of arr) {
+                if (pokemon[r] === undefined) {
+                    throw new Error(`Could not find Pokemon of id: ${r}`);
+                }
+                payload.push(pokemon[r])
+            }
         } else {
-            res.send(payload);
+            if (pokemon[req.params.id] === undefined) {
+                throw new Error(`Could not find Pokemon of id: ${req.params.id}`);
+            }
+            payload = pokemon[req.params.id];
         }
+        res.send(payload);
     });
 
     // create moves path
     app.get("/moves/:id", (req, res) => {
-        const payload = moves[req.params.id];
-        if (payload === null || payload === undefined) {
-            throw new Error(`Could not find move of id: ${req.params.id}`);
+        let payload;
+        const arr = req.params.id.split(",");
+        if (arr.length > 1) {
+            payload = [];
+            for (r of arr) {
+                if (moves[r] === undefined) {
+                    throw new Error(`Could not find move of id: ${r}`);
+                }
+                payload.push(moves[r])
+            }
         } else {
-            res.send(payload);
+            if (moves[req.params.id] === undefined) {
+                throw new Error(`Could not find move of id: ${req.params.id}`);
+            }
+            payload = moves[req.params.id];
         }
+        res.send(payload);
     });
 
     // important! must listen from `server`, not `app`, otherwise socket.io won't function correctly
