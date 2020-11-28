@@ -48,7 +48,7 @@ function startServer() {
         } else {
             res.send(payload);
         }
-    })
+    });
 
     // create moves path
     app.get("/moves/:id", (req, res) => {
@@ -58,7 +58,7 @@ function startServer() {
         } else {
             res.send(payload);
         }
-    })
+    });
 
     // important! must listen from `server`, not `app`, otherwise socket.io won't function correctly
     server.listen(SERVER_PORT, () => console.info(`Listening on port ${SERVER_PORT}.`));
