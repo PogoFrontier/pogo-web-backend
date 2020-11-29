@@ -58,7 +58,6 @@ function onNewWebsocketConnection(socket) {
             }
             console.info(`Socket ${socket.id} has disconnected.`);
         });
-        console.info(rooms)
     });
 }
 
