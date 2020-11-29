@@ -1,4 +1,5 @@
 
+const e = require("express");
 const
     http = require("http"),
     express = require("express"),
@@ -9,19 +10,54 @@ const
 const SERVER_PORT = 3000;
 
 let onlineClients = new Set();
+let rooms = {};
+
+function isEmpty(obj) {
+    return Object.keys(obj).length === 0;
+}
 
 function onNewWebsocketConnection(socket) {
     console.info(`Socket ${socket.id} has connected.`);
     onlineClients.add(socket.id);
 
-    socket.on('room', function(room) {
+    socket.on('room', function({room, team}) {
         socket.join(room);
-        console.info(`Socket ${socket.id} has joined ${room}.`);
-    });
+        const player = {
+            id: socket.id,
+            team
+        }
+        if (rooms[room] === undefined) {
+            rooms[room] = {
+                id: room,
+                players: [player, {}]
+            }
+            console.info(`Socket ${socket.id} has joined ${room}.`);
+        } else if (isEmpty(rooms[room].players[1])) {
+            rooms[room].players[1] = player
+            socket.to(room).emit("room_join", player);
+            console.info(`Socket ${socket.id} has joined ${room}.`);
+        } else if (isEmpty(rooms[room].players[0])) {
+            rooms[room].players[0] = player
+            socket.to(room).emit("room_join", player);
+            console.info(`Socket ${socket.id} has joined ${room}.`);
+        } else {
+            console.info(rooms[room].players[1]);
+            console.error(`Room ${room} is full.`);
+        }
 
-    socket.on("disconnect", () => {
-        onlineClients.delete(socket.id);
-        console.info(`Socket ${socket.id} has disconnected.`);
+        socket.on("disconnect", () => {
+            onlineClients.delete(socket.id);
+            if (rooms[room].players) {
+                const index = rooms[room].players.findIndex(x => x.id == socket.id)
+                rooms[room].players[index] = {}
+                socket.to(room).emit("room_leave");
+            }
+            if (isEmpty(rooms[room].players[1]) && isEmpty(rooms[room].players[0])) {
+                delete rooms[room];
+            }
+            console.info(`Socket ${socket.id} has disconnected.`);
+        });
+        console.info(rooms)
     });
 }
 
