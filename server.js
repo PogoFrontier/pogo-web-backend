@@ -4,6 +4,7 @@ const
     http = require("http"),
     express = require("express"),
     socketio = require("socket.io"),
+    cors = require("cors"),
     pokemon = require("./data/pokemon.json"),
     moves = require("./data/moves.json");
 
@@ -73,6 +74,8 @@ function startServer() {
     // serve static files from a given folder
     app.use(express.static("public"));
 
+    app.use(cors())
+
     // will fire for every new websocket connection
     io.on("connection", onNewWebsocketConnection);
 
@@ -114,6 +117,21 @@ function startServer() {
                 throw new Error(`Could not find move of id: ${req.params.id}`);
             }
             payload = moves[req.params.id];
+        }
+        res.send(payload);
+    });
+
+    // create opponent path
+    app.get("/opponent/:room/:id", (req, res) => {
+        let payload;
+        const { room, id } = req.params
+        if (rooms[room]) {
+            const index = rooms[room].players.findIndex(x => !isEmpty(x) && x.id != id)
+            if (index >= 0) {
+                payload = rooms[room].players[index].team
+            }
+        } else {
+            throw new Error(`Room ${room} does not exist`);
         }
         res.send(payload);
     });
