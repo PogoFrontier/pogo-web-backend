@@ -48,13 +48,15 @@ function onNewWebsocketConnection(socket) {
 
         socket.on("disconnect", () => {
             onlineClients.delete(socket.id);
-            if (rooms[room].players) {
-                const index = rooms[room].players.findIndex(x => x.id == socket.id)
-                rooms[room].players[index] = {}
-                socket.to(room).emit("room_leave");
-            }
-            if (isEmpty(rooms[room].players[1]) && isEmpty(rooms[room].players[0])) {
-                delete rooms[room];
+            if (rooms[room]) {
+                if (rooms[room].players) {
+                    const index = rooms[room].players.findIndex(x => x.id == socket.id)
+                    rooms[room].players[index] = {}
+                    socket.to(room).emit("room_leave");
+                }
+                if (isEmpty(rooms[room].players[1]) && isEmpty(rooms[room].players[0])) {
+                    delete rooms[room];
+                }
             }
             console.info(`Socket ${socket.id} has disconnected.`);
         });
