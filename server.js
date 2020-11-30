@@ -61,6 +61,34 @@ function onNewWebsocketConnection(socket) {
             console.info(`Socket ${socket.id} has disconnected.`);
         });
     });
+
+    socket.on("team_submit", function({room, team, id}) {
+        if (rooms[room]) {
+            const i = rooms[room].players.findIndex(x => x.id == id);
+            let currentTeam = [];
+            for (let member of team) {
+                currentTeam.push({
+                    ...member,
+                    current: {
+                        hp: member.hp,
+                        atk: member.atk,
+                        def: member.def,
+                        status: [0, 0]
+                    }
+                });
+            }
+            rooms[room].players[i].current = {
+                team: currentTeam
+            }
+            console.info(`Player ${id} is ready in room ${room}.`);
+            const j = i === 0 ? 1 : 0;
+            if (rooms[room].players[j].current) {
+                socket.to(room).emit("team_confirm");
+                socket.emit("team_confirm");
+                console.info(`Room ${room} will start.`);
+            }
+        }
+    });
 }
 
 function startServer() {
