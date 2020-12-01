@@ -37,9 +37,7 @@ function to(room, data, id) {
     }
 }
 
-function onNewRoom(ws, id, payload) {
-    const {room, team} = payload;
-
+function onNewRoom(id, room, team) {
     const player = {id, team}
     if (!rooms.get(room)) {
         rooms.set(room, {
@@ -64,25 +62,6 @@ function onNewRoom(ws, id, payload) {
     } else {
         console.error(`Room ${room} is full.`);
     }
-
-    ws.on("disconnect", () => {
-        onlineClients.delete(id);
-        if (rooms.get(room)) {
-            if (rooms.get(room).players) {
-                const index = rooms.get(room).players.findIndex(x => x.id === id)
-                rooms.get(room).players[index] = {}
-                to(room, JSON.stringify({
-                    type: codes.room_leave,
-                }), null);
-            }
-
-            if (isEmpty(rooms.get(room).players[1]) && isEmpty(rooms.get(room).players[0])) {
-                rooms.delete(room);
-            }
-        }
-
-        console.info(`Socket ${id} has disconnected.`);
-    });
 }
 
 function onGetOpponent(id, payload) {
@@ -138,13 +117,14 @@ function onNewWebsocketConnection(ws) {
     const id = uuidv4();
     onlineClients.set(id, ws);
     console.info(`Socket ${id} has connected.`);
-    ws.send("MEOW")
+    let room = "";
     ws.on('message', function(data) {
         const { type, payload } = JSON.parse(data)
         console.log(type)
         switch (type) {
             case codes.room:
-                onNewRoom(ws, id, payload);
+                const {room, team} = payload;
+                onNewRoom(id, room, team);
                 break;
             case codes.get_opponent:
                 onGetOpponent(id, payload);
@@ -155,6 +135,27 @@ function onNewWebsocketConnection(ws) {
             default:
                 console.error("Message not recognized")
         }
+    });
+
+    ws.on("close", () => {
+        onlineClients.delete(id);
+        if (rooms.get(room)) {
+            if (rooms.get(room).players) {
+                const index = rooms.get(room).players.findIndex(x => x.id === id)
+                rooms.get(room).players[index] = {}
+                to(room, JSON.stringify({
+                    type: codes.room_leave,
+                }), null);
+                console.info(`Socket ${id} has been removed from room ${room}.`);
+            }
+
+            if (isEmpty(rooms.get(room).players[1]) && isEmpty(rooms.get(room).players[0])) {
+                rooms.delete(room);
+                console.info(`Room ${room} has been deleted.`);
+            }
+        }
+
+        console.info(`Socket ${id} has disconnected.`);
     });
 }
 
