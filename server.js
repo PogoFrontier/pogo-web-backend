@@ -1,92 +1,159 @@
 
 const e = require("express");
+const { v4: uuidv4 } = require('uuid');
 const
     http = require("http"),
     express = require("express"),
-    socketio = require("socket.io"),
+    WebSocket = require('ws'),
     cors = require("cors"),
     pokemon = require("./data/pokemon.json"),
     moves = require("./data/moves.json");
 
 const SERVER_PORT = 3000;
 
-let onlineClients = new Set();
-let rooms = {};
+let onlineClients = new Map();
+let rooms = new Map();
+
+const codes = {
+    room: "ROOM",
+    get_opponent: "GET_OPPONENT",
+    room_leave: "ROOM_LEAVE",
+    room_join: "ROOM_JOIN",
+    team_submit: "TEAM_SUBMIT",
+    team_confirm: "TEAM_CONFIRM",
+}
 
 function isEmpty(obj) {
     return Object.keys(obj).length === 0;
 }
 
-function onNewWebsocketConnection(socket) {
-    console.info(`Socket ${socket.id} has connected.`);
-    onlineClients.add(socket.id);
-
-    socket.on('room', function({room, team}) {
-        socket.join(room);
-        const player = {
-            id: socket.id,
-            team
-        }
-        if (rooms[room] === undefined) {
-            rooms[room] = {
-                id: room,
-                players: [player, {}]
+function to(room, data, id) {
+    if (rooms.get(room)) {
+        for (player of rooms.get(room).players) {
+            if (player.id !== id) {
+                onlineClients.get(player.id).send(data)
             }
-            console.info(`Socket ${socket.id} has joined ${room}.`);
-        } else if (isEmpty(rooms[room].players[1])) {
-            rooms[room].players[1] = player
-            socket.to(room).emit("room_join", player);
-            console.info(`Socket ${socket.id} has joined ${room}.`);
-        } else if (isEmpty(rooms[room].players[0])) {
-            rooms[room].players[0] = player
-            socket.to(room).emit("room_join", player);
-            console.info(`Socket ${socket.id} has joined ${room}.`);
-        } else {
-            console.info(rooms[room].players[1]);
-            console.error(`Room ${room} is full.`);
         }
+    }
+}
 
-        socket.on("disconnect", () => {
-            onlineClients.delete(socket.id);
-            if (rooms[room]) {
-                if (rooms[room].players) {
-                    const index = rooms[room].players.findIndex(x => x.id == socket.id)
-                    rooms[room].players[index] = {}
-                    socket.to(room).emit("room_leave");
-                }
-                if (isEmpty(rooms[room].players[1]) && isEmpty(rooms[room].players[0])) {
-                    delete rooms[room];
-                }
-            }
-            console.info(`Socket ${socket.id} has disconnected.`);
+function onNewRoom(ws, id, payload) {
+    const {room, team} = payload;
+
+    const player = {id, team}
+    if (!rooms.get(room)) {
+        rooms.set(room, {
+            id: room,
+            players: [player, {}]
         });
-    });
+        console.info(`Socket ${id} has joined ${room}.`);
+    } else if (isEmpty(rooms.get(room).players[1])) {
+        rooms.get(room).players[1] = player
+        to(room, JSON.stringify({
+            type: codes.room_join,
+            payload: { team }
+        }, id))
+        console.info(`Socket ${id} has joined ${room}.`);
+    } else if (isEmpty(rooms.get(room).players[0])) {
+        rooms.get(room).players[0] = player
+        to(room, JSON.stringify({
+            type: codes.room_join,
+            payload: { team }
+        }, id))
+        console.info(`Socket ${id} has joined ${room}.`);
+    } else {
+        console.error(`Room ${room} is full.`);
+    }
 
-    socket.on("team_submit", function({room, team, id}) {
-        if (rooms[room]) {
-            const i = rooms[room].players.findIndex(x => x.id == id);
-            let currentTeam = [];
-            for (let member of team) {
-                currentTeam.push({
-                    ...member,
-                    current: {
-                        hp: member.hp,
-                        atk: member.atk,
-                        def: member.def,
-                        status: [0, 0]
-                    }
-                });
+    ws.on("disconnect", () => {
+        onlineClients.delete(id);
+        if (rooms.get(room)) {
+            if (rooms.get(room).players) {
+                const index = rooms.get(room).players.findIndex(x => x.id === id)
+                rooms.get(room).players[index] = {}
+                to(room, JSON.stringify({
+                    type: codes.room_leave,
+                }), null);
             }
-            rooms[room].players[i].current = {
-                team: currentTeam
+
+            if (isEmpty(rooms.get(room).players[1]) && isEmpty(rooms.get(room).players[0])) {
+                rooms.delete(room);
             }
-            console.info(`Player ${id} is ready in room ${room}.`);
-            const j = i === 0 ? 1 : 0;
-            if (rooms[room].players[j].current) {
-                socket.to(room).emit("team_confirm");
-                socket.emit("team_confirm");
-                console.info(`Room ${room} will start.`);
-            }
+        }
+
+        console.info(`Socket ${id} has disconnected.`);
+    });
+}
+
+function onGetOpponent(id, payload) {
+    const { room } = payload;
+    if (rooms.get(room)) {
+        const opp = rooms.get(room).players.find((x) => (x.id) && (x.id !== id))
+        if (opp) {
+            to(room, JSON.stringify({
+                type: codes.room_join,
+                payload: { team: opp.team }
+            }, id))
+        } else {
+            console.error("No opponent found");
+        }
+    }
+}
+
+function onTeamSubmit(id, payload) {
+    const {room, team} = payload;
+
+    if (rooms.get(room)) {
+        const i = rooms.get(room).players.findIndex(x => x.id === id);
+        let currentTeam = [];
+        for (let member of team) {
+            currentTeam.push({
+                ...member,
+                current: {
+                    hp: member.hp,
+                    atk: member.atk,
+                    def: member.def,
+                    status: [0, 0]
+                }
+            });
+        }
+
+        rooms.get(room).players[i].current = {
+            team: currentTeam
+        }
+
+        console.info(`Player ${id} is ready in room ${room}.`);
+        const j = i === 0 ? 1 : 0;
+
+        if (rooms.get(room).players[j].current) {
+            to(room, JSON.stringify({
+                type: codes.team_confirm,
+            }), null);
+            console.info(`Room ${room} will start.`);
+        }
+    }
+}
+
+function onNewWebsocketConnection(ws) {
+    const id = uuidv4();
+    onlineClients.set(id, ws);
+    console.info(`Socket ${id} has connected.`);
+    ws.send("MEOW")
+    ws.on('message', function(data) {
+        const { type, payload } = JSON.parse(data)
+        console.log(type)
+        switch (type) {
+            case codes.room:
+                onNewRoom(ws, id, payload);
+                break;
+            case codes.get_opponent:
+                onGetOpponent(id, payload);
+                break;
+            case codes.team_submit:
+                onTeamSubmit(id, payload)
+                break;
+            default:
+                console.error("Message not recognized")
         }
     });
 }
@@ -97,16 +164,18 @@ function startServer() {
 
     // create http server and wrap the express app
     const server = http.createServer(app);
-    // bind socket.io to that server
-    const io = socketio(server);
+
+    // bind ws to that server
+    const wss = new WebSocket.Server({ server });
 
     // serve static files from a given folder
     app.use(express.static("public"));
 
+    // use cors
     app.use(cors())
 
     // will fire for every new websocket connection
-    io.on("connection", onNewWebsocketConnection);
+    wss.on("connection", onNewWebsocketConnection);
 
     // create pokemon path
     app.get("/pokemon/:id", (req, res) => {
@@ -146,21 +215,6 @@ function startServer() {
                 throw new Error(`Could not find move of id: ${req.params.id}`);
             }
             payload = moves[req.params.id];
-        }
-        res.send(payload);
-    });
-
-    // create opponent path
-    app.get("/opponent/:room/:id", (req, res) => {
-        let payload;
-        const { room, id } = req.params
-        if (rooms[room]) {
-            const index = rooms[room].players.findIndex(x => !isEmpty(x) && x.id != id)
-            if (index >= 0) {
-                payload = rooms[room].players[index].team
-            }
-        } else {
-            throw new Error(`Room ${room} does not exist`);
         }
         res.send(payload);
     });
