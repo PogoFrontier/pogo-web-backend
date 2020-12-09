@@ -21,6 +21,10 @@ const codes = {
     room_join: "ROOM_JOIN",
     team_submit: "TEAM_SUBMIT",
     team_confirm: "TEAM_CONFIRM",
+    ready_game: 'READY_GAME',
+    game_check: 'GAME_CHECK',
+    game_start: 'GAME_START',
+    turn: 'TURN'
 }
 
 function isEmpty(obj) {
@@ -98,7 +102,8 @@ function onTeamSubmit(id, payload) {
         }
 
         rooms.get(room).players[i].current = {
-            team: currentTeam
+            team: currentTeam,
+            ready: false
         }
 
         console.info(`Player ${id} is ready in room ${room}.`);
@@ -111,6 +116,50 @@ function onTeamSubmit(id, payload) {
             console.info(`Room ${room} will start.`);
         }
     }
+}
+
+function onReadyGame(id, payload) {
+    const { room } = payload;
+
+    if (rooms.get(room)) {
+        const i = rooms.get(room).players.findIndex(x => x.id === id);
+        rooms.get(room).players[i].current.ready = true;
+
+        const j = i === 0 ? 1 : 0;
+        if (rooms.get(room).players[j].current.ready) {
+            console.info(`Room ${room} is starting countdown`)
+            startCountdown(room);
+        }
+    }
+}
+
+function startCountdown(room) {
+    let countdown = 0;
+    const x = setInterval(() => {
+        countdown++;
+        let type = countdown === 4 ? codes.game_start : codes.game_check;
+        for (let i = 0; i < rooms.get(room).players.length; i++) {
+            const player = rooms.get(room).players[i];
+            const j = i === 0 ? 1 : 0;
+            const opponent = rooms.get(room).players[j];
+            onlineClients.get(player.id).send(JSON.stringify({
+                type,
+                payload: {
+                    countdown,
+                    team: player.current.team,
+                    opponent: opponent.current.team,
+                }
+            }))
+        }
+        if (countdown === 4) {
+            clearInterval(x);
+            startGame(room);
+        }
+    }, 1000);
+}
+
+function startGame(room) {
+    console.info(`Room ${room} has started a game.`)
 }
 
 function onNewWebsocketConnection(ws) {
@@ -130,7 +179,10 @@ function onNewWebsocketConnection(ws) {
                 onGetOpponent(id, payload);
                 break;
             case codes.team_submit:
-                onTeamSubmit(id, payload)
+                onTeamSubmit(id, payload);
+                break;
+            case codes.ready_game:
+                onReadyGame(id, payload);
                 break;
             default:
                 console.error("Message not recognized")
