@@ -14,26 +14,26 @@ const SERVER_PORT = 3000;
 let onlineClients = new Map();
 let rooms = new Map();
 
-const codes = {
-    room: "ROOM",
-    get_opponent: "GET_OPPONENT",
-    room_leave: "ROOM_LEAVE",
-    room_join: "ROOM_JOIN",
-    team_submit: "TEAM_SUBMIT",
-    team_confirm: "TEAM_CONFIRM",
-    ready_game: 'READY_GAME',
-    game_check: 'GAME_CHECK',
-    game_start: 'GAME_START',
-    turn: 'TURN'
+enum codes {
+    room = "ROOM",
+    get_opponent = "GET_OPPONENT",
+    room_leave = "ROOM_LEAVE",
+    room_join = "ROOM_JOIN",
+    team_submit = "TEAM_SUBMIT",
+    team_confirm = "TEAM_CONFIRM",
+    ready_game = 'READY_GAME',
+    game_check = 'GAME_CHECK',
+    game_start = 'GAME_START',
+    turn = 'TURN'
 }
 
-function isEmpty(obj) {
+function isEmpty(obj: object) {
     return Object.keys(obj).length === 0;
 }
 
-function to(room, data, id) {
+function to(room: string, data, id?: string) {
     if (rooms.get(room)) {
-        for (player of rooms.get(room).players) {
+        for (let player of rooms.get(room).players) {
             if (player.id !== id) {
                 onlineClients.get(player.id).send(data)
             }
@@ -41,7 +41,7 @@ function to(room, data, id) {
     }
 }
 
-function onNewRoom(id, room, team) {
+function onNewRoom(id: string, room: string, team) {
     const player = {id, team}
     if (!rooms.get(room)) {
         rooms.set(room, {
@@ -68,7 +68,7 @@ function onNewRoom(id, room, team) {
     }
 }
 
-function onGetOpponent(id, payload) {
+function onGetOpponent(id: string, payload) {
     const { room } = payload;
     if (rooms.get(room)) {
         const opp = rooms.get(room).players.find((x) => (x.id) && (x.id !== id))
@@ -83,7 +83,7 @@ function onGetOpponent(id, payload) {
     }
 }
 
-function onTeamSubmit(id, payload) {
+function onTeamSubmit(id: string, payload) {
     const {room, team} = payload;
 
     if (rooms.get(room)) {
@@ -112,13 +112,13 @@ function onTeamSubmit(id, payload) {
         if (rooms.get(room).players[j].current) {
             to(room, JSON.stringify({
                 type: codes.team_confirm,
-            }), null);
+            }));
             console.info(`Room ${room} will start.`);
         }
     }
 }
 
-function onReadyGame(id, payload) {
+function onReadyGame(id: string, payload) {
     const { room } = payload;
 
     if (rooms.get(room)) {
@@ -133,14 +133,14 @@ function onReadyGame(id, payload) {
     }
 }
 
-function startCountdown(room) {
+function startCountdown(room: string) {
     let countdown = 0;
     const x = setInterval(() => {
         countdown++;
         if (countdown === 4) {
             to(room, JSON.stringify({
                 type: codes.game_start
-            }), null)
+            }))
             clearInterval(x);
             startGame(room);
         } else {
@@ -161,7 +161,7 @@ function startCountdown(room) {
     }, 1000);
 }
 
-function startGame(room) {
+function startGame(room: string) {
     console.info(`Room ${room} started a game`)
     let time = 240;
     let shouldCountdown = false;
@@ -180,7 +180,7 @@ function startGame(room) {
             type: codes.turn,
             payload
         };
-        to(room, JSON.stringify(data), null);
+        to(room, JSON.stringify(data));
     }, 500);
 }
 
@@ -255,7 +255,7 @@ function onNewWebsocketConnection(ws) {
 
 function startServer() {
     // create a new express app
-    const app = express();
+    const app: e.Application = express();
 
     // create http server and wrap the express app
     const server = http.createServer(app);
