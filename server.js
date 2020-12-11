@@ -174,7 +174,7 @@ function startGame(room) {
         }
         const payload = {
             time,
-            update: {}
+            update: [{}, {}]
         };
         const data = {
             type: codes.turn,
@@ -184,29 +184,50 @@ function startGame(room) {
     }, 500);
 }
 
+function onAction(room, data, id) {
+    // const payload = data.substring(1).split(":");
+    // const type = payload[0];
+    // const value = payload[1];
+    // switch (payload[0]) {
+    //     case "fa":
+    //         const move = moves[value]
+    //         break;
+    //     case "ca":
+    //         break;
+    //     case "sw":
+    //         break;
+    // }
+}
+
 function onNewWebsocketConnection(ws) {
     const id = uuidv4();
     onlineClients.set(id, ws);
     console.info(`Socket ${id} has connected.`);
-    let room = "";
+    let currentRoom = "";
     ws.on('message', function(data) {
-        const { type, payload } = JSON.parse(data)
-        switch (type) {
-            case codes.room:
-                const {room, team} = payload;
-                onNewRoom(id, room, team);
-                break;
-            case codes.get_opponent:
-                onGetOpponent(id, payload);
-                break;
-            case codes.team_submit:
-                onTeamSubmit(id, payload);
-                break;
-            case codes.ready_game:
-                onReadyGame(id, payload);
-                break;
-            default:
-                console.error("Message not recognized")
+        if (data.startsWith("#") && currentRoom !== "") {
+            to(currentRoom, data, id);
+            onAction(currentRoom, data, id);
+        } else {
+            const { type, payload } = JSON.parse(data)
+            switch (type) {
+                case codes.room:
+                    const {room, team} = payload;
+                    currentRoom = room
+                    onNewRoom(id, room, team);
+                    break;
+                case codes.get_opponent:
+                    onGetOpponent(id, payload);
+                    break;
+                case codes.team_submit:
+                    onTeamSubmit(id, payload);
+                    break;
+                case codes.ready_game:
+                    onReadyGame(id, payload);
+                    break;
+                default:
+                    console.error("Message not recognized")
+            }
         }
     });
 
