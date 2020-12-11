@@ -1,6 +1,6 @@
 
-const e = require("express");
-const { v4: uuidv4 } = require('uuid');
+import e from "express";
+import { v4 as uuidv4 } from 'uuid';
 const
     http = require("http"),
     express = require("express"),
@@ -54,14 +54,14 @@ function onNewRoom(id, room, team) {
         to(room, JSON.stringify({
             type: codes.room_join,
             payload: { team }
-        }, id))
+        }), id)
         console.info(`Socket ${id} has joined ${room}.`);
     } else if (isEmpty(rooms.get(room).players[0])) {
         rooms.get(room).players[0] = player
         to(room, JSON.stringify({
             type: codes.room_join,
             payload: { team }
-        }, id))
+        }), id)
         console.info(`Socket ${id} has joined ${room}.`);
     } else {
         console.error(`Room ${room} is full.`);
@@ -76,7 +76,7 @@ function onGetOpponent(id, payload) {
             to(room, JSON.stringify({
                 type: codes.room_join,
                 payload: { team: opp.team }
-            }, id))
+            }), id)
         } else {
             console.error("No opponent found");
         }
@@ -140,7 +140,7 @@ function startCountdown(room) {
         if (countdown === 4) {
             to(room, JSON.stringify({
                 type: codes.game_start
-            }))
+            }), null)
             clearInterval(x);
             startGame(room);
         } else {
@@ -180,7 +180,7 @@ function startGame(room) {
             type: codes.turn,
             payload
         };
-        to(room, JSON.stringify(data));
+        to(room, JSON.stringify(data), null);
     }, 500);
 }
 
@@ -233,19 +233,19 @@ function onNewWebsocketConnection(ws) {
 
     ws.on("close", () => {
         onlineClients.delete(id);
-        if (rooms.get(room)) {
-            if (rooms.get(room).players) {
+        if (rooms.get(currentRoom)) {
+            if (rooms.get(currentRoom).players) {
                 const index = rooms.get(room).players.findIndex(x => x.id === id)
-                rooms.get(room).players[index] = {}
-                to(room, JSON.stringify({
+                rooms.get(currentRoom).players[index] = {}
+                to(currentRoom, JSON.stringify({
                     type: codes.room_leave,
                 }), null);
-                console.info(`Socket ${id} has been removed from room ${room}.`);
+                console.info(`Socket ${id} has been removed from room ${currentRoom}.`);
             }
 
-            if (isEmpty(rooms.get(room).players[1]) && isEmpty(rooms.get(room).players[0])) {
-                rooms.delete(room);
-                console.info(`Room ${room} has been deleted.`);
+            if (isEmpty(rooms.get(currentRoom).players[1]) && isEmpty(rooms.get(currentRoom).players[0])) {
+                rooms.delete(currentRoom);
+                console.info(`Room ${currentRoom} has been deleted.`);
             }
         }
 
@@ -278,7 +278,7 @@ function startServer() {
         const arr = req.params.id.split(",");
         if (arr.length > 1) {
             payload = [];
-            for (r of arr) {
+            for (let r of arr) {
                 if (pokemon[r] === undefined) {
                     throw new Error(`Could not find Pokemon of id: ${r}`);
                 }
@@ -299,7 +299,7 @@ function startServer() {
         const arr = req.params.id.split(",");
         if (arr.length > 1) {
             payload = [];
-            for (r of arr) {
+            for (let r of arr) {
                 if (moves[r] === undefined) {
                     throw new Error(`Could not find move of id: ${r}`);
                 }
