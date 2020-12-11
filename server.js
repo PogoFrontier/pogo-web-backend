@@ -159,7 +159,25 @@ function startCountdown(room) {
 }
 
 function startGame(room) {
-    console.info(`Room ${room} has started a game.`)
+    let time = 240;
+    let shouldCountdown = false;
+    const x = setInterval(() => {
+        if (shouldCountdown) {
+            time--;
+            shouldCountdown = false;
+        } else {
+            shouldCountdown = true;
+        }
+        const payload = {
+            time,
+            update: {}
+        };
+        const data = {
+            type: codes.turn,
+            payload
+        };
+        to(room, JSON.stringify(data));
+    }, 500);
 }
 
 function onNewWebsocketConnection(ws) {
@@ -169,7 +187,6 @@ function onNewWebsocketConnection(ws) {
     let room = "";
     ws.on('message', function(data) {
         const { type, payload } = JSON.parse(data)
-        console.log(type)
         switch (type) {
             case codes.room:
                 const {room, team} = payload;
