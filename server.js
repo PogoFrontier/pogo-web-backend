@@ -137,28 +137,32 @@ function startCountdown(room) {
     let countdown = 0;
     const x = setInterval(() => {
         countdown++;
-        let type = countdown === 4 ? codes.game_start : codes.game_check;
-        for (let i = 0; i < rooms.get(room).players.length; i++) {
-            const player = rooms.get(room).players[i];
-            const j = i === 0 ? 1 : 0;
-            const opponent = rooms.get(room).players[j];
-            onlineClients.get(player.id).send(JSON.stringify({
-                type,
-                payload: {
-                    countdown,
-                    team: player.current.team,
-                    opponent: opponent.current.team,
-                }
-            }))
-        }
         if (countdown === 4) {
+            to(room, JSON.stringify({
+                type: codes.game_start
+            }))
             clearInterval(x);
             startGame(room);
+        } else {
+            for (let i = 0; i < rooms.get(room).players.length; i++) {
+                const player = rooms.get(room).players[i];
+                const j = i === 0 ? 1 : 0;
+                const opponent = rooms.get(room).players[j];
+                onlineClients.get(player.id).send(JSON.stringify({
+                    type: codes.game_check,
+                    payload: {
+                        countdown,
+                        team: player.current.team,
+                        opponent: opponent.current.team,
+                    }
+                }))
+            }
         }
     }, 1000);
 }
 
 function startGame(room) {
+    console.info(`Room ${room} started a game`)
     let time = 240;
     let shouldCountdown = false;
     const x = setInterval(() => {
