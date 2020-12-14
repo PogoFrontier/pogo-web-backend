@@ -55,7 +55,7 @@ function onNewWebsocketConnection(ws: WebSocket) {
         }
     };
 
-    ws.onerror = () => {
+    ws.onclose = () => {
         onClose(id, room)
     };
 }
