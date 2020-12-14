@@ -25,5 +25,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DeveloperKhan/pogo-web-backend.git"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.9"
   }
 }
