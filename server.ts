@@ -74,7 +74,7 @@ function startServer() {
     app.use(e.static("public"));
 
     // use cors
-    //app.use(cors)
+    app.use(cors)
 
     // will fire for every new websocket connection
     wss.on("connection", onNewWebsocketConnection);
