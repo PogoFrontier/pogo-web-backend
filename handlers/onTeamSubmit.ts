@@ -1,12 +1,7 @@
 import to from "../actions/to";
 import { rooms } from "../server";
 import { CODE } from "../types/actions";
-import { TeamMember } from "../types/team";
-
-export interface OnTeamSubmitPayload {
-  room: string,
-  team: TeamMember[]
-}
+import { OnTeamSubmitPayload } from "../types/handlers";
 
 function onTeamSubmit(id: string, payload: OnTeamSubmitPayload) {
   const { room, team } = payload;

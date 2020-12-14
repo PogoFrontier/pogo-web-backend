@@ -1,10 +1,7 @@
 import to from "../actions/to";
 import { rooms } from "../server";
 import { CODE } from "../types/actions";
-
-export interface OnGetOpponentPayload {
-  room: string,
-}
+import { OnGetOpponentPayload } from "../types/handlers";
 
 function onGetOpponent(id: string, payload: OnGetOpponentPayload) {
   const { room } = payload;

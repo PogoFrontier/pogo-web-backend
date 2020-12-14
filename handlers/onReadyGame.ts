@@ -1,10 +1,7 @@
 import to from "../actions/to";
 import { rooms, onlineClients } from "../server";
 import { CODE } from "../types/actions";
-
-export interface OnReadyGamePayload {
-  room: string,
-}
+import { OnReadyGamePayload } from "../types/handlers";
 
 function onReadyGame(id: string, payload: OnReadyGamePayload) {
   const { room } = payload;

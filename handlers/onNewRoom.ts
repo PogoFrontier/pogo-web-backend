@@ -1,13 +1,8 @@
 import to from "../actions/to";
 import { rooms } from "../server";
 import { CODE } from "../types/actions";
+import { OnNewRoomPayload } from "../types/handlers";
 import { RoomStatus } from "../types/room";
-import { TeamMember } from "../types/team";
-
-export interface OnNewRoomPayload {
-  room: string,
-  team: TeamMember[]
-}
 
 function onNewRoom(id: string, payload: OnNewRoomPayload): string {
   const { room, team } = payload
