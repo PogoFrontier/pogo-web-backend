@@ -2,7 +2,7 @@
 import e from "express";
 import { v4 as uuidv4 } from 'uuid';
 import http from 'http';
-import WebSocket from 'ws';
+import websocket from 'ws';
 import cors from 'cors';
 import to from './actions/to'
 import onClose from "./handlers/onClose";
@@ -13,8 +13,11 @@ import onGetOpponent from "./handlers/onGetOpponent";
 import onTeamSubmit from "./handlers/onTeamSubmit";
 import onReadyGame from "./handlers/onReadyGame";
 
-export const pokemon = require("./data/pokemon.json"),
-             moves = require("./data/moves.json");
+import p from "./data/pokemon.json";
+import m  from "./data/moves.json";
+
+export const pokemon: any = p;
+export const moves: any = m;
 
 export const SERVER_PORT = 3000;
 
@@ -26,8 +29,8 @@ function onNewWebsocketConnection(ws: WebSocket) {
     onlineClients.set(id, ws);
     console.info(`Socket ${id} has connected.`);
     let room = "";
-    ws.on('message', function(d) {
-        const data = d.toString()
+    ws.onmessage = function(this, ev) {
+        const data: string = ev.data;
         if (data.startsWith("#") && room !== "") {
             to(room, data, id);
             // onAction(room, data, id);
@@ -50,11 +53,11 @@ function onNewWebsocketConnection(ws: WebSocket) {
                     console.error("Message not recognized");
             }
         }
-    });
+    };
 
-    ws.on("close", () => {
+    ws.onerror = () => {
         onClose(id, room)
-    });
+    };
 }
 
 function startServer() {
@@ -65,13 +68,13 @@ function startServer() {
     const server = http.createServer(app);
 
     // bind ws to that server
-    const wss = new WebSocket.Server({ server });
+    const wss = new websocket.Server({ server });
 
     // serve static files from a given folder
     app.use(e.static("public"));
 
     // use cors
-    app.use(cors)
+    //app.use(cors)
 
     // will fire for every new websocket connection
     wss.on("connection", onNewWebsocketConnection);
