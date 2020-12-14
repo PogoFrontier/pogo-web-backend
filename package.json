@@ -12,7 +12,7 @@
   "author": "",
   "license": "MIT",
   "type": "module",
-  "types": "./dist/index.d.ts",
+  "types": "./types/index.ts",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.16.3",
