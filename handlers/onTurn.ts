@@ -84,7 +84,8 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
               payload[i] = {
                 id: player.id,
                 active: player.current.active,
-                hp: player.current.team[player.current.active].current!.hp
+                hp: player.current.team[player.current.active].current!.hp,
+                shouldReturn: true
               }
               const opponent = currentRoom.players[j]!;
               opponent.current!.team[opponent.current!.active].current!.hp = calcDamage(
@@ -93,9 +94,10 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
                 player.current.action!.move!
               );
               payload[j] = {
+                ...payload[j],
                 id: opponent.id,
                 active: opponent.current!.active,
-                hp: opponent.current!.team[opponent.current!.active].current!.hp
+                hp: opponent.current!.team[opponent.current!.active].current!.hp,
               }
               player.current.action = undefined
             }
@@ -120,11 +122,13 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
             payload[i] = {
               id: currentRoom.players[i]!.id,
               active: shouldSwitch[i],
-              hp: player.team[shouldSwitch[i]].current!.hp
+              hp: player.team[shouldSwitch[i]].current!.hp,
+              shouldReturn: true
             };
           } else {
             payload[i]!.id = currentRoom.players[i]!.id;
             payload[i]!.active = shouldSwitch[i];
+            payload[i]!.shouldReturn = true;
           }
           player.current!.action = undefined;
         }

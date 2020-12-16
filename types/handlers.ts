@@ -28,6 +28,7 @@ export interface Update {
   id: string,
   active: number,
   hp?: number,
+  shouldReturn?: boolean
 }
 
 export interface ResolveTurnPayload {
