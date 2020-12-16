@@ -1,4 +1,5 @@
 import { TeamMember } from "./team";
+import { Actions } from './actions';
 
 export enum RoomStatus {
   SELECTING,
@@ -6,8 +7,20 @@ export enum RoomStatus {
   STARTED
 }
 
-export interface TurnAction {
+export interface Move {
+  "moveId": string,
+  "name": string,
+  "type": string,
+  "power": number,
+  "energy": number,
+  "energyGain": number,
+  "cooldown": number
+}
 
+export interface TurnAction {
+  id: keyof typeof Actions,
+  active: number,
+  move?: Move,
 }
 
 export interface Player {
@@ -16,7 +29,8 @@ export interface Player {
   current?: {
     team: TeamMember[],
     ready: boolean,
-    action?: TurnAction
+    action?: TurnAction,
+    active: number
   }
 }
 
