@@ -8,13 +8,14 @@ import to from './actions/to'
 import onClose from "./handlers/onClose";
 import onNewRoom from "./handlers/onNewRoom";
 import { CODE } from "./types/actions";
-import { Room } from "./types/room";
+import { Room, RoomStatus } from "./types/room";
 import onGetOpponent from "./handlers/onGetOpponent";
 import onTeamSubmit from "./handlers/onTeamSubmit";
 import onReadyGame from "./handlers/onReadyGame";
 
 import p from "./data/pokemon.json";
 import m  from "./data/moves.json";
+import onAction from "./handlers/onAction";
 
 export const pokemon: any = p;
 export const moves: any = m;
@@ -31,9 +32,10 @@ function onNewWebsocketConnection(ws: WebSocket) {
     let room = "";
     ws.onmessage = function(this, ev) {
         const data: string = ev.data;
-        if (data.startsWith("#") && room !== "") {
-            to(room, data, id);
-            // onAction(room, data, id);
+        if (data.startsWith("#")) {
+            if (rooms.get(room) && rooms.get(room)?.status === RoomStatus.STARTED) {
+                onAction({ id, room, data });
+            }
         } else {
             const { type, payload } = JSON.parse(data)
             switch (type) {
