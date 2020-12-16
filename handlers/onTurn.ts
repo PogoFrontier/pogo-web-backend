@@ -1,11 +1,67 @@
 import { onlineClients, rooms } from "../server";
+import { Move } from "../types";
 import { Actions, CODE } from "../types/actions";
 import { ResolveTurnPayload, Update } from "../types/handlers";
 import { TeamMember } from "../types/team";
 
-function calcDamage(attacker: TeamMember, defender: TeamMember): number {
-  // const damage = Math.floor(0.5 * attacker.current!.atk / defender.current!.def) + 1
-  return defender.current!.hp - 10;
+const types = new Array(
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.625, 0.390625, 1, 1, 0.625, 1, 1],// Normal
+  [1, 0.625, 0.625, 1, 1.6, 1.6, 1, 1, 1, 1, 1, 1.6, 0.625, 1, 0.625, 1, 1.6, 1, 1],// Fire
+  [1, 1.6, 0.625, 1, 0.625, 1, 1, 1, 1.6, 1, 1, 1, 1.6, 1, 0.625, 1, 1, 1, 1],// Water
+  [1, 1, 1.6, 0.625, 0.625, 1, 1, 1, 0.390625, 1.6, 1, 1, 1, 1, 0.625, 1, 1, 1, 1],// Electric
+  [1, 0.625, 1.6, 1, 0.625, 1, 1, 0.625, 1.6, 0.625, 1, 0.625, 1.6, 1, 0.625, 1, 0.625, 1, 1],// Grass
+  [1, 0.625, 0.625, 1, 1.6, 0.625, 1, 1, 1.6, 1.6, 1, 1, 1, 1, 1.6, 1, 0.625, 1, 1],// Ice
+  [1.6, 1, 1, 1, 1, 1.6, 1, 0.625, 1, 0.625, 0.625, 0.625, 1.6, 0.390625, 1, 1.6, 1.6, 0.625, 1],// Fighting
+  [1, 1, 1, 1, 1.6, 1, 1, 0.625, 0.625, 1, 1, 1, 0.625, 0.625, 1, 1, 0.390625, 1.6, 1],// Poison
+  [1, 1.6, 1, 1.6, 0.625, 1, 1, 1.6, 1, 0.390625, 1, 0.625, 1.6, 1, 1, 1, 1.6, 1, 1],// Ground
+  [1, 1, 1, 0.625, 1.6, 1, 1.6, 1, 1, 1, 1, 1.6, 0.625, 1, 1, 1, 0.625, 1, 1],// Flying
+  [1, 1, 1, 1, 1, 1, 1.6, 1.6, 1, 1, 0.625, 1, 1, 1, 1, 0.390625, 0.625, 1, 1],// Psychic
+  [1, 0.625, 1, 1, 1.6, 1, 0.625, 0.625, 1, 0.625, 1.6, 1, 1, 0.625, 1, 1.6, 0.625, 0.625, 1],// Bug
+  [1, 1.6, 1, 1, 1, 1.6, 0.625, 1, 0.625, 1.6, 1, 1.6, 1, 1, 1, 1, 0.625, 1, 1],// Rock
+  [0.390625, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1.6, 1, 1, 1.6, 1, 0.625, 1, 1, 1],// Ghost
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1.6, 1, 0.625, 0.390625, 1],// Dragon
+  [1, 1, 1, 1, 1, 1, 0.625, 1, 1, 1, 1.6, 1, 1, 1.6, 1, 0.625, 1, 0.625, 1],// Dark
+  [1, 0.625, 0.625, 0.625, 1, 1.6, 1, 1, 1, 1, 1, 1, 1.6, 1, 1, 1, 0.625, 1.6, 1],// Steel
+  [1, 0.625, 1, 1, 1, 1, 1.6, 0.625, 1, 1, 1, 1, 1, 1, 1.6, 1.6, 0.625, 1, 1],// Fairy
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]);// None
+  
+const type_name: { [key: string]: number } = {
+  "normal": 0,
+  "fire": 1,
+  "water": 2,
+  "electric": 3,
+  "grass": 4,
+  "ice": 5,
+  "fighting": 6,
+  "poison": 7,
+  "ground": 8,
+  "flying": 9,
+  "psychic": 10,
+  "bug": 11,
+  "rock": 12,
+  "ghost": 13,
+  "dragon": 14,
+  "dark": 15,
+  "steel": 16,
+  "fairy": 17
+};
+
+function getMultiplier(attackerTypes: string[], defenderTypes: string[], moveType: string): number {
+  let mult = 1;
+  for (const type of defenderTypes) {
+    if (type_name[type] && type_name[moveType]) {
+      mult *= types[type_name[type]][type_name[moveType]]
+    }
+  }
+  if (attackerTypes.findIndex(x => x === moveType) > -1) {  //STAB
+    mult *= 1.2;
+  }
+  return mult;
+}
+
+function calcDamage(attacker: TeamMember, defender: TeamMember, move: Move): number {
+  const damage = Math.floor(0.5 * (attacker.current!.atk / defender.current!.def) * move.power) + 1
+  return defender.current!.hp - damage;
 }
 
 function evaluatePayload(room: string): [Update | null, Update | null] {
@@ -19,16 +75,11 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
         switch (player.current.action.id) {
 
           case Actions.FAST_ATTACK:
-            console.log("MEOW")
             if (!player.current.action.move) {
               break;
             }
-            console.log("MEOW2")
             player.current.action.move!.cooldown -= 500;
-            console.log(player.current.action.move!.cooldown)
             if (player.current.action.move!.cooldown <= 0) {
-              console.log("MEOW3")
-              player.current.action = undefined
               const j = i === 0 ? 1 : 0;
               payload[i] = {
                 id: player.id,
@@ -38,13 +89,15 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
               const opponent = currentRoom.players[j]!;
               opponent.current!.team[opponent.current!.active].current!.hp = calcDamage(
                 player.current.team[player.current.active],
-                opponent.current!.team[opponent.current!.active]
+                opponent.current!.team[opponent.current!.active],
+                player.current.action!.move!
               );
               payload[j] = {
                 id: opponent.id,
                 active: opponent.current!.active,
                 hp: opponent.current!.team[opponent.current!.active].current!.hp
               }
+              player.current.action = undefined
             }
             break;
 
@@ -84,29 +137,29 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
 
 const onTurn = (time: number, shouldCountdown: boolean, room: string) => {
   const currentRoom = rooms.get(room);
-  if (currentRoom) {
+  if (currentRoom && currentRoom.players) {
     currentRoom.turn = currentRoom.turn ? currentRoom.turn + 1 : 1;
-  }
-  if (shouldCountdown) {
-    time--;
-    shouldCountdown = false;
-  } else {
-    shouldCountdown = true;
-  }
-  const payload: ResolveTurnPayload = {
-    time,
-    update: evaluatePayload(room)
-  };
-  for (let player of rooms.get(room)!.players) {
-    if (player) {
-      payload.update.sort((a) => {
-        return a?.id === player!.id ? -1 : 1
-      })
-      const data = {
-        type: CODE.turn,
-        payload
-      };
-      onlineClients.get(player.id)!.send(JSON.stringify(data));
+    if (shouldCountdown) {
+      time--;
+      shouldCountdown = false;
+    } else {
+      shouldCountdown = true;
+    }
+    const payload: ResolveTurnPayload = {
+      time,
+      update: evaluatePayload(room)
+    };
+    for (let player of currentRoom.players) {
+      if (player) {
+        payload.update.sort((a) => {
+          return a?.id === player!.id ? -1 : 1
+        })
+        const data = {
+          type: CODE.turn,
+          payload
+        };
+        onlineClients.get(player.id)!.send(JSON.stringify(data));
+      }
     }
   }
 }
