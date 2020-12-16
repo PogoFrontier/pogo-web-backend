@@ -139,16 +139,11 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
   return payload;
 }
 
-const onTurn = (time: number, shouldCountdown: boolean, room: string) => {
+const onTurn = (room: string) => {
   const currentRoom = rooms.get(room);
   if (currentRoom && currentRoom.players) {
     currentRoom.turn = currentRoom.turn ? currentRoom.turn + 1 : 1;
-    if (shouldCountdown) {
-      time--;
-      shouldCountdown = false;
-    } else {
-      shouldCountdown = true;
-    }
+    const time = Math.floor(240 - currentRoom.turn * 0.5)
     const payload: ResolveTurnPayload = {
       time,
       update: evaluatePayload(room)

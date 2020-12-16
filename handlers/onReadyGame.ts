@@ -65,9 +65,7 @@ function startCountdown(room: string) {
 
 function startGame(room: string) {
   console.info(`Room ${room} started a game`)
-  let time = 240;
-  let shouldCountdown = false;
-  const x = setInterval(() => onTurn(time, shouldCountdown, room), 500);
+  const x = setInterval(() => onTurn(room), 500);
 }
 
 export default onReadyGame;
