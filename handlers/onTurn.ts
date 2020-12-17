@@ -3,6 +3,7 @@ import { onlineClients, rooms } from "../server";
 import { Move } from "../types";
 import { Actions, CODE } from "../types/actions";
 import { ResolveTurnPayload, Update } from "../types/handlers";
+import { RoomStatus } from "../types/room";
 import { TeamMember } from "../types/team";
 
 const types = new Array(
@@ -61,7 +62,8 @@ function getMultiplier(attackerTypes: string[], defenderTypes: string[], moveTyp
 }
 
 function calcDamage(attacker: TeamMember, defender: TeamMember, move: Move): number {
-  const damage = Math.floor(0.5 * (attacker.current!.atk / defender.current!.def) * move.power) + 1
+  const mult = getMultiplier(attacker.types, defender.types, move.type);
+  const damage = Math.floor(0.5 * (attacker.current!.atk / defender.current!.def) * move.power * mult) + 1;
   return defender.current!.hp - damage;
 }
 
@@ -123,7 +125,9 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
             payload[i] = {
               id: currentRoom.players[i]!.id,
               active: shouldSwitch[i],
-              hp: player.team[shouldSwitch[i]].current!.hp,
+              hp: player.team[shouldSwitch[i]].current
+                ? player.team[shouldSwitch[i]].current?.hp
+                : player.team[shouldSwitch[i]].hp,
               shouldReturn: true
             };
           } else {
@@ -143,7 +147,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
 
 const onTurn = (room: string) => {
   const currentRoom = rooms.get(room);
-  if (currentRoom && currentRoom.players) {
+  if (currentRoom && currentRoom.players && currentRoom.status === RoomStatus.STARTED) {
     currentRoom.turn = currentRoom.turn ? currentRoom.turn + 1 : 1;
     const time = Math.floor(GAME_TIME - currentRoom.turn * 0.5)
     const payload: ResolveTurnPayload = {
@@ -151,12 +155,15 @@ const onTurn = (room: string) => {
       update: evaluatePayload(room),
       switch: 0
     };
-    for (let player of currentRoom.players) {
+    for (let i = 0; i < currentRoom.players.length; i++) {
+      const player = currentRoom.players[i]
+      const j = i === 0 ? 1 : 0
       if (player) {
-        payload.update.sort((a) => {
-          return a?.id === player!.id ? -1 : 1;
-        })
+        if (payload.update[i]?.id !== payload.update[j]?.id && i === 1) {
+          payload.update.reverse();
+        }
         if (player.current && player.current?.switch > 0) {
+          player.current!.switch--;
           payload.switch = player.current?.switch;
         } else {
           payload.switch = 0;
