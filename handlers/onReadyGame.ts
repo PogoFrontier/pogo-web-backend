@@ -29,7 +29,7 @@ function startCountdown(room: string) {
   let countdown = 0;
   const currentRoom = rooms.get(room);
   const x = setInterval(() => {
-    if (currentRoom) {
+    if (currentRoom && currentRoom.status === RoomStatus.STARTING) {
       countdown++;
       if (countdown === 4) {
           to(room, JSON.stringify({
@@ -59,6 +59,8 @@ function startCountdown(room: string) {
           }
         }
       }
+    } else {
+      clearInterval(x);
     }
   }, 1000);
 }
