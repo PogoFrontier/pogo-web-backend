@@ -1,3 +1,4 @@
+import { GAME_TIME, SWAP_COOLDOWN } from "../config";
 import { onlineClients, rooms } from "../server";
 import { Move } from "../types";
 import { Actions, CODE } from "../types/actions";
@@ -130,6 +131,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
             payload[i]!.active = shouldSwitch[i];
             payload[i]!.shouldReturn = true;
           }
+          player.current!.switch = SWAP_COOLDOWN;
           player.current!.action = undefined;
         }
       }
@@ -143,16 +145,22 @@ const onTurn = (room: string) => {
   const currentRoom = rooms.get(room);
   if (currentRoom && currentRoom.players) {
     currentRoom.turn = currentRoom.turn ? currentRoom.turn + 1 : 1;
-    const time = Math.floor(240 - currentRoom.turn * 0.5)
+    const time = Math.floor(GAME_TIME - currentRoom.turn * 0.5)
     const payload: ResolveTurnPayload = {
       time,
-      update: evaluatePayload(room)
+      update: evaluatePayload(room),
+      switch: 0
     };
     for (let player of currentRoom.players) {
       if (player) {
         payload.update.sort((a) => {
-          return a?.id === player!.id ? -1 : 1
+          return a?.id === player!.id ? -1 : 1;
         })
+        if (player.current && player.current?.switch > 0) {
+          payload.switch = player.current?.switch;
+        } else {
+          payload.switch = 0;
+        }
         const data = {
           type: CODE.turn,
           payload

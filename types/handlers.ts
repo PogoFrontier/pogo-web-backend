@@ -33,5 +33,6 @@ export interface Update {
 
 export interface ResolveTurnPayload {
   time: number,
-  update: [Update | null, Update | null]
+  update: [Update | null, Update | null],
+  switch: number
 }

@@ -30,7 +30,8 @@ export interface Player {
     team: TeamMember[],
     ready: boolean,
     action?: TurnAction,
-    active: number
+    active: number,
+    switch: number
   }
 }
 
