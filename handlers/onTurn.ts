@@ -52,7 +52,7 @@ function getMultiplier(attackerTypes: string[], defenderTypes: string[], moveTyp
   let mult = 1;
   for (const type of defenderTypes) {
     if (type_name[type] && type_name[moveType]) {
-      mult *= types[type_name[type]][type_name[moveType]]
+      mult *= types[type_name[moveType]][type_name[type]]
     }
   }
   if (attackerTypes.findIndex(x => x === moveType) > -1) {  //STAB
@@ -120,14 +120,13 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
       for (let i = 0; i < shouldSwitch.length; i++) {
         if (shouldSwitch[i] > -1) {
           const player = currentRoom.players[i]!
+          const oldActive = player!.current!.active;
           player!.current!.active = shouldSwitch[i];
           if (payload[i] === null) {
             payload[i] = {
               id: currentRoom.players[i]!.id,
               active: shouldSwitch[i],
-              hp: player.team[shouldSwitch[i]].current
-                ? player.team[shouldSwitch[i]].current?.hp
-                : player.team[shouldSwitch[i]].hp,
+              hp: player.team[oldActive].current?.hp,
               shouldReturn: true
             };
           } else {
@@ -163,7 +162,9 @@ const onTurn = (room: string) => {
           payload.update.reverse();
         }
         if (player.current && player.current?.switch > 0) {
-          player.current!.switch--;
+          if (currentRoom.turn % 2 === 0) {
+            player.current!.switch--;
+          }
           payload.switch = player.current?.switch;
         } else {
           payload.switch = 0;
