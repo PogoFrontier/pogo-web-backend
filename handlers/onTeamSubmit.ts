@@ -24,6 +24,8 @@ function onTeamSubmit(id: string, payload: OnTeamSubmitPayload) {
         ready: false,
         active: 0,
         switch: 0,
+        shields: 2,
+        remaining: 3,
       }
 
       console.info(`Player ${id} is ready in room ${room}.`);
