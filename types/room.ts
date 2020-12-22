@@ -4,7 +4,9 @@ import { Actions } from './actions';
 export enum RoomStatus {
   SELECTING,
   STARTING,
-  STARTED
+  STARTED,
+  FAINT,
+  CHARGE,
 }
 
 export interface Move {
@@ -31,7 +33,9 @@ export interface Player {
     ready: boolean,
     action?: TurnAction,
     active: number,
-    switch: number
+    switch: number,
+    shields: number,
+    remaining: number,
   }
 }
 
@@ -39,5 +43,6 @@ export interface Room {
   id: string,
   players: [Player | null, Player | null],
   turn?: number,
-  status: RoomStatus
+  status: RoomStatus,
+  wait?: number
 }
