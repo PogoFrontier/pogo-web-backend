@@ -179,10 +179,16 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
       for (let i = 0; i < currentRoom.players.length; i++) {
         const player = currentRoom.players[i];
         if (payload[i] === null && player) {
+          if (wait <= 0) {
+            currentRoom.status = RoomStatus.STARTED;
+            if (player.current!.team[player.current!.active].current!.hp <= 0) {
+              player.current!.active = player.current!.team.findIndex(x => x.current!.hp > 0);
+            }
+          }
           payload[i] = {
             id: player.id,
             active: player.current!.active,
-            wait: wait
+            wait: wait <= 0 ? -1 : wait
           }
         }
       }
