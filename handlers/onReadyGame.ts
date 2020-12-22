@@ -71,7 +71,13 @@ function startCountdown(room: string) {
 
 function startGame(room: string) {
   console.info(`Room ${room} started a game`)
-  const x = setInterval(() => onTurn(room), 500);
+  if (rooms.get(room)) {
+    if (rooms.get(room)!.timer) {
+      clearInterval(rooms.get(room)!.timer);
+      delete rooms.get(room)!.timer;
+    }
+    rooms.get(room)!.timer = setInterval(() => onTurn(room), 500);
+  }
 }
 
 export default onReadyGame;

@@ -1,4 +1,5 @@
 import e from "express";
+import to from "../actions/to";
 import { GAME_TIME, SWAP_COOLDOWN, SWITCH_WAIT } from "../config";
 import { onlineClients, rooms } from "../server";
 import { Move } from "../types";
@@ -68,6 +69,18 @@ function calcDamage(attacker: TeamMember, defender: TeamMember, move: Move): num
   return Math.max(defender.current!.hp - damage, 0);
 }
 
+function endGame(room: string) {
+  const currentRoom = rooms.get(room);
+  if (currentRoom) {
+    if (currentRoom.timer) {
+      clearInterval(rooms.get(room)!.timer);
+      delete rooms.get(room)!.timer;
+    }
+    to(room, "$end");
+    rooms.delete(room);
+  }
+}
+
 function evaluatePayload(room: string): [Update | null, Update | null] {
   const payload: [Update | null, Update | null] = [null, null];
   const currentRoom = rooms.get(room);
@@ -106,7 +119,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
               if (opponent.current!.team[opponent.current!.active].current!.hp <= 0) {
                 opponent.current!.remaining -= 1;
                 if (opponent.current!.remaining <= 0) {
-                  console.log("Game should end");
+                  endGame(room);
                 } else {
                   currentRoom.status = RoomStatus.FAINT;
                   currentRoom.wait = SWITCH_WAIT;
@@ -208,26 +221,28 @@ const onTurn = (room: string) => {
       update: evaluatePayload(room),
       switch: 0
     };
-    for (let i = 0; i < currentRoom.players.length; i++) {
-      const player = currentRoom.players[i]
-      const j = i === 0 ? 1 : 0
-      if (player) {
-        if (payload.update[i]?.id !== payload.update[j]?.id && i === 1) {
-          payload.update.reverse();
-        }
-        if (player.current && player.current?.switch > 0) {
-          if (currentRoom.turn % 2 === 0) {
-            player.current!.switch--;
+    if (currentRoom) {
+      for (let i = 0; i < currentRoom.players.length; i++) {
+        const player = currentRoom.players[i]
+        const j = i === 0 ? 1 : 0
+        if (player) {
+          if (payload.update[i]?.id !== payload.update[j]?.id && i === 1) {
+            payload.update.reverse();
           }
-          payload.switch = player.current?.switch;
-        } else {
-          payload.switch = 0;
+          if (player.current && player.current?.switch > 0) {
+            if (currentRoom.turn % 2 === 0) {
+              player.current!.switch--;
+            }
+            payload.switch = player.current?.switch;
+          } else {
+            payload.switch = 0;
+          }
+          const data = {
+            type: CODE.turn,
+            payload
+          };
+          onlineClients.get(player.id)!.send(JSON.stringify(data));
         }
-        const data = {
-          type: CODE.turn,
-          payload
-        };
-        onlineClients.get(player.id)!.send(JSON.stringify(data));
       }
     }
   }

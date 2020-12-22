@@ -44,5 +44,6 @@ export interface Room {
   players: [Player | null, Player | null],
   turn?: number,
   status: RoomStatus,
-  wait?: number
+  wait?: number,
+  timer?: any
 }
