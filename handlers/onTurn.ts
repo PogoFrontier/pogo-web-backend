@@ -1,4 +1,5 @@
-import { GAME_TIME, SWAP_COOLDOWN } from "../config";
+import e from "express";
+import { GAME_TIME, SWAP_COOLDOWN, SWITCH_WAIT } from "../config";
 import { onlineClients, rooms } from "../server";
 import { Move } from "../types";
 import { Actions, CODE } from "../types/actions";
@@ -64,7 +65,7 @@ function getMultiplier(attackerTypes: string[], defenderTypes: string[], moveTyp
 function calcDamage(attacker: TeamMember, defender: TeamMember, move: Move): number {
   const mult = getMultiplier(attacker.types, defender.types, move.type);
   const damage = Math.floor(0.5 * (attacker.current!.atk / defender.current!.def) * move.power * mult) + 1;
-  return defender.current!.hp - damage;
+  return Math.max(defender.current!.hp - damage, 0);
 }
 
 function evaluatePayload(room: string): [Update | null, Update | null] {
@@ -78,7 +79,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
         switch (player.current.action.id) {
 
           case Actions.FAST_ATTACK:
-            if (!player.current.action.move) {
+            if (!player.current.action.move || currentRoom.status !== RoomStatus.STARTED) {
               break;
             }
             player.current.action.move!.cooldown -= 500;
@@ -102,6 +103,18 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
                 active: opponent.current!.active,
                 hp: opponent.current!.team[opponent.current!.active].current!.hp,
               }
+              if (opponent.current!.team[opponent.current!.active].current!.hp <= 0) {
+                opponent.current!.remaining -= 1;
+                if (opponent.current!.remaining <= 0) {
+                  console.log("Game should end");
+                } else {
+                  currentRoom.status = RoomStatus.FAINT;
+                  currentRoom.wait = SWITCH_WAIT;
+                  payload[i]!.wait = SWITCH_WAIT;
+                  payload[j]!.wait = SWITCH_WAIT;
+                }
+                payload[j]!.remaining = opponent.current!.remaining;
+              }
               player.current.action = undefined
             }
             break;
@@ -111,6 +124,9 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
             break;
 
           case Actions.SWITCH:
+            if (currentRoom.status === RoomStatus.CHARGE) {
+              break;
+            }
             shouldSwitch[i] = player.current.action.active;
             break;
         }
@@ -134,8 +150,40 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
             payload[i]!.active = shouldSwitch[i];
             payload[i]!.shouldReturn = true;
           }
-          player.current!.switch = SWAP_COOLDOWN;
+          if (currentRoom.status === RoomStatus.STARTED) {
+            player.current!.switch = SWAP_COOLDOWN;
+          } else {
+            currentRoom.status = RoomStatus.STARTED;
+            if (currentRoom.wait) {
+              delete currentRoom.wait;
+              const j = i === 0 ? 1 : 0;
+              payload[i]!.wait = -1;
+              if (payload[j] === null) {
+                payload[j] = {
+                  id: currentRoom.players[j]!.id,
+                  active: currentRoom.players[j]?.current?.active || 0,
+                  shouldReturn: true,
+                  wait: -1
+                };
+              } else {
+                payload[j]!.wait = -1;
+              }
+            }
+          }
           player.current!.action = undefined;
+        }
+      }
+    } else if (currentRoom.wait) {
+      currentRoom.wait -= 0.5;
+      const wait = Math.ceil(currentRoom.wait);
+      for (let i = 0; i < currentRoom.players.length; i++) {
+        const player = currentRoom.players[i];
+        if (payload[i] === null && player) {
+          payload[i] = {
+            id: player.id,
+            active: player.current!.active,
+            wait: wait
+          }
         }
       }
     }
@@ -146,9 +194,9 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
 
 const onTurn = (room: string) => {
   const currentRoom = rooms.get(room);
-  if (currentRoom && currentRoom.players && currentRoom.status === RoomStatus.STARTED) {
+  if (currentRoom && currentRoom.players && currentRoom.status != RoomStatus.SELECTING && currentRoom.status != RoomStatus.STARTING) {
     currentRoom.turn = currentRoom.turn ? currentRoom.turn + 1 : 1;
-    const time = Math.floor(GAME_TIME - currentRoom.turn * 0.5)
+    const time = Math.ceil(GAME_TIME - currentRoom.turn * 0.5)
     const payload: ResolveTurnPayload = {
       time,
       update: evaluatePayload(room),
