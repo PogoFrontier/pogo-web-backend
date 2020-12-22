@@ -10,11 +10,16 @@ function onClose(id: string, room: string) {
       if (currentRoom.players) {
           const index = currentRoom.players.findIndex(x => x && x.id === id);
           currentRoom.players[index] = null;
-          currentRoom.status = RoomStatus.SELECTING;
-          to(room, JSON.stringify({
-              type: CODE.room_leave,
-          }), );
-          console.info(`Socket ${id} has been removed from room ${room}.`);
+          if (currentRoom.status !== RoomStatus.SELECTING && currentRoom.status !== RoomStatus.STARTING) {
+            to(room, "$end");
+            console.info(`Socket ${id} has been removed from room ${room}, causing game end.`);
+          } else {
+            currentRoom.status = RoomStatus.SELECTING;
+            to(room, JSON.stringify({
+                type: CODE.room_leave,
+            }), );
+            console.info(`Socket ${id} has been removed from room ${room}.`);
+          }
       }
 
       if (currentRoom.players[1] === null && currentRoom.players[0] === null) {
