@@ -33,7 +33,7 @@ function onNewWebsocketConnection(ws: WebSocket) {
     ws.onmessage = function(this, ev) {
         const data: string = ev.data;
         if (data.startsWith("#")) {
-            if (rooms.get(room) && rooms.get(room)?.status === RoomStatus.STARTED) {
+            if (rooms.get(room) && rooms.get(room)?.status !== RoomStatus.SELECTING && rooms.get(room)?.status !== RoomStatus.STARTING) {
                 onAction({ id, room, data });
             }
         } else {
