@@ -174,7 +174,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
         }
       }
     } else if (currentRoom.wait) {
-      currentRoom.wait -= 0.5;
+      currentRoom.wait = Number((currentRoom.wait - 0.5).toFixed(1));
       const wait = Math.ceil(currentRoom.wait);
       for (let i = 0; i < currentRoom.players.length; i++) {
         const player = currentRoom.players[i];
@@ -196,7 +196,7 @@ const onTurn = (room: string) => {
   const currentRoom = rooms.get(room);
   if (currentRoom && currentRoom.players && currentRoom.status != RoomStatus.SELECTING && currentRoom.status != RoomStatus.STARTING) {
     currentRoom.turn = currentRoom.turn ? currentRoom.turn + 1 : 1;
-    const time = Math.ceil(GAME_TIME - currentRoom.turn * 0.5)
+    const time = Math.ceil(Number((GAME_TIME - currentRoom.turn * 0.5).toFixed(1)))
     const payload: ResolveTurnPayload = {
       time,
       update: evaluatePayload(room),
