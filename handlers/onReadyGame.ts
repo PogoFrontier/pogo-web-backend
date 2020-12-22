@@ -53,7 +53,11 @@ function startCountdown(room: string) {
               payload: {
                   countdown,
                   team: player.current.team,
+                  shields: player.current.shields,
+                  remaining: player.current.remaining,
                   opponent: opponent.current.team,
+                  oppShields: opponent.current.shields,
+                  oppRemaining: opponent.current.remaining
               }
           }))
           }
