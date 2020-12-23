@@ -124,7 +124,7 @@ function startServer() {
     });
 
     // important! must listen from `server`, not `app`, otherwise socket.io won't function correctly
-    server.listen(SERVER_PORT, () => console.info(`Listening on port ${SERVER_PORT}.`));
+    server.listen(process.env.PORT || SERVER_PORT, () => console.info(`Listening on port ${process.env.PORT || SERVER_PORT}.`));
 }
 
 startServer();
