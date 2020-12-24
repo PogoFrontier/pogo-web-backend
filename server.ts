@@ -4,7 +4,6 @@ import { v4 as uuidv4 } from 'uuid';
 import http from 'http';
 import websocket from 'ws';
 import cors from 'cors';
-import to from './actions/to'
 import onClose from "./handlers/onClose";
 import onNewRoom from "./handlers/onNewRoom";
 import { CODE } from "./types/actions";
@@ -73,7 +72,7 @@ function startServer() {
     const wss = new websocket.Server({ server });
 
     // serve static files from a given folder
-    app.use(e.static("public"));
+    app.use(e.static('public'));
 
     // use cors
     app.use(cors)

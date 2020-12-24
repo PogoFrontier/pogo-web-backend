@@ -1,1 +1,1 @@
-web: node --loader ts-node/esm --experimental-specifier-resolution=node server.ts
+web: node --experimental-specifier-resolution=node dist/server.js
