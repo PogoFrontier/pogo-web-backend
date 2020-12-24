@@ -4,14 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node --loader ts-node/esm --experimental-specifier-resolution=node server.ts",
+    "start": "node ./dist/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tsc": "tsc"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "type": "module",
   "types": "./types/index.ts",
   "dependencies": {
     "cors": "^2.8.5",
