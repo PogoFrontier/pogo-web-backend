@@ -9,6 +9,9 @@
     "postinstall": "tsc",
     "runbuild": "node --experimental-specifier-resolution=node dist/server.js"
   },
+  "engines": {
+    "node": "12.x"
+  },
   "keywords": [],
   "author": "",
   "license": "MIT",
