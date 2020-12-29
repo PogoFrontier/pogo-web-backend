@@ -2,7 +2,7 @@ import { onlineClients, rooms } from "../server";
 import { Actions } from "../types/actions";
 import { OnActionProps } from "../types/handlers";
 import { moves } from '../server';
-import { Move } from "../types/room";
+import { Move, RoomStatus } from "../types/room";
 
 function onAction({
   id, room, data
@@ -14,6 +14,9 @@ function onAction({
     if (player && player.current && !player.current.action) {
       const d: [keyof typeof Actions, string] = data.substring(1).split(":") as [keyof typeof Actions, string];
       const type = d[0];
+      if (currentRoom.status === RoomStatus.FAINT && type !== Actions.SWITCH) {
+        return;
+      }
       player.current.action = {
         id: type,
         active: type === Actions.SWITCH ? parseInt(d[1]) : player.current.active,

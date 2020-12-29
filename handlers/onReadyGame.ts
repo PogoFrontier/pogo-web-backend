@@ -1,4 +1,5 @@
 import to from "../actions/to";
+import { TURN_LENGTH } from "../config";
 import { rooms, onlineClients } from "../server";
 import { CODE } from "../types/actions";
 import { OnReadyGamePayload } from "../types/handlers";
@@ -76,7 +77,7 @@ function startGame(room: string) {
       clearInterval(rooms.get(room)!.timer);
       delete rooms.get(room)!.timer;
     }
-    rooms.get(room)!.timer = setInterval(() => onTurn(room), 500);
+    rooms.get(room)!.timer = setInterval(() => onTurn(room), TURN_LENGTH);
   }
 }
 

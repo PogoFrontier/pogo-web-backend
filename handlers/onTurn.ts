@@ -90,18 +90,18 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
       const player = currentRoom.players[i];
       if (player && player.current?.action) {
         switch (player.current.action.id) {
-
           case Actions.FAST_ATTACK:
-            if (!player.current.action.move || currentRoom.status !== RoomStatus.STARTED) {
+            if (!player.current.action.move || currentRoom.status === RoomStatus.STARTING || currentRoom.status === RoomStatus.SELECTING) {
               break;
             }
             player.current.action.move!.cooldown -= 500;
             if (player.current.action.move!.cooldown <= 0) {
               const j = i === 0 ? 1 : 0;
               payload[i] = {
+                ...payload[i],
                 id: player.id,
                 active: player.current.active,
-                hp: player.current.team[player.current.active].current!.hp,
+                hp: payload[i]?.hp || player.current.team[player.current.active].current!.hp,
                 shouldReturn: true
               }
               const opponent = currentRoom.players[j]!;
@@ -118,9 +118,14 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
               }
               if (opponent.current!.team[opponent.current!.active].current!.hp <= 0) {
                 opponent.current!.remaining -= 1;
+                if (opponent.current?.action?.move) {
+                  if (opponent.current?.action?.move.cooldown > 500) {
+                    delete opponent.current!.action; //Cancel fast attacks
+                  }
+                }
                 if (opponent.current!.remaining <= 0) {
                   endGame(room);
-                } else {
+                } else if (currentRoom.status !== RoomStatus.FAINT) {
                   currentRoom.status = RoomStatus.FAINT;
                   currentRoom.wait = SWITCH_WAIT;
                   payload[i]!.wait = SWITCH_WAIT;
@@ -128,7 +133,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
                 }
                 payload[j]!.remaining = opponent.current!.remaining;
               }
-              player.current.action = undefined
+              delete player.current.action;
             }
             break;
 
@@ -166,21 +171,23 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
           if (currentRoom.status === RoomStatus.STARTED) {
             player.current!.switch = SWAP_COOLDOWN;
           } else {
-            currentRoom.status = RoomStatus.STARTED;
             if (currentRoom.wait) {
-              delete currentRoom.wait;
               const j = i === 0 ? 1 : 0;
-              payload[i]!.wait = -1;
-              if (payload[j] === null) {
-                payload[j] = {
-                  id: currentRoom.players[j]!.id,
-                  active: currentRoom.players[j]?.current?.active || 0,
-                  shouldReturn: true,
-                  wait: -1
-                };
-              } else {
-                payload[j]!.wait = -1;
+              if (currentRoom.players[j]!.current!.team[currentRoom.players[j]!.current!.active].current!.hp > 0) {
+                currentRoom.status = RoomStatus.STARTED;
+                delete currentRoom.wait;
+                if (payload[j] === null) {
+                  payload[j] = {
+                    id: currentRoom.players[j]!.id,
+                    active: currentRoom.players[j]?.current?.active || 0,
+                    shouldReturn: true,
+                    wait: -1
+                  };
+                } else {
+                  payload[j]!.wait = -1;
+                }
               }
+              payload[i]!.wait = -1;
             }
           }
           player.current!.action = undefined;
