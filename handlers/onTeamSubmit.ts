@@ -15,7 +15,8 @@ function onTeamSubmit(id: string, payload: OnTeamSubmitPayload) {
           hp: member.hp,
           atk: member.atk,
           def: member.def,
-          status: [0, 0]
+          status: [0, 0],
+          energy: 0
         }
         currentTeam.push(member);
       }

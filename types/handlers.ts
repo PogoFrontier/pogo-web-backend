@@ -30,7 +30,8 @@ export interface Update {
   hp?: number,
   shouldReturn?: boolean,
   remaining?: number,
-  wait?: number
+  wait?: number,
+  energy?: number
 }
 
 export interface ResolveTurnPayload {

@@ -19,4 +19,5 @@ export interface Current {
   def: number
   atk: number
   status: [number, number]
+  energy: number
 }
