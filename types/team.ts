@@ -4,6 +4,12 @@ export interface TeamMember {
   hp: number
   def: number
   atk: number
+  level: number
+  iv: {
+    atk: number
+    def: number
+    hp: number
+  }
   cp: number
   types: [string, string]
   fastMove: string
@@ -12,6 +18,10 @@ export interface TeamMember {
   shiny?: boolean
   name?: string
   current?: Current
+}
+export interface Team {
+  format: string
+  members: Array<TeamMember>
 }
 
 export interface Current {

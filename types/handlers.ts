@@ -1,4 +1,4 @@
-import { TeamMember } from "./team";
+import { Team, TeamMember } from "./team";
 
 export interface OnGetOpponentPayload {
   room: string,
@@ -15,7 +15,7 @@ export interface OnReadyGamePayload {
 
 export interface OnTeamSubmitPayload {
   room: string,
-  team: TeamMember[]
+  team: Team
 }
 
 export interface OnActionProps {
