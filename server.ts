@@ -11,6 +11,7 @@ import { Room, RoomStatus } from "./types/room";
 import onGetOpponent from "./handlers/onGetOpponent";
 import onTeamSubmit from "./handlers/onTeamSubmit";
 import onReadyGame from "./handlers/onReadyGame";
+import pokemonRoutes from "./api/pokemonRoutes";
 
 import p from "./data/pokemon.json";
 import m  from "./data/moves.json";
@@ -23,6 +24,31 @@ export const SERVER_PORT = 3000;
 
 export let onlineClients = new Map<string, WebSocket>();
 export let rooms = new Map<string, Room>();
+
+const app: e.Application = e();
+
+app.use('/api/pokemon', pokemonRoutes);
+
+/* // create pokemon path
+app.get("/pokemon/:id", (req, res) => {
+    let payload;
+    const arr = req.params.id.split(",");
+    if (arr.length > 1) {
+        payload = [];
+        for (let r of arr) {
+            if (pokemon[r] === undefined) {
+                throw new Error(`Could not find Pokemon of id: ${r}`);
+            }
+            payload.push(pokemon[r])
+        }
+    } else {
+        if (pokemon[req.params.id] === undefined) {
+            throw new Error(`Could not find Pokemon of id: ${req.params.id}`);
+        }
+        payload = pokemon[req.params.id];
+    }
+    res.send(payload);
+}); */
 
 function onNewWebsocketConnection(ws: WebSocket) {
     const id = uuidv4();
@@ -63,7 +89,7 @@ function onNewWebsocketConnection(ws: WebSocket) {
 
 function startServer() {
     // create a new express app
-    const app: e.Application = e();
+    
 
     // create http server and wrap the express app
     const server = http.createServer(app);
@@ -80,26 +106,7 @@ function startServer() {
     // will fire for every new websocket connection
     wss.on("connection", onNewWebsocketConnection);
 
-    // create pokemon path
-    app.get("/pokemon/:id", (req, res) => {
-        let payload;
-        const arr = req.params.id.split(",");
-        if (arr.length > 1) {
-            payload = [];
-            for (let r of arr) {
-                if (pokemon[r] === undefined) {
-                    throw new Error(`Could not find Pokemon of id: ${r}`);
-                }
-                payload.push(pokemon[r])
-            }
-        } else {
-            if (pokemon[req.params.id] === undefined) {
-                throw new Error(`Could not find Pokemon of id: ${req.params.id}`);
-            }
-            payload = pokemon[req.params.id];
-        }
-        res.send(payload);
-    });
+    
 
     // create moves path
     app.get("/moves/:id", (req, res) => {
