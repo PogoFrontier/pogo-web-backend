@@ -30,10 +30,20 @@ export let rooms = new Map<string, Room>();
 //initialize node server app
 const app: e.Application = e();
 
+//use json
+app.use(e.json());
+
+// use cors
+
+
+
 //add api routes as middleware
 app.use('/api/pokemon', pokemonRoutes);
 app.use('/api/moves', moveRoutes);
 app.use('/api/users', userRoutes);
+
+// serve static files from a given folder
+app.use(e.static('public'));
 
 function onNewWebsocketConnection(ws: WebSocket) {
     const id = uuidv4();
@@ -73,20 +83,11 @@ function onNewWebsocketConnection(ws: WebSocket) {
 }
 
 function startServer() {
-    // create a new express app
-    
-
     // create http server and wrap the express app
     const server = http.createServer(app);
 
     // bind ws to that server
     const wss = new websocket.Server({ server });
-
-    // serve static files from a given folder
-    app.use(e.static('public'));
-
-    // use cors
-    app.use(cors)
 
     // will fire for every new websocket connection
     wss.on("connection", onNewWebsocketConnection);
