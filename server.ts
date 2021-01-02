@@ -3,7 +3,7 @@ import e from "express";
 import { v4 as uuidv4 } from 'uuid';
 import http from 'http';
 import websocket from 'ws';
-import cors from 'cors';
+import c from 'cors';
 import onClose from "./handlers/onClose";
 import onNewRoom from "./handlers/onNewRoom";
 import { CODE } from "./types/actions";
@@ -31,10 +31,11 @@ export let rooms = new Map<string, Room>();
 const app: e.Application = e();
 
 //use json
-app.use(e.json());
+//app.use(e.json());
 
 // use cors
-
+const cors: any = c();
+app.use(cors);
 
 
 //add api routes as middleware

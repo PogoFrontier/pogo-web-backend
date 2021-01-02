@@ -1,11 +1,8 @@
 import e from "express";
-import c from 'cors';
-
-const cors: any = c();
 
 const router = e.Router();
 
-router.get('/', cors, (req, res) => {
+router.get('/', (req, res) => {
     try{
         res.json({message: "no user data yet"});
     }catch(err){
