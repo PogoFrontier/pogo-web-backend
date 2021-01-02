@@ -24,7 +24,7 @@ router.get('/names', (req, res) => {
 router.get('/:id', (req, res) => {
     try{
         const result: any = pokemon[req.params.id];
-        result ? res.json(result) : res.status(404).json({message: "Invalid id"});
+        result ? res.json(result) : res.status(404).json(`Could not find Pokemon of id: ${req.params.id}`);
     }catch(err){
         console.error();
         res.status(500).json({message: "Internal server error"});

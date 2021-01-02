@@ -12,6 +12,8 @@ import onGetOpponent from "./handlers/onGetOpponent";
 import onTeamSubmit from "./handlers/onTeamSubmit";
 import onReadyGame from "./handlers/onReadyGame";
 import pokemonRoutes from "./api/pokemonRoutes";
+import moveRoutes from "./api/moveRoutes";
+import userRoutes from "./api/userRoutes";
 
 import p from "./data/pokemon.json";
 import m  from "./data/moves.json";
@@ -25,30 +27,13 @@ export const SERVER_PORT = 3000;
 export let onlineClients = new Map<string, WebSocket>();
 export let rooms = new Map<string, Room>();
 
+//initialize node server app
 const app: e.Application = e();
 
+//add api routes as middleware
 app.use('/api/pokemon', pokemonRoutes);
-
-/* // create pokemon path
-app.get("/pokemon/:id", (req, res) => {
-    let payload;
-    const arr = req.params.id.split(",");
-    if (arr.length > 1) {
-        payload = [];
-        for (let r of arr) {
-            if (pokemon[r] === undefined) {
-                throw new Error(`Could not find Pokemon of id: ${r}`);
-            }
-            payload.push(pokemon[r])
-        }
-    } else {
-        if (pokemon[req.params.id] === undefined) {
-            throw new Error(`Could not find Pokemon of id: ${req.params.id}`);
-        }
-        payload = pokemon[req.params.id];
-    }
-    res.send(payload);
-}); */
+app.use('/api/moves', moveRoutes);
+app.use('/api/users', userRoutes);
 
 function onNewWebsocketConnection(ws: WebSocket) {
     const id = uuidv4();
@@ -105,29 +90,6 @@ function startServer() {
 
     // will fire for every new websocket connection
     wss.on("connection", onNewWebsocketConnection);
-
-    
-
-    // create moves path
-    app.get("/moves/:id", (req, res) => {
-        let payload;
-        const arr = req.params.id.split(",");
-        if (arr.length > 1) {
-            payload = [];
-            for (let r of arr) {
-                if (moves[r] === undefined) {
-                    throw new Error(`Could not find move of id: ${r}`);
-                }
-                payload.push(moves[r])
-            }
-        } else {
-            if (moves[req.params.id] === undefined) {
-                throw new Error(`Could not find move of id: ${req.params.id}`);
-            }
-            payload = moves[req.params.id];
-        }
-        res.send(payload);
-    });
 
     // important! must listen from `server`, not `app`, otherwise socket.io won't function correctly
     server.listen(process.env.PORT || SERVER_PORT, () => console.info(`Listening on port ${process.env.PORT || SERVER_PORT}.`));
