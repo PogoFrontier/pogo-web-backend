@@ -11,7 +11,6 @@ import { Room, RoomStatus } from "./types/room";
 import onGetOpponent from "./handlers/onGetOpponent";
 import onTeamSubmit from "./handlers/onTeamSubmit";
 import onReadyGame from "./handlers/onReadyGame";
-import { testValidateTeam } from "./tests/handlers/testOnTeamSubmit.test";
 
 import p from "./data/pokemon.json";
 import m  from "./data/moves.json";
@@ -20,7 +19,7 @@ import onAction from "./handlers/onAction";
 
 export const pokemon: any = p;
 export const moves: any = m;
-export const rule: any = r;
+export const rules: any = r;
 
 export const SERVER_PORT = 3000;
 
@@ -87,7 +86,6 @@ function startServer() {
     app.get("/pokemon/:id", (req, res) => {
         let payload;
         const arr = req.params.id.split(",");
-
         if (arr.length > 1) {
             payload = [];
             for (let r of arr) {
@@ -124,11 +122,6 @@ function startServer() {
             payload = moves[req.params.id];
         }
         res.send(payload);
-    });
-
-    app.get("/tests", (req, res) => {
-        console.info("should print 2")
-        testValidateTeam()
     });
 
     // important! must listen from `server`, not `app`, otherwise socket.io won't function correctly

@@ -1,5 +1,5 @@
 import to from "../actions/to";
-import { pokemon, rooms, rule } from "../server";
+import { pokemon, rooms, rules } from "../server";
 import { CODE } from "../types/actions";
 import { OnTeamSubmitPayload } from "../types/handlers"; 
 import { Team } from "../types/team";
@@ -9,7 +9,7 @@ function onTeamSubmit(id: string, payload: OnTeamSubmitPayload) {
   const { room, team } = payload;
   const currentRoom = rooms.get(room);
   if (currentRoom) {
-    var chosenRule: any = rule[team.format]
+    var chosenRule: any = rules[team.format]
     validateTeam(team, chosenRule);
     const i = currentRoom.players.findIndex(x => x && x.id === id);
     if (i > -1) {
@@ -46,7 +46,7 @@ function onTeamSubmit(id: string, payload: OnTeamSubmitPayload) {
 }
 
 
-export function validateTeam(team: Team, chosenRule: any) {
+function validateTeam(team: Team, chosenRule: any) {
   var bestBuddyCount = 0
   for (let member of team.members) {
     if (chosenRule.maxLevel && member.level > chosenRule.maxLevel) {
