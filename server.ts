@@ -4,6 +4,8 @@ import { v4 as uuidv4 } from 'uuid';
 import http from 'http';
 import websocket from 'ws';
 import c from 'cors';
+import firebase from 'firebase-admin';
+import SERVICE_ACCOUNT from './project-grookey-6a7326cb8d5a.json';
 import onClose from "./handlers/onClose";
 import onNewRoom from "./handlers/onNewRoom";
 import { CODE } from "./types/actions";
@@ -30,13 +32,22 @@ export let rooms = new Map<string, Room>();
 //initialize node server app
 const app: e.Application = e();
 
+//initialize firebase and firestore
+const serviceAccount: any = SERVICE_ACCOUNT;
+firebase.initializeApp({
+    credential: firebase.credential.cert(serviceAccount)
+});
+export const firestore = firebase.firestore();
+/* firestore.collection('users').doc('88JLfG9aa8DXq19yIJzw').get().then(user => {
+    console.log(user.data());
+}) */
+
 //use json
-//app.use(e.json());
+app.use(e.json());
 
 // use cors
 const cors: any = c();
 app.use(cors);
-
 
 //add api routes as middleware
 app.use('/api/pokemon', pokemonRoutes);
