@@ -99,13 +99,17 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
             player.current.action.move!.cooldown -= 500;
             if (player.current.action.move!.cooldown <= 0) {
               const j = i === 0 ? 1 : 0;
+
+              player.current.team[player.current.active].current!.energy = 
+                Math.min(100, (player.current.team[player.current.active].current!.energy || 0) + moveDetails[player.current.action.move.moveId].energyGain)
+
               payload[i] = {
                 ...payload[i],
                 id: player.id,
                 active: player.current.active,
                 hp: payload[i]?.hp || player.current.team[player.current.active].current!.hp,
                 shouldReturn: true,
-                energy: moveDetails[player.current.action.move.moveId].energyGain,
+                energy: player.current.team[player.current.active].current!.energy,
               }
               const opponent = currentRoom.players[j]!;
               opponent.current!.team[opponent.current!.active].current!.hp = calcDamage(
