@@ -105,7 +105,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
                 active: player.current.active,
                 hp: payload[i]?.hp || player.current.team[player.current.active].current!.hp,
                 shouldReturn: true,
-                energy: Math.min(100, (payload[i]?.energy || 0) + moveDetails[player.current.action.move.moveId].energyGain),
+                energy: moveDetails[player.current.action.move.moveId].energyGain,
               }
               const opponent = currentRoom.players[j]!;
               opponent.current!.team[opponent.current!.active].current!.hp = calcDamage(
