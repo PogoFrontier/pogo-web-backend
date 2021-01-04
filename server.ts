@@ -3,7 +3,7 @@ import e from "express";
 import { v4 as uuidv4 } from 'uuid';
 import http from 'http';
 import websocket from 'ws';
-import c from 'cors';
+import cors from 'cors';
 import onClose from "./handlers/onClose";
 import onNewRoom from "./handlers/onNewRoom";
 import { CODE } from "./types/actions";
@@ -17,8 +17,6 @@ import m  from "./data/moves.json";
 import r from "./data/rules.json";
 import onAction from "./handlers/onAction";
 
-import teamRoutes from './api/teamRoutes';
-
 export const pokemon: any = p;
 export const moves: any = m;
 export const rules: any = r;
@@ -27,25 +25,6 @@ export const SERVER_PORT = 3000;
 
 export let onlineClients = new Map<string, WebSocket>();
 export let rooms = new Map<string, Room>();
-
-//initialize node server app
-const app: e.Application = e();
-
-// serve static files from a given folder
-app.use(e.static('public'));
-
-//use json
-app.use(e.json());
-
-// use cors
-const cors: any = c();
-app.use(cors);
-
-//add api routes as middleware
-app.use('/api/teams', teamRoutes);
-
-// serve static files from a given folder
-app.use(e.static('public'));
 
 function onNewWebsocketConnection(ws: WebSocket) {
     const id = uuidv4();
@@ -85,12 +64,20 @@ function onNewWebsocketConnection(ws: WebSocket) {
 }
 
 function startServer() {
+    // create a new express app
+    const app: e.Application = e();
 
     // create http server and wrap the express app
     const server = http.createServer(app);
 
     // bind ws to that server
     const wss = new websocket.Server({ server });
+
+    // serve static files from a given folder
+    app.use(e.static('public'));
+
+    // use cors
+    app.use(cors)
 
     // will fire for every new websocket connection
     wss.on("connection", onNewWebsocketConnection);

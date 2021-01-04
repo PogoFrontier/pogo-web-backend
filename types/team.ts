@@ -19,6 +19,7 @@ export interface TeamMember {
   name?: string
   current?: Current
 }
+
 export interface Team {
   format: string
   members: Array<TeamMember>

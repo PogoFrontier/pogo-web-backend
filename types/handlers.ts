@@ -15,7 +15,7 @@ export interface OnReadyGamePayload {
 
 export interface OnTeamSubmitPayload {
   room: string,
-  team: Team
+  team: TeamMember[]
 }
 
 export interface OnActionProps {

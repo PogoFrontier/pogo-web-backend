@@ -10,7 +10,7 @@ function onTeamSubmit(id: string, payload: OnTeamSubmitPayload) {
     const i = currentRoom.players.findIndex(x => x && x.id === id);
     if (i > -1) {
       let currentTeam = [];
-      for (const member of team.members) {
+      for (const member of team) {
         member.current = {
           hp: member.hp,
           atk: member.atk,

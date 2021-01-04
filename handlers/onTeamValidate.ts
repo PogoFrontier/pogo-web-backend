@@ -1,10 +1,10 @@
 import { pokemon } from "../server";
-import { Team } from "../types/team";
+import { TeamMember } from "../types/team";
 import { calculateCP, calculateHP, calculateAtk,calculateDef } from "../utils/calcUtils";
 
-export function validateTeam(team: Team, chosenRule: any) {
+export function onTeamValidate(team: TeamMember[], chosenRule: any) {
     var bestBuddyCount = 0
-    for (let member of team.members) {
+    for (let member of team) {
       if (chosenRule.maxLevel && member.level > chosenRule.maxLevel) {
         bestBuddyCount += 1
       }
@@ -36,6 +36,7 @@ export function validateTeam(team: Team, chosenRule: any) {
       member.atk = calculateAtk(chosenPokemon.baseStats.atk, member.level, member.iv.atk)
       member.def = calculateDef(chosenPokemon.baseStats.def, member.level, member.iv.def)
     }
+    return team;
   }
 
-  export default validateTeam;
+  export default onTeamValidate;
