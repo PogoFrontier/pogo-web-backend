@@ -1,4 +1,3 @@
-import e from "express";
 import to from "../actions/to";
 import { GAME_TIME, SWAP_COOLDOWN, SWITCH_WAIT } from "../config";
 import { onlineClients, rooms } from "../server";
