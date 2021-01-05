@@ -4,10 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node --loader ts-node/esm --experimental-specifier-resolution=node server.ts",
+    "start": "node --loader ts-node/esm --experimental-specifier-resolution=node -r dotenv/config server.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "tsc",
-    "runbuild": "node --experimental-specifier-resolution=node dist/server.js"
+    "runbuild": "node --experimental-specifier-resolution=node dist/server.js",
+    "secrets": "npm run secrets:logout && cross-env-shell BW_SESSION=`bw login projectgrookey@gmail.com --raw` \"npm run secrets:sync\"",
+    "secrets:logout": "(bw logout || exit 0)",
+    "secrets:login": "bw login projectgrookey@gmail.com",
+    "secrets:sync": "bw sync && bw get item 377ad645-94d0-4e13-8e24-aca7013a9e8c | fx .notes > \".env\""
   },
   "engines": {
     "node": "12.x"
@@ -31,12 +35,15 @@
     "url": "git+https://github.com/DeveloperKhan/pogo-web-backend.git"
   },
   "devDependencies": {
+    "@bitwarden/cli": "^1.13.3",
     "@types/cors": "^2.8.9",
     "@types/express": "^4.17.9",
     "@types/jsonwebtoken": "^8.5.0",
     "@types/node": "^14.14.12",
     "@types/uuid": "^8.3.0",
     "@types/ws": "^7.4.0",
+    "cross-env": "^7.0.3",
+    "fx": "^20.0.2",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
   }
