@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import http from 'http';
 import websocket from 'ws';
 import c from 'cors';
+import dotenv from 'dotenv';
 import firebase from 'firebase-admin';
 import SERVICE_ACCOUNT from './project-grookey-6a7326cb8d5a.json';
 import onClose from "./handlers/onClose";
@@ -29,6 +30,9 @@ export const SERVER_PORT = 3000;
 export let onlineClients = new Map<string, WebSocket>();
 export let rooms = new Map<string, Room>();
 
+//use .env
+dotenv.config();
+
 //initialize node server app
 const app: e.Application = e();
 
@@ -38,9 +42,6 @@ firebase.initializeApp({
     credential: firebase.credential.cert(serviceAccount)
 });
 export const firestore = firebase.firestore();
-/* firestore.collection('users').doc('88JLfG9aa8DXq19yIJzw').get().then(user => {
-    console.log(user.data());
-}) */
 
 //use json
 app.use(e.json());
