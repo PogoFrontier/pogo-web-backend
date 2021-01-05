@@ -1,4 +1,4 @@
-import { TeamMember } from "./team";
+import { Team, TeamMember } from "./team";
 
 export interface OnGetOpponentPayload {
   room: string,

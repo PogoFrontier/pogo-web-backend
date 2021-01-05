@@ -14,10 +14,12 @@ import onReadyGame from "./handlers/onReadyGame";
 
 import p from "./data/pokemon.json";
 import m  from "./data/moves.json";
+import r from "./data/rules.json";
 import onAction from "./handlers/onAction";
 
 export const pokemon: any = p;
 export const moves: any = m;
+export const rules: any = r;
 
 export const SERVER_PORT = 3000;
 

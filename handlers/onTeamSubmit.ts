@@ -1,7 +1,7 @@
 import to from "../actions/to";
 import { rooms } from "../server";
 import { CODE } from "../types/actions";
-import { OnTeamSubmitPayload } from "../types/handlers";
+import { OnTeamSubmitPayload } from "../types/handlers"; 
 
 function onTeamSubmit(id: string, payload: OnTeamSubmitPayload) {
   const { room, team } = payload;
