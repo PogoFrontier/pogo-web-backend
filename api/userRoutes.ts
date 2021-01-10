@@ -19,7 +19,7 @@ router.get('/signin/:id', (req, res) => {
                     });
                 });
             }else{
-                res.status(404).json({error: `User not found.`})
+                res.json({error: `User not found.`})
             }
         }).catch(err => {
             console.log(err);
@@ -81,7 +81,10 @@ router.post('/', (req, res) => {
                     }).then(() => {
                         docRef.get().then(userDoc => {
                             if(userDoc && userDoc.data()){
-                                res.json(userDoc.data());
+                                res.json({
+                                    userData: userDoc.data(),
+                                    token: generateToken(userAuth.uid)
+                                });
                             }else{
                                 res.status(500).json({error: 'Internal server error'});
                             }
