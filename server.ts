@@ -1,5 +1,4 @@
 import e from "express";
-import { v4 as uuidv4 } from 'uuid';
 import http from 'http';
 import websocket from 'ws';
 import c from 'cors';
@@ -55,8 +54,8 @@ app.use('/api/users', userRoutes);
 // serve static files from a given folder
 app.use(e.static('public'));
 
-function onNewWebsocketConnection(ws: WebSocket) {
-    const id = uuidv4();
+function onNewWebsocketConnection(ws: WebSocket, req: Request) {
+    const id = req.url.substring(1);
     onlineClients.set(id, ws);
     console.info(`Socket ${id} has connected.`);
     let room = "";
