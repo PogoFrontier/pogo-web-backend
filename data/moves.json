@@ -223,7 +223,7 @@
     "moveId": "BUBBLE",
     "name": "Bubble",
     "type": "water",
-    "power": 8,
+    "power": 7,
     "energy": 0,
     "energyGain": 11,
     "cooldown": 1500
@@ -357,7 +357,7 @@
     "name": "Crabhammer",
     "abbreviation": "Crbh",
     "type": "water",
-    "power": 75,
+    "power": 85,
     "energy": 50,
     "energyGain": 0,
     "cooldown": 500,
@@ -581,7 +581,7 @@
     "moveId": "EMBER",
     "name": "Ember",
     "type": "fire",
-    "power": 6,
+    "power": 7,
     "energy": 0,
     "energyGain": 6,
     "cooldown": 1000
@@ -1211,7 +1211,7 @@
     "type": "fighting",
     "power": 5,
     "energy": 0,
-    "energyGain": 7,
+    "energyGain": 8,
     "cooldown": 1000
   },
   "LAST_RESORT": {
@@ -1741,7 +1741,7 @@
     "moveId": "RAZOR_LEAF",
     "name": "Razor Leaf",
     "type": "grass",
-    "power": 11,
+    "power": 10,
     "energy": 0,
     "energyGain": 4,
     "cooldown": 1000
@@ -1778,7 +1778,7 @@
     "moveId": "ROCK_SLIDE",
     "name": "Rock Slide",
     "type": "rock",
-    "power": 80,
+    "power": 75,
     "energy": 45,
     "energyGain": 0,
     "cooldown": 500
@@ -1899,7 +1899,7 @@
     "name": "Shadow Bone",
     "abbreviation": "SBo",
     "type": "ghost",
-    "power": 80,
+    "power": 75,
     "energy": 45,
     "energyGain": 0,
     "cooldown": 500,
@@ -1989,7 +1989,7 @@
     "moveId": "SKY_ATTACK",
     "name": "Sky Attack",
     "type": "flying",
-    "power": 80,
+    "power": 75,
     "energy": 45,
     "energyGain": 0,
     "cooldown": 500

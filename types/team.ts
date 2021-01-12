@@ -4,6 +4,12 @@ export interface TeamMember {
   hp: number
   def: number
   atk: number
+  level: number
+  iv: {
+    atk: number
+    def: number
+    hp: number
+  }
   cp: number
   types: [string, string]
   fastMove: string
@@ -14,9 +20,15 @@ export interface TeamMember {
   current?: Current
 }
 
+export interface Team {
+  format: string
+  members: Array<TeamMember>
+}
+
 export interface Current {
   hp: number
   def: number
   atk: number
   status: [number, number]
+  energy: number
 }

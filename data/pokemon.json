@@ -3184,7 +3184,8 @@
     "chargedMoves": [
       "BODY_SLAM",
       "FLAME_CHARGE",
-      "FLAMETHROWER"
+      "FLAMETHROWER",
+      "WEATHER_BALL_FIRE"
     ],
     "defaultIVs": {
       "cp500": [
@@ -3223,7 +3224,8 @@
     "chargedMoves": [
       "BLIZZARD",
       "DARK_PULSE",
-      "ICE_BEAM"
+      "ICE_BEAM",
+      "WEATHER_BALL_ICE"
     ],
     "tags": [
       "alolan"
@@ -3261,7 +3263,8 @@
     "chargedMoves": [
       "BODY_SLAM",
       "FLAME_CHARGE",
-      "FLAMETHROWER"
+      "FLAMETHROWER",
+      "WEATHER_BALL_FIRE"
     ],
     "defaultIVs": {
       "cp500": [
@@ -3303,7 +3306,8 @@
       "HEAT_WAVE",
       "OVERHEAT",
       "PSYSHOCK",
-      "SOLAR_BEAM"
+      "SOLAR_BEAM",
+      "WEATHER_BALL_FIRE"
     ],
     "defaultIVs": {
       "cp500": [
@@ -3349,7 +3353,8 @@
       "BLIZZARD",
       "DAZZLING_GLEAM",
       "ICE_BEAM",
-      "PSYSHOCK"
+      "PSYSHOCK",
+      "WEATHER_BALL_ICE"
     ],
     "tags": [
       "alolan"
@@ -3392,7 +3397,8 @@
       "HEAT_WAVE",
       "OVERHEAT",
       "PSYSHOCK",
-      "SOLAR_BEAM"
+      "SOLAR_BEAM",
+      "WEATHER_BALL_FIRE"
     ],
     "defaultIVs": {
       "cp500": [
@@ -4878,7 +4884,8 @@
       "CLOSE_COMBAT",
       "CROSS_CHOP",
       "LOW_SWEEP",
-      "NIGHT_SLASH"
+      "NIGHT_SLASH",
+      "ICE_PUNCH"
     ],
     "defaultIVs": {
       "cp500": [
@@ -13387,7 +13394,8 @@
       "BLIZZARD",
       "EARTHQUAKE",
       "HYDRO_PUMP",
-      "SURF"
+      "SURF",
+      "WEATHER_BALL_WATER"
     ],
     "defaultIVs": {
       "cp500": [
@@ -13430,7 +13438,8 @@
       "BLIZZARD",
       "EARTHQUAKE",
       "HYDRO_PUMP",
-      "SURF"
+      "SURF",
+      "WEATHER_BALL_WATER"
     ],
     "defaultIVs": {
       "cp500": [
@@ -16119,7 +16128,8 @@
     "chargedMoves": [
       "HYPER_BEAM",
       "SOLAR_BEAM",
-      "ZAP_CANNON"
+      "ZAP_CANNON",
+      "TRI_ATTACK"
     ],
     "defaultIVs": {
       "cp500": [
@@ -22083,7 +22093,9 @@
       "EARTHQUAKE",
       "GYRO_BALL",
       "PSYCHIC",
-      "EARTH_POWER"
+      "EARTH_POWER",
+      "ICE_BEAM",
+      "SHADOW_BALL"
     ],
     "defaultIVs": {
       "cp500": [
@@ -31950,7 +31962,8 @@
     ],
     "fastMoves": [
       "METAL_CLAW",
-      "MUD_SLAP"
+      "MUD_SLAP",
+      "MUD_SHOT"
     ],
     "chargedMoves": [
       "ROCK_SLIDE",

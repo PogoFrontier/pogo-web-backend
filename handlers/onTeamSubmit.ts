@@ -1,7 +1,7 @@
 import to from "../actions/to";
 import { rooms } from "../server";
 import { CODE } from "../types/actions";
-import { OnTeamSubmitPayload } from "../types/handlers";
+import { OnTeamSubmitPayload } from "../types/handlers"; 
 
 function onTeamSubmit(id: string, payload: OnTeamSubmitPayload) {
   const { room, team } = payload;
@@ -15,7 +15,8 @@ function onTeamSubmit(id: string, payload: OnTeamSubmitPayload) {
           hp: member.hp,
           atk: member.atk,
           def: member.def,
-          status: [0, 0]
+          status: [0, 0],
+          energy: 0
         }
         currentTeam.push(member);
       }
