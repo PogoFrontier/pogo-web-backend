@@ -14,6 +14,7 @@ import onReadyGame from "./handlers/onReadyGame";
 import pokemonRoutes from "./api/pokemonRoutes";
 import moveRoutes from "./api/moveRoutes";
 import userRoutes from "./api/userRoutes";
+import roomRoutes from "./api/roomRoutes";
 
 import p from "./data/pokemon.json";
 import m  from "./data/moves.json";
@@ -50,6 +51,7 @@ app.use(cors);
 app.use('/api/pokemon', pokemonRoutes);
 app.use('/api/moves', moveRoutes);
 app.use('/api/users', userRoutes);
+app.use('/api/room', roomRoutes);
 
 // serve static files from a given folder
 app.use(e.static('public'));

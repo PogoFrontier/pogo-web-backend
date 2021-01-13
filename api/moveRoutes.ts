@@ -28,7 +28,7 @@ router.get('/team/:room/:id', (req, res) => {
             for (const member of currentRoom.players[i]!.current!.team) {
                 let arr2 = [];
                 for (const move of member.chargeMoves) {
-                    arr2.push(move);
+                    arr2.push(moves[move]);
                 }
                 arr.push(arr2);
             }
