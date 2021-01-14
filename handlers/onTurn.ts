@@ -1,99 +1,26 @@
-import to from "../actions/to";
-import { GAME_TIME, SWAP_COOLDOWN, SWITCH_WAIT } from "../config";
-import { onlineClients, rooms } from "../server";
-import { Move } from "../types";
+import { CHARGE_WAIT, GAME_TIME, SWAP_COOLDOWN, SWITCH_WAIT } from "../config";
+import { moves, onlineClients, rooms } from "../server";
 import { Actions, CODE } from "../types/actions";
 import { ResolveTurnPayload, Update } from "../types/handlers";
-import { RoomStatus } from "../types/room";
-import { TeamMember } from "../types/team";
-import moves from '../data/moves.json';
-
-const moveDetails :{ [index:string] : Move } = moves;
-
-const types = new Array(
-  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.625, 0.390625, 1, 1, 0.625, 1, 1],// Normal
-  [1, 0.625, 0.625, 1, 1.6, 1.6, 1, 1, 1, 1, 1, 1.6, 0.625, 1, 0.625, 1, 1.6, 1, 1],// Fire
-  [1, 1.6, 0.625, 1, 0.625, 1, 1, 1, 1.6, 1, 1, 1, 1.6, 1, 0.625, 1, 1, 1, 1],// Water
-  [1, 1, 1.6, 0.625, 0.625, 1, 1, 1, 0.390625, 1.6, 1, 1, 1, 1, 0.625, 1, 1, 1, 1],// Electric
-  [1, 0.625, 1.6, 1, 0.625, 1, 1, 0.625, 1.6, 0.625, 1, 0.625, 1.6, 1, 0.625, 1, 0.625, 1, 1],// Grass
-  [1, 0.625, 0.625, 1, 1.6, 0.625, 1, 1, 1.6, 1.6, 1, 1, 1, 1, 1.6, 1, 0.625, 1, 1],// Ice
-  [1.6, 1, 1, 1, 1, 1.6, 1, 0.625, 1, 0.625, 0.625, 0.625, 1.6, 0.390625, 1, 1.6, 1.6, 0.625, 1],// Fighting
-  [1, 1, 1, 1, 1.6, 1, 1, 0.625, 0.625, 1, 1, 1, 0.625, 0.625, 1, 1, 0.390625, 1.6, 1],// Poison
-  [1, 1.6, 1, 1.6, 0.625, 1, 1, 1.6, 1, 0.390625, 1, 0.625, 1.6, 1, 1, 1, 1.6, 1, 1],// Ground
-  [1, 1, 1, 0.625, 1.6, 1, 1.6, 1, 1, 1, 1, 1.6, 0.625, 1, 1, 1, 0.625, 1, 1],// Flying
-  [1, 1, 1, 1, 1, 1, 1.6, 1.6, 1, 1, 0.625, 1, 1, 1, 1, 0.390625, 0.625, 1, 1],// Psychic
-  [1, 0.625, 1, 1, 1.6, 1, 0.625, 0.625, 1, 0.625, 1.6, 1, 1, 0.625, 1, 1.6, 0.625, 0.625, 1],// Bug
-  [1, 1.6, 1, 1, 1, 1.6, 0.625, 1, 0.625, 1.6, 1, 1.6, 1, 1, 1, 1, 0.625, 1, 1],// Rock
-  [0.390625, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1.6, 1, 1, 1.6, 1, 0.625, 1, 1, 1],// Ghost
-  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1.6, 1, 0.625, 0.390625, 1],// Dragon
-  [1, 1, 1, 1, 1, 1, 0.625, 1, 1, 1, 1.6, 1, 1, 1.6, 1, 0.625, 1, 0.625, 1],// Dark
-  [1, 0.625, 0.625, 0.625, 1, 1.6, 1, 1, 1, 1, 1, 1, 1.6, 1, 1, 1, 0.625, 1.6, 1],// Steel
-  [1, 0.625, 1, 1, 1, 1, 1.6, 0.625, 1, 1, 1, 1, 1, 1, 1.6, 1.6, 0.625, 1, 1],// Fairy
-  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]);// None
-  
-const type_name: { [key: string]: number } = {
-  "normal": 0,
-  "fire": 1,
-  "water": 2,
-  "electric": 3,
-  "grass": 4,
-  "ice": 5,
-  "fighting": 6,
-  "poison": 7,
-  "ground": 8,
-  "flying": 9,
-  "psychic": 10,
-  "bug": 11,
-  "rock": 12,
-  "ghost": 13,
-  "dragon": 14,
-  "dark": 15,
-  "steel": 16,
-  "fairy": 17
-};
-
-function getMultiplier(attackerTypes: string[], defenderTypes: string[], moveType: string): number {
-  let mult = 1;
-  for (const type of defenderTypes) {
-    if (type_name[type] && type_name[moveType]) {
-      mult *= types[type_name[moveType]][type_name[type]]
-    }
-  }
-  if (attackerTypes.findIndex(x => x === moveType) > -1) {  //STAB
-    mult *= 1.2;
-  }
-  return mult;
-}
-
-function calcDamage(attacker: TeamMember, defender: TeamMember, move: Move): number {
-  const mult = getMultiplier(attacker.types, defender.types, move.type);
-  const damage = Math.floor(0.5 * (attacker.current!.atk / defender.current!.def) * move.power * mult) + 1;
-  return Math.max(defender.current!.hp - damage, 0);
-}
-
-function endGame(room: string) {
-  const currentRoom = rooms.get(room);
-  if (currentRoom) {
-    if (currentRoom.timer) {
-      clearInterval(rooms.get(room)!.timer);
-      delete rooms.get(room)!.timer;
-    }
-    to(room, "$end");
-    rooms.delete(room);
-  }
-}
+import { Move, RoomStatus } from "../types/room";
+import { calcDamage } from "../utils/damageUtils";
+import endGame from "./endGame";
 
 function evaluatePayload(room: string): [Update | null, Update | null] {
   const payload: [Update | null, Update | null] = [null, null];
   const currentRoom = rooms.get(room);
   const shouldSwitch = [-1, -1];
+  const shouldCharge = [-1, -1];
   if (currentRoom) {
     for (let i = 0; i < currentRoom.players.length; i++) {
       const player = currentRoom.players[i];
       if (player && player.current?.action) {
         switch (player.current.action.id) {
           case Actions.FAST_ATTACK:
-            if (!player.current.action.move || currentRoom.status === RoomStatus.STARTING || currentRoom.status === RoomStatus.SELECTING) {
+            if (!player.current.action.move
+              || currentRoom.status === RoomStatus.STARTING
+              || currentRoom.status === RoomStatus.SELECTING
+              || currentRoom.status === RoomStatus.CHARGE) {
               break;
             }
             player.current.action.move!.cooldown -= 500;
@@ -101,7 +28,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
               const j = i === 0 ? 1 : 0;
 
               player.current.team[player.current.active].current!.energy = 
-                Math.min(100, (player.current.team[player.current.active].current!.energy || 0) + moveDetails[player.current.action.move.moveId].energyGain)
+                Math.min(100, (player.current.team[player.current.active].current!.energy || 0) + moves[player.current.action.move.moveId].energyGain)
 
               payload[i] = {
                 ...payload[i],
@@ -145,7 +72,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
             break;
 
           case Actions.CHARGE_ATTACK:
-            console.log("Sorry charge move is not implemented yet");
+            shouldCharge[i] = player.current.team[player.current.active].atk;
             break;
 
           case Actions.SWITCH:
@@ -197,9 +124,43 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
               payload[i]!.wait = -1;
             }
           }
-          player.current!.action = undefined;
+          delete player.current!.action;
         }
       }
+    } else if (currentRoom.status !== RoomStatus.FAINT && (shouldCharge[0] > -1 || shouldCharge[1] > -1)) {
+      const i = shouldCharge.reduce((iMax, x, index, arr) => x > arr[iMax] ? index : iMax, 0);
+      const j = i === 0 ? 1 : 0;
+      currentRoom.status = RoomStatus.CHARGE;
+      currentRoom.wait = CHARGE_WAIT;
+      currentRoom.charge = {
+        subject: i,
+        move: currentRoom.players[i]!.current!.action!.move!
+      };
+      if (shouldCharge[j] > -1) {
+        currentRoom.charge.cmp = currentRoom.players[j]!.current!.action!.move!
+        delete currentRoom.players[j]!.current!.action;
+      }
+      delete currentRoom.players[i]!.current!.action;
+      payload[i] = {
+        ...payload[i],
+        id: currentRoom.players[i]!.id,
+        active: currentRoom.players[i]?.current?.active || 0,
+        shouldReturn: true,
+        wait: CHARGE_WAIT,
+        charge: 1
+      };
+      if (currentRoom.players[j]?.current?.action?.move) {
+        currentRoom.players[j]!.current!.action!.move!.cooldown = 0;
+      }
+      payload[j] = {
+        ...payload[j],
+        id: currentRoom.players[j]!.id,
+        active: currentRoom.players[j]?.current?.active || 0,
+        shouldReturn: true,
+        wait: CHARGE_WAIT,
+        charge: 2
+      };
+
     } else if (currentRoom.wait) {
       currentRoom.wait = Number((currentRoom.wait - 0.5).toFixed(1));
       const wait = Math.ceil(currentRoom.wait);
@@ -207,9 +168,14 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
         const player = currentRoom.players[i];
         if (payload[i] === null && player) {
           if (wait <= 0) {
-            currentRoom.status = RoomStatus.STARTED;
-            if (player.current!.team[player.current!.active].current!.hp <= 0) {
-              player.current!.active = player.current!.team.findIndex(x => x.current!.hp > 0);
+            if (currentRoom.status === RoomStatus.CHARGE
+              || currentRoom.status === RoomStatus.LISTENING) {
+              currentRoom.status = RoomStatus.LISTENING;
+            } else {
+              currentRoom.status = RoomStatus.STARTED;
+              if (player.current!.team[player.current!.active].current!.hp <= 0) {
+                player.current!.active = player.current!.team.findIndex(x => x.current!.hp > 0);
+              }
             }
           }
           payload[i] = {
@@ -227,7 +193,11 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
 
 const onTurn = (room: string) => {
   const currentRoom = rooms.get(room);
-  if (currentRoom && currentRoom.players && currentRoom.status != RoomStatus.SELECTING && currentRoom.status != RoomStatus.STARTING) {
+  if (currentRoom
+    && currentRoom.players
+    && currentRoom.status !== RoomStatus.SELECTING
+    && currentRoom.status !== RoomStatus.STARTING
+    && currentRoom.status !== RoomStatus.LISTENING) {
     currentRoom.turn = currentRoom.turn ? currentRoom.turn + 1 : 1;
     const time = Math.ceil(Number((GAME_TIME - currentRoom.turn * 0.5).toFixed(1)))
     const payload: ResolveTurnPayload = {

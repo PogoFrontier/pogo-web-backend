@@ -4,8 +4,8 @@ export interface TeamMember {
   hp: number
   def: number
   atk: number
-  level: number
-  iv: {
+  level?: number
+  iv?: {
     atk: number
     def: number
     hp: number

@@ -20,6 +20,7 @@ import p from "./data/pokemon.json";
 import m  from "./data/moves.json";
 import r from "./data/rules.json";
 import onAction from "./handlers/onAction";
+import onChargeEnd from "./handlers/onChargeEnd";
 
 export const pokemon: any = p;
 export const moves: any = m;
@@ -63,7 +64,11 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
     let room = "";
     ws.onmessage = function(this, ev) {
         const data: string = ev.data;
-        if (data.startsWith("#")) {
+        if (data.startsWith("$")) {
+            if (rooms.get(room) && rooms.get(room)?.status === RoomStatus.LISTENING) {
+                onChargeEnd({ id, room, data })
+            }
+        } else if (data.startsWith("#")) {
             if (rooms.get(room) && rooms.get(room)?.status !== RoomStatus.SELECTING && rooms.get(room)?.status !== RoomStatus.STARTING) {
                 onAction({ id, room, data });
             }
