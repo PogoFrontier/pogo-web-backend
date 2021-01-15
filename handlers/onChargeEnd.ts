@@ -1,3 +1,4 @@
+import { stringify } from "querystring";
 import { CHARGE_WAIT, GAME_TIME, SWITCH_WAIT } from "../config";
 import { onlineClients, rooms } from "../server";
 import { CODE } from "../types/actions";
@@ -5,6 +6,11 @@ import { OnChargeEndProps, ResolveTurnPayload } from "../types/handlers";
 import { RoomStatus } from "../types/room";
 import { calcDamage } from "../utils/damageUtils";
 import endGame from "./endGame";
+
+function getMessage(attacker: string, move: string, shield: number) {
+  const shielded = shield === 0 ? "" : " It was shielded!";
+  return `${attacker} used ${move}!${shielded}`;
+}
 
 function onChargeEnd({
   id, room, data
@@ -43,6 +49,7 @@ function onChargeEnd({
         }
         player.current!.team[player.current!.active].current!.energy -= currentRoom.charge.move.energy
         const time = Math.ceil(Number((GAME_TIME - currentRoom.turn! * 0.5).toFixed(1)))
+        const message = getMessage(player.current.team[player.current.active].speciesName, currentRoom.charge.move.name, currentRoom.charge.shield)
         const payload: ResolveTurnPayload = {
           time,
           update: [
@@ -50,14 +57,16 @@ function onChargeEnd({
               id: player.id,
               active: player.current.active,
               energy: player.current!.team[player.current!.active].current!.energy,
-              wait: -1
+              wait: -1,
+              message
             },
             {
               id: opponent.id,
               active: opponent.current.active,
               hp: opponent.current!.team[opponent.current!.active].current!.hp,
               shields: opponent.current.shields,
-              wait: -1
+              wait: -1,
+              message
             }
           ],
           switch: player.current.switch
