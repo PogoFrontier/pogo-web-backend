@@ -225,7 +225,9 @@ const onTurn = (room: string) => {
             type: CODE.turn,
             payload
           };
-          onlineClients.get(player.id)!.send(JSON.stringify(data));
+          if (onlineClients.get(player.id)) {
+            onlineClients.get(player.id)!.send(JSON.stringify(data));
+          }
         }
       }
     }

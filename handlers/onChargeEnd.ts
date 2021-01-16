@@ -106,10 +106,12 @@ function onChargeEnd({
             switch: opponent.current.switch
           }
         }
-        onlineClients.get(player.id)!.send(JSON.stringify(dta));
-        onlineClients.get(opponent.id)!.send(JSON.stringify(dta1));
-        if (currentRoom.status === RoomStatus.LISTENING) {
-          currentRoom.status = RoomStatus.STARTED
+        if (onlineClients.get(player.id) && onlineClients.get(opponent.id)) {
+          onlineClients.get(player.id)!.send(JSON.stringify(dta));
+          onlineClients.get(opponent.id)!.send(JSON.stringify(dta1));
+          if (currentRoom.status === RoomStatus.LISTENING) {
+            currentRoom.status = RoomStatus.STARTED
+          }
         }
       }
     }
