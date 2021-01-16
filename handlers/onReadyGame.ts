@@ -52,13 +52,7 @@ function startCountdown(room: string) {
             onlineClients.get(player.id)!.send(JSON.stringify({
               type: CODE.game_check,
               payload: {
-                  countdown,
-                  team: player.current.team,
-                  shields: player.current.shields,
-                  remaining: player.current.remaining,
-                  opponent: opponent.current.team,
-                  oppShields: opponent.current.shields,
-                  oppRemaining: opponent.current.remaining
+                countdown
               }
           }))
           }

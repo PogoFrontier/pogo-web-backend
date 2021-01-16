@@ -23,6 +23,8 @@ export interface OnTeamSubmitPayload extends handlers.OnTeamSubmitPayload {
 }
 export interface OnActionProps extends handlers.OnActionProps {
 }
+export interface OnChargeEndProps extends handlers.OnChargeEndProps {
+}
 export interface ResolveTurnPayload extends handlers.ResolveTurnPayload {
 }
 export interface Update extends handlers.Update {
