@@ -23,7 +23,11 @@ router.get('/team/:room/:id', (req, res) => {
         const room: string = req.params.room;
         const currentRoom = rooms.get(room);
         const i = currentRoom ? currentRoom.players.findIndex(x => x?.id === req.params.id) : -1;
-        if (currentRoom && i > -1 && currentRoom.players[i]?.current) {
+        if (currentRoom) {
+            if (i <= -1 || !currentRoom.players[i]?.current) {
+                res.status(404).json(`Could not find player of id: ${req.params.id}`);
+                return;
+            }
             let arr = [];
             for (const member of currentRoom.players[i]!.current!.team) {
                 let arr2 = [];
