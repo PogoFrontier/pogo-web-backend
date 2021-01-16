@@ -17,6 +17,10 @@ function onAction({
       if (currentRoom.status === RoomStatus.FAINT && type !== Actions.SWITCH) {
         return;
       }
+      const energy = player.current.team[player.current.active].current?.energy || 0
+      if (type === Actions.CHARGE_ATTACK && moves[d[1]].energy > energy) {
+        return;
+      }
       player.current.action = {
         id: type,
         active: type === Actions.SWITCH ? parseInt(d[1]) : player.current.active,
