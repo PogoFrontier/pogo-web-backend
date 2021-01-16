@@ -1,5 +1,5 @@
 import { stringify } from "querystring";
-import { CHARGE_WAIT, GAME_TIME, SWITCH_WAIT } from "../config";
+import { CHARGE_WAIT, GAME_TIME, SWITCH_WAIT, TURN_LENGTH } from "../config";
 import { onlineClients, rooms } from "../server";
 import { CODE } from "../types/actions";
 import { OnChargeEndProps, ResolveTurnPayload } from "../types/handlers";
@@ -13,7 +13,7 @@ function getMessage(attacker: string, move: string, shield: number) {
 }
 
 function onChargeEnd({
-  id, room, data
+  room, data
 }: OnChargeEndProps) {
   const type = data[1];
   const value = Number(data.substring(2));
@@ -73,6 +73,7 @@ function onChargeEnd({
         };
         if (opponent.current!.team[opponent.current!.active].current!.hp <= 0) {
           opponent.current!.remaining -= 1;
+          payload.update[1]!.remaining = opponent.current!.remaining;
           if (opponent.current!.remaining <= 0) {
             endGame(room);
           } else if (currentRoom.status !== RoomStatus.FAINT) {
@@ -80,9 +81,7 @@ function onChargeEnd({
             currentRoom.wait = SWITCH_WAIT;
             payload.update[i]!.wait = SWITCH_WAIT;
             payload.update[j]!.wait = SWITCH_WAIT;
-            payload.update[j]!.remaining = opponent.current.remaining;
           }
-          payload.update[j]!.remaining = opponent.current!.remaining;
         } else if (currentRoom.charge.cmp) {
           currentRoom.status = RoomStatus.CHARGE;
           currentRoom.wait = CHARGE_WAIT;
