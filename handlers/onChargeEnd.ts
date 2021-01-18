@@ -1,5 +1,4 @@
-import { stringify } from "querystring";
-import { CHARGE_WAIT, GAME_TIME, SWITCH_WAIT, TURN_LENGTH } from "../config";
+import { CHARGE_WAIT, GAME_TIME, SWITCH_WAIT } from "../config";
 import { onlineClients, rooms } from "../server";
 import { CODE } from "../types/actions";
 import { OnChargeEndProps, ResolveTurnPayload } from "../types/handlers";
@@ -44,9 +43,6 @@ function onChargeEnd({
           currentRoom.charge.multiplier
         )
         : opponent.current!.team[opponent.current!.active].current!.hp - 1;
-        if (currentRoom.charge.shield) {
-          opponent.current.shields -= 1;
-        }
         player.current!.team[player.current!.active].current!.energy -= currentRoom.charge.move.energy
         const time = Math.ceil(Number((GAME_TIME - currentRoom.turn! * 0.5).toFixed(1)))
         const message = getMessage(player.current.team[player.current.active].speciesName, currentRoom.charge.move.name, currentRoom.charge.shield)
@@ -64,13 +60,16 @@ function onChargeEnd({
               id: opponent.id,
               active: opponent.current.active,
               hp: opponent.current!.team[opponent.current!.active].current!.hp,
-              shields: opponent.current.shields,
               wait: -1,
               message
             }
           ],
           switch: player.current.switch
         };
+        if (currentRoom.charge.shield) {
+          opponent.current.shields -= 1;
+          payload.update[1]!.shields = opponent.current.shields;
+        }
         if (opponent.current!.team[opponent.current!.active].current!.hp <= 0) {
           opponent.current!.remaining -= 1;
           payload.update[1]!.remaining = opponent.current!.remaining;
@@ -79,16 +78,18 @@ function onChargeEnd({
           } else if (currentRoom.status !== RoomStatus.FAINT) {
             currentRoom.status = RoomStatus.FAINT;
             currentRoom.wait = SWITCH_WAIT;
-            payload.update[i]!.wait = SWITCH_WAIT;
-            payload.update[j]!.wait = SWITCH_WAIT;
+            payload.update[0]!.wait = SWITCH_WAIT;
+            payload.update[1]!.wait = SWITCH_WAIT;
+            payload.update[1]!.remaining = opponent.current!.remaining;
           }
         } else if (currentRoom.charge.cmp) {
+          delete currentRoom.players[j]!.current!.action;
           currentRoom.status = RoomStatus.CHARGE;
           currentRoom.wait = CHARGE_WAIT;
-          payload.update[i]!.wait = CHARGE_WAIT;
-          payload.update[i]!.charge = 2;
-          payload.update[j]!.wait = CHARGE_WAIT;
-          payload.update[j]!.charge = 1;
+          payload.update[0]!.wait = CHARGE_WAIT;
+          payload.update[0]!.charge = 2;
+          payload.update[1]!.wait = CHARGE_WAIT;
+          payload.update[1]!.charge = 1;
           currentRoom.charge = {
             subject: j,
             move: currentRoom.charge.cmp
