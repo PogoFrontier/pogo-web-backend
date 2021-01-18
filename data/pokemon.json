@@ -616,58 +616,6 @@
     ],
     "sid": 192
   },
-  "charizard_shadow_xl": {
-    "dex": 6,
-    "speciesName": "Charizard (Shadow XL)",
-    "speciesId": "charizard_shadow_xl",
-    "baseStats": {
-      "atk": 223,
-      "def": 173,
-      "hp": 186
-    },
-    "types": [
-      "fire",
-      "flying"
-    ],
-    "fastMoves": [
-      "AIR_SLASH",
-      "EMBER",
-      "FIRE_SPIN",
-      "WING_ATTACK",
-      "DRAGON_BREATH"
-    ],
-    "chargedMoves": [
-      "BLAST_BURN",
-      "DRAGON_CLAW",
-      "FIRE_BLAST",
-      "FLAMETHROWER",
-      "OVERHEAT"
-    ],
-    "tags": [
-      "starter",
-      "shadow",
-      "xl"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "eliteMoves": [
-      "EMBER",
-      "WING_ATTACK",
-      "BLAST_BURN",
-      "FLAMETHROWER",
-      "DRAGON_BREATH"
-    ],
-    "sid": 192
-  },
   "charizard_shadow": {
     "dex": 6,
     "speciesName": "Charizard (Shadow)",
@@ -718,59 +666,6 @@
       "DRAGON_BREATH"
     ],
     "searchPriority": 10,
-    "sid": 192
-  },
-  "charizard_xl": {
-    "dex": 6,
-    "speciesName": "Charizard (XL)",
-    "speciesId": "charizard_xl",
-    "baseStats": {
-      "atk": 223,
-      "def": 173,
-      "hp": 186
-    },
-    "types": [
-      "fire",
-      "flying"
-    ],
-    "fastMoves": [
-      "AIR_SLASH",
-      "EMBER",
-      "FIRE_SPIN",
-      "WING_ATTACK",
-      "DRAGON_BREATH"
-    ],
-    "chargedMoves": [
-      "BLAST_BURN",
-      "DRAGON_CLAW",
-      "FIRE_BLAST",
-      "FLAMETHROWER",
-      "OVERHEAT"
-    ],
-    "tags": [
-      "starter",
-      "shadoweligible",
-      "xl"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "level25CP": 1784,
-    "eliteMoves": [
-      "EMBER",
-      "WING_ATTACK",
-      "BLAST_BURN",
-      "FLAMETHROWER",
-      "DRAGON_BREATH"
-    ],
     "sid": 192
   },
   "squirtle": {
@@ -1691,7 +1586,7 @@
         null
       ]
     },
-    "sid": 608
+    "sid": 609
   },
   "rattata_shadow": {
     "dex": 19,
@@ -1807,7 +1702,7 @@
       ]
     },
     "searchPriority": 2,
-    "sid": 640
+    "sid": 641
   },
   "raticate_shadow": {
     "dex": 20,
@@ -2247,47 +2142,6 @@
     ],
     "sid": 832
   },
-  "raichu_alolan_xl": {
-    "dex": 26,
-    "speciesName": "Raichu (Alolan XL)",
-    "speciesId": "raichu_alolan_xl",
-    "baseStats": {
-      "atk": 201,
-      "def": 154,
-      "hp": 155
-    },
-    "types": [
-      "electric",
-      "psychic"
-    ],
-    "fastMoves": [
-      "SPARK",
-      "VOLT_SWITCH",
-      "THUNDER_SHOCK"
-    ],
-    "chargedMoves": [
-      "PSYCHIC",
-      "THUNDER_PUNCH",
-      "WILD_CHARGE",
-      "GRASS_KNOT"
-    ],
-    "tags": [
-      "alolan",
-      "xl"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "sid": 832
-  },
   "raichu_alolan": {
     "dex": 26,
     "speciesName": "Raichu (Alolan)",
@@ -2327,7 +2181,7 @@
       ]
     },
     "searchPriority": 5,
-    "sid": 832
+    "sid": 833
   },
   "sandshrew": {
     "dex": 27,
@@ -2408,7 +2262,7 @@
         null
       ]
     },
-    "sid": 864
+    "sid": 865
   },
   "sandshrew_shadow": {
     "dex": 27,
@@ -2529,7 +2383,7 @@
       ]
     },
     "searchPriority": 2,
-    "sid": 896
+    "sid": 897
   },
   "sandslash_shadow": {
     "dex": 28,
@@ -3120,50 +2974,6 @@
     "searchPriority": 8,
     "sid": 1152
   },
-  "clefable_xl": {
-    "dex": 36,
-    "speciesName": "Clefable (XL)",
-    "speciesId": "clefable_xl",
-    "baseStats": {
-      "atk": 178,
-      "def": 162,
-      "hp": 216
-    },
-    "types": [
-      "fairy",
-      "none"
-    ],
-    "fastMoves": [
-      "CHARGE_BEAM",
-      "POUND",
-      "ZEN_HEADBUTT",
-      "CHARM"
-    ],
-    "chargedMoves": [
-      "DAZZLING_GLEAM",
-      "METEOR_MASH",
-      "MOONBLAST",
-      "PSYCHIC"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "eliteMoves": [
-      "POUND"
-    ],
-    "tags": [
-      "xl"
-    ],
-    "sid": 1152
-  },
   "vulpix": {
     "dex": 37,
     "speciesName": "Vulpix",
@@ -3241,7 +3051,7 @@
         null
       ]
     },
-    "sid": 1184
+    "sid": 1185
   },
   "vulpix_shadow": {
     "dex": 37,
@@ -3371,7 +3181,7 @@
       ]
     },
     "searchPriority": 2,
-    "sid": 1216
+    "sid": 1217
   },
   "ninetales_shadow": {
     "dex": 38,
@@ -4222,7 +4032,7 @@
         null
       ]
     },
-    "sid": 1600
+    "sid": 1601
   },
   "diglett_shadow": {
     "dex": 50,
@@ -4343,7 +4153,7 @@
         null
       ]
     },
-    "sid": 1632
+    "sid": 1633
   },
   "dugtrio_shadow": {
     "dex": 51,
@@ -4462,7 +4272,7 @@
         null
       ]
     },
-    "sid": 1664
+    "sid": 1665
   },
   "meowth_galarian": {
     "dex": 52,
@@ -4500,7 +4310,7 @@
         null
       ]
     },
-    "sid": 1664
+    "sid": 1666
   },
   "meowth_shadow": {
     "dex": 52,
@@ -4623,7 +4433,7 @@
         null
       ]
     },
-    "sid": 1696
+    "sid": 1697
   },
   "persian_shadow": {
     "dex": 53,
@@ -5796,55 +5606,6 @@
     ],
     "sid": 2176
   },
-  "machamp_shadow_xl": {
-    "dex": 68,
-    "speciesName": "Machamp (Shadow XL)",
-    "speciesId": "machamp_shadow_xl",
-    "baseStats": {
-      "atk": 234,
-      "def": 159,
-      "hp": 207
-    },
-    "types": [
-      "fighting",
-      "none"
-    ],
-    "fastMoves": [
-      "BULLET_PUNCH",
-      "COUNTER",
-      "KARATE_CHOP"
-    ],
-    "chargedMoves": [
-      "CLOSE_COMBAT",
-      "CROSS_CHOP",
-      "DYNAMIC_PUNCH",
-      "HEAVY_SLAM",
-      "ROCK_SLIDE",
-      "STONE_EDGE",
-      "SUBMISSION"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "eliteMoves": [
-      "KARATE_CHOP",
-      "STONE_EDGE",
-      "SUBMISSION"
-    ],
-    "tags": [
-      "shadow",
-      "xl"
-    ],
-    "sid": 2176
-  },
   "machamp_shadow": {
     "dex": 68,
     "speciesName": "Machamp (Shadow)",
@@ -5891,56 +5652,6 @@
     "searchPriority": 5,
     "tags": [
       "shadow"
-    ],
-    "sid": 2176
-  },
-  "machamp_xl": {
-    "dex": 68,
-    "speciesName": "Machamp (XL)",
-    "speciesId": "machamp_xl",
-    "baseStats": {
-      "atk": 234,
-      "def": 159,
-      "hp": 207
-    },
-    "types": [
-      "fighting",
-      "none"
-    ],
-    "fastMoves": [
-      "BULLET_PUNCH",
-      "COUNTER",
-      "KARATE_CHOP"
-    ],
-    "chargedMoves": [
-      "CLOSE_COMBAT",
-      "CROSS_CHOP",
-      "DYNAMIC_PUNCH",
-      "HEAVY_SLAM",
-      "ROCK_SLIDE",
-      "STONE_EDGE",
-      "SUBMISSION"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "eliteMoves": [
-      "KARATE_CHOP",
-      "STONE_EDGE",
-      "SUBMISSION"
-    ],
-    "level25CP": 1893,
-    "tags": [
-      "shadoweligible",
-      "xl"
     ],
     "sid": 2176
   },
@@ -6333,7 +6044,7 @@
         null
       ]
     },
-    "sid": 2368
+    "sid": 2369
   },
   "graveler": {
     "dex": 75,
@@ -6416,7 +6127,7 @@
       ]
     },
     "searchPriority": 3,
-    "sid": 2400
+    "sid": 2401
   },
   "golem": {
     "dex": 76,
@@ -6495,7 +6206,7 @@
         null
       ]
     },
-    "sid": 2432
+    "sid": 2433
   },
   "ponyta": {
     "dex": 77,
@@ -6572,7 +6283,7 @@
     "tags": [
       "galarian"
     ],
-    "sid": 2464
+    "sid": 2465
   },
   "rapidash": {
     "dex": 78,
@@ -6652,7 +6363,7 @@
     "tags": [
       "galarian"
     ],
-    "sid": 2496
+    "sid": 2497
   },
   "slowpoke": {
     "dex": 79,
@@ -7044,7 +6755,7 @@
         null
       ]
     },
-    "sid": 2656
+    "sid": 2657
   },
   "doduo": {
     "dex": 84,
@@ -7293,7 +7004,7 @@
         null
       ]
     },
-    "sid": 2816
+    "sid": 2817
   },
   "grimer_shadow": {
     "dex": 88,
@@ -7421,7 +7132,7 @@
       ]
     },
     "searchPriority": 17,
-    "sid": 2848
+    "sid": 2849
   },
   "muk_shadow": {
     "dex": 89,
@@ -8339,7 +8050,7 @@
         null
       ]
     },
-    "sid": 3296
+    "sid": 3297
   },
   "exeggutor_shadow": {
     "dex": 103,
@@ -8544,7 +8255,7 @@
       ]
     },
     "searchPriority": 8,
-    "sid": 3360
+    "sid": 3361
   },
   "marowak_shadow": {
     "dex": 105,
@@ -8806,48 +8517,6 @@
     "searchPriority": 2,
     "sid": 3456
   },
-  "lickitung_xl": {
-    "dex": 108,
-    "speciesName": "Lickitung (XL)",
-    "speciesId": "lickitung_xl",
-    "baseStats": {
-      "atk": 108,
-      "def": 137,
-      "hp": 207
-    },
-    "types": [
-      "normal",
-      "none"
-    ],
-    "fastMoves": [
-      "LICK",
-      "ZEN_HEADBUTT"
-    ],
-    "chargedMoves": [
-      "HYPER_BEAM",
-      "POWER_WHIP",
-      "STOMP",
-      "BODY_SLAM"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "tags": [
-      "xl"
-    ],
-    "eliteMoves": [
-      "BODY_SLAM"
-    ],
-    "sid": 3456
-  },
   "koffing": {
     "dex": 109,
     "speciesName": "Koffing",
@@ -9013,7 +8682,7 @@
     "tags": [
       "galarian"
     ],
-    "sid": 3520
+    "sid": 3521
   },
   "weezing_shadow": {
     "dex": 110,
@@ -10082,55 +9751,6 @@
     "searchPriority": 4,
     "sid": 4160
   },
-  "gyarados_shadow_xl": {
-    "dex": 130,
-    "speciesName": "Gyarados (Shadow XL)",
-    "speciesId": "gyarados_shadow_xl",
-    "baseStats": {
-      "atk": 237,
-      "def": 186,
-      "hp": 216
-    },
-    "types": [
-      "water",
-      "flying"
-    ],
-    "fastMoves": [
-      "BITE",
-      "DRAGON_BREATH",
-      "DRAGON_TAIL",
-      "WATERFALL"
-    ],
-    "chargedMoves": [
-      "CRUNCH",
-      "DRAGON_PULSE",
-      "HYDRO_PUMP",
-      "OUTRAGE",
-      "TWISTER",
-      "AQUA_TAIL"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "tags": [
-      "shadow",
-      "xl"
-    ],
-    "eliteMoves": [
-      "DRAGON_TAIL",
-      "DRAGON_PULSE",
-      "AQUA_TAIL"
-    ],
-    "sid": 4160
-  },
   "gyarados_shadow": {
     "dex": 130,
     "speciesName": "Gyarados (Shadow)",
@@ -10178,56 +9798,6 @@
       "AQUA_TAIL"
     ],
     "searchPriority": 4,
-    "sid": 4160
-  },
-  "gyarados_xl": {
-    "dex": 130,
-    "speciesName": "Gyarados (XL)",
-    "speciesId": "gyarados_xl",
-    "baseStats": {
-      "atk": 237,
-      "def": 186,
-      "hp": 216
-    },
-    "types": [
-      "water",
-      "flying"
-    ],
-    "fastMoves": [
-      "BITE",
-      "DRAGON_BREATH",
-      "DRAGON_TAIL",
-      "WATERFALL"
-    ],
-    "chargedMoves": [
-      "CRUNCH",
-      "DRAGON_PULSE",
-      "HYDRO_PUMP",
-      "OUTRAGE",
-      "TWISTER",
-      "AQUA_TAIL"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "level25CP": 2119,
-    "tags": [
-      "shadoweligible",
-      "xl"
-    ],
-    "eliteMoves": [
-      "DRAGON_TAIL",
-      "DRAGON_PULSE",
-      "AQUA_TAIL"
-    ],
     "sid": 4160
   },
   "lapras": {
@@ -13299,44 +12869,6 @@
     "searchPriority": 48,
     "sid": 5888
   },
-  "azumarill_xl": {
-    "dex": 184,
-    "speciesName": "Azumarill (XL)",
-    "speciesId": "azumarill_xl",
-    "baseStats": {
-      "atk": 112,
-      "def": 152,
-      "hp": 225
-    },
-    "types": [
-      "water",
-      "fairy"
-    ],
-    "fastMoves": [
-      "BUBBLE",
-      "ROCK_SMASH"
-    ],
-    "chargedMoves": [
-      "HYDRO_PUMP",
-      "ICE_BEAM",
-      "PLAY_ROUGH"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "tags": [
-      "xl"
-    ],
-    "sid": 5888
-  },
   "sudowoodo": {
     "dex": 185,
     "speciesName": "Sudowoodo",
@@ -13982,47 +13514,6 @@
       "LAST_RESORT"
     ],
     "searchPriority": 13,
-    "sid": 6304
-  },
-  "umbreon_xl": {
-    "dex": 197,
-    "speciesName": "Umbreon (XL)",
-    "speciesId": "umbreon_xl",
-    "baseStats": {
-      "atk": 126,
-      "def": 240,
-      "hp": 216
-    },
-    "types": [
-      "dark",
-      "none"
-    ],
-    "fastMoves": [
-      "FEINT_ATTACK",
-      "SNARL"
-    ],
-    "chargedMoves": [
-      "DARK_PULSE",
-      "FOUL_PLAY",
-      "LAST_RESORT"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "eliteMoves": [
-      "LAST_RESORT"
-    ],
-    "tags": [
-      "xl"
-    ],
     "sid": 6304
   },
   "murkrow": {
@@ -14677,45 +14168,6 @@
         null
       ]
     },
-    "sid": 6656
-  },
-  "steelix_xl": {
-    "dex": 208,
-    "speciesName": "Steelix (XL)",
-    "speciesId": "steelix_xl",
-    "baseStats": {
-      "atk": 148,
-      "def": 272,
-      "hp": 181
-    },
-    "types": [
-      "steel",
-      "ground"
-    ],
-    "fastMoves": [
-      "DRAGON_TAIL",
-      "IRON_TAIL",
-      "THUNDER_FANG"
-    ],
-    "chargedMoves": [
-      "CRUNCH",
-      "EARTHQUAKE",
-      "HEAVY_SLAM"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "tags": [
-      "xl"
-    ],
     "sid": 6656
   },
   "snubbull": {
@@ -15664,45 +15116,6 @@
     ],
     "sid": 7264
   },
-  "skarmory_shadow_xl": {
-    "dex": 227,
-    "speciesName": "Skarmory (Shadow XL)",
-    "speciesId": "skarmory_shadow_xl",
-    "baseStats": {
-      "atk": 148,
-      "def": 226,
-      "hp": 163
-    },
-    "types": [
-      "steel",
-      "flying"
-    ],
-    "fastMoves": [
-      "AIR_SLASH",
-      "STEEL_WING"
-    ],
-    "chargedMoves": [
-      "BRAVE_BIRD",
-      "FLASH_CANNON",
-      "SKY_ATTACK"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "tags": [
-      "shadow",
-      "xl"
-    ],
-    "sid": 7264
-  },
   "skarmory_shadow": {
     "dex": 227,
     "speciesName": "Skarmory (Shadow)",
@@ -15739,46 +15152,6 @@
     "searchPriority": 16,
     "tags": [
       "shadow"
-    ],
-    "sid": 7264
-  },
-  "skarmory_xl": {
-    "dex": 227,
-    "speciesName": "Skarmory (XL)",
-    "speciesId": "skarmory_xl",
-    "baseStats": {
-      "atk": 148,
-      "def": 226,
-      "hp": 163
-    },
-    "types": [
-      "steel",
-      "flying"
-    ],
-    "fastMoves": [
-      "AIR_SLASH",
-      "STEEL_WING"
-    ],
-    "chargedMoves": [
-      "BRAVE_BIRD",
-      "FLASH_CANNON",
-      "SKY_ATTACK"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "level25CP": 1267,
-    "tags": [
-      "shadoweligible",
-      "xl"
     ],
     "sid": 7264
   },
@@ -17898,51 +17271,6 @@
     "searchPriority": 31,
     "sid": 8320
   },
-  "swampert_shadow_xl": {
-    "dex": 260,
-    "speciesName": "Swampert (Shadow XL)",
-    "speciesId": "swampert_shadow_xl",
-    "baseStats": {
-      "atk": 208,
-      "def": 175,
-      "hp": 225
-    },
-    "types": [
-      "water",
-      "ground"
-    ],
-    "fastMoves": [
-      "MUD_SHOT",
-      "WATER_GUN"
-    ],
-    "chargedMoves": [
-      "EARTHQUAKE",
-      "SLUDGE_WAVE",
-      "SURF",
-      "HYDRO_CANNON",
-      "MUDDY_WATER"
-    ],
-    "tags": [
-      "starter",
-      "shadow",
-      "xl"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "eliteMoves": [
-      "HYDRO_CANNON"
-    ],
-    "sid": 8320
-  },
   "swampert_shadow": {
     "dex": 260,
     "speciesName": "Swampert (Shadow)",
@@ -17986,52 +17314,6 @@
       "HYDRO_CANNON"
     ],
     "searchPriority": 31,
-    "sid": 8320
-  },
-  "swampert_xl": {
-    "dex": 260,
-    "speciesName": "Swampert (XL)",
-    "speciesId": "swampert_xl",
-    "baseStats": {
-      "atk": 208,
-      "def": 175,
-      "hp": 225
-    },
-    "types": [
-      "water",
-      "ground"
-    ],
-    "fastMoves": [
-      "MUD_SHOT",
-      "WATER_GUN"
-    ],
-    "chargedMoves": [
-      "EARTHQUAKE",
-      "SLUDGE_WAVE",
-      "SURF",
-      "HYDRO_CANNON",
-      "MUDDY_WATER"
-    ],
-    "tags": [
-      "starter",
-      "shadoweligible",
-      "xl"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "level25CP": 1841,
-    "eliteMoves": [
-      "HYDRO_CANNON"
-    ],
     "sid": 8320
   },
   "poochyena": {
@@ -18177,7 +17459,7 @@
         null
       ]
     },
-    "sid": 8416
+    "sid": 8417
   },
   "linoone": {
     "dex": 264,
@@ -18250,7 +17532,7 @@
         null
       ]
     },
-    "sid": 8448
+    "sid": 8449
   },
   "wurmple": {
     "dex": 265,
@@ -18727,51 +18009,6 @@
     "searchPriority": 10,
     "sid": 8800
   },
-  "shiftry_shadow_xl": {
-    "dex": 275,
-    "speciesName": "Shiftry (Shadow XL)",
-    "speciesId": "shiftry_shadow_xl",
-    "baseStats": {
-      "atk": 200,
-      "def": 121,
-      "hp": 207
-    },
-    "types": [
-      "grass",
-      "dark"
-    ],
-    "fastMoves": [
-      "FEINT_ATTACK",
-      "RAZOR_LEAF",
-      "SNARL",
-      "BULLET_SEED"
-    ],
-    "chargedMoves": [
-      "FOUL_PLAY",
-      "HURRICANE",
-      "LEAF_BLADE",
-      "LEAF_TORNADO"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "tags": [
-      "shadow",
-      "xl"
-    ],
-    "eliteMoves": [
-      "BULLET_SEED"
-    ],
-    "sid": 8800
-  },
   "shiftry_shadow": {
     "dex": 275,
     "speciesName": "Shiftry (Shadow)",
@@ -18815,52 +18052,6 @@
       "BULLET_SEED"
     ],
     "searchPriority": 10,
-    "sid": 8800
-  },
-  "shiftry_xl": {
-    "dex": 275,
-    "speciesName": "Shiftry (XL)",
-    "speciesId": "shiftry_xl",
-    "baseStats": {
-      "atk": 200,
-      "def": 121,
-      "hp": 207
-    },
-    "types": [
-      "grass",
-      "dark"
-    ],
-    "fastMoves": [
-      "FEINT_ATTACK",
-      "RAZOR_LEAF",
-      "SNARL",
-      "BULLET_SEED"
-    ],
-    "chargedMoves": [
-      "FOUL_PLAY",
-      "HURRICANE",
-      "LEAF_BLADE",
-      "LEAF_TORNADO"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "level25CP": 1412,
-    "tags": [
-      "shadoweligible",
-      "xl"
-    ],
-    "eliteMoves": [
-      "BULLET_SEED"
-    ],
     "sid": 8800
   },
   "taillow": {
@@ -19208,50 +18399,6 @@
     ],
     "sid": 9024
   },
-  "gardevoir_shadow_xl": {
-    "dex": 282,
-    "speciesName": "Gardevoir (Shadow XL)",
-    "speciesId": "gardevoir_shadow_xl",
-    "baseStats": {
-      "atk": 237,
-      "def": 195,
-      "hp": 169
-    },
-    "types": [
-      "psychic",
-      "fairy"
-    ],
-    "fastMoves": [
-      "CHARGE_BEAM",
-      "CONFUSION",
-      "CHARM"
-    ],
-    "chargedMoves": [
-      "DAZZLING_GLEAM",
-      "PSYCHIC",
-      "SHADOW_BALL",
-      "SYNCHRONOISE"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "tags": [
-      "shadow",
-      "xl"
-    ],
-    "eliteMoves": [
-      "SYNCHRONOISE"
-    ],
-    "sid": 9024
-  },
   "gardevoir_shadow": {
     "dex": 282,
     "speciesName": "Gardevoir (Shadow)",
@@ -19289,51 +18436,6 @@
     },
     "tags": [
       "shadow"
-    ],
-    "eliteMoves": [
-      "SYNCHRONOISE"
-    ],
-    "sid": 9024
-  },
-  "gardevoir_xl": {
-    "dex": 282,
-    "speciesName": "Gardevoir (XL)",
-    "speciesId": "gardevoir_xl",
-    "baseStats": {
-      "atk": 237,
-      "def": 195,
-      "hp": 169
-    },
-    "types": [
-      "psychic",
-      "fairy"
-    ],
-    "fastMoves": [
-      "CHARGE_BEAM",
-      "CONFUSION",
-      "CHARM"
-    ],
-    "chargedMoves": [
-      "DAZZLING_GLEAM",
-      "PSYCHIC",
-      "SHADOW_BALL",
-      "SYNCHRONOISE"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "level25CP": 1919,
-    "tags": [
-      "shadoweligible",
-      "xl"
     ],
     "eliteMoves": [
       "SYNCHRONOISE"
@@ -20060,45 +19162,6 @@
     "searchPriority": 10,
     "sid": 9664
   },
-  "sableye_shadow_xl": {
-    "dex": 302,
-    "speciesName": "Sableye (Shadow XL)",
-    "speciesId": "sableye_shadow_xl",
-    "baseStats": {
-      "atk": 141,
-      "def": 136,
-      "hp": 137
-    },
-    "types": [
-      "dark",
-      "ghost"
-    ],
-    "fastMoves": [
-      "FEINT_ATTACK",
-      "SHADOW_CLAW"
-    ],
-    "chargedMoves": [
-      "FOUL_PLAY",
-      "POWER_GEM",
-      "SHADOW_SNEAK"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "tags": [
-      "shadow",
-      "xl"
-    ],
-    "sid": 9664
-  },
   "sableye_shadow": {
     "dex": 302,
     "speciesName": "Sableye (Shadow)",
@@ -20136,46 +19199,6 @@
       "shadow"
     ],
     "searchPriority": 10,
-    "sid": 9664
-  },
-  "sableye_xl": {
-    "dex": 302,
-    "speciesName": "Sableye (XL)",
-    "speciesId": "sableye_xl",
-    "baseStats": {
-      "atk": 141,
-      "def": 136,
-      "hp": 137
-    },
-    "types": [
-      "dark",
-      "ghost"
-    ],
-    "fastMoves": [
-      "FEINT_ATTACK",
-      "SHADOW_CLAW"
-    ],
-    "chargedMoves": [
-      "FOUL_PLAY",
-      "POWER_GEM",
-      "SHADOW_SNEAK"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "level25CP": 858,
-    "tags": [
-      "shadoweligible",
-      "xl"
-    ],
     "sid": 9664
   },
   "mawile": {
@@ -20437,45 +19460,6 @@
       ]
     },
     "searchPriority": 5,
-    "sid": 9856
-  },
-  "medicham_xl": {
-    "dex": 308,
-    "speciesName": "Medicham (XL)",
-    "speciesId": "medicham_xl",
-    "baseStats": {
-      "atk": 121,
-      "def": 152,
-      "hp": 155
-    },
-    "types": [
-      "fighting",
-      "psychic"
-    ],
-    "fastMoves": [
-      "COUNTER",
-      "PSYCHO_CUT"
-    ],
-    "chargedMoves": [
-      "DYNAMIC_PUNCH",
-      "ICE_PUNCH",
-      "PSYCHIC",
-      "POWER_UP_PUNCH"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "tags": [
-      "xl"
-    ],
     "sid": 9856
   },
   "electrike": {
@@ -21702,44 +20686,6 @@
       ]
     },
     "searchPriority": 21,
-    "sid": 10688
-  },
-  "altaria_xl": {
-    "dex": 334,
-    "speciesName": "Altaria (XL)",
-    "speciesId": "altaria_xl",
-    "baseStats": {
-      "atk": 141,
-      "def": 201,
-      "hp": 181
-    },
-    "types": [
-      "dragon",
-      "flying"
-    ],
-    "fastMoves": [
-      "DRAGON_BREATH",
-      "PECK"
-    ],
-    "chargedMoves": [
-      "DAZZLING_GLEAM",
-      "DRAGON_PULSE",
-      "SKY_ATTACK"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "tags": [
-      "xl"
-    ],
     "sid": 10688
   },
   "zangoose": {
@@ -25410,45 +24356,6 @@
     "searchPriority": 25,
     "sid": 13152
   },
-  "bastiodon_xl": {
-    "dex": 411,
-    "speciesName": "Bastiodon (XL)",
-    "speciesId": "bastiodon_xl",
-    "baseStats": {
-      "atk": 94,
-      "def": 286,
-      "hp": 155
-    },
-    "types": [
-      "rock",
-      "steel"
-    ],
-    "fastMoves": [
-      "IRON_TAIL",
-      "SMACK_DOWN"
-    ],
-    "chargedMoves": [
-      "FLAMETHROWER",
-      "FLASH_CANNON",
-      "STONE_EDGE"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "searchPriority": 25,
-    "tags": [
-      "xl"
-    ],
-    "sid": 13152
-  },
   "burmy_plant": {
     "dex": 412,
     "speciesName": "Burmy (Plant)",
@@ -26290,44 +25197,6 @@
         null
       ]
     },
-    "sid": 13632
-  },
-  "drifblim_xl": {
-    "dex": 426,
-    "speciesName": "Drifblim (XL)",
-    "speciesId": "drifblim_xl",
-    "baseStats": {
-      "atk": 180,
-      "def": 102,
-      "hp": 312
-    },
-    "types": [
-      "ghost",
-      "flying"
-    ],
-    "fastMoves": [
-      "ASTONISH",
-      "HEX"
-    ],
-    "chargedMoves": [
-      "ICY_WIND",
-      "OMINOUS_WIND",
-      "SHADOW_BALL"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "tags": [
-      "xl"
-    ],
     "sid": 13632
   },
   "buneary": {
@@ -27457,44 +26326,6 @@
     "searchPriority": 20,
     "sid": 14528
   },
-  "toxicroak_xl": {
-    "dex": 454,
-    "speciesName": "Toxicroak (XL)",
-    "speciesId": "toxicroak_xl",
-    "baseStats": {
-      "atk": 211,
-      "def": 133,
-      "hp": 195
-    },
-    "types": [
-      "poison",
-      "fighting"
-    ],
-    "fastMoves": [
-      "COUNTER",
-      "POISON_JAB"
-    ],
-    "chargedMoves": [
-      "DYNAMIC_PUNCH",
-      "MUD_BOMB",
-      "SLUDGE_BOMB"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "tags": [
-      "xl"
-    ],
-    "sid": 14528
-  },
   "carnivine": {
     "dex": 455,
     "speciesName": "Carnivine",
@@ -27797,46 +26628,6 @@
     ],
     "sid": 14721
   },
-  "abomasnow_shadow_xl": {
-    "dex": 460,
-    "speciesName": "Abomasnow (Shadow XL)",
-    "speciesId": "abomasnow_shadow_xl",
-    "baseStats": {
-      "atk": 178,
-      "def": 158,
-      "hp": 207
-    },
-    "types": [
-      "grass",
-      "ice"
-    ],
-    "fastMoves": [
-      "POWDER_SNOW",
-      "RAZOR_LEAF"
-    ],
-    "chargedMoves": [
-      "BLIZZARD",
-      "ENERGY_BALL",
-      "OUTRAGE",
-      "WEATHER_BALL_ICE"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "tags": [
-      "shadow",
-      "xl"
-    ],
-    "sid": 14720
-  },
   "abomasnow_shadow": {
     "dex": 460,
     "speciesName": "Abomasnow (Shadow)",
@@ -27873,47 +26664,6 @@
     },
     "tags": [
       "shadow"
-    ],
-    "sid": 14720
-  },
-  "abomasnow_xl": {
-    "dex": 460,
-    "speciesName": "Abomasnow (XL)",
-    "speciesId": "abomasnow_xl",
-    "baseStats": {
-      "atk": 178,
-      "def": 158,
-      "hp": 207
-    },
-    "types": [
-      "grass",
-      "ice"
-    ],
-    "fastMoves": [
-      "POWDER_SNOW",
-      "RAZOR_LEAF"
-    ],
-    "chargedMoves": [
-      "BLIZZARD",
-      "ENERGY_BALL",
-      "OUTRAGE",
-      "WEATHER_BALL_ICE"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "level25CP": 1436,
-    "tags": [
-      "shadoweligible",
-      "xl"
     ],
     "sid": 14720
   },
@@ -28037,46 +26787,6 @@
     "searchPriority": 4,
     "sid": 14784
   },
-  "magnezone_shadow_xl": {
-    "dex": 462,
-    "speciesName": "Magnezone (Shadow XL)",
-    "speciesId": "magnezone_shadow_xl",
-    "baseStats": {
-      "atk": 238,
-      "def": 205,
-      "hp": 172
-    },
-    "types": [
-      "electric",
-      "steel"
-    ],
-    "fastMoves": [
-      "CHARGE_BEAM",
-      "SPARK"
-    ],
-    "chargedMoves": [
-      "FLASH_CANNON",
-      "WILD_CHARGE",
-      "ZAP_CANNON",
-      "MIRROR_SHOT"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "tags": [
-      "shadow",
-      "xl"
-    ],
-    "sid": 14784
-  },
   "magnezone_shadow": {
     "dex": 462,
     "speciesName": "Magnezone (Shadow)",
@@ -28115,47 +26825,6 @@
       "shadow"
     ],
     "searchPriority": 4,
-    "sid": 14784
-  },
-  "magnezone_xl": {
-    "dex": 462,
-    "speciesName": "Magnezone (XL)",
-    "speciesId": "magnezone_xl",
-    "baseStats": {
-      "atk": 238,
-      "def": 205,
-      "hp": 172
-    },
-    "types": [
-      "electric",
-      "steel"
-    ],
-    "fastMoves": [
-      "CHARGE_BEAM",
-      "SPARK"
-    ],
-    "chargedMoves": [
-      "FLASH_CANNON",
-      "WILD_CHARGE",
-      "ZAP_CANNON",
-      "MIRROR_SHOT"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "level25CP": 1993,
-    "tags": [
-      "shadoweligible",
-      "xl"
-    ],
     "sid": 14784
   },
   "lickilicky": {
@@ -28239,51 +26908,6 @@
       "ROCK_WRECKER"
     ],
     "searchPriority": 5,
-    "sid": 14848
-  },
-  "rhyperior_xl": {
-    "dex": 464,
-    "speciesName": "Rhyperior (XL)",
-    "speciesId": "rhyperior_xl",
-    "baseStats": {
-      "atk": 241,
-      "def": 190,
-      "hp": 251
-    },
-    "types": [
-      "ground",
-      "rock"
-    ],
-    "fastMoves": [
-      "MUD_SLAP",
-      "SMACK_DOWN"
-    ],
-    "chargedMoves": [
-      "EARTHQUAKE",
-      "STONE_EDGE",
-      "SURF",
-      "SKULL_BASH",
-      "SUPER_POWER",
-      "ROCK_WRECKER"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "level25CP": 2347,
-    "tags": [
-      "xl"
-    ],
-    "eliteMoves": [
-      "ROCK_WRECKER"
-    ],
     "sid": 14848
   },
   "tangrowth": {
@@ -28780,48 +27404,6 @@
       "ANCIENT_POWER"
     ],
     "searchPriority": 2,
-    "sid": 15136
-  },
-  "mamoswine_xl": {
-    "dex": 473,
-    "speciesName": "Mamoswine (XL)",
-    "speciesId": "mamoswine_xl",
-    "baseStats": {
-      "atk": 247,
-      "def": 146,
-      "hp": 242
-    },
-    "types": [
-      "ice",
-      "ground"
-    ],
-    "fastMoves": [
-      "MUD_SLAP",
-      "POWDER_SNOW"
-    ],
-    "chargedMoves": [
-      "AVALANCHE",
-      "BULLDOZE",
-      "STONE_EDGE",
-      "ANCIENT_POWER"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "eliteMoves": [
-      "ANCIENT_POWER"
-    ],
-    "tags": [
-      "xl"
-    ],
     "sid": 15136
   },
   "porygon_z": {
@@ -32891,7 +31473,7 @@
         null
       ]
     },
-    "sid": 17728
+    "sid": 17729
   },
   "darmanitan_galarian_zen": {
     "dex": 555,
@@ -32930,7 +31512,7 @@
         null
       ]
     },
-    "sid": 17760
+    "sid": 17763
   },
   "darmanitan_galarian_standard": {
     "dex": 555,
@@ -32969,7 +31551,7 @@
         null
       ]
     },
-    "sid": 17760
+    "sid": 17762
   },
   "darmanitan_standard": {
     "dex": 555,
@@ -33223,44 +31805,6 @@
     },
     "sid": 17920
   },
-  "scrafty_xl": {
-    "dex": 560,
-    "speciesId": "scrafty_xl",
-    "speciesName": "Scrafty (XL)",
-    "baseStats": {
-      "atk": 163,
-      "def": 222,
-      "hp": 163
-    },
-    "types": [
-      "dark",
-      "fighting"
-    ],
-    "fastMoves": [
-      "COUNTER",
-      "SNARL"
-    ],
-    "chargedMoves": [
-      "ACID_SPRAY",
-      "POWER_UP_PUNCH",
-      "FOUL_PLAY"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "tags": [
-      "xl"
-    ],
-    "sid": 17920
-  },
   "sigilyph": {
     "dex": 561,
     "speciesId": "sigilyph",
@@ -33369,7 +31913,7 @@
     "tags": [
       "galarian"
     ],
-    "sid": 17984
+    "sid": 17985
   },
   "cofagrigus": {
     "dex": 563,
@@ -35409,46 +33953,6 @@
     "searchPriority": 10,
     "sid": 19776
   },
-  "stunfisk_galarian_xl": {
-    "dex": 618,
-    "speciesName": "Stunfisk (Galarian XL)",
-    "speciesId": "stunfisk_galarian_xl",
-    "baseStats": {
-      "atk": 144,
-      "def": 171,
-      "hp": 240
-    },
-    "types": [
-      "ground",
-      "steel"
-    ],
-    "fastMoves": [
-      "MUD_SHOT",
-      "METAL_CLAW"
-    ],
-    "chargedMoves": [
-      "EARTHQUAKE",
-      "FLASH_CANNON",
-      "MUDDY_WATER",
-      "ROCK_SLIDE"
-    ],
-    "tags": [
-      "galarian",
-      "xl"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "sid": 19776
-  },
   "stunfisk_galarian": {
     "dex": 618,
     "speciesName": "Stunfisk (Galarian)",
@@ -35487,7 +33991,7 @@
       ]
     },
     "searchPriority": 20,
-    "sid": 19776
+    "sid": 19777
   },
   "mienfoo": {
     "dex": 619,
@@ -39646,46 +38150,6 @@
       "mythical"
     ],
     "searchPriority": 18,
-    "sid": 25888
-  },
-  "melmetal_xl": {
-    "dex": 809,
-    "speciesName": "Melmetal (XL)",
-    "speciesId": "melmetal_xl",
-    "baseStats": {
-      "atk": 226,
-      "def": 190,
-      "hp": 264
-    },
-    "types": [
-      "steel",
-      "none"
-    ],
-    "fastMoves": [
-      "THUNDER_SHOCK"
-    ],
-    "chargedMoves": [
-      "FLASH_CANNON",
-      "HYPER_BEAM",
-      "ROCK_SLIDE",
-      "THUNDERBOLT",
-      "SUPER_POWER"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "tags": [
-      "mythical",
-      "xl"
-    ],
     "sid": 25888
   },
   "obstagoon": {
