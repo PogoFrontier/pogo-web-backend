@@ -7,6 +7,7 @@ export enum RoomStatus {
   STARTED,
   FAINT,
   CHARGE,
+  LISTENING
 }
 
 export interface Move {
@@ -45,5 +46,12 @@ export interface Room {
   turn?: number,
   status: RoomStatus,
   wait?: number,
-  timer?: any
+  timer?: any,
+  charge?: {
+    subject: number,
+    move: Move,
+    shield?: number,
+    multiplier?: number,
+    cmp?: Move
+  }
 }
