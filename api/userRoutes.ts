@@ -37,25 +37,26 @@ router.get('/signin/:id', (req, res) => {
 router.get('/profile', 
     (req, res, next) => protect(req, res, next), 
     (req: any, res) => {
-    try{
-        const docRef = firestore.collection('users').doc(req.user.googleId);
-        docRef.get().then(user => {
-            if(user.data()){
-                docRef.update({lastLogin: Date.now()}).then(() => {
-                    res.json(user.data());
-                });
-            }else{
-                res.status(404).json({error: `User not found.`})
-            }
-        }).catch(err => {
+        try{
+            const docRef = firestore.collection('users').doc(req.user.googleId);
+            docRef.get().then(user => {
+                if(user.data()){
+                    docRef.update({lastLogin: Date.now()}).then(() => {
+                        res.json(user.data());
+                    });
+                }else{
+                    res.status(404).json({error: `User not found.`})
+                }
+            }).catch(err => {
+                console.log(err);
+                res.status(500).json({error: "Internal server error"})
+            })
+        }catch(err){
             console.log(err);
-            res.status(500).json({error: "Internal server error"})
-        })
-    }catch(err){
-        console.log(err);
-        res.status(500).json({error: "Internal server error"});
+            res.status(500).json({error: "Internal server error"});
+        }
     }
-});
+);
 
 // @desc Post a new user connected to a google account
 // @route POST /api/users
@@ -100,6 +101,57 @@ router.post('/', (req, res) => {
         res.status(500).json({error: "Internal server error"});
     }
 })
+
+// @desc Edit user's teams
+// @route PUT /api/users/teams
+// @access Protected
+router.put('/teams', 
+    (req, res, next) => protect(req, res, next), 
+    (req: any, res) => {
+        try{
+            const {id, name, format, members} = req.body;
+            const docRef = firestore.collection('users').doc(req.user.googleId);
+            docRef.get().then(user => {
+                if(user.data()){
+                    docRef.update({lastLogin: Date.now()}).then(() => {
+                        var userData: any = {...user.data()};
+                        var teams: any[] = userData.teams;
+                        if(id && teams.some(t => t.id === id)){
+                            //existing team
+                            teams[teams.findIndex(t => t.id === id)] = {
+                                id, name, format, members
+                            };
+                            docRef.update({teams: teams}).then(() => {
+                                res.json({message: "Teams updated successfully"});
+                            }).catch(err => {
+                                console.log(err);
+                                res.status(500).json({error: "Error saving teams."})
+                            })
+                        }else{
+                            //new team
+                            var newId = `${+Date.now()}${Math.random()}`;
+                            teams.push({id: newId, name, format, members});
+                            docRef.update({teams: teams}).then(() => {
+                                res.json({message: "Teams updated successfully"});
+                            }).catch(err => {
+                                console.log(err);
+                                res.status(500).json({error: "Error saving teams."})
+                            })
+                        }
+                    });
+                }else{
+                    res.status(404).json({error: `User not found.`})
+                }
+            }).catch(err => {
+                console.log(err);
+                res.status(500).json({error: "Internal server error"})
+            })
+        }catch(err){
+            console.log(err);
+            res.status(500).json({error: "Internal server error"});
+        }
+    }
+)
 
 
 export default router;

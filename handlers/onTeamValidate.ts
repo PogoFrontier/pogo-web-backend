@@ -5,7 +5,7 @@ import { calculateCP, calculateHP, calculateAtk,calculateDef } from "../utils/ca
 export function onTeamValidate(team: TeamMember[], chosenRule: any) {
     var bestBuddyCount = 0
     for (let member of team) {
-      if (chosenRule.maxLevel && member.level > chosenRule.maxLevel) {
+      if (chosenRule.maxLevel && member.level! > chosenRule.maxLevel) {
         bestBuddyCount += 1
       }
       if (bestBuddyCount > chosenRule.maxBestBuddy) {
@@ -16,7 +16,7 @@ export function onTeamValidate(team: TeamMember[], chosenRule: any) {
       }
   
       var chosenPokemon: any = pokemon[member.speciesId]
-      var cp: number = calculateCP(chosenPokemon, member.level, member.iv)
+      var cp: number = calculateCP(chosenPokemon, member.level!, member.iv)
       if (chosenRule.maxCP && cp > chosenRule.maxCP) {
         throw new Error("CP is over limit")
       }
@@ -32,9 +32,9 @@ export function onTeamValidate(team: TeamMember[], chosenRule: any) {
       }
   
       member.cp = cp
-      member.hp = calculateHP(chosenPokemon.baseStats.hp, member.level, member.iv.hp)
-      member.atk = calculateAtk(chosenPokemon.baseStats.atk, member.level, member.iv.atk)
-      member.def = calculateDef(chosenPokemon.baseStats.def, member.level, member.iv.def)
+      member.hp = calculateHP(chosenPokemon.baseStats.hp, member.level!, member.iv!.hp)
+      member.atk = calculateAtk(chosenPokemon.baseStats.atk, member.level!, member.iv!.atk)
+      member.def = calculateDef(chosenPokemon.baseStats.def, member.level!, member.iv!.def)
     }
     return team;
   }
