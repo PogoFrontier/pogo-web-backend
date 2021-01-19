@@ -30,8 +30,8 @@ function onAction({
       }
       const j = i === 0 ? 1 : 0;
       const opponent = currentRoom.players[j];
-      if (opponent) {
-        onlineClients.get(opponent.id)?.send(data)
+      if (opponent && onlineClients.get(opponent.id)) {
+        onlineClients.get(opponent.id)!.send(data)
       }
     }
   }

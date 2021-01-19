@@ -1,3 +1,4 @@
+import indexOfMax from "../actions/indexOfMax";
 import { CHARGE_WAIT, GAME_TIME, SWAP_COOLDOWN, SWITCH_WAIT } from "../config";
 import { moves, onlineClients, rooms } from "../server";
 import { Actions, CODE } from "../types/actions";
@@ -127,40 +128,6 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
           delete player.current!.action;
         }
       }
-    } else if (currentRoom.status !== RoomStatus.FAINT && (shouldCharge[0] > -1 || shouldCharge[1] > -1)) {
-      const i = shouldCharge.reduce((iMax, x, index, arr) => x > arr[iMax] ? index : iMax, 0);
-      const j = i === 0 ? 1 : 0;
-      currentRoom.status = RoomStatus.CHARGE;
-      currentRoom.wait = CHARGE_WAIT;
-      currentRoom.charge = {
-        subject: i,
-        move: currentRoom.players[i]!.current!.action!.move!
-      };
-      if (shouldCharge[j] > -1) {
-        currentRoom.charge.cmp = currentRoom.players[j]!.current!.action!.move!
-        delete currentRoom.players[j]!.current!.action;
-      }
-      delete currentRoom.players[i]!.current!.action;
-      payload[i] = {
-        ...payload[i],
-        id: currentRoom.players[i]!.id,
-        active: currentRoom.players[i]?.current?.active || 0,
-        shouldReturn: true,
-        wait: CHARGE_WAIT,
-        charge: 1
-      };
-      if (currentRoom.players[j]?.current?.action?.move) {
-        currentRoom.players[j]!.current!.action!.move!.cooldown = 0;
-      }
-      payload[j] = {
-        ...payload[j],
-        id: currentRoom.players[j]!.id,
-        active: currentRoom.players[j]?.current?.active || 0,
-        shouldReturn: true,
-        wait: CHARGE_WAIT,
-        charge: 2
-      };
-
     } else if (currentRoom.wait) {
       currentRoom.wait = Number((currentRoom.wait - 0.5).toFixed(1));
       const wait = Math.ceil(currentRoom.wait);
@@ -185,6 +152,45 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
           }
         }
       }
+      return payload;
+    }
+    if (currentRoom.status !== RoomStatus.FAINT && (shouldCharge[0] > -1 || shouldCharge[1] > -1)) {
+      let i = 0;
+      if (shouldCharge[0] === shouldCharge[1] ) {
+        i = Math.round(Math.random());
+      } else {
+        i = indexOfMax(shouldCharge);
+      }
+      const j = i === 0 ? 1 : 0;
+      currentRoom.status = RoomStatus.CHARGE;
+      currentRoom.wait = CHARGE_WAIT;
+      currentRoom.charge = {
+        subject: i,
+        move: currentRoom.players[i]!.current!.action!.move!
+      };
+      if (shouldCharge[j] > -1) {
+        currentRoom.charge.cmp = currentRoom.players[j]!.current!.action!.move!
+      }
+      delete currentRoom.players[i]!.current!.action;
+      payload[i] = {
+        ...payload[i],
+        id: currentRoom.players[i]!.id,
+        active: currentRoom.players[i]?.current?.active || 0,
+        shouldReturn: true,
+        wait: CHARGE_WAIT,
+        charge: 1
+      };
+      if (currentRoom.players[j]?.current?.action?.move) {
+        currentRoom.players[j]!.current!.action!.move!.cooldown = 0;
+      }
+      payload[j] = {
+        ...payload[j],
+        id: currentRoom.players[j]!.id,
+        active: currentRoom.players[j]?.current?.active || 0,
+        shouldReturn: true,
+        wait: CHARGE_WAIT,
+        charge: 2
+      };
     }
   }
 
@@ -225,7 +231,9 @@ const onTurn = (room: string) => {
             type: CODE.turn,
             payload
           };
-          onlineClients.get(player.id)!.send(JSON.stringify(data));
+          if (onlineClients.get(player.id)) {
+            onlineClients.get(player.id)!.send(JSON.stringify(data));
+          }
         }
       }
     }
