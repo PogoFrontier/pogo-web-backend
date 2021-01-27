@@ -1,6 +1,7 @@
 import e from "express";
 import http from 'http';
 import websocket from 'ws';
+import { setWsHeartbeat } from "ws-heartbeat/server";
 import c from 'cors';
 import firebase from 'firebase-admin';
 import SERVICE_ACCOUNT from './project-grookey-6a7326cb8d5a';
@@ -110,6 +111,13 @@ function startServer() {
 
     // important! must listen from `server`, not `app`, otherwise socket.io won't function correctly
     server.listen(process.env.PORT || SERVER_PORT, () => console.info(`Listening on port ${process.env.PORT || SERVER_PORT}.`));
+
+    //ws-heartbeat on 30 seconds
+    setWsHeartbeat(wss, (ws, data, flag) => {
+        if (data === '{"kind":"ping"}') {
+            ws.send('{"kind":"pong"}');
+        }
+    }, 30000);
 }
 
 startServer();
