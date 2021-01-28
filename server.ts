@@ -1,7 +1,6 @@
 import e from "express";
 import http from 'http';
 import websocket from 'ws';
-import wsHeartbeat from "ws-heartbeat/server";
 import c from 'cors';
 import firebase from 'firebase-admin';
 import SERVICE_ACCOUNT from './project-grookey-6a7326cb8d5a';
@@ -31,8 +30,6 @@ export const SERVER_PORT = 3000;
 export let onlineClients = new Map<string, WebSocket>();
 export let rooms = new Map<string, Room>();
 
-const { setWsHeartbeat } = wsHeartbeat;
-
 //initialize node server app
 const app: e.Application = e();
 
@@ -42,6 +39,9 @@ firebase.initializeApp({
     credential: firebase.credential.cert(serviceAccount)
 });
 export const firestore = firebase.firestore();
+
+const ping = '{"kind":"ping"}';
+const pong = '{"kind":"pong"}';
 
 //use json
 app.use(e.json());
@@ -66,7 +66,9 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
     let room = "";
     ws.onmessage = function(this, ev) {
         const data: string = ev.data;
-        if (data.startsWith("$")) {
+        if (data === ping) {
+            ws.send(pong);
+        } else if (data.startsWith("$")) {
             if (rooms.get(room) && rooms.get(room)?.status === RoomStatus.LISTENING) {
                 onChargeEnd({ id, room, data })
             }
@@ -90,7 +92,7 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
                     onReadyGame(id, payload);
                     break;
                 default:
-                    console.error("Message not recognized");
+                    console.error(`Message not recognized: ${data}`);
             }
         }
     };
@@ -112,13 +114,6 @@ function startServer() {
 
     // important! must listen from `server`, not `app`, otherwise socket.io won't function correctly
     server.listen(process.env.PORT || SERVER_PORT, () => console.info(`Listening on port ${process.env.PORT || SERVER_PORT}.`));
-
-    //ws-heartbeat on 30 seconds
-    setWsHeartbeat(wss, (ws, data, flag) => {
-        if (data === '{"kind":"ping"}') {
-            ws.send('{"kind":"pong"}');
-        }
-    }, 30000);
 }
 
 startServer();
