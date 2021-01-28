@@ -15,7 +15,6 @@ import pokemonRoutes from "./api/pokemonRoutes";
 import moveRoutes from "./api/moveRoutes";
 import userRoutes from "./api/userRoutes";
 import roomRoutes from "./api/roomRoutes";
-
 import p from "./data/pokemon.json";
 import m  from "./data/moves.json";
 import r from "./data/rules.json";
@@ -41,6 +40,9 @@ firebase.initializeApp({
 });
 export const firestore = firebase.firestore();
 
+const ping = '{"kind":"ping"}';
+const pong = '{"kind":"pong"}';
+
 //use json
 app.use(e.json());
 
@@ -64,7 +66,9 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
     let room = "";
     ws.onmessage = function(this, ev) {
         const data: string = ev.data;
-        if (data.startsWith("$")) {
+        if (data === ping) {
+            ws.send(pong);
+        } else if (data.startsWith("$")) {
             if (rooms.get(room) && rooms.get(room)?.status === RoomStatus.LISTENING) {
                 onChargeEnd({ id, room, data })
             }
@@ -88,7 +92,7 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
                     onReadyGame(id, payload);
                     break;
                 default:
-                    console.error("Message not recognized");
+                    console.error(`Message not recognized: ${data}`);
             }
         }
     };
