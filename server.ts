@@ -1,7 +1,7 @@
 import e from "express";
 import http from 'http';
 import websocket from 'ws';
-import { setWsHeartbeat } from "ws-heartbeat/server";
+import wsHeartbeat from "ws-heartbeat/server";
 import c from 'cors';
 import firebase from 'firebase-admin';
 import SERVICE_ACCOUNT from './project-grookey-6a7326cb8d5a';
@@ -16,7 +16,6 @@ import pokemonRoutes from "./api/pokemonRoutes";
 import moveRoutes from "./api/moveRoutes";
 import userRoutes from "./api/userRoutes";
 import roomRoutes from "./api/roomRoutes";
-
 import p from "./data/pokemon.json";
 import m  from "./data/moves.json";
 import r from "./data/rules.json";
@@ -31,6 +30,8 @@ export const SERVER_PORT = 3000;
 
 export let onlineClients = new Map<string, WebSocket>();
 export let rooms = new Map<string, Room>();
+
+const { setWsHeartbeat } = wsHeartbeat;
 
 //initialize node server app
 const app: e.Application = e();
