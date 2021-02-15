@@ -197,15 +197,20 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
   return payload;
 }
 
-const onTurn = (room: string) => {
+const onTurn = (room: string, id: string) => {
   const currentRoom = rooms.get(room);
   if (currentRoom
+    && currentRoom.timerId === id
     && currentRoom.players
     && currentRoom.status !== RoomStatus.SELECTING
     && currentRoom.status !== RoomStatus.STARTING
     && currentRoom.status !== RoomStatus.LISTENING) {
     currentRoom.turn = currentRoom.turn ? currentRoom.turn + 1 : 1;
     const time = Math.ceil(Number((GAME_TIME - currentRoom.turn * 0.5).toFixed(1)))
+    if (time === 0) {
+      endGame(room, true);
+      return;
+    }
     const payload: ResolveTurnPayload = {
       time,
       update: evaluatePayload(room),

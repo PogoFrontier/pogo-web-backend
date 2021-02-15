@@ -11,7 +11,7 @@ function onClose(id: string, room: string) {
           const index = currentRoom.players.findIndex(x => x && x.id === id);
           currentRoom.players[index] = null;
           if (currentRoom.status !== RoomStatus.SELECTING && currentRoom.status !== RoomStatus.STARTING) {
-            to(room, "$end");
+            to(room, "$endwin");
             console.info(`Socket ${id} has been removed from room ${room}, causing game end.`);
           } else {
             currentRoom.status = RoomStatus.SELECTING;
@@ -23,8 +23,11 @@ function onClose(id: string, room: string) {
       }
 
       if (currentRoom.players[1] === null && currentRoom.players[0] === null) {
-          rooms.delete(room);
-          console.info(`Room ${room} has been deleted.`);
+        if (currentRoom.timer) {
+          clearInterval(currentRoom.timer);
+        }
+        rooms.delete(room);
+        console.info(`Room ${room} has been deleted.`);
       }
   }
 

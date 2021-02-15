@@ -27,6 +27,7 @@
     "express": "^4.16.3",
     "firebase-admin": "^9.4.2",
     "jsonwebtoken": "^8.5.1",
+    "uuid": "^8.3.2",
     "ws": "^7.4.0"
   },
   "repository": {
@@ -39,6 +40,7 @@
     "@types/express": "^4.17.9",
     "@types/jsonwebtoken": "^8.5.0",
     "@types/node": "^14.14.12",
+    "@types/uuid": "^8.3.0",
     "@types/ws": "^7.4.0",
     "cross-env": "^7.0.3",
     "fx": "^20.0.2",
