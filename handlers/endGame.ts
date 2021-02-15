@@ -23,9 +23,12 @@ function endGame(room: string) {
           if (p.current!.team[p.current!.active].current!.hp > o.current!.team[o.current!.active].current!.hp) {
             onlineClients.get(p.id)!.send("$endwin");
             onlineClients.get(o.id)!.send("$endlose");
-          } else {
+          } else if (p.current!.team[p.current!.active].current!.hp < o.current!.team[o.current!.active].current!.hp) {
             onlineClients.get(p.id)!.send("$endlose");
             onlineClients.get(o.id)!.send("$endwin");
+          } else {
+            onlineClients.get(p.id)!.send("$endtie");
+            onlineClients.get(o.id)!.send("$endtie");
           }
         }
       } else if (p.current!.remaining > 0) {
