@@ -197,9 +197,10 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
   return payload;
 }
 
-const onTurn = (room: string) => {
+const onTurn = (room: string, id: string) => {
   const currentRoom = rooms.get(room);
   if (currentRoom
+    && currentRoom.timerId === id
     && currentRoom.players
     && currentRoom.status !== RoomStatus.SELECTING
     && currentRoom.status !== RoomStatus.STARTING

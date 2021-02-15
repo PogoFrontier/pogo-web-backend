@@ -47,6 +47,7 @@ export interface Room {
   status: RoomStatus,
   wait?: number,
   timer?: any,
+  timerId?: string,
   charge?: {
     subject: number,
     move: Move,

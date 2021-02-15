@@ -5,8 +5,7 @@ function endGame(room: string) {
   const currentRoom = rooms.get(room);
   if (currentRoom) {
     if (currentRoom.timer) {
-      clearInterval(rooms.get(room)!.timer);
-      delete rooms.get(room)!.timer;
+      clearInterval(currentRoom.timer);
     }
     if (rooms.get(room)!.players && rooms.get(room)!.players.length === 2) {
       let p = rooms.get(room)!.players[0]!;
