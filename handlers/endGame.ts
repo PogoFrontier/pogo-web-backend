@@ -1,7 +1,8 @@
+import { time } from "console";
 import { GAME_TIME } from "../config";
 import { onlineClients, rooms } from "../server";
 
-function endGame(room: string) {
+function endGame(room: string, timeout?: boolean) {
   const currentRoom = rooms.get(room);
   if (currentRoom) {
     if (currentRoom.timer) {
@@ -10,7 +11,7 @@ function endGame(room: string) {
     if (rooms.get(room)!.players && rooms.get(room)!.players.length === 2) {
       let p = rooms.get(room)!.players[0]!;
       let o = rooms.get(room)!.players[1]!;
-      if (currentRoom.turn && currentRoom.turn === GAME_TIME * 2) { //Timeout
+      if (timeout) { //Timeout
         if (p.current!.remaining !== o.current!.remaining) {        // First check if more Pokemon
           if (p.current!.remaining > o.current!.remaining) {
             onlineClients.get(p.id)!.send("$endwin");
