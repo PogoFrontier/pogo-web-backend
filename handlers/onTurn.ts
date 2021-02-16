@@ -1,5 +1,5 @@
 import indexOfMax from "../actions/indexOfMax";
-import { CHARGE_WAIT, GAME_TIME, SWAP_COOLDOWN, SWITCH_WAIT } from "../config";
+import { CHARGE_WAIT, GAME_TIME, SWAP_COOLDOWN, SWITCH_WAIT, TURN_LENGTH } from "../config";
 import { moves, onlineClients, rooms } from "../server";
 import { Actions, CODE } from "../types/actions";
 import { ResolveTurnPayload, Update } from "../types/handlers";
@@ -172,6 +172,8 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
         currentRoom.charge.cmp = currentRoom.players[j]!.current!.action!.move!
       }
       delete currentRoom.players[i]!.current!.action;
+      delete currentRoom.players[i]!.current!.bufferedAction;
+      delete currentRoom.players[j]!.current!.bufferedAction;
       payload[i] = {
         ...payload[i],
         id: currentRoom.players[i]!.id,
@@ -214,9 +216,20 @@ const onTurn = (room: string, id: string) => {
     };
     if (currentRoom) {
       for (let i = 0; i < currentRoom.players.length; i++) {
-        const player = currentRoom.players[i]
-        const j = i === 0 ? 1 : 0
+        const player = currentRoom.players[i];
+        const j = i === 0 ? 1 : 0;
         if (player) {
+          if (player.current
+            && player.current.bufferedAction
+            && currentRoom.status === RoomStatus.STARTED) {
+              let buffString = player.current.bufferedAction.string!;
+              player.current.action = player.current.bufferedAction;
+              setTimeout(() => {
+                const oppId = currentRoom.players[j]!.id;
+                onlineClients.get(oppId)!.send(buffString);
+              }, TURN_LENGTH / 2)
+              delete player.current.bufferedAction;
+          }
           if (payload.update[i]?.id !== payload.update[j]?.id && i === 1) {
             payload.update.reverse();
           }
