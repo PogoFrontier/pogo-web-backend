@@ -73,7 +73,10 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
                 onChargeEnd({ id, room, data })
             }
         } else if (data.startsWith("#")) {
-            if (rooms.get(room) && rooms.get(room)?.status !== RoomStatus.SELECTING && rooms.get(room)?.status !== RoomStatus.STARTING) {
+            if (rooms.get(room)
+            && rooms.get(room)?.status !== RoomStatus.SELECTING
+            && rooms.get(room)?.status !== RoomStatus.STARTING
+            && rooms.get(room)?.status !== RoomStatus.CHARGE) {
                 onAction({ id, room, data });
             }
         } else {

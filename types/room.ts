@@ -24,6 +24,7 @@ export interface TurnAction {
   id: keyof typeof Actions,
   active: number,
   move?: Move,
+  string?: string
 }
 
 export interface Player {
@@ -33,6 +34,7 @@ export interface Player {
     team: TeamMember[],
     ready: boolean,
     action?: TurnAction,
+    bufferedAction?: TurnAction,
     active: number,
     switch: number,
     shields: number,
