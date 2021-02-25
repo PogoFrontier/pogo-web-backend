@@ -209,6 +209,10 @@ const onTurn = (room: string, id: string) => {
     && currentRoom.status !== RoomStatus.LISTENING) {
     currentRoom.turn = currentRoom.turn ? currentRoom.turn + 1 : 1;
     const time = Math.ceil(Number((GAME_TIME - currentRoom.turn * 0.5).toFixed(1)))
+    if (time === 0) {
+      endGame(room, true);
+      return;
+    }
     const payload: ResolveTurnPayload = {
       time,
       update: evaluatePayload(room),
