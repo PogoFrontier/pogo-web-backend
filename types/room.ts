@@ -17,7 +17,10 @@ export interface Move {
   "power": number,
   "energy": number,
   "energyGain": number,
-  "cooldown": number
+  "cooldown": number,
+  "buffs"?: [number, number],
+  "buffTarget"?: string,
+  "buffApplyChance"?: string
 }
 
 export interface TurnAction {

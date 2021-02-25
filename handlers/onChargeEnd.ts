@@ -1,4 +1,4 @@
-import { CHARGE_WAIT, GAME_TIME, SWITCH_WAIT } from "../config";
+import { CHARGE_WAIT, GAME_TIME, SWITCH_WAIT, maxBuffStages, buffDivisor } from "../config";
 import { onlineClients, rooms } from "../server";
 import { CODE } from "../types/actions";
 import { OnChargeEndProps, ResolveTurnPayload } from "../types/handlers";
@@ -44,8 +44,51 @@ function onChargeEnd({
         )
         : opponent.current!.team[opponent.current!.active].current!.hp - 1;
         player.current!.team[player.current!.active].current!.energy -= currentRoom.charge.move.energy
+        let message = getMessage(player.current.team[player.current.active].speciesName, currentRoom.charge.move.name, currentRoom.charge.shield)
+        // Apply buffs/debuffs
+        const r = Math.random()
+        if (currentRoom.charge.move.buffApplyChance && r <= parseFloat(currentRoom.charge.move.buffApplyChance)) {
+          if (currentRoom.charge.move.buffTarget === "opponent") {
+            // Atk
+            opponent.current.team[opponent.current.active].current!.status[0] = currentRoom.charge.move.buffs![0] > 0
+              ? Math.min(maxBuffStages, currentRoom.charge.move.buffs![0])
+              : Math.max(-maxBuffStages, currentRoom.charge.move.buffs![0])
+            const atkMult = opponent.current.team[opponent.current.active].current!.status[0] > 0
+              ? (buffDivisor + opponent.current.team[opponent.current.active].current!.status[0]) / buffDivisor
+              : buffDivisor / (buffDivisor - opponent.current.team[opponent.current.active].current!.status[0])
+            opponent.current.team[opponent.current.active].current!.atk *= atkMult
+            // Def
+            opponent.current.team[opponent.current.active].current!.status[1] = currentRoom.charge.move.buffs![1] > 0
+              ? Math.min(maxBuffStages, currentRoom.charge.move.buffs![1])
+              : Math.max(-maxBuffStages, currentRoom.charge.move.buffs![1])
+            const defMult = opponent.current.team[opponent.current.active].current!.status[1] > 0
+              ? (buffDivisor + opponent.current.team[opponent.current.active].current!.status[1]) / buffDivisor
+              : buffDivisor / (buffDivisor - opponent.current.team[opponent.current.active].current!.status[1])
+            opponent.current.team[opponent.current.active].current!.def *= defMult
+            // Change message
+            message = `${message} ${opponent.current!.team[opponent.current!.active].speciesName}'s stats were changed.`
+          } else if (currentRoom.charge.move.buffTarget === "self") {
+            // Atk
+            player.current.team[player.current.active].current!.status[0] = currentRoom.charge.move.buffs![0] > 0
+              ? Math.min(maxBuffStages, currentRoom.charge.move.buffs![0])
+              : Math.max(-maxBuffStages, currentRoom.charge.move.buffs![0])
+            const atkMult = player.current.team[player.current.active].current!.status[0] > 0
+              ? (buffDivisor + player.current.team[player.current.active].current!.status[0]) / buffDivisor
+              : buffDivisor / (buffDivisor - player.current.team[player.current.active].current!.status[0])
+            player.current.team[player.current.active].current!.atk *= atkMult
+            // Def
+            player.current.team[player.current.active].current!.status[1] = currentRoom.charge.move.buffs![1] > 0
+              ? Math.min(maxBuffStages, currentRoom.charge.move.buffs![1])
+              : Math.max(-maxBuffStages, currentRoom.charge.move.buffs![1])
+            const defMult = player.current.team[player.current.active].current!.status[1] > 0
+              ? (buffDivisor + player.current.team[player.current.active].current!.status[1]) / buffDivisor
+              : buffDivisor / (buffDivisor - player.current.team[player.current.active].current!.status[1])
+            player.current.team[player.current.active].current!.def *= defMult
+            // Change message
+            message = `${message} ${player.current!.team[player.current!.active].speciesName}'s stats were changed.`
+          }
+        }
         const time = Math.ceil(Number((GAME_TIME - currentRoom.turn! * 0.5).toFixed(1)))
-        const message = getMessage(player.current.team[player.current.active].speciesName, currentRoom.charge.move.name, currentRoom.charge.shield)
         const payload: ResolveTurnPayload = {
           time,
           update: [
