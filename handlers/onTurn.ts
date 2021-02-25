@@ -225,6 +225,7 @@ const onTurn = (room: string, id: string) => {
         if (player) {
           if (player.current
             && player.current.bufferedAction
+            && !player.current.action
             && currentRoom.status === RoomStatus.STARTED) {
               let buffString = player.current.bufferedAction.string!;
               player.current.action = player.current.bufferedAction;
