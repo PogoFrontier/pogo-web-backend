@@ -21,7 +21,10 @@ function onAction({
       if (type === Actions.CHARGE_ATTACK && moves[d[1]].energy > energy) {
         return;
       }
-      if (player.current.action && !player.current.action.string?.startsWith(Actions.CHARGE_ATTACK)) {
+      if (player.current.action) {
+        if (player.current.action.string?.startsWith(`#${Actions.CHARGE_ATTACK}`)) {
+          return;
+        }
         if (
           !player.current.bufferedAction
           || (player.current.bufferedAction
