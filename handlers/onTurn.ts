@@ -55,7 +55,8 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
                 opponent.current!.remaining -= 1;
                 if (opponent.current?.action?.move) {
                   if (opponent.current?.action?.move.cooldown > 500) {
-                    delete opponent.current!.action; //Cancel fast attacks
+                    delete opponent.current.action; //Cancel fast attacks
+                    delete opponent.current.bufferedAction;
                   }
                 }
                 if (opponent.current!.remaining <= 0) {
@@ -90,7 +91,13 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
         if (shouldSwitch[i] > -1) {
           const player = currentRoom.players[i]!
           const oldActive = player!.current!.active;
+          // Reset debuffs
+          player.current!.team[oldActive].current!.atk = player.current!.team[oldActive].atk;
+          player.current!.team[oldActive].current!.def = player.current!.team[oldActive].def;
+          player.current!.team[oldActive].current!.status = [0, 0];
+          // Set new active Pokemon
           player!.current!.active = shouldSwitch[i];
+          // Generate payload
           if (payload[i] === null) {
             payload[i] = {
               id: currentRoom.players[i]!.id,
