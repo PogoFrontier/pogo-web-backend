@@ -55,7 +55,8 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
                 opponent.current!.remaining -= 1;
                 if (opponent.current?.action?.move) {
                   if (opponent.current?.action?.move.cooldown > 500) {
-                    delete opponent.current!.action; //Cancel fast attacks
+                    delete opponent.current.action; //Cancel fast attacks
+                    delete opponent.current.bufferedAction;
                   }
                 }
                 if (opponent.current!.remaining <= 0) {
