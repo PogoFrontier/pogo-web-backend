@@ -126,6 +126,7 @@ function onChargeEnd({
             payload.update[1]!.remaining = opponent.current!.remaining;
           }
         } else if (currentRoom.charge.cmp) {
+          delete currentRoom.players[j]!.current!.bufferedAction;
           delete currentRoom.players[j]!.current!.action;
           currentRoom.status = RoomStatus.CHARGE;
           currentRoom.wait = CHARGE_WAIT;
