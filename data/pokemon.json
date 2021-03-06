@@ -561,7 +561,7 @@
       "FLAMETHROWER",
       "DRAGON_BREATH"
     ],
-    "sid": 192
+    "sid": 193
   },
   "charizard_mega_y": {
     "dex": 6,
@@ -614,7 +614,7 @@
       "FLAMETHROWER",
       "DRAGON_BREATH"
     ],
-    "sid": 193
+    "sid": 194
   },
   "charizard_shadow": {
     "dex": 6,
@@ -666,7 +666,7 @@
       "DRAGON_BREATH"
     ],
     "searchPriority": 10,
-    "sid": 194
+    "sid": 192
   },
   "squirtle": {
     "dex": 7,
@@ -24884,7 +24884,7 @@
       ]
     },
     "searchPriority": 7,
-    "sid": 13472
+    "sid": 13473
   },
   "shellos_east_sea": {
     "dex": 422,
@@ -24986,10 +24986,10 @@
     },
     "sid": 13504
   },
-  "gastrodon_east_sea": {
+  "gastrodon_east": {
     "dex": 423,
     "speciesName": "Gastrodon (East)",
-    "speciesId": "gastrodon_east_sea",
+    "speciesId": "gastrodon_east",
     "baseStats": {
       "atk": 169,
       "def": 143,
@@ -25038,12 +25038,12 @@
         null
       ]
     },
-    "sid": 13536
+    "sid": 13537
   },
-  "gastrodon_west_sea": {
+  "gastrodon_west": {
     "dex": 423,
     "speciesName": "Gastrodon (West)",
-    "speciesId": "gastrodon_west_sea",
+    "speciesId": "gastrodon_west",
     "baseStats": {
       "atk": 169,
       "def": 143,
