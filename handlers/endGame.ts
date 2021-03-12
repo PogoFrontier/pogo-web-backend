@@ -1,5 +1,3 @@
-import { time } from "console";
-import { GAME_TIME } from "../config";
 import { onlineClients, rooms } from "../server";
 
 function endGame(room: string, timeout?: boolean) {

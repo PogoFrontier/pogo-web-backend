@@ -9,25 +9,25 @@ export function onTeamValidate(team: TeamMember[], chosenRule: any) {
         bestBuddyCount += 1
       }
       if (bestBuddyCount > chosenRule.maxBestBuddy) {
-        throw new Error(`Best buddy exceeds limit ${chosenRule.maxBestBuddy}`)
+        return `Number of best buddies exceeds limit of ${chosenRule.maxBestBuddy}`
       }
       if (chosenRule.allowedPokemon && !chosenRule.allowedPokemon.includes(member.speciesId)) {
-        throw new Error(`Pokemon ${member.speciesId} is not allowed`)
+        return `Pokemon ${member.speciesName} is not allowed`
       }
   
       var chosenPokemon: any = pokemon[member.speciesId]
       var cp: number = calculateCP(chosenPokemon, member.level!, member.iv)
       if (chosenRule.maxCP && cp > chosenRule.maxCP) {
-        throw new Error("CP is over limit")
+        return `CP is over limit for Pokemon ${chosenPokemon.speciesName}`
       }
   
-      if (!chosenPokemon.fastMoves.include(member.fastMove)) {
-        throw new Error(`fast move ${member.fastMove} for Pokemon ${chosenPokemon.speciesId} not allowed`)
+      if (!chosenPokemon.fastMoves || !chosenPokemon.fastMoves.includes(member.fastMove)) {
+        return `Fast move ${member.fastMove} for Pokemon ${chosenPokemon.speciesName} is not allowed`
       }
   
-      for (const cmove in member.chargeMoves) {
-        if (!chosenPokemon.chargeMoves.include(cmove)) {
-          throw new Error(`charge move ${cmove} Pokemon ${chosenPokemon.speciesId} not allowed`)
+      for (const cmove of member.chargeMoves) {
+        if (!chosenPokemon.chargedMoves.includes(cmove)) {
+          return `Charge move ${cmove} for Pokemon ${chosenPokemon.speciesName} is not allowed`
         }
       }
   
