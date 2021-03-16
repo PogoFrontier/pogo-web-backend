@@ -27465,7 +27465,7 @@
       "shadoweligible"
     ],
     "searchPriority": 2,
-    "sid": 4384
+    "sid": 15168
   },
   "porygon_z_shadow": {
     "dex": 474,
@@ -27525,7 +27525,7 @@
       "shadow"
     ],
     "searchPriority": 2,
-    "sid": 4384
+    "sid": 15168
   },
   "gallade": {
     "dex": 475,
@@ -36203,43 +36203,6 @@
     "dex": 668,
     "speciesName": "Pyroar",
     "speciesId": "pyroar",
-    "baseStats": {
-      "atk": 221,
-      "def": 149,
-      "hp": 200
-    },
-    "types": [
-      "fire",
-      "normal"
-    ],
-    "fastMoves": [
-      "FIRE_FANG",
-      "TAKE_DOWN",
-      "EMBER"
-    ],
-    "chargedMoves": [
-      "FLAME_CHARGE",
-      "SOLAR_BEAM",
-      "DARK_PULSE",
-      "OVERHEAT"
-    ],
-    "defaultIVs": {
-      "cp500": [
-        null
-      ],
-      "cp1500": [
-        null
-      ],
-      "cp2500": [
-        null
-      ]
-    },
-    "sid": 21376
-  },
-  "pyroar_female": {
-    "dex": 668,
-    "speciesName": "Pyroar_female",
-    "speciesId": "pyroar_female",
     "baseStats": {
       "atk": 221,
       "def": 149,
