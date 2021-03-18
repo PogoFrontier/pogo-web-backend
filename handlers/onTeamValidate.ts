@@ -26,15 +26,13 @@ export function onTeamValidate(team: TeamMember[], chosenRule: any) {
       }
   
       for (const cmove of member.chargeMoves) {
-        if (!chosenPokemon.chargedMoves.includes(cmove)) {
+        if (cmove === "NONE") continue
+        else if (cmove === "RETURN" && chosenPokemon.tags && chosenPokemon.tags.includes("shadoweligible")) continue
+        else if (cmove === "FRUSTRATION" && chosenPokemon.tags && chosenPokemon.tags.includes("shadow")) continue
+        else if (!chosenPokemon.chargedMoves.includes(cmove)) {
           return `Charge move ${cmove} for Pokemon ${chosenPokemon.speciesName} is not allowed`
         }
       }
-  
-      member.cp = cp
-      member.hp = calculateHP(chosenPokemon.baseStats.hp, member.level!, member.iv!.hp)
-      member.atk = calculateAtk(chosenPokemon.baseStats.atk, member.level!, member.iv!.atk)
-      member.def = calculateDef(chosenPokemon.baseStats.def, member.level!, member.iv!.def)
     }
     return team;
   }
