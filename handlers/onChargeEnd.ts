@@ -116,6 +116,8 @@ function onChargeEnd({
         if (opponent.current!.team[opponent.current!.active].current!.hp <= 0) {
           opponent.current!.remaining -= 1;
           payload.update[1]!.remaining = opponent.current!.remaining;
+          delete currentRoom.players[j]!.current!.bufferedAction;
+          delete currentRoom.players[j]!.current!.action;
           if (opponent.current!.remaining <= 0) {
             endGame(room);
           } else if (currentRoom.status !== RoomStatus.FAINT) {
