@@ -102,7 +102,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
             payload[i] = {
               id: currentRoom.players[i]!.id,
               active: shouldSwitch[i],
-              hp: player.team[oldActive].current?.hp || 0,
+              hp: player.team[oldActive] ? player.team[oldActive].current?.hp : 0,
               shouldReturn: true
             };
           } else {
