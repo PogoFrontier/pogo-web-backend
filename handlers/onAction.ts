@@ -21,8 +21,8 @@ function onAction({
       if (type === Actions.CHARGE_ATTACK && moves[d[1]].energy > energy) {
         return;
       }
-      if (player.current.action && type !== Actions.FAST_ATTACK) {
-        if (player.current.action.string?.startsWith(`#${Actions.CHARGE_ATTACK}`)) {
+      if (player.current.action) {
+        if (player.current.action.string?.startsWith(`#${Actions.CHARGE_ATTACK}`) || type === Actions.FAST_ATTACK) {
           return;
         }
         if (
