@@ -5581,7 +5581,8 @@
       "HEAVY_SLAM",
       "ROCK_SLIDE",
       "STONE_EDGE",
-      "SUBMISSION"
+      "SUBMISSION",
+      "PAYBACK"
     ],
     "defaultIVs": {
       "cp500": [
@@ -5597,7 +5598,8 @@
     "eliteMoves": [
       "KARATE_CHOP",
       "STONE_EDGE",
-      "SUBMISSION"
+      "SUBMISSION",
+      "PAYBACK"
     ],
     "searchPriority": 5,
     "level25CP": 1893,
@@ -5631,7 +5633,8 @@
       "HEAVY_SLAM",
       "ROCK_SLIDE",
       "STONE_EDGE",
-      "SUBMISSION"
+      "SUBMISSION",
+      "PAYBACK"
     ],
     "defaultIVs": {
       "cp500": [
@@ -5647,7 +5650,8 @@
     "eliteMoves": [
       "KARATE_CHOP",
       "STONE_EDGE",
-      "SUBMISSION"
+      "SUBMISSION",
+      "PAYBACK"
     ],
     "searchPriority": 5,
     "tags": [
@@ -9216,6 +9220,26 @@
     },
     "sid": 3904
   },
+  "mr_mime_galarian": {
+    "dex": 122,
+    "speciesName": "Mr. Mime (Galarian)",
+    "speciesId": "mr_mime_galarian",
+    "baseStats": {
+        "atk": 183,
+        "def": 169,
+        "hp": 137
+    },
+    "types": ["ice", "psychic"],
+    "fastMoves": ["CONFUSION", "ZEN_HEADBUTT"],
+    "chargedMoves": ["PSYBEAM", "PSYCHIC", "ICE_PUNCH"],
+    "tags": ["galarian"],
+    "defaultIVs": {
+        "cp500": [9, 10, 12, 9],
+        "cp1500": [27, 5, 9, 15],
+        "cp2500": [40, 15, 15, 15]
+    },
+    "sid": 3905
+  },
   "scyther": {
     "dex": 123,
     "speciesName": "Scyther",
@@ -9799,6 +9823,27 @@
     ],
     "searchPriority": 4,
     "sid": 4160
+  },
+  "gyarados_mega": {
+    "dex": 130,
+    "speciesName": "Gyarados (Mega)",
+    "speciesId": "gyarados_mega",
+    "baseStats": {
+        "atk": 292,
+        "def": 247,
+        "hp": 216
+    },
+    "types": ["water", "dark"],
+    "fastMoves": ["BITE", "DRAGON_BREATH", "DRAGON_TAIL", "WATERFALL"],
+    "chargedMoves": ["CRUNCH", "DRAGON_PULSE", "HYDRO_PUMP", "OUTRAGE", "TWISTER", "AQUA_TAIL"],
+    "defaultIVs": {
+        "cp1500": [11.5, 11, 6, 14],
+        "cp2500": [19, 9, 13, 13]
+    },
+    "tags": ["shadoweligible", "mega"],
+    "level25CP": 3009,
+    "eliteMoves": ["DRAGON_TAIL", "DRAGON_PULSE", "AQUA_TAIL"],
+    "sid": 4161
   },
   "lapras": {
     "dex": 131,
@@ -12719,6 +12764,27 @@
     ],
     "sid": 5792
   },
+  "ampharos_mega": {
+    "dex": 181,
+    "speciesName": "Ampharos (Mega)",
+    "speciesId": "ampharos_mega",
+    "baseStats": {
+        "atk": 294,
+        "def": 203,
+        "hp": 207
+    },
+    "types": ["electric", "dragon"],
+    "fastMoves": ["CHARGE_BEAM", "VOLT_SWITCH"],
+    "chargedMoves": ["DRAGON_PULSE", "FOCUS_BLAST", "POWER_GEM", "THUNDER", "ZAP_CANNON", "THUNDER_PUNCH"],
+    "defaultIVs": {
+        "cp1500": [13, 7, 7, 12],
+        "cp2500": [22, 5, 10, 6]
+    },
+    "tags": ["shadoweligible", "mega"],
+    "level25CP": 2688,
+    "eliteMoves": ["DRAGON_PULSE"],
+    "sid": 5793
+  },
   "bellossom": {
     "dex": 182,
     "speciesName": "Bellossom",
@@ -13400,6 +13466,56 @@
         null
       ]
     },
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 6208
+  },
+  "wooper_shadow":{
+    "dex":194,
+    "speciesName":"Wooper (Shadow)",
+    "speciesId":"wooper_shadow",
+    "baseStats":{
+       "atk":75,
+       "def":66,
+       "hp":146
+    },
+    "types":[
+       "water",
+       "ground"
+    ],
+    "fastMoves":[
+       "MUD_SHOT",
+       "WATER_GUN"
+    ],
+    "chargedMoves":[
+       "BODY_SLAM",
+       "DIG",
+       "MUD_BOMB"
+    ],
+    "defaultIVs":{
+       "cp500":[
+          33,
+          5,
+          11,
+          13
+       ],
+       "cp1500":[
+          40,
+          15,
+          15,
+          15
+       ],
+       "cp2500":[
+          40,
+          15,
+          15,
+          15
+       ]
+    },
+    "tags":[
+       "shadow"
+    ],
     "sid": 6208
   },
   "quagsire": {
@@ -13436,6 +13552,57 @@
         null
       ]
     },
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 6240
+  },
+  "quagsire_shadow":{
+    "dex":195,
+    "speciesName":"Quagsire (Shadow)",
+    "speciesId":"quagsire_shadow",
+    "baseStats":{
+       "atk":152,
+       "def":143,
+       "hp":216
+    },
+    "types":[
+       "water",
+       "ground"
+    ],
+    "fastMoves":[
+       "MUD_SHOT",
+       "WATER_GUN"
+    ],
+    "chargedMoves":[
+       "EARTHQUAKE",
+       "SLUDGE_BOMB",
+       "STONE_EDGE",
+       "ACID_SPRAY"
+    ],
+    "defaultIVs":{
+       "cp500":[
+          9.5,
+          6,
+          8,
+          13
+       ],
+       "cp1500":[
+          28,
+          6,
+          15,
+          10
+       ],
+       "cp2500":[
+          40,
+          15,
+          15,
+          15
+       ]
+    },
+    "tags":[
+       "shadow"
+    ],
     "sid": 6240
   },
   "espeon": {
@@ -14808,6 +14975,56 @@
         null
       ]
     },
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 7040
+  },
+  "swinub_shadow":{
+    "dex":220,
+    "speciesName":"Swinub (Shadow)",
+    "speciesId":"swinub_shadow",
+    "baseStats":{
+       "atk":90,
+       "def":69,
+       "hp":137
+    },
+    "types":[
+       "ice",
+       "ground"
+    ],
+    "fastMoves":[
+       "POWDER_SNOW",
+       "TACKLE"
+    ],
+    "chargedMoves":[
+       "BODY_SLAM",
+       "ICY_WIND",
+       "ROCK_SLIDE"
+    ],
+    "defaultIVs":{
+       "cp500":[
+          26,
+          6,
+          15,
+          11
+       ],
+       "cp1500":[
+          40,
+          15,
+          15,
+          15
+       ],
+       "cp2500":[
+          40,
+          15,
+          15,
+          15
+       ]
+    },
+    "tags":[
+       "shadow"
+    ],
     "sid": 7040
   },
   "piloswine": {
@@ -14843,6 +15060,56 @@
         null
       ]
     },
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 7072
+  },
+  "piloswine_shadow":{
+    "dex":221,
+    "speciesName":"Piloswine (Shadow)",
+    "speciesId":"piloswine_shadow",
+    "baseStats":{
+       "atk":181,
+       "def":138,
+       "hp":225
+    },
+    "types":[
+       "ice",
+       "ground"
+    ],
+    "fastMoves":[
+       "ICE_SHARD",
+       "POWDER_SNOW"
+    ],
+    "chargedMoves":[
+       "AVALANCHE",
+       "BULLDOZE",
+       "STONE_EDGE"
+    ],
+    "defaultIVs":{
+       "cp500":[
+          8,
+          6,
+          13,
+          10
+       ],
+       "cp1500":[
+          24,
+          6,
+          11,
+          10
+       ],
+       "cp2500":[
+          40,
+          15,
+          15,
+          15
+       ]
+    },
+    "tags":[
+       "shadow"
+    ],
     "sid": 7072
   },
   "corsola": {
@@ -14969,7 +15236,6 @@
       "flying"
     ],
     "fastMoves": [
-      "ICE_SHARD",
       "PRESENT",
       "QUICK_ATTACK"
     ],
@@ -15557,7 +15823,8 @@
     "chargedMoves": [
       "HYPER_BEAM",
       "SOLAR_BEAM",
-      "ZAP_CANNON"
+      "ZAP_CANNON",
+      "TRI_ATTACK"
     ],
     "defaultIVs": {
       "cp500": [
@@ -19049,6 +19316,56 @@
         null
       ]
     },
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 9568
+  },
+  "nosepass_shadow":{
+    "dex":299,
+    "speciesName":"Nosepass (Shadow)",
+    "speciesId":"nosepass_shadow",
+    "baseStats":{
+       "atk":82,
+       "def":215,
+       "hp":102
+    },
+    "types":[
+       "rock",
+       "none"
+    ],
+    "fastMoves":[
+       "ROCK_THROW",
+       "SPARK"
+    ],
+    "chargedMoves":[
+       "ROCK_BLAST",
+       "ROCK_SLIDE",
+       "THUNDERBOLT"
+    ],
+    "defaultIVs":{
+       "cp500":[
+          20,
+          5,
+          5,
+          15
+       ],
+       "cp1500":[
+          40,
+          15,
+          15,
+          15
+       ],
+       "cp2500":[
+          40,
+          15,
+          15,
+          15
+       ]
+    },
+    "tags":[
+       "shadow"
+    ],
     "sid": 9568
   },
   "skitty": {
@@ -19317,6 +19634,56 @@
         null
       ]
     },
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 9728
+  },
+  "aron_shadow":{
+    "dex":304,
+    "speciesName":"Aron (Shadow)",
+    "speciesId":"aron_shadow",
+    "baseStats":{
+       "atk":121,
+       "def":141,
+       "hp":137
+    },
+    "types":[
+       "steel",
+       "rock"
+    ],
+    "fastMoves":[
+       "METAL_CLAW",
+       "TACKLE"
+    ],
+    "chargedMoves":[
+       "BODY_SLAM",
+       "IRON_HEAD",
+       "ROCK_TOMB"
+    ],
+    "defaultIVs":{
+       "cp500":[
+          14.5,
+          6,
+          15,
+          10
+       ],
+       "cp1500":[
+          40,
+          15,
+          15,
+          15
+       ],
+       "cp2500":[
+          40,
+          15,
+          15,
+          15
+       ]
+    },
+    "tags":[
+       "shadow"
+    ],
     "sid": 9728
   },
   "lairon": {
@@ -19352,6 +19719,56 @@
         null
       ]
     },
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 9760
+  },
+  "lairon_shadow":{
+    "dex":305,
+    "speciesName":"Lairon (Shadow)",
+    "speciesId":"lairon_shadow",
+    "baseStats":{
+       "atk":158,
+       "def":198,
+       "hp":155
+    },
+    "types":[
+       "steel",
+       "rock"
+    ],
+    "fastMoves":[
+       "IRON_TAIL",
+       "METAL_CLAW"
+    ],
+    "chargedMoves":[
+       "BODY_SLAM",
+       "HEAVY_SLAM",
+       "ROCK_SLIDE"
+    ],
+    "defaultIVs":{
+       "cp500":[
+          9,
+          9,
+          12,
+          12
+       ],
+       "cp1500":[
+          27.5,
+          6,
+          10,
+          12
+       ],
+       "cp2500":[
+          40,
+          15,
+          15,
+          15
+       ]
+    },
+    "tags":[
+       "shadow"
+    ],
     "sid": 9760
   },
   "aggron": {
@@ -19388,6 +19805,57 @@
         null
       ]
     },
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 9792
+  },
+  "aggron_shadow":{
+    "dex":306,
+    "speciesName":"Aggron (Shadow)",
+    "speciesId":"aggron_shadow",
+    "baseStats":{
+       "atk":198,
+       "def":257,
+       "hp":172
+    },
+    "types":[
+       "steel",
+       "rock"
+    ],
+    "fastMoves":[
+       "DRAGON_TAIL",
+       "IRON_TAIL",
+       "SMACK_DOWN"
+    ],
+    "chargedMoves":[
+       "HEAVY_SLAM",
+       "STONE_EDGE",
+       "THUNDER"
+    ],
+    "defaultIVs":{
+       "cp500":[
+          6.5,
+          7,
+          6,
+          5
+       ],
+       "cp1500":[
+          18,
+          9,
+          14,
+          15
+       ],
+       "cp2500":[
+          31.5,
+          7,
+          15,
+          9
+       ]
+    },
+    "tags":[
+       "shadow"
+    ],
     "sid": 9792
   },
   "meditite": {
@@ -19531,6 +19999,47 @@
       ]
     },
     "sid": 9920
+  },
+  "manectric_mega":{
+    "dex":310,
+    "speciesName":"Manectric (Mega)",
+    "speciesId":"manectric_mega",
+    "baseStats":{
+       "atk":286,
+       "def":179,
+       "hp":172
+    },
+    "types":[
+       "electric",
+       "none"
+    ],
+    "fastMoves":[
+       "CHARGE_BEAM",
+       "SNARL"
+    ],
+    "chargedMoves":[
+       "FLAME_BURST",
+       "THUNDER",
+       "WILD_CHARGE"
+    ],
+    "tags":[
+       "mega"
+    ],
+    "defaultIVs":{
+       "cp1500":[
+          15,
+          13,
+          10,
+          14
+       ],
+       "cp2500":[
+          25,
+          9,
+          13,
+          14
+       ]
+    },
+    "sid": 9921
   },
   "plusle": {
     "dex": 311,
@@ -21093,6 +21602,56 @@
         null
       ]
     },
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 11040
+  },
+  "lileep_shadow":{
+    "dex":345,
+    "speciesName":"Lileep (Shadow)",
+    "speciesId":"lileep_shadow",
+    "baseStats":{
+       "atk":105,
+       "def":150,
+       "hp":165
+    },
+    "types":[
+       "rock",
+       "grass"
+    ],
+    "fastMoves":[
+       "ACID",
+       "INFESTATION"
+    ],
+    "chargedMoves":[
+       "ANCIENT_POWER",
+       "GRASS_KNOT",
+       "MIRROR_COAT"
+    ],
+    "defaultIVs":{
+       "cp500":[
+          14.5,
+          9,
+          12,
+          13
+       ],
+       "cp1500":[
+          40,
+          15,
+          15,
+          15
+       ],
+       "cp2500":[
+          40,
+          15,
+          15,
+          15
+       ]
+    },
+    "tags":[
+       "shadow"
+    ],
     "sid": 11040
   },
   "cradily": {
@@ -21129,7 +21688,59 @@
         null
       ]
     },
+    "tags": [
+      "shadoweligible"
+    ],
     "searchPriority": 2,
+    "sid": 11072
+  },
+  "cradily_shadow":{
+    "dex":346,
+    "speciesName":"Cradily (Shadow)",
+    "speciesId":"cradily_shadow",
+    "baseStats":{
+       "atk":152,
+       "def":194,
+       "hp":200
+    },
+    "types":[
+       "rock",
+       "grass"
+    ],
+    "fastMoves":[
+       "ACID",
+       "INFESTATION",
+       "BULLET_SEED"
+    ],
+    "chargedMoves":[
+       "BULLDOZE",
+       "GRASS_KNOT",
+       "STONE_EDGE"
+    ],
+    "defaultIVs":{
+       "cp500":[
+          8.5,
+          8,
+          14,
+          7
+       ],
+       "cp1500":[
+          25.5,
+          5,
+          15,
+          8
+       ],
+       "cp2500":[
+          40,
+          15,
+          15,
+          15
+       ]
+    },
+    "searchPriority":2,
+    "tags":[
+       "shadow"
+    ],
     "sid": 11072
   },
   "anorith": {
@@ -21165,6 +21776,56 @@
         null
       ]
     },
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 11104
+  },
+  "anorith_shadow":{
+    "dex":347,
+    "speciesName":"Anorith (Shadow)",
+    "speciesId":"anorith_shadow",
+    "baseStats":{
+       "atk":176,
+       "def":100,
+       "hp":128
+    },
+    "types":[
+       "rock",
+       "bug"
+    ],
+    "fastMoves":[
+       "SCRATCH",
+       "STRUGGLE_BUG"
+    ],
+    "chargedMoves":[
+       "ANCIENT_POWER",
+       "AQUA_JET",
+       "CROSS_POISON"
+    ],
+    "defaultIVs":{
+       "cp500":[
+          12,
+          6,
+          12,
+          15
+       ],
+       "cp1500":[
+          39,
+          14,
+          14,
+          15
+       ],
+       "cp2500":[
+          40,
+          15,
+          15,
+          15
+       ]
+    },
+    "tags":[
+       "shadow"
+    ],
     "sid": 11104
   },
   "armaldo": {
@@ -21200,6 +21861,56 @@
         null
       ]
     },
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 11136
+  },
+  "armaldo_shadow":{
+    "dex":348,
+    "speciesName":"Armaldo (Shadow)",
+    "speciesId":"armaldo_shadow",
+    "baseStats":{
+       "atk":222,
+       "def":174,
+       "hp":181
+    },
+    "types":[
+       "rock",
+       "bug"
+    ],
+    "fastMoves":[
+       "FURY_CUTTER",
+       "STRUGGLE_BUG"
+    ],
+    "chargedMoves":[
+       "CROSS_POISON",
+       "ROCK_BLAST",
+       "WATER_PULSE"
+    ],
+    "defaultIVs":{
+       "cp500":[
+          6.5,
+          12,
+          13,
+          10
+       ],
+       "cp1500":[
+          19,
+          11,
+          13,
+          12
+       ],
+       "cp2500":[
+          36,
+          5,
+          7,
+          12
+       ]
+    },
+    "tags":[
+       "shadow"
+    ],
     "sid": 11136
   },
   "feebas": {
@@ -22043,6 +22754,56 @@
         null
       ]
     },
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 11616
+  },
+  "spheal_shadow":{
+    "dex":363,
+    "speciesName":"Spheal (Shadow)",
+    "speciesId":"spheal_shadow",
+    "baseStats":{
+       "atk":95,
+       "def":90,
+       "hp":172
+    },
+    "types":[
+       "ice",
+       "water"
+    ],
+    "fastMoves":[
+       "ROCK_SMASH",
+       "WATER_GUN"
+    ],
+    "chargedMoves":[
+       "AURORA_BEAM",
+       "BODY_SLAM",
+       "WATER_PULSE"
+    ],
+    "defaultIVs":{
+       "cp500":[
+          21,
+          5,
+          6,
+          13
+       ],
+       "cp1500":[
+          40,
+          15,
+          15,
+          15
+       ],
+       "cp2500":[
+          40,
+          15,
+          15,
+          15
+       ]
+    },
+    "tags":[
+       "shadow"
+    ],
     "sid": 11616
   },
   "sealeo": {
@@ -22078,6 +22839,56 @@
         null
       ]
     },
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 11648
+  },
+  "sealeo_shadow":{
+    "dex":364,
+    "speciesName":"Sealeo (Shadow)",
+    "speciesId":"sealeo_shadow",
+    "baseStats":{
+       "atk":137,
+       "def":132,
+       "hp":207
+    },
+    "types":[
+       "ice",
+       "water"
+    ],
+    "fastMoves":[
+       "POWDER_SNOW",
+       "WATER_GUN"
+    ],
+    "chargedMoves":[
+       "AURORA_BEAM",
+       "BODY_SLAM",
+       "WATER_PULSE"
+    ],
+    "defaultIVs":{
+       "cp500":[
+          11,
+          5,
+          10,
+          15
+       ],
+       "cp1500":[
+          35.5,
+          7,
+          12,
+          13
+       ],
+       "cp2500":[
+          40,
+          15,
+          15,
+          15
+       ]
+    },
+    "tags":[
+       "shadow"
+    ],
     "sid": 11648
   },
   "walrein": {
@@ -22113,6 +22924,56 @@
         null
       ]
     },
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 11680
+  },
+  "walrein_shadow":{
+    "dex":365,
+    "speciesName":"Walrein (Shadow)",
+    "speciesId":"walrein_shadow",
+    "baseStats":{
+       "atk":182,
+       "def":176,
+       "hp":242
+    },
+    "types":[
+       "ice",
+       "water"
+    ],
+    "fastMoves":[
+       "FROST_BREATH",
+       "WATERFALL"
+    ],
+    "chargedMoves":[
+       "BLIZZARD",
+       "EARTHQUAKE",
+       "WATER_PULSE"
+    ],
+    "defaultIVs":{
+       "cp500":[
+          7,
+          6,
+          8,
+          15
+       ],
+       "cp1500":[
+          20,
+          9,
+          13,
+          13
+       ],
+       "cp2500":[
+          39,
+          5,
+          9,
+          12
+       ]
+    },
+    "tags":[
+       "shadow"
+    ],
     "sid": 11680
   },
   "clamperl": {
@@ -23065,8 +23926,10 @@
     "chargedMoves": [
       "AERIAL_ACE",
       "ANCIENT_POWER",
-      "OUTRAGE"
+      "OUTRAGE",
+      "HURRICANE"
     ],
+    "eliteMoves": ["HURRICANE"],
     "tags": [
       "legendary"
     ],
@@ -24194,14 +25057,17 @@
     ],
     "fastMoves": [
       "POISON_JAB",
-      "RAZOR_LEAF"
+      "RAZOR_LEAF",
+      "BULLET_SEED"
     ],
     "chargedMoves": [
       "DAZZLING_GLEAM",
       "GRASS_KNOT",
       "SLUDGE_BOMB",
-      "SOLAR_BEAM"
+      "SOLAR_BEAM",
+      "WEATHER_BALL_FIRE"
     ],
+    "eliteMoves": ["BULLET_SEED", "WEATHER_BALL_FIRE"],
     "defaultIVs": {
       "cp500": [
         null
@@ -24795,11 +25661,7 @@
     "chargedMoves": [
       "DAZZLING_GLEAM",
       "PETAL_BLIZZARD",
-      "SEED_BOMB",
-      "POWER_WHIP"
-    ],
-    "legacyMoves": [
-      "POWER_WHIP"
+      "SEED_BOMB"
     ],
     "defaultIVs": {
       "cp500": [
@@ -27403,7 +28265,62 @@
     "eliteMoves": [
       "ANCIENT_POWER"
     ],
+    "tags": [
+      "shadoweligible"
+    ],
     "searchPriority": 2,
+    "sid": 15136
+  },
+  "mamoswine_shadow":{
+    "dex":473,
+    "speciesName":"Mamoswine (Shadow)",
+    "speciesId":"mamoswine_shadow",
+    "baseStats":{
+       "atk":247,
+       "def":146,
+       "hp":242
+    },
+    "types":[
+       "ice",
+       "ground"
+    ],
+    "fastMoves":[
+       "MUD_SLAP",
+       "POWDER_SNOW"
+    ],
+    "chargedMoves":[
+       "AVALANCHE",
+       "BULLDOZE",
+       "STONE_EDGE",
+       "ANCIENT_POWER"
+    ],
+    "defaultIVs":{
+       "cp500":[
+          5.5,
+          9,
+          15,
+          15
+       ],
+       "cp1500":[
+          16,
+          11,
+          14,
+          15
+       ],
+       "cp2500":[
+          27.5,
+          8,
+          15,
+          5
+       ]
+    },
+    "eliteMoves":[
+       "ANCIENT_POWER"
+    ],
+    "searchPriority":2,
+    "tags":[
+       "shadow"
+    ],
     "sid": 15136
   },
   "porygon_z": {
@@ -27647,6 +28564,56 @@
         null
       ]
     },
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 15232
+  },
+  "probopass_shadow":{
+    "dex":476,
+    "speciesName":"Probopass (Shadow)",
+    "speciesId":"probopass_shadow",
+    "baseStats":{
+       "atk":135,
+       "def":275,
+       "hp":155
+    },
+    "types":[
+       "rock",
+       "steel"
+    ],
+    "fastMoves":[
+       "ROCK_THROW",
+       "SPARK"
+    ],
+    "chargedMoves":[
+       "MAGNET_BOMB",
+       "ROCK_SLIDE",
+       "THUNDERBOLT"
+    ],
+    "defaultIVs":{
+       "cp500":[
+          9,
+          6,
+          11,
+          13
+       ],
+       "cp1500":[
+          27.5,
+          5,
+          14,
+          9
+       ],
+       "cp2500":[
+          40,
+          15,
+          15,
+          15
+       ]
+    },
+    "tags":[
+       "shadow"
+    ],
     "sid": 15232
   },
   "dusknoir": {
@@ -34922,14 +35889,14 @@
       "flying"
     ],
     "fastMoves": [
-      "ASTONISH",
-      "THUNDER_SHOCK"
+      "BITE",
+      "VOLT_SWITCH"
     ],
     "chargedMoves": [
-      "CRUNCH",
+      "SLUDGE_WAVE",
       "THUNDER",
-      "BRICK_BREAK",
-      "THUNDER_PUNCH"
+      "FOCUS_BLAST",
+      "THUNDERBOLT"
     ],
     "defaultIVs": {
       "cp500": [
@@ -35425,8 +36392,10 @@
     "chargedMoves": [
       "X_SCISSOR",
       "MAGNET_BOMB",
-      "FLAMETHROWER"
+      "FLAMETHROWER",
+      "TECHNO_BLAST_BURN"
     ],
+    "eliteMoves": ["TECHNO_BLAST_BURN"],
     "defaultIVs": {
       "cp500": [
         null
@@ -36039,7 +37008,8 @@
     "fastMoves": [
       "PECK",
       "FIRE_SPIN",
-      "STEEL_WING"
+      "STEEL_WING",
+      "INCINERATE"
     ],
     "chargedMoves": [
       "BRAVE_BIRD",
@@ -36047,6 +37017,7 @@
       "FLAME_CHARGE",
       "HURRICANE"
     ],
+    "eliteMoves": ["INCINERATE"],
     "defaultIVs": {
       "cp500": [
         null
@@ -38240,6 +39211,27 @@
       "galarian"
     ],
     "sid": 27680
+  },
+  "mr_rime": {
+    "dex": 866,
+    "speciesName": "Mr. Rime",
+    "speciesId": "mr_rime",
+    "baseStats": {
+        "atk": 212,
+        "def": 179,
+        "hp": 190
+    },
+    "types": ["ice", "psychic"],
+    "fastMoves": ["CONFUSION", "ZEN_HEADBUTT", "ICE_SHARD"],
+    "chargedMoves": ["PSYBEAM", "PSYCHIC", "ICE_PUNCH", "ICY_WIND"],
+    "defaultIVs": {
+        "cp500": [6.5, 15, 9, 14],
+        "cp1500": [19.5, 9, 14, 7],
+        "cp2500": [36, 6, 6, 15]
+    },
+    "tags": ["galarian"],
+    "searchPriority": 2,
+    "sid": 27712
   },
   "runerigus": {
     "dex": 867,
