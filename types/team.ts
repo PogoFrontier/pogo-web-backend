@@ -1,4 +1,25 @@
-export interface TeamMember {
+export type typeId =
+  | 'none'
+  | 'bug'
+  | 'dark'
+  | 'dragon'
+  | 'electric'
+  | 'fairy'
+  | 'fighting'
+  | 'fire'
+  | 'flying'
+  | 'ghost'
+  | 'grass'
+  | 'ground'
+  | 'ice'
+  | 'normal'
+  | 'poison'
+  | 'psychic'
+  | 'rock'
+  | 'steel'
+  | 'water'
+  
+  export interface TeamMember {
   speciesId: string
   speciesName: string
   hp: number
@@ -11,7 +32,7 @@ export interface TeamMember {
     hp: number
   }
   cp: number
-  types: [string, string]
+  types: [typeId, typeId]
   fastMove: string
   chargeMoves: [string, string] | [string]
   sid: number
