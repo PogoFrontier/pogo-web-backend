@@ -4,6 +4,11 @@ export interface OnGetOpponentPayload {
   room: string,
 }
 
+export interface OnJoinPayload {
+  room: string,
+  team: TeamMember[]
+}
+
 export interface OnNewRoomPayload {
   room: string,
   team: TeamMember[]

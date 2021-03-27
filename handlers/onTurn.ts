@@ -1,11 +1,12 @@
 import indexOfMax from "../actions/indexOfMax";
 import { CHARGE_WAIT, GAME_TIME, SWAP_COOLDOWN, SWITCH_WAIT, TURN_LENGTH } from "../config";
-import { moves, onlineClients, rooms } from "../server";
+import { moves, rooms } from "../server";
 import { Actions, CODE } from "../types/actions";
 import { ResolveTurnPayload, Update } from "../types/handlers";
 import { Move, RoomStatus } from "../types/room";
 import { calcDamage } from "../utils/damageUtils";
 import endGame from "./endGame";
+import { pubClient } from "../redis/clients";
 
 function evaluatePayload(room: string): [Update | null, Update | null] {
   const payload: [Update | null, Update | null] = [null, null];
@@ -238,7 +239,7 @@ const onTurn = (room: string, id: string) => {
               player.current.action = player.current.bufferedAction;
               setTimeout(() => {
                 const oppId = currentRoom.players[j]!.id;
-                onlineClients.get(oppId)!.send(buffString);
+                pubClient.publish("messagesToUser:" + oppId, buffString);
               }, TURN_LENGTH / 2)
               delete player.current.bufferedAction;
           }
@@ -257,9 +258,8 @@ const onTurn = (room: string, id: string) => {
             type: CODE.turn,
             payload
           };
-          if (onlineClients.get(player.id)) {
-            onlineClients.get(player.id)!.send(JSON.stringify(data));
-          }
+          
+          pubClient.publish("messagesToUser:" + player.id, JSON.stringify(data));
         }
       }
     }

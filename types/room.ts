@@ -1,5 +1,6 @@
 import { TeamMember } from "./team";
 import { Actions } from './actions';
+import { RedisClient } from "redis";
 
 export enum RoomStatus {
   SELECTING,
@@ -60,4 +61,5 @@ export interface Room {
     multiplier?: number,
     cmp?: Move
   }
+  subClient: RedisClient
 }

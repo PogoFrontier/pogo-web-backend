@@ -1,8 +1,9 @@
-import { onlineClients, rooms } from "../server";
+import { rooms } from "../server";
 import { Actions } from "../types/actions";
 import { OnActionProps } from "../types/handlers";
 import { moves } from '../server';
 import { Move, RoomStatus } from "../types/room";
+import { pubClient } from "../redis/clients";
 
 function onAction({
   id, room, data
@@ -60,8 +61,8 @@ function onAction({
         }
         const j = i === 0 ? 1 : 0;
         const opponent = currentRoom.players[j];
-        if (opponent && onlineClients.get(opponent.id)) {
-          onlineClients.get(opponent.id)!.send(data)
+        if (opponent) {
+          pubClient.publish("messagesToUser:" + opponent.id, data)
         }
       }
     }
