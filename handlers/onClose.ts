@@ -1,12 +1,25 @@
 import to from "../actions/to";
-import { onlineClients, rooms } from "../server";
+import { rooms } from "../server";
 import { CODE } from "../types/actions";
 import { RoomStatus } from "../types/room";
+import { storeClient } from "../redis/clients";
 
 function onClose(id: string, room: string) {
-  onlineClients.delete(id);
   const currentRoom = rooms.get(room);
   if (currentRoom) {
+
+    // Cleat redis subscription
+    if(currentRoom.subClient) {
+      currentRoom.subClient.unsubscribe("commands:" + currentRoom.id);
+    }
+
+    // Unset flag on redis so another server can host this room
+    storeClient.DEL("room:" + currentRoom.id, (err) => {
+      if (err) {
+        console.error(err);
+      }
+    });
+
       if (currentRoom.players) {
           const index = currentRoom.players.findIndex(x => x && x.id === id);
           currentRoom.players[index] = null;

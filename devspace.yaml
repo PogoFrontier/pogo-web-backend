@@ -1,0 +1,81 @@
+version: v1beta9
+images:
+  app:
+    image: 1522784/pogowebbackend
+    preferSyncOverRebuild: true
+    injectRestartHelper: true
+    appendDockerfileInstructions:
+    - USER root
+  app2:
+    image: 1522784/pogowebbackend2
+    preferSyncOverRebuild: true
+    injectRestartHelper: true
+    appendDockerfileInstructions:
+    - USER root
+deployments:
+- name: pogo-web-backend
+  helm:
+    componentChart: true
+    values:
+      containers:
+      - image: 1522784/pogowebbackend
+      service:
+        ports:
+        - port: 3000
+- name: pogo-web-backend2
+  helm:
+    componentChart: true
+    values:
+      containers:
+      - image: 1522784/pogowebbackend2
+      service:
+        ports:
+        - port: 3000
+- name: redis
+  helm:
+    componentChart: true
+    values:
+      containers:
+      - image: redis
+      service:
+        ports:
+        - port: 6379
+dev:
+  ports:
+  - imageName: app
+    forward:
+    - port: 3000
+  ports:
+  - imageName: app2
+    forward:
+    - port: 2999
+  sync:
+  - imageName: app
+    excludePaths:
+    - .git/
+    uploadExcludePaths:
+    - Dockerfile
+    - node_modules/
+    - devspace.yaml
+    onUpload:
+      restartContainer: true
+profiles:
+- name: production
+  description: ""
+  patches:
+  - op: remove
+    path: images.app.appendDockerfileInstructions
+  - op: remove
+    path: images.app.injectRestartHelper
+- name: interactive
+  description: ""
+  patches:
+  - op: add
+    path: dev.interactive
+    value:
+      defaultEnabled: true
+  - op: add
+    path: images.app.entrypoint
+    value:
+    - sleep
+    - "9999999999"

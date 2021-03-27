@@ -20,6 +20,7 @@ import m  from "./data/moves.json";
 import r from "./data/rules.json";
 import onAction from "./handlers/onAction";
 import onChargeEnd from "./handlers/onChargeEnd";
+import { pubClient, subClient } from "./redis/clients";
 
 export const pokemon: any = p;
 export const moves: any = m;
@@ -27,7 +28,6 @@ export const rules: any = r;
 
 export const SERVER_PORT = 3000;
 
-export let onlineClients = new Map<string, WebSocket>();
 export let rooms = new Map<string, Room>();
 
 //initialize node server app
@@ -61,46 +61,48 @@ app.use(e.static('public'));
 
 function onNewWebsocketConnection(ws: WebSocket, req: Request) {
     const id = req.url.substring(1);
-    onlineClients.set(id, ws);
     console.info(`Socket ${id} has connected.`);
     let room = "";
+
+    const subClientForWS = subClient.duplicate();
+
+    subClientForWS.on("message", (chan, msg) => {
+        ws.send(msg);
+    });
+    subClientForWS.subscribe("messagesToUser:" + id);
+
     ws.onmessage = function(this, ev) {
         const data: string = ev.data;
+
         if (data === ping) {
             ws.send(pong);
-        } else if (data.startsWith("$")) {
-            if (rooms.get(room) && rooms.get(room)?.status === RoomStatus.LISTENING) {
-                onChargeEnd({ id, room, data })
-            }
-        } else if (data.startsWith("#")) {
-            if (rooms.get(room)
-            && rooms.get(room)?.status !== RoomStatus.SELECTING
-            && rooms.get(room)?.status !== RoomStatus.STARTING
-            && rooms.get(room)?.status !== RoomStatus.CHARGE) {
-                onAction({ id, room, data });
-            }
-        } else {
+        } else if (isNewRoom(data)) {
             const { type, payload } = JSON.parse(data)
-            switch (type) {
-                case CODE.room:
-                    room = onNewRoom(id, payload);
-                    break;
-                case CODE.get_opponent:
-                    onGetOpponent(id, payload);
-                    break;
-                case CODE.team_submit:
-                    onTeamSubmit(id, payload);
-                    break;
-                case CODE.ready_game:
-                    onReadyGame(id, payload);
-                    break;
-                default:
-                    console.error(`Message not recognized: ${data}`);
-            }
+
+            // Try to create a new room if neccessary
+            onNewRoom(id, payload, roomId => {
+                room = roomId;
+            });
+        } else{
+            // Publish on redis so the host of this room receives this
+            const publication = {
+                sender: id,
+                data: data
+            };
+            pubClient.publish("commands:" + room, JSON.stringify(publication), (err, reply) => {
+                if (err) {
+                    console.error();
+                }
+
+                if (reply !== 1) {
+                    console.error("Unexpected number of subscribers received this command. Should be 1, but actually: " + reply);
+                }
+            })
         }
     };
 
     ws.onclose = () => {
+        subClientForWS.unsubscribe();
         onClose(id, room)
     };
 }
@@ -117,6 +119,15 @@ function startServer() {
 
     // important! must listen from `server`, not `app`, otherwise socket.io won't function correctly
     server.listen(process.env.PORT || SERVER_PORT, () => console.info(`Listening on port ${process.env.PORT || SERVER_PORT}.`));
+}
+
+function isNewRoom(data: string): boolean {
+    try{
+        const { type } = JSON.parse(data);
+        return type === CODE.room;
+    } catch(e) {
+        return false;
+    }
 }
 
 startServer();

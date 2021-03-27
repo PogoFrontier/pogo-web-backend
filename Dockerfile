@@ -5,7 +5,7 @@ WORKDIR /app
 
 # Add package.json to WORKDIR and install dependencies
 COPY package*.json ./
-RUN npm install
+RUN npm install --save-dev
 RUN npm install -g typescript
 
 # Add source code files to WORKDIR

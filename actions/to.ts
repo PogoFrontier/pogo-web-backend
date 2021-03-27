@@ -1,12 +1,24 @@
-import { onlineClients, rooms } from "../server";
+import { rooms } from "../server";
+import { pubClient, storeClient } from "../redis/clients";
 
 function to(room: string, data: string, id?: string) {
-  if (rooms.get(room)) {
-      for (let player of rooms.get(room)!.players) {
-          if (player && player.id !== id && onlineClients.get(player.id)) {
-              onlineClients.get(player.id)!.send(data);
-          }
+  const currentRoom = rooms.get(room)
+  if (currentRoom) {
+
+    storeClient.SET("room:" + room, JSON.stringify({
+        id: room,
+        players: currentRoom.players,
+        turn: currentRoom.turn,
+        wait: currentRoom.wait,
+        timerId: currentRoom.timerId,
+        charge: currentRoom.charge
+    }));
+
+    for (let player of rooms.get(room)!.players) {
+      if (player && player.id !== id) {
+        pubClient.publish("messagesToUser:" + player.id, data)
       }
+    }
   }
 }
 

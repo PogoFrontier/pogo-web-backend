@@ -2,36 +2,51 @@ import to from "../actions/to";
 import { rooms } from "../server";
 import { CODE } from "../types/actions";
 import { OnNewRoomPayload } from "../types/handlers";
-import { RoomStatus } from "../types/room";
+import { Room, RoomStatus } from "../types/room";
+import { useRoom, setupRoom } from "../redis/rooms";
+import { subClient, pubClient } from "../redis/clients";
+import onJoin from "./onJoin";
 
-function onNewRoom(id: string, payload: OnNewRoomPayload): string {
-  const { room, team } = payload
-  const currentRoom = rooms.get(room);
-  const player = {id, team};
+function onNewRoom(id: string, payload: OnNewRoomPayload, callback:  (roomId: string) => void) {
+  const { room, team } = payload;
 
-  if (!currentRoom) {
-      rooms.set(room, {
-          id: room,
-          players: [player, null],
-          status: RoomStatus.SELECTING
-      });
-      console.info(`Room ${room} has been created. Socket ${id} has joined.`);
-      return room;
-  }
+  useRoom(room, (err, isNew) => {
+    const player = {id, team};
 
-  for (let i = 0; i < currentRoom.players.length; i++) {
-      if (currentRoom.players[i] === null) {
-        currentRoom.players[i] = player
-        to(room, JSON.stringify({
-          type: CODE.room_join,
-          payload: { team }
-      }), id)
-      console.info(`Socket ${id} has joined ${room}.`);
-      return room;
+    if (err) {
+      console.error(err);
+      return;
     }
-  }
+  
+    if (isNew) {
+      let roomObj: Room = {
+        id: room,
+        players: [player, null],
+        status: RoomStatus.SELECTING,
+        subClient: subClient.duplicate()
+      }
+      rooms.set(room, roomObj);
 
-  return "";
+      setupRoom(roomObj);
+
+      console.info(`Room ${room} has been created. Socket ${id} has joined.`);
+
+    } else {
+      let joinObj = {
+        sender: id,
+        data: {
+          type: CODE.room_join,
+          payload: {
+            room: room,
+            team: team
+          },
+        }
+      }
+      pubClient.publish("commands:" + room, JSON.stringify(joinObj));
+    }
+
+    callback(room);
+  });
 }
 
 export default onNewRoom;

@@ -1,5 +1,6 @@
 import e from "express";
 import { rooms } from "../server";
+import { storeClient } from "../redis/clients";
 
 const router = e.Router();
 
@@ -8,8 +9,13 @@ const router = e.Router();
 // @access Public (for now)
 router.get('/:room', (req, res) => {
     try{
-      const result: any = rooms.get(req.params.room);
-      result ? res.json(result) : res.status(404).json(`Could not find room of id: ${req.params.room}`);
+      storeClient.get("room:" + req.params.room, (err, reply) => {
+        if (err) {
+          res.status(500).json({message: "Internal server error"});
+        }
+
+        reply ? res.json(JSON.parse(reply)) : res.status(404).json(`Could not find room of id: ${req.params.room}`);
+      });
     } catch(err) {
         console.error();
         res.status(500).json({message: "Internal server error"});

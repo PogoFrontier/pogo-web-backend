@@ -30,7 +30,15 @@ Fast attacks, switches, and charge attacks are special messages that we want to 
 - Simple Events <br />
 Currently, ending the game is represented by the string "$end". Its undecided whether simple events denoted by the $ character will be used more, or if the game end message will become a normal event.
 ### Authoritative Server
-Almost all logic and game states are managed by the server. The server has two important Maps: `onlineClients` and `rooms`. When a client connects via websocket, that socket instance is stored in `onlineClients` under a server-only uuid. This uuid is also stored in the `players` property of a room object inside the `rooms` data structure. A single room stores up to two player objects which individually store the player's registered team and current battle data (this is the part that updates every turn).
+Almost all logic and game states are managed by the server and redis. Wehenever a player enters a room, the server tries to set a flag in redis with the key `room:${roomId}`. 
+
+If it works, it means, this server is the first server with this room. Next it creates a room locally and stores it locally in a map called `rooms`. The room is also saved and updated to redis with the previous key `room:${roomId}`. This room listens on redis to the channel `commands:${roomId}` to get the commands of the players.
+
+The server saves the current roomId for each player. All command messages from a user is published to the redis channel `commands:${roomId}` together with the userId.
+
+If the creation of the flag `room:${roomId}` doesn't work, it means another server already hosts this room. Therefore a join-command is published to this room.
+
+Updates to the players are published by the room in the channel `messagesToUser:${userId}`. For every websocket the server listens to this channel and passes on every message.
 
 The frontend has no timer of its own, and instead reacts to updates from the server. Eventually the frontend will assist with rollback netcode behaviors as we develop functionallity for buffered inputs.
 

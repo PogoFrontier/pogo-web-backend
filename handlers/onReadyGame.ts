@@ -1,8 +1,9 @@
 import to from "../actions/to";
 import { TURN_LENGTH } from "../config";
-import { rooms, onlineClients } from "../server";
+import { rooms } from "../server";
 import { CODE } from "../types/actions";
 import { OnReadyGamePayload } from "../types/handlers";
+import { pubClient } from "../redis/clients";
 import { RoomStatus } from "../types/room";
 import onTurn from "./onTurn";
 import { v4 as uuidv4 } from 'uuid';
@@ -49,14 +50,13 @@ function startCountdown(room: string) {
             if (player
               && player.current
               && opponent
-              && opponent.current
-              && onlineClients.get(player.id)) {
-              onlineClients.get(player.id)!.send(JSON.stringify({
-                type: CODE.game_check,
-                payload: {
-                  countdown
-                }
-            }))
+              && opponent.current) {
+                pubClient.publish("messagesToUser:" + player.id, JSON.stringify({
+                  type: CODE.game_check,
+                  payload: {
+                    countdown
+                  }
+                }));
             }
           }
         }

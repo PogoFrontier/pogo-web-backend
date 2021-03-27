@@ -1,6 +1,7 @@
 import e from "express";
 import m from '../data/moves.json';
-import { rooms } from "../server";
+import { storeClient } from "../redis/clients";
+import { Player } from "../types/room";
 
 const moves: any = m;
 const router = e.Router();
@@ -19,33 +20,41 @@ router.get('/:id', (req, res) => {
 });
 
 router.get('/team/:room/:id', (req, res) => {
-    try {
-        const room: string = req.params.room;
-        const currentRoom = rooms.get(room);
-        const i = currentRoom ? currentRoom.players.findIndex(x => x?.id === req.params.id) : -1;
-        if (currentRoom) {
-            if (i <= -1 || !currentRoom.players[i]?.current) {
-                res.status(404).json(`Could not find player of id: ${req.params.id}`);
-                return;
-            }
-            let arr = [];
-            for (const member of currentRoom.players[i]!.current!.team) {
-                let arr2 = [];
-                for (const move of member.chargeMoves) {
-                    if (move !== "NONE") {
-                        arr2.push(moves[move]);
-                    }
-                }
-                arr.push(arr2);
-            }
-            res.json(arr);
-        } else {
-            res.status(404).json(`Could not find room of id: ${room}`);
+    try{
+        storeClient.get("room:" + req.params.room, (err, reply) => {
+          if (err) {
+            res.status(500).json({message: "Internal server error"});
+          }
+          if (!reply) {
+            res.status(404).json(`Could not find room of id: ${req.params.room}`);
+            return; 
+          }
+          
+          const currentRoom: {
+              players: Array<Player>
+          } = JSON.parse(reply);
+          const player = currentRoom && Array.isArray(currentRoom.players) ? currentRoom.players.find(x => x?.id === req.params.id) : null;
+
+          if (!player || !player.current) {
+            res.status(404).json(`Could not find player of id: ${req.params.id}`);
             return;
-        }
-    } catch (err) {
-        console.error();
-        res.status(500).json({message: "Internal server error"});
+          }
+          let arr = [];
+          for (const member of player.current.team) {
+            let arr2 = [];
+            for (const move of member.chargeMoves) {
+                if (move !== "NONE") {
+                    arr2.push(moves[move]);
+                }
+            }
+            arr.push(arr2);
+          }
+          res.json(arr);
+  
+        });
+    } catch(err) {
+      console.error();
+      res.status(500).json({message: "Internal server error"});
     }
 });
 
