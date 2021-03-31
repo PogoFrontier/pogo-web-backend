@@ -1,4 +1,5 @@
 import { TeamMember } from "./team";
+import { Rule } from "./rule";
 
 export interface OnGetOpponentPayload {
   room: string,
@@ -11,7 +12,8 @@ export interface OnJoinPayload {
 
 export interface OnNewRoomPayload {
   room: string,
-  team: TeamMember[]
+  team: TeamMember[],
+  fromMatchmaker?: boolean
 }
 
 export interface OnReadyGamePayload {
@@ -52,4 +54,8 @@ export interface ResolveTurnPayload {
   time: number,
   update: [Update | null, Update | null],
   switch: number
+}
+
+export interface SearchBattlePayload {
+  format: Rule,
 }

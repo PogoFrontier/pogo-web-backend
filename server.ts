@@ -2,15 +2,15 @@ import e from "express";
 import http from 'http';
 import websocket from 'ws';
 import c from 'cors';
+import deepEqual from "deep-equal";
 import firebase from 'firebase-admin';
 import SERVICE_ACCOUNT from './project-grookey-6a7326cb8d5a';
 import onClose from "./handlers/onClose";
 import onNewRoom from "./handlers/onNewRoom";
 import { CODE } from "./types/actions";
-import { Room, RoomStatus } from "./types/room";
-import onGetOpponent from "./handlers/onGetOpponent";
-import onTeamSubmit from "./handlers/onTeamSubmit";
-import onReadyGame from "./handlers/onReadyGame";
+import { Room } from "./types/room";
+import { Rule } from "./types/rule";
+import { User } from "./types/user";
 import pokemonRoutes from "./api/pokemonRoutes";
 import moveRoutes from "./api/moveRoutes";
 import userRoutes from "./api/userRoutes";
@@ -18,8 +18,8 @@ import roomRoutes from "./api/roomRoutes";
 import p from "./data/pokemon.json";
 import m  from "./data/moves.json";
 import r from "./data/rules.json";
-import onAction from "./handlers/onAction";
-import onChargeEnd from "./handlers/onChargeEnd";
+import onMatchmakingQuit from "./handlers/matchmaking/quit";
+import onMatchmakingSearchBattle from "./handlers/matchmaking/searchBattle";
 import { pubClient, subClient } from "./redis/clients";
 
 export const pokemon: any = p;
@@ -63,6 +63,10 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
     const id = req.url.substring(1);
     console.info(`Socket ${id} has connected.`);
     let room = "";
+    let formatsUsedForMatchmaking = Array<Rule>();
+    let user: User = {
+        socketId: id
+    }
 
     const subClientForWS = subClient.duplicate();
 
@@ -73,16 +77,35 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
 
     ws.onmessage = function(this, ev) {
         const data: string = ev.data;
+        console.log(data);
 
         if (data === ping) {
             ws.send(pong);
         } else if (isNewRoom(data)) {
             const { type, payload } = JSON.parse(data)
 
-            // Try to create a new room if neccessary
             onNewRoom(id, payload, roomId => {
                 room = roomId;
             });
+        } else if (isMatchmaking(data)) {
+            console.log("Is matchmaking")
+            const { type, payload } = JSON.parse(data)
+
+            room = "";
+            switch (type) {
+                case CODE.matchmaking_search_battle:
+                    if (!formatsUsedForMatchmaking.find(item => deepEqual(payload.format, item))) {
+                        formatsUsedForMatchmaking.push(payload.format);
+                    }
+                    onMatchmakingSearchBattle(user, payload);
+                    break;
+                case CODE.matchmaking_quit:
+                    onMatchmakingQuit(user, payload);
+                    break;
+                default:
+                    console.error(`Message not recognized: ${data}`);
+            }
+
         } else{
             // Publish on redis so the host of this room receives this
             const publication = {
@@ -103,7 +126,7 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
 
     ws.onclose = () => {
         subClientForWS.unsubscribe();
-        onClose(id, room)
+        onClose(user, room, formatsUsedForMatchmaking);
     };
 }
 
@@ -125,6 +148,15 @@ function isNewRoom(data: string): boolean {
     try{
         const { type } = JSON.parse(data);
         return type === CODE.room;
+    } catch(e) {
+        return false;
+    }
+}
+
+function isMatchmaking(data: string): boolean {
+    try{
+        const { type } = JSON.parse(data);
+        return typeof type === "string" && type.startsWith("MATCHMAKING_");
     } catch(e) {
         return false;
     }
