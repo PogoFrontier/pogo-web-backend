@@ -54,6 +54,8 @@ export interface Room {
   wait?: number,
   timer?: any,
   timerId?: string,
+  joinTimeout?: NodeJS.Timeout,
+  reservedSeats?: [string, string],
   charge?: {
     subject: number,
     move: Move,
