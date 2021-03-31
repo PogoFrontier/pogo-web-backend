@@ -42,5 +42,12 @@ Updates to the players are published by the room in the channel `messagesToUser:
 
 The frontend has no timer of its own, and instead reacts to updates from the server. Eventually the frontend will assist with rollback netcode behaviors as we develop functionallity for buffered inputs.
 
+### Matchmaking
+Players can open rooms and joint them directly by sending a message with the type `ROOM`. Alternatiely a client can use the type `MATCHMAKING_SEARCH_BATTLE`. With this the server will match this player with another player.
+
+This message must contain the format, in which the game is played. The server saves the player on redis with a key that is unique to this format, so same format means same key. Another server that receives a request like this can then look into the array and see the battle request of the previous player. If the players match (with ELO and stuff we can work on later), the match starts. The players are notified that the game has started and that they should join a room with a given id. They need to join in 15 seconds with their team, or they are disqualified.
+
+If a client wants to quit an ongoing battle request just send a message of type `MATCHMAKING_SEARCH_BATTLE` with the format.
+
 ### Contributing
 The main branch for both projects is protected and autodeploys to Heroku and Vercel respectively. To get stuff onto main, you have to make a PR from a seperate branch. It's recommended making one branch for one feature such as `feature/team-builder` or `feature/dark-mode`. In the case where changes need to be made in both repositories for one feature, just make 2 PRs and include in the message that they are linked. We use pre-commit hooks via Husky, so your code will be checked before it gets committed. Enzyme/Jest are also set up, but no tests have been written.

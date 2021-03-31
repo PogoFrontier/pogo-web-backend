@@ -2,7 +2,7 @@ import { rooms } from "../server";
 import { Room } from "../types/room";
 import { pubClient, storeClient } from "../redis/clients";
 
-function endGame(room: string, timeout?: boolean) {
+function endGame(room: string, timeout?: boolean, predefinedResult?: whoWon) {
   const currentRoom = rooms.get(room);
   if (currentRoom) {
     // Clear timer
@@ -21,6 +21,11 @@ function endGame(room: string, timeout?: boolean) {
         console.error(err);
       }
     });
+
+    if (predefinedResult) {
+      sendResult(currentRoom, predefinedResult);
+      return;
+    }
 
     // Send results to players
     if (rooms.get(room)!.players && rooms.get(room)!.players.length === 2) {

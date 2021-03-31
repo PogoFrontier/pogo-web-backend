@@ -2,9 +2,12 @@ import to from "../actions/to";
 import { rooms } from "../server";
 import { CODE } from "../types/actions";
 import { RoomStatus } from "../types/room";
+import { Rule } from "../types/rule";
+import { User } from "../types/user";
 import { storeClient } from "../redis/clients";
+import quit from "./matchmaking/quit";
 
-function onClose(id: string, room: string) {
+function onClose(user: User, room: string, formatsUsedForMatchmaking: Array<Rule>) {
   const currentRoom = rooms.get(room);
   if (currentRoom) {
 
@@ -20,18 +23,23 @@ function onClose(id: string, room: string) {
       }
     });
 
+    // Delete Battle requests
+    for (const format of formatsUsedForMatchmaking) {
+      quit(user, {format})
+    }
+
       if (currentRoom.players) {
-          const index = currentRoom.players.findIndex(x => x && x.id === id);
+          const index = currentRoom.players.findIndex(x => x && x.id === user.socketId);
           currentRoom.players[index] = null;
           if (currentRoom.status !== RoomStatus.SELECTING && currentRoom.status !== RoomStatus.STARTING) {
             to(room, "$endwin");
-            console.info(`Socket ${id} has been removed from room ${room}, causing game end.`);
+            console.info(`Socket ${user.socketId} has been removed from room ${room}, causing game end.`);
           } else {
             currentRoom.status = RoomStatus.SELECTING;
             to(room, JSON.stringify({
                 type: CODE.room_leave,
             }), );
-            console.info(`Socket ${id} has been removed from room ${room}.`);
+            console.info(`Socket ${user.socketId} has been removed from room ${room}.`);
           }
       }
 
@@ -44,7 +52,7 @@ function onClose(id: string, room: string) {
       }
   }
 
-  console.info(`Socket ${id} has disconnected.`);
+  console.info(`Socket ${user.socketId} has disconnected.`);
 }
 
 export default onClose;
