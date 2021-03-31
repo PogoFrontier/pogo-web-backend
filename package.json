@@ -14,7 +14,7 @@
     "secrets:sync": "bw sync && bw get item 377ad645-94d0-4e13-8e24-aca7013a9e8c | fx .notes > \".env\""
   },
   "engines": {
-    "node": "12.x"
+    "node": "14.x"
   },
   "keywords": [],
   "author": "",
