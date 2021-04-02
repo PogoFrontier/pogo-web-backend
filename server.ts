@@ -2,15 +2,15 @@ import e from "express";
 import http from 'http';
 import websocket from 'ws';
 import c from 'cors';
+import deepEqual from "deep-equal";
 import firebase from 'firebase-admin';
 import SERVICE_ACCOUNT from './project-grookey-6a7326cb8d5a';
 import onClose from "./handlers/onClose";
 import onNewRoom from "./handlers/onNewRoom";
 import { CODE } from "./types/actions";
-import { Room, RoomStatus } from "./types/room";
-import onGetOpponent from "./handlers/onGetOpponent";
-import onTeamSubmit from "./handlers/onTeamSubmit";
-import onReadyGame from "./handlers/onReadyGame";
+import { Room } from "./types/room";
+import { Rule } from "./types/rule";
+import { User } from "./types/user";
 import pokemonRoutes from "./api/pokemonRoutes";
 import moveRoutes from "./api/moveRoutes";
 import userRoutes from "./api/userRoutes";
@@ -18,8 +18,9 @@ import roomRoutes from "./api/roomRoutes";
 import p from "./data/pokemon.json";
 import m  from "./data/moves.json";
 import r from "./data/rules.json";
-import onAction from "./handlers/onAction";
-import onChargeEnd from "./handlers/onChargeEnd";
+import onMatchmakingQuit from "./handlers/matchmaking/quit";
+import onMatchmakingSearchBattle from "./handlers/matchmaking/searchBattle";
+import { pubClient, subClient } from "./redis/clients";
 
 export const pokemon: any = p;
 export const moves: any = m;
@@ -27,7 +28,6 @@ export const rules: any = r;
 
 export const SERVER_PORT = 3000;
 
-export let onlineClients = new Map<string, WebSocket>();
 export let rooms = new Map<string, Room>();
 
 //initialize node server app
@@ -61,47 +61,72 @@ app.use(e.static('public'));
 
 function onNewWebsocketConnection(ws: WebSocket, req: Request) {
     const id = req.url.substring(1);
-    onlineClients.set(id, ws);
     console.info(`Socket ${id} has connected.`);
     let room = "";
+    let formatsUsedForMatchmaking = Array<Rule>();
+    let user: User = {
+        socketId: id
+    }
+
+    const subClientForWS = subClient.duplicate();
+
+    subClientForWS.on("message", (chan, msg) => {
+        ws.send(msg);
+    });
+    subClientForWS.subscribe("messagesToUser:" + id);
+
     ws.onmessage = function(this, ev) {
         const data: string = ev.data;
+        console.log(data);
+
         if (data === ping) {
             ws.send(pong);
-        } else if (data.startsWith("$")) {
-            if (rooms.get(room) && rooms.get(room)?.status === RoomStatus.LISTENING) {
-                onChargeEnd({ id, room, data })
-            }
-        } else if (data.startsWith("#")) {
-            if (rooms.get(room)
-            && rooms.get(room)?.status !== RoomStatus.SELECTING
-            && rooms.get(room)?.status !== RoomStatus.STARTING
-            && rooms.get(room)?.status !== RoomStatus.CHARGE) {
-                onAction({ id, room, data });
-            }
-        } else {
+        } else if (isNewRoom(data)) {
             const { type, payload } = JSON.parse(data)
+
+            onNewRoom(id, payload, roomId => {
+                room = roomId;
+            });
+        } else if (isMatchmaking(data)) {
+            console.log("Is matchmaking")
+            const { type, payload } = JSON.parse(data)
+
+            room = "";
             switch (type) {
-                case CODE.room:
-                    room = onNewRoom(id, payload);
+                case CODE.matchmaking_search_battle:
+                    if (!formatsUsedForMatchmaking.find(item => deepEqual(payload.format, item))) {
+                        formatsUsedForMatchmaking.push(payload.format);
+                    }
+                    onMatchmakingSearchBattle(user, payload);
                     break;
-                case CODE.get_opponent:
-                    onGetOpponent(id, payload);
-                    break;
-                case CODE.team_submit:
-                    onTeamSubmit(id, payload);
-                    break;
-                case CODE.ready_game:
-                    onReadyGame(id, payload);
+                case CODE.matchmaking_quit:
+                    onMatchmakingQuit(user, payload);
                     break;
                 default:
                     console.error(`Message not recognized: ${data}`);
             }
+
+        } else{
+            // Publish on redis so the host of this room receives this
+            const publication = {
+                sender: id,
+                data: data
+            };
+            pubClient.publish("commands:" + room, JSON.stringify(publication), (err, reply) => {
+                if (err) {
+                    console.error();
+                }
+
+                if (reply !== 1) {
+                    console.error("Unexpected number of subscribers received this command. Should be 1, but actually: " + reply);
+                }
+            })
         }
     };
 
     ws.onclose = () => {
-        onClose(id, room)
+        subClientForWS.unsubscribe();
+        onClose(user, room, formatsUsedForMatchmaking);
     };
 }
 
@@ -117,6 +142,24 @@ function startServer() {
 
     // important! must listen from `server`, not `app`, otherwise socket.io won't function correctly
     server.listen(process.env.PORT || SERVER_PORT, () => console.info(`Listening on port ${process.env.PORT || SERVER_PORT}.`));
+}
+
+function isNewRoom(data: string): boolean {
+    try{
+        const { type } = JSON.parse(data);
+        return type === CODE.room;
+    } catch(e) {
+        return false;
+    }
+}
+
+function isMatchmaking(data: string): boolean {
+    try{
+        const { type } = JSON.parse(data);
+        return typeof type === "string" && type.startsWith("MATCHMAKING_");
+    } catch(e) {
+        return false;
+    }
 }
 
 startServer();

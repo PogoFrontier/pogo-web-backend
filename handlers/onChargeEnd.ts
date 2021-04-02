@@ -1,5 +1,6 @@
 import { CHARGE_WAIT, GAME_TIME, SWITCH_WAIT, maxBuffStages, buffDivisor } from "../config";
-import { onlineClients, rooms } from "../server";
+import { pubClient } from "../redis/clients";
+import { rooms } from "../server";
 import { CODE } from "../types/actions";
 import { OnChargeEndProps, ResolveTurnPayload } from "../types/handlers";
 import { RoomStatus } from "../types/room";
@@ -153,12 +154,10 @@ function onChargeEnd({
             switch: opponent.current.switch
           }
         }
-        if (onlineClients.get(player.id) && onlineClients.get(opponent.id)) {
-          onlineClients.get(player.id)!.send(JSON.stringify(dta));
-          onlineClients.get(opponent.id)!.send(JSON.stringify(dta1));
-          if (currentRoom.status === RoomStatus.LISTENING) {
-            currentRoom.status = RoomStatus.STARTED
-          }
+        pubClient.publish("messagesToUser:" + player.id, JSON.stringify(dta));
+        pubClient.publish("messagesToUser:" + opponent.id, JSON.stringify(dta1));
+        if (currentRoom.status === RoomStatus.LISTENING) {
+          currentRoom.status = RoomStatus.STARTED
         }
       }
     }

@@ -8,3 +8,5 @@ export const TURN_LENGTH = 500;
 
 export const buffDivisor = 4;
 export const maxBuffStages = 4;
+
+export const REDIS_URL = "redis://redis:6379";

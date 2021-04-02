@@ -1,5 +1,6 @@
 import { TeamMember } from "./team";
 import { Actions } from './actions';
+import { RedisClient } from "redis";
 
 export enum RoomStatus {
   SELECTING,
@@ -53,6 +54,8 @@ export interface Room {
   wait?: number,
   timer?: any,
   timerId?: string,
+  joinTimeout?: NodeJS.Timeout,
+  reservedSeats?: [string, string],
   charge?: {
     subject: number,
     move: Move,
@@ -60,4 +63,5 @@ export interface Room {
     multiplier?: number,
     cmp?: Move
   }
+  subClient: RedisClient
 }
