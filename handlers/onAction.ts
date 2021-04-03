@@ -1,5 +1,5 @@
 import { rooms } from "../server";
-import { Actions } from "../types/actions";
+import { Action, Actions } from "../types/actions";
 import { OnActionProps } from "../types/handlers";
 import { moves } from '../server';
 import { Move, RoomStatus } from "../types/room";
@@ -13,7 +13,7 @@ function onAction({
     const i = currentRoom.players.findIndex(x => x && x.id === id);
     const player = currentRoom.players[i];
     if (player && player.current) {
-      const d: [keyof typeof Actions, string] = data.substring(1).split(":") as [keyof typeof Actions, string];
+      const d: [Action, string] = data.substring(1).split(":") as [Action, string];
       const type = d[0];
       if (currentRoom.status === RoomStatus.FAINT && type !== Actions.SWITCH) {
         return;
@@ -46,7 +46,7 @@ function onAction({
             active: type === Actions.SWITCH ? parseInt(d[1]) : player.current.active,
             string: data
           }
-          if ((type === Actions.FAST_ATTACK || type === Actions.CHARGE_ATTACK) && moves[d[1]]) {
+          if ((type === Actions.CHARGE_ATTACK) && moves[d[1]]) {
             player.current.bufferedAction.move = { ...moves[d[1]] } as Move
           }
         }

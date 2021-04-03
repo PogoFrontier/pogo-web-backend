@@ -1,5 +1,5 @@
 import { TeamMember } from "./team";
-import { Actions } from './actions';
+import { Action } from './actions';
 import { RedisClient } from "redis";
 
 export enum RoomStatus {
@@ -25,7 +25,7 @@ export interface Move {
 }
 
 export interface TurnAction {
-  id: keyof typeof Actions,
+  id: Action,
   active: number,
   move?: Move,
   string?: string

@@ -30,6 +30,7 @@ dev:
   - imageName: app
     forward:
     - port: 3000
+    - port: 9229
   sync:
   - imageName: app
     excludePaths:
