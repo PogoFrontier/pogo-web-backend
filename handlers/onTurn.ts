@@ -228,7 +228,7 @@ const onTurn = (room: string, id: string) => {
     && currentRoom.status !== RoomStatus.LISTENING) {
     currentRoom.turn = currentRoom.turn ? currentRoom.turn + 1 : 1;
     const time = Math.ceil(Number((GAME_TIME - currentRoom.turn * 0.5).toFixed(1)))
-    if (time === 0) {
+    if (time <= 0 && currentRoom.status !== RoomStatus.CHARGE) {
       endGame(room, true);
       return;
     }
