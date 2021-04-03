@@ -9,7 +9,7 @@ Express + Websocket backend for Project Grookey. This README is targeted towards
 ### Backend
 0. [Install redis cli](https://redis.io/topics/quickstart)
 1. ```npm install```
-2. ```redis server```
+2. ```redis-server```
 3. ```npm run dev```
 <br /><b>Note:</b> The backend uses an experimental flag supported only by node v12+
 
