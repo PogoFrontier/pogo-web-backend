@@ -7,8 +7,10 @@ Express + Websocket backend for Project Grookey. This README is targeted towards
 2. ```npm run dev```
 <br /><b>Note:</b> If you are on Linux and encounter an unsupported runtime error regarding Node Sass, you may have to run `npm rebuild node-sass`.
 ### Backend
+0. [Install redis cli](https://redis.io/topics/quickstart)
 1. ```npm install```
-2. ```npm start```
+2. ```redis server```
+3. ```npm run dev```
 <br /><b>Note:</b> The backend uses an experimental flag supported only by node v12+
 
 ## Project Hierarchy
@@ -21,7 +23,7 @@ The backend is built with ExpressJS + WS so the gamemaster data + sprites can be
 ## Server Communication
 The express server uses [WS](https://www.npmjs.com/package/ws) to create a websocket server for the client. WS doesn't exist on the client side, so pure [websockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) are used instead.
 ### Setup
-So you can either communicate on the live server on Heroku, or a localhost:3000 server. For development I recommend the latter. To switch between the two, just comment and uncomment the corresponding lines of code in `{frontend}/src/config.ts`. There is probably a better way for this 😂.
+So you can either communicate on the live server on Heroku, or a localhost:3000 server. For development I recommend the latter, it will be the default. To switch between the two, just comment and uncomment the corresponding lines of code in `{frontend}/src/config.ts`.
 ### Types of Messages
 - Events <br />
 Creating a room, joining a room, starting the game countdown, submitting a team, etc. are all considered general game events. They are JSON stringified objects of the form `{ type: string, payload: object }`. They payload varies depending on the type of message, you can find definitions in `{backend}/types/handlers.ts`. You can find the different message types in `{backend}/types/actions.ts`.
