@@ -5,7 +5,7 @@ import c from 'cors';
 import deepEqual from "deep-equal";
 import firebase from 'firebase-admin';
 import SERVICE_ACCOUNT from './project-grookey-6a7326cb8d5a';
-import onClose from "./handlers/onClose";
+import quitAll from "./handlers/matchmaking/quitAll";
 import onNewRoom from "./handlers/onNewRoom";
 import { CODE } from "./types/actions";
 import { Room } from "./types/room";
@@ -126,7 +126,16 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
 
     ws.onclose = () => {
         subClientForWS.unsubscribe();
-        onClose(user, room, formatsUsedForMatchmaking);
+        pubClient.publish("commands:" + room, JSON.stringify({
+            sender: id,
+            data: {
+                type: CODE.close,
+                payload: {
+                    room: room
+                }
+            }
+        }));
+        quitAll(user, formatsUsedForMatchmaking);
     };
 }
 

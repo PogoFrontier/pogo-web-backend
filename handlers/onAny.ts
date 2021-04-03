@@ -3,6 +3,7 @@ import { CODE } from "../types/actions";
 import {RoomStatus} from "../types/room";
 import onAction from "./onAction";
 import onChargeEnd from "./onChargeEnd";
+import onClose from "./onClose";
 import onGetOpponent from "./onGetOpponent";
 import onJoin from "./onJoin";
 import onTeamSubmit from "./onTeamSubmit";
@@ -35,6 +36,9 @@ function onAny(senderId: string, roomId: string, data: string) {
                 break;
             case CODE.ready_game:
                 onReadyGame(senderId, payload);
+                break;
+            case CODE.close:
+                onClose({socketId: senderId}, payload.room);
                 break;
             default:
                 console.error(`Message not recognized: ${data}`);
