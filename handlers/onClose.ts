@@ -2,31 +2,12 @@ import to from "../actions/to";
 import { rooms } from "../server";
 import { CODE } from "../types/actions";
 import { RoomStatus } from "../types/room";
-import { Rule } from "../types/rule";
 import { User } from "../types/user";
 import { storeClient } from "../redis/clients";
-import quit from "./matchmaking/quit";
 
-function onClose(user: User, room: string, formatsUsedForMatchmaking: Array<Rule>) {
+function onClose(user: User, room: string) {
   const currentRoom = rooms.get(room);
   if (currentRoom) {
-
-    // Cleat redis subscription
-    if(currentRoom.subClient) {
-      currentRoom.subClient.unsubscribe("commands:" + currentRoom.id);
-    }
-
-    // Unset flag on redis so another server can host this room
-    storeClient.DEL("room:" + currentRoom.id, (err) => {
-      if (err) {
-        console.error(err);
-      }
-    });
-
-    // Delete Battle requests
-    for (const format of formatsUsedForMatchmaking) {
-      quit(user, {format})
-    }
 
       if (currentRoom.players) {
           const index = currentRoom.players.findIndex(x => x && x.id === user.socketId);
@@ -44,6 +25,18 @@ function onClose(user: User, room: string, formatsUsedForMatchmaking: Array<Rule
       }
 
       if (currentRoom.players[1] === null && currentRoom.players[0] === null) {
+        // Cleat redis subscription
+        if(currentRoom.subClient) {
+          currentRoom.subClient.unsubscribe("commands:" + currentRoom.id);
+        }
+    
+        // Unset flag on redis so another server can host this room
+        storeClient.DEL("room:" + currentRoom.id, (err) => {
+          if (err) {
+            console.error(err);
+          }
+        });
+
         if (currentRoom.timer) {
           clearInterval(currentRoom.timer);
         }

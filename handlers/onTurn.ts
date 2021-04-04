@@ -33,7 +33,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
                 Math.min(100, (player.current.team[player.current.active].current!.energy || 0) + moves[player.current.action.move.moveId].energyGain)
 
               payload[i] = {
-                ...payload[i],
+                ...payload[i], 
                 id: player.id,
                 active: player.current.active,
                 hp: payload[i]?.hp || player.current.team[player.current.active].current!.hp,
@@ -87,6 +87,17 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
         }
       }
     }
+
+    // Clear inputs on faint
+    if (currentRoom.status === RoomStatus.FAINT) {
+      for (const player of currentRoom.players) {
+        const action = player?.current?.action?.id ? player?.current?.action?.id : "";
+        if ([Actions.CHARGE_ATTACK, Actions.FAST_ATTACK].includes(action)) {
+          delete player?.current?.action;
+        }
+      }
+    }
+
     if (shouldSwitch[0] > -1 || shouldSwitch[1] > -1) {
       for (let i = 0; i < shouldSwitch.length; i++) {
         if (shouldSwitch[i] > -1) {
@@ -186,7 +197,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
         ...payload[i],
         id: currentRoom.players[i]!.id,
         active: currentRoom.players[i]?.current?.active || 0,
-        shouldReturn: true,
+        shouldReturn: true, 
         wait: CHARGE_WAIT,
         charge: 1
       };
@@ -217,7 +228,7 @@ const onTurn = (room: string, id: string) => {
     && currentRoom.status !== RoomStatus.LISTENING) {
     currentRoom.turn = currentRoom.turn ? currentRoom.turn + 1 : 1;
     const time = Math.ceil(Number((GAME_TIME - currentRoom.turn * 0.5).toFixed(1)))
-    if (time === 0) {
+    if (time <= 0 && currentRoom.status !== RoomStatus.CHARGE) {
       endGame(room, true);
       return;
     }
