@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node --loader ts-node/esm --experimental-specifier-resolution=node -r dotenv/config server.ts",
-    "debug": "node --inspect --loader ts-node/esm --experimental-specifier-resolution=node -r dotenv/config server.ts",
+    "start": "NODE_ENV=production node --loader ts-node/esm --experimental-specifier-resolution=node -r dotenv/config server.ts",
+    "dev": "NODE_ENV=development node --loader ts-node/esm --experimental-specifier-resolution=node -r dotenv/config server.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "tsc",
     "runbuild": "node --experimental-specifier-resolution=node dist/server.js",
@@ -15,7 +15,7 @@
     "secrets:sync": "bw sync && bw get item 377ad645-94d0-4e13-8e24-aca7013a9e8c | fx .notes > \".env\""
   },
   "engines": {
-    "node": "12.x"
+    "node": "14.x"
   },
   "keywords": [],
   "author": "",
