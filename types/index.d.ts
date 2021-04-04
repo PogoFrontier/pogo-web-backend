@@ -8,7 +8,7 @@ export interface Current extends team.Current {
 }
 export interface TurnAction extends room.TurnAction {
 }
-export interface Rulew extends rule.Rule {
+export interface Rule extends rule.Rule {
 }
 export interface Player extends room.Player {
 }
