@@ -7,9 +7,8 @@ Express + Websocket backend for Project Grookey. This README is targeted towards
 2. ```npm run dev```
 <br /><b>Note:</b> If you are on Linux and encounter an unsupported runtime error regarding Node Sass, you may have to run `npm rebuild node-sass`.
 ### Backend
-0. [Install redis cli](https://redis.io/topics/quickstart)
 1. ```npm install```
-2. ```redis-server```
+2. ```docker run -it --rm --name redis-server -p 6379:6379 redis``` ([Meaning you should have Docker installed and running](https://docs.docker.com/engine/reference/commandline/cli/))
 3. ```npm run dev```
 <br /><b>Note:</b> The backend uses an experimental flag supported only by node v12+
 
