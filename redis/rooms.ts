@@ -1,7 +1,6 @@
 import {storeClient, subClient} from './clients';
 import {Room} from '../types/room';
 import onAny from '../handlers/onAny';
-import { type } from 'node:os';
 
 export function useRoom(id: string, callback: (err: Error | null, isNew: boolean) => void) {
     // Set flag on redis that this room is used by this server
