@@ -1,5 +1,5 @@
-import { TeamMember } from "./team";
-import { Rule } from "./rule";
+import { TeamMember, TeamMemberDescription } from "./team";
+import { Rule, RuleDescription } from "./rule";
 
 export interface OnGetOpponentPayload {
   room: string,
@@ -7,12 +7,13 @@ export interface OnGetOpponentPayload {
 
 export interface OnJoinPayload {
   room: string,
-  team: TeamMember[]
+  team: TeamMemberDescription[]
 }
 
 export interface OnNewRoomPayload {
   room: string,
-  team: TeamMember[],
+  format?: RuleDescription,
+  team: TeamMemberDescription[],
   fromMatchmaker?: boolean
 }
 

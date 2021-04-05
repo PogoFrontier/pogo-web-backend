@@ -1,5 +1,6 @@
-import { TeamMember } from "./team";
 import { Action } from './actions';
+import { Rule } from "./rule";
+import { TeamMember } from "./team";
 import { RedisClient } from "redis";
 
 export enum RoomStatus {
@@ -62,6 +63,7 @@ export interface Room {
     shield?: number,
     multiplier?: number,
     cmp?: Move
-  }
+  },
+  format: Rule,
   subClient: RedisClient
 }

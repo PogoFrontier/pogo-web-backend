@@ -21,9 +21,15 @@ var cpms = [0.0939999967813492, 0.1351374320893390, 0.1663978695869450, 0.192650
     0.845300018787384, 0.847803702398935, 0.850300014019012, 0.852803676019539, 0.855300009250640, 
     0.857803649892077, 0.860300004482269, 0.862803624012168, 0.865299999713897]
 
-export function calculateCP(pokemon: any, level: number, iv: any){
+interface statset {
+    atk: number
+    def: number
+    hp: number
+}
+
+export function calculateCP(baseStats: statset, level: number, iv: statset){
     var cpm = getCpmByLevel(level)
-	var cp = Math.floor(( (pokemon.baseStats.atk+iv.atk) * Math.pow(pokemon.baseStats.def+iv.def, 0.5) * Math.pow(pokemon.baseStats.hp+iv.hp, 0.5) * Math.pow(cpm, 2) ) / 10);
+	var cp = Math.floor(( (baseStats.atk+iv.atk) * Math.pow(baseStats.def+iv.def, 0.5) * Math.pow(baseStats.hp+iv.hp, 0.5) * Math.pow(cpm, 2) ) / 10);
 
 	return cp;
 }
