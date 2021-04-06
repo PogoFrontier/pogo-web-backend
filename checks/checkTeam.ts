@@ -146,8 +146,11 @@ export function isTeamValid(team: TeamMember[], format: Rule): {isValid: boolean
 }
   
 export function parseToTeamMembers (team: TeamMemberDescription[]): TeamMember[] {
+    if (!team || team.length <= 0) {
+      return []
+    }
     return team.map(function(member): TeamMember {
-      if (! (member.speciesId in pokeData)) {
+      if (! (member.speciesId in pokeData) || !member.iv) {
         return {
           speciesId: member.speciesId,
           speciesName: "",

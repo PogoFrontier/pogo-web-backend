@@ -77,7 +77,6 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
 
     ws.onmessage = function(this, ev) {
         const data: string = ev.data;
-        console.log(data);
 
         if (data === ping) {
             ws.send(pong);
