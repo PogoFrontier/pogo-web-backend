@@ -1,5 +1,5 @@
 import indexOfMax from "../actions/indexOfMax";
-import { CHARGE_WAIT, GAME_TIME, SWAP_COOLDOWN, SWITCH_WAIT, TURN_LENGTH } from "../config";
+import { CHARGE_WAIT, GAME_TIME, SWAP_COOLDOWN, SWITCH_WAIT, SWITCH_WAIT_LAST, TURN_LENGTH } from "../config";
 import { moves, rooms } from "../server";
 import { Actions, CODE } from "../types/actions";
 import { ResolveTurnPayload, Update } from "../types/handlers";
@@ -64,9 +64,11 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
                   endGame(room);
                 } else if (currentRoom.status !== RoomStatus.FAINT) {
                   currentRoom.status = RoomStatus.FAINT;
-                  currentRoom.wait = SWITCH_WAIT;
-                  payload[i]!.wait = SWITCH_WAIT;
-                  payload[j]!.wait = SWITCH_WAIT;
+                  let waitTime = (opponent.current!.remaining === 1) ? SWITCH_WAIT_LAST : SWITCH_WAIT;
+                  currentRoom.status = RoomStatus.FAINT;
+                  currentRoom.wait = waitTime;
+                  payload[i]!.wait = waitTime;
+                  payload[j]!.wait = waitTime;
                 }
                 payload[j]!.remaining = opponent.current!.remaining;
               }
