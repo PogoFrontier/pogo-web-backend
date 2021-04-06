@@ -2,6 +2,7 @@ import to from "../actions/to";
 import { rooms } from "../server";
 import { CODE } from "../types/actions";
 import { OnJoinPayload } from "../types/handlers";
+import { parseToTeamMembers, isTeamValid } from "../checks/checkTeam";
 import { Room } from "../types/room";
 
 function onJoin(id: string, payload: OnJoinPayload) {
@@ -13,14 +14,21 @@ function onJoin(id: string, payload: OnJoinPayload) {
             console.error(`Socket ${id} is not allowed to join room ${room}.`);
             return;
         }
+        
+        let teamMembers = parseToTeamMembers(team);
+
+        if (!isTeamValid(teamMembers, currentRoom.format).isValid) {
+            console.error("Invalid team");
+            return;
+        }
 
         for (let i = 0; i < currentRoom.players.length; i++) {
             if (currentRoom.players[i] === null) {
                 
-                currentRoom.players[i] = { id, team }
+                currentRoom.players[i] = { id, team: teamMembers }
                 to(room, JSON.stringify({
                     type: CODE.room_join,
-                    payload: { team }
+                    payload: { team: teamMembers }
                 }), id)
 
                 console.info(`Socket ${id} has joined ${room}.`);

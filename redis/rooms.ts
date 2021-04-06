@@ -25,7 +25,15 @@ export function setupRoom(room: Room) {
         timer: room.timer,
         timerId: room.timerId,
         charge: room.charge
-    }));
+    }), (err) => {
+        if (err) {
+            console.error(err);
+            return;
+        }
+
+        // Let redis destroy room after one hour. This is only neccessary if the server is restarted before the battle is finished.
+        storeClient.expire("room:" + room.id, 60 * 60);
+    });
 
     let subClient = room.subClient;
 

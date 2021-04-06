@@ -25,8 +25,8 @@ export type typeId =
   hp: number
   def: number
   atk: number
-  level?: number
-  iv?: {
+  level: number
+  iv: {
     atk: number
     def: number
     hp: number
@@ -39,6 +39,20 @@ export type typeId =
   shiny?: boolean
   name?: string
   current?: Current
+}
+  
+export interface TeamMemberDescription {
+  speciesId: string
+  level: number
+  iv: {
+    atk: number
+    def: number
+    hp: number
+  }
+  fastMove: string
+  chargeMoves: [string, string] | [string]
+  name?: string
+  shiny?: boolean
 }
 
 export interface Team {

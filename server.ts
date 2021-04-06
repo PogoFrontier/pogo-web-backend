@@ -88,7 +88,6 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
                 room = roomId;
             });
         } else if (isMatchmaking(data)) {
-            console.log("Is matchmaking")
             const { type, payload } = JSON.parse(data)
 
             room = "";

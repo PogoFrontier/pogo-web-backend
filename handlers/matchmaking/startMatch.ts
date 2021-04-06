@@ -1,14 +1,14 @@
 import { rooms } from "../../server";
 import { pubClient, subClient } from "../../redis/clients";
-import { Player, Room, RoomStatus } from "../../types/room";
-import { Rule } from "../../types/rule";
+import { Room, RoomStatus } from "../../types/room";
+import { RuleDescription, parseToRule } from "../../types/rule";
 import { User } from "../../types/user";
 import {v4 as uuid } from "uuid";
 import { setupRoom, useRoom } from "../../redis/rooms";
 import endGame from "../endGame";
 import { TeamMember } from "../../types/team";
 
-function startMatch(format: Rule, users: [User, User]) {
+function startMatch(format: RuleDescription, users: [User, User]) {
     const roomId = uuid();
 
     useRoom(roomId, (err, isNew) => {
@@ -23,13 +23,22 @@ function startMatch(format: Rule, users: [User, User]) {
             return;
         }
 
+        // Convert RuleDescription into Rule
+        try{        
+            format = parseToRule(format);
+        } catch(e) {
+            console.error(e);
+            return;
+        }
+
         // Create room
         let roomObj: Room = {
             id: roomId,
             players: [null, null],
             status: RoomStatus.SELECTING,
             subClient: subClient.duplicate(),
-            reservedSeats: [users[0].socketId, users[1].socketId]
+            reservedSeats: [users[0].socketId, users[1].socketId],
+            format: format
         }
         rooms.set(roomId, roomObj);
 
