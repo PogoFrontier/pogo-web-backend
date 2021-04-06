@@ -10,6 +10,4 @@ export const buffDivisor = 4;
 export const maxBuffStages = 4;
 
 // export const REDIS_URL = "redis://redis:6379";
-export const REDIS_URL = process.env.NODE_ENV === "production"
-? "redis://backend-redis.rvgxml.ng.0001.use2.cache.amazonaws.com:6379"
-: "redis://127.0.0.1:6379";
+export const REDIS_URL = process.env.REDIS_TLS_URL || 'redis://127.0.0.1:6379';

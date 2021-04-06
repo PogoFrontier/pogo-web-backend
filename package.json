@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=production node --loader ts-node/esm --experimental-specifier-resolution=node -r dotenv/config server.ts",
-    "dev": "NODE_ENV=development node --loader ts-node/esm --experimental-specifier-resolution=node -r dotenv/config server.ts",
+    "start": "node --loader ts-node/esm --experimental-specifier-resolution=node -r dotenv/config server.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "tsc",
     "runbuild": "node --experimental-specifier-resolution=node dist/server.js",
