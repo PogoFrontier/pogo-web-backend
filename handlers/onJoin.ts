@@ -4,21 +4,24 @@ import { CODE } from "../types/actions";
 import { OnJoinPayload } from "../types/handlers";
 import { parseToTeamMembers, isTeamValid } from "../checks/checkTeam";
 import { Room } from "../types/room";
+import { pubClient } from "../redis/clients";
 
 function onJoin(id: string, payload: OnJoinPayload) {
     const { room, team } = payload;
     const currentRoom = rooms.get(room);
 
     if (currentRoom) {
-        if(!isAllowed(currentRoom, id)) {
-            console.error(`Socket ${id} is not allowed to join room ${room}.`);
+        const { allowed, reason } = isAllowed(currentRoom, id)
+        if(!allowed) {
+            pubClient.publish("messagesToUser:" + id, "$error" + reason);
             return;
         }
         
         let teamMembers = parseToTeamMembers(team);
 
-        if (!isTeamValid(teamMembers, currentRoom.format).isValid) {
-            console.error("Invalid team");
+        const { isValid, violations } = isTeamValid(teamMembers, currentRoom.format);
+        if (!isValid) {
+            pubClient.publish("messagesToUser:" + id, "$errorYour team is invalid.\n" + violations.join("\n"));
             return;
         }
 
@@ -38,26 +41,46 @@ function onJoin(id: string, payload: OnJoinPayload) {
                     clearTimeout(currentRoom.joinTimeout);
                 }
 
+                // Notify user
+                pubClient.publish("messagesToUser:" + id, "$start");
+
                 return room;
             }
         }
     }
 }
 
-function isAllowed(room: Room, socketId: string): boolean {
+function isAllowed(room: Room, socketId: string): {allowed: boolean, reason: string} {
+
+    // Do we already have two players? If yes, get out.
+    if (room.players.some(player => player !== null && player.id === socketId)) {
+        return {
+            allowed: false,
+            reason: "Room is already full"
+        }
+    }
 
     // Is player already in that room? If yes, get out.
     if (room.players.some(player => player !== null && player.id === socketId)) {
-        return false;
+        return {
+            allowed: false,
+            reason: "You already joined this room"
+        }
     }
 
     // Are there reservations and is this player not on the list? If yes, get out.
     if (room.reservedSeats && room.reservedSeats.includes(socketId)) {
-        return false;
+        return {
+            allowed: false,
+            reason: "You cannot enter this private room"
+        };
     }
 
     // Everything is fine
-    return true;
+    return {
+        allowed: true,
+        reason: ""
+    };
 }
 
 export default onJoin;
