@@ -19,5 +19,3 @@ export const Actions = {
   SWITCH: "sw",
   CHARGE_ATTACK: "ca"
 }
-
-export type Action = | typeof Actions.FAST_ATTACK | typeof Actions.SWITCH | typeof Actions.CHARGE_ATTACK;

@@ -1,4 +1,4 @@
-import { Action } from './actions';
+import { Actions } from './actions';
 import { Rule } from "./rule";
 import { TeamMember } from "./team";
 import { RedisClient } from "redis";
@@ -26,7 +26,7 @@ export interface Move {
 }
 
 export interface TurnAction {
-  id: Action,
+  id: typeof Actions[keyof typeof Actions],
   active: number,
   move?: Move,
   string?: string

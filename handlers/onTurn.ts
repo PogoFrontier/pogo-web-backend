@@ -3,7 +3,7 @@ import { CHARGE_WAIT, GAME_TIME, SWAP_COOLDOWN, SWITCH_WAIT, SWITCH_WAIT_LAST, T
 import { moves, rooms } from "../server";
 import { Actions, CODE } from "../types/actions";
 import { ResolveTurnPayload, Update } from "../types/handlers";
-import { Move, RoomStatus } from "../types/room";
+import { RoomStatus } from "../types/room";
 import { calcDamage } from "../utils/damageUtils";
 import endGame from "./endGame";
 import { pubClient } from "../redis/clients";

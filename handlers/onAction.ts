@@ -1,9 +1,11 @@
 import { rooms } from "../server";
-import { Action, Actions } from "../types/actions";
+import { Actions } from "../types/actions";
 import { OnActionProps } from "../types/handlers";
 import { moves } from '../server';
 import { Move, RoomStatus } from "../types/room";
 import { pubClient } from "../redis/clients";
+
+type Action = typeof Actions[keyof typeof Actions]
 
 function onAction({
   id, room, data
