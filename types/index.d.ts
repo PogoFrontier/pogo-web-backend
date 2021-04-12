@@ -6,11 +6,15 @@ export interface TeamMember extends team.TeamMember {
 }
 export interface Current extends team.Current {
 }
+export interface Rule extends rule.Rule {
+}
 export interface TurnAction extends room.TurnAction {
+}
+export interface Player extends room.Player {
 }
 export interface Rule extends rule.Rule {
 }
-export type RuleDescription = rule.RuleDescription
+export declare type RuleDescription = rule.RuleDescription;
 export interface Selector extends rule.Selector {
 }
 export interface SlotRule extends rule.SlotRule {
@@ -18,8 +22,6 @@ export interface SlotRule extends rule.SlotRule {
 export interface RuleFlags extends rule.Flags {
 }
 export interface AdvancedRuleOptions extends rule.AdvancedOptions {
-}
-export interface Player extends room.Player {
 }
 export interface Room extends room.Room {
 }
