@@ -216,18 +216,20 @@ type species = {
 }
 
 function doesSelectorDescribePokémon(tag: Selector, poke: species): boolean {
-    switch (tag.type) {
+    switch (tag.filterType) {
         case "tag":
-            return !!poke.tags && poke.tags.includes(tag.name);
+            return !!poke.tags && tag.values.some(value => poke.tags!.includes(value));
         case "id":
-            return poke.speciesId === tag.name
+            return tag.values.includes(poke.speciesId)
         case "type":
-            return poke.types.includes(tag.name);
+            return tag.values.some(value => poke.types.includes(value));
         case "dex":
-            let [start, end] = tag.name.split("-");
-            let startInt = parseInt(start);
-            let endInt = parseInt(end);
-            return startInt <= poke.dex && poke.dex <= endInt;
+            return tag.values.some(value => {
+              let [start, end] = value.split("-");
+              let startInt = parseInt(start);
+              let endInt = parseInt(end);
+              return startInt <= poke.dex && poke.dex <= endInt;
+            })
     }
 }
 

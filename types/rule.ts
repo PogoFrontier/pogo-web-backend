@@ -33,8 +33,8 @@ function instanceOfRule(object: any): object is Rule {
 }
 
 export interface Selector {
-    type: "type" | "tag" | "id" | "dex"
-    name: string
+    filterType: "type" | "tag" | "id" | "dex"
+    values: string[]
 }
 
 export interface SlotRule {
@@ -94,11 +94,8 @@ export const RULESETS = new Map<string, Rule>([
             speciesClauseByDex: true
         },
         exclude: [{
-            type: "tag",
-            name: "legendary"
-        }, {
-            type: "tag",
-            name: "mythical"
+            filterType: "tag",
+            values: ["legendary", "mythical"]
         }]
     }],
     [RULESET_NAMES.OPEN_MASTER_LEAGUE, {
@@ -119,11 +116,8 @@ export const RULESETS = new Map<string, Rule>([
             speciesClauseByDex: true
         },
         exclude: [{
-            type: "tag",
-            name: "legendary"
-        }, {
-            type: "tag",
-            name: "mythical"
+            filterType: "tag",
+            values: ["legendary", "mythical"]
         }]
     }],
     [RULESET_NAMES.OPEN_MASTER_LEAGUE_CLASSIC, {
@@ -144,11 +138,8 @@ export const RULESETS = new Map<string, Rule>([
             speciesClauseByDex: true
         },
         exclude: [{
-            type: "tag",
-            name: "legendary"
-        }, {
-            type: "tag",
-            name: "mythical"
+            filterType: "tag",
+            values: ["legendary", "mythical"]
         }]
     }],
     
@@ -160,867 +151,343 @@ export const RULESETS = new Map<string, Rule>([
         flags: {
             speciesClauseByDex: true
         },
-        teamPattern: [{
-            include: [{
-                type: "id",
-                name: "persian_alolan"
-            }, {
-                type: "id",
-                name: "blastoise"
-            }, {
-                type: "id",
-                name: "boldore"
-            }, {
-                type: "id",
-                name: "carracosta"
-            }, {
-                type: "id",
-                name: "croconaw"
-            }, {
-                type: "id",
-                name: "cryogonal"
-            }, {
-                type: "id",
-                name: "dewott"
-            }, {
-                type: "id",
-                name: "empoleon"
-            }, {
-                type: "id",
-                name: "feraligatr"
-            }, {
-                type: "id",
-                name: "frogadier"
-            }, {
-                type: "id",
-                name: "gabite"
-            }, {
-                type: "id",
-                name: "gigalith"
-            }, {
-                type: "id",
-                name: "glaceon"
-            }, {
-                type: "id",
-                name: "gloom"
-            }, {
-                type: "id",
-                name: "greninja"
-            }, {
-                type: "id",
-                name: "gyarados"
-            }, {
-                type: "id",
-                name: "huntail"
-            }, {
-                type: "id",
-                name: "jumpluff"
-            }, {
-                type: "id",
-                name: "kingdra"
-            }, {
-                type: "id",
-                name: "lanturn"
-            }, {
-                type: "id",
-                name: "lucario"
-            }, {
-                type: "id",
-                name: "lumineon"
-            }, {
-                type: "id",
-                name: "luxio"
-            }, {
-                type: "id",
-                name: "luxray"
-            }, {
-                type: "id",
-                name: "marshtomp"
-            }, {
-                type: "id",
-                name: "masquerain"
-            }, {
-                type: "id",
-                name: "metagross"
-            }, {
-                type: "id",
-                name: "metang"
-            }, {
-                type: "id",
-                name: "nidoqueen"
-            }, {
-                type: "id",
-                name: "omanyte"
-            }, {
-                type: "id",
-                name: "omastar"
-            }, {
-                type: "id",
-                name: "palpitoad"
-            }, {
-                type: "id",
-                name: "prinplup"
-            }, {
-                type: "id",
-                name: "quagsire"
-            }, {
-                type: "id",
-                name: "castform_rainy"
-            }, {
-                type: "id",
-                name: "rampardos"
-            }, {
-                type: "id",
-                name: "regice"
-            }, {
-                type: "id",
-                name: "salamence"
-            }, {
-                type: "id",
-                name: "sandslash_alolan"
-            }, {
-                type: "id",
-                name: "seadra"
-            }, {
-                type: "id",
-                name: "sealeo"
-            }, {
-                type: "id",
-                name: "seismitoad"
-            }, {
-                type: "id",
-                name: "simipour"
-            }, {
-                type: "id",
-                name: "suicune"
-            }, {
-                type: "id",
-                name: "swellow"
-            }, {
-                type: "id",
-                name: "swoobat"
-            }, {
-                type: "id",
-                name: "tangela"
-            }, {
-                type: "id",
-                name: "tangrowth"
-            }, {
-                type: "id",
-                name: "vaporeon"
-            }, {
-                type: "id",
-                name: "wailmer"
-            }, {
-                type: "id",
-                name: "wailord"
-            }, {
-                type: "id",
-                name: "walrein"
-            }, {
-                type: "id",
-                name: "wartortle"
-            }]
-        }, {
-            include: [{
-                type: "id",
-                name: "ariados"
-            }, {
-                type: "id",
-                name: "bisharp"
-            }, {
-                type: "id",
-                name: "blaziken"
-            }, {
-                type: "id",
-                name: "braixen"
-            }, {
-                type: "id",
-                name: "braviary"
-            }, {
-                type: "id",
-                name: "camerupt"
-            }, {
-                type: "id",
-                name: "charizard"
-            }, {
-                type: "id",
-                name: "charmeleon"
-            }, {
-                type: "id",
-                name: "combusken"
-            }, {
-                type: "id",
-                name: "crawdaunt"
-            }, {
-                type: "id",
-                name: "crustle"
-            }, {
-                type: "id",
-                name: "darmanitan"
-            }, {
-                type: "id",
-                name: "delphox"
-            }, {
-                type: "id",
-                name: "electrode"
-            }, {
-                type: "id",
-                name: "emboar"
-            }, {
-                type: "id",
-                name: "fletchinder"
-            }, {
-                type: "id",
-                name: "heatmor"
-            }, {
-                type: "id",
-                name: "kingler"
-            }, {
-                type: "id",
-                name: "kricketune"
-            }, {
-                type: "id",
-                name: "krookodile"
-            }, {
-                type: "id",
-                name: "ledian"
-            }, {
-                type: "id",
-                name: "magcargo"
-            }, {
-                type: "id",
-                name: "magmar"
-            }, {
-                type: "id",
-                name: "magmortar"
-            }, {
-                type: "id",
-                name: "octillery"
-            }, {
-                type: "id",
-                name: "parasect"
-            }, {
-                type: "id",
-                name: "pignite"
-            }, {
-                type: "id",
-                name: "porygon_z"
-            }, {
-                type: "id",
-                name: "porygon2"
-            }, {
-                type: "id",
-                name: "scizor"
-            }, {
-                type: "id",
-                name: "scolipede"
-            }, {
-                type: "id",
-                name: "seaking"
-            }, {
-                type: "id",
-                name: "simisear"
-            }, {
-                type: "id",
-                name: "solrock"
-            }, {
-                type: "id",
-                name: "sunny Castform"
-            }, {
-                type: "id",
-                name: "talonflame"
-            }, {
-                type: "id",
-                name: "vileplume"
-            }, {
-                type: "id",
-                name: "wormadam_plant"
-            }, {
-                type: "id",
-                name: "yanma"
+        teamPattern: [
+            {
+               "include":[
+                  {
+                     "filterType":"id",
+                     "values":[
+                        "persian_alolan",
+                        "blastoise",
+                        "boldore",
+                        "carracosta",
+                        "croconaw",
+                        "cryogonal",
+                        "dewott",
+                        "empoleon",
+                        "feraligatr",
+                        "frogadier",
+                        "gabite",
+                        "gigalith",
+                        "glaceon",
+                        "gloom",
+                        "greninja",
+                        "gyarados",
+                        "huntail",
+                        "jumpluff",
+                        "kingdra",
+                        "lanturn",
+                        "lucario",
+                        "lumineon",
+                        "luxio",
+                        "luxray",
+                        "marshtomp",
+                        "masquerain",
+                        "metagross",
+                        "metang",
+                        "nidoqueen",
+                        "omanyte",
+                        "omastar",
+                        "palpitoad",
+                        "prinplup",
+                        "quagsire",
+                        "castform_rainy",
+                        "rampardos",
+                        "regice",
+                        "salamence",
+                        "sandslash_alolan",
+                        "seadra",
+                        "sealeo",
+                        "seismitoad",
+                        "simipour",
+                        "suicune",
+                        "swellow",
+                        "swoobat",
+                        "tangela",
+                        "tangrowth",
+                        "vaporeon",
+                        "wailmer",
+                        "wailord",
+                        "walrein",
+                        "wartortle"
+                     ]
+                  }
+               ]
+            },
+            {
+               "include":[
+                  {
+                     "filterType":"id",
+                     "values":[
+                        "ariados",
+                        "bisharp",
+                        "blaziken",
+                        "braixen",
+                        "braviary",
+                        "camerupt",
+                        "charizard",
+                        "charmeleon",
+                        "combusken",
+                        "crawdaunt",
+                        "crustle",
+                        "darmanitan",
+                        "delphox",
+                        "electrode",
+                        "emboar",
+                        "fletchinder",
+                        "heatmor",
+                        "kingler",
+                        "kricketune",
+                        "krookodile",
+                        "ledian",
+                        "magcargo",
+                        "magmar",
+                        "magmortar",
+                        "octillery",
+                        "parasect",
+                        "pignite",
+                        "porygon_z",
+                        "porygon2",
+                        "scizor",
+                        "scolipede",
+                        "seaking",
+                        "simisear",
+                        "solrock",
+                        "sunny Castform",
+                        "talonflame",
+                        "vileplume",
+                        "wormadam_plant",
+                        "yanma"
+                     ]
+                  }
+               ]
+            },
+            {
+               "include":[
+                  {
+                     "filterType":"id",
+                     "values":[
+                        "amoonguss",
+                        "ampharos",
+                        "archeops",
+                        "beartic",
+                        "beedrill",
+                        "butterfree",
+                        "dewgong",
+                        "dunsparce",
+                        "electabuzz",
+                        "electivire",
+                        "emolga",
+                        "exeggutor",
+                        "froslass",
+                        "galarian Rapidash",
+                        "gallade",
+                        "gardevoir",
+                        "girafarig",
+                        "hypno",
+                        "jolteon",
+                        "leavanny",
+                        "linoone",
+                        "lunatone",
+                        "manectric",
+                        "meowstic_female",
+                        "meowstic",
+                        "minun",
+                        "mothim",
+                        "ninetales",
+                        "ninjask",
+                        "pachirisu",
+                        "pelipper",
+                        "persian",
+                        "plusle",
+                        "ponyta",
+                        "quilava",
+                        "raichu",
+                        "rapidash",
+                        "shelgon",
+                        "cstform_snowy",
+                        "sunflora",
+                        "swanna",
+                        "togekiss",
+                        "togetic",
+                        "typhlosion",
+                        "vespiquen",
+                        "zangoose",
+                        "zapdos"
+                     ]
+                  }
+               ]
+            },
+            {
+               "include":[
+                  {
+                     "filterType":"id",
+                     "values":[
+                        "banette",
+                        "bayleef",
+                        "bellossom",
+                        "breloom",
+                        "bronzong",
+                        "celebi",
+                        "chandelure",
+                        "chesnaught",
+                        "claydol",
+                        "cradily",
+                        "dusclops",
+                        "dustox",
+                        "flygon",
+                        "garbodor",
+                        "golurk",
+                        "grimer_alolan",
+                        "grotle",
+                        "grovyle",
+                        "honchkrow",
+                        "houndoom",
+                        "ivysaur",
+                        "leafeon",
+                        "lilligant",
+                        "ludicolo",
+                        "maractus",
+                        "mawile",
+                        "meganium",
+                        "muk_alolan",
+                        "munchlax",
+                        "murkrow",
+                        "quilladin",
+                        "raticate_alolan",
+                        "roselia",
+                        "roserade",
+                        "sceptile",
+                        "scyther",
+                        "serperior",
+                        "servine",
+                        "simisage",
+                        "sneasel",
+                        "snorlax",
+                        "torterra",
+                        "tyranitar",
+                        "victreebel",
+                        "weavile",
+                        "weepinbell",
+                        "whimsicott",
+                        "wormadam_plant",
+                        "xatu",
+                        "yanmega",
+                        "zebstrika"
+                     ]
+                  }
+               ]
+            },
+            {
+               "include":[
+                  {
+                     "filterType":"id",
+                     "values":[
+                        "alakazam",
+                        "alomomola",
+                        "arcanine",
+                        "bibarel",
+                        "cherrim_sunshine",
+                        "corsola",
+                        "dragonite",
+                        "dugtrio",
+                        "fearow",
+                        "floatzel",
+                        "furret",
+                        "golem",
+                        "graveler",
+                        "hariyama",
+                        "hippowdon",
+                        "hitmonchan",
+                        "hitmontop",
+                        "infernape",
+                        "kabutops",
+                        "kangaskhan",
+                        "litleo",
+                        "mamoswine",
+                        "marowak",
+                        "milotic",
+                        "monferno",
+                        "noctowl",
+                        "pidgeot",
+                        "piloswine",
+                        "pinsir",
+                        "porygon",
+                        "pyroar",
+                        "raichu (Alolan)",
+                        "shiftry",
+                        "slowbro",
+                        "slowking",
+                        "staraptor",
+                        "sudowoodo",
+                        "ursaring",
+                        "wormadam_sandy"
+                     ]
+                  }
+               ]
+            },
+            {
+               "include":[
+                  {
+                     "filterType":"id",
+                     "values":[
+                        "aerodactyl",
+                        "aggron",
+                        "arbok",
+                        "armaldo",
+                        "cinccino",
+                        "cloyster",
+                        "crobat",
+                        "delcatty",
+                        "donphan",
+                        "drapion",
+                        "drifblim",
+                        "durant",
+                        "escavalier",
+                        "espeon",
+                        "excadrill",
+                        "ferrothorn",
+                        "forretress",
+                        "gengar",
+                        "glalie",
+                        "gligar",
+                        "gliscor",
+                        "golbat",
+                        "golem_alolan",
+                        "gothitelle",
+                        "granbull",
+                        "graveler_alolan",
+                        "grimer",
+                        "haunter",
+                        "klinklang",
+                        "lairon",
+                        "liepard",
+                        "machoke",
+                        "magneton",
+                        "magnezone",
+                        "mantine",
+                        "mightyena",
+                        "misdreavus",
+                        "mismagius",
+                        "muk",
+                        "nidoking",
+                        "noivern",
+                        "probopass",
+                        "purugly",
+                        "qwilfish",
+                        "relicanth",
+                        "rhydon",
+                        "rhyperior",
+                        "skuntank",
+                        "spiritomb",
+                        "steelix",
+                        "swalot",
+                        "venomoth",
+                        "weezing"
+                     ]
+                  }
+               ]
             }
-        ]
-        }, {
-            include: [{
-                type: "id",
-                name: "amoonguss"
-            }, {
-                type: "id",
-                name: "ampharos"
-            }, {
-                type: "id",
-                name: "archeops"
-            }, {
-                type: "id",
-                name: "beartic"
-            }, {
-                type: "id",
-                name: "beedrill"
-            }, {
-                type: "id",
-                name: "butterfree"
-            }, {
-                type: "id",
-                name: "dewgong"
-            }, {
-                type: "id",
-                name: "dunsparce"
-            }, {
-                type: "id",
-                name: "electabuzz"
-            }, {
-                type: "id",
-                name: "electivire"
-            }, {
-                type: "id",
-                name: "emolga"
-            }, {
-                type: "id",
-                name: "exeggutor"
-            }, {
-                type: "id",
-                name: "froslass"
-            }, {
-                type: "id",
-                name: "galarian Rapidash"
-            }, {
-                type: "id",
-                name: "gallade"
-            }, {
-                type: "id",
-                name: "gardevoir"
-            }, {
-                type: "id",
-                name: "girafarig"
-            }, {
-                type: "id",
-                name: "hypno"
-            }, {
-                type: "id",
-                name: "jolteon"
-            }, {
-                type: "id",
-                name: "leavanny"
-            }, {
-                type: "id",
-                name: "linoone"
-            }, {
-                type: "id",
-                name: "lunatone"
-            }, {
-                type: "id",
-                name: "manectric"
-            }, {
-                type: "id",
-                name: "meowstic_female"
-            }, {
-                type: "id",
-                name: "meowstic"
-            }, {
-                type: "id",
-                name: "minun"
-            }, {
-                type: "id",
-                name: "mothim"
-            }, {
-                type: "id",
-                name: "ninetales"
-            }, {
-                type: "id",
-                name: "ninjask"
-            }, {
-                type: "id",
-                name: "pachirisu"
-            }, {
-                type: "id",
-                name: "pelipper"
-            }, {
-                type: "id",
-                name: "persian"
-            }, {
-                type: "id",
-                name: "plusle"
-            }, {
-                type: "id",
-                name: "ponyta"
-            }, {
-                type: "id",
-                name: "quilava"
-            }, {
-                type: "id",
-                name: "raichu"
-            }, {
-                type: "id",
-                name: "rapidash"
-            }, {
-                type: "id",
-                name: "shelgon"
-            }, {
-                type: "id",
-                name: "cstform_snowy"
-            }, {
-                type: "id",
-                name: "sunflora"
-            }, {
-                type: "id",
-                name: "swanna"
-            }, {
-                type: "id",
-                name: "togekiss"
-            }, {
-                type: "id",
-                name: "togetic"
-            }, {
-                type: "id",
-                name: "typhlosion"
-            }, {
-                type: "id",
-                name: "vespiquen"
-            }, {
-                type: "id",
-                name: "zangoose"
-            }, {
-                type: "id",
-                name: "zapdos"
-            }
-        ]
-        }, {
-            include: [{
-                type: "id",
-                name: "banette"
-            }, {
-                type: "id",
-                name: "bayleef"
-            }, {
-                type: "id",
-                name: "bellossom"
-            }, {
-                type: "id",
-                name: "breloom"
-            }, {
-                type: "id",
-                name: "bronzong"
-            }, {
-                type: "id",
-                name: "celebi"
-            }, {
-                type: "id",
-                name: "chandelure"
-            }, {
-                type: "id",
-                name: "chesnaught"
-            }, {
-                type: "id",
-                name: "claydol"
-            }, {
-                type: "id",
-                name: "cradily"
-            }, {
-                type: "id",
-                name: "dusclops"
-            }, {
-                type: "id",
-                name: "dustox"
-            }, {
-                type: "id",
-                name: "flygon"
-            }, {
-                type: "id",
-                name: "garbodor"
-            }, {
-                type: "id",
-                name: "golurk"
-            }, {
-                type: "id",
-                name: "grimer_alolan"
-            }, {
-                type: "id",
-                name: "grotle"
-            }, {
-                type: "id",
-                name: "grovyle"
-            }, {
-                type: "id",
-                name: "honchkrow"
-            }, {
-                type: "id",
-                name: "houndoom"
-            }, {
-                type: "id",
-                name: "ivysaur"
-            }, {
-                type: "id",
-                name: "leafeon"
-            }, {
-                type: "id",
-                name: "lilligant"
-            }, {
-                type: "id",
-                name: "ludicolo"
-            }, {
-                type: "id",
-                name: "maractus"
-            }, {
-                type: "id",
-                name: "mawile"
-            }, {
-                type: "id",
-                name: "meganium"
-            }, {
-                type: "id",
-                name: "muk_alolan"
-            }, {
-                type: "id",
-                name: "munchlax"
-            }, {
-                type: "id",
-                name: "murkrow"
-            }, {
-                type: "id",
-                name: "quilladin"
-            }, {
-                type: "id",
-                name: "raticate_alolan"
-            }, {
-                type: "id",
-                name: "roselia"
-            }, {
-                type: "id",
-                name: "roserade"
-            }, {
-                type: "id",
-                name: "sceptile"
-            }, {
-                type: "id",
-                name: "scyther"
-            }, {
-                type: "id",
-                name: "serperior"
-            }, {
-                type: "id",
-                name: "servine"
-            }, {
-                type: "id",
-                name: "simisage"
-            }, {
-                type: "id",
-                name: "sneasel"
-            }, {
-                type: "id",
-                name: "snorlax"
-            }, {
-                type: "id",
-                name: "torterra"
-            }, {
-                type: "id",
-                name: "tyranitar"
-            }, {
-                type: "id",
-                name: "victreebel"
-            }, {
-                type: "id",
-                name: "weavile"
-            }, {
-                type: "id",
-                name: "weepinbell"
-            }, {
-                type: "id",
-                name: "whimsicott"
-            }, {
-                type: "id",
-                name: "wormadam_plant"
-            }, {
-                type: "id",
-                name: "xatu"
-            }, {
-                type: "id",
-                name: "yanmega"
-            }, {
-                type: "id",
-                name: "zebstrika"
-            }
-        ]
-        }, {
-            include: [{
-                type: "id",
-                name: "alakazam"
-            }, {
-                type: "id",
-                name: "alomomola"
-            }, {
-                type: "id",
-                name: "arcanine"
-            }, {
-                type: "id",
-                name: "bibarel"
-            }, {
-                type: "id",
-                name: "cherrim_sunshine"
-            }, {
-                type: "id",
-                name: "corsola"
-            }, {
-                type: "id",
-                name: "dragonite"
-            }, {
-                type: "id",
-                name: "dugtrio"
-            }, {
-                type: "id",
-                name: "fearow"
-            }, {
-                type: "id",
-                name: "floatzel"
-            }, {
-                type: "id",
-                name: "furret"
-            }, {
-                type: "id",
-                name: "golem"
-            }, {
-                type: "id",
-                name: "graveler"
-            }, {
-                type: "id",
-                name: "hariyama"
-            }, {
-                type: "id",
-                name: "hippowdon"
-            }, {
-                type: "id",
-                name: "hitmonchan"
-            }, {
-                type: "id",
-                name: "hitmontop"
-            }, {
-                type: "id",
-                name: "infernape"
-            }, {
-                type: "id",
-                name: "kabutops"
-            }, {
-                type: "id",
-                name: "kangaskhan"
-            }, {
-                type: "id",
-                name: "litleo"
-            }, {
-                type: "id",
-                name: "mamoswine"
-            }, {
-                type: "id",
-                name: "marowak"
-            }, {
-                type: "id",
-                name: "milotic"
-            }, {
-                type: "id",
-                name: "monferno"
-            }, {
-                type: "id",
-                name: "noctowl"
-            }, {
-                type: "id",
-                name: "pidgeot"
-            }, {
-                type: "id",
-                name: "piloswine"
-            }, {
-                type: "id",
-                name: "pinsir"
-            }, {
-                type: "id",
-                name: "porygon"
-            }, {
-                type: "id",
-                name: "pyroar"
-            }, {
-                type: "id",
-                name: "raichu (Alolan)"
-            }, {
-                type: "id",
-                name: "shiftry"
-            }, {
-                type: "id",
-                name: "slowbro"
-            }, {
-                type: "id",
-                name: "slowking"
-            }, {
-                type: "id",
-                name: "staraptor"
-            }, {
-                type: "id",
-                name: "sudowoodo"
-            }, {
-                type: "id",
-                name: "ursaring"
-            }, {
-                type: "id",
-                name: "wormadam_sandy"
-            }]
-        }, {
-            include: [{
-                type: "id",
-                name: "aerodactyl"
-            }, {
-                type: "id",
-                name: "aggron"
-            }, {
-                type: "id",
-                name: "arbok"
-            }, {
-                type: "id",
-                name: "armaldo"
-            }, {
-                type: "id",
-                name: "cinccino"
-            }, {
-                type: "id",
-                name: "cloyster"
-            }, {
-                type: "id",
-                name: "crobat"
-            }, {
-                type: "id",
-                name: "delcatty"
-            }, {
-                type: "id",
-                name: "donphan"
-            }, {
-                type: "id",
-                name: "drapion"
-            }, {
-                type: "id",
-                name: "drifblim"
-            }, {
-                type: "id",
-                name: "durant"
-            }, {
-                type: "id",
-                name: "escavalier"
-            }, {
-                type: "id",
-                name: "espeon"
-            }, {
-                type: "id",
-                name: "excadrill"
-            }, {
-                type: "id",
-                name: "ferrothorn"
-            }, {
-                type: "id",
-                name: "forretress"
-            }, {
-                type: "id",
-                name: "gengar"
-            }, {
-                type: "id",
-                name: "glalie"
-            }, {
-                type: "id",
-                name: "gligar"
-            }, {
-                type: "id",
-                name: "gliscor"
-            }, {
-                type: "id",
-                name: "golbat"
-            }, {
-                type: "id",
-                name: "golem_alolan"
-            }, {
-                type: "id",
-                name: "gothitelle"
-            }, {
-                type: "id",
-                name: "granbull"
-            }, {
-                type: "id",
-                name: "graveler_alolan"
-            }, {
-                type: "id",
-                name: "grimer"
-            }, {
-                type: "id",
-                name: "haunter"
-            }, {
-                type: "id",
-                name: "klinklang"
-            }, {
-                type: "id",
-                name: "lairon"
-            }, {
-                type: "id",
-                name: "liepard"
-            }, {
-                type: "id",
-                name: "machoke"
-            }, {
-                type: "id",
-                name: "magneton"
-            }, {
-                type: "id",
-                name: "magnezone"
-            }, {
-                type: "id",
-                name: "mantine"
-            }, {
-                type: "id",
-                name: "mightyena"
-            }, {
-                type: "id",
-                name: "misdreavus"
-            }, {
-                type: "id",
-                name: "mismagius"
-            }, {
-                type: "id",
-                name: "muk"
-            }, {
-                type: "id",
-                name: "nidoking"
-            }, {
-                type: "id",
-                name: "noivern"
-            }, {
-                type: "id",
-                name: "probopass"
-            }, {
-                type: "id",
-                name: "purugly"
-            }, {
-                type: "id",
-                name: "qwilfish"
-            }, {
-                type: "id",
-                name: "relicanth"
-            }, {
-                type: "id",
-                name: "rhydon"
-            }, {
-                type: "id",
-                name: "rhyperior"
-            }, {
-                type: "id",
-                name: "skuntank"
-            }, {
-                type: "id",
-                name: "spiritomb"
-            }, {
-                type: "id",
-                name: "steelix"
-            }, {
-                type: "id",
-                name: "swalot"
-            }, {
-                type: "id",
-                name: "venomoth"
-            }, {
-                type: "id",
-                name: "weezing"
-            }]
-        }]
+         ]
     }],
 ]);

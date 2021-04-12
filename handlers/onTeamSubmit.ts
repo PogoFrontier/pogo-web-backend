@@ -4,13 +4,27 @@ import { CODE } from "../types/actions";
 import { OnTeamSubmitPayload } from "../types/handlers"; 
 
 function onTeamSubmit(id: string, payload: OnTeamSubmitPayload) {
-  const { room, team } = payload;
+  const { room, indexes } = payload;
+  if(!areIndexesValid) {
+    console.error("Invalid team submit indexes: " + indexes.join(", "));
+    return;
+  }
+
   const currentRoom = rooms.get(room);
   if (currentRoom) {
     const i = currentRoom.players.findIndex(x => x && x.id === id);
+    let player = currentRoom.players[i];
+
     if (i > -1) {
       let currentTeam = [];
-      for (const member of team) {
+      for (const index of indexes) {
+
+        let member = player?.team[index];
+        if(!member) {
+          console.error(`Team member at index ${index} not found`);
+          return;
+        }
+
         member.current = {
           hp: member.hp,
           atk: member.atk,
@@ -40,6 +54,25 @@ function onTeamSubmit(id: string, payload: OnTeamSubmitPayload) {
       }
     }
   }
+}
+
+function areIndexesValid (indexes: number[]): boolean {
+  // Are there duplicates? 
+  if (new Set(indexes).size !== indexes.length){
+    return false;
+  }
+
+  // Out of bounds?
+  if(indexes.some(index => index < 0 && index > 5)) {
+    return false;
+  }
+
+  // Right team length?
+  if(indexes.length != 3) {
+    return false;
+  }
+
+  return true;
 }
 
 export default onTeamSubmit;
