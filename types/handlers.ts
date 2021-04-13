@@ -1,5 +1,5 @@
 import { TeamMemberDescription } from "./team";
-import { Rule, RuleDescription } from "./rule";
+import { RuleDescription } from "./rule";
 
 export interface OnGetOpponentPayload {
   room: string,
@@ -58,5 +58,5 @@ export interface ResolveTurnPayload {
 }
 
 export interface SearchBattlePayload {
-  format: Rule,
+  format: RuleDescription,
 }

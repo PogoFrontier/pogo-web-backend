@@ -69,7 +69,7 @@ function isAllowed(room: Room, socketId: string): {allowed: boolean, reason: str
     }
 
     // Are there reservations and is this player not on the list? If yes, get out.
-    if (room.reservedSeats && room.reservedSeats.includes(socketId)) {
+    if (room.reservedSeats && !room.reservedSeats.includes(socketId)) {
         return {
             allowed: false,
             reason: "You cannot enter this private room"
