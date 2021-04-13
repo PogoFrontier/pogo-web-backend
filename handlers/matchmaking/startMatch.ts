@@ -46,7 +46,7 @@ function startMatch(format: RuleDescription, users: [User, User]) {
 
         // Notify players to join the room
         for (const user of users) {
-            pubClient.publish("messagesToUser:" + user.socketId, "PROMT_JOIN: " + roomId);
+            pubClient.publish("messagesToUser:" + user.socketId, "$PROMT_JOIN" + roomId);
         }
 
         // If one player doesn't make it in time, quit

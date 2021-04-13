@@ -1,4 +1,5 @@
 import { SearchBattlePayload } from "../../types/handlers";
+import { parseToRule, Rule } from "../../types/rule";
 import { storeClient } from "../../redis/clients";
 import { getBattleRequestKey } from "../../redis/getKey";
 import { User } from "../../types/user";
@@ -6,7 +7,14 @@ import getMatch from "./getMatch";
 import startMatch from "./startMatch";
 
 function searchBattle(user: User, payload: SearchBattlePayload, recursionCounter?: number) {
-    const key = getBattleRequestKey(payload.format);
+    let format: Rule;
+    try{        
+        format = parseToRule(payload.format);
+    } catch(e) {
+        console.error(e);
+        return;
+    }
+    const key = getBattleRequestKey(format);
 
     // Get current battle requests for this format
     storeClient.LRANGE(key, 0, -1, (err, requests) => {
@@ -18,7 +26,7 @@ function searchBattle(user: User, payload: SearchBattlePayload, recursionCounter
         const usersInQueue: Array<User> = requests.map(request => JSON.parse(request));
 
         // Find a good battle partner for this player
-        const match = getMatch(payload.format, user, usersInQueue);
+        const match = getMatch(format, user, usersInQueue);
 
         // No partner found? Let's put this player on the list so another server can match him
         if (!match) {
