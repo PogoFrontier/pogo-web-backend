@@ -1,4 +1,4 @@
-import { TeamMember, TeamMemberDescription } from "./team";
+import { TeamMemberDescription } from "./team";
 import { Rule, RuleDescription } from "./rule";
 
 export interface OnGetOpponentPayload {
