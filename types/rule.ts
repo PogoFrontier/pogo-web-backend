@@ -22,7 +22,7 @@ export function parseToRule(object: RuleDescription): Rule {
             throw new Error(`Format ${object.name} doesn't exist.`);
         }
         rule.advancedOptions = object.advancedOptions;
-        object = rule;
+        return rule;
     }
 
     return object;
