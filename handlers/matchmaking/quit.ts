@@ -1,8 +1,8 @@
 import { SearchBattlePayload } from "../../types/handlers";
 import { storeClient } from "../../redis/clients";
 import { getBattleRequestKey } from "../../redis/getKey";
-import { parseToRule } from "../../types/rule";
 import { User } from "../../types/user";
+import { parseToRule } from "../../actions/parseToRule";
 
 function quit(user: User, payload: SearchBattlePayload) {
     try{        

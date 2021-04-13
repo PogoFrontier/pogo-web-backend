@@ -15,6 +15,7 @@ import pokemonRoutes from "./api/pokemonRoutes";
 import moveRoutes from "./api/moveRoutes";
 import userRoutes from "./api/userRoutes";
 import roomRoutes from "./api/roomRoutes";
+import ruleRoutes from "./api/ruleRoutes";
 import p from "./data/pokemon.json";
 import m  from "./data/moves.json";
 import r from "./data/rules.json";
@@ -55,6 +56,7 @@ app.use('/api/pokemon', pokemonRoutes);
 app.use('/api/moves', moveRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/room', roomRoutes);
+app.use('/api/rule', ruleRoutes);
 
 // serve static files from a given folder
 app.use(e.static('public'));

@@ -1,12 +1,13 @@
 import { rooms } from "../../server";
 import { pubClient, subClient } from "../../redis/clients";
 import { Room, RoomStatus } from "../../types/room";
-import { RuleDescription, parseToRule } from "../../types/rule";
+import { RuleDescription } from "../../types/rule";
 import { User } from "../../types/user";
 import {v4 as uuid } from "uuid";
 import { setupRoom, useRoom } from "../../redis/rooms";
 import endGame from "../endGame";
 import { TeamMember } from "../../types/team";
+import { parseToRule } from "../../actions/parseToRule";
 
 function startMatch(format: RuleDescription, users: [User, User]) {
     const roomId = uuid();

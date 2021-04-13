@@ -2,10 +2,10 @@ import { rooms } from "../server";
 import { CODE } from "../types/actions";
 import { OnNewRoomPayload } from "../types/handlers";
 import { Room, RoomStatus } from "../types/room";
-import { RULESET_NAMES, parseToRule } from "../types/rule";
 import { useRoom, setupRoom } from "../redis/rooms";
 import { subClient, pubClient } from "../redis/clients";
 import onJoin from "./onJoin";
+import { parseToRule } from "../actions/parseToRule";
 
 function onNewRoom(id: string, payload: OnNewRoomPayload, callback:  (roomId: string) => void) {
   const { room, team } = payload;
@@ -22,7 +22,7 @@ function onNewRoom(id: string, payload: OnNewRoomPayload, callback:  (roomId: st
       let format = payload.format;
       if (!format) {
         format = {
-          name: RULESET_NAMES.OPEN_GREAT_LEAGUE
+          name: "Great"
         }
       }
       try{        

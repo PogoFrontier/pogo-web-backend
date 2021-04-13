@@ -1,6 +1,7 @@
 import { TeamMember } from "../types/team";
-import { Rule, RuleDescription, parseToRule } from "../types/rule";
+import { Rule, RuleDescription } from "../types/rule";
 import { isTeamValid } from "../checks/checkTeam";
+import { parseToRule } from "../actions/parseToRule";
 
 export function onTeamValidate(team: TeamMember[], chosenRule: RuleDescription) {
   let rule: Rule
