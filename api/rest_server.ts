@@ -34,7 +34,7 @@ app.use('/api/users', userRoutes);
 app.use('/api/room', roomRoutes);
 
 // serve static files from a given folder
-app.use(e.static('public'));
+app.use(e.static('../public'));
 
 function startServer() {
     // create http server and wrap the express app

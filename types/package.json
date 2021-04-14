@@ -1,6 +1,6 @@
 {
   "name": "@adibkhan/pogo-web-backend",
-  "version": "1.0.27",
+  "version": "1.0.30",
   "description": "",
   "main": "index.cjs",
   "types": "index.d.ts",
@@ -16,7 +16,7 @@
     "url": "git+https://github.com/DeveloperKhan/pogo-web-backend.git"
   },
   "peerDependencies": {
-    "react": "^16.8.3"
+    "react": "^17.0.1"
   },
   "dependencies": {
     "@types/redis": "^2.8.28"

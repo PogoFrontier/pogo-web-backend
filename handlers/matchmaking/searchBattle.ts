@@ -1,10 +1,11 @@
 import { SearchBattlePayload } from "../../types/handlers";
-import { parseToRule, Rule } from "../../types/rule";
 import { storeClient } from "../../redis/clients";
 import { getBattleRequestKey } from "../../redis/getKey";
 import { User } from "../../types/user";
 import getMatch from "./getMatch";
 import startMatch from "./startMatch";
+import { Rule } from "../../types/rule";
+import { parseToRule } from "../../actions/parseToRule";
 
 function searchBattle(user: User, payload: SearchBattlePayload, recursionCounter?: number) {
     let format: Rule;
