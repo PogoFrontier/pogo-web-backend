@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import { firestore } from '../server';
+import { firestore } from '../api/rest_server';
 
 const generateToken = (id: string) => {
     return jwt.sign({id}, process.env.JWT_SECRET as string, {

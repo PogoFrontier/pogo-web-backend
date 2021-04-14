@@ -1,4 +1,4 @@
-import { rooms } from "../server";
+import { rooms } from "../matchhandling_server";
 import { CODE } from "../types/actions";
 import { OnNewRoomPayload } from "../types/handlers";
 import { Room, RoomStatus } from "../types/room";

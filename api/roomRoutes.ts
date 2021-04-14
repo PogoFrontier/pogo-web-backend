@@ -1,5 +1,4 @@
 import e from "express";
-import { rooms } from "../server";
 import { storeClient } from "../redis/clients";
 
 const router = e.Router();

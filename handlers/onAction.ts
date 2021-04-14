@@ -1,7 +1,7 @@
-import { rooms } from "../server";
+import { rooms } from "../matchhandling_server";
 import { Actions } from "../types/actions";
 import { OnActionProps } from "../types/handlers";
-import { moves } from '../server';
+import { moves } from '../matchhandling_server';
 import { Move, RoomStatus } from "../types/room";
 import { pubClient } from "../redis/clients";
 
