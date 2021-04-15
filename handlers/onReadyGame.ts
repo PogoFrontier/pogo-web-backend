@@ -1,6 +1,6 @@
 import to from "../actions/to";
 import { TURN_LENGTH } from "../config";
-import { rooms } from "../server";
+import { rooms } from "../matchhandling_server";
 import { CODE } from "../types/actions";
 import { OnReadyGamePayload } from "../types/handlers";
 import { pubClient } from "../redis/clients";

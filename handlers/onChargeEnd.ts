@@ -1,6 +1,6 @@
 import { CHARGE_WAIT, GAME_TIME, SWITCH_WAIT, maxBuffStages, buffDivisor } from "../config";
 import { pubClient } from "../redis/clients";
-import { rooms } from "../server";
+import { rooms } from "../matchhandling_server";
 import { CODE } from "../types/actions";
 import { OnChargeEndProps, ResolveTurnPayload } from "../types/handlers";
 import { RoomStatus } from "../types/room";

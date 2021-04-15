@@ -1,4 +1,4 @@
-import { rooms } from "../../server";
+import { rooms } from "../../matchhandling_server";
 import { pubClient, subClient } from "../../redis/clients";
 import { Room, RoomStatus } from "../../types/room";
 import { RuleDescription } from "../../types/rule";

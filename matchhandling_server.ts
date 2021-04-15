@@ -3,19 +3,12 @@ import http from 'http';
 import websocket from 'ws';
 import c from 'cors';
 import deepEqual from "deep-equal";
-import firebase from 'firebase-admin';
-import SERVICE_ACCOUNT from './project-grookey-6a7326cb8d5a';
 import quitAll from "./handlers/matchmaking/quitAll";
 import onNewRoom from "./handlers/onNewRoom";
 import { CODE } from "./types/actions";
 import { Room } from "./types/room";
 import { Rule } from "./types/rule";
 import { User } from "./types/user";
-import pokemonRoutes from "./api/pokemonRoutes";
-import moveRoutes from "./api/moveRoutes";
-import userRoutes from "./api/userRoutes";
-import roomRoutes from "./api/roomRoutes";
-import ruleRoutes from "./api/ruleRoutes";
 import p from "./data/pokemon.json";
 import m  from "./data/moves.json";
 import r from "./data/rules.json";
@@ -34,13 +27,6 @@ export let rooms = new Map<string, Room>();
 //initialize node server app
 const app: e.Application = e();
 
-//initialize firebase and firestore
-const serviceAccount: any = SERVICE_ACCOUNT;
-firebase.initializeApp({
-    credential: firebase.credential.cert(serviceAccount)
-});
-export const firestore = firebase.firestore();
-
 const ping = '{"kind":"ping"}';
 const pong = '{"kind":"pong"}';
 
@@ -50,16 +36,6 @@ app.use(e.json());
 // use cors
 const cors: any = c();
 app.use(cors);
-
-//add api routes as middleware
-app.use('/api/pokemon', pokemonRoutes);
-app.use('/api/moves', moveRoutes);
-app.use('/api/users', userRoutes);
-app.use('/api/room', roomRoutes);
-app.use('/api/rule', ruleRoutes);
-
-// serve static files from a given folder
-app.use(e.static('public'));
 
 function onNewWebsocketConnection(ws: WebSocket, req: Request) {
     const id = req.url.substring(1);

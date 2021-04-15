@@ -1,6 +1,6 @@
 import indexOfMax from "../actions/indexOfMax";
 import { CHARGE_WAIT, GAME_TIME, SWAP_COOLDOWN, SWITCH_WAIT, SWITCH_WAIT_LAST, TURN_LENGTH } from "../config";
-import { moves, rooms } from "../server";
+import { moves, rooms } from "../matchhandling_server";
 import { Actions, CODE } from "../types/actions";
 import { ResolveTurnPayload, Update } from "../types/handlers";
 import { RoomStatus } from "../types/room";

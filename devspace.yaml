@@ -1,18 +1,35 @@
 version: v1beta9
 images:
-  app:
-    image: 1522784/pogowebbackend
+  rest:
+    image: pogowebbackendrest
     preferSyncOverRebuild: true
     injectRestartHelper: true
     appendDockerfileInstructions:
     - USER root
+    cmd: [npm, run, start_rest]
+  matchhandling:
+    image: pogowebbackendmatchhandling
+    preferSyncOverRebuild: true
+    injectRestartHelper: true
+    appendDockerfileInstructions:
+    - USER root
+    cmd: [npm, run, start_matchhandling]
 deployments:
-- name: pogo-web-backend
+- name: pogo-web-backend-rest
   helm:
     componentChart: true
     values:
       containers:
-      - image: 1522784/pogowebbackend
+      - image: pogowebbackendrest
+      service:
+        ports:
+        - port: 2999
+- name: pogo-web-backend-matchhandling
+  helm:
+    componentChart: true
+    values:
+      containers:
+      - image: pogowebbackendmatchhandling
       service:
         ports:
         - port: 3000
@@ -27,12 +44,23 @@ deployments:
         - port: 6379
 dev:
   ports:
-  - imageName: app
+  - imageName: rest
+    forward:
+    - port: 2999
+  - imageName: matchhandling
     forward:
     - port: 3000
-    - port: 9229
   sync:
-  - imageName: app
+  - imageName: rest
+    excludePaths:
+    - .git/
+    uploadExcludePaths:
+    - Dockerfile
+    - node_modules/
+    - devspace.yaml
+    onUpload:
+      restartContainer: true
+  - imageName: matchhandling
     excludePaths:
     - .git/
     uploadExcludePaths:

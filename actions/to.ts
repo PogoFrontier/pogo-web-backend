@@ -1,4 +1,4 @@
-import { rooms } from "../server";
+import { rooms } from "../matchhandling_server";
 import { pubClient, storeClient } from "../redis/clients";
 
 function to(room: string, data: string, id?: string) {

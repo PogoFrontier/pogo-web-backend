@@ -23,9 +23,6 @@ EXPOSE 9229
 
 ENV REDIS_URL redis://redis:6379
 
-# Container start command (DO NOT CHANGE and see note below)
-CMD ["npm", "start"]
-
 # To start using a different `npm run [name]` command (e.g. to use nodemon + debugger),
 # edit devspace.yaml:
 # 1) remove: images.app.injectRestartHelper (or set to false)

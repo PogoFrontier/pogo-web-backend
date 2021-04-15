@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node --loader ts-node/esm --experimental-specifier-resolution=node -r dotenv/config server.ts",
+    "start_matchhandling": "node --loader ts-node/esm --experimental-specifier-resolution=node -r dotenv/config matchhandling_server.ts",
+    "start_rest": "node --loader ts-node/esm --experimental-specifier-resolution=node -r dotenv/config api/rest_server.ts",
+    "start": "npm run start_matchhandling & npm run start_rest",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "tsc",
     "runbuild": "node --experimental-specifier-resolution=node dist/server.js",

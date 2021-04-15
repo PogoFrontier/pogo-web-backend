@@ -1,4 +1,4 @@
-import { rooms } from "../server";
+import { rooms } from "../matchhandling_server";
 import { Room } from "../types/room";
 import { pubClient, storeClient } from "../redis/clients";
 
