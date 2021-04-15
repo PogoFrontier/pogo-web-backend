@@ -126,7 +126,7 @@ function startServer() {
     wss.on("connection", onNewWebsocketConnection);
 
     // important! must listen from `server`, not `app`, otherwise socket.io won't function correctly
-    server.listen(process.env.PORT || SERVER_PORT, () => console.info(`Listening on port ${process.env.PORT || SERVER_PORT}.`));
+    server.listen(SERVER_PORT, () => console.info(`Listening on port ${SERVER_PORT}.`));
 }
 
 function isNewRoom(data: string): boolean {
