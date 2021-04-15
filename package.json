@@ -9,7 +9,7 @@
     "start": "npm run start_matchhandling & npm run start_rest",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "tsc",
-    "runbuild": "node --experimental-specifier-resolution=node dist/server.js",
+    "runbuild": "node --experimental-specifier-resolution=node dist/matchhandling_server.js & node --experimental-specifier-resolution=node dist/api/rest_server.js",
     "secrets": "npm run secrets:logout && cross-env-shell BW_SESSION=`bw login projectgrookey@gmail.com --raw` \"npm run secrets:sync\"",
     "secrets:logout": "(bw logout || exit 0)",
     "secrets:login": "bw login projectgrookey@gmail.com",
