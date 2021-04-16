@@ -2,6 +2,7 @@ import { Rule, Selector } from "../types/rule";
 import { TeamMember, TeamMemberDescription, typeId } from "../types/team";
 import { calculateCP, calculateHP, calculateAtk,calculateDef } from "../utils/calcUtils";
 import pokeData from "./../data/pokemon.json";
+import mainSeriesPokeData from "./../data/pokemonWithMainSeriesMoves.json";
 
 export function isTeamValid(team: TeamMember[], format: Rule): {isValid: boolean, violations: string[]} {
     let violations = new Array<string>();
@@ -47,20 +48,23 @@ export function isTeamValid(team: TeamMember[], format: Rule): {isValid: boolean
       }
   
       // Get species data
-      const speciesData = pokeData[pokemon.speciesId as keyof typeof pokeData];
+      const shouldUseMainSeriesData = format.advancedOptions && format.advancedOptions.movesets === "mainseries"
+      const speciesData = shouldUseMainSeriesData ? mainSeriesPokeData[pokemon.speciesId as keyof typeof mainSeriesPokeData] : pokeData[pokemon.speciesId as keyof typeof pokeData];
 
       // Check moves
-      if (!speciesData.fastMoves.includes(pokemon.fastMove)) {
-        violations.push(`Pokemon in index ${index} cannot use ${pokemon.fastMove}`);
-      }
-      const illegalChargeMoves = pokemon.chargeMoves.filter(chargeMove => {
-        return chargeMove !== "NONE" &&
-        !(chargeMove === "RETURN" && "tags" in speciesData && speciesData.tags.some(tag => tag === "shadoweligible")) &&
-        !(chargeMove === "FRUSTRATION" && "tags" in speciesData && speciesData.tags.some(tag => tag === "shadow")) &&
-        !speciesData.chargedMoves.includes(chargeMove);
-      });
-      for (let illegalChargeMove of illegalChargeMoves) {
-        violations.push(`Pokemon in index ${index} cannot use ${illegalChargeMove}`);
+      if (!format.advancedOptions || format.advancedOptions.movesets !== "norestrictions") {
+        if (!speciesData.fastMoves.includes(pokemon.fastMove)) {
+          violations.push(`Pokemon in index ${index} cannot use ${pokemon.fastMove}`);
+        }
+        const illegalChargeMoves = pokemon.chargeMoves.filter(chargeMove => {
+          return chargeMove !== "NONE" &&
+          !(chargeMove === "RETURN" && "tags" in speciesData && speciesData.tags.some(tag => tag === "shadoweligible")) &&
+          !(chargeMove === "FRUSTRATION" && "tags" in speciesData && speciesData.tags.some(tag => tag === "shadow")) &&
+          !speciesData.chargedMoves.includes(chargeMove);
+        });
+        for (let illegalChargeMove of illegalChargeMoves) {
+          violations.push(`Pokemon in index ${index} cannot use ${illegalChargeMove}`);
+        }
       }
   
       // Check if pokemon is included

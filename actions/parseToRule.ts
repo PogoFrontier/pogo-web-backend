@@ -6,12 +6,17 @@ const RULESETS: {
 } = r
 
 export function parseToRule(object: RuleDescription): Rule {
+  if (typeof object === "string") {
+    object = {
+      name: object
+    }
+  }
+  
   if (!instanceOfRule(object)) {
       let rule = RULESETS[object.name] as Rule
       if (!rule) {
           throw new Error(`Format ${object.name} doesn't exist.`);
       }
-      rule.advancedOptions = object.advancedOptions;
       return rule;
   }
 

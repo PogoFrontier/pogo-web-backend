@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "generate_mainseries_moveset_data": "node --loader ts-node/esm --experimental-specifier-resolution=node -r dotenv/config makeMainSeriesMoveset.ts",
     "start_matchhandling": "node --loader ts-node/esm --experimental-specifier-resolution=node -r dotenv/config matchhandling_server.ts",
     "start_rest": "node --loader ts-node/esm --experimental-specifier-resolution=node -r dotenv/config api/rest_server.ts",
     "start": "npm run start_matchhandling & npm run start_rest",
