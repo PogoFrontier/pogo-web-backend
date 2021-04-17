@@ -1,7 +1,6 @@
 import fs from "fs"
 import p from "./data/pokemon.json";
 import m from "./data/moves.json";
-
 import { Learnsets } from './data/learnsets'
 
 let pokemonList: any = p
