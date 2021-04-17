@@ -21,7 +21,7 @@ EXPOSE 3000
 # For remote debugging, add this port to devspace.yaml: dev.ports[*].forward[*].port: 9229
 EXPOSE 9229
 
-ENV REDIS_URL redis://redis:6379
+# ENV REDIS_URL redis://redis:6379
 
 # To start using a different `npm run [name]` command (e.g. to use nodemon + debugger),
 # edit devspace.yaml:
