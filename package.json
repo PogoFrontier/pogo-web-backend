@@ -8,7 +8,7 @@
     "start_matchhandling": "node --loader ts-node/esm --experimental-specifier-resolution=node -r dotenv/config matchhandling_server.ts",
     "start_rest": "node --loader ts-node/esm --experimental-specifier-resolution=node -r dotenv/config api/rest_server.ts",
     "dev": "npm run start_matchhandling & npm run start_rest",
-    "start": "node --experimental-specifier-resolution=node dist/matchhandling_server.js & node --experimental-specifier-resolution=node dist/api/rest_server.js",
+    "start": "tsc && (node --experimental-specifier-resolution=node dist/matchhandling_server.js & node --experimental-specifier-resolution=node dist/api/rest_server.js)",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "tsc",
     "runbuild": "node --experimental-specifier-resolution=node dist/matchhandling_server.js & node --experimental-specifier-resolution=node dist/api/rest_server.js",
