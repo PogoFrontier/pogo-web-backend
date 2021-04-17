@@ -12,8 +12,7 @@ export interface Rule {
 
 export type RuleDescription = {
     name: string,
-    advancedOptions?:  AdvancedOptions
-} | Rule
+} | string | Rule
 
 export interface Selector {
     filterType: "type" | "tag" | "id" | "dex"
@@ -26,6 +25,7 @@ export interface SlotRule {
 }
 
 export interface AdvancedOptions {
+    movesets: "original" | "mainseries" | "norestrictions"
 }
 
 export interface Flags {

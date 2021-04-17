@@ -9,14 +9,12 @@ import { CODE } from "./types/actions";
 import { Room } from "./types/room";
 import { Rule } from "./types/rule";
 import { User } from "./types/user";
-import p from "./data/pokemon.json";
 import m  from "./data/moves.json";
 import r from "./data/rules.json";
 import onMatchmakingQuit from "./handlers/matchmaking/quit";
 import onMatchmakingSearchBattle from "./handlers/matchmaking/searchBattle";
 import { pubClient, subClient } from "./redis/clients";
 
-export const pokemon: any = p;
 export const moves: any = m;
 export const rules: any = r;
 
