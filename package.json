@@ -25,6 +25,14 @@
   "type": "module",
   "types": "./types/index.ts",
   "dependencies": {
+    "@types/cors": "^2.8.9",
+    "@types/deep-equal": "^1.0.1",
+    "@types/express": "^4.17.9",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/node": "^14.14.12",
+    "@types/redis": "^2.8.28",
+    "@types/uuid": "^8.3.0",
+    "@types/ws": "^7.4.0",
     "cors": "^2.8.5",
     "deep-equal": "^2.0.5",
     "dotenv": "^8.2.0",
@@ -43,14 +51,6 @@
   },
   "devDependencies": {
     "@bitwarden/cli": "^1.15.1",
-    "@types/cors": "^2.8.9",
-    "@types/deep-equal": "^1.0.1",
-    "@types/express": "^4.17.9",
-    "@types/jsonwebtoken": "^8.5.0",
-    "@types/node": "^14.14.12",
-    "@types/redis": "^2.8.28",
-    "@types/uuid": "^8.3.0",
-    "@types/ws": "^7.4.0",
     "cross-env": "^7.0.3",
     "fx": "^20.0.2"
   }
