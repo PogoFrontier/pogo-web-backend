@@ -18,7 +18,7 @@ import { pubClient, subClient } from "./redis/clients";
 export const moves: any = m;
 export const rules: any = r;
 
-export const SERVER_PORT = 3000;
+export const SERVER_PORT = 443;
 
 export let rooms = new Map<string, Room>();
 
