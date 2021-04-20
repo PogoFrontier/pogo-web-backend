@@ -8,7 +8,7 @@ import moveRoutes from "./moveRoutes";
 import userRoutes from "./userRoutes";
 import roomRoutes from "./roomRoutes";
 
-export const SERVER_PORT = 2999;
+export const SERVER_PORT = 8081;
 
 //initialize node server app
 const app: e.Application = e();
