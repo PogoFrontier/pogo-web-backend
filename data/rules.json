@@ -8,6 +8,18 @@
             "speciesClauseByDex": "true"
         }
     },
+    "MainSeries": {
+        "maxCP": 1500,
+        "maxLevel": 50,
+        "maxBestBuddy": 1,
+        "maxMega": 1,
+        "flags": {
+            "speciesClauseByDex": "true"
+        },
+        "advancedOptions": {
+            "movesets": "mainseries"
+        }
+    },
     "Ultra League": {
         "maxCP": 2500,
         "maxLevel": 50,

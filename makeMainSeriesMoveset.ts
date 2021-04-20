@@ -1,7 +1,6 @@
 import fs from "fs"
 import p from "./data/pokemon.json";
 import m from "./data/moves.json";
-
 import { Learnsets } from './data/learnsets'
 
 let pokemonList: any = p
@@ -9,7 +8,6 @@ let localMoves: any = m;
 
 const hpTypes = ['bug', 'dark', 'dragon', 'electric', 'fighting', 'fire', 'flying', 'ghost', 'grass', 'ground', 'ice', 'normal', 'poison', 'psychic', 'rock', 'steel', 'water']
 const wbTypes = ['fire', 'ice', 'rock', "normal", 'water']
-const tbTypes = ['normal', 'chill', 'burn', "douse", 'shock']
 
 for(let id of Object.keys(pokemonList)) {
     let pokemon = pokemonList[id];
@@ -18,7 +16,7 @@ for(let id of Object.keys(pokemonList)) {
     if(key.startsWith("charizard")) {
         key = "charizard";
     }
-    if(key.startsWith("pikachuflying")) {
+    if(key.startsWith("pikachu")) {
         key = "pikachu";
     }
     if(key.startsWith("mewtwo")) {
@@ -68,6 +66,12 @@ for(let id of Object.keys(pokemonList)) {
         console.error("Unidentified pokemon " + key);
         process.exit(1);
     }
+    if (key.startsWith("rotom") && key !== "rotom"){
+        const baseLearnset = Learnsets["rotom"];
+        for (let move of Object.keys(baseLearnset)) {
+            pokeWithLearnset[move] = baseLearnset[move]
+        }
+    }
     
     let quickmoves = []
     let chargemoves = []
@@ -86,9 +90,11 @@ for(let id of Object.keys(pokemonList)) {
             }
             continue;
         }else if (moveId === "technoblast") {
-            for (let type of tbTypes) {
-                quickmoves.push("TECHNO_BLAST_" + type.toUpperCase())
+            let suffix = pokemon.speciesId.split("_")[1];
+            if (!suffix) {
+                suffix = "normal"
             }
+            quickmoves.push("TECHNO_BLAST_" + suffix.toUpperCase())
             continue;
         }
         if (!moveId) {
@@ -123,6 +129,9 @@ for(let id of Object.keys(pokemonList)) {
     if(pokemon.speciesId === "pikachu_flying") {
         chargemoves.push("FLY")
     }
+    if(pokemon.speciesId === "pikachu_libre") {
+        chargemoves.push("FLYING_PRESS")
+    }
 
     pokemon.fastMoves = quickmoves;
     pokemon.chargedMoves = chargemoves;
@@ -130,136 +139,3 @@ for(let id of Object.keys(pokemonList)) {
 }
 
 fs.writeFileSync("data/pokemonWithMainSeriesMoves.json", JSON.stringify(pokemonList))
-
-/*async function loadPokemonMoveset(localPokemon: any) {
-    if(localPokemon.hasMainSeriesChargeMoves) {
-        return localPokemon;
-    }
-    console.log("Do " + localPokemon.speciesId);
-    newPokemon = localPokemon;
-    let pokemonFromDatabase: {moves: Array<any>};
-
-    try{
-        let urlSuffix = newPokemon.speciesId.replace("_male", "-m").replace("_female", "-f").replace("_shadow", "").replace("_armored", "").replace("_zen", "").replace("_standard", "").replaceAll("_", "-").replace("alolan", "alola").replace("galarian", "galar")
-        if(urlSuffix.startsWith("aegislash")) {
-            urlSuffix = "aegislash-shield";
-        }        
-        if(urlSuffix.startsWith("arceus")) {
-            urlSuffix = "arceus";
-        }
-        if(urlSuffix.startsWith("basculin")) {
-            urlSuffix = "basculin-red-striped";
-        }
-        if(urlSuffix.startsWith("genesect")) {
-            urlSuffix = "genesect";
-        }
-        if(urlSuffix.startsWith("burmy")) {
-            urlSuffix = "burmy";
-        }
-        if(urlSuffix.startsWith("shellos")) {
-            urlSuffix = "shellos";
-        }
-        if(urlSuffix.startsWith("gastrodon")) {
-            urlSuffix = "gastrodon";
-        }
-        if(urlSuffix.startsWith("meowstic")) {
-            urlSuffix = "meowstic-male";
-        }
-        if(urlSuffix.startsWith("pumpkaboo")) {
-            urlSuffix = "pumpkaboo-average";
-        }
-        if(urlSuffix.startsWith("gourgeist")) {
-            urlSuffix = "gourgeist-average";
-        }
-        if(urlSuffix.startsWith("cherrim")) {
-            urlSuffix = "cherrim";
-        }
-        if(urlSuffix === "deoxys") {
-            urlSuffix = "deoxys-normal";
-        }
-        if(urlSuffix === "pikachu-flying") {
-            urlSuffix = "pikachu";
-        }
-        if(urlSuffix === "darmanitan-galar") {
-            urlSuffix = "darmanitan-standard-galar";
-        }
-        let response = await axios.get(urlPrefix + urlSuffix)
-        pokemonFromDatabase = response.data
-    } catch(e) {
-        let asJSON = e.toJSON()
-        console.log("Fail in case " +localPokemon.speciesId);
-        console.log(asJSON);
-        return newPokemon;
-    }
-
-    let quickmoves = []
-    let chargemoves = []
-
-    for (let moveDataMainSeries of pokemonFromDatabase.moves) {
-        let moveId: string = moveDataMainSeries.move.name.toUpperCase().replace("-", "_")
-
-        let moveDataInPoGO = localMoves[moveId];
-        if (moveId === "HIDDEN_POWER")  {
-            for (let type of hpTypes) {
-                quickmoves.push(moveId + "_" + type.toUpperCase())
-            }
-            continue;
-        } else if (moveId === "WHEATHER_BALL") {
-            for (let type of wbTypes) {
-                quickmoves.push(moveId + "_" + type.toUpperCase())
-            }
-            continue;
-        }
-        if (!moveDataInPoGO) {
-            continue;
-        }
-        
-        if (moveDataInPoGO.energy){
-            chargemoves.push(moveId);
-        } else {
-            quickmoves.push(moveId)
-        }
-    }
-
-    // Ensure Special learn everything they need
-    if(newPokemon.speciesId === "smeargle") {
-        for (let move of Object.keys(localMoves)) {
-            if (move.includes("BLASTOISE")){
-                continue;
-            }
-            if (localMoves[move].energy){
-                chargemoves.push(move);
-            } else {
-                quickmoves.push(move);
-            }
-        }
-    } else if(newPokemon.speciesId === "pikachu_flying") {
-        chargemoves.push("FLY")
-    }
-
-    // Add struggle to every Pokemon
-    chargemoves.push("STRUGGLE");
-
-    newPokemon.fastMoves = quickmoves;
-    newPokemon.chargedMoves = chargemoves;
-    newPokemon.hasMainSeriesChargeMoves = true;
-    return newPokemon;
-}
-
-let promises: Array<Promise<any>> = []
-let iterations = 0
-for(let localPokemon of Object.keys(pokemonList)) {
-    setTimeout(_ => {
-        promises.push(loadPokemonMoveset(pokemonList[localPokemon]));
-    }, iterations * 0)
-    iterations++;
-}
-
-setTimeout(_ => Promise.all(promises).then(newPokemons => {
-    let newPokemonObj: any = {};
-    for(let pokemon of newPokemons) {
-        newPokemonObj[pokemon.speciesId] = pokemon;
-    }
-    fs.writeFileSync("data/pokemonWithMainSeriesMoves.json", JSON.stringify(newPokemonObj))
-}), iterations * 10)
-*/
