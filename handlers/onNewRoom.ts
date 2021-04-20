@@ -22,7 +22,7 @@ function onNewRoom(id: string, payload: OnNewRoomPayload, callback:  (roomId: st
       let format = payload.format;
       if (!format) {
         format = {
-          name: "Great"
+          name: "Great League"
         }
       }
       try{        
