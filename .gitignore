@@ -108,4 +108,8 @@ dist
 
 # Ignore DevSpace cache and log folder
 .devspace/
-.elasticbeanstalk
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
