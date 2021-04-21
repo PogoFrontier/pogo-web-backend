@@ -1,3 +1,4 @@
+import { reduceActionForOpponent } from "../actions/reduceInformation";
 import { rooms } from "../matchhandling_server";
 import { Actions } from "../types/actions";
 import { OnActionProps } from "../types/handlers";
@@ -64,7 +65,7 @@ function onAction({
         const j = i === 0 ? 1 : 0;
         const opponent = currentRoom.players[j];
         if (opponent) {
-          pubClient.publish("messagesToUser:" + opponent.id, data)
+          pubClient.publish("messagesToUser:" + opponent.id, reduceActionForOpponent(data, player.current.team))
         }
       }
     }

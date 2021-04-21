@@ -1,4 +1,4 @@
-import { CHARGE_WAIT, GAME_TIME, SWITCH_WAIT, maxBuffStages, buffDivisor } from "../config";
+import { CHARGE_WAIT, GAME_TIME, SWITCH_WAIT, SWITCH_WAIT_LAST, maxBuffStages, buffDivisor } from "../config";
 import { pubClient } from "../redis/clients";
 import { rooms } from "../matchhandling_server";
 import { CODE } from "../types/actions";
@@ -90,6 +90,7 @@ function onChargeEnd({
           }
         }
         const time = Math.ceil(Number((GAME_TIME - currentRoom.turn! * 0.5).toFixed(1)))
+        const targetPokemon = opponent.current!.team[opponent.current!.active]
         const payload: ResolveTurnPayload = {
           time,
           update: [
@@ -103,7 +104,7 @@ function onChargeEnd({
             {
               id: opponent.id,
               active: opponent.current.active,
-              hp: opponent.current!.team[opponent.current!.active].current!.hp,
+              hp: targetPokemon.current!.hp / targetPokemon.hp,
               wait: -1,
               message
             }
@@ -123,9 +124,9 @@ function onChargeEnd({
             endGame(room);
           } else if (currentRoom.status !== RoomStatus.FAINT) {
             currentRoom.status = RoomStatus.FAINT;
-            currentRoom.wait = SWITCH_WAIT;
-            payload.update[0]!.wait = SWITCH_WAIT;
-            payload.update[1]!.wait = SWITCH_WAIT;
+            currentRoom.wait = (opponent.current!.remaining === 1) ? SWITCH_WAIT_LAST : SWITCH_WAIT;
+            payload.update[0]!.wait = currentRoom.wait;
+            payload.update[1]!.wait = currentRoom.wait;
             payload.update[1]!.remaining = opponent.current!.remaining;
           }
         } else if (currentRoom.charge.cmp) {

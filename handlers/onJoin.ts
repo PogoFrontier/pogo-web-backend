@@ -1,3 +1,4 @@
+import { reduceTeam } from "../actions/reduceInformation";
 import to from "../actions/to";
 import { rooms } from "../matchhandling_server";
 import { CODE } from "../types/actions";
@@ -31,7 +32,7 @@ function onJoin(id: string, payload: OnJoinPayload) {
                 currentRoom.players[i] = { id, team: teamMembers }
                 to(room, JSON.stringify({
                     type: CODE.room_join,
-                    payload: { team: teamMembers }
+                    payload: { team: reduceTeam(teamMembers) }
                 }), id)
 
                 console.info(`Socket ${id} has joined ${room}.`);
