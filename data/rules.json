@@ -111,7 +111,7 @@
             ]}]}
         ]
     },
-    "COMMANDER_CUP": {
+    "Commander Cup": {
         "maxCP":1500,
         "maxLevel":50,
         "maxBestBuddy":1,
@@ -122,22 +122,22 @@
         "teamPattern":[
             {"include":[{
                 "filterType":"id",
-                "values":["munchlax", "shiftry", "escavalier", "steelix", "empoleon", "jellicent", "bronzong", "noctowl", "marowak_alola", "poliwrath"]
+                "values":["munchlax", "shiftry", "escavalier", "steelix", "empoleon", "jellicent", "bronzong", "noctowl", "marowak_alolan", "poliwrath"]
             }]},
             {"include":[{"filterType":"type", "values":["rock", "ice", "electric", "poison", "psychic"]}],
-            "exclude": [{"filterType": "type", "values": ["steel"]}, {"filterType": "label","values": ["legendary", "mythical", "shadow"]}]},
+            "exclude": [{"filterType": "type", "values": ["steel"]}]},
             {"include":[{"filterType":"type", "values":["rock", "ice", "electric", "poison", "psychic"]}],
-            "exclude": [{"filterType": "type", "values": ["steel"]}, {"filterType": "label","values": ["legendary", "mythical", "shadow"]}]},
+            "exclude": [{"filterType": "type", "values": ["steel"]}]},
             {"include":[{"filterType":"type", "values":["rock", "ice", "electric", "poison", "psychic"]}],
-            "exclude": [{"filterType": "type", "values": ["steel"]}, {"filterType": "label","values": ["legendary", "mythical", "shadow"]}]},
+            "exclude": [{"filterType": "type", "values": ["steel"]}]},
             {"include":[{"filterType":"type", "values":["rock", "ice", "electric", "poison", "psychic"]}],
-            "exclude": [{"filterType": "type", "values": ["steel"]}, {"filterType": "label","values": ["legendary", "mythical", "shadow"]}]},
+            "exclude": [{"filterType": "type", "values": ["steel"]}]},
             {"include":[{"filterType":"type", "values":["rock", "ice", "electric", "poison", "psychic"]}],
-            "exclude": [{"filterType": "type", "values": ["steel"]}, {"filterType": "label","values": ["legendary", "mythical", "shadow"]}]}
+            "exclude": [{"filterType": "type", "values": ["steel"]}]}
         ],
         "exclude": [{
             "filterType": "label",
-            "values": ["legendary", "mythical", "shadow"]
+            "values": ["legendary", "mythical", "shadow", "mega"]
         }, {
             "filterType": "id",
             "values": ["abomasnow", "galvantula", "stunfisk", "medicham", "wobuffet", "pachirisu", "drapion"]

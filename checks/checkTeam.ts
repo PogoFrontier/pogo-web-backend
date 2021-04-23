@@ -46,73 +46,17 @@ export function isTeamValid(team: TeamMember[], format: Rule): {isValid: boolean
       if (pokemon.cp > format.maxCP) {
         violations.push(`Pokemon in index ${index} has too many cp: ${pokemon.cp}`);
       }
+
+      // check if pokémon is legal
+      const {
+        violations: speciesViolations
+      } = isSpeciesAllowed(pokemon, format, parseInt(index));
+      violations.push(...speciesViolations)
   
       // Get species data
       const shouldUseMainSeriesData = format.advancedOptions && format.advancedOptions.movesets === "mainseries"
       const speciesData = shouldUseMainSeriesData ? mainSeriesPokeData[pokemon.speciesId as keyof typeof mainSeriesPokeData] : pokeData[pokemon.speciesId as keyof typeof pokeData];
-
-      // Check moves
-      if (!format.advancedOptions || format.advancedOptions.movesets !== "norestrictions") {
-        if (!speciesData.fastMoves.includes(pokemon.fastMove)) {
-          violations.push(`Pokemon in index ${index} cannot use ${pokemon.fastMove}`);
-        }
-        const illegalChargeMoves = pokemon.chargeMoves.filter(chargeMove => {
-          return chargeMove !== "NONE" &&
-          !(chargeMove === "RETURN" && "tags" in speciesData && speciesData.tags.some(tag => tag === "shadoweligible")) &&
-          !(chargeMove === "FRUSTRATION" && "tags" in speciesData && speciesData.tags.some(tag => tag === "shadow")) &&
-          !speciesData.chargedMoves.includes(chargeMove);
-        });
-        for (let illegalChargeMove of illegalChargeMoves) {
-          violations.push(`Pokemon in index ${index} cannot use ${illegalChargeMove}`);
-        }
-      }
-  
-      // Check if pokemon is included
-      let includeList = Array<Selector>();
-      if (format.include) {
-          includeList = format.include;
-      }
-      if (format.teamPattern && format.teamPattern[index] && format.teamPattern[index].include) {
-          includeList = includeList.concat(format.teamPattern[index].include!);
-      }
-      if (includeList.length) {
-        let included = false;
-
-        for (let tag of includeList) {
-          included = doesSelectorDescribePokémon(tag, speciesData);
-          if (included) {
-            break;
-          }
-        }
-
-        if(!included) {
-          violations.push(`Pokemon in index ${index} is not allowed`);
-        }
-      }
-
-      // Check if pokemon is excluded
-      let excludeList = Array<Selector>();
-      if (format.exclude) {
-        excludeList = format.exclude;
-      }
-      if (format.teamPattern && format.teamPattern[index] && format.teamPattern[index].exclude) {
-        excludeList = excludeList.concat(format.teamPattern[index].exclude!);
-      }
-      if (excludeList.length) {
-        let excluded = false;
-
-        for (let tag of excludeList) {
-          excluded = doesSelectorDescribePokémon(tag, speciesData);
-          if (excluded) {
-            break;
-          }
-        }
-
-        if(excluded) {
-          violations.push(`Pokemon in index ${index} is banned`);
-        }
-      }
-
+      
       // Check if pokémon violates any of the rules defined in flags
       if(format.flags) {
         if (format.flags.speciesClauseByDex && selectedSpecies.some(species => species.dex === speciesData.dex)) {
@@ -147,6 +91,90 @@ export function isTeamValid(team: TeamMember[], format: Rule): {isValid: boolean
         isValid: violations.length === 0,
         violations: violations
     }
+}
+
+type reducedPoke = {
+  speciesId: string
+  fastMove?: string
+  chargeMoves?: string[]
+}
+
+export function isSpeciesAllowed(pokemon: reducedPoke, format: Rule, position: number): {isValid: boolean, violations: string[]} {
+  let violations: Array<string> = []
+
+  // Get species data
+  const shouldUseMainSeriesData = format.advancedOptions && format.advancedOptions.movesets === "mainseries"
+  const speciesData = shouldUseMainSeriesData ? mainSeriesPokeData[pokemon.speciesId as keyof typeof mainSeriesPokeData] : pokeData[pokemon.speciesId as keyof typeof pokeData];
+
+  // Check moves
+  if (pokemon.fastMove !== undefined && (!format.advancedOptions || format.advancedOptions.movesets !== "norestrictions")) {
+    if (!speciesData.fastMoves.includes(pokemon.fastMove)) {
+      violations.push(`Pokemon in index ${position} cannot use ${pokemon.fastMove}`);
+    }
+  }
+  if (pokemon.chargeMoves !== undefined && (!format.advancedOptions || format.advancedOptions.movesets !== "norestrictions")) {
+    const illegalChargeMoves = pokemon.chargeMoves.filter(chargeMove => {
+      return chargeMove !== "NONE" &&
+      !(chargeMove === "RETURN" && "tags" in speciesData && speciesData.tags.some(tag => tag === "shadoweligible")) &&
+      !(chargeMove === "FRUSTRATION" && "tags" in speciesData && speciesData.tags.some(tag => tag === "shadow")) &&
+      !speciesData.chargedMoves.includes(chargeMove);
+    });
+    for (let illegalChargeMove of illegalChargeMoves) {
+      violations.push(`Pokemon in index ${position} cannot use ${illegalChargeMove}`);
+    }
+  }
+
+  // Check if pokemon is included
+  let includeList = Array<Selector>();
+  if (format.include) {
+      includeList = format.include;
+  }
+  if (format.teamPattern && format.teamPattern[position] && format.teamPattern[position].include) {
+      includeList = includeList.concat(format.teamPattern[position].include!);
+  }
+  if (includeList.length) {
+    let included = false;
+
+    for (let tag of includeList) {
+      included = doesSelectorDescribePokémon(tag, speciesData);
+      if (included) {
+        break;
+      }
+    }
+
+    if(!included) {
+      violations.push(`Pokemon in index ${position} is not allowed`);
+    }
+  }
+
+  // Check if pokemon is excluded
+  let excludeList = Array<Selector>();
+  if (format.exclude) {
+    excludeList = format.exclude;
+  }
+  if (format.teamPattern && format.teamPattern[position] && format.teamPattern[position].exclude) {
+    excludeList = excludeList.concat(format.teamPattern[position].exclude!);
+  }
+  if (excludeList.length) {
+    let excluded = false;
+
+    for (let tag of excludeList) {
+      excluded = doesSelectorDescribePokémon(tag, speciesData);
+      if (excluded) {
+        break;
+      }
+    }
+
+    if(excluded) {
+      violations.push(`Pokemon in index ${position} is banned`);
+    }
+  }
+
+  return {
+    isValid: violations.length === 0,
+    violations: violations
+  }
+
 }
   
 export function parseToTeamMembers (team: TeamMemberDescription[]): TeamMember[] {
