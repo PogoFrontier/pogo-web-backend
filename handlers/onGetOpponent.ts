@@ -1,3 +1,4 @@
+import { reduceTeam } from "../actions/reduceInformation";
 import to from "../actions/to";
 import { rooms } from "../matchhandling_server";
 import { CODE } from "../types/actions";
@@ -11,7 +12,7 @@ function onGetOpponent(id: string, payload: OnGetOpponentPayload) {
     if (opp) {
       to(room, JSON.stringify({
         type: CODE.room_join,
-        payload: { team: opp.team }
+        payload: { team: reduceTeam(opp.team) }
       }), opp.id)
       return;
     }

@@ -96,20 +96,20 @@ export function isTeamValid(team: TeamMember[], format: Rule): {isValid: boolean
         excludeList = format.exclude;
       }
       if (format.teamPattern && format.teamPattern[index] && format.teamPattern[index].exclude) {
-        excludeList = includeList.concat(format.teamPattern[index].exclude!);
+        excludeList = excludeList.concat(format.teamPattern[index].exclude!);
       }
       if (excludeList.length) {
         let excluded = false;
 
         for (let tag of excludeList) {
-          let excluded = doesSelectorDescribePokémon(tag, speciesData);
+          excluded = doesSelectorDescribePokémon(tag, speciesData);
           if (excluded) {
             break;
           }
         }
 
         if(excluded) {
-          violations.push(`Pokemon in index ${index} is panned`);
+          violations.push(`Pokemon in index ${index} is banned`);
         }
       }
 
@@ -142,7 +142,7 @@ export function isTeamValid(team: TeamMember[], format: Rule): {isValid: boolean
     if (megaCounter > format.maxMega) {
       violations.push(`Team has too many megas: ${megaCounter}`);
     }
-  
+
     return {
         isValid: violations.length === 0,
         violations: violations
