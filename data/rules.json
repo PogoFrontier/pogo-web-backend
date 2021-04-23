@@ -90,7 +90,7 @@
         "maxCP":1500,
         "maxLevel":50,
         "maxBestBuddy":1,
-        "maxMega":1,
+        "maxMega":0,
         "flags":{
             "speciesClauseByDex":true
         },
@@ -110,5 +110,37 @@
             {"include":[{"filterType":"id","values":["aerodactyl","aggron","arbok","armaldo","cinccino","cloyster","crobat","delcatty","donphan","drapion","drifblim","durant","escavalier","espeon","excadrill","ferrothorn","forretress","gengar","glalie","gligar","gliscor","golbat","golem_alolan","gothitelle","granbull","graveler_alolan","grimer","haunter","klinklang","lairon","liepard","machoke","magneton","magnezone","mantine","mightyena","misdreavus","mismagius","muk","nidoking","noivern","probopass","purugly","qwilfish","relicanth","rhydon","rhyperior","skuntank","spiritomb","steelix","swalot","venomoth","weezing"
             ]}]}
         ]
+    },
+    "COMMANDER_CUP": {
+        "maxCP":1500,
+        "maxLevel":50,
+        "maxBestBuddy":1,
+        "maxMega":0,
+        "flags":{
+            "speciesClauseByForm":true
+        },
+        "teamPattern":[
+            {"include":[{
+                "filterType":"id",
+                "values":["munchlax", "shiftry", "escavalier", "steelix", "empoleon", "jellicent", "bronzong", "noctowl", "marowak_alola", "poliwrath"]
+            }]},
+            {"include":[{"filterType":"type", "values":["rock", "ice", "electric", "poison", "psychic"]}],
+            "exclude": [{"filterType": "type", "values": ["steel"]}, {"filterType": "label","values": ["legendary", "mythical", "shadow"]}]},
+            {"include":[{"filterType":"type", "values":["rock", "ice", "electric", "poison", "psychic"]}],
+            "exclude": [{"filterType": "type", "values": ["steel"]}, {"filterType": "label","values": ["legendary", "mythical", "shadow"]}]},
+            {"include":[{"filterType":"type", "values":["rock", "ice", "electric", "poison", "psychic"]}],
+            "exclude": [{"filterType": "type", "values": ["steel"]}, {"filterType": "label","values": ["legendary", "mythical", "shadow"]}]},
+            {"include":[{"filterType":"type", "values":["rock", "ice", "electric", "poison", "psychic"]}],
+            "exclude": [{"filterType": "type", "values": ["steel"]}, {"filterType": "label","values": ["legendary", "mythical", "shadow"]}]},
+            {"include":[{"filterType":"type", "values":["rock", "ice", "electric", "poison", "psychic"]}],
+            "exclude": [{"filterType": "type", "values": ["steel"]}, {"filterType": "label","values": ["legendary", "mythical", "shadow"]}]}
+        ],
+        "exclude": [{
+            "filterType": "label",
+            "values": ["legendary", "mythical", "shadow"]
+        }, {
+            "filterType": "id",
+            "values": ["abomasnow", "galvantula", "stunfisk", "medicham", "wobuffet", "pachirisu", "drapion"]
+        }]
     }
 }
