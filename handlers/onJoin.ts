@@ -3,6 +3,7 @@ import to from "../actions/to";
 import { rooms } from "../matchhandling_server";
 import { CODE } from "../types/actions";
 import { OnJoinPayload } from "../types/handlers";
+import { TeamMemberDescription } from "../types/team";
 import { parseToTeamMembers, isTeamValid } from "../checks/checkTeam";
 import { Room } from "../types/room";
 import { pubClient } from "../redis/clients";
@@ -15,6 +16,11 @@ function onJoin(id: string, payload: OnJoinPayload) {
         const { allowed, reason } = isAllowed(currentRoom, id)
         if(!allowed) {
             pubClient.publish("messagesToUser:" + id, "$error" + reason);
+            return;
+        }
+
+        if (!team || !Array.isArray(team) || team.length <= 0) {
+            pubClient.publish("messagesToUser:" + id, "$errorYour team has an invalid format. It should be an array.");
             return;
         }
         
