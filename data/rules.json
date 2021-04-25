@@ -4,6 +4,7 @@
         "maxLevel": 50,
         "maxBestBuddy": 1,
         "maxMega": 1,
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/all/overall/rankings-1500.json",
         "flags": {
             "speciesClauseByDex": "true"
         }
@@ -25,6 +26,7 @@
         "maxLevel": 50,
         "maxBestBuddy": 1,
         "maxMega": 1,
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/all/overall/rankings-2500.json",
         "flags": {
             "speciesClauseByDex": "true"
         }
@@ -37,6 +39,7 @@
         "flags": {
             "speciesClauseByDex": "true"
         },
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/premier/overall/rankings-2500.json",
         "exclude":[{
             "filterType":"tag",
             "values":["legendary","mythical"]
@@ -47,6 +50,7 @@
         "maxLevel": 50,
         "maxBestBuddy": 1,
         "maxMega": 1,
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/all/overall/rankings-10000.json",
         "flags": {
             "speciesClauseByDex": "true"
         }
@@ -59,6 +63,7 @@
         "flags": {
             "speciesClauseByDex": "true"
         },
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/premier/overall/rankings-10000.json",
         "exclude":[{
             "filterType":"tag",
             "values":["legendary","mythical"]
@@ -69,6 +74,7 @@
         "maxLevel": 40,
         "maxBestBuddy": 1,
         "maxMega": 1,
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/all/overall/rankings-10000.json",
         "flags": {
             "speciesClauseByDex": "true"
         }
@@ -81,6 +87,7 @@
         "flags": {
             "speciesClauseByDex": "true"
         },
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/premier/overall/rankings-10000.json",
         "exclude":[{
             "filterType":"tag",
             "values":["legendary","mythical"]
@@ -94,6 +101,7 @@
         "flags":{
             "speciesClauseByDex":true
         },
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/prismatic/overall/rankings-1500.json",
         "teamPattern":[
             {"include":[{
                 "filterType":"id",
@@ -119,6 +127,7 @@
         "flags":{
             "speciesClauseByForm":true
         },
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/commander/overall/rankings-1500.json",
         "teamPattern":[
             {"include":[{
                 "filterType":"id",
@@ -140,7 +149,7 @@
             "values": ["legendary", "mythical", "shadow", "mega"]
         }, {
             "filterType": "id",
-            "values": ["abomasnow", "galvantula", "stunfisk", "medicham", "wobuffet", "pachirisu", "drapion"]
+            "values": ["abomasnow", "galvantula", "stunfisk", "medicham", "wobbuffet", "pachirisu", "drapion"]
         }]
     }
 }
