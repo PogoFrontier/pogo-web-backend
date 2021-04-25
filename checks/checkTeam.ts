@@ -178,9 +178,6 @@ export function isSpeciesAllowed(pokemon: reducedPoke, format: Rule, position: n
 }
   
 export function parseToTeamMembers (team: TeamMemberDescription[]): TeamMember[] {
-    if (!team || team.length <= 0) {
-      return []
-    }
     return team.map(function(member): TeamMember {
       if (! (member.speciesId in pokeData) || !member.iv) {
         return {

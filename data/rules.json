@@ -136,7 +136,7 @@
             "exclude": [{"filterType": "type", "values": ["steel"]}]}
         ],
         "exclude": [{
-            "filterType": "label",
+            "filterType": "tag",
             "values": ["legendary", "mythical", "shadow", "mega"]
         }, {
             "filterType": "id",

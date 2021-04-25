@@ -24,7 +24,11 @@ for (let ruleName of Object.keys(rules)) {
                 let {
                     isValid: legal
                 } = isSpeciesAllowed({speciesId}, rule, parseInt(position));
-                listForFormat[speciesId] = {legal}
+                listForFormat[speciesId] = {
+                    legal,
+                    dex: pokemonList[pokemon].dex,
+                    types: pokemonList[pokemon].types
+                }
             }
 
             let text = JSON.stringify(listForFormat);
@@ -37,7 +41,11 @@ for (let ruleName of Object.keys(rules)) {
             let {
                 isValid: legal
             } = isSpeciesAllowed({speciesId}, rule, 0);
-            listForFormat[speciesId] = {legal}
+            listForFormat[speciesId] = {
+                legal,
+                dex: pokemonList[pokemon].dex,
+                types: pokemonList[pokemon].types
+            }
         }
 
         let text = JSON.stringify(listForFormat);
