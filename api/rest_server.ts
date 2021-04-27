@@ -7,6 +7,7 @@ import pokemonRoutes from "./pokemonRoutes";
 import moveRoutes from "./moveRoutes";
 import userRoutes from "./userRoutes";
 import roomRoutes from "./roomRoutes";
+import ruleRoutes from "./ruleRoutes";
 
 export const SERVER_PORT = 8081;
 
@@ -32,6 +33,7 @@ app.use('/api/pokemon', pokemonRoutes);
 app.use('/api/moves', moveRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/room', roomRoutes);
+app.use('/api/rule', ruleRoutes);
 
 // serve static files from a given folder
 app.use(e.static('../public'));

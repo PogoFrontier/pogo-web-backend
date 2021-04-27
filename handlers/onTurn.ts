@@ -1,3 +1,4 @@
+import { reduceActionForOpponent } from "../actions/reduceInformation";
 import indexOfMax from "../actions/indexOfMax";
 import { CHARGE_WAIT, GAME_TIME, SWAP_COOLDOWN, SWITCH_WAIT, SWITCH_WAIT_LAST, TURN_LENGTH } from "../config";
 import { moves, rooms } from "../matchhandling_server";
@@ -28,31 +29,33 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
             player.current.action.move!.cooldown -= 500;
             if (player.current.action.move!.cooldown <= 0) {
               const j = i === 0 ? 1 : 0;
+              const activePokemon = player.current.team[player.current.active];
 
-              player.current.team[player.current.active].current!.energy = 
-                Math.min(100, (player.current.team[player.current.active].current!.energy || 0) + moves[player.current.action.move.moveId].energyGain)
+              activePokemon.current!.energy = 
+                Math.min(100, (activePokemon.current!.energy || 0) + moves[player.current.action.move.moveId].energyGain)
 
               payload[i] = {
                 ...payload[i], 
                 id: player.id,
                 active: player.current.active,
-                hp: payload[i]?.hp || player.current.team[player.current.active].current!.hp,
+                hp: payload[i]?.hp || activePokemon.current!.hp / activePokemon.hp,
                 shouldReturn: true,
-                energy: player.current.team[player.current.active].current!.energy,
+                energy: activePokemon.current!.energy,
               }
               const opponent = currentRoom.players[j]!;
-              opponent.current!.team[opponent.current!.active].current!.hp = calcDamage(
-                player.current.team[player.current.active],
-                opponent.current!.team[opponent.current!.active],
+              const opponentActivePokemon = opponent.current!.team[opponent.current!.active];
+              opponentActivePokemon.current!.hp = calcDamage(
+                activePokemon,
+                opponentActivePokemon,
                 player.current.action!.move!
               );
               payload[j] = {
                 ...payload[j],
                 id: opponent.id,
                 active: opponent.current!.active,
-                hp: opponent.current!.team[opponent.current!.active].current!.hp,
+                hp: opponentActivePokemon.current!.hp / opponentActivePokemon.hp,
               }
-              if (opponent.current!.team[opponent.current!.active].current!.hp <= 0) {
+              if (opponentActivePokemon.current!.hp <= 0) {
                 opponent.current!.remaining -= 1;
                 if (opponent.current?.action?.move) {
                   if (opponent.current?.action?.move.cooldown > 500) {
@@ -113,10 +116,11 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
           player!.current!.active = shouldSwitch[i];
           // Generate payload
           if (payload[i] === null) {
+            let oldActivePokemon = player.team[oldActive]
             payload[i] = {
               id: currentRoom.players[i]!.id,
               active: shouldSwitch[i],
-              hp: player.team[oldActive] ? player.team[oldActive].current?.hp : 0,
+              hp: oldActivePokemon && oldActivePokemon.current?.hp ? oldActivePokemon.current.hp / oldActivePokemon.hp : 0,
               shouldReturn: true
             };
           } else {
@@ -163,6 +167,9 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
               currentRoom.status = RoomStatus.STARTED;
               if (player.current!.team[player.current!.active].current!.hp <= 0) {
                 player.current!.active = player.current!.team.findIndex(x => x.current!.hp > 0);
+                // notify other user
+                const oppId = currentRoom.players[[1, 0][i]]!.id;
+                pubClient.publish("messagesToUser:" + oppId, reduceActionForOpponent(`#${Actions.SWITCH}:` + player.current!.active, player!.current!.team));
               }
             }
           }
@@ -243,6 +250,7 @@ const onTurn = (room: string, id: string) => {
       for (let i = 0; i < currentRoom.players.length; i++) {
         const player = currentRoom.players[i];
         const j = i === 0 ? 1 : 0;
+
         if (player) {
           if (player.current
             && player.current.bufferedAction
@@ -250,15 +258,18 @@ const onTurn = (room: string, id: string) => {
             && currentRoom.status === RoomStatus.STARTED) {
               let buffString = player.current.bufferedAction.string!;
               player.current.action = player.current.bufferedAction;
+              let current = player.current;
               setTimeout(() => {
                 const oppId = currentRoom.players[j]!.id;
-                pubClient.publish("messagesToUser:" + oppId, buffString);
+                pubClient.publish("messagesToUser:" + oppId, reduceActionForOpponent(buffString, current.team));
               }, TURN_LENGTH / 2)
               delete player.current.bufferedAction;
           }
+
           if (payload.update[i]?.id !== payload.update[j]?.id && i === 1) {
             payload.update.reverse();
           }
+
           if (player.current && player.current?.switch > 0) {
             if (currentRoom.turn % 2 === 0) {
               player.current!.switch--;

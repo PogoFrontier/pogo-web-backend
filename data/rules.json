@@ -4,8 +4,21 @@
         "maxLevel": 50,
         "maxBestBuddy": 1,
         "maxMega": 1,
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/all/overall/rankings-1500.json",
         "flags": {
             "speciesClauseByDex": "true"
+        }
+    },
+    "MainSeries": {
+        "maxCP": 1500,
+        "maxLevel": 50,
+        "maxBestBuddy": 1,
+        "maxMega": 1,
+        "flags": {
+            "speciesClauseByDex": "true"
+        },
+        "advancedOptions": {
+            "movesets": "mainseries"
         }
     },
     "Ultra League": {
@@ -13,6 +26,7 @@
         "maxLevel": 50,
         "maxBestBuddy": 1,
         "maxMega": 1,
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/all/overall/rankings-2500.json",
         "flags": {
             "speciesClauseByDex": "true"
         }
@@ -25,6 +39,7 @@
         "flags": {
             "speciesClauseByDex": "true"
         },
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/premier/overall/rankings-2500.json",
         "exclude":[{
             "filterType":"tag",
             "values":["legendary","mythical"]
@@ -35,6 +50,7 @@
         "maxLevel": 50,
         "maxBestBuddy": 1,
         "maxMega": 1,
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/all/overall/rankings-10000.json",
         "flags": {
             "speciesClauseByDex": "true"
         }
@@ -47,6 +63,7 @@
         "flags": {
             "speciesClauseByDex": "true"
         },
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/premier/overall/rankings-10000.json",
         "exclude":[{
             "filterType":"tag",
             "values":["legendary","mythical"]
@@ -57,6 +74,7 @@
         "maxLevel": 40,
         "maxBestBuddy": 1,
         "maxMega": 1,
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/all/overall/rankings-10000.json",
         "flags": {
             "speciesClauseByDex": "true"
         }
@@ -69,6 +87,7 @@
         "flags": {
             "speciesClauseByDex": "true"
         },
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/premier/overall/rankings-10000.json",
         "exclude":[{
             "filterType":"tag",
             "values":["legendary","mythical"]
@@ -78,10 +97,11 @@
         "maxCP":1500,
         "maxLevel":50,
         "maxBestBuddy":1,
-        "maxMega":1,
+        "maxMega":0,
         "flags":{
             "speciesClauseByDex":true
         },
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/prismatic/overall/rankings-1500.json",
         "teamPattern":[
             {"include":[{
                 "filterType":"id",
@@ -98,5 +118,38 @@
             {"include":[{"filterType":"id","values":["aerodactyl","aggron","arbok","armaldo","cinccino","cloyster","crobat","delcatty","donphan","drapion","drifblim","durant","escavalier","espeon","excadrill","ferrothorn","forretress","gengar","glalie","gligar","gliscor","golbat","golem_alolan","gothitelle","granbull","graveler_alolan","grimer","haunter","klinklang","lairon","liepard","machoke","magneton","magnezone","mantine","mightyena","misdreavus","mismagius","muk","nidoking","noivern","probopass","purugly","qwilfish","relicanth","rhydon","rhyperior","skuntank","spiritomb","steelix","swalot","venomoth","weezing"
             ]}]}
         ]
+    },
+    "Commander Cup": {
+        "maxCP":1500,
+        "maxLevel":50,
+        "maxBestBuddy":1,
+        "maxMega":0,
+        "flags":{
+            "speciesClauseByForm":true
+        },
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/commander/overall/rankings-1500.json",
+        "teamPattern":[
+            {"include":[{
+                "filterType":"id",
+                "values":["munchlax", "shiftry", "escavalier", "steelix", "empoleon", "jellicent", "bronzong", "noctowl", "marowak_alolan", "poliwrath"]
+            }]},
+            {"include":[{"filterType":"type", "values":["rock", "ice", "electric", "poison", "psychic"]}],
+            "exclude": [{"filterType": "type", "values": ["steel"]}]},
+            {"include":[{"filterType":"type", "values":["rock", "ice", "electric", "poison", "psychic"]}],
+            "exclude": [{"filterType": "type", "values": ["steel"]}]},
+            {"include":[{"filterType":"type", "values":["rock", "ice", "electric", "poison", "psychic"]}],
+            "exclude": [{"filterType": "type", "values": ["steel"]}]},
+            {"include":[{"filterType":"type", "values":["rock", "ice", "electric", "poison", "psychic"]}],
+            "exclude": [{"filterType": "type", "values": ["steel"]}]},
+            {"include":[{"filterType":"type", "values":["rock", "ice", "electric", "poison", "psychic"]}],
+            "exclude": [{"filterType": "type", "values": ["steel"]}]}
+        ],
+        "exclude": [{
+            "filterType": "tag",
+            "values": ["legendary", "mythical", "shadow", "mega"]
+        }, {
+            "filterType": "id",
+            "values": ["abomasnow", "galvantula", "stunfisk", "medicham", "wobbuffet", "pachirisu", "drapion"]
+        }]
     }
 }

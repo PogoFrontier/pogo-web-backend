@@ -3,6 +3,7 @@ export interface Rule {
     maxLevel: number
     maxBestBuddy: number
     maxMega: number
+    rankingsLink?: string
     include?: Selector[]
     exclude?: Selector[]
     teamPattern?: SlotRule[]
