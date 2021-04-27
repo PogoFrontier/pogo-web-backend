@@ -46,6 +46,10 @@ function startServer() {
 
     // important! must listen from `server`, not `app`, otherwise socket.io won't function correctly
     server.listen(process.env.PORT || SERVER_PORT, () => console.info(`Listening on port ${process.env.PORT || SERVER_PORT}.`));
+
+    // Disable both timeouts
+    server.keepAliveTimeout = 0;
+    server.headersTimeout = 0;
 }
 
 startServer();
