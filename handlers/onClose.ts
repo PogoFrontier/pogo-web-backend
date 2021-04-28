@@ -25,9 +25,10 @@ function onClose(user: User, room: string) {
       }
 
       if (currentRoom.players[1] === null && currentRoom.players[0] === null) {
-        // Cleat redis subscription
+        // Clean redis subscription
         if(currentRoom.subClient) {
           currentRoom.subClient.unsubscribe("commands:" + currentRoom.id);
+          currentRoom.subClient.quit();
         }
     
         // Unset flag on redis so another server can host this room
