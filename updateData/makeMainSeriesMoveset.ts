@@ -1,7 +1,7 @@
 import fs from "fs"
-import p from "./data/pokemon.json";
-import m from "./data/moves.json";
-import { Learnsets } from './data/learnsets'
+import p from "../data/pokemon.json";
+import m from "../data/moves.json";
+import { Learnsets } from '../data/learnsets'
 
 let pokemonList: any = p
 let localMoves: any = m;
@@ -60,6 +60,9 @@ for(let id of Object.keys(pokemonList)) {
     }
     if(key.startsWith("meloetta")) {
         key = "meloetta";
+    }
+    if(key.startsWith("pyroar")) {
+        key = "pyroar";
     }
     let pokeWithLearnset = Learnsets[key];
     if(!pokeWithLearnset || !pokeWithLearnset.learnset) {
@@ -138,4 +141,4 @@ for(let id of Object.keys(pokemonList)) {
     delete pokemon.eliteMoves
 }
 
-fs.writeFileSync("data/pokemonWithMainSeriesMoves.json", JSON.stringify(pokemonList))
+fs.writeFileSync("data/pokemonWithMainSeriesMoves.json", JSON.stringify(pokemonList, null, 2))
