@@ -34,6 +34,9 @@ app.use('/api/moves', moveRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/room', roomRoutes);
 app.use('/api/rule', ruleRoutes);
+app.get('/health', function (req, res) {
+    res.send(200)
+})
 
 // serve static files from a given folder
 app.use(e.static('../public'));
