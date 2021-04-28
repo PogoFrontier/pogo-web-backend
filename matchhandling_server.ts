@@ -100,6 +100,7 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
 
     ws.onclose = () => {
         subClientForWS.unsubscribe();
+        subClientForWS.quit();
         pubClient.publish("commands:" + room, JSON.stringify({
             sender: id,
             data: {
