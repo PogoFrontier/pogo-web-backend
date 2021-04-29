@@ -18,7 +18,7 @@ function searchBattle(user: User, payload: SearchBattlePayload, recursionCounter
     const key = getBattleRequestKey(format);
 
     // Get current battle requests for this format
-    storeClient.LRANGE(key, 0, -1, (err, requests) => {
+    storeClient.lrange(key, 0, -1, (err, requests) => {
         if (err) {
             console.error(err);
             return;
@@ -31,7 +31,7 @@ function searchBattle(user: User, payload: SearchBattlePayload, recursionCounter
 
         // No partner found? Let's put this player on the list so another server can match him
         if (!match) {
-            storeClient.LPUSH(key, JSON.stringify(user), (err) => {
+            storeClient.lpush(key, JSON.stringify(user), (err) => {
                 if (err) {
                     console.error(err);
                 }
@@ -40,7 +40,7 @@ function searchBattle(user: User, payload: SearchBattlePayload, recursionCounter
         }
 
         // Remove the matched client from the list
-        storeClient.LREM(key, 1, JSON.stringify(match), (err, removedRequests) => {
+        storeClient.lrem(key, 1, JSON.stringify(match), (err, removedRequests) => {
             if (err) {
                 console.error(err);
                 return;
@@ -64,7 +64,7 @@ function searchBattle(user: User, payload: SearchBattlePayload, recursionCounter
 
             // If this is the eleventh iteration (which should be extremly rare), just give up and add our name to the list
             } else {
-                storeClient.LPUSH(key, JSON.stringify(user), (err) => {
+                storeClient.lpush(key, JSON.stringify(user), (err) => {
                     if (err) {
                         console.error(err);
                     }
