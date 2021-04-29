@@ -5,7 +5,7 @@ function to(room: string, data: string, id?: string) {
   const currentRoom = rooms.get(room)
   if (currentRoom) {
 
-    storeClient.SET("room:" + room, JSON.stringify({
+    storeClient.set("room:" + room, JSON.stringify({
         id: room,
         players: currentRoom.players,
         turn: currentRoom.turn,

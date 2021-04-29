@@ -1,7 +1,7 @@
 import { Actions } from './actions';
 import { Rule } from "./rule";
 import { TeamMember } from "./team";
-import { RedisClient } from "redis";
+import { Redis, Cluster } from "ioredis";
 
 export enum RoomStatus {
   SELECTING,
@@ -65,5 +65,5 @@ export interface Room {
     cmp?: Move
   },
   format: Rule,
-  subClient: RedisClient
+  subClient: Redis | Cluster
 }

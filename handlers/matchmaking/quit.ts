@@ -9,7 +9,7 @@ function quit(user: User, payload: SearchBattlePayload) {
         const format = parseToRule(payload.format);
         const key = getBattleRequestKey(format);
     
-        storeClient.LREM(key, 1, JSON.stringify(user), (err, removedRequests) => {
+        storeClient.lrem(key, 1, JSON.stringify(user), (err, removedRequests) => {
             if (err) {
                 console.error(err);
                 return;

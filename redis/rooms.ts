@@ -5,7 +5,7 @@ import onAny from '../handlers/onAny';
 export function useRoom(id: string, callback: (err: Error | null, isNew: boolean) => void) {
     // Set flag on redis that this room is used by this server
     // Setnx is multithread-proof. If two servers try this at the same time, only one will succeed
-    storeClient.SETNX("room:" + id, "{}", (err, response) => {
+    storeClient.setnx("room:" + id, "{}", (err, response) => {
         const itWorked = response === 1;
         callback(err, itWorked);
     })
@@ -17,7 +17,7 @@ type messageFormat = {
 }
 
 export function setupRoom(room: Room) {
-    storeClient.SET("room:" + room.id, JSON.stringify({
+    storeClient.set("room:" + room.id, JSON.stringify({
         id: room.id,
         players: room.players,
         turn: room.turn,

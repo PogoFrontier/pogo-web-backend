@@ -17,7 +17,7 @@ function endGame(room: string, timeout?: boolean, predefinedResult?: whoWon) {
     }
 
     // Unset flag on redis so another server can host this room
-    storeClient.DEL("room:" + currentRoom.id, (err) => {
+    storeClient.del("room:" + currentRoom.id, (err) => {
       if (err) {
         console.error(err);
       }
