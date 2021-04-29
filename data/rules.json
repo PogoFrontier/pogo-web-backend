@@ -155,5 +155,26 @@
             "filterType": "id",
             "values": ["abomasnow", "galvantula", "stunfisk", "medicham", "wobbuffet", "pachirisu", "drapion"]
         }]
+    },
+    "Floating City": {
+        "maxCP":1500,
+        "maxLevel":50,
+        "maxBestBuddy":1,
+        "maxMega":0,
+        "flags":{
+            "speciesClauseByForm":true
+        },
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/factions/overall/rankings-1500.json",
+        "include": [{
+            "filterType": "type",
+            "values": ["ground", "flying", "steel", "normal"]
+        }],
+        "exclude": [{
+            "filterType": "tag",
+            "values": ["mythical", "shadow", "mega", "unreleased", "regional"]
+        }, {
+            "filterType": "id",
+            "values": ["stunfisk_galarian", "skarmory", "altaria", "bastiodon", "registeel", "chansey"]
+        }]
     }
 }
