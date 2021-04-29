@@ -8,6 +8,7 @@ import moveRoutes from "./moveRoutes";
 import userRoutes from "./userRoutes";
 import roomRoutes from "./roomRoutes";
 import ruleRoutes from "./ruleRoutes";
+import validateRoutes from "./validateRoutes";
 
 export const SERVER_PORT = 8081;
 
@@ -34,6 +35,7 @@ app.use('/api/moves', moveRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/room', roomRoutes);
 app.use('/api/rule', ruleRoutes);
+app.use('/api/validate', validateRoutes);
 app.get('/health', function (req, res) {
     res.send(200)
 })

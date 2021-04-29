@@ -1,7 +1,7 @@
 import fs from "fs"
-import p from "./data/pokemon.json";
-import r from "./data/rules.json";
-import { isSpeciesAllowed } from "./checks/checkTeam"
+import p from "../data/pokemon.json";
+import r from "../data/rules.json";
+import { isSpeciesAllowed } from "../checks/checkTeam"
 import https from 'https'
 
 let pokemonList: any = p
@@ -43,7 +43,7 @@ for (let ruleName of Object.keys(rules)) {
                     }
                 }
     
-                let text = JSON.stringify(listForFormat);
+                let text = JSON.stringify(listForFormat, null, 2);
                 fs.writeFileSync(`./data/pokemonForFormats/${ruleName}_${position}.json`, text)
             }
         } else {
@@ -65,7 +65,7 @@ for (let ruleName of Object.keys(rules)) {
                 }
             }
     
-            let text = JSON.stringify(listForFormat);
+            let text = JSON.stringify(listForFormat, null, 2);
             fs.writeFileSync(`./data/pokemonForFormats/${ruleName}.json`, text)
         }
     }

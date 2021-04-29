@@ -9,7 +9,7 @@ Express + Websocket backend for Project Grookey. This README is targeted towards
 ### Backend
 1. ```npm install```
 2. ```docker run -it --rm --name redis-server -p 6379:6379 redis``` ([Meaning you should have Docker installed and running](https://docs.docker.com/engine/reference/commandline/cli/))
-3. ```npm start```
+3. ```npm run dev```
 <br /><b>Note:</b> The backend uses an experimental flag supported only by node v12+
 
 ## Project Hierarchy

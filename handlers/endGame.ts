@@ -13,6 +13,7 @@ function endGame(room: string, timeout?: boolean, predefinedResult?: whoWon) {
     // Cleat redis subscription
     if(currentRoom.subClient) {
       currentRoom.subClient.unsubscribe("commands:" + currentRoom.id);
+      currentRoom.subClient.quit();
     }
 
     // Unset flag on redis so another server can host this room
