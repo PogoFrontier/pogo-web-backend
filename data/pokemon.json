@@ -11798,7 +11798,13 @@
       "TAKE_DOWN",
       "WATERFALL",
       "YAWN",
-      "PRESENT"
+      "PRESENT",
+      "CHARM",
+      "INCINERATE",
+      "THUNDER_FANG",
+      "ICE_FANG",
+      "LOCK_ON",
+      "GUST"
     ],
     "chargedMoves": [
       "STRUGGLE",
@@ -11914,7 +11920,44 @@
       "BLAST_BURN",
       "HYDRO_CANNON",
       "LAST_RESORT",
-      "METEOR_MASH"
+      "METEOR_MASH",
+      "BRINE",
+      "SCALD",
+      "PSYSTRIKE",
+      "DOOM_DESIRE",
+      "WEATHER_BALL_FIRE",
+      "WEATHER_BALL_ICE",
+      "WEATHER_BALL_WATER",
+      "SKULL_BASH",
+      "ACID_SPRAY",
+      "EARTH_POWER",
+      "CRABHAMMER",
+      "LUNGE",
+      "OCTAZOOKA",
+      "MIRROR_SHOT",
+      "SUPER_POWER",
+      "FELL_STINGER",
+      "LEAF_TORNADO",
+      "SHADOW_BONE",
+      "MUDDY_WATER",
+      "BLAZE_KICK",
+      "POWER_UP_PUNCH",
+      "GIGA_IMPACT",
+      "SYNCHRONOISE",
+      "SACRED_SWORD",
+      "FLYING_PRESS",
+      "AURA_SPHERE",
+      "PAYBACK",
+      "ROCK_WRECKER",
+      "AEROBLAST",
+      "TECHNO_BLAST_NORMAL",
+      "TECHNO_BLAST_BURN",
+      "TECHNO_BLAST_CHILL",
+      "TECHNO_BLAST_WATER",
+      "TECHNO_BLAST_SHOCK",
+      "FLY",
+      "V_CREATE",
+      "TRI_ATTACK"
     ],
     "sid": 7520
   },
@@ -16016,7 +16059,7 @@
     "chargedMoves": [
       "ENERGY_BALL",
       "HURRICANE",
-      "WEATHER_BALL_ROCK"
+      "WEATHER_BALL_NORMAL"
     ],
     "sid": 11232
   },
@@ -28490,7 +28533,7 @@
   },
   "sirfetchd": {
     "dex": 865,
-    "speciesName": "Sirfetch'd",
+    "speciesName": "Sirfetch"d",
     "speciesId": "sirfetchd",
     "baseStats": {
       "atk": 248,
