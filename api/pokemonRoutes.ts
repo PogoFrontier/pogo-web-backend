@@ -1,6 +1,5 @@
 import e from "express";
 import fs from "fs";
-import { format } from "node:path";
 import m from "../data/moves.json";
 import p from "../data/pokemon.json";
 import p2 from "../data/pokemonWithMainSeriesMoves.json";
@@ -32,6 +31,7 @@ router.get('', (req, res) => {
             return
         }
         const {format, showIllegal, position} = queryParams;
+        const movesetOption = req.query.movesetOption;
 
         let result: any = {}
         if(format === undefined) {
@@ -47,6 +47,26 @@ router.get('', (req, res) => {
             }
 
             result = JSON.parse(fs.readFileSync(fileName).toString());
+
+            if(movesetOption !== "norestrictions") {
+                let pokemonSource = movesetOption === "mainseries" ? pokemon2 : pokemon;
+                Object.keys(result).forEach(speciedId => {
+                    if(!result[speciedId].moves) {
+                        result[speciedId].moves = {
+                            fastMoves: pokemonSource[speciedId].fastMoves.map((move: any) => {
+                                return {
+                                    moveId: move
+                                }
+                            }),
+                            chargedMoves: pokemonSource[speciedId].chargedMoves.map((move: any) => {
+                                return {
+                                    moveId: move
+                                }
+                            }),
+                        }
+                    }
+                })
+            }
 
             if(!showIllegal) {
                 Object.keys(result).forEach(speciedId => {
