@@ -11800,11 +11800,11 @@
       "YAWN",
       "PRESENT",
       "CHARM",
-      "INCINERATE",
+      "LOCK_ON",
       "THUNDER_FANG",
       "ICE_FANG",
-      "LOCK_ON",
-      "GUST"
+      "GUST",
+      "INCINERATE"
     ],
     "chargedMoves": [
       "STRUGGLE",
@@ -11927,6 +11927,7 @@
       "DOOM_DESIRE",
       "WEATHER_BALL_FIRE",
       "WEATHER_BALL_ICE",
+      "WEATHER_BALL_ROCK",
       "WEATHER_BALL_WATER",
       "SKULL_BASH",
       "ACID_SPRAY",
@@ -11953,7 +11954,7 @@
       "TECHNO_BLAST_NORMAL",
       "TECHNO_BLAST_BURN",
       "TECHNO_BLAST_CHILL",
-      "TECHNO_BLAST_WATER",
+      "TECHNO_BLAST_DOUSE",
       "TECHNO_BLAST_SHOCK",
       "FLY",
       "V_CREATE",
@@ -16059,7 +16060,7 @@
     "chargedMoves": [
       "ENERGY_BALL",
       "HURRICANE",
-      "WEATHER_BALL_NORMAL"
+      "WEATHER_BALL_ROCK"
     ],
     "sid": 11232
   },
