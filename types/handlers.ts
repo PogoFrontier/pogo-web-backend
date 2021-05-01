@@ -1,5 +1,7 @@
 import { TeamMemberDescription } from "./team";
 import { RuleDescription } from "./rule";
+import { Move } from "./room";
+import { Actions } from "./actions";
 
 export interface OnGetOpponentPayload {
   room: string,
@@ -53,10 +55,19 @@ export interface Update {
 
 export interface ResolveTurnPayload {
   time: number,
+  turn: number,
   update: [Update | null, Update | null],
   switch: number
 }
 
 export interface SearchBattlePayload {
   format: RuleDescription,
+}
+
+type a = typeof Actions
+
+export interface Anim {
+  move?: Move,
+  type: "faint" | a["FAST_ATTACK"] | a["CHARGE_ATTACK"] | a["SWITCH"],
+  turn?: number
 }

@@ -109,6 +109,7 @@ function onChargeEnd({
               message
             }
           ],
+          turn: currentRoom.turn!,
           switch: player.current.switch
         };
         if (currentRoom.charge.shield) {
@@ -118,8 +119,6 @@ function onChargeEnd({
         if (opponent.current!.team[opponent.current!.active].current!.hp <= 0) {
           opponent.current!.remaining -= 1;
           payload.update[1]!.remaining = opponent.current!.remaining;
-          delete currentRoom.players[j]!.current!.bufferedAction;
-          delete currentRoom.players[j]!.current!.action;
           if (opponent.current!.remaining <= 0) {
             endGame(room);
           } else if (currentRoom.status !== RoomStatus.FAINT) {
@@ -130,8 +129,6 @@ function onChargeEnd({
             payload.update[1]!.remaining = opponent.current!.remaining;
           }
         } else if (currentRoom.charge.cmp) {
-          delete currentRoom.players[j]!.current!.bufferedAction;
-          delete currentRoom.players[j]!.current!.action;
           currentRoom.status = RoomStatus.CHARGE;
           currentRoom.wait = CHARGE_WAIT;
           payload.update[0]!.wait = CHARGE_WAIT;
@@ -152,9 +149,12 @@ function onChargeEnd({
           payload: {
             time: payload.time,
             update: [payload.update[1], payload.update[0]],
-            switch: opponent.current.switch
+            switch: opponent.current.switch,
+            turn: currentRoom.turn!
           }
         }
+        delete currentRoom.players[i]!.current!.bufferedAction;
+        delete currentRoom.players[i]!.current!.action;
         pubClient.publish("messagesToUser:" + player.id, JSON.stringify(dta));
         pubClient.publish("messagesToUser:" + opponent.id, JSON.stringify(dta1));
         if (currentRoom.status === RoomStatus.LISTENING) {

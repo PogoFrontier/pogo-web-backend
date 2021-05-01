@@ -31,30 +31,32 @@ function endGame(room: string, timeout?: boolean, predefinedResult?: whoWon) {
     // Send results to players
     if (rooms.get(room)!.players && rooms.get(room)!.players.length === 2) {
       const currentRoom = rooms.get(room)!;
-      let p = rooms.get(room)!.players[0]!;
-      let o = rooms.get(room)!.players[1]!;
-      if (timeout) { //Timeout
-        if (p.current!.remaining !== o.current!.remaining) {        // First check if more Pokemon
-          if (p.current!.remaining > o.current!.remaining) {
-            sendResult(currentRoom, "p1");
-          } else {
-            sendResult(currentRoom, "p2");
+      let p = rooms.get(room)!.players[0];
+      let o = rooms.get(room)!.players[1];
+      if (p && o) {
+        if (timeout) { //Timeout
+          if (p.current!.remaining !== o.current!.remaining) {        // First check if more Pokemon
+            if (p.current!.remaining > o.current!.remaining) {
+              sendResult(currentRoom, "p1");
+            } else {
+              sendResult(currentRoom, "p2");
+            }
+          } else {  //Else check remaining health
+            if (p.current!.team[p.current!.active].current!.hp > o.current!.team[o.current!.active].current!.hp) {
+              sendResult(currentRoom, "p1");
+            } else if (p.current!.team[p.current!.active].current!.hp < o.current!.team[o.current!.active].current!.hp) {
+              sendResult(currentRoom, "p2");
+            } else {
+              sendResult(currentRoom, "tie");
+            }
           }
-        } else {  //Else check remaining health
-          if (p.current!.team[p.current!.active].current!.hp > o.current!.team[o.current!.active].current!.hp) {
-            sendResult(currentRoom, "p1");
-          } else if (p.current!.team[p.current!.active].current!.hp < o.current!.team[o.current!.active].current!.hp) {
-            sendResult(currentRoom, "p2");
-          } else {
-            sendResult(currentRoom, "tie");
-          }
+        } else if (p.current!.remaining > 0) {
+          sendResult(currentRoom, "p1");
+        } else if (o.current!.remaining > 0) {
+          sendResult(currentRoom, "p2");
+        } else {  //Else both clients fainted at the same time
+          sendResult(currentRoom, "tie");
         }
-      } else if (p.current!.remaining > 0) {
-        sendResult(currentRoom, "p1");
-      } else if (o.current!.remaining > 0) {
-        sendResult(currentRoom, "p2");
-      } else {  //Else both clients fainted at the same time
-        sendResult(currentRoom, "tie");
       }
     }
   }
