@@ -1,5 +1,6 @@
 import e from "express";
 import fs from "fs";
+import { format } from "node:path";
 import m from "../data/moves.json";
 import p from "../data/pokemon.json";
 import p2 from "../data/pokemonWithMainSeriesMoves.json";
@@ -26,21 +27,11 @@ const router = e.Router();
 router.get('', (req, res) => {
     try{
         // get params
-        const format = req.query.format;
-        const showIllegal = req.query.showIllegal === "true";
-        let positionParam = (req.query.position);
-        let position = 0;
-        if (positionParam !== undefined && typeof positionParam !== "string") {
-            res.status(400).json({messsage: "typeof position is not string"})
-            return
-        } else if (positionParam !== undefined){
-            position = parseInt(positionParam)
-        }
-
-        if (format !== undefined && (typeof format !== "string" || !Object.keys(rules).includes(format))) {
-            res.status(400).json({messsage: "invalid format"})
+        const queryParams = getQueryParams(req, res)
+        if(!queryParams) {
             return
         }
+        const {format, showIllegal, position} = queryParams;
 
         let result: any = {}
         if(format === undefined) {
@@ -92,18 +83,70 @@ router.get('/names', (req, res) => {
 // @access Public (for now)
 router.get('/:id', (req, res) => {
     try{
+        // get params
+        const queryParams = getQueryParams(req, res)
+        if(!queryParams) {
+            return
+        }
+        const {format, position} = queryParams;
+
+        let result: any = {}
+
         const movesetOption = req.query.movesetOption;
-        let result: any = movesetOption === "mainseries" ? pokemon2[req.params.id] : pokemon[req.params.id];
+        result = movesetOption === "mainseries" ? pokemon2[req.params.id] : pokemon[req.params.id];
         if (movesetOption === "norestrictions") {
             result.fastMoves = quickmoves;
             result.chargedMoves = chargemoves;
             delete result.eliteMoves;
         }
+
+        if(format)  {
+            let fileName = `./data/pokemonForFormats/${format}_${position}.json`
+            if(!fs.existsSync(fileName)) {
+                fileName = `./data/pokemonForFormats/${format}.json`
+            }
+
+            result = {...result, ...JSON.parse(fs.readFileSync(fileName).toString())[req.params.id]};
+        }
+
         result ? res.json(result) : res.status(404).json(`Could not find Pokemon of id: ${req.params.id}`);
     }catch(err){
         console.error();
         res.status(500).json({message: "Internal server error"});
     }
 });
+
+function getQueryParams(req: e.Request, res: e.Response): {
+    format?: string,
+    showIllegal: boolean,
+    position: number
+ } | undefined {
+    // Get format param
+    const format = req.query.format;
+    // Check for valid format
+    if (format !== undefined && (typeof format !== "string" || !Object.keys(rules).includes(format))) {
+        res.status(400).json({messsage: "invalid format"})
+        return
+    }
+
+    // Get showIllegal param
+    const showIllegal = req.query.showIllegal === "true";
+    
+    // Get position param
+    let positionParam = (req.query.position);
+    let position = 0;
+    if (positionParam !== undefined && typeof positionParam !== "string") {
+        res.status(400).json({messsage: "typeof position is not string"})
+        return
+    } else if (positionParam !== undefined){
+        position = parseInt(positionParam)
+    }
+
+    return {
+        format,
+        showIllegal,
+        position
+    }
+ }
 
 export default router;
