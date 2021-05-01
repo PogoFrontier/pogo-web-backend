@@ -38,7 +38,7 @@ export function setupRoom(room: Room) {
     let subClient = room.subClient;
 
     // Messages from the clients are 
-    subClient.on("message", (channel, message) => {
+    subClient.on("message", (_: any, message: string) => {
         const msgObj: messageFormat = JSON.parse(message);
         const id = msgObj.sender;
         let data = msgObj.data;

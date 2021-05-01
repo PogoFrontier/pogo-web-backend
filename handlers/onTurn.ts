@@ -58,7 +58,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
               if (opponentActivePokemon.current!.hp <= 0) {
                 opponent.current!.remaining -= 1;
                 if (opponent.current?.action?.move) {
-                  if (opponent.current?.action?.move.cooldown > 500) {
+                  if (opponent.current?.action?.move.cooldown >= 500) {
                     delete opponent.current.action; //Cancel fast attacks
                     delete opponent.current.bufferedAction;
                   }
@@ -76,6 +76,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
                 payload[j]!.remaining = opponent.current!.remaining;
               }
               delete player.current.action;
+              delete player.current.bufferedAction;
             }
             break;
 
@@ -244,7 +245,8 @@ const onTurn = (room: string, id: string) => {
     const payload: ResolveTurnPayload = {
       time,
       update: evaluatePayload(room),
-      switch: 0
+      switch: 0,
+      turn: currentRoom.turn
     };
     if (currentRoom) {
       for (let i = 0; i < currentRoom.players.length; i++) {

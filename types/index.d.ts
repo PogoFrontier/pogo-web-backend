@@ -43,3 +43,5 @@ export interface ResolveTurnPayload extends handlers.ResolveTurnPayload {
 }
 export interface Update extends handlers.Update {
 }
+export interface Anim extends handlers.Anim {
+}

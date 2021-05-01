@@ -1,11 +1,12 @@
 import { Actions } from "../types/actions";
+import { Move } from "../types/room";
 import { TeamMember } from "../types/team"
 
 export function reduceTeam(teamMembers: TeamMember[]): object[] {
     return teamMembers.map(reduceTeamMemberForOpponent)
 }
 
-export function reduceActionForOpponent(action: string, teamMembers: TeamMember[]): string {
+export function reduceActionForOpponent(action: string, teamMembers: TeamMember[], move?: Move, turn?: number): string {
     if(action.startsWith("#ca")) {
         return "#ca";
     }
@@ -13,6 +14,16 @@ export function reduceActionForOpponent(action: string, teamMembers: TeamMember[
     if (action.startsWith(`#${Actions.SWITCH}:`)) {
         let index = parseInt(action.split(":")[1]);
         return `#${Actions.SWITCH}:` + JSON.stringify(reduceTeamMemberForOpponent(teamMembers[index]))
+    }
+
+    if (action.startsWith(`#${Actions.FAST_ATTACK}:`) && move && typeof turn === "number") {
+        return `#${Actions.FAST_ATTACK}:` + JSON.stringify(
+            {
+                type: Actions.FAST_ATTACK,
+                move,
+                turn
+            }
+        )
     }
 
     return action;
