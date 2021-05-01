@@ -25,6 +25,7 @@ router.get('/:team/:meta', (req, res) => {
             res.status(404).json(`${req.params.meta} is not a valid meta.`);
         }
     } catch(err) {
+        console.error(err)
         res.status(500).json({message: "Internal server error"});
     }
 });

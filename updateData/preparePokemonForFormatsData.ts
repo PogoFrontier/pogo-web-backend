@@ -38,6 +38,7 @@ for (let ruleName of Object.keys(rules)) {
                         legal,
                         dex: pokemonList[pokemon].dex,
                         types: pokemonList[pokemon].types,
+                        tags: pokemonList[pokemon].tags,
                         ranking: pvpokeRanking?.rating,
                         moves: pvpokeRanking?.moves,
                         moveset: pvpokeRanking?.moveset
@@ -61,6 +62,7 @@ for (let ruleName of Object.keys(rules)) {
                     legal,
                     dex: pokemonList[pokemon].dex,
                     types: pokemonList[pokemon].types,
+                    tags: pokemonList[pokemon].tags,
                     ranking: pvpokeRanking?.rating,
                     moves: pvpokeRanking?.moves,
                     moveset: pvpokeRanking?.moveset
