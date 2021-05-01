@@ -25,7 +25,7 @@ for (let ruleName of Object.keys(rules)) {
         if(rule.teamPattern) {
             for (let position in rule.teamPattern) {
     
-                let listForFormat: any = {}; new Map<string, {legal: boolean}>()
+                let listForFormat: any = {}; new Map<string, any>()
                 for (let pokemon of Object.keys(pokemonList)) {
                     let speciesId: string = pokemonList[pokemon].speciesId
                     let {
@@ -39,7 +39,8 @@ for (let ruleName of Object.keys(rules)) {
                         dex: pokemonList[pokemon].dex,
                         types: pokemonList[pokemon].types,
                         ranking: pvpokeRanking?.rating,
-                        moves: pvpokeRanking?.moves
+                        moves: pvpokeRanking?.moves,
+                        moveset: pvpokeRanking?.moveset
                     }
                 }
     
@@ -61,7 +62,8 @@ for (let ruleName of Object.keys(rules)) {
                     dex: pokemonList[pokemon].dex,
                     types: pokemonList[pokemon].types,
                     ranking: pvpokeRanking?.rating,
-                    moves: pvpokeRanking?.moves
+                    moves: pvpokeRanking?.moves,
+                    moveset: pvpokeRanking?.moveset
                 }
             }
     
@@ -76,7 +78,8 @@ for (let ruleName of Object.keys(rules)) {
         moves: {
             fastMoves: moveWithRating[]
             chargedMoves: moveWithRating[]
-        }
+        },
+        moveset: string[]
     }[] = [];
 
     if(rule.rankingsLink) {
