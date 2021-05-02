@@ -1,4 +1,5 @@
 import { CHARGE_WAIT, GAME_TIME, SWITCH_WAIT, SWITCH_WAIT_LAST, maxBuffStages, buffDivisor } from "../config";
+import { reduceTeamMemberForPlayer } from "../actions/reduceInformation"
 import { pubClient } from "../redis/clients";
 import { rooms } from "../matchhandling_server";
 import { CODE } from "../types/actions";
@@ -109,6 +110,7 @@ function onChargeEnd({
               message
             }
           ],
+          team: player.current.team.map(reduceTeamMemberForPlayer),
           turn: currentRoom.turn!,
           switch: player.current.switch
         };
