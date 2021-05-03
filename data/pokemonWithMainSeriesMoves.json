@@ -6985,6 +6985,7 @@
       "MUD_SHOT",
       "RETURN",
       "RETURN",
+      "RETURN",
       "RETURN"
     ],
     "level25CP": 351,
@@ -7185,6 +7186,7 @@
     ],
     "legacyMoves": [
       "MUD_SHOT",
+      "RETURN",
       "RETURN",
       "RETURN",
       "RETURN"
@@ -12157,6 +12159,7 @@
       "ACID",
       "RETURN",
       "RETURN",
+      "RETURN",
       "RETURN"
     ],
     "level25CP": 787,
@@ -14865,6 +14868,7 @@
       "ACID",
       "RETURN",
       "RETURN",
+      "RETURN",
       "RETURN"
     ],
     "level25CP": 690,
@@ -14991,6 +14995,7 @@
     ],
     "legacyMoves": [
       "ACID",
+      "RETURN",
       "RETURN",
       "RETURN",
       "RETURN"
@@ -17650,6 +17655,7 @@
     ],
     "legacyMoves": [
       "QUICK_ATTACK",
+      "RETURN",
       "RETURN",
       "RETURN",
       "RETURN"
@@ -26804,6 +26810,7 @@
     ],
     "legacyMoves": [
       "QUICK_ATTACK",
+      "RETURN",
       "RETURN",
       "RETURN",
       "RETURN"
@@ -37979,6 +37986,7 @@
     ],
     "legacyMoves": [
       "BULLET_SEED",
+      "RETURN",
       "RETURN",
       "RETURN",
       "RETURN"
@@ -67216,9 +67224,6 @@
       "THUNDERBOLT",
       "STRUGGLE"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "sid": 21824
   },
   "aromatisse": {
@@ -67274,9 +67279,6 @@
       "THUNDERBOLT",
       "STRUGGLE"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "sid": 21856
   },
   "swirlix": {
@@ -67327,9 +67329,6 @@
       "SURF",
       "THUNDERBOLT",
       "STRUGGLE"
-    ],
-    "tags": [
-      "unreleased"
     ],
     "sid": 21888
   },
@@ -67383,9 +67382,6 @@
       "THUNDER",
       "THUNDERBOLT",
       "STRUGGLE"
-    ],
-    "tags": [
-      "unreleased"
     ],
     "sid": 21920
   },
@@ -68701,9 +68697,6 @@
       "WATER_PULSE",
       "STRUGGLE"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "sid": 22528
   },
   "sliggoo": {
@@ -68763,9 +68756,6 @@
       "THUNDERBOLT",
       "WATER_PULSE",
       "STRUGGLE"
-    ],
-    "tags": [
-      "unreleased"
     ],
     "sid": 22560
   },
@@ -68844,9 +68834,6 @@
       "THUNDER_PUNCH",
       "WATER_PULSE",
       "STRUGGLE"
-    ],
-    "tags": [
-      "unreleased"
     ],
     "sid": 22592
   },
@@ -69045,7 +69032,11 @@
     "dex": 710,
     "speciesName": "Pumpkaboo",
     "speciesId": "pumpkaboo",
-    "baseStats": {},
+    "baseStats": {
+      "atk": 121,
+      "def": 123,
+      "hp": 135
+    },
     "types": [
       "ghost",
       "grass"
@@ -69107,7 +69098,11 @@
     "dex": 711,
     "speciesName": "Gourgeist",
     "speciesId": "gourgeist",
-    "baseStats": {},
+    "baseStats": {
+      "atk": 175,
+      "def": 213,
+      "hp": 163
+    },
     "types": [
       "ghost",
       "grass"

@@ -2911,6 +2911,7 @@
       "MUD_SHOT",
       "RETURN",
       "RETURN",
+      "RETURN",
       "RETURN"
     ],
     "level25CP": 351,
@@ -2998,6 +2999,7 @@
     ],
     "legacyMoves": [
       "MUD_SHOT",
+      "RETURN",
       "RETURN",
       "RETURN",
       "RETURN"
@@ -5085,6 +5087,7 @@
       "ACID",
       "RETURN",
       "RETURN",
+      "RETURN",
       "RETURN"
     ],
     "level25CP": 787,
@@ -6266,6 +6269,7 @@
       "ACID",
       "RETURN",
       "RETURN",
+      "RETURN",
       "RETURN"
     ],
     "level25CP": 690,
@@ -6327,6 +6331,7 @@
     ],
     "legacyMoves": [
       "ACID",
+      "RETURN",
       "RETURN",
       "RETURN",
       "RETURN"
@@ -7504,6 +7509,7 @@
     ],
     "legacyMoves": [
       "QUICK_ATTACK",
+      "RETURN",
       "RETURN",
       "RETURN",
       "RETURN"
@@ -11223,6 +11229,7 @@
     ],
     "legacyMoves": [
       "QUICK_ATTACK",
+      "RETURN",
       "RETURN",
       "RETURN",
       "RETURN"
@@ -15790,6 +15797,7 @@
     ],
     "legacyMoves": [
       "BULLET_SEED",
+      "RETURN",
       "RETURN",
       "RETURN",
       "RETURN"
@@ -27444,9 +27452,6 @@
       "DRAINING_KISS",
       "THUNDERBOLT"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "sid": 21824
   },
   "aromatisse": {
@@ -27472,9 +27477,6 @@
       "PSYCHIC",
       "DRAINING_KISS"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "sid": 21856
   },
   "swirlix": {
@@ -27496,9 +27498,6 @@
     "chargedMoves": [
       "DRAINING_KISS",
       "ENERGY_BALL"
-    ],
-    "tags": [
-      "unreleased"
     ],
     "sid": 21888
   },
@@ -27524,9 +27523,6 @@
       "ENERGY_BALL",
       "FLAMETHROWER",
       "DRAINING_KISS"
-    ],
-    "tags": [
-      "unreleased"
     ],
     "sid": 21920
   },
@@ -28036,9 +28032,6 @@
       "SLUDGE_WAVE",
       "MUDDY_WATER"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "sid": 22528
   },
   "sliggoo": {
@@ -28064,9 +28057,6 @@
       "MUDDY_WATER",
       "WATER_PULSE"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "sid": 22560
   },
   "goodra": {
@@ -28091,9 +28081,6 @@
       "SLUDGE_WAVE",
       "MUDDY_WATER",
       "POWER_WHIP"
-    ],
-    "tags": [
-      "unreleased"
     ],
     "sid": 22592
   },
@@ -28183,7 +28170,11 @@
     "dex": 710,
     "speciesName": "Pumpkaboo",
     "speciesId": "pumpkaboo",
-    "baseStats": {},
+    "baseStats": {
+      "atk": 121,
+      "def": 123,
+      "hp": 135
+    },
     "types": [
       "ghost",
       "grass"
@@ -28207,7 +28198,11 @@
     "dex": 711,
     "speciesName": "Gourgeist",
     "speciesId": "gourgeist",
-    "baseStats": {},
+    "baseStats": {
+      "atk": 175,
+      "def": 213,
+      "hp": 163
+    },
     "types": [
       "ghost",
       "grass"
