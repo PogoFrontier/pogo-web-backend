@@ -9,6 +9,7 @@ export interface Rule {
     teamPattern?: SlotRule[]
     flags?: Flags
     advancedOptions?:  AdvancedOptions
+    pointLimitOptions?: PointLimitOptions
 }
 
 export type RuleDescription = {
@@ -36,4 +37,14 @@ export interface Flags {
     speciesClauseByForm?: boolean
     /** If true, you can't use two Pokémon that share one type */
     typeClause?: boolean
+}
+
+export interface PointLimitOptions {
+    maxPoints: number,
+    prices: PriceSetting[]
+}
+
+export interface PriceSetting {
+    pokemonIds: string[],
+    price: number
 }

@@ -13,6 +13,7 @@ export function isTeamValid(team: TeamMember[], format: Rule): {isValid: boolean
   
     let megaCounter = 0;
     let bestBuddyCounter = 0;
+    let pointsUsed = 0;
     let selectedSpecies = Array<species>();
   
     for (const index in team) {
@@ -70,6 +71,12 @@ export function isTeamValid(team: TeamMember[], format: Rule): {isValid: boolean
         }
       }
 
+      //Increase number of points used
+      let price = format.pointLimitOptions?.prices.find(priceOption => priceOption.pokemonIds.includes(pokemon.speciesId))?.price
+      if(price) {
+        pointsUsed += price
+      }
+
       selectedSpecies.push(speciesData);
 
       if ("tags" in speciesData && speciesData.tags.some(tag => tag === "mega")) {
@@ -85,6 +92,11 @@ export function isTeamValid(team: TeamMember[], format: Rule): {isValid: boolean
     // Check if we have too many megas
     if (megaCounter > format.maxMega) {
       violations.push(`Team has too many megas: ${megaCounter}`);
+    }
+
+    // Check if the budget was overused
+    if(format.pointLimitOptions && pointsUsed > format.pointLimitOptions.maxPoints) {
+      violations.push(`Team uses up too many points: ${pointsUsed}`);
     }
 
     return {

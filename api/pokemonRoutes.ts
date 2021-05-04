@@ -30,7 +30,7 @@ router.get('', (req, res) => {
         if(!queryParams) {
             return
         }
-        const {format, showIllegal, position} = queryParams;
+        const {format, showIllegal, position, usedPoints} = queryParams;
         const movesetOption = req.query.movesetOption;
 
         let result: any = {}
@@ -69,9 +69,9 @@ router.get('', (req, res) => {
             }
 
             if(!showIllegal) {
-                Object.keys(result).forEach(speciedId => {
-                    if(!result[speciedId].legal) {
-                        delete result[speciedId]
+                Object.keys(result).forEach(speciesId => {
+                    if(!result[speciesId].legal || (result[speciesId].price && result[speciesId].price + usedPoints > rules[format].pointLimitOptions.maxPoints)) {
+                        delete result[speciesId]
                     }
                 })
             }
@@ -139,7 +139,8 @@ router.get('/:id', (req, res) => {
 function getQueryParams(req: e.Request, res: e.Response): {
     format?: string,
     showIllegal: boolean,
-    position: number
+    position: number,
+    usedPoints: number
  } | undefined {
     // Get format param
     const format = req.query.format;
@@ -161,11 +162,22 @@ function getQueryParams(req: e.Request, res: e.Response): {
     } else if (positionParam !== undefined){
         position = parseInt(positionParam)
     }
+    
+    // Get usedPoints param
+    let usedPointsParam = (req.query.usedPoints);
+    let usedPoints = 0;
+    if (usedPointsParam !== undefined && typeof usedPointsParam !== "string") {
+        res.status(400).json({messsage: "typeof usedPoints is not string"})
+        return
+    } else if (usedPointsParam !== undefined){
+        usedPoints = parseInt(usedPointsParam)
+    }
 
     return {
         format,
         showIllegal,
-        position
+        position,
+        usedPoints
     }
  }
 
