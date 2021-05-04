@@ -2,6 +2,7 @@ import fs from "fs"
 import p from "../data/pokemon.json";
 import r from "../data/rules.json";
 import { isSpeciesAllowed } from "../checks/checkTeam"
+import { PriceSetting } from "../types/rule"
 import https from 'https'
 
 let pokemonList: any = p
@@ -33,12 +34,16 @@ for (let ruleName of Object.keys(rules)) {
                     } = isSpeciesAllowed({speciesId}, rule, parseInt(position));
 
                     let pvpokeRanking = pvpokeData.find(ranking => ranking.speciesId === speciesId);
+                    let price = rule.pointLimitOptions?.prices.find((priceSetting: PriceSetting) => {
+                        return priceSetting.pokemonIds.includes(speciesId)
+                    })?.price
 
                     listForFormat[speciesId] = {
                         legal,
                         dex: pokemonList[pokemon].dex,
                         types: pokemonList[pokemon].types,
                         tags: pokemonList[pokemon].tags,
+                        price: price,
                         ranking: pvpokeRanking?.rating,
                         moves: pvpokeRanking?.moves,
                         moveset: pvpokeRanking?.moveset
@@ -57,12 +62,16 @@ for (let ruleName of Object.keys(rules)) {
                 } = isSpeciesAllowed({speciesId}, rule, 0);
 
                 let pvpokeRanking = pvpokeData.find(ranking => ranking.speciesId === speciesId);
+                let price = rule.pointLimitOptions?.prices.find((priceSetting: PriceSetting) => {
+                    return priceSetting.pokemonIds.includes(speciesId)
+                })?.price
 
                 listForFormat[speciesId] = {
                     legal,
                     dex: pokemonList[pokemon].dex,
                     types: pokemonList[pokemon].types,
                     tags: pokemonList[pokemon].tags,
+                    price: price,
                     ranking: pvpokeRanking?.rating,
                     moves: pvpokeRanking?.moves,
                     moveset: pvpokeRanking?.moveset
