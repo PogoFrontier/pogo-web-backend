@@ -176,5 +176,37 @@
             "filterType": "id",
             "values": ["stunfisk_galarian", "skarmory", "altaria", "bastiodon", "registeel", "chansey"]
         }]
+    },
+    "Nursery Cup": {
+        "maxCP":1500,
+        "maxLevel":50,
+        "maxBestBuddy":1,
+        "maxMega":0,
+        "teamPattern":[
+            {"include":[{
+                "filterType":"dex",
+                "values":["88-88", "27-27", "74-74", "554-554"]
+            }]},
+            {"include":[{
+                "filterType":"dex",
+                "values":["66-66", "559-559", "438-438", "240-240"]
+            }]},
+            {"include":[{
+                "filterType":"dex",
+                "values":["629-629", "425-425", "627-627", "83-83", "193-193"]
+            }]},
+            {"include":[{
+                "filterType":"id",
+                "values":["mantike", "wailmer", "tirtouga", "chinchou", "slowpoke", "clamperl"]
+            }]},
+            {"include":[{
+                "filterType":"id",
+                "values":["lileep", "turtwig", "oddish", "snovern", "chespin"]
+            }]},
+            {"include":[{
+                "filterType":"id",
+                "values":["spritzee", "litleo", "dwebble", "elekid", "skrelp", "smoochum"]
+            }]}
+        ]
     }
 }
