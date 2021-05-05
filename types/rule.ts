@@ -10,6 +10,7 @@ export interface Rule {
     flags?: Flags
     advancedOptions?:  AdvancedOptions
     pointLimitOptions?: PointLimitOptions
+    classes?: ClassOption[]
 }
 
 export type RuleDescription = {
@@ -47,4 +48,10 @@ export interface PointLimitOptions {
 export interface PriceSetting {
     pokemonIds: string[],
     price: number
+}
+
+export interface ClassOption {
+    name: string
+    include?: Selector[]
+    exclude?: Selector[]
 }
