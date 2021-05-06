@@ -1,4 +1,4 @@
-import { TeamMemberDescription } from "./team";
+import { TeamMember, TeamMemberDescription } from "./team";
 import { RuleDescription } from "./rule";
 import { Move } from "./room";
 import { Actions } from "./actions";
@@ -56,6 +56,7 @@ export interface Update {
 export interface ResolveTurnPayload {
   time: number,
   turn: number,
+  team: TeamMember[]
   update: [Update | null, Update | null],
   switch: number
 }
