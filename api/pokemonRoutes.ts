@@ -4,6 +4,7 @@ import m from "../data/moves.json";
 import p from "../data/pokemon.json";
 import p2 from "../data/pokemonWithMainSeriesMoves.json";
 import r from "../data/rules.json";
+import { ClassOption } from "../types/rule";
 
 let moves: any = m;
 let quickmoves: Array<string> = [];
@@ -30,7 +31,7 @@ router.get('', (req, res) => {
         if(!queryParams) {
             return
         }
-        const {format, showIllegal, position} = queryParams;
+        const {format, showIllegal, position, usedPoints, className} = queryParams;
         const movesetOption = req.query.movesetOption;
 
         let result: any = {}
@@ -41,9 +42,10 @@ router.get('', (req, res) => {
                 }
             })
         } else {
-            let fileName = `./data/pokemonForFormats/${format}_${position}.json`
+            let classString = className ? `_${className}` : ""
+            let fileName = `./data/pokemonForFormats/${format}_${position}${classString}.json`
             if(!fs.existsSync(fileName)) {
-                fileName = `./data/pokemonForFormats/${format}.json`
+                fileName = `./data/pokemonForFormats/${format}${classString}.json`
             }
 
             result = JSON.parse(fs.readFileSync(fileName).toString());
@@ -69,9 +71,9 @@ router.get('', (req, res) => {
             }
 
             if(!showIllegal) {
-                Object.keys(result).forEach(speciedId => {
-                    if(!result[speciedId].legal) {
-                        delete result[speciedId]
+                Object.keys(result).forEach(speciesId => {
+                    if(!result[speciesId].legal || (result[speciesId].price && result[speciesId].price + usedPoints > rules[format].pointLimitOptions.maxPoints)) {
+                        delete result[speciesId]
                     }
                 })
             }
@@ -108,7 +110,7 @@ router.get('/:id', (req, res) => {
         if(!queryParams) {
             return
         }
-        const {format, position} = queryParams;
+        const {format, position, className} = queryParams;
 
         let result: any = {}
 
@@ -121,9 +123,10 @@ router.get('/:id', (req, res) => {
         }
 
         if(format)  {
-            let fileName = `./data/pokemonForFormats/${format}_${position}.json`
+            let classString = className ? `_${className}` : ""
+            let fileName = `./data/pokemonForFormats/${format}_${position}${classString}.json`
             if(!fs.existsSync(fileName)) {
-                fileName = `./data/pokemonForFormats/${format}.json`
+                fileName = `./data/pokemonForFormats/${format}${classString}.json`
             }
 
             result = {...result, ...JSON.parse(fs.readFileSync(fileName).toString())[req.params.id]};
@@ -137,15 +140,25 @@ router.get('/:id', (req, res) => {
 });
 
 function getQueryParams(req: e.Request, res: e.Response): {
-    format?: string,
+    format?: string
+    className?: string
     showIllegal: boolean,
-    position: number
+    position: number,
+    usedPoints: number
  } | undefined {
     // Get format param
     const format = req.query.format;
     // Check for valid format
     if (format !== undefined && (typeof format !== "string" || !Object.keys(rules).includes(format))) {
         res.status(400).json({messsage: "invalid format"})
+        return
+    }
+
+    // Get class param
+    const className = req.query.class;
+    // Check for valid class
+    if (className !== undefined && (typeof className !== "string" || !rules[format ? format : ""]?.classes?.some((classObj: ClassOption) => classObj.name === className))) {
+        res.status(400).json({messsage: "invalid class"})
         return
     }
 
@@ -161,11 +174,23 @@ function getQueryParams(req: e.Request, res: e.Response): {
     } else if (positionParam !== undefined){
         position = parseInt(positionParam)
     }
+    
+    // Get usedPoints param
+    let usedPointsParam = (req.query.usedPoints);
+    let usedPoints = 0;
+    if (usedPointsParam !== undefined && typeof usedPointsParam !== "string") {
+        res.status(400).json({messsage: "typeof usedPoints is not string"})
+        return
+    } else if (usedPointsParam !== undefined){
+        usedPoints = parseInt(usedPointsParam)
+    }
 
     return {
         format,
         showIllegal,
-        position
+        position,
+        usedPoints,
+        className
     }
  }
 

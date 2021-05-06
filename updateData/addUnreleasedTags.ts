@@ -31,6 +31,10 @@ https.get("https://raw.githubusercontent.com/pvpoke/pvpoke/level-50-rankings/src
                 let sids = JSON.parse(sidBody)
         
                 for(let pokemon of bodyJSON) {
+                    if(pokemon.speciesId.includes("_xs")) {
+                        continue;
+                    }
+                    
                     if(!pokemon.released) {
                         if(!pokemon.tags) {
                             pokemon.tags = []

@@ -1,7 +1,8 @@
 import fs from "fs"
 import p from "../data/pokemon.json";
 import r from "../data/rules.json";
-import { isSpeciesAllowed } from "../checks/checkTeam"
+import { isSpeciesAllowed, doesClassDescribePokemon } from "../checks/checkTeam"
+import { Rule, PriceSetting } from "../types/rule"
 import https from 'https'
 
 let pokemonList: any = p
@@ -18,7 +19,7 @@ type moveWithRating = {
 }
 
 for (let ruleName of Object.keys(rules)) {
-    let rule = rules[ruleName];
+    let rule: Rule = rules[ruleName];
 
     const callback = () => {
         // Do we have a team pattern? Then make 6 files, one for each team position
@@ -33,20 +34,67 @@ for (let ruleName of Object.keys(rules)) {
                     } = isSpeciesAllowed({speciesId}, rule, parseInt(position));
 
                     let pvpokeRanking = pvpokeData.find(ranking => ranking.speciesId === speciesId);
+                    let price = rule.pointLimitOptions?.prices.find((priceSetting: PriceSetting) => {
+                        return priceSetting.pokemonIds.includes(speciesId)
+                    })?.price
 
                     listForFormat[speciesId] = {
                         legal,
                         dex: pokemonList[pokemon].dex,
                         types: pokemonList[pokemon].types,
-                        tags: pokemonList[pokemon].tags,
-                        ranking: pvpokeRanking?.rating,
-                        moves: pvpokeRanking?.moves,
-                        moveset: pvpokeRanking?.moveset
+                        tags: pokemonList[pokemon].tags
+                    }
+
+                    if(legal) {
+                        listForFormat[speciesId] = {
+                            ...listForFormat[speciesId],
+                            price: price,
+                            ranking: pvpokeRanking?.rating,
+                            moves: pvpokeRanking?.moves,
+                            moveset: pvpokeRanking?.moveset
+                        }
                     }
                 }
     
                 let text = JSON.stringify(listForFormat, null, 2);
                 fs.writeFileSync(`./data/pokemonForFormats/${ruleName}_${position}.json`, text)
+            }
+        } else if(rule.classes){
+            for (let classObj of rule.classes) {
+    
+                let listForFormat: any = {}; new Map<string, any>()
+                for (let pokemon of Object.keys(pokemonList)) {
+                    let speciesId: string = pokemonList[pokemon].speciesId
+                    let {
+                        isValid: legal
+                    } = isSpeciesAllowed({speciesId}, rule, 0);
+                    legal = legal && doesClassDescribePokemon(speciesId, classObj)
+
+                    let pvpokeRanking = pvpokeData.find(ranking => ranking.speciesId === speciesId);
+                    let price = rule.pointLimitOptions?.prices.find((priceSetting: PriceSetting) => {
+                        return priceSetting.pokemonIds.includes(speciesId)
+                    })?.price
+
+                    listForFormat[speciesId] = {
+                        legal,
+                        dex: pokemonList[pokemon].dex,
+                        types: pokemonList[pokemon].types,
+                        tags: pokemonList[pokemon].tags
+                    }
+
+                    if(legal) {
+                        listForFormat[speciesId] = {
+                            ...listForFormat[speciesId],
+                            price: price,
+                            ranking: pvpokeRanking?.rating,
+                            moves: pvpokeRanking?.moves,
+                            moveset: pvpokeRanking?.moveset
+                        }
+                    }
+                }
+    
+                let text = JSON.stringify(listForFormat, null, 2);
+                fs.writeFileSync(`./data/pokemonForFormats/${ruleName}_${classObj.name}.json`, text)
             }
         } else {
             let listForFormat: any = {}; new Map<string, {legal: boolean}>()
@@ -57,15 +105,25 @@ for (let ruleName of Object.keys(rules)) {
                 } = isSpeciesAllowed({speciesId}, rule, 0);
 
                 let pvpokeRanking = pvpokeData.find(ranking => ranking.speciesId === speciesId);
+                let price = rule.pointLimitOptions?.prices.find((priceSetting: PriceSetting) => {
+                    return priceSetting.pokemonIds.includes(speciesId)
+                })?.price
 
                 listForFormat[speciesId] = {
                     legal,
                     dex: pokemonList[pokemon].dex,
                     types: pokemonList[pokemon].types,
-                    tags: pokemonList[pokemon].tags,
-                    ranking: pvpokeRanking?.rating,
-                    moves: pvpokeRanking?.moves,
-                    moveset: pvpokeRanking?.moveset
+                    tags: pokemonList[pokemon].tags
+                }
+
+                if(legal) {
+                    listForFormat[speciesId] = {
+                        ...listForFormat[speciesId],
+                        price: price,
+                        ranking: pvpokeRanking?.rating,
+                        moves: pvpokeRanking?.moves,
+                        moveset: pvpokeRanking?.moveset
+                    }
                 }
             }
     
