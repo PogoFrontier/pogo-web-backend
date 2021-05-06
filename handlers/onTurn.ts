@@ -74,9 +74,9 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
                   payload[j]!.wait = waitTime;
                 }
                 payload[j]!.remaining = opponent.current!.remaining;
+                delete player.current.bufferedAction;
               }
               delete player.current.action;
-              delete player.current.bufferedAction;
             }
             break;
 
@@ -203,12 +203,15 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
       delete currentRoom.players[i]!.current!.action;
       delete currentRoom.players[i]!.current!.bufferedAction;
       delete currentRoom.players[j]!.current!.bufferedAction;
+      const myActive = currentRoom.players[i]?.current?.active || 0;
+      const myCurrent = currentRoom.players[i]?.current?.team[myActive];
       payload[i] = {
         ...payload[i],
         id: currentRoom.players[i]!.id,
-        active: currentRoom.players[i]?.current?.active || 0,
+        active: myActive,
         shouldReturn: true, 
         wait: CHARGE_WAIT,
+        energy: (myCurrent && myCurrent.current) ? myCurrent.current.energy : 0,
         charge: 1
       };
       if (currentRoom.players[j]?.current?.action?.move) {
