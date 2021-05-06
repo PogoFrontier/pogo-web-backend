@@ -18,6 +18,7 @@ function onAction({
     if (player && player.current) {
       const pokemon = player!.current!.team[player!.current!.active]
       const d: [Action, string] = data.substring(1).split(":") as [Action, string];
+      console.log(`Action: ${data}`)
       const type = d[0];
       if (currentRoom.status === RoomStatus.FAINT && type !== Actions.SWITCH) {
         return;
@@ -29,7 +30,7 @@ function onAction({
         return;
       }
       if (player.current.action) {
-        if (player.current.action.string?.startsWith(`#${Actions.CHARGE_ATTACK}`)) {
+        if (player.current.action.string?.startsWith(`#${Actions.CHARGE_ATTACK}`) || type === Actions.FAST_ATTACK) {
           return;
         }
         if (
@@ -38,7 +39,6 @@ function onAction({
             && (
               (
                 type === Actions.CHARGE_ATTACK
-                && player.current.bufferedAction.string?.startsWith(Actions.FAST_ATTACK)
               )
               || (
                 type === Actions.SWITCH
@@ -52,6 +52,7 @@ function onAction({
             active: type === Actions.SWITCH ? parseInt(d[1]) : player.current.active,
             string: data
           }
+          console.log(`Buffered: ${data}`)
           if ((type === Actions.CHARGE_ATTACK) && move) {
             player.current.bufferedAction.move = { ...move } as Move
           }
@@ -62,6 +63,7 @@ function onAction({
           active: type === Actions.SWITCH ? parseInt(d[1]) : player.current.active,
           string: data
         }
+        console.log(`Registered: ${data}`)
         if ((type === Actions.FAST_ATTACK || type === Actions.CHARGE_ATTACK) && move) {
           player.current.action.move = { ...move } as Move
         }
