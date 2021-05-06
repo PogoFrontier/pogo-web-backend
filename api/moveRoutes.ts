@@ -1,8 +1,5 @@
 import e from "express";
 import m from '../data/moves.json';
-import { storeClient } from "../redis/clients";
-import { Player } from "../types/room";
-
 const moves: any = m;
 const router = e.Router();
 

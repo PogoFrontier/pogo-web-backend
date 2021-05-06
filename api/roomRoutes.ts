@@ -2,7 +2,7 @@ import e from "express";
 import { reduceTeamMemberForOpponent } from "../actions/reduceInformation";
 import { TeamMember } from "../types/team"
 import { storeClient } from "../redis/clients";
-import { Room, RoomStatus } from "../types/room";
+import { Room } from "../types/room";
 
 const router = e.Router();
 
@@ -89,6 +89,43 @@ router.get('/list', (req, res) => {
         }
       });
   } catch(err) {
+      console.error();
+      res.status(500).json({message: "Internal server error"});
+  }
+});
+
+// @desc Get 
+// @route GET /api/room/status
+// @access Public (for now)
+router.get('/status', (req, res) => {
+  try {
+    storeClient.keys('room:*')
+      .then(function (keys) {
+        let count = 0;
+        Promise.all([
+          storeClient.keys('searchBattle:*')
+          .then(function (clients) {
+            count += clients.length
+          }),
+          keys.map(async function(key) {
+            const s = await storeClient.get(key)
+            if (s) {
+              const sJSON = await JSON.parse(s) as Room
+              if (!sJSON.players) {
+                return
+              }
+              for (const p of sJSON.players) {
+                if (p !== null && p !== undefined) {
+                  count++
+                }
+              }
+            }
+        })])
+        .then(() => {
+          res.json(count)
+        })
+      });
+  } catch (err) {
       console.error();
       res.status(500).json({message: "Internal server error"});
   }
