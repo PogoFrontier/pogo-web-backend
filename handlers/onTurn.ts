@@ -101,6 +101,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
         if ([Actions.CHARGE_ATTACK, Actions.FAST_ATTACK].includes(action)) {
           delete player?.current?.action;
         }
+        delete player?.current?.bufferedAction;
       }
     }
 
