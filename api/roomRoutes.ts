@@ -2,13 +2,14 @@ import e from "express";
 import { reduceTeamMemberForOpponent } from "../actions/reduceInformation";
 import { TeamMember } from "../types/team"
 import { storeClient } from "../redis/clients";
+import { Room, RoomStatus } from "../types/room";
 
 const router = e.Router();
 
-// @desc Get an array of Pokemon names to be used for the search feature
-// @route GET /api/pokemon/name
+// @desc Get data object of a room
+// @route GET /api/room/data/:id
 // @access Public (for now)
-router.get('/:room', (req, res) => {
+router.get('/data/:room', (req, res) => {
     try{
       storeClient.get("room:" + req.params.room, (err, reply) => {
         if (err) {
@@ -25,6 +26,9 @@ router.get('/:room', (req, res) => {
         asJSON = {
           id: asJSON.id,
           players: asJSON.players.map((player: any) => {
+            if (!player || !player.team || !player.current) {
+              return
+            }
             let currentPokemon: TeamMember = player.current.team[player.current.active]
             return {
               id: player.id,
@@ -44,6 +48,50 @@ router.get('/:room', (req, res) => {
         console.error();
         res.status(500).json({message: "Internal server error"});
     }
+});
+
+function loadRooms(keys: string[]) {
+  return Promise.all(keys.map(async function(key) {
+    const s = await storeClient.get(key)
+    if (s) {
+      const sJSON = await JSON.parse(s) as Room
+      if (
+        !sJSON.players
+        || (!sJSON.players[0] && !sJSON.players[1])
+        || (sJSON.players[0] && sJSON.players[1])
+        || sJSON.reservedSeats
+      ) {
+        return
+      }
+      const player = sJSON.players.find(x => x !== null)
+      if (player) {
+        return {
+          id: sJSON.id,
+          format: sJSON.format,
+          player: player.id
+        }
+      }
+    }
+  }))
+}
+
+// @desc Get list of rooms
+// @route GET /api/room/list
+// @access Public (for now)
+router.get('/list', (req, res) => {
+  try{
+    storeClient.keys('room:*')
+      .then(function (keys) {
+        if(keys) {
+          loadRooms(keys).then((values) => {
+            res.json(values);
+          });
+        }
+      });
+  } catch(err) {
+      console.error();
+      res.status(500).json({message: "Internal server error"});
+  }
 });
 
 export default router;
