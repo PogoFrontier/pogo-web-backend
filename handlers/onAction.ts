@@ -29,7 +29,7 @@ function onAction({
         return;
       }
       if (player.current.action) {
-        if (player.current.action.string?.startsWith(`#${Actions.CHARGE_ATTACK}`) || type === Actions.FAST_ATTACK) {
+        if (player.current.action.string?.startsWith(`#${Actions.CHARGE_ATTACK}`)) {
           return;
         }
         if (
