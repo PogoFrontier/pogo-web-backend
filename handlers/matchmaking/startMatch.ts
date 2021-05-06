@@ -39,7 +39,8 @@ function startMatch(format: RuleDescription, users: [User, User]) {
             status: RoomStatus.SELECTING,
             subClient: subClient.duplicate(),
             reservedSeats: [users[0].socketId, users[1].socketId],
-            format: format
+            format: format,
+            rated: true
         }
         rooms.set(roomId, roomObj);
 
