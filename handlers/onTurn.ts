@@ -117,11 +117,11 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
           player!.current!.active = shouldSwitch[i];
           // Generate payload
           if (payload[i] === null) {
-            let oldActivePokemon = player.team[oldActive]
+            let newActivePokemon = player.team[shouldSwitch[i]]
             payload[i] = {
               id: currentRoom.players[i]!.id,
               active: shouldSwitch[i],
-              hp: oldActivePokemon && oldActivePokemon.current?.hp ? oldActivePokemon.current.hp / oldActivePokemon.hp : 0,
+              hp: newActivePokemon && newActivePokemon.current?.hp ? newActivePokemon.current.hp / newActivePokemon.hp : 0,
               shouldReturn: true
             };
           } else {

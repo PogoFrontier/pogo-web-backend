@@ -4,6 +4,7 @@ import { CODE } from "../types/actions";
 import { RoomStatus } from "../types/room";
 import { User } from "../types/user";
 import { storeClient } from "../redis/clients";
+import endGame from "./endGame";
 
 function onClose(user: User, room: string) {
   const currentRoom = rooms.get(room);
@@ -12,8 +13,8 @@ function onClose(user: User, room: string) {
       if (currentRoom.players) {
           const index = currentRoom.players.findIndex(x => x && x.id === user.socketId);
           currentRoom.players[index] = null;
-          if (currentRoom.status !== RoomStatus.SELECTING && currentRoom.status !== RoomStatus.STARTING) {
-            to(room, "$endwin");
+          if (currentRoom.rated || currentRoom.status !== RoomStatus.SELECTING && currentRoom.status !== RoomStatus.STARTING) {
+            endGame(room, false, ["p2", "p1"][index] as "p1" | "p2");
             console.info(`Socket ${user.socketId} has been removed from room ${room}, causing game end.`);
           } else {
             currentRoom.status = RoomStatus.SELECTING;

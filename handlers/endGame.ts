@@ -65,17 +65,23 @@ function endGame(room: string, timeout?: boolean, predefinedResult?: whoWon) {
 
 type whoWon = "p1" | "p2" | "tie";
 function sendResult(room: Room, result: whoWon) {
-  let p = room.players[0]!;
-  let o = room.players[1]!;
+  let p = room.players[0];
+  let o = room.players[1];
   if(result === "p1") {
-    pubClient.publish("messagesToUser:" + p.id, "$endwon");
-    pubClient.publish("messagesToUser:" + o.id, "$endlost");
+    if(p)
+      pubClient.publish("messagesToUser:" + p.id, "$endwon");
+    if(o)
+      pubClient.publish("messagesToUser:" + o.id, "$endlost");
   } else if (result === "p2") {
-    pubClient.publish("messagesToUser:" + p.id, "$endlost");
-    pubClient.publish("messagesToUser:" + o.id, "$endwon");
+    if(p)
+      pubClient.publish("messagesToUser:" + p.id, "$endlost");
+    if(o)
+      pubClient.publish("messagesToUser:" + o.id, "$endwon");
   } else {
-    pubClient.publish("messagesToUser:" + p.id, "$endtied");
-    pubClient.publish("messagesToUser:" + o.id, "$endtied");
+    if(p)
+      pubClient.publish("messagesToUser:" + p.id, "$endtied");
+    if(o)
+      pubClient.publish("messagesToUser:" + o.id, "$endtied");
   }
 }
 
