@@ -1,4 +1,4 @@
-import { reduceActionForOpponent } from "../actions/reduceInformation";
+import { reduceActionForOpponent, reduceTeamMemberForPlayer } from "../actions/reduceInformation";
 import indexOfMax from "../actions/indexOfMax";
 import { CHARGE_WAIT, GAME_TIME, SWAP_COOLDOWN, SWITCH_WAIT, SWITCH_WAIT_LAST, TURN_LENGTH } from "../config";
 import { moves, rooms } from "../matchhandling_server";
@@ -246,6 +246,7 @@ const onTurn = (room: string, id: string) => {
       time,
       update: evaluatePayload(room),
       switch: 0,
+      team: [],
       turn: currentRoom.turn
     };
     if (currentRoom) {
@@ -280,6 +281,7 @@ const onTurn = (room: string, id: string) => {
           } else {
             payload.switch = 0;
           }
+          payload.team = player.current!.team.map(reduceTeamMemberForPlayer)
           const data = {
             type: CODE.turn,
             payload

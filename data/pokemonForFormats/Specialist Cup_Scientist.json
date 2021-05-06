@@ -370,7 +370,7 @@
     ]
   },
   "pidgey": {
-    "legal": false,
+    "legal": true,
     "dex": 16,
     "types": [
       "normal",
@@ -378,23 +378,99 @@
     ]
   },
   "pidgeotto": {
-    "legal": false,
+    "legal": true,
     "dex": 17,
     "types": [
       "normal",
       "flying"
+    ],
+    "ranking": 474,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "WING_ATTACK",
+          "uses": 73485
+        },
+        {
+          "moveId": "STEEL_WING",
+          "uses": 41915
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "TWISTER",
+          "uses": 28929
+        },
+        {
+          "moveId": "AIR_CUTTER",
+          "uses": 18088
+        },
+        {
+          "moveId": "AERIAL_ACE",
+          "uses": 68423
+        }
+      ]
+    },
+    "moveset": [
+      "WING_ATTACK",
+      "AERIAL_ACE",
+      "TWISTER"
     ]
   },
   "pidgeot": {
-    "legal": false,
+    "legal": true,
     "dex": 18,
     "types": [
       "normal",
       "flying"
+    ],
+    "ranking": 595,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "WING_ATTACK",
+          "uses": 34396
+        },
+        {
+          "moveId": "STEEL_WING",
+          "uses": 15677
+        },
+        {
+          "moveId": "GUST",
+          "uses": 38216
+        },
+        {
+          "moveId": "AIR_SLASH",
+          "uses": 26881
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "HURRICANE",
+          "uses": 12692
+        },
+        {
+          "moveId": "BRAVE_BIRD",
+          "uses": 68018
+        },
+        {
+          "moveId": "AIR_CUTTER",
+          "uses": 7026
+        },
+        {
+          "moveId": "AERIAL_ACE",
+          "uses": 27690
+        }
+      ]
+    },
+    "moveset": [
+      "GUST",
+      "AERIAL_ACE",
+      "BRAVE_BIRD"
     ]
   },
   "pidgeot_mega": {
-    "legal": false,
+    "legal": true,
     "dex": 18,
     "types": [
       "normal",
@@ -405,7 +481,7 @@
     ]
   },
   "rattata": {
-    "legal": false,
+    "legal": true,
     "dex": 19,
     "types": [
       "normal",
@@ -416,7 +492,7 @@
     ]
   },
   "rattata_alolan": {
-    "legal": false,
+    "legal": true,
     "dex": 19,
     "types": [
       "dark",
@@ -427,7 +503,7 @@
     ]
   },
   "rattata_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 19,
     "types": [
       "normal",
@@ -438,7 +514,7 @@
     ]
   },
   "raticate": {
-    "legal": false,
+    "legal": true,
     "dex": 20,
     "types": [
       "normal",
@@ -446,10 +522,46 @@
     ],
     "tags": [
       "shadoweligible"
+    ],
+    "ranking": 392,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "QUICK_ATTACK",
+          "uses": 69090
+        },
+        {
+          "moveId": "BITE",
+          "uses": 46310
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "RETURN",
+          "uses": 20346
+        },
+        {
+          "moveId": "HYPER_FANG",
+          "uses": 59845
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 15902
+        },
+        {
+          "moveId": "DIG",
+          "uses": 19028
+        }
+      ]
+    },
+    "moveset": [
+      "QUICK_ATTACK",
+      "HYPER_FANG",
+      "RETURN"
     ]
   },
   "raticate_alolan": {
-    "legal": false,
+    "legal": true,
     "dex": 20,
     "types": [
       "dark",
@@ -457,10 +569,42 @@
     ],
     "tags": [
       "alolan"
+    ],
+    "ranking": 587,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "QUICK_ATTACK",
+          "uses": 64080
+        },
+        {
+          "moveId": "BITE",
+          "uses": 51320
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "HYPER_FANG",
+          "uses": 43474
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 11492
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 60435
+        }
+      ]
+    },
+    "moveset": [
+      "QUICK_ATTACK",
+      "CRUNCH",
+      "HYPER_FANG"
     ]
   },
   "raticate_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 20,
     "types": [
       "normal",
@@ -468,10 +612,46 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 358,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "QUICK_ATTACK",
+          "uses": 71106
+        },
+        {
+          "moveId": "BITE",
+          "uses": 44294
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "HYPER_FANG",
+          "uses": 73447
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 19603
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 0
+        },
+        {
+          "moveId": "DIG",
+          "uses": 22386
+        }
+      ]
+    },
+    "moveset": [
+      "QUICK_ATTACK",
+      "HYPER_FANG",
+      "DIG"
     ]
   },
   "spearow": {
-    "legal": false,
+    "legal": true,
     "dex": 21,
     "types": [
       "normal",
@@ -479,11 +659,47 @@
     ]
   },
   "fearow": {
-    "legal": false,
+    "legal": true,
     "dex": 22,
     "types": [
       "normal",
       "flying"
+    ],
+    "ranking": 447,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "STEEL_WING",
+          "uses": 50188
+        },
+        {
+          "moveId": "PECK",
+          "uses": 65212
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "TWISTER",
+          "uses": 10416
+        },
+        {
+          "moveId": "SKY_ATTACK",
+          "uses": 49200
+        },
+        {
+          "moveId": "DRILL_RUN",
+          "uses": 42439
+        },
+        {
+          "moveId": "AERIAL_ACE",
+          "uses": 13458
+        }
+      ]
+    },
+    "moveset": [
+      "PECK",
+      "SKY_ATTACK",
+      "DRILL_RUN"
     ]
   },
   "ekans": {
@@ -509,7 +725,7 @@
     ]
   },
   "arbok": {
-    "legal": true,
+    "legal": false,
     "dex": 24,
     "types": [
       "poison",
@@ -517,50 +733,6 @@
     ],
     "tags": [
       "shadoweligible"
-    ],
-    "ranking": 433,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "DRAGON_TAIL",
-          "uses": 31935
-        },
-        {
-          "moveId": "BITE",
-          "uses": 22952
-        },
-        {
-          "moveId": "ACID",
-          "uses": 21279
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "SLUDGE_WAVE",
-          "uses": 19904
-        },
-        {
-          "moveId": "RETURN",
-          "uses": 14390
-        },
-        {
-          "moveId": "GUNK_SHOT",
-          "uses": 7863
-        },
-        {
-          "moveId": "DARK_PULSE",
-          "uses": 29641
-        },
-        {
-          "moveId": "ACID_SPRAY",
-          "uses": 4374
-        }
-      ]
-    },
-    "moveset": [
-      "DRAGON_TAIL",
-      "DARK_PULSE",
-      "SLUDGE_WAVE"
     ]
   },
   "arbok_shadow": {
@@ -575,7 +747,7 @@
     ]
   },
   "pikachu": {
-    "legal": false,
+    "legal": true,
     "dex": 25,
     "types": [
       "electric",
@@ -583,7 +755,7 @@
     ]
   },
   "pikachu_flying": {
-    "legal": false,
+    "legal": true,
     "dex": 25,
     "types": [
       "electric",
@@ -591,7 +763,7 @@
     ]
   },
   "pikachu_libre": {
-    "legal": false,
+    "legal": true,
     "dex": 25,
     "types": [
       "electric",
@@ -599,15 +771,63 @@
     ]
   },
   "raichu": {
-    "legal": false,
+    "legal": true,
     "dex": 26,
     "types": [
       "electric",
       "none"
+    ],
+    "ranking": 625,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "VOLT_SWITCH",
+          "uses": 38480
+        },
+        {
+          "moveId": "THUNDER_SHOCK",
+          "uses": 32621
+        },
+        {
+          "moveId": "SPARK",
+          "uses": 28083
+        },
+        {
+          "moveId": "CHARM",
+          "uses": 16145
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "WILD_CHARGE",
+          "uses": 48535
+        },
+        {
+          "moveId": "THUNDER_PUNCH",
+          "uses": 23631
+        },
+        {
+          "moveId": "THUNDER",
+          "uses": 7639
+        },
+        {
+          "moveId": "SKULL_BASH",
+          "uses": 12303
+        },
+        {
+          "moveId": "BRICK_BREAK",
+          "uses": 23209
+        }
+      ]
+    },
+    "moveset": [
+      "VOLT_SWITCH",
+      "WILD_CHARGE",
+      "THUNDER_PUNCH"
     ]
   },
   "raichu_alolan": {
-    "legal": false,
+    "legal": true,
     "dex": 26,
     "types": [
       "electric",
@@ -615,6 +835,46 @@
     ],
     "tags": [
       "alolan"
+    ],
+    "ranking": 575,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "VOLT_SWITCH",
+          "uses": 44382
+        },
+        {
+          "moveId": "THUNDER_SHOCK",
+          "uses": 38233
+        },
+        {
+          "moveId": "SPARK",
+          "uses": 32508
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "WILD_CHARGE",
+          "uses": 48722
+        },
+        {
+          "moveId": "THUNDER_PUNCH",
+          "uses": 23735
+        },
+        {
+          "moveId": "PSYCHIC",
+          "uses": 20845
+        },
+        {
+          "moveId": "GRASS_KNOT",
+          "uses": 22126
+        }
+      ]
+    },
+    "moveset": [
+      "VOLT_SWITCH",
+      "WILD_CHARGE",
+      "GRASS_KNOT"
     ]
   },
   "sandshrew": {
@@ -629,7 +889,7 @@
     ]
   },
   "sandshrew_alolan": {
-    "legal": false,
+    "legal": true,
     "dex": 27,
     "types": [
       "ice",
@@ -637,6 +897,38 @@
     ],
     "tags": [
       "alolan"
+    ],
+    "ranking": 625,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "POWDER_SNOW",
+          "uses": 78497
+        },
+        {
+          "moveId": "METAL_CLAW",
+          "uses": 36903
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "NIGHT_SLASH",
+          "uses": 61131
+        },
+        {
+          "moveId": "GYRO_BALL",
+          "uses": 21771
+        },
+        {
+          "moveId": "BLIZZARD",
+          "uses": 32424
+        }
+      ]
+    },
+    "moveset": [
+      "POWDER_SNOW",
+      "NIGHT_SLASH",
+      "BLIZZARD"
     ]
   },
   "sandshrew_shadow": {
@@ -662,7 +954,7 @@
     ]
   },
   "sandslash_alolan": {
-    "legal": false,
+    "legal": true,
     "dex": 28,
     "types": [
       "ice",
@@ -670,6 +962,42 @@
     ],
     "tags": [
       "alolan"
+    ],
+    "ranking": 637,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "POWDER_SNOW",
+          "uses": 78721
+        },
+        {
+          "moveId": "METAL_CLAW",
+          "uses": 36679
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ICE_PUNCH",
+          "uses": 49467
+        },
+        {
+          "moveId": "GYRO_BALL",
+          "uses": 19051
+        },
+        {
+          "moveId": "BULLDOZE",
+          "uses": 21461
+        },
+        {
+          "moveId": "BLIZZARD",
+          "uses": 25409
+        }
+      ]
+    },
+    "moveset": [
+      "POWDER_SNOW",
+      "ICE_PUNCH",
+      "BULLDOZE"
     ]
   },
   "sandslash_shadow": {
@@ -794,7 +1122,7 @@
     ]
   },
   "nidoking": {
-    "legal": true,
+    "legal": false,
     "dex": 34,
     "types": [
       "poison",
@@ -802,46 +1130,6 @@
     ],
     "tags": [
       "shadoweligible"
-    ],
-    "ranking": 418,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "POISON_JAB",
-          "uses": 35871
-        },
-        {
-          "moveId": "IRON_TAIL",
-          "uses": 6012
-        },
-        {
-          "moveId": "FURY_CUTTER",
-          "uses": 34192
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "SLUDGE_WAVE",
-          "uses": 18534
-        },
-        {
-          "moveId": "MEGAHORN",
-          "uses": 18912
-        },
-        {
-          "moveId": "EARTH_POWER",
-          "uses": 26970
-        },
-        {
-          "moveId": "EARTHQUAKE",
-          "uses": 11619
-        }
-      ]
-    },
-    "moveset": [
-      "POISON_JAB",
-      "EARTH_POWER",
-      "MEGAHORN"
     ]
   },
   "nidoking_shadow": {
@@ -938,7 +1226,7 @@
     ]
   },
   "jigglypuff": {
-    "legal": false,
+    "legal": true,
     "dex": 39,
     "types": [
       "normal",
@@ -946,11 +1234,51 @@
     ]
   },
   "wigglytuff": {
-    "legal": false,
+    "legal": true,
     "dex": 40,
     "types": [
       "normal",
       "fairy"
+    ],
+    "ranking": 661,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "POUND",
+          "uses": 14587
+        },
+        {
+          "moveId": "FEINT_ATTACK",
+          "uses": 43693
+        },
+        {
+          "moveId": "CHARM",
+          "uses": 57044
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "PLAY_ROUGH",
+          "uses": 35615
+        },
+        {
+          "moveId": "ICE_BEAM",
+          "uses": 39221
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 26219
+        },
+        {
+          "moveId": "DAZZLING_GLEAM",
+          "uses": 14171
+        }
+      ]
+    },
+    "moveset": [
+      "CHARM",
+      "ICE_BEAM",
+      "PLAY_ROUGH"
     ]
   },
   "zubat": {
@@ -976,7 +1304,7 @@
     ]
   },
   "golbat": {
-    "legal": true,
+    "legal": false,
     "dex": 42,
     "types": [
       "poison",
@@ -984,46 +1312,6 @@
     ],
     "tags": [
       "shadoweligible"
-    ],
-    "ranking": 592,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "WING_ATTACK",
-          "uses": 48345
-        },
-        {
-          "moveId": "BITE",
-          "uses": 27855
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "SHADOW_BALL",
-          "uses": 20724
-        },
-        {
-          "moveId": "RETURN",
-          "uses": 9926
-        },
-        {
-          "moveId": "POISON_FANG",
-          "uses": 22412
-        },
-        {
-          "moveId": "OMINOUS_WIND",
-          "uses": 12023
-        },
-        {
-          "moveId": "AIR_CUTTER",
-          "uses": 11065
-        }
-      ]
-    },
-    "moveset": [
-      "WING_ATTACK",
-      "POISON_FANG",
-      "SHADOW_BALL"
     ]
   },
   "golbat_shadow": {
@@ -1142,7 +1430,7 @@
     ]
   },
   "venomoth": {
-    "legal": true,
+    "legal": false,
     "dex": 49,
     "types": [
       "bug",
@@ -1150,50 +1438,6 @@
     ],
     "tags": [
       "shadoweligible"
-    ],
-    "ranking": 502,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "INFESTATION",
-          "uses": 25492
-        },
-        {
-          "moveId": "CONFUSION",
-          "uses": 26600
-        },
-        {
-          "moveId": "BUG_BITE",
-          "uses": 24134
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "SILVER_WIND",
-          "uses": 13296
-        },
-        {
-          "moveId": "RETURN",
-          "uses": 9486
-        },
-        {
-          "moveId": "PSYCHIC",
-          "uses": 17415
-        },
-        {
-          "moveId": "POISON_FANG",
-          "uses": 20890
-        },
-        {
-          "moveId": "BUG_BUZZ",
-          "uses": 15109
-        }
-      ]
-    },
-    "moveset": [
-      "CONFUSION",
-      "POISON_FANG",
-      "PSYCHIC"
     ]
   },
   "venomoth_shadow": {
@@ -1219,7 +1463,7 @@
     ]
   },
   "diglett_alolan": {
-    "legal": false,
+    "legal": true,
     "dex": 50,
     "types": [
       "ground",
@@ -1252,7 +1496,7 @@
     ]
   },
   "dugtrio_alolan": {
-    "legal": false,
+    "legal": true,
     "dex": 51,
     "types": [
       "ground",
@@ -1260,6 +1504,38 @@
     ],
     "tags": [
       "alolan"
+    ],
+    "ranking": 519,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "MUD_SLAP",
+          "uses": 66400
+        },
+        {
+          "moveId": "METAL_CLAW",
+          "uses": 49000
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "MUD_BOMB",
+          "uses": 48925
+        },
+        {
+          "moveId": "IRON_HEAD",
+          "uses": 33509
+        },
+        {
+          "moveId": "EARTHQUAKE",
+          "uses": 32963
+        }
+      ]
+    },
+    "moveset": [
+      "MUD_SLAP",
+      "MUD_BOMB",
+      "IRON_HEAD"
     ]
   },
   "dugtrio_shadow": {
@@ -1274,7 +1550,7 @@
     ]
   },
   "meowth": {
-    "legal": false,
+    "legal": true,
     "dex": 52,
     "types": [
       "normal",
@@ -1296,7 +1572,7 @@
     ]
   },
   "meowth_galarian": {
-    "legal": false,
+    "legal": true,
     "dex": 52,
     "types": [
       "steel",
@@ -1307,7 +1583,7 @@
     ]
   },
   "meowth_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 52,
     "types": [
       "normal",
@@ -1318,7 +1594,7 @@
     ]
   },
   "persian": {
-    "legal": false,
+    "legal": true,
     "dex": 53,
     "types": [
       "normal",
@@ -1326,6 +1602,50 @@
     ],
     "tags": [
       "shadoweligible"
+    ],
+    "ranking": 488,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SCRATCH",
+          "uses": 53547
+        },
+        {
+          "moveId": "FEINT_ATTACK",
+          "uses": 61853
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "RETURN",
+          "uses": 19533
+        },
+        {
+          "moveId": "POWER_GEM",
+          "uses": 13426
+        },
+        {
+          "moveId": "PLAY_ROUGH",
+          "uses": 16518
+        },
+        {
+          "moveId": "PAYBACK",
+          "uses": 10265
+        },
+        {
+          "moveId": "NIGHT_SLASH",
+          "uses": 42299
+        },
+        {
+          "moveId": "FOUL_PLAY",
+          "uses": 13359
+        }
+      ]
+    },
+    "moveset": [
+      "FEINT_ATTACK",
+      "NIGHT_SLASH",
+      "RETURN"
     ]
   },
   "persian_alolan": {
@@ -1340,7 +1660,7 @@
     ]
   },
   "persian_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 53,
     "types": [
       "normal",
@@ -1348,6 +1668,50 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 497,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SCRATCH",
+          "uses": 53994
+        },
+        {
+          "moveId": "FEINT_ATTACK",
+          "uses": 61406
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "POWER_GEM",
+          "uses": 16366
+        },
+        {
+          "moveId": "PLAY_ROUGH",
+          "uses": 20635
+        },
+        {
+          "moveId": "PAYBACK",
+          "uses": 12288
+        },
+        {
+          "moveId": "NIGHT_SLASH",
+          "uses": 50121
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 0
+        },
+        {
+          "moveId": "FOUL_PLAY",
+          "uses": 15812
+        }
+      ]
+    },
+    "moveset": [
+      "FEINT_ATTACK",
+      "NIGHT_SLASH",
+      "PLAY_ROUGH"
     ]
   },
   "psyduck": {
@@ -1609,7 +1973,7 @@
     ]
   },
   "machoke": {
-    "legal": true,
+    "legal": false,
     "dex": 67,
     "types": [
       "fighting",
@@ -1617,46 +1981,6 @@
     ],
     "tags": [
       "shadoweligible"
-    ],
-    "ranking": 655,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "LOW_KICK",
-          "uses": 15348
-        },
-        {
-          "moveId": "KARATE_CHOP",
-          "uses": 60852
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "SUBMISSION",
-          "uses": 5967
-        },
-        {
-          "moveId": "RETURN",
-          "uses": 12213
-        },
-        {
-          "moveId": "DYNAMIC_PUNCH",
-          "uses": 13114
-        },
-        {
-          "moveId": "CROSS_CHOP",
-          "uses": 34058
-        },
-        {
-          "moveId": "BRICK_BREAK",
-          "uses": 11002
-        }
-      ]
-    },
-    "moveset": [
-      "KARATE_CHOP",
-      "CROSS_CHOP",
-      "DYNAMIC_PUNCH"
     ]
   },
   "machoke_shadow": {
@@ -1783,7 +2107,7 @@
     ]
   },
   "geodude_alolan": {
-    "legal": false,
+    "legal": true,
     "dex": 74,
     "types": [
       "rock",
@@ -1791,6 +2115,38 @@
     ],
     "tags": [
       "alolan"
+    ],
+    "ranking": 553,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "VOLT_SWITCH",
+          "uses": 71361
+        },
+        {
+          "moveId": "ROCK_THROW",
+          "uses": 44039
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 40727
+        },
+        {
+          "moveId": "ROCK_TOMB",
+          "uses": 9176
+        },
+        {
+          "moveId": "ROCK_SLIDE",
+          "uses": 65541
+        }
+      ]
+    },
+    "moveset": [
+      "VOLT_SWITCH",
+      "ROCK_SLIDE",
+      "THUNDERBOLT"
     ]
   },
   "graveler": {
@@ -1811,30 +2167,30 @@
     "tags": [
       "alolan"
     ],
-    "ranking": 662,
+    "ranking": 644,
     "moves": {
       "fastMoves": [
         {
           "moveId": "VOLT_SWITCH",
-          "uses": 46680
+          "uses": 71436
         },
         {
           "moveId": "ROCK_THROW",
-          "uses": 29520
+          "uses": 43964
         }
       ],
       "chargedMoves": [
         {
           "moveId": "THUNDERBOLT",
-          "uses": 20953
+          "uses": 34428
         },
         {
           "moveId": "STONE_EDGE",
-          "uses": 29003
+          "uses": 42518
         },
         {
           "moveId": "ROCK_BLAST",
-          "uses": 26192
+          "uses": 38309
         }
       ]
     },
@@ -1862,37 +2218,37 @@
     "tags": [
       "alolan"
     ],
-    "ranking": 582,
+    "ranking": 619,
     "moves": {
       "fastMoves": [
         {
           "moveId": "VOLT_SWITCH",
-          "uses": 49216
+          "uses": 75847
         },
         {
           "moveId": "ROCK_THROW",
-          "uses": 26984
+          "uses": 39553
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WILD_CHARGE",
-          "uses": 36850
+          "uses": 58705
         },
         {
           "moveId": "STONE_EDGE",
-          "uses": 20627
+          "uses": 29700
         },
         {
           "moveId": "ROCK_BLAST",
-          "uses": 18758
+          "uses": 27011
         }
       ]
     },
     "moveset": [
       "VOLT_SWITCH",
       "WILD_CHARGE",
-      "STONE_EDGE"
+      "ROCK_BLAST"
     ]
   },
   "ponyta": {
@@ -1978,7 +2334,7 @@
     ]
   },
   "magnemite": {
-    "legal": false,
+    "legal": true,
     "dex": 81,
     "types": [
       "electric",
@@ -1986,10 +2342,46 @@
     ],
     "tags": [
       "shadoweligible"
+    ],
+    "ranking": 562,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "THUNDER_SHOCK",
+          "uses": 60407
+        },
+        {
+          "moveId": "SPARK",
+          "uses": 54993
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 16744
+        },
+        {
+          "moveId": "RETURN",
+          "uses": 16943
+        },
+        {
+          "moveId": "MAGNET_BOMB",
+          "uses": 42649
+        },
+        {
+          "moveId": "DISCHARGE",
+          "uses": 39102
+        }
+      ]
+    },
+    "moveset": [
+      "THUNDER_SHOCK",
+      "MAGNET_BOMB",
+      "DISCHARGE"
     ]
   },
   "magnemite_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 81,
     "types": [
       "electric",
@@ -1997,6 +2389,42 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 567,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "THUNDER_SHOCK",
+          "uses": 60343
+        },
+        {
+          "moveId": "SPARK",
+          "uses": 55057
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 19394
+        },
+        {
+          "moveId": "MAGNET_BOMB",
+          "uses": 50926
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 6
+        },
+        {
+          "moveId": "DISCHARGE",
+          "uses": 45108
+        }
+      ]
+    },
+    "moveset": [
+      "THUNDER_SHOCK",
+      "MAGNET_BOMB",
+      "DISCHARGE"
     ]
   },
   "magneton": {
@@ -2009,38 +2437,38 @@
     "tags": [
       "shadoweligible"
     ],
-    "ranking": 561,
+    "ranking": 574,
     "moves": {
       "fastMoves": [
         {
           "moveId": "THUNDER_SHOCK",
-          "uses": 30145
+          "uses": 46371
         },
         {
           "moveId": "SPARK",
-          "uses": 28232
+          "uses": 42138
         },
         {
           "moveId": "CHARGE_BEAM",
-          "uses": 17693
+          "uses": 26802
         }
       ],
       "chargedMoves": [
         {
           "moveId": "ZAP_CANNON",
-          "uses": 9269
+          "uses": 13112
         },
         {
           "moveId": "MAGNET_BOMB",
-          "uses": 29643
+          "uses": 47818
         },
         {
           "moveId": "FLASH_CANNON",
-          "uses": 6155
+          "uses": 9962
         },
         {
           "moveId": "DISCHARGE",
-          "uses": 31053
+          "uses": 44596
         }
       ]
     },
@@ -2051,7 +2479,7 @@
     ]
   },
   "magneton_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 82,
     "types": [
       "electric",
@@ -2059,10 +2487,54 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 579,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "THUNDER_SHOCK",
+          "uses": 46620
+        },
+        {
+          "moveId": "SPARK",
+          "uses": 42424
+        },
+        {
+          "moveId": "CHARGE_BEAM",
+          "uses": 26266
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ZAP_CANNON",
+          "uses": 13060
+        },
+        {
+          "moveId": "MAGNET_BOMB",
+          "uses": 47578
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 0
+        },
+        {
+          "moveId": "FLASH_CANNON",
+          "uses": 9930
+        },
+        {
+          "moveId": "DISCHARGE",
+          "uses": 44624
+        }
+      ]
+    },
+    "moveset": [
+      "THUNDER_SHOCK",
+      "MAGNET_BOMB",
+      "DISCHARGE"
     ]
   },
   "farfetchd": {
-    "legal": false,
+    "legal": true,
     "dex": 83,
     "types": [
       "normal",
@@ -2070,6 +2542,42 @@
     ],
     "tags": [
       "regional"
+    ],
+    "ranking": 587,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "FURY_CUTTER",
+          "uses": 54539
+        },
+        {
+          "moveId": "CUT",
+          "uses": 17562
+        },
+        {
+          "moveId": "AIR_SLASH",
+          "uses": 43303
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "LEAF_BLADE",
+          "uses": 71480
+        },
+        {
+          "moveId": "AIR_CUTTER",
+          "uses": 9174
+        },
+        {
+          "moveId": "AERIAL_ACE",
+          "uses": 34746
+        }
+      ]
+    },
+    "moveset": [
+      "FURY_CUTTER",
+      "LEAF_BLADE",
+      "AERIAL_ACE"
     ]
   },
   "farfetchd_galarian": {
@@ -2084,7 +2592,7 @@
     ]
   },
   "doduo": {
-    "legal": false,
+    "legal": true,
     "dex": 84,
     "types": [
       "normal",
@@ -2092,11 +2600,47 @@
     ]
   },
   "dodrio": {
-    "legal": false,
+    "legal": true,
     "dex": 85,
     "types": [
       "normal",
       "flying"
+    ],
+    "ranking": 425,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "STEEL_WING",
+          "uses": 44315
+        },
+        {
+          "moveId": "FEINT_ATTACK",
+          "uses": 71085
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "DRILL_PECK",
+          "uses": 47246
+        },
+        {
+          "moveId": "BRAVE_BIRD",
+          "uses": 51947
+        },
+        {
+          "moveId": "AIR_CUTTER",
+          "uses": 5770
+        },
+        {
+          "moveId": "AERIAL_ACE",
+          "uses": 10393
+        }
+      ]
+    },
+    "moveset": [
+      "FEINT_ATTACK",
+      "BRAVE_BIRD",
+      "DRILL_PECK"
     ]
   },
   "seel": {
@@ -2116,7 +2660,7 @@
     ]
   },
   "grimer": {
-    "legal": true,
+    "legal": false,
     "dex": 88,
     "types": [
       "poison",
@@ -2124,46 +2668,6 @@
     ],
     "tags": [
       "shadoweligible"
-    ],
-    "ranking": 505,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "POISON_JAB",
-          "uses": 34813
-        },
-        {
-          "moveId": "MUD_SLAP",
-          "uses": 24509
-        },
-        {
-          "moveId": "ACID",
-          "uses": 16878
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "SLUDGE_BOMB",
-          "uses": 20704
-        },
-        {
-          "moveId": "SLUDGE",
-          "uses": 20041
-        },
-        {
-          "moveId": "RETURN",
-          "uses": 9719
-        },
-        {
-          "moveId": "MUD_BOMB",
-          "uses": 25638
-        }
-      ]
-    },
-    "moveset": [
-      "POISON_JAB",
-      "MUD_BOMB",
-      "SLUDGE_BOMB"
     ]
   },
   "grimer_alolan": {
@@ -2189,7 +2693,7 @@
     ]
   },
   "muk": {
-    "legal": true,
+    "legal": false,
     "dex": 89,
     "types": [
       "poison",
@@ -2197,54 +2701,6 @@
     ],
     "tags": [
       "shadoweligible"
-    ],
-    "ranking": 564,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "POISON_JAB",
-          "uses": 24439
-        },
-        {
-          "moveId": "LICK",
-          "uses": 20664
-        },
-        {
-          "moveId": "INFESTATION",
-          "uses": 19267
-        },
-        {
-          "moveId": "ACID",
-          "uses": 11799
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "THUNDER_PUNCH",
-          "uses": 25316
-        },
-        {
-          "moveId": "SLUDGE_WAVE",
-          "uses": 16795
-        },
-        {
-          "moveId": "GUNK_SHOT",
-          "uses": 6564
-        },
-        {
-          "moveId": "DARK_PULSE",
-          "uses": 23813
-        },
-        {
-          "moveId": "ACID_SPRAY",
-          "uses": 3740
-        }
-      ]
-    },
-    "moveset": [
-      "POISON_JAB",
-      "THUNDER_PUNCH",
-      "DARK_PULSE"
     ]
   },
   "muk_alolan": {
@@ -2292,7 +2748,7 @@
     ]
   },
   "cloyster": {
-    "legal": true,
+    "legal": false,
     "dex": 91,
     "types": [
       "water",
@@ -2300,46 +2756,6 @@
     ],
     "tags": [
       "shadoweligible"
-    ],
-    "ranking": 517,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "ICE_SHARD",
-          "uses": 47134
-        },
-        {
-          "moveId": "FROST_BREATH",
-          "uses": 29066
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "ICY_WIND",
-          "uses": 13314
-        },
-        {
-          "moveId": "HYDRO_PUMP",
-          "uses": 13677
-        },
-        {
-          "moveId": "BLIZZARD",
-          "uses": 5936
-        },
-        {
-          "moveId": "AVALANCHE",
-          "uses": 38366
-        },
-        {
-          "moveId": "AURORA_BEAM",
-          "uses": 4821
-        }
-      ]
-    },
-    "moveset": [
-      "ICE_SHARD",
-      "AVALANCHE",
-      "HYDRO_PUMP"
     ]
   },
   "cloyster_shadow": {
@@ -2362,115 +2778,19 @@
     ]
   },
   "haunter": {
-    "legal": true,
+    "legal": false,
     "dex": 93,
     "types": [
       "ghost",
       "poison"
-    ],
-    "ranking": 606,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "SHADOW_CLAW",
-          "uses": 43127
-        },
-        {
-          "moveId": "LICK",
-          "uses": 23368
-        },
-        {
-          "moveId": "ASTONISH",
-          "uses": 9738
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "SLUDGE_BOMB",
-          "uses": 18773
-        },
-        {
-          "moveId": "SHADOW_PUNCH",
-          "uses": 21224
-        },
-        {
-          "moveId": "SHADOW_BALL",
-          "uses": 21478
-        },
-        {
-          "moveId": "DARK_PULSE",
-          "uses": 14567
-        }
-      ]
-    },
-    "moveset": [
-      "SHADOW_CLAW",
-      "SHADOW_BALL",
-      "SHADOW_PUNCH"
     ]
   },
   "gengar": {
-    "legal": true,
+    "legal": false,
     "dex": 94,
     "types": [
       "ghost",
       "poison"
-    ],
-    "ranking": 625,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "SUCKER_PUNCH",
-          "uses": 14097
-        },
-        {
-          "moveId": "SHADOW_CLAW",
-          "uses": 28326
-        },
-        {
-          "moveId": "LICK",
-          "uses": 15263
-        },
-        {
-          "moveId": "HEX",
-          "uses": 18585
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "SLUDGE_WAVE",
-          "uses": 4354
-        },
-        {
-          "moveId": "SLUDGE_BOMB",
-          "uses": 12880
-        },
-        {
-          "moveId": "SHADOW_PUNCH",
-          "uses": 15587
-        },
-        {
-          "moveId": "SHADOW_BALL",
-          "uses": 15836
-        },
-        {
-          "moveId": "PSYCHIC",
-          "uses": 9188
-        },
-        {
-          "moveId": "FOCUS_BLAST",
-          "uses": 8004
-        },
-        {
-          "moveId": "DARK_PULSE",
-          "uses": 10432
-        }
-      ]
-    },
-    "moveset": [
-      "SHADOW_CLAW",
-      "SHADOW_BALL",
-      "SHADOW_PUNCH"
     ]
   },
   "gengar_mega": {
@@ -2553,7 +2873,7 @@
     ]
   },
   "voltorb": {
-    "legal": false,
+    "legal": true,
     "dex": 100,
     "types": [
       "electric",
@@ -2561,11 +2881,51 @@
     ]
   },
   "electrode": {
-    "legal": false,
+    "legal": true,
     "dex": 101,
     "types": [
       "electric",
       "none"
+    ],
+    "ranking": 586,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "VOLT_SWITCH",
+          "uses": 58306
+        },
+        {
+          "moveId": "TACKLE",
+          "uses": 13624
+        },
+        {
+          "moveId": "SPARK",
+          "uses": 43517
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 18141
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 14928
+        },
+        {
+          "moveId": "FOUL_PLAY",
+          "uses": 39780
+        },
+        {
+          "moveId": "DISCHARGE",
+          "uses": 42581
+        }
+      ]
+    },
+    "moveset": [
+      "VOLT_SWITCH",
+      "FOUL_PLAY",
+      "THUNDERBOLT"
     ]
   },
   "exeggcute": {
@@ -2723,11 +3083,47 @@
     ]
   },
   "lickitung": {
-    "legal": false,
+    "legal": true,
     "dex": 108,
     "types": [
       "normal",
       "none"
+    ],
+    "ranking": 685,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 18441
+        },
+        {
+          "moveId": "LICK",
+          "uses": 96959
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "STOMP",
+          "uses": 15360
+        },
+        {
+          "moveId": "POWER_WHIP",
+          "uses": 30810
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 7105
+        },
+        {
+          "moveId": "BODY_SLAM",
+          "uses": 62264
+        }
+      ]
+    },
+    "moveset": [
+      "LICK",
+      "BODY_SLAM",
+      "POWER_WHIP"
     ]
   },
   "koffing": {
@@ -2753,7 +3149,7 @@
     ]
   },
   "weezing": {
-    "legal": true,
+    "legal": false,
     "dex": 110,
     "types": [
       "poison",
@@ -2761,50 +3157,6 @@
     ],
     "tags": [
       "shadoweligible"
-    ],
-    "ranking": 464,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "TACKLE",
-          "uses": 12761
-        },
-        {
-          "moveId": "INFESTATION",
-          "uses": 40630
-        },
-        {
-          "moveId": "ACID",
-          "uses": 22744
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "THUNDERBOLT",
-          "uses": 14433
-        },
-        {
-          "moveId": "SLUDGE_BOMB",
-          "uses": 19104
-        },
-        {
-          "moveId": "SHADOW_BALL",
-          "uses": 17742
-        },
-        {
-          "moveId": "RETURN",
-          "uses": 8608
-        },
-        {
-          "moveId": "DARK_PULSE",
-          "uses": 16400
-        }
-      ]
-    },
-    "moveset": [
-      "INFESTATION",
-      "SLUDGE_BOMB",
-      "SHADOW_BALL"
     ]
   },
   "weezing_galarian": {
@@ -2839,56 +3191,56 @@
     "tags": []
   },
   "rhydon": {
-    "legal": true,
+    "legal": false,
     "dex": 112,
     "types": [
       "ground",
       "rock"
     ],
-    "tags": [],
-    "ranking": 535,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "ROCK_SMASH",
-          "uses": 19238
-        },
-        {
-          "moveId": "MUD_SLAP",
-          "uses": 56962
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "SURF",
-          "uses": 20280
-        },
-        {
-          "moveId": "STONE_EDGE",
-          "uses": 24192
-        },
-        {
-          "moveId": "MEGAHORN",
-          "uses": 14554
-        },
-        {
-          "moveId": "EARTHQUAKE",
-          "uses": 17248
-        }
-      ]
-    },
-    "moveset": [
-      "MUD_SLAP",
-      "STONE_EDGE",
-      "SURF"
-    ]
+    "tags": []
   },
   "chansey": {
-    "legal": false,
+    "legal": true,
     "dex": 113,
     "types": [
       "normal",
       "none"
+    ],
+    "ranking": 620,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 49432
+        },
+        {
+          "moveId": "POUND",
+          "uses": 65968
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "PSYCHIC",
+          "uses": 43788
+        },
+        {
+          "moveId": "PSYBEAM",
+          "uses": 9014
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 33663
+        },
+        {
+          "moveId": "DAZZLING_GLEAM",
+          "uses": 28948
+        }
+      ]
+    },
+    "moveset": [
+      "POUND",
+      "PSYCHIC",
+      "HYPER_BEAM"
     ]
   },
   "tangela": {
@@ -2900,7 +3252,7 @@
     ]
   },
   "kangaskhan": {
-    "legal": false,
+    "legal": true,
     "dex": 115,
     "types": [
       "normal",
@@ -2908,6 +3260,50 @@
     ],
     "tags": [
       "regional"
+    ],
+    "ranking": 531,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "MUD_SLAP",
+          "uses": 84337
+        },
+        {
+          "moveId": "LOW_KICK",
+          "uses": 31063
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "STOMP",
+          "uses": 28314
+        },
+        {
+          "moveId": "POWER_UP_PUNCH",
+          "uses": 4721
+        },
+        {
+          "moveId": "OUTRAGE",
+          "uses": 16014
+        },
+        {
+          "moveId": "EARTHQUAKE",
+          "uses": 18412
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 24922
+        },
+        {
+          "moveId": "BRICK_BREAK",
+          "uses": 23043
+        }
+      ]
+    },
+    "moveset": [
+      "MUD_SLAP",
+      "STOMP",
+      "CRUNCH"
     ]
   },
   "horsea": {
@@ -3011,7 +3407,7 @@
     ]
   },
   "electabuzz": {
-    "legal": false,
+    "legal": true,
     "dex": 125,
     "types": [
       "electric",
@@ -3019,10 +3415,46 @@
     ],
     "tags": [
       "shadoweligible"
+    ],
+    "ranking": 559,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "THUNDER_SHOCK",
+          "uses": 90537
+        },
+        {
+          "moveId": "LOW_KICK",
+          "uses": 24863
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDER_PUNCH",
+          "uses": 53596
+        },
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 19970
+        },
+        {
+          "moveId": "THUNDER",
+          "uses": 17254
+        },
+        {
+          "moveId": "RETURN",
+          "uses": 24599
+        }
+      ]
+    },
+    "moveset": [
+      "THUNDER_SHOCK",
+      "THUNDER_PUNCH",
+      "RETURN"
     ]
   },
   "electabuzz_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 125,
     "types": [
       "electric",
@@ -3030,6 +3462,42 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 593,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "THUNDER_SHOCK",
+          "uses": 89859
+        },
+        {
+          "moveId": "LOW_KICK",
+          "uses": 25541
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDER_PUNCH",
+          "uses": 67951
+        },
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 25352
+        },
+        {
+          "moveId": "THUNDER",
+          "uses": 21904
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 113
+        }
+      ]
+    },
+    "moveset": [
+      "THUNDER_SHOCK",
+      "THUNDER_PUNCH",
+      "THUNDERBOLT"
     ]
   },
   "magmar": {
@@ -3077,7 +3545,7 @@
     ]
   },
   "tauros": {
-    "legal": false,
+    "legal": true,
     "dex": 128,
     "types": [
       "normal",
@@ -3085,6 +3553,38 @@
     ],
     "tags": [
       "regional"
+    ],
+    "ranking": 380,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 36590
+        },
+        {
+          "moveId": "TACKLE",
+          "uses": 78810
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "IRON_HEAD",
+          "uses": 27833
+        },
+        {
+          "moveId": "HORN_ATTACK",
+          "uses": 50365
+        },
+        {
+          "moveId": "EARTHQUAKE",
+          "uses": 37246
+        }
+      ]
+    },
+    "moveset": [
+      "TACKLE",
+      "HORN_ATTACK",
+      "EARTHQUAKE"
     ]
   },
   "magikarp": {
@@ -3166,7 +3666,7 @@
     ]
   },
   "ditto": {
-    "legal": false,
+    "legal": true,
     "dex": 132,
     "types": [
       "normal",
@@ -3174,11 +3674,47 @@
     ]
   },
   "eevee": {
-    "legal": false,
+    "legal": true,
     "dex": 133,
     "types": [
       "normal",
       "none"
+    ],
+    "ranking": 459,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TACKLE",
+          "uses": 35442
+        },
+        {
+          "moveId": "QUICK_ATTACK",
+          "uses": 79958
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SWIFT",
+          "uses": 6577
+        },
+        {
+          "moveId": "LAST_RESORT",
+          "uses": 14955
+        },
+        {
+          "moveId": "DIG",
+          "uses": 12201
+        },
+        {
+          "moveId": "BODY_SLAM",
+          "uses": 81531
+        }
+      ]
+    },
+    "moveset": [
+      "QUICK_ATTACK",
+      "BODY_SLAM",
+      "LAST_RESORT"
     ]
   },
   "vaporeon": {
@@ -3190,11 +3726,47 @@
     ]
   },
   "jolteon": {
-    "legal": false,
+    "legal": true,
     "dex": 135,
     "types": [
       "electric",
       "none"
+    ],
+    "ranking": 528,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "VOLT_SWITCH",
+          "uses": 64946
+        },
+        {
+          "moveId": "THUNDER_SHOCK",
+          "uses": 50454
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 20366
+        },
+        {
+          "moveId": "THUNDER",
+          "uses": 17608
+        },
+        {
+          "moveId": "LAST_RESORT",
+          "uses": 30271
+        },
+        {
+          "moveId": "DISCHARGE",
+          "uses": 47362
+        }
+      ]
+    },
+    "moveset": [
+      "VOLT_SWITCH",
+      "DISCHARGE",
+      "LAST_RESORT"
     ]
   },
   "flareon": {
@@ -3206,7 +3778,7 @@
     ]
   },
   "porygon": {
-    "legal": false,
+    "legal": true,
     "dex": 137,
     "types": [
       "normal",
@@ -3214,10 +3786,130 @@
     ],
     "tags": [
       "shadoweligible"
+    ],
+    "ranking": 481,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 1942
+        },
+        {
+          "moveId": "TACKLE",
+          "uses": 4419
+        },
+        {
+          "moveId": "QUICK_ATTACK",
+          "uses": 9912
+        },
+        {
+          "moveId": "HIDDEN_POWER_WATER",
+          "uses": 5950
+        },
+        {
+          "moveId": "HIDDEN_POWER_STEEL",
+          "uses": 5088
+        },
+        {
+          "moveId": "HIDDEN_POWER_ROCK",
+          "uses": 6220
+        },
+        {
+          "moveId": "HIDDEN_POWER_PSYCHIC",
+          "uses": 5174
+        },
+        {
+          "moveId": "HIDDEN_POWER_POISON",
+          "uses": 4942
+        },
+        {
+          "moveId": "HIDDEN_POWER_ICE",
+          "uses": 6246
+        },
+        {
+          "moveId": "HIDDEN_POWER_GROUND",
+          "uses": 6492
+        },
+        {
+          "moveId": "HIDDEN_POWER_GRASS",
+          "uses": 6040
+        },
+        {
+          "moveId": "HIDDEN_POWER_GHOST",
+          "uses": 5817
+        },
+        {
+          "moveId": "HIDDEN_POWER_FLYING",
+          "uses": 6070
+        },
+        {
+          "moveId": "HIDDEN_POWER_FIRE",
+          "uses": 6486
+        },
+        {
+          "moveId": "HIDDEN_POWER_FIGHTING",
+          "uses": 6232
+        },
+        {
+          "moveId": "HIDDEN_POWER_ELECTRIC",
+          "uses": 5951
+        },
+        {
+          "moveId": "HIDDEN_POWER_DRAGON",
+          "uses": 5008
+        },
+        {
+          "moveId": "HIDDEN_POWER_DARK",
+          "uses": 5785
+        },
+        {
+          "moveId": "HIDDEN_POWER_BUG",
+          "uses": 5306
+        },
+        {
+          "moveId": "CHARGE_BEAM",
+          "uses": 6835
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ZAP_CANNON",
+          "uses": 8672
+        },
+        {
+          "moveId": "SOLAR_BEAM",
+          "uses": 16219
+        },
+        {
+          "moveId": "SIGNAL_BEAM",
+          "uses": 20646
+        },
+        {
+          "moveId": "RETURN",
+          "uses": 21570
+        },
+        {
+          "moveId": "PSYBEAM",
+          "uses": 10603
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 8342
+        },
+        {
+          "moveId": "DISCHARGE",
+          "uses": 29298
+        }
+      ]
+    },
+    "moveset": [
+      "QUICK_ATTACK",
+      "DISCHARGE",
+      "HYPER_BEAM"
     ]
   },
   "porygon_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 137,
     "types": [
       "normal",
@@ -3225,6 +3917,122 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 351,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 2077
+        },
+        {
+          "moveId": "TACKLE",
+          "uses": 4300
+        },
+        {
+          "moveId": "HIDDEN_POWER_WATER",
+          "uses": 6470
+        },
+        {
+          "moveId": "HIDDEN_POWER_STEEL",
+          "uses": 5497
+        },
+        {
+          "moveId": "HIDDEN_POWER_ROCK",
+          "uses": 6709
+        },
+        {
+          "moveId": "HIDDEN_POWER_PSYCHIC",
+          "uses": 5754
+        },
+        {
+          "moveId": "HIDDEN_POWER_POISON",
+          "uses": 5415
+        },
+        {
+          "moveId": "HIDDEN_POWER_ICE",
+          "uses": 6751
+        },
+        {
+          "moveId": "HIDDEN_POWER_GROUND",
+          "uses": 7064
+        },
+        {
+          "moveId": "HIDDEN_POWER_GRASS",
+          "uses": 6908
+        },
+        {
+          "moveId": "HIDDEN_POWER_GHOST",
+          "uses": 6293
+        },
+        {
+          "moveId": "HIDDEN_POWER_FLYING",
+          "uses": 6572
+        },
+        {
+          "moveId": "HIDDEN_POWER_FIRE",
+          "uses": 7017
+        },
+        {
+          "moveId": "HIDDEN_POWER_FIGHTING",
+          "uses": 6721
+        },
+        {
+          "moveId": "HIDDEN_POWER_ELECTRIC",
+          "uses": 6441
+        },
+        {
+          "moveId": "HIDDEN_POWER_DRAGON",
+          "uses": 5409
+        },
+        {
+          "moveId": "HIDDEN_POWER_DARK",
+          "uses": 6149
+        },
+        {
+          "moveId": "HIDDEN_POWER_BUG",
+          "uses": 5893
+        },
+        {
+          "moveId": "CHARGE_BEAM",
+          "uses": 7801
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ZAP_CANNON",
+          "uses": 9889
+        },
+        {
+          "moveId": "SOLAR_BEAM",
+          "uses": 18069
+        },
+        {
+          "moveId": "SIGNAL_BEAM",
+          "uses": 23452
+        },
+        {
+          "moveId": "PSYBEAM",
+          "uses": 12003
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 19357
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 0
+        },
+        {
+          "moveId": "DISCHARGE",
+          "uses": 32520
+        }
+      ]
+    },
+    "moveset": [
+      "CHARGE_BEAM",
+      "DISCHARGE",
+      "SIGNAL_BEAM"
     ]
   },
   "omanyte": {
@@ -3288,7 +4096,7 @@
     ]
   },
   "aerodactyl": {
-    "legal": true,
+    "legal": false,
     "dex": 142,
     "types": [
       "rock",
@@ -3296,50 +4104,6 @@
     ],
     "tags": [
       "shadoweligible"
-    ],
-    "ranking": 546,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "STEEL_WING",
-          "uses": 18660
-        },
-        {
-          "moveId": "ROCK_THROW",
-          "uses": 38865
-        },
-        {
-          "moveId": "BITE",
-          "uses": 18742
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "ROCK_SLIDE",
-          "uses": 32973
-        },
-        {
-          "moveId": "IRON_HEAD",
-          "uses": 10188
-        },
-        {
-          "moveId": "HYPER_BEAM",
-          "uses": 7036
-        },
-        {
-          "moveId": "EARTH_POWER",
-          "uses": 18559
-        },
-        {
-          "moveId": "ANCIENT_POWER",
-          "uses": 7617
-        }
-      ]
-    },
-    "moveset": [
-      "ROCK_THROW",
-      "ROCK_SLIDE",
-      "EARTH_POWER"
     ]
   },
   "aerodactyl_shadow": {
@@ -3354,7 +4118,7 @@
     ]
   },
   "snorlax": {
-    "legal": false,
+    "legal": true,
     "dex": 143,
     "types": [
       "normal",
@@ -3362,10 +4126,62 @@
     ],
     "tags": [
       "shadoweligible"
+    ],
+    "ranking": 667,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 16041
+        },
+        {
+          "moveId": "YAWN",
+          "uses": 3940
+        },
+        {
+          "moveId": "LICK",
+          "uses": 95506
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SUPER_POWER",
+          "uses": 27355
+        },
+        {
+          "moveId": "SKULL_BASH",
+          "uses": 6788
+        },
+        {
+          "moveId": "OUTRAGE",
+          "uses": 12151
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 4417
+        },
+        {
+          "moveId": "HEAVY_SLAM",
+          "uses": 10512
+        },
+        {
+          "moveId": "EARTHQUAKE",
+          "uses": 14443
+        },
+        {
+          "moveId": "BODY_SLAM",
+          "uses": 39580
+        }
+      ]
+    },
+    "moveset": [
+      "LICK",
+      "BODY_SLAM",
+      "SUPER_POWER"
     ]
   },
   "snorlax_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 143,
     "types": [
       "normal",
@@ -3373,6 +4189,62 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 662,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 15605
+        },
+        {
+          "moveId": "YAWN",
+          "uses": 3220
+        },
+        {
+          "moveId": "LICK",
+          "uses": 96700
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SUPER_POWER",
+          "uses": 27436
+        },
+        {
+          "moveId": "SKULL_BASH",
+          "uses": 6795
+        },
+        {
+          "moveId": "OUTRAGE",
+          "uses": 12172
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 4415
+        },
+        {
+          "moveId": "HEAVY_SLAM",
+          "uses": 10568
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 0
+        },
+        {
+          "moveId": "EARTHQUAKE",
+          "uses": 14412
+        },
+        {
+          "moveId": "BODY_SLAM",
+          "uses": 39557
+        }
+      ]
+    },
+    "moveset": [
+      "LICK",
+      "BODY_SLAM",
+      "SUPER_POWER"
     ]
   },
   "articuno": {
@@ -3660,7 +4532,7 @@
     ]
   },
   "sentret": {
-    "legal": false,
+    "legal": true,
     "dex": 161,
     "types": [
       "normal",
@@ -3668,15 +4540,47 @@
     ]
   },
   "furret": {
-    "legal": false,
+    "legal": true,
     "dex": 162,
     "types": [
       "normal",
       "none"
+    ],
+    "ranking": 510,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SUCKER_PUNCH",
+          "uses": 55028
+        },
+        {
+          "moveId": "QUICK_ATTACK",
+          "uses": 60372
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 39906
+        },
+        {
+          "moveId": "DIG",
+          "uses": 17572
+        },
+        {
+          "moveId": "BRICK_BREAK",
+          "uses": 57918
+        }
+      ]
+    },
+    "moveset": [
+      "QUICK_ATTACK",
+      "BRICK_BREAK",
+      "HYPER_BEAM"
     ]
   },
   "hoothoot": {
-    "legal": false,
+    "legal": true,
     "dex": 163,
     "types": [
       "normal",
@@ -3684,11 +4588,43 @@
     ]
   },
   "noctowl": {
-    "legal": false,
+    "legal": true,
     "dex": 164,
     "types": [
       "normal",
       "flying"
+    ],
+    "ranking": 629,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "WING_ATTACK",
+          "uses": 69266
+        },
+        {
+          "moveId": "EXTRASENSORY",
+          "uses": 46134
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SKY_ATTACK",
+          "uses": 70185
+        },
+        {
+          "moveId": "PSYCHIC",
+          "uses": 28622
+        },
+        {
+          "moveId": "NIGHT_SHADE",
+          "uses": 16608
+        }
+      ]
+    },
+    "moveset": [
+      "WING_ATTACK",
+      "SKY_ATTACK",
+      "PSYCHIC"
     ]
   },
   "ledyba": {
@@ -3724,7 +4660,7 @@
     ]
   },
   "crobat": {
-    "legal": true,
+    "legal": false,
     "dex": 169,
     "types": [
       "poison",
@@ -3732,38 +4668,6 @@
     ],
     "tags": [
       "shadoweligible"
-    ],
-    "ranking": 449,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "BITE",
-          "uses": 29922
-        },
-        {
-          "moveId": "AIR_SLASH",
-          "uses": 46278
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "SLUDGE_BOMB",
-          "uses": 29801
-        },
-        {
-          "moveId": "SHADOW_BALL",
-          "uses": 30708
-        },
-        {
-          "moveId": "AIR_CUTTER",
-          "uses": 15702
-        }
-      ]
-    },
-    "moveset": [
-      "AIR_SLASH",
-      "SLUDGE_BOMB",
-      "SHADOW_BALL"
     ]
   },
   "crobat_shadow": {
@@ -3778,23 +4682,91 @@
     ]
   },
   "chinchou": {
-    "legal": false,
+    "legal": true,
     "dex": 170,
     "types": [
       "water",
       "electric"
+    ],
+    "ranking": 586,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SPARK",
+          "uses": 59155
+        },
+        {
+          "moveId": "BUBBLE",
+          "uses": 56245
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "WATER_PULSE",
+          "uses": 27355
+        },
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 59815
+        },
+        {
+          "moveId": "BUBBLE_BEAM",
+          "uses": 28431
+        }
+      ]
+    },
+    "moveset": [
+      "SPARK",
+      "THUNDERBOLT",
+      "BUBBLE_BEAM"
     ]
   },
   "lanturn": {
-    "legal": false,
+    "legal": true,
     "dex": 171,
     "types": [
       "water",
       "electric"
+    ],
+    "ranking": 609,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "WATER_GUN",
+          "uses": 43984
+        },
+        {
+          "moveId": "SPARK",
+          "uses": 43168
+        },
+        {
+          "moveId": "CHARGE_BEAM",
+          "uses": 28238
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 52988
+        },
+        {
+          "moveId": "THUNDER",
+          "uses": 23103
+        },
+        {
+          "moveId": "HYDRO_PUMP",
+          "uses": 39287
+        }
+      ]
+    },
+    "moveset": [
+      "SPARK",
+      "THUNDERBOLT",
+      "HYDRO_PUMP"
     ]
   },
   "pichu": {
-    "legal": false,
+    "legal": true,
     "dex": 172,
     "types": [
       "electric",
@@ -3810,7 +4782,7 @@
     ]
   },
   "igglybuff": {
-    "legal": false,
+    "legal": true,
     "dex": 174,
     "types": [
       "normal",
@@ -3850,7 +4822,7 @@
     ]
   },
   "mareep": {
-    "legal": false,
+    "legal": true,
     "dex": 179,
     "types": [
       "electric",
@@ -3861,7 +4833,7 @@
     ]
   },
   "mareep_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 179,
     "types": [
       "electric",
@@ -3872,7 +4844,7 @@
     ]
   },
   "flaaffy": {
-    "legal": false,
+    "legal": true,
     "dex": 180,
     "types": [
       "electric",
@@ -3880,10 +4852,46 @@
     ],
     "tags": [
       "shadoweligible"
+    ],
+    "ranking": 433,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TACKLE",
+          "uses": 37101
+        },
+        {
+          "moveId": "CHARGE_BEAM",
+          "uses": 78299
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 21053
+        },
+        {
+          "moveId": "RETURN",
+          "uses": 24260
+        },
+        {
+          "moveId": "POWER_GEM",
+          "uses": 20758
+        },
+        {
+          "moveId": "DISCHARGE",
+          "uses": 49311
+        }
+      ]
+    },
+    "moveset": [
+      "CHARGE_BEAM",
+      "DISCHARGE",
+      "RETURN"
     ]
   },
   "flaaffy_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 180,
     "types": [
       "electric",
@@ -3891,10 +4899,46 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 400,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TACKLE",
+          "uses": 37661
+        },
+        {
+          "moveId": "CHARGE_BEAM",
+          "uses": 77739
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 26241
+        },
+        {
+          "moveId": "POWER_GEM",
+          "uses": 27303
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 49
+        },
+        {
+          "moveId": "DISCHARGE",
+          "uses": 61542
+        }
+      ]
+    },
+    "moveset": [
+      "CHARGE_BEAM",
+      "DISCHARGE",
+      "POWER_GEM"
     ]
   },
   "ampharos": {
-    "legal": false,
+    "legal": true,
     "dex": 181,
     "types": [
       "electric",
@@ -3902,10 +4946,54 @@
     ],
     "tags": [
       "shadoweligible"
+    ],
+    "ranking": 602,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "VOLT_SWITCH",
+          "uses": 78500
+        },
+        {
+          "moveId": "CHARGE_BEAM",
+          "uses": 36900
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ZAP_CANNON",
+          "uses": 9294
+        },
+        {
+          "moveId": "THUNDER_PUNCH",
+          "uses": 40450
+        },
+        {
+          "moveId": "THUNDER",
+          "uses": 13172
+        },
+        {
+          "moveId": "POWER_GEM",
+          "uses": 14832
+        },
+        {
+          "moveId": "FOCUS_BLAST",
+          "uses": 21544
+        },
+        {
+          "moveId": "DRAGON_PULSE",
+          "uses": 16092
+        }
+      ]
+    },
+    "moveset": [
+      "VOLT_SWITCH",
+      "THUNDER_PUNCH",
+      "FOCUS_BLAST"
     ]
   },
   "ampharos_mega": {
-    "legal": false,
+    "legal": true,
     "dex": 181,
     "types": [
       "electric",
@@ -3917,7 +5005,7 @@
     ]
   },
   "ampharos_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 181,
     "types": [
       "electric",
@@ -3925,6 +5013,54 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 597,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "VOLT_SWITCH",
+          "uses": 79959
+        },
+        {
+          "moveId": "CHARGE_BEAM",
+          "uses": 35441
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ZAP_CANNON",
+          "uses": 9295
+        },
+        {
+          "moveId": "THUNDER_PUNCH",
+          "uses": 40444
+        },
+        {
+          "moveId": "THUNDER",
+          "uses": 13188
+        },
+        {
+          "moveId": "POWER_GEM",
+          "uses": 14808
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 0
+        },
+        {
+          "moveId": "FOCUS_BLAST",
+          "uses": 21561
+        },
+        {
+          "moveId": "DRAGON_PULSE",
+          "uses": 16048
+        }
+      ]
+    },
+    "moveset": [
+      "VOLT_SWITCH",
+      "THUNDER_PUNCH",
+      "FOCUS_BLAST"
     ]
   },
   "bellossom": {
@@ -4062,7 +5198,7 @@
     ]
   },
   "aipom": {
-    "legal": false,
+    "legal": true,
     "dex": 190,
     "types": [
       "normal",
@@ -4070,10 +5206,42 @@
     ],
     "tags": [
       "shadoweligible"
+    ],
+    "ranking": 510,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SCRATCH",
+          "uses": 75072
+        },
+        {
+          "moveId": "ASTONISH",
+          "uses": 40328
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SWIFT",
+          "uses": 26828
+        },
+        {
+          "moveId": "LOW_SWEEP",
+          "uses": 39760
+        },
+        {
+          "moveId": "AERIAL_ACE",
+          "uses": 48885
+        }
+      ]
+    },
+    "moveset": [
+      "SCRATCH",
+      "AERIAL_ACE",
+      "LOW_SWEEP"
     ]
   },
   "aipom_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 190,
     "types": [
       "normal",
@@ -4081,6 +5249,42 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 557,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SCRATCH",
+          "uses": 75219
+        },
+        {
+          "moveId": "ASTONISH",
+          "uses": 40181
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SWIFT",
+          "uses": 26827
+        },
+        {
+          "moveId": "LOW_SWEEP",
+          "uses": 39718
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 0
+        },
+        {
+          "moveId": "AERIAL_ACE",
+          "uses": 48722
+        }
+      ]
+    },
+    "moveset": [
+      "SCRATCH",
+      "AERIAL_ACE",
+      "LOW_SWEEP"
     ]
   },
   "sunkern": {
@@ -4152,47 +5356,11 @@
     ]
   },
   "espeon": {
-    "legal": true,
+    "legal": false,
     "dex": 196,
     "types": [
       "psychic",
       "none"
-    ],
-    "ranking": 444,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "ZEN_HEADBUTT",
-          "uses": 14521
-        },
-        {
-          "moveId": "CONFUSION",
-          "uses": 61679
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "PSYCHIC",
-          "uses": 33208
-        },
-        {
-          "moveId": "PSYBEAM",
-          "uses": 6842
-        },
-        {
-          "moveId": "LAST_RESORT",
-          "uses": 22033
-        },
-        {
-          "moveId": "FUTURE_SIGHT",
-          "uses": 14444
-        }
-      ]
-    },
-    "moveset": [
-      "CONFUSION",
-      "PSYCHIC",
-      "LAST_RESORT"
     ]
   },
   "umbreon": {
@@ -4235,7 +5403,7 @@
     ]
   },
   "misdreavus": {
-    "legal": true,
+    "legal": false,
     "dex": 200,
     "types": [
       "ghost",
@@ -4243,42 +5411,6 @@
     ],
     "tags": [
       "shadoweligible"
-    ],
-    "ranking": 494,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "HEX",
-          "uses": 53697
-        },
-        {
-          "moveId": "ASTONISH",
-          "uses": 22503
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "SHADOW_SNEAK",
-          "uses": 12932
-        },
-        {
-          "moveId": "RETURN",
-          "uses": 15765
-        },
-        {
-          "moveId": "OMINOUS_WIND",
-          "uses": 21525
-        },
-        {
-          "moveId": "DARK_PULSE",
-          "uses": 26043
-        }
-      ]
-    },
-    "moveset": [
-      "HEX",
-      "DARK_PULSE",
-      "OMINOUS_WIND"
     ]
   },
   "misdreavus_shadow": {
@@ -4323,11 +5455,43 @@
     ]
   },
   "girafarig": {
-    "legal": false,
+    "legal": true,
     "dex": 203,
     "types": [
       "normal",
       "psychic"
+    ],
+    "ranking": 457,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TACKLE",
+          "uses": 31883
+        },
+        {
+          "moveId": "CONFUSION",
+          "uses": 83517
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 46918
+        },
+        {
+          "moveId": "PSYCHIC",
+          "uses": 56367
+        },
+        {
+          "moveId": "MIRROR_COAT",
+          "uses": 11838
+        }
+      ]
+    },
+    "moveset": [
+      "CONFUSION",
+      "PSYCHIC",
+      "THUNDERBOLT"
     ]
   },
   "pineco": {
@@ -4362,53 +5526,53 @@
     "tags": [
       "shadoweligible"
     ],
-    "ranking": 612,
+    "ranking": 648,
     "moves": {
       "fastMoves": [
         {
           "moveId": "STRUGGLE_BUG",
-          "uses": 28975
+          "uses": 43423
         },
         {
           "moveId": "BUG_BITE",
-          "uses": 47225
+          "uses": 71977
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SAND_TOMB",
-          "uses": 7887
+          "uses": 11966
         },
         {
           "moveId": "ROCK_TOMB",
-          "uses": 9611
+          "uses": 11850
         },
         {
           "moveId": "RETURN",
-          "uses": 9874
+          "uses": 14817
         },
         {
           "moveId": "MIRROR_SHOT",
-          "uses": 18067
+          "uses": 28940
         },
         {
           "moveId": "HEAVY_SLAM",
-          "uses": 14813
+          "uses": 23675
         },
         {
           "moveId": "EARTHQUAKE",
-          "uses": 15972
+          "uses": 24203
         }
       ]
     },
     "moveset": [
       "BUG_BITE",
-      "MIRROR_SHOT",
-      "EARTHQUAKE"
+      "EARTHQUAKE",
+      "MIRROR_SHOT"
     ]
   },
   "forretress_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 205,
     "types": [
       "bug",
@@ -4416,18 +5580,94 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 635,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "STRUGGLE_BUG",
+          "uses": 45243
+        },
+        {
+          "moveId": "BUG_BITE",
+          "uses": 70157
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SAND_TOMB",
+          "uses": 13514
+        },
+        {
+          "moveId": "ROCK_TOMB",
+          "uses": 13745
+        },
+        {
+          "moveId": "MIRROR_SHOT",
+          "uses": 33204
+        },
+        {
+          "moveId": "HEAVY_SLAM",
+          "uses": 27219
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 0
+        },
+        {
+          "moveId": "EARTHQUAKE",
+          "uses": 27415
+        }
+      ]
+    },
+    "moveset": [
+      "BUG_BITE",
+      "EARTHQUAKE",
+      "MIRROR_SHOT"
     ]
   },
   "dunsparce": {
-    "legal": false,
+    "legal": true,
     "dex": 206,
     "types": [
       "normal",
       "none"
+    ],
+    "ranking": 503,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "BITE",
+          "uses": 68828
+        },
+        {
+          "moveId": "ASTONISH",
+          "uses": 46572
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ROCK_SLIDE",
+          "uses": 52660
+        },
+        {
+          "moveId": "DRILL_RUN",
+          "uses": 58181
+        },
+        {
+          "moveId": "DIG",
+          "uses": 4459
+        }
+      ]
+    },
+    "moveset": [
+      "BITE",
+      "DRILL_RUN",
+      "ROCK_SLIDE"
     ]
   },
   "gligar": {
-    "legal": true,
+    "legal": false,
     "dex": 207,
     "types": [
       "ground",
@@ -4435,42 +5675,6 @@
     ],
     "tags": [
       "shadoweligible"
-    ],
-    "ranking": 626,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "WING_ATTACK",
-          "uses": 38168
-        },
-        {
-          "moveId": "FURY_CUTTER",
-          "uses": 38032
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "RETURN",
-          "uses": 10219
-        },
-        {
-          "moveId": "NIGHT_SLASH",
-          "uses": 35068
-        },
-        {
-          "moveId": "DIG",
-          "uses": 8608
-        },
-        {
-          "moveId": "AERIAL_ACE",
-          "uses": 22339
-        }
-      ]
-    },
-    "moveset": [
-      "WING_ATTACK",
-      "NIGHT_SLASH",
-      "AERIAL_ACE"
     ]
   },
   "gligar_shadow": {
@@ -4491,34 +5695,34 @@
       "steel",
       "ground"
     ],
-    "ranking": 619,
+    "ranking": 649,
     "moves": {
       "fastMoves": [
         {
           "moveId": "THUNDER_FANG",
-          "uses": 28291
+          "uses": 43445
         },
         {
           "moveId": "IRON_TAIL",
-          "uses": 11251
+          "uses": 18811
         },
         {
           "moveId": "DRAGON_TAIL",
-          "uses": 36616
+          "uses": 53145
         }
       ],
       "chargedMoves": [
         {
           "moveId": "HEAVY_SLAM",
-          "uses": 20917
+          "uses": 33744
         },
         {
           "moveId": "EARTHQUAKE",
-          "uses": 27579
+          "uses": 41898
         },
         {
           "moveId": "CRUNCH",
-          "uses": 27769
+          "uses": 39800
         }
       ]
     },
@@ -4537,99 +5741,23 @@
     ]
   },
   "granbull": {
-    "legal": true,
+    "legal": false,
     "dex": 210,
     "types": [
       "fairy",
       "none"
-    ],
-    "ranking": 629,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "SNARL",
-          "uses": 35834
-        },
-        {
-          "moveId": "CHARM",
-          "uses": 25909
-        },
-        {
-          "moveId": "BITE",
-          "uses": 14576
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "PLAY_ROUGH",
-          "uses": 15571
-        },
-        {
-          "moveId": "CRUNCH",
-          "uses": 23546
-        },
-        {
-          "moveId": "CLOSE_COMBAT",
-          "uses": 37168
-        }
-      ]
-    },
-    "moveset": [
-      "CHARM",
-      "CLOSE_COMBAT",
-      "CRUNCH"
     ]
   },
   "qwilfish": {
-    "legal": true,
+    "legal": false,
     "dex": 211,
     "types": [
       "water",
       "poison"
-    ],
-    "ranking": 561,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "WATER_GUN",
-          "uses": 40171
-        },
-        {
-          "moveId": "POISON_STING",
-          "uses": 36029
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "SLUDGE_WAVE",
-          "uses": 13127
-        },
-        {
-          "moveId": "ICE_BEAM",
-          "uses": 15688
-        },
-        {
-          "moveId": "FELL_STINGER",
-          "uses": 7039
-        },
-        {
-          "moveId": "AQUA_TAIL",
-          "uses": 37435
-        },
-        {
-          "moveId": "ACID_SPRAY",
-          "uses": 2902
-        }
-      ]
-    },
-    "moveset": [
-      "WATER_GUN",
-      "AQUA_TAIL",
-      "ICE_BEAM"
     ]
   },
   "scizor": {
-    "legal": false,
+    "legal": true,
     "dex": 212,
     "types": [
       "bug",
@@ -4637,10 +5765,42 @@
     ],
     "tags": [
       "shadoweligible"
+    ],
+    "ranking": 611,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "FURY_CUTTER",
+          "uses": 58631
+        },
+        {
+          "moveId": "BULLET_PUNCH",
+          "uses": 56769
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "X_SCISSOR",
+          "uses": 41294
+        },
+        {
+          "moveId": "NIGHT_SLASH",
+          "uses": 48131
+        },
+        {
+          "moveId": "IRON_HEAD",
+          "uses": 25884
+        }
+      ]
+    },
+    "moveset": [
+      "BULLET_PUNCH",
+      "X_SCISSOR",
+      "IRON_HEAD"
     ]
   },
   "scizor_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 212,
     "types": [
       "bug",
@@ -4648,6 +5808,42 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 632,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "FURY_CUTTER",
+          "uses": 58754
+        },
+        {
+          "moveId": "BULLET_PUNCH",
+          "uses": 56646
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "X_SCISSOR",
+          "uses": 41233
+        },
+        {
+          "moveId": "NIGHT_SLASH",
+          "uses": 48147
+        },
+        {
+          "moveId": "IRON_HEAD",
+          "uses": 25929
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 0
+        }
+      ]
+    },
+    "moveset": [
+      "BULLET_PUNCH",
+      "NIGHT_SLASH",
+      "IRON_HEAD"
     ]
   },
   "shuckle": {
@@ -4706,7 +5902,7 @@
     ]
   },
   "teddiursa": {
-    "legal": false,
+    "legal": true,
     "dex": 216,
     "types": [
       "normal",
@@ -4714,10 +5910,46 @@
     ],
     "tags": [
       "shadoweligible"
+    ],
+    "ranking": 497,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SCRATCH",
+          "uses": 49187
+        },
+        {
+          "moveId": "LICK",
+          "uses": 66213
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "RETURN",
+          "uses": 21916
+        },
+        {
+          "moveId": "PLAY_ROUGH",
+          "uses": 16969
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 33287
+        },
+        {
+          "moveId": "CROSS_CHOP",
+          "uses": 43189
+        }
+      ]
+    },
+    "moveset": [
+      "LICK",
+      "CROSS_CHOP",
+      "CRUNCH"
     ]
   },
   "teddiursa_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 216,
     "types": [
       "normal",
@@ -4725,10 +5957,46 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 494,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SCRATCH",
+          "uses": 48026
+        },
+        {
+          "moveId": "LICK",
+          "uses": 67374
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "PLAY_ROUGH",
+          "uses": 21516
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 2
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 41422
+        },
+        {
+          "moveId": "CROSS_CHOP",
+          "uses": 52157
+        }
+      ]
+    },
+    "moveset": [
+      "LICK",
+      "CROSS_CHOP",
+      "CRUNCH"
     ]
   },
   "ursaring": {
-    "legal": false,
+    "legal": true,
     "dex": 217,
     "types": [
       "normal",
@@ -4736,10 +6004,46 @@
     ],
     "tags": [
       "shadoweligible"
+    ],
+    "ranking": 532,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SHADOW_CLAW",
+          "uses": 49762
+        },
+        {
+          "moveId": "METAL_CLAW",
+          "uses": 17679
+        },
+        {
+          "moveId": "COUNTER",
+          "uses": 47869
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "PLAY_ROUGH",
+          "uses": 22848
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 23076
+        },
+        {
+          "moveId": "CLOSE_COMBAT",
+          "uses": 69255
+        }
+      ]
+    },
+    "moveset": [
+      "SHADOW_CLAW",
+      "CLOSE_COMBAT",
+      "HYPER_BEAM"
     ]
   },
   "ursaring_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 217,
     "types": [
       "normal",
@@ -4747,6 +6051,46 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 501,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SHADOW_CLAW",
+          "uses": 50034
+        },
+        {
+          "moveId": "METAL_CLAW",
+          "uses": 16910
+        },
+        {
+          "moveId": "COUNTER",
+          "uses": 48478
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "PLAY_ROUGH",
+          "uses": 22732
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 23062
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 0
+        },
+        {
+          "moveId": "CLOSE_COMBAT",
+          "uses": 69230
+        }
+      ]
+    },
+    "moveset": [
+      "SHADOW_CLAW",
+      "CLOSE_COMBAT",
+      "HYPER_BEAM"
     ]
   },
   "slugma": {
@@ -4859,55 +6203,15 @@
     ]
   },
   "mantine": {
-    "legal": true,
+    "legal": false,
     "dex": 226,
     "types": [
       "water",
       "flying"
-    ],
-    "ranking": 647,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "WING_ATTACK",
-          "uses": 26648
-        },
-        {
-          "moveId": "BULLET_SEED",
-          "uses": 23064
-        },
-        {
-          "moveId": "BUBBLE",
-          "uses": 26488
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "WATER_PULSE",
-          "uses": 13448
-        },
-        {
-          "moveId": "ICE_BEAM",
-          "uses": 22223
-        },
-        {
-          "moveId": "BUBBLE_BEAM",
-          "uses": 14045
-        },
-        {
-          "moveId": "AERIAL_ACE",
-          "uses": 26539
-        }
-      ]
-    },
-    "moveset": [
-      "BUBBLE",
-      "BUBBLE_BEAM",
-      "ICE_BEAM"
     ]
   },
   "skarmory": {
-    "legal": false,
+    "legal": true,
     "dex": 227,
     "types": [
       "steel",
@@ -4915,10 +6219,46 @@
     ],
     "tags": [
       "shadoweligible"
+    ],
+    "ranking": 666,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "STEEL_WING",
+          "uses": 46965
+        },
+        {
+          "moveId": "AIR_SLASH",
+          "uses": 68435
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SKY_ATTACK",
+          "uses": 38636
+        },
+        {
+          "moveId": "RETURN",
+          "uses": 11261
+        },
+        {
+          "moveId": "FLASH_CANNON",
+          "uses": 13762
+        },
+        {
+          "moveId": "BRAVE_BIRD",
+          "uses": 51593
+        }
+      ]
+    },
+    "moveset": [
+      "AIR_SLASH",
+      "BRAVE_BIRD",
+      "SKY_ATTACK"
     ]
   },
   "skarmory_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 227,
     "types": [
       "steel",
@@ -4926,6 +6266,42 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 649,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "STEEL_WING",
+          "uses": 45766
+        },
+        {
+          "moveId": "AIR_SLASH",
+          "uses": 69634
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SKY_ATTACK",
+          "uses": 42712
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 0
+        },
+        {
+          "moveId": "FLASH_CANNON",
+          "uses": 15419
+        },
+        {
+          "moveId": "BRAVE_BIRD",
+          "uses": 57303
+        }
+      ]
+    },
+    "moveset": [
+      "AIR_SLASH",
+      "BRAVE_BIRD",
+      "SKY_ATTACK"
     ]
   },
   "houndour": {
@@ -5001,66 +6377,126 @@
     ]
   },
   "donphan": {
-    "legal": true,
+    "legal": false,
     "dex": 232,
     "types": [
       "ground",
       "none"
+    ]
+  },
+  "porygon2": {
+    "legal": true,
+    "dex": 233,
+    "types": [
+      "normal",
+      "none"
     ],
-    "ranking": 481,
+    "tags": [
+      "shadoweligible"
+    ],
+    "ranking": 531,
     "moves": {
       "fastMoves": [
         {
-          "moveId": "TACKLE",
-          "uses": 7184
+          "moveId": "LOCK_ON",
+          "uses": 12790
         },
         {
-          "moveId": "MUD_SLAP",
-          "uses": 21532
+          "moveId": "HIDDEN_POWER_WATER",
+          "uses": 6190
         },
         {
-          "moveId": "COUNTER",
-          "uses": 30254
+          "moveId": "HIDDEN_POWER_STEEL",
+          "uses": 5291
         },
         {
-          "moveId": "CHARM",
-          "uses": 17283
+          "moveId": "HIDDEN_POWER_ROCK",
+          "uses": 6456
+        },
+        {
+          "moveId": "HIDDEN_POWER_PSYCHIC",
+          "uses": 5495
+        },
+        {
+          "moveId": "HIDDEN_POWER_POISON",
+          "uses": 5181
+        },
+        {
+          "moveId": "HIDDEN_POWER_ICE",
+          "uses": 6460
+        },
+        {
+          "moveId": "HIDDEN_POWER_GROUND",
+          "uses": 6790
+        },
+        {
+          "moveId": "HIDDEN_POWER_GRASS",
+          "uses": 6224
+        },
+        {
+          "moveId": "HIDDEN_POWER_GHOST",
+          "uses": 6006
+        },
+        {
+          "moveId": "HIDDEN_POWER_FLYING",
+          "uses": 6319
+        },
+        {
+          "moveId": "HIDDEN_POWER_FIRE",
+          "uses": 6822
+        },
+        {
+          "moveId": "HIDDEN_POWER_FIGHTING",
+          "uses": 6445
+        },
+        {
+          "moveId": "HIDDEN_POWER_ELECTRIC",
+          "uses": 6161
+        },
+        {
+          "moveId": "HIDDEN_POWER_DRAGON",
+          "uses": 5228
+        },
+        {
+          "moveId": "HIDDEN_POWER_DARK",
+          "uses": 5893
+        },
+        {
+          "moveId": "HIDDEN_POWER_BUG",
+          "uses": 5461
+        },
+        {
+          "moveId": "CHARGE_BEAM",
+          "uses": 6371
         }
       ],
       "chargedMoves": [
         {
-          "moveId": "PLAY_ROUGH",
-          "uses": 19925
+          "moveId": "ZAP_CANNON",
+          "uses": 23365
         },
         {
-          "moveId": "HEAVY_SLAM",
-          "uses": 20141
+          "moveId": "TRI_ATTACK",
+          "uses": 47211
         },
         {
-          "moveId": "EARTHQUAKE",
-          "uses": 36072
+          "moveId": "SOLAR_BEAM",
+          "uses": 22015
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 23110
         }
       ]
     },
     "moveset": [
-      "COUNTER",
-      "EARTHQUAKE",
-      "HEAVY_SLAM"
-    ]
-  },
-  "porygon2": {
-    "legal": false,
-    "dex": 233,
-    "types": [
-      "normal",
-      "none"
-    ],
-    "tags": [
-      "shadoweligible"
+      "LOCK_ON",
+      "TRI_ATTACK",
+      "ZAP_CANNON"
     ]
   },
   "porygon2_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 233,
     "types": [
       "normal",
@@ -5068,10 +6504,114 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 530,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "LOCK_ON",
+          "uses": 13792
+        },
+        {
+          "moveId": "HIDDEN_POWER_WATER",
+          "uses": 6040
+        },
+        {
+          "moveId": "HIDDEN_POWER_STEEL",
+          "uses": 5197
+        },
+        {
+          "moveId": "HIDDEN_POWER_ROCK",
+          "uses": 6312
+        },
+        {
+          "moveId": "HIDDEN_POWER_PSYCHIC",
+          "uses": 5421
+        },
+        {
+          "moveId": "HIDDEN_POWER_POISON",
+          "uses": 5091
+        },
+        {
+          "moveId": "HIDDEN_POWER_ICE",
+          "uses": 6358
+        },
+        {
+          "moveId": "HIDDEN_POWER_GROUND",
+          "uses": 6618
+        },
+        {
+          "moveId": "HIDDEN_POWER_GRASS",
+          "uses": 6086
+        },
+        {
+          "moveId": "HIDDEN_POWER_GHOST",
+          "uses": 5949
+        },
+        {
+          "moveId": "HIDDEN_POWER_FLYING",
+          "uses": 6210
+        },
+        {
+          "moveId": "HIDDEN_POWER_FIRE",
+          "uses": 6662
+        },
+        {
+          "moveId": "HIDDEN_POWER_FIGHTING",
+          "uses": 6337
+        },
+        {
+          "moveId": "HIDDEN_POWER_ELECTRIC",
+          "uses": 6035
+        },
+        {
+          "moveId": "HIDDEN_POWER_DRAGON",
+          "uses": 5133
+        },
+        {
+          "moveId": "HIDDEN_POWER_DARK",
+          "uses": 5888
+        },
+        {
+          "moveId": "HIDDEN_POWER_BUG",
+          "uses": 5532
+        },
+        {
+          "moveId": "CHARGE_BEAM",
+          "uses": 6443
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ZAP_CANNON",
+          "uses": 23369
+        },
+        {
+          "moveId": "TRI_ATTACK",
+          "uses": 47118
+        },
+        {
+          "moveId": "SOLAR_BEAM",
+          "uses": 22066
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 23125
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 0
+        }
+      ]
+    },
+    "moveset": [
+      "LOCK_ON",
+      "TRI_ATTACK",
+      "ZAP_CANNON"
     ]
   },
   "stantler": {
-    "legal": false,
+    "legal": true,
     "dex": 234,
     "types": [
       "normal",
@@ -5079,10 +6619,46 @@
     ],
     "tags": [
       "shadoweligible"
+    ],
+    "ranking": 361,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 32897
+        },
+        {
+          "moveId": "TACKLE",
+          "uses": 82503
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "WILD_CHARGE",
+          "uses": 49200
+        },
+        {
+          "moveId": "STOMP",
+          "uses": 27727
+        },
+        {
+          "moveId": "RETURN",
+          "uses": 16292
+        },
+        {
+          "moveId": "MEGAHORN",
+          "uses": 22205
+        }
+      ]
+    },
+    "moveset": [
+      "TACKLE",
+      "WILD_CHARGE",
+      "STOMP"
     ]
   },
   "stantler_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 234,
     "types": [
       "normal",
@@ -5090,10 +6666,46 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 394,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 33275
+        },
+        {
+          "moveId": "TACKLE",
+          "uses": 82125
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "WILD_CHARGE",
+          "uses": 55915
+        },
+        {
+          "moveId": "STOMP",
+          "uses": 33346
+        },
+        {
+          "moveId": "MEGAHORN",
+          "uses": 26023
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 0
+        }
+      ]
+    },
+    "moveset": [
+      "TACKLE",
+      "WILD_CHARGE",
+      "STOMP"
     ]
   },
   "smeargle": {
-    "legal": false,
+    "legal": true,
     "dex": 235,
     "types": [
       "normal",
@@ -5125,11 +6737,47 @@
     ]
   },
   "elekid": {
-    "legal": false,
+    "legal": true,
     "dex": 239,
     "types": [
       "electric",
       "none"
+    ],
+    "ranking": 492,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "THUNDER_SHOCK",
+          "uses": 91971
+        },
+        {
+          "moveId": "LOW_KICK",
+          "uses": 23429
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDER_PUNCH",
+          "uses": 43475
+        },
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 16024
+        },
+        {
+          "moveId": "DISCHARGE",
+          "uses": 18889
+        },
+        {
+          "moveId": "BRICK_BREAK",
+          "uses": 36949
+        }
+      ]
+    },
+    "moveset": [
+      "THUNDER_SHOCK",
+      "THUNDER_PUNCH",
+      "BRICK_BREAK"
     ]
   },
   "magby": {
@@ -5141,19 +6789,91 @@
     ]
   },
   "miltank": {
-    "legal": false,
+    "legal": true,
     "dex": 241,
     "types": [
       "normal",
       "none"
+    ],
+    "ranking": 471,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 32337
+        },
+        {
+          "moveId": "TACKLE",
+          "uses": 83063
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 20193
+        },
+        {
+          "moveId": "STOMP",
+          "uses": 13000
+        },
+        {
+          "moveId": "ICE_BEAM",
+          "uses": 20569
+        },
+        {
+          "moveId": "GYRO_BALL",
+          "uses": 9262
+        },
+        {
+          "moveId": "BODY_SLAM",
+          "uses": 52374
+        }
+      ]
+    },
+    "moveset": [
+      "TACKLE",
+      "BODY_SLAM",
+      "ICE_BEAM"
     ]
   },
   "blissey": {
-    "legal": false,
+    "legal": true,
     "dex": 242,
     "types": [
       "normal",
       "none"
+    ],
+    "ranking": 426,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 50391
+        },
+        {
+          "moveId": "POUND",
+          "uses": 65009
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "PSYCHIC",
+          "uses": 48094
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 36432
+        },
+        {
+          "moveId": "DAZZLING_GLEAM",
+          "uses": 31018
+        }
+      ]
+    },
+    "moveset": [
+      "POUND",
+      "PSYCHIC",
+      "HYPER_BEAM"
     ]
   },
   "raikou": {
@@ -5473,55 +7193,15 @@
     ]
   },
   "mightyena": {
-    "legal": true,
+    "legal": false,
     "dex": 262,
     "types": [
       "dark",
       "none"
-    ],
-    "ranking": 505,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "THUNDER_FANG",
-          "uses": 19346
-        },
-        {
-          "moveId": "ICE_FANG",
-          "uses": 19991
-        },
-        {
-          "moveId": "FIRE_FANG",
-          "uses": 18318
-        },
-        {
-          "moveId": "BITE",
-          "uses": 18467
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "POISON_FANG",
-          "uses": 20884
-        },
-        {
-          "moveId": "PLAY_ROUGH",
-          "uses": 14687
-        },
-        {
-          "moveId": "CRUNCH",
-          "uses": 40527
-        }
-      ]
-    },
-    "moveset": [
-      "THUNDER_FANG",
-      "CRUNCH",
-      "POISON_FANG"
     ]
   },
   "zigzagoon": {
-    "legal": false,
+    "legal": true,
     "dex": 263,
     "types": [
       "normal",
@@ -5529,7 +7209,7 @@
     ]
   },
   "zigzagoon_galarian": {
-    "legal": false,
+    "legal": true,
     "dex": 263,
     "types": [
       "dark",
@@ -5540,15 +7220,47 @@
     ]
   },
   "linoone": {
-    "legal": false,
+    "legal": true,
     "dex": 264,
     "types": [
       "normal",
       "none"
+    ],
+    "ranking": 596,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TACKLE",
+          "uses": 28084
+        },
+        {
+          "moveId": "SHADOW_CLAW",
+          "uses": 87316
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDER",
+          "uses": 41939
+        },
+        {
+          "moveId": "GRASS_KNOT",
+          "uses": 56499
+        },
+        {
+          "moveId": "DIG",
+          "uses": 17013
+        }
+      ]
+    },
+    "moveset": [
+      "SHADOW_CLAW",
+      "GRASS_KNOT",
+      "THUNDER"
     ]
   },
   "linoone_galarian": {
-    "legal": false,
+    "legal": true,
     "dex": 264,
     "types": [
       "dark",
@@ -5556,6 +7268,38 @@
     ],
     "tags": [
       "galarian"
+    ],
+    "ranking": 609,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SNARL",
+          "uses": 67936
+        },
+        {
+          "moveId": "LICK",
+          "uses": 47464
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "GUNK_SHOT",
+          "uses": 14823
+        },
+        {
+          "moveId": "DIG",
+          "uses": 13337
+        },
+        {
+          "moveId": "BODY_SLAM",
+          "uses": 87319
+        }
+      ]
+    },
+    "moveset": [
+      "SNARL",
+      "BODY_SLAM",
+      "GUNK_SHOT"
     ]
   },
   "wurmple": {
@@ -5689,7 +7433,7 @@
     ]
   },
   "taillow": {
-    "legal": false,
+    "legal": true,
     "dex": 276,
     "types": [
       "normal",
@@ -5697,11 +7441,43 @@
     ]
   },
   "swellow": {
-    "legal": false,
+    "legal": true,
     "dex": 277,
     "types": [
       "normal",
       "flying"
+    ],
+    "ranking": 515,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "WING_ATTACK",
+          "uses": 82023
+        },
+        {
+          "moveId": "STEEL_WING",
+          "uses": 33377
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SKY_ATTACK",
+          "uses": 44192
+        },
+        {
+          "moveId": "BRAVE_BIRD",
+          "uses": 59076
+        },
+        {
+          "moveId": "AERIAL_ACE",
+          "uses": 11695
+        }
+      ]
+    },
+    "moveset": [
+      "WING_ATTACK",
+      "BRAVE_BIRD",
+      "SKY_ATTACK"
     ]
   },
   "wingull": {
@@ -5819,7 +7595,7 @@
     ]
   },
   "slakoth": {
-    "legal": false,
+    "legal": true,
     "dex": 287,
     "types": [
       "normal",
@@ -5827,19 +7603,83 @@
     ]
   },
   "vigoroth": {
-    "legal": false,
+    "legal": true,
     "dex": 288,
     "types": [
       "normal",
       "none"
+    ],
+    "ranking": 701,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SCRATCH",
+          "uses": 36903
+        },
+        {
+          "moveId": "COUNTER",
+          "uses": 78497
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "BULLDOZE",
+          "uses": 16224
+        },
+        {
+          "moveId": "BRICK_BREAK",
+          "uses": 29329
+        },
+        {
+          "moveId": "BODY_SLAM",
+          "uses": 69844
+        }
+      ]
+    },
+    "moveset": [
+      "COUNTER",
+      "BODY_SLAM",
+      "BULLDOZE"
     ]
   },
   "slaking": {
-    "legal": false,
+    "legal": true,
     "dex": 289,
     "types": [
       "normal",
       "none"
+    ],
+    "ranking": 168,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "YAWN",
+          "uses": 115400
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "PLAY_ROUGH",
+          "uses": 16539
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 7250
+        },
+        {
+          "moveId": "EARTHQUAKE",
+          "uses": 25752
+        },
+        {
+          "moveId": "BODY_SLAM",
+          "uses": 65656
+        }
+      ]
+    },
+    "moveset": [
+      "YAWN",
+      "BODY_SLAM",
+      "EARTHQUAKE"
     ]
   },
   "nincada": {
@@ -5867,7 +7707,7 @@
     ]
   },
   "whismur": {
-    "legal": false,
+    "legal": true,
     "dex": 293,
     "types": [
       "normal",
@@ -5875,19 +7715,83 @@
     ]
   },
   "loudred": {
-    "legal": false,
+    "legal": true,
     "dex": 294,
     "types": [
       "normal",
       "none"
+    ],
+    "ranking": 469,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ROCK_SMASH",
+          "uses": 48169
+        },
+        {
+          "moveId": "BITE",
+          "uses": 67231
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "STOMP",
+          "uses": 42766
+        },
+        {
+          "moveId": "FLAMETHROWER",
+          "uses": 34340
+        },
+        {
+          "moveId": "DISARMING_VOICE",
+          "uses": 38403
+        }
+      ]
+    },
+    "moveset": [
+      "BITE",
+      "STOMP",
+      "DISARMING_VOICE"
     ]
   },
   "exploud": {
-    "legal": false,
+    "legal": true,
     "dex": 295,
     "types": [
       "normal",
       "none"
+    ],
+    "ranking": 471,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "BITE",
+          "uses": 71238
+        },
+        {
+          "moveId": "ASTONISH",
+          "uses": 44162
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "FIRE_BLAST",
+          "uses": 22832
+        },
+        {
+          "moveId": "DISARMING_VOICE",
+          "uses": 46109
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 46338
+        }
+      ]
+    },
+    "moveset": [
+      "BITE",
+      "CRUNCH",
+      "DISARMING_VOICE"
     ]
   },
   "makuhita": {
@@ -5907,7 +7811,7 @@
     ]
   },
   "azurill": {
-    "legal": false,
+    "legal": true,
     "dex": 298,
     "types": [
       "normal",
@@ -5937,7 +7841,7 @@
     ]
   },
   "skitty": {
-    "legal": false,
+    "legal": true,
     "dex": 300,
     "types": [
       "normal",
@@ -5951,39 +7855,39 @@
       "normal",
       "none"
     ],
-    "ranking": 472,
+    "ranking": 551,
     "moves": {
       "fastMoves": [
         {
           "moveId": "ZEN_HEADBUTT",
-          "uses": 6963
+          "uses": 11320
         },
         {
           "moveId": "FEINT_ATTACK",
-          "uses": 38545
+          "uses": 56326
         },
         {
           "moveId": "CHARM",
-          "uses": 30673
+          "uses": 47741
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WILD_CHARGE",
-          "uses": 45065
+          "uses": 67375
         },
         {
           "moveId": "PLAY_ROUGH",
-          "uses": 6469
+          "uses": 9982
         },
         {
           "moveId": "DISARMING_VOICE",
-          "uses": 24704
+          "uses": 38184
         }
       ]
     },
     "moveset": [
-      "FEINT_ATTACK",
+      "CHARM",
       "WILD_CHARGE",
       "DISARMING_VOICE"
     ]
@@ -6011,7 +7915,7 @@
     ]
   },
   "mawile": {
-    "legal": false,
+    "legal": true,
     "dex": 303,
     "types": [
       "steel",
@@ -6019,10 +7923,58 @@
     ],
     "tags": [
       "shadoweligible"
+    ],
+    "ranking": 585,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ICE_FANG",
+          "uses": 36635
+        },
+        {
+          "moveId": "FIRE_FANG",
+          "uses": 37152
+        },
+        {
+          "moveId": "BITE",
+          "uses": 25758
+        },
+        {
+          "moveId": "ASTONISH",
+          "uses": 15826
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "VICE_GRIP",
+          "uses": 17098
+        },
+        {
+          "moveId": "RETURN",
+          "uses": 18951
+        },
+        {
+          "moveId": "POWER_UP_PUNCH",
+          "uses": 17516
+        },
+        {
+          "moveId": "PLAY_ROUGH",
+          "uses": 29748
+        },
+        {
+          "moveId": "IRON_HEAD",
+          "uses": 32216
+        }
+      ]
+    },
+    "moveset": [
+      "FIRE_FANG",
+      "POWER_UP_PUNCH",
+      "PLAY_ROUGH"
     ]
   },
   "mawile_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 303,
     "types": [
       "steel",
@@ -6030,10 +7982,58 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 605,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ICE_FANG",
+          "uses": 37173
+        },
+        {
+          "moveId": "FIRE_FANG",
+          "uses": 37650
+        },
+        {
+          "moveId": "BITE",
+          "uses": 24566
+        },
+        {
+          "moveId": "ASTONISH",
+          "uses": 16091
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "VICE_GRIP",
+          "uses": 21068
+        },
+        {
+          "moveId": "POWER_UP_PUNCH",
+          "uses": 20343
+        },
+        {
+          "moveId": "PLAY_ROUGH",
+          "uses": 35562
+        },
+        {
+          "moveId": "IRON_HEAD",
+          "uses": 38278
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 0
+        }
+      ]
+    },
+    "moveset": [
+      "FIRE_FANG",
+      "POWER_UP_PUNCH",
+      "PLAY_ROUGH"
     ]
   },
   "aron": {
-    "legal": false,
+    "legal": true,
     "dex": 304,
     "types": [
       "steel",
@@ -6041,10 +8041,46 @@
     ],
     "tags": [
       "shadoweligible"
+    ],
+    "ranking": 505,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TACKLE",
+          "uses": 37580
+        },
+        {
+          "moveId": "METAL_CLAW",
+          "uses": 77820
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ROCK_TOMB",
+          "uses": 19276
+        },
+        {
+          "moveId": "RETURN",
+          "uses": 8388
+        },
+        {
+          "moveId": "IRON_HEAD",
+          "uses": 30437
+        },
+        {
+          "moveId": "BODY_SLAM",
+          "uses": 57327
+        }
+      ]
+    },
+    "moveset": [
+      "METAL_CLAW",
+      "BODY_SLAM",
+      "IRON_HEAD"
     ]
   },
   "aron_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 304,
     "types": [
       "steel",
@@ -6052,6 +8088,42 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 514,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TACKLE",
+          "uses": 36155
+        },
+        {
+          "moveId": "METAL_CLAW",
+          "uses": 79245
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ROCK_TOMB",
+          "uses": 20653
+        },
+        {
+          "moveId": "IRON_HEAD",
+          "uses": 32612
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 0
+        },
+        {
+          "moveId": "BODY_SLAM",
+          "uses": 62010
+        }
+      ]
+    },
+    "moveset": [
+      "METAL_CLAW",
+      "BODY_SLAM",
+      "IRON_HEAD"
     ]
   },
   "lairon": {
@@ -6064,34 +8136,34 @@
     "tags": [
       "shadoweligible"
     ],
-    "ranking": 536,
+    "ranking": 551,
     "moves": {
       "fastMoves": [
         {
           "moveId": "METAL_CLAW",
-          "uses": 56037
+          "uses": 82563
         },
         {
           "moveId": "IRON_TAIL",
-          "uses": 20163
+          "uses": 32837
         }
       ],
       "chargedMoves": [
         {
           "moveId": "ROCK_SLIDE",
-          "uses": 31761
+          "uses": 44902
         },
         {
           "moveId": "RETURN",
-          "uses": 3904
+          "uses": 6176
         },
         {
           "moveId": "HEAVY_SLAM",
-          "uses": 13554
+          "uses": 22105
         },
         {
           "moveId": "BODY_SLAM",
-          "uses": 27045
+          "uses": 42257
         }
       ]
     },
@@ -6102,7 +8174,7 @@
     ]
   },
   "lairon_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 305,
     "types": [
       "steel",
@@ -6110,6 +8182,42 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 549,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "METAL_CLAW",
+          "uses": 82740
+        },
+        {
+          "moveId": "IRON_TAIL",
+          "uses": 32660
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ROCK_SLIDE",
+          "uses": 47278
+        },
+        {
+          "moveId": "HEAVY_SLAM",
+          "uses": 23350
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 0
+        },
+        {
+          "moveId": "BODY_SLAM",
+          "uses": 44876
+        }
+      ]
+    },
+    "moveset": [
+      "METAL_CLAW",
+      "ROCK_SLIDE",
+      "BODY_SLAM"
     ]
   },
   "aggron": {
@@ -6122,34 +8230,34 @@
     "tags": [
       "shadoweligible"
     ],
-    "ranking": 563,
+    "ranking": 562,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SMACK_DOWN",
-          "uses": 37208
+          "uses": 54971
         },
         {
           "moveId": "IRON_TAIL",
-          "uses": 9625
+          "uses": 16840
         },
         {
           "moveId": "DRAGON_TAIL",
-          "uses": 29328
+          "uses": 43596
         }
       ],
       "chargedMoves": [
         {
           "moveId": "THUNDER",
-          "uses": 16691
+          "uses": 26574
         },
         {
           "moveId": "STONE_EDGE",
-          "uses": 38016
+          "uses": 53458
         },
         {
           "moveId": "HEAVY_SLAM",
-          "uses": 21578
+          "uses": 35260
         }
       ]
     },
@@ -6160,7 +8268,7 @@
     ]
   },
   "aggron_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 306,
     "types": [
       "steel",
@@ -6168,6 +8276,46 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 586,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SMACK_DOWN",
+          "uses": 54843
+        },
+        {
+          "moveId": "IRON_TAIL",
+          "uses": 16527
+        },
+        {
+          "moveId": "DRAGON_TAIL",
+          "uses": 44031
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDER",
+          "uses": 26471
+        },
+        {
+          "moveId": "STONE_EDGE",
+          "uses": 53503
+        },
+        {
+          "moveId": "HEAVY_SLAM",
+          "uses": 35206
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 0
+        }
+      ]
+    },
+    "moveset": [
+      "SMACK_DOWN",
+      "STONE_EDGE",
+      "HEAVY_SLAM"
     ]
   },
   "meditite": {
@@ -6187,7 +8335,7 @@
     ]
   },
   "electrike": {
-    "legal": false,
+    "legal": true,
     "dex": 309,
     "types": [
       "electric",
@@ -6195,15 +8343,47 @@
     ]
   },
   "manectric": {
-    "legal": false,
+    "legal": true,
     "dex": 310,
     "types": [
       "electric",
       "none"
+    ],
+    "ranking": 538,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SNARL",
+          "uses": 69670
+        },
+        {
+          "moveId": "CHARGE_BEAM",
+          "uses": 45730
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "WILD_CHARGE",
+          "uses": 79608
+        },
+        {
+          "moveId": "THUNDER",
+          "uses": 12425
+        },
+        {
+          "moveId": "FLAME_BURST",
+          "uses": 23295
+        }
+      ]
+    },
+    "moveset": [
+      "SNARL",
+      "WILD_CHARGE",
+      "FLAME_BURST"
     ]
   },
   "manectric_mega": {
-    "legal": false,
+    "legal": true,
     "dex": 310,
     "types": [
       "electric",
@@ -6214,19 +8394,91 @@
     ]
   },
   "plusle": {
-    "legal": false,
+    "legal": true,
     "dex": 311,
     "types": [
       "electric",
       "none"
+    ],
+    "ranking": 508,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SPARK",
+          "uses": 67541
+        },
+        {
+          "moveId": "QUICK_ATTACK",
+          "uses": 47859
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 19314
+        },
+        {
+          "moveId": "SWIFT",
+          "uses": 11583
+        },
+        {
+          "moveId": "GRASS_KNOT",
+          "uses": 39291
+        },
+        {
+          "moveId": "DISCHARGE",
+          "uses": 45236
+        }
+      ]
+    },
+    "moveset": [
+      "SPARK",
+      "THUNDERBOLT",
+      "GRASS_KNOT"
     ]
   },
   "minun": {
-    "legal": false,
+    "legal": true,
     "dex": 312,
     "types": [
       "electric",
       "none"
+    ],
+    "ranking": 564,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SPARK",
+          "uses": 68015
+        },
+        {
+          "moveId": "QUICK_ATTACK",
+          "uses": 47385
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 19396
+        },
+        {
+          "moveId": "SWIFT",
+          "uses": 11608
+        },
+        {
+          "moveId": "GRASS_KNOT",
+          "uses": 39298
+        },
+        {
+          "moveId": "DISCHARGE",
+          "uses": 45186
+        }
+      ]
+    },
+    "moveset": [
+      "SPARK",
+      "THUNDERBOLT",
+      "GRASS_KNOT"
     ]
   },
   "volbeat": {
@@ -6268,47 +8520,11 @@
     ]
   },
   "swalot": {
-    "legal": true,
+    "legal": false,
     "dex": 317,
     "types": [
       "poison",
       "none"
-    ],
-    "ranking": 562,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "ROCK_SMASH",
-          "uses": 22328
-        },
-        {
-          "moveId": "INFESTATION",
-          "uses": 53872
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "SLUDGE_BOMB",
-          "uses": 34417
-        },
-        {
-          "moveId": "ICE_BEAM",
-          "uses": 30335
-        },
-        {
-          "moveId": "GUNK_SHOT",
-          "uses": 8817
-        },
-        {
-          "moveId": "ACID_SPRAY",
-          "uses": 2677
-        }
-      ]
-    },
-    "moveset": [
-      "INFESTATION",
-      "SLUDGE_BOMB",
-      "ICE_BEAM"
     ]
   },
   "carvanha": {
@@ -6415,11 +8631,43 @@
     ]
   },
   "spinda": {
-    "legal": false,
+    "legal": true,
     "dex": 327,
     "types": [
       "normal",
       "none"
+    ],
+    "ranking": 556,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SUCKER_PUNCH",
+          "uses": 55205
+        },
+        {
+          "moveId": "PSYCHO_CUT",
+          "uses": 60195
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ROCK_TOMB",
+          "uses": 24220
+        },
+        {
+          "moveId": "ICY_WIND",
+          "uses": 72360
+        },
+        {
+          "moveId": "DIG",
+          "uses": 18798
+        }
+      ]
+    },
+    "moveset": [
+      "PSYCHO_CUT",
+      "ICY_WIND",
+      "ROCK_TOMB"
     ]
   },
   "trapinch": {
@@ -6505,7 +8753,7 @@
     ]
   },
   "swablu": {
-    "legal": false,
+    "legal": true,
     "dex": 333,
     "types": [
       "normal",
@@ -6521,7 +8769,7 @@
     ]
   },
   "zangoose": {
-    "legal": false,
+    "legal": true,
     "dex": 335,
     "types": [
       "normal",
@@ -6529,6 +8777,38 @@
     ],
     "tags": [
       "regional"
+    ],
+    "ranking": 670,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SHADOW_CLAW",
+          "uses": 66091
+        },
+        {
+          "moveId": "FURY_CUTTER",
+          "uses": 49309
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "NIGHT_SLASH",
+          "uses": 49665
+        },
+        {
+          "moveId": "DIG",
+          "uses": 7332
+        },
+        {
+          "moveId": "CLOSE_COMBAT",
+          "uses": 58294
+        }
+      ]
+    },
+    "moveset": [
+      "SHADOW_CLAW",
+      "CLOSE_COMBAT",
+      "NIGHT_SLASH"
     ]
   },
   "seviper": {
@@ -6679,7 +8959,7 @@
     ]
   },
   "armaldo": {
-    "legal": true,
+    "legal": false,
     "dex": 348,
     "types": [
       "rock",
@@ -6687,38 +8967,6 @@
     ],
     "tags": [
       "shadoweligible"
-    ],
-    "ranking": 526,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "STRUGGLE_BUG",
-          "uses": 25507
-        },
-        {
-          "moveId": "FURY_CUTTER",
-          "uses": 50693
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "WATER_PULSE",
-          "uses": 12158
-        },
-        {
-          "moveId": "ROCK_BLAST",
-          "uses": 40408
-        },
-        {
-          "moveId": "CROSS_POISON",
-          "uses": 23624
-        }
-      ]
-    },
-    "moveset": [
-      "FURY_CUTTER",
-      "ROCK_BLAST",
-      "CROSS_POISON"
     ]
   },
   "armaldo_shadow": {
@@ -6749,11 +8997,43 @@
     ]
   },
   "castform": {
-    "legal": false,
+    "legal": true,
     "dex": 351,
     "types": [
       "normal",
       "none"
+    ],
+    "ranking": 625,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TACKLE",
+          "uses": 32493
+        },
+        {
+          "moveId": "HEX",
+          "uses": 82907
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "WEATHER_BALL_ROCK",
+          "uses": 69113
+        },
+        {
+          "moveId": "HURRICANE",
+          "uses": 20381
+        },
+        {
+          "moveId": "ENERGY_BALL",
+          "uses": 25933
+        }
+      ]
+    },
+    "moveset": [
+      "HEX",
+      "WEATHER_BALL_ROCK",
+      "ENERGY_BALL"
     ]
   },
   "castform_rainy": {
@@ -6937,43 +9217,11 @@
     ]
   },
   "glalie": {
-    "legal": true,
+    "legal": false,
     "dex": 362,
     "types": [
       "ice",
       "none"
-    ],
-    "ranking": 552,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "ICE_SHARD",
-          "uses": 46533
-        },
-        {
-          "moveId": "FROST_BREATH",
-          "uses": 29667
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "SHADOW_BALL",
-          "uses": 21621
-        },
-        {
-          "moveId": "GYRO_BALL",
-          "uses": 6852
-        },
-        {
-          "moveId": "AVALANCHE",
-          "uses": 47659
-        }
-      ]
-    },
-    "moveset": [
-      "ICE_SHARD",
-      "AVALANCHE",
-      "SHADOW_BALL"
     ]
   },
   "spheal": {
@@ -7067,7 +9315,7 @@
     ]
   },
   "relicanth": {
-    "legal": true,
+    "legal": false,
     "dex": 369,
     "types": [
       "water",
@@ -7075,38 +9323,6 @@
     ],
     "tags": [
       "regional"
-    ],
-    "ranking": 611,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "ZEN_HEADBUTT",
-          "uses": 12148
-        },
-        {
-          "moveId": "WATER_GUN",
-          "uses": 64052
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "HYDRO_PUMP",
-          "uses": 7092
-        },
-        {
-          "moveId": "AQUA_TAIL",
-          "uses": 45389
-        },
-        {
-          "moveId": "ANCIENT_POWER",
-          "uses": 23553
-        }
-      ]
-    },
-    "moveset": [
-      "WATER_GUN",
-      "AQUA_TAIL",
-      "ANCIENT_POWER"
     ]
   },
   "luvdisc": {
@@ -7184,7 +9400,7 @@
     ]
   },
   "beldum": {
-    "legal": false,
+    "legal": true,
     "dex": 374,
     "types": [
       "steel",
@@ -7195,7 +9411,7 @@
     ]
   },
   "beldum_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 374,
     "types": [
       "steel",
@@ -7206,7 +9422,7 @@
     ]
   },
   "metang": {
-    "legal": false,
+    "legal": true,
     "dex": 375,
     "types": [
       "steel",
@@ -7214,10 +9430,46 @@
     ],
     "tags": [
       "shadoweligible"
+    ],
+    "ranking": 513,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 33522
+        },
+        {
+          "moveId": "METAL_CLAW",
+          "uses": 81878
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "RETURN",
+          "uses": 21227
+        },
+        {
+          "moveId": "PSYSHOCK",
+          "uses": 50208
+        },
+        {
+          "moveId": "PSYCHIC",
+          "uses": 19611
+        },
+        {
+          "moveId": "GYRO_BALL",
+          "uses": 24286
+        }
+      ]
+    },
+    "moveset": [
+      "METAL_CLAW",
+      "PSYSHOCK",
+      "GYRO_BALL"
     ]
   },
   "metang_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 375,
     "types": [
       "steel",
@@ -7225,10 +9477,46 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 494,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 33916
+        },
+        {
+          "moveId": "METAL_CLAW",
+          "uses": 81484
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "PSYSHOCK",
+          "uses": 60859
+        },
+        {
+          "moveId": "PSYCHIC",
+          "uses": 23621
+        },
+        {
+          "moveId": "GYRO_BALL",
+          "uses": 30729
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 6
+        }
+      ]
+    },
+    "moveset": [
+      "METAL_CLAW",
+      "PSYSHOCK",
+      "GYRO_BALL"
     ]
   },
   "metagross": {
-    "legal": false,
+    "legal": true,
     "dex": 376,
     "types": [
       "steel",
@@ -7236,10 +9524,46 @@
     ],
     "tags": [
       "shadoweligible"
+    ],
+    "ranking": 485,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 17435
+        },
+        {
+          "moveId": "BULLET_PUNCH",
+          "uses": 97965
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "PSYCHIC",
+          "uses": 31413
+        },
+        {
+          "moveId": "METEOR_MASH",
+          "uses": 50005
+        },
+        {
+          "moveId": "FLASH_CANNON",
+          "uses": 7758
+        },
+        {
+          "moveId": "EARTHQUAKE",
+          "uses": 26190
+        }
+      ]
+    },
+    "moveset": [
+      "BULLET_PUNCH",
+      "METEOR_MASH",
+      "PSYCHIC"
     ]
   },
   "metagross_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 376,
     "types": [
       "steel",
@@ -7247,6 +9571,46 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 473,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 16123
+        },
+        {
+          "moveId": "BULLET_PUNCH",
+          "uses": 99277
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "PSYCHIC",
+          "uses": 31346
+        },
+        {
+          "moveId": "METEOR_MASH",
+          "uses": 49991
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 0
+        },
+        {
+          "moveId": "FLASH_CANNON",
+          "uses": 7772
+        },
+        {
+          "moveId": "EARTHQUAKE",
+          "uses": 26211
+        }
+      ]
+    },
+    "moveset": [
+      "BULLET_PUNCH",
+      "METEOR_MASH",
+      "PSYCHIC"
     ]
   },
   "regirock": {
@@ -7525,7 +9889,7 @@
     ]
   },
   "empoleon": {
-    "legal": false,
+    "legal": true,
     "dex": 395,
     "types": [
       "water",
@@ -7533,10 +9897,50 @@
     ],
     "tags": [
       "starter"
+    ],
+    "ranking": 651,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "WATERFALL",
+          "uses": 67498
+        },
+        {
+          "moveId": "METAL_CLAW",
+          "uses": 47902
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "HYDRO_PUMP",
+          "uses": 5978
+        },
+        {
+          "moveId": "HYDRO_CANNON",
+          "uses": 55834
+        },
+        {
+          "moveId": "FLASH_CANNON",
+          "uses": 10432
+        },
+        {
+          "moveId": "DRILL_PECK",
+          "uses": 31399
+        },
+        {
+          "moveId": "BLIZZARD",
+          "uses": 11720
+        }
+      ]
+    },
+    "moveset": [
+      "WATERFALL",
+      "HYDRO_CANNON",
+      "DRILL_PECK"
     ]
   },
   "starly": {
-    "legal": false,
+    "legal": true,
     "dex": 396,
     "types": [
       "normal",
@@ -7544,23 +9948,87 @@
     ]
   },
   "staravia": {
-    "legal": false,
+    "legal": true,
     "dex": 397,
     "types": [
       "normal",
       "flying"
+    ],
+    "ranking": 495,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "WING_ATTACK",
+          "uses": 62350
+        },
+        {
+          "moveId": "QUICK_ATTACK",
+          "uses": 53050
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "HEAT_WAVE",
+          "uses": 11554
+        },
+        {
+          "moveId": "BRAVE_BIRD",
+          "uses": 73865
+        },
+        {
+          "moveId": "AERIAL_ACE",
+          "uses": 29838
+        }
+      ]
+    },
+    "moveset": [
+      "WING_ATTACK",
+      "BRAVE_BIRD",
+      "AERIAL_ACE"
     ]
   },
   "staraptor": {
-    "legal": false,
+    "legal": true,
     "dex": 398,
     "types": [
       "normal",
       "flying"
+    ],
+    "ranking": 484,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "WING_ATTACK",
+          "uses": 62644
+        },
+        {
+          "moveId": "QUICK_ATTACK",
+          "uses": 52756
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "HEAT_WAVE",
+          "uses": 7005
+        },
+        {
+          "moveId": "CLOSE_COMBAT",
+          "uses": 48778
+        },
+        {
+          "moveId": "BRAVE_BIRD",
+          "uses": 59609
+        }
+      ]
+    },
+    "moveset": [
+      "WING_ATTACK",
+      "BRAVE_BIRD",
+      "CLOSE_COMBAT"
     ]
   },
   "bidoof": {
-    "legal": false,
+    "legal": true,
     "dex": 399,
     "types": [
       "normal",
@@ -7568,11 +10036,43 @@
     ]
   },
   "bibarel": {
-    "legal": false,
+    "legal": true,
     "dex": 400,
     "types": [
       "normal",
       "water"
+    ],
+    "ranking": 582,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "WATER_GUN",
+          "uses": 92276
+        },
+        {
+          "moveId": "TAKE_DOWN",
+          "uses": 23124
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SURF",
+          "uses": 67568
+        },
+        {
+          "moveId": "HYPER_FANG",
+          "uses": 37830
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 9937
+        }
+      ]
+    },
+    "moveset": [
+      "WATER_GUN",
+      "SURF",
+      "HYPER_FANG"
     ]
   },
   "kricketot": {
@@ -7592,7 +10092,7 @@
     ]
   },
   "shinx": {
-    "legal": false,
+    "legal": true,
     "dex": 403,
     "types": [
       "electric",
@@ -7600,19 +10100,147 @@
     ]
   },
   "luxio": {
-    "legal": false,
+    "legal": true,
     "dex": 404,
     "types": [
       "electric",
       "none"
+    ],
+    "ranking": 541,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SPARK",
+          "uses": 83231
+        },
+        {
+          "moveId": "BITE",
+          "uses": 32169
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "WILD_CHARGE",
+          "uses": 70195
+        },
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 12887
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 32442
+        }
+      ]
+    },
+    "moveset": [
+      "SPARK",
+      "WILD_CHARGE",
+      "CRUNCH"
     ]
   },
   "luxray": {
-    "legal": false,
+    "legal": true,
     "dex": 405,
     "types": [
       "electric",
       "none"
+    ],
+    "ranking": 510,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SPARK",
+          "uses": 16137
+        },
+        {
+          "moveId": "SNARL",
+          "uses": 13632
+        },
+        {
+          "moveId": "HIDDEN_POWER_WATER",
+          "uses": 5366
+        },
+        {
+          "moveId": "HIDDEN_POWER_STEEL",
+          "uses": 4572
+        },
+        {
+          "moveId": "HIDDEN_POWER_ROCK",
+          "uses": 5571
+        },
+        {
+          "moveId": "HIDDEN_POWER_PSYCHIC",
+          "uses": 4775
+        },
+        {
+          "moveId": "HIDDEN_POWER_POISON",
+          "uses": 4389
+        },
+        {
+          "moveId": "HIDDEN_POWER_ICE",
+          "uses": 5644
+        },
+        {
+          "moveId": "HIDDEN_POWER_GROUND",
+          "uses": 6026
+        },
+        {
+          "moveId": "HIDDEN_POWER_GRASS",
+          "uses": 5286
+        },
+        {
+          "moveId": "HIDDEN_POWER_GHOST",
+          "uses": 5202
+        },
+        {
+          "moveId": "HIDDEN_POWER_FLYING",
+          "uses": 5515
+        },
+        {
+          "moveId": "HIDDEN_POWER_FIRE",
+          "uses": 6029
+        },
+        {
+          "moveId": "HIDDEN_POWER_FIGHTING",
+          "uses": 5692
+        },
+        {
+          "moveId": "HIDDEN_POWER_ELECTRIC",
+          "uses": 6995
+        },
+        {
+          "moveId": "HIDDEN_POWER_DRAGON",
+          "uses": 4454
+        },
+        {
+          "moveId": "HIDDEN_POWER_DARK",
+          "uses": 5074
+        },
+        {
+          "moveId": "HIDDEN_POWER_BUG",
+          "uses": 4749
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "WILD_CHARGE",
+          "uses": 72272
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 11617
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 31541
+        }
+      ]
+    },
+    "moveset": [
+      "SPARK",
+      "WILD_CHARGE",
+      "CRUNCH"
     ]
   },
   "budew": {
@@ -7648,7 +10276,7 @@
     ]
   },
   "shieldon": {
-    "legal": false,
+    "legal": true,
     "dex": 410,
     "types": [
       "rock",
@@ -7656,11 +10284,43 @@
     ]
   },
   "bastiodon": {
-    "legal": false,
+    "legal": true,
     "dex": 411,
     "types": [
       "rock",
       "steel"
+    ],
+    "ranking": 680,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SMACK_DOWN",
+          "uses": 88993
+        },
+        {
+          "moveId": "IRON_TAIL",
+          "uses": 26407
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "STONE_EDGE",
+          "uses": 56398
+        },
+        {
+          "moveId": "FLASH_CANNON",
+          "uses": 22558
+        },
+        {
+          "moveId": "FLAMETHROWER",
+          "uses": 36449
+        }
+      ]
+    },
+    "moveset": [
+      "SMACK_DOWN",
+      "STONE_EDGE",
+      "FLAMETHROWER"
     ]
   },
   "burmy_plant": {
@@ -7704,11 +10364,43 @@
     ]
   },
   "wormadam_trash": {
-    "legal": false,
+    "legal": true,
     "dex": 413,
     "types": [
       "bug",
       "steel"
+    ],
+    "ranking": 600,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "CONFUSION",
+          "uses": 54533
+        },
+        {
+          "moveId": "BUG_BITE",
+          "uses": 60867
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "PSYBEAM",
+          "uses": 20641
+        },
+        {
+          "moveId": "IRON_HEAD",
+          "uses": 48801
+        },
+        {
+          "moveId": "BUG_BUZZ",
+          "uses": 46139
+        }
+      ]
+    },
+    "moveset": [
+      "CONFUSION",
+      "IRON_HEAD",
+      "BUG_BUZZ"
     ]
   },
   "mothim": {
@@ -7736,7 +10428,7 @@
     ]
   },
   "pachirisu": {
-    "legal": false,
+    "legal": true,
     "dex": 417,
     "types": [
       "electric",
@@ -7744,6 +10436,38 @@
     ],
     "tags": [
       "regional"
+    ],
+    "ranking": 659,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "VOLT_SWITCH",
+          "uses": 65732
+        },
+        {
+          "moveId": "SPARK",
+          "uses": 49668
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDER_PUNCH",
+          "uses": 68118
+        },
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 25358
+        },
+        {
+          "moveId": "THUNDER",
+          "uses": 21909
+        }
+      ]
+    },
+    "moveset": [
+      "VOLT_SWITCH",
+      "THUNDER_PUNCH",
+      "THUNDERBOLT"
     ]
   },
   "buizel": {
@@ -7819,7 +10543,7 @@
     ]
   },
   "ambipom": {
-    "legal": false,
+    "legal": true,
     "dex": 424,
     "types": [
       "normal",
@@ -7827,10 +10551,42 @@
     ],
     "tags": [
       "shadoweligible"
+    ],
+    "ranking": 498,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SCRATCH",
+          "uses": 75364
+        },
+        {
+          "moveId": "ASTONISH",
+          "uses": 40036
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "LOW_SWEEP",
+          "uses": 37098
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 33590
+        },
+        {
+          "moveId": "AERIAL_ACE",
+          "uses": 44701
+        }
+      ]
+    },
+    "moveset": [
+      "SCRATCH",
+      "AERIAL_ACE",
+      "LOW_SWEEP"
     ]
   },
   "ambipom_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 424,
     "types": [
       "normal",
@@ -7838,6 +10594,42 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 542,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SCRATCH",
+          "uses": 73429
+        },
+        {
+          "moveId": "ASTONISH",
+          "uses": 41971
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "LOW_SWEEP",
+          "uses": 36872
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 33559
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 2
+        },
+        {
+          "moveId": "AERIAL_ACE",
+          "uses": 44661
+        }
+      ]
+    },
+    "moveset": [
+      "SCRATCH",
+      "AERIAL_ACE",
+      "LOW_SWEEP"
     ]
   },
   "drifloon": {
@@ -7849,63 +10641,91 @@
     ]
   },
   "drifblim": {
-    "legal": true,
+    "legal": false,
     "dex": 426,
     "types": [
       "ghost",
       "flying"
-    ],
-    "ranking": 623,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "HEX",
-          "uses": 55707
-        },
-        {
-          "moveId": "ASTONISH",
-          "uses": 20493
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "SHADOW_BALL",
-          "uses": 29580
-        },
-        {
-          "moveId": "OMINOUS_WIND",
-          "uses": 17211
-        },
-        {
-          "moveId": "ICY_WIND",
-          "uses": 29565
-        }
-      ]
-    },
-    "moveset": [
-      "HEX",
-      "ICY_WIND",
-      "SHADOW_BALL"
     ]
   },
   "buneary": {
-    "legal": false,
+    "legal": true,
     "dex": 427,
     "types": [
       "normal",
       "none"
+    ],
+    "ranking": 432,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "QUICK_ATTACK",
+          "uses": 89648
+        },
+        {
+          "moveId": "POUND",
+          "uses": 25752
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SWIFT",
+          "uses": 34310
+        },
+        {
+          "moveId": "FIRE_PUNCH",
+          "uses": 81090
+        }
+      ]
+    },
+    "moveset": [
+      "QUICK_ATTACK",
+      "FIRE_PUNCH",
+      "SWIFT"
     ]
   },
   "lopunny": {
-    "legal": false,
+    "legal": true,
     "dex": 428,
     "types": [
       "normal",
       "none"
+    ],
+    "ranking": 301,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "POUND",
+          "uses": 57075
+        },
+        {
+          "moveId": "LOW_KICK",
+          "uses": 58325
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 29995
+        },
+        {
+          "moveId": "FOCUS_BLAST",
+          "uses": 28848
+        },
+        {
+          "moveId": "FIRE_PUNCH",
+          "uses": 56473
+        }
+      ]
+    },
+    "moveset": [
+      "LOW_KICK",
+      "FIRE_PUNCH",
+      "HYPER_BEAM"
     ]
   },
   "lopunny_mega": {
-    "legal": false,
+    "legal": true,
     "dex": 428,
     "types": [
       "normal",
@@ -7916,7 +10736,7 @@
     ]
   },
   "mismagius": {
-    "legal": true,
+    "legal": false,
     "dex": 429,
     "types": [
       "ghost",
@@ -7924,38 +10744,6 @@
     ],
     "tags": [
       "shadoweligible"
-    ],
-    "ranking": 435,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "SUCKER_PUNCH",
-          "uses": 33149
-        },
-        {
-          "moveId": "HEX",
-          "uses": 43051
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "SHADOW_BALL",
-          "uses": 37415
-        },
-        {
-          "moveId": "DAZZLING_GLEAM",
-          "uses": 13604
-        },
-        {
-          "moveId": "DARK_PULSE",
-          "uses": 25045
-        }
-      ]
-    },
-    "moveset": [
-      "HEX",
-      "SHADOW_BALL",
-      "DARK_PULSE"
     ]
   },
   "mismagius_shadow": {
@@ -7979,7 +10767,7 @@
     "tags": []
   },
   "glameow": {
-    "legal": false,
+    "legal": true,
     "dex": 431,
     "types": [
       "normal",
@@ -7993,30 +10781,30 @@
       "normal",
       "none"
     ],
-    "ranking": 513,
+    "ranking": 521,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SHADOW_CLAW",
-          "uses": 51709
+          "uses": 76763
         },
         {
           "moveId": "SCRATCH",
-          "uses": 24491
+          "uses": 38637
         }
       ],
       "chargedMoves": [
         {
           "moveId": "THUNDER",
-          "uses": 27639
+          "uses": 40633
         },
         {
           "moveId": "PLAY_ROUGH",
-          "uses": 21398
+          "uses": 32888
         },
         {
           "moveId": "AERIAL_ACE",
-          "uses": 27223
+          "uses": 41860
         }
       ]
     },
@@ -8057,7 +10845,7 @@
     ]
   },
   "skuntank": {
-    "legal": true,
+    "legal": false,
     "dex": 435,
     "types": [
       "poison",
@@ -8065,42 +10853,6 @@
     ],
     "tags": [
       "shadoweligible"
-    ],
-    "ranking": 578,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "POISON_JAB",
-          "uses": 46649
-        },
-        {
-          "moveId": "BITE",
-          "uses": 29551
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "SLUDGE_BOMB",
-          "uses": 20784
-        },
-        {
-          "moveId": "RETURN",
-          "uses": 9563
-        },
-        {
-          "moveId": "FLAMETHROWER",
-          "uses": 15416
-        },
-        {
-          "moveId": "CRUNCH",
-          "uses": 30450
-        }
-      ]
-    },
-    "moveset": [
-      "POISON_JAB",
-      "CRUNCH",
-      "SLUDGE_BOMB"
     ]
   },
   "skuntank_shadow": {
@@ -8115,7 +10867,7 @@
     ]
   },
   "bronzor": {
-    "legal": false,
+    "legal": true,
     "dex": 436,
     "types": [
       "steel",
@@ -8123,11 +10875,55 @@
     ]
   },
   "bronzong": {
-    "legal": false,
+    "legal": true,
     "dex": 437,
     "types": [
       "steel",
       "psychic"
+    ],
+    "ranking": 615,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "FEINT_ATTACK",
+          "uses": 47567
+        },
+        {
+          "moveId": "CONFUSION",
+          "uses": 67833
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "PSYSHOCK",
+          "uses": 33527
+        },
+        {
+          "moveId": "PSYCHIC",
+          "uses": 13017
+        },
+        {
+          "moveId": "PAYBACK",
+          "uses": 23218
+        },
+        {
+          "moveId": "HEAVY_SLAM",
+          "uses": 23273
+        },
+        {
+          "moveId": "FLASH_CANNON",
+          "uses": 7449
+        },
+        {
+          "moveId": "BULLDOZE",
+          "uses": 14751
+        }
+      ]
+    },
+    "moveset": [
+      "CONFUSION",
+      "PSYSHOCK",
+      "PAYBACK"
     ]
   },
   "bonsly": {
@@ -8147,7 +10943,7 @@
     ]
   },
   "happiny": {
-    "legal": false,
+    "legal": true,
     "dex": 440,
     "types": [
       "normal",
@@ -8155,7 +10951,7 @@
     ]
   },
   "chatot": {
-    "legal": false,
+    "legal": true,
     "dex": 441,
     "types": [
       "normal",
@@ -8163,46 +10959,46 @@
     ],
     "tags": [
       "regional"
-    ]
-  },
-  "spiritomb": {
-    "legal": true,
-    "dex": 442,
-    "types": [
-      "ghost",
-      "dark"
     ],
-    "ranking": 518,
+    "ranking": 432,
     "moves": {
       "fastMoves": [
         {
-          "moveId": "SUCKER_PUNCH",
-          "uses": 40992
+          "moveId": "STEEL_WING",
+          "uses": 50968
         },
         {
-          "moveId": "FEINT_ATTACK",
-          "uses": 35208
+          "moveId": "PECK",
+          "uses": 64432
         }
       ],
       "chargedMoves": [
         {
-          "moveId": "SHADOW_SNEAK",
-          "uses": 12290
+          "moveId": "SKY_ATTACK",
+          "uses": 81506
         },
         {
-          "moveId": "SHADOW_BALL",
-          "uses": 40899
+          "moveId": "NIGHT_SHADE",
+          "uses": 18768
         },
         {
-          "moveId": "OMINOUS_WIND",
-          "uses": 23002
+          "moveId": "HEAT_WAVE",
+          "uses": 15361
         }
       ]
     },
     "moveset": [
-      "SUCKER_PUNCH",
-      "SHADOW_BALL",
-      "OMINOUS_WIND"
+      "PECK",
+      "SKY_ATTACK",
+      "NIGHT_SHADE"
+    ]
+  },
+  "spiritomb": {
+    "legal": false,
+    "dex": 442,
+    "types": [
+      "ghost",
+      "dark"
     ]
   },
   "gible": {
@@ -8230,11 +11026,43 @@
     ]
   },
   "munchlax": {
-    "legal": false,
+    "legal": true,
     "dex": 446,
     "types": [
       "normal",
       "none"
+    ],
+    "ranking": 649,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TACKLE",
+          "uses": 39144
+        },
+        {
+          "moveId": "LICK",
+          "uses": 76256
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "GUNK_SHOT",
+          "uses": 13774
+        },
+        {
+          "moveId": "BULLDOZE",
+          "uses": 21499
+        },
+        {
+          "moveId": "BODY_SLAM",
+          "uses": 80142
+        }
+      ]
+    },
+    "moveset": [
+      "LICK",
+      "BODY_SLAM",
+      "BULLDOZE"
     ]
   },
   "riolu": {
@@ -8246,11 +11074,51 @@
     ]
   },
   "lucario": {
-    "legal": false,
+    "legal": true,
     "dex": 448,
     "types": [
       "fighting",
       "steel"
+    ],
+    "ranking": 672,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "COUNTER",
+          "uses": 69552
+        },
+        {
+          "moveId": "BULLET_PUNCH",
+          "uses": 45848
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SHADOW_BALL",
+          "uses": 25908
+        },
+        {
+          "moveId": "POWER_UP_PUNCH",
+          "uses": 9682
+        },
+        {
+          "moveId": "FLASH_CANNON",
+          "uses": 12512
+        },
+        {
+          "moveId": "CLOSE_COMBAT",
+          "uses": 54885
+        },
+        {
+          "moveId": "AURA_SPHERE",
+          "uses": 12301
+        }
+      ]
+    },
+    "moveset": [
+      "COUNTER",
+      "POWER_UP_PUNCH",
+      "SHADOW_BALL"
     ]
   },
   "hippopotas": {
@@ -8278,55 +11146,11 @@
     ]
   },
   "drapion": {
-    "legal": true,
+    "legal": false,
     "dex": 452,
     "types": [
       "poison",
       "dark"
-    ],
-    "ranking": 589,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "POISON_STING",
-          "uses": 20731
-        },
-        {
-          "moveId": "INFESTATION",
-          "uses": 21376
-        },
-        {
-          "moveId": "ICE_FANG",
-          "uses": 17389
-        },
-        {
-          "moveId": "BITE",
-          "uses": 16676
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "SLUDGE_BOMB",
-          "uses": 18487
-        },
-        {
-          "moveId": "FELL_STINGER",
-          "uses": 6221
-        },
-        {
-          "moveId": "CRUNCH",
-          "uses": 25633
-        },
-        {
-          "moveId": "AQUA_TAIL",
-          "uses": 25825
-        }
-      ]
-    },
-    "moveset": [
-      "INFESTATION",
-      "AQUA_TAIL",
-      "CRUNCH"
     ]
   },
   "croagunk": {
@@ -8468,34 +11292,34 @@
     "tags": [
       "shadoweligible"
     ],
-    "ranking": 660,
+    "ranking": 666,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SPARK",
-          "uses": 46857
+          "uses": 71297
         },
         {
           "moveId": "CHARGE_BEAM",
-          "uses": 29343
+          "uses": 44103
         }
       ],
       "chargedMoves": [
         {
           "moveId": "ZAP_CANNON",
-          "uses": 4986
+          "uses": 7365
         },
         {
           "moveId": "WILD_CHARGE",
-          "uses": 45066
+          "uses": 66116
         },
         {
           "moveId": "MIRROR_SHOT",
-          "uses": 17032
+          "uses": 27506
         },
         {
           "moveId": "FLASH_CANNON",
-          "uses": 8988
+          "uses": 14344
         }
       ]
     },
@@ -8506,7 +11330,7 @@
     ]
   },
   "magnezone_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 462,
     "types": [
       "electric",
@@ -8514,66 +11338,102 @@
     ],
     "tags": [
       "shadow"
-    ]
-  },
-  "lickilicky": {
-    "legal": false,
-    "dex": 463,
-    "types": [
-      "normal",
-      "none"
-    ]
-  },
-  "rhyperior": {
-    "legal": true,
-    "dex": 464,
-    "types": [
-      "ground",
-      "rock"
     ],
-    "ranking": 542,
+    "ranking": 657,
     "moves": {
       "fastMoves": [
         {
-          "moveId": "SMACK_DOWN",
-          "uses": 41893
+          "moveId": "SPARK",
+          "uses": 72491
         },
         {
-          "moveId": "MUD_SLAP",
-          "uses": 34307
+          "moveId": "CHARGE_BEAM",
+          "uses": 42909
         }
       ],
       "chargedMoves": [
         {
-          "moveId": "SURF",
-          "uses": 12646
+          "moveId": "ZAP_CANNON",
+          "uses": 7417
         },
         {
-          "moveId": "SUPER_POWER",
-          "uses": 15141
+          "moveId": "WILD_CHARGE",
+          "uses": 66188
         },
         {
-          "moveId": "STONE_EDGE",
-          "uses": 7040
+          "moveId": "MIRROR_SHOT",
+          "uses": 27299
         },
         {
-          "moveId": "SKULL_BASH",
-          "uses": 5293
+          "moveId": "FRUSTRATION",
+          "uses": 0
         },
         {
-          "moveId": "ROCK_WRECKER",
-          "uses": 24989
-        },
-        {
-          "moveId": "EARTHQUAKE",
-          "uses": 10905
+          "moveId": "FLASH_CANNON",
+          "uses": 14400
         }
       ]
     },
     "moveset": [
-      "SMACK_DOWN",
-      "ROCK_WRECKER",
-      "SUPER_POWER"
+      "SPARK",
+      "WILD_CHARGE",
+      "MIRROR_SHOT"
+    ]
+  },
+  "lickilicky": {
+    "legal": true,
+    "dex": 463,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "ranking": 640,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 18142
+        },
+        {
+          "moveId": "LICK",
+          "uses": 97258
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SOLAR_BEAM",
+          "uses": 11619
+        },
+        {
+          "moveId": "SHADOW_BALL",
+          "uses": 23256
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 6061
+        },
+        {
+          "moveId": "EARTHQUAKE",
+          "uses": 19748
+        },
+        {
+          "moveId": "BODY_SLAM",
+          "uses": 54562
+        }
+      ]
+    },
+    "moveset": [
+      "LICK",
+      "BODY_SLAM",
+      "SHADOW_BALL"
+    ]
+  },
+  "rhyperior": {
+    "legal": false,
+    "dex": 464,
+    "types": [
+      "ground",
+      "rock"
     ]
   },
   "tangrowth": {
@@ -8585,7 +11445,7 @@
     ]
   },
   "electivire": {
-    "legal": false,
+    "legal": true,
     "dex": 466,
     "types": [
       "electric",
@@ -8593,10 +11453,50 @@
     ],
     "tags": [
       "shadoweligible"
+    ],
+    "ranking": 631,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "THUNDER_SHOCK",
+          "uses": 100856
+        },
+        {
+          "moveId": "LOW_KICK",
+          "uses": 14544
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "WILD_CHARGE",
+          "uses": 45300
+        },
+        {
+          "moveId": "THUNDER_PUNCH",
+          "uses": 22120
+        },
+        {
+          "moveId": "THUNDER",
+          "uses": 7180
+        },
+        {
+          "moveId": "ICE_PUNCH",
+          "uses": 22607
+        },
+        {
+          "moveId": "FLAMETHROWER",
+          "uses": 18087
+        }
+      ]
+    },
+    "moveset": [
+      "THUNDER_SHOCK",
+      "ICE_PUNCH",
+      "WILD_CHARGE"
     ]
   },
   "electivire_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 466,
     "types": [
       "electric",
@@ -8604,6 +11504,50 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 599,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "THUNDER_SHOCK",
+          "uses": 101696
+        },
+        {
+          "moveId": "LOW_KICK",
+          "uses": 13704
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "WILD_CHARGE",
+          "uses": 45270
+        },
+        {
+          "moveId": "THUNDER_PUNCH",
+          "uses": 22130
+        },
+        {
+          "moveId": "THUNDER",
+          "uses": 7162
+        },
+        {
+          "moveId": "ICE_PUNCH",
+          "uses": 22563
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 0
+        },
+        {
+          "moveId": "FLAMETHROWER",
+          "uses": 18097
+        }
+      ]
+    },
+    "moveset": [
+      "THUNDER_SHOCK",
+      "ICE_PUNCH",
+      "WILD_CHARGE"
     ]
   },
   "magmortar": {
@@ -8661,7 +11605,7 @@
     ]
   },
   "gliscor": {
-    "legal": true,
+    "legal": false,
     "dex": 472,
     "types": [
       "ground",
@@ -8669,42 +11613,6 @@
     ],
     "tags": [
       "shadoweligible"
-    ],
-    "ranking": 631,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "WING_ATTACK",
-          "uses": 38888
-        },
-        {
-          "moveId": "FURY_CUTTER",
-          "uses": 37312
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "SAND_TOMB",
-          "uses": 8917
-        },
-        {
-          "moveId": "NIGHT_SLASH",
-          "uses": 29148
-        },
-        {
-          "moveId": "EARTHQUAKE",
-          "uses": 18388
-        },
-        {
-          "moveId": "AERIAL_ACE",
-          "uses": 19746
-        }
-      ]
-    },
-    "moveset": [
-      "WING_ATTACK",
-      "NIGHT_SLASH",
-      "EARTHQUAKE"
     ]
   },
   "gliscor_shadow": {
@@ -8741,7 +11649,7 @@
     ]
   },
   "porygon_z": {
-    "legal": false,
+    "legal": true,
     "dex": 474,
     "types": [
       "normal",
@@ -8749,10 +11657,114 @@
     ],
     "tags": [
       "shadoweligible"
+    ],
+    "ranking": 445,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "LOCK_ON",
+          "uses": 14730
+        },
+        {
+          "moveId": "HIDDEN_POWER_WATER",
+          "uses": 5935
+        },
+        {
+          "moveId": "HIDDEN_POWER_STEEL",
+          "uses": 5113
+        },
+        {
+          "moveId": "HIDDEN_POWER_ROCK",
+          "uses": 6226
+        },
+        {
+          "moveId": "HIDDEN_POWER_PSYCHIC",
+          "uses": 5338
+        },
+        {
+          "moveId": "HIDDEN_POWER_POISON",
+          "uses": 5023
+        },
+        {
+          "moveId": "HIDDEN_POWER_ICE",
+          "uses": 6377
+        },
+        {
+          "moveId": "HIDDEN_POWER_GROUND",
+          "uses": 6573
+        },
+        {
+          "moveId": "HIDDEN_POWER_GRASS",
+          "uses": 5975
+        },
+        {
+          "moveId": "HIDDEN_POWER_GHOST",
+          "uses": 5877
+        },
+        {
+          "moveId": "HIDDEN_POWER_FLYING",
+          "uses": 6134
+        },
+        {
+          "moveId": "HIDDEN_POWER_FIRE",
+          "uses": 6575
+        },
+        {
+          "moveId": "HIDDEN_POWER_FIGHTING",
+          "uses": 6234
+        },
+        {
+          "moveId": "HIDDEN_POWER_ELECTRIC",
+          "uses": 5959
+        },
+        {
+          "moveId": "HIDDEN_POWER_DRAGON",
+          "uses": 5045
+        },
+        {
+          "moveId": "HIDDEN_POWER_DARK",
+          "uses": 5817
+        },
+        {
+          "moveId": "HIDDEN_POWER_BUG",
+          "uses": 5490
+        },
+        {
+          "moveId": "CHARGE_BEAM",
+          "uses": 6538
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ZAP_CANNON",
+          "uses": 19068
+        },
+        {
+          "moveId": "TRI_ATTACK",
+          "uses": 37448
+        },
+        {
+          "moveId": "SOLAR_BEAM",
+          "uses": 18167
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 18311
+        },
+        {
+          "moveId": "BLIZZARD",
+          "uses": 22251
+        }
+      ]
+    },
+    "moveset": [
+      "LOCK_ON",
+      "TRI_ATTACK",
+      "ZAP_CANNON"
     ]
   },
   "porygon_z_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 474,
     "types": [
       "normal",
@@ -8760,6 +11772,114 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 415,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "LOCK_ON",
+          "uses": 16343
+        },
+        {
+          "moveId": "HIDDEN_POWER_WATER",
+          "uses": 5879
+        },
+        {
+          "moveId": "HIDDEN_POWER_STEEL",
+          "uses": 5047
+        },
+        {
+          "moveId": "HIDDEN_POWER_ROCK",
+          "uses": 6182
+        },
+        {
+          "moveId": "HIDDEN_POWER_PSYCHIC",
+          "uses": 5241
+        },
+        {
+          "moveId": "HIDDEN_POWER_POISON",
+          "uses": 4897
+        },
+        {
+          "moveId": "HIDDEN_POWER_ICE",
+          "uses": 6306
+        },
+        {
+          "moveId": "HIDDEN_POWER_GROUND",
+          "uses": 6444
+        },
+        {
+          "moveId": "HIDDEN_POWER_GRASS",
+          "uses": 5969
+        },
+        {
+          "moveId": "HIDDEN_POWER_GHOST",
+          "uses": 5719
+        },
+        {
+          "moveId": "HIDDEN_POWER_FLYING",
+          "uses": 6075
+        },
+        {
+          "moveId": "HIDDEN_POWER_FIRE",
+          "uses": 6600
+        },
+        {
+          "moveId": "HIDDEN_POWER_FIGHTING",
+          "uses": 6061
+        },
+        {
+          "moveId": "HIDDEN_POWER_ELECTRIC",
+          "uses": 5984
+        },
+        {
+          "moveId": "HIDDEN_POWER_DRAGON",
+          "uses": 4935
+        },
+        {
+          "moveId": "HIDDEN_POWER_DARK",
+          "uses": 5592
+        },
+        {
+          "moveId": "HIDDEN_POWER_BUG",
+          "uses": 5265
+        },
+        {
+          "moveId": "CHARGE_BEAM",
+          "uses": 6772
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ZAP_CANNON",
+          "uses": 19090
+        },
+        {
+          "moveId": "TRI_ATTACK",
+          "uses": 37471
+        },
+        {
+          "moveId": "SOLAR_BEAM",
+          "uses": 18156
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 18307
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 0
+        },
+        {
+          "moveId": "BLIZZARD",
+          "uses": 22138
+        }
+      ]
+    },
+    "moveset": [
+      "LOCK_ON",
+      "TRI_ATTACK",
+      "ZAP_CANNON"
     ]
   },
   "gallade": {
@@ -8794,34 +11914,34 @@
     "tags": [
       "shadoweligible"
     ],
-    "ranking": 629,
+    "ranking": 623,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SPARK",
-          "uses": 38918
+          "uses": 60628
         },
         {
           "moveId": "ROCK_THROW",
-          "uses": 37282
+          "uses": 54772
         }
       ],
       "chargedMoves": [
         {
           "moveId": "THUNDERBOLT",
-          "uses": 13174
+          "uses": 20951
         },
         {
           "moveId": "ROCK_SLIDE",
-          "uses": 32747
+          "uses": 45779
         },
         {
           "moveId": "RETURN",
-          "uses": 8921
+          "uses": 13692
         },
         {
           "moveId": "MAGNET_BOMB",
-          "uses": 21374
+          "uses": 35024
         }
       ]
     },
@@ -8832,7 +11952,7 @@
     ]
   },
   "probopass_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 476,
     "types": [
       "rock",
@@ -8840,6 +11960,42 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "ranking": 613,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SPARK",
+          "uses": 59576
+        },
+        {
+          "moveId": "ROCK_THROW",
+          "uses": 55824
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 23511
+        },
+        {
+          "moveId": "ROCK_SLIDE",
+          "uses": 51517
+        },
+        {
+          "moveId": "MAGNET_BOMB",
+          "uses": 40219
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 0
+        }
+      ]
+    },
+    "moveset": [
+      "SPARK",
+      "ROCK_SLIDE",
+      "THUNDERBOLT"
     ]
   },
   "dusknoir": {
@@ -8928,11 +12084,43 @@
     ]
   },
   "rotom_wash": {
-    "legal": false,
+    "legal": true,
     "dex": 479,
     "types": [
       "electric",
       "water"
+    ],
+    "ranking": 482,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "THUNDER_SHOCK",
+          "uses": 89315
+        },
+        {
+          "moveId": "ASTONISH",
+          "uses": 26085
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 52957
+        },
+        {
+          "moveId": "THUNDER",
+          "uses": 22960
+        },
+        {
+          "moveId": "HYDRO_PUMP",
+          "uses": 39421
+        }
+      ]
+    },
+    "moveset": [
+      "THUNDER_SHOCK",
+      "THUNDERBOLT",
+      "HYDRO_PUMP"
     ]
   },
   "uxie": {
@@ -9411,7 +12599,7 @@
     ]
   },
   "patrat": {
-    "legal": false,
+    "legal": true,
     "dex": 504,
     "types": [
       "normal",
@@ -9419,15 +12607,47 @@
     ]
   },
   "watchog": {
-    "legal": false,
+    "legal": true,
     "dex": 505,
     "types": [
       "normal",
       "none"
+    ],
+    "ranking": 457,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "LOW_KICK",
+          "uses": 37805
+        },
+        {
+          "moveId": "BITE",
+          "uses": 77595
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "HYPER_FANG",
+          "uses": 38468
+        },
+        {
+          "moveId": "GRASS_KNOT",
+          "uses": 37624
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 39319
+        }
+      ]
+    },
+    "moveset": [
+      "BITE",
+      "CRUNCH",
+      "HYPER_FANG"
     ]
   },
   "lillipup": {
-    "legal": false,
+    "legal": true,
     "dex": 506,
     "types": [
       "normal",
@@ -9435,19 +12655,87 @@
     ]
   },
   "herdier": {
-    "legal": false,
+    "legal": true,
     "dex": 507,
     "types": [
       "normal",
       "none"
+    ],
+    "ranking": 371,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TAKE_DOWN",
+          "uses": 29798
+        },
+        {
+          "moveId": "LICK",
+          "uses": 85602
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 52713
+        },
+        {
+          "moveId": "PLAY_ROUGH",
+          "uses": 40997
+        },
+        {
+          "moveId": "DIG",
+          "uses": 21722
+        }
+      ]
+    },
+    "moveset": [
+      "LICK",
+      "THUNDERBOLT",
+      "PLAY_ROUGH"
     ]
   },
   "stoutland": {
-    "legal": false,
+    "legal": true,
     "dex": 508,
     "types": [
       "normal",
       "none"
+    ],
+    "ranking": 426,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TAKE_DOWN",
+          "uses": 14480
+        },
+        {
+          "moveId": "LICK",
+          "uses": 53550
+        },
+        {
+          "moveId": "ICE_FANG",
+          "uses": 47380
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "WILD_CHARGE",
+          "uses": 60231
+        },
+        {
+          "moveId": "PLAY_ROUGH",
+          "uses": 19171
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 35910
+        }
+      ]
+    },
+    "moveset": [
+      "LICK",
+      "WILD_CHARGE",
+      "CRUNCH"
     ]
   },
   "purrloin": {
@@ -9459,47 +12747,11 @@
     ]
   },
   "liepard": {
-    "legal": true,
+    "legal": false,
     "dex": 510,
     "types": [
       "dark",
       "none"
-    ],
-    "ranking": 448,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "SNARL",
-          "uses": 48001
-        },
-        {
-          "moveId": "CHARM",
-          "uses": 28199
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "PLAY_ROUGH",
-          "uses": 15396
-        },
-        {
-          "moveId": "PAYBACK",
-          "uses": 15439
-        },
-        {
-          "moveId": "GUNK_SHOT",
-          "uses": 11265
-        },
-        {
-          "moveId": "DARK_PULSE",
-          "uses": 34046
-        }
-      ]
-    },
-    "moveset": [
-      "SNARL",
-      "DARK_PULSE",
-      "PLAY_ROUGH"
     ]
   },
   "pansage": {
@@ -9585,7 +12837,7 @@
     ]
   },
   "pidove": {
-    "legal": false,
+    "legal": true,
     "dex": 519,
     "types": [
       "normal",
@@ -9593,23 +12845,87 @@
     ]
   },
   "tranquill": {
-    "legal": false,
+    "legal": true,
     "dex": 520,
     "types": [
       "normal",
       "flying"
+    ],
+    "ranking": 529,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "STEEL_WING",
+          "uses": 42578
+        },
+        {
+          "moveId": "AIR_SLASH",
+          "uses": 72822
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SKY_ATTACK",
+          "uses": 78470
+        },
+        {
+          "moveId": "HEAT_WAVE",
+          "uses": 15553
+        },
+        {
+          "moveId": "AERIAL_ACE",
+          "uses": 21128
+        }
+      ]
+    },
+    "moveset": [
+      "AIR_SLASH",
+      "SKY_ATTACK",
+      "AERIAL_ACE"
     ]
   },
   "unfezant": {
-    "legal": false,
+    "legal": true,
     "dex": 521,
     "types": [
       "normal",
       "flying"
+    ],
+    "ranking": 475,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "STEEL_WING",
+          "uses": 42068
+        },
+        {
+          "moveId": "AIR_SLASH",
+          "uses": 73332
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SKY_ATTACK",
+          "uses": 76240
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 24229
+        },
+        {
+          "moveId": "HEAT_WAVE",
+          "uses": 14967
+        }
+      ]
+    },
+    "moveset": [
+      "AIR_SLASH",
+      "SKY_ATTACK",
+      "HYPER_BEAM"
     ]
   },
   "blitzle": {
-    "legal": false,
+    "legal": true,
     "dex": 522,
     "types": [
       "electric",
@@ -9617,11 +12933,43 @@
     ]
   },
   "zebstrika": {
-    "legal": false,
+    "legal": true,
     "dex": 523,
     "types": [
       "electric",
       "none"
+    ],
+    "ranking": 586,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SPARK",
+          "uses": 97379
+        },
+        {
+          "moveId": "LOW_KICK",
+          "uses": 18021
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "WILD_CHARGE",
+          "uses": 67777
+        },
+        {
+          "moveId": "FLAME_CHARGE",
+          "uses": 33175
+        },
+        {
+          "moveId": "DISCHARGE",
+          "uses": 14479
+        }
+      ]
+    },
+    "moveset": [
+      "SPARK",
+      "WILD_CHARGE",
+      "FLAME_CHARGE"
     ]
   },
   "roggenrola": {
@@ -9679,38 +13027,38 @@
       "ground",
       "steel"
     ],
-    "ranking": 590,
+    "ranking": 600,
     "moves": {
       "fastMoves": [
         {
           "moveId": "MUD_SLAP",
-          "uses": 20436
+          "uses": 33057
         },
         {
           "moveId": "MUD_SHOT",
-          "uses": 39113
+          "uses": 55818
         },
         {
           "moveId": "METAL_CLAW",
-          "uses": 16672
+          "uses": 26592
         }
       ],
       "chargedMoves": [
         {
           "moveId": "ROCK_SLIDE",
-          "uses": 24155
+          "uses": 33301
         },
         {
           "moveId": "IRON_HEAD",
-          "uses": 12985
+          "uses": 20848
         },
         {
           "moveId": "EARTHQUAKE",
-          "uses": 7961
+          "uses": 12564
         },
         {
           "moveId": "DRILL_RUN",
-          "uses": 30988
+          "uses": 48688
         }
       ]
     },
@@ -9721,11 +13069,43 @@
     ]
   },
   "audino": {
-    "legal": false,
+    "legal": true,
     "dex": 531,
     "types": [
       "normal",
       "none"
+    ],
+    "ranking": 372,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 50383
+        },
+        {
+          "moveId": "POUND",
+          "uses": 65017
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 36684
+        },
+        {
+          "moveId": "DISARMING_VOICE",
+          "uses": 65086
+        },
+        {
+          "moveId": "DAZZLING_GLEAM",
+          "uses": 13402
+        }
+      ]
+    },
+    "moveset": [
+      "POUND",
+      "DISARMING_VOICE",
+      "HYPER_BEAM"
     ]
   },
   "timburr": {
@@ -10123,7 +13503,7 @@
     ]
   },
   "minccino": {
-    "legal": false,
+    "legal": true,
     "dex": 572,
     "types": [
       "normal",
@@ -10137,30 +13517,30 @@
       "normal",
       "none"
     ],
-    "ranking": 518,
+    "ranking": 542,
     "moves": {
       "fastMoves": [
         {
           "moveId": "POUND",
-          "uses": 18477
+          "uses": 27222
         },
         {
           "moveId": "CHARM",
-          "uses": 57723
+          "uses": 88178
         }
       ],
       "chargedMoves": [
         {
           "moveId": "THUNDERBOLT",
-          "uses": 21447
+          "uses": 33151
         },
         {
           "moveId": "HYPER_BEAM",
-          "uses": 16114
+          "uses": 24141
         },
         {
           "moveId": "AQUA_TAIL",
-          "uses": 38679
+          "uses": 58087
         }
       ]
     },
@@ -10187,43 +13567,11 @@
     ]
   },
   "gothitelle": {
-    "legal": true,
+    "legal": false,
     "dex": 576,
     "types": [
       "psychic",
       "none"
-    ],
-    "ranking": 503,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "CONFUSION",
-          "uses": 47715
-        },
-        {
-          "moveId": "CHARM",
-          "uses": 28485
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "ROCK_SLIDE",
-          "uses": 37490
-        },
-        {
-          "moveId": "PSYCHIC",
-          "uses": 27122
-        },
-        {
-          "moveId": "FUTURE_SIGHT",
-          "uses": 11760
-        }
-      ]
-    },
-    "moveset": [
-      "CONFUSION",
-      "ROCK_SLIDE",
-      "PSYCHIC"
     ]
   },
   "solosis": {
@@ -10291,27 +13639,127 @@
     ]
   },
   "deerling": {
-    "legal": false,
+    "legal": true,
     "dex": 585,
     "types": [
       "normal",
       "grass"
+    ],
+    "ranking": 339,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TAKE_DOWN",
+          "uses": 48403
+        },
+        {
+          "moveId": "TACKLE",
+          "uses": 66997
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "WILD_CHARGE",
+          "uses": 61432
+        },
+        {
+          "moveId": "SEED_BOMB",
+          "uses": 38835
+        },
+        {
+          "moveId": "ENERGY_BALL",
+          "uses": 15271
+        }
+      ]
+    },
+    "moveset": [
+      "TACKLE",
+      "WILD_CHARGE",
+      "SEED_BOMB"
     ]
   },
   "sawsbuck": {
-    "legal": false,
+    "legal": true,
     "dex": 586,
     "types": [
       "normal",
       "grass"
+    ],
+    "ranking": 426,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TAKE_DOWN",
+          "uses": 26012
+        },
+        {
+          "moveId": "FEINT_ATTACK",
+          "uses": 89388
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "WILD_CHARGE",
+          "uses": 55301
+        },
+        {
+          "moveId": "SOLAR_BEAM",
+          "uses": 19555
+        },
+        {
+          "moveId": "MEGAHORN",
+          "uses": 25543
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 15146
+        }
+      ]
+    },
+    "moveset": [
+      "FEINT_ATTACK",
+      "WILD_CHARGE",
+      "MEGAHORN"
     ]
   },
   "emolga": {
-    "legal": false,
+    "legal": true,
     "dex": 587,
     "types": [
       "electric",
       "flying"
+    ],
+    "ranking": 566,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "THUNDER_SHOCK",
+          "uses": 68991
+        },
+        {
+          "moveId": "QUICK_ATTACK",
+          "uses": 46409
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 20961
+        },
+        {
+          "moveId": "DISCHARGE",
+          "uses": 49180
+        },
+        {
+          "moveId": "AERIAL_ACE",
+          "uses": 45278
+        }
+      ]
+    },
+    "moveset": [
+      "THUNDER_SHOCK",
+      "DISCHARGE",
+      "AERIAL_ACE"
     ]
   },
   "karrablast": {
@@ -10329,34 +13777,34 @@
       "bug",
       "steel"
     ],
-    "ranking": 602,
+    "ranking": 636,
     "moves": {
       "fastMoves": [
         {
           "moveId": "COUNTER",
-          "uses": 45368
+          "uses": 69513
         },
         {
           "moveId": "BUG_BITE",
-          "uses": 30832
+          "uses": 45887
         }
       ],
       "chargedMoves": [
         {
           "moveId": "MEGAHORN",
-          "uses": 24475
+          "uses": 38081
         },
         {
           "moveId": "DRILL_RUN",
-          "uses": 31168
+          "uses": 48499
         },
         {
           "moveId": "AERIAL_ACE",
-          "uses": 17925
+          "uses": 24809
         },
         {
           "moveId": "ACID_SPRAY",
-          "uses": 2727
+          "uses": 4072
         }
       ]
     },
@@ -10407,7 +13855,7 @@
     ]
   },
   "joltik": {
-    "legal": false,
+    "legal": true,
     "dex": 595,
     "types": [
       "bug",
@@ -10415,19 +13863,91 @@
     ]
   },
   "galvantula": {
-    "legal": false,
+    "legal": true,
     "dex": 596,
     "types": [
       "bug",
       "electric"
+    ],
+    "ranking": 622,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "VOLT_SWITCH",
+          "uses": 63559
+        },
+        {
+          "moveId": "FURY_CUTTER",
+          "uses": 51841
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "LUNGE",
+          "uses": 34378
+        },
+        {
+          "moveId": "ENERGY_BALL",
+          "uses": 20039
+        },
+        {
+          "moveId": "DISCHARGE",
+          "uses": 33813
+        },
+        {
+          "moveId": "CROSS_POISON",
+          "uses": 18094
+        },
+        {
+          "moveId": "BUG_BUZZ",
+          "uses": 8943
+        }
+      ]
+    },
+    "moveset": [
+      "VOLT_SWITCH",
+      "DISCHARGE",
+      "LUNGE"
     ]
   },
   "ferroseed": {
-    "legal": false,
+    "legal": true,
     "dex": 597,
     "types": [
       "grass",
       "steel"
+    ],
+    "ranking": 371,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TACKLE",
+          "uses": 43398
+        },
+        {
+          "moveId": "METAL_CLAW",
+          "uses": 72002
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "IRON_HEAD",
+          "uses": 70745
+        },
+        {
+          "moveId": "GYRO_BALL",
+          "uses": 22135
+        },
+        {
+          "moveId": "FLASH_CANNON",
+          "uses": 22536
+        }
+      ]
+    },
+    "moveset": [
+      "METAL_CLAW",
+      "IRON_HEAD",
+      "FLASH_CANNON"
     ]
   },
   "ferrothorn": {
@@ -10437,38 +13957,38 @@
       "grass",
       "steel"
     ],
-    "ranking": 605,
+    "ranking": 630,
     "moves": {
       "fastMoves": [
         {
           "moveId": "METAL_CLAW",
-          "uses": 28714
+          "uses": 44466
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 47486
+          "uses": 70934
         }
       ],
       "chargedMoves": [
         {
           "moveId": "THUNDER",
-          "uses": 16035
+          "uses": 22032
         },
         {
           "moveId": "POWER_WHIP",
-          "uses": 27295
+          "uses": 42569
         },
         {
           "moveId": "MIRROR_SHOT",
-          "uses": 19922
+          "uses": 31061
         },
         {
           "moveId": "FLASH_CANNON",
-          "uses": 10436
+          "uses": 16108
         },
         {
           "moveId": "ACID_SPRAY",
-          "uses": 2784
+          "uses": 3710
         }
       ]
     },
@@ -10479,7 +13999,7 @@
     ]
   },
   "klink": {
-    "legal": false,
+    "legal": true,
     "dex": 599,
     "types": [
       "steel",
@@ -10487,11 +14007,43 @@
     ]
   },
   "klang": {
-    "legal": false,
+    "legal": true,
     "dex": 600,
     "types": [
       "steel",
       "none"
+    ],
+    "ranking": 584,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "THUNDER_SHOCK",
+          "uses": 71527
+        },
+        {
+          "moveId": "CHARGE_BEAM",
+          "uses": 43873
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ZAP_CANNON",
+          "uses": 17448
+        },
+        {
+          "moveId": "VICE_GRIP",
+          "uses": 40823
+        },
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 56978
+        }
+      ]
+    },
+    "moveset": [
+      "THUNDER_SHOCK",
+      "THUNDERBOLT",
+      "VICE_GRIP"
     ]
   },
   "klinklang": {
@@ -10501,34 +14053,34 @@
       "steel",
       "none"
     ],
-    "ranking": 557,
+    "ranking": 568,
     "moves": {
       "fastMoves": [
         {
           "moveId": "THUNDER_SHOCK",
-          "uses": 47407
+          "uses": 71376
         },
         {
           "moveId": "CHARGE_BEAM",
-          "uses": 28793
+          "uses": 44024
         }
       ],
       "chargedMoves": [
         {
           "moveId": "ZAP_CANNON",
-          "uses": 17681
+          "uses": 25037
         },
         {
           "moveId": "MIRROR_SHOT",
-          "uses": 29596
+          "uses": 46777
         },
         {
           "moveId": "HYPER_BEAM",
-          "uses": 13577
+          "uses": 19136
         },
         {
           "moveId": "FLASH_CANNON",
-          "uses": 15371
+          "uses": 24419
         }
       ]
     },
@@ -10539,7 +14091,7 @@
     ]
   },
   "tynamo": {
-    "legal": false,
+    "legal": true,
     "dex": 602,
     "types": [
       "electric",
@@ -10547,19 +14099,87 @@
     ]
   },
   "eelektrik": {
-    "legal": false,
+    "legal": true,
     "dex": 603,
     "types": [
       "electric",
       "none"
+    ],
+    "ranking": 526,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SPARK",
+          "uses": 84227
+        },
+        {
+          "moveId": "ACID",
+          "uses": 31173
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 20561
+        },
+        {
+          "moveId": "DISCHARGE",
+          "uses": 48321
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 46284
+        }
+      ]
+    },
+    "moveset": [
+      "SPARK",
+      "DISCHARGE",
+      "CRUNCH"
     ]
   },
   "eelektross": {
-    "legal": false,
+    "legal": true,
     "dex": 604,
     "types": [
       "electric",
       "none"
+    ],
+    "ranking": 607,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SPARK",
+          "uses": 83809
+        },
+        {
+          "moveId": "ACID",
+          "uses": 31591
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 36397
+        },
+        {
+          "moveId": "DRAGON_CLAW",
+          "uses": 40865
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 33964
+        },
+        {
+          "moveId": "ACID_SPRAY",
+          "uses": 4053
+        }
+      ]
+    },
+    "moveset": [
+      "SPARK",
+      "DRAGON_CLAW",
+      "THUNDERBOLT"
     ]
   },
   "elgyem": {
@@ -10667,11 +14287,43 @@
     ]
   },
   "stunfisk": {
-    "legal": false,
+    "legal": true,
     "dex": 618,
     "types": [
       "ground",
       "electric"
+    ],
+    "ranking": 644,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "THUNDER_SHOCK",
+          "uses": 56675
+        },
+        {
+          "moveId": "MUD_SHOT",
+          "uses": 58725
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "MUD_BOMB",
+          "uses": 48450
+        },
+        {
+          "moveId": "MUDDY_WATER",
+          "uses": 25628
+        },
+        {
+          "moveId": "DISCHARGE",
+          "uses": 41256
+        }
+      ]
+    },
+    "moveset": [
+      "THUNDER_SHOCK",
+      "MUD_BOMB",
+      "DISCHARGE"
     ]
   },
   "stunfisk_galarian": {
@@ -10735,23 +14387,91 @@
     ]
   },
   "pawniard": {
-    "legal": false,
+    "legal": true,
     "dex": 624,
     "types": [
       "dark",
       "steel"
+    ],
+    "ranking": 574,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SCRATCH",
+          "uses": 35064
+        },
+        {
+          "moveId": "FURY_CUTTER",
+          "uses": 80336
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "X_SCISSOR",
+          "uses": 28372
+        },
+        {
+          "moveId": "NIGHT_SLASH",
+          "uses": 62311
+        },
+        {
+          "moveId": "IRON_HEAD",
+          "uses": 24749
+        }
+      ]
+    },
+    "moveset": [
+      "FURY_CUTTER",
+      "NIGHT_SLASH",
+      "X_SCISSOR"
     ]
   },
   "bisharp": {
-    "legal": false,
+    "legal": true,
     "dex": 625,
     "types": [
       "dark",
       "steel"
+    ],
+    "ranking": 600,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SNARL",
+          "uses": 73957
+        },
+        {
+          "moveId": "METAL_CLAW",
+          "uses": 41443
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "X_SCISSOR",
+          "uses": 30548
+        },
+        {
+          "moveId": "IRON_HEAD",
+          "uses": 26464
+        },
+        {
+          "moveId": "FOCUS_BLAST",
+          "uses": 19038
+        },
+        {
+          "moveId": "DARK_PULSE",
+          "uses": 39417
+        }
+      ]
+    },
+    "moveset": [
+      "SNARL",
+      "DARK_PULSE",
+      "X_SCISSOR"
     ]
   },
   "bouffalant": {
-    "legal": false,
+    "legal": true,
     "dex": 626,
     "types": [
       "normal",
@@ -10759,22 +14479,126 @@
     ],
     "tags": [
       "regional"
+    ],
+    "ranking": 589,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 17570
+        },
+        {
+          "moveId": "MUD_SHOT",
+          "uses": 97830
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "STOMP",
+          "uses": 41043
+        },
+        {
+          "moveId": "SKULL_BASH",
+          "uses": 14209
+        },
+        {
+          "moveId": "MEGAHORN",
+          "uses": 29300
+        },
+        {
+          "moveId": "EARTHQUAKE",
+          "uses": 30781
+        }
+      ]
+    },
+    "moveset": [
+      "MUD_SHOT",
+      "STOMP",
+      "EARTHQUAKE"
     ]
   },
   "rufflet": {
-    "legal": false,
+    "legal": true,
     "dex": 627,
     "types": [
       "normal",
       "flying"
+    ],
+    "ranking": 539,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "WING_ATTACK",
+          "uses": 77393
+        },
+        {
+          "moveId": "PECK",
+          "uses": 38007
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ROCK_TOMB",
+          "uses": 13220
+        },
+        {
+          "moveId": "BRAVE_BIRD",
+          "uses": 72791
+        },
+        {
+          "moveId": "AERIAL_ACE",
+          "uses": 29395
+        }
+      ]
+    },
+    "moveset": [
+      "WING_ATTACK",
+      "BRAVE_BIRD",
+      "AERIAL_ACE"
     ]
   },
   "braviary": {
-    "legal": false,
+    "legal": true,
     "dex": 628,
     "types": [
       "normal",
       "flying"
+    ],
+    "ranking": 476,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "STEEL_WING",
+          "uses": 35198
+        },
+        {
+          "moveId": "AIR_SLASH",
+          "uses": 80202
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ROCK_SLIDE",
+          "uses": 25267
+        },
+        {
+          "moveId": "HEAT_WAVE",
+          "uses": 5329
+        },
+        {
+          "moveId": "CLOSE_COMBAT",
+          "uses": 39827
+        },
+        {
+          "moveId": "BRAVE_BIRD",
+          "uses": 44855
+        }
+      ]
+    },
+    "moveset": [
+      "AIR_SLASH",
+      "BRAVE_BIRD",
+      "CLOSE_COMBAT"
     ]
   },
   "vullaby": {
@@ -10814,30 +14638,30 @@
     "tags": [
       "regional"
     ],
-    "ranking": 541,
+    "ranking": 577,
     "moves": {
       "fastMoves": [
         {
           "moveId": "METAL_CLAW",
-          "uses": 31324
+          "uses": 49684
         },
         {
           "moveId": "BUG_BITE",
-          "uses": 44876
+          "uses": 65716
         }
       ],
       "chargedMoves": [
         {
           "moveId": "X_SCISSOR",
-          "uses": 32250
+          "uses": 49623
         },
         {
           "moveId": "STONE_EDGE",
-          "uses": 26405
+          "uses": 36232
         },
         {
           "moveId": "IRON_HEAD",
-          "uses": 17526
+          "uses": 29596
         }
       ]
     },
@@ -11229,7 +15053,7 @@
     ]
   },
   "bunnelby": {
-    "legal": false,
+    "legal": true,
     "dex": 659,
     "types": [
       "normal",
@@ -11237,15 +15061,51 @@
     ]
   },
   "diggersby": {
-    "legal": false,
+    "legal": true,
     "dex": 660,
     "types": [
       "normal",
       "ground"
+    ],
+    "ranking": 706,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "QUICK_ATTACK",
+          "uses": 49526
+        },
+        {
+          "moveId": "MUD_SHOT",
+          "uses": 65874
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 22478
+        },
+        {
+          "moveId": "FIRE_PUNCH",
+          "uses": 44686
+        },
+        {
+          "moveId": "EARTHQUAKE",
+          "uses": 41930
+        },
+        {
+          "moveId": "DIG",
+          "uses": 6336
+        }
+      ]
+    },
+    "moveset": [
+      "MUD_SHOT",
+      "FIRE_PUNCH",
+      "EARTHQUAKE"
     ]
   },
   "fletchling": {
-    "legal": false,
+    "legal": true,
     "dex": 661,
     "types": [
       "normal",
@@ -11302,19 +15162,91 @@
     ]
   },
   "litleo": {
-    "legal": false,
+    "legal": true,
     "dex": 667,
     "types": [
       "fire",
       "normal"
+    ],
+    "ranking": 562,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TACKLE",
+          "uses": 20577
+        },
+        {
+          "moveId": "FIRE_FANG",
+          "uses": 43833
+        },
+        {
+          "moveId": "EMBER",
+          "uses": 50965
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "FLAME_CHARGE",
+          "uses": 51812
+        },
+        {
+          "moveId": "FLAMETHROWER",
+          "uses": 21524
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 41916
+        }
+      ]
+    },
+    "moveset": [
+      "EMBER",
+      "FLAME_CHARGE",
+      "CRUNCH"
     ]
   },
   "pyroar": {
-    "legal": false,
+    "legal": true,
     "dex": 668,
     "types": [
       "fire",
       "normal"
+    ],
+    "ranking": 546,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TAKE_DOWN",
+          "uses": 22656
+        },
+        {
+          "moveId": "FIRE_FANG",
+          "uses": 92744
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SOLAR_BEAM",
+          "uses": 18093
+        },
+        {
+          "moveId": "OVERHEAT",
+          "uses": 30580
+        },
+        {
+          "moveId": "FLAME_CHARGE",
+          "uses": 39754
+        },
+        {
+          "moveId": "DARK_PULSE",
+          "uses": 27025
+        }
+      ]
+    },
+    "moveset": [
+      "FIRE_FANG",
+      "FLAME_CHARGE",
+      "OVERHEAT"
     ]
   },
   "pyroar_female": {
@@ -11710,7 +15642,7 @@
     ]
   },
   "klefki": {
-    "legal": false,
+    "legal": true,
     "dex": 707,
     "types": [
       "steel",
@@ -11718,6 +15650,42 @@
     ],
     "tags": [
       "regional"
+    ],
+    "ranking": 420,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TACKLE",
+          "uses": 54061
+        },
+        {
+          "moveId": "ASTONISH",
+          "uses": 61339
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "PLAY_ROUGH",
+          "uses": 30182
+        },
+        {
+          "moveId": "FOUL_PLAY",
+          "uses": 44087
+        },
+        {
+          "moveId": "FLASH_CANNON",
+          "uses": 22051
+        },
+        {
+          "moveId": "DRAINING_KISS",
+          "uses": 19194
+        }
+      ]
+    },
+    "moveset": [
+      "ASTONISH",
+      "FOUL_PLAY",
+      "PLAY_ROUGH"
     ]
   },
   "phantump": {
@@ -11795,47 +15763,11 @@
     ]
   },
   "noivern": {
-    "legal": true,
+    "legal": false,
     "dex": 715,
     "types": [
       "flying",
       "dragon"
-    ],
-    "ranking": 445,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "BITE",
-          "uses": 28872
-        },
-        {
-          "moveId": "AIR_SLASH",
-          "uses": 47328
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "PSYCHIC",
-          "uses": 21633
-        },
-        {
-          "moveId": "HURRICANE",
-          "uses": 25983
-        },
-        {
-          "moveId": "HEAT_WAVE",
-          "uses": 8713
-        },
-        {
-          "moveId": "DRACO_METEOR",
-          "uses": 19906
-        }
-      ]
-    },
-    "moveset": [
-      "AIR_SLASH",
-      "HURRICANE",
-      "PSYCHIC"
     ]
   },
   "xerneas": {
@@ -11894,7 +15826,7 @@
     ]
   },
   "obstagoon": {
-    "legal": false,
+    "legal": true,
     "dex": 862,
     "types": [
       "dark",
@@ -11902,10 +15834,46 @@
     ],
     "tags": [
       "galarian"
+    ],
+    "ranking": 677,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "LICK",
+          "uses": 45176
+        },
+        {
+          "moveId": "COUNTER",
+          "uses": 70224
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "NIGHT_SLASH",
+          "uses": 54381
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 13548
+        },
+        {
+          "moveId": "GUNK_SHOT",
+          "uses": 10577
+        },
+        {
+          "moveId": "CROSS_CHOP",
+          "uses": 37029
+        }
+      ]
+    },
+    "moveset": [
+      "COUNTER",
+      "NIGHT_SLASH",
+      "GUNK_SHOT"
     ]
   },
   "perrserker": {
-    "legal": false,
+    "legal": true,
     "dex": 863,
     "types": [
       "steel",
@@ -11913,6 +15881,42 @@
     ],
     "tags": [
       "galarian"
+    ],
+    "ranking": 627,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SHADOW_CLAW",
+          "uses": 79939
+        },
+        {
+          "moveId": "METAL_CLAW",
+          "uses": 35461
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "PLAY_ROUGH",
+          "uses": 14418
+        },
+        {
+          "moveId": "IRON_HEAD",
+          "uses": 21714
+        },
+        {
+          "moveId": "FOUL_PLAY",
+          "uses": 28925
+        },
+        {
+          "moveId": "CLOSE_COMBAT",
+          "uses": 50360
+        }
+      ]
+    },
+    "moveset": [
+      "SHADOW_CLAW",
+      "CLOSE_COMBAT",
+      "FOUL_PLAY"
     ]
   },
   "sirfetchd": {

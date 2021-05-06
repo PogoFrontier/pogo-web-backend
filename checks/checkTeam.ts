@@ -1,4 +1,4 @@
-import { Rule, Selector } from "../types/rule";
+import { ClassOption, Rule, Selector } from "../types/rule";
 import { TeamMember, TeamMemberDescription, typeId } from "../types/team";
 import { calculateCP, calculateHP, calculateAtk,calculateDef } from "../utils/calcUtils";
 import pokeData from "./../data/pokemon.json";
@@ -97,6 +97,11 @@ export function isTeamValid(team: TeamMember[], format: Rule): {isValid: boolean
     // Check if the budget was overused
     if(format.pointLimitOptions && pointsUsed > format.pointLimitOptions.maxPoints) {
       violations.push(`Team uses up too many points: ${pointsUsed}`);
+    }
+
+    // Check if the team matches one class
+    if(format.classes && !getClassForTeam(format.classes, team)) {
+      violations.push(`Team doesn't match any class`);
     }
 
     return {
@@ -214,7 +219,6 @@ export function parseToTeamMembers (team: TeamMemberDescription[]): TeamMember[]
   
       // Calculate stats based on data
       const speciesData = pokeData[member.speciesId as keyof typeof pokeData];
-      const isShadow = 'tags' in speciesData && speciesData.tags.some(tag => tag === "shadow");
       let baseStats = {
         atk: 0,
         def: 0,
@@ -247,7 +251,24 @@ export function parseToTeamMembers (team: TeamMemberDescription[]): TeamMember[]
         sid: speciesData.sid
       };
     })
+}
+
+export function getClassForTeam(classes: ClassOption[], team: TeamMember[]): string | undefined {
+  return classes.find((classOption) => {
+    return team.every(member => doesClassDescribePokemon(member.speciesId, classOption))
+  })?.name
+}
+
+export function doesClassDescribePokemon(speciesId: string, classOption: ClassOption): boolean {
+  const speciesData = mainSeriesPokeData[speciesId as keyof typeof mainSeriesPokeData];
+  if(classOption.include && !classOption.include.some(selector => doesSelectorDescribePokémon(selector, speciesData))) {
+    return false
   }
+  if(classOption.exclude && classOption.exclude.some(selector => doesSelectorDescribePokémon(selector, speciesData))) {
+    return false
+  }
+  return true
+}
 
 type species = {
     speciesId: string
