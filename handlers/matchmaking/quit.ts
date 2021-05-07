@@ -15,7 +15,7 @@ function quit(user: User, payload: SearchBattlePayload) {
                 return;
             }
     
-            // It didn'tworked
+            // It didn't work
             if(removedRequests !== 1) {
                 console.warn("The removal of the battle request didn't work");
                 return;

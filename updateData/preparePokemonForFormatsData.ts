@@ -48,6 +48,7 @@ for (let ruleName of Object.keys(rules)) {
                     if(legal) {
                         listForFormat[speciesId] = {
                             ...listForFormat[speciesId],
+                            speciesName: pokemonList[pokemon].speciesName,
                             price: price,
                             ranking: pvpokeRanking?.rating,
                             moves: pvpokeRanking?.moves,
@@ -85,6 +86,7 @@ for (let ruleName of Object.keys(rules)) {
                     if(legal) {
                         listForFormat[speciesId] = {
                             ...listForFormat[speciesId],
+                            speciesName: pokemonList[pokemon].speciesName,
                             price: price,
                             ranking: pvpokeRanking?.rating,
                             moves: pvpokeRanking?.moves,
@@ -119,6 +121,7 @@ for (let ruleName of Object.keys(rules)) {
                 if(legal) {
                     listForFormat[speciesId] = {
                         ...listForFormat[speciesId],
+                        speciesName: pokemonList[pokemon].speciesName,
                         price: price,
                         ranking: pvpokeRanking?.rating,
                         moves: pvpokeRanking?.moves,

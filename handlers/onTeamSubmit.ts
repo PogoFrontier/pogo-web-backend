@@ -2,6 +2,7 @@ import to from "../actions/to";
 import { rooms } from "../matchhandling_server";
 import { CODE } from "../types/actions";
 import { OnTeamSubmitPayload } from "../types/handlers"; 
+import { RoomStatus } from "../types/room";
 
 function onTeamSubmit(id: string, payload: OnTeamSubmitPayload) {
   const { room, indexes } = payload;
@@ -11,7 +12,7 @@ function onTeamSubmit(id: string, payload: OnTeamSubmitPayload) {
   }
 
   const currentRoom = rooms.get(room);
-  if (currentRoom) {
+  if (currentRoom && currentRoom.status === RoomStatus.SELECTING) {
     const i = currentRoom.players.findIndex(x => x && x.id === id);
     let player = currentRoom.players[i];
 

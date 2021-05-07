@@ -77,7 +77,7 @@ export function isTeamValid(team: TeamMember[], format: Rule): {isValid: boolean
         if (format.flags.speciesClauseByDex && selectedSpecies.some(species => species.dex === speciesData.dex)) {
           violations.push(`Pokemon in index ${index} is a duplicate and violates the species clause by dex`);
         }
-        if (format.flags.speciesClauseByForm && selectedSpecies.some(species => species.speciesId === speciesData.speciesId)) {
+        if (format.flags.speciesClauseByForm && selectedSpecies.some(species => species.speciesId.replace("_shadow", "") === speciesData.speciesId.replace("_shadow", ""))) {
           violations.push(`Pokemon in index ${index} is a duplicate and violates the species clause by form`);
         }
         if (format.flags.typeClause && selectedSpecies.some(species => isThereADuplicateType(species, speciesData))) {

@@ -143,6 +143,7 @@
       "starter",
       "shadoweligible"
     ],
+    "speciesName": "Charizard",
     "ranking": 638,
     "moves": {
       "fastMoves": [
@@ -220,7 +221,8 @@
       "starter",
       "shadoweligible",
       "mega"
-    ]
+    ],
+    "speciesName": "Charizard (Mega Y)"
   },
   "charizard_shadow": {
     "legal": true,
@@ -233,6 +235,7 @@
       "starter",
       "shadow"
     ],
+    "speciesName": "Charizard (Shadow)",
     "ranking": 634,
     "moves": {
       "fastMoves": [
@@ -300,7 +303,8 @@
     "tags": [
       "starter",
       "shadoweligible"
-    ]
+    ],
+    "speciesName": "Squirtle"
   },
   "squirtle_shadow": {
     "legal": true,
@@ -312,7 +316,8 @@
     "tags": [
       "starter",
       "shadow"
-    ]
+    ],
+    "speciesName": "Squirtle (Shadow)"
   },
   "wartortle": {
     "legal": true,
@@ -325,6 +330,7 @@
       "starter",
       "shadoweligible"
     ],
+    "speciesName": "Wartortle",
     "ranking": 501,
     "moves": {
       "fastMoves": [
@@ -373,6 +379,7 @@
       "starter",
       "shadow"
     ],
+    "speciesName": "Wartortle (Shadow)",
     "ranking": 502,
     "moves": {
       "fastMoves": [
@@ -421,6 +428,7 @@
       "starter",
       "shadoweligible"
     ],
+    "speciesName": "Blastoise",
     "ranking": 609,
     "moves": {
       "fastMoves": [
@@ -473,7 +481,8 @@
       "starter",
       "shadoweligible",
       "mega"
-    ]
+    ],
+    "speciesName": "Blastoise (Mega)"
   },
   "blastoise_shadow": {
     "legal": true,
@@ -486,6 +495,7 @@
       "starter",
       "shadow"
     ],
+    "speciesName": "Blastoise (Shadow)",
     "ranking": 597,
     "moves": {
       "fastMoves": [
@@ -554,6 +564,7 @@
       "bug",
       "flying"
     ],
+    "speciesName": "Butterfree",
     "ranking": 412,
     "moves": {
       "fastMoves": [
@@ -675,7 +686,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "speciesName": "Pidgey"
   },
   "pidgeotto": {
     "legal": true,
@@ -684,6 +696,7 @@
       "normal",
       "flying"
     ],
+    "speciesName": "Pidgeotto",
     "ranking": 474,
     "moves": {
       "fastMoves": [
@@ -724,6 +737,7 @@
       "normal",
       "flying"
     ],
+    "speciesName": "Pidgeot",
     "ranking": 595,
     "moves": {
       "fastMoves": [
@@ -778,7 +792,8 @@
     ],
     "tags": [
       "mega"
-    ]
+    ],
+    "speciesName": "Pidgeot (Mega)"
   },
   "rattata": {
     "legal": false,
@@ -852,7 +867,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "speciesName": "Spearow"
   },
   "fearow": {
     "legal": true,
@@ -861,6 +877,7 @@
       "normal",
       "flying"
     ],
+    "speciesName": "Fearow",
     "ranking": 447,
     "moves": {
       "fastMoves": [
@@ -1190,6 +1207,7 @@
       "fairy",
       "none"
     ],
+    "speciesName": "Clefairy",
     "ranking": 291,
     "moves": {
       "fastMoves": [
@@ -1230,6 +1248,7 @@
       "fairy",
       "none"
     ],
+    "speciesName": "Clefable",
     "ranking": 650,
     "moves": {
       "fastMoves": [
@@ -1329,6 +1348,7 @@
     "tags": [
       "alolan"
     ],
+    "speciesName": "Ninetales (Alolan)",
     "ranking": 682,
     "moves": {
       "fastMoves": [
@@ -1391,7 +1411,8 @@
     "types": [
       "normal",
       "fairy"
-    ]
+    ],
+    "speciesName": "Jigglypuff"
   },
   "wigglytuff": {
     "legal": true,
@@ -1400,6 +1421,7 @@
       "normal",
       "fairy"
     ],
+    "speciesName": "Wigglytuff",
     "ranking": 661,
     "moves": {
       "fastMoves": [
@@ -1450,7 +1472,8 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": "Zubat"
   },
   "zubat_shadow": {
     "legal": true,
@@ -1461,7 +1484,8 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": "Zubat (Shadow)"
   },
   "golbat": {
     "legal": true,
@@ -1473,6 +1497,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "speciesName": "Golbat",
     "ranking": 618,
     "moves": {
       "fastMoves": [
@@ -1524,6 +1549,7 @@
     "tags": [
       "shadow"
     ],
+    "speciesName": "Golbat (Shadow)",
     "ranking": 612,
     "moves": {
       "fastMoves": [
@@ -1843,7 +1869,8 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": "Psyduck"
   },
   "psyduck_shadow": {
     "legal": true,
@@ -1854,7 +1881,8 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": "Psyduck (Shadow)"
   },
   "golduck": {
     "legal": true,
@@ -1866,6 +1894,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "speciesName": "Golduck",
     "ranking": 572,
     "moves": {
       "fastMoves": [
@@ -1925,6 +1954,7 @@
     "tags": [
       "shadow"
     ],
+    "speciesName": "Golduck (Shadow)",
     "ranking": 576,
     "moves": {
       "fastMoves": [
@@ -2043,7 +2073,8 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": "Poliwag"
   },
   "poliwag_shadow": {
     "legal": true,
@@ -2054,7 +2085,8 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": "Poliwag (Shadow)"
   },
   "poliwhirl": {
     "legal": true,
@@ -2066,6 +2098,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "speciesName": "Poliwhirl",
     "ranking": 578,
     "moves": {
       "fastMoves": [
@@ -2117,6 +2150,7 @@
     "tags": [
       "shadow"
     ],
+    "speciesName": "Poliwhirl (Shadow)",
     "ranking": 592,
     "moves": {
       "fastMoves": [
@@ -2168,6 +2202,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "speciesName": "Poliwrath",
     "ranking": 625,
     "moves": {
       "fastMoves": [
@@ -2223,6 +2258,7 @@
     "tags": [
       "shadow"
     ],
+    "speciesName": "Poliwrath (Shadow)",
     "ranking": 641,
     "moves": {
       "fastMoves": [
@@ -2477,6 +2513,7 @@
       "water",
       "poison"
     ],
+    "speciesName": "Tentacool",
     "ranking": 444,
     "moves": {
       "fastMoves": [
@@ -2517,6 +2554,7 @@
       "water",
       "poison"
     ],
+    "speciesName": "Tentacruel",
     "ranking": 539,
     "moves": {
       "fastMoves": [
@@ -2648,6 +2686,7 @@
     "tags": [
       "galarian"
     ],
+    "speciesName": "Rapidash (Galarian)",
     "ranking": 606,
     "moves": {
       "fastMoves": [
@@ -2695,6 +2734,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "speciesName": "Slowpoke",
     "ranking": 521,
     "moves": {
       "fastMoves": [
@@ -2742,6 +2782,7 @@
     "tags": [
       "shadow"
     ],
+    "speciesName": "Slowpoke (Shadow)",
     "ranking": 522,
     "moves": {
       "fastMoves": [
@@ -2789,6 +2830,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "speciesName": "Slowbro",
     "ranking": 502,
     "moves": {
       "fastMoves": [
@@ -2832,6 +2874,7 @@
     "tags": [
       "shadow"
     ],
+    "speciesName": "Slowbro (Shadow)",
     "ranking": 522,
     "moves": {
       "fastMoves": [
@@ -2923,6 +2966,7 @@
     "tags": [
       "regional"
     ],
+    "speciesName": "Farfetch'd",
     "ranking": 587,
     "moves": {
       "fastMoves": [
@@ -2977,7 +3021,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "speciesName": "Doduo"
   },
   "dodrio": {
     "legal": true,
@@ -2986,6 +3031,7 @@
       "normal",
       "flying"
     ],
+    "speciesName": "Dodrio",
     "ranking": 425,
     "moves": {
       "fastMoves": [
@@ -3030,6 +3076,7 @@
       "water",
       "none"
     ],
+    "speciesName": "Seel",
     "ranking": 486,
     "moves": {
       "fastMoves": [
@@ -3078,6 +3125,7 @@
       "water",
       "ice"
     ],
+    "speciesName": "Dewgong",
     "ranking": 661,
     "moves": {
       "fastMoves": [
@@ -3198,7 +3246,8 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": "Shellder"
   },
   "shellder_shadow": {
     "legal": true,
@@ -3209,7 +3258,8 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": "Shellder (Shadow)"
   },
   "cloyster": {
     "legal": true,
@@ -3221,6 +3271,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "speciesName": "Cloyster",
     "ranking": 556,
     "moves": {
       "fastMoves": [
@@ -3272,6 +3323,7 @@
     "tags": [
       "shadow"
     ],
+    "speciesName": "Cloyster (Shadow)",
     "ranking": 541,
     "moves": {
       "fastMoves": [
@@ -3411,6 +3463,7 @@
       "water",
       "none"
     ],
+    "speciesName": "Krabby",
     "ranking": 421,
     "moves": {
       "fastMoves": [
@@ -3451,6 +3504,7 @@
       "water",
       "none"
     ],
+    "speciesName": "Kingler",
     "ranking": 580,
     "moves": {
       "fastMoves": [
@@ -3713,6 +3767,7 @@
     "tags": [
       "galarian"
     ],
+    "speciesName": "Weezing (Galarian)",
     "ranking": 370,
     "moves": {
       "fastMoves": [
@@ -3808,7 +3863,8 @@
     "types": [
       "water",
       "none"
-    ]
+    ],
+    "speciesName": "Horsea"
   },
   "seadra": {
     "legal": true,
@@ -3817,6 +3873,7 @@
       "water",
       "none"
     ],
+    "speciesName": "Seadra",
     "ranking": 441,
     "moves": {
       "fastMoves": [
@@ -3861,6 +3918,7 @@
       "water",
       "none"
     ],
+    "speciesName": "Goldeen",
     "ranking": 473,
     "moves": {
       "fastMoves": [
@@ -3901,6 +3959,7 @@
       "water",
       "none"
     ],
+    "speciesName": "Seaking",
     "ranking": 600,
     "moves": {
       "fastMoves": [
@@ -3952,7 +4011,8 @@
     "types": [
       "water",
       "none"
-    ]
+    ],
+    "speciesName": "Staryu"
   },
   "starmie": {
     "legal": true,
@@ -3961,6 +4021,7 @@
       "water",
       "psychic"
     ],
+    "speciesName": "Starmie",
     "ranking": 433,
     "moves": {
       "fastMoves": [
@@ -4084,6 +4145,7 @@
     "tags": [
       "regional"
     ],
+    "speciesName": "Mr. Mime",
     "ranking": 470,
     "moves": {
       "fastMoves": [
@@ -4138,6 +4200,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "speciesName": "Scyther",
     "ranking": 528,
     "moves": {
       "fastMoves": [
@@ -4189,6 +4252,7 @@
     "tags": [
       "shadow"
     ],
+    "speciesName": "Scyther (Shadow)",
     "ranking": 542,
     "moves": {
       "fastMoves": [
@@ -4328,7 +4392,8 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": "Magikarp"
   },
   "magikarp_shadow": {
     "legal": true,
@@ -4339,7 +4404,8 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": "Magikarp (Shadow)"
   },
   "gyarados": {
     "legal": true,
@@ -4351,6 +4417,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "speciesName": "Gyarados",
     "ranking": 622,
     "moves": {
       "fastMoves": [
@@ -4414,7 +4481,8 @@
     "tags": [
       "shadoweligible",
       "mega"
-    ]
+    ],
+    "speciesName": "Gyarados (Mega)"
   },
   "gyarados_shadow": {
     "legal": true,
@@ -4426,6 +4494,7 @@
     "tags": [
       "shadow"
     ],
+    "speciesName": "Gyarados (Shadow)",
     "ranking": 628,
     "moves": {
       "fastMoves": [
@@ -4493,6 +4562,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "speciesName": "Lapras",
     "ranking": 647,
     "moves": {
       "fastMoves": [
@@ -4552,6 +4622,7 @@
     "tags": [
       "shadow"
     ],
+    "speciesName": "Lapras (Shadow)",
     "ranking": 648,
     "moves": {
       "fastMoves": [
@@ -4628,6 +4699,7 @@
       "water",
       "none"
     ],
+    "speciesName": "Vaporeon",
     "ranking": 611,
     "moves": {
       "fastMoves": [
@@ -4709,6 +4781,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "speciesName": "Omanyte",
     "ranking": 519,
     "moves": {
       "fastMoves": [
@@ -4764,6 +4837,7 @@
     "tags": [
       "shadow"
     ],
+    "speciesName": "Omanyte (Shadow)",
     "ranking": 535,
     "moves": {
       "fastMoves": [
@@ -4819,6 +4893,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "speciesName": "Omastar",
     "ranking": 568,
     "moves": {
       "fastMoves": [
@@ -4870,6 +4945,7 @@
     "tags": [
       "shadow"
     ],
+    "speciesName": "Omastar (Shadow)",
     "ranking": 585,
     "moves": {
       "fastMoves": [
@@ -4922,6 +4998,7 @@
       "rock",
       "water"
     ],
+    "speciesName": "Kabuto",
     "ranking": 415,
     "moves": {
       "fastMoves": [
@@ -4962,6 +5039,7 @@
       "rock",
       "water"
     ],
+    "speciesName": "Kabutops",
     "ranking": 542,
     "moves": {
       "fastMoves": [
@@ -5013,6 +5091,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "speciesName": "Aerodactyl",
     "ranking": 539,
     "moves": {
       "fastMoves": [
@@ -5068,6 +5147,7 @@
     "tags": [
       "shadow"
     ],
+    "speciesName": "Aerodactyl (Shadow)",
     "ranking": 576,
     "moves": {
       "fastMoves": [
@@ -5265,6 +5345,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "speciesName": "Dragonite",
     "ranking": 672,
     "moves": {
       "fastMoves": [
@@ -5324,6 +5405,7 @@
     "tags": [
       "shadow"
     ],
+    "speciesName": "Dragonite (Shadow)",
     "ranking": 686,
     "moves": {
       "fastMoves": [
@@ -5500,6 +5582,7 @@
     "tags": [
       "starter"
     ],
+    "speciesName": "Totodile",
     "ranking": 437,
     "moves": {
       "fastMoves": [
@@ -5543,6 +5626,7 @@
     "tags": [
       "starter"
     ],
+    "speciesName": "Croconaw",
     "ranking": 574,
     "moves": {
       "fastMoves": [
@@ -5586,6 +5670,7 @@
     "tags": [
       "starter"
     ],
+    "speciesName": "Feraligatr",
     "ranking": 575,
     "moves": {
       "fastMoves": [
@@ -5653,7 +5738,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "speciesName": "Hoothoot"
   },
   "noctowl": {
     "legal": true,
@@ -5662,6 +5748,7 @@
       "normal",
       "flying"
     ],
+    "speciesName": "Noctowl",
     "ranking": 629,
     "moves": {
       "fastMoves": [
@@ -5701,7 +5788,8 @@
     "types": [
       "bug",
       "flying"
-    ]
+    ],
+    "speciesName": "Ledyba"
   },
   "ledian": {
     "legal": true,
@@ -5710,6 +5798,7 @@
       "bug",
       "flying"
     ],
+    "speciesName": "Ledian",
     "ranking": 562,
     "moves": {
       "fastMoves": [
@@ -5769,6 +5858,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "speciesName": "Crobat",
     "ranking": 465,
     "moves": {
       "fastMoves": [
@@ -5812,6 +5902,7 @@
     "tags": [
       "shadow"
     ],
+    "speciesName": "Crobat (Shadow)",
     "ranking": 474,
     "moves": {
       "fastMoves": [
@@ -5856,6 +5947,7 @@
       "water",
       "electric"
     ],
+    "speciesName": "Chinchou",
     "ranking": 586,
     "moves": {
       "fastMoves": [
@@ -5896,6 +5988,7 @@
       "water",
       "electric"
     ],
+    "speciesName": "Lanturn",
     "ranking": 609,
     "moves": {
       "fastMoves": [
@@ -5947,7 +6040,8 @@
     "types": [
       "fairy",
       "none"
-    ]
+    ],
+    "speciesName": "Cleffa"
   },
   "igglybuff": {
     "legal": true,
@@ -5955,7 +6049,8 @@
     "types": [
       "normal",
       "fairy"
-    ]
+    ],
+    "speciesName": "Igglybuff"
   },
   "togepi": {
     "legal": true,
@@ -5963,7 +6058,8 @@
     "types": [
       "fairy",
       "none"
-    ]
+    ],
+    "speciesName": "Togepi"
   },
   "togetic": {
     "legal": true,
@@ -5972,6 +6068,7 @@
       "fairy",
       "flying"
     ],
+    "speciesName": "Togetic",
     "ranking": 503,
     "moves": {
       "fastMoves": [
@@ -6079,7 +6176,8 @@
     "types": [
       "psychic",
       "flying"
-    ]
+    ],
+    "speciesName": "Natu"
   },
   "xatu": {
     "legal": true,
@@ -6088,6 +6186,7 @@
       "psychic",
       "flying"
     ],
+    "speciesName": "Xatu",
     "ranking": 475,
     "moves": {
       "fastMoves": [
@@ -6227,7 +6326,8 @@
     "types": [
       "water",
       "fairy"
-    ]
+    ],
+    "speciesName": "Marill"
   },
   "azumarill": {
     "legal": true,
@@ -6236,6 +6336,7 @@
       "water",
       "fairy"
     ],
+    "speciesName": "Azumarill",
     "ranking": 660,
     "moves": {
       "fastMoves": [
@@ -6287,6 +6388,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "speciesName": "Politoed",
     "ranking": 683,
     "moves": {
       "fastMoves": [
@@ -6342,6 +6444,7 @@
     "tags": [
       "shadow"
     ],
+    "speciesName": "Politoed (Shadow)",
     "ranking": 698,
     "moves": {
       "fastMoves": [
@@ -6396,7 +6499,8 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": "Hoppip"
   },
   "hoppip_shadow": {
     "legal": true,
@@ -6407,7 +6511,8 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": "Hoppip (Shadow)"
   },
   "skiploom": {
     "legal": true,
@@ -6418,7 +6523,8 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": "Skiploom"
   },
   "skiploom_shadow": {
     "legal": true,
@@ -6429,7 +6535,8 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": "Skiploom (Shadow)"
   },
   "jumpluff": {
     "legal": true,
@@ -6441,6 +6548,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "speciesName": "Jumpluff",
     "ranking": 630,
     "moves": {
       "fastMoves": [
@@ -6492,6 +6600,7 @@
     "tags": [
       "shadow"
     ],
+    "speciesName": "Jumpluff (Shadow)",
     "ranking": 641,
     "moves": {
       "fastMoves": [
@@ -6578,6 +6687,7 @@
       "bug",
       "flying"
     ],
+    "speciesName": "Yanma",
     "ranking": 491,
     "moves": {
       "fastMoves": [
@@ -6620,7 +6730,8 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": "Wooper"
   },
   "wooper_shadow": {
     "legal": true,
@@ -6631,7 +6742,8 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": "Wooper (Shadow)"
   },
   "quagsire": {
     "legal": true,
@@ -6643,6 +6755,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "speciesName": "Quagsire",
     "ranking": 631,
     "moves": {
       "fastMoves": [
@@ -6694,6 +6807,7 @@
     "tags": [
       "shadow"
     ],
+    "speciesName": "Quagsire (Shadow)",
     "ranking": 599,
     "moves": {
       "fastMoves": [
@@ -6759,6 +6873,7 @@
       "flying"
     ],
     "tags": [],
+    "speciesName": "Murkrow",
     "ranking": 504,
     "moves": {
       "fastMoves": [
@@ -6802,6 +6917,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "speciesName": "Slowking",
     "ranking": 501,
     "moves": {
       "fastMoves": [
@@ -6845,6 +6961,7 @@
     "tags": [
       "shadow"
     ],
+    "speciesName": "Slowking (Shadow)",
     "ranking": 523,
     "moves": {
       "fastMoves": [
@@ -7004,6 +7121,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "speciesName": "Gligar",
     "ranking": 640,
     "moves": {
       "fastMoves": [
@@ -7051,6 +7169,7 @@
     "tags": [
       "shadow"
     ],
+    "speciesName": "Gligar (Shadow)",
     "ranking": 623,
     "moves": {
       "fastMoves": [
@@ -7103,6 +7222,7 @@
       "fairy",
       "none"
     ],
+    "speciesName": "Snubbull",
     "ranking": 455,
     "moves": {
       "fastMoves": [
@@ -7143,6 +7263,7 @@
       "fairy",
       "none"
     ],
+    "speciesName": "Granbull",
     "ranking": 638,
     "moves": {
       "fastMoves": [
@@ -7187,6 +7308,7 @@
       "water",
       "poison"
     ],
+    "speciesName": "Qwilfish",
     "ranking": 558,
     "moves": {
       "fastMoves": [
@@ -7419,6 +7541,7 @@
     "tags": [
       "regional"
     ],
+    "speciesName": "Corsola",
     "ranking": 584,
     "moves": {
       "fastMoves": [
@@ -7458,7 +7581,8 @@
     "types": [
       "water",
       "none"
-    ]
+    ],
+    "speciesName": "Remoraid"
   },
   "octillery": {
     "legal": true,
@@ -7467,6 +7591,7 @@
       "water",
       "none"
     ],
+    "speciesName": "Octillery",
     "ranking": 454,
     "moves": {
       "fastMoves": [
@@ -7517,7 +7642,8 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": "Delibird"
   },
   "delibird_shadow": {
     "legal": true,
@@ -7528,7 +7654,8 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": "Delibird (Shadow)"
   },
   "mantine": {
     "legal": true,
@@ -7537,6 +7664,7 @@
       "water",
       "flying"
     ],
+    "speciesName": "Mantine",
     "ranking": 670,
     "moves": {
       "fastMoves": [
@@ -7663,6 +7791,7 @@
       "water",
       "dragon"
     ],
+    "speciesName": "Kingdra",
     "ranking": 596,
     "moves": {
       "fastMoves": [
@@ -8075,7 +8204,8 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": "Mudkip"
   },
   "mudkip_shadow": {
     "legal": true,
@@ -8086,7 +8216,8 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": "Mudkip (Shadow)"
   },
   "marshtomp": {
     "legal": true,
@@ -8099,6 +8230,7 @@
       "starter",
       "shadoweligible"
     ],
+    "speciesName": "Marshtomp",
     "ranking": 620,
     "moves": {
       "fastMoves": [
@@ -8147,6 +8279,7 @@
       "starter",
       "shadow"
     ],
+    "speciesName": "Marshtomp (Shadow)",
     "ranking": 636,
     "moves": {
       "fastMoves": [
@@ -8195,6 +8328,7 @@
       "starter",
       "shadoweligible"
     ],
+    "speciesName": "Swampert",
     "ranking": 685,
     "moves": {
       "fastMoves": [
@@ -8247,6 +8381,7 @@
       "starter",
       "shadow"
     ],
+    "speciesName": "Swampert (Shadow)",
     "ranking": 697,
     "moves": {
       "fastMoves": [
@@ -8369,6 +8504,7 @@
       "bug",
       "flying"
     ],
+    "speciesName": "Beautifly",
     "ranking": 424,
     "moves": {
       "fastMoves": [
@@ -8424,7 +8560,8 @@
     "types": [
       "water",
       "grass"
-    ]
+    ],
+    "speciesName": "Lotad"
   },
   "lombre": {
     "legal": true,
@@ -8433,6 +8570,7 @@
       "water",
       "grass"
     ],
+    "speciesName": "Lombre",
     "ranking": 477,
     "moves": {
       "fastMoves": [
@@ -8473,6 +8611,7 @@
       "water",
       "grass"
     ],
+    "speciesName": "Ludicolo",
     "ranking": 535,
     "moves": {
       "fastMoves": [
@@ -8590,7 +8729,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "speciesName": "Taillow"
   },
   "swellow": {
     "legal": true,
@@ -8599,6 +8739,7 @@
       "normal",
       "flying"
     ],
+    "speciesName": "Swellow",
     "ranking": 515,
     "moves": {
       "fastMoves": [
@@ -8638,7 +8779,8 @@
     "types": [
       "water",
       "flying"
-    ]
+    ],
+    "speciesName": "Wingull"
   },
   "pelipper": {
     "legal": true,
@@ -8647,6 +8789,7 @@
       "water",
       "flying"
     ],
+    "speciesName": "Pelipper",
     "ranking": 661,
     "moves": {
       "fastMoves": [
@@ -8693,7 +8836,8 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": "Ralts"
   },
   "ralts_shadow": {
     "legal": true,
@@ -8704,7 +8848,8 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": "Ralts (Shadow)"
   },
   "kirlia": {
     "legal": true,
@@ -8715,7 +8860,8 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": "Kirlia"
   },
   "kirlia_shadow": {
     "legal": true,
@@ -8726,7 +8872,8 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": "Kirlia (Shadow)"
   },
   "gardevoir": {
     "legal": true,
@@ -8738,6 +8885,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "speciesName": "Gardevoir",
     "ranking": 631,
     "moves": {
       "fastMoves": [
@@ -8789,6 +8937,7 @@
     "tags": [
       "shadow"
     ],
+    "speciesName": "Gardevoir (Shadow)",
     "ranking": 672,
     "moves": {
       "fastMoves": [
@@ -8840,7 +8989,8 @@
     "types": [
       "bug",
       "water"
-    ]
+    ],
+    "speciesName": "Surskit"
   },
   "masquerain": {
     "legal": true,
@@ -8849,6 +8999,7 @@
       "bug",
       "flying"
     ],
+    "speciesName": "Masquerain",
     "ranking": 534,
     "moves": {
       "fastMoves": [
@@ -8945,6 +9096,7 @@
       "bug",
       "flying"
     ],
+    "speciesName": "Ninjask",
     "ranking": 495,
     "moves": {
       "fastMoves": [
@@ -9032,7 +9184,8 @@
     "types": [
       "normal",
       "fairy"
-    ]
+    ],
+    "speciesName": "Azurill"
   },
   "nosepass": {
     "legal": false,
@@ -9104,6 +9257,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "speciesName": "Mawile",
     "ranking": 585,
     "moves": {
       "fastMoves": [
@@ -9163,6 +9317,7 @@
     "tags": [
       "shadow"
     ],
+    "speciesName": "Mawile (Shadow)",
     "ranking": 605,
     "moves": {
       "fastMoves": [
@@ -9392,7 +9547,8 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": "Carvanha"
   },
   "carvanha_shadow": {
     "legal": true,
@@ -9403,7 +9559,8 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": "Carvanha (Shadow)"
   },
   "sharpedo": {
     "legal": true,
@@ -9414,7 +9571,8 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": "Sharpedo"
   },
   "sharpedo_shadow": {
     "legal": true,
@@ -9425,7 +9583,8 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": "Sharpedo (Shadow)"
   },
   "wailmer": {
     "legal": true,
@@ -9434,6 +9593,7 @@
       "water",
       "none"
     ],
+    "speciesName": "Wailmer",
     "ranking": 618,
     "moves": {
       "fastMoves": [
@@ -9474,6 +9634,7 @@
       "water",
       "none"
     ],
+    "speciesName": "Wailord",
     "ranking": 586,
     "moves": {
       "fastMoves": [
@@ -9646,7 +9807,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "speciesName": "Swablu"
   },
   "altaria": {
     "legal": true,
@@ -9655,6 +9817,7 @@
       "dragon",
       "flying"
     ],
+    "speciesName": "Altaria",
     "ranking": 702,
     "moves": {
       "fastMoves": [
@@ -9738,7 +9901,8 @@
     "types": [
       "water",
       "ground"
-    ]
+    ],
+    "speciesName": "Barboach"
   },
   "whiscash": {
     "legal": true,
@@ -9747,6 +9911,7 @@
       "water",
       "ground"
     ],
+    "speciesName": "Whiscash",
     "ranking": 693,
     "moves": {
       "fastMoves": [
@@ -9787,6 +9952,7 @@
       "water",
       "none"
     ],
+    "speciesName": "Corphish",
     "ranking": 407,
     "moves": {
       "fastMoves": [
@@ -9827,6 +9993,7 @@
       "water",
       "dark"
     ],
+    "speciesName": "Crawdaunt",
     "ranking": 595,
     "moves": {
       "fastMoves": [
@@ -9974,7 +10141,8 @@
     "types": [
       "water",
       "none"
-    ]
+    ],
+    "speciesName": "Feebas"
   },
   "milotic": {
     "legal": true,
@@ -9983,6 +10151,7 @@
       "water",
       "none"
     ],
+    "speciesName": "Milotic",
     "ranking": 612,
     "moves": {
       "fastMoves": [
@@ -10031,6 +10200,7 @@
       "water",
       "none"
     ],
+    "speciesName": "Castform (Rainy)",
     "ranking": 655,
     "moves": {
       "fastMoves": [
@@ -10189,6 +10359,7 @@
     "tags": [
       "regional"
     ],
+    "speciesName": "Tropius",
     "ranking": 676,
     "moves": {
       "fastMoves": [
@@ -10285,7 +10456,8 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": "Spheal"
   },
   "spheal_shadow": {
     "legal": true,
@@ -10296,7 +10468,8 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": "Spheal (Shadow)"
   },
   "sealeo": {
     "legal": true,
@@ -10308,6 +10481,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "speciesName": "Sealeo",
     "ranking": 656,
     "moves": {
       "fastMoves": [
@@ -10355,6 +10529,7 @@
     "tags": [
       "shadow"
     ],
+    "speciesName": "Sealeo (Shadow)",
     "ranking": 672,
     "moves": {
       "fastMoves": [
@@ -10402,6 +10577,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "speciesName": "Walrein",
     "ranking": 500,
     "moves": {
       "fastMoves": [
@@ -10445,6 +10621,7 @@
     "tags": [
       "shadow"
     ],
+    "speciesName": "Walrein (Shadow)",
     "ranking": 535,
     "moves": {
       "fastMoves": [
@@ -10489,6 +10666,7 @@
       "water",
       "none"
     ],
+    "speciesName": "Clamperl",
     "ranking": 534,
     "moves": {
       "fastMoves": [
@@ -10525,6 +10703,7 @@
       "water",
       "none"
     ],
+    "speciesName": "Huntail",
     "ranking": 565,
     "moves": {
       "fastMoves": [
@@ -10565,6 +10744,7 @@
       "water",
       "none"
     ],
+    "speciesName": "Gorebyss",
     "ranking": 431,
     "moves": {
       "fastMoves": [
@@ -10608,6 +10788,7 @@
     "tags": [
       "regional"
     ],
+    "speciesName": "Relicanth",
     "ranking": 608,
     "moves": {
       "fastMoves": [
@@ -10647,7 +10828,8 @@
     "types": [
       "water",
       "none"
-    ]
+    ],
+    "speciesName": "Luvdisc"
   },
   "bagon": {
     "legal": false,
@@ -10703,6 +10885,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "speciesName": "Salamence",
     "ranking": 398,
     "moves": {
       "fastMoves": [
@@ -10754,6 +10937,7 @@
     "tags": [
       "shadow"
     ],
+    "speciesName": "Salamence (Shadow)",
     "ranking": 425,
     "moves": {
       "fastMoves": [
@@ -11128,6 +11312,7 @@
     "tags": [
       "starter"
     ],
+    "speciesName": "Piplup",
     "ranking": 413,
     "moves": {
       "fastMoves": [
@@ -11171,6 +11356,7 @@
     "tags": [
       "starter"
     ],
+    "speciesName": "Prinplup",
     "ranking": 576,
     "moves": {
       "fastMoves": [
@@ -11214,6 +11400,7 @@
     "tags": [
       "starter"
     ],
+    "speciesName": "Empoleon",
     "ranking": 651,
     "moves": {
       "fastMoves": [
@@ -11261,7 +11448,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "speciesName": "Starly"
   },
   "staravia": {
     "legal": true,
@@ -11270,6 +11458,7 @@
       "normal",
       "flying"
     ],
+    "speciesName": "Staravia",
     "ranking": 495,
     "moves": {
       "fastMoves": [
@@ -11310,6 +11499,7 @@
       "normal",
       "flying"
     ],
+    "speciesName": "Staraptor",
     "ranking": 484,
     "moves": {
       "fastMoves": [
@@ -11358,6 +11548,7 @@
       "normal",
       "water"
     ],
+    "speciesName": "Bibarel",
     "ranking": 582,
     "moves": {
       "fastMoves": [
@@ -11534,6 +11725,7 @@
       "bug",
       "flying"
     ],
+    "speciesName": "Mothim",
     "ranking": 453,
     "moves": {
       "fastMoves": [
@@ -11573,7 +11765,8 @@
     "types": [
       "bug",
       "flying"
-    ]
+    ],
+    "speciesName": "Combee"
   },
   "vespiquen": {
     "legal": true,
@@ -11582,6 +11775,7 @@
       "bug",
       "flying"
     ],
+    "speciesName": "Vespiquen",
     "ranking": 611,
     "moves": {
       "fastMoves": [
@@ -11648,7 +11842,8 @@
     "types": [
       "water",
       "none"
-    ]
+    ],
+    "speciesName": "Buizel"
   },
   "floatzel": {
     "legal": true,
@@ -11657,6 +11852,7 @@
       "water",
       "none"
     ],
+    "speciesName": "Floatzel",
     "ranking": 512,
     "moves": {
       "fastMoves": [
@@ -11721,6 +11917,7 @@
       "water",
       "none"
     ],
+    "speciesName": "Shellos (East)",
     "ranking": 489,
     "moves": {
       "fastMoves": [
@@ -11821,6 +12018,7 @@
       "water",
       "none"
     ],
+    "speciesName": "Shellos (West)",
     "ranking": 489,
     "moves": {
       "fastMoves": [
@@ -11921,6 +12119,7 @@
       "water",
       "ground"
     ],
+    "speciesName": "Gastrodon (East)",
     "ranking": 625,
     "moves": {
       "fastMoves": [
@@ -12025,6 +12224,7 @@
       "water",
       "ground"
     ],
+    "speciesName": "Gastrodon (West)",
     "ranking": 626,
     "moves": {
       "fastMoves": [
@@ -12151,6 +12351,7 @@
       "ghost",
       "flying"
     ],
+    "speciesName": "Drifloon",
     "ranking": 609,
     "moves": {
       "fastMoves": [
@@ -12191,6 +12392,7 @@
       "ghost",
       "flying"
     ],
+    "speciesName": "Drifblim",
     "ranking": 660,
     "moves": {
       "fastMoves": [
@@ -12281,6 +12483,7 @@
       "flying"
     ],
     "tags": [],
+    "speciesName": "Honchkrow",
     "ranking": 630,
     "moves": {
       "fastMoves": [
@@ -12416,7 +12619,8 @@
     "types": [
       "psychic",
       "fairy"
-    ]
+    ],
+    "speciesName": "Mime (Jr)"
   },
   "happiny": {
     "legal": false,
@@ -12436,6 +12640,7 @@
     "tags": [
       "regional"
     ],
+    "speciesName": "Chatot",
     "ranking": 432,
     "moves": {
       "fastMoves": [
@@ -12590,7 +12795,8 @@
     "types": [
       "water",
       "none"
-    ]
+    ],
+    "speciesName": "Finneon"
   },
   "lumineon": {
     "legal": true,
@@ -12599,6 +12805,7 @@
       "water",
       "none"
     ],
+    "speciesName": "Lumineon",
     "ranking": 475,
     "moves": {
       "fastMoves": [
@@ -12639,6 +12846,7 @@
       "water",
       "flying"
     ],
+    "speciesName": "Mantyke",
     "ranking": 561,
     "moves": {
       "fastMoves": [
@@ -12847,6 +13055,7 @@
       "fairy",
       "flying"
     ],
+    "speciesName": "Togekiss",
     "ranking": 649,
     "moves": {
       "fastMoves": [
@@ -12955,6 +13164,7 @@
       "bug",
       "flying"
     ],
+    "speciesName": "Yanmega",
     "ranking": 476,
     "moves": {
       "fastMoves": [
@@ -13014,6 +13224,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "speciesName": "Gliscor",
     "ranking": 640,
     "moves": {
       "fastMoves": [
@@ -13061,6 +13272,7 @@
     "tags": [
       "shadow"
     ],
+    "speciesName": "Gliscor (Shadow)",
     "ranking": 626,
     "moves": {
       "fastMoves": [
@@ -13282,6 +13494,7 @@
       "electric",
       "water"
     ],
+    "speciesName": "Rotom (Wash)",
     "ranking": 482,
     "moves": {
       "fastMoves": [
@@ -13766,7 +13979,8 @@
     ],
     "tags": [
       "starter"
-    ]
+    ],
+    "speciesName": "Oshawott"
   },
   "dewott": {
     "legal": true,
@@ -13778,6 +13992,7 @@
     "tags": [
       "starter"
     ],
+    "speciesName": "Dewott",
     "ranking": 569,
     "moves": {
       "fastMoves": [
@@ -13821,6 +14036,7 @@
     "tags": [
       "starter"
     ],
+    "speciesName": "Samurott",
     "ranking": 412,
     "moves": {
       "fastMoves": [
@@ -13963,7 +14179,8 @@
     ],
     "tags": [
       "regional"
-    ]
+    ],
+    "speciesName": "Panpour"
   },
   "simipour": {
     "legal": true,
@@ -13975,6 +14192,7 @@
     "tags": [
       "regional"
     ],
+    "speciesName": "Simipour",
     "ranking": 524,
     "moves": {
       "fastMoves": [
@@ -14030,7 +14248,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "speciesName": "Pidove"
   },
   "tranquill": {
     "legal": true,
@@ -14039,6 +14258,7 @@
       "normal",
       "flying"
     ],
+    "speciesName": "Tranquill",
     "ranking": 529,
     "moves": {
       "fastMoves": [
@@ -14079,6 +14299,7 @@
       "normal",
       "flying"
     ],
+    "speciesName": "Unfezant",
     "ranking": 475,
     "moves": {
       "fastMoves": [
@@ -14158,7 +14379,8 @@
     "types": [
       "psychic",
       "flying"
-    ]
+    ],
+    "speciesName": "Woobat"
   },
   "swoobat": {
     "legal": true,
@@ -14167,6 +14389,7 @@
       "psychic",
       "flying"
     ],
+    "speciesName": "Swoobat",
     "ranking": 511,
     "moves": {
       "fastMoves": [
@@ -14254,7 +14477,8 @@
     "types": [
       "water",
       "none"
-    ]
+    ],
+    "speciesName": "Tympole"
   },
   "palpitoad": {
     "legal": true,
@@ -14263,6 +14487,7 @@
       "water",
       "ground"
     ],
+    "speciesName": "Palpitoad",
     "ranking": 556,
     "moves": {
       "fastMoves": [
@@ -14303,6 +14528,7 @@
       "water",
       "ground"
     ],
+    "speciesName": "Seismitoad",
     "ranking": 579,
     "moves": {
       "fastMoves": [
@@ -14409,7 +14635,8 @@
     "types": [
       "grass",
       "fairy"
-    ]
+    ],
+    "speciesName": "Cottonee"
   },
   "whimsicott": {
     "legal": true,
@@ -14418,6 +14645,7 @@
       "grass",
       "fairy"
     ],
+    "speciesName": "Whimsicott",
     "ranking": 648,
     "moves": {
       "fastMoves": [
@@ -14477,6 +14705,7 @@
     "tags": [
       "regional"
     ],
+    "speciesName": "Basculin",
     "ranking": 539,
     "moves": {
       "fastMoves": [
@@ -14648,6 +14877,7 @@
     "tags": [
       "regional"
     ],
+    "speciesName": "Sigilyph",
     "ranking": 454,
     "moves": {
       "fastMoves": [
@@ -14719,6 +14949,7 @@
       "water",
       "rock"
     ],
+    "speciesName": "Tirtouga",
     "ranking": 601,
     "moves": {
       "fastMoves": [
@@ -14759,6 +14990,7 @@
       "water",
       "rock"
     ],
+    "speciesName": "Carracosta",
     "ranking": 582,
     "moves": {
       "fastMoves": [
@@ -14799,6 +15031,7 @@
       "rock",
       "flying"
     ],
+    "speciesName": "Archen",
     "ranking": 519,
     "moves": {
       "fastMoves": [
@@ -14839,6 +15072,7 @@
       "rock",
       "flying"
     ],
+    "speciesName": "Archeops",
     "ranking": 515,
     "moves": {
       "fastMoves": [
@@ -14980,7 +15214,8 @@
     "types": [
       "water",
       "flying"
-    ]
+    ],
+    "speciesName": "Ducklett"
   },
   "swanna": {
     "legal": true,
@@ -14989,6 +15224,7 @@
       "water",
       "flying"
     ],
+    "speciesName": "Swanna",
     "ranking": 436,
     "moves": {
       "fastMoves": [
@@ -15069,6 +15305,7 @@
       "electric",
       "flying"
     ],
+    "speciesName": "Emolga",
     "ranking": 566,
     "moves": {
       "fastMoves": [
@@ -15141,6 +15378,7 @@
       "water",
       "ghost"
     ],
+    "speciesName": "Frillish",
     "ranking": 512,
     "moves": {
       "fastMoves": [
@@ -15181,6 +15419,7 @@
       "water",
       "ghost"
     ],
+    "speciesName": "Jellicent",
     "ranking": 697,
     "moves": {
       "fastMoves": [
@@ -15221,6 +15460,7 @@
       "water",
       "none"
     ],
+    "speciesName": "Alomomola",
     "ranking": 610,
     "moves": {
       "fastMoves": [
@@ -15600,6 +15840,7 @@
       "normal",
       "flying"
     ],
+    "speciesName": "Rufflet",
     "ranking": 539,
     "moves": {
       "fastMoves": [
@@ -15640,6 +15881,7 @@
       "normal",
       "flying"
     ],
+    "speciesName": "Braviary",
     "ranking": 476,
     "moves": {
       "fastMoves": [
@@ -15684,6 +15926,7 @@
       "dark",
       "flying"
     ],
+    "speciesName": "Vullaby",
     "ranking": 620,
     "moves": {
       "fastMoves": [
@@ -15724,6 +15967,7 @@
       "dark",
       "flying"
     ],
+    "speciesName": "Mandibuzz",
     "ranking": 674,
     "moves": {
       "fastMoves": [
@@ -16146,7 +16390,8 @@
     "types": [
       "water",
       "none"
-    ]
+    ],
+    "speciesName": "Froakie"
   },
   "frogadier": {
     "legal": true,
@@ -16155,6 +16400,7 @@
       "water",
       "none"
     ],
+    "speciesName": "Frogadier",
     "ranking": 502,
     "moves": {
       "fastMoves": [
@@ -16195,6 +16441,7 @@
       "water",
       "dark"
     ],
+    "speciesName": "Greninja",
     "ranking": 565,
     "moves": {
       "fastMoves": [
@@ -16254,7 +16501,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "speciesName": "Fletchling"
   },
   "fletchinder": {
     "legal": true,
@@ -16263,6 +16511,7 @@
       "fire",
       "flying"
     ],
+    "speciesName": "Fletchinder",
     "ranking": 564,
     "moves": {
       "fastMoves": [
@@ -16307,6 +16556,7 @@
       "fire",
       "flying"
     ],
+    "speciesName": "Talonflame",
     "ranking": 665,
     "moves": {
       "fastMoves": [
@@ -16564,6 +16814,7 @@
       "fairy",
       "none"
     ],
+    "speciesName": "Spritzee",
     "ranking": 627,
     "moves": {
       "fastMoves": [
@@ -16600,6 +16851,7 @@
       "fairy",
       "none"
     ],
+    "speciesName": "Aromatisse",
     "ranking": 651,
     "moves": {
       "fastMoves": [
@@ -16644,6 +16896,7 @@
       "fairy",
       "none"
     ],
+    "speciesName": "Swirlix",
     "ranking": 306,
     "moves": {
       "fastMoves": [
@@ -16676,6 +16929,7 @@
       "fairy",
       "none"
     ],
+    "speciesName": "Slurpuff",
     "ranking": 649,
     "moves": {
       "fastMoves": [
@@ -16741,7 +16995,8 @@
     "types": [
       "rock",
       "water"
-    ]
+    ],
+    "speciesName": "Binacle"
   },
   "barbaracle": {
     "legal": true,
@@ -16750,6 +17005,7 @@
       "rock",
       "water"
     ],
+    "speciesName": "Barbaracle",
     "ranking": 640,
     "moves": {
       "fastMoves": [
@@ -16798,6 +17054,7 @@
       "poison",
       "water"
     ],
+    "speciesName": "Skrelp",
     "ranking": 505,
     "moves": {
       "fastMoves": [
@@ -16850,6 +17107,7 @@
       "water",
       "none"
     ],
+    "speciesName": "Clauncher",
     "ranking": 426,
     "moves": {
       "fastMoves": [
@@ -16890,6 +17148,7 @@
       "water",
       "none"
     ],
+    "speciesName": "Clawitzer",
     "ranking": 447,
     "moves": {
       "fastMoves": [
@@ -17071,6 +17330,7 @@
     "tags": [
       "regional"
     ],
+    "speciesName": "Klefki",
     "ranking": 420,
     "moves": {
       "fastMoves": [
@@ -17180,7 +17440,8 @@
     "types": [
       "flying",
       "dragon"
-    ]
+    ],
+    "speciesName": "Noibat"
   },
   "noivern": {
     "legal": true,
@@ -17189,6 +17450,7 @@
       "flying",
       "dragon"
     ],
+    "speciesName": "Noivern",
     "ranking": 448,
     "moves": {
       "fastMoves": [

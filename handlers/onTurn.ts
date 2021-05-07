@@ -131,7 +131,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
             payload[i]!.shouldReturn = true;
           }
           if (currentRoom.status === RoomStatus.STARTED) {
-            player.current!.switch = SWAP_COOLDOWN;
+            player.current!.switch = currentRoom.format.advancedOptions?.switchTimer !== undefined ?currentRoom.format.advancedOptions?.switchTimer : SWAP_COOLDOWN;
           } else {
             if (currentRoom.wait) {
               const j = i === 0 ? 1 : 0;
