@@ -1,8 +1,11 @@
+import Filter from "bad-words"
 import { ClassOption, Rule, Selector } from "../types/rule";
 import { TeamMember, TeamMemberDescription, typeId } from "../types/team";
 import { calculateCP, calculateHP, calculateAtk,calculateDef } from "../utils/calcUtils";
 import pokeData from "./../data/pokemon.json";
 import mainSeriesPokeData from "./../data/pokemonWithMainSeriesMoves.json";
+
+const curseWordFilter = new Filter() 
 
 export function isTeamValid(team: TeamMember[], format: Rule): {isValid: boolean, violations: string[]} {
     let violations = new Array<string>();
@@ -46,6 +49,17 @@ export function isTeamValid(team: TeamMember[], format: Rule): {isValid: boolean
       // Check valid cp
       if (pokemon.cp > format.maxCP) {
         violations.push(`Pokemon in index ${index} has too many cp: ${pokemon.cp}`);
+      }
+
+      console.log(pokemon.name)
+      // Check nickname length
+      if(pokemon.name && pokemon.name.length > 12) {
+        violations.push(`The nickname ${pokemon.name} exceeds the character limit of 12`);
+      }
+
+      // Check nickname for curse words
+      if(pokemon.name && curseWordFilter.isProfane(pokemon.name)) {
+        violations.push(`We don't like the nickname ${pokemon.name}. Your pokémon have feelings, too.`);
       }
 
       // check if pokémon is legal
