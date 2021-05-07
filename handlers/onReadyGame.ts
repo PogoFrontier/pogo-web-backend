@@ -15,14 +15,14 @@ const moves: any = m;
 function onReadyGame(id: string, payload: OnReadyGamePayload) {
   const { room } = payload;
   const currentRoom = rooms.get(room);
-  if (currentRoom) {
+  if (currentRoom && currentRoom.status === RoomStatus.SELECTING) {
       const i = currentRoom.players.findIndex(x => x && x.id === id);
       if (i > -1) {
         const player = currentRoom.players[i];
         if (player?.current) {
           player.current.ready = true;
           const j = i === 0 ? 1 : 0;
-          if (currentRoom.players[j]?.current?.ready && currentRoom.status === RoomStatus.SELECTING) {
+          if (currentRoom.players[j]?.current?.ready) {
               console.info(`Room ${room} is starting countdown`)
               currentRoom.status = RoomStatus.STARTING;
               startCountdown(room);
