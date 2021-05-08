@@ -163,17 +163,12 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
         const player = currentRoom.players[i];
         if (payload[i] === null && player) {
           if (wait <= 0) {
-            if (currentRoom.status === RoomStatus.CHARGE
-              || currentRoom.status === RoomStatus.LISTENING) {
-              currentRoom.status = RoomStatus.LISTENING;
-            } else {
-              currentRoom.status = RoomStatus.STARTED;
-              if (player.current!.team[player.current!.active].current!.hp <= 0) {
-                player.current!.active = player.current!.team.findIndex(x => x.current!.hp > 0);
-                // notify other user
-                const oppId = currentRoom.players[[1, 0][i]]!.id;
-                pubClient.publish("messagesToUser:" + oppId, reduceActionForOpponent(`#${Actions.SWITCH}:` + player.current!.active, player!.current!.team));
-              }
+            currentRoom.status = RoomStatus.STARTED;
+            if (player.current!.team[player.current!.active].current!.hp <= 0) {
+              player.current!.active = player.current!.team.findIndex(x => x.current!.hp > 0);
+              // notify other user
+              const oppId = currentRoom.players[[1, 0][i]]!.id;
+              pubClient.publish("messagesToUser:" + oppId, reduceActionForOpponent(`#${Actions.SWITCH}:` + player.current!.active, player!.current!.team));
             }
           }
           payload[i] = {
