@@ -128,6 +128,8 @@ function onChargeEnd(room: string) {
             subject: j,
             move: currentRoom.charge.cmp
           };
+        } else {
+          currentRoom.status = RoomStatus.STARTED
         }
         const dta = {
           type: CODE.turn,
@@ -146,7 +148,6 @@ function onChargeEnd(room: string) {
         delete currentRoom.players[i]!.current!.action;
         pubClient.publish("messagesToUser:" + player.id, JSON.stringify(dta));
         pubClient.publish("messagesToUser:" + opponent.id, JSON.stringify(dta1));
-        currentRoom.status = RoomStatus.STARTED
       }
   }
 }
