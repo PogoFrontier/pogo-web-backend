@@ -7,7 +7,7 @@ import onClose from "./onClose";
 import onGetOpponent from "./onGetOpponent";
 import onJoin from "./onJoin";
 import onTeamSubmit from "./onTeamSubmit";
-import onReadyGame from "./onReadyGame";
+import { onReadyGame } from "./onReadyGame";
 
 function onAny(senderId: string, roomId: string, data: string) {
     if (typeof data === "string" && data.startsWith("$")) {

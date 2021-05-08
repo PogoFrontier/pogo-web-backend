@@ -12,10 +12,10 @@ import { v4 as uuidv4 } from 'uuid';
 
 const moves: any = m;
 
-function onReadyGame(id: string, payload: OnReadyGamePayload) {
+export function onReadyGame(id: string, payload: OnReadyGamePayload) {
   const { room } = payload;
   const currentRoom = rooms.get(room);
-  if (currentRoom && currentRoom.status === RoomStatus.SELECTING) {
+  if (currentRoom && currentRoom.status === RoomStatus.READY) {
       const i = currentRoom.players.findIndex(x => x && x.id === id);
       if (i > -1) {
         const player = currentRoom.players[i];
@@ -32,7 +32,7 @@ function onReadyGame(id: string, payload: OnReadyGamePayload) {
   }
 }
 
-function startCountdown(room: string) {
+export function startCountdown(room: string) {
   let countdown = 0;
   const currentRoom = rooms.get(room);
   if (currentRoom && currentRoom.status === RoomStatus.STARTING) {
@@ -110,5 +110,3 @@ function getMovesOfPlayer(player: Player | null): Move[][] {
   }
   return arr
 }
-
-export default onReadyGame;

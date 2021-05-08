@@ -4,6 +4,7 @@ import { TeamMember } from "./team";
 import { Redis, Cluster } from "ioredis";
 
 export enum RoomStatus {
+  READY,
   SELECTING,
   STARTING,
   STARTED,
