@@ -20,15 +20,21 @@ function onAction({
       const d: [Action, string] = data.substring(1).split(":") as [Action, string];
       console.log(`Action: ${data}`)
       const type = d[0];
-      if (currentRoom.status === RoomStatus.FAINT && type !== Actions.SWITCH) {
-        return;
-      }
       const index = parseInt(d[1])
       const move = type === Actions.CHARGE_ATTACK ? moves[pokemon.chargeMoves[index]] : moves[pokemon.fastMove]
       const energy = player.current.team[player.current.active].current?.energy || 0
+
+      // Dismiss invalid inputs
+      if (currentRoom.status === RoomStatus.FAINT && type !== Actions.SWITCH) {
+        return;
+      }
       if (type === Actions.CHARGE_ATTACK && move.energy > energy) {
         return;
       }
+      if(type === Actions.SWITCH && !["0", "1", "2"].includes(d[1])){
+        return
+      }
+
       if (player.current.action) {
         if (player.current.action.string?.startsWith(`#${Actions.CHARGE_ATTACK}`) || type === Actions.FAST_ATTACK) {
           return;
