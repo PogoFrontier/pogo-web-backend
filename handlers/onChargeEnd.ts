@@ -3,7 +3,7 @@ import { reduceTeamMemberForPlayer } from "../actions/reduceInformation"
 import { pubClient } from "../redis/clients";
 import { rooms } from "../matchhandling_server";
 import { CODE } from "../types/actions";
-import { OnChargeEndProps, ResolveTurnPayload } from "../types/handlers";
+import { ResolveTurnPayload } from "../types/handlers";
 import { RoomStatus } from "../types/room";
 import { calcDamage } from "../utils/damageUtils";
 import endGame from "./endGame";
@@ -13,25 +13,12 @@ function getMessage(attacker: string, move: string, shield: number) {
   return `${attacker} used ${move}!${shielded}`;
 }
 
-function onChargeEnd({
-  room, data
-}: OnChargeEndProps) {
-  const type = data[1];
-  const value = Number(data.substring(2));
+function onChargeEnd(room: string) {
   const currentRoom = rooms.get(room);
   if (currentRoom && currentRoom.charge) {
-    switch (type) {
-      case "s":
-        currentRoom.charge.shield = value;
-        break;
-      case "c":
-        currentRoom.charge.multiplier = value;
-        break;
-      default:
-        console.error("Invalid code of " + data);
-        break;
+    if(currentRoom.charge.shield === undefined) {
+      currentRoom.charge.shield = 0
     }
-    if (currentRoom.charge.shield !== undefined && currentRoom.charge.multiplier !== undefined) {
       const i = currentRoom.charge.subject;
       const j = i === 0 ? 1 : 0;
       const player = currentRoom.players[i];
@@ -159,11 +146,8 @@ function onChargeEnd({
         delete currentRoom.players[i]!.current!.action;
         pubClient.publish("messagesToUser:" + player.id, JSON.stringify(dta));
         pubClient.publish("messagesToUser:" + opponent.id, JSON.stringify(dta1));
-        if (currentRoom.status === RoomStatus.LISTENING) {
-          currentRoom.status = RoomStatus.STARTED
-        }
+        currentRoom.status = RoomStatus.STARTED
       }
-    }
   }
 }
 

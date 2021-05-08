@@ -3,6 +3,7 @@ import { rooms } from "../matchhandling_server";
 import { CODE } from "../types/actions";
 import { OnTeamSubmitPayload } from "../types/handlers"; 
 import { RoomStatus } from "../types/room";
+import { startCountdown } from "./onReadyGame";
 
 function onTeamSubmit(id: string, payload: OnTeamSubmitPayload) {
   const { room, indexes } = payload;
@@ -48,9 +49,18 @@ function onTeamSubmit(id: string, payload: OnTeamSubmitPayload) {
 
       const j = i === 0 ? 1 : 0;
       if (currentRoom.players[j] && currentRoom.players[j]!.current) {
+        currentRoom.status = RoomStatus.READY
         to(room, JSON.stringify({
             type: CODE.team_confirm,
         }));
+
+        setTimeout(() => {
+          if(currentRoom.status === RoomStatus.READY) {
+              console.info(`Room ${room} is starting countdown`)
+              currentRoom.status = RoomStatus.STARTING;
+              startCountdown(room);
+          }
+        }, 10000)
         console.info(`Room ${room} will start.`);
       }
     }
