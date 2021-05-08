@@ -2,7 +2,7 @@ import {rooms} from "../matchhandling_server";
 import { CODE } from "../types/actions";
 import {RoomStatus} from "../types/room";
 import onAction from "./onAction";
-import onChargeEnd from "./onChargeEnd";
+import onSetCharge from "./onSetCharge";
 import onClose from "./onClose";
 import onGetOpponent from "./onGetOpponent";
 import onJoin from "./onJoin";
@@ -11,8 +11,8 @@ import { onReadyGame } from "./onReadyGame";
 
 function onAny(senderId: string, roomId: string, data: string) {
     if (typeof data === "string" && data.startsWith("$")) {
-        if (rooms.get(roomId) && rooms.get(roomId)?.status === RoomStatus.LISTENING) {
-            onChargeEnd({ id: senderId, room: roomId, data })
+        if (rooms.get(roomId) && rooms.get(roomId)?.status === RoomStatus.CHARGE) {
+            onSetCharge({ id: senderId, room: roomId, data })
         }
     } else if (typeof data === "string" && data.startsWith("#")) {
         if (rooms.get(roomId)

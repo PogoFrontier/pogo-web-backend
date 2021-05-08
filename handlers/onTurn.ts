@@ -7,6 +7,7 @@ import { ResolveTurnPayload, Update } from "../types/handlers";
 import { RoomStatus } from "../types/room";
 import { calcDamage } from "../utils/damageUtils";
 import endGame from "./endGame";
+import onChargeEnd from "./onChargeEnd"
 import { pubClient } from "../redis/clients";
 
 function evaluatePayload(room: string): [Update | null, Update | null] {
@@ -226,6 +227,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
         wait: CHARGE_WAIT,
         charge: 2
       };
+      setTimeout(() => onChargeEnd(currentRoom.id), CHARGE_WAIT * 1000)
     }
   }
 
