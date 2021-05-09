@@ -103,10 +103,13 @@
         },
         "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/commander/overall/rankings-1500.json",
         "teamPattern":[
-            {"include":[{
-                "filterType":"id",
-                "values":["munchlax", "shiftry", "escavalier", "steelix", "empoleon", "jellicent", "bronzong", "noctowl", "marowak_alolan", "poliwrath"]
-            }]},
+            {
+                "name": "Commander",
+                "include":[{
+                    "filterType":"id",
+                    "values":["munchlax", "shiftry", "escavalier", "steelix", "empoleon", "jellicent", "bronzong", "noctowl", "marowak_alolan", "poliwrath"]
+                }]
+            },
             {"include":[{"filterType":"type", "values":["rock", "ice", "electric", "poison", "psychic"]}],
             "exclude": [{"filterType": "type", "values": ["steel"]}]},
             {"include":[{"filterType":"type", "values":["rock", "ice", "electric", "poison", "psychic"]}],

@@ -18,7 +18,7 @@ const getSid = (speciesId: string, sids: any) => {
     })!)
 }
 
-https.get("https://raw.githubusercontent.com/pvpoke/pvpoke/level-50-rankings/src/data/gamemaster.json", (res) => {
+https.get("https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/gamemaster.json", (res) => {
     let body = ""
     res.on("data", (data) => body += data.toString());
     res.on("end", () => {
@@ -47,9 +47,6 @@ https.get("https://raw.githubusercontent.com/pvpoke/pvpoke/level-50-rankings/src
                     delete pokemon.defaultIVs
         
                     pokemon.sid = getSid(pokemon.speciesId, sids)
-                    if(!pokemon.sid) {
-                        console.log(pokemon.speciesId)
-                    }
                     pokemonList[pokemon.speciesId] = pokemon
                 }
         

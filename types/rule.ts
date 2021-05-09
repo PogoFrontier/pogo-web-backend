@@ -23,6 +23,7 @@ export interface Selector {
 }
 
 export interface SlotRule {
+    name?: string
     include?: Selector[]
     exclude?: Selector[]
 }

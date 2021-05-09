@@ -51,7 +51,6 @@ export function isTeamValid(team: TeamMember[], format: Rule): {isValid: boolean
         violations.push(`Pokemon in index ${index} has too many cp: ${pokemon.cp}`);
       }
 
-      console.log(pokemon.name)
       // Check nickname length
       if(pokemon.name && pokemon.name.length > 12) {
         violations.push(`The nickname ${pokemon.name} exceeds the character limit of 12`);
