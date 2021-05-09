@@ -55,6 +55,24 @@ export interface TeamMemberDescription {
   shiny?: boolean
 }
 
+export interface Pokemon {
+  "dex": number
+  "speciesName": string
+  "speciesId": string
+  "baseStats": {
+    "atk": number
+    "def": number
+    "hp": number
+  } | {},
+  "types": string[]
+  "fastMoves": string[]
+  "chargedMoves": string[]
+  "tags"?: string[]
+  "level25CP"?: number
+  "eliteMoves"?: string[]
+  "sid": number
+}
+
 export interface Team {
   format: string
   members: Array<TeamMember>

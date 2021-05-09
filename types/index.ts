@@ -4,6 +4,7 @@ import * as rule from './rule';
 import * as handlers from './handlers';
 export interface TeamMember extends team.TeamMember {}
 export interface Current extends team.Current {}
+export interface Pokemon extends team.Pokemon {}
 export interface Rule extends rule.Rule {}
 export interface TurnAction extends room.TurnAction {}
 export interface Player extends room.Player {}
