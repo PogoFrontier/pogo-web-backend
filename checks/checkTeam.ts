@@ -93,7 +93,7 @@ export function isTeamValid(team: TeamMember[], format: Rule): {isValid: boolean
 
       selectedSpecies.push(speciesData);
 
-      if ("tags" in speciesData && speciesData.tags.some(tag => tag === "mega")) {
+      if (speciesData && "tags" in speciesData && speciesData.tags.some(tag => tag === "mega")) {
           megaCounter++;
       }
     }
@@ -146,8 +146,8 @@ export function isSpeciesAllowed(pokemon: reducedPoke, format: Rule, position: n
   if (pokemon.chargeMoves !== undefined && (!format.advancedOptions || format.advancedOptions.movesets !== "norestrictions")) {
     const illegalChargeMoves = pokemon.chargeMoves.filter(chargeMove => {
       return chargeMove !== "NONE" &&
-      !(chargeMove === "RETURN" && "tags" in speciesData && speciesData.tags.some(tag => tag === "shadoweligible")) &&
-      !(chargeMove === "FRUSTRATION" && "tags" in speciesData && speciesData.tags.some(tag => tag === "shadow")) &&
+      !(chargeMove === "RETURN" && speciesData && "tags" in speciesData && speciesData.tags.some(tag => tag === "shadoweligible")) &&
+      !(chargeMove === "FRUSTRATION" && speciesData && "tags" in speciesData && speciesData.tags.some(tag => tag === "shadow")) &&
       !speciesData.chargedMoves.includes(chargeMove);
     });
     for (let illegalChargeMove of illegalChargeMoves) {
