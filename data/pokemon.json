@@ -27364,7 +27364,11 @@
     "dex": 679,
     "speciesName": "Honedge",
     "speciesId": "honedge",
-    "baseStats": {},
+    "baseStats": {
+      "atk": 135,
+      "def": 139,
+      "hp": 128
+    },
     "types": [
       "steel",
       "ghost"
@@ -27386,7 +27390,11 @@
     "dex": 680,
     "speciesName": "Doublade",
     "speciesId": "doublade",
-    "baseStats": {},
+    "baseStats": {
+      "atk": 188,
+      "def": 206,
+      "hp": 153
+    },
     "types": [
       "steel",
       "ghost"
