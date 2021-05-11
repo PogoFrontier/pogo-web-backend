@@ -30,6 +30,7 @@ export interface SlotRule {
 export interface AdvancedOptions {
     movesets: "original" | "mainseries" | "norestrictions"
     switchTimer?: number
+    random?: boolean
 }
 
 export interface Flags {

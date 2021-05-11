@@ -1,0 +1,10950 @@
+{
+  "bulbasaur": {
+    "legal": true,
+    "dex": 1,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "tags": [
+      "starter",
+      "shadoweligible"
+    ],
+    "speciesName": "Bulbasaur"
+  },
+  "bulbasaur_shadow": {
+    "legal": true,
+    "dex": 1,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "tags": [
+      "starter",
+      "shadow"
+    ],
+    "speciesName": "Bulbasaur (Shadow)"
+  },
+  "ivysaur": {
+    "legal": true,
+    "dex": 2,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "tags": [
+      "starter",
+      "shadoweligible"
+    ],
+    "speciesName": "Ivysaur"
+  },
+  "ivysaur_shadow": {
+    "legal": true,
+    "dex": 2,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "tags": [
+      "starter",
+      "shadow"
+    ],
+    "speciesName": "Ivysaur (Shadow)"
+  },
+  "venusaur": {
+    "legal": true,
+    "dex": 3,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "tags": [
+      "starter",
+      "shadoweligible"
+    ],
+    "speciesName": "Venusaur"
+  },
+  "venusaur_mega": {
+    "legal": true,
+    "dex": 3,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "tags": [
+      "starter",
+      "shadoweligible",
+      "mega"
+    ],
+    "speciesName": "Venusaur (Mega)"
+  },
+  "venusaur_shadow": {
+    "legal": true,
+    "dex": 3,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "tags": [
+      "starter",
+      "shadow"
+    ],
+    "speciesName": "Venusaur (Shadow)"
+  },
+  "charmander": {
+    "legal": true,
+    "dex": 4,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "starter",
+      "shadoweligible"
+    ],
+    "speciesName": "Charmander"
+  },
+  "charmander_shadow": {
+    "legal": true,
+    "dex": 4,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "starter",
+      "shadow"
+    ],
+    "speciesName": "Charmander (Shadow)"
+  },
+  "charmeleon": {
+    "legal": true,
+    "dex": 5,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "starter",
+      "shadoweligible"
+    ],
+    "speciesName": "Charmeleon"
+  },
+  "charmeleon_shadow": {
+    "legal": true,
+    "dex": 5,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "starter",
+      "shadow"
+    ],
+    "speciesName": "Charmeleon (Shadow)"
+  },
+  "charizard": {
+    "legal": true,
+    "dex": 6,
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "tags": [
+      "starter",
+      "shadoweligible"
+    ],
+    "speciesName": "Charizard"
+  },
+  "charizard_mega_x": {
+    "legal": true,
+    "dex": 6,
+    "types": [
+      "fire",
+      "dragon"
+    ],
+    "tags": [
+      "starter",
+      "shadoweligible",
+      "mega"
+    ],
+    "speciesName": "Charizard (Mega X)"
+  },
+  "charizard_mega_y": {
+    "legal": true,
+    "dex": 6,
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "tags": [
+      "starter",
+      "shadoweligible",
+      "mega"
+    ],
+    "speciesName": "Charizard (Mega Y)"
+  },
+  "charizard_shadow": {
+    "legal": true,
+    "dex": 6,
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "tags": [
+      "starter",
+      "shadow"
+    ],
+    "speciesName": "Charizard (Shadow)"
+  },
+  "squirtle": {
+    "legal": true,
+    "dex": 7,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "starter",
+      "shadoweligible"
+    ],
+    "speciesName": "Squirtle"
+  },
+  "squirtle_shadow": {
+    "legal": true,
+    "dex": 7,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "starter",
+      "shadow"
+    ],
+    "speciesName": "Squirtle (Shadow)"
+  },
+  "wartortle": {
+    "legal": true,
+    "dex": 8,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "starter",
+      "shadoweligible"
+    ],
+    "speciesName": "Wartortle"
+  },
+  "wartortle_shadow": {
+    "legal": true,
+    "dex": 8,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "starter",
+      "shadow"
+    ],
+    "speciesName": "Wartortle (Shadow)"
+  },
+  "blastoise": {
+    "legal": true,
+    "dex": 9,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "starter",
+      "shadoweligible"
+    ],
+    "speciesName": "Blastoise"
+  },
+  "blastoise_mega": {
+    "legal": true,
+    "dex": 9,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "starter",
+      "shadoweligible",
+      "mega"
+    ],
+    "speciesName": "Blastoise (Mega)"
+  },
+  "blastoise_shadow": {
+    "legal": true,
+    "dex": 9,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "starter",
+      "shadow"
+    ],
+    "speciesName": "Blastoise (Shadow)"
+  },
+  "caterpie": {
+    "legal": true,
+    "dex": 10,
+    "types": [
+      "bug",
+      "none"
+    ],
+    "speciesName": "Caterpie"
+  },
+  "metapod": {
+    "legal": true,
+    "dex": 11,
+    "types": [
+      "bug",
+      "none"
+    ],
+    "speciesName": "Metapod"
+  },
+  "butterfree": {
+    "legal": true,
+    "dex": 12,
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "speciesName": "Butterfree"
+  },
+  "weedle": {
+    "legal": true,
+    "dex": 13,
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Weedle"
+  },
+  "weedle_shadow": {
+    "legal": true,
+    "dex": 13,
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Weedle (Shadow)"
+  },
+  "kakuna": {
+    "legal": true,
+    "dex": 14,
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Kakuna"
+  },
+  "kakuna_shadow": {
+    "legal": true,
+    "dex": 14,
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Kakuna (Shadow)"
+  },
+  "beedrill": {
+    "legal": true,
+    "dex": 15,
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Beedrill"
+  },
+  "beedrill_mega": {
+    "legal": true,
+    "dex": 15,
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "tags": [
+      "shadoweligible",
+      "mega"
+    ],
+    "speciesName": "Beedrill (Mega)"
+  },
+  "beedrill_shadow": {
+    "legal": true,
+    "dex": 15,
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Beedrill (Shadow)"
+  },
+  "pidgey": {
+    "legal": true,
+    "dex": 16,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "speciesName": "Pidgey"
+  },
+  "pidgeotto": {
+    "legal": true,
+    "dex": 17,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "speciesName": "Pidgeotto"
+  },
+  "pidgeot": {
+    "legal": true,
+    "dex": 18,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "speciesName": "Pidgeot"
+  },
+  "pidgeot_mega": {
+    "legal": true,
+    "dex": 18,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "tags": [
+      "mega"
+    ],
+    "speciesName": "Pidgeot (Mega)"
+  },
+  "rattata": {
+    "legal": true,
+    "dex": 19,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Rattata"
+  },
+  "rattata_alolan": {
+    "legal": true,
+    "dex": 19,
+    "types": [
+      "dark",
+      "normal"
+    ],
+    "tags": [
+      "alolan"
+    ],
+    "speciesName": "Rattata (Alolan)"
+  },
+  "rattata_shadow": {
+    "legal": true,
+    "dex": 19,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Rattata (Shadow)"
+  },
+  "raticate": {
+    "legal": true,
+    "dex": 20,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Raticate"
+  },
+  "raticate_alolan": {
+    "legal": true,
+    "dex": 20,
+    "types": [
+      "dark",
+      "normal"
+    ],
+    "tags": [
+      "alolan"
+    ],
+    "speciesName": "Raticate (Alolan)"
+  },
+  "raticate_shadow": {
+    "legal": true,
+    "dex": 20,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Raticate (Shadow)"
+  },
+  "spearow": {
+    "legal": true,
+    "dex": 21,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "speciesName": "Spearow"
+  },
+  "fearow": {
+    "legal": true,
+    "dex": 22,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "speciesName": "Fearow"
+  },
+  "ekans": {
+    "legal": true,
+    "dex": 23,
+    "types": [
+      "poison",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Ekans"
+  },
+  "ekans_shadow": {
+    "legal": true,
+    "dex": 23,
+    "types": [
+      "poison",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Ekans (Shadow)"
+  },
+  "arbok": {
+    "legal": true,
+    "dex": 24,
+    "types": [
+      "poison",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Arbok"
+  },
+  "arbok_shadow": {
+    "legal": true,
+    "dex": 24,
+    "types": [
+      "poison",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Arbok (Shadow)"
+  },
+  "pikachu": {
+    "legal": true,
+    "dex": 25,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "speciesName": "Pikachu"
+  },
+  "pikachu_flying": {
+    "legal": true,
+    "dex": 25,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "speciesName": "Pikachu (Flying)"
+  },
+  "pikachu_libre": {
+    "legal": true,
+    "dex": 25,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "speciesName": "Pikachu (Libre)"
+  },
+  "raichu": {
+    "legal": true,
+    "dex": 26,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "speciesName": "Raichu"
+  },
+  "raichu_alolan": {
+    "legal": true,
+    "dex": 26,
+    "types": [
+      "electric",
+      "psychic"
+    ],
+    "tags": [
+      "alolan"
+    ],
+    "speciesName": "Raichu (Alolan)"
+  },
+  "sandshrew": {
+    "legal": true,
+    "dex": 27,
+    "types": [
+      "ground",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Sandshrew"
+  },
+  "sandshrew_alolan": {
+    "legal": true,
+    "dex": 27,
+    "types": [
+      "ice",
+      "steel"
+    ],
+    "tags": [
+      "alolan"
+    ],
+    "speciesName": "Sandshrew (Alolan)"
+  },
+  "sandshrew_shadow": {
+    "legal": true,
+    "dex": 27,
+    "types": [
+      "ground",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Sandshrew (Shadow)"
+  },
+  "sandslash": {
+    "legal": true,
+    "dex": 28,
+    "types": [
+      "ground",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Sandslash"
+  },
+  "sandslash_alolan": {
+    "legal": true,
+    "dex": 28,
+    "types": [
+      "ice",
+      "steel"
+    ],
+    "tags": [
+      "alolan"
+    ],
+    "speciesName": "Sandslash (Alolan)"
+  },
+  "sandslash_shadow": {
+    "legal": true,
+    "dex": 28,
+    "types": [
+      "ground",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Sandslash (Shadow)"
+  },
+  "nidoran_female": {
+    "legal": true,
+    "dex": 29,
+    "types": [
+      "poison",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Nidoran♀"
+  },
+  "nidoran_female_shadow": {
+    "legal": true,
+    "dex": 29,
+    "types": [
+      "poison",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Nidoran♀ (Shadow)"
+  },
+  "nidorina": {
+    "legal": true,
+    "dex": 30,
+    "types": [
+      "poison",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Nidorina"
+  },
+  "nidorina_shadow": {
+    "legal": true,
+    "dex": 30,
+    "types": [
+      "poison",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Nidorina (Shadow)"
+  },
+  "nidoqueen": {
+    "legal": true,
+    "dex": 31,
+    "types": [
+      "poison",
+      "ground"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Nidoqueen"
+  },
+  "nidoqueen_shadow": {
+    "legal": true,
+    "dex": 31,
+    "types": [
+      "poison",
+      "ground"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Nidoqueen (Shadow)"
+  },
+  "nidoran_male": {
+    "legal": true,
+    "dex": 32,
+    "types": [
+      "poison",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Nidoran♂"
+  },
+  "nidoran_male_shadow": {
+    "legal": true,
+    "dex": 32,
+    "types": [
+      "poison",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Nidoran♂ (Shadow)"
+  },
+  "nidorino": {
+    "legal": true,
+    "dex": 33,
+    "types": [
+      "poison",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Nidorino"
+  },
+  "nidorino_shadow": {
+    "legal": true,
+    "dex": 33,
+    "types": [
+      "poison",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Nidorino (Shadow)"
+  },
+  "nidoking": {
+    "legal": true,
+    "dex": 34,
+    "types": [
+      "poison",
+      "ground"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Nidoking"
+  },
+  "nidoking_shadow": {
+    "legal": true,
+    "dex": 34,
+    "types": [
+      "poison",
+      "ground"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Nidoking (Shadow)"
+  },
+  "clefairy": {
+    "legal": true,
+    "dex": 35,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "speciesName": "Clefairy"
+  },
+  "clefable": {
+    "legal": true,
+    "dex": 36,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "speciesName": "Clefable"
+  },
+  "vulpix": {
+    "legal": true,
+    "dex": 37,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Vulpix"
+  },
+  "vulpix_alolan": {
+    "legal": true,
+    "dex": 37,
+    "types": [
+      "ice",
+      "none"
+    ],
+    "tags": [
+      "alolan"
+    ],
+    "speciesName": "Vulpix (Alolan)"
+  },
+  "vulpix_shadow": {
+    "legal": true,
+    "dex": 37,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Vulpix (Shadow)"
+  },
+  "ninetales": {
+    "legal": true,
+    "dex": 38,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Ninetales"
+  },
+  "ninetales_alolan": {
+    "legal": true,
+    "dex": 38,
+    "types": [
+      "ice",
+      "fairy"
+    ],
+    "tags": [
+      "alolan"
+    ],
+    "speciesName": "Ninetales (Alolan)"
+  },
+  "ninetales_shadow": {
+    "legal": true,
+    "dex": 38,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Ninetales (Shadow)"
+  },
+  "jigglypuff": {
+    "legal": true,
+    "dex": 39,
+    "types": [
+      "normal",
+      "fairy"
+    ],
+    "speciesName": "Jigglypuff"
+  },
+  "wigglytuff": {
+    "legal": true,
+    "dex": 40,
+    "types": [
+      "normal",
+      "fairy"
+    ],
+    "speciesName": "Wigglytuff"
+  },
+  "zubat": {
+    "legal": true,
+    "dex": 41,
+    "types": [
+      "poison",
+      "flying"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Zubat"
+  },
+  "zubat_shadow": {
+    "legal": true,
+    "dex": 41,
+    "types": [
+      "poison",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Zubat (Shadow)"
+  },
+  "golbat": {
+    "legal": true,
+    "dex": 42,
+    "types": [
+      "poison",
+      "flying"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Golbat"
+  },
+  "golbat_shadow": {
+    "legal": true,
+    "dex": 42,
+    "types": [
+      "poison",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Golbat (Shadow)"
+  },
+  "oddish": {
+    "legal": true,
+    "dex": 43,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Oddish"
+  },
+  "oddish_shadow": {
+    "legal": true,
+    "dex": 43,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Oddish (Shadow)"
+  },
+  "gloom": {
+    "legal": true,
+    "dex": 44,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Gloom"
+  },
+  "gloom_shadow": {
+    "legal": true,
+    "dex": 44,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Gloom (Shadow)"
+  },
+  "vileplume": {
+    "legal": true,
+    "dex": 45,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Vileplume"
+  },
+  "vileplume_shadow": {
+    "legal": true,
+    "dex": 45,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Vileplume (Shadow)"
+  },
+  "paras": {
+    "legal": true,
+    "dex": 46,
+    "types": [
+      "bug",
+      "grass"
+    ],
+    "speciesName": "Paras"
+  },
+  "parasect": {
+    "legal": true,
+    "dex": 47,
+    "types": [
+      "bug",
+      "grass"
+    ],
+    "speciesName": "Parasect"
+  },
+  "venonat": {
+    "legal": true,
+    "dex": 48,
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Venonat"
+  },
+  "venonat_shadow": {
+    "legal": true,
+    "dex": 48,
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Venonat (Shadow)"
+  },
+  "venomoth": {
+    "legal": true,
+    "dex": 49,
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Venomoth"
+  },
+  "venomoth_shadow": {
+    "legal": true,
+    "dex": 49,
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Venomoth (Shadow)"
+  },
+  "diglett": {
+    "legal": true,
+    "dex": 50,
+    "types": [
+      "ground",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Diglett"
+  },
+  "diglett_alolan": {
+    "legal": true,
+    "dex": 50,
+    "types": [
+      "ground",
+      "steel"
+    ],
+    "tags": [
+      "alolan"
+    ],
+    "speciesName": "Diglett (Alolan)"
+  },
+  "diglett_shadow": {
+    "legal": true,
+    "dex": 50,
+    "types": [
+      "ground",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Diglett (Shadow)"
+  },
+  "dugtrio": {
+    "legal": true,
+    "dex": 51,
+    "types": [
+      "ground",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Dugtrio"
+  },
+  "dugtrio_alolan": {
+    "legal": true,
+    "dex": 51,
+    "types": [
+      "ground",
+      "steel"
+    ],
+    "tags": [
+      "alolan"
+    ],
+    "speciesName": "Dugtrio (Alolan)"
+  },
+  "dugtrio_shadow": {
+    "legal": true,
+    "dex": 51,
+    "types": [
+      "ground",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Dugtrio (Shadow)"
+  },
+  "meowth": {
+    "legal": true,
+    "dex": 52,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Meowth"
+  },
+  "meowth_alolan": {
+    "legal": true,
+    "dex": 52,
+    "types": [
+      "dark",
+      "none"
+    ],
+    "tags": [
+      "alolan"
+    ],
+    "speciesName": "Meowth (Alolan)"
+  },
+  "meowth_galarian": {
+    "legal": true,
+    "dex": 52,
+    "types": [
+      "steel",
+      "none"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "speciesName": "Meowth (Galarian)"
+  },
+  "meowth_shadow": {
+    "legal": true,
+    "dex": 52,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Meowth (Shadow)"
+  },
+  "persian": {
+    "legal": true,
+    "dex": 53,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Persian"
+  },
+  "persian_alolan": {
+    "legal": true,
+    "dex": 53,
+    "types": [
+      "dark",
+      "none"
+    ],
+    "tags": [
+      "alolan"
+    ],
+    "speciesName": "Persian (Alolan)"
+  },
+  "persian_shadow": {
+    "legal": true,
+    "dex": 53,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Persian (Shadow)"
+  },
+  "psyduck": {
+    "legal": true,
+    "dex": 54,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Psyduck"
+  },
+  "psyduck_shadow": {
+    "legal": true,
+    "dex": 54,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Psyduck (Shadow)"
+  },
+  "golduck": {
+    "legal": true,
+    "dex": 55,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Golduck"
+  },
+  "golduck_shadow": {
+    "legal": true,
+    "dex": 55,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Golduck (Shadow)"
+  },
+  "mankey": {
+    "legal": true,
+    "dex": 56,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "speciesName": "Mankey"
+  },
+  "primeape": {
+    "legal": true,
+    "dex": 57,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "speciesName": "Primeape"
+  },
+  "growlithe": {
+    "legal": true,
+    "dex": 58,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Growlithe"
+  },
+  "growlithe_shadow": {
+    "legal": true,
+    "dex": 58,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Growlithe (Shadow)"
+  },
+  "arcanine": {
+    "legal": true,
+    "dex": 59,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Arcanine"
+  },
+  "arcanine_shadow": {
+    "legal": true,
+    "dex": 59,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Arcanine (Shadow)"
+  },
+  "poliwag": {
+    "legal": true,
+    "dex": 60,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Poliwag"
+  },
+  "poliwag_shadow": {
+    "legal": true,
+    "dex": 60,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Poliwag (Shadow)"
+  },
+  "poliwhirl": {
+    "legal": true,
+    "dex": 61,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Poliwhirl"
+  },
+  "poliwhirl_shadow": {
+    "legal": true,
+    "dex": 61,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Poliwhirl (Shadow)"
+  },
+  "poliwrath": {
+    "legal": true,
+    "dex": 62,
+    "types": [
+      "water",
+      "fighting"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Poliwrath"
+  },
+  "poliwrath_shadow": {
+    "legal": true,
+    "dex": 62,
+    "types": [
+      "water",
+      "fighting"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Poliwrath (Shadow)"
+  },
+  "abra": {
+    "legal": true,
+    "dex": 63,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Abra"
+  },
+  "abra_shadow": {
+    "legal": true,
+    "dex": 63,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Abra (Shadow)"
+  },
+  "kadabra": {
+    "legal": true,
+    "dex": 64,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Kadabra"
+  },
+  "kadabra_shadow": {
+    "legal": true,
+    "dex": 64,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Kadabra (Shadow)"
+  },
+  "alakazam": {
+    "legal": true,
+    "dex": 65,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Alakazam"
+  },
+  "alakazam_shadow": {
+    "legal": true,
+    "dex": 65,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Alakazam (Shadow)"
+  },
+  "machop": {
+    "legal": true,
+    "dex": 66,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Machop"
+  },
+  "machop_shadow": {
+    "legal": true,
+    "dex": 66,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Machop (Shadow)"
+  },
+  "machoke": {
+    "legal": true,
+    "dex": 67,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Machoke"
+  },
+  "machoke_shadow": {
+    "legal": true,
+    "dex": 67,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Machoke (Shadow)"
+  },
+  "machamp": {
+    "legal": true,
+    "dex": 68,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Machamp"
+  },
+  "machamp_shadow": {
+    "legal": true,
+    "dex": 68,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Machamp (Shadow)"
+  },
+  "bellsprout": {
+    "legal": true,
+    "dex": 69,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Bellsprout"
+  },
+  "bellsprout_shadow": {
+    "legal": true,
+    "dex": 69,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Bellsprout (Shadow)"
+  },
+  "weepinbell": {
+    "legal": true,
+    "dex": 70,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Weepinbell"
+  },
+  "weepinbell_shadow": {
+    "legal": true,
+    "dex": 70,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Weepinbell (Shadow)"
+  },
+  "victreebel": {
+    "legal": true,
+    "dex": 71,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Victreebel"
+  },
+  "victreebel_shadow": {
+    "legal": true,
+    "dex": 71,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Victreebel (Shadow)"
+  },
+  "tentacool": {
+    "legal": true,
+    "dex": 72,
+    "types": [
+      "water",
+      "poison"
+    ],
+    "speciesName": "Tentacool"
+  },
+  "tentacruel": {
+    "legal": true,
+    "dex": 73,
+    "types": [
+      "water",
+      "poison"
+    ],
+    "speciesName": "Tentacruel"
+  },
+  "geodude": {
+    "legal": true,
+    "dex": 74,
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "speciesName": "Geodude"
+  },
+  "geodude_alolan": {
+    "legal": true,
+    "dex": 74,
+    "types": [
+      "rock",
+      "electric"
+    ],
+    "tags": [
+      "alolan"
+    ],
+    "speciesName": "Geodude (Alolan)"
+  },
+  "graveler": {
+    "legal": true,
+    "dex": 75,
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "speciesName": "Graveler"
+  },
+  "graveler_alolan": {
+    "legal": true,
+    "dex": 75,
+    "types": [
+      "rock",
+      "electric"
+    ],
+    "tags": [
+      "alolan"
+    ],
+    "speciesName": "Graveler (Alolan)"
+  },
+  "golem": {
+    "legal": true,
+    "dex": 76,
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "speciesName": "Golem"
+  },
+  "golem_alolan": {
+    "legal": true,
+    "dex": 76,
+    "types": [
+      "rock",
+      "electric"
+    ],
+    "tags": [
+      "alolan"
+    ],
+    "speciesName": "Golem (Alolan)"
+  },
+  "ponyta": {
+    "legal": true,
+    "dex": 77,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "speciesName": "Ponyta"
+  },
+  "ponyta_galarian": {
+    "legal": true,
+    "dex": 77,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "speciesName": "Ponyta (Galarian)"
+  },
+  "rapidash": {
+    "legal": true,
+    "dex": 78,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "speciesName": "Rapidash"
+  },
+  "rapidash_galarian": {
+    "legal": true,
+    "dex": 78,
+    "types": [
+      "psychic",
+      "fairy"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "speciesName": "Rapidash (Galarian)"
+  },
+  "slowpoke": {
+    "legal": true,
+    "dex": 79,
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Slowpoke"
+  },
+  "slowpoke_shadow": {
+    "legal": true,
+    "dex": 79,
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Slowpoke (Shadow)"
+  },
+  "slowbro": {
+    "legal": true,
+    "dex": 80,
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Slowbro"
+  },
+  "slowbro_shadow": {
+    "legal": true,
+    "dex": 80,
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Slowbro (Shadow)"
+  },
+  "magnemite": {
+    "legal": true,
+    "dex": 81,
+    "types": [
+      "electric",
+      "steel"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Magnemite"
+  },
+  "magnemite_shadow": {
+    "legal": true,
+    "dex": 81,
+    "types": [
+      "electric",
+      "steel"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Magnemite (Shadow)"
+  },
+  "magneton": {
+    "legal": true,
+    "dex": 82,
+    "types": [
+      "electric",
+      "steel"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Magneton"
+  },
+  "magneton_shadow": {
+    "legal": true,
+    "dex": 82,
+    "types": [
+      "electric",
+      "steel"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Magneton (Shadow)"
+  },
+  "farfetchd": {
+    "legal": true,
+    "dex": 83,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Farfetch'd"
+  },
+  "farfetchd_galarian": {
+    "legal": true,
+    "dex": 83,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "speciesName": "Farfetch'd (Galarian)"
+  },
+  "doduo": {
+    "legal": true,
+    "dex": 84,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "speciesName": "Doduo"
+  },
+  "dodrio": {
+    "legal": true,
+    "dex": 85,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "speciesName": "Dodrio"
+  },
+  "seel": {
+    "legal": true,
+    "dex": 86,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Seel"
+  },
+  "dewgong": {
+    "legal": true,
+    "dex": 87,
+    "types": [
+      "water",
+      "ice"
+    ],
+    "speciesName": "Dewgong"
+  },
+  "grimer": {
+    "legal": true,
+    "dex": 88,
+    "types": [
+      "poison",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Grimer"
+  },
+  "grimer_alolan": {
+    "legal": true,
+    "dex": 88,
+    "types": [
+      "poison",
+      "dark"
+    ],
+    "tags": [
+      "alolan"
+    ],
+    "speciesName": "Grimer (Alolan)"
+  },
+  "grimer_shadow": {
+    "legal": true,
+    "dex": 88,
+    "types": [
+      "poison",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Grimer (Shadow)"
+  },
+  "muk": {
+    "legal": true,
+    "dex": 89,
+    "types": [
+      "poison",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Muk"
+  },
+  "muk_alolan": {
+    "legal": true,
+    "dex": 89,
+    "types": [
+      "poison",
+      "dark"
+    ],
+    "tags": [
+      "alolan"
+    ],
+    "speciesName": "Muk (Alolan)"
+  },
+  "muk_shadow": {
+    "legal": true,
+    "dex": 89,
+    "types": [
+      "poison",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Muk (Shadow)"
+  },
+  "shellder": {
+    "legal": true,
+    "dex": 90,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Shellder"
+  },
+  "shellder_shadow": {
+    "legal": true,
+    "dex": 90,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Shellder (Shadow)"
+  },
+  "cloyster": {
+    "legal": true,
+    "dex": 91,
+    "types": [
+      "water",
+      "ice"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Cloyster"
+  },
+  "cloyster_shadow": {
+    "legal": true,
+    "dex": 91,
+    "types": [
+      "water",
+      "ice"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Cloyster (Shadow)"
+  },
+  "gastly": {
+    "legal": true,
+    "dex": 92,
+    "types": [
+      "ghost",
+      "poison"
+    ],
+    "speciesName": "Gastly"
+  },
+  "haunter": {
+    "legal": true,
+    "dex": 93,
+    "types": [
+      "ghost",
+      "poison"
+    ],
+    "speciesName": "Haunter"
+  },
+  "gengar": {
+    "legal": true,
+    "dex": 94,
+    "types": [
+      "ghost",
+      "poison"
+    ],
+    "speciesName": "Gengar"
+  },
+  "gengar_mega": {
+    "legal": true,
+    "dex": 94,
+    "types": [
+      "ghost",
+      "poison"
+    ],
+    "tags": [
+      "mega"
+    ],
+    "speciesName": "Gengar (Mega)"
+  },
+  "onix": {
+    "legal": true,
+    "dex": 95,
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "speciesName": "Onix"
+  },
+  "drowzee": {
+    "legal": true,
+    "dex": 96,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Drowzee"
+  },
+  "drowzee_shadow": {
+    "legal": true,
+    "dex": 96,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Drowzee (Shadow)"
+  },
+  "hypno": {
+    "legal": true,
+    "dex": 97,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Hypno"
+  },
+  "hypno_shadow": {
+    "legal": true,
+    "dex": 97,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Hypno (Shadow)"
+  },
+  "krabby": {
+    "legal": true,
+    "dex": 98,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Krabby"
+  },
+  "kingler": {
+    "legal": true,
+    "dex": 99,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Kingler"
+  },
+  "voltorb": {
+    "legal": true,
+    "dex": 100,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "speciesName": "Voltorb"
+  },
+  "electrode": {
+    "legal": true,
+    "dex": 101,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "speciesName": "Electrode"
+  },
+  "exeggcute": {
+    "legal": true,
+    "dex": 102,
+    "types": [
+      "grass",
+      "psychic"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Exeggcute"
+  },
+  "exeggcute_shadow": {
+    "legal": true,
+    "dex": 102,
+    "types": [
+      "grass",
+      "psychic"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Exeggcute (Shadow)"
+  },
+  "exeggutor": {
+    "legal": true,
+    "dex": 103,
+    "types": [
+      "grass",
+      "psychic"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Exeggutor"
+  },
+  "exeggutor_alolan": {
+    "legal": true,
+    "dex": 103,
+    "types": [
+      "grass",
+      "dragon"
+    ],
+    "tags": [
+      "alolan"
+    ],
+    "speciesName": "Exeggutor (Alolan)"
+  },
+  "exeggutor_shadow": {
+    "legal": true,
+    "dex": 103,
+    "types": [
+      "grass",
+      "psychic"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Exeggutor (Shadow)"
+  },
+  "cubone": {
+    "legal": true,
+    "dex": 104,
+    "types": [
+      "ground",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Cubone"
+  },
+  "cubone_shadow": {
+    "legal": true,
+    "dex": 104,
+    "types": [
+      "ground",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Cubone (Shadow)"
+  },
+  "marowak": {
+    "legal": true,
+    "dex": 105,
+    "types": [
+      "ground",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Marowak"
+  },
+  "marowak_alolan": {
+    "legal": true,
+    "dex": 105,
+    "types": [
+      "fire",
+      "ghost"
+    ],
+    "tags": [
+      "alolan"
+    ],
+    "speciesName": "Marowak (Alolan)"
+  },
+  "marowak_shadow": {
+    "legal": true,
+    "dex": 105,
+    "types": [
+      "ground",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Marowak (Shadow)"
+  },
+  "hitmonlee": {
+    "legal": true,
+    "dex": 106,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Hitmonlee"
+  },
+  "hitmonlee_shadow": {
+    "legal": true,
+    "dex": 106,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Hitmonlee (Shadow)"
+  },
+  "hitmonchan": {
+    "legal": true,
+    "dex": 107,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Hitmonchan"
+  },
+  "hitmonchan_shadow": {
+    "legal": true,
+    "dex": 107,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Hitmonchan (Shadow)"
+  },
+  "lickitung": {
+    "legal": true,
+    "dex": 108,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Lickitung"
+  },
+  "koffing": {
+    "legal": true,
+    "dex": 109,
+    "types": [
+      "poison",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Koffing"
+  },
+  "koffing_shadow": {
+    "legal": true,
+    "dex": 109,
+    "types": [
+      "poison",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Koffing (Shadow)"
+  },
+  "weezing": {
+    "legal": true,
+    "dex": 110,
+    "types": [
+      "poison",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Weezing"
+  },
+  "weezing_galarian": {
+    "legal": true,
+    "dex": 110,
+    "types": [
+      "poison",
+      "fairy"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "speciesName": "Weezing (Galarian)"
+  },
+  "weezing_shadow": {
+    "legal": true,
+    "dex": 110,
+    "types": [
+      "poison",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Weezing (Shadow)"
+  },
+  "rhyhorn": {
+    "legal": true,
+    "dex": 111,
+    "types": [
+      "ground",
+      "rock"
+    ],
+    "tags": [],
+    "speciesName": "Rhyhorn"
+  },
+  "rhydon": {
+    "legal": true,
+    "dex": 112,
+    "types": [
+      "ground",
+      "rock"
+    ],
+    "tags": [],
+    "speciesName": "Rhydon"
+  },
+  "chansey": {
+    "legal": true,
+    "dex": 113,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Chansey"
+  },
+  "tangela": {
+    "legal": true,
+    "dex": 114,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "speciesName": "Tangela"
+  },
+  "kangaskhan": {
+    "legal": true,
+    "dex": 115,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Kangaskhan"
+  },
+  "horsea": {
+    "legal": true,
+    "dex": 116,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Horsea"
+  },
+  "seadra": {
+    "legal": true,
+    "dex": 117,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Seadra"
+  },
+  "goldeen": {
+    "legal": true,
+    "dex": 118,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Goldeen"
+  },
+  "seaking": {
+    "legal": true,
+    "dex": 119,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Seaking"
+  },
+  "staryu": {
+    "legal": true,
+    "dex": 120,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Staryu"
+  },
+  "starmie": {
+    "legal": true,
+    "dex": 121,
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "speciesName": "Starmie"
+  },
+  "mr_mime": {
+    "legal": true,
+    "dex": 122,
+    "types": [
+      "psychic",
+      "fairy"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Mr. Mime"
+  },
+  "mr_mime_galarian": {
+    "legal": true,
+    "dex": 122,
+    "types": [
+      "ice",
+      "psychic"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "speciesName": "Mr. Mime (Galarian)"
+  },
+  "scyther": {
+    "legal": true,
+    "dex": 123,
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Scyther"
+  },
+  "scyther_shadow": {
+    "legal": true,
+    "dex": 123,
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Scyther (Shadow)"
+  },
+  "jynx": {
+    "legal": true,
+    "dex": 124,
+    "types": [
+      "ice",
+      "psychic"
+    ],
+    "speciesName": "Jynx"
+  },
+  "electabuzz": {
+    "legal": true,
+    "dex": 125,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Electabuzz"
+  },
+  "electabuzz_shadow": {
+    "legal": true,
+    "dex": 125,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Electabuzz (Shadow)"
+  },
+  "magmar": {
+    "legal": true,
+    "dex": 126,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Magmar"
+  },
+  "magmar_shadow": {
+    "legal": true,
+    "dex": 126,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Magmar (Shadow)"
+  },
+  "pinsir": {
+    "legal": true,
+    "dex": 127,
+    "types": [
+      "bug",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Pinsir"
+  },
+  "pinsir_shadow": {
+    "legal": true,
+    "dex": 127,
+    "types": [
+      "bug",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Pinsir (Shadow)"
+  },
+  "tauros": {
+    "legal": true,
+    "dex": 128,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Tauros"
+  },
+  "magikarp": {
+    "legal": true,
+    "dex": 129,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Magikarp"
+  },
+  "magikarp_shadow": {
+    "legal": true,
+    "dex": 129,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Magikarp (Shadow)"
+  },
+  "gyarados": {
+    "legal": true,
+    "dex": 130,
+    "types": [
+      "water",
+      "flying"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Gyarados"
+  },
+  "gyarados_mega": {
+    "legal": true,
+    "dex": 130,
+    "types": [
+      "water",
+      "dark"
+    ],
+    "tags": [
+      "shadoweligible",
+      "mega"
+    ],
+    "speciesName": "Gyarados (Mega)"
+  },
+  "gyarados_shadow": {
+    "legal": true,
+    "dex": 130,
+    "types": [
+      "water",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Gyarados (Shadow)"
+  },
+  "lapras": {
+    "legal": true,
+    "dex": 131,
+    "types": [
+      "water",
+      "ice"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Lapras"
+  },
+  "lapras_shadow": {
+    "legal": true,
+    "dex": 131,
+    "types": [
+      "water",
+      "ice"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Lapras (Shadow)"
+  },
+  "ditto": {
+    "legal": true,
+    "dex": 132,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Ditto"
+  },
+  "eevee": {
+    "legal": true,
+    "dex": 133,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Eevee"
+  },
+  "vaporeon": {
+    "legal": true,
+    "dex": 134,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Vaporeon"
+  },
+  "jolteon": {
+    "legal": true,
+    "dex": 135,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "speciesName": "Jolteon"
+  },
+  "flareon": {
+    "legal": true,
+    "dex": 136,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "speciesName": "Flareon"
+  },
+  "porygon": {
+    "legal": true,
+    "dex": 137,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Porygon"
+  },
+  "porygon_shadow": {
+    "legal": true,
+    "dex": 137,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Porygon (Shadow)"
+  },
+  "omanyte": {
+    "legal": true,
+    "dex": 138,
+    "types": [
+      "rock",
+      "water"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Omanyte"
+  },
+  "omanyte_shadow": {
+    "legal": true,
+    "dex": 138,
+    "types": [
+      "rock",
+      "water"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Omanyte (Shadow)"
+  },
+  "omastar": {
+    "legal": true,
+    "dex": 139,
+    "types": [
+      "rock",
+      "water"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Omastar"
+  },
+  "omastar_shadow": {
+    "legal": true,
+    "dex": 139,
+    "types": [
+      "rock",
+      "water"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Omastar (Shadow)"
+  },
+  "kabuto": {
+    "legal": true,
+    "dex": 140,
+    "types": [
+      "rock",
+      "water"
+    ],
+    "speciesName": "Kabuto"
+  },
+  "kabutops": {
+    "legal": true,
+    "dex": 141,
+    "types": [
+      "rock",
+      "water"
+    ],
+    "speciesName": "Kabutops"
+  },
+  "aerodactyl": {
+    "legal": true,
+    "dex": 142,
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Aerodactyl"
+  },
+  "aerodactyl_shadow": {
+    "legal": true,
+    "dex": 142,
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Aerodactyl (Shadow)"
+  },
+  "snorlax": {
+    "legal": true,
+    "dex": 143,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Snorlax"
+  },
+  "snorlax_shadow": {
+    "legal": true,
+    "dex": 143,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Snorlax (Shadow)"
+  },
+  "articuno": {
+    "legal": true,
+    "dex": 144,
+    "types": [
+      "ice",
+      "flying"
+    ],
+    "tags": [
+      "legendary",
+      "shadoweligible"
+    ],
+    "speciesName": "Articuno"
+  },
+  "articuno_shadow": {
+    "legal": true,
+    "dex": 144,
+    "types": [
+      "ice",
+      "flying"
+    ],
+    "tags": [
+      "legendary",
+      "shadow"
+    ],
+    "speciesName": "Articuno (Shadow)"
+  },
+  "zapdos": {
+    "legal": true,
+    "dex": 145,
+    "types": [
+      "electric",
+      "flying"
+    ],
+    "tags": [
+      "legendary",
+      "shadoweligible"
+    ],
+    "speciesName": "Zapdos"
+  },
+  "zapdos_shadow": {
+    "legal": true,
+    "dex": 145,
+    "types": [
+      "electric",
+      "flying"
+    ],
+    "tags": [
+      "legendary",
+      "shadow"
+    ],
+    "speciesName": "Zapdos (Shadow)"
+  },
+  "moltres": {
+    "legal": true,
+    "dex": 146,
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "tags": [
+      "legendary",
+      "shadoweligible"
+    ],
+    "speciesName": "Moltres"
+  },
+  "moltres_shadow": {
+    "legal": true,
+    "dex": 146,
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "tags": [
+      "legendary",
+      "shadow"
+    ],
+    "speciesName": "Moltres (Shadow)"
+  },
+  "dratini": {
+    "legal": true,
+    "dex": 147,
+    "types": [
+      "dragon",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Dratini"
+  },
+  "dratini_shadow": {
+    "legal": true,
+    "dex": 147,
+    "types": [
+      "dragon",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Dratini (Shadow)"
+  },
+  "dragonair": {
+    "legal": true,
+    "dex": 148,
+    "types": [
+      "dragon",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Dragonair"
+  },
+  "dragonair_shadow": {
+    "legal": true,
+    "dex": 148,
+    "types": [
+      "dragon",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Dragonair (Shadow)"
+  },
+  "dragonite": {
+    "legal": true,
+    "dex": 149,
+    "types": [
+      "dragon",
+      "flying"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Dragonite"
+  },
+  "dragonite_shadow": {
+    "legal": true,
+    "dex": 149,
+    "types": [
+      "dragon",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Dragonite (Shadow)"
+  },
+  "mewtwo": {
+    "legal": true,
+    "dex": 150,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "legendary",
+      "shadoweligible"
+    ],
+    "speciesName": "Mewtwo"
+  },
+  "mewtwo_armored": {
+    "legal": true,
+    "dex": 150,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Mewtwo (Armored)"
+  },
+  "mewtwo_shadow": {
+    "legal": true,
+    "dex": 150,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "legendary",
+      "shadow"
+    ],
+    "speciesName": "Mewtwo (Shadow)"
+  },
+  "mew": {
+    "legal": true,
+    "dex": 151,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "mythical",
+      "untradeable"
+    ],
+    "speciesName": "Mew"
+  },
+  "chikorita": {
+    "legal": true,
+    "dex": 152,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Chikorita"
+  },
+  "bayleef": {
+    "legal": true,
+    "dex": 153,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Bayleef"
+  },
+  "meganium": {
+    "legal": true,
+    "dex": 154,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Meganium"
+  },
+  "cyndaquil": {
+    "legal": true,
+    "dex": 155,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Cyndaquil"
+  },
+  "quilava": {
+    "legal": true,
+    "dex": 156,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Quilava"
+  },
+  "typhlosion": {
+    "legal": true,
+    "dex": 157,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Typhlosion"
+  },
+  "totodile": {
+    "legal": true,
+    "dex": 158,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Totodile"
+  },
+  "croconaw": {
+    "legal": true,
+    "dex": 159,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Croconaw"
+  },
+  "feraligatr": {
+    "legal": true,
+    "dex": 160,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Feraligatr"
+  },
+  "sentret": {
+    "legal": true,
+    "dex": 161,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Sentret"
+  },
+  "furret": {
+    "legal": true,
+    "dex": 162,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Furret"
+  },
+  "hoothoot": {
+    "legal": true,
+    "dex": 163,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "speciesName": "Hoothoot"
+  },
+  "noctowl": {
+    "legal": true,
+    "dex": 164,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "speciesName": "Noctowl"
+  },
+  "ledyba": {
+    "legal": true,
+    "dex": 165,
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "speciesName": "Ledyba"
+  },
+  "ledian": {
+    "legal": true,
+    "dex": 166,
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "speciesName": "Ledian"
+  },
+  "spinarak": {
+    "legal": true,
+    "dex": 167,
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "speciesName": "Spinarak"
+  },
+  "ariados": {
+    "legal": true,
+    "dex": 168,
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "speciesName": "Ariados"
+  },
+  "crobat": {
+    "legal": true,
+    "dex": 169,
+    "types": [
+      "poison",
+      "flying"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Crobat"
+  },
+  "crobat_shadow": {
+    "legal": true,
+    "dex": 169,
+    "types": [
+      "poison",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Crobat (Shadow)"
+  },
+  "chinchou": {
+    "legal": true,
+    "dex": 170,
+    "types": [
+      "water",
+      "electric"
+    ],
+    "speciesName": "Chinchou"
+  },
+  "lanturn": {
+    "legal": true,
+    "dex": 171,
+    "types": [
+      "water",
+      "electric"
+    ],
+    "speciesName": "Lanturn"
+  },
+  "pichu": {
+    "legal": true,
+    "dex": 172,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "speciesName": "Pichu"
+  },
+  "cleffa": {
+    "legal": true,
+    "dex": 173,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "speciesName": "Cleffa"
+  },
+  "igglybuff": {
+    "legal": true,
+    "dex": 174,
+    "types": [
+      "normal",
+      "fairy"
+    ],
+    "speciesName": "Igglybuff"
+  },
+  "togepi": {
+    "legal": true,
+    "dex": 175,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "speciesName": "Togepi"
+  },
+  "togetic": {
+    "legal": true,
+    "dex": 176,
+    "types": [
+      "fairy",
+      "flying"
+    ],
+    "speciesName": "Togetic"
+  },
+  "natu": {
+    "legal": true,
+    "dex": 177,
+    "types": [
+      "psychic",
+      "flying"
+    ],
+    "speciesName": "Natu"
+  },
+  "xatu": {
+    "legal": true,
+    "dex": 178,
+    "types": [
+      "psychic",
+      "flying"
+    ],
+    "speciesName": "Xatu"
+  },
+  "mareep": {
+    "legal": true,
+    "dex": 179,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Mareep"
+  },
+  "mareep_shadow": {
+    "legal": true,
+    "dex": 179,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Mareep (Shadow)"
+  },
+  "flaaffy": {
+    "legal": true,
+    "dex": 180,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Flaaffy"
+  },
+  "flaaffy_shadow": {
+    "legal": true,
+    "dex": 180,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Flaaffy (Shadow)"
+  },
+  "ampharos": {
+    "legal": true,
+    "dex": 181,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Ampharos"
+  },
+  "ampharos_mega": {
+    "legal": true,
+    "dex": 181,
+    "types": [
+      "electric",
+      "dragon"
+    ],
+    "tags": [
+      "shadoweligible",
+      "mega"
+    ],
+    "speciesName": "Ampharos (Mega)"
+  },
+  "ampharos_shadow": {
+    "legal": true,
+    "dex": 181,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Ampharos (Shadow)"
+  },
+  "bellossom": {
+    "legal": true,
+    "dex": 182,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Bellossom"
+  },
+  "bellossom_shadow": {
+    "legal": true,
+    "dex": 182,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Bellossom (Shadow)"
+  },
+  "marill": {
+    "legal": true,
+    "dex": 183,
+    "types": [
+      "water",
+      "fairy"
+    ],
+    "speciesName": "Marill"
+  },
+  "azumarill": {
+    "legal": true,
+    "dex": 184,
+    "types": [
+      "water",
+      "fairy"
+    ],
+    "speciesName": "Azumarill"
+  },
+  "sudowoodo": {
+    "legal": true,
+    "dex": 185,
+    "types": [
+      "rock",
+      "none"
+    ],
+    "speciesName": "Sudowoodo"
+  },
+  "politoed": {
+    "legal": true,
+    "dex": 186,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Politoed"
+  },
+  "politoed_shadow": {
+    "legal": true,
+    "dex": 186,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Politoed (Shadow)"
+  },
+  "hoppip": {
+    "legal": true,
+    "dex": 187,
+    "types": [
+      "grass",
+      "flying"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Hoppip"
+  },
+  "hoppip_shadow": {
+    "legal": true,
+    "dex": 187,
+    "types": [
+      "grass",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Hoppip (Shadow)"
+  },
+  "skiploom": {
+    "legal": true,
+    "dex": 188,
+    "types": [
+      "grass",
+      "flying"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Skiploom"
+  },
+  "skiploom_shadow": {
+    "legal": true,
+    "dex": 188,
+    "types": [
+      "grass",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Skiploom (Shadow)"
+  },
+  "jumpluff": {
+    "legal": true,
+    "dex": 189,
+    "types": [
+      "grass",
+      "flying"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Jumpluff"
+  },
+  "jumpluff_shadow": {
+    "legal": true,
+    "dex": 189,
+    "types": [
+      "grass",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Jumpluff (Shadow)"
+  },
+  "aipom": {
+    "legal": true,
+    "dex": 190,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Aipom"
+  },
+  "aipom_shadow": {
+    "legal": true,
+    "dex": 190,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Aipom (Shadow)"
+  },
+  "sunkern": {
+    "legal": true,
+    "dex": 191,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "speciesName": "Sunkern"
+  },
+  "sunflora": {
+    "legal": true,
+    "dex": 192,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "speciesName": "Sunflora"
+  },
+  "yanma": {
+    "legal": true,
+    "dex": 193,
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "speciesName": "Yanma"
+  },
+  "wooper": {
+    "legal": true,
+    "dex": 194,
+    "types": [
+      "water",
+      "ground"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Wooper"
+  },
+  "wooper_shadow": {
+    "legal": true,
+    "dex": 194,
+    "types": [
+      "water",
+      "ground"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Wooper (Shadow)"
+  },
+  "quagsire": {
+    "legal": true,
+    "dex": 195,
+    "types": [
+      "water",
+      "ground"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Quagsire"
+  },
+  "quagsire_shadow": {
+    "legal": true,
+    "dex": 195,
+    "types": [
+      "water",
+      "ground"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Quagsire (Shadow)"
+  },
+  "espeon": {
+    "legal": true,
+    "dex": 196,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "speciesName": "Espeon"
+  },
+  "umbreon": {
+    "legal": true,
+    "dex": 197,
+    "types": [
+      "dark",
+      "none"
+    ],
+    "speciesName": "Umbreon"
+  },
+  "murkrow": {
+    "legal": true,
+    "dex": 198,
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "tags": [],
+    "speciesName": "Murkrow"
+  },
+  "slowking": {
+    "legal": true,
+    "dex": 199,
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Slowking"
+  },
+  "slowking_shadow": {
+    "legal": true,
+    "dex": 199,
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Slowking (Shadow)"
+  },
+  "misdreavus": {
+    "legal": true,
+    "dex": 200,
+    "types": [
+      "ghost",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Misdreavus"
+  },
+  "misdreavus_shadow": {
+    "legal": true,
+    "dex": 200,
+    "types": [
+      "ghost",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Misdreavus (Shadow)"
+  },
+  "unown": {
+    "legal": true,
+    "dex": 201,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "speciesName": "Unown"
+  },
+  "wobbuffet": {
+    "legal": true,
+    "dex": 202,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Wobbuffet"
+  },
+  "wobbuffet_shadow": {
+    "legal": true,
+    "dex": 202,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Wobbuffet (Shadow)"
+  },
+  "girafarig": {
+    "legal": true,
+    "dex": 203,
+    "types": [
+      "normal",
+      "psychic"
+    ],
+    "speciesName": "Girafarig"
+  },
+  "pineco": {
+    "legal": true,
+    "dex": 204,
+    "types": [
+      "bug",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Pineco"
+  },
+  "pineco_shadow": {
+    "legal": true,
+    "dex": 204,
+    "types": [
+      "bug",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Pineco (Shadow)"
+  },
+  "forretress": {
+    "legal": true,
+    "dex": 205,
+    "types": [
+      "bug",
+      "steel"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Forretress"
+  },
+  "forretress_shadow": {
+    "legal": true,
+    "dex": 205,
+    "types": [
+      "bug",
+      "steel"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Forretress (Shadow)"
+  },
+  "dunsparce": {
+    "legal": true,
+    "dex": 206,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Dunsparce"
+  },
+  "gligar": {
+    "legal": true,
+    "dex": 207,
+    "types": [
+      "ground",
+      "flying"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Gligar"
+  },
+  "gligar_shadow": {
+    "legal": true,
+    "dex": 207,
+    "types": [
+      "ground",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Gligar (Shadow)"
+  },
+  "steelix": {
+    "legal": true,
+    "dex": 208,
+    "types": [
+      "steel",
+      "ground"
+    ],
+    "speciesName": "Steelix"
+  },
+  "snubbull": {
+    "legal": true,
+    "dex": 209,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "speciesName": "Snubbull"
+  },
+  "granbull": {
+    "legal": true,
+    "dex": 210,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "speciesName": "Granbull"
+  },
+  "qwilfish": {
+    "legal": true,
+    "dex": 211,
+    "types": [
+      "water",
+      "poison"
+    ],
+    "speciesName": "Qwilfish"
+  },
+  "scizor": {
+    "legal": true,
+    "dex": 212,
+    "types": [
+      "bug",
+      "steel"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Scizor"
+  },
+  "scizor_shadow": {
+    "legal": true,
+    "dex": 212,
+    "types": [
+      "bug",
+      "steel"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Scizor (Shadow)"
+  },
+  "shuckle": {
+    "legal": true,
+    "dex": 213,
+    "types": [
+      "bug",
+      "rock"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Shuckle"
+  },
+  "shuckle_shadow": {
+    "legal": true,
+    "dex": 213,
+    "types": [
+      "bug",
+      "rock"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Shuckle (Shadow)"
+  },
+  "heracross": {
+    "legal": true,
+    "dex": 214,
+    "types": [
+      "bug",
+      "fighting"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Heracross"
+  },
+  "sneasel": {
+    "legal": true,
+    "dex": 215,
+    "types": [
+      "dark",
+      "ice"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Sneasel"
+  },
+  "sneasel_shadow": {
+    "legal": true,
+    "dex": 215,
+    "types": [
+      "dark",
+      "ice"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Sneasel (Shadow)"
+  },
+  "teddiursa": {
+    "legal": true,
+    "dex": 216,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Teddiursa"
+  },
+  "teddiursa_shadow": {
+    "legal": true,
+    "dex": 216,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Teddiursa (Shadow)"
+  },
+  "ursaring": {
+    "legal": true,
+    "dex": 217,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Ursaring"
+  },
+  "ursaring_shadow": {
+    "legal": true,
+    "dex": 217,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Ursaring (Shadow)"
+  },
+  "slugma": {
+    "legal": true,
+    "dex": 218,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "speciesName": "Slugma"
+  },
+  "magcargo": {
+    "legal": true,
+    "dex": 219,
+    "types": [
+      "fire",
+      "rock"
+    ],
+    "speciesName": "Magcargo"
+  },
+  "swinub": {
+    "legal": true,
+    "dex": 220,
+    "types": [
+      "ice",
+      "ground"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Swinub"
+  },
+  "swinub_shadow": {
+    "legal": true,
+    "dex": 220,
+    "types": [
+      "ice",
+      "ground"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Swinub (Shadow)"
+  },
+  "piloswine": {
+    "legal": true,
+    "dex": 221,
+    "types": [
+      "ice",
+      "ground"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Piloswine"
+  },
+  "piloswine_shadow": {
+    "legal": true,
+    "dex": 221,
+    "types": [
+      "ice",
+      "ground"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Piloswine (Shadow)"
+  },
+  "corsola": {
+    "legal": true,
+    "dex": 222,
+    "types": [
+      "water",
+      "rock"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Corsola"
+  },
+  "remoraid": {
+    "legal": true,
+    "dex": 223,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Remoraid"
+  },
+  "octillery": {
+    "legal": true,
+    "dex": 224,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Octillery"
+  },
+  "delibird": {
+    "legal": true,
+    "dex": 225,
+    "types": [
+      "ice",
+      "flying"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Delibird"
+  },
+  "delibird_shadow": {
+    "legal": true,
+    "dex": 225,
+    "types": [
+      "ice",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Delibird (Shadow)"
+  },
+  "mantine": {
+    "legal": true,
+    "dex": 226,
+    "types": [
+      "water",
+      "flying"
+    ],
+    "speciesName": "Mantine"
+  },
+  "skarmory": {
+    "legal": true,
+    "dex": 227,
+    "types": [
+      "steel",
+      "flying"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Skarmory"
+  },
+  "skarmory_shadow": {
+    "legal": true,
+    "dex": 227,
+    "types": [
+      "steel",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Skarmory (Shadow)"
+  },
+  "houndour": {
+    "legal": true,
+    "dex": 228,
+    "types": [
+      "dark",
+      "fire"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Houndour"
+  },
+  "houndour_shadow": {
+    "legal": true,
+    "dex": 228,
+    "types": [
+      "dark",
+      "fire"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Houndour (Shadow)"
+  },
+  "houndoom": {
+    "legal": true,
+    "dex": 229,
+    "types": [
+      "dark",
+      "fire"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Houndoom"
+  },
+  "houndoom_mega": {
+    "legal": true,
+    "dex": 229,
+    "types": [
+      "dark",
+      "fire"
+    ],
+    "tags": [
+      "shadoweligible",
+      "mega"
+    ],
+    "speciesName": "Houndoom (Mega)"
+  },
+  "houndoom_shadow": {
+    "legal": true,
+    "dex": 229,
+    "types": [
+      "dark",
+      "fire"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Houndoom (Shadow)"
+  },
+  "kingdra": {
+    "legal": true,
+    "dex": 230,
+    "types": [
+      "water",
+      "dragon"
+    ],
+    "speciesName": "Kingdra"
+  },
+  "phanpy": {
+    "legal": true,
+    "dex": 231,
+    "types": [
+      "ground",
+      "none"
+    ],
+    "speciesName": "Phanpy"
+  },
+  "donphan": {
+    "legal": true,
+    "dex": 232,
+    "types": [
+      "ground",
+      "none"
+    ],
+    "speciesName": "Donphan"
+  },
+  "porygon2": {
+    "legal": true,
+    "dex": 233,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Porygon2"
+  },
+  "porygon2_shadow": {
+    "legal": true,
+    "dex": 233,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Porygon2 (Shadow)"
+  },
+  "stantler": {
+    "legal": true,
+    "dex": 234,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Stantler"
+  },
+  "stantler_shadow": {
+    "legal": true,
+    "dex": 234,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Stantler (Shadow)"
+  },
+  "smeargle": {
+    "legal": true,
+    "dex": 235,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Smeargle"
+  },
+  "tyrogue": {
+    "legal": true,
+    "dex": 236,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "speciesName": "Tyrogue"
+  },
+  "hitmontop": {
+    "legal": true,
+    "dex": 237,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "speciesName": "Hitmontop"
+  },
+  "smoochum": {
+    "legal": true,
+    "dex": 238,
+    "types": [
+      "ice",
+      "psychic"
+    ],
+    "speciesName": "Smoochum"
+  },
+  "elekid": {
+    "legal": true,
+    "dex": 239,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "speciesName": "Elekid"
+  },
+  "magby": {
+    "legal": true,
+    "dex": 240,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "speciesName": "Magby"
+  },
+  "miltank": {
+    "legal": true,
+    "dex": 241,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Miltank"
+  },
+  "blissey": {
+    "legal": true,
+    "dex": 242,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Blissey"
+  },
+  "raikou": {
+    "legal": true,
+    "dex": 243,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "legendary",
+      "shadoweligible"
+    ],
+    "speciesName": "Raikou"
+  },
+  "raikou_shadow": {
+    "legal": true,
+    "dex": 243,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "legendary",
+      "shadow"
+    ],
+    "speciesName": "Raikou (Shadow)"
+  },
+  "entei": {
+    "legal": true,
+    "dex": 244,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "legendary",
+      "shadoweligible"
+    ],
+    "speciesName": "Entei"
+  },
+  "entei_shadow": {
+    "legal": true,
+    "dex": 244,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "legendary",
+      "shadow"
+    ],
+    "speciesName": "Entei (Shadow)"
+  },
+  "suicune": {
+    "legal": true,
+    "dex": 245,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "legendary",
+      "shadoweligible"
+    ],
+    "speciesName": "Suicune"
+  },
+  "suicune_shadow": {
+    "legal": true,
+    "dex": 245,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "legendary",
+      "shadow"
+    ],
+    "speciesName": "Suicune (Shadow)"
+  },
+  "larvitar": {
+    "legal": true,
+    "dex": 246,
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Larvitar"
+  },
+  "larvitar_shadow": {
+    "legal": true,
+    "dex": 246,
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Larvitar (Shadow)"
+  },
+  "pupitar": {
+    "legal": true,
+    "dex": 247,
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Pupitar"
+  },
+  "pupitar_shadow": {
+    "legal": true,
+    "dex": 247,
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Pupitar (Shadow)"
+  },
+  "tyranitar": {
+    "legal": true,
+    "dex": 248,
+    "types": [
+      "rock",
+      "dark"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Tyranitar"
+  },
+  "tyranitar_shadow": {
+    "legal": true,
+    "dex": 248,
+    "types": [
+      "rock",
+      "dark"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Tyranitar (Shadow)"
+  },
+  "lugia": {
+    "legal": true,
+    "dex": 249,
+    "types": [
+      "psychic",
+      "flying"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Lugia"
+  },
+  "ho_oh": {
+    "legal": true,
+    "dex": 250,
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Ho-Oh"
+  },
+  "celebi": {
+    "legal": true,
+    "dex": 251,
+    "types": [
+      "psychic",
+      "grass"
+    ],
+    "tags": [
+      "mythical",
+      "untradeable"
+    ],
+    "speciesName": "Celebi"
+  },
+  "treecko": {
+    "legal": true,
+    "dex": 252,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Treecko"
+  },
+  "grovyle": {
+    "legal": true,
+    "dex": 253,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Grovyle"
+  },
+  "sceptile": {
+    "legal": true,
+    "dex": 254,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Sceptile"
+  },
+  "torchic": {
+    "legal": true,
+    "dex": 255,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Torchic"
+  },
+  "combusken": {
+    "legal": true,
+    "dex": 256,
+    "types": [
+      "fire",
+      "fighting"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Combusken"
+  },
+  "blaziken": {
+    "legal": true,
+    "dex": 257,
+    "types": [
+      "fire",
+      "fighting"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Blaziken"
+  },
+  "mudkip": {
+    "legal": true,
+    "dex": 258,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Mudkip"
+  },
+  "mudkip_shadow": {
+    "legal": true,
+    "dex": 258,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Mudkip (Shadow)"
+  },
+  "marshtomp": {
+    "legal": true,
+    "dex": 259,
+    "types": [
+      "water",
+      "ground"
+    ],
+    "tags": [
+      "starter",
+      "shadoweligible"
+    ],
+    "speciesName": "Marshtomp"
+  },
+  "marshtomp_shadow": {
+    "legal": true,
+    "dex": 259,
+    "types": [
+      "water",
+      "ground"
+    ],
+    "tags": [
+      "starter",
+      "shadow"
+    ],
+    "speciesName": "Marshtomp (Shadow)"
+  },
+  "swampert": {
+    "legal": true,
+    "dex": 260,
+    "types": [
+      "water",
+      "ground"
+    ],
+    "tags": [
+      "starter",
+      "shadoweligible"
+    ],
+    "speciesName": "Swampert"
+  },
+  "swampert_shadow": {
+    "legal": true,
+    "dex": 260,
+    "types": [
+      "water",
+      "ground"
+    ],
+    "tags": [
+      "starter",
+      "shadow"
+    ],
+    "speciesName": "Swampert (Shadow)"
+  },
+  "poochyena": {
+    "legal": true,
+    "dex": 261,
+    "types": [
+      "dark",
+      "none"
+    ],
+    "speciesName": "Poochyena"
+  },
+  "mightyena": {
+    "legal": true,
+    "dex": 262,
+    "types": [
+      "dark",
+      "none"
+    ],
+    "speciesName": "Mightyena"
+  },
+  "zigzagoon": {
+    "legal": true,
+    "dex": 263,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Zigzagoon"
+  },
+  "zigzagoon_galarian": {
+    "legal": true,
+    "dex": 263,
+    "types": [
+      "dark",
+      "normal"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "speciesName": "Zigzagoon (Galarian)"
+  },
+  "linoone": {
+    "legal": true,
+    "dex": 264,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Linoone"
+  },
+  "linoone_galarian": {
+    "legal": true,
+    "dex": 264,
+    "types": [
+      "dark",
+      "normal"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "speciesName": "Linoone (Galarian)"
+  },
+  "wurmple": {
+    "legal": true,
+    "dex": 265,
+    "types": [
+      "bug",
+      "none"
+    ],
+    "speciesName": "Wurmple"
+  },
+  "silcoon": {
+    "legal": true,
+    "dex": 266,
+    "types": [
+      "bug",
+      "none"
+    ],
+    "speciesName": "Silcoon"
+  },
+  "beautifly": {
+    "legal": true,
+    "dex": 267,
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "speciesName": "Beautifly"
+  },
+  "cascoon": {
+    "legal": true,
+    "dex": 268,
+    "types": [
+      "bug",
+      "none"
+    ],
+    "speciesName": "Cascoon"
+  },
+  "dustox": {
+    "legal": true,
+    "dex": 269,
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "speciesName": "Dustox"
+  },
+  "lotad": {
+    "legal": true,
+    "dex": 270,
+    "types": [
+      "water",
+      "grass"
+    ],
+    "speciesName": "Lotad"
+  },
+  "lombre": {
+    "legal": true,
+    "dex": 271,
+    "types": [
+      "water",
+      "grass"
+    ],
+    "speciesName": "Lombre"
+  },
+  "ludicolo": {
+    "legal": true,
+    "dex": 272,
+    "types": [
+      "water",
+      "grass"
+    ],
+    "speciesName": "Ludicolo"
+  },
+  "seedot": {
+    "legal": true,
+    "dex": 273,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Seedot"
+  },
+  "seedot_shadow": {
+    "legal": true,
+    "dex": 273,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Seedot (Shadow)"
+  },
+  "nuzleaf": {
+    "legal": true,
+    "dex": 274,
+    "types": [
+      "grass",
+      "dark"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Nuzleaf"
+  },
+  "nuzleaf_shadow": {
+    "legal": true,
+    "dex": 274,
+    "types": [
+      "grass",
+      "dark"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Nuzleaf (Shadow)"
+  },
+  "shiftry": {
+    "legal": true,
+    "dex": 275,
+    "types": [
+      "grass",
+      "dark"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Shiftry"
+  },
+  "shiftry_shadow": {
+    "legal": true,
+    "dex": 275,
+    "types": [
+      "grass",
+      "dark"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Shiftry (Shadow)"
+  },
+  "taillow": {
+    "legal": true,
+    "dex": 276,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "speciesName": "Taillow"
+  },
+  "swellow": {
+    "legal": true,
+    "dex": 277,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "speciesName": "Swellow"
+  },
+  "wingull": {
+    "legal": true,
+    "dex": 278,
+    "types": [
+      "water",
+      "flying"
+    ],
+    "speciesName": "Wingull"
+  },
+  "pelipper": {
+    "legal": true,
+    "dex": 279,
+    "types": [
+      "water",
+      "flying"
+    ],
+    "speciesName": "Pelipper"
+  },
+  "ralts": {
+    "legal": true,
+    "dex": 280,
+    "types": [
+      "psychic",
+      "fairy"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Ralts"
+  },
+  "ralts_shadow": {
+    "legal": true,
+    "dex": 280,
+    "types": [
+      "psychic",
+      "fairy"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Ralts (Shadow)"
+  },
+  "kirlia": {
+    "legal": true,
+    "dex": 281,
+    "types": [
+      "psychic",
+      "fairy"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Kirlia"
+  },
+  "kirlia_shadow": {
+    "legal": true,
+    "dex": 281,
+    "types": [
+      "psychic",
+      "fairy"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Kirlia (Shadow)"
+  },
+  "gardevoir": {
+    "legal": true,
+    "dex": 282,
+    "types": [
+      "psychic",
+      "fairy"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Gardevoir"
+  },
+  "gardevoir_shadow": {
+    "legal": true,
+    "dex": 282,
+    "types": [
+      "psychic",
+      "fairy"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Gardevoir (Shadow)"
+  },
+  "surskit": {
+    "legal": true,
+    "dex": 283,
+    "types": [
+      "bug",
+      "water"
+    ],
+    "speciesName": "Surskit"
+  },
+  "masquerain": {
+    "legal": true,
+    "dex": 284,
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "speciesName": "Masquerain"
+  },
+  "shroomish": {
+    "legal": true,
+    "dex": 285,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "speciesName": "Shroomish"
+  },
+  "breloom": {
+    "legal": true,
+    "dex": 286,
+    "types": [
+      "grass",
+      "fighting"
+    ],
+    "speciesName": "Breloom"
+  },
+  "slakoth": {
+    "legal": true,
+    "dex": 287,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Slakoth"
+  },
+  "vigoroth": {
+    "legal": true,
+    "dex": 288,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Vigoroth"
+  },
+  "slaking": {
+    "legal": true,
+    "dex": 289,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Slaking"
+  },
+  "nincada": {
+    "legal": true,
+    "dex": 290,
+    "types": [
+      "bug",
+      "ground"
+    ],
+    "speciesName": "Nincada"
+  },
+  "ninjask": {
+    "legal": true,
+    "dex": 291,
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "speciesName": "Ninjask"
+  },
+  "shedinja": {
+    "legal": true,
+    "dex": 292,
+    "types": [
+      "bug",
+      "ghost"
+    ],
+    "speciesName": "Shedinja"
+  },
+  "whismur": {
+    "legal": true,
+    "dex": 293,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Whismur"
+  },
+  "loudred": {
+    "legal": true,
+    "dex": 294,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Loudred"
+  },
+  "exploud": {
+    "legal": true,
+    "dex": 295,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Exploud"
+  },
+  "makuhita": {
+    "legal": true,
+    "dex": 296,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "speciesName": "Makuhita"
+  },
+  "hariyama": {
+    "legal": true,
+    "dex": 297,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "speciesName": "Hariyama"
+  },
+  "azurill": {
+    "legal": true,
+    "dex": 298,
+    "types": [
+      "normal",
+      "fairy"
+    ],
+    "speciesName": "Azurill"
+  },
+  "nosepass": {
+    "legal": true,
+    "dex": 299,
+    "types": [
+      "rock",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Nosepass"
+  },
+  "nosepass_shadow": {
+    "legal": true,
+    "dex": 299,
+    "types": [
+      "rock",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Nosepass (Shadow)"
+  },
+  "skitty": {
+    "legal": true,
+    "dex": 300,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Skitty"
+  },
+  "delcatty": {
+    "legal": true,
+    "dex": 301,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Delcatty"
+  },
+  "sableye": {
+    "legal": true,
+    "dex": 302,
+    "types": [
+      "dark",
+      "ghost"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Sableye"
+  },
+  "sableye_shadow": {
+    "legal": true,
+    "dex": 302,
+    "types": [
+      "dark",
+      "ghost"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Sableye (Shadow)"
+  },
+  "mawile": {
+    "legal": true,
+    "dex": 303,
+    "types": [
+      "steel",
+      "fairy"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Mawile"
+  },
+  "mawile_shadow": {
+    "legal": true,
+    "dex": 303,
+    "types": [
+      "steel",
+      "fairy"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Mawile (Shadow)"
+  },
+  "aron": {
+    "legal": true,
+    "dex": 304,
+    "types": [
+      "steel",
+      "rock"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Aron"
+  },
+  "aron_shadow": {
+    "legal": true,
+    "dex": 304,
+    "types": [
+      "steel",
+      "rock"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Aron (Shadow)"
+  },
+  "lairon": {
+    "legal": true,
+    "dex": 305,
+    "types": [
+      "steel",
+      "rock"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Lairon"
+  },
+  "lairon_shadow": {
+    "legal": true,
+    "dex": 305,
+    "types": [
+      "steel",
+      "rock"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Lairon (Shadow)"
+  },
+  "aggron": {
+    "legal": true,
+    "dex": 306,
+    "types": [
+      "steel",
+      "rock"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Aggron"
+  },
+  "aggron_shadow": {
+    "legal": true,
+    "dex": 306,
+    "types": [
+      "steel",
+      "rock"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Aggron (Shadow)"
+  },
+  "meditite": {
+    "legal": true,
+    "dex": 307,
+    "types": [
+      "fighting",
+      "psychic"
+    ],
+    "speciesName": "Meditite"
+  },
+  "medicham": {
+    "legal": true,
+    "dex": 308,
+    "types": [
+      "fighting",
+      "psychic"
+    ],
+    "speciesName": "Medicham"
+  },
+  "electrike": {
+    "legal": true,
+    "dex": 309,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "speciesName": "Electrike"
+  },
+  "manectric": {
+    "legal": true,
+    "dex": 310,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "speciesName": "Manectric"
+  },
+  "manectric_mega": {
+    "legal": true,
+    "dex": 310,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "mega"
+    ],
+    "speciesName": "Manectric (Mega)"
+  },
+  "plusle": {
+    "legal": true,
+    "dex": 311,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "speciesName": "Plusle"
+  },
+  "minun": {
+    "legal": true,
+    "dex": 312,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "speciesName": "Minun"
+  },
+  "volbeat": {
+    "legal": true,
+    "dex": 313,
+    "types": [
+      "bug",
+      "none"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Volbeat"
+  },
+  "illumise": {
+    "legal": true,
+    "dex": 314,
+    "types": [
+      "bug",
+      "none"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Illumise"
+  },
+  "roselia": {
+    "legal": true,
+    "dex": 315,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "speciesName": "Roselia"
+  },
+  "gulpin": {
+    "legal": true,
+    "dex": 316,
+    "types": [
+      "poison",
+      "none"
+    ],
+    "speciesName": "Gulpin"
+  },
+  "swalot": {
+    "legal": true,
+    "dex": 317,
+    "types": [
+      "poison",
+      "none"
+    ],
+    "speciesName": "Swalot"
+  },
+  "carvanha": {
+    "legal": true,
+    "dex": 318,
+    "types": [
+      "water",
+      "dark"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Carvanha"
+  },
+  "carvanha_shadow": {
+    "legal": true,
+    "dex": 318,
+    "types": [
+      "water",
+      "dark"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Carvanha (Shadow)"
+  },
+  "sharpedo": {
+    "legal": true,
+    "dex": 319,
+    "types": [
+      "water",
+      "dark"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Sharpedo"
+  },
+  "sharpedo_shadow": {
+    "legal": true,
+    "dex": 319,
+    "types": [
+      "water",
+      "dark"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Sharpedo (Shadow)"
+  },
+  "wailmer": {
+    "legal": true,
+    "dex": 320,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Wailmer"
+  },
+  "wailord": {
+    "legal": true,
+    "dex": 321,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Wailord"
+  },
+  "numel": {
+    "legal": true,
+    "dex": 322,
+    "types": [
+      "fire",
+      "ground"
+    ],
+    "speciesName": "Numel"
+  },
+  "camerupt": {
+    "legal": true,
+    "dex": 323,
+    "types": [
+      "fire",
+      "ground"
+    ],
+    "speciesName": "Camerupt"
+  },
+  "torkoal": {
+    "legal": true,
+    "dex": 324,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Torkoal"
+  },
+  "spoink": {
+    "legal": true,
+    "dex": 325,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "speciesName": "Spoink"
+  },
+  "grumpig": {
+    "legal": true,
+    "dex": 326,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "speciesName": "Grumpig"
+  },
+  "spinda": {
+    "legal": true,
+    "dex": 327,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Spinda"
+  },
+  "trapinch": {
+    "legal": true,
+    "dex": 328,
+    "types": [
+      "ground",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Trapinch"
+  },
+  "trapinch_shadow": {
+    "legal": true,
+    "dex": 328,
+    "types": [
+      "ground",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Trapinch (Shadow)"
+  },
+  "vibrava": {
+    "legal": true,
+    "dex": 329,
+    "types": [
+      "ground",
+      "dragon"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Vibrava"
+  },
+  "vibrava_shadow": {
+    "legal": true,
+    "dex": 329,
+    "types": [
+      "ground",
+      "dragon"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Vibrava (Shadow)"
+  },
+  "flygon": {
+    "legal": true,
+    "dex": 330,
+    "types": [
+      "ground",
+      "dragon"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Flygon"
+  },
+  "flygon_shadow": {
+    "legal": true,
+    "dex": 330,
+    "types": [
+      "ground",
+      "dragon"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Flygon (Shadow)"
+  },
+  "cacnea": {
+    "legal": true,
+    "dex": 331,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "speciesName": "Cacnea"
+  },
+  "cacturne": {
+    "legal": true,
+    "dex": 332,
+    "types": [
+      "grass",
+      "dark"
+    ],
+    "speciesName": "Cacturne"
+  },
+  "swablu": {
+    "legal": true,
+    "dex": 333,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "speciesName": "Swablu"
+  },
+  "altaria": {
+    "legal": true,
+    "dex": 334,
+    "types": [
+      "dragon",
+      "flying"
+    ],
+    "speciesName": "Altaria"
+  },
+  "zangoose": {
+    "legal": true,
+    "dex": 335,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Zangoose"
+  },
+  "seviper": {
+    "legal": true,
+    "dex": 336,
+    "types": [
+      "poison",
+      "none"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Seviper"
+  },
+  "lunatone": {
+    "legal": true,
+    "dex": 337,
+    "types": [
+      "rock",
+      "psychic"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Lunatone"
+  },
+  "solrock": {
+    "legal": true,
+    "dex": 338,
+    "types": [
+      "rock",
+      "psychic"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Solrock"
+  },
+  "barboach": {
+    "legal": true,
+    "dex": 339,
+    "types": [
+      "water",
+      "ground"
+    ],
+    "speciesName": "Barboach"
+  },
+  "whiscash": {
+    "legal": true,
+    "dex": 340,
+    "types": [
+      "water",
+      "ground"
+    ],
+    "speciesName": "Whiscash"
+  },
+  "corphish": {
+    "legal": true,
+    "dex": 341,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Corphish"
+  },
+  "crawdaunt": {
+    "legal": true,
+    "dex": 342,
+    "types": [
+      "water",
+      "dark"
+    ],
+    "speciesName": "Crawdaunt"
+  },
+  "baltoy": {
+    "legal": true,
+    "dex": 343,
+    "types": [
+      "ground",
+      "psychic"
+    ],
+    "speciesName": "Baltoy"
+  },
+  "claydol": {
+    "legal": true,
+    "dex": 344,
+    "types": [
+      "ground",
+      "psychic"
+    ],
+    "speciesName": "Claydol"
+  },
+  "lileep": {
+    "legal": true,
+    "dex": 345,
+    "types": [
+      "rock",
+      "grass"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Lileep"
+  },
+  "lileep_shadow": {
+    "legal": true,
+    "dex": 345,
+    "types": [
+      "rock",
+      "grass"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Lileep (Shadow)"
+  },
+  "cradily": {
+    "legal": true,
+    "dex": 346,
+    "types": [
+      "rock",
+      "grass"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Cradily"
+  },
+  "cradily_shadow": {
+    "legal": true,
+    "dex": 346,
+    "types": [
+      "rock",
+      "grass"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Cradily (Shadow)"
+  },
+  "anorith": {
+    "legal": true,
+    "dex": 347,
+    "types": [
+      "rock",
+      "bug"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Anorith"
+  },
+  "anorith_shadow": {
+    "legal": true,
+    "dex": 347,
+    "types": [
+      "rock",
+      "bug"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Anorith (Shadow)"
+  },
+  "armaldo": {
+    "legal": true,
+    "dex": 348,
+    "types": [
+      "rock",
+      "bug"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Armaldo"
+  },
+  "armaldo_shadow": {
+    "legal": true,
+    "dex": 348,
+    "types": [
+      "rock",
+      "bug"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Armaldo (Shadow)"
+  },
+  "feebas": {
+    "legal": true,
+    "dex": 349,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Feebas"
+  },
+  "milotic": {
+    "legal": true,
+    "dex": 350,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Milotic"
+  },
+  "castform": {
+    "legal": true,
+    "dex": 351,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Castform"
+  },
+  "castform_rainy": {
+    "legal": true,
+    "dex": 351,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Castform (Rainy)"
+  },
+  "castform_snowy": {
+    "legal": true,
+    "dex": 351,
+    "types": [
+      "ice",
+      "none"
+    ],
+    "speciesName": "Castform (Snowy)"
+  },
+  "castform_sunny": {
+    "legal": true,
+    "dex": 351,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "speciesName": "Castform (Sunny)"
+  },
+  "kecleon": {
+    "legal": true,
+    "dex": 352,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Kecleon"
+  },
+  "shuppet": {
+    "legal": true,
+    "dex": 353,
+    "types": [
+      "ghost",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Shuppet"
+  },
+  "shuppet_shadow": {
+    "legal": true,
+    "dex": 353,
+    "types": [
+      "ghost",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Shuppet (Shadow)"
+  },
+  "banette": {
+    "legal": true,
+    "dex": 354,
+    "types": [
+      "ghost",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Banette"
+  },
+  "banette_shadow": {
+    "legal": true,
+    "dex": 354,
+    "types": [
+      "ghost",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Banette (Shadow)"
+  },
+  "duskull": {
+    "legal": true,
+    "dex": 355,
+    "types": [
+      "ghost",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Duskull"
+  },
+  "duskull_shadow": {
+    "legal": true,
+    "dex": 355,
+    "types": [
+      "ghost",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Duskull (Shadow)"
+  },
+  "dusclops": {
+    "legal": true,
+    "dex": 356,
+    "types": [
+      "ghost",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Dusclops"
+  },
+  "dusclops_shadow": {
+    "legal": true,
+    "dex": 356,
+    "types": [
+      "ghost",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Dusclops (Shadow)"
+  },
+  "tropius": {
+    "legal": true,
+    "dex": 357,
+    "types": [
+      "grass",
+      "flying"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Tropius"
+  },
+  "chimecho": {
+    "legal": true,
+    "dex": 358,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "speciesName": "Chimecho"
+  },
+  "absol": {
+    "legal": true,
+    "dex": 359,
+    "types": [
+      "dark",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Absol"
+  },
+  "absol_shadow": {
+    "legal": true,
+    "dex": 359,
+    "types": [
+      "dark",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Absol (Shadow)"
+  },
+  "wynaut": {
+    "legal": true,
+    "dex": 360,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "speciesName": "Wynaut"
+  },
+  "snorunt": {
+    "legal": true,
+    "dex": 361,
+    "types": [
+      "ice",
+      "none"
+    ],
+    "speciesName": "Snorunt"
+  },
+  "glalie": {
+    "legal": true,
+    "dex": 362,
+    "types": [
+      "ice",
+      "none"
+    ],
+    "speciesName": "Glalie"
+  },
+  "spheal": {
+    "legal": true,
+    "dex": 363,
+    "types": [
+      "ice",
+      "water"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Spheal"
+  },
+  "spheal_shadow": {
+    "legal": true,
+    "dex": 363,
+    "types": [
+      "ice",
+      "water"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Spheal (Shadow)"
+  },
+  "sealeo": {
+    "legal": true,
+    "dex": 364,
+    "types": [
+      "ice",
+      "water"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Sealeo"
+  },
+  "sealeo_shadow": {
+    "legal": true,
+    "dex": 364,
+    "types": [
+      "ice",
+      "water"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Sealeo (Shadow)"
+  },
+  "walrein": {
+    "legal": true,
+    "dex": 365,
+    "types": [
+      "ice",
+      "water"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Walrein"
+  },
+  "walrein_shadow": {
+    "legal": true,
+    "dex": 365,
+    "types": [
+      "ice",
+      "water"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Walrein (Shadow)"
+  },
+  "clamperl": {
+    "legal": true,
+    "dex": 366,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Clamperl"
+  },
+  "huntail": {
+    "legal": true,
+    "dex": 367,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Huntail"
+  },
+  "gorebyss": {
+    "legal": true,
+    "dex": 368,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Gorebyss"
+  },
+  "relicanth": {
+    "legal": true,
+    "dex": 369,
+    "types": [
+      "water",
+      "rock"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Relicanth"
+  },
+  "luvdisc": {
+    "legal": true,
+    "dex": 370,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Luvdisc"
+  },
+  "bagon": {
+    "legal": true,
+    "dex": 371,
+    "types": [
+      "dragon",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Bagon"
+  },
+  "bagon_shadow": {
+    "legal": true,
+    "dex": 371,
+    "types": [
+      "dragon",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Bagon (Shadow)"
+  },
+  "shelgon": {
+    "legal": true,
+    "dex": 372,
+    "types": [
+      "dragon",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Shelgon"
+  },
+  "shelgon_shadow": {
+    "legal": true,
+    "dex": 372,
+    "types": [
+      "dragon",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Shelgon (Shadow)"
+  },
+  "salamence": {
+    "legal": true,
+    "dex": 373,
+    "types": [
+      "dragon",
+      "flying"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Salamence"
+  },
+  "salamence_shadow": {
+    "legal": true,
+    "dex": 373,
+    "types": [
+      "dragon",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Salamence (Shadow)"
+  },
+  "beldum": {
+    "legal": true,
+    "dex": 374,
+    "types": [
+      "steel",
+      "psychic"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Beldum"
+  },
+  "beldum_shadow": {
+    "legal": true,
+    "dex": 374,
+    "types": [
+      "steel",
+      "psychic"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Beldum (Shadow)"
+  },
+  "metang": {
+    "legal": true,
+    "dex": 375,
+    "types": [
+      "steel",
+      "psychic"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Metang"
+  },
+  "metang_shadow": {
+    "legal": true,
+    "dex": 375,
+    "types": [
+      "steel",
+      "psychic"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Metang (Shadow)"
+  },
+  "metagross": {
+    "legal": true,
+    "dex": 376,
+    "types": [
+      "steel",
+      "psychic"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Metagross"
+  },
+  "metagross_shadow": {
+    "legal": true,
+    "dex": 376,
+    "types": [
+      "steel",
+      "psychic"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Metagross (Shadow)"
+  },
+  "regirock": {
+    "legal": true,
+    "dex": 377,
+    "types": [
+      "rock",
+      "none"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Regirock"
+  },
+  "regice": {
+    "legal": true,
+    "dex": 378,
+    "types": [
+      "ice",
+      "none"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Regice"
+  },
+  "registeel": {
+    "legal": true,
+    "dex": 379,
+    "types": [
+      "steel",
+      "none"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Registeel"
+  },
+  "latias": {
+    "legal": true,
+    "dex": 380,
+    "types": [
+      "dragon",
+      "psychic"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Latias"
+  },
+  "latios": {
+    "legal": true,
+    "dex": 381,
+    "types": [
+      "dragon",
+      "psychic"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Latios"
+  },
+  "kyogre": {
+    "legal": true,
+    "dex": 382,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Kyogre"
+  },
+  "groudon": {
+    "legal": true,
+    "dex": 383,
+    "types": [
+      "ground",
+      "none"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Groudon"
+  },
+  "rayquaza": {
+    "legal": true,
+    "dex": 384,
+    "types": [
+      "dragon",
+      "flying"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Rayquaza"
+  },
+  "jirachi": {
+    "legal": true,
+    "dex": 385,
+    "types": [
+      "steel",
+      "psychic"
+    ],
+    "tags": [
+      "mythical",
+      "untradeable"
+    ],
+    "speciesName": "Jirachi"
+  },
+  "deoxys": {
+    "legal": true,
+    "dex": 386,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "mythical",
+      "untradeable"
+    ],
+    "speciesName": "Deoxys"
+  },
+  "deoxys_attack": {
+    "legal": true,
+    "dex": 386,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "mythical",
+      "untradeable"
+    ],
+    "speciesName": "Deoxys (Attack)"
+  },
+  "deoxys_defense": {
+    "legal": true,
+    "dex": 386,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "mythical",
+      "untradeable"
+    ],
+    "speciesName": "Deoxys (Defense)"
+  },
+  "deoxys_speed": {
+    "legal": true,
+    "dex": 386,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "mythical",
+      "untradeable"
+    ],
+    "speciesName": "Deoxys (Speed)"
+  },
+  "turtwig": {
+    "legal": true,
+    "dex": 387,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "starter",
+      "shadoweligible"
+    ],
+    "speciesName": "Turtwig"
+  },
+  "turtwig_shadow": {
+    "legal": true,
+    "dex": 387,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "starter",
+      "shadow"
+    ],
+    "speciesName": "Turtwig (Shadow)"
+  },
+  "grotle": {
+    "legal": true,
+    "dex": 388,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "starter",
+      "shadoweligible"
+    ],
+    "speciesName": "Grotle"
+  },
+  "grotle_shadow": {
+    "legal": true,
+    "dex": 388,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "starter",
+      "shadow"
+    ],
+    "speciesName": "Grotle (Shadow)"
+  },
+  "torterra": {
+    "legal": true,
+    "dex": 389,
+    "types": [
+      "grass",
+      "ground"
+    ],
+    "tags": [
+      "starter",
+      "shadoweligible"
+    ],
+    "speciesName": "Torterra"
+  },
+  "torterra_shadow": {
+    "legal": true,
+    "dex": 389,
+    "types": [
+      "grass",
+      "ground"
+    ],
+    "tags": [
+      "starter",
+      "shadow"
+    ],
+    "speciesName": "Torterra (Shadow)"
+  },
+  "chimchar": {
+    "legal": true,
+    "dex": 390,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Chimchar"
+  },
+  "monferno": {
+    "legal": true,
+    "dex": 391,
+    "types": [
+      "fire",
+      "fighting"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Monferno"
+  },
+  "infernape": {
+    "legal": true,
+    "dex": 392,
+    "types": [
+      "fire",
+      "fighting"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Infernape"
+  },
+  "piplup": {
+    "legal": true,
+    "dex": 393,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Piplup"
+  },
+  "prinplup": {
+    "legal": true,
+    "dex": 394,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Prinplup"
+  },
+  "empoleon": {
+    "legal": true,
+    "dex": 395,
+    "types": [
+      "water",
+      "steel"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Empoleon"
+  },
+  "starly": {
+    "legal": true,
+    "dex": 396,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "speciesName": "Starly"
+  },
+  "staravia": {
+    "legal": true,
+    "dex": 397,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "speciesName": "Staravia"
+  },
+  "staraptor": {
+    "legal": true,
+    "dex": 398,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "speciesName": "Staraptor"
+  },
+  "bidoof": {
+    "legal": true,
+    "dex": 399,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Bidoof"
+  },
+  "bibarel": {
+    "legal": true,
+    "dex": 400,
+    "types": [
+      "normal",
+      "water"
+    ],
+    "speciesName": "Bibarel"
+  },
+  "kricketot": {
+    "legal": true,
+    "dex": 401,
+    "types": [
+      "bug",
+      "none"
+    ],
+    "speciesName": "Kricketot"
+  },
+  "kricketune": {
+    "legal": true,
+    "dex": 402,
+    "types": [
+      "bug",
+      "none"
+    ],
+    "speciesName": "Kricketune"
+  },
+  "shinx": {
+    "legal": true,
+    "dex": 403,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "speciesName": "Shinx"
+  },
+  "luxio": {
+    "legal": true,
+    "dex": 404,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "speciesName": "Luxio"
+  },
+  "luxray": {
+    "legal": true,
+    "dex": 405,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "speciesName": "Luxray"
+  },
+  "budew": {
+    "legal": true,
+    "dex": 406,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "speciesName": "Budew"
+  },
+  "roserade": {
+    "legal": true,
+    "dex": 407,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "speciesName": "Roserade"
+  },
+  "cranidos": {
+    "legal": true,
+    "dex": 408,
+    "types": [
+      "rock",
+      "none"
+    ],
+    "speciesName": "Cranidos"
+  },
+  "rampardos": {
+    "legal": true,
+    "dex": 409,
+    "types": [
+      "rock",
+      "none"
+    ],
+    "speciesName": "Rampardos"
+  },
+  "shieldon": {
+    "legal": true,
+    "dex": 410,
+    "types": [
+      "rock",
+      "steel"
+    ],
+    "speciesName": "Shieldon"
+  },
+  "bastiodon": {
+    "legal": true,
+    "dex": 411,
+    "types": [
+      "rock",
+      "steel"
+    ],
+    "speciesName": "Bastiodon"
+  },
+  "burmy_plant": {
+    "legal": true,
+    "dex": 412,
+    "types": [
+      "bug",
+      "none"
+    ],
+    "speciesName": "Burmy (Plant)"
+  },
+  "burmy_sandy": {
+    "legal": true,
+    "dex": 412,
+    "types": [
+      "bug",
+      "none"
+    ],
+    "speciesName": "Burmy (Sandy)"
+  },
+  "burmy_trash": {
+    "legal": true,
+    "dex": 412,
+    "types": [
+      "bug",
+      "none"
+    ],
+    "speciesName": "Burmy (Trash)"
+  },
+  "wormadam_plant": {
+    "legal": true,
+    "dex": 413,
+    "types": [
+      "bug",
+      "grass"
+    ],
+    "speciesName": "Wormadam (Plant)"
+  },
+  "wormadam_sandy": {
+    "legal": true,
+    "dex": 413,
+    "types": [
+      "bug",
+      "ground"
+    ],
+    "speciesName": "Wormadam (Sandy)"
+  },
+  "wormadam_trash": {
+    "legal": true,
+    "dex": 413,
+    "types": [
+      "bug",
+      "steel"
+    ],
+    "speciesName": "Wormadam (Trash)"
+  },
+  "mothim": {
+    "legal": true,
+    "dex": 414,
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "speciesName": "Mothim"
+  },
+  "combee": {
+    "legal": true,
+    "dex": 415,
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "speciesName": "Combee"
+  },
+  "vespiquen": {
+    "legal": true,
+    "dex": 416,
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "speciesName": "Vespiquen"
+  },
+  "pachirisu": {
+    "legal": true,
+    "dex": 417,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Pachirisu"
+  },
+  "buizel": {
+    "legal": true,
+    "dex": 418,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Buizel"
+  },
+  "floatzel": {
+    "legal": true,
+    "dex": 419,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Floatzel"
+  },
+  "cherubi": {
+    "legal": true,
+    "dex": 420,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "speciesName": "Cherubi"
+  },
+  "cherrim_overcast": {
+    "legal": true,
+    "dex": 421,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "speciesName": "Cherrim (Overcast)"
+  },
+  "cherrim_sunny": {
+    "legal": true,
+    "dex": 421,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "speciesName": "Cherrim (Sunshine)"
+  },
+  "shellos_east_sea": {
+    "legal": true,
+    "dex": 422,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Shellos (East)"
+  },
+  "shellos_west_sea": {
+    "legal": true,
+    "dex": 422,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Shellos (West)"
+  },
+  "gastrodon_east_sea": {
+    "legal": true,
+    "dex": 423,
+    "types": [
+      "water",
+      "ground"
+    ],
+    "speciesName": "Gastrodon (East)"
+  },
+  "gastrodon_west_sea": {
+    "legal": true,
+    "dex": 423,
+    "types": [
+      "water",
+      "ground"
+    ],
+    "speciesName": "Gastrodon (West)"
+  },
+  "ambipom": {
+    "legal": true,
+    "dex": 424,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Ambipom"
+  },
+  "ambipom_shadow": {
+    "legal": true,
+    "dex": 424,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Ambipom (Shadow)"
+  },
+  "drifloon": {
+    "legal": true,
+    "dex": 425,
+    "types": [
+      "ghost",
+      "flying"
+    ],
+    "speciesName": "Drifloon"
+  },
+  "drifblim": {
+    "legal": true,
+    "dex": 426,
+    "types": [
+      "ghost",
+      "flying"
+    ],
+    "speciesName": "Drifblim"
+  },
+  "buneary": {
+    "legal": true,
+    "dex": 427,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Buneary"
+  },
+  "lopunny": {
+    "legal": true,
+    "dex": 428,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Lopunny"
+  },
+  "lopunny_mega": {
+    "legal": true,
+    "dex": 428,
+    "types": [
+      "normal",
+      "fighting"
+    ],
+    "tags": [
+      "mega"
+    ],
+    "speciesName": "Lopunny (Mega)"
+  },
+  "mismagius": {
+    "legal": true,
+    "dex": 429,
+    "types": [
+      "ghost",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Mismagius"
+  },
+  "mismagius_shadow": {
+    "legal": true,
+    "dex": 429,
+    "types": [
+      "ghost",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Mismagius (Shadow)"
+  },
+  "honchkrow": {
+    "legal": true,
+    "dex": 430,
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "tags": [],
+    "speciesName": "Honchkrow"
+  },
+  "glameow": {
+    "legal": true,
+    "dex": 431,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Glameow"
+  },
+  "purugly": {
+    "legal": true,
+    "dex": 432,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Purugly"
+  },
+  "chingling": {
+    "legal": true,
+    "dex": 433,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "speciesName": "Chingling"
+  },
+  "stunky": {
+    "legal": true,
+    "dex": 434,
+    "types": [
+      "poison",
+      "dark"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Stunky"
+  },
+  "stunky_shadow": {
+    "legal": true,
+    "dex": 434,
+    "types": [
+      "poison",
+      "dark"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Stunky (Shadow)"
+  },
+  "skuntank": {
+    "legal": true,
+    "dex": 435,
+    "types": [
+      "poison",
+      "dark"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Skuntank"
+  },
+  "skuntank_shadow": {
+    "legal": true,
+    "dex": 435,
+    "types": [
+      "poison",
+      "dark"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Skuntank (Shadow)"
+  },
+  "bronzor": {
+    "legal": true,
+    "dex": 436,
+    "types": [
+      "steel",
+      "psychic"
+    ],
+    "speciesName": "Bronzor"
+  },
+  "bronzong": {
+    "legal": true,
+    "dex": 437,
+    "types": [
+      "steel",
+      "psychic"
+    ],
+    "speciesName": "Bronzong"
+  },
+  "bonsly": {
+    "legal": true,
+    "dex": 438,
+    "types": [
+      "rock",
+      "none"
+    ],
+    "speciesName": "Bonsly"
+  },
+  "mime_jr": {
+    "legal": true,
+    "dex": 439,
+    "types": [
+      "psychic",
+      "fairy"
+    ],
+    "speciesName": "Mime (Jr)"
+  },
+  "happiny": {
+    "legal": true,
+    "dex": 440,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Happiny"
+  },
+  "chatot": {
+    "legal": true,
+    "dex": 441,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Chatot"
+  },
+  "spiritomb": {
+    "legal": true,
+    "dex": 442,
+    "types": [
+      "ghost",
+      "dark"
+    ],
+    "speciesName": "Spiritomb"
+  },
+  "gible": {
+    "legal": true,
+    "dex": 443,
+    "types": [
+      "dragon",
+      "ground"
+    ],
+    "speciesName": "Gible"
+  },
+  "gabite": {
+    "legal": true,
+    "dex": 444,
+    "types": [
+      "dragon",
+      "ground"
+    ],
+    "speciesName": "Gabite"
+  },
+  "garchomp": {
+    "legal": true,
+    "dex": 445,
+    "types": [
+      "dragon",
+      "ground"
+    ],
+    "speciesName": "Garchomp"
+  },
+  "munchlax": {
+    "legal": true,
+    "dex": 446,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Munchlax"
+  },
+  "riolu": {
+    "legal": true,
+    "dex": 447,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "speciesName": "Riolu"
+  },
+  "lucario": {
+    "legal": true,
+    "dex": 448,
+    "types": [
+      "fighting",
+      "steel"
+    ],
+    "speciesName": "Lucario"
+  },
+  "hippopotas": {
+    "legal": true,
+    "dex": 449,
+    "types": [
+      "ground",
+      "none"
+    ],
+    "speciesName": "Hippopotas"
+  },
+  "hippowdon": {
+    "legal": true,
+    "dex": 450,
+    "types": [
+      "ground",
+      "none"
+    ],
+    "speciesName": "Hippowdon"
+  },
+  "skorupi": {
+    "legal": true,
+    "dex": 451,
+    "types": [
+      "poison",
+      "bug"
+    ],
+    "speciesName": "Skorupi"
+  },
+  "drapion": {
+    "legal": true,
+    "dex": 452,
+    "types": [
+      "poison",
+      "dark"
+    ],
+    "speciesName": "Drapion"
+  },
+  "croagunk": {
+    "legal": true,
+    "dex": 453,
+    "types": [
+      "poison",
+      "fighting"
+    ],
+    "speciesName": "Croagunk"
+  },
+  "toxicroak": {
+    "legal": true,
+    "dex": 454,
+    "types": [
+      "poison",
+      "fighting"
+    ],
+    "speciesName": "Toxicroak"
+  },
+  "carnivine": {
+    "legal": true,
+    "dex": 455,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Carnivine"
+  },
+  "finneon": {
+    "legal": true,
+    "dex": 456,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Finneon"
+  },
+  "lumineon": {
+    "legal": true,
+    "dex": 457,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Lumineon"
+  },
+  "mantyke": {
+    "legal": true,
+    "dex": 458,
+    "types": [
+      "water",
+      "flying"
+    ],
+    "speciesName": "Mantyke"
+  },
+  "snover": {
+    "legal": true,
+    "dex": 459,
+    "types": [
+      "grass",
+      "ice"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Snover"
+  },
+  "snover_shadow": {
+    "legal": true,
+    "dex": 459,
+    "types": [
+      "grass",
+      "ice"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Snover (Shadow)"
+  },
+  "abomasnow": {
+    "legal": true,
+    "dex": 460,
+    "types": [
+      "grass",
+      "ice"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Abomasnow"
+  },
+  "abomasnow_mega": {
+    "legal": true,
+    "dex": 460,
+    "types": [
+      "grass",
+      "ice"
+    ],
+    "tags": [
+      "shadoweligible",
+      "mega"
+    ],
+    "speciesName": "Abomasnow (Mega)"
+  },
+  "abomasnow_shadow": {
+    "legal": true,
+    "dex": 460,
+    "types": [
+      "grass",
+      "ice"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Abomasnow (Shadow)"
+  },
+  "weavile": {
+    "legal": true,
+    "dex": 461,
+    "types": [
+      "dark",
+      "ice"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Weavile"
+  },
+  "weavile_shadow": {
+    "legal": true,
+    "dex": 461,
+    "types": [
+      "dark",
+      "ice"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Weavile (Shadow)"
+  },
+  "magnezone": {
+    "legal": true,
+    "dex": 462,
+    "types": [
+      "electric",
+      "steel"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Magnezone"
+  },
+  "magnezone_shadow": {
+    "legal": true,
+    "dex": 462,
+    "types": [
+      "electric",
+      "steel"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Magnezone (Shadow)"
+  },
+  "lickilicky": {
+    "legal": true,
+    "dex": 463,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Lickilicky"
+  },
+  "rhyperior": {
+    "legal": true,
+    "dex": 464,
+    "types": [
+      "ground",
+      "rock"
+    ],
+    "speciesName": "Rhyperior"
+  },
+  "tangrowth": {
+    "legal": true,
+    "dex": 465,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "speciesName": "Tangrowth"
+  },
+  "electivire": {
+    "legal": true,
+    "dex": 466,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Electivire"
+  },
+  "electivire_shadow": {
+    "legal": true,
+    "dex": 466,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Electivire (Shadow)"
+  },
+  "magmortar": {
+    "legal": true,
+    "dex": 467,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Magmortar"
+  },
+  "magmortar_shadow": {
+    "legal": true,
+    "dex": 467,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Magmortar (Shadow)"
+  },
+  "togekiss": {
+    "legal": true,
+    "dex": 468,
+    "types": [
+      "fairy",
+      "flying"
+    ],
+    "speciesName": "Togekiss"
+  },
+  "yanmega": {
+    "legal": true,
+    "dex": 469,
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "speciesName": "Yanmega"
+  },
+  "leafeon": {
+    "legal": true,
+    "dex": 470,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "speciesName": "Leafeon"
+  },
+  "glaceon": {
+    "legal": true,
+    "dex": 471,
+    "types": [
+      "ice",
+      "none"
+    ],
+    "speciesName": "Glaceon"
+  },
+  "gliscor": {
+    "legal": true,
+    "dex": 472,
+    "types": [
+      "ground",
+      "flying"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Gliscor"
+  },
+  "gliscor_shadow": {
+    "legal": true,
+    "dex": 472,
+    "types": [
+      "ground",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Gliscor (Shadow)"
+  },
+  "mamoswine": {
+    "legal": true,
+    "dex": 473,
+    "types": [
+      "ice",
+      "ground"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Mamoswine"
+  },
+  "mamoswine_shadow": {
+    "legal": true,
+    "dex": 473,
+    "types": [
+      "ice",
+      "ground"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Mamoswine (Shadow)"
+  },
+  "porygon_z": {
+    "legal": true,
+    "dex": 474,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Porygon-Z"
+  },
+  "porygon_z_shadow": {
+    "legal": true,
+    "dex": 474,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Porygon-Z (Shadow)"
+  },
+  "gallade": {
+    "legal": true,
+    "dex": 475,
+    "types": [
+      "psychic",
+      "fighting"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Gallade"
+  },
+  "gallade_shadow": {
+    "legal": true,
+    "dex": 475,
+    "types": [
+      "psychic",
+      "fighting"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Gallade (Shadow)"
+  },
+  "probopass": {
+    "legal": true,
+    "dex": 476,
+    "types": [
+      "rock",
+      "steel"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Probopass"
+  },
+  "probopass_shadow": {
+    "legal": true,
+    "dex": 476,
+    "types": [
+      "rock",
+      "steel"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Probopass (Shadow)"
+  },
+  "dusknoir": {
+    "legal": true,
+    "dex": 477,
+    "types": [
+      "ghost",
+      "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": "Dusknoir"
+  },
+  "dusknoir_shadow": {
+    "legal": true,
+    "dex": 477,
+    "types": [
+      "ghost",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Dusknoir (Shadow)"
+  },
+  "froslass": {
+    "legal": true,
+    "dex": 478,
+    "types": [
+      "ice",
+      "ghost"
+    ],
+    "speciesName": "Froslass"
+  },
+  "rotom": {
+    "legal": true,
+    "dex": 479,
+    "types": [
+      "electric",
+      "ghost"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Rotom"
+  },
+  "rotom_fan": {
+    "legal": true,
+    "dex": 479,
+    "types": [
+      "electric",
+      "flying"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Rotom (Fan)"
+  },
+  "rotom_frost": {
+    "legal": true,
+    "dex": 479,
+    "types": [
+      "electric",
+      "ice"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Rotom (Frost)"
+  },
+  "rotom_heat": {
+    "legal": true,
+    "dex": 479,
+    "types": [
+      "electric",
+      "fire"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Rotom (Heat)"
+  },
+  "rotom_mow": {
+    "legal": true,
+    "dex": 479,
+    "types": [
+      "electric",
+      "grass"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Rotom (Mow)"
+  },
+  "rotom_wash": {
+    "legal": true,
+    "dex": 479,
+    "types": [
+      "electric",
+      "water"
+    ],
+    "speciesName": "Rotom (Wash)"
+  },
+  "uxie": {
+    "legal": true,
+    "dex": 480,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Uxie"
+  },
+  "mesprit": {
+    "legal": true,
+    "dex": 481,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Mesprit"
+  },
+  "azelf": {
+    "legal": true,
+    "dex": 482,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Azelf"
+  },
+  "dialga": {
+    "legal": true,
+    "dex": 483,
+    "types": [
+      "steel",
+      "dragon"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Dialga"
+  },
+  "palkia": {
+    "legal": true,
+    "dex": 484,
+    "types": [
+      "water",
+      "dragon"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Palkia"
+  },
+  "heatran": {
+    "legal": true,
+    "dex": 485,
+    "types": [
+      "fire",
+      "steel"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Heatran"
+  },
+  "regigigas": {
+    "legal": true,
+    "dex": 486,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Regigigas"
+  },
+  "giratina_altered": {
+    "legal": true,
+    "dex": 487,
+    "types": [
+      "ghost",
+      "dragon"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Giratina (Altered)"
+  },
+  "giratina_origin": {
+    "legal": true,
+    "dex": 487,
+    "types": [
+      "ghost",
+      "dragon"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Giratina (Origin)"
+  },
+  "cresselia": {
+    "legal": true,
+    "dex": 488,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Cresselia"
+  },
+  "phione": {
+    "legal": true,
+    "dex": 489,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Phione"
+  },
+  "manaphy": {
+    "legal": true,
+    "dex": 490,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Manaphy"
+  },
+  "darkrai": {
+    "legal": true,
+    "dex": 491,
+    "types": [
+      "dark",
+      "none"
+    ],
+    "tags": [
+      "mythical",
+      "untradeable"
+    ],
+    "speciesName": "Darkrai"
+  },
+  "shaymin_land": {
+    "legal": true,
+    "dex": 492,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Shaymin (Land)"
+  },
+  "shaymin_sky": {
+    "legal": true,
+    "dex": 492,
+    "types": [
+      "grass",
+      "flying"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Shaymin (Sky)"
+  },
+  "arceus": {
+    "legal": true,
+    "dex": 493,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Arceus"
+  },
+  "arceus_bug": {
+    "legal": true,
+    "dex": 493,
+    "types": [
+      "bug",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Arceus (Bug)"
+  },
+  "arceus_dark": {
+    "legal": true,
+    "dex": 493,
+    "types": [
+      "dark",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Arceus (Dark)"
+  },
+  "arceus_dragon": {
+    "legal": true,
+    "dex": 493,
+    "types": [
+      "dragon",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Arceus (Dragon)"
+  },
+  "arceus_electric": {
+    "legal": true,
+    "dex": 493,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Arceus (Electric)"
+  },
+  "arceus_fairy": {
+    "legal": true,
+    "dex": 493,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Arceus (Fairy)"
+  },
+  "arceus_fighting": {
+    "legal": true,
+    "dex": 493,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Arceus (Fighting)"
+  },
+  "arceus_fire": {
+    "legal": true,
+    "dex": 493,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Arceus (Fire)"
+  },
+  "arceus_flying": {
+    "legal": true,
+    "dex": 493,
+    "types": [
+      "flying",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Arceus (Flying)"
+  },
+  "arceus_ghost": {
+    "legal": true,
+    "dex": 493,
+    "types": [
+      "ghost",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Arceus (Ghost)"
+  },
+  "arceus_grass": {
+    "legal": true,
+    "dex": 493,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Arceus (Grass)"
+  },
+  "arceus_ground": {
+    "legal": true,
+    "dex": 493,
+    "types": [
+      "ground",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Arceus (Ground)"
+  },
+  "arceus_ice": {
+    "legal": true,
+    "dex": 493,
+    "types": [
+      "ice",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Arceus (Ice)"
+  },
+  "arceus_poison": {
+    "legal": true,
+    "dex": 493,
+    "types": [
+      "poison",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Arceus (Poison)"
+  },
+  "arceus_psychic": {
+    "legal": true,
+    "dex": 493,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Arceus (Psychic)"
+  },
+  "arceus_rock": {
+    "legal": true,
+    "dex": 493,
+    "types": [
+      "rock",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Arceus (Rock)"
+  },
+  "arceus_steel": {
+    "legal": true,
+    "dex": 493,
+    "types": [
+      "steel",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Arceus (Steel)"
+  },
+  "arceus_water": {
+    "legal": true,
+    "dex": 493,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Arceus (Water)"
+  },
+  "victini": {
+    "legal": true,
+    "dex": 494,
+    "types": [
+      "psychic",
+      "fire"
+    ],
+    "tags": [
+      "mythical",
+      "untradeable"
+    ],
+    "speciesName": "Victini"
+  },
+  "snivy": {
+    "legal": true,
+    "dex": 495,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Snivy"
+  },
+  "servine": {
+    "legal": true,
+    "dex": 496,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Servine"
+  },
+  "serperior": {
+    "legal": true,
+    "dex": 497,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Serperior"
+  },
+  "tepig": {
+    "legal": true,
+    "dex": 498,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Tepig"
+  },
+  "pignite": {
+    "legal": true,
+    "dex": 499,
+    "types": [
+      "fire",
+      "fighting"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Pignite"
+  },
+  "emboar": {
+    "legal": true,
+    "dex": 500,
+    "types": [
+      "fire",
+      "fighting"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Emboar"
+  },
+  "oshawott": {
+    "legal": true,
+    "dex": 501,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Oshawott"
+  },
+  "dewott": {
+    "legal": true,
+    "dex": 502,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Dewott"
+  },
+  "samurott": {
+    "legal": true,
+    "dex": 503,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "starter"
+    ],
+    "speciesName": "Samurott"
+  },
+  "patrat": {
+    "legal": true,
+    "dex": 504,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Patrat"
+  },
+  "watchog": {
+    "legal": true,
+    "dex": 505,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Watchog"
+  },
+  "lillipup": {
+    "legal": true,
+    "dex": 506,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Lillipup"
+  },
+  "herdier": {
+    "legal": true,
+    "dex": 507,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Herdier"
+  },
+  "stoutland": {
+    "legal": true,
+    "dex": 508,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Stoutland"
+  },
+  "purrloin": {
+    "legal": true,
+    "dex": 509,
+    "types": [
+      "dark",
+      "none"
+    ],
+    "speciesName": "Purrloin"
+  },
+  "liepard": {
+    "legal": true,
+    "dex": 510,
+    "types": [
+      "dark",
+      "none"
+    ],
+    "speciesName": "Liepard"
+  },
+  "pansage": {
+    "legal": true,
+    "dex": 511,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Pansage"
+  },
+  "simisage": {
+    "legal": true,
+    "dex": 512,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Simisage"
+  },
+  "pansear": {
+    "legal": true,
+    "dex": 513,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Pansear"
+  },
+  "simisear": {
+    "legal": true,
+    "dex": 514,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Simisear"
+  },
+  "panpour": {
+    "legal": true,
+    "dex": 515,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Panpour"
+  },
+  "simipour": {
+    "legal": true,
+    "dex": 516,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Simipour"
+  },
+  "munna": {
+    "legal": true,
+    "dex": 517,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "speciesName": "Munna"
+  },
+  "musharna": {
+    "legal": true,
+    "dex": 518,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "speciesName": "Musharna"
+  },
+  "pidove": {
+    "legal": true,
+    "dex": 519,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "speciesName": "Pidove"
+  },
+  "tranquill": {
+    "legal": true,
+    "dex": 520,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "speciesName": "Tranquill"
+  },
+  "unfezant": {
+    "legal": true,
+    "dex": 521,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "speciesName": "Unfezant"
+  },
+  "blitzle": {
+    "legal": true,
+    "dex": 522,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "speciesName": "Blitzle"
+  },
+  "zebstrika": {
+    "legal": true,
+    "dex": 523,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "speciesName": "Zebstrika"
+  },
+  "roggenrola": {
+    "legal": true,
+    "dex": 524,
+    "types": [
+      "rock",
+      "none"
+    ],
+    "speciesName": "Roggenrola"
+  },
+  "boldore": {
+    "legal": true,
+    "dex": 525,
+    "types": [
+      "rock",
+      "none"
+    ],
+    "speciesName": "Boldore"
+  },
+  "gigalith": {
+    "legal": true,
+    "dex": 526,
+    "types": [
+      "rock",
+      "none"
+    ],
+    "speciesName": "Gigalith"
+  },
+  "woobat": {
+    "legal": true,
+    "dex": 527,
+    "types": [
+      "psychic",
+      "flying"
+    ],
+    "speciesName": "Woobat"
+  },
+  "swoobat": {
+    "legal": true,
+    "dex": 528,
+    "types": [
+      "psychic",
+      "flying"
+    ],
+    "speciesName": "Swoobat"
+  },
+  "drilbur": {
+    "legal": true,
+    "dex": 529,
+    "types": [
+      "ground",
+      "none"
+    ],
+    "speciesName": "Drilbur"
+  },
+  "excadrill": {
+    "legal": true,
+    "dex": 530,
+    "types": [
+      "ground",
+      "steel"
+    ],
+    "speciesName": "Excadrill"
+  },
+  "audino": {
+    "legal": true,
+    "dex": 531,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Audino"
+  },
+  "timburr": {
+    "legal": true,
+    "dex": 532,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "speciesName": "Timburr"
+  },
+  "gurdurr": {
+    "legal": true,
+    "dex": 533,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "speciesName": "Gurdurr"
+  },
+  "conkeldurr": {
+    "legal": true,
+    "dex": 534,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "speciesName": "Conkeldurr"
+  },
+  "tympole": {
+    "legal": true,
+    "dex": 535,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Tympole"
+  },
+  "palpitoad": {
+    "legal": true,
+    "dex": 536,
+    "types": [
+      "water",
+      "ground"
+    ],
+    "speciesName": "Palpitoad"
+  },
+  "seismitoad": {
+    "legal": true,
+    "dex": 537,
+    "types": [
+      "water",
+      "ground"
+    ],
+    "speciesName": "Seismitoad"
+  },
+  "throh": {
+    "legal": true,
+    "dex": 538,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "speciesName": "Throh"
+  },
+  "sawk": {
+    "legal": true,
+    "dex": 539,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "speciesName": "Sawk"
+  },
+  "sewaddle": {
+    "legal": true,
+    "dex": 540,
+    "types": [
+      "bug",
+      "grass"
+    ],
+    "speciesName": "Sewaddle"
+  },
+  "swadloon": {
+    "legal": true,
+    "dex": 541,
+    "types": [
+      "bug",
+      "grass"
+    ],
+    "speciesName": "Swadloon"
+  },
+  "leavanny": {
+    "legal": true,
+    "dex": 542,
+    "types": [
+      "bug",
+      "grass"
+    ],
+    "speciesName": "Leavanny"
+  },
+  "venipede": {
+    "legal": true,
+    "dex": 543,
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "speciesName": "Venipede"
+  },
+  "whirlipede": {
+    "legal": true,
+    "dex": 544,
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "speciesName": "Whirlipede"
+  },
+  "scolipede": {
+    "legal": true,
+    "dex": 545,
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "speciesName": "Scolipede"
+  },
+  "cottonee": {
+    "legal": true,
+    "dex": 546,
+    "types": [
+      "grass",
+      "fairy"
+    ],
+    "speciesName": "Cottonee"
+  },
+  "whimsicott": {
+    "legal": true,
+    "dex": 547,
+    "types": [
+      "grass",
+      "fairy"
+    ],
+    "speciesName": "Whimsicott"
+  },
+  "petilil": {
+    "legal": true,
+    "dex": 548,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "speciesName": "Petilil"
+  },
+  "lilligant": {
+    "legal": true,
+    "dex": 549,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "speciesName": "Lilligant"
+  },
+  "basculin": {
+    "legal": true,
+    "dex": 550,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Basculin"
+  },
+  "sandile": {
+    "legal": true,
+    "dex": 551,
+    "types": [
+      "ground",
+      "dark"
+    ],
+    "speciesName": "Sandile"
+  },
+  "krokorok": {
+    "legal": true,
+    "dex": 552,
+    "types": [
+      "ground",
+      "dark"
+    ],
+    "speciesName": "Krokorok"
+  },
+  "krookodile": {
+    "legal": true,
+    "dex": 553,
+    "types": [
+      "ground",
+      "dark"
+    ],
+    "speciesName": "Krookodile"
+  },
+  "darumaka": {
+    "legal": true,
+    "dex": 554,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "speciesName": "Darumaka"
+  },
+  "darumaka_galarian": {
+    "legal": true,
+    "dex": 554,
+    "types": [
+      "ice",
+      "none"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "speciesName": "Darumaka (Galarian)"
+  },
+  "darmanitan_galarian_zen": {
+    "legal": true,
+    "dex": 555,
+    "types": [
+      "ice",
+      "fire"
+    ],
+    "tags": [
+      "galarian",
+      "unreleased"
+    ],
+    "speciesName": "Darmanitan (Galarian Zen)"
+  },
+  "darmanitan_galarian_standard": {
+    "legal": true,
+    "dex": 555,
+    "types": [
+      "ice",
+      "none"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "speciesName": "Darmanitan (Galarian)"
+  },
+  "darmanitan_standard": {
+    "legal": true,
+    "dex": 555,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "speciesName": "Darmanitan (Standard)"
+  },
+  "darmanitan_zen": {
+    "legal": true,
+    "dex": 555,
+    "types": [
+      "fire",
+      "psychic"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Darmanitan (Zen)"
+  },
+  "maractus": {
+    "legal": true,
+    "dex": 556,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Maractus"
+  },
+  "dwebble": {
+    "legal": true,
+    "dex": 557,
+    "types": [
+      "bug",
+      "rock"
+    ],
+    "speciesName": "Dwebble"
+  },
+  "crustle": {
+    "legal": true,
+    "dex": 558,
+    "types": [
+      "bug",
+      "rock"
+    ],
+    "speciesName": "Crustle"
+  },
+  "scraggy": {
+    "legal": true,
+    "dex": 559,
+    "types": [
+      "dark",
+      "fighting"
+    ],
+    "speciesName": "Scraggy"
+  },
+  "scrafty": {
+    "legal": true,
+    "dex": 560,
+    "types": [
+      "dark",
+      "fighting"
+    ],
+    "speciesName": "Scrafty"
+  },
+  "sigilyph": {
+    "legal": true,
+    "dex": 561,
+    "types": [
+      "psychic",
+      "flying"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Sigilyph"
+  },
+  "yamask": {
+    "legal": true,
+    "dex": 562,
+    "types": [
+      "ghost",
+      "none"
+    ],
+    "speciesName": "Yamask"
+  },
+  "yamask_galarian": {
+    "legal": true,
+    "dex": 562,
+    "types": [
+      "ground",
+      "ghost"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "speciesName": "Yamask (Galarian)"
+  },
+  "cofagrigus": {
+    "legal": true,
+    "dex": 563,
+    "types": [
+      "ghost",
+      "none"
+    ],
+    "speciesName": "Cofagrigus"
+  },
+  "tirtouga": {
+    "legal": true,
+    "dex": 564,
+    "types": [
+      "water",
+      "rock"
+    ],
+    "speciesName": "Tirtouga"
+  },
+  "carracosta": {
+    "legal": true,
+    "dex": 565,
+    "types": [
+      "water",
+      "rock"
+    ],
+    "speciesName": "Carracosta"
+  },
+  "archen": {
+    "legal": true,
+    "dex": 566,
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "speciesName": "Archen"
+  },
+  "archeops": {
+    "legal": true,
+    "dex": 567,
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "speciesName": "Archeops"
+  },
+  "trubbish": {
+    "legal": true,
+    "dex": 568,
+    "types": [
+      "poison",
+      "none"
+    ],
+    "speciesName": "Trubbish"
+  },
+  "garbodor": {
+    "legal": true,
+    "dex": 569,
+    "types": [
+      "poison",
+      "none"
+    ],
+    "speciesName": "Garbodor"
+  },
+  "zorua": {
+    "legal": true,
+    "dex": 570,
+    "types": [
+      "dark",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Zorua"
+  },
+  "zoroark": {
+    "legal": true,
+    "dex": 571,
+    "types": [
+      "dark",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Zoroark"
+  },
+  "minccino": {
+    "legal": true,
+    "dex": 572,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Minccino"
+  },
+  "cinccino": {
+    "legal": true,
+    "dex": 573,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Cinccino"
+  },
+  "gothita": {
+    "legal": true,
+    "dex": 574,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "speciesName": "Gothita"
+  },
+  "gothorita": {
+    "legal": true,
+    "dex": 575,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "speciesName": "Gothorita"
+  },
+  "gothitelle": {
+    "legal": true,
+    "dex": 576,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "speciesName": "Gothitelle"
+  },
+  "solosis": {
+    "legal": true,
+    "dex": 577,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "speciesName": "Solosis"
+  },
+  "duosion": {
+    "legal": true,
+    "dex": 578,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "speciesName": "Duosion"
+  },
+  "reuniclus": {
+    "legal": true,
+    "dex": 579,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "speciesName": "Reuniclus"
+  },
+  "ducklett": {
+    "legal": true,
+    "dex": 580,
+    "types": [
+      "water",
+      "flying"
+    ],
+    "speciesName": "Ducklett"
+  },
+  "swanna": {
+    "legal": true,
+    "dex": 581,
+    "types": [
+      "water",
+      "flying"
+    ],
+    "speciesName": "Swanna"
+  },
+  "vanillite": {
+    "legal": true,
+    "dex": 582,
+    "types": [
+      "ice",
+      "none"
+    ],
+    "speciesName": "Vanillite"
+  },
+  "vanillish": {
+    "legal": true,
+    "dex": 583,
+    "types": [
+      "ice",
+      "none"
+    ],
+    "speciesName": "Vanillish"
+  },
+  "vanilluxe": {
+    "legal": true,
+    "dex": 584,
+    "types": [
+      "ice",
+      "none"
+    ],
+    "speciesName": "Vanilluxe"
+  },
+  "deerling": {
+    "legal": true,
+    "dex": 585,
+    "types": [
+      "normal",
+      "grass"
+    ],
+    "speciesName": "Deerling"
+  },
+  "sawsbuck": {
+    "legal": true,
+    "dex": 586,
+    "types": [
+      "normal",
+      "grass"
+    ],
+    "speciesName": "Sawsbuck"
+  },
+  "emolga": {
+    "legal": true,
+    "dex": 587,
+    "types": [
+      "electric",
+      "flying"
+    ],
+    "speciesName": "Emolga"
+  },
+  "karrablast": {
+    "legal": true,
+    "dex": 588,
+    "types": [
+      "bug",
+      "none"
+    ],
+    "speciesName": "Karrablast"
+  },
+  "escavalier": {
+    "legal": true,
+    "dex": 589,
+    "types": [
+      "bug",
+      "steel"
+    ],
+    "speciesName": "Escavalier"
+  },
+  "foongus": {
+    "legal": true,
+    "dex": 590,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "speciesName": "Foongus"
+  },
+  "amoonguss": {
+    "legal": true,
+    "dex": 591,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "speciesName": "Amoonguss"
+  },
+  "frillish": {
+    "legal": true,
+    "dex": 592,
+    "types": [
+      "water",
+      "ghost"
+    ],
+    "speciesName": "Frillish"
+  },
+  "jellicent": {
+    "legal": true,
+    "dex": 593,
+    "types": [
+      "water",
+      "ghost"
+    ],
+    "speciesName": "Jellicent"
+  },
+  "alomomola": {
+    "legal": true,
+    "dex": 594,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Alomomola"
+  },
+  "joltik": {
+    "legal": true,
+    "dex": 595,
+    "types": [
+      "bug",
+      "electric"
+    ],
+    "speciesName": "Joltik"
+  },
+  "galvantula": {
+    "legal": true,
+    "dex": 596,
+    "types": [
+      "bug",
+      "electric"
+    ],
+    "speciesName": "Galvantula"
+  },
+  "ferroseed": {
+    "legal": true,
+    "dex": 597,
+    "types": [
+      "grass",
+      "steel"
+    ],
+    "speciesName": "Ferroseed"
+  },
+  "ferrothorn": {
+    "legal": true,
+    "dex": 598,
+    "types": [
+      "grass",
+      "steel"
+    ],
+    "speciesName": "Ferrothorn"
+  },
+  "klink": {
+    "legal": true,
+    "dex": 599,
+    "types": [
+      "steel",
+      "none"
+    ],
+    "speciesName": "Klink"
+  },
+  "klang": {
+    "legal": true,
+    "dex": 600,
+    "types": [
+      "steel",
+      "none"
+    ],
+    "speciesName": "Klang"
+  },
+  "klinklang": {
+    "legal": true,
+    "dex": 601,
+    "types": [
+      "steel",
+      "none"
+    ],
+    "speciesName": "Klinklang"
+  },
+  "tynamo": {
+    "legal": true,
+    "dex": 602,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "speciesName": "Tynamo"
+  },
+  "eelektrik": {
+    "legal": true,
+    "dex": 603,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "speciesName": "Eelektrik"
+  },
+  "eelektross": {
+    "legal": true,
+    "dex": 604,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "speciesName": "Eelektross"
+  },
+  "elgyem": {
+    "legal": true,
+    "dex": 605,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "speciesName": "Elgyem"
+  },
+  "beheeyem": {
+    "legal": true,
+    "dex": 606,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "speciesName": "Beheeyem"
+  },
+  "litwick": {
+    "legal": true,
+    "dex": 607,
+    "types": [
+      "ghost",
+      "fire"
+    ],
+    "speciesName": "Litwick"
+  },
+  "lampent": {
+    "legal": true,
+    "dex": 608,
+    "types": [
+      "ghost",
+      "fire"
+    ],
+    "speciesName": "Lampent"
+  },
+  "chandelure": {
+    "legal": true,
+    "dex": 609,
+    "types": [
+      "ghost",
+      "fire"
+    ],
+    "speciesName": "Chandelure"
+  },
+  "axew": {
+    "legal": true,
+    "dex": 610,
+    "types": [
+      "dragon",
+      "none"
+    ],
+    "speciesName": "Axew"
+  },
+  "fraxure": {
+    "legal": true,
+    "dex": 611,
+    "types": [
+      "dragon",
+      "none"
+    ],
+    "speciesName": "Fraxure"
+  },
+  "haxorus": {
+    "legal": true,
+    "dex": 612,
+    "types": [
+      "dragon",
+      "none"
+    ],
+    "speciesName": "Haxorus"
+  },
+  "cubchoo": {
+    "legal": true,
+    "dex": 613,
+    "types": [
+      "ice",
+      "none"
+    ],
+    "speciesName": "Cubchoo"
+  },
+  "beartic": {
+    "legal": true,
+    "dex": 614,
+    "types": [
+      "ice",
+      "none"
+    ],
+    "speciesName": "Beartic"
+  },
+  "cryogonal": {
+    "legal": true,
+    "dex": 615,
+    "types": [
+      "ice",
+      "none"
+    ],
+    "speciesName": "Cryogonal"
+  },
+  "shelmet": {
+    "legal": true,
+    "dex": 616,
+    "types": [
+      "bug",
+      "none"
+    ],
+    "speciesName": "Shelmet"
+  },
+  "accelgor": {
+    "legal": true,
+    "dex": 617,
+    "types": [
+      "bug",
+      "none"
+    ],
+    "speciesName": "Accelgor"
+  },
+  "stunfisk": {
+    "legal": true,
+    "dex": 618,
+    "types": [
+      "ground",
+      "electric"
+    ],
+    "speciesName": "Stunfisk"
+  },
+  "stunfisk_galarian": {
+    "legal": true,
+    "dex": 618,
+    "types": [
+      "ground",
+      "steel"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "speciesName": "Stunfisk (Galarian)"
+  },
+  "mienfoo": {
+    "legal": true,
+    "dex": 619,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Mienfoo"
+  },
+  "mienshao": {
+    "legal": true,
+    "dex": 620,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Mienshao"
+  },
+  "druddigon": {
+    "legal": true,
+    "dex": 621,
+    "types": [
+      "dragon",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Druddigon"
+  },
+  "golett": {
+    "legal": true,
+    "dex": 622,
+    "types": [
+      "ground",
+      "ghost"
+    ],
+    "speciesName": "Golett"
+  },
+  "golurk": {
+    "legal": true,
+    "dex": 623,
+    "types": [
+      "ground",
+      "ghost"
+    ],
+    "speciesName": "Golurk"
+  },
+  "pawniard": {
+    "legal": true,
+    "dex": 624,
+    "types": [
+      "dark",
+      "steel"
+    ],
+    "speciesName": "Pawniard"
+  },
+  "bisharp": {
+    "legal": true,
+    "dex": 625,
+    "types": [
+      "dark",
+      "steel"
+    ],
+    "speciesName": "Bisharp"
+  },
+  "bouffalant": {
+    "legal": true,
+    "dex": 626,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Bouffalant"
+  },
+  "rufflet": {
+    "legal": true,
+    "dex": 627,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "speciesName": "Rufflet"
+  },
+  "braviary": {
+    "legal": true,
+    "dex": 628,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "speciesName": "Braviary"
+  },
+  "vullaby": {
+    "legal": true,
+    "dex": 629,
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "speciesName": "Vullaby"
+  },
+  "mandibuzz": {
+    "legal": true,
+    "dex": 630,
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "speciesName": "Mandibuzz"
+  },
+  "heatmor": {
+    "legal": true,
+    "dex": 631,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Heatmor"
+  },
+  "durant": {
+    "legal": true,
+    "dex": 632,
+    "types": [
+      "bug",
+      "steel"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Durant"
+  },
+  "deino": {
+    "legal": true,
+    "dex": 633,
+    "types": [
+      "dark",
+      "dragon"
+    ],
+    "speciesName": "Deino"
+  },
+  "zweilous": {
+    "legal": true,
+    "dex": 634,
+    "types": [
+      "dark",
+      "dragon"
+    ],
+    "speciesName": "Zweilous"
+  },
+  "hydreigon": {
+    "legal": true,
+    "dex": 635,
+    "types": [
+      "dark",
+      "dragon"
+    ],
+    "speciesName": "Hydreigon"
+  },
+  "larvesta": {
+    "legal": true,
+    "dex": 636,
+    "types": [
+      "bug",
+      "fire"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Larvesta"
+  },
+  "volcarona": {
+    "legal": true,
+    "dex": 637,
+    "types": [
+      "bug",
+      "fire"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Volcarona"
+  },
+  "cobalion": {
+    "legal": true,
+    "dex": 638,
+    "types": [
+      "steel",
+      "fighting"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Cobalion"
+  },
+  "terrakion": {
+    "legal": true,
+    "dex": 639,
+    "types": [
+      "rock",
+      "fighting"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Terrakion"
+  },
+  "virizion": {
+    "legal": true,
+    "dex": 640,
+    "types": [
+      "grass",
+      "fighting"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Virizion"
+  },
+  "tornadus_incarnate": {
+    "legal": true,
+    "dex": 641,
+    "types": [
+      "flying",
+      "none"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Tornadus (Incarnate)"
+  },
+  "tornadus_therian": {
+    "legal": true,
+    "dex": 641,
+    "types": [
+      "flying",
+      "none"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Tornadus (Therian)"
+  },
+  "thundurus_incarnate": {
+    "legal": true,
+    "dex": 642,
+    "types": [
+      "electric",
+      "flying"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Thundurus (Incarnate)"
+  },
+  "thundurus_therian": {
+    "legal": true,
+    "dex": 642,
+    "types": [
+      "electric",
+      "flying"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Thundurus (Therian)"
+  },
+  "reshiram": {
+    "legal": true,
+    "dex": 643,
+    "types": [
+      "dragon",
+      "fire"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Reshiram"
+  },
+  "zekrom": {
+    "legal": true,
+    "dex": 644,
+    "types": [
+      "dragon",
+      "electric"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Zekrom"
+  },
+  "landorus_incarnate": {
+    "legal": true,
+    "dex": 645,
+    "types": [
+      "ground",
+      "flying"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Landorus (Incarnate)"
+  },
+  "landorus_therian": {
+    "legal": true,
+    "dex": 645,
+    "types": [
+      "ground",
+      "flying"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Landorus (Therian)"
+  },
+  "kyurem": {
+    "legal": true,
+    "dex": 646,
+    "types": [
+      "dragon",
+      "ice"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": "Kyurem"
+  },
+  "kyurem_black": {
+    "legal": true,
+    "dex": 646,
+    "types": [
+      "dragon",
+      "ice"
+    ],
+    "tags": [
+      "legendary",
+      "unreleased"
+    ],
+    "speciesName": "Kyurem (Black)"
+  },
+  "kyurem_white": {
+    "legal": true,
+    "dex": 646,
+    "types": [
+      "dragon",
+      "ice"
+    ],
+    "tags": [
+      "legendary",
+      "unreleased"
+    ],
+    "speciesName": "Kyurem (White)"
+  },
+  "keldeo_ordinary": {
+    "legal": true,
+    "dex": 647,
+    "types": [
+      "water",
+      "fighting"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Keldeo (Ordinary)"
+  },
+  "keldeo_resolute": {
+    "legal": true,
+    "dex": 647,
+    "types": [
+      "water",
+      "fighting"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Keldeo (Resolute)"
+  },
+  "meloetta_aria": {
+    "legal": true,
+    "dex": 648,
+    "types": [
+      "normal",
+      "psychic"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Meloetta (Aria)"
+  },
+  "meloetta_pirouette": {
+    "legal": true,
+    "dex": 648,
+    "types": [
+      "normal",
+      "fighting"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Meloetta (Pirouette)"
+  },
+  "genesect": {
+    "legal": true,
+    "dex": 649,
+    "types": [
+      "bug",
+      "steel"
+    ],
+    "tags": [
+      "mythical",
+      "untradeable"
+    ],
+    "speciesName": "Genesect"
+  },
+  "genesect_burn": {
+    "legal": true,
+    "dex": 649,
+    "types": [
+      "bug",
+      "steel"
+    ],
+    "tags": [
+      "mythical",
+      "untradeable"
+    ],
+    "speciesName": "Genesect (Burn)"
+  },
+  "genesect_chill": {
+    "legal": true,
+    "dex": 649,
+    "types": [
+      "bug",
+      "steel"
+    ],
+    "tags": [
+      "mythical",
+      "untradeable",
+      "unreleased"
+    ],
+    "speciesName": "Genesect (Chill)"
+  },
+  "genesect_douse": {
+    "legal": true,
+    "dex": 649,
+    "types": [
+      "bug",
+      "steel"
+    ],
+    "tags": [
+      "mythical",
+      "untradeable",
+      "unreleased"
+    ],
+    "speciesName": "Genesect (Douse)"
+  },
+  "genesect_shock": {
+    "legal": true,
+    "dex": 649,
+    "types": [
+      "bug",
+      "steel"
+    ],
+    "tags": [
+      "mythical",
+      "untradeable",
+      "unreleased"
+    ],
+    "speciesName": "Genesect (Shock)"
+  },
+  "chespin": {
+    "legal": true,
+    "dex": 650,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "speciesName": "Chespin"
+  },
+  "quilladin": {
+    "legal": true,
+    "dex": 651,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "speciesName": "Quilladin"
+  },
+  "chesnaught": {
+    "legal": true,
+    "dex": 652,
+    "types": [
+      "grass",
+      "fighting"
+    ],
+    "speciesName": "Chesnaught"
+  },
+  "fennekin": {
+    "legal": true,
+    "dex": 653,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "speciesName": "Fennekin"
+  },
+  "braixen": {
+    "legal": true,
+    "dex": 654,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "speciesName": "Braixen"
+  },
+  "delphox": {
+    "legal": true,
+    "dex": 655,
+    "types": [
+      "fire",
+      "psychic"
+    ],
+    "speciesName": "Delphox"
+  },
+  "froakie": {
+    "legal": true,
+    "dex": 656,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Froakie"
+  },
+  "frogadier": {
+    "legal": true,
+    "dex": 657,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Frogadier"
+  },
+  "greninja": {
+    "legal": true,
+    "dex": 658,
+    "types": [
+      "water",
+      "dark"
+    ],
+    "speciesName": "Greninja"
+  },
+  "bunnelby": {
+    "legal": true,
+    "dex": 659,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "speciesName": "Bunnelby"
+  },
+  "diggersby": {
+    "legal": true,
+    "dex": 660,
+    "types": [
+      "normal",
+      "ground"
+    ],
+    "speciesName": "Diggersby"
+  },
+  "fletchling": {
+    "legal": true,
+    "dex": 661,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "speciesName": "Fletchling"
+  },
+  "fletchinder": {
+    "legal": true,
+    "dex": 662,
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "speciesName": "Fletchinder"
+  },
+  "talonflame": {
+    "legal": true,
+    "dex": 663,
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "speciesName": "Talonflame"
+  },
+  "scatterbug": {
+    "legal": true,
+    "dex": 664,
+    "types": [
+      "bug",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Scatterbug"
+  },
+  "spewpa": {
+    "legal": true,
+    "dex": 665,
+    "types": [
+      "bug",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Spewpa"
+  },
+  "vivillon": {
+    "legal": true,
+    "dex": 666,
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Vivillon"
+  },
+  "litleo": {
+    "legal": true,
+    "dex": 667,
+    "types": [
+      "fire",
+      "normal"
+    ],
+    "speciesName": "Litleo"
+  },
+  "pyroar": {
+    "legal": true,
+    "dex": 668,
+    "types": [
+      "fire",
+      "normal"
+    ],
+    "speciesName": "Pyroar"
+  },
+  "pyroar_female": {
+    "legal": true,
+    "dex": 668,
+    "types": [
+      "fire",
+      "normal"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Pyroar (Female)"
+  },
+  "flabebe": {
+    "legal": true,
+    "dex": 669,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Flabebe"
+  },
+  "floette": {
+    "legal": true,
+    "dex": 670,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Floette"
+  },
+  "florges": {
+    "legal": true,
+    "dex": 671,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Florges"
+  },
+  "skiddo": {
+    "legal": true,
+    "dex": 672,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Skiddo"
+  },
+  "gogoat": {
+    "legal": true,
+    "dex": 673,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Gogoat"
+  },
+  "pancham": {
+    "legal": true,
+    "dex": 674,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "speciesName": "Pancham"
+  },
+  "pangoro": {
+    "legal": true,
+    "dex": 675,
+    "types": [
+      "fighting",
+      "dark"
+    ],
+    "speciesName": "Pangoro"
+  },
+  "furfrou": {
+    "legal": true,
+    "dex": 676,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Furfrou"
+  },
+  "espurr": {
+    "legal": true,
+    "dex": 677,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "speciesName": "Espurr"
+  },
+  "meowstic_female": {
+    "legal": true,
+    "dex": 678,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "speciesName": "Meowstic (Female)"
+  },
+  "meowstic": {
+    "legal": true,
+    "dex": 678,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "speciesName": "Meowstic (Male)"
+  },
+  "honedge": {
+    "legal": true,
+    "dex": 679,
+    "types": [
+      "steel",
+      "ghost"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Honedge"
+  },
+  "doublade": {
+    "legal": true,
+    "dex": 680,
+    "types": [
+      "steel",
+      "ghost"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Doublade"
+  },
+  "aegislash": {
+    "legal": true,
+    "dex": 681,
+    "types": [
+      "steel",
+      "ghost"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Aegislash"
+  },
+  "spritzee": {
+    "legal": true,
+    "dex": 682,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "speciesName": "Spritzee"
+  },
+  "aromatisse": {
+    "legal": true,
+    "dex": 683,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "speciesName": "Aromatisse"
+  },
+  "swirlix": {
+    "legal": true,
+    "dex": 684,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "speciesName": "Swirlix"
+  },
+  "slurpuff": {
+    "legal": true,
+    "dex": 685,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "speciesName": "Slurpuff"
+  },
+  "inkay": {
+    "legal": true,
+    "dex": 686,
+    "types": [
+      "dark",
+      "psychic"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Inkay"
+  },
+  "malamar": {
+    "legal": true,
+    "dex": 687,
+    "types": [
+      "dark",
+      "psychic"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Malamar"
+  },
+  "binacle": {
+    "legal": true,
+    "dex": 688,
+    "types": [
+      "rock",
+      "water"
+    ],
+    "speciesName": "Binacle"
+  },
+  "barbaracle": {
+    "legal": true,
+    "dex": 689,
+    "types": [
+      "rock",
+      "water"
+    ],
+    "speciesName": "Barbaracle"
+  },
+  "skrelp": {
+    "legal": true,
+    "dex": 690,
+    "types": [
+      "poison",
+      "water"
+    ],
+    "speciesName": "Skrelp"
+  },
+  "dragalge": {
+    "legal": true,
+    "dex": 691,
+    "types": [
+      "poison",
+      "dragon"
+    ],
+    "speciesName": "Dragalge"
+  },
+  "clauncher": {
+    "legal": true,
+    "dex": 692,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Clauncher"
+  },
+  "clawitzer": {
+    "legal": true,
+    "dex": 693,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": "Clawitzer"
+  },
+  "helioptile": {
+    "legal": true,
+    "dex": 694,
+    "types": [
+      "electric",
+      "normal"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Helioptile"
+  },
+  "heliolisk": {
+    "legal": true,
+    "dex": 695,
+    "types": [
+      "electric",
+      "normal"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Heliolisk"
+  },
+  "tyrunt": {
+    "legal": true,
+    "dex": 696,
+    "types": [
+      "rock",
+      "dragon"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Tyrunt"
+  },
+  "tyrantrum": {
+    "legal": true,
+    "dex": 697,
+    "types": [
+      "rock",
+      "dragon"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Tyrantrum"
+  },
+  "amaura": {
+    "legal": true,
+    "dex": 698,
+    "types": [
+      "rock",
+      "ice"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Amaura"
+  },
+  "aurorus": {
+    "legal": true,
+    "dex": 699,
+    "types": [
+      "rock",
+      "ice"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Aurorus"
+  },
+  "sylveon": {
+    "legal": true,
+    "dex": 700,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Sylveon"
+  },
+  "hawlucha": {
+    "legal": true,
+    "dex": 701,
+    "types": [
+      "fighting",
+      "flying"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Hawlucha"
+  },
+  "dedenne": {
+    "legal": true,
+    "dex": 702,
+    "types": [
+      "electric",
+      "fairy"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Dedenne"
+  },
+  "carbink": {
+    "legal": true,
+    "dex": 703,
+    "types": [
+      "rock",
+      "fairy"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Carbink"
+  },
+  "goomy": {
+    "legal": true,
+    "dex": 704,
+    "types": [
+      "dragon",
+      "none"
+    ],
+    "speciesName": "Goomy"
+  },
+  "sliggoo": {
+    "legal": true,
+    "dex": 705,
+    "types": [
+      "dragon",
+      "none"
+    ],
+    "speciesName": "Sliggoo"
+  },
+  "goodra": {
+    "legal": true,
+    "dex": 706,
+    "types": [
+      "dragon",
+      "none"
+    ],
+    "speciesName": "Goodra"
+  },
+  "klefki": {
+    "legal": true,
+    "dex": 707,
+    "types": [
+      "steel",
+      "fairy"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": "Klefki"
+  },
+  "phantump": {
+    "legal": true,
+    "dex": 708,
+    "types": [
+      "ghost",
+      "grass"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Phantump"
+  },
+  "trevenant": {
+    "legal": true,
+    "dex": 709,
+    "types": [
+      "ghost",
+      "grass"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Trevenant"
+  },
+  "pumpkaboo": {
+    "legal": true,
+    "dex": 710,
+    "types": [
+      "ghost",
+      "grass"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Pumpkaboo"
+  },
+  "gourgeist": {
+    "legal": true,
+    "dex": 711,
+    "types": [
+      "ghost",
+      "grass"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Gourgeist"
+  },
+  "bergmite": {
+    "legal": true,
+    "dex": 712,
+    "types": [
+      "ice",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Bergmite"
+  },
+  "avalugg": {
+    "legal": true,
+    "dex": 713,
+    "types": [
+      "ice",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Avalugg"
+  },
+  "noibat": {
+    "legal": true,
+    "dex": 714,
+    "types": [
+      "flying",
+      "dragon"
+    ],
+    "speciesName": "Noibat"
+  },
+  "noivern": {
+    "legal": true,
+    "dex": 715,
+    "types": [
+      "flying",
+      "dragon"
+    ],
+    "speciesName": "Noivern"
+  },
+  "xerneas": {
+    "legal": true,
+    "dex": 716,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "speciesName": "Xerneas"
+  },
+  "yveltal": {
+    "legal": true,
+    "dex": 717,
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Yveltal"
+  },
+  "zygarde": {
+    "legal": true,
+    "dex": 718,
+    "types": [
+      "dragon",
+      "ground"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": "Zygarde"
+  },
+  "meltan": {
+    "legal": true,
+    "dex": 808,
+    "types": [
+      "steel",
+      "none"
+    ],
+    "tags": [
+      "mythical"
+    ],
+    "speciesName": "Meltan"
+  },
+  "melmetal": {
+    "legal": true,
+    "dex": 809,
+    "types": [
+      "steel",
+      "none"
+    ],
+    "tags": [
+      "mythical"
+    ],
+    "speciesName": "Melmetal"
+  },
+  "obstagoon": {
+    "legal": true,
+    "dex": 862,
+    "types": [
+      "dark",
+      "normal"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "speciesName": "Obstagoon"
+  },
+  "perrserker": {
+    "legal": true,
+    "dex": 863,
+    "types": [
+      "steel",
+      "none"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "speciesName": "Perrserker"
+  },
+  "sirfetchd": {
+    "legal": true,
+    "dex": 865,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "speciesName": "Sirfetch'd"
+  },
+  "mr_rime": {
+    "legal": true,
+    "dex": 866,
+    "types": [
+      "ice",
+      "psychic"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "speciesName": "Mr. Rime"
+  },
+  "runerigus": {
+    "legal": true,
+    "dex": 867,
+    "types": [
+      "ground",
+      "ghost"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "speciesName": "Runerigus"
+  }
+}

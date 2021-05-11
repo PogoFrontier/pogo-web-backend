@@ -7,9 +7,10 @@ import { TeamMemberDescription } from "../types/team";
 import { parseToTeamMembers, isTeamValid } from "../team/checkTeam";
 import { Room } from "../types/room";
 import { pubClient } from "../redis/clients";
+import { getRandomTeam } from "../team/randomTeam";
 
 function onJoin(id: string, payload: OnJoinPayload) {
-    const { room, team } = payload;
+    let { room, team } = payload;
     const currentRoom = rooms.get(room);
 
     if (currentRoom) {
@@ -17,6 +18,10 @@ function onJoin(id: string, payload: OnJoinPayload) {
         if(!allowed) {
             pubClient.publish("messagesToUser:" + id, "$error" + reason);
             return;
+        }
+
+        if(currentRoom.format.advancedOptions?.random) {
+            team = getRandomTeam(currentRoom.format)
         }
 
         if (!team || !Array.isArray(team) || team.length <= 0) {
