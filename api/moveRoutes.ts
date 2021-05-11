@@ -11,7 +11,7 @@ router.get('/:id', (req, res) => {
         const result: any = moves[req.params.id];
         result ? res.json(result) : res.status(404).json(`Could not find move of id: ${req.params.id}`);
     } catch (err) {
-        console.error();
+        console.error(err);
         res.status(500).json({message: "Internal server error"});
     }
 });

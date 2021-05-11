@@ -21,9 +21,7 @@ function onNewRoom(id: string, payload: OnNewRoomPayload, callback:  (roomId: st
     if (isNew) {
       let format = payload.format;
       if (!format) {
-        format = {
-          name: "Great League"
-        }
+        format = "Great League"
       }
       try{        
         format = parseToRule(format);

@@ -1,4 +1,5 @@
 export interface Rule {
+    name: string
     maxCP: number
     maxLevel: number
     maxBestBuddy: number
@@ -13,9 +14,7 @@ export interface Rule {
     classes?: ClassOption[]
 }
 
-export type RuleDescription = {
-    name: string,
-} | string | Rule
+export type RuleDescription = string | Rule
 
 export interface Selector {
     filterType: "type" | "tag" | "id" | "dex"

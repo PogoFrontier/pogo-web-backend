@@ -85,3 +85,14 @@ export interface Current {
   status: [number, number]
   energy: number
 }
+
+export interface PokemonSpecies {
+  speciesName?: string
+  speciesId: string
+  dex: number
+  tags?: string[]
+  types: string[]
+  ranking?: number
+  price?: number
+  moveset?: [string, string, string]
+}
