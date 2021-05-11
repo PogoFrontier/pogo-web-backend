@@ -45,7 +45,7 @@ router.get('/data/:room', (req, res) => {
         res.json(asJSON);
       });
     } catch(err) {
-        console.error();
+        console.error(err);
         res.status(500).json({message: "Internal server error"});
     }
 });
@@ -89,7 +89,7 @@ router.get('/list', (req, res) => {
         }
       });
   } catch(err) {
-      console.error();
+      console.error(err);
       res.status(500).json({message: "Internal server error"});
   }
 });
@@ -126,7 +126,7 @@ router.get('/status', (req, res) => {
         })
       });
   } catch (err) {
-      console.error();
+      console.error(err);
       res.status(500).json({message: "Internal server error"});
   }
 });

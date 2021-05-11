@@ -7,6 +7,7 @@ import pokemonRoutes from "./pokemonRoutes";
 import moveRoutes from "./moveRoutes";
 import userRoutes from "./userRoutes";
 import roomRoutes from "./roomRoutes";
+import randomRoutes from "./randomRoutes";
 import ruleRoutes from "./ruleRoutes";
 import validateRoutes from "./validateRoutes";
 
@@ -34,6 +35,7 @@ app.use('/api/pokemon', pokemonRoutes);
 app.use('/api/moves', moveRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/room', roomRoutes);
+app.use('/api/random', randomRoutes);
 app.use('/api/rule', ruleRoutes);
 app.use('/api/validate', validateRoutes);
 app.get('/health', function (req, res) {

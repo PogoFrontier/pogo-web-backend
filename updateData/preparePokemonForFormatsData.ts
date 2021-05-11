@@ -1,7 +1,7 @@
 import fs from "fs"
 import p from "../data/pokemon.json";
 import r from "../data/rules.json";
-import { isSpeciesAllowed, doesClassDescribePokemon } from "../checks/checkTeam"
+import { isSpeciesAllowed, doesClassDescribePokemon } from "../team/checkTeam"
 import { Rule, PriceSetting } from "../types/rule"
 import https from 'https'
 
