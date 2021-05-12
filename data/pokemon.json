@@ -15510,10 +15510,45 @@
     "chargedMoves": [
       "DAZZLING_GLEAM",
       "DRAGON_PULSE",
-      "SKY_ATTACK"
+      "SKY_ATTACK",
+      "MOONBLAST"
+    ],
+    "eliteMoves": [
+      "MOONBLAST"
     ],
     "searchPriority": 21,
     "sid": 10688
+  },
+  "altaria_mega": {
+    "dex": 334,
+    "speciesName": "Altaria (Mega)",
+    "speciesId": "altaria_mega",
+    "baseStats": {
+      "atk": 222,
+      "def": 218,
+      "hp": 181
+    },
+    "types": [
+      "dragon",
+      "fairy"
+    ],
+    "fastMoves": [
+      "DRAGON_BREATH",
+      "PECK"
+    ],
+    "chargedMoves": [
+      "DAZZLING_GLEAM",
+      "DRAGON_PULSE",
+      "SKY_ATTACK",
+      "MOONBLAST"
+    ],
+    "eliteMoves": [
+      "MOONBLAST"
+    ],
+    "tags": [
+      "mega"
+    ],
+    "sid": 10689
   },
   "zangoose": {
     "dex": 335,
@@ -27925,10 +27960,11 @@
     "chargedMoves": [
       "MOONBLAST",
       "DAZZLING_GLEAM",
-      "DRAINING_KISS"
+      "DRAINING_KISS",
+      "LAST_RESORT"
     ],
-    "tags": [
-      "unreleased"
+    "eliteMoves": [
+      "LAST_RESORT"
     ],
     "sid": 22400
   },

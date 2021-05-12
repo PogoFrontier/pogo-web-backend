@@ -10,6 +10,19 @@
             "speciesClauseByDex": "true"
         }
     },
+    "Autorekt": {
+        "name": "Autorekt",
+        "maxCP": 1500,
+        "maxLevel": 50,
+        "maxBestBuddy": 1,
+        "maxMega": 1,
+        "flags": {
+            "speciesClauseByForm": "true"
+        },
+        "advancedOptions": {
+            "random": "true"
+        }
+    },
     "MainSeries Cup": {
         "name": "MainSeries Cup",
         "maxCP": 1500,
@@ -19,6 +32,10 @@
         "flags": {
             "speciesClauseByDex": "true"
         },
+        "exclude": [{
+            "filterType": "id",
+            "values": ["chansey", "blissey", "aegislash", "azumarill"]
+        }],
         "advancedOptions": {
             "movesets": "mainseries"
         }
