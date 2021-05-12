@@ -80,7 +80,7 @@ for(let id of Object.keys(pokemonList)) {
     let chargemoves = []
     
     for (let move of Object.keys(pokeWithLearnset.learnset)) {
-        let moveId: string | undefined = Object.keys(localMoves).find((moveId) => moveId.toLowerCase().replace("_", "") === move);
+        let moveId: string | undefined = Object.keys(localMoves).find((moveId) => moveId.toLowerCase().replace("_", "").replace("_", "") === move);
 
         if (move === "hiddenpower")  {
             for (let type of hpTypes) {
