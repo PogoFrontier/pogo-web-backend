@@ -37201,6 +37201,85 @@
     "searchPriority": 21,
     "sid": 10688
   },
+  "altaria_mega": {
+    "dex": 334,
+    "speciesName": "Altaria (Mega)",
+    "speciesId": "altaria_mega",
+    "baseStats": {
+      "atk": 222,
+      "def": 218,
+      "hp": 181
+    },
+    "types": [
+      "dragon",
+      "fairy"
+    ],
+    "fastMoves": [
+      "ASTONISH",
+      "DRAGON_BREATH",
+      "FIRE_SPIN",
+      "HIDDEN_POWER_BUG",
+      "HIDDEN_POWER_DARK",
+      "HIDDEN_POWER_DRAGON",
+      "HIDDEN_POWER_ELECTRIC",
+      "HIDDEN_POWER_FIGHTING",
+      "HIDDEN_POWER_FIRE",
+      "HIDDEN_POWER_FLYING",
+      "HIDDEN_POWER_GHOST",
+      "HIDDEN_POWER_GRASS",
+      "HIDDEN_POWER_GROUND",
+      "HIDDEN_POWER_ICE",
+      "HIDDEN_POWER_NORMAL",
+      "HIDDEN_POWER_POISON",
+      "HIDDEN_POWER_PSYCHIC",
+      "HIDDEN_POWER_ROCK",
+      "HIDDEN_POWER_STEEL",
+      "HIDDEN_POWER_WATER",
+      "INCINERATE",
+      "IRON_TAIL",
+      "MUD_SLAP",
+      "PECK",
+      "ROCK_SMASH",
+      "STEEL_WING",
+      "TAKE_DOWN"
+    ],
+    "chargedMoves": [
+      "AERIAL_ACE",
+      "AIR_CUTTER",
+      "BODY_SLAM",
+      "BULLDOZE",
+      "DAZZLING_GLEAM",
+      "DISARMING_VOICE",
+      "DRACO_METEOR",
+      "DRAGON_CLAW",
+      "DRAGON_PULSE",
+      "EARTHQUAKE",
+      "FIRE_BLAST",
+      "FLAMETHROWER",
+      "FLY",
+      "FRUSTRATION",
+      "GIGA_IMPACT",
+      "HEAT_WAVE",
+      "HURRICANE",
+      "HYPER_BEAM",
+      "ICE_BEAM",
+      "MOONBLAST",
+      "OMINOUS_WIND",
+      "OUTRAGE",
+      "PLAY_ROUGH",
+      "REST",
+      "RETURN",
+      "SKY_ATTACK",
+      "SOLAR_BEAM",
+      "SWIFT",
+      "TWISTER",
+      "STRUGGLE"
+    ],
+    "tags": [
+      "mega"
+    ],
+    "sid": 10689
+  },
   "zangoose": {
     "dex": 335,
     "speciesName": "Zangoose",
@@ -68441,9 +68520,6 @@
       "SHADOW_BALL",
       "SWIFT",
       "STRUGGLE"
-    ],
-    "tags": [
-      "unreleased"
     ],
     "sid": 22400
   },

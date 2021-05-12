@@ -32,6 +32,10 @@
         "flags": {
             "speciesClauseByDex": "true"
         },
+        "exclude": [{
+            "filterType": "id",
+            "values": ["chansey", "blissey", "aegislash", "azumarill"]
+        }],
         "advancedOptions": {
             "movesets": "mainseries"
         }
