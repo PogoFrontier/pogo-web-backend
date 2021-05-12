@@ -4,7 +4,7 @@ import { rooms } from "../matchhandling_server";
 import { CODE } from "../types/actions";
 import { OnJoinPayload } from "../types/handlers";
 import { TeamMemberDescription } from "../types/team";
-import { parseToTeamMembers, isTeamValid } from "../checks/checkTeam";
+import { parseToTeamMembers, isTeamValid } from "../team/checkTeam";
 import { Room } from "../types/room";
 import { pubClient } from "../redis/clients";
 

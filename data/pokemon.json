@@ -4101,7 +4101,7 @@
       "SUBMISSION",
       "PAYBACK"
     ],
-    "searchPriority": 5,
+    "searchPriority": 10,
     "level25CP": 1893,
     "tags": [
       "shadoweligible"
@@ -9616,6 +9616,7 @@
       "SURF",
       "WEATHER_BALL_WATER"
     ],
+    "searchPriority": 10,
     "level25CP": 1494,
     "tags": [
       "shadoweligible"
@@ -9623,7 +9624,6 @@
     "eliteMoves": [
       "EARTHQUAKE"
     ],
-    "searchPriority": 10,
     "sid": 5952
   },
   "politoed_shadow": {
@@ -11290,7 +11290,7 @@
       "WATER_PULSE",
       "BUBBLE_BEAM"
     ],
-    "searchPriority": 13,
+    "searchPriority": 5,
     "sid": 7232
   },
   "skarmory": {
@@ -11519,7 +11519,7 @@
     "eliteMoves": [
       "WATER_GUN"
     ],
-    "searchPriority": 5,
+    "searchPriority": 12,
     "sid": 7360
   },
   "phanpy": {
@@ -13661,6 +13661,7 @@
       "HYDRO_PUMP",
       "WEATHER_BALL_WATER"
     ],
+    "searchPriority": 10,
     "sid": 8928
   },
   "ralts": {
@@ -20280,6 +20281,7 @@
     "eliteMoves": [
       "FLAMETHROWER"
     ],
+    "searchPriority": 2,
     "level25CP": 1908,
     "tags": [
       "shadoweligible"
@@ -22991,6 +22993,7 @@
       "DRILL_RUN",
       "IRON_HEAD"
     ],
+    "searchPriority": 5,
     "sid": 16960
   },
   "audino": {
@@ -23254,9 +23257,6 @@
       "ENERGY_BALL",
       "BUG_BUZZ",
       "SILVER_WIND"
-    ],
-    "tags": [
-      "unreleased"
     ],
     "sid": 17312
   },
@@ -24742,6 +24742,7 @@
       "ICE_BEAM",
       "BUBBLE_BEAM"
     ],
+    "searchPriority": 10,
     "sid": 18976
   },
   "alomomola": {
@@ -27226,9 +27227,6 @@
       "CRUNCH",
       "BODY_SLAM"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "sid": 21568
   },
   "pangoro": {
@@ -27255,9 +27253,8 @@
       "IRON_HEAD",
       "ROCK_SLIDE"
     ],
-    "tags": [
-      "unreleased"
-    ],
+    "searchPriority": 5,
+    "levelFloor": 20,
     "sid": 21600
   },
   "furfrou": {
@@ -28090,6 +28087,7 @@
       "MUDDY_WATER",
       "POWER_WHIP"
     ],
+    "searchPriority": 5,
     "sid": 22592
   },
   "klefki": {
@@ -28357,9 +28355,6 @@
       "CLOSE_COMBAT",
       "GIGA_IMPACT",
       "THUNDER"
-    ],
-    "tags": [
-      "unreleased"
     ],
     "sid": 22913
   },

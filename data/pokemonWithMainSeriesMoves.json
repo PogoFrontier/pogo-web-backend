@@ -9867,7 +9867,7 @@
       "THUNDER_PUNCH",
       "STRUGGLE"
     ],
-    "searchPriority": 5,
+    "searchPriority": 10,
     "level25CP": 1893,
     "tags": [
       "shadoweligible"
@@ -22774,11 +22774,11 @@
       "WATER_PULSE",
       "STRUGGLE"
     ],
+    "searchPriority": 10,
     "level25CP": 1494,
     "tags": [
       "shadoweligible"
     ],
-    "searchPriority": 10,
     "sid": 5952
   },
   "politoed_shadow": {
@@ -26969,7 +26969,7 @@
       "WATER_PULSE",
       "STRUGGLE"
     ],
-    "searchPriority": 13,
+    "searchPriority": 5,
     "sid": 7232
   },
   "skarmory": {
@@ -27543,7 +27543,7 @@
       "WATER_PULSE",
       "STRUGGLE"
     ],
-    "searchPriority": 5,
+    "searchPriority": 12,
     "sid": 7360
   },
   "phanpy": {
@@ -32297,6 +32297,7 @@
       "WATER_PULSE",
       "STRUGGLE"
     ],
+    "searchPriority": 10,
     "sid": 8928
   },
   "ralts": {
@@ -49134,6 +49135,7 @@
       "WILD_CHARGE",
       "STRUGGLE"
     ],
+    "searchPriority": 2,
     "level25CP": 1908,
     "tags": [
       "shadoweligible"
@@ -56402,6 +56404,7 @@
       "X_SCISSOR",
       "STRUGGLE"
     ],
+    "searchPriority": 5,
     "sid": 16960
   },
   "audino": {
@@ -57078,9 +57081,6 @@
       "SIGNAL_BEAM",
       "SOLAR_BEAM",
       "STRUGGLE"
-    ],
-    "tags": [
-      "unreleased"
     ],
     "sid": 17312
   },
@@ -60559,6 +60559,7 @@
       "WATER_PULSE",
       "STRUGGLE"
     ],
+    "searchPriority": 10,
     "sid": 18976
   },
   "alomomola": {
@@ -66666,9 +66667,6 @@
       "THUNDER_PUNCH",
       "STRUGGLE"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "sid": 21568
   },
   "pangoro": {
@@ -66751,9 +66749,8 @@
       "X_SCISSOR",
       "STRUGGLE"
     ],
-    "tags": [
-      "unreleased"
-    ],
+    "searchPriority": 5,
+    "levelFloor": 20,
     "sid": 21600
   },
   "furfrou": {
@@ -68843,6 +68840,7 @@
       "WATER_PULSE",
       "STRUGGLE"
     ],
+    "searchPriority": 5,
     "sid": 22592
   },
   "klefki": {
@@ -69509,9 +69507,6 @@
       "THUNDER",
       "THUNDERBOLT",
       "STRUGGLE"
-    ],
-    "tags": [
-      "unreleased"
     ],
     "sid": 22913
   },
