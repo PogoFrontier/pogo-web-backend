@@ -11,7 +11,7 @@
     "update_data": "node --loader ts-node/esm --experimental-specifier-resolution=node updateData/addUnreleasedTags.ts && node --loader ts-node/esm --experimental-specifier-resolution=node updateData/makeMainSeriesMoveset.ts && node --loader ts-node/esm --experimental-specifier-resolution=node updateData/preparePokemonForFormatsData.ts",
     "dev": "npm run start_matchhandling && npm run start_rest",
     "dev_concurrently": "concurrently \"npm run start_matchhandling\" \"npm run start_rest\"",
-    "start": "concurrently \"tsc\" \"npm run runbuild\"",
+    "start": "npm run runbuild",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "tsc",
     "runbuild": "concurrently \"node --experimental-specifier-resolution=node dist/matchhandling_server.js\" \"node --experimental-specifier-resolution=node dist/api/rest_server.js\"",
