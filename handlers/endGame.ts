@@ -1,5 +1,5 @@
 import { rooms } from "../matchhandling_server";
-import { Room } from "../types/room";
+import { Room, RoomStatus } from "../types/room";
 import { pubClient, storeClient } from "../redis/clients";
 
 function endGame(room: string, timeout?: boolean, predefinedResult?: whoWon) {
@@ -9,6 +9,7 @@ function endGame(room: string, timeout?: boolean, predefinedResult?: whoWon) {
     if (currentRoom.timer) {
       clearInterval(currentRoom.timer);
     }
+    currentRoom.status = RoomStatus.ENDED
 
     // Cleat redis subscription
     if(currentRoom.subClient) {
