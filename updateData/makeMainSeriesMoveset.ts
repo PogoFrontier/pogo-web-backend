@@ -87,12 +87,12 @@ for(let id of Object.keys(pokemonList)) {
                 quickmoves.push("HIDDEN_POWER_" + type.toUpperCase())
             }
             continue;
-        } else if (moveId === "wheatherball") {
+        } else if (move === "weatherball") {
             for (let type of wbTypes) {
                 quickmoves.push("WEATHER_BALL_" + type.toUpperCase())
             }
             continue;
-        }else if (moveId === "technoblast") {
+        }else if (move === "technoblast") {
             let suffix = pokemon.speciesId.split("_")[1];
             if (!suffix) {
                 suffix = "normal"
