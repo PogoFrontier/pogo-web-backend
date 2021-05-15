@@ -10,7 +10,7 @@ export enum RoomStatus {
   STARTED,
   FAINT,
   CHARGE,
-  LISTENING
+  ENDED
 }
 
 export interface Move {

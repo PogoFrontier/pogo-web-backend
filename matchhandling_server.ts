@@ -37,7 +37,6 @@ app.use(cors);
 
 function onNewWebsocketConnection(ws: WebSocket, req: Request) {
     const id = req.url.substring(1);
-    console.info(`Socket ${id} has connected.`);
     let room = "";
     let formatsUsedForMatchmaking = Array<Rule>();
     let user: User = {
@@ -88,7 +87,7 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
             };
             pubClient.publish("commands:" + room, JSON.stringify(publication), (err, reply) => {
                 if (err) {
-                    console.error();
+                    console.error(err);
                 }
 
                 if (reply !== 1) {

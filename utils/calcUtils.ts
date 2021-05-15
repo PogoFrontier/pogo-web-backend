@@ -1,3 +1,7 @@
+import { PokemonSpecies } from "../types/team";
+
+export const shadowMult = [1.2, 0.83333331]
+
 var cpms = [0.0939999967813492, 0.1351374320893390, 0.1663978695869450, 0.1926509131553250, 0.2157324701547620, 
     0.2365726514248220, 0.2557200491428380, 0.2735303721065720, 0.2902498841285710, 0.3060573813898630, 
     0.3210875988006590, 0.3354450319964510, 0.3492126762866970, 0.3624577366099390, 0.3752355873584750, 
@@ -21,7 +25,7 @@ var cpms = [0.0939999967813492, 0.1351374320893390, 0.1663978695869450, 0.192650
     0.845300018787384, 0.847803702398935, 0.850300014019012, 0.852803676019539, 0.855300009250640, 
     0.857803649892077, 0.860300004482269, 0.862803624012168, 0.865299999713897]
 
-interface statset {
+export interface statset {
     atk: number
     def: number
     hp: number
@@ -53,6 +57,163 @@ export function calculateDef(baseStat: number, level: number, iv: number){
 
     return atk;
 }
+
+interface GetIVsProps {
+    pokemon: PokemonSpecies
+    baseStats: statset,
+    targetCP: number
+    sortStat?: 'atk' | 'def' | 'overall'
+    sortDirection?: number
+    resultCount?: number
+    ivFloor?: number
+    bbAllowed: boolean
+}
+  
+export function getIVs({
+    pokemon,
+    baseStats,
+    targetCP,
+    sortStat = 'overall',
+    sortDirection = 1,
+    resultCount = 1,
+    ivFloor,
+    bbAllowed = true
+  }: GetIVsProps) {
+    const levelCap = 50
+    let level = 0.5
+    let atkIV = 15
+    let defIV = 15
+    let hpIV = 15
+    let calcCP = 0
+    let overall = 0
+    let bestStat = 0
+    let cpm = 0
+    const combinations = []
+  
+    if (sortDirection === -1) {
+      bestStat = Infinity
+    }
+  
+    let floor = 0
+  
+    if (pokemon.tags && pokemon.tags.includes('legendary')) {
+      floor = 1
+    }
+  
+    if (ivFloor) {
+      floor = ivFloor
+    }
+  
+    if (pokemon.tags && pokemon.tags.includes('untradeable')) {
+      floor = 10
+    }
+  
+    hpIV = 15
+    while (hpIV >= floor) {
+      defIV = 15
+      while (defIV >= floor) {
+        atkIV = 15
+        while (atkIV >= floor) {
+          level = getMaxLevel(
+            baseStats,
+            { atk: atkIV, def: defIV, hp: hpIV },
+            targetCP,
+            levelCap,
+            bbAllowed
+          )
+          cpm = cpms[(level - 1) * 2]
+          calcCP = calculateCP(baseStats, level, { atk: atkIV, def: defIV, hp: hpIV })
+  
+          if (calcCP <= targetCP) {
+            const atk = cpm * (baseStats.atk + atkIV)
+            const def = cpm * (baseStats.def + defIV)
+            const hp = Math.floor(cpm * (baseStats.hp + hpIV))
+            overall = hp * atk * def
+  
+            const combination = {
+              level,
+              ivs: {
+                atk: atkIV,
+                def: defIV,
+                hp: hpIV,
+              },
+              atk,
+              def,
+              hp,
+              overall,
+              cp: calcCP,
+            }
+  
+            if (pokemon.tags && pokemon.tags.includes('shadow')) {
+              combination.atk *= shadowMult[0]
+              combination.def *= shadowMult[1]
+            }
+  
+            let valid = true
+  
+            // This whole jumble won't include combinations that don't beat our best or worst if we just want one result
+            if (resultCount === 1) {
+              if (sortDirection === 1) {
+                if (combination[sortStat] < bestStat) {
+                  valid = false
+                }
+              } else if (sortDirection === -1) {
+                if (combination[sortStat] > bestStat) {
+                  valid = false
+                }
+              }
+              if (valid) {
+                bestStat = combination[sortStat]
+              }
+            }
+            if (valid) {
+              combinations.push(combination)
+            }
+          }
+          atkIV--
+        }
+        defIV--
+      }
+      hpIV--
+    }
+  
+    combinations.sort((a, b) =>
+      a[sortStat] > b[sortStat]
+        ? -1 * sortDirection
+        : b[sortStat] > a[sortStat]
+        ? 1 * sortDirection
+        : 0
+    )
+    const results = combinations.splice(0, resultCount)
+  
+    return results
+}
+
+  
+function getMaxLevel(
+    baseStats: statset,
+    iv: statset,
+    targetCP: number,
+    levelCap: number,
+    bbAllowed: boolean
+  ): number {
+    let level = 0.5
+    if(bbAllowed) {
+        levelCap += 1 // For best buddy
+    }
+    let calcCP = 0
+  
+    while (level < levelCap && calcCP <= targetCP) {
+      level += 0.5
+      calcCP = calculateCP(baseStats, level, iv)
+    }
+  
+    if (calcCP > targetCP) {
+      level -= 0.5
+    }
+  
+    return level
+  }
 
 function getCpmByLevel(level: number){
     return  cpms[(level - 1) * 2]

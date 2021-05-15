@@ -3,7 +3,10 @@ import { Move } from "../types/room";
 import { TeamMember } from "../types/team"
 
 export function reduceTeam(teamMembers: TeamMember[]): object[] {
-    return teamMembers.map(reduceTeamMemberForOpponent)
+    if (teamMembers && teamMembers.length) {
+        return teamMembers.map(reduceTeamMemberForOpponent)
+    }
+    return []
 }
 
 export function reduceActionForOpponent(action: string, teamMembers: TeamMember[], move?: Move, turn?: number): string {

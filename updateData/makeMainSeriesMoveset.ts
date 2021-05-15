@@ -80,19 +80,19 @@ for(let id of Object.keys(pokemonList)) {
     let chargemoves = []
     
     for (let move of Object.keys(pokeWithLearnset.learnset)) {
-        let moveId: string | undefined = Object.keys(localMoves).find((moveId) => moveId.toLowerCase().replace("_", "") === move);
+        let moveId: string | undefined = Object.keys(localMoves).find((moveId) => moveId.toLowerCase().replace("_", "").replace("_", "") === move);
 
         if (move === "hiddenpower")  {
             for (let type of hpTypes) {
                 quickmoves.push("HIDDEN_POWER_" + type.toUpperCase())
             }
             continue;
-        } else if (moveId === "wheatherball") {
+        } else if (move === "weatherball") {
             for (let type of wbTypes) {
                 quickmoves.push("WEATHER_BALL_" + type.toUpperCase())
             }
             continue;
-        }else if (moveId === "technoblast") {
+        }else if (move === "technoblast") {
             let suffix = pokemon.speciesId.split("_")[1];
             if (!suffix) {
                 suffix = "normal"

@@ -5,24 +5,18 @@ const RULESETS: {
   [key: string]: Object
 } = r
 
-export function parseToRule(object: RuleDescription): Rule {
-  if (typeof object === "string") {
-    object = {
-      name: object
-    }
-  }
-  
-  if (!instanceOfRule(object)) {
-      let rule = RULESETS[object.name] as Rule
+export function parseToRule(format: RuleDescription): Rule {
+  if (!instanceOfRule(format)) {
+      let rule = RULESETS[format] as Rule
       if (!rule) {
-          throw new Error(`Format ${object.name} doesn't exist.`);
+          throw new Error(`Format ${format} doesn't exist.`);
       }
       return rule;
   }
 
-  return object;
+  return format;
 }
 
 function instanceOfRule(object: any): object is Rule {
-  return 'maxCP' in object && 'maxLevel' in object && 'maxBestBuddy' in object && 'maxMega' in object;
+  return typeof object !== "string" && 'maxCP' in object && 'maxLevel' in object && 'maxBestBuddy' in object && 'maxMega' in object;
 }

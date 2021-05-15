@@ -11,34 +11,34 @@
       "shadoweligible"
     ],
     "speciesName": "Bulbasaur",
-    "ranking": 502,
+    "ranking": 501,
     "moves": {
       "fastMoves": [
         {
           "moveId": "VINE_WHIP",
-          "uses": 94424
+          "uses": 94672
         },
         {
           "moveId": "TACKLE",
-          "uses": 20976
+          "uses": 21028
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 31530
+          "uses": 31630
         },
         {
           "moveId": "SEED_BOMB",
-          "uses": 33338
+          "uses": 33417
         },
         {
           "moveId": "RETURN",
-          "uses": 14564
+          "uses": 14597
         },
         {
           "moveId": "POWER_WHIP",
-          "uses": 35896
+          "uses": 35986
         }
       ]
     },
@@ -60,30 +60,30 @@
       "shadow"
     ],
     "speciesName": "Bulbasaur (Shadow)",
-    "ranking": 497,
+    "ranking": 427,
     "moves": {
       "fastMoves": [
         {
           "moveId": "VINE_WHIP",
-          "uses": 94737
+          "uses": 95036
         },
         {
           "moveId": "TACKLE",
-          "uses": 20663
+          "uses": 20664
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 37195
+          "uses": 37304
         },
         {
           "moveId": "SEED_BOMB",
-          "uses": 37290
+          "uses": 37379
         },
         {
           "moveId": "POWER_WHIP",
-          "uses": 40675
+          "uses": 40774
         },
         {
           "moveId": "FRUSTRATION",
@@ -94,7 +94,7 @@
     "moveset": [
       "VINE_WHIP",
       "POWER_WHIP",
-      "SEED_BOMB"
+      "SLUDGE_BOMB"
     ]
   },
   "ivysaur": {
@@ -109,34 +109,34 @@
       "shadoweligible"
     ],
     "speciesName": "Ivysaur",
-    "ranking": 589,
+    "ranking": 591,
     "moves": {
       "fastMoves": [
         {
           "moveId": "VINE_WHIP",
-          "uses": 75101
+          "uses": 75290
         },
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 40299
+          "uses": 40410
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 10329
+          "uses": 10353
         },
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 38196
+          "uses": 38317
         },
         {
           "moveId": "RETURN",
-          "uses": 18116
+          "uses": 18158
         },
         {
           "moveId": "POWER_WHIP",
-          "uses": 48887
+          "uses": 48999
         }
       ]
     },
@@ -158,30 +158,30 @@
       "shadow"
     ],
     "speciesName": "Ivysaur (Shadow)",
-    "ranking": 546,
+    "ranking": 548,
     "moves": {
       "fastMoves": [
         {
           "moveId": "VINE_WHIP",
-          "uses": 77305
+          "uses": 77506
         },
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 38095
+          "uses": 38194
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 12016
+          "uses": 12045
         },
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 46608
+          "uses": 46748
         },
         {
           "moveId": "POWER_WHIP",
-          "uses": 56706
+          "uses": 56837
         },
         {
           "moveId": "FRUSTRATION",
@@ -207,34 +207,34 @@
       "shadoweligible"
     ],
     "speciesName": "Venusaur",
-    "ranking": 633,
+    "ranking": 634,
     "moves": {
       "fastMoves": [
         {
           "moveId": "VINE_WHIP",
-          "uses": 80184
+          "uses": 80358
         },
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 35216
+          "uses": 35342
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 7599
+          "uses": 7618
         },
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 33431
+          "uses": 33527
         },
         {
           "moveId": "PETAL_BLIZZARD",
-          "uses": 9026
+          "uses": 9048
         },
         {
           "moveId": "FRENZY_PLANT",
-          "uses": 65516
+          "uses": 65679
         }
       ]
     },
@@ -275,25 +275,25 @@
       "fastMoves": [
         {
           "moveId": "VINE_WHIP",
-          "uses": 82749
+          "uses": 82934
         },
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 32651
+          "uses": 32766
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 7600
+          "uses": 7619
         },
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 33350
+          "uses": 33446
         },
         {
           "moveId": "PETAL_BLIZZARD",
-          "uses": 9002
+          "uses": 9024
         },
         {
           "moveId": "FRUSTRATION",
@@ -301,7 +301,7 @@
         },
         {
           "moveId": "FRENZY_PLANT",
-          "uses": 65527
+          "uses": 65690
         }
       ]
     },
@@ -452,29 +452,29 @@
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 73953
+          "uses": 74206
         },
         {
           "moveId": "BITE",
-          "uses": 41447
+          "uses": 41494
         }
       ],
       "chargedMoves": [
         {
           "moveId": "RETURN",
-          "uses": 23406
+          "uses": 23475
         },
         {
           "moveId": "ICE_BEAM",
-          "uses": 36487
+          "uses": 36574
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 28696
+          "uses": 28771
         },
         {
           "moveId": "AQUA_JET",
-          "uses": 26934
+          "uses": 27005
         }
       ]
     },
@@ -501,21 +501,21 @@
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 74338
+          "uses": 74575
         },
         {
           "moveId": "BITE",
-          "uses": 41062
+          "uses": 41125
         }
       ],
       "chargedMoves": [
         {
           "moveId": "ICE_BEAM",
-          "uses": 45895
+          "uses": 46005
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 35616
+          "uses": 35712
         },
         {
           "moveId": "FRUSTRATION",
@@ -523,7 +523,7 @@
         },
         {
           "moveId": "AQUA_JET",
-          "uses": 33555
+          "uses": 33645
         }
       ]
     },
@@ -550,33 +550,33 @@
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 78358
+          "uses": 78631
         },
         {
           "moveId": "BITE",
-          "uses": 37042
+          "uses": 37069
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SKULL_BASH",
-          "uses": 14333
+          "uses": 14371
         },
         {
           "moveId": "ICE_BEAM",
-          "uses": 20343
+          "uses": 20384
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 6777
+          "uses": 6794
         },
         {
           "moveId": "HYDRO_CANNON",
-          "uses": 64672
+          "uses": 64840
         },
         {
           "moveId": "FLASH_CANNON",
-          "uses": 9146
+          "uses": 9180
         }
       ]
     },
@@ -612,34 +612,34 @@
       "shadow"
     ],
     "speciesName": "Blastoise (Shadow)",
-    "ranking": 597,
+    "ranking": 598,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 79826
+          "uses": 80089
         },
         {
           "moveId": "BITE",
-          "uses": 35574
+          "uses": 35611
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SKULL_BASH",
-          "uses": 14337
+          "uses": 14375
         },
         {
           "moveId": "ICE_BEAM",
-          "uses": 20351
+          "uses": 20392
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 6773
+          "uses": 6790
         },
         {
           "moveId": "HYDRO_CANNON",
-          "uses": 64551
+          "uses": 64718
         },
         {
           "moveId": "FRUSTRATION",
@@ -647,7 +647,7 @@
         },
         {
           "moveId": "FLASH_CANNON",
-          "uses": 9190
+          "uses": 9225
         }
       ]
     },
@@ -1319,29 +1319,29 @@
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 67650
+          "uses": 67800
         },
         {
           "moveId": "ACID",
-          "uses": 47750
+          "uses": 47900
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 32245
+          "uses": 32335
         },
         {
           "moveId": "SEED_BOMB",
-          "uses": 41864
+          "uses": 41932
         },
         {
           "moveId": "RETURN",
-          "uses": 15104
+          "uses": 15132
         },
         {
           "moveId": "MOONBLAST",
-          "uses": 26014
+          "uses": 26129
         }
       ]
     },
@@ -1367,25 +1367,25 @@
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 67431
+          "uses": 67580
         },
         {
           "moveId": "ACID",
-          "uses": 47969
+          "uses": 48120
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 37809
+          "uses": 37908
         },
         {
           "moveId": "SEED_BOMB",
-          "uses": 47355
+          "uses": 47430
         },
         {
           "moveId": "MOONBLAST",
-          "uses": 30161
+          "uses": 30287
         },
         {
           "moveId": "FRUSTRATION",
@@ -1410,34 +1410,34 @@
       "shadoweligible"
     ],
     "speciesName": "Gloom",
-    "ranking": 586,
+    "ranking": 585,
     "moves": {
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 67708
+          "uses": 67856
         },
         {
           "moveId": "ACID",
-          "uses": 47692
+          "uses": 47844
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 36806
+          "uses": 36906
         },
         {
           "moveId": "RETURN",
-          "uses": 17668
+          "uses": 17698
         },
         {
           "moveId": "PETAL_BLIZZARD",
-          "uses": 30646
+          "uses": 30688
         },
         {
           "moveId": "MOONBLAST",
-          "uses": 30359
+          "uses": 30485
         }
       ]
     },
@@ -1463,25 +1463,25 @@
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 67317
+          "uses": 67466
         },
         {
           "moveId": "ACID",
-          "uses": 48083
+          "uses": 48234
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 43855
+          "uses": 43968
         },
         {
           "moveId": "PETAL_BLIZZARD",
-          "uses": 35354
+          "uses": 35402
         },
         {
           "moveId": "MOONBLAST",
-          "uses": 35984
+          "uses": 36124
         },
         {
           "moveId": "FRUSTRATION",
@@ -1511,29 +1511,29 @@
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 67128
+          "uses": 67279
         },
         {
           "moveId": "ACID",
-          "uses": 48272
+          "uses": 48421
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 11998
+          "uses": 12015
         },
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 40529
+          "uses": 40635
         },
         {
           "moveId": "PETAL_BLIZZARD",
-          "uses": 30095
+          "uses": 30139
         },
         {
           "moveId": "MOONBLAST",
-          "uses": 32601
+          "uses": 32733
         }
       ]
     },
@@ -1559,29 +1559,29 @@
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 66884
+          "uses": 67026
         },
         {
           "moveId": "ACID",
-          "uses": 48516
+          "uses": 48674
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 11982
+          "uses": 11999
         },
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 40414
+          "uses": 40519
         },
         {
           "moveId": "PETAL_BLIZZARD",
-          "uses": 30092
+          "uses": 30137
         },
         {
           "moveId": "MOONBLAST",
-          "uses": 32629
+          "uses": 32761
         },
         {
           "moveId": "FRUSTRATION",
@@ -1612,34 +1612,34 @@
       "grass"
     ],
     "speciesName": "Parasect",
-    "ranking": 515,
+    "ranking": 514,
     "moves": {
       "fastMoves": [
         {
           "moveId": "STRUGGLE_BUG",
-          "uses": 25727
+          "uses": 25796
         },
         {
           "moveId": "FURY_CUTTER",
-          "uses": 49793
+          "uses": 49932
         },
         {
           "moveId": "BUG_BITE",
-          "uses": 39860
+          "uses": 39951
         }
       ],
       "chargedMoves": [
         {
           "moveId": "X_SCISSOR",
-          "uses": 55219
+          "uses": 55317
         },
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 28216
+          "uses": 28284
         },
         {
           "moveId": "CROSS_POISON",
-          "uses": 31957
+          "uses": 32090
         }
       ]
     },
@@ -1871,46 +1871,46 @@
       "shadoweligible"
     ],
     "speciesName": "Golduck",
-    "ranking": 572,
+    "ranking": 573,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 62405
+          "uses": 62559
         },
         {
           "moveId": "CONFUSION",
-          "uses": 52995
+          "uses": 53141
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SYNCHRONOISE",
-          "uses": 17894
+          "uses": 17950
         },
         {
           "moveId": "RETURN",
-          "uses": 10965
+          "uses": 10996
         },
         {
           "moveId": "PSYCHIC",
-          "uses": 8098
+          "uses": 8123
         },
         {
           "moveId": "ICE_BEAM",
-          "uses": 19419
+          "uses": 19458
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 14730
+          "uses": 14764
         },
         {
           "moveId": "CROSS_CHOP",
-          "uses": 33314
+          "uses": 33403
         },
         {
           "moveId": "BUBBLE_BEAM",
-          "uses": 10876
+          "uses": 10901
         }
       ]
     },
@@ -1931,34 +1931,34 @@
       "shadow"
     ],
     "speciesName": "Golduck (Shadow)",
-    "ranking": 576,
+    "ranking": 578,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 61532
+          "uses": 61678
         },
         {
           "moveId": "CONFUSION",
-          "uses": 53868
+          "uses": 54022
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SYNCHRONOISE",
-          "uses": 19998
+          "uses": 20061
         },
         {
           "moveId": "PSYCHIC",
-          "uses": 9101
+          "uses": 9130
         },
         {
           "moveId": "ICE_BEAM",
-          "uses": 21664
+          "uses": 21708
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 16161
+          "uses": 16199
         },
         {
           "moveId": "FRUSTRATION",
@@ -1966,11 +1966,11 @@
         },
         {
           "moveId": "CROSS_CHOP",
-          "uses": 36369
+          "uses": 36469
         },
         {
           "moveId": "BUBBLE_BEAM",
-          "uses": 11900
+          "uses": 11928
         }
       ]
     },
@@ -2075,38 +2075,38 @@
       "shadoweligible"
     ],
     "speciesName": "Poliwhirl",
-    "ranking": 578,
+    "ranking": 577,
     "moves": {
       "fastMoves": [
         {
           "moveId": "MUD_SHOT",
-          "uses": 58868
+          "uses": 59011
         },
         {
           "moveId": "BUBBLE",
-          "uses": 56532
+          "uses": 56689
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 8835
+          "uses": 8859
         },
         {
           "moveId": "SCALD",
-          "uses": 23089
+          "uses": 23150
         },
         {
           "moveId": "RETURN",
-          "uses": 22422
+          "uses": 22483
         },
         {
           "moveId": "MUD_BOMB",
-          "uses": 42598
+          "uses": 42702
         },
         {
           "moveId": "BUBBLE_BEAM",
-          "uses": 18417
+          "uses": 18467
         }
       ]
     },
@@ -2127,30 +2127,30 @@
       "shadow"
     ],
     "speciesName": "Poliwhirl (Shadow)",
-    "ranking": 592,
+    "ranking": 591,
     "moves": {
       "fastMoves": [
         {
           "moveId": "MUD_SHOT",
-          "uses": 58243
+          "uses": 58391
         },
         {
           "moveId": "BUBBLE",
-          "uses": 57157
+          "uses": 57309
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 11110
+          "uses": 11140
         },
         {
           "moveId": "SCALD",
-          "uses": 28778
+          "uses": 28856
         },
         {
           "moveId": "MUD_BOMB",
-          "uses": 52424
+          "uses": 52555
         },
         {
           "moveId": "FRUSTRATION",
@@ -2158,7 +2158,7 @@
         },
         {
           "moveId": "BUBBLE_BEAM",
-          "uses": 22946
+          "uses": 23009
         }
       ]
     },
@@ -2179,42 +2179,42 @@
       "shadoweligible"
     ],
     "speciesName": "Poliwrath",
-    "ranking": 625,
+    "ranking": 623,
     "moves": {
       "fastMoves": [
         {
           "moveId": "ROCK_SMASH",
-          "uses": 19343
+          "uses": 19390
         },
         {
           "moveId": "MUD_SHOT",
-          "uses": 51436
+          "uses": 51566
         },
         {
           "moveId": "BUBBLE",
-          "uses": 44627
+          "uses": 44751
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SUBMISSION",
-          "uses": 8854
+          "uses": 8879
         },
         {
           "moveId": "POWER_UP_PUNCH",
-          "uses": 13541
+          "uses": 13576
         },
         {
           "moveId": "ICE_PUNCH",
-          "uses": 33549
+          "uses": 33625
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 19532
+          "uses": 19580
         },
         {
           "moveId": "DYNAMIC_PUNCH",
-          "uses": 39879
+          "uses": 39992
         }
       ]
     },
@@ -2235,38 +2235,38 @@
       "shadow"
     ],
     "speciesName": "Poliwrath (Shadow)",
-    "ranking": 641,
+    "ranking": 639,
     "moves": {
       "fastMoves": [
         {
           "moveId": "ROCK_SMASH",
-          "uses": 18486
+          "uses": 18524
         },
         {
           "moveId": "MUD_SHOT",
-          "uses": 51957
+          "uses": 52099
         },
         {
           "moveId": "BUBBLE",
-          "uses": 44974
+          "uses": 45095
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SUBMISSION",
-          "uses": 8863
+          "uses": 8888
         },
         {
           "moveId": "POWER_UP_PUNCH",
-          "uses": 13408
+          "uses": 13444
         },
         {
           "moveId": "ICE_PUNCH",
-          "uses": 33578
+          "uses": 33654
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 19602
+          "uses": 19649
         },
         {
           "moveId": "FRUSTRATION",
@@ -2274,7 +2274,7 @@
         },
         {
           "moveId": "DYNAMIC_PUNCH",
-          "uses": 39853
+          "uses": 39966
         }
       ]
     },
@@ -2451,38 +2451,38 @@
       "shadoweligible"
     ],
     "speciesName": "Weepinbell",
-    "ranking": 502,
+    "ranking": 500,
     "moves": {
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 33584
+          "uses": 33656
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 55542
+          "uses": 55696
         },
         {
           "moveId": "ACID",
-          "uses": 26327
+          "uses": 26401
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 31433
+          "uses": 31533
         },
         {
           "moveId": "SEED_BOMB",
-          "uses": 33247
+          "uses": 33329
         },
         {
           "moveId": "RETURN",
-          "uses": 14549
+          "uses": 14582
         },
         {
           "moveId": "POWER_WHIP",
-          "uses": 36089
+          "uses": 36176
         }
       ]
     },
@@ -2503,16 +2503,16 @@
       "shadow"
     ],
     "speciesName": "Weepinbell (Shadow)",
-    "ranking": 481,
+    "ranking": 436,
     "moves": {
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 32528
+          "uses": 32550
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 56975
+          "uses": 57242
         },
         {
           "moveId": "ACID",
@@ -2522,15 +2522,15 @@
       "chargedMoves": [
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 37139
+          "uses": 37248
         },
         {
           "moveId": "SEED_BOMB",
-          "uses": 37434
+          "uses": 37546
         },
         {
           "moveId": "POWER_WHIP",
-          "uses": 40646
+          "uses": 40725
         },
         {
           "moveId": "FRUSTRATION",
@@ -2541,7 +2541,7 @@
     "moveset": [
       "BULLET_SEED",
       "POWER_WHIP",
-      "SEED_BOMB"
+      "SLUDGE_BOMB"
     ]
   },
   "victreebel": {
@@ -2555,42 +2555,42 @@
       "shadoweligible"
     ],
     "speciesName": "Victreebel",
-    "ranking": 586,
+    "ranking": 585,
     "moves": {
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 67858
+          "uses": 68011
         },
         {
           "moveId": "ACID",
-          "uses": 47542
+          "uses": 47689
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 5191
+          "uses": 5205
         },
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 23768
+          "uses": 23839
         },
         {
           "moveId": "RETURN",
-          "uses": 10663
+          "uses": 10686
         },
         {
           "moveId": "LEAF_TORNADO",
-          "uses": 11907
+          "uses": 11937
         },
         {
           "moveId": "LEAF_BLADE",
-          "uses": 62090
+          "uses": 62248
         },
         {
           "moveId": "ACID_SPRAY",
-          "uses": 1615
+          "uses": 1619
         }
       ]
     },
@@ -2611,34 +2611,34 @@
       "shadow"
     ],
     "speciesName": "Victreebel (Shadow)",
-    "ranking": 610,
+    "ranking": 609,
     "moves": {
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 68263
+          "uses": 68417
         },
         {
           "moveId": "ACID",
-          "uses": 47137
+          "uses": 47283
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 5494
+          "uses": 5508
         },
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 26949
+          "uses": 27024
         },
         {
           "moveId": "LEAF_TORNADO",
-          "uses": 13050
+          "uses": 13083
         },
         {
           "moveId": "LEAF_BLADE",
-          "uses": 67729
+          "uses": 67900
         },
         {
           "moveId": "FRUSTRATION",
@@ -2646,7 +2646,7 @@
         },
         {
           "moveId": "ACID_SPRAY",
-          "uses": 1857
+          "uses": 1862
         }
       ]
     },
@@ -2664,30 +2664,30 @@
       "poison"
     ],
     "speciesName": "Tentacool",
-    "ranking": 444,
+    "ranking": 446,
     "moves": {
       "fastMoves": [
         {
           "moveId": "POISON_STING",
-          "uses": 49980
+          "uses": 50126
         },
         {
           "moveId": "BUBBLE",
-          "uses": 65420
+          "uses": 65574
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WRAP",
-          "uses": 48059
+          "uses": 48191
         },
         {
           "moveId": "WATER_PULSE",
-          "uses": 32845
+          "uses": 32925
         },
         {
           "moveId": "BUBBLE_BEAM",
-          "uses": 34413
+          "uses": 34501
         }
       ]
     },
@@ -2710,29 +2710,29 @@
       "fastMoves": [
         {
           "moveId": "POISON_JAB",
-          "uses": 84797
+          "uses": 85003
         },
         {
           "moveId": "ACID",
-          "uses": 30603
+          "uses": 30697
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SLUDGE_WAVE",
-          "uses": 37334
+          "uses": 37467
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 39384
+          "uses": 39460
         },
         {
           "moveId": "BLIZZARD",
-          "uses": 30663
+          "uses": 30723
         },
         {
           "moveId": "ACID_SPRAY",
-          "uses": 8115
+          "uses": 8143
         }
       ]
     },
@@ -2848,39 +2848,39 @@
       "shadoweligible"
     ],
     "speciesName": "Slowpoke",
-    "ranking": 521,
+    "ranking": 534,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 57712
+          "uses": 57869
         },
         {
           "moveId": "CONFUSION",
-          "uses": 57688
+          "uses": 57831
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 23918
+          "uses": 23964
         },
         {
           "moveId": "RETURN",
-          "uses": 21859
+          "uses": 21920
         },
         {
           "moveId": "PSYSHOCK",
-          "uses": 50251
+          "uses": 50389
         },
         {
           "moveId": "PSYCHIC",
-          "uses": 19351
+          "uses": 19404
         }
       ]
     },
     "moveset": [
-      "WATER_GUN",
+      "CONFUSION",
       "PSYSHOCK",
       "WATER_PULSE"
     ]
@@ -2901,25 +2901,25 @@
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 55979
+          "uses": 56114
         },
         {
           "moveId": "CONFUSION",
-          "uses": 59421
+          "uses": 59586
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 29876
+          "uses": 29939
         },
         {
           "moveId": "PSYSHOCK",
-          "uses": 61661
+          "uses": 61832
         },
         {
           "moveId": "PSYCHIC",
-          "uses": 23847
+          "uses": 23913
         },
         {
           "moveId": "FRUSTRATION",
@@ -2949,25 +2949,25 @@
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 56600
+          "uses": 56736
         },
         {
           "moveId": "CONFUSION",
-          "uses": 58800
+          "uses": 58964
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 26369
+          "uses": 26428
         },
         {
           "moveId": "PSYCHIC",
-          "uses": 48502
+          "uses": 48647
         },
         {
           "moveId": "ICE_BEAM",
-          "uses": 40539
+          "uses": 40634
         }
       ]
     },
@@ -2993,25 +2993,25 @@
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 54968
+          "uses": 55098
         },
         {
           "moveId": "CONFUSION",
-          "uses": 60432
+          "uses": 60602
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 26280
+          "uses": 26339
         },
         {
           "moveId": "PSYCHIC",
-          "uses": 48339
+          "uses": 48484
         },
         {
           "moveId": "ICE_BEAM",
-          "uses": 40580
+          "uses": 40675
         },
         {
           "moveId": "FRUSTRATION",
@@ -3115,38 +3115,38 @@
       "none"
     ],
     "speciesName": "Seel",
-    "ranking": 486,
+    "ranking": 487,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 42719
+          "uses": 42824
         },
         {
           "moveId": "LICK",
-          "uses": 36558
+          "uses": 36655
         },
         {
           "moveId": "ICE_SHARD",
-          "uses": 36201
+          "uses": 36299
         }
       ],
       "chargedMoves": [
         {
           "moveId": "ICY_WIND",
-          "uses": 38669
+          "uses": 38762
         },
         {
           "moveId": "AURORA_BEAM",
-          "uses": 7066
+          "uses": 7084
         },
         {
           "moveId": "AQUA_TAIL",
-          "uses": 60738
+          "uses": 60903
         },
         {
           "moveId": "AQUA_JET",
-          "uses": 8994
+          "uses": 9018
         }
       ]
     },
@@ -3169,37 +3169,37 @@
       "fastMoves": [
         {
           "moveId": "IRON_TAIL",
-          "uses": 14141
+          "uses": 14196
         },
         {
           "moveId": "ICE_SHARD",
-          "uses": 57727
+          "uses": 57868
         },
         {
           "moveId": "FROST_BREATH",
-          "uses": 43471
+          "uses": 43574
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 8352
+          "uses": 8371
         },
         {
           "moveId": "ICY_WIND",
-          "uses": 52205
+          "uses": 52346
         },
         {
           "moveId": "BLIZZARD",
-          "uses": 23173
+          "uses": 23236
         },
         {
           "moveId": "AURORA_BEAM",
-          "uses": 9206
+          "uses": 9230
         },
         {
           "moveId": "AQUA_JET",
-          "uses": 22242
+          "uses": 22293
         }
       ]
     },
@@ -3310,38 +3310,38 @@
       "shadoweligible"
     ],
     "speciesName": "Cloyster",
-    "ranking": 556,
+    "ranking": 554,
     "moves": {
       "fastMoves": [
         {
           "moveId": "ICE_SHARD",
-          "uses": 69674
+          "uses": 69837
         },
         {
           "moveId": "FROST_BREATH",
-          "uses": 45726
+          "uses": 45863
         }
       ],
       "chargedMoves": [
         {
           "moveId": "ICY_WIND",
-          "uses": 20463
+          "uses": 20518
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 19917
+          "uses": 19959
         },
         {
           "moveId": "BLIZZARD",
-          "uses": 9042
+          "uses": 9066
         },
         {
           "moveId": "AVALANCHE",
-          "uses": 58582
+          "uses": 58740
         },
         {
           "moveId": "AURORA_BEAM",
-          "uses": 7430
+          "uses": 7451
         }
       ]
     },
@@ -3362,26 +3362,26 @@
       "shadow"
     ],
     "speciesName": "Cloyster (Shadow)",
-    "ranking": 541,
+    "ranking": 540,
     "moves": {
       "fastMoves": [
         {
           "moveId": "ICE_SHARD",
-          "uses": 71864
+          "uses": 72032
         },
         {
           "moveId": "FROST_BREATH",
-          "uses": 43536
+          "uses": 43668
         }
       ],
       "chargedMoves": [
         {
           "moveId": "ICY_WIND",
-          "uses": 20353
+          "uses": 20408
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 19945
+          "uses": 19987
         },
         {
           "moveId": "FRUSTRATION",
@@ -3389,15 +3389,15 @@
         },
         {
           "moveId": "BLIZZARD",
-          "uses": 9033
+          "uses": 9057
         },
         {
           "moveId": "AVALANCHE",
-          "uses": 58427
+          "uses": 58584
         },
         {
           "moveId": "AURORA_BEAM",
-          "uses": 7465
+          "uses": 7485
         }
       ]
     },
@@ -3507,25 +3507,25 @@
       "fastMoves": [
         {
           "moveId": "MUD_SHOT",
-          "uses": 55491
+          "uses": 55626
         },
         {
           "moveId": "BUBBLE",
-          "uses": 59909
+          "uses": 60074
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 36700
+          "uses": 36794
         },
         {
           "moveId": "VICE_GRIP",
-          "uses": 40631
+          "uses": 40740
         },
         {
           "moveId": "BUBBLE_BEAM",
-          "uses": 38022
+          "uses": 38118
         }
       ]
     },
@@ -3543,38 +3543,38 @@
       "none"
     ],
     "speciesName": "Kingler",
-    "ranking": 580,
+    "ranking": 579,
     "moves": {
       "fastMoves": [
         {
           "moveId": "MUD_SHOT",
-          "uses": 48717
+          "uses": 48836
         },
         {
           "moveId": "METAL_CLAW",
-          "uses": 23317
+          "uses": 23387
         },
         {
           "moveId": "BUBBLE",
-          "uses": 43370
+          "uses": 43482
         }
       ],
       "chargedMoves": [
         {
           "moveId": "X_SCISSOR",
-          "uses": 37114
+          "uses": 37179
         },
         {
           "moveId": "WATER_PULSE",
-          "uses": 7799
+          "uses": 7822
         },
         {
           "moveId": "VICE_GRIP",
-          "uses": 16192
+          "uses": 16245
         },
         {
           "moveId": "CRABHAMMER",
-          "uses": 54194
+          "uses": 54352
         }
       ]
     },
@@ -3611,39 +3611,39 @@
       "shadoweligible"
     ],
     "speciesName": "Exeggcute",
-    "ranking": 520,
+    "ranking": 535,
     "moves": {
       "fastMoves": [
         {
           "moveId": "CONFUSION",
-          "uses": 57357
+          "uses": 57536
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 58043
+          "uses": 58164
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SEED_BOMB",
-          "uses": 44876
+          "uses": 44995
         },
         {
           "moveId": "RETURN",
-          "uses": 15634
+          "uses": 15685
         },
         {
           "moveId": "PSYCHIC",
-          "uses": 32335
+          "uses": 32427
         },
         {
           "moveId": "ANCIENT_POWER",
-          "uses": 22496
+          "uses": 22520
         }
       ]
     },
     "moveset": [
-      "BULLET_SEED",
+      "CONFUSION",
       "SEED_BOMB",
       "PSYCHIC"
     ]
@@ -3659,26 +3659,26 @@
       "shadow"
     ],
     "speciesName": "Exeggcute (Shadow)",
-    "ranking": 521,
+    "ranking": 531,
     "moves": {
       "fastMoves": [
         {
           "moveId": "CONFUSION",
-          "uses": 56833
+          "uses": 56989
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 58567
+          "uses": 58711
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SEED_BOMB",
-          "uses": 51359
+          "uses": 51505
         },
         {
           "moveId": "PSYCHIC",
-          "uses": 37502
+          "uses": 37623
         },
         {
           "moveId": "FRUSTRATION",
@@ -3686,12 +3686,12 @@
         },
         {
           "moveId": "ANCIENT_POWER",
-          "uses": 26405
+          "uses": 26440
         }
       ]
     },
     "moveset": [
-      "BULLET_SEED",
+      "CONFUSION",
       "SEED_BOMB",
       "PSYCHIC"
     ]
@@ -3707,38 +3707,38 @@
       "shadoweligible"
     ],
     "speciesName": "Exeggutor",
-    "ranking": 493,
+    "ranking": 492,
     "moves": {
       "fastMoves": [
         {
           "moveId": "ZEN_HEADBUTT",
-          "uses": 7650
+          "uses": 7668
         },
         {
           "moveId": "EXTRASENSORY",
-          "uses": 29048
+          "uses": 29127
         },
         {
           "moveId": "CONFUSION",
-          "uses": 36749
+          "uses": 36852
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 42028
+          "uses": 42130
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 22564
+          "uses": 22624
         },
         {
           "moveId": "SEED_BOMB",
-          "uses": 49372
+          "uses": 49503
         },
         {
           "moveId": "PSYCHIC",
-          "uses": 43402
+          "uses": 43512
         }
       ]
     },
@@ -3759,30 +3759,30 @@
       "alolan"
     ],
     "speciesName": "Exeggutor (Alolan)",
-    "ranking": 540,
+    "ranking": 533,
     "moves": {
       "fastMoves": [
         {
           "moveId": "DRAGON_TAIL",
-          "uses": 54834
+          "uses": 54966
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 60566
+          "uses": 60734
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 24715
+          "uses": 24791
         },
         {
           "moveId": "SEED_BOMB",
-          "uses": 54277
+          "uses": 54442
         },
         {
           "moveId": "DRAGON_PULSE",
-          "uses": 36185
+          "uses": 36242
         }
       ]
     },
@@ -3803,38 +3803,38 @@
       "shadow"
     ],
     "speciesName": "Exeggutor (Shadow)",
-    "ranking": 460,
+    "ranking": 461,
     "moves": {
       "fastMoves": [
         {
           "moveId": "ZEN_HEADBUTT",
-          "uses": 7101
+          "uses": 7115
         },
         {
           "moveId": "EXTRASENSORY",
-          "uses": 28927
+          "uses": 29004
         },
         {
           "moveId": "CONFUSION",
-          "uses": 36772
+          "uses": 36870
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 42735
+          "uses": 42845
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 22556
+          "uses": 22616
         },
         {
           "moveId": "SEED_BOMB",
-          "uses": 49227
+          "uses": 49359
         },
         {
           "moveId": "PSYCHIC",
-          "uses": 43357
+          "uses": 43467
         },
         {
           "moveId": "FRUSTRATION",
@@ -4044,34 +4044,34 @@
       "none"
     ],
     "speciesName": "Tangela",
-    "ranking": 530,
+    "ranking": 527,
     "moves": {
       "fastMoves": [
         {
           "moveId": "VINE_WHIP",
-          "uses": 68619
+          "uses": 68810
         },
         {
           "moveId": "INFESTATION",
-          "uses": 46781
+          "uses": 46890
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 10099
+          "uses": 10124
         },
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 32593
+          "uses": 32687
         },
         {
           "moveId": "POWER_WHIP",
-          "uses": 24207
+          "uses": 24267
         },
         {
           "moveId": "GRASS_KNOT",
-          "uses": 48332
+          "uses": 48452
         }
       ]
     },
@@ -4114,29 +4114,29 @@
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 56068
+          "uses": 56236
         },
         {
           "moveId": "DRAGON_BREATH",
-          "uses": 59332
+          "uses": 59464
         }
       ],
       "chargedMoves": [
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 37859
+          "uses": 37960
         },
         {
           "moveId": "DRAGON_PULSE",
-          "uses": 25079
+          "uses": 25134
         },
         {
           "moveId": "BLIZZARD",
-          "uses": 29305
+          "uses": 29386
         },
         {
           "moveId": "AURORA_BEAM",
-          "uses": 23508
+          "uses": 23573
         }
       ]
     },
@@ -4154,30 +4154,30 @@
       "none"
     ],
     "speciesName": "Goldeen",
-    "ranking": 473,
+    "ranking": 474,
     "moves": {
       "fastMoves": [
         {
           "moveId": "PECK",
-          "uses": 39449
+          "uses": 39590
         },
         {
           "moveId": "MUD_SHOT",
-          "uses": 75951
+          "uses": 76110
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 8305
+          "uses": 8326
         },
         {
           "moveId": "HORN_ATTACK",
-          "uses": 33101
+          "uses": 33187
         },
         {
           "moveId": "AQUA_TAIL",
-          "uses": 74024
+          "uses": 74217
         }
       ]
     },
@@ -4195,42 +4195,42 @@
       "none"
     ],
     "speciesName": "Seaking",
-    "ranking": 600,
+    "ranking": 598,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATERFALL",
-          "uses": 47808
+          "uses": 47913
         },
         {
           "moveId": "POISON_JAB",
-          "uses": 44921
+          "uses": 45045
         },
         {
           "moveId": "PECK",
-          "uses": 22653
+          "uses": 22724
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 11992
+          "uses": 12029
         },
         {
           "moveId": "MEGAHORN",
-          "uses": 22249
+          "uses": 22291
         },
         {
           "moveId": "ICY_WIND",
-          "uses": 31694
+          "uses": 31784
         },
         {
           "moveId": "ICE_BEAM",
-          "uses": 10205
+          "uses": 10234
         },
         {
           "moveId": "DRILL_RUN",
-          "uses": 39440
+          "uses": 39543
         }
       ]
     },
@@ -4262,105 +4262,105 @@
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 11243
+          "uses": 11273
         },
         {
           "moveId": "TACKLE",
-          "uses": 2628
+          "uses": 2636
         },
         {
           "moveId": "QUICK_ATTACK",
-          "uses": 8637
+          "uses": 8664
         },
         {
           "moveId": "HIDDEN_POWER_WATER",
-          "uses": 7368
+          "uses": 7387
         },
         {
           "moveId": "HIDDEN_POWER_STEEL",
-          "uses": 4777
+          "uses": 4796
         },
         {
           "moveId": "HIDDEN_POWER_ROCK",
-          "uses": 6005
+          "uses": 6015
         },
         {
           "moveId": "HIDDEN_POWER_PSYCHIC",
-          "uses": 6867
+          "uses": 6888
         },
         {
           "moveId": "HIDDEN_POWER_POISON",
-          "uses": 4804
+          "uses": 4823
         },
         {
           "moveId": "HIDDEN_POWER_ICE",
-          "uses": 6121
+          "uses": 6135
         },
         {
           "moveId": "HIDDEN_POWER_GROUND",
-          "uses": 6177
+          "uses": 6191
         },
         {
           "moveId": "HIDDEN_POWER_GRASS",
-          "uses": 5678
+          "uses": 5692
         },
         {
           "moveId": "HIDDEN_POWER_GHOST",
-          "uses": 5592
+          "uses": 5604
         },
         {
           "moveId": "HIDDEN_POWER_FLYING",
-          "uses": 5929
+          "uses": 5953
         },
         {
           "moveId": "HIDDEN_POWER_FIRE",
-          "uses": 6322
+          "uses": 6336
         },
         {
           "moveId": "HIDDEN_POWER_FIGHTING",
-          "uses": 5852
+          "uses": 5868
         },
         {
           "moveId": "HIDDEN_POWER_ELECTRIC",
-          "uses": 5981
+          "uses": 5995
         },
         {
           "moveId": "HIDDEN_POWER_DRAGON",
-          "uses": 4779
+          "uses": 4789
         },
         {
           "moveId": "HIDDEN_POWER_DARK",
-          "uses": 5511
+          "uses": 5516
         },
         {
           "moveId": "HIDDEN_POWER_BUG",
-          "uses": 4983
+          "uses": 4992
         }
       ],
       "chargedMoves": [
         {
           "moveId": "THUNDER",
-          "uses": 21216
+          "uses": 21268
         },
         {
           "moveId": "PSYCHIC",
-          "uses": 28111
+          "uses": 28208
         },
         {
           "moveId": "PSYBEAM",
-          "uses": 5738
+          "uses": 5757
         },
         {
           "moveId": "POWER_GEM",
-          "uses": 14009
+          "uses": 14029
         },
         {
           "moveId": "ICE_BEAM",
-          "uses": 24962
+          "uses": 25022
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 21353
+          "uses": 21405
         }
       ]
     },
@@ -4534,55 +4534,55 @@
       "shadoweligible"
     ],
     "speciesName": "Gyarados",
-    "ranking": 622,
+    "ranking": 632,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATERFALL",
-          "uses": 35249
+          "uses": 35351
         },
         {
           "moveId": "DRAGON_TAIL",
-          "uses": 27424
+          "uses": 27467
         },
         {
           "moveId": "DRAGON_BREATH",
-          "uses": 34263
+          "uses": 34387
         },
         {
           "moveId": "BITE",
-          "uses": 18440
+          "uses": 18479
         }
       ],
       "chargedMoves": [
         {
           "moveId": "TWISTER",
-          "uses": 9378
+          "uses": 9409
         },
         {
           "moveId": "OUTRAGE",
-          "uses": 17230
+          "uses": 17274
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 8034
+          "uses": 8061
         },
         {
           "moveId": "DRAGON_PULSE",
-          "uses": 5724
+          "uses": 5740
         },
         {
           "moveId": "CRUNCH",
-          "uses": 25579
+          "uses": 25607
         },
         {
           "moveId": "AQUA_TAIL",
-          "uses": 49467
+          "uses": 49637
         }
       ]
     },
     "moveset": [
-      "WATERFALL",
+      "DRAGON_BREATH",
       "AQUA_TAIL",
       "CRUNCH"
     ]
@@ -4611,38 +4611,38 @@
       "shadow"
     ],
     "speciesName": "Gyarados (Shadow)",
-    "ranking": 628,
+    "ranking": 622,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATERFALL",
-          "uses": 35636
+          "uses": 35744
         },
         {
           "moveId": "DRAGON_TAIL",
-          "uses": 27857
+          "uses": 27930
         },
         {
           "moveId": "DRAGON_BREATH",
-          "uses": 34790
+          "uses": 34875
         },
         {
           "moveId": "BITE",
-          "uses": 17040
+          "uses": 17069
         }
       ],
       "chargedMoves": [
         {
           "moveId": "TWISTER",
-          "uses": 9319
+          "uses": 9342
         },
         {
           "moveId": "OUTRAGE",
-          "uses": 17266
+          "uses": 17308
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 8041
+          "uses": 8067
         },
         {
           "moveId": "FRUSTRATION",
@@ -4650,20 +4650,20 @@
         },
         {
           "moveId": "DRAGON_PULSE",
-          "uses": 5723
+          "uses": 5740
         },
         {
           "moveId": "CRUNCH",
-          "uses": 25665
+          "uses": 25692
         },
         {
           "moveId": "AQUA_TAIL",
-          "uses": 49385
+          "uses": 49551
         }
       ]
     },
     "moveset": [
-      "WATERFALL",
+      "DRAGON_BREATH",
       "AQUA_TAIL",
       "CRUNCH"
     ]
@@ -4679,46 +4679,46 @@
       "shadoweligible"
     ],
     "speciesName": "Lapras",
-    "ranking": 647,
+    "ranking": 648,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 43070
+          "uses": 43190
         },
         {
           "moveId": "ICE_SHARD",
-          "uses": 42873
+          "uses": 42978
         },
         {
           "moveId": "FROST_BREATH",
-          "uses": 29416
+          "uses": 29493
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SURF",
-          "uses": 46389
+          "uses": 46512
         },
         {
           "moveId": "SKULL_BASH",
-          "uses": 14476
+          "uses": 14519
         },
         {
           "moveId": "ICE_BEAM",
-          "uses": 26920
+          "uses": 26988
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 7340
+          "uses": 7359
         },
         {
           "moveId": "DRAGON_PULSE",
-          "uses": 10812
+          "uses": 10834
         },
         {
           "moveId": "BLIZZARD",
-          "uses": 9321
+          "uses": 9343
         }
       ]
     },
@@ -4739,38 +4739,38 @@
       "shadow"
     ],
     "speciesName": "Lapras (Shadow)",
-    "ranking": 648,
+    "ranking": 647,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 41527
+          "uses": 41631
         },
         {
           "moveId": "ICE_SHARD",
-          "uses": 44386
+          "uses": 44490
         },
         {
           "moveId": "FROST_BREATH",
-          "uses": 29450
+          "uses": 29543
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SURF",
-          "uses": 46320
+          "uses": 46444
         },
         {
           "moveId": "SKULL_BASH",
-          "uses": 14419
+          "uses": 14462
         },
         {
           "moveId": "ICE_BEAM",
-          "uses": 26880
+          "uses": 26946
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 7357
+          "uses": 7376
         },
         {
           "moveId": "FRUSTRATION",
@@ -4778,11 +4778,11 @@
         },
         {
           "moveId": "DRAGON_PULSE",
-          "uses": 10797
+          "uses": 10821
         },
         {
           "moveId": "BLIZZARD",
-          "uses": 9202
+          "uses": 9225
         }
       ]
     },
@@ -4821,25 +4821,25 @@
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 115400
+          "uses": 115700
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 7902
+          "uses": 7923
         },
         {
           "moveId": "LAST_RESORT",
-          "uses": 26467
+          "uses": 26534
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 11087
+          "uses": 11117
         },
         {
           "moveId": "AQUA_TAIL",
-          "uses": 69933
+          "uses": 70116
         }
       ]
     },
@@ -4898,42 +4898,42 @@
       "shadoweligible"
     ],
     "speciesName": "Omanyte",
-    "ranking": 519,
+    "ranking": 518,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 55746
+          "uses": 55924
         },
         {
           "moveId": "MUD_SHOT",
-          "uses": 59654
+          "uses": 59776
         }
       ],
       "chargedMoves": [
         {
           "moveId": "ROCK_TOMB",
-          "uses": 7515
+          "uses": 7531
         },
         {
           "moveId": "ROCK_BLAST",
-          "uses": 39493
+          "uses": 39563
         },
         {
           "moveId": "RETURN",
-          "uses": 16112
+          "uses": 16177
         },
         {
           "moveId": "BUBBLE_BEAM",
-          "uses": 15927
+          "uses": 15979
         },
         {
           "moveId": "BRINE",
-          "uses": 23606
+          "uses": 23680
         },
         {
           "moveId": "ANCIENT_POWER",
-          "uses": 12683
+          "uses": 12706
         }
       ]
     },
@@ -4954,26 +4954,26 @@
       "shadow"
     ],
     "speciesName": "Omanyte (Shadow)",
-    "ranking": 535,
+    "ranking": 534,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 55328
+          "uses": 55483
         },
         {
           "moveId": "MUD_SHOT",
-          "uses": 60072
+          "uses": 60217
         }
       ],
       "chargedMoves": [
         {
           "moveId": "ROCK_TOMB",
-          "uses": 8971
+          "uses": 8989
         },
         {
           "moveId": "ROCK_BLAST",
-          "uses": 46061
+          "uses": 46151
         },
         {
           "moveId": "FRUSTRATION",
@@ -4981,15 +4981,15 @@
         },
         {
           "moveId": "BUBBLE_BEAM",
-          "uses": 18446
+          "uses": 18513
         },
         {
           "moveId": "BRINE",
-          "uses": 27157
+          "uses": 27255
         },
         {
           "moveId": "ANCIENT_POWER",
-          "uses": 14844
+          "uses": 14873
         }
       ]
     },
@@ -5010,38 +5010,38 @@
       "shadoweligible"
     ],
     "speciesName": "Omastar",
-    "ranking": 568,
+    "ranking": 567,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 36689
+          "uses": 36802
         },
         {
           "moveId": "ROCK_THROW",
-          "uses": 35331
+          "uses": 35413
         },
         {
           "moveId": "MUD_SHOT",
-          "uses": 43527
+          "uses": 43634
         }
       ],
       "chargedMoves": [
         {
           "moveId": "ROCK_SLIDE",
-          "uses": 47232
+          "uses": 47344
         },
         {
           "moveId": "ROCK_BLAST",
-          "uses": 33877
+          "uses": 33957
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 23416
+          "uses": 23500
         },
         {
           "moveId": "ANCIENT_POWER",
-          "uses": 10945
+          "uses": 10971
         }
       ]
     },
@@ -5062,34 +5062,34 @@
       "shadow"
     ],
     "speciesName": "Omastar (Shadow)",
-    "ranking": 585,
+    "ranking": 583,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 36110
+          "uses": 36221
         },
         {
           "moveId": "ROCK_THROW",
-          "uses": 35260
+          "uses": 35338
         },
         {
           "moveId": "MUD_SHOT",
-          "uses": 44067
+          "uses": 44178
         }
       ],
       "chargedMoves": [
         {
           "moveId": "ROCK_SLIDE",
-          "uses": 47239
+          "uses": 47350
         },
         {
           "moveId": "ROCK_BLAST",
-          "uses": 33876
+          "uses": 33955
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 23460
+          "uses": 23545
         },
         {
           "moveId": "FRUSTRATION",
@@ -5097,7 +5097,7 @@
         },
         {
           "moveId": "ANCIENT_POWER",
-          "uses": 10935
+          "uses": 10961
         }
       ]
     },
@@ -5115,30 +5115,30 @@
       "water"
     ],
     "speciesName": "Kabuto",
-    "ranking": 415,
+    "ranking": 414,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SCRATCH",
-          "uses": 41794
+          "uses": 41941
         },
         {
           "moveId": "MUD_SHOT",
-          "uses": 73606
+          "uses": 73759
         }
       ],
       "chargedMoves": [
         {
           "moveId": "ROCK_TOMB",
-          "uses": 16400
+          "uses": 16433
         },
         {
           "moveId": "AQUA_JET",
-          "uses": 44257
+          "uses": 44416
         },
         {
           "moveId": "ANCIENT_POWER",
-          "uses": 54801
+          "uses": 54910
         }
       ]
     },
@@ -5156,38 +5156,38 @@
       "water"
     ],
     "speciesName": "Kabutops",
-    "ranking": 542,
+    "ranking": 539,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATERFALL",
-          "uses": 31047
+          "uses": 31153
         },
         {
           "moveId": "ROCK_SMASH",
-          "uses": 11957
+          "uses": 12013
         },
         {
           "moveId": "MUD_SHOT",
-          "uses": 37113
+          "uses": 37186
         },
         {
           "moveId": "FURY_CUTTER",
-          "uses": 35275
+          "uses": 35338
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 24956
+          "uses": 25046
         },
         {
           "moveId": "STONE_EDGE",
-          "uses": 57196
+          "uses": 57328
         },
         {
           "moveId": "ANCIENT_POWER",
-          "uses": 33238
+          "uses": 33316
         }
       ]
     },
@@ -5449,30 +5449,30 @@
       "starter"
     ],
     "speciesName": "Bayleef",
-    "ranking": 585,
+    "ranking": 583,
     "moves": {
       "fastMoves": [
         {
           "moveId": "TACKLE",
-          "uses": 34283
+          "uses": 34372
         },
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 81117
+          "uses": 81328
         }
       ],
       "chargedMoves": [
         {
           "moveId": "GRASS_KNOT",
-          "uses": 59206
+          "uses": 59399
         },
         {
           "moveId": "ENERGY_BALL",
-          "uses": 21108
+          "uses": 21177
         },
         {
           "moveId": "ANCIENT_POWER",
-          "uses": 35020
+          "uses": 35058
         }
       ]
     },
@@ -5493,34 +5493,34 @@
       "starter"
     ],
     "speciesName": "Meganium",
-    "ranking": 620,
+    "ranking": 618,
     "moves": {
       "fastMoves": [
         {
           "moveId": "VINE_WHIP",
-          "uses": 79233
+          "uses": 79397
         },
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 36167
+          "uses": 36303
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 7948
+          "uses": 7972
         },
         {
           "moveId": "PETAL_BLIZZARD",
-          "uses": 9690
+          "uses": 9716
         },
         {
           "moveId": "FRENZY_PLANT",
-          "uses": 71030
+          "uses": 71232
         },
         {
           "moveId": "EARTHQUAKE",
-          "uses": 26765
+          "uses": 26812
         }
       ]
     },
@@ -5579,25 +5579,25 @@
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 75103
+          "uses": 75293
         },
         {
           "moveId": "SCRATCH",
-          "uses": 40297
+          "uses": 40407
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 14580
+          "uses": 14640
         },
         {
           "moveId": "CRUNCH",
-          "uses": 62527
+          "uses": 62609
         },
         {
           "moveId": "AQUA_JET",
-          "uses": 38346
+          "uses": 38505
         }
       ]
     },
@@ -5623,25 +5623,25 @@
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 76588
+          "uses": 76765
         },
         {
           "moveId": "SCRATCH",
-          "uses": 38812
+          "uses": 38935
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 22650
+          "uses": 22727
         },
         {
           "moveId": "ICE_PUNCH",
-          "uses": 47727
+          "uses": 47898
         },
         {
           "moveId": "CRUNCH",
-          "uses": 45049
+          "uses": 45101
         }
       ]
     },
@@ -5662,42 +5662,42 @@
       "starter"
     ],
     "speciesName": "Feraligatr",
-    "ranking": 575,
+    "ranking": 576,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 37046
+          "uses": 37148
         },
         {
           "moveId": "WATERFALL",
-          "uses": 35084
+          "uses": 35191
         },
         {
           "moveId": "ICE_FANG",
-          "uses": 26324
+          "uses": 26397
         },
         {
           "moveId": "BITE",
-          "uses": 17045
+          "uses": 17062
         }
       ],
       "chargedMoves": [
         {
           "moveId": "ICE_BEAM",
-          "uses": 20646
+          "uses": 20698
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 6717
+          "uses": 6739
         },
         {
           "moveId": "HYDRO_CANNON",
-          "uses": 64062
+          "uses": 64268
         },
         {
           "moveId": "CRUNCH",
-          "uses": 23944
+          "uses": 23966
         }
       ]
     },
@@ -5801,30 +5801,30 @@
       "electric"
     ],
     "speciesName": "Chinchou",
-    "ranking": 586,
+    "ranking": 587,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SPARK",
-          "uses": 59155
+          "uses": 59314
         },
         {
           "moveId": "BUBBLE",
-          "uses": 56245
+          "uses": 56386
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 27355
+          "uses": 27425
         },
         {
           "moveId": "THUNDERBOLT",
-          "uses": 59815
+          "uses": 59976
         },
         {
           "moveId": "BUBBLE_BEAM",
-          "uses": 28431
+          "uses": 28502
         }
       ]
     },
@@ -5847,29 +5847,29 @@
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 43984
+          "uses": 44099
         },
         {
           "moveId": "SPARK",
-          "uses": 43168
+          "uses": 43278
         },
         {
           "moveId": "CHARGE_BEAM",
-          "uses": 28238
+          "uses": 28312
         }
       ],
       "chargedMoves": [
         {
           "moveId": "THUNDERBOLT",
-          "uses": 52988
+          "uses": 53135
         },
         {
           "moveId": "THUNDER",
-          "uses": 23103
+          "uses": 23166
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 39287
+          "uses": 39375
         }
       ]
     },
@@ -6024,38 +6024,38 @@
       "shadoweligible"
     ],
     "speciesName": "Bellossom",
-    "ranking": 627,
+    "ranking": 622,
     "moves": {
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 34726
+          "uses": 34809
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 59026
+          "uses": 59186
         },
         {
           "moveId": "ACID",
-          "uses": 21634
+          "uses": 21693
         }
       ],
       "chargedMoves": [
         {
           "moveId": "RETURN",
-          "uses": 15113
+          "uses": 15142
         },
         {
           "moveId": "PETAL_BLIZZARD",
-          "uses": 8331
+          "uses": 8350
         },
         {
           "moveId": "LEAF_BLADE",
-          "uses": 79314
+          "uses": 79506
         },
         {
           "moveId": "DAZZLING_GLEAM",
-          "uses": 12883
+          "uses": 12945
         }
       ]
     },
@@ -6076,30 +6076,30 @@
       "shadow"
     ],
     "speciesName": "Bellossom (Shadow)",
-    "ranking": 611,
+    "ranking": 609,
     "moves": {
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 32838
+          "uses": 32912
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 61124
+          "uses": 61290
         },
         {
           "moveId": "ACID",
-          "uses": 21386
+          "uses": 21447
         }
       ],
       "chargedMoves": [
         {
           "moveId": "PETAL_BLIZZARD",
-          "uses": 9303
+          "uses": 9325
         },
         {
           "moveId": "LEAF_BLADE",
-          "uses": 90176
+          "uses": 90388
         },
         {
           "moveId": "FRUSTRATION",
@@ -6107,7 +6107,7 @@
         },
         {
           "moveId": "DAZZLING_GLEAM",
-          "uses": 15887
+          "uses": 15954
         }
       ]
     },
@@ -6153,42 +6153,42 @@
       "shadoweligible"
     ],
     "speciesName": "Politoed",
-    "ranking": 683,
+    "ranking": 684,
     "moves": {
       "fastMoves": [
         {
           "moveId": "MUD_SHOT",
-          "uses": 62296
+          "uses": 62449
         },
         {
           "moveId": "BUBBLE",
-          "uses": 53104
+          "uses": 53251
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WEATHER_BALL_WATER",
-          "uses": 52199
+          "uses": 52345
         },
         {
           "moveId": "SURF",
-          "uses": 17893
+          "uses": 17944
         },
         {
           "moveId": "RETURN",
-          "uses": 10798
+          "uses": 10828
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 5603
+          "uses": 5618
         },
         {
           "moveId": "EARTHQUAKE",
-          "uses": 15261
+          "uses": 15294
         },
         {
           "moveId": "BLIZZARD",
-          "uses": 13677
+          "uses": 13704
         }
       ]
     },
@@ -6209,30 +6209,30 @@
       "shadow"
     ],
     "speciesName": "Politoed (Shadow)",
-    "ranking": 698,
+    "ranking": 699,
     "moves": {
       "fastMoves": [
         {
           "moveId": "MUD_SHOT",
-          "uses": 62569
+          "uses": 62726
         },
         {
           "moveId": "BUBBLE",
-          "uses": 52831
+          "uses": 52974
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WEATHER_BALL_WATER",
-          "uses": 57110
+          "uses": 57273
         },
         {
           "moveId": "SURF",
-          "uses": 19560
+          "uses": 19614
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 6218
+          "uses": 6236
         },
         {
           "moveId": "FRUSTRATION",
@@ -6240,11 +6240,11 @@
         },
         {
           "moveId": "EARTHQUAKE",
-          "uses": 16970
+          "uses": 17005
         },
         {
           "moveId": "BLIZZARD",
-          "uses": 15399
+          "uses": 15428
         }
       ]
     },
@@ -6313,38 +6313,38 @@
       "shadoweligible"
     ],
     "speciesName": "Jumpluff",
-    "ranking": 630,
+    "ranking": 628,
     "moves": {
       "fastMoves": [
         {
           "moveId": "INFESTATION",
-          "uses": 51350
+          "uses": 51462
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 64050
+          "uses": 64238
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 10667
+          "uses": 10688
         },
         {
           "moveId": "RETURN",
-          "uses": 16853
+          "uses": 16889
         },
         {
           "moveId": "ENERGY_BALL",
-          "uses": 36337
+          "uses": 36408
         },
         {
           "moveId": "DAZZLING_GLEAM",
-          "uses": 15238
+          "uses": 15309
         },
         {
           "moveId": "AERIAL_ACE",
-          "uses": 36357
+          "uses": 36458
         }
       ]
     },
@@ -6365,22 +6365,22 @@
       "shadow"
     ],
     "speciesName": "Jumpluff (Shadow)",
-    "ranking": 641,
+    "ranking": 638,
     "moves": {
       "fastMoves": [
         {
           "moveId": "INFESTATION",
-          "uses": 51326
+          "uses": 51442
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 64074
+          "uses": 64258
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 12359
+          "uses": 12383
         },
         {
           "moveId": "FRUSTRATION",
@@ -6388,15 +6388,15 @@
         },
         {
           "moveId": "ENERGY_BALL",
-          "uses": 41556
+          "uses": 41636
         },
         {
           "moveId": "DAZZLING_GLEAM",
-          "uses": 17873
+          "uses": 17952
         },
         {
           "moveId": "AERIAL_ACE",
-          "uses": 43399
+          "uses": 43514
         }
       ]
     },
@@ -6445,41 +6445,41 @@
       "none"
     ],
     "speciesName": "Sunflora",
-    "ranking": 494,
+    "ranking": 492,
     "moves": {
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 41269
+          "uses": 41375
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 74131
+          "uses": 74325
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 14244
+          "uses": 14278
         },
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 41283
+          "uses": 41404
         },
         {
           "moveId": "PETAL_BLIZZARD",
-          "uses": 17680
+          "uses": 17722
         },
         {
           "moveId": "LEAF_STORM",
-          "uses": 42427
+          "uses": 42529
         }
       ]
     },
     "moveset": [
       "BULLET_SEED",
-      "LEAF_STORM",
-      "SLUDGE_BOMB"
+      "SLUDGE_BOMB",
+      "LEAF_STORM"
     ]
   },
   "yanma": {
@@ -6530,33 +6530,33 @@
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 49870
+          "uses": 50006
         },
         {
           "moveId": "MUD_SHOT",
-          "uses": 65530
+          "uses": 65694
         }
       ],
       "chargedMoves": [
         {
           "moveId": "STONE_EDGE",
-          "uses": 33865
+          "uses": 33910
         },
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 24523
+          "uses": 24629
         },
         {
           "moveId": "RETURN",
-          "uses": 15672
+          "uses": 15726
         },
         {
           "moveId": "EARTHQUAKE",
-          "uses": 39463
+          "uses": 39551
         },
         {
           "moveId": "ACID_SPRAY",
-          "uses": 1867
+          "uses": 1874
         }
       ]
     },
@@ -6577,26 +6577,26 @@
       "shadow"
     ],
     "speciesName": "Quagsire (Shadow)",
-    "ranking": 599,
+    "ranking": 596,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 48068
+          "uses": 48204
         },
         {
           "moveId": "MUD_SHOT",
-          "uses": 67332
+          "uses": 67496
         }
       ],
       "chargedMoves": [
         {
           "moveId": "STONE_EDGE",
-          "uses": 39008
+          "uses": 39062
         },
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 28743
+          "uses": 28871
         },
         {
           "moveId": "FRUSTRATION",
@@ -6604,11 +6604,11 @@
         },
         {
           "moveId": "EARTHQUAKE",
-          "uses": 45310
+          "uses": 45419
         },
         {
           "moveId": "ACID_SPRAY",
-          "uses": 2089
+          "uses": 2099
         }
       ]
     },
@@ -6654,30 +6654,30 @@
       "shadoweligible"
     ],
     "speciesName": "Slowking",
-    "ranking": 501,
+    "ranking": 502,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 56511
+          "uses": 56647
         },
         {
           "moveId": "CONFUSION",
-          "uses": 58889
+          "uses": 59053
         }
       ],
       "chargedMoves": [
         {
           "moveId": "PSYCHIC",
-          "uses": 54397
+          "uses": 54561
         },
         {
           "moveId": "FIRE_BLAST",
-          "uses": 28562
+          "uses": 28622
         },
         {
           "moveId": "BLIZZARD",
-          "uses": 32484
+          "uses": 32562
         }
       ]
     },
@@ -6698,22 +6698,22 @@
       "shadow"
     ],
     "speciesName": "Slowking (Shadow)",
-    "ranking": 523,
+    "ranking": 522,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 54860
+          "uses": 54990
         },
         {
           "moveId": "CONFUSION",
-          "uses": 60540
+          "uses": 60710
         }
       ],
       "chargedMoves": [
         {
           "moveId": "PSYCHIC",
-          "uses": 54379
+          "uses": 54542
         },
         {
           "moveId": "FRUSTRATION",
@@ -6721,11 +6721,11 @@
         },
         {
           "moveId": "FIRE_BLAST",
-          "uses": 28478
+          "uses": 28538
         },
         {
           "moveId": "BLIZZARD",
-          "uses": 32418
+          "uses": 32496
         }
       ]
     },
@@ -6901,38 +6901,38 @@
       "poison"
     ],
     "speciesName": "Qwilfish",
-    "ranking": 558,
+    "ranking": 561,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 60947
+          "uses": 61095
         },
         {
           "moveId": "POISON_STING",
-          "uses": 54453
+          "uses": 54605
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SLUDGE_WAVE",
-          "uses": 20915
+          "uses": 20995
         },
         {
           "moveId": "ICE_BEAM",
-          "uses": 23040
+          "uses": 23091
         },
         {
           "moveId": "FELL_STINGER",
-          "uses": 10357
+          "uses": 10373
         },
         {
           "moveId": "AQUA_TAIL",
-          "uses": 56430
+          "uses": 56567
         },
         {
           "moveId": "ACID_SPRAY",
-          "uses": 4600
+          "uses": 4617
         }
       ]
     },
@@ -7134,30 +7134,30 @@
       "regional"
     ],
     "speciesName": "Corsola",
-    "ranking": 584,
+    "ranking": 585,
     "moves": {
       "fastMoves": [
         {
           "moveId": "TACKLE",
-          "uses": 30417
+          "uses": 30538
         },
         {
           "moveId": "BUBBLE",
-          "uses": 84983
+          "uses": 85162
         }
       ],
       "chargedMoves": [
         {
           "moveId": "ROCK_BLAST",
-          "uses": 67274
+          "uses": 67424
         },
         {
           "moveId": "POWER_GEM",
-          "uses": 16836
+          "uses": 16873
         },
         {
           "moveId": "BUBBLE_BEAM",
-          "uses": 31285
+          "uses": 31399
         }
       ]
     },
@@ -7189,33 +7189,33 @@
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 58639
+          "uses": 58804
         },
         {
           "moveId": "MUD_SHOT",
-          "uses": 56761
+          "uses": 56896
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 13347
+          "uses": 13379
         },
         {
           "moveId": "OCTAZOOKA",
-          "uses": 44428
+          "uses": 44531
         },
         {
           "moveId": "GUNK_SHOT",
-          "uses": 24066
+          "uses": 24152
         },
         {
           "moveId": "AURORA_BEAM",
-          "uses": 26730
+          "uses": 26787
         },
         {
           "moveId": "ACID_SPRAY",
-          "uses": 6835
+          "uses": 6859
         }
       ]
     },
@@ -7255,38 +7255,38 @@
       "flying"
     ],
     "speciesName": "Mantine",
-    "ranking": 670,
+    "ranking": 669,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WING_ATTACK",
-          "uses": 41135
+          "uses": 41262
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 35059
+          "uses": 35144
         },
         {
           "moveId": "BUBBLE",
-          "uses": 39067
+          "uses": 39155
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 20308
+          "uses": 20348
         },
         {
           "moveId": "ICE_BEAM",
-          "uses": 32663
+          "uses": 32730
         },
         {
           "moveId": "BUBBLE_BEAM",
-          "uses": 21041
+          "uses": 21084
         },
         {
           "moveId": "AERIAL_ACE",
-          "uses": 41473
+          "uses": 41622
         }
       ]
     },
@@ -7382,38 +7382,38 @@
       "dragon"
     ],
     "speciesName": "Kingdra",
-    "ranking": 596,
+    "ranking": 593,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 35173
+          "uses": 35270
         },
         {
           "moveId": "WATERFALL",
-          "uses": 34511
+          "uses": 34609
         },
         {
           "moveId": "DRAGON_BREATH",
-          "uses": 45663
+          "uses": 45768
         }
       ],
       "chargedMoves": [
         {
           "moveId": "OUTRAGE",
-          "uses": 37753
+          "uses": 37835
         },
         {
           "moveId": "OCTAZOOKA",
-          "uses": 29771
+          "uses": 29858
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 24916
+          "uses": 24988
         },
         {
           "moveId": "BLIZZARD",
-          "uses": 22888
+          "uses": 22947
         }
       ]
     },
@@ -7742,30 +7742,30 @@
       "starter"
     ],
     "speciesName": "Grovyle",
-    "ranking": 571,
+    "ranking": 569,
     "moves": {
       "fastMoves": [
         {
           "moveId": "QUICK_ATTACK",
-          "uses": 45991
+          "uses": 46110
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 69409
+          "uses": 69590
         }
       ],
       "chargedMoves": [
         {
           "moveId": "LEAF_BLADE",
-          "uses": 76731
+          "uses": 76929
         },
         {
           "moveId": "GRASS_KNOT",
-          "uses": 15224
+          "uses": 15263
         },
         {
           "moveId": "AERIAL_ACE",
-          "uses": 23565
+          "uses": 23627
         }
       ]
     },
@@ -7786,38 +7786,38 @@
       "starter"
     ],
     "speciesName": "Sceptile",
-    "ranking": 595,
+    "ranking": 593,
     "moves": {
       "fastMoves": [
         {
           "moveId": "FURY_CUTTER",
-          "uses": 54182
+          "uses": 54306
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 61218
+          "uses": 61394
         }
       ],
       "chargedMoves": [
         {
           "moveId": "LEAF_BLADE",
-          "uses": 48904
+          "uses": 49048
         },
         {
           "moveId": "FRENZY_PLANT",
-          "uses": 18185
+          "uses": 18238
         },
         {
           "moveId": "EARTHQUAKE",
-          "uses": 13525
+          "uses": 13549
         },
         {
           "moveId": "DRAGON_CLAW",
-          "uses": 21347
+          "uses": 21381
         },
         {
           "moveId": "AERIAL_ACE",
-          "uses": 13552
+          "uses": 13597
         }
       ]
     },
@@ -7896,34 +7896,34 @@
       "shadoweligible"
     ],
     "speciesName": "Marshtomp",
-    "ranking": 620,
+    "ranking": 619,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 50364
+          "uses": 50496
         },
         {
           "moveId": "MUD_SHOT",
-          "uses": 65036
+          "uses": 65204
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SURF",
-          "uses": 45902
+          "uses": 46017
         },
         {
           "moveId": "SLUDGE",
-          "uses": 20678
+          "uses": 20746
         },
         {
           "moveId": "RETURN",
-          "uses": 12240
+          "uses": 12274
         },
         {
           "moveId": "MUD_BOMB",
-          "uses": 36541
+          "uses": 36623
         }
       ]
     },
@@ -7945,30 +7945,30 @@
       "shadow"
     ],
     "speciesName": "Marshtomp (Shadow)",
-    "ranking": 636,
+    "ranking": 635,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 49067
+          "uses": 49190
         },
         {
           "moveId": "MUD_SHOT",
-          "uses": 66333
+          "uses": 66510
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SURF",
-          "uses": 50989
+          "uses": 51119
         },
         {
           "moveId": "SLUDGE",
-          "uses": 23878
+          "uses": 23955
         },
         {
           "moveId": "MUD_BOMB",
-          "uses": 40515
+          "uses": 40609
         },
         {
           "moveId": "FRUSTRATION",
@@ -7994,38 +7994,38 @@
       "shadoweligible"
     ],
     "speciesName": "Swampert",
-    "ranking": 685,
+    "ranking": 686,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 46719
+          "uses": 46845
         },
         {
           "moveId": "MUD_SHOT",
-          "uses": 68681
+          "uses": 68855
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SURF",
-          "uses": 16190
+          "uses": 16233
         },
         {
           "moveId": "SLUDGE_WAVE",
-          "uses": 12395
+          "uses": 12431
         },
         {
           "moveId": "MUDDY_WATER",
-          "uses": 18709
+          "uses": 18757
         },
         {
           "moveId": "HYDRO_CANNON",
-          "uses": 48645
+          "uses": 48776
         },
         {
           "moveId": "EARTHQUAKE",
-          "uses": 19353
+          "uses": 19392
         }
       ]
     },
@@ -8047,34 +8047,34 @@
       "shadow"
     ],
     "speciesName": "Swampert (Shadow)",
-    "ranking": 697,
+    "ranking": 698,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 45200
+          "uses": 45307
         },
         {
           "moveId": "MUD_SHOT",
-          "uses": 70200
+          "uses": 70393
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SURF",
-          "uses": 16197
+          "uses": 16240
         },
         {
           "moveId": "SLUDGE_WAVE",
-          "uses": 12508
+          "uses": 12544
         },
         {
           "moveId": "MUDDY_WATER",
-          "uses": 18688
+          "uses": 18738
         },
         {
           "moveId": "HYDRO_CANNON",
-          "uses": 48660
+          "uses": 48789
         },
         {
           "moveId": "FRUSTRATION",
@@ -8082,7 +8082,7 @@
         },
         {
           "moveId": "EARTHQUAKE",
-          "uses": 19356
+          "uses": 19397
         }
       ]
     },
@@ -8203,30 +8203,30 @@
       "grass"
     ],
     "speciesName": "Lombre",
-    "ranking": 477,
+    "ranking": 474,
     "moves": {
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 46843
+          "uses": 46978
         },
         {
           "moveId": "BUBBLE",
-          "uses": 68557
+          "uses": 68722
         }
       ],
       "chargedMoves": [
         {
           "moveId": "ICE_BEAM",
-          "uses": 37358
+          "uses": 37439
         },
         {
           "moveId": "GRASS_KNOT",
-          "uses": 55752
+          "uses": 55919
         },
         {
           "moveId": "BUBBLE_BEAM",
-          "uses": 22339
+          "uses": 22390
         }
       ]
     },
@@ -8244,42 +8244,42 @@
       "grass"
     ],
     "speciesName": "Ludicolo",
-    "ranking": 535,
+    "ranking": 533,
     "moves": {
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 46956
+          "uses": 47086
         },
         {
           "moveId": "BUBBLE",
-          "uses": 68444
+          "uses": 68614
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 7870
+          "uses": 7894
         },
         {
           "moveId": "LEAF_STORM",
-          "uses": 23789
+          "uses": 23861
         },
         {
           "moveId": "ICE_BEAM",
-          "uses": 26250
+          "uses": 26304
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 21187
+          "uses": 21234
         },
         {
           "moveId": "ENERGY_BALL",
-          "uses": 27197
+          "uses": 27280
         },
         {
           "moveId": "BLIZZARD",
-          "uses": 9037
+          "uses": 9055
         }
       ]
     },
@@ -8324,34 +8324,34 @@
       "shadoweligible"
     ],
     "speciesName": "Nuzleaf",
-    "ranking": 548,
+    "ranking": 544,
     "moves": {
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 50628
+          "uses": 50856
         },
         {
           "moveId": "FEINT_ATTACK",
-          "uses": 64772
+          "uses": 64844
         }
       ],
       "chargedMoves": [
         {
           "moveId": "RETURN",
-          "uses": 10756
+          "uses": 10788
         },
         {
           "moveId": "LEAF_BLADE",
-          "uses": 60520
+          "uses": 60724
         },
         {
           "moveId": "GRASS_KNOT",
-          "uses": 11962
+          "uses": 12001
         },
         {
           "moveId": "FOUL_PLAY",
-          "uses": 32076
+          "uses": 32100
         }
       ]
     },
@@ -8372,26 +8372,26 @@
       "shadow"
     ],
     "speciesName": "Nuzleaf (Shadow)",
-    "ranking": 532,
+    "ranking": 531,
     "moves": {
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 49792
+          "uses": 50018
         },
         {
           "moveId": "FEINT_ATTACK",
-          "uses": 65608
+          "uses": 65682
         }
       ],
       "chargedMoves": [
         {
           "moveId": "LEAF_BLADE",
-          "uses": 66182
+          "uses": 66410
         },
         {
           "moveId": "GRASS_KNOT",
-          "uses": 13205
+          "uses": 13252
         },
         {
           "moveId": "FRUSTRATION",
@@ -8399,7 +8399,7 @@
         },
         {
           "moveId": "FOUL_PLAY",
-          "uses": 36091
+          "uses": 36118
         }
       ]
     },
@@ -8420,46 +8420,46 @@
       "shadoweligible"
     ],
     "speciesName": "Shiftry",
-    "ranking": 625,
+    "ranking": 621,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SNARL",
-          "uses": 36681
+          "uses": 36759
         },
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 17627
+          "uses": 17687
         },
         {
           "moveId": "FEINT_ATTACK",
-          "uses": 24710
+          "uses": 24745
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 36472
+          "uses": 36599
         }
       ],
       "chargedMoves": [
         {
           "moveId": "RETURN",
-          "uses": 8757
+          "uses": 8783
         },
         {
           "moveId": "LEAF_TORNADO",
-          "uses": 10517
+          "uses": 10550
         },
         {
           "moveId": "LEAF_BLADE",
-          "uses": 54911
+          "uses": 55083
         },
         {
           "moveId": "HURRICANE",
-          "uses": 13377
+          "uses": 13427
         },
         {
           "moveId": "FOUL_PLAY",
-          "uses": 27786
+          "uses": 27806
         }
       ]
     },
@@ -8480,38 +8480,38 @@
       "shadow"
     ],
     "speciesName": "Shiftry (Shadow)",
-    "ranking": 621,
+    "ranking": 619,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SNARL",
-          "uses": 37231
+          "uses": 37302
         },
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 16448
+          "uses": 16512
         },
         {
           "moveId": "FEINT_ATTACK",
-          "uses": 24239
+          "uses": 24272
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 37525
+          "uses": 37655
         }
       ],
       "chargedMoves": [
         {
           "moveId": "LEAF_TORNADO",
-          "uses": 11263
+          "uses": 11299
         },
         {
           "moveId": "LEAF_BLADE",
-          "uses": 58901
+          "uses": 59090
         },
         {
           "moveId": "HURRICANE",
-          "uses": 14958
+          "uses": 15014
         },
         {
           "moveId": "FRUSTRATION",
@@ -8519,7 +8519,7 @@
         },
         {
           "moveId": "FOUL_PLAY",
-          "uses": 30293
+          "uses": 30314
         }
       ]
     },
@@ -8562,34 +8562,34 @@
       "flying"
     ],
     "speciesName": "Pelipper",
-    "ranking": 661,
+    "ranking": 659,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WING_ATTACK",
-          "uses": 60595
+          "uses": 60803
         },
         {
           "moveId": "WATER_GUN",
-          "uses": 54805
+          "uses": 54897
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WEATHER_BALL_WATER",
-          "uses": 67711
+          "uses": 67875
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 7524
+          "uses": 7542
         },
         {
           "moveId": "HURRICANE",
-          "uses": 25098
+          "uses": 25188
         },
         {
           "moveId": "BLIZZARD",
-          "uses": 15206
+          "uses": 15234
         }
       ]
     },
@@ -8699,34 +8699,34 @@
       "fighting"
     ],
     "speciesName": "Breloom",
-    "ranking": 512,
+    "ranking": 511,
     "moves": {
       "fastMoves": [
         {
           "moveId": "COUNTER",
-          "uses": 65673
+          "uses": 65845
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 49727
+          "uses": 49855
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 20549
+          "uses": 20614
         },
         {
           "moveId": "SEED_BOMB",
-          "uses": 27496
+          "uses": 27565
         },
         {
           "moveId": "GRASS_KNOT",
-          "uses": 29950
+          "uses": 30026
         },
         {
           "moveId": "DYNAMIC_PUNCH",
-          "uses": 37494
+          "uses": 37585
         }
       ]
     },
@@ -9069,30 +9069,30 @@
       "poison"
     ],
     "speciesName": "Roselia",
-    "ranking": 400,
+    "ranking": 399,
     "moves": {
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 48531
+          "uses": 48610
         },
         {
           "moveId": "POISON_JAB",
-          "uses": 66869
+          "uses": 67090
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 51521
+          "uses": 51658
         },
         {
           "moveId": "PETAL_BLIZZARD",
-          "uses": 41029
+          "uses": 41091
         },
         {
           "moveId": "DAZZLING_GLEAM",
-          "uses": 22881
+          "uses": 22983
         }
       ]
     },
@@ -9174,30 +9174,30 @@
       "none"
     ],
     "speciesName": "Wailmer",
-    "ranking": 618,
+    "ranking": 619,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 112241
+          "uses": 112532
         },
         {
           "moveId": "SPLASH",
-          "uses": 3159
+          "uses": 3168
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 22781
+          "uses": 22820
         },
         {
           "moveId": "HEAVY_SLAM",
-          "uses": 24826
+          "uses": 24909
         },
         {
           "moveId": "BODY_SLAM",
-          "uses": 67797
+          "uses": 67974
         }
       ]
     },
@@ -9215,30 +9215,30 @@
       "none"
     ],
     "speciesName": "Wailord",
-    "ranking": 586,
+    "ranking": 587,
     "moves": {
       "fastMoves": [
         {
           "moveId": "ZEN_HEADBUTT",
-          "uses": 17216
+          "uses": 17271
         },
         {
           "moveId": "WATER_GUN",
-          "uses": 98184
+          "uses": 98429
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SURF",
-          "uses": 74544
+          "uses": 74745
         },
         {
           "moveId": "HYPER_BEAM",
-          "uses": 16497
+          "uses": 16543
         },
         {
           "moveId": "BLIZZARD",
-          "uses": 24253
+          "uses": 24305
         }
       ]
     },
@@ -9382,34 +9382,34 @@
       "dark"
     ],
     "speciesName": "Cacturne",
-    "ranking": 396,
+    "ranking": 393,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SUCKER_PUNCH",
-          "uses": 61485
+          "uses": 61572
         },
         {
           "moveId": "POISON_JAB",
-          "uses": 53915
+          "uses": 54128
         }
       ],
       "chargedMoves": [
         {
           "moveId": "PAYBACK",
-          "uses": 15037
+          "uses": 15054
         },
         {
           "moveId": "GRASS_KNOT",
-          "uses": 36536
+          "uses": 36676
         },
         {
           "moveId": "DYNAMIC_PUNCH",
-          "uses": 30775
+          "uses": 30883
         },
         {
           "moveId": "DARK_PULSE",
-          "uses": 33101
+          "uses": 33137
         }
       ]
     },
@@ -9433,6 +9433,17 @@
     "types": [
       "dragon",
       "flying"
+    ]
+  },
+  "altaria_mega": {
+    "legal": false,
+    "dex": 334,
+    "types": [
+      "dragon",
+      "fairy"
+    ],
+    "tags": [
+      "mega"
     ]
   },
   "zangoose": {
@@ -9496,30 +9507,30 @@
       "ground"
     ],
     "speciesName": "Whiscash",
-    "ranking": 693,
+    "ranking": 695,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 52879
+          "uses": 53024
         },
         {
           "moveId": "MUD_SHOT",
-          "uses": 62521
+          "uses": 62676
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 19781
+          "uses": 19838
         },
         {
           "moveId": "MUD_BOMB",
-          "uses": 65987
+          "uses": 66166
         },
         {
           "moveId": "BLIZZARD",
-          "uses": 29651
+          "uses": 29715
         }
       ]
     },
@@ -9537,30 +9548,30 @@
       "none"
     ],
     "speciesName": "Corphish",
-    "ranking": 407,
+    "ranking": 406,
     "moves": {
       "fastMoves": [
         {
           "moveId": "ROCK_SMASH",
-          "uses": 38014
+          "uses": 38116
         },
         {
           "moveId": "BUBBLE",
-          "uses": 77386
+          "uses": 77584
         }
       ],
       "chargedMoves": [
         {
           "moveId": "VICE_GRIP",
-          "uses": 37424
+          "uses": 37525
         },
         {
           "moveId": "BUBBLE_BEAM",
-          "uses": 34304
+          "uses": 34393
         },
         {
           "moveId": "AQUA_JET",
-          "uses": 43547
+          "uses": 43657
         }
       ]
     },
@@ -9578,34 +9589,34 @@
       "dark"
     ],
     "speciesName": "Crawdaunt",
-    "ranking": 595,
+    "ranking": 592,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATERFALL",
-          "uses": 52070
+          "uses": 52247
         },
         {
           "moveId": "SNARL",
-          "uses": 63330
+          "uses": 63453
         }
       ],
       "chargedMoves": [
         {
           "moveId": "VICE_GRIP",
-          "uses": 12153
+          "uses": 12201
         },
         {
           "moveId": "NIGHT_SLASH",
-          "uses": 54033
+          "uses": 54097
         },
         {
           "moveId": "CRABHAMMER",
-          "uses": 37769
+          "uses": 37913
         },
         {
           "moveId": "BUBBLE_BEAM",
-          "uses": 11494
+          "uses": 11538
         }
       ]
     },
@@ -9642,38 +9653,38 @@
       "shadoweligible"
     ],
     "speciesName": "Lileep",
-    "ranking": 577,
+    "ranking": 576,
     "moves": {
       "fastMoves": [
         {
           "moveId": "INFESTATION",
-          "uses": 42080
+          "uses": 42173
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 53870
+          "uses": 53999
         },
         {
           "moveId": "ACID",
-          "uses": 19414
+          "uses": 19491
         }
       ],
       "chargedMoves": [
         {
           "moveId": "RETURN",
-          "uses": 17360
+          "uses": 17419
         },
         {
           "moveId": "MIRROR_COAT",
-          "uses": 12140
+          "uses": 12180
         },
         {
           "moveId": "GRASS_KNOT",
-          "uses": 51676
+          "uses": 51832
         },
         {
           "moveId": "ANCIENT_POWER",
-          "uses": 34110
+          "uses": 34156
         }
       ]
     },
@@ -9694,26 +9705,26 @@
       "shadow"
     ],
     "speciesName": "Lileep (Shadow)",
-    "ranking": 581,
+    "ranking": 580,
     "moves": {
       "fastMoves": [
         {
           "moveId": "INFESTATION",
-          "uses": 81891
+          "uses": 82043
         },
         {
           "moveId": "ACID",
-          "uses": 33509
+          "uses": 33657
         }
       ],
       "chargedMoves": [
         {
           "moveId": "MIRROR_COAT",
-          "uses": 14587
+          "uses": 14636
         },
         {
           "moveId": "GRASS_KNOT",
-          "uses": 59988
+          "uses": 60182
         },
         {
           "moveId": "FRUSTRATION",
@@ -9721,7 +9732,7 @@
         },
         {
           "moveId": "ANCIENT_POWER",
-          "uses": 40573
+          "uses": 40627
         }
       ]
     },
@@ -9742,38 +9753,38 @@
       "shadoweligible"
     ],
     "speciesName": "Cradily",
-    "ranking": 633,
+    "ranking": 630,
     "moves": {
       "fastMoves": [
         {
           "moveId": "INFESTATION",
-          "uses": 43654
+          "uses": 43743
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 55954
+          "uses": 56088
         },
         {
           "moveId": "ACID",
-          "uses": 15808
+          "uses": 15884
         }
       ],
       "chargedMoves": [
         {
           "moveId": "STONE_EDGE",
-          "uses": 43781
+          "uses": 43849
         },
         {
           "moveId": "RETURN",
-          "uses": 13833
+          "uses": 13886
         },
         {
           "moveId": "GRASS_KNOT",
-          "uses": 41951
+          "uses": 42093
         },
         {
           "moveId": "BULLDOZE",
-          "uses": 15905
+          "uses": 15943
         }
       ]
     },
@@ -9794,30 +9805,30 @@
       "shadow"
     ],
     "speciesName": "Cradily (Shadow)",
-    "ranking": 613,
+    "ranking": 609,
     "moves": {
       "fastMoves": [
         {
           "moveId": "INFESTATION",
-          "uses": 43222
+          "uses": 43314
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 56445
+          "uses": 56572
         },
         {
           "moveId": "ACID",
-          "uses": 15805
+          "uses": 15883
         }
       ],
       "chargedMoves": [
         {
           "moveId": "STONE_EDGE",
-          "uses": 50164
+          "uses": 50246
         },
         {
           "moveId": "GRASS_KNOT",
-          "uses": 47174
+          "uses": 47344
         },
         {
           "moveId": "FRUSTRATION",
@@ -9825,7 +9836,7 @@
         },
         {
           "moveId": "BULLDOZE",
-          "uses": 17968
+          "uses": 18015
         }
       ]
     },
@@ -9896,30 +9907,30 @@
       "none"
     ],
     "speciesName": "Milotic",
-    "ranking": 612,
+    "ranking": 611,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATERFALL",
-          "uses": 62773
+          "uses": 62954
         },
         {
           "moveId": "DRAGON_TAIL",
-          "uses": 52627
+          "uses": 52746
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SURF",
-          "uses": 74410
+          "uses": 74611
         },
         {
           "moveId": "HYPER_BEAM",
-          "uses": 16609
+          "uses": 16654
         },
         {
           "moveId": "BLIZZARD",
-          "uses": 24344
+          "uses": 24395
         }
       ]
     },
@@ -9950,25 +9961,25 @@
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 91468
+          "uses": 91681
         },
         {
           "moveId": "TACKLE",
-          "uses": 23932
+          "uses": 24019
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WEATHER_BALL_WATER",
-          "uses": 82164
+          "uses": 82389
         },
         {
           "moveId": "THUNDER",
-          "uses": 24194
+          "uses": 24245
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 8862
+          "uses": 8886
         }
       ]
     },
@@ -10104,30 +10115,30 @@
       "regional"
     ],
     "speciesName": "Tropius",
-    "ranking": 676,
+    "ranking": 674,
     "moves": {
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 51734
+          "uses": 51872
         },
         {
           "moveId": "AIR_SLASH",
-          "uses": 63666
+          "uses": 63828
         }
       ],
       "chargedMoves": [
         {
           "moveId": "STOMP",
-          "uses": 18877
+          "uses": 18922
         },
         {
           "moveId": "LEAF_BLADE",
-          "uses": 70855
+          "uses": 71032
         },
         {
           "moveId": "AERIAL_ACE",
-          "uses": 25625
+          "uses": 25703
         }
       ]
     },
@@ -10226,34 +10237,34 @@
       "shadoweligible"
     ],
     "speciesName": "Sealeo",
-    "ranking": 656,
+    "ranking": 654,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 51255
+          "uses": 51389
         },
         {
           "moveId": "POWDER_SNOW",
-          "uses": 64145
+          "uses": 64311
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 21139
+          "uses": 21181
         },
         {
           "moveId": "RETURN",
-          "uses": 8786
+          "uses": 8813
         },
         {
           "moveId": "BODY_SLAM",
-          "uses": 60046
+          "uses": 60226
         },
         {
           "moveId": "AURORA_BEAM",
-          "uses": 25510
+          "uses": 25563
         }
       ]
     },
@@ -10274,22 +10285,22 @@
       "shadow"
     ],
     "speciesName": "Sealeo (Shadow)",
-    "ranking": 672,
+    "ranking": 670,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 49154
+          "uses": 49279
         },
         {
           "moveId": "POWDER_SNOW",
-          "uses": 66246
+          "uses": 66421
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 22637
+          "uses": 22682
         },
         {
           "moveId": "FRUSTRATION",
@@ -10297,11 +10308,11 @@
         },
         {
           "moveId": "BODY_SLAM",
-          "uses": 65436
+          "uses": 65632
         },
         {
           "moveId": "AURORA_BEAM",
-          "uses": 27403
+          "uses": 27462
         }
       ]
     },
@@ -10322,30 +10333,30 @@
       "shadoweligible"
     ],
     "speciesName": "Walrein",
-    "ranking": 500,
+    "ranking": 499,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATERFALL",
-          "uses": 63851
+          "uses": 64008
         },
         {
           "moveId": "FROST_BREATH",
-          "uses": 51549
+          "uses": 51692
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 25256
+          "uses": 25329
         },
         {
           "moveId": "EARTHQUAKE",
-          "uses": 43738
+          "uses": 43846
         },
         {
           "moveId": "BLIZZARD",
-          "uses": 46429
+          "uses": 46548
         }
       ]
     },
@@ -10366,22 +10377,22 @@
       "shadow"
     ],
     "speciesName": "Walrein (Shadow)",
-    "ranking": 535,
+    "ranking": 533,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATERFALL",
-          "uses": 63915
+          "uses": 64082
         },
         {
           "moveId": "FROST_BREATH",
-          "uses": 51485
+          "uses": 51618
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 25206
+          "uses": 25278
         },
         {
           "moveId": "FRUSTRATION",
@@ -10389,11 +10400,11 @@
         },
         {
           "moveId": "EARTHQUAKE",
-          "uses": 43680
+          "uses": 43788
         },
         {
           "moveId": "BLIZZARD",
-          "uses": 46299
+          "uses": 46418
         }
       ]
     },
@@ -10411,26 +10422,26 @@
       "none"
     ],
     "speciesName": "Clamperl",
-    "ranking": 534,
+    "ranking": 536,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 115400
+          "uses": 115700
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 21297
+          "uses": 21339
         },
         {
           "moveId": "ICE_BEAM",
-          "uses": 31673
+          "uses": 31742
         },
         {
           "moveId": "BODY_SLAM",
-          "uses": 62331
+          "uses": 62520
         }
       ]
     },
@@ -10448,30 +10459,30 @@
       "none"
     ],
     "speciesName": "Huntail",
-    "ranking": 565,
+    "ranking": 566,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 75659
+          "uses": 75898
         },
         {
           "moveId": "BITE",
-          "uses": 39741
+          "uses": 39802
         }
       ],
       "chargedMoves": [
         {
           "moveId": "ICE_BEAM",
-          "uses": 26120
+          "uses": 26191
         },
         {
           "moveId": "CRUNCH",
-          "uses": 30727
+          "uses": 30756
         },
         {
           "moveId": "AQUA_TAIL",
-          "uses": 58728
+          "uses": 58925
         }
       ]
     },
@@ -10489,30 +10500,30 @@
       "none"
     ],
     "speciesName": "Gorebyss",
-    "ranking": 431,
+    "ranking": 429,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 61133
+          "uses": 61291
         },
         {
           "moveId": "CONFUSION",
-          "uses": 54267
+          "uses": 54409
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 37075
+          "uses": 37134
         },
         {
           "moveId": "PSYCHIC",
-          "uses": 50741
+          "uses": 50862
         },
         {
           "moveId": "DRAINING_KISS",
-          "uses": 27630
+          "uses": 27751
         }
       ]
     },
@@ -10533,30 +10544,30 @@
       "regional"
     ],
     "speciesName": "Relicanth",
-    "ranking": 608,
+    "ranking": 610,
     "moves": {
       "fastMoves": [
         {
           "moveId": "ZEN_HEADBUTT",
-          "uses": 18269
+          "uses": 18329
         },
         {
           "moveId": "WATER_GUN",
-          "uses": 97131
+          "uses": 97371
         }
       ],
       "chargedMoves": [
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 10747
+          "uses": 10781
         },
         {
           "moveId": "AQUA_TAIL",
-          "uses": 69973
+          "uses": 70191
         },
         {
           "moveId": "ANCIENT_POWER",
-          "uses": 34492
+          "uses": 34541
         }
       ]
     },
@@ -10867,34 +10878,34 @@
       "shadoweligible"
     ],
     "speciesName": "Turtwig",
-    "ranking": 539,
+    "ranking": 537,
     "moves": {
       "fastMoves": [
         {
           "moveId": "TACKLE",
-          "uses": 33969
+          "uses": 34060
         },
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 81431
+          "uses": 81640
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SEED_BOMB",
-          "uses": 39664
+          "uses": 39764
         },
         {
           "moveId": "RETURN",
-          "uses": 7649
+          "uses": 7670
         },
         {
           "moveId": "ENERGY_BALL",
-          "uses": 15411
+          "uses": 15450
         },
         {
           "moveId": "BODY_SLAM",
-          "uses": 52602
+          "uses": 52744
         }
       ]
     },
@@ -10916,22 +10927,22 @@
       "shadow"
     ],
     "speciesName": "Turtwig (Shadow)",
-    "ranking": 567,
+    "ranking": 566,
     "moves": {
       "fastMoves": [
         {
           "moveId": "TACKLE",
-          "uses": 34191
+          "uses": 34275
         },
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 81209
+          "uses": 81425
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SEED_BOMB",
-          "uses": 41822
+          "uses": 41928
         },
         {
           "moveId": "FRUSTRATION",
@@ -10939,11 +10950,11 @@
         },
         {
           "moveId": "ENERGY_BALL",
-          "uses": 16402
+          "uses": 16444
         },
         {
           "moveId": "BODY_SLAM",
-          "uses": 57248
+          "uses": 57400
         }
       ]
     },
@@ -10965,34 +10976,34 @@
       "shadoweligible"
     ],
     "speciesName": "Grotle",
-    "ranking": 596,
+    "ranking": 593,
     "moves": {
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 66928
+          "uses": 67186
         },
         {
           "moveId": "BITE",
-          "uses": 48472
+          "uses": 48514
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 10936
+          "uses": 10963
         },
         {
           "moveId": "RETURN",
-          "uses": 8590
+          "uses": 8614
         },
         {
           "moveId": "ENERGY_BALL",
-          "uses": 36883
+          "uses": 36970
         },
         {
           "moveId": "BODY_SLAM",
-          "uses": 59018
+          "uses": 59180
         }
       ]
     },
@@ -11014,22 +11025,22 @@
       "shadow"
     ],
     "speciesName": "Grotle (Shadow)",
-    "ranking": 616,
+    "ranking": 614,
     "moves": {
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 67858
+          "uses": 68115
         },
         {
           "moveId": "BITE",
-          "uses": 47542
+          "uses": 47585
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 11543
+          "uses": 11571
         },
         {
           "moveId": "FRUSTRATION",
@@ -11037,11 +11048,11 @@
         },
         {
           "moveId": "ENERGY_BALL",
-          "uses": 39243
+          "uses": 39340
         },
         {
           "moveId": "BODY_SLAM",
-          "uses": 64583
+          "uses": 64757
         }
       ]
     },
@@ -11063,38 +11074,38 @@
       "shadoweligible"
     ],
     "speciesName": "Torterra",
-    "ranking": 569,
+    "ranking": 568,
     "moves": {
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 68896
+          "uses": 69170
         },
         {
           "moveId": "BITE",
-          "uses": 46504
+          "uses": 46530
         }
       ],
       "chargedMoves": [
         {
           "moveId": "STONE_EDGE",
-          "uses": 26396
+          "uses": 26426
         },
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 5659
+          "uses": 5678
         },
         {
           "moveId": "SAND_TOMB",
-          "uses": 11096
+          "uses": 11124
         },
         {
           "moveId": "FRENZY_PLANT",
-          "uses": 49816
+          "uses": 49984
         },
         {
           "moveId": "EARTHQUAKE",
-          "uses": 22503
+          "uses": 22558
         }
       ]
     },
@@ -11116,30 +11127,30 @@
       "shadow"
     ],
     "speciesName": "Torterra (Shadow)",
-    "ranking": 593,
+    "ranking": 591,
     "moves": {
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 69870
+          "uses": 70144
         },
         {
           "moveId": "BITE",
-          "uses": 45530
+          "uses": 45556
         }
       ],
       "chargedMoves": [
         {
           "moveId": "STONE_EDGE",
-          "uses": 26398
+          "uses": 26428
         },
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 5681
+          "uses": 5699
         },
         {
           "moveId": "SAND_TOMB",
-          "uses": 11012
+          "uses": 11040
         },
         {
           "moveId": "FRUSTRATION",
@@ -11147,11 +11158,11 @@
         },
         {
           "moveId": "FRENZY_PLANT",
-          "uses": 49918
+          "uses": 50086
         },
         {
           "moveId": "EARTHQUAKE",
-          "uses": 22538
+          "uses": 22593
         }
       ]
     },
@@ -11205,30 +11216,30 @@
       "starter"
     ],
     "speciesName": "Piplup",
-    "ranking": 413,
+    "ranking": 414,
     "moves": {
       "fastMoves": [
         {
           "moveId": "POUND",
-          "uses": 16131
+          "uses": 16171
         },
         {
           "moveId": "BUBBLE",
-          "uses": 99269
+          "uses": 99529
         }
       ],
       "chargedMoves": [
         {
           "moveId": "ICY_WIND",
-          "uses": 42191
+          "uses": 42275
         },
         {
           "moveId": "DRILL_PECK",
-          "uses": 52852
+          "uses": 53034
         },
         {
           "moveId": "BUBBLE_BEAM",
-          "uses": 20256
+          "uses": 20291
         }
       ]
     },
@@ -11249,30 +11260,30 @@
       "starter"
     ],
     "speciesName": "Prinplup",
-    "ranking": 576,
+    "ranking": 575,
     "moves": {
       "fastMoves": [
         {
           "moveId": "METAL_CLAW",
-          "uses": 41353
+          "uses": 41480
         },
         {
           "moveId": "BUBBLE",
-          "uses": 74047
+          "uses": 74220
         }
       ],
       "chargedMoves": [
         {
           "moveId": "ICY_WIND",
-          "uses": 59131
+          "uses": 59284
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 32109
+          "uses": 32193
         },
         {
           "moveId": "BUBBLE_BEAM",
-          "uses": 23987
+          "uses": 24050
         }
       ]
     },
@@ -11293,38 +11304,38 @@
       "starter"
     ],
     "speciesName": "Empoleon",
-    "ranking": 651,
+    "ranking": 652,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATERFALL",
-          "uses": 67498
+          "uses": 67656
         },
         {
           "moveId": "METAL_CLAW",
-          "uses": 47902
+          "uses": 48044
         }
       ],
       "chargedMoves": [
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 5978
+          "uses": 5991
         },
         {
           "moveId": "HYDRO_CANNON",
-          "uses": 55834
+          "uses": 55954
         },
         {
           "moveId": "FLASH_CANNON",
-          "uses": 10432
+          "uses": 10471
         },
         {
           "moveId": "DRILL_PECK",
-          "uses": 31399
+          "uses": 31507
         },
         {
           "moveId": "BLIZZARD",
-          "uses": 11720
+          "uses": 11741
         }
       ]
     },
@@ -11379,25 +11390,25 @@
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 92276
+          "uses": 92499
         },
         {
           "moveId": "TAKE_DOWN",
-          "uses": 23124
+          "uses": 23201
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SURF",
-          "uses": 67568
+          "uses": 67736
         },
         {
           "moveId": "HYPER_FANG",
-          "uses": 37830
+          "uses": 37935
         },
         {
           "moveId": "HYPER_BEAM",
-          "uses": 9937
+          "uses": 9964
         }
       ]
     },
@@ -11469,41 +11480,41 @@
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 24315
+          "uses": 24354
         },
         {
           "moveId": "POISON_JAB",
-          "uses": 43651
+          "uses": 43770
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 47452
+          "uses": 47593
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WEATHER_BALL_FIRE",
-          "uses": 43145
+          "uses": 43221
         },
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 5298
+          "uses": 5311
         },
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 18846
+          "uses": 18916
         },
         {
           "moveId": "LEAF_STORM",
-          "uses": 15152
+          "uses": 15183
         },
         {
           "moveId": "GRASS_KNOT",
-          "uses": 24959
+          "uses": 25017
         },
         {
           "moveId": "DAZZLING_GLEAM",
-          "uses": 7955
+          "uses": 8006
         }
       ]
     },
@@ -11577,30 +11588,30 @@
       "grass"
     ],
     "speciesName": "Wormadam (Plant)",
-    "ranking": 468,
+    "ranking": 465,
     "moves": {
       "fastMoves": [
         {
           "moveId": "CONFUSION",
-          "uses": 55223
+          "uses": 55390
         },
         {
           "moveId": "BUG_BITE",
-          "uses": 60177
+          "uses": 60310
         }
       ],
       "chargedMoves": [
         {
           "moveId": "PSYBEAM",
-          "uses": 20197
+          "uses": 20256
         },
         {
           "moveId": "ENERGY_BALL",
-          "uses": 53533
+          "uses": 53698
         },
         {
           "moveId": "BUG_BUZZ",
-          "uses": 41823
+          "uses": 41899
         }
       ]
     },
@@ -11678,30 +11689,30 @@
       "none"
     ],
     "speciesName": "Floatzel",
-    "ranking": 512,
+    "ranking": 513,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 56861
+          "uses": 57003
         },
         {
           "moveId": "WATERFALL",
-          "uses": 58539
+          "uses": 58697
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SWIFT",
-          "uses": 25171
+          "uses": 25234
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 46581
+          "uses": 46704
         },
         {
           "moveId": "AQUA_JET",
-          "uses": 43625
+          "uses": 43739
         }
       ]
     },
@@ -11728,30 +11739,30 @@
       "none"
     ],
     "speciesName": "Cherrim (Overcast)",
-    "ranking": 340,
+    "ranking": 336,
     "moves": {
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 51447
+          "uses": 51558
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 63953
+          "uses": 64142
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 48133
+          "uses": 48223
         },
         {
           "moveId": "HYPER_BEAM",
-          "uses": 32163
+          "uses": 32226
         },
         {
           "moveId": "DAZZLING_GLEAM",
-          "uses": 35117
+          "uses": 35265
         }
       ]
     },
@@ -11769,34 +11780,34 @@
       "none"
     ],
     "speciesName": "Cherrim (Sunshine)",
-    "ranking": 579,
+    "ranking": 576,
     "moves": {
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 41055
+          "uses": 41162
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 74345
+          "uses": 74538
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WEATHER_BALL_FIRE",
-          "uses": 65769
+          "uses": 65908
         },
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 23724
+          "uses": 23769
         },
         {
           "moveId": "HYPER_BEAM",
-          "uses": 11745
+          "uses": 11777
         },
         {
           "moveId": "DAZZLING_GLEAM",
-          "uses": 14344
+          "uses": 14429
         }
       ]
     },
@@ -11819,85 +11830,85 @@
       "fastMoves": [
         {
           "moveId": "MUD_SLAP",
-          "uses": 9494
+          "uses": 9517
         },
         {
           "moveId": "HIDDEN_POWER_WATER",
-          "uses": 8473
+          "uses": 8495
         },
         {
           "moveId": "HIDDEN_POWER_STEEL",
-          "uses": 5731
+          "uses": 5754
         },
         {
           "moveId": "HIDDEN_POWER_ROCK",
-          "uses": 7117
+          "uses": 7129
         },
         {
           "moveId": "HIDDEN_POWER_PSYCHIC",
-          "uses": 5938
+          "uses": 5958
         },
         {
           "moveId": "HIDDEN_POWER_POISON",
-          "uses": 5707
+          "uses": 5730
         },
         {
           "moveId": "HIDDEN_POWER_ICE",
-          "uses": 7090
+          "uses": 7107
         },
         {
           "moveId": "HIDDEN_POWER_GROUND",
-          "uses": 7324
+          "uses": 7341
         },
         {
           "moveId": "HIDDEN_POWER_GRASS",
-          "uses": 6502
+          "uses": 6519
         },
         {
           "moveId": "HIDDEN_POWER_GHOST",
-          "uses": 6708
+          "uses": 6722
         },
         {
           "moveId": "HIDDEN_POWER_FLYING",
-          "uses": 6839
+          "uses": 6867
         },
         {
           "moveId": "HIDDEN_POWER_FIRE",
-          "uses": 7331
+          "uses": 7348
         },
         {
           "moveId": "HIDDEN_POWER_FIGHTING",
-          "uses": 6950
+          "uses": 6968
         },
         {
           "moveId": "HIDDEN_POWER_ELECTRIC",
-          "uses": 6731
+          "uses": 6748
         },
         {
           "moveId": "HIDDEN_POWER_DRAGON",
-          "uses": 5657
+          "uses": 5669
         },
         {
           "moveId": "HIDDEN_POWER_DARK",
-          "uses": 6548
+          "uses": 6554
         },
         {
           "moveId": "HIDDEN_POWER_BUG",
-          "uses": 5988
+          "uses": 5999
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 17079
+          "uses": 17118
         },
         {
           "moveId": "MUD_BOMB",
-          "uses": 39233
+          "uses": 39320
         },
         {
           "moveId": "BODY_SLAM",
-          "uses": 59087
+          "uses": 59260
         }
       ]
     },
@@ -11920,85 +11931,85 @@
       "fastMoves": [
         {
           "moveId": "MUD_SLAP",
-          "uses": 9494
+          "uses": 9517
         },
         {
           "moveId": "HIDDEN_POWER_WATER",
-          "uses": 8473
+          "uses": 8495
         },
         {
           "moveId": "HIDDEN_POWER_STEEL",
-          "uses": 5731
+          "uses": 5754
         },
         {
           "moveId": "HIDDEN_POWER_ROCK",
-          "uses": 7117
+          "uses": 7129
         },
         {
           "moveId": "HIDDEN_POWER_PSYCHIC",
-          "uses": 5938
+          "uses": 5958
         },
         {
           "moveId": "HIDDEN_POWER_POISON",
-          "uses": 5707
+          "uses": 5730
         },
         {
           "moveId": "HIDDEN_POWER_ICE",
-          "uses": 7090
+          "uses": 7107
         },
         {
           "moveId": "HIDDEN_POWER_GROUND",
-          "uses": 7324
+          "uses": 7341
         },
         {
           "moveId": "HIDDEN_POWER_GRASS",
-          "uses": 6502
+          "uses": 6519
         },
         {
           "moveId": "HIDDEN_POWER_GHOST",
-          "uses": 6708
+          "uses": 6722
         },
         {
           "moveId": "HIDDEN_POWER_FLYING",
-          "uses": 6839
+          "uses": 6867
         },
         {
           "moveId": "HIDDEN_POWER_FIRE",
-          "uses": 7331
+          "uses": 7348
         },
         {
           "moveId": "HIDDEN_POWER_FIGHTING",
-          "uses": 6950
+          "uses": 6968
         },
         {
           "moveId": "HIDDEN_POWER_ELECTRIC",
-          "uses": 6731
+          "uses": 6748
         },
         {
           "moveId": "HIDDEN_POWER_DRAGON",
-          "uses": 5657
+          "uses": 5669
         },
         {
           "moveId": "HIDDEN_POWER_DARK",
-          "uses": 6548
+          "uses": 6554
         },
         {
           "moveId": "HIDDEN_POWER_BUG",
-          "uses": 5988
+          "uses": 5999
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 17079
+          "uses": 17118
         },
         {
           "moveId": "MUD_BOMB",
-          "uses": 39233
+          "uses": 39320
         },
         {
           "moveId": "BODY_SLAM",
-          "uses": 59087
+          "uses": 59260
         }
       ]
     },
@@ -12016,94 +12027,94 @@
       "ground"
     ],
     "speciesName": "Gastrodon (East)",
-    "ranking": 625,
+    "ranking": 626,
     "moves": {
       "fastMoves": [
         {
           "moveId": "MUD_SLAP",
-          "uses": 11996
+          "uses": 12025
         },
         {
           "moveId": "HIDDEN_POWER_WATER",
-          "uses": 8211
+          "uses": 8233
         },
         {
           "moveId": "HIDDEN_POWER_STEEL",
-          "uses": 5361
+          "uses": 5382
         },
         {
           "moveId": "HIDDEN_POWER_ROCK",
-          "uses": 6647
+          "uses": 6658
         },
         {
           "moveId": "HIDDEN_POWER_PSYCHIC",
-          "uses": 5685
+          "uses": 5703
         },
         {
           "moveId": "HIDDEN_POWER_POISON",
-          "uses": 5393
+          "uses": 5414
         },
         {
           "moveId": "HIDDEN_POWER_ICE",
-          "uses": 6841
+          "uses": 6858
         },
         {
           "moveId": "HIDDEN_POWER_GROUND",
-          "uses": 8984
+          "uses": 9006
         },
         {
           "moveId": "HIDDEN_POWER_GRASS",
-          "uses": 6079
+          "uses": 6096
         },
         {
           "moveId": "HIDDEN_POWER_GHOST",
-          "uses": 6155
+          "uses": 6168
         },
         {
           "moveId": "HIDDEN_POWER_FLYING",
-          "uses": 6594
+          "uses": 6621
         },
         {
           "moveId": "HIDDEN_POWER_FIRE",
-          "uses": 7055
+          "uses": 7072
         },
         {
           "moveId": "HIDDEN_POWER_FIGHTING",
-          "uses": 6544
+          "uses": 6562
         },
         {
           "moveId": "HIDDEN_POWER_ELECTRIC",
-          "uses": 6411
+          "uses": 6428
         },
         {
           "moveId": "HIDDEN_POWER_DRAGON",
-          "uses": 5399
+          "uses": 5412
         },
         {
           "moveId": "HIDDEN_POWER_DARK",
-          "uses": 6167
+          "uses": 6174
         },
         {
           "moveId": "HIDDEN_POWER_BUG",
-          "uses": 5664
+          "uses": 5676
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 14171
+          "uses": 14204
         },
         {
           "moveId": "EARTH_POWER",
-          "uses": 34901
+          "uses": 34984
         },
         {
           "moveId": "EARTHQUAKE",
-          "uses": 15222
+          "uses": 15258
         },
         {
           "moveId": "BODY_SLAM",
-          "uses": 51146
+          "uses": 51294
         }
       ]
     },
@@ -12126,89 +12137,89 @@
       "fastMoves": [
         {
           "moveId": "MUD_SLAP",
-          "uses": 11996
+          "uses": 12025
         },
         {
           "moveId": "HIDDEN_POWER_WATER",
-          "uses": 8211
+          "uses": 8233
         },
         {
           "moveId": "HIDDEN_POWER_STEEL",
-          "uses": 5361
+          "uses": 5382
         },
         {
           "moveId": "HIDDEN_POWER_ROCK",
-          "uses": 6647
+          "uses": 6658
         },
         {
           "moveId": "HIDDEN_POWER_PSYCHIC",
-          "uses": 5685
+          "uses": 5703
         },
         {
           "moveId": "HIDDEN_POWER_POISON",
-          "uses": 5393
+          "uses": 5414
         },
         {
           "moveId": "HIDDEN_POWER_ICE",
-          "uses": 6841
+          "uses": 6858
         },
         {
           "moveId": "HIDDEN_POWER_GROUND",
-          "uses": 8984
+          "uses": 9006
         },
         {
           "moveId": "HIDDEN_POWER_GRASS",
-          "uses": 6079
+          "uses": 6096
         },
         {
           "moveId": "HIDDEN_POWER_GHOST",
-          "uses": 6155
+          "uses": 6168
         },
         {
           "moveId": "HIDDEN_POWER_FLYING",
-          "uses": 6594
+          "uses": 6621
         },
         {
           "moveId": "HIDDEN_POWER_FIRE",
-          "uses": 7055
+          "uses": 7072
         },
         {
           "moveId": "HIDDEN_POWER_FIGHTING",
-          "uses": 6544
+          "uses": 6562
         },
         {
           "moveId": "HIDDEN_POWER_ELECTRIC",
-          "uses": 6411
+          "uses": 6428
         },
         {
           "moveId": "HIDDEN_POWER_DRAGON",
-          "uses": 5399
+          "uses": 5412
         },
         {
           "moveId": "HIDDEN_POWER_DARK",
-          "uses": 6167
+          "uses": 6174
         },
         {
           "moveId": "HIDDEN_POWER_BUG",
-          "uses": 5664
+          "uses": 5676
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 14171
+          "uses": 14204
         },
         {
           "moveId": "EARTH_POWER",
-          "uses": 34901
+          "uses": 34984
         },
         {
           "moveId": "EARTHQUAKE",
-          "uses": 15222
+          "uses": 15258
         },
         {
           "moveId": "BODY_SLAM",
-          "uses": 51146
+          "uses": 51294
         }
       ]
     },
@@ -12553,25 +12564,25 @@
       "fastMoves": [
         {
           "moveId": "VINE_WHIP",
-          "uses": 80943
+          "uses": 81181
         },
         {
           "moveId": "BITE",
-          "uses": 34457
+          "uses": 34519
         }
       ],
       "chargedMoves": [
         {
           "moveId": "POWER_WHIP",
-          "uses": 51585
+          "uses": 51778
         },
         {
           "moveId": "ENERGY_BALL",
-          "uses": 18550
+          "uses": 18619
         },
         {
           "moveId": "CRUNCH",
-          "uses": 45388
+          "uses": 45426
         }
       ]
     },
@@ -12598,37 +12609,37 @@
       "none"
     ],
     "speciesName": "Lumineon",
-    "ranking": 475,
+    "ranking": 533,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 59051
+          "uses": 59197
         },
         {
           "moveId": "WATERFALL",
-          "uses": 56349
+          "uses": 56503
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 37932
+          "uses": 38040
         },
         {
           "moveId": "SILVER_WIND",
-          "uses": 36662
+          "uses": 36732
         },
         {
           "moveId": "BLIZZARD",
-          "uses": 40840
+          "uses": 40962
         }
       ]
     },
     "moveset": [
       "WATER_GUN",
       "BLIZZARD",
-      "WATER_PULSE"
+      "SILVER_WIND"
     ]
   },
   "mantyke": {
@@ -12639,30 +12650,30 @@
       "flying"
     ],
     "speciesName": "Mantyke",
-    "ranking": 561,
+    "ranking": 560,
     "moves": {
       "fastMoves": [
         {
           "moveId": "TACKLE",
-          "uses": 29102
+          "uses": 29173
         },
         {
           "moveId": "BUBBLE",
-          "uses": 86298
+          "uses": 86527
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 26836
+          "uses": 26884
         },
         {
           "moveId": "ICE_BEAM",
-          "uses": 39064
+          "uses": 39141
         },
         {
           "moveId": "AERIAL_ACE",
-          "uses": 49408
+          "uses": 49582
         }
       ]
     },
@@ -12683,34 +12694,34 @@
       "shadoweligible"
     ],
     "speciesName": "Snover",
-    "ranking": 460,
+    "ranking": 457,
     "moves": {
       "fastMoves": [
         {
           "moveId": "POWDER_SNOW",
-          "uses": 65430
+          "uses": 65588
         },
         {
           "moveId": "ICE_SHARD",
-          "uses": 49970
+          "uses": 50112
         }
       ],
       "chargedMoves": [
         {
           "moveId": "STOMP",
-          "uses": 25617
+          "uses": 25696
         },
         {
           "moveId": "RETURN",
-          "uses": 14695
+          "uses": 14743
         },
         {
           "moveId": "ICE_BEAM",
-          "uses": 38845
+          "uses": 38929
         },
         {
           "moveId": "ENERGY_BALL",
-          "uses": 36201
+          "uses": 36291
         }
       ]
     },
@@ -12731,26 +12742,26 @@
       "shadow"
     ],
     "speciesName": "Snover (Shadow)",
-    "ranking": 435,
+    "ranking": 433,
     "moves": {
       "fastMoves": [
         {
           "moveId": "POWDER_SNOW",
-          "uses": 65705
+          "uses": 65859
         },
         {
           "moveId": "ICE_SHARD",
-          "uses": 49695
+          "uses": 49841
         }
       ],
       "chargedMoves": [
         {
           "moveId": "STOMP",
-          "uses": 29969
+          "uses": 30063
         },
         {
           "moveId": "ICE_BEAM",
-          "uses": 44380
+          "uses": 44481
         },
         {
           "moveId": "FRUSTRATION",
@@ -12758,7 +12769,7 @@
         },
         {
           "moveId": "ENERGY_BALL",
-          "uses": 40849
+          "uses": 40954
         }
       ]
     },
@@ -12779,38 +12790,38 @@
       "shadoweligible"
     ],
     "speciesName": "Abomasnow",
-    "ranking": 679,
+    "ranking": 681,
     "moves": {
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 38560
+          "uses": 38663
         },
         {
           "moveId": "POWDER_SNOW",
-          "uses": 76840
+          "uses": 77037
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WEATHER_BALL_ICE",
-          "uses": 58905
+          "uses": 59063
         },
         {
           "moveId": "RETURN",
-          "uses": 9729
+          "uses": 9761
         },
         {
           "moveId": "OUTRAGE",
-          "uses": 13680
+          "uses": 13711
         },
         {
           "moveId": "ENERGY_BALL",
-          "uses": 25637
+          "uses": 25697
         },
         {
           "moveId": "BLIZZARD",
-          "uses": 7415
+          "uses": 7434
         }
       ]
     },
@@ -12849,21 +12860,21 @@
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 36995
+          "uses": 37102
         },
         {
           "moveId": "POWDER_SNOW",
-          "uses": 78405
+          "uses": 78598
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WEATHER_BALL_ICE",
-          "uses": 63842
+          "uses": 64018
         },
         {
           "moveId": "OUTRAGE",
-          "uses": 15034
+          "uses": 15067
         },
         {
           "moveId": "FRUSTRATION",
@@ -12871,11 +12882,11 @@
         },
         {
           "moveId": "ENERGY_BALL",
-          "uses": 28342
+          "uses": 28411
         },
         {
           "moveId": "BLIZZARD",
-          "uses": 8082
+          "uses": 8104
         }
       ]
     },
@@ -12953,38 +12964,38 @@
       "none"
     ],
     "speciesName": "Tangrowth",
-    "ranking": 603,
+    "ranking": 602,
     "moves": {
       "fastMoves": [
         {
           "moveId": "VINE_WHIP",
-          "uses": 68333
+          "uses": 68518
         },
         {
           "moveId": "INFESTATION",
-          "uses": 47067
+          "uses": 47182
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 8655
+          "uses": 8681
         },
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 20541
+          "uses": 20633
         },
         {
           "moveId": "ROCK_SLIDE",
-          "uses": 36668
+          "uses": 36716
         },
         {
           "moveId": "POWER_WHIP",
-          "uses": 41040
+          "uses": 41163
         },
         {
           "moveId": "ANCIENT_POWER",
-          "uses": 8485
+          "uses": 8496
         }
       ]
     },
@@ -13062,34 +13073,34 @@
       "none"
     ],
     "speciesName": "Leafeon",
-    "ranking": 552,
+    "ranking": 550,
     "moves": {
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 53559
+          "uses": 53672
         },
         {
           "moveId": "QUICK_ATTACK",
-          "uses": 61841
+          "uses": 62028
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 6498
+          "uses": 6516
         },
         {
           "moveId": "LEAF_BLADE",
-          "uses": 78295
+          "uses": 78508
         },
         {
           "moveId": "LAST_RESORT",
-          "uses": 19582
+          "uses": 19621
         },
         {
           "moveId": "ENERGY_BALL",
-          "uses": 11001
+          "uses": 11031
         }
       ]
     },
@@ -13310,30 +13321,30 @@
       "water"
     ],
     "speciesName": "Rotom (Wash)",
-    "ranking": 482,
+    "ranking": 481,
     "moves": {
       "fastMoves": [
         {
           "moveId": "THUNDER_SHOCK",
-          "uses": 89315
+          "uses": 89553
         },
         {
           "moveId": "ASTONISH",
-          "uses": 26085
+          "uses": 26147
         }
       ],
       "chargedMoves": [
         {
           "moveId": "THUNDERBOLT",
-          "uses": 52957
+          "uses": 53104
         },
         {
           "moveId": "THUNDER",
-          "uses": 22960
+          "uses": 23024
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 39421
+          "uses": 39510
         }
       ]
     },
@@ -13742,30 +13753,30 @@
       "starter"
     ],
     "speciesName": "Servine",
-    "ranking": 609,
+    "ranking": 607,
     "moves": {
       "fastMoves": [
         {
           "moveId": "VINE_WHIP",
-          "uses": 94531
+          "uses": 94741
         },
         {
           "moveId": "IRON_TAIL",
-          "uses": 20869
+          "uses": 20959
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WRAP",
-          "uses": 26792
+          "uses": 26850
         },
         {
           "moveId": "LEAF_TORNADO",
-          "uses": 43639
+          "uses": 43756
         },
         {
           "moveId": "GRASS_KNOT",
-          "uses": 44889
+          "uses": 45013
         }
       ]
     },
@@ -13786,34 +13797,34 @@
       "starter"
     ],
     "speciesName": "Serperior",
-    "ranking": 620,
+    "ranking": 618,
     "moves": {
       "fastMoves": [
         {
           "moveId": "VINE_WHIP",
-          "uses": 100365
+          "uses": 100600
         },
         {
           "moveId": "IRON_TAIL",
-          "uses": 15035
+          "uses": 15100
         }
       ],
       "chargedMoves": [
         {
           "moveId": "LEAF_TORNADO",
-          "uses": 27069
+          "uses": 27139
         },
         {
           "moveId": "GRASS_KNOT",
-          "uses": 13711
+          "uses": 13747
         },
         {
           "moveId": "FRENZY_PLANT",
-          "uses": 52209
+          "uses": 52345
         },
         {
           "moveId": "AERIAL_ACE",
-          "uses": 22251
+          "uses": 22309
         }
       ]
     },
@@ -13879,30 +13890,30 @@
       "starter"
     ],
     "speciesName": "Dewott",
-    "ranking": 569,
+    "ranking": 568,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 56412
+          "uses": 56563
         },
         {
           "moveId": "FURY_CUTTER",
-          "uses": 58988
+          "uses": 59137
         }
       ],
       "chargedMoves": [
         {
           "moveId": "X_SCISSOR",
-          "uses": 39044
+          "uses": 39112
         },
         {
           "moveId": "WATER_PULSE",
-          "uses": 7618
+          "uses": 7641
         },
         {
           "moveId": "AQUA_TAIL",
-          "uses": 68566
+          "uses": 68776
         }
       ]
     },
@@ -13928,25 +13939,25 @@
       "fastMoves": [
         {
           "moveId": "WATERFALL",
-          "uses": 55763
+          "uses": 55934
         },
         {
           "moveId": "FURY_CUTTER",
-          "uses": 59637
+          "uses": 59766
         }
       ],
       "chargedMoves": [
         {
           "moveId": "MEGAHORN",
-          "uses": 44720
+          "uses": 44812
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 39210
+          "uses": 39325
         },
         {
           "moveId": "BLIZZARD",
-          "uses": 31465
+          "uses": 31558
         }
       ]
     },
@@ -14040,25 +14051,25 @@
       "fastMoves": [
         {
           "moveId": "VINE_WHIP",
-          "uses": 81628
+          "uses": 81870
         },
         {
           "moveId": "BITE",
-          "uses": 33772
+          "uses": 33830
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 11492
+          "uses": 11536
         },
         {
           "moveId": "GRASS_KNOT",
-          "uses": 55744
+          "uses": 55956
         },
         {
           "moveId": "CRUNCH",
-          "uses": 47839
+          "uses": 47881
         }
       ]
     },
@@ -14113,30 +14124,30 @@
       "regional"
     ],
     "speciesName": "Simipour",
-    "ranking": 524,
+    "ranking": 525,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 75410
+          "uses": 75659
         },
         {
           "moveId": "BITE",
-          "uses": 39990
+          "uses": 40041
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SURF",
-          "uses": 67021
+          "uses": 67249
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 11042
+          "uses": 11079
         },
         {
           "moveId": "CRUNCH",
-          "uses": 37692
+          "uses": 37727
         }
       ]
     },
@@ -14307,30 +14318,30 @@
       "ground"
     ],
     "speciesName": "Palpitoad",
-    "ranking": 556,
+    "ranking": 558,
     "moves": {
       "fastMoves": [
         {
           "moveId": "MUD_SHOT",
-          "uses": 63962
+          "uses": 64122
         },
         {
           "moveId": "BUBBLE",
-          "uses": 51438
+          "uses": 51578
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 24765
+          "uses": 24822
         },
         {
           "moveId": "SLUDGE_WAVE",
-          "uses": 30443
+          "uses": 30544
         },
         {
           "moveId": "EARTH_POWER",
-          "uses": 60096
+          "uses": 60238
         }
       ]
     },
@@ -14348,30 +14359,30 @@
       "ground"
     ],
     "speciesName": "Seismitoad",
-    "ranking": 579,
+    "ranking": 580,
     "moves": {
       "fastMoves": [
         {
           "moveId": "MUD_SHOT",
-          "uses": 62921
+          "uses": 63072
         },
         {
           "moveId": "BUBBLE",
-          "uses": 52479
+          "uses": 52628
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 31306
+          "uses": 31411
         },
         {
           "moveId": "MUDDY_WATER",
-          "uses": 41373
+          "uses": 41472
         },
         {
           "moveId": "EARTH_POWER",
-          "uses": 42723
+          "uses": 42819
         }
       ]
     },
@@ -14407,14 +14418,44 @@
     "speciesName": "Sewaddle"
   },
   "swadloon": {
-    "legal": false,
+    "legal": true,
     "dex": 541,
     "types": [
       "bug",
       "grass"
     ],
-    "tags": [
-      "unreleased"
+    "speciesName": "Swadloon",
+    "ranking": 480,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "STRUGGLE_BUG",
+          "uses": 43155
+        },
+        {
+          "moveId": "BUG_BITE",
+          "uses": 72545
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SILVER_WIND",
+          "uses": 30386
+        },
+        {
+          "moveId": "ENERGY_BALL",
+          "uses": 50892
+        },
+        {
+          "moveId": "BUG_BUZZ",
+          "uses": 34456
+        }
+      ]
+    },
+    "moveset": [
+      "BUG_BITE",
+      "ENERGY_BALL",
+      "BUG_BUZZ"
     ]
   },
   "leavanny": {
@@ -14425,34 +14466,34 @@
       "grass"
     ],
     "speciesName": "Leavanny",
-    "ranking": 582,
+    "ranking": 580,
     "moves": {
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 50524
+          "uses": 50682
         },
         {
           "moveId": "BUG_BITE",
-          "uses": 64876
+          "uses": 65018
         }
       ],
       "chargedMoves": [
         {
           "moveId": "X_SCISSOR",
-          "uses": 31940
+          "uses": 31989
         },
         {
           "moveId": "SILVER_WIND",
-          "uses": 7407
+          "uses": 7419
         },
         {
           "moveId": "LEAF_STORM",
-          "uses": 8330
+          "uses": 8357
         },
         {
           "moveId": "LEAF_BLADE",
-          "uses": 67611
+          "uses": 67824
         }
       ]
     },
@@ -14503,30 +14544,30 @@
       "fairy"
     ],
     "speciesName": "Whimsicott",
-    "ranking": 648,
+    "ranking": 646,
     "moves": {
       "fastMoves": [
         {
           "moveId": "RAZOR_LEAF",
-          "uses": 52528
+          "uses": 52614
         },
         {
           "moveId": "CHARM",
-          "uses": 62872
+          "uses": 63086
         }
       ],
       "chargedMoves": [
         {
           "moveId": "MOONBLAST",
-          "uses": 40978
+          "uses": 41136
         },
         {
           "moveId": "HURRICANE",
-          "uses": 25066
+          "uses": 25121
         },
         {
           "moveId": "GRASS_KNOT",
-          "uses": 49433
+          "uses": 49521
         }
       ]
     },
@@ -14558,85 +14599,85 @@
       "fastMoves": [
         {
           "moveId": "HIDDEN_POWER_WATER",
-          "uses": 6667
+          "uses": 6683
         },
         {
           "moveId": "HIDDEN_POWER_STEEL",
-          "uses": 5664
+          "uses": 5685
         },
         {
           "moveId": "HIDDEN_POWER_ROCK",
-          "uses": 6855
+          "uses": 6865
         },
         {
           "moveId": "HIDDEN_POWER_PSYCHIC",
-          "uses": 6069
+          "uses": 6087
         },
         {
           "moveId": "HIDDEN_POWER_POISON",
-          "uses": 5521
+          "uses": 5542
         },
         {
           "moveId": "HIDDEN_POWER_ICE",
-          "uses": 6924
+          "uses": 6940
         },
         {
           "moveId": "HIDDEN_POWER_GROUND",
-          "uses": 7303
+          "uses": 7319
         },
         {
           "moveId": "HIDDEN_POWER_GRASS",
-          "uses": 9781
+          "uses": 9801
         },
         {
           "moveId": "HIDDEN_POWER_GHOST",
-          "uses": 6488
+          "uses": 6501
         },
         {
           "moveId": "HIDDEN_POWER_FLYING",
-          "uses": 6776
+          "uses": 6802
         },
         {
           "moveId": "HIDDEN_POWER_FIRE",
-          "uses": 7173
+          "uses": 7189
         },
         {
           "moveId": "HIDDEN_POWER_FIGHTING",
-          "uses": 6934
+          "uses": 6952
         },
         {
           "moveId": "HIDDEN_POWER_ELECTRIC",
-          "uses": 6830
+          "uses": 6846
         },
         {
           "moveId": "HIDDEN_POWER_DRAGON",
-          "uses": 5654
+          "uses": 5665
         },
         {
           "moveId": "HIDDEN_POWER_DARK",
-          "uses": 6426
+          "uses": 6432
         },
         {
           "moveId": "HIDDEN_POWER_BUG",
-          "uses": 5849
+          "uses": 5859
         },
         {
           "moveId": "CHARM",
-          "uses": 8884
+          "uses": 8931
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 22778
+          "uses": 22841
         },
         {
           "moveId": "PETAL_BLIZZARD",
-          "uses": 56240
+          "uses": 56393
         },
         {
           "moveId": "HYPER_BEAM",
-          "uses": 36592
+          "uses": 36678
         }
       ]
     },
@@ -14662,25 +14703,25 @@
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 85869
+          "uses": 86076
         },
         {
           "moveId": "TACKLE",
-          "uses": 29531
+          "uses": 29624
         }
       ],
       "chargedMoves": [
         {
           "moveId": "MUDDY_WATER",
-          "uses": 23027
+          "uses": 23087
         },
         {
           "moveId": "AQUA_TAIL",
-          "uses": 80459
+          "uses": 80668
         },
         {
           "moveId": "AQUA_JET",
-          "uses": 11830
+          "uses": 11861
         }
       ]
     },
@@ -14786,30 +14827,30 @@
       "regional"
     ],
     "speciesName": "Maractus",
-    "ranking": 472,
+    "ranking": 470,
     "moves": {
       "fastMoves": [
         {
           "moveId": "POISON_JAB",
-          "uses": 52857
+          "uses": 53014
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 62543
+          "uses": 62686
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 18986
+          "uses": 19029
         },
         {
           "moveId": "PETAL_BLIZZARD",
-          "uses": 46848
+          "uses": 46954
         },
         {
           "moveId": "AERIAL_ACE",
-          "uses": 49795
+          "uses": 49947
         }
       ]
     },
@@ -14897,30 +14938,30 @@
       "rock"
     ],
     "speciesName": "Tirtouga",
-    "ranking": 601,
+    "ranking": 602,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 74772
+          "uses": 75025
         },
         {
           "moveId": "BITE",
-          "uses": 40628
+          "uses": 40675
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SURF",
-          "uses": 50258
+          "uses": 50393
         },
         {
           "moveId": "BODY_SLAM",
-          "uses": 42608
+          "uses": 42743
         },
         {
           "moveId": "ANCIENT_POWER",
-          "uses": 22466
+          "uses": 22496
         }
       ]
     },
@@ -14938,30 +14979,30 @@
       "rock"
     ],
     "speciesName": "Carracosta",
-    "ranking": 582,
+    "ranking": 583,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 59979
+          "uses": 60161
         },
         {
           "moveId": "ROCK_THROW",
-          "uses": 55421
+          "uses": 55539
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SURF",
-          "uses": 50165
+          "uses": 50298
         },
         {
           "moveId": "BODY_SLAM",
-          "uses": 42729
+          "uses": 42867
         },
         {
           "moveId": "ANCIENT_POWER",
-          "uses": 22502
+          "uses": 22532
         }
       ]
     },
@@ -15106,30 +15147,30 @@
       "flying"
     ],
     "speciesName": "Swanna",
-    "ranking": 436,
+    "ranking": 435,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 59868
+          "uses": 60002
         },
         {
           "moveId": "AIR_SLASH",
-          "uses": 55532
+          "uses": 55698
         }
       ],
       "chargedMoves": [
         {
           "moveId": "ICE_BEAM",
-          "uses": 40259
+          "uses": 40341
         },
         {
           "moveId": "HURRICANE",
-          "uses": 46704
+          "uses": 46871
         },
         {
           "moveId": "BUBBLE_BEAM",
-          "uses": 28463
+          "uses": 28515
         }
       ]
     },
@@ -15171,30 +15212,30 @@
       "grass"
     ],
     "speciesName": "Deerling",
-    "ranking": 339,
+    "ranking": 337,
     "moves": {
       "fastMoves": [
         {
           "moveId": "TAKE_DOWN",
-          "uses": 48403
+          "uses": 48497
         },
         {
           "moveId": "TACKLE",
-          "uses": 66997
+          "uses": 67203
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WILD_CHARGE",
-          "uses": 61432
+          "uses": 61583
         },
         {
           "moveId": "SEED_BOMB",
-          "uses": 38835
+          "uses": 38940
         },
         {
           "moveId": "ENERGY_BALL",
-          "uses": 15271
+          "uses": 15313
         }
       ]
     },
@@ -15212,34 +15253,34 @@
       "grass"
     ],
     "speciesName": "Sawsbuck",
-    "ranking": 426,
+    "ranking": 421,
     "moves": {
       "fastMoves": [
         {
           "moveId": "TAKE_DOWN",
-          "uses": 26012
+          "uses": 26163
         },
         {
           "moveId": "FEINT_ATTACK",
-          "uses": 89388
+          "uses": 89537
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WILD_CHARGE",
-          "uses": 55301
+          "uses": 55459
         },
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 19555
+          "uses": 19606
         },
         {
           "moveId": "MEGAHORN",
-          "uses": 25543
+          "uses": 25584
         },
         {
           "moveId": "HYPER_BEAM",
-          "uses": 15146
+          "uses": 15197
         }
       ]
     },
@@ -15290,37 +15331,37 @@
       "poison"
     ],
     "speciesName": "Amoonguss",
-    "ranking": 547,
+    "ranking": 505,
     "moves": {
       "fastMoves": [
         {
           "moveId": "FEINT_ATTACK",
-          "uses": 79784
+          "uses": 80128
         },
         {
           "moveId": "ASTONISH",
-          "uses": 35616
+          "uses": 35572
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 34918
+          "uses": 35061
         },
         {
           "moveId": "GRASS_KNOT",
-          "uses": 45083
+          "uses": 45206
         },
         {
           "moveId": "FOUL_PLAY",
-          "uses": 35451
+          "uses": 35477
         }
       ]
     },
     "moveset": [
       "FEINT_ATTACK",
       "GRASS_KNOT",
-      "FOUL_PLAY"
+      "SLUDGE_BOMB"
     ]
   },
   "frillish": {
@@ -15331,30 +15372,30 @@
       "ghost"
     ],
     "speciesName": "Frillish",
-    "ranking": 512,
+    "ranking": 515,
     "moves": {
       "fastMoves": [
         {
           "moveId": "HEX",
-          "uses": 58323
+          "uses": 58472
         },
         {
           "moveId": "BUBBLE",
-          "uses": 57077
+          "uses": 57228
         }
       ],
       "chargedMoves": [
         {
           "moveId": "OMINOUS_WIND",
-          "uses": 48728
+          "uses": 48843
         },
         {
           "moveId": "NIGHT_SHADE",
-          "uses": 15199
+          "uses": 15235
         },
         {
           "moveId": "ICE_BEAM",
-          "uses": 51454
+          "uses": 51603
         }
       ]
     },
@@ -15372,30 +15413,30 @@
       "ghost"
     ],
     "speciesName": "Jellicent",
-    "ranking": 697,
+    "ranking": 701,
     "moves": {
       "fastMoves": [
         {
           "moveId": "HEX",
-          "uses": 59476
+          "uses": 59624
         },
         {
           "moveId": "BUBBLE",
-          "uses": 55924
+          "uses": 56076
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SHADOW_BALL",
-          "uses": 56342
+          "uses": 56474
         },
         {
           "moveId": "ICE_BEAM",
-          "uses": 36362
+          "uses": 36463
         },
         {
           "moveId": "BUBBLE_BEAM",
-          "uses": 22626
+          "uses": 22692
         }
       ]
     },
@@ -15418,85 +15459,85 @@
       "fastMoves": [
         {
           "moveId": "WATERFALL",
-          "uses": 12208
+          "uses": 12241
         },
         {
           "moveId": "HIDDEN_POWER_WATER",
-          "uses": 8273
+          "uses": 8295
         },
         {
           "moveId": "HIDDEN_POWER_STEEL",
-          "uses": 5582
+          "uses": 5604
         },
         {
           "moveId": "HIDDEN_POWER_ROCK",
-          "uses": 6819
+          "uses": 6830
         },
         {
           "moveId": "HIDDEN_POWER_PSYCHIC",
-          "uses": 5991
+          "uses": 6010
         },
         {
           "moveId": "HIDDEN_POWER_POISON",
-          "uses": 5502
+          "uses": 5524
         },
         {
           "moveId": "HIDDEN_POWER_ICE",
-          "uses": 6917
+          "uses": 6934
         },
         {
           "moveId": "HIDDEN_POWER_GROUND",
-          "uses": 7077
+          "uses": 7094
         },
         {
           "moveId": "HIDDEN_POWER_GRASS",
-          "uses": 6264
+          "uses": 6281
         },
         {
           "moveId": "HIDDEN_POWER_GHOST",
-          "uses": 6373
+          "uses": 6386
         },
         {
           "moveId": "HIDDEN_POWER_FLYING",
-          "uses": 6723
+          "uses": 6751
         },
         {
           "moveId": "HIDDEN_POWER_FIRE",
-          "uses": 7121
+          "uses": 7138
         },
         {
           "moveId": "HIDDEN_POWER_FIGHTING",
-          "uses": 6612
+          "uses": 6630
         },
         {
           "moveId": "HIDDEN_POWER_ELECTRIC",
-          "uses": 6574
+          "uses": 6591
         },
         {
           "moveId": "HIDDEN_POWER_DRAGON",
-          "uses": 5514
+          "uses": 5526
         },
         {
           "moveId": "HIDDEN_POWER_DARK",
-          "uses": 6189
+          "uses": 6195
         },
         {
           "moveId": "HIDDEN_POWER_BUG",
-          "uses": 5775
+          "uses": 5786
         }
       ],
       "chargedMoves": [
         {
           "moveId": "PSYCHIC",
-          "uses": 40988
+          "uses": 41112
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 40414
+          "uses": 40511
         },
         {
           "moveId": "BLIZZARD",
-          "uses": 34004
+          "uses": 34082
         }
       ]
     },
@@ -15530,30 +15571,30 @@
       "steel"
     ],
     "speciesName": "Ferroseed",
-    "ranking": 371,
+    "ranking": 372,
     "moves": {
       "fastMoves": [
         {
           "moveId": "TACKLE",
-          "uses": 43398
+          "uses": 43495
         },
         {
           "moveId": "METAL_CLAW",
-          "uses": 72002
+          "uses": 72205
         }
       ],
       "chargedMoves": [
         {
           "moveId": "IRON_HEAD",
-          "uses": 70745
+          "uses": 70929
         },
         {
           "moveId": "GYRO_BALL",
-          "uses": 22135
+          "uses": 22193
         },
         {
           "moveId": "FLASH_CANNON",
-          "uses": 22536
+          "uses": 22594
         }
       ]
     },
@@ -15571,38 +15612,38 @@
       "steel"
     ],
     "speciesName": "Ferrothorn",
-    "ranking": 630,
+    "ranking": 632,
     "moves": {
       "fastMoves": [
         {
           "moveId": "METAL_CLAW",
-          "uses": 44466
+          "uses": 44609
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 70934
+          "uses": 71091
         }
       ],
       "chargedMoves": [
         {
           "moveId": "THUNDER",
-          "uses": 22032
+          "uses": 22073
         },
         {
           "moveId": "POWER_WHIP",
-          "uses": 42569
+          "uses": 42668
         },
         {
           "moveId": "MIRROR_SHOT",
-          "uses": 31061
+          "uses": 31160
         },
         {
           "moveId": "FLASH_CANNON",
-          "uses": 16108
+          "uses": 16160
         },
         {
           "moveId": "ACID_SPRAY",
-          "uses": 3710
+          "uses": 3721
         }
       ]
     },
@@ -16230,30 +16271,30 @@
       "none"
     ],
     "speciesName": "Chespin",
-    "ranking": 502,
+    "ranking": 499,
     "moves": {
       "fastMoves": [
         {
           "moveId": "VINE_WHIP",
-          "uses": 99850
+          "uses": 100112
         },
         {
           "moveId": "TAKE_DOWN",
-          "uses": 15550
+          "uses": 15588
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SEED_BOMB",
-          "uses": 45051
+          "uses": 45157
         },
         {
           "moveId": "GYRO_BALL",
-          "uses": 13738
+          "uses": 13784
         },
         {
           "moveId": "BODY_SLAM",
-          "uses": 56736
+          "uses": 56884
         }
       ]
     },
@@ -16271,30 +16312,30 @@
       "none"
     ],
     "speciesName": "Quilladin",
-    "ranking": 629,
+    "ranking": 628,
     "moves": {
       "fastMoves": [
         {
           "moveId": "VINE_WHIP",
-          "uses": 95254
+          "uses": 95513
         },
         {
           "moveId": "LOW_KICK",
-          "uses": 20146
+          "uses": 20187
         }
       ],
       "chargedMoves": [
         {
           "moveId": "GYRO_BALL",
-          "uses": 14782
+          "uses": 14831
         },
         {
           "moveId": "ENERGY_BALL",
-          "uses": 39570
+          "uses": 39658
         },
         {
           "moveId": "BODY_SLAM",
-          "uses": 61033
+          "uses": 61196
         }
       ]
     },
@@ -16312,38 +16353,38 @@
       "fighting"
     ],
     "speciesName": "Chesnaught",
-    "ranking": 631,
+    "ranking": 630,
     "moves": {
       "fastMoves": [
         {
           "moveId": "VINE_WHIP",
-          "uses": 66121
+          "uses": 66321
         },
         {
           "moveId": "SMACK_DOWN",
-          "uses": 36577
+          "uses": 36637
         },
         {
           "moveId": "LOW_KICK",
-          "uses": 12731
+          "uses": 12771
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SUPER_POWER",
-          "uses": 61020
+          "uses": 61172
         },
         {
           "moveId": "SOLAR_BEAM",
-          "uses": 9160
+          "uses": 9182
         },
         {
           "moveId": "GYRO_BALL",
-          "uses": 13609
+          "uses": 13658
         },
         {
           "moveId": "ENERGY_BALL",
-          "uses": 31482
+          "uses": 31559
         }
       ]
     },
@@ -16394,30 +16435,30 @@
       "none"
     ],
     "speciesName": "Frogadier",
-    "ranking": 502,
+    "ranking": 504,
     "moves": {
       "fastMoves": [
         {
           "moveId": "POUND",
-          "uses": 16532
+          "uses": 16587
         },
         {
           "moveId": "BUBBLE",
-          "uses": 98868
+          "uses": 99113
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 8541
+          "uses": 8561
         },
         {
           "moveId": "SURF",
-          "uses": 74784
+          "uses": 74959
         },
         {
           "moveId": "AERIAL_ACE",
-          "uses": 32093
+          "uses": 32198
         }
       ]
     },
@@ -16435,34 +16476,34 @@
       "dark"
     ],
     "speciesName": "Greninja",
-    "ranking": 565,
+    "ranking": 562,
     "moves": {
       "fastMoves": [
         {
           "moveId": "FEINT_ATTACK",
-          "uses": 53297
+          "uses": 53388
         },
         {
           "moveId": "BUBBLE",
-          "uses": 62103
+          "uses": 62312
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SURF",
-          "uses": 42414
+          "uses": 42555
         },
         {
           "moveId": "NIGHT_SLASH",
-          "uses": 48468
+          "uses": 48518
         },
         {
           "moveId": "HYDRO_PUMP",
-          "uses": 6859
+          "uses": 6882
         },
         {
           "moveId": "AERIAL_ACE",
-          "uses": 17617
+          "uses": 17703
         }
       ]
     },
@@ -16633,9 +16674,6 @@
     "types": [
       "fighting",
       "none"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "pangoro": {
@@ -16644,9 +16682,6 @@
     "types": [
       "fighting",
       "dark"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "furfrou": {
@@ -16788,38 +16823,38 @@
       "water"
     ],
     "speciesName": "Barbaracle",
-    "ranking": 640,
+    "ranking": 639,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 40296
+          "uses": 40415
         },
         {
           "moveId": "MUD_SLAP",
-          "uses": 27406
+          "uses": 27493
         },
         {
           "moveId": "FURY_CUTTER",
-          "uses": 47745
+          "uses": 47839
         }
       ],
       "chargedMoves": [
         {
           "moveId": "STONE_EDGE",
-          "uses": 38334
+          "uses": 38393
         },
         {
           "moveId": "SKULL_BASH",
-          "uses": 14127
+          "uses": 14177
         },
         {
           "moveId": "GRASS_KNOT",
-          "uses": 26797
+          "uses": 26874
         },
         {
           "moveId": "CROSS_CHOP",
-          "uses": 36194
+          "uses": 36310
         }
       ]
     },
@@ -16837,34 +16872,34 @@
       "water"
     ],
     "speciesName": "Skrelp",
-    "ranking": 505,
+    "ranking": 506,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 75543
+          "uses": 75716
         },
         {
           "moveId": "ACID",
-          "uses": 39857
+          "uses": 39984
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 6962
+          "uses": 6978
         },
         {
           "moveId": "TWISTER",
-          "uses": 12095
+          "uses": 12117
         },
         {
           "moveId": "SLUDGE_BOMB",
-          "uses": 35684
+          "uses": 35805
         },
         {
           "moveId": "AQUA_TAIL",
-          "uses": 60766
+          "uses": 60907
         }
       ]
     },
@@ -16895,25 +16930,25 @@
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 65071
+          "uses": 65263
         },
         {
           "moveId": "SMACK_DOWN",
-          "uses": 50329
+          "uses": 50437
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 11008
+          "uses": 11037
         },
         {
           "moveId": "CRABHAMMER",
-          "uses": 75340
+          "uses": 75536
         },
         {
           "moveId": "AQUA_JET",
-          "uses": 28994
+          "uses": 29069
         }
       ]
     },
@@ -16936,29 +16971,29 @@
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 63451
+          "uses": 63653
         },
         {
           "moveId": "SMACK_DOWN",
-          "uses": 51949
+          "uses": 52047
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WATER_PULSE",
-          "uses": 7459
+          "uses": 7484
         },
         {
           "moveId": "ICE_BEAM",
-          "uses": 28469
+          "uses": 28548
         },
         {
           "moveId": "DARK_PULSE",
-          "uses": 29088
+          "uses": 29117
         },
         {
           "moveId": "CRABHAMMER",
-          "uses": 50585
+          "uses": 50753
         }
       ]
     },
@@ -17040,9 +17075,6 @@
     "types": [
       "fairy",
       "none"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "hawlucha": {
@@ -17201,9 +17233,6 @@
     "types": [
       "fairy",
       "none"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "yveltal": {

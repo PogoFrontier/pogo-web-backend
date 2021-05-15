@@ -95,7 +95,7 @@ router.get('/names', (req, res) => {
             return pokemon[mon].speciesName
         }));
     }catch(err){
-        console.error();
+        console.error(err);
         res.status(500).json({message: "Internal server error"});
     }
 });
@@ -134,7 +134,7 @@ router.get('/:id', (req, res) => {
 
         result ? res.json(result) : res.status(404).json(`Could not find Pokemon of id: ${req.params.id}`);
     }catch(err){
-        console.error();
+        console.error(err);
         res.status(500).json({message: "Internal server error"});
     }
 });

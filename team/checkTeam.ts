@@ -1,9 +1,9 @@
 import Filter from "bad-words"
 import { ClassOption, Rule, Selector } from "../types/rule";
-import { Pokemon, TeamMember, TeamMemberDescription, typeId } from "../types/team";
+import { Pokemon, TeamMember, TeamMemberDescription, typeId, PokemonSpecies } from "../types/team";
 import { calculateCP, calculateHP, calculateAtk,calculateDef } from "../utils/calcUtils";
-import pokeData from "./../data/pokemon.json";
-import mainSeriesPokeData from "./../data/pokemonWithMainSeriesMoves.json";
+import pokeData from "../data/pokemon.json";
+import mainSeriesPokeData from "../data/pokemonWithMainSeriesMoves.json";
 
 const curseWordFilter = new Filter() 
 
@@ -17,7 +17,7 @@ export function isTeamValid(team: TeamMember[], format: Rule): {isValid: boolean
     let megaCounter = 0;
     let bestBuddyCounter = 0;
     let pointsUsed = 0;
-    let selectedSpecies = Array<species>();
+    let selectedSpecies = Array<PokemonSpecies>();
   
     for (const index in team) {
       const pokemon = team[index];
@@ -51,7 +51,6 @@ export function isTeamValid(team: TeamMember[], format: Rule): {isValid: boolean
         violations.push(`Pokemon in index ${index} has too many cp: ${pokemon.cp}`);
       }
 
-      console.log(pokemon.name)
       // Check nickname length
       if(pokemon.name && pokemon.name.length > 12) {
         violations.push(`The nickname ${pokemon.name} exceeds the character limit of 12`);
@@ -284,14 +283,8 @@ export function doesClassDescribePokemon(speciesId: string, classOption: ClassOp
   return true
 }
 
-type species = {
-    speciesId: string
-    dex: number
-    tags?: string[]
-    types: string[]
-}
 
-function doesSelectorDescribePokémon(tag: Selector, poke: species): boolean {
+function doesSelectorDescribePokémon(tag: Selector, poke: PokemonSpecies): boolean {
     switch (tag.filterType) {
         case "tag":
             return !!poke.tags && tag.values.some(value => poke.tags!.includes(value));
@@ -309,6 +302,6 @@ function doesSelectorDescribePokémon(tag: Selector, poke: species): boolean {
     }
 }
 
-function isThereADuplicateType(poke1: species, poke2: species): boolean {
+function isThereADuplicateType(poke1: PokemonSpecies, poke2: PokemonSpecies): boolean {
     return poke1.types.some(type1 => poke2.types.some(type2 => type1 === type2 && type1 !== "none"));
 }

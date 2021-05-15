@@ -2,7 +2,7 @@ import fs from "fs"
 import p from "../data/pokemon.json";
 import npm_pokemon from 'pokemon'
 import {LokaliseApi} from "@lokalise/node-api"
-const lokalise = new LokaliseApi({apiKey: "5918a05263343e7e285b9108c9817c9c6a474d49"})
+const lokalise = new LokaliseApi({apiKey: "1167d4c97fc5ac11eb1b711de341eec6130d5a19"})
 
 //Get LOKALISE_API_KEY from .env
 async function getKey(key_id : string) {

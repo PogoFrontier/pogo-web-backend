@@ -25,7 +25,7 @@ function onAction({
       const energy = player.current.team[player.current.active].current?.energy || 0
 
       // Dismiss invalid inputs
-      if (currentRoom.status === RoomStatus.FAINT && type !== Actions.SWITCH) {
+      if (currentRoom.status === RoomStatus.FAINT && (pokemon.current?.hp !== 0 || type !== Actions.SWITCH)) {
         return;
       }
       if (type === Actions.CHARGE_ATTACK && move.energy > energy) {

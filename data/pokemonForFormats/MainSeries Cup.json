@@ -2483,13 +2483,12 @@
     "speciesName": "Rhydon"
   },
   "chansey": {
-    "legal": true,
+    "legal": false,
     "dex": 113,
     "types": [
       "normal",
       "none"
-    ],
-    "speciesName": "Chansey"
+    ]
   },
   "tangela": {
     "legal": true,
@@ -3580,13 +3579,12 @@
     "speciesName": "Marill"
   },
   "azumarill": {
-    "legal": true,
+    "legal": false,
     "dex": 184,
     "types": [
       "water",
       "fairy"
-    ],
-    "speciesName": "Azumarill"
+    ]
   },
   "sudowoodo": {
     "legal": true,
@@ -4512,13 +4510,12 @@
     "speciesName": "Miltank"
   },
   "blissey": {
-    "legal": true,
+    "legal": false,
     "dex": 242,
     "types": [
       "normal",
       "none"
-    ],
-    "speciesName": "Blissey"
+    ]
   },
   "raikou": {
     "legal": true,
@@ -5820,6 +5817,18 @@
       "flying"
     ],
     "speciesName": "Altaria"
+  },
+  "altaria_mega": {
+    "legal": true,
+    "dex": 334,
+    "types": [
+      "dragon",
+      "fairy"
+    ],
+    "tags": [
+      "mega"
+    ],
+    "speciesName": "Altaria (Mega)"
   },
   "zangoose": {
     "legal": true,
@@ -8858,9 +8867,6 @@
       "bug",
       "grass"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "speciesName": "Swadloon"
   },
   "leavanny": {
@@ -10384,9 +10390,6 @@
       "fighting",
       "none"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "speciesName": "Pancham"
   },
   "pangoro": {
@@ -10395,9 +10398,6 @@
     "types": [
       "fighting",
       "dark"
-    ],
-    "tags": [
-      "unreleased"
     ],
     "speciesName": "Pangoro"
   },
@@ -10465,7 +10465,7 @@
     "speciesName": "Doublade"
   },
   "aegislash": {
-    "legal": true,
+    "legal": false,
     "dex": 681,
     "types": [
       "steel",
@@ -10473,8 +10473,7 @@
     ],
     "tags": [
       "unreleased"
-    ],
-    "speciesName": "Aegislash"
+    ]
   },
   "spritzee": {
     "legal": true,
@@ -10669,9 +10668,6 @@
       "fairy",
       "none"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "speciesName": "Sylveon"
   },
   "hawlucha": {
@@ -10845,9 +10841,6 @@
     "types": [
       "fairy",
       "none"
-    ],
-    "tags": [
-      "unreleased"
     ],
     "speciesName": "Xerneas"
   },

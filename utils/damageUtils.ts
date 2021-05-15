@@ -61,6 +61,8 @@ function getMultiplier(attackerTypes: string[], defenderTypes: string[], moveTyp
 export function calcDamage(attacker: TeamMember, defender: TeamMember, move: Move, chargeMult?: number): number {
   const mult = getMultiplier(attacker.types, defender.types, move.type);
   const charge = chargeMult ? chargeMult : 1
-  const damage = Math.floor(0.5 * (attacker.current!.atk / defender.current!.def) * move.power * mult * charge * bonusMultiplier) + 1;
+  const shadowMult1 = attacker.speciesId.endsWith("_shadow") ? 1.2 : 1;
+  const shadowMult2 = defender.speciesId.endsWith("_shadow") ? 1.2 : 1;
+  const damage = Math.floor(0.5 * (attacker.current!.atk / defender.current!.def) * move.power * mult * charge * bonusMultiplier * shadowMult1 * shadowMult2) + 1;
   return Math.max(defender.current!.hp - damage, 0);
 }

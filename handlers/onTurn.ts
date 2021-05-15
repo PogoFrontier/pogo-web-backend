@@ -18,19 +18,20 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
   if (currentRoom) {
     for (let i = 0; i < currentRoom.players.length; i++) {
       const player = currentRoom.players[i];
+      const activePokemon = player?.current?.team[player.current.active];
       if (player && player.current?.action) {
         switch (player.current.action.id) {
           case Actions.FAST_ATTACK:
             if (!player.current.action.move
               || currentRoom.status === RoomStatus.STARTING
               || currentRoom.status === RoomStatus.SELECTING
-              || currentRoom.status === RoomStatus.CHARGE) {
+              || currentRoom.status === RoomStatus.CHARGE
+              || !activePokemon?.current?.hp) {
               break;
             }
             player.current.action.move!.cooldown -= 500;
             if (player.current.action.move!.cooldown <= 0) {
               const j = i === 0 ? 1 : 0;
-              const activePokemon = player.current.team[player.current.active];
 
               activePokemon.current!.energy = 
                 Math.min(100, (activePokemon.current!.energy || 0) + moves[player.current.action.move.moveId].energyGain)
@@ -235,8 +236,7 @@ const onTurn = (room: string, id: string) => {
     && currentRoom.timerId === id
     && currentRoom.players
     && currentRoom.status !== RoomStatus.SELECTING
-    && currentRoom.status !== RoomStatus.STARTING
-    && currentRoom.status !== RoomStatus.LISTENING) {
+    && currentRoom.status !== RoomStatus.STARTING) {
     currentRoom.turn = currentRoom.turn ? currentRoom.turn + 1 : 1;
     const time = Math.ceil(Number((GAME_TIME - currentRoom.turn * 0.5).toFixed(1)))
     if (time <= 0 && currentRoom.status !== RoomStatus.CHARGE) {

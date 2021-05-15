@@ -5334,7 +5334,7 @@
       "SUBMISSION",
       "PAYBACK"
     ],
-    "searchPriority": 5,
+    "searchPriority": 10,
     "level25CP": 1893,
     "tags": [
       "shadoweligible"
@@ -12469,6 +12469,7 @@
       "SURF",
       "WEATHER_BALL_WATER"
     ],
+    "searchPriority": 10,
     "level25CP": 1494,
     "tags": [
       "shadoweligible"
@@ -12476,7 +12477,6 @@
     "eliteMoves": [
       "EARTHQUAKE"
     ],
-    "searchPriority": 10,
     "sid": 5952
   },
   "politoed_shadow": {
@@ -14692,7 +14692,7 @@
       "WATER_PULSE",
       "BUBBLE_BEAM"
     ],
-    "searchPriority": 13,
+    "searchPriority": 5,
     "sid": 7232
   },
   "skarmory": {
@@ -14993,7 +14993,7 @@
     "eliteMoves": [
       "WATER_GUN"
     ],
-    "searchPriority": 5,
+    "searchPriority": 12,
     "sid": 7360
   },
   "phanpy": {
@@ -17720,6 +17720,7 @@
       "HYDRO_PUMP",
       "WEATHER_BALL_WATER"
     ],
+    "searchPriority": 10,
     "sid": 8928
   },
   "ralts": {
@@ -20198,10 +20199,45 @@
     "chargedMoves": [
       "DAZZLING_GLEAM",
       "DRAGON_PULSE",
-      "SKY_ATTACK"
+      "SKY_ATTACK",
+      "MOONBLAST"
+    ],
+    "eliteMoves": [
+      "MOONBLAST"
     ],
     "searchPriority": 21,
     "sid": 10688
+  },
+  "altaria_mega": {
+    "dex": 334,
+    "speciesName": "Altaria (Mega)",
+    "speciesId": "altaria_mega",
+    "baseStats": {
+      "atk": 222,
+      "def": 218,
+      "hp": 181
+    },
+    "types": [
+      "dragon",
+      "fairy"
+    ],
+    "fastMoves": [
+      "DRAGON_BREATH",
+      "PECK"
+    ],
+    "chargedMoves": [
+      "DAZZLING_GLEAM",
+      "DRAGON_PULSE",
+      "SKY_ATTACK",
+      "MOONBLAST"
+    ],
+    "eliteMoves": [
+      "MOONBLAST"
+    ],
+    "tags": [
+      "mega"
+    ],
+    "sid": 10689
   },
   "zangoose": {
     "dex": 335,
@@ -26553,6 +26589,7 @@
     "eliteMoves": [
       "FLAMETHROWER"
     ],
+    "searchPriority": 2,
     "level25CP": 1908,
     "tags": [
       "shadoweligible"
@@ -30128,6 +30165,7 @@
       "DRILL_RUN",
       "IRON_HEAD"
     ],
+    "searchPriority": 5,
     "sid": 16960
   },
   "audino": {
@@ -30490,9 +30528,6 @@
       "ENERGY_BALL",
       "BUG_BUZZ",
       "SILVER_WIND"
-    ],
-    "tags": [
-      "unreleased"
     ],
     "sid": 17312
   },
@@ -32491,6 +32526,7 @@
       "ICE_BEAM",
       "BUBBLE_BEAM"
     ],
+    "searchPriority": 10,
     "sid": 18976
   },
   "alomomola": {
@@ -35821,9 +35857,6 @@
       "CRUNCH",
       "BODY_SLAM"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "sid": 21568
   },
   "pangoro": {
@@ -35859,9 +35892,8 @@
       "IRON_HEAD",
       "ROCK_SLIDE"
     ],
-    "tags": [
-      "unreleased"
-    ],
+    "searchPriority": 5,
+    "levelFloor": 20,
     "sid": 21600
   },
   "furfrou": {
@@ -36766,10 +36798,11 @@
     "chargedMoves": [
       "MOONBLAST",
       "DAZZLING_GLEAM",
-      "DRAINING_KISS"
+      "DRAINING_KISS",
+      "LAST_RESORT"
     ],
-    "tags": [
-      "unreleased"
+    "eliteMoves": [
+      "LAST_RESORT"
     ],
     "sid": 22400
   },
@@ -36982,6 +37015,7 @@
       "MUDDY_WATER",
       "POWER_WHIP"
     ],
+    "searchPriority": 5,
     "sid": 22592
   },
   "klefki": {
@@ -37339,9 +37373,6 @@
       "CLOSE_COMBAT",
       "GIGA_IMPACT",
       "THUNDER"
-    ],
-    "tags": [
-      "unreleased"
     ],
     "sid": 22913
   },

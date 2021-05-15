@@ -1,4 +1,5 @@
 export interface Rule {
+    name: string
     maxCP: number
     maxLevel: number
     maxBestBuddy: number
@@ -13,9 +14,7 @@ export interface Rule {
     classes?: ClassOption[]
 }
 
-export type RuleDescription = {
-    name: string,
-} | string | Rule
+export type RuleDescription = string | Rule
 
 export interface Selector {
     filterType: "type" | "tag" | "id" | "dex"
@@ -23,6 +22,7 @@ export interface Selector {
 }
 
 export interface SlotRule {
+    name?: string
     include?: Selector[]
     exclude?: Selector[]
 }
@@ -30,6 +30,7 @@ export interface SlotRule {
 export interface AdvancedOptions {
     movesets: "original" | "mainseries" | "norestrictions"
     switchTimer?: number
+    random?: boolean
 }
 
 export interface Flags {
