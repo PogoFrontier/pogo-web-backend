@@ -1671,7 +1671,16 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Slowpoke"
+    "speciesName": {
+      "de": "Flegmon",
+      "fr": "Ramoloss",
+      "en": "Slowpoke",
+      "ja": "ヤドン",
+      "ko": "야돈",
+      "ru": "Слоупок",
+      "zh_hans": "呆呆兽",
+      "zh_hant": "呆呆獸"
+    }
   },
   "slowpoke_shadow": {
     "legal": false,
@@ -3093,7 +3102,16 @@
       "water",
       "electric"
     ],
-    "speciesName": "Chinchou"
+    "speciesName": {
+      "de": "Lampi",
+      "fr": "Loupio",
+      "en": "Chinchou",
+      "ja": "チョンチー",
+      "ko": "초라기",
+      "ru": "Чинчоу",
+      "zh_hans": "灯笼鱼",
+      "zh_hant": "燈籠魚"
+    }
   },
   "lanturn": {
     "legal": false,
@@ -5144,7 +5162,16 @@
       "water",
       "none"
     ],
-    "speciesName": "Wailmer"
+    "speciesName": {
+      "de": "Wailmer",
+      "fr": "Wailmer",
+      "en": "Wailmer",
+      "ja": "ホエルコ",
+      "ko": "고래왕자",
+      "ru": "Вэйлмер",
+      "zh_hans": "吼吼鲸",
+      "zh_hant": "吼吼鯨"
+    }
   },
   "wailord": {
     "legal": false,
@@ -5779,7 +5806,16 @@
       "water",
       "none"
     ],
-    "speciesName": "Clamperl"
+    "speciesName": {
+      "de": "Perlu",
+      "fr": "Coquiperl",
+      "en": "Clamperl",
+      "ja": "パールル",
+      "ko": "진주몽",
+      "ru": "Кламперл",
+      "zh_hans": "珍珠贝",
+      "zh_hant": "珍珠貝"
+    }
   },
   "huntail": {
     "legal": false,
@@ -6870,7 +6906,16 @@
       "water",
       "flying"
     ],
-    "speciesName": "Mantyke"
+    "speciesName": {
+      "de": "Mantirps",
+      "fr": "Babimanta",
+      "en": "Mantyke",
+      "ja": "タマンタ",
+      "ko": "타만타",
+      "ru": "Мантик",
+      "zh_hans": "小球飞鱼",
+      "zh_hant": "小球飛魚"
+    }
   },
   "snover": {
     "legal": false,
@@ -8320,7 +8365,16 @@
       "water",
       "rock"
     ],
-    "speciesName": "Tirtouga"
+    "speciesName": {
+      "de": "Galapaflos",
+      "fr": "Carapagos",
+      "en": "Tirtouga",
+      "ja": "プロトーガ",
+      "ko": "프로토가",
+      "ru": "Тиртуга",
+      "zh_hans": "原盖海龟",
+      "zh_hant": "原蓋海龜"
+    }
   },
   "carracosta": {
     "legal": false,
@@ -9861,9 +9915,6 @@
     "types": [
       "dark",
       "flying"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "zygarde": {

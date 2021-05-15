@@ -1759,7 +1759,16 @@
     "tags": [
       "regional"
     ],
-    "speciesName": "Farfetch'd"
+    "speciesName": {
+      "de": "Porenta",
+      "fr": "Canarticho",
+      "en": "Farfetch’d",
+      "ja": "カモネギ",
+      "ko": "파오리",
+      "ru": "Фарфетчд",
+      "zh_hans": "大葱鸭",
+      "zh_hant": "大蔥鴨"
+    }
   },
   "farfetchd_galarian": {
     "legal": true,
@@ -1771,7 +1780,16 @@
     "tags": [
       "galarian"
     ],
-    "speciesName": "Farfetch'd (Galarian)"
+    "speciesName": {
+      "de": "Porenta (Galarian)",
+      "fr": "Canarticho (Galarian)",
+      "en": "Farfetch’d (Galarian)",
+      "ja": "カモネギ (Galarian)",
+      "ko": "파오리 (Galarian)",
+      "ru": "Фарфетчд (Galarian)",
+      "zh_hans": "大葱鸭 (Galarian)",
+      "zh_hant": "大蔥鴨 (Galarian)"
+    }
   },
   "doduo": {
     "legal": false,
@@ -3416,7 +3434,16 @@
       "bug",
       "flying"
     ],
-    "speciesName": "Yanma"
+    "speciesName": {
+      "de": "Yanma",
+      "fr": "Yanma",
+      "en": "Yanma",
+      "ja": "ヤンヤンマ",
+      "ko": "왕자리",
+      "ru": "Янма",
+      "zh_hans": "阳阳玛",
+      "zh_hant": "陽陽瑪"
+    }
   },
   "wooper": {
     "legal": false,
@@ -6545,7 +6572,16 @@
       "ghost",
       "flying"
     ],
-    "speciesName": "Drifloon"
+    "speciesName": {
+      "de": "Driftlon",
+      "fr": "Baudrive",
+      "en": "Drifloon",
+      "ja": "フワンテ",
+      "ko": "흔들풍손",
+      "ru": "Дрифлун",
+      "zh_hans": "飘飘球",
+      "zh_hant": "飄飄球"
+    }
   },
   "drifblim": {
     "legal": false,
@@ -8852,7 +8888,16 @@
       "normal",
       "flying"
     ],
-    "speciesName": "Rufflet"
+    "speciesName": {
+      "de": "Geronimatz",
+      "fr": "Furaiglon",
+      "en": "Rufflet",
+      "ja": "ワシボン",
+      "ko": "수리둥보",
+      "ru": "Раффлет",
+      "zh_hans": "毛头小鹰",
+      "zh_hant": "毛頭小鷹"
+    }
   },
   "braviary": {
     "legal": false,
@@ -8869,7 +8914,16 @@
       "dark",
       "flying"
     ],
-    "speciesName": "Vullaby"
+    "speciesName": {
+      "de": "Skallyk",
+      "fr": "Vostourno",
+      "en": "Vullaby",
+      "ja": "バルチャイ",
+      "ko": "벌차이",
+      "ru": "Валлаби",
+      "zh_hans": "秃鹰小子",
+      "zh_hant": "禿鷹小子"
+    }
   },
   "mandibuzz": {
     "legal": false,
@@ -9861,9 +9915,6 @@
     "types": [
       "dark",
       "flying"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "zygarde": {

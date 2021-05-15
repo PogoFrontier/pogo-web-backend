@@ -12,7 +12,7 @@ const wbTypes = ['fire', 'ice', 'rock', "normal", 'water']
 for(let id of Object.keys(pokemonList)) {
     let pokemon = pokemonList[id];
 
-    let key: string= pokemon.speciesId.replace("shadow", "").replace("therian", "").replace("incarnate", "").replace("galarian", "galar").replace("alolan", "alola").replace("_zen", "").replace("_standard", "").replace("female", "f").replace("male", "m").replace("_mega", "").replaceAll("_", "")
+    let key: string= pokemon.speciesId.replace("shadow", "").replace("therian", "").replace("incarnate", "").replace("galarian", "galar").replace("alolan", "alola").replace("_zen", "").replace("_standard", "").replace("female", "f").replace("male", "m").replace("_mega", "").replace(/_/g, "")
     if(key.startsWith("charizard")) {
         key = "charizard";
     }

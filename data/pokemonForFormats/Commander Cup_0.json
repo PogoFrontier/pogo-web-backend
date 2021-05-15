@@ -1340,7 +1340,16 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Poliwrath",
+    "speciesName": {
+      "de": "Quappo",
+      "fr": "Tartard",
+      "en": "Poliwrath",
+      "ja": "ニョロボン",
+      "ko": "강챙이",
+      "ru": "Поливрэт",
+      "zh_hans": "蚊香泳士",
+      "zh_hant": "蚊香泳士"
+    },
     "ranking": 598,
     "moves": {
       "fastMoves": [
@@ -2175,7 +2184,16 @@
     "tags": [
       "alolan"
     ],
-    "speciesName": "Marowak (Alolan)",
+    "speciesName": {
+      "de": "Knogga (Alolan)",
+      "fr": "Ossatueur (Alolan)",
+      "en": "Marowak (Alolan)",
+      "ja": "ガラガラ (Alolan)",
+      "ko": "텅구리 (Alolan)",
+      "ru": "Маровак (Alolan)",
+      "zh_hans": "嘎啦嘎啦 (Alolan)",
+      "zh_hant": "嘎啦嘎啦 (Alolan)"
+    },
     "ranking": 670,
     "moves": {
       "fastMoves": [
@@ -3120,7 +3138,16 @@
       "normal",
       "flying"
     ],
-    "speciesName": "Noctowl",
+    "speciesName": {
+      "de": "Noctuh",
+      "fr": "Noarfang",
+      "en": "Noctowl",
+      "ja": "ヨルノズク",
+      "ko": "야부엉",
+      "ru": "Ноктаул",
+      "zh_hans": "猫头夜鹰",
+      "zh_hant": "貓頭夜鷹"
+    },
     "ranking": 556,
     "moves": {
       "fastMoves": [
@@ -3770,7 +3797,16 @@
       "steel",
       "ground"
     ],
-    "speciesName": "Steelix",
+    "speciesName": {
+      "de": "Stahlos",
+      "fr": "Steelix",
+      "en": "Steelix",
+      "ja": "ハガネール",
+      "ko": "강철톤",
+      "ru": "Стиликс",
+      "zh_hans": "大钢蛇",
+      "zh_hant": "大鋼蛇"
+    },
     "ranking": 749,
     "moves": {
       "fastMoves": [
@@ -4760,7 +4796,16 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Shiftry",
+    "speciesName": {
+      "de": "Tengulist",
+      "fr": "Tengalice",
+      "en": "Shiftry",
+      "ja": "ダーテング",
+      "ko": "다탱구",
+      "ru": "Шифтри",
+      "zh_hans": "狡猾天狗",
+      "zh_hant": "狡猾天狗"
+    },
     "ranking": 697,
     "moves": {
       "fastMoves": [
@@ -6438,7 +6483,16 @@
     "tags": [
       "starter"
     ],
-    "speciesName": "Empoleon",
+    "speciesName": {
+      "de": "Impoleon",
+      "fr": "Pingoléon",
+      "en": "Empoleon",
+      "ja": "エンペルト",
+      "ko": "엠페르트",
+      "ru": "Эмполеон",
+      "zh_hans": "帝王拿波",
+      "zh_hant": "帝王拿波"
+    },
     "ranking": 698,
     "moves": {
       "fastMoves": [
@@ -6942,7 +6996,16 @@
       "steel",
       "psychic"
     ],
-    "speciesName": "Bronzong",
+    "speciesName": {
+      "de": "Bronzong",
+      "fr": "Archéodong",
+      "en": "Bronzong",
+      "ja": "ドータクン",
+      "ko": "동탁군",
+      "ru": "Бронзонг",
+      "zh_hans": "青铜钟",
+      "zh_hant": "青銅鐘"
+    },
     "ranking": 708,
     "moves": {
       "fastMoves": [
@@ -7062,7 +7125,16 @@
       "normal",
       "none"
     ],
-    "speciesName": "Munchlax",
+    "speciesName": {
+      "de": "Mampfaxo",
+      "fr": "Goinfrex",
+      "en": "Munchlax",
+      "ja": "ゴンベ",
+      "ko": "먹고자",
+      "ru": "Манчлакс",
+      "zh_hans": "小卡比兽",
+      "zh_hant": "小卡比獸"
+    },
     "ranking": 691,
     "moves": {
       "fastMoves": [
@@ -8849,7 +8921,16 @@
       "bug",
       "steel"
     ],
-    "speciesName": "Escavalier",
+    "speciesName": {
+      "de": "Cavalanzas",
+      "fr": "Lançargot",
+      "en": "Escavalier",
+      "ja": "シュバルゴ",
+      "ko": "슈바르고",
+      "ru": "Эскавалир",
+      "zh_hans": "骑士蜗牛",
+      "zh_hant": "騎士蝸牛"
+    },
     "ranking": 682,
     "moves": {
       "fastMoves": [
@@ -8918,7 +8999,16 @@
       "water",
       "ghost"
     ],
-    "speciesName": "Jellicent",
+    "speciesName": {
+      "de": "Apoquallyp",
+      "fr": "Moyade",
+      "en": "Jellicent",
+      "ja": "ブルンゲル",
+      "ko": "탱탱겔",
+      "ru": "Джеллисент",
+      "zh_hans": "胖嘟嘟",
+      "zh_hant": "胖嘟嘟"
+    },
     "ranking": 737,
     "moves": {
       "fastMoves": [
@@ -10253,9 +10343,6 @@
     "types": [
       "dark",
       "flying"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "zygarde": {

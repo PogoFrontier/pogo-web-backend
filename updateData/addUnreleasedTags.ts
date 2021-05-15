@@ -12,7 +12,7 @@ const getSid = (speciesId: string, sids: any) => {
         if(sidObj.forme) {
             sidString += "_" + sidObj.forme
         }
-        sidString = sidString.replace("-", "_").replace("’", "").replace(".", "").replace(" ", "_").replaceAll("é", "e").toLowerCase()
+        sidString = sidString.replace("-", "_").replace("’", "").replace(".", "").replace(" ", "_").replace(/é/g, "e").toLowerCase()
 
         return speciesId === sidString
     })!)

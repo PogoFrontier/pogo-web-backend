@@ -8,7 +8,7 @@ import { RoomStatus } from "../types/room";
 import { calcDamage } from "../utils/damageUtils";
 import endGame from "./endGame";
 
-function getMessage(attacker: string, move: string, shield: number) {
+function getMessage(attacker: string | object, move: string, shield: number) {
   const shielded = shield === 0 ? "" : " It was shielded!";
   return `${attacker} used ${move}!${shielded}`;
 }

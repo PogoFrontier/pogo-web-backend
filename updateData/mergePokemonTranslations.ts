@@ -367,9 +367,9 @@ async function mergePokemon() {
             if(parseName(en[i]).startsWith("manectric")){
                 new_pokemon[parseName(en[i]) + "_mega"].speciesName[lang] = eval(lang)[i] + " " + (mega[lang] ? mega[lang] : mega["en"])
             } 
-            /*if(parseName(en[i]).startsWith("altaria")){
+            if(parseName(en[i]).startsWith("altaria")){
                 new_pokemon[parseName(en[i]) + "_mega"].speciesName[lang] = eval(lang)[i] + " " + (mega[lang] ? mega[lang] : mega["en"])
-            } */
+            }
             if(parseName(en[i]).startsWith("lopunny")){
                 new_pokemon[parseName(en[i]) + "_mega"].speciesName[lang] = eval(lang)[i] + " " + (mega[lang] ? mega[lang] : mega["en"])
             } 

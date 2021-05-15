@@ -3889,7 +3889,7 @@
     "speciesId": "dugtrio",
     "baseStats": {
       "atk": 167,
-      "def": 136,
+      "def": 134,
       "hp": 111
     },
     "types": [
@@ -3970,7 +3970,7 @@
     "speciesId": "dugtrio_shadow",
     "baseStats": {
       "atk": 167,
-      "def": 136,
+      "def": 134,
       "hp": 111
     },
     "types": [
@@ -20210,7 +20210,16 @@
   },
   "altaria_mega": {
     "dex": 334,
-    "speciesName": "Altaria (Mega)",
+    "speciesName": {
+      "de": "Altaria (Mega)",
+      "fr": "Altaria (Mega)",
+      "en": "Altaria (Mega)",
+      "ja": "チルタリス (Mega)",
+      "ko": "파비코리 (Mega)",
+      "ru": "Алтария (Mega)",
+      "zh_hans": "七夕青鸟 (Mega)",
+      "zh_hant": "七夕青鳥 (Mega)"
+    },
     "speciesId": "altaria_mega",
     "baseStats": {
       "atk": 222,
@@ -37410,9 +37419,7 @@
       "HYPER_BEAM",
       "PSYCHIC"
     ],
-    "tags": [
-      "unreleased"
-    ],
+    "searchPriority": 10,
     "sid": 22944
   },
   "zygarde": {

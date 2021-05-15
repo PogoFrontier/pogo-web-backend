@@ -249,7 +249,7 @@ export function parseToTeamMembers (team: TeamMemberDescription[]): TeamMember[]
   
       return {
         speciesId: member.speciesId,
-        speciesName: speciesData.speciesName,
+        speciesName: speciesData.speciesName["en"],
         hp: stats.hp,
         def: stats.def,
         atk: stats.atk,

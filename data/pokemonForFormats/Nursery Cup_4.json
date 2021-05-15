@@ -923,7 +923,16 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Oddish"
+    "speciesName": {
+      "de": "Myrapla",
+      "fr": "Mystherbe",
+      "en": "Oddish",
+      "ja": "ナゾノクサ",
+      "ko": "뚜벅쵸",
+      "ru": "Оддиш",
+      "zh_hans": "走路草",
+      "zh_hant": "走路草"
+    }
   },
   "oddish_shadow": {
     "legal": false,
@@ -5414,7 +5423,16 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Lileep"
+    "speciesName": {
+      "de": "Liliep",
+      "fr": "Lilia",
+      "en": "Lileep",
+      "ja": "リリーラ",
+      "ko": "릴링",
+      "ru": "Лилип",
+      "zh_hans": "触手百合",
+      "zh_hant": "觸手百合"
+    }
   },
   "lileep_shadow": {
     "legal": false,
@@ -6105,7 +6123,16 @@
       "starter",
       "shadoweligible"
     ],
-    "speciesName": "Turtwig"
+    "speciesName": {
+      "de": "Chelast",
+      "fr": "Tortipouss",
+      "en": "Turtwig",
+      "ja": "ナエトル",
+      "ko": "모부기",
+      "ru": "Туртвиг",
+      "zh_hans": "草苗龟",
+      "zh_hant": "草苗龜"
+    }
   },
   "turtwig_shadow": {
     "legal": false,
@@ -6880,7 +6907,16 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Snover"
+    "speciesName": {
+      "de": "Shnebedeck",
+      "fr": "Blizzi",
+      "en": "Snover",
+      "ja": "ユキカブリ",
+      "ko": "눈쓰개",
+      "ru": "Сновер",
+      "zh_hans": "雪笠怪",
+      "zh_hant": "雪笠怪"
+    }
   },
   "snover_shadow": {
     "legal": false,
@@ -9215,7 +9251,16 @@
       "grass",
       "none"
     ],
-    "speciesName": "Chespin"
+    "speciesName": {
+      "de": "Igamaro",
+      "fr": "Marisson",
+      "en": "Chespin",
+      "ja": "ハリマロン",
+      "ko": "도치마론",
+      "ru": "Чеспин",
+      "zh_hans": "哈力栗",
+      "zh_hant": "哈力栗"
+    }
   },
   "quilladin": {
     "legal": false,
@@ -9860,9 +9905,6 @@
     "types": [
       "dark",
       "flying"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "zygarde": {
