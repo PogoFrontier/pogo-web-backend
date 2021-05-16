@@ -64,5 +64,11 @@ export function calcDamage(attacker: TeamMember, defender: TeamMember, move: Mov
   const shadowMult1 = attacker.speciesId.endsWith("_shadow") ? 1.2 : 1;
   const shadowMult2 = defender.speciesId.endsWith("_shadow") ? 1.2 : 1;
   const damage = Math.floor(0.5 * (attacker.current!.atk / defender.current!.def) * move.power * mult * charge * bonusMultiplier * shadowMult1 * shadowMult2) + 1;
+  const cappedDamage = Math.min(defender.current!.hp, damage);
+  
+  if(attacker.current) {
+    attacker.current.damageDealt += (cappedDamage / defender.hp)
+  }
+
   return Math.max(defender.current!.hp - damage, 0);
 }
