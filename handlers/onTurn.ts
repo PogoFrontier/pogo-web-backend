@@ -211,6 +211,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
       };
       if (shouldCharge[j] > -1) {
         currentRoom.charge.cmp = currentRoom.players[j]!.current!.action!.move!
+        delete currentRoom.players[j]!.current!.action;
       }
       delete currentRoom.players[i]!.current!.action;
       delete currentRoom.players[i]!.current!.bufferedAction;
