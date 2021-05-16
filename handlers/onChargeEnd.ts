@@ -33,6 +33,7 @@ function onChargeEnd(room: string) {
         )
         : opponent.current!.team[opponent.current!.active].current!.hp - 1;
         player.current!.team[player.current!.active].current!.energy -= currentRoom.charge.move.energy
+        player.current!.team[player.current!.active].current!.chargeMovesUsed++
         let message = getMessage(player.current.team[player.current.active].speciesName, currentRoom.charge.move.name, currentRoom.charge.shield)
         // Apply buffs/debuffs
         const r = Math.random()
@@ -105,7 +106,7 @@ function onChargeEnd(room: string) {
           opponent.current.shields -= 1;
           payload.update[1]!.shields = opponent.current.shields;
         }
-        if (opponent.current!.team[opponent.current!.active].current!.hp <= 0) {
+        if (targetPokemon.current && targetPokemon.current.hp <= 0) {
           opponent.current!.remaining -= 1;
           payload.update[1]!.remaining = opponent.current!.remaining;
           if (opponent.current!.remaining <= 0) {
@@ -113,6 +114,8 @@ function onChargeEnd(room: string) {
           } else if (currentRoom.status !== RoomStatus.FAINT) {
             currentRoom.status = RoomStatus.FAINT;
             currentRoom.wait = (opponent.current!.remaining === 1) ? SWITCH_WAIT_LAST : SWITCH_WAIT;
+            targetPokemon.current.timeSpendAlive += new Date().getTime() - targetPokemon.current.switchedIn!.getTime()
+            delete targetPokemon.current.switchedIn
             payload.update[0]!.wait = currentRoom.wait;
             payload.update[1]!.wait = currentRoom.wait;
             payload.update[1]!.remaining = opponent.current!.remaining;

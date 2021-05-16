@@ -57,7 +57,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
                 active: opponent.current!.active,
                 hp: opponentActivePokemon.current!.hp / opponentActivePokemon.hp,
               }
-              if (opponentActivePokemon.current!.hp <= 0) {
+              if (opponentActivePokemon.current && opponentActivePokemon.current.hp <= 0) {
                 opponent.current!.remaining -= 1;
                 if (opponent.current?.action?.move) {
                   if (opponent.current?.action?.move.cooldown >= 500) {
@@ -65,6 +65,10 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
                     delete opponent.current.bufferedAction;
                   }
                 }
+                
+                opponentActivePokemon.current.timeSpendAlive += new Date().getTime() - opponentActivePokemon.current.switchedIn!.getTime()
+                delete opponentActivePokemon.current.switchedIn
+
                 if (opponent.current!.remaining <= 0) {
                   endGame(room);
                 } else if (currentRoom.status !== RoomStatus.FAINT) {
@@ -112,12 +116,21 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
         if (shouldSwitch[i] > -1) {
           const player = currentRoom.players[i]!
           const oldActive = player!.current!.active;
+          const oldActivePokemon = player.current!.team[oldActive]
           // Reset debuffs
-          player.current!.team[oldActive].current!.atk = player.current!.team[oldActive].atk;
-          player.current!.team[oldActive].current!.def = player.current!.team[oldActive].def;
-          player.current!.team[oldActive].current!.status = [0, 0];
+          oldActivePokemon.current!.atk = oldActivePokemon.atk;
+          oldActivePokemon.current!.def = oldActivePokemon.def;
+          oldActivePokemon.current!.status = [0, 0];
           // Set new active Pokemon
           player!.current!.active = shouldSwitch[i];
+
+          // Update time spend alive
+          if(oldActivePokemon.current?.switchedIn) {
+            oldActivePokemon.current.timeSpendAlive += new Date().getTime() - oldActivePokemon.current.switchedIn.getTime()
+            delete oldActivePokemon.current.switchedIn
+          }
+          player.current!.team[shouldSwitch[i]].current!.switchedIn = new Date()
+
           // Generate payload
           if (payload[i] === null) {
             let newActivePokemon = player.team[shouldSwitch[i]]
@@ -169,6 +182,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
               player.current!.active = player.current!.team.findIndex(x => x.current!.hp > 0);
               // notify other user
               const oppId = currentRoom.players[[1, 0][i]]!.id;
+              player.current!.team[player.current!.active].current!.switchedIn = new Date()
               pubClient.publish("messagesToUser:" + oppId, reduceActionForOpponent(`#${Actions.SWITCH}:` + player.current!.active, player!.current!.team));
             }
           }
@@ -197,6 +211,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
       };
       if (shouldCharge[j] > -1) {
         currentRoom.charge.cmp = currentRoom.players[j]!.current!.action!.move!
+        delete currentRoom.players[j]!.current!.action;
       }
       delete currentRoom.players[i]!.current!.action;
       delete currentRoom.players[i]!.current!.bufferedAction;

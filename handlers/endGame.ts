@@ -24,6 +24,13 @@ function endGame(room: string, timeout?: boolean, predefinedResult?: whoWon) {
       }
     });
 
+    currentRoom.players.forEach(player => {
+      const currentPoke = player?.current?.team[player.current.active].current
+      if(currentPoke?.switchedIn) {
+        currentPoke.timeSpendAlive += new Date().getTime() - currentPoke.switchedIn.getTime()
+      }
+    })
+
     if (predefinedResult) {
       sendResult(currentRoom, predefinedResult);
       return;

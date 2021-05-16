@@ -81,14 +81,20 @@ export function startCountdown(room: string) {
 
 function startGame(room: string) {
   console.info(`Room ${room} started a game`)
-  if (rooms.get(room)) {
-    if (rooms.get(room)!.timer) {
-      clearInterval(rooms.get(room)!.timer);
-      delete rooms.get(room)!.timer;
+  const roomObj = rooms.get(room)
+
+  if (roomObj) {
+    if (roomObj.timer) {
+      clearInterval(roomObj.timer);
+      delete roomObj.timer;
     }
     const id = uuidv4();
-    rooms.get(room)!.timerId = id;
-    rooms.get(room)!.timer = setInterval(() => onTurn(room, id), TURN_LENGTH);
+    roomObj.timerId = id;
+    roomObj.timer = setInterval(() => onTurn(room, id), TURN_LENGTH);
+
+    for(let poke of roomObj.players.map(player => player?.current?.team[0])) {
+      poke!.current!.switchedIn = new Date();
+    }
   }
 }
 

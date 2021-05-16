@@ -54,13 +54,8 @@ export function reduceTeamMemberForOpponent(member: TeamMember): object {
 export function reduceTeamMemberForPlayer(member: TeamMember): TeamMember {
     member = {...member}
     if (member.current) {
-        member.current = {
-            hp: member.current ? member.current.hp / member.hp : 0,
-            def: member.current ? member.current.def : 0,
-            atk: member.current ? member.current.atk : 0,
-            status: member.current ? member.current.status : [0,0],
-            energy: member.current ? member.current.energy : 0,
-        }
+        member.current = {...member.current}
+        member.current.hp = member.current.hp / member.hp
     }
 
     return member;
