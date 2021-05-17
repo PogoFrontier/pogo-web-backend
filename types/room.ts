@@ -10,6 +10,7 @@ export enum RoomStatus {
   STARTED,
   FAINT,
   CHARGE,
+  ANIMATING,
   ENDED
 }
 
