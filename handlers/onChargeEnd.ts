@@ -1,4 +1,4 @@
-import { CHARGE_WAIT, GAME_TIME, SWITCH_WAIT, SWITCH_WAIT_LAST, maxBuffStages, buffDivisor } from "../config";
+import { GAME_TIME, ANIMATING_WAIT, maxBuffStages, buffDivisor } from "../config";
 import { reduceTeamMemberForPlayer } from "../actions/reduceInformation"
 import { pubClient } from "../redis/clients";
 import { rooms } from "../matchhandling_server";
@@ -6,7 +6,7 @@ import { CODE } from "../types/actions";
 import { ResolveTurnPayload } from "../types/handlers";
 import { RoomStatus } from "../types/room";
 import { calcDamage } from "../utils/damageUtils";
-import endGame from "./endGame";
+import onChargeAnimationEnd from "./onChargeAnimationEnd"
 
 function getMessage(attacker: string, move: string, shield: number) {
   const shielded = shield === 0 ? "" : " It was shielded!";
@@ -102,38 +102,21 @@ function onChargeEnd(room: string) {
           turn: currentRoom.turn!,
           switch: player.current.switch
         };
+        console.log("target pokémon hp: " + (targetPokemon.current!.hp / targetPokemon.hp))
+
         if (currentRoom.charge.shield) {
           opponent.current.shields -= 1;
           payload.update[1]!.shields = opponent.current.shields;
         }
+
         if (targetPokemon.current && targetPokemon.current.hp <= 0) {
           opponent.current!.remaining -= 1;
           payload.update[1]!.remaining = opponent.current!.remaining;
-          if (opponent.current!.remaining <= 0) {
-            endGame(room);
-          } else if (currentRoom.status !== RoomStatus.FAINT) {
-            currentRoom.status = RoomStatus.FAINT;
-            currentRoom.wait = (opponent.current!.remaining === 1) ? SWITCH_WAIT_LAST : SWITCH_WAIT;
-            targetPokemon.current.timeSpendAlive += new Date().getTime() - targetPokemon.current.switchedIn!.getTime()
-            delete targetPokemon.current.switchedIn
-            payload.update[0]!.wait = currentRoom.wait;
-            payload.update[1]!.wait = currentRoom.wait;
-            payload.update[1]!.remaining = opponent.current!.remaining;
-          }
-        } else if (currentRoom.charge.cmp) {
-          currentRoom.status = RoomStatus.CHARGE;
-          currentRoom.wait = CHARGE_WAIT;
-          payload.update[0]!.wait = CHARGE_WAIT;
-          payload.update[0]!.charge = 2;
-          payload.update[1]!.wait = CHARGE_WAIT;
-          payload.update[1]!.charge = 1;
-          currentRoom.charge = {
-            subject: j,
-            move: currentRoom.charge.cmp
-          };
-        } else {
-          currentRoom.status = RoomStatus.STARTED
+          targetPokemon.current.timeSpendAlive += new Date().getTime() - targetPokemon.current.switchedIn!.getTime()
+          delete targetPokemon.current.switchedIn
+          payload.update[1]!.remaining = opponent.current!.remaining;
         }
+
         const dta = {
           type: CODE.turn,
           payload
@@ -151,6 +134,9 @@ function onChargeEnd(room: string) {
         delete currentRoom.players[i]!.current!.action;
         pubClient.publish("messagesToUser:" + player.id, JSON.stringify(dta));
         pubClient.publish("messagesToUser:" + opponent.id, JSON.stringify(dta1));
+
+        currentRoom.status = RoomStatus.ANIMATING
+        setTimeout(() => onChargeAnimationEnd(currentRoom.id), ANIMATING_WAIT * 1000)
       }
   }
 }

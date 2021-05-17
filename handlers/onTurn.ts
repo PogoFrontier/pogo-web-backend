@@ -1,11 +1,12 @@
 import { reduceActionForOpponent, reduceTeamMemberForPlayer } from "../actions/reduceInformation";
 import indexOfMax from "../actions/indexOfMax";
-import { CHARGE_WAIT, GAME_TIME, SWAP_COOLDOWN, SWITCH_WAIT, SWITCH_WAIT_LAST, TURN_LENGTH } from "../config";
+import { ANIMATING_WAIT, CHARGE_WAIT, GAME_TIME, SWAP_COOLDOWN, TURN_LENGTH } from "../config";
 import { moves, rooms } from "../matchhandling_server";
 import { Actions, CODE } from "../types/actions";
 import { ResolveTurnPayload, Update } from "../types/handlers";
 import { RoomStatus } from "../types/room";
 import { calcDamage } from "../utils/damageUtils";
+import onFaint from "./onFaint";
 import endGame from "./endGame";
 import onChargeEnd from "./onChargeEnd"
 import { pubClient } from "../redis/clients";
@@ -15,7 +16,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
   const currentRoom = rooms.get(room);
   const shouldSwitch = [-1, -1];
   const shouldCharge = [-1, -1];
-  if (currentRoom) {
+  if (currentRoom && currentRoom.status !== RoomStatus.ANIMATING) {
     for (let i = 0; i < currentRoom.players.length; i++) {
       const player = currentRoom.players[i];
       const activePokemon = player?.current?.team[player.current.active];
@@ -69,18 +70,11 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
                 opponentActivePokemon.current.timeSpendAlive += new Date().getTime() - opponentActivePokemon.current.switchedIn!.getTime()
                 delete opponentActivePokemon.current.switchedIn
 
-                if (opponent.current!.remaining <= 0) {
-                  endGame(room);
-                } else if (currentRoom.status !== RoomStatus.FAINT) {
-                  currentRoom.status = RoomStatus.FAINT;
-                  let waitTime = (opponent.current!.remaining === 1) ? SWITCH_WAIT_LAST : SWITCH_WAIT;
-                  currentRoom.status = RoomStatus.FAINT;
-                  currentRoom.wait = waitTime;
-                  payload[i]!.wait = waitTime;
-                  payload[j]!.wait = waitTime;
-                }
                 payload[j]!.remaining = opponent.current!.remaining;
                 delete player.current.bufferedAction;
+
+                currentRoom.status = RoomStatus.ANIMATING
+                setTimeout(() => onFaint(currentRoom.id), ANIMATING_WAIT * 1000)
               }
               delete player.current.action;
             }
@@ -101,7 +95,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
     }
 
     // Clear inputs on faint
-    if (currentRoom.status === RoomStatus.FAINT) {
+    if ([RoomStatus.FAINT, RoomStatus.ANIMATING].includes(currentRoom.status)) {
       for (const player of currentRoom.players) {
         const action = player?.current?.action?.id ? player?.current?.action?.id : "";
         if ([Actions.CHARGE_ATTACK, Actions.FAST_ATTACK].includes(action)) {
