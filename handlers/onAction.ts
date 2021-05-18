@@ -19,9 +19,9 @@ function onAction({
       const pokemon = player!.current!.team[player!.current!.active]
       const d: [Action, string] = data.substring(1).split(":") as [Action, string];
       console.log(`Action: ${data}`)
-      const type = d[0];
+      let type = d[0];
       const index = parseInt(d[1])
-      const move = type === Actions.CHARGE_ATTACK ? moves[pokemon.chargeMoves[index]] : moves[pokemon.fastMove]
+      let move = type === Actions.CHARGE_ATTACK ? moves[pokemon.chargeMoves[index]] : moves[pokemon.fastMove]
       const energy = player.current.team[player.current.active].current?.energy || 0
 
       // Dismiss invalid inputs
@@ -29,7 +29,8 @@ function onAction({
         return;
       }
       if (type === Actions.CHARGE_ATTACK && move.energy > energy) {
-        return;
+        type = Actions.FAST_ATTACK
+        move = moves[pokemon.fastMove]
       }
       if(type === Actions.SWITCH && !["0", "1", "2"].includes(d[1])){
         return
