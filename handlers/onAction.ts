@@ -3,8 +3,9 @@ import { rooms } from "../matchhandling_server";
 import { Actions } from "../types/actions";
 import { OnActionProps } from "../types/handlers";
 import { moves } from '../matchhandling_server';
-import { Move, RoomStatus } from "../types/room";
+import { Move, Player, RoomStatus } from "../types/room";
 import { pubClient } from "../redis/clients";
+import { TeamMember } from "../types/team";
 
 type Action = typeof Actions[keyof typeof Actions]
 
@@ -32,7 +33,7 @@ function onAction({
         type = Actions.FAST_ATTACK
         move = moves[pokemon.fastMove]
       }
-      if(type === Actions.SWITCH && !["0", "1", "2"].includes(d[1])){
+      if(type === Actions.SWITCH && isInvalidSwitch(d[1], currentRoom.status, player, pokemon)){
         return
       }
 
@@ -81,6 +82,21 @@ function onAction({
         }
       }
     }
+  }
+}
+
+function isInvalidSwitch(index: string, status: RoomStatus, player: Player, pokemon: TeamMember): boolean {
+  if (!["0", "1", "2"].includes(index)) {
+    return true;
+  }
+
+  switch(status) {
+    case RoomStatus.FAINT:
+      return !!pokemon.current?.hp
+    case RoomStatus.STARTED:
+      return !!player.current?.switch
+    default:
+      return false
   }
 }
 
