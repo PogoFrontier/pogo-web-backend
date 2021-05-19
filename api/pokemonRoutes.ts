@@ -31,14 +31,15 @@ router.get('', (req, res) => {
         if(!queryParams) {
             return
         }
-        const {format, position, showIllegal, usedPoints, className} = queryParams;
+        const {format, position, showIllegal, usedPoints, className, language} = queryParams;
         const movesetOption = req.query.movesetOption;
 
         let result: any = {}
         if(format === undefined) {
             Object.keys(pokemon).forEach(speciesId => {
                 result[speciesId] = {
-                    legal: true
+                    legal: true,
+                    speciesName: pokemon[speciesId].speciesName[language]
                 }
             })
         } else {
