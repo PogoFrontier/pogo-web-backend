@@ -1,6 +1,7 @@
 import { rooms } from "../matchhandling_server";
 import { Room, RoomStatus } from "../types/room";
 import { pubClient, storeClient } from "../redis/clients";
+import { reduceTeamForEnd } from "../actions/reduceInformation"
 
 function endGame(room: string, timeout?: boolean, predefinedResult?: whoWon) {
   const currentRoom = rooms.get(room);
@@ -77,19 +78,19 @@ function sendResult(room: Room, result: whoWon) {
   let o = room.players[1];
   if(result === "p1") {
     if(p)
-      pubClient.publish("messagesToUser:" + p.id, "$endwon");
+      pubClient.publish("messagesToUser:" + p.id, "$endwon|" + JSON.stringify(reduceTeamForEnd(p.current?.team)));
     if(o)
-      pubClient.publish("messagesToUser:" + o.id, "$endlost");
+      pubClient.publish("messagesToUser:" + o.id, "$endlost|" + JSON.stringify(reduceTeamForEnd(o.current?.team)));
   } else if (result === "p2") {
     if(p)
-      pubClient.publish("messagesToUser:" + p.id, "$endlost");
+      pubClient.publish("messagesToUser:" + p.id, "$endlost|" + JSON.stringify(reduceTeamForEnd(p.current?.team)));
     if(o)
-      pubClient.publish("messagesToUser:" + o.id, "$endwon");
+      pubClient.publish("messagesToUser:" + o.id, "$endwon|" + JSON.stringify(reduceTeamForEnd(o.current?.team)));
   } else {
     if(p)
-      pubClient.publish("messagesToUser:" + p.id, "$endtied");
+      pubClient.publish("messagesToUser:" + p.id, "$endtied|" + JSON.stringify(reduceTeamForEnd(p.current?.team)));
     if(o)
-      pubClient.publish("messagesToUser:" + o.id, "$endtied");
+      pubClient.publish("messagesToUser:" + o.id, "$endtied|" + JSON.stringify(reduceTeamForEnd(o.current?.team)));
   }
 }
 

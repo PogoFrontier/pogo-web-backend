@@ -1,6 +1,6 @@
 import { Actions } from "../types/actions";
 import { Move } from "../types/room";
-import { TeamMember } from "../types/team"
+import { TeamMember, TeamMemberDescription } from "../types/team"
 
 export function reduceTeam(teamMembers: TeamMember[]): object[] {
     if (teamMembers && teamMembers.length) {
@@ -59,4 +59,20 @@ export function reduceTeamMemberForPlayer(member: TeamMember): TeamMember {
     }
 
     return member;
+}
+
+export function reduceTeamForEnd(team?: TeamMember[]): object[] | undefined {
+    return team?.map(member => {
+        return {
+            name: member.name,
+            sid: member.sid,
+            current: {
+                hp: member.current?.hp,
+                energy: member.current?.energy,
+                damageDealt: member.current?.damageDealt,
+                chargeMovesUsed: member.current?.chargeMovesUsed,
+                timeSpendAlive: member.current?.timeSpendAlive
+            }
+        }
+    })
 }
