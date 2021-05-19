@@ -8,7 +8,7 @@ const router = e.Router();
 // @desc Validate a Pokemon team
 // @route GET /api/pokemon/validate/:team/:meta
 // @access Public (for now)
-router.get('/:team/:meta', (req, res) => {
+router.get('/:team/:meta', async (req, res) => {
     try{
         const meta: any = rules[req.params.meta];
         if (meta) {

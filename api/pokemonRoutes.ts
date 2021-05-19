@@ -24,7 +24,7 @@ const router = e.Router();
 // @desc Get an array of Pokemon names to be used for the search feature
 // @route GET /api/pokemon
 // @access Public (for now)
-router.get('', (req, res) => {
+router.get('', async (req, res) => {
     try{
         // get params
         const queryParams = getQueryParams(req, res)
@@ -89,7 +89,7 @@ router.get('', (req, res) => {
 // @desc Get an array of Pokemon names to be used for the search feature
 // @route GET /api/pokemon/name
 // @access Public (for now)
-router.get('/names', (req, res) => {
+router.get('/names', async (req, res) => {
     try{
         res.json(Object.keys(pokemon).map((mon: any) => {
             return pokemon[mon].speciesName
@@ -103,7 +103,7 @@ router.get('/names', (req, res) => {
 // @desc Get a single pokemon by id (formatted as speciesId)
 // @route GET /api/pokemon/:id
 // @access Public (for now)
-router.get('/:id', (req, res) => {
+router.get('/:id', async (req, res) => {
     try{
         // get params
         const queryParams = getQueryParams(req, res)

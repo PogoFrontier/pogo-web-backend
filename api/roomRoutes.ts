@@ -9,7 +9,7 @@ const router = e.Router();
 // @desc Get data object of a room
 // @route GET /api/room/data/:id
 // @access Public (for now)
-router.get('/data/:room', (req, res) => {
+router.get('/data/:room', async (req, res) => {
     try{
       storeClient.get("room:" + req.params.room, (err, reply) => {
         if (err) {
@@ -78,7 +78,7 @@ function loadRooms(keys: string[]) {
 // @desc Get list of rooms
 // @route GET /api/room/list
 // @access Public (for now)
-router.get('/list', (req, res) => {
+router.get('/list', async (req, res) => {
   try{
     storeClient.keys('room:*')
       .then(function (keys) {
@@ -97,7 +97,7 @@ router.get('/list', (req, res) => {
 // @desc Get 
 // @route GET /api/room/status
 // @access Public (for now)
-router.get('/status', (req, res) => {
+router.get('/status', async (req, res) => {
   try {
     storeClient.keys('room:*')
       .then(function (keys) {

@@ -8,7 +8,7 @@ const router = e.Router();
 // @desc Get a random team for a format
 // @route GET /api/andom/name
 // @access Public (for now)
-router.get('/:rule', (req, res) => {
+router.get('/:rule', async (req, res) => {
     const des: RuleDescription = req.params.rule
     try{
       const rule = parseToRule(des)
