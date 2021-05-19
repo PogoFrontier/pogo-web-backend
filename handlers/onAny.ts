@@ -18,7 +18,8 @@ function onAny(senderId: string, roomId: string, data: string) {
         if (rooms.get(roomId)
         && rooms.get(roomId)?.status !== RoomStatus.SELECTING
         && rooms.get(roomId)?.status !== RoomStatus.STARTING
-        && rooms.get(roomId)?.status !== RoomStatus.CHARGE) {
+        && rooms.get(roomId)?.status !== RoomStatus.CHARGE
+        && rooms.get(roomId)?.status !== RoomStatus.ANIMATING) {
             onAction({ id: senderId, room: roomId, data });
         }
     } else {

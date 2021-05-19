@@ -3,8 +3,9 @@ import { rooms } from "../matchhandling_server";
 import { Actions } from "../types/actions";
 import { OnActionProps } from "../types/handlers";
 import { moves } from '../matchhandling_server';
-import { Move, RoomStatus } from "../types/room";
+import { Move, Player, RoomStatus } from "../types/room";
 import { pubClient } from "../redis/clients";
+import { TeamMember } from "../types/team";
 
 type Action = typeof Actions[keyof typeof Actions]
 
@@ -19,9 +20,9 @@ function onAction({
       const pokemon = player!.current!.team[player!.current!.active]
       const d: [Action, string] = data.substring(1).split(":") as [Action, string];
       console.log(`Action: ${data}`)
-      const type = d[0];
+      let type = d[0];
       const index = parseInt(d[1])
-      const move = type === Actions.CHARGE_ATTACK ? moves[pokemon.chargeMoves[index]] : moves[pokemon.fastMove]
+      let move = type === Actions.CHARGE_ATTACK ? moves[pokemon.chargeMoves[index]] : moves[pokemon.fastMove]
       const energy = player.current.team[player.current.active].current?.energy || 0
 
       // Dismiss invalid inputs
@@ -29,9 +30,10 @@ function onAction({
         return;
       }
       if (type === Actions.CHARGE_ATTACK && move.energy > energy) {
-        return;
+        type = Actions.FAST_ATTACK
+        move = moves[pokemon.fastMove]
       }
-      if(type === Actions.SWITCH && !["0", "1", "2"].includes(d[1])){
+      if(type === Actions.SWITCH && isInvalidSwitch(d[1], currentRoom.status, player, pokemon)){
         return
       }
 
@@ -80,6 +82,21 @@ function onAction({
         }
       }
     }
+  }
+}
+
+function isInvalidSwitch(index: string, status: RoomStatus, player: Player, pokemon: TeamMember): boolean {
+  if (!["0", "1", "2"].includes(index)) {
+    return true;
+  }
+
+  switch(status) {
+    case RoomStatus.FAINT:
+      return !!pokemon.current?.hp
+    case RoomStatus.STARTED:
+      return !!player.current?.switch
+    default:
+      return false
   }
 }
 

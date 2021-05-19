@@ -84,6 +84,10 @@ export interface Current {
   atk: number
   status: [number, number]
   energy: number
+  damageDealt: number,
+  chargeMovesUsed: number,
+  timeSpendAlive: number,
+  switchedIn?: Date
 }
 
 export interface PokemonSpecies {

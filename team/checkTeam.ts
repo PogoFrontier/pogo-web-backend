@@ -11,7 +11,7 @@ export function isTeamValid(team: TeamMember[], format: Rule): {isValid: boolean
     let violations = new Array<string>();
   
     if (team.length !== 6) {
-      violations.push(`Wrong team length ${team.length}. Should be 6.`)
+      violations.push(`Wrong number of Pokémon ${team.length}. Should be 6.`)
     }
   
     let megaCounter = 0;
