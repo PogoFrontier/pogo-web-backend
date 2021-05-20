@@ -2498,7 +2498,22 @@
       "grass",
       "none"
     ],
+    "tags": [
+      "shadoweligible"
+    ],
     "speciesName": "Tangela"
+  },
+  "tangela_shadow": {
+    "legal": true,
+    "dex": 114,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Tangela (Shadow)"
   },
   "kangaskhan": {
     "legal": true,
@@ -2519,7 +2534,22 @@
       "water",
       "none"
     ],
+    "tags": [
+      "shadoweligible"
+    ],
     "speciesName": "Horsea"
+  },
+  "horsea_shadow": {
+    "legal": true,
+    "dex": 116,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Horsea (Shadow)"
   },
   "seadra": {
     "legal": true,
@@ -2528,7 +2558,22 @@
       "water",
       "none"
     ],
+    "tags": [
+      "shadoweligible"
+    ],
     "speciesName": "Seadra"
+  },
+  "seadra_shadow": {
+    "legal": true,
+    "dex": 117,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Seadra (Shadow)"
   },
   "goldeen": {
     "legal": true,
@@ -3817,8 +3862,22 @@
       "dark",
       "flying"
     ],
-    "tags": [],
+    "tags": [
+      "shadoweligible"
+    ],
     "speciesName": "Murkrow"
+  },
+  "murkrow_shadow": {
+    "legal": true,
+    "dex": 198,
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Murkrow (Shadow)"
   },
   "slowking": {
     "legal": true,
@@ -4007,7 +4066,22 @@
       "fairy",
       "none"
     ],
+    "tags": [
+      "shadoweligible"
+    ],
     "speciesName": "Snubbull"
+  },
+  "snubbull_shadow": {
+    "legal": true,
+    "dex": 209,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Snubbull (Shadow)"
   },
   "granbull": {
     "legal": true,
@@ -4016,7 +4090,22 @@
       "fairy",
       "none"
     ],
+    "tags": [
+      "shadoweligible"
+    ],
     "speciesName": "Granbull"
+  },
+  "granbull_shadow": {
+    "legal": true,
+    "dex": 210,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Granbull (Shadow)"
   },
   "qwilfish": {
     "legal": true,
@@ -4380,7 +4469,22 @@
       "water",
       "dragon"
     ],
+    "tags": [
+      "shadoweligible"
+    ],
     "speciesName": "Kingdra"
+  },
+  "kingdra_shadow": {
+    "legal": true,
+    "dex": 230,
+    "types": [
+      "water",
+      "dragon"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Kingdra (Shadow)"
   },
   "phanpy": {
     "legal": true,
@@ -4862,7 +4966,22 @@
       "dark",
       "none"
     ],
+    "tags": [
+      "shadoweligible"
+    ],
     "speciesName": "Poochyena"
+  },
+  "poochyena_shadow": {
+    "legal": true,
+    "dex": 261,
+    "types": [
+      "dark",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Poochyena (Shadow)"
   },
   "mightyena": {
     "legal": true,
@@ -4871,7 +4990,22 @@
       "dark",
       "none"
     ],
+    "tags": [
+      "shadoweligible"
+    ],
     "speciesName": "Mightyena"
+  },
+  "mightyena_shadow": {
+    "legal": true,
+    "dex": 262,
+    "types": [
+      "dark",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Mightyena (Shadow)"
   },
   "zigzagoon": {
     "legal": true,
@@ -5291,7 +5425,22 @@
       "fighting",
       "none"
     ],
+    "tags": [
+      "shadoweligible"
+    ],
     "speciesName": "Makuhita"
+  },
+  "makuhita_shadow": {
+    "legal": true,
+    "dex": 296,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Makuhita (Shadow)"
   },
   "hariyama": {
     "legal": true,
@@ -5300,7 +5449,22 @@
       "fighting",
       "none"
     ],
+    "tags": [
+      "shadoweligible"
+    ],
     "speciesName": "Hariyama"
+  },
+  "hariyama_shadow": {
+    "legal": true,
+    "dex": 297,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Hariyama (Shadow)"
   },
   "azurill": {
     "legal": true,
@@ -5498,7 +5662,22 @@
       "electric",
       "none"
     ],
+    "tags": [
+      "shadoweligible"
+    ],
     "speciesName": "Electrike"
+  },
+  "electrike_shadow": {
+    "legal": true,
+    "dex": 309,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Electrike (Shadow)"
   },
   "manectric": {
     "legal": true,
@@ -5506,6 +5685,9 @@
     "types": [
       "electric",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
     ],
     "speciesName": "Manectric"
   },
@@ -5520,6 +5702,18 @@
       "mega"
     ],
     "speciesName": "Manectric (Mega)"
+  },
+  "manectric_shadow": {
+    "legal": true,
+    "dex": 310,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Manectric (Shadow)"
   },
   "plusle": {
     "legal": true,
@@ -6847,7 +7041,22 @@
       "normal",
       "flying"
     ],
+    "tags": [
+      "shadoweligible"
+    ],
     "speciesName": "Starly"
+  },
+  "starly_shadow": {
+    "legal": true,
+    "dex": 396,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Starly (Shadow)"
   },
   "staravia": {
     "legal": true,
@@ -6856,7 +7065,22 @@
       "normal",
       "flying"
     ],
+    "tags": [
+      "shadoweligible"
+    ],
     "speciesName": "Staravia"
+  },
+  "staravia_shadow": {
+    "legal": true,
+    "dex": 397,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Staravia (Shadow)"
   },
   "staraptor": {
     "legal": true,
@@ -6865,7 +7089,22 @@
       "normal",
       "flying"
     ],
+    "tags": [
+      "shadoweligible"
+    ],
     "speciesName": "Staraptor"
+  },
+  "staraptor_shadow": {
+    "legal": true,
+    "dex": 398,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Staraptor (Shadow)"
   },
   "bidoof": {
     "legal": true,
@@ -7261,8 +7500,22 @@
       "dark",
       "flying"
     ],
-    "tags": [],
+    "tags": [
+      "shadoweligible"
+    ],
     "speciesName": "Honchkrow"
+  },
+  "honchkrow_shadow": {
+    "legal": true,
+    "dex": 430,
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Honchkrow (Shadow)"
   },
   "glameow": {
     "legal": true,
@@ -7484,7 +7737,22 @@
       "poison",
       "bug"
     ],
+    "tags": [
+      "shadoweligible"
+    ],
     "speciesName": "Skorupi"
+  },
+  "skorupi_shadow": {
+    "legal": true,
+    "dex": 451,
+    "types": [
+      "poison",
+      "bug"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Skorupi (Shadow)"
   },
   "drapion": {
     "legal": true,
@@ -7493,7 +7761,22 @@
       "poison",
       "dark"
     ],
+    "tags": [
+      "shadoweligible"
+    ],
     "speciesName": "Drapion"
+  },
+  "drapion_shadow": {
+    "legal": true,
+    "dex": 452,
+    "types": [
+      "poison",
+      "dark"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Drapion (Shadow)"
   },
   "croagunk": {
     "legal": true,
@@ -7686,7 +7969,22 @@
       "grass",
       "none"
     ],
+    "tags": [
+      "shadoweligible"
+    ],
     "speciesName": "Tangrowth"
+  },
+  "tangrowth_shadow": {
+    "legal": true,
+    "dex": 465,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": "Tangrowth (Shadow)"
   },
   "electivire": {
     "legal": true,
@@ -10854,9 +11152,6 @@
     "types": [
       "dark",
       "flying"
-    ],
-    "tags": [
-      "unreleased"
     ],
     "speciesName": "Yveltal"
   },

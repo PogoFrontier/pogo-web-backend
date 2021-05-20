@@ -500,6 +500,7 @@
       "FLAMETHROWER",
       "DRAGON_BREATH"
     ],
+    "searchPriority": 10,
     "sid": 192
   },
   "squirtle": {
@@ -2360,6 +2361,7 @@
       "FIRE_BLAST",
       "FLAMETHROWER"
     ],
+    "searchPriority": 3,
     "sid": 1216
   },
   "jigglypuff": {
@@ -2908,11 +2910,7 @@
       "ROCK_TOMB"
     ],
     "legacyMoves": [
-      "MUD_SHOT",
-      "RETURN",
-      "RETURN",
-      "RETURN",
-      "RETURN"
+      "MUD_SHOT"
     ],
     "level25CP": 351,
     "tags": [
@@ -2980,7 +2978,7 @@
     "speciesId": "dugtrio",
     "baseStats": {
       "atk": 167,
-      "def": 136,
+      "def": 134,
       "hp": 111
     },
     "types": [
@@ -2998,13 +2996,9 @@
       "STONE_EDGE"
     ],
     "legacyMoves": [
-      "MUD_SHOT",
-      "RETURN",
-      "RETURN",
-      "RETURN",
-      "RETURN"
+      "MUD_SHOT"
     ],
-    "level25CP": 915,
+    "level25CP": 908,
     "tags": [
       "shadoweligible"
     ],
@@ -3043,7 +3037,7 @@
     "speciesId": "dugtrio_shadow",
     "baseStats": {
       "atk": 167,
-      "def": 136,
+      "def": 134,
       "hp": 111
     },
     "types": [
@@ -4142,7 +4136,7 @@
       "SUBMISSION",
       "PAYBACK"
     ],
-    "searchPriority": 5,
+    "searchPriority": 10,
     "tags": [
       "shadow"
     ],
@@ -5084,11 +5078,7 @@
       "SLUDGE_BOMB"
     ],
     "legacyMoves": [
-      "ACID",
-      "RETURN",
-      "RETURN",
-      "RETURN",
-      "RETURN"
+      "ACID"
     ],
     "level25CP": 787,
     "tags": [
@@ -6266,11 +6256,7 @@
       "SLUDGE_BOMB"
     ],
     "legacyMoves": [
-      "ACID",
-      "RETURN",
-      "RETURN",
-      "RETURN",
-      "RETURN"
+      "ACID"
     ],
     "level25CP": 690,
     "tags": [
@@ -6330,11 +6316,7 @@
       "THUNDERBOLT"
     ],
     "legacyMoves": [
-      "ACID",
-      "RETURN",
-      "RETURN",
-      "RETURN",
-      "RETURN"
+      "ACID"
     ],
     "level25CP": 1391,
     "tags": [
@@ -6507,6 +6489,41 @@
     "eliteMoves": [
       "POWER_WHIP"
     ],
+    "level25CP": 1355,
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 3648
+  },
+  "tangela_shadow": {
+    "dex": 114,
+    "speciesName": "Tangela (Shadow)",
+    "speciesId": "tangela_shadow",
+    "baseStats": {
+      "atk": 183,
+      "def": 169,
+      "hp": 163
+    },
+    "types": [
+      "grass",
+      "none"
+    ],
+    "fastMoves": [
+      "INFESTATION",
+      "VINE_WHIP"
+    ],
+    "chargedMoves": [
+      "GRASS_KNOT",
+      "POWER_WHIP",
+      "SLUDGE_BOMB",
+      "SOLAR_BEAM"
+    ],
+    "eliteMoves": [
+      "POWER_WHIP"
+    ],
+    "tags": [
+      "shadow"
+    ],
     "sid": 3648
   },
   "kangaskhan": {
@@ -6566,6 +6583,37 @@
       "DRAGON_PULSE",
       "FLASH_CANNON"
     ],
+    "level25CP": 589,
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 3712
+  },
+  "horsea_shadow": {
+    "dex": 116,
+    "speciesName": "Horsea (Shadow)",
+    "speciesId": "horsea_shadow",
+    "baseStats": {
+      "atk": 129,
+      "def": 103,
+      "hp": 102
+    },
+    "types": [
+      "water",
+      "none"
+    ],
+    "fastMoves": [
+      "BUBBLE",
+      "WATER_GUN"
+    ],
+    "chargedMoves": [
+      "BUBBLE_BEAM",
+      "DRAGON_PULSE",
+      "FLASH_CANNON"
+    ],
+    "tags": [
+      "shadow"
+    ],
     "sid": 3712
   },
   "seadra": {
@@ -6593,6 +6641,41 @@
     ],
     "eliteMoves": [
       "BLIZZARD"
+    ],
+    "level25CP": 1259,
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 3744
+  },
+  "seadra_shadow": {
+    "dex": 117,
+    "speciesName": "Seadra (Shadow)",
+    "speciesId": "seadra_shadow",
+    "baseStats": {
+      "atk": 187,
+      "def": 156,
+      "hp": 146
+    },
+    "types": [
+      "water",
+      "none"
+    ],
+    "fastMoves": [
+      "DRAGON_BREATH",
+      "WATER_GUN"
+    ],
+    "chargedMoves": [
+      "AURORA_BEAM",
+      "BLIZZARD",
+      "DRAGON_PULSE",
+      "HYDRO_PUMP"
+    ],
+    "eliteMoves": [
+      "BLIZZARD"
+    ],
+    "tags": [
+      "shadow"
     ],
     "sid": 3744
   },
@@ -7508,11 +7591,7 @@
       "ZAP_CANNON"
     ],
     "legacyMoves": [
-      "QUICK_ATTACK",
-      "RETURN",
-      "RETURN",
-      "RETURN",
-      "RETURN"
+      "QUICK_ATTACK"
     ],
     "level25CP": 1016,
     "tags": [
@@ -9650,6 +9729,7 @@
       "SURF",
       "WEATHER_BALL_WATER"
     ],
+    "searchPriority": 10,
     "tags": [
       "shadow"
     ],
@@ -9852,6 +9932,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "level25CP": 775,
     "sid": 6080
   },
   "aipom_shadow": {
@@ -10145,7 +10226,36 @@
       "FOUL_PLAY"
     ],
     "level25CP": 906,
-    "tags": [],
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 6336
+  },
+  "murkrow_shadow": {
+    "dex": 198,
+    "speciesName": "Murkrow (Shadow)",
+    "speciesId": "murkrow_shadow",
+    "baseStats": {
+      "atk": 175,
+      "def": 87,
+      "hp": 155
+    },
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "fastMoves": [
+      "FEINT_ATTACK",
+      "PECK"
+    ],
+    "chargedMoves": [
+      "DARK_PULSE",
+      "DRILL_PECK",
+      "FOUL_PLAY"
+    ],
+    "tags": [
+      "shadow"
+    ],
     "sid": 6336
   },
   "slowking": {
@@ -10611,6 +10721,37 @@
       "CRUNCH",
       "DAZZLING_GLEAM"
     ],
+    "level25CP": 701,
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 6688
+  },
+  "snubbull_shadow": {
+    "dex": 209,
+    "speciesName": "Snubbull (Shadow)",
+    "speciesId": "snubbull_shadow",
+    "baseStats": {
+      "atk": 137,
+      "def": 85,
+      "hp": 155
+    },
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "fastMoves": [
+      "BITE",
+      "TACKLE"
+    ],
+    "chargedMoves": [
+      "BRICK_BREAK",
+      "CRUNCH",
+      "DAZZLING_GLEAM"
+    ],
+    "tags": [
+      "shadow"
+    ],
     "sid": 6688
   },
   "granbull": {
@@ -10635,6 +10776,38 @@
       "CLOSE_COMBAT",
       "CRUNCH",
       "PLAY_ROUGH"
+    ],
+    "level25CP": 1557,
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 6720
+  },
+  "granbull_shadow": {
+    "dex": 210,
+    "speciesName": "Granbull (Shadow)",
+    "speciesId": "granbull_shadow",
+    "baseStats": {
+      "atk": 212,
+      "def": 131,
+      "hp": 207
+    },
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "fastMoves": [
+      "BITE",
+      "SNARL",
+      "CHARM"
+    ],
+    "chargedMoves": [
+      "CLOSE_COMBAT",
+      "CRUNCH",
+      "PLAY_ROUGH"
+    ],
+    "tags": [
+      "shadow"
     ],
     "sid": 6720
   },
@@ -11228,11 +11401,7 @@
       "ICY_WIND"
     ],
     "legacyMoves": [
-      "QUICK_ATTACK",
-      "RETURN",
-      "RETURN",
-      "RETURN",
-      "RETURN"
+      "QUICK_ATTACK"
     ],
     "level25CP": 612,
     "tags": [
@@ -11520,6 +11689,43 @@
       "WATER_GUN"
     ],
     "searchPriority": 12,
+    "level25CP": 1621,
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 7360
+  },
+  "kingdra_shadow": {
+    "dex": 230,
+    "speciesName": "Kingdra (Shadow)",
+    "speciesId": "kingdra_shadow",
+    "baseStats": {
+      "atk": 194,
+      "def": 194,
+      "hp": 181
+    },
+    "types": [
+      "water",
+      "dragon"
+    ],
+    "fastMoves": [
+      "DRAGON_BREATH",
+      "WATER_GUN",
+      "WATERFALL"
+    ],
+    "chargedMoves": [
+      "BLIZZARD",
+      "HYDRO_PUMP",
+      "OUTRAGE",
+      "OCTAZOOKA"
+    ],
+    "eliteMoves": [
+      "WATER_GUN"
+    ],
+    "searchPriority": 12,
+    "tags": [
+      "shadow"
+    ],
     "sid": 7360
   },
   "phanpy": {
@@ -13071,6 +13277,37 @@
       "DIG",
       "POISON_FANG"
     ],
+    "level25CP": 352,
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 8352
+  },
+  "poochyena_shadow": {
+    "dex": 261,
+    "speciesName": "Poochyena (Shadow)",
+    "speciesId": "poochyena_shadow",
+    "baseStats": {
+      "atk": 96,
+      "def": 61,
+      "hp": 111
+    },
+    "types": [
+      "dark",
+      "none"
+    ],
+    "fastMoves": [
+      "SNARL",
+      "TACKLE"
+    ],
+    "chargedMoves": [
+      "CRUNCH",
+      "DIG",
+      "POISON_FANG"
+    ],
+    "tags": [
+      "shadow"
+    ],
     "sid": 8352
   },
   "mightyena": {
@@ -13096,6 +13333,39 @@
       "CRUNCH",
       "PLAY_ROUGH",
       "POISON_FANG"
+    ],
+    "level25CP": 1149,
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 8384
+  },
+  "mightyena_shadow": {
+    "dex": 262,
+    "speciesName": "Mightyena (Shadow)",
+    "speciesId": "mightyena_shadow",
+    "baseStats": {
+      "atk": 171,
+      "def": 132,
+      "hp": 172
+    },
+    "types": [
+      "dark",
+      "none"
+    ],
+    "fastMoves": [
+      "BITE",
+      "FIRE_FANG",
+      "THUNDER_FANG",
+      "ICE_FANG"
+    ],
+    "chargedMoves": [
+      "CRUNCH",
+      "PLAY_ROUGH",
+      "POISON_FANG"
+    ],
+    "tags": [
+      "shadow"
     ],
     "sid": 8384
   },
@@ -14194,6 +14464,37 @@
       "HEAVY_SLAM",
       "LOW_SWEEP"
     ],
+    "level25CP": 430,
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 9472
+  },
+  "makuhita_shadow": {
+    "dex": 296,
+    "speciesName": "Makuhita (Shadow)",
+    "speciesId": "makuhita_shadow",
+    "baseStats": {
+      "atk": 99,
+      "def": 54,
+      "hp": 176
+    },
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "fastMoves": [
+      "ROCK_SMASH",
+      "TACKLE"
+    ],
+    "chargedMoves": [
+      "CROSS_CHOP",
+      "HEAVY_SLAM",
+      "LOW_SWEEP"
+    ],
+    "tags": [
+      "shadow"
+    ],
     "sid": 9472
   },
   "hariyama": {
@@ -14218,6 +14519,38 @@
       "DYNAMIC_PUNCH",
       "HEAVY_SLAM",
       "SUPER_POWER"
+    ],
+    "level25CP": 1730,
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 9504
+  },
+  "hariyama_shadow": {
+    "dex": 297,
+    "speciesName": "Hariyama (Shadow)",
+    "speciesId": "hariyama_shadow",
+    "baseStats": {
+      "atk": 209,
+      "def": 114,
+      "hp": 302
+    },
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "fastMoves": [
+      "BULLET_PUNCH",
+      "COUNTER"
+    ],
+    "chargedMoves": [
+      "CLOSE_COMBAT",
+      "DYNAMIC_PUNCH",
+      "HEAVY_SLAM",
+      "SUPER_POWER"
+    ],
+    "tags": [
+      "shadow"
     ],
     "sid": 9504
   },
@@ -14403,6 +14736,7 @@
     "tags": [
       "shadow"
     ],
+    "searchPriority": 10,
     "sid": 9664
   },
   "mawile": {
@@ -14705,6 +15039,37 @@
       "SWIFT",
       "THUNDERBOLT"
     ],
+    "level25CP": 530,
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 9888
+  },
+  "electrike_shadow": {
+    "dex": 309,
+    "speciesName": "Electrike (Shadow)",
+    "speciesId": "electrike_shadow",
+    "baseStats": {
+      "atk": 123,
+      "def": 78,
+      "hp": 120
+    },
+    "types": [
+      "electric",
+      "none"
+    ],
+    "fastMoves": [
+      "QUICK_ATTACK",
+      "SPARK"
+    ],
+    "chargedMoves": [
+      "DISCHARGE",
+      "SWIFT",
+      "THUNDERBOLT"
+    ],
+    "tags": [
+      "shadow"
+    ],
     "sid": 9888
   },
   "manectric": {
@@ -14728,6 +15093,10 @@
       "FLAME_BURST",
       "THUNDER",
       "WILD_CHARGE"
+    ],
+    "level25CP": 1417,
+    "tags": [
+      "shadoweligible"
     ],
     "sid": 9920
   },
@@ -14757,6 +15126,33 @@
       "mega"
     ],
     "sid": 9921
+  },
+  "manectric_shadow": {
+    "dex": 310,
+    "speciesName": "Manectric (Shadow)",
+    "speciesId": "manectric_shadow",
+    "baseStats": {
+      "atk": 215,
+      "def": 127,
+      "hp": 172
+    },
+    "types": [
+      "electric",
+      "none"
+    ],
+    "fastMoves": [
+      "CHARGE_BEAM",
+      "SNARL"
+    ],
+    "chargedMoves": [
+      "FLAME_BURST",
+      "THUNDER",
+      "WILD_CHARGE"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "sid": 9920
   },
   "plusle": {
     "dex": 311,
@@ -15832,11 +16228,7 @@
       "MIRROR_COAT"
     ],
     "legacyMoves": [
-      "BULLET_SEED",
-      "RETURN",
-      "RETURN",
-      "RETURN",
-      "RETURN"
+      "BULLET_SEED"
     ],
     "level25CP": 736,
     "tags": [
@@ -15955,6 +16347,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "level25CP": 888,
     "sid": 11104
   },
   "anorith_shadow": {
@@ -16009,6 +16402,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "level25CP": 1757,
     "sid": 11136
   },
   "armaldo_shadow": {
@@ -16532,7 +16926,8 @@
     "chargedMoves": [
       "DARK_PULSE",
       "MEGAHORN",
-      "THUNDER"
+      "THUNDER",
+      "PAYBACK"
     ],
     "tags": [
       "shadow"
@@ -16718,6 +17113,7 @@
     "tags": [
       "shadow"
     ],
+    "searchPriority": 2,
     "sid": 11648
   },
   "walrein": {
@@ -18002,6 +18398,36 @@
       "AERIAL_ACE",
       "BRAVE_BIRD"
     ],
+    "level25CP": 375,
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 12672
+  },
+  "starly_shadow": {
+    "dex": 396,
+    "speciesName": "Starly (Shadow)",
+    "speciesId": "starly_shadow",
+    "baseStats": {
+      "atk": 101,
+      "def": 58,
+      "hp": 120
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "fastMoves": [
+      "QUICK_ATTACK",
+      "TACKLE"
+    ],
+    "chargedMoves": [
+      "AERIAL_ACE",
+      "BRAVE_BIRD"
+    ],
+    "tags": [
+      "shadow"
+    ],
     "sid": 12672
   },
   "staravia": {
@@ -18026,6 +18452,37 @@
       "BRAVE_BIRD",
       "HEAT_WAVE"
     ],
+    "level25CP": 742,
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 12704
+  },
+  "staravia_shadow": {
+    "dex": 397,
+    "speciesName": "Staravia (Shadow)",
+    "speciesId": "staravia_shadow",
+    "baseStats": {
+      "atk": 142,
+      "def": 94,
+      "hp": 146
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "fastMoves": [
+      "QUICK_ATTACK",
+      "WING_ATTACK"
+    ],
+    "chargedMoves": [
+      "AERIAL_ACE",
+      "BRAVE_BIRD",
+      "HEAT_WAVE"
+    ],
+    "tags": [
+      "shadow"
+    ],
     "sid": 12704
   },
   "staraptor": {
@@ -18049,6 +18506,37 @@
       "BRAVE_BIRD",
       "CLOSE_COMBAT",
       "HEAT_WAVE"
+    ],
+    "level25CP": 1738,
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 12736
+  },
+  "staraptor_shadow": {
+    "dex": 398,
+    "speciesName": "Staraptor (Shadow)",
+    "speciesId": "staraptor_shadow",
+    "baseStats": {
+      "atk": 234,
+      "def": 140,
+      "hp": 198
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "fastMoves": [
+      "QUICK_ATTACK",
+      "WING_ATTACK"
+    ],
+    "chargedMoves": [
+      "BRAVE_BIRD",
+      "CLOSE_COMBAT",
+      "HEAT_WAVE"
+    ],
+    "tags": [
+      "shadow"
     ],
     "sid": 12736
   },
@@ -18952,6 +19440,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "level25CP": 1471,
     "sid": 13568
   },
   "ambipom_shadow": {
@@ -19182,7 +19671,37 @@
       "SKY_ATTACK"
     ],
     "level25CP": 1650,
-    "tags": [],
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 13760
+  },
+  "honchkrow_shadow": {
+    "dex": 430,
+    "speciesName": "Honchkrow (Shadow)",
+    "speciesId": "honchkrow_shadow",
+    "baseStats": {
+      "atk": 243,
+      "def": 103,
+      "hp": 225
+    },
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "fastMoves": [
+      "PECK",
+      "SNARL"
+    ],
+    "chargedMoves": [
+      "BRAVE_BIRD",
+      "DARK_PULSE",
+      "PSYCHIC",
+      "SKY_ATTACK"
+    ],
+    "tags": [
+      "shadow"
+    ],
     "sid": 13760
   },
   "glameow": {
@@ -19765,6 +20284,37 @@
       "CROSS_POISON",
       "SLUDGE_BOMB"
     ],
+    "level25CP": 558,
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 14432
+  },
+  "skorupi_shadow": {
+    "dex": 451,
+    "speciesName": "Skorupi (Shadow)",
+    "speciesId": "skorupi_shadow",
+    "baseStats": {
+      "atk": 93,
+      "def": 151,
+      "hp": 120
+    },
+    "types": [
+      "poison",
+      "bug"
+    ],
+    "fastMoves": [
+      "INFESTATION",
+      "POISON_STING"
+    ],
+    "chargedMoves": [
+      "AQUA_TAIL",
+      "CROSS_POISON",
+      "SLUDGE_BOMB"
+    ],
+    "tags": [
+      "shadow"
+    ],
     "sid": 14432
   },
   "drapion": {
@@ -19793,6 +20343,41 @@
       "FELL_STINGER"
     ],
     "searchPriority": 2,
+    "level25CP": 1496,
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 14464
+  },
+  "drapion_shadow": {
+    "dex": 452,
+    "speciesName": "Drapion (Shadow)",
+    "speciesId": "drapion_shadow",
+    "baseStats": {
+      "atk": 180,
+      "def": 202,
+      "hp": 172
+    },
+    "types": [
+      "poison",
+      "dark"
+    ],
+    "fastMoves": [
+      "BITE",
+      "INFESTATION",
+      "POISON_STING",
+      "ICE_FANG"
+    ],
+    "chargedMoves": [
+      "AQUA_TAIL",
+      "CRUNCH",
+      "SLUDGE_BOMB",
+      "FELL_STINGER"
+    ],
+    "searchPriority": 2,
+    "tags": [
+      "shadow"
+    ],
     "sid": 14464
   },
   "croagunk": {
@@ -20084,6 +20669,7 @@
     "tags": [
       "shadow"
     ],
+    "searchPriority": 5,
     "sid": 14720
   },
   "weavile": {
@@ -20287,6 +20873,39 @@
       "SOLAR_BEAM",
       "POWER_WHIP"
     ],
+    "level25CP": 1879,
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 14880
+  },
+  "tangrowth_shadow": {
+    "dex": 465,
+    "speciesName": "Tangrowth (Shadow)",
+    "speciesId": "tangrowth_shadow",
+    "baseStats": {
+      "atk": 207,
+      "def": 184,
+      "hp": 225
+    },
+    "types": [
+      "grass",
+      "none"
+    ],
+    "fastMoves": [
+      "INFESTATION",
+      "VINE_WHIP"
+    ],
+    "chargedMoves": [
+      "ANCIENT_POWER",
+      "ROCK_SLIDE",
+      "SLUDGE_BOMB",
+      "SOLAR_BEAM",
+      "POWER_WHIP"
+    ],
+    "tags": [
+      "shadow"
+    ],
     "sid": 14880
   },
   "electivire": {
@@ -20350,6 +20969,7 @@
     "eliteMoves": [
       "FLAMETHROWER"
     ],
+    "searchPriority": 2,
     "tags": [
       "shadow"
     ],
@@ -28419,9 +29039,7 @@
       "HYPER_BEAM",
       "PSYCHIC"
     ],
-    "tags": [
-      "unreleased"
-    ],
+    "searchPriority": 10,
     "sid": 22944
   },
   "zygarde": {
