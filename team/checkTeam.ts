@@ -7,11 +7,12 @@ import mainSeriesPokeData from "../data/pokemonWithMainSeriesMoves.json";
 
 const curseWordFilter = new Filter() 
 
-export function isTeamValid(team: TeamMember[], format: Rule): {isValid: boolean, violations: string[]} {
+export function isTeamValid(team: TeamMember[], format: Rule, strings: any): {isValid: boolean, violations: string[]} {
     let violations = new Array<string>();
-  
+    //Get strings
+    console.log(strings)
     if (team.length !== 6) {
-      violations.push(`Wrong number of Pokémon ${team.length}. Should be 6.`)
+      violations.push(strings.team_verify_wrong_length.replace('%1', team.length)`Wrong number of Pokémon ${team.length}. Should be 6.`)
     }
   
     let megaCounter = 0;
@@ -24,47 +25,47 @@ export function isTeamValid(team: TeamMember[], format: Rule): {isValid: boolean
   
       // Check if pokemon exists
       if (! (pokemon.speciesId in pokeData)) {
-        violations.push(`Pokemon with id ${pokemon.speciesId} doesn't exist`);
+        violations.push(strings.team_verify_invalid_id.replace('%1', pokemon.speciesId));
         continue;
       }
   
       // Check valid iv
       if (pokemon.iv.atk < 0 || pokemon.iv.atk > 15) {
-        violations.push(`Pokemon in index ${index} has invalid attack iv of ${pokemon.iv.atk}`);
+        violations.push(strings.team_verify_invalid_attack.replace('%1', index).replace("%2", pokemon.iv.atk));
       }
       if (pokemon.iv.def < 0 || pokemon.iv.def > 15) {
-        violations.push(`Pokemon in index ${index} has invalid defense iv of ${pokemon.iv.def}`);
+        violations.push(strings.team_verify_invalid_defense.replace('%1', index).replace("%2", pokemon.iv.def));
       }
       if (pokemon.iv.hp < 0 || pokemon.iv.hp > 15) {
-        violations.push(`Pokemon in index ${index} has invalid hp iv of ${pokemon.iv.hp}`);
+        violations.push(strings.team_verify_invalid_hp.replace('%1', index).replace("%2", pokemon.iv.hp));
       }
   
       // Check valid level
       if (pokemon.level < 1 || pokemon.level > format.maxLevel + 1) {
-        violations.push(`Pokemon in index ${index} has invalid level ${pokemon.level}`);
+        violations.push(strings.team_verify_invalid_level.replace('%1', index).replace("%2", pokemon.level));
       } else if (pokemon.level > format.maxLevel) {
         bestBuddyCounter++;
       }
   
       // Check valid cp
       if (pokemon.cp > format.maxCP) {
-        violations.push(`Pokemon in index ${index} has too many cp: ${pokemon.cp}`);
+        violations.push(strings.team_verify_invalid_cp.replace('%1', index).replace("%2", pokemon.cp));
       }
 
       // Check nickname length
       if(pokemon.name && pokemon.name.length > 12) {
-        violations.push(`The nickname ${pokemon.name} exceeds the character limit of 12`);
+        violations.push(strings.team_verify_invalid_nickname.replace('%1', pokemon.name));
       }
 
       // Check nickname for curse words
       if(pokemon.name && curseWordFilter.isProfane(pokemon.name)) {
-        violations.push(`We don't like the nickname ${pokemon.name}. Your pokémon have feelings, too.`);
+        violations.push(strings.team_verify_cursed_nickname.replace('%1', pokemon.name));
       }
 
       // check if pokémon is legal
       const {
         violations: speciesViolations
-      } = isSpeciesAllowed(pokemon, format, parseInt(index));
+      } = isSpeciesAllowed(pokemon, format, parseInt(index), strings);
       violations.push(...speciesViolations)
   
       // Get species data
@@ -74,13 +75,13 @@ export function isTeamValid(team: TeamMember[], format: Rule): {isValid: boolean
       // Check if pokémon violates any of the rules defined in flags
       if(format.flags) {
         if (format.flags.speciesClauseByDex && selectedSpecies.some(species => species.dex === speciesData.dex)) {
-          violations.push(`Pokemon in index ${index} is a duplicate and violates the species clause by dex`);
+          violations.push(strings.team_verify_clause_by_dex.replace('%1', index));
         }
         if (format.flags.speciesClauseByForm && selectedSpecies.some(species => species.speciesId.replace("_shadow", "") === speciesData.speciesId.replace("_shadow", ""))) {
-          violations.push(`Pokemon in index ${index} is a duplicate and violates the species clause by form`);
+          violations.push(strings.team_verify_clause_by_dex.replace('%1', index));
         }
         if (format.flags.typeClause && selectedSpecies.some(species => isThereADuplicateType(species, speciesData))) {
-          violations.push(`Pokemon in index ${index} has a duplicate type and violates the typeClause`);
+          violations.push(strings.team_verify_clause_by_type.replace('%1', index));
         }
       }
 
@@ -99,22 +100,22 @@ export function isTeamValid(team: TeamMember[], format: Rule): {isValid: boolean
   
     // Check if we have too many best buddies
     if (bestBuddyCounter > format.maxBestBuddy) {
-      violations.push(`Team has too many best buddies: ${bestBuddyCounter}`);
+      violations.push(strings.team_verify_invalid_bestbuddy.replace("%1", bestBuddyCounter).replace("%2", format.maxBestBuddy));
     }
   
     // Check if we have too many megas
     if (megaCounter > format.maxMega) {
-      violations.push(`Team has too many megas: ${megaCounter}`);
+      violations.push(strings.team_verify_invalid_megas.replace("%1", megaCounter).replace("%2", format.maxMega));
     }
 
     // Check if the budget was overused
     if(format.pointLimitOptions && pointsUsed > format.pointLimitOptions.maxPoints) {
-      violations.push(`Team uses up too many points: ${pointsUsed}`);
+      violations.push(strings.team_verify_invalid_points.replace("%1", pointsUsed).replace("%2", format.pointLimitOptions.maxPoints));
     }
 
     // Check if the team matches one class
     if(format.classes && !getClassForTeam(format.classes, team)) {
-      violations.push(`Team doesn't match any class`);
+      violations.push(strings.team_verify_invalid_class);
     }
 
     return {
@@ -129,7 +130,7 @@ type reducedPoke = {
   chargeMoves?: string[]
 }
 
-export function isSpeciesAllowed(pokemon: reducedPoke, format: Rule, position: number): {isValid: boolean, violations: string[]} {
+export function isSpeciesAllowed(pokemon: reducedPoke, format: Rule, position: number, strings? : any): {isValid: boolean, violations: string[]} {
   let violations: Array<string> = []
 
   // Get species data
@@ -139,7 +140,7 @@ export function isSpeciesAllowed(pokemon: reducedPoke, format: Rule, position: n
   // Check moves
   if (pokemon.fastMove !== undefined && (!format.advancedOptions || format.advancedOptions.movesets !== "norestrictions")) {
     if (!speciesData.fastMoves.includes(pokemon.fastMove)) {
-      violations.push(`Pokemon in index ${position} cannot use ${pokemon.fastMove}`);
+      violations.push(strings.team_verify_invalid_move.replace("%1", position).replace("%2", pokemon.fastMove));
     }
   }
   if (pokemon.chargeMoves !== undefined && (!format.advancedOptions || format.advancedOptions.movesets !== "norestrictions")) {
@@ -150,7 +151,7 @@ export function isSpeciesAllowed(pokemon: reducedPoke, format: Rule, position: n
       !speciesData.chargedMoves.includes(chargeMove);
     });
     for (let illegalChargeMove of illegalChargeMoves) {
-      violations.push(`Pokemon in index ${position} cannot use ${illegalChargeMove}`);
+      strings ? violations.push(strings.team_verify_invalid_move.replace("%1", position).replace("%2", illegalChargeMove)) : violations.push("invalid");
     }
   }
 
@@ -173,7 +174,7 @@ export function isSpeciesAllowed(pokemon: reducedPoke, format: Rule, position: n
     }
 
     if(!included) {
-      violations.push(`Pokemon in index ${position} is not allowed`);
+      strings ? violations.push(strings.team_verify_invalid_pokemon.replace("%1", position)) : violations.push("invalid");
     }
   }
 
@@ -196,7 +197,7 @@ export function isSpeciesAllowed(pokemon: reducedPoke, format: Rule, position: n
     }
 
     if(excluded) {
-      violations.push(`Pokemon in index ${position} is banned`);
+      strings ? violations.push(strings.team_verify_banned_pokemon.replace('%1', position)) : violations.push("invalid");
     }
   }
 

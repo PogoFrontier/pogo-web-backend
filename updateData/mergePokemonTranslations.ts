@@ -1,21 +1,7 @@
 import fs from "fs"
 import p from "../data/pokemon.json";
 import npm_pokemon from 'pokemon'
-import {LokaliseApi} from "@lokalise/node-api"
-const lokalise = new LokaliseApi({apiKey: ""})
-
-//Get LOKALISE_API_KEY from .env
-async function getKey(key_id : string) {
-    const key = await lokalise.keys.get(key_id, {
-        project_id: '991869486095447a82fab4.67696706',
-        disable_references: 1,
-    });
-    let toReturn : any = {}
-    key.translations.forEach((lang: { language_iso: string | number; translation: any; }) => {
-        toReturn[lang.language_iso] = lang.translation
-    });
-    return toReturn
-}
+import { getTranslation } from "../actions/getTranslation";
 
 //Data imported from https://github.com/sindresorhus/pokemon/
 
@@ -120,64 +106,64 @@ async function mergePokemon() {
     let water : {[x : string]:any} = {};
     let female : {[x : string]:any} = {};
 
-    await getKey('90190611').then(r => trash = r)
-    await getKey('90190609').then(r => plant = r)
-    await getKey('90883478').then(r => sandy = r)
-    await getKey('90883487').then(r => shadow = r)
-    await getKey('90883489').then(r => east = r)
-    await getKey('90883491').then(r => west = r)
-    await getKey('90883485').then(r => sunny = r)
-    await getKey('90883492').then(r => overcast = r)
-    await getKey('90883497').then(r => land = r)
-    await getKey('90883634').then(r => galarian = r)
-    await getKey('90883496').then(r => altered = r)
-    await getKey('90883494').then(r => origin = r)
-    await getKey('90883676').then(r => zen = r)
-    await getKey('90883680').then(r => standard = r)
-    await getKey('90883682').then(r => therian = r)
-    await getKey('90889134').then(r => incarnate = r)
-    await getKey('90889135').then(r => white = r)
-    await getKey('90894120').then(r => black = r)
-    await getKey('90896577').then(r => ordinary = r)
-    await getKey('90896578').then(r => resolute = r)
-    await getKey('90896579').then(r => aria = r)
-    await getKey('90896580').then(r => pirouette = r)
-    await getKey('90896581').then(r => burn = r)
-    await getKey('90896582').then(r => chill = r)
-    await getKey('90896583').then(r => douse = r)
-    await getKey('90896584').then(r => shock = r)
-    await getKey('90896693').then(r => mega = r)
-    await getKey('90896697').then(r => alolan = r)
-    await getKey('90896704').then(r => flying = r)
-    await getKey('90896705').then(r => libre = r)
-    await getKey('90896706').then(r => armored = r)
-    await getKey('90896707').then(r => rainy = r)
-    await getKey('90896708').then(r => snowy = r)
-    await getKey('90896709').then(r => attack = r)
-    await getKey('90896710').then(r => speed = r)
-    await getKey('90896711').then(r => defense = r)
-    await getKey('90896712').then(r => fan = r)
-    await getKey('90896713').then(r => frost = r)
-    await getKey('90896714').then(r => heat = r)
-    await getKey('90896715').then(r => mow = r)
-    await getKey('90896716').then(r => wash = r)
-    await getKey('90896717').then(r => bug = r)
-    await getKey('90896733').then(r => dark = r)
-    await getKey('90896736').then(r => dragon = r)
-    await getKey('90896737').then(r => electric = r)
-    await getKey('90896738').then(r => fairy = r)
-    await getKey('90896740').then(r => fighting = r)
-    await getKey('90896741').then(r => fire = r)
-    await getKey('90896742').then(r => ghost = r)
-    await getKey('90896743').then(r => grass = r)
-    await getKey('90896744').then(r => ground = r)
-    await getKey('90896745').then(r => ice = r)
-    await getKey('90896746').then(r => poison = r)
-    await getKey('90896747').then(r => psychic = r)
-    await getKey('90896748').then(r => rock = r)
-    await getKey('90896749').then(r => steel = r)
-    await getKey('90896750').then(r => water = r)
-    await getKey('90896751').then(r => female = r)
+    await getTranslation('90190611').then(r => trash = r)
+    await getTranslation('90190609').then(r => plant = r)
+    await getTranslation('90883478').then(r => sandy = r)
+    await getTranslation('90883487').then(r => shadow = r)
+    await getTranslation('90883489').then(r => east = r)
+    await getTranslation('90883491').then(r => west = r)
+    await getTranslation('90883485').then(r => sunny = r)
+    await getTranslation('90883492').then(r => overcast = r)
+    await getTranslation('90883497').then(r => land = r)
+    await getTranslation('90883634').then(r => galarian = r)
+    await getTranslation('90883496').then(r => altered = r)
+    await getTranslation('90883494').then(r => origin = r)
+    await getTranslation('90883676').then(r => zen = r)
+    await getTranslation('90883680').then(r => standard = r)
+    await getTranslation('90883682').then(r => therian = r)
+    await getTranslation('90889134').then(r => incarnate = r)
+    await getTranslation('90889135').then(r => white = r)
+    await getTranslation('90894120').then(r => black = r)
+    await getTranslation('90896577').then(r => ordinary = r)
+    await getTranslation('90896578').then(r => resolute = r)
+    await getTranslation('90896579').then(r => aria = r)
+    await getTranslation('90896580').then(r => pirouette = r)
+    await getTranslation('90896581').then(r => burn = r)
+    await getTranslation('90896582').then(r => chill = r)
+    await getTranslation('90896583').then(r => douse = r)
+    await getTranslation('90896584').then(r => shock = r)
+    await getTranslation('90896693').then(r => mega = r)
+    await getTranslation('90896697').then(r => alolan = r)
+    await getTranslation('90896704').then(r => flying = r)
+    await getTranslation('90896705').then(r => libre = r)
+    await getTranslation('90896706').then(r => armored = r)
+    await getTranslation('90896707').then(r => rainy = r)
+    await getTranslation('90896708').then(r => snowy = r)
+    await getTranslation('90896709').then(r => attack = r)
+    await getTranslation('90896710').then(r => speed = r)
+    await getTranslation('90896711').then(r => defense = r)
+    await getTranslation('90896712').then(r => fan = r)
+    await getTranslation('90896713').then(r => frost = r)
+    await getTranslation('90896714').then(r => heat = r)
+    await getTranslation('90896715').then(r => mow = r)
+    await getTranslation('90896716').then(r => wash = r)
+    await getTranslation('90896717').then(r => bug = r)
+    await getTranslation('90896733').then(r => dark = r)
+    await getTranslation('90896736').then(r => dragon = r)
+    await getTranslation('90896737').then(r => electric = r)
+    await getTranslation('90896738').then(r => fairy = r)
+    await getTranslation('90896740').then(r => fighting = r)
+    await getTranslation('90896741').then(r => fire = r)
+    await getTranslation('90896742').then(r => ghost = r)
+    await getTranslation('90896743').then(r => grass = r)
+    await getTranslation('90896744').then(r => ground = r)
+    await getTranslation('90896745').then(r => ice = r)
+    await getTranslation('90896746').then(r => poison = r)
+    await getTranslation('90896747').then(r => psychic = r)
+    await getTranslation('90896748').then(r => rock = r)
+    await getTranslation('90896749').then(r => steel = r)
+    await getTranslation('90896750').then(r => water = r)
+    await getTranslation('90896751').then(r => female = r)
 
     languages.forEach(lang => {
         let object = "new" + lang;
