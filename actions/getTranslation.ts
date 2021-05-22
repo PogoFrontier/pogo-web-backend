@@ -1,6 +1,6 @@
 import { LokaliseApi } from "@lokalise/node-api"
 import axios from "axios"
-const lokalise = new LokaliseApi({apiKey: "1167d4c97fc5ac11eb1b711de341eec6130d5a19"})
+const lokalise = new LokaliseApi({apiKey: ""})
 
 //Get LOKALISE_API_KEY from .env
 async function getTranslation(key_id : string) {

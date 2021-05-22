@@ -1,7 +1,7 @@
 import fs from "fs"
 import p from "../data/pokemon.json";
 import npm_pokemon from 'pokemon'
-import { getTranslation } from "../actions/getTranslation";
+import { getTranslation, getStrings } from "../actions/getTranslation";
 
 //Data imported from https://github.com/sindresorhus/pokemon/
 
@@ -188,7 +188,7 @@ async function mergePokemon() {
             //special formatting needed for cherrim
             if(parseName(en[i]).startsWith("cherrim")){
                 new_pokemon[parseName(en[i]) + "_sunny"].speciesName[lang] = eval(lang)[i] + " " + (sunny[lang] ? sunny[lang] : sunny["en"])
-                new_pokemon[parseName(en[i]) + "_overcast"].speciesName[lang] = eval(lang)[i] + " " + (sunny[lang] ? sunny[lang] : sunny["en"])
+                new_pokemon[parseName(en[i]) + "_overcast"].speciesName[lang] = eval(lang)[i] + " " + (overcast[lang] ? overcast[lang] : overcast["en"])
                 continue;
             } 
             //special formatting needed for shellos
