@@ -1,6 +1,6 @@
 import { Actions } from "../types/actions";
 import { Move } from "../types/room";
-import { TeamMember, TeamMemberDescription } from "../types/team"
+import { TeamMember } from "../types/team"
 
 export function reduceTeam(teamMembers: TeamMember[]): object[] {
     if (teamMembers && teamMembers.length) {

@@ -21,7 +21,7 @@ export type typeId =
   
   export interface TeamMember {
   speciesId: string
-  speciesName: string
+  speciesName: object | string
   hp: number
   def: number
   atk: number
@@ -57,7 +57,7 @@ export interface TeamMemberDescription {
 
 export interface Pokemon {
   "dex": number
-  "speciesName": string
+  "speciesName": object
   "speciesId": string
   "baseStats": {
     "atk": number
@@ -91,7 +91,7 @@ export interface Current {
 }
 
 export interface PokemonSpecies {
-  speciesName?: string
+  speciesName?: object
   speciesId: string
   dex: number
   tags?: string[]

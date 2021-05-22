@@ -31,7 +31,7 @@ function onJoin(id: string, payload: OnJoinPayload) {
         
         let teamMembers = parseToTeamMembers(team);
 
-        const { isValid, violations } = isTeamValid(teamMembers, currentRoom.format);
+        const { isValid, violations } = isTeamValid(teamMembers, currentRoom.format, "English");
         if (!isValid) {
             pubClient.publish("messagesToUser:" + id, "$errorYour team is invalid.\n" + violations.join("\r"));
             return;
