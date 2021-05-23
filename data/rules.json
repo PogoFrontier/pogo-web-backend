@@ -155,6 +155,37 @@
             "values": ["abomasnow", "galvantula", "stunfisk", "medicham", "wobbuffet", "pachirisu", "drapion"]
         }]
     },
+    "Venture Cup": {
+        "name": "Venture Cup",
+        "maxCP":1500,
+        "maxLevel":50,
+        "maxBestBuddy":1,
+        "maxMega":0,
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/all/overall/rankings-1500.json",
+        "pointLimitOptions": {
+            "maxPoints": 14,
+            "prices": [{
+                "pokemonIds": ["cresselia", "froslass", "altaria", "hypno", "hypno_shadow", "marowak_alolan", "lickitung"],
+                "price": 9
+            }, {
+                "pokemonIds": ["jellicent", "politoed", "politoed_shadow", "kingdra", "kingdra_shadow", "dragonair", "dragonair_shadow", "lapras", "lapras_shadow", "medicham", "talonflame", "galvantula", "deoxys_defense", "lickilicky", "regirock", "snorlax", "snorlax_shadow", "munchlax", "vigoroth", "dewgong"],
+                "price": 5
+            }, {
+                "pokemonIds": ["abomasnow", "abomasnow_shadow", "pachirisu", "drifblim", "crustle", "mew", "pelipper", "whiscash", "swampert", "swampert_shadow", "machamp", "machamp_shadow", "graveler_alolan", "zangoose", "dragonite", "dragonite_shadow", "goodra", "dusclops", "dusclops_shadow", "sealeo", "sealeo_shadow", "wobbuffet", "wobbuffet_shadow", "lanturn", "cradily", "cradily_shadow", "tropius", "gengar", "haunter", "mantone", "sirfethd", "stunfisk"],
+                "price": 3
+            }]
+        },
+        "exclude": [{
+            "filterType": "tag",
+            "values": ["mega", "unreleased"]
+        }, {
+            "filterType": "id",
+            "values": ["chansey"]
+        }, {
+            "filterType": "type",
+            "values": ["dark", "fairy", "steel"]
+        }]
+    },
     "Floating City": {
         "name": "Floating City",
         "maxCP":1500,
