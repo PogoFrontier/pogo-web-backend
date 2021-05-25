@@ -269,6 +269,15 @@ const onTurn = (room: string, id: string) => {
             && player.current.bufferedAction
             && !player.current.action
             && currentRoom.status === RoomStatus.STARTED) {
+              
+              // Transform buffered charge move to quick move if the energy in not enough
+              const activePoke = player.current.team[player.current.active]
+              const energy = activePoke.current?.energy
+              if (player.current.bufferedAction.move && energy !== undefined && player.current.bufferedAction.id === Actions.CHARGE_ATTACK && player.current.bufferedAction.move.energy > energy) {
+                player.current.bufferedAction.id  = Actions.FAST_ATTACK
+                player.current.bufferedAction.move = moves[activePoke.fastMove]
+              }
+
               let buffString = player.current.bufferedAction.string!;
               player.current.action = player.current.bufferedAction;
               let current = player.current;
