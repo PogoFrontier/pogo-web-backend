@@ -19,7 +19,6 @@ function onAction({
     if (player && player.current) {
       const pokemon = player!.current!.team[player!.current!.active]
       const d: [Action, string] = data.substring(1).split(":") as [Action, string];
-      console.log(`Action: ${data}`)
       let type = d[0];
       const index = parseInt(d[1])
       let move = type === Actions.CHARGE_ATTACK ? moves[pokemon.chargeMoves[index]] : moves[pokemon.fastMove]
@@ -60,7 +59,6 @@ function onAction({
             active: type === Actions.SWITCH ? parseInt(d[1]) : player.current.active,
             string: data
           }
-          console.log(`Buffered: ${data}`)
           if ((type === Actions.CHARGE_ATTACK) && move) {
             player.current.bufferedAction.move = { ...move } as Move
           }
@@ -71,7 +69,6 @@ function onAction({
           active: type === Actions.SWITCH ? parseInt(d[1]) : player.current.active,
           string: data
         }
-        console.log(`Registered: ${data}`)
         if ((type === Actions.FAST_ATTACK || type === Actions.CHARGE_ATTACK) && move) {
           player.current.action.move = { ...move } as Move
         }

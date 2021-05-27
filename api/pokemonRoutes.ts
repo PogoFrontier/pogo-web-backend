@@ -31,14 +31,15 @@ router.get('', (req, res) => {
         if(!queryParams) {
             return
         }
-        const {format, showIllegal, position, usedPoints, className} = queryParams;
+        const {format, position, showIllegal, usedPoints, className, language} = queryParams;
         const movesetOption = req.query.movesetOption;
 
         let result: any = {}
         if(format === undefined) {
             Object.keys(pokemon).forEach(speciesId => {
                 result[speciesId] = {
-                    legal: true
+                    legal: true,
+                    speciesName: pokemon[speciesId].speciesName[language]
                 }
             })
         } else {
@@ -91,8 +92,14 @@ router.get('', (req, res) => {
 // @access Public (for now)
 router.get('/names', (req, res) => {
     try{
+        // get params
+        const queryParams = getQueryParams(req, res)
+        if(!queryParams) {
+            return
+        }
+        const { language } = queryParams;
         res.json(Object.keys(pokemon).map((mon: any) => {
-            return pokemon[mon].speciesName
+            return pokemon[mon].speciesName[language]
         }));
     }catch(err){
         console.error(err);
@@ -144,7 +151,8 @@ function getQueryParams(req: e.Request, res: e.Response): {
     className?: string
     showIllegal: boolean,
     position: number,
-    usedPoints: number
+    usedPoints: number,
+    language: string
  } | undefined {
     // Get format param
     const format = req.query.format;
@@ -153,7 +161,8 @@ function getQueryParams(req: e.Request, res: e.Response): {
         res.status(400).json({messsage: "invalid format"})
         return
     }
-
+    //get lang param
+    const language = String(req.query.language)
     // Get class param
     const className = req.query.class;
     // Check for valid class
@@ -190,7 +199,8 @@ function getQueryParams(req: e.Request, res: e.Response): {
         showIllegal,
         position,
         usedPoints,
-        className
+        className,
+        language
     }
  }
 
