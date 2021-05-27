@@ -28,9 +28,10 @@ type getRandomPokemonParams = {
   rule: Rule
   previousPokemon: TeamMemberWithDex[]
   className?: string
+  language: string
 }
 
-export function getRandomTeam(rule: Rule): TeamMember[] {
+export function getRandomTeam(rule: Rule, language: string): TeamMember[] {
     const t: TeamMemberWithDex[] = []
     let className: string | undefined = rule.classes
         ? rule.classes[Math.floor(Math.random() * rule.classes.length)].name
@@ -41,6 +42,7 @@ export function getRandomTeam(rule: Rule): TeamMember[] {
             rule,
             previousPokemon: t,
             className,
+            language
         }))
     }
 
@@ -51,6 +53,7 @@ function getRandomPokemon({
     rule,
     previousPokemon,
     className,
+    language
   }: getRandomPokemonParams): TeamMemberWithDex {
 
     // get a random pokemon
@@ -103,7 +106,7 @@ function getRandomPokemon({
   
     return {
         speciesId: randPokemon.speciesId,
-        speciesName: randPokemon.speciesName ? randPokemon.speciesName : randPokemon.speciesId,
+        speciesName: (randPokemon.speciesName && randPokemon.speciesName[language]) ? randPokemon.speciesName[language] : randPokemon.speciesId,
         hp: stats.hp,
         atk: stats.atk,
         def: stats.def,
