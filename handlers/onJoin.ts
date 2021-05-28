@@ -21,7 +21,7 @@ function onJoin(id: string, payload: OnJoinPayload) {
         }
 
         if(currentRoom.format.advancedOptions?.random) {
-            team = getRandomTeam(currentRoom.format)
+            team = getRandomTeam(currentRoom.format, "en")
         }
 
         if (!team || !Array.isArray(team) || team.length <= 0) {
