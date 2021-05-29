@@ -28,10 +28,6 @@ function onAction({
       if (currentRoom.status === RoomStatus.FAINT && (pokemon.current?.hp !== 0 || type !== Actions.SWITCH)) {
         return;
       }
-      if (type === Actions.CHARGE_ATTACK && move.energy > energy) {
-        type = Actions.FAST_ATTACK
-        move = moves[pokemon.fastMove]
-      }
       if(type === Actions.SWITCH && isInvalidSwitch(d[1], currentRoom.status, player, pokemon)){
         return
       }

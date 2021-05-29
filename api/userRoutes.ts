@@ -7,7 +7,7 @@ const router = e.Router();
 // @desc Auth user and get token
 // @route GET /api/users/signin/:id
 // @access Public
-router.get('/signin/:id', (req, res) => {
+router.get('/signin/:id', async (req, res) => {
     try{
         const docRef = firestore.collection('users').doc(req.params.id);
         docRef.get().then(user => {
@@ -35,8 +35,8 @@ router.get('/signin/:id', (req, res) => {
 // @route GET /api/users/profile
 // @access Protected
 router.get('/profile', 
-    (req, res, next) => protect(req, res, next), 
-    (req: any, res) => {
+    async (req, res, next) => protect(req, res, next), 
+    async (req: any, res) => {
     try{
         const docRef = firestore.collection('users').doc(req.user.googleId);
         docRef.get().then(user => {
@@ -60,7 +60,7 @@ router.get('/profile',
 // @desc Post a new user connected to a google account
 // @route POST /api/users
 // @access Public
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
     try{
         const {userAuth, username, teams} = req.body;
         if(userAuth){

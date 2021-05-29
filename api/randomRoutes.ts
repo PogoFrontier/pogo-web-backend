@@ -19,7 +19,7 @@ const availableNames = [
   "zh_hant"
 ]
 
-router.get('/:rule', (req, res) => {
+router.get('/:rule', async (req, res) => {
     const des: RuleDescription = req.params.rule
     try{
       const rule = parseToRule(des)

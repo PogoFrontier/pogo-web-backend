@@ -60,3 +60,19 @@ export function reduceTeamMemberForPlayer(member: TeamMember): TeamMember {
 
     return member;
 }
+
+export function reduceTeamForEnd(team?: TeamMember[]): object[] | undefined {
+    return team?.map(member => {
+        return {
+            name: member.name,
+            sid: member.sid,
+            current: {
+                hp: member.current?.hp,
+                energy: member.current?.energy,
+                damageDealt: member.current?.damageDealt,
+                chargeMovesUsed: member.current?.chargeMovesUsed,
+                timeSpendAlive: member.current?.timeSpendAlive
+            }
+        }
+    })
+}
