@@ -275,7 +275,7 @@ const onTurn = (room: string, id: string) => {
               const energy = activePoke.current?.energy
               if (player.current.bufferedAction.move && energy !== undefined && player.current.bufferedAction.id === Actions.CHARGE_ATTACK && player.current.bufferedAction.move.energy > energy) {
                 player.current.bufferedAction.id  = Actions.FAST_ATTACK
-                player.current.bufferedAction.move = moves[activePoke.fastMove]
+                player.current.bufferedAction.move = {...moves[activePoke.fastMove]}
               }
 
               let buffString = player.current.bufferedAction.string!;
