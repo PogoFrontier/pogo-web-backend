@@ -4188,12 +4188,12 @@
     "speciesName": {
       "de": "Burmy (Prügeln)",
       "fr": "Cheniti (Débattre)",
-      "en": "Burmy (Thrash)",
-      "ja": "ミノムッチ (Thrash)",
-      "ko": "도롱충이 (Thrash)",
-      "ru": "Бурми (Thrash)",
-      "zh_hans": "结草儿 (Thrash)",
-      "zh_hant": "結草兒 (Thrash)"
+      "en": "Burmy (Trash)",
+      "ja": "ミノムッチ (Trash)",
+      "ko": "도롱충이 (Trash)",
+      "ru": "Бурми (Trash)",
+      "zh_hans": "结草儿 (Trash)",
+      "zh_hant": "結草兒 (Trash)"
     }
   },
   "butterfree": {
@@ -4515,7 +4515,7 @@
       ],
       "chargedMoves": [
         {
-          "moveId": "WEATHER_BALL_ROCK",
+          "moveId": "WEATHER_BALL_NORMAL",
           "uses": 46535
         },
         {
@@ -4530,7 +4530,7 @@
     },
     "moveset": [
       "HEX",
-      "WEATHER_BALL_ROCK",
+      "WEATHER_BALL_NORMAL",
       "ENERGY_BALL"
     ]
   },
