@@ -12,6 +12,8 @@ let newde : {[key : string]:any} = {};
 let newja : {[key : string]:any} = {};
 let newko : {[key : string]:any} = {};
 let newru : {[key : string]:any} = {};
+let newes : {[key : string]:any} = {};
+let newth : {[key : string]:any} = {};
 let newzh_hans : {[key : string]:any} = {};
 let newzh_hant : {[key : string]:any} = {};
 
@@ -23,10 +25,12 @@ const en = npm_pokemon.all('en')
 const ja = npm_pokemon.all('ja')
 const ko = npm_pokemon.all('ko')
 const ru = npm_pokemon.all('ru')
+const th = npm_pokemon.all('th')
+const es = npm_pokemon.all('es')
 const zh_hans = npm_pokemon.all('zh-Hans')
 const zh_hant = npm_pokemon.all('zh-Hant')
 
-let languages = ["de", "fr","en", "ja","ko", "ru", "zh_hans", "zh_hant"]
+let languages = ["de", "fr","en", "es", "th", "ja","ko", "ru", "zh_hans", "zh_hant"]
 
 const parseName = (name: string) => {
     return name
@@ -40,10 +44,7 @@ const parseName = (name: string) => {
       .replace(/\'/g, '')
       .replace(/’/g, '')
 }
-const mapLang = (lang :string) => {
-    const toReturn = ["German", "French", "English", "English", "English", "English", "English", "English"]
-    return toReturn[languages.indexOf(lang)]
-}
+
 async function mergePokemon() {
     for (const pokemon in new_pokemon){
         new_pokemon[pokemon].speciesName = {}
@@ -52,7 +53,7 @@ async function mergePokemon() {
     for (let index = 0; index < languages.length; index++) {
         const lang = languages[index]
         let strings : any= {}
-        await getStrings(mapLang(lang)).then(s => strings = s)
+        await getStrings(lang).then(s => strings = s)
         let object = "new" + lang;
         for (let i = 0; i < eval(lang).length; i++) {
             eval(object)[en[i]] = eval(lang)[i];
