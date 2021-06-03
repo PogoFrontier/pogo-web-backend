@@ -1,10 +1,8 @@
-import { reduceActionForOpponent } from "../actions/reduceInformation";
 import { rooms } from "../matchhandling_server";
 import { Actions } from "../types/actions";
 import { OnActionProps } from "../types/handlers";
 import { moves } from '../matchhandling_server';
 import { Move, Player, RoomStatus } from "../types/room";
-import { pubClient } from "../redis/clients";
 import { TeamMember } from "../types/team";
 
 type Action = typeof Actions[keyof typeof Actions]
@@ -33,21 +31,14 @@ function onAction({
       }
 
       if (player.current.action) {
-        if (player.current.action.string?.startsWith(`#${Actions.CHARGE_ATTACK}`) || type === Actions.FAST_ATTACK) {
-          return;
-        }
         if (
           !player.current.bufferedAction
-          || (player.current.bufferedAction
-            && (
-              (
-                type === Actions.CHARGE_ATTACK
-              )
-              || (
-                type === Actions.SWITCH
-                && !player.current.bufferedAction.string?.startsWith(Actions.SWITCH)
-              )
-            )
+          || (
+            type === Actions.CHARGE_ATTACK
+          )
+          || (
+            type === Actions.SWITCH
+            && !player.current.bufferedAction.string?.startsWith(Actions.SWITCH)
           )
         ) {
           player.current.bufferedAction = {
@@ -67,11 +58,6 @@ function onAction({
         }
         if ((type === Actions.FAST_ATTACK || type === Actions.CHARGE_ATTACK) && move) {
           player.current.action.move = { ...move } as Move
-        }
-        const j = i === 0 ? 1 : 0;
-        const opponent = currentRoom.players[j];
-        if (opponent) {
-          pubClient.publish("messagesToUser:" + opponent.id, reduceActionForOpponent(data, player.current.team, move, currentRoom.turn ? currentRoom.turn : 0))
         }
       }
     }

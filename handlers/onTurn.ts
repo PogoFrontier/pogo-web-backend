@@ -18,7 +18,10 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
   const shouldCharge = [-1, -1];
   if (currentRoom && currentRoom.status !== RoomStatus.ANIMATING) {
     for (let i = 0; i < currentRoom.players.length; i++) {
+      const j = i === 0 ? 1 : 0;
       const player = currentRoom.players[i];
+      const opponent = currentRoom.players[j]!;
+
       const activePokemon = player?.current?.team[player.current.active];
       if (player && player.current?.action) {
         switch (player.current.action.id) {
@@ -30,9 +33,13 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
               || !activePokemon?.current?.hp) {
               break;
             }
+            if(!player.current.action.animated) {
+              pubClient.publish("messagesToUser:" + opponent.id, reduceActionForOpponent("#fa:", player.current.team, player.current.action.move, currentRoom.turn ? currentRoom.turn : 0));
+              player.current.action.animated = true
+            }
+
             player.current.action.move!.cooldown -= 500;
             if (player.current.action.move!.cooldown <= 0) {
-              const j = i === 0 ? 1 : 0;
 
               activePokemon.current!.energy = 
                 Math.min(100, (activePokemon.current!.energy || 0) + moves[player.current.action.move.moveId].energyGain)
@@ -45,7 +52,6 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
                 shouldReturn: true,
                 energy: activePokemon.current!.energy,
               }
-              const opponent = currentRoom.players[j]!;
               const opponentActivePokemon = opponent.current!.team[opponent.current!.active];
               opponentActivePokemon.current!.hp = calcDamage(
                 activePokemon,
@@ -58,6 +64,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
                 active: opponent.current!.active,
                 hp: opponentActivePokemon.current!.hp / opponentActivePokemon.hp,
               }
+
               if (opponentActivePokemon.current && opponentActivePokemon.current.hp <= 0) {
                 opponent.current!.remaining -= 1;
                 if (opponent.current?.action?.move) {
@@ -161,6 +168,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
               payload[i]!.wait = -1;
             }
           }
+          pubClient.publish("messagesToUser:" + currentRoom.players[[1, 0][i]]!.id, reduceActionForOpponent("#sw:" + player.current?.active, player.current!.team, player.current!.action?.move, currentRoom.turn ? currentRoom.turn : 0));
           delete player.current!.action;
         }
       }
@@ -248,6 +256,19 @@ const onTurn = (room: string, id: string) => {
     && currentRoom.status !== RoomStatus.STARTING) {
     currentRoom.turn = currentRoom.turn ? currentRoom.turn + 1 : 1;
     const time = Math.ceil(Number((GAME_TIME - currentRoom.turn * 0.5).toFixed(1)))
+
+    // Transform charge moves into quick moves if neccessary
+    for (let player of currentRoom.players) {
+      const activePoke = player?.current?.team[player.current.active]
+      const energy = activePoke?.current?.energy
+      if (player && player.current?.action?.move && activePoke && energy !== undefined && player.current.action.id === Actions.CHARGE_ATTACK && player.current.action.move.energy > energy) {
+        player.current.action.id  = Actions.FAST_ATTACK
+        player.current.action.move = {...moves[activePoke.fastMove]}
+        player.current.action.active = player.current.active
+        player.current.action.string = "#fa:" + activePoke.fastMove
+      }
+    }
+
     if (time <= 0 && currentRoom.status !== RoomStatus.CHARGE) {
       endGame(room, true);
       return;
@@ -269,22 +290,7 @@ const onTurn = (room: string, id: string) => {
             && player.current.bufferedAction
             && !player.current.action
             && currentRoom.status === RoomStatus.STARTED) {
-              
-              // Transform buffered charge move to quick move if the energy in not enough
-              const activePoke = player.current.team[player.current.active]
-              const energy = activePoke.current?.energy
-              if (player.current.bufferedAction.move && energy !== undefined && player.current.bufferedAction.id === Actions.CHARGE_ATTACK && player.current.bufferedAction.move.energy > energy) {
-                player.current.bufferedAction.id  = Actions.FAST_ATTACK
-                player.current.bufferedAction.move = {...moves[activePoke.fastMove]}
-              }
-
-              let buffString = player.current.bufferedAction.string!;
               player.current.action = player.current.bufferedAction;
-              let current = player.current;
-              setTimeout(() => {
-                const oppId = currentRoom.players[j]!.id;
-                pubClient.publish("messagesToUser:" + oppId, reduceActionForOpponent(buffString, current.team));
-              }, TURN_LENGTH / 2)
               delete player.current.bufferedAction;
           }
 
