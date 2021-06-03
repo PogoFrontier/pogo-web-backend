@@ -101,5 +101,39 @@ router.post('/', (req, res) => {
     }
 })
 
+// @desc Update a users teams
+// @route POST /api/users/setteams/:uid
+// @access Public
+router.post('/setteams/:uid', 
+    (req, res, next) => protect(req, res, next), 
+    (req: any, res) => {
+        const {uid} = req.params;
+        const {teams} = req.body;
+        if(uid && teams){
+            try{
+                const docRef = firestore.collection('users').doc(uid);
+                docRef.get().then(user => {
+                    if(user.data()){
+                        docRef.update({teams: teams}).then(() => {
+                            res.json(user.data());
+                        }).catch(err => {
+                            console.log(err);
+                            res.status(500).json({error: "Internal server error"})
+                        });
+                    }else{
+                        res.status(404).json({error: `User not found.`})
+                    }
+                }).catch(err => {
+                    console.log(err);
+                    res.status(500).json({error: "Internal server error"})
+                })
+            }catch(err){
+                console.log(err);
+                res.status(500).json({error: "Internal server error"});
+            }
+        }
+    }
+)
+
 
 export default router;
