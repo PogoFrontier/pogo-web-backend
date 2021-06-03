@@ -31,7 +31,8 @@ export interface TurnAction {
   id: typeof Actions[keyof typeof Actions],
   active: number,
   move?: Move,
-  string?: string
+  string?: string,
+  animated?: boolean
 }
 
 export interface Player {
