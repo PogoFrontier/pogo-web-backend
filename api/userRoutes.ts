@@ -101,17 +101,16 @@ router.post('/', (req, res) => {
     }
 })
 
-// @desc Update a users teams
-// @route POST /api/users/setteams/:uid
+// @desc Update a users teams, validate with token
+// @route POST /api/users/setteams
 // @access Public
-router.post('/setteams/:uid', 
+router.post('/setteams', 
     (req, res, next) => protect(req, res, next), 
     (req: any, res) => {
-        const {uid} = req.params;
         const {teams} = req.body;
-        if(uid && teams){
+        if(teams){
             try{
-                const docRef = firestore.collection('users').doc(uid);
+                const docRef = firestore.collection('users').doc(req.user.googleId);
                 docRef.get().then(user => {
                     if(user.data()){
                         docRef.update({teams: teams}).then(() => {
