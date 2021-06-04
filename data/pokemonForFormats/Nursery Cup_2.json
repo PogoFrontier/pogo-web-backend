@@ -1783,10 +1783,10 @@
       "galarian"
     ],
     "speciesName": {
-      "de": "Porenta (Galarian)",
+      "de": "Porenta (Galar)",
       "fr": "Canarticho (Galarian)",
       "en": "Farfetch’d (Galarian)",
-      "es": "Farfetch’d (Galarian)",
+      "es": "Farfetch’d (Galar)",
       "th": "คาโมเนกิ (Galarian)",
       "ja": "カモネギ (Galarian)",
       "ko": "파오리 (Galarian)",
@@ -5338,7 +5338,8 @@
       "dark"
     ],
     "tags": [
-      "shadoweligible"
+      "shadoweligible",
+      "include1500"
     ]
   },
   "sharpedo_shadow": {
@@ -5349,7 +5350,8 @@
       "dark"
     ],
     "tags": [
-      "shadow"
+      "shadow",
+      "include1500"
     ]
   },
   "wailmer": {

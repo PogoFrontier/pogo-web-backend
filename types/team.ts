@@ -31,6 +31,11 @@ export type typeId =
     def: number
     hp: number
   }
+  baseStats?: {
+    atk: number
+    def: number
+    hp: number
+  }
   cp: number
   types: [typeId, typeId]
   fastMove: string
