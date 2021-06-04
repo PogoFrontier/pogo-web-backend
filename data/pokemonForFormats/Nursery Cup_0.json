@@ -607,10 +607,10 @@
       "alolan"
     ],
     "speciesName": {
-      "de": "Sandan (Alolan)",
+      "de": "Sandan (Alola)",
       "fr": "Sabelette (Alolan)",
       "en": "Sandshrew (Alolan)",
-      "es": "Sandshrew (Alolan)",
+      "es": "Sandshrew (Alola)",
       "th": "แซนด์ (Alolan)",
       "ja": "サンド (Alolan)",
       "ko": "모래두지 (Alolan)",
@@ -633,7 +633,7 @@
       "de": "Sandan (Schatten)",
       "fr": "Sabelette (Ombre)",
       "en": "Sandshrew (Shadow)",
-      "es": "Sandshrew (Shadow)",
+      "es": "Sandshrew (Oscuro)",
       "th": "แซนด์ (Shadow)",
       "ja": "サンド (Shadow)",
       "ko": "모래두지 (Shadow)",
@@ -1633,10 +1633,10 @@
       "alolan"
     ],
     "speciesName": {
-      "de": "Kleinstein (Alolan)",
+      "de": "Kleinstein (Alola)",
       "fr": "Racaillou (Alolan)",
       "en": "Geodude (Alolan)",
-      "es": "Geodude (Alolan)",
+      "es": "Geodude (Alola)",
       "th": "อิชิซึบูเตะ (Alolan)",
       "ja": "イシツブテ (Alolan)",
       "ko": "꼬마돌 (Alolan)",
@@ -1897,10 +1897,10 @@
       "alolan"
     ],
     "speciesName": {
-      "de": "Sleima (Alolan)",
+      "de": "Sleima (Alola)",
       "fr": "Tadmorv (Alolan)",
       "en": "Grimer (Alolan)",
-      "es": "Grimer (Alolan)",
+      "es": "Grimer (Alola)",
       "th": "เบ็ทเบเตอร์ (Alolan)",
       "ja": "ベトベター (Alolan)",
       "ko": "질퍽이 (Alolan)",
@@ -1923,7 +1923,7 @@
       "de": "Sleima (Schatten)",
       "fr": "Tadmorv (Ombre)",
       "en": "Grimer (Shadow)",
-      "es": "Grimer (Shadow)",
+      "es": "Grimer (Oscuro)",
       "th": "เบ็ทเบเตอร์ (Shadow)",
       "ja": "ベトベター (Shadow)",
       "ko": "질퍽이 (Shadow)",
@@ -5398,7 +5398,8 @@
       "dark"
     ],
     "tags": [
-      "shadoweligible"
+      "shadoweligible",
+      "include1500"
     ]
   },
   "sharpedo_shadow": {
@@ -5409,7 +5410,8 @@
       "dark"
     ],
     "tags": [
-      "shadow"
+      "shadow",
+      "include1500"
     ]
   },
   "wailmer": {
@@ -8571,10 +8573,10 @@
       "galarian"
     ],
     "speciesName": {
-      "de": "Flampion (Galarian)",
+      "de": "Flampion (Galar)",
       "fr": "Darumarond (Galarian)",
       "en": "Darumaka (Galarian)",
-      "es": "Darumaka (Galarian)",
+      "es": "Darumaka (Galar)",
       "th": "ดารุมักกะ (Galarian)",
       "ja": "ダルマッカ (Galarian)",
       "ko": "달막화 (Galarian)",

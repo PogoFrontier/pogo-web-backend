@@ -12,6 +12,8 @@ const availableNames = [
   "de",
   "fr",
   "en",
+  "es",
+  "th",
   "ja",
   "ko",
   "ru",
