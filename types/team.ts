@@ -62,7 +62,7 @@ export interface TeamMemberDescription {
 
 export interface Pokemon {
   "dex": number
-  "speciesName": object
+  "speciesName": object | string
   "speciesId": string
   "baseStats": {
     "atk": number
@@ -96,7 +96,7 @@ export interface Current {
 }
 
 export interface PokemonSpecies {
-  speciesName?: object
+  speciesName?: object | string
   speciesId: string
   dex: number
   tags?: string[]
