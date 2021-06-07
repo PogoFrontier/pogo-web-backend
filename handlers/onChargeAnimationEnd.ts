@@ -6,6 +6,7 @@ import { CODE } from "../types/actions";
 import { ResolveTurnPayload } from "../types/handlers";
 import { RoomStatus } from "../types/room";
 import onFaint from "./onFaint";
+import onChargeEnd from "./onChargeEnd";
 
 function onChargeAnimationEnd(room: string) {
   const currentRoom = rooms.get(room);
@@ -54,6 +55,7 @@ function onChargeAnimationEnd(room: string) {
             subject: j,
             move: currentRoom.charge.cmp
           };
+          setTimeout(() => onChargeEnd(currentRoom.id), CHARGE_WAIT * 1000)
         } else {
           currentRoom.status = RoomStatus.STARTED
         }
