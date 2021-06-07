@@ -2,7 +2,7 @@ import { rooms } from "../matchhandling_server";
 import { Actions } from "../types/actions";
 import { OnActionProps } from "../types/handlers";
 import { moves } from '../matchhandling_server';
-import { Move, Player, RoomStatus } from "../types/room";
+import { Move, Player, RoomStatus, TurnAction } from "../types/room";
 import { TeamMember } from "../types/team";
 
 type Action = typeof Actions[keyof typeof Actions]
@@ -20,7 +20,6 @@ function onAction({
       let type = d[0];
       const index = parseInt(d[1])
       let move = type === Actions.CHARGE_ATTACK ? moves[pokemon.chargeMoves[index]] : moves[pokemon.fastMove]
-      const energy = player.current.team[player.current.active].current?.energy || 0
 
       // Dismiss invalid inputs
       if (currentRoom.status === RoomStatus.FAINT && (pokemon.current?.hp !== 0 || type !== Actions.SWITCH)) {
@@ -28,6 +27,15 @@ function onAction({
       }
       if(type === Actions.SWITCH && isInvalidSwitch(d[1], currentRoom.status, player, pokemon)){
         return
+      }
+
+      let action: TurnAction = {
+        id: type,
+        active: type === Actions.SWITCH ? parseInt(d[1]) : player.current.active,
+        string: data
+      }
+      if ((type === Actions.FAST_ATTACK || type === Actions.CHARGE_ATTACK) && move) {
+        action.move = { ...move } as Move
       }
 
       if (player.current.action) {
@@ -41,24 +49,10 @@ function onAction({
             && !player.current.bufferedAction.string?.startsWith(Actions.SWITCH)
           )
         ) {
-          player.current.bufferedAction = {
-            id: type,
-            active: type === Actions.SWITCH ? parseInt(d[1]) : player.current.active,
-            string: data
-          }
-          if ((type === Actions.CHARGE_ATTACK) && move) {
-            player.current.bufferedAction.move = { ...move } as Move
-          }
+          player.current.bufferedAction = action
         }
       } else {
-        player.current.action = {
-          id: type,
-          active: type === Actions.SWITCH ? parseInt(d[1]) : player.current.active,
-          string: data
-        }
-        if ((type === Actions.FAST_ATTACK || type === Actions.CHARGE_ATTACK) && move) {
-          player.current.action.move = { ...move } as Move
-        }
+        player.current.action = action
       }
     }
   }
