@@ -57,6 +57,50 @@ router.get('/profile',
     }
 });
 
+// @desc Get user friends via token
+// @route GET /api/users/friends
+// @access Protected
+router.get('/friends', 
+    async (req, res, next) => protect(req, res, next), 
+    async (req: any, res) => {
+    try{
+        const docRef = firestore.collection('users').doc(req.user.googleId);
+        docRef.get().then(user => {
+            if(user.data()){
+                docRef.update({lastLogin: Date.now()}).then(() => {
+                    let friendsList: string[] = user.data()?.friends
+                    if (!friendsList) {
+                        friendsList = []
+                    }
+
+                    firestore
+                        .collection("users")
+                        .where("googleId", "in", friendsList).get().then(friends => {
+                            res.json(friends.docs.map(friend => {
+                                return {
+                                    displayName: friend.data().displayName,
+                                    email: friend.data().email,
+                                    googleId: friend.data().googleId
+                                }
+                            }));
+                        }).catch(err => {
+                            console.log(err);
+                            res.status(500).json({error: "Internal server error"})
+                        })
+                });
+            } else {
+                res.status(404).json({error: `User not found.`})
+            }
+        }).catch(err => {
+            console.log(err);
+            res.status(500).json({error: "Internal server error"})
+        })
+    }catch(err){
+        console.log(err);
+        res.status(500).json({error: "Internal server error"});
+    }
+});
+
 // @desc Post a new user connected to a google account
 // @route POST /api/users
 // @access Public
