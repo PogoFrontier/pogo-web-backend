@@ -83,10 +83,10 @@ function getRandomPokemon({
         let chargedMovePool: string[] = [];
         let fastMovePool: string[] = [];
         if(rule.advancedOptions?.movesets === "norestrictions") {
-            chargedMovePool = chargemoves
+            chargedMovePool = [...chargemoves]
         } else {
             fastMovePool = pokemonSource[randPokemon.speciesId].fastMoves
-            chargedMovePool = pokemonSource[randPokemon.speciesId].chargedMoves
+            chargedMovePool = [...pokemonSource[randPokemon.speciesId].chargedMoves]
 
             const isShadow = randPokemon.tags?.includes('shadow')
             if (randPokemon.tags?.includes('shadoweligible')) {
