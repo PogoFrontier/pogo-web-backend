@@ -40,13 +40,14 @@ function onAction({
 
       if (player.current.action) {
         if (
-          !player.current.bufferedAction
+          (!player.current.bufferedAction && type !== Actions.SWITCH)
           || (
             type === Actions.CHARGE_ATTACK
           )
           || (
             type === Actions.SWITCH
-            && !player.current.bufferedAction.string?.startsWith(Actions.SWITCH)
+            && player.current.bufferedAction?.id !== Actions.SWITCH
+            && player.current.action.id !== Actions.SWITCH
           )
         ) {
           player.current.bufferedAction = action
