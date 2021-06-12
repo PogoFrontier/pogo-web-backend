@@ -38,16 +38,18 @@ export interface TurnAction {
 export interface Player {
   id: string,
   team: TeamMember[],
-  current?: {
-    team: TeamMember[],
-    ready: boolean,
-    action?: TurnAction,
-    bufferedAction?: TurnAction,
-    active: number,
-    switch: number,
-    shields: number,
-    remaining: number,
-  }
+  current?: Playercurrent
+}
+
+export interface Playercurrent {
+  team: TeamMember[],
+  ready: boolean,
+  action?: TurnAction,
+  bufferedAction?: TurnAction,
+  active: number,
+  switch: number,
+  shields: number,
+  remaining: number,
 }
 
 export interface Room {
@@ -55,6 +57,7 @@ export interface Room {
   players: [Player | null, Player | null],
   turn?: number,
   status: RoomStatus,
+  previousStatus?: RoomStatus,
   wait?: number,
   timer?: any,
   timerId?: string,
