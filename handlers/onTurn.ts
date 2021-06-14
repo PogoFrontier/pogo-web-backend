@@ -79,6 +79,8 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
           delete player?.current?.action;
         }
         delete player?.current?.bufferedAction;
+        shouldCharge[0] = -1
+        shouldCharge[1] = -1
       }
     }
 
