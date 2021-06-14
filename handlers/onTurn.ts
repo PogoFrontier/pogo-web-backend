@@ -286,12 +286,12 @@ function makeFastAttack ({currentRoom, payload, i, active, useAfterCharge}: {
 
     if (opponentActivePokemon.current && opponentActivePokemon.current.hp <= 0) {
       opponent.current!.remaining -= 1;
-      if (opponent.current?.action?.move) {
+      /*if (opponent.current?.action?.move) {
         if (opponent.current?.action?.move.cooldown >= 500) {
           delete opponent.current.action; //Cancel fast attacks
           delete opponent.current.bufferedAction;
         }
-      }
+      }*/
       
       opponentActivePokemon.current.timeSpendAlive += new Date().getTime() - opponentActivePokemon.current.switchedIn!.getTime()
       delete opponentActivePokemon.current.switchedIn
