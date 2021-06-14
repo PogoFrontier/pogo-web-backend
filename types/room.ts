@@ -46,6 +46,7 @@ export interface Playercurrent {
   ready: boolean,
   action?: TurnAction,
   bufferedAction?: TurnAction,
+  afterCharge?: TurnAction,
   active: number,
   switch: number,
   shields: number,

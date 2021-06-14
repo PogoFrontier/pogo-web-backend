@@ -17,11 +17,11 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
   const shouldFA: [boolean, boolean] = [false, false];
   const shouldSwitch = [-1, -1];
   const shouldCharge = [-1, -1];
+  const activeBefore = currentRoom?.players.map(player => player?.current?.active)
   if (currentRoom && currentRoom.status !== RoomStatus.ANIMATING) {
     for (let i = 0; i < currentRoom.players.length; i++) {
       const j = i === 0 ? 1 : 0;
       const player = currentRoom.players[i];
-      const opponent = currentRoom.players[j]!;
 
       const activePokemon = player?.current?.team[player.current.active];
       if (player && player.current?.action) {
@@ -31,6 +31,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
               || currentRoom.status === RoomStatus.STARTING
               || currentRoom.status === RoomStatus.SELECTING
               || currentRoom.status === RoomStatus.CHARGE
+              || currentRoom.previousStatus === RoomStatus.CHARGE
               || !activePokemon?.current?.hp) {
               break;
             }
@@ -38,6 +39,9 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
             break;
 
           case Actions.CHARGE_ATTACK:
+            if (currentRoom.previousStatus === RoomStatus.CHARGE) {
+              break;
+            }
             shouldCharge[i] = player.current.team[player.current.active].atk;
             break;
 
@@ -49,6 +53,9 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
             break;
         }
       }
+      if(player && player.current?.afterCharge && currentRoom.previousStatus === RoomStatus.CHARGE) {
+        shouldFA[i] = true;
+      }
     }
 
     if(currentRoom.previousStatus !== RoomStatus.CHARGE) {
@@ -57,6 +64,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
           makeFastAttack({
             currentRoom,
             payload,
+            active: activeBefore![i]!,
             i: parseInt(i)
           })
         }
@@ -86,7 +94,6 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
           oldActivePokemon.current!.status = [0, 0];
           // Set new active Pokemon
           player!.current!.active = shouldSwitch[i];
-          console.log("switch " + player!.current!.team[shouldSwitch[i]].speciesId)
 
           // Update time spend alive
           if(oldActivePokemon.current?.switchedIn) {
@@ -194,6 +201,8 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
       };
       if (currentRoom.players[j]?.current?.action?.move) {
         currentRoom.players[j]!.current!.action!.move!.cooldown = 0;
+        currentRoom.players[j]!.current!.afterCharge = currentRoom.players[j]!.current!.action
+        delete currentRoom.players[j]!.current!.action
       }
       payload[j] = {
         ...payload[j],
@@ -213,7 +222,9 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
           makeFastAttack({
             currentRoom,
             payload,
-            i: parseInt(i)
+            i: parseInt(i),
+            active: activeBefore![i]!,
+            useAfterCharge: true
           })
         }
       }
@@ -221,22 +232,24 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
 
     currentRoom.previousStatus = currentRoom.status
   }
-  
 
   return payload;
 }
 
-function makeFastAttack ({currentRoom, payload, i}: {
+function makeFastAttack ({currentRoom, payload, i, active, useAfterCharge}: {
   currentRoom: Room,
   payload: [Update | null, Update | null],
   i: number,
+  active: number
+  useAfterCharge?: boolean
 }) {
   const j = [1, 0][i]
   const player = currentRoom.players[i]!
   const opponent = currentRoom.players[j]!
   const current = player.current!
-  const action = current.action!
-  const activePokemon = current.team[current.active]!
+  const action = useAfterCharge ? current.afterCharge! : current.action!
+  delete current.afterCharge
+  const activePokemon = current.team[active]!
 
   if(!action.animated) {
     pubClient.publish("messagesToUser:" + opponent.id, reduceActionForOpponent("#fa:", current.team, action.move, currentRoom.turn ? currentRoom.turn : 0));
@@ -287,7 +300,9 @@ function makeFastAttack ({currentRoom, payload, i}: {
       currentRoom.status = RoomStatus.ANIMATING
       setTimeout(() => onFaint(currentRoom.id), ANIMATING_WAIT * 1000)
     }
-    delete current.action;
+    if(!useAfterCharge) {
+      delete current.action;
+    }
   }
 }
 
