@@ -118,52 +118,6 @@
             "values": ["legendary", "mythical"]
         }]
     },
-    "Commander Cup": {
-        "name": "Commander Cup",
-        "maxCP": 1500,
-        "maxLevel": 50,
-        "maxBestBuddy": 1,
-        "maxMega": 0,
-        "flags": {
-            "speciesClauseByForm": true
-        },
-        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/commander/overall/rankings-1500.json",
-        "teamPattern": [{
-                "name": "Commander",
-                "include": [{
-                    "filterType": "id",
-                    "values": ["munchlax", "shiftry", "escavalier", "steelix", "empoleon", "jellicent", "bronzong", "noctowl", "marowak_alolan", "poliwrath"]
-                }]
-            },
-            {
-                "include": [{ "filterType": "type", "values": ["rock", "ice", "electric", "poison", "psychic"] }],
-                "exclude": [{ "filterType": "type", "values": ["steel"] }]
-            },
-            {
-                "include": [{ "filterType": "type", "values": ["rock", "ice", "electric", "poison", "psychic"] }],
-                "exclude": [{ "filterType": "type", "values": ["steel"] }]
-            },
-            {
-                "include": [{ "filterType": "type", "values": ["rock", "ice", "electric", "poison", "psychic"] }],
-                "exclude": [{ "filterType": "type", "values": ["steel"] }]
-            },
-            {
-                "include": [{ "filterType": "type", "values": ["rock", "ice", "electric", "poison", "psychic"] }],
-                "exclude": [{ "filterType": "type", "values": ["steel"] }]
-            },
-            {
-                "include": [{ "filterType": "type", "values": ["rock", "ice", "electric", "poison", "psychic"] }],
-                "exclude": [{ "filterType": "type", "values": ["steel"] }]
-            }
-        ],
-        "exclude": [{
-            "filterType": "tag",
-            "values": ["legendary", "mythical", "shadow", "mega", "unreleased"]
-        }, {
-            "filterType": "id",
-            "values": ["abomasnow", "galvantula", "stunfisk", "medicham", "wobbuffet", "pachirisu", "drapion"]
-        }]
-    },
     "Venture Cup": {
         "name": "Venture Cup",
         "maxCP": 1500,
