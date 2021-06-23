@@ -14,6 +14,37 @@ export enum RoomStatus {
   ENDED
 }
 
+export interface ParticleCoords {
+  x: number
+  y: number
+}
+
+export interface ParticleKeyframes {
+  pos?: ParticleCoords
+  scale?: ParticleCoords
+  opacity?: number
+  rotation?: number
+  time: number
+}
+
+export interface MoveAnimParticle {
+  startPos: ParticleCoords
+  keyframes?: ParticleKeyframes[]
+  preset?: "projectile" | "self" | "opponent" | "reverse-projectile"
+  name: string
+}
+
+export interface MoveAnim {
+  type: "ca" | "fa"
+  particles: MoveAnimParticle[]
+  self?: "wiggle" | "basic" | "jump" | "squish" | "maximize" | "minimize" | "fly" | "dig" | "teleport" | "blitz"
+  opponent?: "wiggle" | "basic" | "jump" | "squish" | "maximize" | "minimize" | "fly" | "dig" | "teleport" | "blitz"
+  background?: {
+    color: string
+    name?: string
+  }
+}
+
 export interface Move {
   "moveId": string,
   "name": string,
@@ -24,7 +55,8 @@ export interface Move {
   "cooldown": number,
   "buffs"?: [number, number],
   "buffTarget"?: string,
-  "buffApplyChance"?: string
+  "buffApplyChance"?: string,
+  "animation"?: MoveAnim
 }
 
 export interface TurnAction {
