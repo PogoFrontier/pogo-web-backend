@@ -61,9 +61,9 @@
             "speciesClauseByDex": "true"
         },
         "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/premier/overall/rankings-2500.json",
-        "exclude":[{
-            "filterType":"tag",
-            "values":["legendary","mythical"]
+        "exclude": [{
+            "filterType": "tag",
+            "values": ["legendary", "mythical"]
         }]
     },
     "Master League": {
@@ -87,9 +87,9 @@
             "speciesClauseByDex": "true"
         },
         "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/premier/overall/rankings-10000.json",
-        "exclude":[{
-            "filterType":"tag",
-            "values":["legendary","mythical"]
+        "exclude": [{
+            "filterType": "tag",
+            "values": ["legendary", "mythical"]
         }]
     },
     "OPEN_MASTER_LEAGUE_CLASSIC": {
@@ -113,17 +113,17 @@
             "speciesClauseByDex": "true"
         },
         "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/premier/overall/rankings-10000.json",
-        "exclude":[{
-            "filterType":"tag",
-            "values":["legendary","mythical"]
+        "exclude": [{
+            "filterType": "tag",
+            "values": ["legendary", "mythical"]
         }]
     },
     "Venture Cup": {
         "name": "Venture Cup",
-        "maxCP":1500,
-        "maxLevel":50,
-        "maxBestBuddy":1,
-        "maxMega":0,
+        "maxCP": 1500,
+        "maxLevel": 50,
+        "maxBestBuddy": 1,
+        "maxMega": 0,
         "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/venture/overall/rankings-1500.json",
         "pointLimitOptions": {
             "maxPoints": 14,
@@ -151,12 +151,12 @@
     },
     "Floating City": {
         "name": "Floating City",
-        "maxCP":1500,
-        "maxLevel":50,
-        "maxBestBuddy":1,
-        "maxMega":0,
-        "flags":{
-            "speciesClauseByForm":true
+        "maxCP": 1500,
+        "maxLevel": 50,
+        "maxBestBuddy": 1,
+        "maxMega": 0,
+        "flags": {
+            "speciesClauseByForm": true
         },
         "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/factions/overall/rankings-1500.json",
         "include": [{
@@ -195,43 +195,57 @@
     },
     "Nursery Cup": {
         "name": "Nursery Cup",
-        "maxCP":1500,
-        "maxLevel":50,
-        "maxBestBuddy":1,
-        "maxMega":0,
-        "teamPattern":[
-            {"include":[{
-                "filterType":"dex",
-                "values":["88-88", "27-27", "74-74", "554-554"]
-            }]},
-            {"include":[{
-                "filterType":"dex",
-                "values":["66-66", "559-559", "438-438", "240-240"]
-            }]},
-            {"include":[{
-                "filterType":"dex",
-                "values":["629-629", "425-425", "627-627", "83-83", "193-193"]
-            }]},
-            {"include":[{
-                "filterType":"id",
-                "values":["mantyke", "wailmer", "tirtouga", "chinchou", "slowpoke", "clamperl"]
-            }]},
-            {"include":[{
-                "filterType":"id",
-                "values":["lileep", "turtwig", "oddish", "snover", "chespin"]
-            }]},
-            {"include":[{
-                "filterType":"id",
-                "values":["spritzee", "litleo", "dwebble", "elekid", "skrelp", "smoochum"]
-            }]}
+        "maxCP": 1500,
+        "maxLevel": 50,
+        "maxBestBuddy": 1,
+        "maxMega": 0,
+        "teamPattern": [{
+                "include": [{
+                    "filterType": "dex",
+                    "values": ["88-88", "27-27", "74-74", "554-554"]
+                }]
+            },
+            {
+                "include": [{
+                    "filterType": "dex",
+                    "values": ["66-66", "559-559", "438-438", "240-240"]
+                }]
+            },
+            {
+                "include": [{
+                    "filterType": "dex",
+                    "values": ["629-629", "425-425", "627-627", "83-83", "193-193"]
+                }]
+            },
+            {
+                "include": [{
+                    "filterType": "id",
+                    "values": ["mantyke", "wailmer", "tirtouga", "chinchou", "slowpoke", "clamperl"]
+                }]
+            },
+            {
+                "include": [{
+                    "filterType": "id",
+                    "values": ["lileep", "turtwig", "oddish", "snover", "chespin"]
+                }]
+            },
+            {
+                "include": [{
+                    "filterType": "id",
+                    "values": ["spritzee", "litleo", "dwebble", "elekid", "skrelp", "smoochum"]
+                }]
+            }
         ]
     },
     "Cliffhanger": {
         "name": "Cliffhanger",
-        "maxCP":1500,
-        "maxLevel":50,
-        "maxBestBuddy":1,
-        "maxMega":0,
+        "maxCP": 1500,
+        "maxLevel": 50,
+        "maxBestBuddy": 1,
+        "maxMega": 0,
+        "flags": {
+            "speciesClauseByDex": "true"
+        },
         "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/all/overall/rankings-1500.json",
         "pointLimitOptions": {
             "maxPoints": 17,
@@ -253,13 +267,13 @@
     },
     "Specialist Cup": {
         "name": "Specialist Cup",
-        "maxCP":1500,
-        "maxLevel":50,
-        "maxBestBuddy":1,
-        "maxMega":0,
+        "maxCP": 1500,
+        "maxLevel": 50,
+        "maxBestBuddy": 1,
+        "maxMega": 0,
         "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/all/overall/rankings-1500.json",
-        "flags":{
-            "speciesClauseByForm":true
+        "flags": {
+            "speciesClauseByForm": true
         },
         "exclude": [{
             "filterType": "tag",

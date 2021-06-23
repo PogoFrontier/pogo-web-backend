@@ -534,10 +534,10 @@
       "alolan"
     ],
     "speciesName": {
-      "de": "Rattfratz (Alolan)",
+      "de": "Rattfratz (Alola)",
       "fr": "Rattata (Alolan)",
       "en": "Rattata (Alolan)",
-      "es": "Rattata (Alolan)",
+      "es": "Rattata (Alola)",
       "th": "โครัตตา (Alolan)",
       "ja": "コラッタ (Alolan)",
       "ko": "꼬렛 (Alolan)",
@@ -591,10 +591,10 @@
       "alolan"
     ],
     "speciesName": {
-      "de": "Rattikarl (Alolan)",
+      "de": "Rattikarl (Alola)",
       "fr": "Rattatac (Alolan)",
       "en": "Raticate (Alolan)",
-      "es": "Raticate (Alolan)",
+      "es": "Raticate (Alola)",
       "th": "รัตตา (Alolan)",
       "ja": "ラッタ (Alolan)",
       "ko": "레트라 (Alolan)",
@@ -807,10 +807,10 @@
       "alolan"
     ],
     "speciesName": {
-      "de": "Sandan (Alolan)",
+      "de": "Sandan (Alola)",
       "fr": "Sabelette (Alolan)",
       "en": "Sandshrew (Alolan)",
-      "es": "Sandshrew (Alolan)",
+      "es": "Sandshrew (Alola)",
       "th": "แซนด์ (Alolan)",
       "ja": "サンド (Alolan)",
       "ko": "모래두지 (Alolan)",
@@ -864,10 +864,10 @@
       "alolan"
     ],
     "speciesName": {
-      "de": "Sandamer (Alolan)",
+      "de": "Sandamer (Alola)",
       "fr": "Sablaireau (Alolan)",
       "en": "Sandslash (Alolan)",
-      "es": "Sandslash (Alolan)",
+      "es": "Sandslash (Alola)",
       "th": "แซนด์แพน (Alolan)",
       "ja": "サンドパン (Alolan)",
       "ko": "고지 (Alolan)",
@@ -1553,10 +1553,10 @@
       "alolan"
     ],
     "speciesName": {
-      "de": "Digda (Alolan)",
+      "de": "Digda (Alola)",
       "fr": "Taupiqueur (Alolan)",
       "en": "Diglett (Alolan)",
-      "es": "Diglett (Alolan)",
+      "es": "Diglett (Alola)",
       "th": "ดิกดา (Alolan)",
       "ja": "ディグダ (Alolan)",
       "ko": "디그다 (Alolan)",
@@ -1610,10 +1610,10 @@
       "alolan"
     ],
     "speciesName": {
-      "de": "Digdri (Alolan)",
+      "de": "Digdri (Alola)",
       "fr": "Triopikeur (Alolan)",
       "en": "Dugtrio (Alolan)",
-      "es": "Dugtrio (Alolan)",
+      "es": "Dugtrio (Alola)",
       "th": "ดักทริโอ (Alolan)",
       "ja": "ダグトリオ (Alolan)",
       "ko": "닥트리오 (Alolan)",
@@ -1678,10 +1678,10 @@
       "galarian"
     ],
     "speciesName": {
-      "de": "Mauzi (Galarian)",
+      "de": "Mauzi (Galar)",
       "fr": "Miaouss (Galarian)",
       "en": "Meowth (Galarian)",
-      "es": "Meowth (Galarian)",
+      "es": "Meowth (Galar)",
       "th": "เนียส (Galarian)",
       "ja": "ニャース (Galarian)",
       "ko": "나옹 (Galarian)",
@@ -6544,10 +6544,10 @@
       "galarian"
     ],
     "speciesName": {
-      "de": "Zigzachs (Galarian)",
+      "de": "Zigzachs (Galar)",
       "fr": "Zigzaton (Galarian)",
       "en": "Zigzagoon (Galarian)",
-      "es": "Zigzagoon (Galarian)",
+      "es": "Zigzagoon (Galar)",
       "th": "จิกุซากุมะ (Galarian)",
       "ja": "ジグザグマ (Galarian)",
       "ko": "지그제구리 (Galarian)",
@@ -6587,10 +6587,10 @@
       "galarian"
     ],
     "speciesName": {
-      "de": "Geradaks (Galarian)",
+      "de": "Geradaks (Galar)",
       "fr": "Linéon (Galarian)",
       "en": "Linoone (Galarian)",
-      "es": "Linoone (Galarian)",
+      "es": "Linoone (Galar)",
       "th": "มัสสึกุมะ (Galarian)",
       "ja": "マッスグマ (Galarian)",
       "ko": "직구리 (Galarian)",
@@ -7766,7 +7766,8 @@
       "dark"
     ],
     "tags": [
-      "shadoweligible"
+      "shadoweligible",
+      "include1500"
     ]
   },
   "sharpedo_shadow": {
@@ -7777,7 +7778,8 @@
       "dark"
     ],
     "tags": [
-      "shadow"
+      "shadow",
+      "include1500"
     ]
   },
   "wailmer": {
@@ -9505,10 +9507,10 @@
       "ground"
     ],
     "speciesName": {
-      "de": "Burmadame (Sandy)",
+      "de": "Burmadame (Sandumhang)",
       "fr": "Cheniselle (Sandy)",
       "en": "Wormadam (Sandy)",
-      "es": "Wormadam (Sandy)",
+      "es": "Wormadam (Tronco Arena)",
       "th": "มิโนมาดาม (Sandy)",
       "ja": "ミノマダム (Sandy)",
       "ko": "도롱마담 (Sandy)",
@@ -9560,7 +9562,7 @@
       "de": "Burmadame (Prügeln)",
       "fr": "Cheniselle (Débattre)",
       "en": "Wormadam (Trash)",
-      "es": "Wormadam (Trash)",
+      "es": "Wormadam (Tronco Basura)",
       "th": "มิโนมาดาม (Trash)",
       "ja": "ミノマダム (Trash)",
       "ko": "도롱마담 (Trash)",
@@ -9816,10 +9818,10 @@
       "ground"
     ],
     "speciesName": {
-      "de": "Gastrodon (East)",
+      "de": "Gastrodon (Osten)",
       "fr": "Tritosor (East)",
       "en": "Gastrodon (East)",
-      "es": "Gastrodon (East)",
+      "es": "Gastrodon (Este)",
       "th": "ไทรโทดอน (East)",
       "ja": "トリトドン (East)",
       "ko": "트리토돈 (East)",
@@ -9836,10 +9838,10 @@
       "ground"
     ],
     "speciesName": {
-      "de": "Gastrodon (West)",
+      "de": "Gastrodon (Westen)",
       "fr": "Tritosor (West)",
       "en": "Gastrodon (West)",
-      "es": "Gastrodon (West)",
+      "es": "Gastrodon (Oeste)",
       "th": "ไทรโทดอน (West)",
       "ja": "トリトドン (West)",
       "ko": "트리토돈 (West)",
@@ -12606,10 +12608,10 @@
       "galarian"
     ],
     "speciesName": {
-      "de": "Makabaja (Galarian)",
+      "de": "Makabaja (Galar)",
       "fr": "Tutafeh (Galarian)",
       "en": "Yamask (Galarian)",
-      "es": "Yamask (Galarian)",
+      "es": "Yamask (Galar)",
       "th": "เดซึมาซึ (Galarian)",
       "ja": "デスマス (Galarian)",
       "ko": "데스마스 (Galarian)",
@@ -13801,10 +13803,10 @@
       "legendary"
     ],
     "speciesName": {
-      "de": "Boreos (Incarnate)",
+      "de": "Boreos (Inkarnationsform)",
       "fr": "Boréas (Incarnate)",
       "en": "Tornadus (Incarnate)",
-      "es": "Tornadus (Incarnate)",
+      "es": "Tornadus (Forma Avatar)",
       "th": "ทอร์เนลอส (Incarnate)",
       "ja": "トルネロス (Incarnate)",
       "ko": "토네로스 (Incarnate)",
@@ -13824,10 +13826,10 @@
       "legendary"
     ],
     "speciesName": {
-      "de": "Boreos (Therian)",
+      "de": "Boreos (Tiergeistform)",
       "fr": "Boréas (Therian)",
       "en": "Tornadus (Therian)",
-      "es": "Tornadus (Therian)",
+      "es": "Tornadus (Forma Tótem)",
       "th": "ทอร์เนลอส (Therian)",
       "ja": "トルネロス (Therian)",
       "ko": "토네로스 (Therian)",
@@ -13847,10 +13849,10 @@
       "legendary"
     ],
     "speciesName": {
-      "de": "Voltolos (Incarnate)",
+      "de": "Voltolos (Inkarnationsform)",
       "fr": "Fulguris (Incarnate)",
       "en": "Thundurus (Incarnate)",
-      "es": "Thundurus (Incarnate)",
+      "es": "Thundurus (Forma Avatar)",
       "th": "โวลโทลอส (Incarnate)",
       "ja": "ボルトロス (Incarnate)",
       "ko": "볼트로스 (Incarnate)",
@@ -13870,10 +13872,10 @@
       "legendary"
     ],
     "speciesName": {
-      "de": "Voltolos (Therian)",
+      "de": "Voltolos (Tiergeistform)",
       "fr": "Fulguris (Therian)",
       "en": "Thundurus (Therian)",
-      "es": "Thundurus (Therian)",
+      "es": "Thundurus (Forma Tótem)",
       "th": "โวลโทลอส (Therian)",
       "ja": "ボルトロス (Therian)",
       "ko": "볼트로스 (Therian)",
@@ -13915,10 +13917,10 @@
       "legendary"
     ],
     "speciesName": {
-      "de": "Demeteros (Incarnate)",
+      "de": "Demeteros (Inkarnationsform)",
       "fr": "Démétéros (Incarnate)",
       "en": "Landorus (Incarnate)",
-      "es": "Landorus (Incarnate)",
+      "es": "Landorus (Forma Avatar)",
       "th": "แลนโดลอส (Incarnate)",
       "ja": "ランドロス (Incarnate)",
       "ko": "랜드로스 (Incarnate)",
@@ -13938,10 +13940,10 @@
       "legendary"
     ],
     "speciesName": {
-      "de": "Demeteros (Therian)",
+      "de": "Demeteros (Tiergeistform)",
       "fr": "Démétéros (Therian)",
       "en": "Landorus (Therian)",
-      "es": "Landorus (Therian)",
+      "es": "Landorus (Forma Tótem)",
       "th": "แลนโดลอส (Therian)",
       "ja": "ランドロス (Therian)",
       "ko": "랜드로스 (Therian)",

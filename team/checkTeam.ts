@@ -10,7 +10,6 @@ const curseWordFilter = new Filter()
 export function isTeamValid(team: TeamMember[], format: Rule, strings: any): {isValid: boolean, violations: string[]} {
     let violations = new Array<string>();
     //Get strings
-    console.log(strings)
     if (team.length !== 6) {
       violations.push(strings.team_verify_wrong_length.replace('%1', team.length))
     }
@@ -70,7 +69,12 @@ export function isTeamValid(team: TeamMember[], format: Rule, strings: any): {is
   
       // Get species data
       const shouldUseMainSeriesData = format.advancedOptions && format.advancedOptions.movesets === "mainseries"
-      const speciesData: Pokemon = shouldUseMainSeriesData === true ? mainSeriesPokeData[pokemon.speciesId as keyof typeof mainSeriesPokeData] : pokeData[pokemon.speciesId as keyof typeof pokeData];
+      let speciesData: Pokemon;
+      if (shouldUseMainSeriesData === true) {
+        speciesData = mainSeriesPokeData[pokemon.speciesId as keyof typeof mainSeriesPokeData]
+      } else {
+        speciesData = pokeData[pokemon.speciesId as keyof typeof pokeData];
+      }
       
       // Check if pokémon violates any of the rules defined in flags
       if(format.flags) {
@@ -135,7 +139,12 @@ export function isSpeciesAllowed(pokemon: reducedPoke, format: Rule, position: n
 
   // Get species data
   const shouldUseMainSeriesData = format.advancedOptions && format.advancedOptions.movesets === "mainseries"
-  const speciesData: Pokemon = shouldUseMainSeriesData ? mainSeriesPokeData[pokemon.speciesId as keyof typeof mainSeriesPokeData] : pokeData[pokemon.speciesId as keyof typeof pokeData];
+  let speciesData: Pokemon;
+  if (shouldUseMainSeriesData === true) {
+    speciesData = mainSeriesPokeData[pokemon.speciesId as keyof typeof mainSeriesPokeData]
+  } else {
+    speciesData = pokeData[pokemon.speciesId as keyof typeof pokeData];
+  }
 
   // Check moves
   if (pokemon.fastMove !== undefined && (!format.advancedOptions || format.advancedOptions.movesets !== "norestrictions")) {

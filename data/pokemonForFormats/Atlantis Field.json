@@ -838,10 +838,10 @@
       "alolan"
     ],
     "speciesName": {
-      "de": "Rattfratz (Alolan)",
+      "de": "Rattfratz (Alola)",
       "fr": "Rattata (Alolan)",
       "en": "Rattata (Alolan)",
-      "es": "Rattata (Alolan)",
+      "es": "Rattata (Alola)",
       "th": "โครัตตา (Alolan)",
       "ja": "コラッタ (Alolan)",
       "ko": "꼬렛 (Alolan)",
@@ -883,10 +883,10 @@
       "alolan"
     ],
     "speciesName": {
-      "de": "Rattikarl (Alolan)",
+      "de": "Rattikarl (Alola)",
       "fr": "Rattatac (Alolan)",
       "en": "Raticate (Alolan)",
-      "es": "Raticate (Alolan)",
+      "es": "Raticate (Alola)",
       "th": "รัตตา (Alolan)",
       "ja": "ラッタ (Alolan)",
       "ko": "레트라 (Alolan)",
@@ -1702,10 +1702,10 @@
       "alolan"
     ],
     "speciesName": {
-      "de": "Vulnona (Alolan)",
+      "de": "Vulnona (Alola)",
       "fr": "Feunard (Alolan)",
       "en": "Ninetales (Alolan)",
-      "es": "Ninetales (Alolan)",
+      "es": "Ninetales (Alola)",
       "th": "คิวคอน (Alolan)",
       "ja": "キュウコン (Alolan)",
       "ko": "나인테일 (Alolan)",
@@ -2443,10 +2443,10 @@
       "alolan"
     ],
     "speciesName": {
-      "de": "Mauzi (Alolan)",
+      "de": "Mauzi (Alola)",
       "fr": "Miaouss (Alolan)",
       "en": "Meowth (Alolan)",
-      "es": "Meowth (Alolan)",
+      "es": "Meowth (Alola)",
       "th": "เนียส (Alolan)",
       "ja": "ニャース (Alolan)",
       "ko": "나옹 (Alolan)",
@@ -2499,10 +2499,10 @@
       "alolan"
     ],
     "speciesName": {
-      "de": "Snobilikat (Alolan)",
+      "de": "Snobilikat (Alola)",
       "fr": "Persian (Alolan)",
       "en": "Persian (Alolan)",
-      "es": "Persian (Alolan)",
+      "es": "Persian (Alola)",
       "th": "เปอร์เซียน (Alolan)",
       "ja": "ペルシアン (Alolan)",
       "ko": "페르시온 (Alolan)",
@@ -3441,10 +3441,10 @@
       "galarian"
     ],
     "speciesName": {
-      "de": "Gallopa (Galarian)",
+      "de": "Gallopa (Galar)",
       "fr": "Galopa (Galarian)",
       "en": "Rapidash (Galarian)",
-      "es": "Rapidash (Galarian)",
+      "es": "Rapidash (Galar)",
       "th": "แกลล็อป (Galarian)",
       "ja": "ギャロップ (Galarian)",
       "ko": "날쌩마 (Galarian)",
@@ -3905,10 +3905,10 @@
       "alolan"
     ],
     "speciesName": {
-      "de": "Sleima (Alolan)",
+      "de": "Sleima (Alola)",
       "fr": "Tadmorv (Alolan)",
       "en": "Grimer (Alolan)",
-      "es": "Grimer (Alolan)",
+      "es": "Grimer (Alola)",
       "th": "เบ็ทเบเตอร์ (Alolan)",
       "ja": "ベトベター (Alolan)",
       "ko": "질퍽이 (Alolan)",
@@ -4046,10 +4046,10 @@
       "alolan"
     ],
     "speciesName": {
-      "de": "Sleimok (Alolan)",
+      "de": "Sleimok (Alola)",
       "fr": "Grotadmorv (Alolan)",
       "en": "Muk (Alolan)",
-      "es": "Muk (Alolan)",
+      "es": "Muk (Alola)",
       "th": "เบ็ทเบตัน (Alolan)",
       "ja": "ベトベトン (Alolan)",
       "ko": "질뻐기 (Alolan)",
@@ -4878,10 +4878,10 @@
       "galarian"
     ],
     "speciesName": {
-      "de": "Smogmog (Galarian)",
+      "de": "Smogmog (Galar)",
       "fr": "Smogogo (Galarian)",
       "en": "Weezing (Galarian)",
-      "es": "Weezing (Galarian)",
+      "es": "Weezing (Galar)",
       "th": "มาตาโดกัซ (Galarian)",
       "ja": "マタドガス (Galarian)",
       "ko": "또도가스 (Galarian)",
@@ -9892,10 +9892,10 @@
       "galarian"
     ],
     "speciesName": {
-      "de": "Zigzachs (Galarian)",
+      "de": "Zigzachs (Galar)",
       "fr": "Zigzaton (Galarian)",
       "en": "Zigzagoon (Galarian)",
-      "es": "Zigzagoon (Galarian)",
+      "es": "Zigzagoon (Galar)",
       "th": "จิกุซากุมะ (Galarian)",
       "ja": "ジグザグマ (Galarian)",
       "ko": "지그제구리 (Galarian)",
@@ -9923,10 +9923,10 @@
       "galarian"
     ],
     "speciesName": {
-      "de": "Geradaks (Galarian)",
+      "de": "Geradaks (Galar)",
       "fr": "Linéon (Galarian)",
       "en": "Linoone (Galarian)",
-      "es": "Linoone (Galarian)",
+      "es": "Linoone (Galar)",
       "th": "มัสสึกุมะ (Galarian)",
       "ja": "マッスグマ (Galarian)",
       "ko": "직구리 (Galarian)",
@@ -11510,7 +11510,8 @@
       "dark"
     ],
     "tags": [
-      "shadoweligible"
+      "shadoweligible",
+      "include1500"
     ],
     "speciesName": {
       "de": "Tohaido",
@@ -11569,7 +11570,8 @@
       "dark"
     ],
     "tags": [
-      "shadow"
+      "shadow",
+      "include1500"
     ]
   },
   "wailmer": {
@@ -12392,10 +12394,10 @@
       "none"
     ],
     "speciesName": {
-      "de": "Formeo (Rainy)",
+      "de": "Formeo (Regenform)",
       "fr": "Morphéo (Rainy)",
       "en": "Castform (Rainy)",
-      "es": "Castform (Rainy)",
+      "es": "Castform (Lluvia)",
       "th": "โปวาลุน (Rainy)",
       "ja": "ポワルン (Rainy)",
       "ko": "캐스퐁 (Rainy)",
@@ -13944,7 +13946,7 @@
       "de": "Burmy (Pflanze)",
       "fr": "Cheniti (Plante)",
       "en": "Burmy (Plant)",
-      "es": "Burmy (Plant)",
+      "es": "Burmy (Tronco Planta)",
       "th": "มิโนมุจจิ (Plant)",
       "ja": "ミノムッチ (Plant)",
       "ko": "도롱충이 (Plant)",
@@ -13961,10 +13963,10 @@
       "none"
     ],
     "speciesName": {
-      "de": "Burmy (Sandy)",
+      "de": "Burmy (Sandumhang)",
       "fr": "Cheniti (Sandy)",
       "en": "Burmy (Sandy)",
-      "es": "Burmy (Sandy)",
+      "es": "Burmy (Tronco Arena)",
       "th": "มิโนมุจจิ (Sandy)",
       "ja": "ミノムッチ (Sandy)",
       "ko": "도롱충이 (Sandy)",
@@ -13984,7 +13986,7 @@
       "de": "Burmy (Prügeln)",
       "fr": "Cheniti (Débattre)",
       "en": "Burmy (Trash)",
-      "es": "Burmy (Trash)",
+      "es": "Burmy (Tronco Basura)",
       "th": "มิโนมุจจิ (Trash)",
       "ja": "ミノムッチ (Trash)",
       "ko": "도롱충이 (Trash)",
@@ -14004,7 +14006,7 @@
       "de": "Burmadame (Pflanze)",
       "fr": "Cheniselle (Plante)",
       "en": "Wormadam (Plant)",
-      "es": "Wormadam (Plant)",
+      "es": "Wormadam (Tronco Planta)",
       "th": "มิโนมาดาม (Plant)",
       "ja": "ミノマダム (Plant)",
       "ko": "도롱마담 (Plant)",
@@ -14053,10 +14055,10 @@
       "ground"
     ],
     "speciesName": {
-      "de": "Burmadame (Sandy)",
+      "de": "Burmadame (Sandumhang)",
       "fr": "Cheniselle (Sandy)",
       "en": "Wormadam (Sandy)",
-      "es": "Wormadam (Sandy)",
+      "es": "Wormadam (Tronco Arena)",
       "th": "มิโนมาดาม (Sandy)",
       "ja": "ミノマダム (Sandy)",
       "ko": "도롱마담 (Sandy)",
@@ -14108,7 +14110,7 @@
       "de": "Burmadame (Prügeln)",
       "fr": "Cheniselle (Débattre)",
       "en": "Wormadam (Trash)",
-      "es": "Wormadam (Trash)",
+      "es": "Wormadam (Tronco Basura)",
       "th": "มิโนมาดาม (Trash)",
       "ja": "ミノマダム (Trash)",
       "ko": "도롱마담 (Trash)",
@@ -14404,10 +14406,10 @@
       "none"
     ],
     "speciesName": {
-      "de": "Schalellos (East)",
+      "de": "Schalellos (Osten)",
       "fr": "Sancoki (East)",
       "en": "Shellos (East)",
-      "es": "Shellos (East)",
+      "es": "Shellos (Este)",
       "th": "คารานะคูชิ (East)",
       "ja": "カラナクシ (East)",
       "ko": "깝질무 (East)",
@@ -14516,10 +14518,10 @@
       "none"
     ],
     "speciesName": {
-      "de": "Schalellos (West)",
+      "de": "Schalellos (Westen)",
       "fr": "Sancoki (West)",
       "en": "Shellos (West)",
-      "es": "Shellos (West)",
+      "es": "Shellos (Oeste)",
       "th": "คารานะคูชิ (West)",
       "ja": "カラナクシ (West)",
       "ko": "깝질무 (West)",
@@ -14628,10 +14630,10 @@
       "ground"
     ],
     "speciesName": {
-      "de": "Gastrodon (East)",
+      "de": "Gastrodon (Osten)",
       "fr": "Tritosor (East)",
       "en": "Gastrodon (East)",
-      "es": "Gastrodon (East)",
+      "es": "Gastrodon (Este)",
       "th": "ไทรโทดอน (East)",
       "ja": "トリトドン (East)",
       "ko": "트리토돈 (East)",
@@ -14648,10 +14650,10 @@
       "ground"
     ],
     "speciesName": {
-      "de": "Gastrodon (West)",
+      "de": "Gastrodon (Westen)",
       "fr": "Tritosor (West)",
       "en": "Gastrodon (West)",
-      "es": "Gastrodon (West)",
+      "es": "Gastrodon (Oeste)",
       "th": "ไทรโทดอน (West)",
       "ja": "トリトドン (West)",
       "ko": "트리토돈 (West)",
@@ -16140,10 +16142,10 @@
       "water"
     ],
     "speciesName": {
-      "de": "Rotom (Wash)",
+      "de": "Rotom (Wasch)",
       "fr": "Motisma (Wash)",
       "en": "Rotom (Wash)",
-      "es": "Rotom (Wash)",
+      "es": "Rotom (Forma lavado)",
       "th": "โรตอม (Wash)",
       "ja": "ロトム (Wash)",
       "ko": "로토무 (Wash)",

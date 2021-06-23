@@ -112,6 +112,7 @@ function getRandomPokemon({
         def: stats.def,
         level: stats.level,
         iv: stats.ivs,
+        baseStats: baseStats,
         cp: calculateCP(baseStats, stats.level, stats.ivs),
         price: randPokemon.price,
         types: randPokemon.types as [typeId, typeId],

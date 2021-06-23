@@ -31,6 +31,11 @@ export type typeId =
     def: number
     hp: number
   }
+  baseStats?: {
+    atk: number
+    def: number
+    hp: number
+  }
   cp: number
   types: [typeId, typeId]
   fastMove: string
@@ -57,7 +62,7 @@ export interface TeamMemberDescription {
 
 export interface Pokemon {
   "dex": number
-  "speciesName": object
+  "speciesName": object | string
   "speciesId": string
   "baseStats": {
     "atk": number
@@ -91,7 +96,7 @@ export interface Current {
 }
 
 export interface PokemonSpecies {
-  speciesName?: object
+  speciesName?: object | string
   speciesId: string
   dex: number
   tags?: string[]
