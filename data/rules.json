@@ -155,9 +155,6 @@
         "maxLevel": 50,
         "maxBestBuddy": 1,
         "maxMega": 0,
-        "flags": {
-            "speciesClauseByDex": true
-        },
         "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/bidoof/overall/rankings-500.json",
         "include": [{
             "filterType": "id",
@@ -170,6 +167,9 @@
         "maxLevel": 50,
         "maxBestBuddy": 1,
         "maxMega": 0,
+        "flags": {
+            "speciesClauseByDex": true
+        },
         "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/element/overall/rankings-500.json",
         "include": [{
             "filterType": "id",
