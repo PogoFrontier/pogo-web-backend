@@ -149,26 +149,31 @@
             "values": ["dark", "fairy", "steel"]
         }]
     },
-    "Floating City": {
-        "name": "Floating City",
-        "maxCP": 1500,
+    "Bidoof Cup": {
+        "name": "Bidoof Cup",
+        "maxCP": 500,
         "maxLevel": 50,
         "maxBestBuddy": 1,
         "maxMega": 0,
         "flags": {
-            "speciesClauseByForm": true
+            "speciesClauseByDex": true
         },
-        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/factions/overall/rankings-1500.json",
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/bidoof/overall/rankings-500.json",
         "include": [{
-            "filterType": "type",
-            "values": ["ground", "flying", "steel", "normal"]
-        }],
-        "exclude": [{
-            "filterType": "tag",
-            "values": ["mythical", "shadow", "mega", "unreleased", "regional"]
-        }, {
             "filterType": "id",
-            "values": ["stunfisk_galarian", "skarmory", "altaria", "bastiodon", "registeel", "chansey"]
+            "values": ["bidoof", "bidoof_shadow"]
+        }]
+    },
+    "Element Cup": {
+        "name": "Element Cup",
+        "maxCP": 500,
+        "maxLevel": 50,
+        "maxBestBuddy": 1,
+        "maxMega": 0,
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/element/overall/rankings-500.json",
+        "include": [{
+            "filterType": "id",
+            "values": ["litleo", "barboach", "bellsprout", "budew", "buizel", "bulbasaur", "bulbasaur_shadow", "cacnea", "carvanha", "charmander", "cherubi", "chikorita", "chimchar", "chinchou", "corphish", "cyndaquil", "darumaka", "deerling", "ducklett", "exeggcute", "feebas", "ferroseed", "finneon", "foongus", "frillish", "goldeen", "growlithe", "hoppip", "horsea", "houndour", "kabuto", "krabby", "larvesta", "lileep", "litwick", "lotad", "magby", "magikarp", "mantyke", "mudkip", "numel", "oddish", "omanyte", "oshawott", "pansage", "pansear", "paras", "piplup", "poliwag", "ponyta", "psyduck", "remoraid", "seedot", "seel", "sewaddle", "shellos_east_sea", "shellos_west_sea", "shroomish", "slowpoke", "slugma", "snivy", "snover", "spheal", "squirtle", "surskit", "tangela", "tangela_shadow", "tentacool", "tepig", "tirtouga", "torchic", "totodile", "treecko", "turtwig", "tympole", "vulpix", "wailmer", "wingull", "wooper", "vulpix_shadow", "turtwig_shadow", "growlithe_shadow", "psyduck_shadow", "oddish_shadow", "hoppip_shadow", "houndour_shadow", "squirtle_shadow", "seedot_shadow", "mudkip_shadow", "poliwag_shadow", "exeggcute_shadow", "slowpoke_shadow", "charmander_shadow", "snover_shadow", "bulbusaur_shadow", "omanyte_shadow", "carvanha_shadow", "cacnea_shadow", "bellsprout_shadow", "magikarp_shadow", "shellder", "shellder_shadow", "cottonee", "sunkern", "clamperl", "shellos", "panpour", "petilil", "chespin", "froakie", "fennekin", "skrelp", "clauncher", "deerling", "binacle"]
         }]
     },
     "Atlantis Field": {
