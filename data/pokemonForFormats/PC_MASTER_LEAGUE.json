@@ -5043,6 +5043,18 @@
       "zh_hant": "呆呆獸 (Shadow)"
     }
   },
+  "slowpoke_galarian": {
+    "legal": true,
+    "dex": 79,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "speciesName": {}
+  },
   "slowbro": {
     "legal": true,
     "dex": 80,
@@ -5160,6 +5172,31 @@
       "PSYCHIC",
       "ICE_BEAM"
     ]
+  },
+  "slowbro_galarian": {
+    "legal": true,
+    "dex": 80,
+    "types": [
+      "poison",
+      "psychic"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "speciesName": {}
+  },
+  "slowbro_mega": {
+    "legal": true,
+    "dex": 80,
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "tags": [
+      "mega",
+      "unreleased"
+    ],
+    "speciesName": {}
   },
   "magnemite": {
     "legal": true,
@@ -11497,6 +11534,19 @@
       "BLIZZARD"
     ]
   },
+  "slowking_galarian": {
+    "legal": true,
+    "dex": 199,
+    "types": [
+      "poison",
+      "psychic"
+    ],
+    "tags": [
+      "galarian",
+      "unreleased"
+    ],
+    "speciesName": {}
+  },
   "misdreavus": {
     "legal": true,
     "dex": 200,
@@ -14098,7 +14148,20 @@
       "flying"
     ],
     "tags": [
-      "legendary"
+      "legendary",
+      "shadoweligible"
+    ]
+  },
+  "ho_oh_shadow": {
+    "legal": false,
+    "dex": 250,
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "tags": [
+      "legendary",
+      "shadow"
     ]
   },
   "celebi": {
@@ -19806,6 +19869,9 @@
       "normal",
       "none"
     ],
+    "tags": [
+      "shadoweligible"
+    ],
     "speciesName": {
       "de": "Bidiza",
       "fr": "Keunotor",
@@ -19819,12 +19885,38 @@
       "zh_hant": "大牙狸"
     }
   },
+  "bidoof_shadow": {
+    "legal": true,
+    "dex": 399,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": {
+      "de": "Bidiza (Schatten)",
+      "fr": "Keunotor (Ombre)",
+      "en": "Bidoof (Shadow)",
+      "es": "Bidoof (Oscuro)",
+      "th": "บิปปา (Shadow)",
+      "ja": "ビッパ (Shadow)",
+      "ko": "비버니 (Shadow)",
+      "ru": "Бидуф (Shadow)",
+      "zh_hans": "大牙狸 (Shadow)",
+      "zh_hant": "大牙狸 (Shadow)"
+    }
+  },
   "bibarel": {
     "legal": true,
     "dex": 400,
     "types": [
       "normal",
       "water"
+    ],
+    "tags": [
+      "shadoweligible"
     ],
     "speciesName": {
       "de": "Bidifas",
@@ -19837,6 +19929,29 @@
       "ru": "Бибарел",
       "zh_hans": "大尾狸",
       "zh_hant": "大尾狸"
+    }
+  },
+  "bibarel_shadow": {
+    "legal": true,
+    "dex": 400,
+    "types": [
+      "normal",
+      "water"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": {
+      "de": "Bidifas (Schatten)",
+      "fr": "Castorno (Ombre)",
+      "en": "Bibarel (Shadow)",
+      "es": "Bibarel (Oscuro)",
+      "th": "บีดารุ (Shadow)",
+      "ja": "ビーダル (Shadow)",
+      "ko": "비버통 (Shadow)",
+      "ru": "Бибарел (Shadow)",
+      "zh_hans": "大尾狸 (Shadow)",
+      "zh_hant": "大尾狸 (Shadow)"
     }
   },
   "kricketot": {
@@ -20581,6 +20696,9 @@
       "water",
       "ground"
     ],
+    "tags": [
+      "regional"
+    ],
     "speciesName": {
       "de": "Gastrodon (Osten)",
       "fr": "Tritosor (East)",
@@ -20696,6 +20814,9 @@
     "types": [
       "water",
       "ground"
+    ],
+    "tags": [
+      "regional"
     ],
     "speciesName": {
       "de": "Gastrodon (Westen)",

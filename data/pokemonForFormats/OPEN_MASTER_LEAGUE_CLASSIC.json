@@ -5351,6 +5351,18 @@
       "zh_hant": "呆呆獸 (Shadow)"
     }
   },
+  "slowpoke_galarian": {
+    "legal": true,
+    "dex": 79,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "speciesName": {}
+  },
   "slowbro": {
     "legal": true,
     "dex": 80,
@@ -5468,6 +5480,63 @@
       "ICE_BEAM",
       "PSYCHIC"
     ]
+  },
+  "slowbro_galarian": {
+    "legal": true,
+    "dex": 80,
+    "types": [
+      "poison",
+      "psychic"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "speciesName": {},
+    "ranking": 479,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "POISON_JAB",
+          "uses": 42055
+        },
+        {
+          "moveId": "CONFUSION",
+          "uses": 35145
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SLUDGE_BOMB",
+          "uses": 29632
+        },
+        {
+          "moveId": "PSYCHIC",
+          "uses": 27188
+        },
+        {
+          "moveId": "FOCUS_BLAST",
+          "uses": 20304
+        }
+      ]
+    },
+    "moveset": [
+      "POISON_JAB",
+      "SLUDGE_BOMB",
+      "PSYCHIC"
+    ]
+  },
+  "slowbro_mega": {
+    "legal": true,
+    "dex": 80,
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "tags": [
+      "mega",
+      "unreleased"
+    ],
+    "speciesName": {}
   },
   "magnemite": {
     "legal": true,
@@ -13505,6 +13574,19 @@
       "BLIZZARD"
     ]
   },
+  "slowking_galarian": {
+    "legal": true,
+    "dex": 199,
+    "types": [
+      "poison",
+      "psychic"
+    ],
+    "tags": [
+      "galarian",
+      "unreleased"
+    ],
+    "speciesName": {}
+  },
   "misdreavus": {
     "legal": true,
     "dex": 200,
@@ -16886,7 +16968,8 @@
       "flying"
     ],
     "tags": [
-      "legendary"
+      "legendary",
+      "shadoweligible"
     ],
     "speciesName": {
       "de": "Ho-Oh",
@@ -17000,6 +17083,138 @@
         {
           "moveId": "BRAVE_BIRD",
           "uses": 37375
+        }
+      ]
+    },
+    "moveset": [
+      "INCINERATE",
+      "BRAVE_BIRD",
+      "EARTHQUAKE"
+    ]
+  },
+  "ho_oh_shadow": {
+    "legal": true,
+    "dex": 250,
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "tags": [
+      "legendary",
+      "shadow"
+    ],
+    "speciesName": {
+      "de": "Ho-Oh (Schatten)",
+      "fr": "Ho-Oh (Ombre)",
+      "en": "Ho-Oh (Shadow)",
+      "es": "Ho-Oh (Oscuro)",
+      "th": "โฮโอ (Shadow)",
+      "ja": "ホウオウ (Shadow)",
+      "ko": "칠색조 (Shadow)",
+      "ru": "Хо-Ох (Shadow)",
+      "zh_hans": "凤王 (Shadow)",
+      "zh_hant": "鳳王 (Shadow)"
+    },
+    "ranking": 726,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "STEEL_WING",
+          "uses": 2887
+        },
+        {
+          "moveId": "INCINERATE",
+          "uses": 16564
+        },
+        {
+          "moveId": "HIDDEN_POWER_WATER",
+          "uses": 2717
+        },
+        {
+          "moveId": "HIDDEN_POWER_STEEL",
+          "uses": 2692
+        },
+        {
+          "moveId": "HIDDEN_POWER_ROCK",
+          "uses": 3819
+        },
+        {
+          "moveId": "HIDDEN_POWER_PSYCHIC",
+          "uses": 2449
+        },
+        {
+          "moveId": "HIDDEN_POWER_POISON",
+          "uses": 2470
+        },
+        {
+          "moveId": "HIDDEN_POWER_ICE",
+          "uses": 4505
+        },
+        {
+          "moveId": "HIDDEN_POWER_GROUND",
+          "uses": 3559
+        },
+        {
+          "moveId": "HIDDEN_POWER_GRASS",
+          "uses": 2557
+        },
+        {
+          "moveId": "HIDDEN_POWER_GHOST",
+          "uses": 3483
+        },
+        {
+          "moveId": "HIDDEN_POWER_FLYING",
+          "uses": 3840
+        },
+        {
+          "moveId": "HIDDEN_POWER_FIRE",
+          "uses": 3907
+        },
+        {
+          "moveId": "HIDDEN_POWER_FIGHTING",
+          "uses": 3246
+        },
+        {
+          "moveId": "HIDDEN_POWER_ELECTRIC",
+          "uses": 3605
+        },
+        {
+          "moveId": "HIDDEN_POWER_DRAGON",
+          "uses": 3263
+        },
+        {
+          "moveId": "HIDDEN_POWER_DARK",
+          "uses": 3388
+        },
+        {
+          "moveId": "HIDDEN_POWER_BUG",
+          "uses": 2388
+        },
+        {
+          "moveId": "EXTRASENSORY",
+          "uses": 5311
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SOLAR_BEAM",
+          "uses": 7511
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 0
+        },
+        {
+          "moveId": "FIRE_BLAST",
+          "uses": 11273
+        },
+        {
+          "moveId": "EARTHQUAKE",
+          "uses": 16124
+        },
+        {
+          "moveId": "BRAVE_BIRD",
+          "uses": 42360
         }
       ]
     },
@@ -24334,6 +24549,9 @@
       "normal",
       "none"
     ],
+    "tags": [
+      "shadoweligible"
+    ],
     "speciesName": {
       "de": "Bidiza",
       "fr": "Keunotor",
@@ -24347,12 +24565,38 @@
       "zh_hant": "大牙狸"
     }
   },
+  "bidoof_shadow": {
+    "legal": true,
+    "dex": 399,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": {
+      "de": "Bidiza (Schatten)",
+      "fr": "Keunotor (Ombre)",
+      "en": "Bidoof (Shadow)",
+      "es": "Bidoof (Oscuro)",
+      "th": "บิปปา (Shadow)",
+      "ja": "ビッパ (Shadow)",
+      "ko": "비버니 (Shadow)",
+      "ru": "Бидуф (Shadow)",
+      "zh_hans": "大牙狸 (Shadow)",
+      "zh_hant": "大牙狸 (Shadow)"
+    }
+  },
   "bibarel": {
     "legal": true,
     "dex": 400,
     "types": [
       "normal",
       "water"
+    ],
+    "tags": [
+      "shadoweligible"
     ],
     "speciesName": {
       "de": "Bidifas",
@@ -24365,6 +24609,29 @@
       "ru": "Бибарел",
       "zh_hans": "大尾狸",
       "zh_hant": "大尾狸"
+    }
+  },
+  "bibarel_shadow": {
+    "legal": true,
+    "dex": 400,
+    "types": [
+      "normal",
+      "water"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": {
+      "de": "Bidifas (Schatten)",
+      "fr": "Castorno (Ombre)",
+      "en": "Bibarel (Shadow)",
+      "es": "Bibarel (Oscuro)",
+      "th": "บีดารุ (Shadow)",
+      "ja": "ビーダル (Shadow)",
+      "ko": "비버통 (Shadow)",
+      "ru": "Бибарел (Shadow)",
+      "zh_hans": "大尾狸 (Shadow)",
+      "zh_hant": "大尾狸 (Shadow)"
     }
   },
   "kricketot": {
@@ -25193,6 +25460,9 @@
       "water",
       "ground"
     ],
+    "tags": [
+      "regional"
+    ],
     "speciesName": {
       "de": "Gastrodon (Osten)",
       "fr": "Tritosor (East)",
@@ -25308,6 +25578,9 @@
     "types": [
       "water",
       "ground"
+    ],
+    "tags": [
+      "regional"
     ],
     "speciesName": {
       "de": "Gastrodon (Westen)",

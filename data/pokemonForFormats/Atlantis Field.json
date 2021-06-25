@@ -3559,6 +3559,17 @@
       "shadow"
     ]
   },
+  "slowpoke_galarian": {
+    "legal": false,
+    "dex": 79,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "galarian"
+    ]
+  },
   "slowbro": {
     "legal": true,
     "dex": 80,
@@ -3623,6 +3634,62 @@
     ],
     "tags": [
       "shadow"
+    ]
+  },
+  "slowbro_galarian": {
+    "legal": true,
+    "dex": 80,
+    "types": [
+      "poison",
+      "psychic"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "speciesName": {},
+    "ranking": 530,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "POISON_JAB",
+          "uses": 13148
+        },
+        {
+          "moveId": "CONFUSION",
+          "uses": 10852
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SLUDGE_BOMB",
+          "uses": 9083
+        },
+        {
+          "moveId": "PSYCHIC",
+          "uses": 9503
+        },
+        {
+          "moveId": "FOCUS_BLAST",
+          "uses": 5415
+        }
+      ]
+    },
+    "moveset": [
+      "POISON_JAB",
+      "PSYCHIC",
+      "SLUDGE_BOMB"
+    ]
+  },
+  "slowbro_mega": {
+    "legal": false,
+    "dex": 80,
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "tags": [
+      "mega",
+      "unreleased"
     ]
   },
   "magnemite": {
@@ -7901,6 +7968,18 @@
       "shadow"
     ]
   },
+  "slowking_galarian": {
+    "legal": false,
+    "dex": 199,
+    "types": [
+      "poison",
+      "psychic"
+    ],
+    "tags": [
+      "galarian",
+      "unreleased"
+    ]
+  },
   "misdreavus": {
     "legal": false,
     "dex": 200,
@@ -9498,7 +9577,20 @@
       "flying"
     ],
     "tags": [
-      "legendary"
+      "legendary",
+      "shadoweligible"
+    ]
+  },
+  "ho_oh_shadow": {
+    "legal": false,
+    "dex": 250,
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "tags": [
+      "legendary",
+      "shadow"
     ]
   },
   "celebi": {
@@ -13661,6 +13753,20 @@
     "types": [
       "normal",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "bidoof_shadow": {
+    "legal": false,
+    "dex": 399,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "bibarel": {
@@ -13669,6 +13775,9 @@
     "types": [
       "normal",
       "water"
+    ],
+    "tags": [
+      "shadoweligible"
     ],
     "speciesName": {
       "de": "Bidifas",
@@ -13717,6 +13826,17 @@
       "WATER_GUN",
       "SURF",
       "HYPER_FANG"
+    ]
+  },
+  "bibarel_shadow": {
+    "legal": false,
+    "dex": 400,
+    "types": [
+      "normal",
+      "water"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "kricketot": {
@@ -14623,44 +14743,26 @@
     ]
   },
   "gastrodon_east_sea": {
-    "legal": true,
+    "legal": false,
     "dex": 423,
     "types": [
       "water",
       "ground"
     ],
-    "speciesName": {
-      "de": "Gastrodon (Osten)",
-      "fr": "Tritosor (East)",
-      "en": "Gastrodon (East)",
-      "es": "Gastrodon (Este)",
-      "th": "ไทรโทดอน (East)",
-      "ja": "トリトドン (East)",
-      "ko": "트리토돈 (East)",
-      "ru": "Гастродон (East)",
-      "zh_hans": "海牛兽 (East)",
-      "zh_hant": "海牛獸 (East)"
-    }
+    "tags": [
+      "regional"
+    ]
   },
   "gastrodon_west_sea": {
-    "legal": true,
+    "legal": false,
     "dex": 423,
     "types": [
       "water",
       "ground"
     ],
-    "speciesName": {
-      "de": "Gastrodon (Westen)",
-      "fr": "Tritosor (West)",
-      "en": "Gastrodon (West)",
-      "es": "Gastrodon (Oeste)",
-      "th": "ไทรโทดอน (West)",
-      "ja": "トリトドン (West)",
-      "ko": "트리토돈 (West)",
-      "ru": "Гастродон (West)",
-      "zh_hans": "海牛兽 (West)",
-      "zh_hant": "海牛獸 (West)"
-    }
+    "tags": [
+      "regional"
+    ]
   },
   "ambipom": {
     "legal": false,

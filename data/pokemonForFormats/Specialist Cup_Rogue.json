@@ -3923,6 +3923,17 @@
       "shadow"
     ]
   },
+  "slowpoke_galarian": {
+    "legal": false,
+    "dex": 79,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "galarian"
+    ]
+  },
   "slowbro": {
     "legal": false,
     "dex": 80,
@@ -3943,6 +3954,62 @@
     ],
     "tags": [
       "shadow"
+    ]
+  },
+  "slowbro_galarian": {
+    "legal": true,
+    "dex": 80,
+    "types": [
+      "poison",
+      "psychic"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "speciesName": {},
+    "ranking": 515,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "POISON_JAB",
+          "uses": 62620
+        },
+        {
+          "moveId": "CONFUSION",
+          "uses": 52980
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SLUDGE_BOMB",
+          "uses": 43377
+        },
+        {
+          "moveId": "PSYCHIC",
+          "uses": 41886
+        },
+        {
+          "moveId": "FOCUS_BLAST",
+          "uses": 30357
+        }
+      ]
+    },
+    "moveset": [
+      "POISON_JAB",
+      "SLUDGE_BOMB",
+      "FOCUS_BLAST"
+    ]
+  },
+  "slowbro_mega": {
+    "legal": false,
+    "dex": 80,
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "tags": [
+      "mega",
+      "unreleased"
     ]
   },
   "magnemite": {
@@ -7225,6 +7292,18 @@
       "shadow"
     ]
   },
+  "slowking_galarian": {
+    "legal": false,
+    "dex": 199,
+    "types": [
+      "poison",
+      "psychic"
+    ],
+    "tags": [
+      "galarian",
+      "unreleased"
+    ]
+  },
   "misdreavus": {
     "legal": false,
     "dex": 200,
@@ -8686,7 +8765,20 @@
       "flying"
     ],
     "tags": [
-      "legendary"
+      "legendary",
+      "shadoweligible"
+    ]
+  },
+  "ho_oh_shadow": {
+    "legal": false,
+    "dex": 250,
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "tags": [
+      "legendary",
+      "shadow"
     ]
   },
   "celebi": {
@@ -12121,6 +12213,20 @@
     "types": [
       "normal",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "bidoof_shadow": {
+    "legal": false,
+    "dex": 399,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "bibarel": {
@@ -12129,6 +12235,20 @@
     "types": [
       "normal",
       "water"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "bibarel_shadow": {
+    "legal": false,
+    "dex": 400,
+    "types": [
+      "normal",
+      "water"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "kricketot": {
@@ -12436,6 +12556,9 @@
     "types": [
       "water",
       "ground"
+    ],
+    "tags": [
+      "regional"
     ]
   },
   "gastrodon_west_sea": {
@@ -12444,6 +12567,9 @@
     "types": [
       "water",
       "ground"
+    ],
+    "tags": [
+      "regional"
     ]
   },
   "ambipom": {
