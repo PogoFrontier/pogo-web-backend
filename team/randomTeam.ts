@@ -195,7 +195,7 @@ function getRandomPokemonSpecies(speciesPool: PokemonSpecies[]): PokemonSpecies 
       .reduce((r1, r2) => r1 + r2)
   
     if (ratingSum !== 0) {
-      let rand = Math.round(Math.random() * ratingSum)
+      let rand = Math.random() * ratingSum
       const randPokemon = speciesPool.find((species) => {
         let rating: number = species.ranking ? species.ranking : 0
         rating = Math.pow(rating / 1000, 6)
