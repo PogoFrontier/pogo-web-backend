@@ -250,6 +250,9 @@ async function mergePokemon() {
             if(parseName(en[i]).startsWith("abomasnow")){
                 new_pokemon[parseName(en[i]) + "_mega"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_mega
             } 
+            if(parseName(en[i]).startsWith("slowbro")){
+                new_pokemon[parseName(en[i]) + "_mega"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_mega
+            } 
 
             //Alolan pokemon
             if(parseName(en[i]).startsWith("rattata")){
@@ -339,6 +342,15 @@ async function mergePokemon() {
                 new_pokemon[parseName(en[i]) + "_galarian"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_galarian
             }
             if(parseName(en[i]).startsWith("darumaka")){
+                new_pokemon[parseName(en[i]) + "_galarian"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_galarian
+            }
+            if(parseName(en[i]).startsWith("slowbro")){
+                new_pokemon[parseName(en[i]) + "_galarian"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_galarian
+            }
+            if(parseName(en[i]).startsWith("slowpoke")){
+                new_pokemon[parseName(en[i]) + "_galarian"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_galarian
+            }
+            if(parseName(en[i]).startsWith("slowking")){
                 new_pokemon[parseName(en[i]) + "_galarian"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_galarian
             }
           
