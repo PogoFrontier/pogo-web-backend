@@ -5,7 +5,7 @@ import { getStrings } from "../actions/getTranslation";
 
 //Data imported from https://github.com/sindresorhus/pokemon/
 
-//Convert raw data to objects with english name as key
+//Declare objects for each language
 let newen : {[key : string]:any} = {};
 let newfr : {[key : string]:any} = {};
 let newde : {[key : string]:any} = {};
@@ -45,21 +45,30 @@ const parseName = (name: string) => {
       .replace(/’/g, '')
 }
 
+//All pokemon that need special alola/galar/mega formatting
+const alolan_pokemon = ["rattata", "raticate", "raichu", "sandshrew", "sandslash", "vulpix", "ninetales", "diglett", "dugtrio", "meowth", "persian", "geodude", "graveler", "golem", "grimer", "muk", "exeggutor", "marowak"]
+const galarian_pokemon = ["meowth", "ponyta", "rapidash", "farfetchd", "weezing", "mr_mime", "zigzagoon", "linoone", "yamask", "stunfisk", "darumaka", "slowbro", "slowpoke", "slowking"]
+const mega_pokemon = ["venusaur", "blastoise", "beedrill", "pidgeot", "gengar", "gyarados", "ampharos", "houdoon", "manectric", "altaria", "lopunny" ,"abomasnow", "slowbro"]
+
 async function mergePokemon() {
+
+    //remove all names
     for (const pokemon in new_pokemon){
         new_pokemon[pokemon].speciesName = {}
     }
 
+    //loop over all languages
     for (let index = 0; index < languages.length; index++) {
         const lang = languages[index]
-        let strings : any= {}
+        let strings : any;
         await getStrings(lang).then(s => strings = s)
         let object = "new" + lang;
+
+        //loop over all entries in the API and apply formatting
         for (let i = 0; i < eval(lang).length; i++) {
             eval(object)[en[i]] = eval(lang)[i];
-            //TODO: integrate these in translator project
+
             //special formatting needed for burmy
-           
             if(parseName(en[i]).startsWith("burmy")){
                 new_pokemon[parseName(en[i]) + "_plant"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_plant
                 new_pokemon[parseName(en[i]) + "_trash"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_trash
@@ -209,162 +218,42 @@ async function mergePokemon() {
                 new_pokemon[parseName(en[i]) + "_snowy"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_snowy
                 new_pokemon[parseName(en[i]) + "_sunny"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_sunny
             }
-            //mega pokemon
-            if(parseName(en[i]).startsWith("venusaur")){
+
+            //mega pokemon except charizard
+            if(mega_pokemon.includes(parseName(en[i]))){
                 new_pokemon[parseName(en[i]) + "_mega"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_mega
-            } 
-            if(parseName(en[i]).startsWith("blastoise")){
-                new_pokemon[parseName(en[i]) + "_mega"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_mega
-            } 
+            }
+
+            //mega Charizard forms
             if(parseName(en[i]).startsWith("charizard")){
                 new_pokemon[parseName(en[i]) + "_mega_x"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_mega.slice(0,-1) + " X)"
                 new_pokemon[parseName(en[i]) + "_mega_y"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_mega.slice(0,-1) + " Y)"
-            } 
-            if(parseName(en[i]).startsWith("beedrill")){
-                new_pokemon[parseName(en[i]) + "_mega"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_mega
-            } 
-            if(parseName(en[i]) == "pidgeot"){
-                new_pokemon[parseName(en[i]) + "_mega"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_mega
-            } 
-            if(parseName(en[i]).startsWith("gengar")){
-                new_pokemon[parseName(en[i]) + "_mega"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_mega
-            } 
-            if(parseName(en[i]).startsWith("gyarados")){
-                new_pokemon[parseName(en[i]) + "_mega"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_mega
-            } 
-            if(parseName(en[i]).startsWith("ampharos")){
-                new_pokemon[parseName(en[i]) + "_mega"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_mega
-            } 
-            if(parseName(en[i]).startsWith("houndoom")){
-                new_pokemon[parseName(en[i]) + "_mega"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_mega
-            } 
-            if(parseName(en[i]).startsWith("manectric")){
-                new_pokemon[parseName(en[i]) + "_mega"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_mega
-            } 
-            if(parseName(en[i]).startsWith("altaria")){
-                new_pokemon[parseName(en[i]) + "_mega"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_mega
             }
-            if(parseName(en[i]).startsWith("lopunny")){
-                new_pokemon[parseName(en[i]) + "_mega"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_mega
-            } 
-            if(parseName(en[i]).startsWith("abomasnow")){
-                new_pokemon[parseName(en[i]) + "_mega"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_mega
-            } 
-            if(parseName(en[i]).startsWith("slowbro")){
-                new_pokemon[parseName(en[i]) + "_mega"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_mega
-            } 
 
             //Alolan pokemon
-            if(parseName(en[i]).startsWith("rattata")){
-                new_pokemon[parseName(en[i]) + "_alolan"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_alolan
-            } 
-            if(parseName(en[i]).startsWith("raticate")){
-                new_pokemon[parseName(en[i]) + "_alolan"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_alolan
-            }
-            if(parseName(en[i]).startsWith("raichu")){
-                new_pokemon[parseName(en[i]) + "_alolan"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_alolan
-            }
-            if(parseName(en[i]).startsWith("sandshrew")){
-                new_pokemon[parseName(en[i]) + "_alolan"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_alolan
-            }
-            if(parseName(en[i]).startsWith("sandslash")){
-                new_pokemon[parseName(en[i]) + "_alolan"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_alolan
-            }
-            if(parseName(en[i]).startsWith("vulpix")){
-                new_pokemon[parseName(en[i]) + "_alolan"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_alolan
-            }
-            if(parseName(en[i]).startsWith("ninetales")){
-                new_pokemon[parseName(en[i]) + "_alolan"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_alolan
-            }
-            if(parseName(en[i]).startsWith("diglett")){
-                new_pokemon[parseName(en[i]) + "_alolan"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_alolan
-            }
-            if(parseName(en[i]).startsWith("dugtrio")){
-                new_pokemon[parseName(en[i]) + "_alolan"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_alolan
-            }
-            if(parseName(en[i]).startsWith("meowth")){
-                new_pokemon[parseName(en[i]) + "_alolan"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_alolan
-            }
-            if(parseName(en[i]).startsWith("persian")){
-                new_pokemon[parseName(en[i]) + "_alolan"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_alolan
-            }
-            if(parseName(en[i]).startsWith("geodude")){
-                new_pokemon[parseName(en[i]) + "_alolan"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_alolan
-            }
-            if(parseName(en[i]).startsWith("graveler")){
-                new_pokemon[parseName(en[i]) + "_alolan"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_alolan
-            }
-            if(parseName(en[i]).startsWith("golem")){
-                new_pokemon[parseName(en[i]) + "_alolan"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_alolan
-            }
-            if(parseName(en[i]).startsWith("grimer")){
-                new_pokemon[parseName(en[i]) + "_alolan"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_alolan
-            }
-            if(parseName(en[i]).startsWith("muk")){
-                new_pokemon[parseName(en[i]) + "_alolan"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_alolan
-            }
-            if(parseName(en[i]).startsWith("exeggutor")){
-                new_pokemon[parseName(en[i]) + "_alolan"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_alolan
-            }
-            if(parseName(en[i]).startsWith("marowak")){
+            if(alolan_pokemon.includes(parseName(en[i]))){
                 new_pokemon[parseName(en[i]) + "_alolan"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_alolan
             }
 
             //Galarian pokemon
-            if(parseName(en[i]).startsWith("meowth")){
+            if(galarian_pokemon.includes(parseName(en[i]))){
                 new_pokemon[parseName(en[i]) + "_galarian"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_galarian
-            }
-            if(parseName(en[i]).startsWith("ponyta")){
-                new_pokemon[parseName(en[i]) + "_galarian"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_galarian
-            }
-            if(parseName(en[i]).startsWith("rapidash")){
-                new_pokemon[parseName(en[i]) + "_galarian"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_galarian
-            }
-            if(parseName(en[i]).startsWith("farfetchd")){
-                new_pokemon[parseName(en[i]) + "_galarian"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_galarian
-            }
-            if(parseName(en[i]).startsWith("weezing")){
-                new_pokemon[parseName(en[i]) + "_galarian"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_galarian
-            }
-            if(parseName(en[i]).startsWith("mr_mime")){
-                new_pokemon[parseName(en[i]) + "_galarian"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_galarian
-            }
-            if(parseName(en[i]).startsWith("zigzagoon")){
-                new_pokemon[parseName(en[i]) + "_galarian"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_galarian
-            }
-            if(parseName(en[i]).startsWith("linoone")){
-                new_pokemon[parseName(en[i]) + "_galarian"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_galarian
-            }
-            if(parseName(en[i]).startsWith("yamask")){
-                new_pokemon[parseName(en[i]) + "_galarian"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_galarian
-            }
-            if(parseName(en[i]).startsWith("stunfisk")){
-                new_pokemon[parseName(en[i]) + "_galarian"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_galarian
-            }
-            if(parseName(en[i]).startsWith("darumaka")){
-                new_pokemon[parseName(en[i]) + "_galarian"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_galarian
-            }
-            if(parseName(en[i]).startsWith("slowbro")){
-                new_pokemon[parseName(en[i]) + "_galarian"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_galarian
-            }
-            if(parseName(en[i]).startsWith("slowpoke")){
-                new_pokemon[parseName(en[i]) + "_galarian"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_galarian
-            }
-            if(parseName(en[i]).startsWith("slowking")){
-                new_pokemon[parseName(en[i]) + "_galarian"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_galarian
-            }
-          
+            }    
             
-           
             //Pokemon not yet added to the gamemaster, gen7+
             if(!new_pokemon[parseName(en[i])]){
                 continue;
             }
+
+            //Formatting for all pokemon
             new_pokemon[parseName(en[i])].speciesName[lang] = eval(lang)[i]
+
+            //Formatting for shadow pokemon
             if(new_pokemon[parseName(en[i]) + "_shadow"]){
                 new_pokemon[parseName(en[i]) + "_shadow"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_shadow
             }
         }
+        
         //Gen 8 pokes aren't added to the api yet, manual override
         new_pokemon.runerigus.speciesName[lang] = "Runerigus"
         new_pokemon.mr_rime.speciesName[lang] = "Mr. Rime"
