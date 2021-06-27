@@ -19,6 +19,9 @@ let newzh_hant : {[key : string]:any} = {};
 
 let new_pokemon : {[key : string]:any} = p
 
+//supported Languages in the API
+let languages = ["de", "fr","en", "es", "th", "ja","ko", "ru", "zh_hans", "zh_hant"]
+
 const de = npm_pokemon.all('de')
 const fr = npm_pokemon.all('fr')
 const en = npm_pokemon.all('en')
@@ -30,8 +33,11 @@ const es = npm_pokemon.all('es')
 const zh_hans = npm_pokemon.all('zh-Hans')
 const zh_hant = npm_pokemon.all('zh-Hant')
 
-let languages = ["de", "fr","en", "es", "th", "ja","ko", "ru", "zh_hans", "zh_hant"]
-
+/**
+ * Function to parse special characters in speciesId or speciesName
+ * @param name unparsed SpeciesName
+ * @returns parsed SpeciesName
+ */
 const parseName = (name: string) => {
     return name
       .toLowerCase()
@@ -48,7 +54,7 @@ const parseName = (name: string) => {
 //All pokemon that need special alola/galar/mega formatting
 const alolan_pokemon = ["rattata", "raticate", "raichu", "sandshrew", "sandslash", "vulpix", "ninetales", "diglett", "dugtrio", "meowth", "persian", "geodude", "graveler", "golem", "grimer", "muk", "exeggutor", "marowak"]
 const galarian_pokemon = ["meowth", "ponyta", "rapidash", "farfetchd", "weezing", "mr_mime", "zigzagoon", "linoone", "yamask", "stunfisk", "darumaka", "slowbro", "slowpoke", "slowking"]
-const mega_pokemon = ["venusaur", "blastoise", "beedrill", "pidgeot", "gengar", "gyarados", "ampharos", "houdoon", "manectric", "altaria", "lopunny" ,"abomasnow", "slowbro"]
+const mega_pokemon = ["venusaur", "blastoise", "beedrill", "pidgeot", "gengar", "gyarados", "ampharos", "houndoom", "manectric", "altaria", "lopunny" ,"abomasnow", "slowbro"]
 
 async function mergePokemon() {
 
@@ -67,6 +73,14 @@ async function mergePokemon() {
         //loop over all entries in the API and apply formatting
         for (let i = 0; i < eval(lang).length; i++) {
             eval(object)[en[i]] = eval(lang)[i];
+
+            /**
+             * Some Pokemon have extra forms and therefore multiple entries in the gamemaster. 
+             * Since the API only has the name of the baseforms, we need to apply special formatting for those forms.
+             * 
+             * If a pokemon only has special forms (e.g. Burmy), we write continue at the end so the basic rule gets skipped.
+             * If the pokemon (e.g. Arceus) has special forms and a basic form (i.e. the speciesId has no pre or suffixes) we don't write continue so the basis rule gets executed.
+             */
 
             //special formatting needed for burmy
             if(parseName(en[i]).startsWith("burmy")){
@@ -240,21 +254,24 @@ async function mergePokemon() {
                 new_pokemon[parseName(en[i]) + "_galarian"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_galarian
             }    
             
-            //Pokemon not yet added to the gamemaster, gen7+
-            if(!new_pokemon[parseName(en[i])]){
-                continue;
-            }
-
-            //Formatting for all pokemon
-            new_pokemon[parseName(en[i])].speciesName[lang] = eval(lang)[i]
-
             //Formatting for shadow pokemon
             if(new_pokemon[parseName(en[i]) + "_shadow"]){
                 new_pokemon[parseName(en[i]) + "_shadow"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_shadow
             }
+            
+            /**
+             * The API includes all pokemon from gen1-7, some are not yet includes in Pokemon GO, hence we skip the ones that have no valid entry in the Gamemaster
+             */
+            if(!new_pokemon[parseName(en[i])]){
+                continue;
+            }
+
+            //Formatting for all pokemon, basic rule
+            new_pokemon[parseName(en[i])].speciesName[lang] = eval(lang)[i]
+
         }
         
-        //Gen 8 pokes aren't added to the api yet, manual override
+        //Since the API does not yet have gen 8 pokemon, we have to add those manually.
         new_pokemon.runerigus.speciesName[lang] = "Runerigus"
         new_pokemon.mr_rime.speciesName[lang] = "Mr. Rime"
         new_pokemon.sirfetchd.speciesName[lang] = "Sirfetch'd"
