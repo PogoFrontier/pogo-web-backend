@@ -32,7 +32,10 @@ function onTeamSubmit(id: string, payload: OnTeamSubmitPayload) {
           atk: member.atk,
           def: member.def,
           status: [0, 0],
-          energy: 0
+          energy: 0,
+          damageDealt: 0,
+          chargeMovesUsed: 0,
+          timeSpendAlive: 0
         }
         currentTeam.push(member);
       }

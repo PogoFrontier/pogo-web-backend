@@ -1428,7 +1428,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Machop"
+    "speciesName": {
+      "de": "Machollo",
+      "fr": "Machoc",
+      "en": "Machop",
+      "es": "Machop",
+      "th": "วันริกี",
+      "ja": "ワンリキー",
+      "ko": "알통몬",
+      "ru": "Мачоп",
+      "zh_hans": "腕力",
+      "zh_hant": "腕力"
+    }
   },
   "machop_shadow": {
     "legal": true,
@@ -1440,7 +1451,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Machop (Shadow)"
+    "speciesName": {
+      "de": "Machollo (Schatten)",
+      "fr": "Machoc (Ombre)",
+      "en": "Machop (Shadow)",
+      "es": "Machop (Oscuro)",
+      "th": "วันริกี (Shadow)",
+      "ja": "ワンリキー (Shadow)",
+      "ko": "알통몬 (Shadow)",
+      "ru": "Мачоп (Shadow)",
+      "zh_hans": "腕力 (Shadow)",
+      "zh_hant": "腕力 (Shadow)"
+    }
   },
   "machoke": {
     "legal": false,
@@ -1685,6 +1707,17 @@
       "shadow"
     ]
   },
+  "slowpoke_galarian": {
+    "legal": false,
+    "dex": 79,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "galarian"
+    ]
+  },
   "slowbro": {
     "legal": false,
     "dex": 80,
@@ -1705,6 +1738,29 @@
     ],
     "tags": [
       "shadow"
+    ]
+  },
+  "slowbro_galarian": {
+    "legal": false,
+    "dex": 80,
+    "types": [
+      "poison",
+      "psychic"
+    ],
+    "tags": [
+      "galarian"
+    ]
+  },
+  "slowbro_mega": {
+    "legal": false,
+    "dex": 80,
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "tags": [
+      "mega",
+      "unreleased"
     ]
   },
   "magnemite": {
@@ -2283,6 +2339,20 @@
     "types": [
       "grass",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "tangela_shadow": {
+    "legal": false,
+    "dex": 114,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "kangaskhan": {
@@ -2302,6 +2372,20 @@
     "types": [
       "water",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "horsea_shadow": {
+    "legal": false,
+    "dex": 116,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "seadra": {
@@ -2310,6 +2394,20 @@
     "types": [
       "water",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "seadra_shadow": {
+    "legal": false,
+    "dex": 117,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "goldeen": {
@@ -3484,7 +3582,20 @@
       "dark",
       "flying"
     ],
-    "tags": []
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "murkrow_shadow": {
+    "legal": false,
+    "dex": 198,
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
+    ]
   },
   "slowking": {
     "legal": false,
@@ -3506,6 +3617,18 @@
     ],
     "tags": [
       "shadow"
+    ]
+  },
+  "slowking_galarian": {
+    "legal": false,
+    "dex": 199,
+    "types": [
+      "poison",
+      "psychic"
+    ],
+    "tags": [
+      "galarian",
+      "unreleased"
     ]
   },
   "misdreavus": {
@@ -3656,6 +3779,20 @@
     "types": [
       "fairy",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "snubbull_shadow": {
+    "legal": false,
+    "dex": 209,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "granbull": {
@@ -3664,6 +3801,20 @@
     "types": [
       "fairy",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "granbull_shadow": {
+    "legal": false,
+    "dex": 210,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "qwilfish": {
@@ -3996,6 +4147,20 @@
     "types": [
       "water",
       "dragon"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "kingdra_shadow": {
+    "legal": false,
+    "dex": 230,
+    "types": [
+      "water",
+      "dragon"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "phanpy": {
@@ -4105,7 +4270,18 @@
       "fire",
       "none"
     ],
-    "speciesName": "Magby"
+    "speciesName": {
+      "de": "Magby",
+      "fr": "Magby",
+      "en": "Magby",
+      "es": "Magby",
+      "th": "บูบี",
+      "ja": "ブビィ",
+      "ko": "마그비",
+      "ru": "Магби",
+      "zh_hans": "小鸭嘴龙",
+      "zh_hant": "小鴨嘴龍"
+    }
   },
   "miltank": {
     "legal": false,
@@ -4280,7 +4456,20 @@
       "flying"
     ],
     "tags": [
-      "legendary"
+      "legendary",
+      "shadoweligible"
+    ]
+  },
+  "ho_oh_shadow": {
+    "legal": false,
+    "dex": 250,
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "tags": [
+      "legendary",
+      "shadow"
     ]
   },
   "celebi": {
@@ -4437,6 +4626,20 @@
     "types": [
       "dark",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "poochyena_shadow": {
+    "legal": false,
+    "dex": 261,
+    "types": [
+      "dark",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "mightyena": {
@@ -4445,6 +4648,20 @@
     "types": [
       "dark",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "mightyena_shadow": {
+    "legal": false,
+    "dex": 262,
+    "types": [
+      "dark",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "zigzagoon": {
@@ -4823,6 +5040,20 @@
     "types": [
       "fighting",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "makuhita_shadow": {
+    "legal": false,
+    "dex": 296,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "hariyama": {
@@ -4831,6 +5062,20 @@
     "types": [
       "fighting",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "hariyama_shadow": {
+    "legal": false,
+    "dex": 297,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "azurill": {
@@ -5011,6 +5256,20 @@
     "types": [
       "electric",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "electrike_shadow": {
+    "legal": false,
+    "dex": 309,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "manectric": {
@@ -5019,6 +5278,9 @@
     "types": [
       "electric",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
     ]
   },
   "manectric_mega": {
@@ -5030,6 +5292,17 @@
     ],
     "tags": [
       "mega"
+    ]
+  },
+  "manectric_shadow": {
+    "legal": false,
+    "dex": 310,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "plusle": {
@@ -5124,7 +5397,8 @@
       "dark"
     ],
     "tags": [
-      "shadoweligible"
+      "shadoweligible",
+      "include1500"
     ]
   },
   "sharpedo_shadow": {
@@ -5135,7 +5409,8 @@
       "dark"
     ],
     "tags": [
-      "shadow"
+      "shadow",
+      "include1500"
     ]
   },
   "wailmer": {
@@ -6239,6 +6514,20 @@
     "types": [
       "normal",
       "flying"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "starly_shadow": {
+    "legal": false,
+    "dex": 396,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "staravia": {
@@ -6247,6 +6536,20 @@
     "types": [
       "normal",
       "flying"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "staravia_shadow": {
+    "legal": false,
+    "dex": 397,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "staraptor": {
@@ -6255,6 +6558,20 @@
     "types": [
       "normal",
       "flying"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "staraptor_shadow": {
+    "legal": false,
+    "dex": 398,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "bidoof": {
@@ -6263,6 +6580,20 @@
     "types": [
       "normal",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "bidoof_shadow": {
+    "legal": false,
+    "dex": 399,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "bibarel": {
@@ -6271,6 +6602,20 @@
     "types": [
       "normal",
       "water"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "bibarel_shadow": {
+    "legal": false,
+    "dex": 400,
+    "types": [
+      "normal",
+      "water"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "kricketot": {
@@ -6506,6 +6851,9 @@
     "types": [
       "water",
       "ground"
+    ],
+    "tags": [
+      "regional"
     ]
   },
   "gastrodon_west_sea": {
@@ -6514,6 +6862,9 @@
     "types": [
       "water",
       "ground"
+    ],
+    "tags": [
+      "regional"
     ]
   },
   "ambipom": {
@@ -6610,7 +6961,20 @@
       "dark",
       "flying"
     ],
-    "tags": []
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "honchkrow_shadow": {
+    "legal": false,
+    "dex": 430,
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
+    ]
   },
   "glameow": {
     "legal": false,
@@ -6703,7 +7067,18 @@
       "rock",
       "none"
     ],
-    "speciesName": "Bonsly"
+    "speciesName": {
+      "de": "Mobai",
+      "fr": "Manzaï",
+      "en": "Bonsly",
+      "es": "Bonsly",
+      "th": "อุโซฮาจิ",
+      "ja": "ウソハチ",
+      "ko": "꼬지지",
+      "ru": "Бонслай",
+      "zh_hans": "爱哭树",
+      "zh_hant": "愛哭樹"
+    }
   },
   "mime_jr": {
     "legal": false,
@@ -6810,6 +7185,20 @@
     "types": [
       "poison",
       "bug"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "skorupi_shadow": {
+    "legal": false,
+    "dex": 451,
+    "types": [
+      "poison",
+      "bug"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "drapion": {
@@ -6818,6 +7207,20 @@
     "types": [
       "poison",
       "dark"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "drapion_shadow": {
+    "legal": false,
+    "dex": 452,
+    "types": [
+      "poison",
+      "dark"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "croagunk": {
@@ -6993,6 +7396,20 @@
     "types": [
       "grass",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "tangrowth_shadow": {
+    "legal": false,
+    "dex": 465,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "electivire": {
@@ -8265,7 +8682,18 @@
       "dark",
       "fighting"
     ],
-    "speciesName": "Scraggy"
+    "speciesName": {
+      "de": "Zurrokex",
+      "fr": "Baggiguane",
+      "en": "Scraggy",
+      "es": "Scraggy",
+      "th": "ซึรุกกุ",
+      "ja": "ズルッグ",
+      "ko": "곤율랭",
+      "ru": "Скрэгги",
+      "zh_hans": "滑头小子",
+      "zh_hant": "滑頭小子"
+    }
   },
   "scrafty": {
     "legal": false,
@@ -8776,9 +9204,6 @@
     "types": [
       "fighting",
       "none"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "mienshao": {
@@ -8787,9 +9212,6 @@
     "types": [
       "fighting",
       "none"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "druddigon": {
@@ -9862,7 +10284,7 @@
       "flying"
     ],
     "tags": [
-      "unreleased"
+      "legendary"
     ]
   },
   "zygarde": {
@@ -9873,6 +10295,7 @@
       "ground"
     ],
     "tags": [
+      "legendary",
       "unreleased"
     ]
   },

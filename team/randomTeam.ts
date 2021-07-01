@@ -28,9 +28,10 @@ type getRandomPokemonParams = {
   rule: Rule
   previousPokemon: TeamMemberWithDex[]
   className?: string
+  language: string
 }
 
-export function getRandomTeam(rule: Rule): TeamMember[] {
+export function getRandomTeam(rule: Rule, language: string): TeamMember[] {
     const t: TeamMemberWithDex[] = []
     let className: string | undefined = rule.classes
         ? rule.classes[Math.floor(Math.random() * rule.classes.length)].name
@@ -41,6 +42,7 @@ export function getRandomTeam(rule: Rule): TeamMember[] {
             rule,
             previousPokemon: t,
             className,
+            language
         }))
     }
 
@@ -51,6 +53,7 @@ function getRandomPokemon({
     rule,
     previousPokemon,
     className,
+    language
   }: getRandomPokemonParams): TeamMemberWithDex {
 
     // get a random pokemon
@@ -80,10 +83,10 @@ function getRandomPokemon({
         let chargedMovePool: string[] = [];
         let fastMovePool: string[] = [];
         if(rule.advancedOptions?.movesets === "norestrictions") {
-            chargedMovePool = chargemoves
+            chargedMovePool = [...chargemoves]
         } else {
             fastMovePool = pokemonSource[randPokemon.speciesId].fastMoves
-            chargedMovePool = pokemonSource[randPokemon.speciesId].chargedMoves
+            chargedMovePool = [...pokemonSource[randPokemon.speciesId].chargedMoves]
 
             const isShadow = randPokemon.tags?.includes('shadow')
             if (randPokemon.tags?.includes('shadoweligible')) {
@@ -103,12 +106,13 @@ function getRandomPokemon({
   
     return {
         speciesId: randPokemon.speciesId,
-        speciesName: randPokemon.speciesName ? randPokemon.speciesName : randPokemon.speciesId,
+        speciesName: (randPokemon.speciesName && randPokemon.speciesName[language]) ? randPokemon.speciesName[language] : randPokemon.speciesId,
         hp: stats.hp,
         atk: stats.atk,
         def: stats.def,
         level: stats.level,
         iv: stats.ivs,
+        baseStats: baseStats,
         cp: calculateCP(baseStats, stats.level, stats.ivs),
         price: randPokemon.price,
         types: randPokemon.types as [typeId, typeId],
@@ -191,7 +195,7 @@ function getRandomPokemonSpecies(speciesPool: PokemonSpecies[]): PokemonSpecies 
       .reduce((r1, r2) => r1 + r2)
   
     if (ratingSum !== 0) {
-      let rand = Math.round(Math.random() * ratingSum)
+      let rand = Math.random() * ratingSum
       const randPokemon = speciesPool.find((species) => {
         let rating: number = species.ranking ? species.ranking : 0
         rating = Math.pow(rating / 1000, 6)

@@ -3,7 +3,10 @@ import { Move } from "../types/room";
 import { TeamMember } from "../types/team"
 
 export function reduceTeam(teamMembers: TeamMember[]): object[] {
-    return teamMembers.map(reduceTeamMemberForOpponent)
+    if (teamMembers && teamMembers.length) {
+        return teamMembers.map(reduceTeamMemberForOpponent)
+    }
+    return []
 }
 
 export function reduceActionForOpponent(action: string, teamMembers: TeamMember[], move?: Move, turn?: number): string {
@@ -51,14 +54,25 @@ export function reduceTeamMemberForOpponent(member: TeamMember): object {
 export function reduceTeamMemberForPlayer(member: TeamMember): TeamMember {
     member = {...member}
     if (member.current) {
-        member.current = {
-            hp: member.current ? member.current.hp / member.hp : 0,
-            def: member.current ? member.current.def : 0,
-            atk: member.current ? member.current.atk : 0,
-            status: member.current ? member.current.status : [0,0],
-            energy: member.current ? member.current.energy : 0,
-        }
+        member.current = {...member.current}
+        member.current.hp = member.current.hp / member.hp
     }
 
     return member;
+}
+
+export function reduceTeamForEnd(team?: TeamMember[]): object[] | undefined {
+    return team?.map(member => {
+        return {
+            name: member.name,
+            sid: member.sid,
+            current: {
+                hp: member.current?.hp,
+                energy: member.current?.energy,
+                damageDealt: member.current?.damageDealt,
+                chargeMovesUsed: member.current?.chargeMovesUsed,
+                timeSpendAlive: member.current?.timeSpendAlive
+            }
+        }
+    })
 }

@@ -1331,7 +1331,7 @@
     ]
   },
   "poliwrath": {
-    "legal": true,
+    "legal": false,
     "dex": 62,
     "types": [
       "water",
@@ -1339,51 +1339,6 @@
     ],
     "tags": [
       "shadoweligible"
-    ],
-    "speciesName": "Poliwrath",
-    "ranking": 598,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "ROCK_SMASH",
-          "uses": 2955
-        },
-        {
-          "moveId": "MUD_SHOT",
-          "uses": 9088
-        },
-        {
-          "moveId": "BUBBLE",
-          "uses": 7752
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "SUBMISSION",
-          "uses": 1465
-        },
-        {
-          "moveId": "POWER_UP_PUNCH",
-          "uses": 2225
-        },
-        {
-          "moveId": "ICE_PUNCH",
-          "uses": 5756
-        },
-        {
-          "moveId": "HYDRO_PUMP",
-          "uses": 3809
-        },
-        {
-          "moveId": "DYNAMIC_PUNCH",
-          "uses": 6563
-        }
-      ]
-    },
-    "moveset": [
-      "MUD_SHOT",
-      "DYNAMIC_PUNCH",
-      "ICE_PUNCH"
     ]
   },
   "poliwrath_shadow": {
@@ -1728,6 +1683,17 @@
       "shadow"
     ]
   },
+  "slowpoke_galarian": {
+    "legal": false,
+    "dex": 79,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "galarian"
+    ]
+  },
   "slowbro": {
     "legal": false,
     "dex": 80,
@@ -1748,6 +1714,29 @@
     ],
     "tags": [
       "shadow"
+    ]
+  },
+  "slowbro_galarian": {
+    "legal": false,
+    "dex": 80,
+    "types": [
+      "poison",
+      "psychic"
+    ],
+    "tags": [
+      "galarian"
+    ]
+  },
+  "slowbro_mega": {
+    "legal": false,
+    "dex": 80,
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "tags": [
+      "mega",
+      "unreleased"
     ]
   },
   "magnemite": {
@@ -2166,7 +2155,7 @@
     ]
   },
   "marowak_alolan": {
-    "legal": true,
+    "legal": false,
     "dex": 105,
     "types": [
       "fire",
@@ -2174,51 +2163,6 @@
     ],
     "tags": [
       "alolan"
-    ],
-    "speciesName": "Marowak (Alolan)",
-    "ranking": 670,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "ROCK_SMASH",
-          "uses": 2610
-        },
-        {
-          "moveId": "HEX",
-          "uses": 9045
-        },
-        {
-          "moveId": "FIRE_SPIN",
-          "uses": 8147
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "SHADOW_BONE",
-          "uses": 7459
-        },
-        {
-          "moveId": "SHADOW_BALL",
-          "uses": 2686
-        },
-        {
-          "moveId": "FLAME_WHEEL",
-          "uses": 2006
-        },
-        {
-          "moveId": "FIRE_BLAST",
-          "uses": 2413
-        },
-        {
-          "moveId": "BONE_CLUB",
-          "uses": 5245
-        }
-      ]
-    },
-    "moveset": [
-      "FIRE_SPIN",
-      "SHADOW_BONE",
-      "BONE_CLUB"
     ]
   },
   "marowak_shadow": {
@@ -2371,6 +2315,20 @@
     "types": [
       "grass",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "tangela_shadow": {
+    "legal": false,
+    "dex": 114,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "kangaskhan": {
@@ -2390,6 +2348,20 @@
     "types": [
       "water",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "horsea_shadow": {
+    "legal": false,
+    "dex": 116,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "seadra": {
@@ -2398,6 +2370,20 @@
     "types": [
       "water",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "seadra_shadow": {
+    "legal": false,
+    "dex": 117,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "goldeen": {
@@ -3114,44 +3100,11 @@
     ]
   },
   "noctowl": {
-    "legal": true,
+    "legal": false,
     "dex": 164,
     "types": [
       "normal",
       "flying"
-    ],
-    "speciesName": "Noctowl",
-    "ranking": 556,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "WING_ATTACK",
-          "uses": 11081
-        },
-        {
-          "moveId": "EXTRASENSORY",
-          "uses": 8719
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "SKY_ATTACK",
-          "uses": 10465
-        },
-        {
-          "moveId": "PSYCHIC",
-          "uses": 5953
-        },
-        {
-          "moveId": "NIGHT_SHADE",
-          "uses": 3380
-        }
-      ]
-    },
-    "moveset": [
-      "WING_ATTACK",
-      "SKY_ATTACK",
-      "PSYCHIC"
     ]
   },
   "ledyba": {
@@ -3605,7 +3558,20 @@
       "dark",
       "flying"
     ],
-    "tags": []
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "murkrow_shadow": {
+    "legal": false,
+    "dex": 198,
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
+    ]
   },
   "slowking": {
     "legal": false,
@@ -3627,6 +3593,18 @@
     ],
     "tags": [
       "shadow"
+    ]
+  },
+  "slowking_galarian": {
+    "legal": false,
+    "dex": 199,
+    "types": [
+      "poison",
+      "psychic"
+    ],
+    "tags": [
+      "galarian",
+      "unreleased"
     ]
   },
   "misdreavus": {
@@ -3764,48 +3742,11 @@
     ]
   },
   "steelix": {
-    "legal": true,
+    "legal": false,
     "dex": 208,
     "types": [
       "steel",
       "ground"
-    ],
-    "speciesName": "Steelix",
-    "ranking": 749,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "THUNDER_FANG",
-          "uses": 6613
-        },
-        {
-          "moveId": "IRON_TAIL",
-          "uses": 3768
-        },
-        {
-          "moveId": "DRAGON_TAIL",
-          "uses": 9408
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "HEAVY_SLAM",
-          "uses": 5793
-        },
-        {
-          "moveId": "EARTHQUAKE",
-          "uses": 7546
-        },
-        {
-          "moveId": "CRUNCH",
-          "uses": 6472
-        }
-      ]
-    },
-    "moveset": [
-      "DRAGON_TAIL",
-      "EARTHQUAKE",
-      "CRUNCH"
     ]
   },
   "snubbull": {
@@ -3814,6 +3755,20 @@
     "types": [
       "fairy",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "snubbull_shadow": {
+    "legal": false,
+    "dex": 209,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "granbull": {
@@ -3822,6 +3777,20 @@
     "types": [
       "fairy",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "granbull_shadow": {
+    "legal": false,
+    "dex": 210,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "qwilfish": {
@@ -4154,6 +4123,20 @@
     "types": [
       "water",
       "dragon"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "kingdra_shadow": {
+    "legal": false,
+    "dex": 230,
+    "types": [
+      "water",
+      "dragon"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "phanpy": {
@@ -4437,7 +4420,20 @@
       "flying"
     ],
     "tags": [
-      "legendary"
+      "legendary",
+      "shadoweligible"
+    ]
+  },
+  "ho_oh_shadow": {
+    "legal": false,
+    "dex": 250,
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "tags": [
+      "legendary",
+      "shadow"
     ]
   },
   "celebi": {
@@ -4594,6 +4590,20 @@
     "types": [
       "dark",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "poochyena_shadow": {
+    "legal": false,
+    "dex": 261,
+    "types": [
+      "dark",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "mightyena": {
@@ -4602,6 +4612,20 @@
     "types": [
       "dark",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "mightyena_shadow": {
+    "legal": false,
+    "dex": 262,
+    "types": [
+      "dark",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "zigzagoon": {
@@ -4751,7 +4775,7 @@
     ]
   },
   "shiftry": {
-    "legal": true,
+    "legal": false,
     "dex": 275,
     "types": [
       "grass",
@@ -4759,55 +4783,6 @@
     ],
     "tags": [
       "shadoweligible"
-    ],
-    "speciesName": "Shiftry",
-    "ranking": 697,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "SNARL",
-          "uses": 6356
-        },
-        {
-          "moveId": "RAZOR_LEAF",
-          "uses": 2934
-        },
-        {
-          "moveId": "FEINT_ATTACK",
-          "uses": 4421
-        },
-        {
-          "moveId": "BULLET_SEED",
-          "uses": 6115
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "RETURN",
-          "uses": 1452
-        },
-        {
-          "moveId": "LEAF_TORNADO",
-          "uses": 1837
-        },
-        {
-          "moveId": "LEAF_BLADE",
-          "uses": 9601
-        },
-        {
-          "moveId": "HURRICANE",
-          "uses": 1970
-        },
-        {
-          "moveId": "FOUL_PLAY",
-          "uses": 4958
-        }
-      ]
-    },
-    "moveset": [
-      "SNARL",
-      "LEAF_BLADE",
-      "FOUL_PLAY"
     ]
   },
   "shiftry_shadow": {
@@ -5029,6 +5004,20 @@
     "types": [
       "fighting",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "makuhita_shadow": {
+    "legal": false,
+    "dex": 296,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "hariyama": {
@@ -5037,6 +5026,20 @@
     "types": [
       "fighting",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "hariyama_shadow": {
+    "legal": false,
+    "dex": 297,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "azurill": {
@@ -5217,6 +5220,20 @@
     "types": [
       "electric",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "electrike_shadow": {
+    "legal": false,
+    "dex": 309,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "manectric": {
@@ -5225,6 +5242,9 @@
     "types": [
       "electric",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
     ]
   },
   "manectric_mega": {
@@ -5236,6 +5256,17 @@
     ],
     "tags": [
       "mega"
+    ]
+  },
+  "manectric_shadow": {
+    "legal": false,
+    "dex": 310,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "plusle": {
@@ -5330,7 +5361,8 @@
       "dark"
     ],
     "tags": [
-      "shadoweligible"
+      "shadoweligible",
+      "include1500"
     ]
   },
   "sharpedo_shadow": {
@@ -5341,7 +5373,8 @@
       "dark"
     ],
     "tags": [
-      "shadow"
+      "shadow",
+      "include1500"
     ]
   },
   "wailmer": {
@@ -6429,7 +6462,7 @@
     ]
   },
   "empoleon": {
-    "legal": true,
+    "legal": false,
     "dex": 395,
     "types": [
       "water",
@@ -6437,47 +6470,6 @@
     ],
     "tags": [
       "starter"
-    ],
-    "speciesName": "Empoleon",
-    "ranking": 698,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "WATERFALL",
-          "uses": 11262
-        },
-        {
-          "moveId": "METAL_CLAW",
-          "uses": 8538
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "HYDRO_PUMP",
-          "uses": 1070
-        },
-        {
-          "moveId": "HYDRO_CANNON",
-          "uses": 10106
-        },
-        {
-          "moveId": "FLASH_CANNON",
-          "uses": 2257
-        },
-        {
-          "moveId": "DRILL_PECK",
-          "uses": 4708
-        },
-        {
-          "moveId": "BLIZZARD",
-          "uses": 1666
-        }
-      ]
-    },
-    "moveset": [
-      "WATERFALL",
-      "HYDRO_CANNON",
-      "DRILL_PECK"
     ]
   },
   "starly": {
@@ -6486,6 +6478,20 @@
     "types": [
       "normal",
       "flying"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "starly_shadow": {
+    "legal": false,
+    "dex": 396,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "staravia": {
@@ -6494,6 +6500,20 @@
     "types": [
       "normal",
       "flying"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "staravia_shadow": {
+    "legal": false,
+    "dex": 397,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "staraptor": {
@@ -6502,14 +6522,170 @@
     "types": [
       "normal",
       "flying"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "staraptor_shadow": {
+    "legal": false,
+    "dex": 398,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "bidoof": {
-    "legal": false,
+    "legal": true,
     "dex": 399,
     "types": [
       "normal",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "speciesName": {
+      "de": "Bidiza",
+      "fr": "Keunotor",
+      "en": "Bidoof",
+      "es": "Bidoof",
+      "th": "บิปปา",
+      "ja": "ビッパ",
+      "ko": "비버니",
+      "ru": "Бидуф",
+      "zh_hans": "大牙狸",
+      "zh_hant": "大牙狸"
+    },
+    "ranking": 500,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TAKE_DOWN",
+          "uses": 88
+        },
+        {
+          "moveId": "TACKLE",
+          "uses": 112
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 16
+        },
+        {
+          "moveId": "SUPER_POWER",
+          "uses": 84
+        },
+        {
+          "moveId": "SHADOW_BALL",
+          "uses": 4
+        },
+        {
+          "moveId": "RETURN",
+          "uses": 10
+        },
+        {
+          "moveId": "ICE_BEAM",
+          "uses": 16
+        },
+        {
+          "moveId": "HYPER_FANG",
+          "uses": 26
+        },
+        {
+          "moveId": "GRASS_KNOT",
+          "uses": 24
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 22
+        }
+      ]
+    },
+    "moveset": [
+      "TACKLE",
+      "SUPER_POWER",
+      "CRUNCH"
+    ]
+  },
+  "bidoof_shadow": {
+    "legal": true,
+    "dex": 399,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": {
+      "de": "Bidiza (Schatten)",
+      "fr": "Keunotor (Ombre)",
+      "en": "Bidoof (Shadow)",
+      "es": "Bidoof (Oscuro)",
+      "th": "บิปปา (Shadow)",
+      "ja": "ビッパ (Shadow)",
+      "ko": "비버니 (Shadow)",
+      "ru": "Бидуф (Shadow)",
+      "zh_hans": "大牙狸 (Shadow)",
+      "zh_hant": "大牙狸 (Shadow)"
+    },
+    "ranking": 500,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TAKE_DOWN",
+          "uses": 100
+        },
+        {
+          "moveId": "TACKLE",
+          "uses": 100
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 16
+        },
+        {
+          "moveId": "SUPER_POWER",
+          "uses": 88
+        },
+        {
+          "moveId": "SHADOW_BALL",
+          "uses": 4
+        },
+        {
+          "moveId": "ICE_BEAM",
+          "uses": 16
+        },
+        {
+          "moveId": "HYPER_FANG",
+          "uses": 28
+        },
+        {
+          "moveId": "GRASS_KNOT",
+          "uses": 24
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 0
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 22
+        }
+      ]
+    },
+    "moveset": [
+      "TACKLE",
+      "CRUNCH",
+      "FRUSTRATION"
     ]
   },
   "bibarel": {
@@ -6518,6 +6694,20 @@
     "types": [
       "normal",
       "water"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "bibarel_shadow": {
+    "legal": false,
+    "dex": 400,
+    "types": [
+      "normal",
+      "water"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "kricketot": {
@@ -6753,6 +6943,9 @@
     "types": [
       "water",
       "ground"
+    ],
+    "tags": [
+      "regional"
     ]
   },
   "gastrodon_west_sea": {
@@ -6761,6 +6954,9 @@
     "types": [
       "water",
       "ground"
+    ],
+    "tags": [
+      "regional"
     ]
   },
   "ambipom": {
@@ -6857,7 +7053,20 @@
       "dark",
       "flying"
     ],
-    "tags": []
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "honchkrow_shadow": {
+    "legal": false,
+    "dex": 430,
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
+    ]
   },
   "glameow": {
     "legal": false,
@@ -6936,56 +7145,11 @@
     ]
   },
   "bronzong": {
-    "legal": true,
+    "legal": false,
     "dex": 437,
     "types": [
       "steel",
       "psychic"
-    ],
-    "speciesName": "Bronzong",
-    "ranking": 708,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "FEINT_ATTACK",
-          "uses": 8256
-        },
-        {
-          "moveId": "CONFUSION",
-          "uses": 11544
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "PSYSHOCK",
-          "uses": 5437
-        },
-        {
-          "moveId": "PSYCHIC",
-          "uses": 2108
-        },
-        {
-          "moveId": "PAYBACK",
-          "uses": 4071
-        },
-        {
-          "moveId": "HEAVY_SLAM",
-          "uses": 4265
-        },
-        {
-          "moveId": "FLASH_CANNON",
-          "uses": 1377
-        },
-        {
-          "moveId": "BULLDOZE",
-          "uses": 2558
-        }
-      ]
-    },
-    "moveset": [
-      "CONFUSION",
-      "PSYSHOCK",
-      "PAYBACK"
     ]
   },
   "bonsly": {
@@ -7056,44 +7220,11 @@
     ]
   },
   "munchlax": {
-    "legal": true,
+    "legal": false,
     "dex": 446,
     "types": [
       "normal",
       "none"
-    ],
-    "speciesName": "Munchlax",
-    "ranking": 691,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "TACKLE",
-          "uses": 6343
-        },
-        {
-          "moveId": "LICK",
-          "uses": 13457
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "GUNK_SHOT",
-          "uses": 1951
-        },
-        {
-          "moveId": "BULLDOZE",
-          "uses": 4411
-        },
-        {
-          "moveId": "BODY_SLAM",
-          "uses": 13426
-        }
-      ]
-    },
-    "moveset": [
-      "LICK",
-      "BODY_SLAM",
-      "BULLDOZE"
     ]
   },
   "riolu": {
@@ -7134,6 +7265,20 @@
     "types": [
       "poison",
       "bug"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "skorupi_shadow": {
+    "legal": false,
+    "dex": 451,
+    "types": [
+      "poison",
+      "bug"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "drapion": {
@@ -7142,6 +7287,20 @@
     "types": [
       "poison",
       "dark"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "drapion_shadow": {
+    "legal": false,
+    "dex": 452,
+    "types": [
+      "poison",
+      "dark"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "croagunk": {
@@ -7317,6 +7476,20 @@
     "types": [
       "grass",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "tangrowth_shadow": {
+    "legal": false,
+    "dex": 465,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "electivire": {
@@ -8843,48 +9016,11 @@
     ]
   },
   "escavalier": {
-    "legal": true,
+    "legal": false,
     "dex": 589,
     "types": [
       "bug",
       "steel"
-    ],
-    "speciesName": "Escavalier",
-    "ranking": 682,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "COUNTER",
-          "uses": 11320
-        },
-        {
-          "moveId": "BUG_BITE",
-          "uses": 8480
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "MEGAHORN",
-          "uses": 6660
-        },
-        {
-          "moveId": "DRILL_RUN",
-          "uses": 9478
-        },
-        {
-          "moveId": "AERIAL_ACE",
-          "uses": 3183
-        },
-        {
-          "moveId": "ACID_SPRAY",
-          "uses": 463
-        }
-      ]
-    },
-    "moveset": [
-      "COUNTER",
-      "DRILL_RUN",
-      "MEGAHORN"
     ]
   },
   "foongus": {
@@ -8912,44 +9048,11 @@
     ]
   },
   "jellicent": {
-    "legal": true,
+    "legal": false,
     "dex": 593,
     "types": [
       "water",
       "ghost"
-    ],
-    "speciesName": "Jellicent",
-    "ranking": 737,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "HEX",
-          "uses": 10385
-        },
-        {
-          "moveId": "BUBBLE",
-          "uses": 9415
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "SHADOW_BALL",
-          "uses": 10815
-        },
-        {
-          "moveId": "ICE_BEAM",
-          "uses": 5106
-        },
-        {
-          "moveId": "BUBBLE_BEAM",
-          "uses": 3868
-        }
-      ]
-    },
-    "moveset": [
-      "HEX",
-      "BUBBLE_BEAM",
-      "SHADOW_BALL"
     ]
   },
   "alomomola": {
@@ -9169,9 +9272,6 @@
     "types": [
       "fighting",
       "none"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "mienshao": {
@@ -9180,9 +9280,6 @@
     "types": [
       "fighting",
       "none"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "druddigon": {
@@ -10255,7 +10352,7 @@
       "flying"
     ],
     "tags": [
-      "unreleased"
+      "legendary"
     ]
   },
   "zygarde": {
@@ -10266,6 +10363,7 @@
       "ground"
     ],
     "tags": [
+      "legendary",
       "unreleased"
     ]
   },

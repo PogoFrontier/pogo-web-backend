@@ -21,12 +21,17 @@ export type typeId =
   
   export interface TeamMember {
   speciesId: string
-  speciesName: string
+  speciesName: object | string
   hp: number
   def: number
   atk: number
   level: number
   iv: {
+    atk: number
+    def: number
+    hp: number
+  }
+  baseStats?: {
     atk: number
     def: number
     hp: number
@@ -57,7 +62,7 @@ export interface TeamMemberDescription {
 
 export interface Pokemon {
   "dex": number
-  "speciesName": string
+  "speciesName": object | string
   "speciesId": string
   "baseStats": {
     "atk": number
@@ -84,10 +89,14 @@ export interface Current {
   atk: number
   status: [number, number]
   energy: number
+  damageDealt: number,
+  chargeMovesUsed: number,
+  timeSpendAlive: number,
+  switchedIn?: Date
 }
 
 export interface PokemonSpecies {
-  speciesName?: string
+  speciesName?: object | string
   speciesId: string
   dex: number
   tags?: string[]

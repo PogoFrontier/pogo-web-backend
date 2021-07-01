@@ -91,7 +91,7 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
                 }
 
                 if (reply !== 1) {
-                    console.error("Unexpected number of subscribers received this command. Should be 1, but actually: " + reply);
+                    console.error(`Unexpected number of subscribers received this command to room ${room}. Should be 1, but actually: ${reply}`);
                 }
             })
         }

@@ -3,13 +3,13 @@ import to from "../actions/to";
 import { rooms } from "../matchhandling_server";
 import { CODE } from "../types/actions";
 import { OnJoinPayload } from "../types/handlers";
-import { TeamMemberDescription } from "../types/team";
 import { parseToTeamMembers, isTeamValid } from "../team/checkTeam";
 import { Room } from "../types/room";
 import { pubClient } from "../redis/clients";
 import { getRandomTeam } from "../team/randomTeam";
+import { getStrings } from "../actions/getTranslation";
 
-function onJoin(id: string, payload: OnJoinPayload) {
+async function onJoin(id: string, payload: OnJoinPayload) {
     let { room, team } = payload;
     const currentRoom = rooms.get(room);
 
@@ -21,7 +21,7 @@ function onJoin(id: string, payload: OnJoinPayload) {
         }
 
         if(currentRoom.format.advancedOptions?.random) {
-            team = getRandomTeam(currentRoom.format)
+            team = getRandomTeam(currentRoom.format, "en")
         }
 
         if (!team || !Array.isArray(team) || team.length <= 0) {
@@ -30,8 +30,9 @@ function onJoin(id: string, payload: OnJoinPayload) {
         }
         
         let teamMembers = parseToTeamMembers(team);
-
-        const { isValid, violations } = isTeamValid(teamMembers, currentRoom.format);
+        let strings : any= {}
+        await getStrings("en").then(s => strings = s)
+        const { isValid, violations } = isTeamValid(teamMembers, currentRoom.format, strings);
         if (!isValid) {
             pubClient.publish("messagesToUser:" + id, "$errorYour team is invalid.\n" + violations.join("\r"));
             return;

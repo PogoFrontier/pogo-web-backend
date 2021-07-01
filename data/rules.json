@@ -61,9 +61,9 @@
             "speciesClauseByDex": "true"
         },
         "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/premier/overall/rankings-2500.json",
-        "exclude":[{
-            "filterType":"tag",
-            "values":["legendary","mythical"]
+        "exclude": [{
+            "filterType": "tag",
+            "values": ["legendary", "mythical"]
         }]
     },
     "Master League": {
@@ -87,9 +87,9 @@
             "speciesClauseByDex": "true"
         },
         "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/premier/overall/rankings-10000.json",
-        "exclude":[{
-            "filterType":"tag",
-            "values":["legendary","mythical"]
+        "exclude": [{
+            "filterType": "tag",
+            "values": ["legendary", "mythical"]
         }]
     },
     "OPEN_MASTER_LEAGUE_CLASSIC": {
@@ -113,109 +113,144 @@
             "speciesClauseByDex": "true"
         },
         "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/premier/overall/rankings-10000.json",
-        "exclude":[{
-            "filterType":"tag",
-            "values":["legendary","mythical"]
-        }]
-    },
-    "Commander Cup": {
-        "name": "Commander Cup",
-        "maxCP":1500,
-        "maxLevel":50,
-        "maxBestBuddy":1,
-        "maxMega":0,
-        "flags":{
-            "speciesClauseByForm":true
-        },
-        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/commander/overall/rankings-1500.json",
-        "teamPattern":[
-            {
-                "name": "Commander",
-                "include":[{
-                    "filterType":"id",
-                    "values":["munchlax", "shiftry", "escavalier", "steelix", "empoleon", "jellicent", "bronzong", "noctowl", "marowak_alolan", "poliwrath"]
-                }]
-            },
-            {"include":[{"filterType":"type", "values":["rock", "ice", "electric", "poison", "psychic"]}],
-            "exclude": [{"filterType": "type", "values": ["steel"]}]},
-            {"include":[{"filterType":"type", "values":["rock", "ice", "electric", "poison", "psychic"]}],
-            "exclude": [{"filterType": "type", "values": ["steel"]}]},
-            {"include":[{"filterType":"type", "values":["rock", "ice", "electric", "poison", "psychic"]}],
-            "exclude": [{"filterType": "type", "values": ["steel"]}]},
-            {"include":[{"filterType":"type", "values":["rock", "ice", "electric", "poison", "psychic"]}],
-            "exclude": [{"filterType": "type", "values": ["steel"]}]},
-            {"include":[{"filterType":"type", "values":["rock", "ice", "electric", "poison", "psychic"]}],
-            "exclude": [{"filterType": "type", "values": ["steel"]}]}
-        ],
         "exclude": [{
             "filterType": "tag",
-            "values": ["legendary", "mythical", "shadow", "mega", "unreleased"]
-        }, {
-            "filterType": "id",
-            "values": ["abomasnow", "galvantula", "stunfisk", "medicham", "wobbuffet", "pachirisu", "drapion"]
+            "values": ["legendary", "mythical"]
         }]
     },
-    "Floating City": {
-        "name": "Floating City",
-        "maxCP":1500,
-        "maxLevel":50,
-        "maxBestBuddy":1,
-        "maxMega":0,
-        "flags":{
-            "speciesClauseByForm":true
+    "Venture Cup": {
+        "name": "Venture Cup",
+        "maxCP": 1500,
+        "maxLevel": 50,
+        "maxBestBuddy": 1,
+        "maxMega": 0,
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/venture/overall/rankings-1500.json",
+        "pointLimitOptions": {
+            "maxPoints": 14,
+            "prices": [{
+                "pokemonIds": ["cresselia", "froslass", "altaria", "hypno", "hypno_shadow", "marowak_alolan", "lickitung"],
+                "price": 9
+            }, {
+                "pokemonIds": ["jellicent", "politoed", "politoed_shadow", "kingdra", "kingdra_shadow", "dragonair", "dragonair_shadow", "lapras", "lapras_shadow", "medicham", "talonflame", "galvantula", "deoxys_defense", "lickilicky", "regirock", "snorlax", "snorlax_shadow", "munchlax", "vigoroth", "dewgong"],
+                "price": 5
+            }, {
+                "pokemonIds": ["abomasnow", "abomasnow_shadow", "pachirisu", "drifblim", "crustle", "mew", "pelipper", "whiscash", "swampert", "swampert_shadow", "machamp", "machamp_shadow", "graveler_alolan", "zangoose", "dragonite", "dragonite_shadow", "goodra", "dusclops", "dusclops_shadow", "sealeo", "sealeo_shadow", "wobbuffet", "wobbuffet_shadow", "lanturn", "cradily", "cradily_shadow", "tropius", "gengar", "haunter", "mantone", "sirfethd", "stunfisk"],
+                "price": 3
+            }]
+        },
+        "exclude": [{
+            "filterType": "tag",
+            "values": ["mega", "unreleased"]
+        }, {
+            "filterType": "id",
+            "values": ["chansey"]
+        }, {
+            "filterType": "type",
+            "values": ["dark", "fairy", "steel"]
+        }]
+    },
+    "Bidoof Cup": {
+        "name": "Bidoof Cup",
+        "maxCP": 500,
+        "maxLevel": 50,
+        "maxBestBuddy": 1,
+        "maxMega": 0,
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/bidoof/overall/rankings-500.json",
+        "include": [{
+            "filterType": "id",
+            "values": ["bidoof", "bidoof_shadow"]
+        }]
+    },
+    "Element Cup": {
+        "name": "Element Cup",
+        "maxCP": 500,
+        "maxLevel": 50,
+        "maxBestBuddy": 1,
+        "maxMega": 0,
+        "flags": {
+            "speciesClauseByDex": true
+        },
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/element/overall/rankings-500.json",
+        "include": [{
+            "filterType": "id",
+            "values": ["litleo", "barboach", "bellsprout", "budew", "buizel", "bulbasaur", "bulbasaur_shadow", "cacnea", "carvanha", "charmander", "cherubi", "chikorita", "chimchar", "chinchou", "corphish", "cyndaquil", "darumaka", "deerling", "ducklett", "exeggcute", "feebas", "ferroseed", "finneon", "foongus", "frillish", "goldeen", "growlithe", "hoppip", "horsea", "houndour", "kabuto", "krabby", "larvesta", "lileep", "litwick", "lotad", "magby", "magikarp", "mantyke", "mudkip", "numel", "oddish", "omanyte", "oshawott", "pansage", "pansear", "paras", "piplup", "poliwag", "ponyta", "psyduck", "remoraid", "seedot", "seel", "sewaddle", "shellos_east_sea", "shellos_west_sea", "shroomish", "slowpoke", "slugma", "snivy", "snover", "spheal", "squirtle", "surskit", "tangela", "tangela_shadow", "tentacool", "tepig", "tirtouga", "torchic", "totodile", "treecko", "turtwig", "tympole", "vulpix", "wailmer", "wingull", "wooper", "vulpix_shadow", "turtwig_shadow", "growlithe_shadow", "psyduck_shadow", "oddish_shadow", "hoppip_shadow", "houndour_shadow", "squirtle_shadow", "seedot_shadow", "mudkip_shadow", "poliwag_shadow", "exeggcute_shadow", "slowpoke_shadow", "charmander_shadow", "snover_shadow", "bulbusaur_shadow", "omanyte_shadow", "carvanha_shadow", "cacnea_shadow", "bellsprout_shadow", "magikarp_shadow", "shellder", "shellder_shadow", "cottonee", "sunkern", "clamperl", "shellos", "panpour", "petilil", "chespin", "froakie", "fennekin", "skrelp", "clauncher", "deerling", "binacle"]
+        }]
+    },
+    "Atlantis Field": {
+        "name": "Atlantis Field",
+        "maxCP": 1500,
+        "maxLevel": 50,
+        "maxBestBuddy": 1,
+        "maxMega": 0,
+        "flags": {
+            "speciesClauseByForm": true
         },
         "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/factions/overall/rankings-1500.json",
         "include": [{
             "filterType": "type",
-            "values": ["ground", "flying", "steel", "normal"]
+            "values": ["bug", "dark", "fairy", "poison", "water"]
         }],
         "exclude": [{
             "filterType": "tag",
             "values": ["mythical", "shadow", "mega", "unreleased", "regional"]
         }, {
             "filterType": "id",
-            "values": ["stunfisk_galarian", "skarmory", "altaria", "bastiodon", "registeel", "chansey"]
+            "values": ["azumarill"]
         }]
     },
     "Nursery Cup": {
         "name": "Nursery Cup",
-        "maxCP":1500,
-        "maxLevel":50,
-        "maxBestBuddy":1,
-        "maxMega":0,
-        "teamPattern":[
-            {"include":[{
-                "filterType":"dex",
-                "values":["88-88", "27-27", "74-74", "554-554"]
-            }]},
-            {"include":[{
-                "filterType":"dex",
-                "values":["66-66", "559-559", "438-438", "240-240"]
-            }]},
-            {"include":[{
-                "filterType":"dex",
-                "values":["629-629", "425-425", "627-627", "83-83", "193-193"]
-            }]},
-            {"include":[{
-                "filterType":"id",
-                "values":["mantyke", "wailmer", "tirtouga", "chinchou", "slowpoke", "clamperl"]
-            }]},
-            {"include":[{
-                "filterType":"id",
-                "values":["lileep", "turtwig", "oddish", "snover", "chespin"]
-            }]},
-            {"include":[{
-                "filterType":"id",
-                "values":["spritzee", "litleo", "dwebble", "elekid", "skrelp", "smoochum"]
-            }]}
+        "maxCP": 1500,
+        "maxLevel": 50,
+        "maxBestBuddy": 1,
+        "maxMega": 0,
+        "teamPattern": [{
+                "include": [{
+                    "filterType": "dex",
+                    "values": ["88-88", "27-27", "74-74", "554-554"]
+                }]
+            },
+            {
+                "include": [{
+                    "filterType": "dex",
+                    "values": ["66-66", "559-559", "438-438", "240-240"]
+                }]
+            },
+            {
+                "include": [{
+                    "filterType": "dex",
+                    "values": ["629-629", "425-425", "627-627", "83-83", "193-193"]
+                }]
+            },
+            {
+                "include": [{
+                    "filterType": "id",
+                    "values": ["mantyke", "wailmer", "tirtouga", "chinchou", "slowpoke", "clamperl"]
+                }]
+            },
+            {
+                "include": [{
+                    "filterType": "id",
+                    "values": ["lileep", "turtwig", "oddish", "snover", "chespin"]
+                }]
+            },
+            {
+                "include": [{
+                    "filterType": "id",
+                    "values": ["spritzee", "litleo", "dwebble", "elekid", "skrelp", "smoochum"]
+                }]
+            }
         ]
     },
     "Cliffhanger": {
         "name": "Cliffhanger",
-        "maxCP":1500,
-        "maxLevel":50,
-        "maxBestBuddy":1,
-        "maxMega":0,
+        "maxCP": 1500,
+        "maxLevel": 50,
+        "maxBestBuddy": 1,
+        "maxMega": 0,
+        "flags": {
+            "speciesClauseByDex": "true"
+        },
         "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/all/overall/rankings-1500.json",
         "pointLimitOptions": {
             "maxPoints": 17,
@@ -237,13 +272,13 @@
     },
     "Specialist Cup": {
         "name": "Specialist Cup",
-        "maxCP":1500,
-        "maxLevel":50,
-        "maxBestBuddy":1,
-        "maxMega":0,
+        "maxCP": 1500,
+        "maxLevel": 50,
+        "maxBestBuddy": 1,
+        "maxMega": 0,
         "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/all/overall/rankings-1500.json",
-        "flags":{
-            "speciesClauseByForm":true
+        "flags": {
+            "speciesClauseByForm": true
         },
         "exclude": [{
             "filterType": "tag",

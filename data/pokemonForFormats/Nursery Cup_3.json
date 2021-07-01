@@ -1671,7 +1671,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Slowpoke"
+    "speciesName": {
+      "de": "Flegmon",
+      "fr": "Ramoloss",
+      "en": "Slowpoke",
+      "es": "Slowpoke",
+      "th": "ยาดง",
+      "ja": "ヤドン",
+      "ko": "야돈",
+      "ru": "Слоупок",
+      "zh_hans": "呆呆兽",
+      "zh_hant": "呆呆獸"
+    }
   },
   "slowpoke_shadow": {
     "legal": false,
@@ -1682,6 +1693,17 @@
     ],
     "tags": [
       "shadow"
+    ]
+  },
+  "slowpoke_galarian": {
+    "legal": false,
+    "dex": 79,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "galarian"
     ]
   },
   "slowbro": {
@@ -1704,6 +1726,29 @@
     ],
     "tags": [
       "shadow"
+    ]
+  },
+  "slowbro_galarian": {
+    "legal": false,
+    "dex": 80,
+    "types": [
+      "poison",
+      "psychic"
+    ],
+    "tags": [
+      "galarian"
+    ]
+  },
+  "slowbro_mega": {
+    "legal": false,
+    "dex": 80,
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "tags": [
+      "mega",
+      "unreleased"
     ]
   },
   "magnemite": {
@@ -2282,6 +2327,20 @@
     "types": [
       "grass",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "tangela_shadow": {
+    "legal": false,
+    "dex": 114,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "kangaskhan": {
@@ -2301,6 +2360,20 @@
     "types": [
       "water",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "horsea_shadow": {
+    "legal": false,
+    "dex": 116,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "seadra": {
@@ -2309,6 +2382,20 @@
     "types": [
       "water",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "seadra_shadow": {
+    "legal": false,
+    "dex": 117,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "goldeen": {
@@ -3093,7 +3180,18 @@
       "water",
       "electric"
     ],
-    "speciesName": "Chinchou"
+    "speciesName": {
+      "de": "Lampi",
+      "fr": "Loupio",
+      "en": "Chinchou",
+      "es": "Chinchou",
+      "th": "ชอนชี",
+      "ja": "チョンチー",
+      "ko": "초라기",
+      "ru": "Чинчоу",
+      "zh_hans": "灯笼鱼",
+      "zh_hant": "燈籠魚"
+    }
   },
   "lanturn": {
     "legal": false,
@@ -3484,7 +3582,20 @@
       "dark",
       "flying"
     ],
-    "tags": []
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "murkrow_shadow": {
+    "legal": false,
+    "dex": 198,
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
+    ]
   },
   "slowking": {
     "legal": false,
@@ -3506,6 +3617,18 @@
     ],
     "tags": [
       "shadow"
+    ]
+  },
+  "slowking_galarian": {
+    "legal": false,
+    "dex": 199,
+    "types": [
+      "poison",
+      "psychic"
+    ],
+    "tags": [
+      "galarian",
+      "unreleased"
     ]
   },
   "misdreavus": {
@@ -3656,6 +3779,20 @@
     "types": [
       "fairy",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "snubbull_shadow": {
+    "legal": false,
+    "dex": 209,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "granbull": {
@@ -3664,6 +3801,20 @@
     "types": [
       "fairy",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "granbull_shadow": {
+    "legal": false,
+    "dex": 210,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "qwilfish": {
@@ -3996,6 +4147,20 @@
     "types": [
       "water",
       "dragon"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "kingdra_shadow": {
+    "legal": false,
+    "dex": 230,
+    "types": [
+      "water",
+      "dragon"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "phanpy": {
@@ -4279,7 +4444,20 @@
       "flying"
     ],
     "tags": [
-      "legendary"
+      "legendary",
+      "shadoweligible"
+    ]
+  },
+  "ho_oh_shadow": {
+    "legal": false,
+    "dex": 250,
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "tags": [
+      "legendary",
+      "shadow"
     ]
   },
   "celebi": {
@@ -4436,6 +4614,20 @@
     "types": [
       "dark",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "poochyena_shadow": {
+    "legal": false,
+    "dex": 261,
+    "types": [
+      "dark",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "mightyena": {
@@ -4444,6 +4636,20 @@
     "types": [
       "dark",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "mightyena_shadow": {
+    "legal": false,
+    "dex": 262,
+    "types": [
+      "dark",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "zigzagoon": {
@@ -4822,6 +5028,20 @@
     "types": [
       "fighting",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "makuhita_shadow": {
+    "legal": false,
+    "dex": 296,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "hariyama": {
@@ -4830,6 +5050,20 @@
     "types": [
       "fighting",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "hariyama_shadow": {
+    "legal": false,
+    "dex": 297,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "azurill": {
@@ -5010,6 +5244,20 @@
     "types": [
       "electric",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "electrike_shadow": {
+    "legal": false,
+    "dex": 309,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "manectric": {
@@ -5018,6 +5266,9 @@
     "types": [
       "electric",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
     ]
   },
   "manectric_mega": {
@@ -5029,6 +5280,17 @@
     ],
     "tags": [
       "mega"
+    ]
+  },
+  "manectric_shadow": {
+    "legal": false,
+    "dex": 310,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "plusle": {
@@ -5123,7 +5385,8 @@
       "dark"
     ],
     "tags": [
-      "shadoweligible"
+      "shadoweligible",
+      "include1500"
     ]
   },
   "sharpedo_shadow": {
@@ -5134,7 +5397,8 @@
       "dark"
     ],
     "tags": [
-      "shadow"
+      "shadow",
+      "include1500"
     ]
   },
   "wailmer": {
@@ -5144,7 +5408,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Wailmer"
+    "speciesName": {
+      "de": "Wailmer",
+      "fr": "Wailmer",
+      "en": "Wailmer",
+      "es": "Wailmer",
+      "th": "เวลโกะ",
+      "ja": "ホエルコ",
+      "ko": "고래왕자",
+      "ru": "Вэйлмер",
+      "zh_hans": "吼吼鲸",
+      "zh_hant": "吼吼鯨"
+    }
   },
   "wailord": {
     "legal": false,
@@ -5779,7 +6054,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Clamperl"
+    "speciesName": {
+      "de": "Perlu",
+      "fr": "Coquiperl",
+      "en": "Clamperl",
+      "es": "Clamperl",
+      "th": "ปาลูลุ",
+      "ja": "パールル",
+      "ko": "진주몽",
+      "ru": "Кламперл",
+      "zh_hans": "珍珠贝",
+      "zh_hant": "珍珠貝"
+    }
   },
   "huntail": {
     "legal": false,
@@ -6240,6 +6526,20 @@
     "types": [
       "normal",
       "flying"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "starly_shadow": {
+    "legal": false,
+    "dex": 396,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "staravia": {
@@ -6248,6 +6548,20 @@
     "types": [
       "normal",
       "flying"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "staravia_shadow": {
+    "legal": false,
+    "dex": 397,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "staraptor": {
@@ -6256,6 +6570,20 @@
     "types": [
       "normal",
       "flying"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "staraptor_shadow": {
+    "legal": false,
+    "dex": 398,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "bidoof": {
@@ -6264,6 +6592,20 @@
     "types": [
       "normal",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "bidoof_shadow": {
+    "legal": false,
+    "dex": 399,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "bibarel": {
@@ -6272,6 +6614,20 @@
     "types": [
       "normal",
       "water"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "bibarel_shadow": {
+    "legal": false,
+    "dex": 400,
+    "types": [
+      "normal",
+      "water"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "kricketot": {
@@ -6507,6 +6863,9 @@
     "types": [
       "water",
       "ground"
+    ],
+    "tags": [
+      "regional"
     ]
   },
   "gastrodon_west_sea": {
@@ -6515,6 +6874,9 @@
     "types": [
       "water",
       "ground"
+    ],
+    "tags": [
+      "regional"
     ]
   },
   "ambipom": {
@@ -6611,7 +6973,20 @@
       "dark",
       "flying"
     ],
-    "tags": []
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "honchkrow_shadow": {
+    "legal": false,
+    "dex": 430,
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "tags": [
+      "shadow"
+    ]
   },
   "glameow": {
     "legal": false,
@@ -6810,6 +7185,20 @@
     "types": [
       "poison",
       "bug"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "skorupi_shadow": {
+    "legal": false,
+    "dex": 451,
+    "types": [
+      "poison",
+      "bug"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "drapion": {
@@ -6818,6 +7207,20 @@
     "types": [
       "poison",
       "dark"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "drapion_shadow": {
+    "legal": false,
+    "dex": 452,
+    "types": [
+      "poison",
+      "dark"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "croagunk": {
@@ -6870,7 +7273,18 @@
       "water",
       "flying"
     ],
-    "speciesName": "Mantyke"
+    "speciesName": {
+      "de": "Mantirps",
+      "fr": "Babimanta",
+      "en": "Mantyke",
+      "es": "Mantyke",
+      "th": "ทาแมนทา",
+      "ja": "タマンタ",
+      "ko": "타만타",
+      "ru": "Мантик",
+      "zh_hans": "小球飞鱼",
+      "zh_hant": "小球飛魚"
+    }
   },
   "snover": {
     "legal": false,
@@ -6994,6 +7408,20 @@
     "types": [
       "grass",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "tangrowth_shadow": {
+    "legal": false,
+    "dex": 465,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "electivire": {
@@ -8320,7 +8748,18 @@
       "water",
       "rock"
     ],
-    "speciesName": "Tirtouga"
+    "speciesName": {
+      "de": "Galapaflos",
+      "fr": "Carapagos",
+      "en": "Tirtouga",
+      "es": "Tirtouga",
+      "th": "โปรโตกา",
+      "ja": "プロトーガ",
+      "ko": "프로토가",
+      "ru": "Тиртуга",
+      "zh_hans": "原盖海龟",
+      "zh_hant": "原蓋海龜"
+    }
   },
   "carracosta": {
     "legal": false,
@@ -8777,9 +9216,6 @@
     "types": [
       "fighting",
       "none"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "mienshao": {
@@ -8788,9 +9224,6 @@
     "types": [
       "fighting",
       "none"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "druddigon": {
@@ -9863,7 +10296,7 @@
       "flying"
     ],
     "tags": [
-      "unreleased"
+      "legendary"
     ]
   },
   "zygarde": {
@@ -9874,6 +10307,7 @@
       "ground"
     ],
     "tags": [
+      "legendary",
       "unreleased"
     ]
   },
