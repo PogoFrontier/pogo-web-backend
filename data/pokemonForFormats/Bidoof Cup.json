@@ -6565,47 +6565,51 @@
       "fastMoves": [
         {
           "moveId": "TAKE_DOWN",
-          "uses": 72
+          "uses": 88
         },
         {
           "moveId": "TACKLE",
-          "uses": 128
+          "uses": 112
         }
       ],
       "chargedMoves": [
         {
           "moveId": "THUNDERBOLT",
-          "uses": 28
-        },
-        {
-          "moveId": "SHADOW_BALL",
-          "uses": 6
-        },
-        {
-          "moveId": "RETURN",
           "uses": 16
         },
         {
+          "moveId": "SUPER_POWER",
+          "uses": 84
+        },
+        {
+          "moveId": "SHADOW_BALL",
+          "uses": 4
+        },
+        {
+          "moveId": "RETURN",
+          "uses": 10
+        },
+        {
           "moveId": "ICE_BEAM",
-          "uses": 28
+          "uses": 16
         },
         {
           "moveId": "HYPER_FANG",
-          "uses": 46
+          "uses": 26
         },
         {
           "moveId": "GRASS_KNOT",
-          "uses": 40
+          "uses": 24
         },
         {
           "moveId": "CRUNCH",
-          "uses": 38
+          "uses": 22
         }
       ]
     },
     "moveset": [
       "TACKLE",
-      "HYPER_FANG",
+      "SUPER_POWER",
       "CRUNCH"
     ]
   },
@@ -6636,33 +6640,37 @@
       "fastMoves": [
         {
           "moveId": "TAKE_DOWN",
-          "uses": 78
+          "uses": 100
         },
         {
           "moveId": "TACKLE",
-          "uses": 122
+          "uses": 100
         }
       ],
       "chargedMoves": [
         {
           "moveId": "THUNDERBOLT",
-          "uses": 30
+          "uses": 16
+        },
+        {
+          "moveId": "SUPER_POWER",
+          "uses": 88
         },
         {
           "moveId": "SHADOW_BALL",
-          "uses": 6
+          "uses": 4
         },
         {
           "moveId": "ICE_BEAM",
-          "uses": 30
+          "uses": 16
         },
         {
           "moveId": "HYPER_FANG",
-          "uses": 50
+          "uses": 28
         },
         {
           "moveId": "GRASS_KNOT",
-          "uses": 44
+          "uses": 24
         },
         {
           "moveId": "FRUSTRATION",
@@ -6670,7 +6678,7 @@
         },
         {
           "moveId": "CRUNCH",
-          "uses": 40
+          "uses": 22
         }
       ]
     },

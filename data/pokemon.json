@@ -24826,7 +24826,6 @@
       "mythical",
       "untradeable"
     ],
-    "levelCap": 40,
     "sid": 12352
   },
   "deoxys_attack": {
@@ -24866,7 +24865,6 @@
       "mythical",
       "untradeable"
     ],
-    "levelCap": 40,
     "sid": 12353
   },
   "deoxys_defense": {
@@ -24907,7 +24905,6 @@
       "untradeable"
     ],
     "searchPriority": 15,
-    "levelCap": 40,
     "sid": 12354
   },
   "deoxys_speed": {
@@ -24947,7 +24944,6 @@
       "mythical",
       "untradeable"
     ],
-    "levelCap": 40,
     "sid": 12355
   },
   "turtwig": {
@@ -25701,12 +25697,14 @@
       "HYPER_FANG",
       "ICE_BEAM",
       "THUNDERBOLT",
-      "SHADOW_BALL"
+      "SHADOW_BALL",
+      "SUPER_POWER"
     ],
     "eliteMoves": [
       "ICE_BEAM",
       "THUNDERBOLT",
-      "SHADOW_BALL"
+      "SHADOW_BALL",
+      "SUPER_POWER"
     ],
     "tags": [
       "shadoweligible"
@@ -31827,7 +31825,11 @@
       "HEAT_WAVE",
       "ROCK_SLIDE",
       "FOCUS_BLAST",
-      "FLAME_CHARGE"
+      "FLAME_CHARGE",
+      "BLAST_BURN"
+    ],
+    "eliteMoves": [
+      "BLAST_BURN"
     ],
     "tags": [
       "starter"
