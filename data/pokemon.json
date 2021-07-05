@@ -6453,6 +6453,44 @@
     ],
     "sid": 2528
   },
+  "slowpoke_galarian": {
+    "dex": 79,
+    "speciesName": {
+      "de": "Flegmon (Galar)",
+      "fr": "Ramoloss (Galarian)",
+      "en": "Slowpoke (Galarian)",
+      "es": "Slowpoke (Galar)",
+      "th": "ยาดง (Galarian)",
+      "ja": "ヤドン (Galarian)",
+      "ko": "야돈 (Galarian)",
+      "ru": "Слоупок (Galarian)",
+      "zh_hans": "呆呆兽 (Galarian)",
+      "zh_hant": "呆呆獸 (Galarian)"
+    },
+    "speciesId": "slowpoke_galarian",
+    "baseStats": {
+      "atk": 109,
+      "def": 98,
+      "hp": 207
+    },
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "fastMoves": [
+      "CONFUSION",
+      "IRON_TAIL"
+    ],
+    "chargedMoves": [
+      "SURF",
+      "PSYSHOCK",
+      "PSYCHIC"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "sid": 2529
+  },
   "slowbro": {
     "dex": 80,
     "speciesName": {
@@ -6529,6 +6567,83 @@
       "shadow"
     ],
     "sid": 2560
+  },
+  "slowbro_galarian": {
+    "dex": 80,
+    "speciesName": {
+      "de": "Lahmus (Galar)",
+      "fr": "Flagadoss (Galarian)",
+      "en": "Slowbro (Galarian)",
+      "es": "Slowbro (Galar)",
+      "th": "ยาโดรัน (Galarian)",
+      "ja": "ヤドラン (Galarian)",
+      "ko": "야도란 (Galarian)",
+      "ru": "Слоубро (Galarian)",
+      "zh_hans": "呆壳兽 (Galarian)",
+      "zh_hant": "呆殼獸 (Galarian)"
+    },
+    "speciesId": "slowbro_galarian",
+    "baseStats": {
+      "atk": 182,
+      "def": 156,
+      "hp": 216
+    },
+    "types": [
+      "poison",
+      "psychic"
+    ],
+    "fastMoves": [
+      "CONFUSION",
+      "POISON_JAB"
+    ],
+    "chargedMoves": [
+      "FOCUS_BLAST",
+      "PSYCHIC",
+      "SLUDGE_BOMB"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "sid": 2562
+  },
+  "slowbro_mega": {
+    "dex": 80,
+    "speciesName": {
+      "de": "Lahmus (Mega)",
+      "fr": "Flagadoss (Mega)",
+      "en": "Slowbro (Mega)",
+      "es": "Slowbro (Mega)",
+      "th": "ยาโดรัน (Mega)",
+      "ja": "ヤドラン (Mega)",
+      "ko": "야도란 (Mega)",
+      "ru": "Слоубро (Mega)",
+      "zh_hans": "呆壳兽 (Mega)",
+      "zh_hant": "呆殼獸 (Mega)"
+    },
+    "speciesId": "slowbro_mega",
+    "baseStats": {
+      "atk": 224,
+      "def": 259,
+      "hp": 216
+    },
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "fastMoves": [
+      "CONFUSION",
+      "WATER_GUN"
+    ],
+    "chargedMoves": [
+      "ICE_BEAM",
+      "PSYCHIC",
+      "WATER_PULSE"
+    ],
+    "tags": [
+      "mega",
+      "unreleased"
+    ],
+    "sid": 2561
   },
   "magnemite": {
     "dex": 81,
@@ -10924,7 +11039,6 @@
       "HURRICANE"
     ],
     "searchPriority": 6,
-    "levelCap": 40,
     "sid": 4608
   },
   "articuno_shadow": {
@@ -10970,7 +11084,6 @@
       "HURRICANE"
     ],
     "searchPriority": 6,
-    "levelCap": 40,
     "sid": 4608
   },
   "zapdos": {
@@ -11016,7 +11129,6 @@
     "eliteMoves": [
       "THUNDER_SHOCK"
     ],
-    "levelCap": 40,
     "sid": 4640
   },
   "zapdos_shadow": {
@@ -11061,7 +11173,6 @@
     "eliteMoves": [
       "THUNDER_SHOCK"
     ],
-    "levelCap": 40,
     "sid": 4640
   },
   "moltres": {
@@ -11107,7 +11218,6 @@
     "eliteMoves": [
       "SKY_ATTACK"
     ],
-    "levelCap": 40,
     "sid": 4672
   },
   "moltres_shadow": {
@@ -11152,7 +11262,6 @@
     "eliteMoves": [
       "SKY_ATTACK"
     ],
-    "levelCap": 40,
     "sid": 4672
   },
   "dratini": {
@@ -11452,7 +11561,6 @@
       "SHADOW_BALL",
       "HYPER_BEAM"
     ],
-    "levelCap": 40,
     "sid": 4800
   },
   "mewtwo_armored": {
@@ -11496,7 +11604,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 4800
   },
   "mewtwo_shadow": {
@@ -11546,7 +11653,6 @@
       "SHADOW_BALL",
       "HYPER_BEAM"
     ],
-    "levelCap": 40,
     "sid": 4800
   },
   "mew": {
@@ -14087,6 +14193,46 @@
     ],
     "sid": 6368
   },
+  "slowking_galarian": {
+    "dex": 199,
+    "speciesName": {
+      "de": "Laschoking (Galar)",
+      "fr": "Roigada (Galarian)",
+      "en": "Slowking (Galarian)",
+      "es": "Slowking (Galar)",
+      "th": "ยาโดคิง (Galarian)",
+      "ja": "ヤドキング (Galarian)",
+      "ko": "야도킹 (Galarian)",
+      "ru": "Слоукинг (Galarian)",
+      "zh_hans": "河马王 (Galarian)",
+      "zh_hant": "河馬王 (Galarian)"
+    },
+    "speciesId": "slowking_galarian",
+    "baseStats": {
+      "atk": 190,
+      "def": 180,
+      "hp": 216
+    },
+    "types": [
+      "poison",
+      "psychic"
+    ],
+    "fastMoves": [
+      "HEX",
+      "CONFUSION",
+      "ACID"
+    ],
+    "chargedMoves": [
+      "FUTURE_SIGHT",
+      "SHADOW_BALL",
+      "SLUDGE_WAVE"
+    ],
+    "tags": [
+      "galarian",
+      "unreleased"
+    ],
+    "sid": 6369
+  },
   "misdreavus": {
     "dex": 200,
     "speciesName": {
@@ -14738,6 +14884,7 @@
       "CRUNCH",
       "PLAY_ROUGH"
     ],
+    "searchPriority": 3,
     "level25CP": 1557,
     "tags": [
       "shadoweligible"
@@ -16885,7 +17032,6 @@
       "shadoweligible"
     ],
     "level25CP": 2160,
-    "levelCap": 40,
     "sid": 7776
   },
   "raikou_shadow": {
@@ -16926,7 +17072,6 @@
       "legendary",
       "shadow"
     ],
-    "levelCap": 40,
     "sid": 7776
   },
   "entei": {
@@ -16969,7 +17114,6 @@
       "shadoweligible"
     ],
     "level25CP": 2172,
-    "levelCap": 40,
     "sid": 7808
   },
   "entei_shadow": {
@@ -17011,7 +17155,6 @@
       "legendary",
       "shadow"
     ],
-    "levelCap": 40,
     "sid": 7808
   },
   "suicune": {
@@ -17088,7 +17231,6 @@
       "HIDDEN_POWER_WATER"
     ],
     "level25CP": 1846,
-    "levelCap": 40,
     "sid": 7840
   },
   "suicune_shadow": {
@@ -17164,7 +17306,6 @@
       "HIDDEN_POWER_STEEL",
       "HIDDEN_POWER_WATER"
     ],
-    "levelCap": 40,
     "sid": 7840
   },
   "larvitar": {
@@ -17448,7 +17589,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 7968
   },
   "ho_oh": {
@@ -17503,12 +17643,73 @@
       "EARTHQUAKE"
     ],
     "tags": [
-      "legendary"
+      "legendary",
+      "shadoweligible"
     ],
     "eliteMoves": [
       "EARTHQUAKE"
     ],
-    "levelCap": 40,
+    "level25CP": 2457,
+    "sid": 8000
+  },
+  "ho_oh_shadow": {
+    "dex": 250,
+    "speciesName": {
+      "de": "Ho-Oh (Schatten)",
+      "fr": "Ho-Oh (Ombre)",
+      "en": "Ho-Oh (Shadow)",
+      "es": "Ho-Oh (Oscuro)",
+      "th": "โฮโอ (Shadow)",
+      "ja": "ホウオウ (Shadow)",
+      "ko": "칠색조 (Shadow)",
+      "ru": "Хо-Ох (Shadow)",
+      "zh_hans": "凤王 (Shadow)",
+      "zh_hant": "鳳王 (Shadow)"
+    },
+    "speciesId": "ho_oh_shadow",
+    "baseStats": {
+      "atk": 239,
+      "def": 244,
+      "hp": 214
+    },
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "fastMoves": [
+      "EXTRASENSORY",
+      "HIDDEN_POWER_BUG",
+      "HIDDEN_POWER_DARK",
+      "HIDDEN_POWER_DRAGON",
+      "HIDDEN_POWER_ELECTRIC",
+      "HIDDEN_POWER_FIGHTING",
+      "HIDDEN_POWER_FIRE",
+      "HIDDEN_POWER_FLYING",
+      "HIDDEN_POWER_GHOST",
+      "HIDDEN_POWER_GRASS",
+      "HIDDEN_POWER_GROUND",
+      "HIDDEN_POWER_ICE",
+      "HIDDEN_POWER_POISON",
+      "HIDDEN_POWER_PSYCHIC",
+      "HIDDEN_POWER_ROCK",
+      "HIDDEN_POWER_STEEL",
+      "HIDDEN_POWER_WATER",
+      "STEEL_WING",
+      "INCINERATE"
+    ],
+    "chargedMoves": [
+      "BRAVE_BIRD",
+      "FIRE_BLAST",
+      "SOLAR_BEAM",
+      "EARTHQUAKE"
+    ],
+    "tags": [
+      "legendary",
+      "shadow"
+    ],
+    "eliteMoves": [
+      "EARTHQUAKE"
+    ],
     "sid": 8000
   },
   "celebi": {
@@ -24384,7 +24585,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 12160
   },
   "latios": {
@@ -24423,7 +24623,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 12192
   },
   "kyogre": {
@@ -24463,7 +24662,6 @@
       "legendary"
     ],
     "searchPriority": 10,
-    "levelCap": 40,
     "sid": 12224
   },
   "groudon": {
@@ -24507,7 +24705,6 @@
       "FIRE_PUNCH"
     ],
     "searchPriority": 20,
-    "levelCap": 40,
     "sid": 12256
   },
   "rayquaza": {
@@ -24629,7 +24826,6 @@
       "mythical",
       "untradeable"
     ],
-    "levelCap": 40,
     "sid": 12352
   },
   "deoxys_attack": {
@@ -24669,7 +24865,6 @@
       "mythical",
       "untradeable"
     ],
-    "levelCap": 40,
     "sid": 12353
   },
   "deoxys_defense": {
@@ -24710,7 +24905,6 @@
       "untradeable"
     ],
     "searchPriority": 15,
-    "levelCap": 40,
     "sid": 12354
   },
   "deoxys_speed": {
@@ -24750,7 +24944,6 @@
       "mythical",
       "untradeable"
     ],
-    "levelCap": 40,
     "sid": 12355
   },
   "turtwig": {
@@ -25501,8 +25694,69 @@
     "chargedMoves": [
       "CRUNCH",
       "GRASS_KNOT",
-      "HYPER_FANG"
+      "HYPER_FANG",
+      "ICE_BEAM",
+      "THUNDERBOLT",
+      "SHADOW_BALL",
+      "SUPER_POWER"
     ],
+    "eliteMoves": [
+      "ICE_BEAM",
+      "THUNDERBOLT",
+      "SHADOW_BALL",
+      "SUPER_POWER"
+    ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "level25CP": 385,
+    "sid": 12768
+  },
+  "bidoof_shadow": {
+    "dex": 399,
+    "speciesName": {
+      "de": "Bidiza (Schatten)",
+      "fr": "Keunotor (Ombre)",
+      "en": "Bidoof (Shadow)",
+      "es": "Bidoof (Oscuro)",
+      "th": "บิปปา (Shadow)",
+      "ja": "ビッパ (Shadow)",
+      "ko": "비버니 (Shadow)",
+      "ru": "Бидуф (Shadow)",
+      "zh_hans": "大牙狸 (Shadow)",
+      "zh_hant": "大牙狸 (Shadow)"
+    },
+    "speciesId": "bidoof_shadow",
+    "baseStats": {
+      "atk": 80,
+      "def": 73,
+      "hp": 153
+    },
+    "types": [
+      "normal",
+      "none"
+    ],
+    "fastMoves": [
+      "TACKLE",
+      "TAKE_DOWN"
+    ],
+    "chargedMoves": [
+      "CRUNCH",
+      "GRASS_KNOT",
+      "HYPER_FANG",
+      "ICE_BEAM",
+      "THUNDERBOLT",
+      "SHADOW_BALL"
+    ],
+    "eliteMoves": [
+      "ICE_BEAM",
+      "THUNDERBOLT",
+      "SHADOW_BALL"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "level25CP": 385,
     "sid": 12768
   },
   "bibarel": {
@@ -25538,6 +25792,49 @@
       "HYPER_FANG",
       "SURF"
     ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "level25CP": 1095,
+    "sid": 12800
+  },
+  "bibarel_shadow": {
+    "dex": 400,
+    "speciesName": {
+      "de": "Bidifas (Schatten)",
+      "fr": "Castorno (Ombre)",
+      "en": "Bibarel (Shadow)",
+      "es": "Bibarel (Oscuro)",
+      "th": "บีดารุ (Shadow)",
+      "ja": "ビーダル (Shadow)",
+      "ko": "비버통 (Shadow)",
+      "ru": "Бибарел (Shadow)",
+      "zh_hans": "大尾狸 (Shadow)",
+      "zh_hant": "大尾狸 (Shadow)"
+    },
+    "speciesId": "bibarel_shadow",
+    "baseStats": {
+      "atk": 162,
+      "def": 119,
+      "hp": 188
+    },
+    "types": [
+      "normal",
+      "water"
+    ],
+    "fastMoves": [
+      "TAKE_DOWN",
+      "WATER_GUN"
+    ],
+    "chargedMoves": [
+      "HYPER_BEAM",
+      "HYPER_FANG",
+      "SURF"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "level25CP": 1095,
     "sid": 12800
   },
   "kricketot": {
@@ -26641,6 +26938,9 @@
     "legacyMoves": [
       "EARTHQUAKE"
     ],
+    "tags": [
+      "regional"
+    ],
     "sid": 13537
   },
   "gastrodon_west_sea": {
@@ -26694,6 +26994,9 @@
     ],
     "legacyMoves": [
       "EARTHQUAKE"
+    ],
+    "tags": [
+      "regional"
     ],
     "sid": 13536
   },
@@ -29980,7 +30283,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 15360
   },
   "mesprit": {
@@ -30019,7 +30321,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 15392
   },
   "azelf": {
@@ -30058,7 +30359,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 15424
   },
   "dialga": {
@@ -30098,7 +30398,6 @@
       "legendary"
     ],
     "searchPriority": 20,
-    "levelCap": 40,
     "sid": 15456
   },
   "palkia": {
@@ -30138,7 +30437,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 15488
   },
   "heatran": {
@@ -30178,7 +30476,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 15520
   },
   "regigigas": {
@@ -30232,7 +30529,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 15552
   },
   "giratina_altered": {
@@ -30272,7 +30568,6 @@
       "legendary"
     ],
     "searchPriority": 32,
-    "levelCap": 40,
     "sid": 15584
   },
   "giratina_origin": {
@@ -30311,7 +30606,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 15585
   },
   "cresselia": {
@@ -30355,7 +30649,6 @@
       "GRASS_KNOT"
     ],
     "searchPriority": 32,
-    "levelCap": 40,
     "sid": 15616
   },
   "phione": {
@@ -31532,7 +31825,11 @@
       "HEAT_WAVE",
       "ROCK_SLIDE",
       "FOCUS_BLAST",
-      "FLAME_CHARGE"
+      "FLAME_CHARGE",
+      "BLAST_BURN"
+    ],
+    "eliteMoves": [
+      "BLAST_BURN"
     ],
     "tags": [
       "starter"
@@ -36793,7 +37090,6 @@
     "eliteMoves": [
       "SACRED_SWORD"
     ],
-    "levelCap": 40,
     "sid": 20416
   },
   "terrakion": {
@@ -36832,7 +37128,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 20448
   },
   "virizion": {
@@ -36871,7 +37166,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 20480
   },
   "tornadus_incarnate": {
@@ -37068,7 +37362,6 @@
       "legendary"
     ],
     "searchPriority": 4,
-    "levelCap": 40,
     "sid": 20576
   },
   "zekrom": {
@@ -37109,7 +37402,6 @@
       "legendary"
     ],
     "searchPriority": 2,
-    "levelCap": 40,
     "sid": 20608
   },
   "landorus_incarnate": {
@@ -37228,7 +37520,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 20672
   },
   "kyurem_black": {
@@ -37269,7 +37560,6 @@
       "legendary",
       "unreleased"
     ],
-    "levelCap": 40,
     "sid": 20674
   },
   "kyurem_white": {
@@ -37310,7 +37600,6 @@
       "legendary",
       "unreleased"
     ],
-    "levelCap": 40,
     "sid": 20673
   },
   "keldeo_ordinary": {
@@ -37506,7 +37795,6 @@
       "mythical",
       "untradeable"
     ],
-    "levelCap": 40,
     "sid": 20768
   },
   "genesect_burn": {
@@ -37550,7 +37838,6 @@
       "mythical",
       "untradeable"
     ],
-    "levelCap": 40,
     "sid": 20771
   },
   "genesect_chill": {
@@ -37591,7 +37878,6 @@
       "untradeable",
       "unreleased"
     ],
-    "levelCap": 40,
     "sid": 20772
   },
   "genesect_douse": {
@@ -37632,7 +37918,6 @@
       "untradeable",
       "unreleased"
     ],
-    "levelCap": 40,
     "sid": 20769
   },
   "genesect_shock": {
@@ -37673,7 +37958,6 @@
       "untradeable",
       "unreleased"
     ],
-    "levelCap": 40,
     "sid": 20770
   },
   "chespin": {
@@ -40353,7 +40637,6 @@
     "tags": [
       "mythical"
     ],
-    "levelCap": 40,
     "sid": 25856
   },
   "melmetal": {

@@ -4224,44 +4224,20 @@
     ]
   },
   "smoochum": {
-    "legal": true,
+    "legal": false,
     "dex": 238,
     "types": [
       "ice",
       "psychic"
-    ],
-    "speciesName": {
-      "de": "Kussilla",
-      "fr": "Lippouti",
-      "en": "Smoochum",
-      "es": "Smoochum",
-      "th": "มุจูล",
-      "ja": "ムチュール",
-      "ko": "뽀뽀라",
-      "ru": "Смучам",
-      "zh_hans": "迷唇娃",
-      "zh_hant": "迷唇娃"
-    }
+    ]
   },
   "elekid": {
-    "legal": true,
+    "legal": false,
     "dex": 239,
     "types": [
       "electric",
       "none"
-    ],
-    "speciesName": {
-      "de": "Elekid",
-      "fr": "Élekid",
-      "en": "Elekid",
-      "es": "Elekid",
-      "th": "เอเลคิด",
-      "ja": "エレキッド",
-      "ko": "에레키드",
-      "ru": "Элекид",
-      "zh_hans": "电击怪",
-      "zh_hant": "電擊怪"
-    }
+    ]
   },
   "magby": {
     "legal": false,
@@ -6563,7 +6539,7 @@
     ]
   },
   "bidoof": {
-    "legal": false,
+    "legal": true,
     "dex": 399,
     "types": [
       "normal",
@@ -6571,10 +6547,74 @@
     ],
     "tags": [
       "shadoweligible"
+    ],
+    "speciesName": {
+      "de": "Bidiza",
+      "fr": "Keunotor",
+      "en": "Bidoof",
+      "es": "Bidoof",
+      "th": "บิปปา",
+      "ja": "ビッパ",
+      "ko": "비버니",
+      "ru": "Бидуф",
+      "zh_hans": "大牙狸",
+      "zh_hant": "大牙狸"
+    },
+    "ranking": 500,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TAKE_DOWN",
+          "uses": 88
+        },
+        {
+          "moveId": "TACKLE",
+          "uses": 112
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 16
+        },
+        {
+          "moveId": "SUPER_POWER",
+          "uses": 84
+        },
+        {
+          "moveId": "SHADOW_BALL",
+          "uses": 4
+        },
+        {
+          "moveId": "RETURN",
+          "uses": 10
+        },
+        {
+          "moveId": "ICE_BEAM",
+          "uses": 16
+        },
+        {
+          "moveId": "HYPER_FANG",
+          "uses": 26
+        },
+        {
+          "moveId": "GRASS_KNOT",
+          "uses": 24
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 22
+        }
+      ]
+    },
+    "moveset": [
+      "TACKLE",
+      "SUPER_POWER",
+      "CRUNCH"
     ]
   },
   "bidoof_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 399,
     "types": [
       "normal",
@@ -6582,6 +6622,70 @@
     ],
     "tags": [
       "shadow"
+    ],
+    "speciesName": {
+      "de": "Bidiza (Schatten)",
+      "fr": "Keunotor (Ombre)",
+      "en": "Bidoof (Shadow)",
+      "es": "Bidoof (Oscuro)",
+      "th": "บิปปา (Shadow)",
+      "ja": "ビッパ (Shadow)",
+      "ko": "비버니 (Shadow)",
+      "ru": "Бидуф (Shadow)",
+      "zh_hans": "大牙狸 (Shadow)",
+      "zh_hant": "大牙狸 (Shadow)"
+    },
+    "ranking": 500,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TAKE_DOWN",
+          "uses": 100
+        },
+        {
+          "moveId": "TACKLE",
+          "uses": 100
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 16
+        },
+        {
+          "moveId": "SUPER_POWER",
+          "uses": 88
+        },
+        {
+          "moveId": "SHADOW_BALL",
+          "uses": 4
+        },
+        {
+          "moveId": "ICE_BEAM",
+          "uses": 16
+        },
+        {
+          "moveId": "HYPER_FANG",
+          "uses": 28
+        },
+        {
+          "moveId": "GRASS_KNOT",
+          "uses": 24
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 0
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 22
+        }
+      ]
+    },
+    "moveset": [
+      "TACKLE",
+      "CRUNCH",
+      "FRUSTRATION"
     ]
   },
   "bibarel": {
@@ -8636,24 +8740,12 @@
     ]
   },
   "dwebble": {
-    "legal": true,
+    "legal": false,
     "dex": 557,
     "types": [
       "bug",
       "rock"
-    ],
-    "speciesName": {
-      "de": "Lithomith",
-      "fr": "Crabicoque",
-      "en": "Dwebble",
-      "es": "Dwebble",
-      "th": "อิชิซึไม",
-      "ja": "イシズマイ",
-      "ko": "돌살이",
-      "ru": "Двэббл",
-      "zh_hans": "石居蟹",
-      "zh_hant": "石居蟹"
-    }
+    ]
   },
   "crustle": {
     "legal": false,
@@ -9753,24 +9845,12 @@
     ]
   },
   "litleo": {
-    "legal": true,
+    "legal": false,
     "dex": 667,
     "types": [
       "fire",
       "normal"
-    ],
-    "speciesName": {
-      "de": "Leufeo",
-      "fr": "Hélionceau",
-      "en": "Litleo",
-      "es": "Litleo",
-      "th": "ชิชิโกะ",
-      "ja": "シシコ",
-      "ko": "레오꼬",
-      "ru": "Литлео",
-      "zh_hans": "小狮狮",
-      "zh_hant": "小獅獅"
-    }
+    ]
   },
   "pyroar": {
     "legal": false,
@@ -9931,24 +10011,12 @@
     ]
   },
   "spritzee": {
-    "legal": true,
+    "legal": false,
     "dex": 682,
     "types": [
       "fairy",
       "none"
-    ],
-    "speciesName": {
-      "de": "Parfi",
-      "fr": "Fluvetin",
-      "en": "Spritzee",
-      "es": "Spritzee",
-      "th": "ชูชูป",
-      "ja": "シュシュプ",
-      "ko": "슈쁘",
-      "ru": "Спритзи",
-      "zh_hans": "粉香香",
-      "zh_hant": "粉香香"
-    }
+    ]
   },
   "aromatisse": {
     "legal": false,
@@ -10013,24 +10081,12 @@
     ]
   },
   "skrelp": {
-    "legal": true,
+    "legal": false,
     "dex": 690,
     "types": [
       "poison",
       "water"
-    ],
-    "speciesName": {
-      "de": "Algitt",
-      "fr": "Venalgue",
-      "en": "Skrelp",
-      "es": "Skrelp",
-      "th": "คูซูโม",
-      "ja": "クズモー",
-      "ko": "수레기",
-      "ru": "Скрельп",
-      "zh_hans": "垃垃藻",
-      "zh_hant": "垃垃藻"
-    }
+    ]
   },
   "dragalge": {
     "legal": false,

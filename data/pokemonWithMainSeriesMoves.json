@@ -13238,6 +13238,76 @@
     ],
     "sid": 2528
   },
+  "slowpoke_galarian": {
+    "dex": 79,
+    "speciesName": {
+      "de": "Flegmon (Galar)",
+      "fr": "Ramoloss (Galarian)",
+      "en": "Slowpoke (Galarian)",
+      "es": "Slowpoke (Galar)",
+      "th": "ยาดง (Galarian)",
+      "ja": "ヤドン (Galarian)",
+      "ko": "야돈 (Galarian)",
+      "ru": "Слоупок (Galarian)",
+      "zh_hans": "呆呆兽 (Galarian)",
+      "zh_hant": "呆呆獸 (Galarian)"
+    },
+    "speciesId": "slowpoke_galarian",
+    "baseStats": {
+      "atk": 109,
+      "def": 98,
+      "hp": 207
+    },
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "fastMoves": [
+      "ACID",
+      "CONFUSION",
+      "IRON_TAIL",
+      "MUD_SHOT",
+      "TACKLE",
+      "WEATHER_BALL_FIRE",
+      "WEATHER_BALL_ICE",
+      "WEATHER_BALL_ROCK",
+      "WEATHER_BALL_NORMAL",
+      "WEATHER_BALL_WATER",
+      "YAWN",
+      "ZEN_HEADBUTT"
+    ],
+    "chargedMoves": [
+      "BLIZZARD",
+      "BODY_SLAM",
+      "BRINE",
+      "BULLDOZE",
+      "DIG",
+      "EARTHQUAKE",
+      "FIRE_BLAST",
+      "FLAMETHROWER",
+      "FOUL_PLAY",
+      "FUTURE_SIGHT",
+      "GRASS_KNOT",
+      "HYDRO_PUMP",
+      "ICE_BEAM",
+      "ICY_WIND",
+      "PSYCHIC",
+      "PSYSHOCK",
+      "REST",
+      "SCALD",
+      "SHADOW_BALL",
+      "STOMP",
+      "SURF",
+      "SWIFT",
+      "TRI_ATTACK",
+      "WATER_PULSE",
+      "STRUGGLE"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "sid": 2529
+  },
   "slowbro": {
     "dex": 80,
     "speciesName": {
@@ -13458,6 +13528,197 @@
       "shadow"
     ],
     "sid": 2560
+  },
+  "slowbro_galarian": {
+    "dex": 80,
+    "speciesName": {
+      "de": "Lahmus (Galar)",
+      "fr": "Flagadoss (Galarian)",
+      "en": "Slowbro (Galarian)",
+      "es": "Slowbro (Galar)",
+      "th": "ยาโดรัน (Galarian)",
+      "ja": "ヤドラン (Galarian)",
+      "ko": "야도란 (Galarian)",
+      "ru": "Слоубро (Galarian)",
+      "zh_hans": "呆壳兽 (Galarian)",
+      "zh_hant": "呆殼獸 (Galarian)"
+    },
+    "speciesId": "slowbro_galarian",
+    "baseStats": {
+      "atk": 182,
+      "def": 156,
+      "hp": 216
+    },
+    "types": [
+      "poison",
+      "psychic"
+    ],
+    "fastMoves": [
+      "ACID",
+      "CONFUSION",
+      "IRON_TAIL",
+      "MUD_SHOT",
+      "POISON_JAB",
+      "TACKLE",
+      "WATER_GUN",
+      "WEATHER_BALL_FIRE",
+      "WEATHER_BALL_ICE",
+      "WEATHER_BALL_ROCK",
+      "WEATHER_BALL_NORMAL",
+      "WEATHER_BALL_WATER",
+      "YAWN",
+      "ZEN_HEADBUTT"
+    ],
+    "chargedMoves": [
+      "AVALANCHE",
+      "BLIZZARD",
+      "BODY_SLAM",
+      "BRICK_BREAK",
+      "BRINE",
+      "BULLDOZE",
+      "DIG",
+      "EARTHQUAKE",
+      "FIRE_BLAST",
+      "FLAMETHROWER",
+      "FOCUS_BLAST",
+      "FOUL_PLAY",
+      "FUTURE_SIGHT",
+      "GIGA_IMPACT",
+      "GRASS_KNOT",
+      "HYDRO_PUMP",
+      "HYPER_BEAM",
+      "ICE_BEAM",
+      "ICE_PUNCH",
+      "ICY_WIND",
+      "MUDDY_WATER",
+      "PSYCHIC",
+      "PSYSHOCK",
+      "REST",
+      "SCALD",
+      "SHADOW_BALL",
+      "SLUDGE_BOMB",
+      "SLUDGE_WAVE",
+      "SURF",
+      "SWIFT",
+      "TRI_ATTACK",
+      "WATER_PULSE",
+      "STRUGGLE"
+    ],
+    "tags": [
+      "galarian"
+    ],
+    "sid": 2562
+  },
+  "slowbro_mega": {
+    "dex": 80,
+    "speciesName": {
+      "de": "Lahmus (Mega)",
+      "fr": "Flagadoss (Mega)",
+      "en": "Slowbro (Mega)",
+      "es": "Slowbro (Mega)",
+      "th": "ยาโดรัน (Mega)",
+      "ja": "ヤドラン (Mega)",
+      "ko": "야도란 (Mega)",
+      "ru": "Слоубро (Mega)",
+      "zh_hans": "呆壳兽 (Mega)",
+      "zh_hant": "呆殼獸 (Mega)"
+    },
+    "speciesId": "slowbro_mega",
+    "baseStats": {
+      "atk": 224,
+      "def": 259,
+      "hp": 216
+    },
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "fastMoves": [
+      "CONFUSION",
+      "COUNTER",
+      "FURY_CUTTER",
+      "HIDDEN_POWER_BUG",
+      "HIDDEN_POWER_DARK",
+      "HIDDEN_POWER_DRAGON",
+      "HIDDEN_POWER_ELECTRIC",
+      "HIDDEN_POWER_FIGHTING",
+      "HIDDEN_POWER_FIRE",
+      "HIDDEN_POWER_FLYING",
+      "HIDDEN_POWER_GHOST",
+      "HIDDEN_POWER_GRASS",
+      "HIDDEN_POWER_GROUND",
+      "HIDDEN_POWER_ICE",
+      "HIDDEN_POWER_NORMAL",
+      "HIDDEN_POWER_POISON",
+      "HIDDEN_POWER_PSYCHIC",
+      "HIDDEN_POWER_ROCK",
+      "HIDDEN_POWER_STEEL",
+      "HIDDEN_POWER_WATER",
+      "INCINERATE",
+      "IRON_TAIL",
+      "MUD_SHOT",
+      "MUD_SLAP",
+      "ROCK_SMASH",
+      "TACKLE",
+      "TAKE_DOWN",
+      "WATER_GUN",
+      "WEATHER_BALL_FIRE",
+      "WEATHER_BALL_ICE",
+      "WEATHER_BALL_ROCK",
+      "WEATHER_BALL_NORMAL",
+      "WEATHER_BALL_WATER",
+      "YAWN",
+      "ZEN_HEADBUTT"
+    ],
+    "chargedMoves": [
+      "AERIAL_ACE",
+      "AQUA_TAIL",
+      "AVALANCHE",
+      "BLIZZARD",
+      "BODY_SLAM",
+      "BRICK_BREAK",
+      "BRINE",
+      "BUBBLE_BEAM",
+      "BULLDOZE",
+      "DIG",
+      "DYNAMIC_PUNCH",
+      "EARTHQUAKE",
+      "FIRE_BLAST",
+      "FLAMETHROWER",
+      "FOCUS_BLAST",
+      "FOUL_PLAY",
+      "FRUSTRATION",
+      "FUTURE_SIGHT",
+      "GIGA_IMPACT",
+      "GRASS_KNOT",
+      "HYDRO_PUMP",
+      "HYPER_BEAM",
+      "ICE_BEAM",
+      "ICE_PUNCH",
+      "ICY_WIND",
+      "MUDDY_WATER",
+      "PSYCHIC",
+      "PSYSHOCK",
+      "REST",
+      "RETURN",
+      "SCALD",
+      "SHADOW_BALL",
+      "SIGNAL_BEAM",
+      "SKULL_BASH",
+      "STOMP",
+      "SUBMISSION",
+      "SURF",
+      "SWIFT",
+      "TRI_ATTACK",
+      "WATER_PULSE",
+      "ZAP_CANNON",
+      "STRUGGLE"
+    ],
+    "tags": [
+      "mega",
+      "unreleased"
+    ],
+    "sid": 2561
   },
   "magnemite": {
     "dex": 81,
@@ -22010,7 +22271,6 @@
     ],
     "level25CP": 1893,
     "searchPriority": 6,
-    "levelCap": 40,
     "sid": 4608
   },
   "articuno_shadow": {
@@ -22104,7 +22364,6 @@
       "shadow"
     ],
     "searchPriority": 6,
-    "levelCap": 40,
     "sid": 4608
   },
   "zapdos": {
@@ -22195,7 +22454,6 @@
       "shadoweligible"
     ],
     "level25CP": 2208,
-    "levelCap": 40,
     "sid": 4640
   },
   "zapdos_shadow": {
@@ -22285,7 +22543,6 @@
       "legendary",
       "shadow"
     ],
-    "levelCap": 40,
     "sid": 4640
   },
   "moltres": {
@@ -22377,7 +22634,6 @@
       "shadoweligible"
     ],
     "level25CP": 2167,
-    "levelCap": 40,
     "sid": 4672
   },
   "moltres_shadow": {
@@ -22468,7 +22724,6 @@
       "legendary",
       "shadow"
     ],
-    "levelCap": 40,
     "sid": 4672
   },
   "dratini": {
@@ -23160,7 +23415,6 @@
       "shadoweligible"
     ],
     "level25CP": 2641,
-    "levelCap": 40,
     "sid": 4800
   },
   "mewtwo_armored": {
@@ -23275,7 +23529,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 4800
   },
   "mewtwo_shadow": {
@@ -23391,7 +23644,6 @@
       "legendary",
       "shadow"
     ],
-    "levelCap": 40,
     "sid": 4800
   },
   "mew": {
@@ -28619,6 +28871,87 @@
     ],
     "sid": 6368
   },
+  "slowking_galarian": {
+    "dex": 199,
+    "speciesName": {
+      "de": "Laschoking (Galar)",
+      "fr": "Roigada (Galarian)",
+      "en": "Slowking (Galarian)",
+      "es": "Slowking (Galar)",
+      "th": "ยาโดคิง (Galarian)",
+      "ja": "ヤドキング (Galarian)",
+      "ko": "야도킹 (Galarian)",
+      "ru": "Слоукинг (Galarian)",
+      "zh_hans": "河马王 (Galarian)",
+      "zh_hant": "河馬王 (Galarian)"
+    },
+    "speciesId": "slowking_galarian",
+    "baseStats": {
+      "atk": 190,
+      "def": 180,
+      "hp": 216
+    },
+    "types": [
+      "poison",
+      "psychic"
+    ],
+    "fastMoves": [
+      "ACID",
+      "CONFUSION",
+      "HEX",
+      "IRON_TAIL",
+      "MUD_SHOT",
+      "TACKLE",
+      "WEATHER_BALL_FIRE",
+      "WEATHER_BALL_ICE",
+      "WEATHER_BALL_ROCK",
+      "WEATHER_BALL_NORMAL",
+      "WEATHER_BALL_WATER",
+      "YAWN",
+      "ZEN_HEADBUTT"
+    ],
+    "chargedMoves": [
+      "AVALANCHE",
+      "BLIZZARD",
+      "BODY_SLAM",
+      "BRICK_BREAK",
+      "BRINE",
+      "BULLDOZE",
+      "DIG",
+      "EARTHQUAKE",
+      "FIRE_BLAST",
+      "FLAMETHROWER",
+      "FOCUS_BLAST",
+      "FOUL_PLAY",
+      "FUTURE_SIGHT",
+      "GIGA_IMPACT",
+      "GRASS_KNOT",
+      "HYDRO_PUMP",
+      "HYPER_BEAM",
+      "ICE_BEAM",
+      "ICE_PUNCH",
+      "ICY_WIND",
+      "MUDDY_WATER",
+      "POWER_GEM",
+      "PSYCHIC",
+      "PSYSHOCK",
+      "REST",
+      "SCALD",
+      "SHADOW_BALL",
+      "SLUDGE_BOMB",
+      "SLUDGE_WAVE",
+      "SURF",
+      "SWIFT",
+      "TRI_ATTACK",
+      "WATER_PULSE",
+      "STRUGGLE"
+    ],
+    "tags": [
+      "galarian",
+      "unreleased"
+    ],
+    "sid": 6369
+  },
   "misdreavus": {
     "dex": 200,
     "speciesName": {
@@ -29922,6 +30255,7 @@
       "ZAP_CANNON",
       "STRUGGLE"
     ],
+    "searchPriority": 3,
     "level25CP": 1557,
     "tags": [
       "shadoweligible"
@@ -34191,7 +34525,6 @@
       "shadoweligible"
     ],
     "level25CP": 2160,
-    "levelCap": 40,
     "sid": 7776
   },
   "raikou_shadow": {
@@ -34282,7 +34615,6 @@
       "legendary",
       "shadow"
     ],
-    "levelCap": 40,
     "sid": 7776
   },
   "entei": {
@@ -34373,7 +34705,6 @@
       "shadoweligible"
     ],
     "level25CP": 2172,
-    "levelCap": 40,
     "sid": 7808
   },
   "entei_shadow": {
@@ -34463,7 +34794,6 @@
       "legendary",
       "shadow"
     ],
-    "levelCap": 40,
     "sid": 7808
   },
   "suicune": {
@@ -34560,7 +34890,6 @@
       "shadoweligible"
     ],
     "level25CP": 1846,
-    "levelCap": 40,
     "sid": 7840
   },
   "suicune_shadow": {
@@ -34656,7 +34985,6 @@
       "legendary",
       "shadow"
     ],
-    "levelCap": 40,
     "sid": 7840
   },
   "larvitar": {
@@ -35333,7 +35661,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 7968
   },
   "ho_oh": {
@@ -35431,9 +35758,110 @@
       "STRUGGLE"
     ],
     "tags": [
-      "legendary"
+      "legendary",
+      "shadoweligible"
     ],
-    "levelCap": 40,
+    "level25CP": 2457,
+    "sid": 8000
+  },
+  "ho_oh_shadow": {
+    "dex": 250,
+    "speciesName": {
+      "de": "Ho-Oh (Schatten)",
+      "fr": "Ho-Oh (Ombre)",
+      "en": "Ho-Oh (Shadow)",
+      "es": "Ho-Oh (Oscuro)",
+      "th": "โฮโอ (Shadow)",
+      "ja": "ホウオウ (Shadow)",
+      "ko": "칠색조 (Shadow)",
+      "ru": "Хо-Ох (Shadow)",
+      "zh_hans": "凤王 (Shadow)",
+      "zh_hant": "鳳王 (Shadow)"
+    },
+    "speciesId": "ho_oh_shadow",
+    "baseStats": {
+      "atk": 239,
+      "def": 244,
+      "hp": 214
+    },
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "fastMoves": [
+      "AIR_SLASH",
+      "CHARGE_BEAM",
+      "DRAGON_BREATH",
+      "EXTRASENSORY",
+      "FIRE_SPIN",
+      "GUST",
+      "HIDDEN_POWER_BUG",
+      "HIDDEN_POWER_DARK",
+      "HIDDEN_POWER_DRAGON",
+      "HIDDEN_POWER_ELECTRIC",
+      "HIDDEN_POWER_FIGHTING",
+      "HIDDEN_POWER_FIRE",
+      "HIDDEN_POWER_FLYING",
+      "HIDDEN_POWER_GHOST",
+      "HIDDEN_POWER_GRASS",
+      "HIDDEN_POWER_GROUND",
+      "HIDDEN_POWER_ICE",
+      "HIDDEN_POWER_NORMAL",
+      "HIDDEN_POWER_POISON",
+      "HIDDEN_POWER_PSYCHIC",
+      "HIDDEN_POWER_ROCK",
+      "HIDDEN_POWER_STEEL",
+      "HIDDEN_POWER_WATER",
+      "INCINERATE",
+      "MUD_SLAP",
+      "ROCK_SMASH",
+      "STEEL_WING",
+      "WEATHER_BALL_FIRE",
+      "WEATHER_BALL_ICE",
+      "WEATHER_BALL_ROCK",
+      "WEATHER_BALL_NORMAL",
+      "WEATHER_BALL_WATER",
+      "ZEN_HEADBUTT"
+    ],
+    "chargedMoves": [
+      "AERIAL_ACE",
+      "AIR_CUTTER",
+      "ANCIENT_POWER",
+      "BRAVE_BIRD",
+      "BULLDOZE",
+      "EARTH_POWER",
+      "EARTHQUAKE",
+      "FIRE_BLAST",
+      "FLAME_CHARGE",
+      "FLAMETHROWER",
+      "FLY",
+      "FRUSTRATION",
+      "FUTURE_SIGHT",
+      "GIGA_DRAIN",
+      "GIGA_IMPACT",
+      "HEAT_WAVE",
+      "HYPER_BEAM",
+      "IRON_HEAD",
+      "OMINOUS_WIND",
+      "OVERHEAT",
+      "PSYCHIC",
+      "REST",
+      "RETURN",
+      "SHADOW_BALL",
+      "SIGNAL_BEAM",
+      "SKY_ATTACK",
+      "SOLAR_BEAM",
+      "SWIFT",
+      "THUNDER",
+      "THUNDERBOLT",
+      "TWISTER",
+      "ZAP_CANNON",
+      "STRUGGLE"
+    ],
+    "tags": [
+      "legendary",
+      "shadow"
+    ],
     "sid": 8000
   },
   "celebi": {
@@ -50081,7 +50509,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 12160
   },
   "latios": {
@@ -50177,7 +50604,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 12192
   },
   "kyogre": {
@@ -50263,7 +50689,6 @@
       "legendary"
     ],
     "searchPriority": 10,
-    "levelCap": 40,
     "sid": 12224
   },
   "groudon": {
@@ -50360,7 +50785,6 @@
       "legendary"
     ],
     "searchPriority": 20,
-    "levelCap": 40,
     "sid": 12256
   },
   "rayquaza": {
@@ -50658,7 +51082,6 @@
       "mythical",
       "untradeable"
     ],
-    "levelCap": 40,
     "sid": 12352
   },
   "deoxys_attack": {
@@ -50759,7 +51182,6 @@
       "mythical",
       "untradeable"
     ],
-    "levelCap": 40,
     "sid": 12353
   },
   "deoxys_defense": {
@@ -50861,7 +51283,6 @@
       "untradeable"
     ],
     "searchPriority": 15,
-    "levelCap": 40,
     "sid": 12354
   },
   "deoxys_speed": {
@@ -50962,7 +51383,6 @@
       "mythical",
       "untradeable"
     ],
-    "levelCap": 40,
     "sid": 12355
   },
   "turtwig": {
@@ -52442,6 +52862,90 @@
       "THUNDERBOLT",
       "STRUGGLE"
     ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "level25CP": 385,
+    "sid": 12768
+  },
+  "bidoof_shadow": {
+    "dex": 399,
+    "speciesName": {
+      "de": "Bidiza (Schatten)",
+      "fr": "Keunotor (Ombre)",
+      "en": "Bidoof (Shadow)",
+      "es": "Bidoof (Oscuro)",
+      "th": "บิปปา (Shadow)",
+      "ja": "ビッパ (Shadow)",
+      "ko": "비버니 (Shadow)",
+      "ru": "Бидуф (Shadow)",
+      "zh_hans": "大牙狸 (Shadow)",
+      "zh_hant": "大牙狸 (Shadow)"
+    },
+    "speciesId": "bidoof_shadow",
+    "baseStats": {
+      "atk": 80,
+      "def": 73,
+      "hp": 153
+    },
+    "types": [
+      "normal",
+      "none"
+    ],
+    "fastMoves": [
+      "CHARGE_BEAM",
+      "CUT",
+      "FURY_CUTTER",
+      "HIDDEN_POWER_BUG",
+      "HIDDEN_POWER_DARK",
+      "HIDDEN_POWER_DRAGON",
+      "HIDDEN_POWER_ELECTRIC",
+      "HIDDEN_POWER_FIGHTING",
+      "HIDDEN_POWER_FIRE",
+      "HIDDEN_POWER_FLYING",
+      "HIDDEN_POWER_GHOST",
+      "HIDDEN_POWER_GRASS",
+      "HIDDEN_POWER_GROUND",
+      "HIDDEN_POWER_ICE",
+      "HIDDEN_POWER_NORMAL",
+      "HIDDEN_POWER_POISON",
+      "HIDDEN_POWER_PSYCHIC",
+      "HIDDEN_POWER_ROCK",
+      "HIDDEN_POWER_STEEL",
+      "HIDDEN_POWER_WATER",
+      "IRON_TAIL",
+      "MUD_SLAP",
+      "QUICK_ATTACK",
+      "ROCK_SMASH",
+      "TACKLE",
+      "TAKE_DOWN",
+      "YAWN"
+    ],
+    "chargedMoves": [
+      "AQUA_TAIL",
+      "BLIZZARD",
+      "CRUNCH",
+      "DIG",
+      "FRUSTRATION",
+      "GRASS_KNOT",
+      "HYPER_FANG",
+      "ICE_BEAM",
+      "ICY_WIND",
+      "LAST_RESORT",
+      "REST",
+      "RETURN",
+      "SHADOW_BALL",
+      "SKULL_BASH",
+      "SUPER_POWER",
+      "SWIFT",
+      "THUNDER",
+      "THUNDERBOLT",
+      "STRUGGLE"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "level25CP": 385,
     "sid": 12768
   },
   "bibarel": {
@@ -52525,6 +53029,97 @@
       "WATER_PULSE",
       "STRUGGLE"
     ],
+    "tags": [
+      "shadoweligible"
+    ],
+    "level25CP": 1095,
+    "sid": 12800
+  },
+  "bibarel_shadow": {
+    "dex": 400,
+    "speciesName": {
+      "de": "Bidifas (Schatten)",
+      "fr": "Castorno (Ombre)",
+      "en": "Bibarel (Shadow)",
+      "es": "Bibarel (Oscuro)",
+      "th": "บีดารุ (Shadow)",
+      "ja": "ビーダル (Shadow)",
+      "ko": "비버통 (Shadow)",
+      "ru": "Бибарел (Shadow)",
+      "zh_hans": "大尾狸 (Shadow)",
+      "zh_hant": "大尾狸 (Shadow)"
+    },
+    "speciesId": "bibarel_shadow",
+    "baseStats": {
+      "atk": 162,
+      "def": 119,
+      "hp": 188
+    },
+    "types": [
+      "normal",
+      "water"
+    ],
+    "fastMoves": [
+      "CHARGE_BEAM",
+      "CUT",
+      "FURY_CUTTER",
+      "HIDDEN_POWER_BUG",
+      "HIDDEN_POWER_DARK",
+      "HIDDEN_POWER_DRAGON",
+      "HIDDEN_POWER_ELECTRIC",
+      "HIDDEN_POWER_FIGHTING",
+      "HIDDEN_POWER_FIRE",
+      "HIDDEN_POWER_FLYING",
+      "HIDDEN_POWER_GHOST",
+      "HIDDEN_POWER_GRASS",
+      "HIDDEN_POWER_GROUND",
+      "HIDDEN_POWER_ICE",
+      "HIDDEN_POWER_NORMAL",
+      "HIDDEN_POWER_POISON",
+      "HIDDEN_POWER_PSYCHIC",
+      "HIDDEN_POWER_ROCK",
+      "HIDDEN_POWER_STEEL",
+      "HIDDEN_POWER_WATER",
+      "IRON_TAIL",
+      "MUD_SLAP",
+      "ROCK_SMASH",
+      "TACKLE",
+      "TAKE_DOWN",
+      "WATERFALL",
+      "WATER_GUN",
+      "YAWN"
+    ],
+    "chargedMoves": [
+      "AQUA_JET",
+      "AQUA_TAIL",
+      "BLIZZARD",
+      "BULLDOZE",
+      "CRUNCH",
+      "DIG",
+      "FRUSTRATION",
+      "GIGA_IMPACT",
+      "GRASS_KNOT",
+      "HYPER_BEAM",
+      "HYPER_FANG",
+      "ICE_BEAM",
+      "ICY_WIND",
+      "LAST_RESORT",
+      "REST",
+      "RETURN",
+      "SCALD",
+      "SHADOW_BALL",
+      "SUPER_POWER",
+      "SURF",
+      "SWIFT",
+      "THUNDER",
+      "THUNDERBOLT",
+      "WATER_PULSE",
+      "STRUGGLE"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "level25CP": 1095,
     "sid": 12800
   },
   "kricketot": {
@@ -54550,6 +55145,9 @@
     "legacyMoves": [
       "EARTHQUAKE"
     ],
+    "tags": [
+      "regional"
+    ],
     "sid": 13537
   },
   "gastrodon_west_sea": {
@@ -54638,6 +55236,9 @@
     ],
     "legacyMoves": [
       "EARTHQUAKE"
+    ],
+    "tags": [
+      "regional"
     ],
     "sid": 13536
   },
@@ -61557,7 +62158,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 15360
   },
   "mesprit": {
@@ -61644,7 +62244,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 15392
   },
   "azelf": {
@@ -61733,7 +62332,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 15424
   },
   "dialga": {
@@ -61829,7 +62427,6 @@
       "legendary"
     ],
     "searchPriority": 20,
-    "levelCap": 40,
     "sid": 15456
   },
   "palkia": {
@@ -61926,7 +62523,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 15488
   },
   "heatran": {
@@ -62012,7 +62608,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 15520
   },
   "regigigas": {
@@ -62098,7 +62693,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 15552
   },
   "giratina_altered": {
@@ -62196,7 +62790,6 @@
       "legendary"
     ],
     "searchPriority": 32,
-    "levelCap": 40,
     "sid": 15584
   },
   "giratina_origin": {
@@ -62293,7 +62886,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 15585
   },
   "cresselia": {
@@ -62372,7 +62964,6 @@
       "legendary"
     ],
     "searchPriority": 32,
-    "levelCap": 40,
     "sid": 15616
   },
   "phione": {
@@ -76011,7 +76602,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 20416
   },
   "terrakion": {
@@ -76093,7 +76683,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 20448
   },
   "virizion": {
@@ -76173,7 +76762,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 20480
   },
   "tornadus_incarnate": {
@@ -76622,7 +77210,6 @@
       "legendary"
     ],
     "searchPriority": 4,
-    "levelCap": 40,
     "sid": 20576
   },
   "zekrom": {
@@ -76717,7 +77304,6 @@
       "legendary"
     ],
     "searchPriority": 2,
-    "levelCap": 40,
     "sid": 20608
   },
   "landorus_incarnate": {
@@ -76981,7 +77567,6 @@
     "tags": [
       "legendary"
     ],
-    "levelCap": 40,
     "sid": 20672
   },
   "kyurem_black": {
@@ -77072,7 +77657,6 @@
       "legendary",
       "unreleased"
     ],
-    "levelCap": 40,
     "sid": 20674
   },
   "kyurem_white": {
@@ -77163,7 +77747,6 @@
       "legendary",
       "unreleased"
     ],
-    "levelCap": 40,
     "sid": 20673
   },
   "keldeo_ordinary": {
@@ -77592,7 +78175,6 @@
       "mythical",
       "untradeable"
     ],
-    "levelCap": 40,
     "sid": 20768
   },
   "genesect_burn": {
@@ -77687,7 +78269,6 @@
       "mythical",
       "untradeable"
     ],
-    "levelCap": 40,
     "sid": 20771
   },
   "genesect_chill": {
@@ -77783,7 +78364,6 @@
       "untradeable",
       "unreleased"
     ],
-    "levelCap": 40,
     "sid": 20772
   },
   "genesect_douse": {
@@ -77879,7 +78459,6 @@
       "untradeable",
       "unreleased"
     ],
-    "levelCap": 40,
     "sid": 20769
   },
   "genesect_shock": {
@@ -77975,7 +78554,6 @@
       "untradeable",
       "unreleased"
     ],
-    "levelCap": 40,
     "sid": 20770
   },
   "chespin": {
@@ -83392,7 +83970,6 @@
     "tags": [
       "mythical"
     ],
-    "levelCap": 40,
     "sid": 25856
   },
   "melmetal": {
