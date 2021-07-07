@@ -306,6 +306,73 @@ router.post('/request/deny',
             }
         }
     }
-)
+);
+
+// @desc Delete a friend from both users' friend lists
+// @route GET /api/users/unfriend
+// @access Protected
+router.post('/unfriend', 
+    (req, res, next) => protect(req, res, next),
+    (req: any, res) => {
+        if(req.body.googleId){
+            const userID = req.user.googleId;
+            const friendID = req.body.googleId;
+            try{
+                const userDocRef = firestore.collection('users').doc(userID)
+                const friendDocRef = firestore.collection('users').doc(friendID)
+                userDocRef.get().then((userToUpdate: any) => {
+                    if(userToUpdate.data()){
+                        friendDocRef.get().then((friendToUpdate: any) => {
+                            const usersList: string[] = userToUpdate.data().friends || [];
+                            const friendsList: string[] = friendToUpdate.data().friends || [];
+                            if(
+                                usersList.includes(friendID) &&
+                                friendsList.includes(userID)
+                            ){
+                                userDocRef.update({
+                                    friends: usersList.splice(usersList.indexOf(friendID))
+                                }).then(() => {
+                                    console.log('updated users friend list');
+                                    friendDocRef.update({
+                                        friends: friendsList.splice(friendsList.indexOf(userID))
+                                    }).then(() => {
+                                        console.log('updated friends friend list');
+                                        res.sendStatus(200);
+                                    }).catch(err => {
+                                        console.log(err);
+                                        res.status(500).json({error: "Internal server error"})
+                                    });
+                                }).catch(err => {
+                                    console.log(err);
+                                    res.status(500).json({error: "Internal server error"})
+                                });
+                            } else {
+                                console.log('Attempted to delete friend that does not exist');
+                                res.status(400).json({error: "User to delete not found."})
+                            }
+                        }).catch(err => {
+                            console.log(err);
+                            res.status(500).json({error: "Internal server error"})
+                        })
+                    } else {
+                        res.status(500).json({error: "Internal server error"})
+                    }
+                }).catch(err => {
+                    console.log(err);
+                    res.status(500).json({error: "Internal server error"})
+                })
+            }catch(err){
+                console.log(err);
+                res.status(400).json({error: "User not found."})
+            }
+        }
+    }
+);
+
+//search for user by NCS username
+//store recently played users
+//get profile details for a friend (user?)
+//send/accept/deny battle challenge (include format) (and team?)
+
 
 export default router;
