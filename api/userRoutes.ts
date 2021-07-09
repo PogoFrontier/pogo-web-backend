@@ -70,14 +70,21 @@ router.post('/', async (req, res) => {
                 if(user.data()){
                     res.status(401).json({error: 'User already exists.'});
                 }else{
+                    const un = username ? username : userAuth.displayName //.sanitize
                     docRef.set({
                         googleId: userAuth.uid,
-                        displayName: username ? username : userAuth.displayName,
+                        username: un,
+                        usernameNCS: un.toLowerCase(),
                         email: userAuth.email,
                         teams: teams ? teams : [],
                         friends: [],
                         requests: [],
                         challenges: [],
+                        rank: 0,
+                        achievements: [],
+                        battleBackground: 'default',
+                        profilePic: 'default',
+                        favorite: null,
                         createdAt: Date.now(),
                         lastLogin: Date.now(),
                         isDeleted: false
@@ -145,7 +152,7 @@ router.get('/friends',
     (req: any, res) => {
         const collRef = firestore.collection('users');
         collRef.where('friends', 'array-contains', req.user.googleId)
-        .select("displayName", "lastLogin").get().then(querySnapshot => {
+        .select("username", "lastLogin").get().then(querySnapshot => {
             if(querySnapshot.size > 0)
                 res.json(querySnapshot.docs.map(doc => doc.data()));
             else
@@ -370,9 +377,63 @@ router.post('/unfriend',
 );
 
 //search for user by NCS username
+
+router.get('/search/:username', (req: any, res) => {
+    var name = JSON.stringify(req.params.username);
+    name = JSON.parse(name.toLowerCase());
+    const collRef = firestore.collection('users');
+    collRef.where('usernameNCS', '>=', name).where('usernameNCS', '<=', name+'\uf8ff')
+    .get().then(querySnapshot => {
+        if(querySnapshot.size > 0)
+            res.json(querySnapshot.docs.map(doc => doc.data().username));
+        else
+            res.json([]);
+    }).catch(err => {
+        console.log(err);
+        res.status(500).json({error: "Internal server error"})
+    });
+})
+
 //store recently played users
+
+//put with /api/room/data/:id
+
 //get profile details for a friend (user?)
+router.get('/friend/details/:uid', (req, res) => {
+    try{
+        firestore.collection('users').doc(req.params.uid).get().then((docSnapshot: any) => {
+            if(docSnapshot.exists){
+                const {
+                    username,
+                    rank,
+                    achievements,
+                    profilePic,
+                    favorite
+                } = docSnapshot.data();
+                res.json({
+                    username,
+                    rank,
+                    achievements,
+                    profilePic,
+                    favorite
+                });
+            }else{
+                res.status(400).json({error: "User not found."})
+            }
+        }).catch(err => {
+            console.log(err);
+            res.status(500).json({error: "Internal server error"})
+        });
+    }catch(err){
+        console.log(err);
+        res.status(500).json({error: "Internal server error"})
+    }
+});
+
 //send/accept/deny battle challenge (include format) (and team?)
+
+//update displayName creation on frontend to query for existing usernames and modify username if necessary,
+//also sanitize string
 
 
 export default router;
