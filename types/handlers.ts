@@ -70,5 +70,6 @@ type a = typeof Actions
 export interface Anim {
   move?: Move,
   type: "faint" | a["FAST_ATTACK"] | a["CHARGE_ATTACK"] | a["SWITCH"],
-  turn?: number
+  turn?: number,
+  id: string
 }
