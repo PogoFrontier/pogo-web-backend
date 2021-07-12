@@ -14,6 +14,10 @@ export interface Selector extends rule.Selector {}
 export interface SlotRule extends rule.SlotRule {}
 export interface RuleFlags extends rule.Flags {}
 export interface AdvancedRuleOptions extends rule.AdvancedOptions {}
+export interface MoveAnim extends room.MoveAnim {}
+export interface MoveAnimParticle extends room.MoveAnimParticle {}
+export interface ParticleCoords extends room.ParticleCoords {}
+export interface ParticleKeyframes extends room.ParticleKeyframes {}
 export interface Room extends room.Room {}
 export interface Move extends room.Move {}
 export interface OnGetOpponentPayload extends handlers.OnGetOpponentPayload {}

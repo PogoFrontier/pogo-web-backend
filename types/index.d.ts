@@ -6,6 +6,8 @@ export interface TeamMember extends team.TeamMember {
 }
 export interface Current extends team.Current {
 }
+export interface Pokemon extends team.Pokemon {
+}
 export interface Rule extends rule.Rule {
 }
 export interface TurnAction extends room.TurnAction {
@@ -22,6 +24,14 @@ export interface SlotRule extends rule.SlotRule {
 export interface RuleFlags extends rule.Flags {
 }
 export interface AdvancedRuleOptions extends rule.AdvancedOptions {
+}
+export interface MoveAnim extends room.MoveAnim {
+}
+export interface MoveAnimParticle extends room.MoveAnimParticle {
+}
+export interface ParticleCoords extends room.ParticleCoords {
+}
+export interface ParticleKeyframes extends room.ParticleKeyframes {
 }
 export interface Room extends room.Room {
 }
