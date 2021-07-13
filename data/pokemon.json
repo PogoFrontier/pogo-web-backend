@@ -2102,6 +2102,107 @@
     ],
     "sid": 814
   },
+  "pikachu_kariyushi": {
+    "dex": 25,
+    "speciesName": {},
+    "speciesId": "pikachu_kariyushi",
+    "baseStats": {
+      "atk": 112,
+      "def": 96,
+      "hp": 111
+    },
+    "types": [
+      "electric",
+      "none"
+    ],
+    "fastMoves": [
+      "THUNDER_SHOCK",
+      "QUICK_ATTACK"
+    ],
+    "chargedMoves": [
+      "DISCHARGE",
+      "THUNDERBOLT",
+      "WILD_CHARGE"
+    ],
+    "sid": 812
+  },
+  "pikachu_pop_star": {
+    "dex": 25,
+    "speciesName": {},
+    "speciesId": "pikachu_pop_star",
+    "baseStats": {
+      "atk": 112,
+      "def": 96,
+      "hp": 111
+    },
+    "types": [
+      "electric",
+      "none"
+    ],
+    "fastMoves": [
+      "THUNDER_SHOCK",
+      "CHARM"
+    ],
+    "chargedMoves": [
+      "DRAINING_KISS",
+      "THUNDER_PUNCH",
+      "PLAY_ROUGH"
+    ],
+    "sid": 812
+  },
+  "pikachu_rock_star": {
+    "dex": 25,
+    "speciesName": {},
+    "speciesId": "pikachu_rock_star",
+    "baseStats": {
+      "atk": 112,
+      "def": 96,
+      "hp": 111
+    },
+    "types": [
+      "electric",
+      "none"
+    ],
+    "fastMoves": [
+      "THUNDER_SHOCK",
+      "CHARM"
+    ],
+    "chargedMoves": [
+      "METEOR_MASH",
+      "THUNDER_PUNCH",
+      "PLAY_ROUGH"
+    ],
+    "sid": 810
+  },
+  "pikachu_5th_anniversary": {
+    "dex": 25,
+    "speciesName": {},
+    "speciesId": "pikachu_5th_anniversary",
+    "baseStats": {
+      "atk": 112,
+      "def": 96,
+      "hp": 111
+    },
+    "types": [
+      "electric",
+      "none"
+    ],
+    "fastMoves": [
+      "THUNDER_SHOCK",
+      "QUICK_ATTACK",
+      "PRESENT"
+    ],
+    "chargedMoves": [
+      "DISCHARGE",
+      "THUNDERBOLT",
+      "WILD_CHARGE",
+      "FLY"
+    ],
+    "eliteMoves": [
+      "PRESENT"
+    ],
+    "sid": 812
+  },
   "raichu": {
     "dex": 26,
     "speciesName": {
