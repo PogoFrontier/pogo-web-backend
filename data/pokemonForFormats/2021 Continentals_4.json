@@ -554,6 +554,38 @@
       "none"
     ]
   },
+  "pikachu_kariyushi": {
+    "legal": false,
+    "dex": 25,
+    "types": [
+      "electric",
+      "none"
+    ]
+  },
+  "pikachu_pop_star": {
+    "legal": false,
+    "dex": 25,
+    "types": [
+      "electric",
+      "none"
+    ]
+  },
+  "pikachu_rock_star": {
+    "legal": false,
+    "dex": 25,
+    "types": [
+      "electric",
+      "none"
+    ]
+  },
+  "pikachu_5th_anniversary": {
+    "legal": false,
+    "dex": 25,
+    "types": [
+      "electric",
+      "none"
+    ]
+  },
   "raichu": {
     "legal": false,
     "dex": 26,
@@ -6539,7 +6571,7 @@
     ]
   },
   "bidoof": {
-    "legal": true,
+    "legal": false,
     "dex": 399,
     "types": [
       "normal",
@@ -6547,74 +6579,10 @@
     ],
     "tags": [
       "shadoweligible"
-    ],
-    "speciesName": {
-      "de": "Bidiza",
-      "fr": "Keunotor",
-      "en": "Bidoof",
-      "es": "Bidoof",
-      "th": "บิปปา",
-      "ja": "ビッパ",
-      "ko": "비버니",
-      "ru": "Бидуф",
-      "zh_hans": "大牙狸",
-      "zh_hant": "大牙狸"
-    },
-    "ranking": 500,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "TAKE_DOWN",
-          "uses": 88
-        },
-        {
-          "moveId": "TACKLE",
-          "uses": 112
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "THUNDERBOLT",
-          "uses": 16
-        },
-        {
-          "moveId": "SUPER_POWER",
-          "uses": 84
-        },
-        {
-          "moveId": "SHADOW_BALL",
-          "uses": 4
-        },
-        {
-          "moveId": "RETURN",
-          "uses": 10
-        },
-        {
-          "moveId": "ICE_BEAM",
-          "uses": 16
-        },
-        {
-          "moveId": "HYPER_FANG",
-          "uses": 26
-        },
-        {
-          "moveId": "GRASS_KNOT",
-          "uses": 24
-        },
-        {
-          "moveId": "CRUNCH",
-          "uses": 22
-        }
-      ]
-    },
-    "moveset": [
-      "TACKLE",
-      "SUPER_POWER",
-      "CRUNCH"
     ]
   },
   "bidoof_shadow": {
-    "legal": true,
+    "legal": false,
     "dex": 399,
     "types": [
       "normal",
@@ -6622,70 +6590,6 @@
     ],
     "tags": [
       "shadow"
-    ],
-    "speciesName": {
-      "de": "Bidiza (Schatten)",
-      "fr": "Keunotor (Ombre)",
-      "en": "Bidoof (Shadow)",
-      "es": "Bidoof (Oscuro)",
-      "th": "บิปปา (Shadow)",
-      "ja": "ビッパ (Shadow)",
-      "ko": "비버니 (Shadow)",
-      "ru": "Бидуф (Shadow)",
-      "zh_hans": "大牙狸 (Shadow)",
-      "zh_hant": "大牙狸 (Shadow)"
-    },
-    "ranking": 500,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "TAKE_DOWN",
-          "uses": 100
-        },
-        {
-          "moveId": "TACKLE",
-          "uses": 100
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "THUNDERBOLT",
-          "uses": 16
-        },
-        {
-          "moveId": "SUPER_POWER",
-          "uses": 88
-        },
-        {
-          "moveId": "SHADOW_BALL",
-          "uses": 4
-        },
-        {
-          "moveId": "ICE_BEAM",
-          "uses": 16
-        },
-        {
-          "moveId": "HYPER_FANG",
-          "uses": 28
-        },
-        {
-          "moveId": "GRASS_KNOT",
-          "uses": 24
-        },
-        {
-          "moveId": "FRUSTRATION",
-          "uses": 0
-        },
-        {
-          "moveId": "CRUNCH",
-          "uses": 22
-        }
-      ]
-    },
-    "moveset": [
-      "TACKLE",
-      "CRUNCH",
-      "FRUSTRATION"
     ]
   },
   "bibarel": {
@@ -8136,7 +8040,7 @@
     ]
   },
   "victini": {
-    "legal": false,
+    "legal": true,
     "dex": 494,
     "types": [
       "psychic",
@@ -8145,10 +8049,59 @@
     "tags": [
       "mythical",
       "untradeable"
+    ],
+    "speciesName": {
+      "de": "Victini",
+      "fr": "Victini",
+      "en": "Victini",
+      "es": "Victini",
+      "th": "วิคทินี",
+      "ja": "ビクティニ",
+      "ko": "비크티니",
+      "ru": "Виктини",
+      "zh_hans": "比克提尼",
+      "zh_hant": "比克提尼"
+    },
+    "price": 3,
+    "ranking": 585,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "QUICK_ATTACK",
+          "uses": 52377
+        },
+        {
+          "moveId": "CONFUSION",
+          "uses": 63023
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "V_CREATE",
+          "uses": 72345
+        },
+        {
+          "moveId": "PSYCHIC",
+          "uses": 21268
+        },
+        {
+          "moveId": "OVERHEAT",
+          "uses": 8325
+        },
+        {
+          "moveId": "FOCUS_BLAST",
+          "uses": 13364
+        }
+      ]
+    },
+    "moveset": [
+      "CONFUSION",
+      "V_CREATE",
+      "PSYCHIC"
     ]
   },
   "snivy": {
-    "legal": false,
+    "legal": true,
     "dex": 495,
     "types": [
       "grass",
@@ -8156,10 +8109,22 @@
     ],
     "tags": [
       "starter"
-    ]
+    ],
+    "speciesName": {
+      "de": "Serpifeu",
+      "fr": "Vipélierre",
+      "en": "Snivy",
+      "es": "Snivy",
+      "th": "ซึทาจะ",
+      "ja": "ツタージャ",
+      "ko": "주리비얀",
+      "ru": "Снайви",
+      "zh_hans": "藤藤蛇",
+      "zh_hant": "藤藤蛇"
+    }
   },
   "servine": {
-    "legal": false,
+    "legal": true,
     "dex": 496,
     "types": [
       "grass",
@@ -8167,10 +8132,54 @@
     ],
     "tags": [
       "starter"
+    ],
+    "speciesName": {
+      "de": "Efoserp",
+      "fr": "Lianaja",
+      "en": "Servine",
+      "es": "Servine",
+      "th": "จาโนวี",
+      "ja": "ジャノビー",
+      "ko": "샤비",
+      "ru": "Сервайн",
+      "zh_hans": "青藤蛇",
+      "zh_hant": "青藤蛇"
+    },
+    "ranking": 619,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "VINE_WHIP",
+          "uses": 95002
+        },
+        {
+          "moveId": "IRON_TAIL",
+          "uses": 20398
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "WRAP",
+          "uses": 26709
+        },
+        {
+          "moveId": "LEAF_TORNADO",
+          "uses": 43653
+        },
+        {
+          "moveId": "GRASS_KNOT",
+          "uses": 44959
+        }
+      ]
+    },
+    "moveset": [
+      "VINE_WHIP",
+      "GRASS_KNOT",
+      "LEAF_TORNADO"
     ]
   },
   "serperior": {
-    "legal": false,
+    "legal": true,
     "dex": 497,
     "types": [
       "grass",
@@ -8178,10 +8187,59 @@
     ],
     "tags": [
       "starter"
+    ],
+    "speciesName": {
+      "de": "Serpiroyal",
+      "fr": "Majaspic",
+      "en": "Serperior",
+      "es": "Serperior",
+      "th": "จาโลดา",
+      "ja": "ジャローダ",
+      "ko": "샤로다",
+      "ru": "Серпериор",
+      "zh_hans": "君主蛇",
+      "zh_hant": "君主蛇"
+    },
+    "price": 3,
+    "ranking": 610,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "VINE_WHIP",
+          "uses": 100505
+        },
+        {
+          "moveId": "IRON_TAIL",
+          "uses": 14895
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "LEAF_TORNADO",
+          "uses": 27276
+        },
+        {
+          "moveId": "GRASS_KNOT",
+          "uses": 13882
+        },
+        {
+          "moveId": "FRENZY_PLANT",
+          "uses": 52737
+        },
+        {
+          "moveId": "AERIAL_ACE",
+          "uses": 21311
+        }
+      ]
+    },
+    "moveset": [
+      "VINE_WHIP",
+      "FRENZY_PLANT",
+      "AERIAL_ACE"
     ]
   },
   "tepig": {
-    "legal": false,
+    "legal": true,
     "dex": 498,
     "types": [
       "fire",
@@ -8189,10 +8247,22 @@
     ],
     "tags": [
       "starter"
-    ]
+    ],
+    "speciesName": {
+      "de": "Floink",
+      "fr": "Gruikui",
+      "en": "Tepig",
+      "es": "Tepig",
+      "th": "โพคาบู",
+      "ja": "ポカブ",
+      "ko": "뚜꾸리",
+      "ru": "Тепиг",
+      "zh_hans": "暖暖猪",
+      "zh_hant": "暖暖豬"
+    }
   },
   "pignite": {
-    "legal": false,
+    "legal": true,
     "dex": 499,
     "types": [
       "fire",
@@ -8200,10 +8270,54 @@
     ],
     "tags": [
       "starter"
+    ],
+    "speciesName": {
+      "de": "Ferkokel",
+      "fr": "Grotichon",
+      "en": "Pignite",
+      "es": "Pignite",
+      "th": "จาโอบู",
+      "ja": "チャオブー",
+      "ko": "차오꿀",
+      "ru": "Пигнайт",
+      "zh_hans": "炒炒猪",
+      "zh_hant": "炒炒豬"
+    },
+    "ranking": 520,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TACKLE",
+          "uses": 27249
+        },
+        {
+          "moveId": "EMBER",
+          "uses": 88151
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ROCK_TOMB",
+          "uses": 22975
+        },
+        {
+          "moveId": "FLAME_CHARGE",
+          "uses": 65255
+        },
+        {
+          "moveId": "FLAMETHROWER",
+          "uses": 27263
+        }
+      ]
+    },
+    "moveset": [
+      "EMBER",
+      "FLAME_CHARGE",
+      "FLAMETHROWER"
     ]
   },
   "emboar": {
-    "legal": false,
+    "legal": true,
     "dex": 500,
     "types": [
       "fire",
@@ -8211,10 +8325,62 @@
     ],
     "tags": [
       "starter"
+    ],
+    "speciesName": {
+      "de": "Flambirex",
+      "fr": "Roitiflam",
+      "en": "Emboar",
+      "es": "Emboar",
+      "th": "เอ็นบูโอ",
+      "ja": "エンブオー",
+      "ko": "염무왕",
+      "ru": "Эмбор",
+      "zh_hans": "炎武王",
+      "zh_hant": "炎武王"
+    },
+    "ranking": 493,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "LOW_KICK",
+          "uses": 23153
+        },
+        {
+          "moveId": "EMBER",
+          "uses": 92247
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ROCK_SLIDE",
+          "uses": 29790
+        },
+        {
+          "moveId": "HEAT_WAVE",
+          "uses": 3539
+        },
+        {
+          "moveId": "FOCUS_BLAST",
+          "uses": 20743
+        },
+        {
+          "moveId": "FLAME_CHARGE",
+          "uses": 13186
+        },
+        {
+          "moveId": "BLAST_BURN",
+          "uses": 48036
+        }
+      ]
+    },
+    "moveset": [
+      "EMBER",
+      "BLAST_BURN",
+      "ROCK_SLIDE"
     ]
   },
   "oshawott": {
-    "legal": false,
+    "legal": true,
     "dex": 501,
     "types": [
       "water",
@@ -8222,10 +8388,22 @@
     ],
     "tags": [
       "starter"
-    ]
+    ],
+    "speciesName": {
+      "de": "Ottaro",
+      "fr": "Moustillon",
+      "en": "Oshawott",
+      "es": "Oshawott",
+      "th": "มิจูมารุ",
+      "ja": "ミジュマル",
+      "ko": "수댕이",
+      "ru": "Ошавотт",
+      "zh_hans": "水水獭",
+      "zh_hant": "水水獺"
+    }
   },
   "dewott": {
-    "legal": false,
+    "legal": true,
     "dex": 502,
     "types": [
       "water",
@@ -8233,10 +8411,54 @@
     ],
     "tags": [
       "starter"
+    ],
+    "speciesName": {
+      "de": "Zwottronin",
+      "fr": "Mateloutre",
+      "en": "Dewott",
+      "es": "Dewott",
+      "th": "ฟุตาจิมารุ",
+      "ja": "フタチマル",
+      "ko": "쌍검자비",
+      "ru": "Девотт",
+      "zh_hans": "双刃丸",
+      "zh_hant": "雙刃丸"
+    },
+    "ranking": 563,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "WATER_GUN",
+          "uses": 56769
+        },
+        {
+          "moveId": "FURY_CUTTER",
+          "uses": 58631
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "X_SCISSOR",
+          "uses": 38512
+        },
+        {
+          "moveId": "WATER_PULSE",
+          "uses": 7694
+        },
+        {
+          "moveId": "AQUA_TAIL",
+          "uses": 69082
+        }
+      ]
+    },
+    "moveset": [
+      "FURY_CUTTER",
+      "AQUA_TAIL",
+      "X_SCISSOR"
     ]
   },
   "samurott": {
-    "legal": false,
+    "legal": true,
     "dex": 503,
     "types": [
       "water",
@@ -8244,66 +8466,330 @@
     ],
     "tags": [
       "starter"
+    ],
+    "speciesName": {
+      "de": "Admurai",
+      "fr": "Clamiral",
+      "en": "Samurott",
+      "es": "Samurott",
+      "th": "ไดเคนคิ",
+      "ja": "ダイケンキ",
+      "ko": "대검귀",
+      "ru": "Самуротт",
+      "zh_hans": "大剑鬼",
+      "zh_hant": "大劍鬼"
+    },
+    "ranking": 401,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "WATERFALL",
+          "uses": 55779
+        },
+        {
+          "moveId": "FURY_CUTTER",
+          "uses": 59621
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "MEGAHORN",
+          "uses": 44474
+        },
+        {
+          "moveId": "HYDRO_PUMP",
+          "uses": 38824
+        },
+        {
+          "moveId": "BLIZZARD",
+          "uses": 32045
+        }
+      ]
+    },
+    "moveset": [
+      "FURY_CUTTER",
+      "MEGAHORN",
+      "HYDRO_PUMP"
     ]
   },
   "patrat": {
-    "legal": false,
+    "legal": true,
     "dex": 504,
     "types": [
       "normal",
       "none"
-    ]
+    ],
+    "speciesName": {
+      "de": "Nagelotz",
+      "fr": "Ratentif",
+      "en": "Patrat",
+      "es": "Patrat",
+      "th": "มิเนซูมิ",
+      "ja": "ミネズミ",
+      "ko": "보르쥐",
+      "ru": "Патрат",
+      "zh_hans": "探探鼠",
+      "zh_hant": "探探鼠"
+    }
   },
   "watchog": {
-    "legal": false,
+    "legal": true,
     "dex": 505,
     "types": [
       "normal",
       "none"
+    ],
+    "speciesName": {
+      "de": "Kukmarda",
+      "fr": "Miradar",
+      "en": "Watchog",
+      "es": "Watchog",
+      "th": "มิรูฮอก",
+      "ja": "ミルホッグ",
+      "ko": "보르그",
+      "ru": "Уочхог",
+      "zh_hans": "步哨鼠",
+      "zh_hant": "步哨鼠"
+    },
+    "ranking": 447,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "LOW_KICK",
+          "uses": 37178
+        },
+        {
+          "moveId": "BITE",
+          "uses": 78222
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "HYPER_FANG",
+          "uses": 38689
+        },
+        {
+          "moveId": "GRASS_KNOT",
+          "uses": 38712
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 38009
+        }
+      ]
+    },
+    "moveset": [
+      "BITE",
+      "GRASS_KNOT",
+      "HYPER_FANG"
     ]
   },
   "lillipup": {
-    "legal": false,
+    "legal": true,
     "dex": 506,
     "types": [
       "normal",
       "none"
-    ]
+    ],
+    "speciesName": {
+      "de": "Yorkleff",
+      "fr": "Ponchiot",
+      "en": "Lillipup",
+      "es": "Lillipup",
+      "th": "โยเทอรี",
+      "ja": "ヨーテリー",
+      "ko": "요테리",
+      "ru": "Лиллипап",
+      "zh_hans": "小约克",
+      "zh_hant": "小約克"
+    }
   },
   "herdier": {
-    "legal": false,
+    "legal": true,
     "dex": 507,
     "types": [
       "normal",
       "none"
+    ],
+    "speciesName": {
+      "de": "Terribark",
+      "fr": "Ponchien",
+      "en": "Herdier",
+      "es": "Herdier",
+      "th": "เฮอเดอเรีย",
+      "ja": "ハーデリア",
+      "ko": "하데리어",
+      "ru": "Хердиер",
+      "zh_hans": "哈约克",
+      "zh_hant": "哈約克"
+    },
+    "ranking": 367,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TAKE_DOWN",
+          "uses": 29835
+        },
+        {
+          "moveId": "LICK",
+          "uses": 85565
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 53118
+        },
+        {
+          "moveId": "PLAY_ROUGH",
+          "uses": 40991
+        },
+        {
+          "moveId": "DIG",
+          "uses": 21344
+        }
+      ]
+    },
+    "moveset": [
+      "LICK",
+      "THUNDERBOLT",
+      "PLAY_ROUGH"
     ]
   },
   "stoutland": {
-    "legal": false,
+    "legal": true,
     "dex": 508,
     "types": [
       "normal",
       "none"
+    ],
+    "speciesName": {
+      "de": "Bissbark",
+      "fr": "Mastouffe",
+      "en": "Stoutland",
+      "es": "Stoutland",
+      "th": "มูแลนด์",
+      "ja": "ムーランド",
+      "ko": "바랜드",
+      "ru": "Стаутлэнд",
+      "zh_hans": "长毛狗",
+      "zh_hant": "長毛狗"
+    },
+    "ranking": 413,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TAKE_DOWN",
+          "uses": 14507
+        },
+        {
+          "moveId": "LICK",
+          "uses": 53634
+        },
+        {
+          "moveId": "ICE_FANG",
+          "uses": 47298
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "WILD_CHARGE",
+          "uses": 61469
+        },
+        {
+          "moveId": "PLAY_ROUGH",
+          "uses": 19339
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 34500
+        }
+      ]
+    },
+    "moveset": [
+      "LICK",
+      "WILD_CHARGE",
+      "CRUNCH"
     ]
   },
   "purrloin": {
-    "legal": false,
+    "legal": true,
     "dex": 509,
     "types": [
       "dark",
       "none"
-    ]
+    ],
+    "speciesName": {
+      "de": "Felilou",
+      "fr": "Chacripan",
+      "en": "Purrloin",
+      "es": "Purrloin",
+      "th": "โจโรเนโกะ",
+      "ja": "チョロネコ",
+      "ko": "쌔비냥",
+      "ru": "Пуррлойн",
+      "zh_hans": "扒手猫",
+      "zh_hant": "扒手貓"
+    }
   },
   "liepard": {
-    "legal": false,
+    "legal": true,
     "dex": 510,
     "types": [
       "dark",
       "none"
+    ],
+    "speciesName": {
+      "de": "Kleoparda",
+      "fr": "Léopardus",
+      "en": "Liepard",
+      "es": "Liepard",
+      "th": "เลพัลดัส",
+      "ja": "レパルダス",
+      "ko": "레파르다스",
+      "ru": "Лайпард",
+      "zh_hans": "酷豹",
+      "zh_hant": "酷豹"
+    },
+    "ranking": 450,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SNARL",
+          "uses": 70876
+        },
+        {
+          "moveId": "CHARM",
+          "uses": 44524
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "PLAY_ROUGH",
+          "uses": 25226
+        },
+        {
+          "moveId": "PAYBACK",
+          "uses": 22740
+        },
+        {
+          "moveId": "GUNK_SHOT",
+          "uses": 17062
+        },
+        {
+          "moveId": "DARK_PULSE",
+          "uses": 50252
+        }
+      ]
+    },
+    "moveset": [
+      "SNARL",
+      "DARK_PULSE",
+      "PLAY_ROUGH"
     ]
   },
   "pansage": {
-    "legal": false,
+    "legal": true,
     "dex": 511,
     "types": [
       "grass",
@@ -8311,10 +8797,22 @@
     ],
     "tags": [
       "regional"
-    ]
+    ],
+    "speciesName": {
+      "de": "Vegimak",
+      "fr": "Feuillajou",
+      "en": "Pansage",
+      "es": "Pansage",
+      "th": "ยานัปปุ",
+      "ja": "ヤナップ",
+      "ko": "야나프",
+      "ru": "Пансейдж",
+      "zh_hans": "花椰猴",
+      "zh_hant": "花椰猴"
+    }
   },
   "simisage": {
-    "legal": false,
+    "legal": true,
     "dex": 512,
     "types": [
       "grass",
@@ -8322,10 +8820,54 @@
     ],
     "tags": [
       "regional"
+    ],
+    "speciesName": {
+      "de": "Vegichita",
+      "fr": "Feuiloutan",
+      "en": "Simisage",
+      "es": "Simisage",
+      "th": "ยานักกี",
+      "ja": "ヤナッキー",
+      "ko": "야나키",
+      "ru": "Симисейдж",
+      "zh_hans": "花椰猿",
+      "zh_hant": "花椰猿"
+    },
+    "ranking": 505,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "VINE_WHIP",
+          "uses": 82370
+        },
+        {
+          "moveId": "BITE",
+          "uses": 33030
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SOLAR_BEAM",
+          "uses": 11742
+        },
+        {
+          "moveId": "GRASS_KNOT",
+          "uses": 56929
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 46416
+        }
+      ]
+    },
+    "moveset": [
+      "VINE_WHIP",
+      "GRASS_KNOT",
+      "CRUNCH"
     ]
   },
   "pansear": {
-    "legal": false,
+    "legal": true,
     "dex": 513,
     "types": [
       "fire",
@@ -8333,10 +8875,22 @@
     ],
     "tags": [
       "regional"
-    ]
+    ],
+    "speciesName": {
+      "de": "Grillmak",
+      "fr": "Flamajou",
+      "en": "Pansear",
+      "es": "Pansear",
+      "th": "บาอปปุ",
+      "ja": "バオップ",
+      "ko": "바오프",
+      "ru": "Пансир",
+      "zh_hans": "爆香猴",
+      "zh_hant": "爆香猴"
+    }
   },
   "simisear": {
-    "legal": false,
+    "legal": true,
     "dex": 514,
     "types": [
       "fire",
@@ -8344,10 +8898,54 @@
     ],
     "tags": [
       "regional"
+    ],
+    "speciesName": {
+      "de": "Grillchita",
+      "fr": "Flamoutan",
+      "en": "Simisear",
+      "es": "Simisear",
+      "th": "บาอกกี",
+      "ja": "バオッキー",
+      "ko": "바오키",
+      "ru": "Симисир",
+      "zh_hans": "爆香猿",
+      "zh_hant": "爆香猿"
+    },
+    "ranking": 507,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "FIRE_SPIN",
+          "uses": 77253
+        },
+        {
+          "moveId": "BITE",
+          "uses": 38147
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "FLAMETHROWER",
+          "uses": 51786
+        },
+        {
+          "moveId": "FIRE_BLAST",
+          "uses": 13731
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 49720
+        }
+      ]
+    },
+    "moveset": [
+      "FIRE_SPIN",
+      "FLAMETHROWER",
+      "CRUNCH"
     ]
   },
   "panpour": {
-    "legal": false,
+    "legal": true,
     "dex": 515,
     "types": [
       "water",
@@ -8355,10 +8953,22 @@
     ],
     "tags": [
       "regional"
-    ]
+    ],
+    "speciesName": {
+      "de": "Sodamak",
+      "fr": "Flotajou",
+      "en": "Panpour",
+      "es": "Panpour",
+      "th": "ฮิยัปปุ",
+      "ja": "ヒヤップ",
+      "ko": "앗차프",
+      "ru": "Панпур",
+      "zh_hans": "冷水猴",
+      "zh_hant": "冷水猴"
+    }
   },
   "simipour": {
-    "legal": false,
+    "legal": true,
     "dex": 516,
     "types": [
       "water",
@@ -8366,274 +8976,1597 @@
     ],
     "tags": [
       "regional"
+    ],
+    "speciesName": {
+      "de": "Sodachita",
+      "fr": "Flotoutan",
+      "en": "Simipour",
+      "es": "Simipour",
+      "th": "ฮิยักกี",
+      "ja": "ヒヤッキー",
+      "ko": "앗차키",
+      "ru": "Симипур",
+      "zh_hans": "冷水猿",
+      "zh_hant": "冷水猿"
+    },
+    "ranking": 512,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "WATER_GUN",
+          "uses": 76137
+        },
+        {
+          "moveId": "BITE",
+          "uses": 39263
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SURF",
+          "uses": 67029
+        },
+        {
+          "moveId": "HYDRO_PUMP",
+          "uses": 11052
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 37695
+        }
+      ]
+    },
+    "moveset": [
+      "WATER_GUN",
+      "SURF",
+      "CRUNCH"
     ]
   },
   "munna": {
-    "legal": false,
+    "legal": true,
     "dex": 517,
     "types": [
       "psychic",
       "none"
+    ],
+    "speciesName": {
+      "de": "Somniam",
+      "fr": "Munna",
+      "en": "Munna",
+      "es": "Munna",
+      "th": "มุนนะ",
+      "ja": "ムンナ",
+      "ko": "몽나",
+      "ru": "Мунна",
+      "zh_hans": "食梦梦",
+      "zh_hant": "食夢夢"
+    },
+    "ranking": 312,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 34569
+        },
+        {
+          "moveId": "CHARGE_BEAM",
+          "uses": 80831
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "PSYSHOCK",
+          "uses": 72346
+        },
+        {
+          "moveId": "PSYBEAM",
+          "uses": 11422
+        },
+        {
+          "moveId": "DAZZLING_GLEAM",
+          "uses": 31606
+        }
+      ]
+    },
+    "moveset": [
+      "CHARGE_BEAM",
+      "PSYSHOCK",
+      "DAZZLING_GLEAM"
     ]
   },
   "musharna": {
-    "legal": false,
+    "legal": true,
     "dex": 518,
     "types": [
       "psychic",
       "none"
+    ],
+    "speciesName": {
+      "de": "Somnivora",
+      "fr": "Mushana",
+      "en": "Musharna",
+      "es": "Musharna",
+      "th": "มุชานา",
+      "ja": "ムシャーナ",
+      "ko": "몽얌나",
+      "ru": "Мушарна",
+      "zh_hans": "梦梦蚀",
+      "zh_hant": "夢夢蝕"
+    },
+    "ranking": 413,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 34768
+        },
+        {
+          "moveId": "CHARGE_BEAM",
+          "uses": 80632
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "PSYSHOCK",
+          "uses": 64624
+        },
+        {
+          "moveId": "FUTURE_SIGHT",
+          "uses": 21641
+        },
+        {
+          "moveId": "DAZZLING_GLEAM",
+          "uses": 29138
+        }
+      ]
+    },
+    "moveset": [
+      "CHARGE_BEAM",
+      "PSYSHOCK",
+      "DAZZLING_GLEAM"
     ]
   },
   "pidove": {
-    "legal": false,
+    "legal": true,
     "dex": 519,
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "speciesName": {
+      "de": "Dusselgurr",
+      "fr": "Poichigeon",
+      "en": "Pidove",
+      "es": "Pidove",
+      "th": "มาเมพาโตะ",
+      "ja": "マメパト",
+      "ko": "콩둘기",
+      "ru": "Пидав",
+      "zh_hans": "豆豆鸽",
+      "zh_hant": "豆豆鴿"
+    }
   },
   "tranquill": {
-    "legal": false,
+    "legal": true,
     "dex": 520,
     "types": [
       "normal",
       "flying"
+    ],
+    "speciesName": {
+      "de": "Navitaub",
+      "fr": "Colombeau",
+      "en": "Tranquill",
+      "es": "Tranquill",
+      "th": "ฮาโทโบ",
+      "ja": "ハトーボー",
+      "ko": "유토브",
+      "ru": "Транквилл",
+      "zh_hans": "波波鸽",
+      "zh_hant": "波波鴿"
+    },
+    "ranking": 522,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "STEEL_WING",
+          "uses": 43267
+        },
+        {
+          "moveId": "AIR_SLASH",
+          "uses": 72133
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SKY_ATTACK",
+          "uses": 78967
+        },
+        {
+          "moveId": "HEAT_WAVE",
+          "uses": 14872
+        },
+        {
+          "moveId": "AERIAL_ACE",
+          "uses": 21277
+        }
+      ]
+    },
+    "moveset": [
+      "AIR_SLASH",
+      "SKY_ATTACK",
+      "AERIAL_ACE"
     ]
   },
   "unfezant": {
-    "legal": false,
+    "legal": true,
     "dex": 521,
     "types": [
       "normal",
       "flying"
+    ],
+    "speciesName": {
+      "de": "Fasasnob",
+      "fr": "Déflaisan",
+      "en": "Unfezant",
+      "es": "Unfezant",
+      "th": "เคนโฮโล",
+      "ja": "ケンホロウ",
+      "ko": "켄호로우",
+      "ru": "Анфезант",
+      "zh_hans": "轰隆雉鸡",
+      "zh_hant": "轟隆雉雞"
+    },
+    "ranking": 469,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "STEEL_WING",
+          "uses": 42905
+        },
+        {
+          "moveId": "AIR_SLASH",
+          "uses": 72495
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SKY_ATTACK",
+          "uses": 76457
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 24691
+        },
+        {
+          "moveId": "HEAT_WAVE",
+          "uses": 14290
+        }
+      ]
+    },
+    "moveset": [
+      "AIR_SLASH",
+      "SKY_ATTACK",
+      "HYPER_BEAM"
     ]
   },
   "blitzle": {
-    "legal": false,
+    "legal": true,
     "dex": 522,
     "types": [
       "electric",
       "none"
-    ]
+    ],
+    "speciesName": {
+      "de": "Elezeba",
+      "fr": "Zébribon",
+      "en": "Blitzle",
+      "es": "Blitzle",
+      "th": "ชิมามา",
+      "ja": "シママ",
+      "ko": "줄뮤마",
+      "ru": "Блитцл",
+      "zh_hans": "斑斑马",
+      "zh_hant": "斑斑馬"
+    }
   },
   "zebstrika": {
-    "legal": false,
+    "legal": true,
     "dex": 523,
     "types": [
       "electric",
       "none"
+    ],
+    "speciesName": {
+      "de": "Zebritz",
+      "fr": "Zéblitz",
+      "en": "Zebstrika",
+      "es": "Zebstrika",
+      "th": "ซีบรายกา",
+      "ja": "ゼブライカ",
+      "ko": "제브라이카",
+      "ru": "Зебстрайка",
+      "zh_hans": "雷电斑马",
+      "zh_hant": "雷電斑馬"
+    },
+    "price": 3,
+    "ranking": 582,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SPARK",
+          "uses": 98390
+        },
+        {
+          "moveId": "LOW_KICK",
+          "uses": 17010
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "WILD_CHARGE",
+          "uses": 69424
+        },
+        {
+          "moveId": "FLAME_CHARGE",
+          "uses": 31188
+        },
+        {
+          "moveId": "DISCHARGE",
+          "uses": 14838
+        }
+      ]
+    },
+    "moveset": [
+      "SPARK",
+      "WILD_CHARGE",
+      "FLAME_CHARGE"
     ]
   },
   "roggenrola": {
-    "legal": false,
+    "legal": true,
     "dex": 524,
     "types": [
       "rock",
       "none"
+    ],
+    "speciesName": {
+      "de": "Kiesling",
+      "fr": "Nodulithe",
+      "en": "Roggenrola",
+      "es": "Roggenrola",
+      "th": "ดันโกโร",
+      "ja": "ダンゴロ",
+      "ko": "단굴",
+      "ru": "Роггенрола",
+      "zh_hans": "石丸子",
+      "zh_hant": "石丸子"
+    },
+    "ranking": 512,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TACKLE",
+          "uses": 26403
+        },
+        {
+          "moveId": "SMACK_DOWN",
+          "uses": 88997
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "STONE_EDGE",
+          "uses": 48071
+        },
+        {
+          "moveId": "ROCK_BLAST",
+          "uses": 43493
+        },
+        {
+          "moveId": "BULLDOZE",
+          "uses": 23696
+        }
+      ]
+    },
+    "moveset": [
+      "SMACK_DOWN",
+      "STONE_EDGE",
+      "ROCK_BLAST"
     ]
   },
   "boldore": {
-    "legal": false,
+    "legal": true,
     "dex": 525,
     "types": [
       "rock",
       "none"
+    ],
+    "speciesName": {
+      "de": "Sedimantur",
+      "fr": "Géolithe",
+      "en": "Boldore",
+      "es": "Boldore",
+      "th": "กันเทิล",
+      "ja": "ガントル",
+      "ko": "암트르",
+      "ru": "Болдор",
+      "zh_hans": "地幔岩",
+      "zh_hant": "地幔岩"
+    },
+    "ranking": 524,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SMACK_DOWN",
+          "uses": 66898
+        },
+        {
+          "moveId": "MUD_SLAP",
+          "uses": 48502
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "STONE_EDGE",
+          "uses": 25632
+        },
+        {
+          "moveId": "ROCK_SLIDE",
+          "uses": 64738
+        },
+        {
+          "moveId": "BULLDOZE",
+          "uses": 24982
+        }
+      ]
+    },
+    "moveset": [
+      "SMACK_DOWN",
+      "ROCK_SLIDE",
+      "BULLDOZE"
     ]
   },
   "gigalith": {
-    "legal": false,
+    "legal": true,
     "dex": 526,
     "types": [
       "rock",
       "none"
+    ],
+    "speciesName": {
+      "de": "Brockoloss",
+      "fr": "Gigalithe",
+      "en": "Gigalith",
+      "es": "Gigalith",
+      "th": "กิไกอาซ",
+      "ja": "ギガイアス",
+      "ko": "기가이어스",
+      "ru": "Гигалит",
+      "zh_hans": "庞岩怪",
+      "zh_hant": "龐岩怪"
+    },
+    "ranking": 531,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SMACK_DOWN",
+          "uses": 66568
+        },
+        {
+          "moveId": "MUD_SLAP",
+          "uses": 48832
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SUPER_POWER",
+          "uses": 39234
+        },
+        {
+          "moveId": "SOLAR_BEAM",
+          "uses": 14034
+        },
+        {
+          "moveId": "ROCK_SLIDE",
+          "uses": 46518
+        },
+        {
+          "moveId": "HEAVY_SLAM",
+          "uses": 15566
+        }
+      ]
+    },
+    "moveset": [
+      "SMACK_DOWN",
+      "ROCK_SLIDE",
+      "SUPER_POWER"
     ]
   },
   "woobat": {
-    "legal": false,
+    "legal": true,
     "dex": 527,
     "types": [
       "psychic",
       "flying"
-    ]
+    ],
+    "speciesName": {
+      "de": "Fleknoil",
+      "fr": "Chovsourir",
+      "en": "Woobat",
+      "es": "Woobat",
+      "th": "โคโรโมริ",
+      "ja": "コロモリ",
+      "ko": "또르박쥐",
+      "ru": "Вубэт",
+      "zh_hans": "滚滚蝙蝠",
+      "zh_hant": "滾滾蝙蝠"
+    }
   },
   "swoobat": {
-    "legal": false,
+    "legal": true,
     "dex": 528,
     "types": [
       "psychic",
       "flying"
+    ],
+    "speciesName": {
+      "de": "Fletiamo",
+      "fr": "Rhinolove",
+      "en": "Swoobat",
+      "es": "Swoobat",
+      "th": "โคโคโรโมริ",
+      "ja": "ココロモリ",
+      "ko": "맘박쥐",
+      "ru": "Свубэт",
+      "zh_hans": "心蝙蝠",
+      "zh_hant": "心蝙蝠"
+    },
+    "ranking": 505,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "CONFUSION",
+          "uses": 62874
+        },
+        {
+          "moveId": "AIR_SLASH",
+          "uses": 52526
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "PSYCHIC",
+          "uses": 46415
+        },
+        {
+          "moveId": "FUTURE_SIGHT",
+          "uses": 19863
+        },
+        {
+          "moveId": "AERIAL_ACE",
+          "uses": 49108
+        }
+      ]
+    },
+    "moveset": [
+      "CONFUSION",
+      "AERIAL_ACE",
+      "PSYCHIC"
     ]
   },
   "drilbur": {
-    "legal": false,
+    "legal": true,
     "dex": 529,
     "types": [
       "ground",
       "none"
+    ],
+    "speciesName": {
+      "de": "Rotomurf",
+      "fr": "Rototaupe",
+      "en": "Drilbur",
+      "es": "Drilbur",
+      "th": "โมกุริว",
+      "ja": "モグリュー",
+      "ko": "두더류",
+      "ru": "Дрилбур",
+      "zh_hans": "螺钉地鼠",
+      "zh_hant": "螺釘地鼠"
+    },
+    "ranking": 479,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SCRATCH",
+          "uses": 38326
+        },
+        {
+          "moveId": "MUD_SLAP",
+          "uses": 77074
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ROCK_TOMB",
+          "uses": 23171
+        },
+        {
+          "moveId": "DRILL_RUN",
+          "uses": 85549
+        },
+        {
+          "moveId": "DIG",
+          "uses": 6567
+        }
+      ]
+    },
+    "moveset": [
+      "MUD_SLAP",
+      "DRILL_RUN",
+      "ROCK_TOMB"
     ]
   },
   "excadrill": {
-    "legal": false,
+    "legal": true,
     "dex": 530,
     "types": [
       "ground",
       "steel"
+    ],
+    "speciesName": {
+      "de": "Stalobor",
+      "fr": "Minotaupe",
+      "en": "Excadrill",
+      "es": "Excadrill",
+      "th": "โดริวซึ",
+      "ja": "ドリュウズ",
+      "ko": "몰드류",
+      "ru": "Экскадрилл",
+      "zh_hans": "龙头地鼠",
+      "zh_hant": "龍頭地鼠"
+    },
+    "price": 3,
+    "ranking": 601,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "MUD_SLAP",
+          "uses": 32814
+        },
+        {
+          "moveId": "MUD_SHOT",
+          "uses": 56055
+        },
+        {
+          "moveId": "METAL_CLAW",
+          "uses": 26607
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ROCK_SLIDE",
+          "uses": 33329
+        },
+        {
+          "moveId": "IRON_HEAD",
+          "uses": 20931
+        },
+        {
+          "moveId": "EARTHQUAKE",
+          "uses": 12537
+        },
+        {
+          "moveId": "DRILL_RUN",
+          "uses": 48597
+        }
+      ]
+    },
+    "moveset": [
+      "MUD_SHOT",
+      "DRILL_RUN",
+      "ROCK_SLIDE"
     ]
   },
   "audino": {
-    "legal": false,
+    "legal": true,
     "dex": 531,
     "types": [
       "normal",
       "none"
+    ],
+    "speciesName": {
+      "de": "Ohrdoch",
+      "fr": "Nanméouïe",
+      "en": "Audino",
+      "es": "Audino",
+      "th": "ทาบุนเนะ",
+      "ja": "タブンネ",
+      "ko": "다부니",
+      "ru": "Аудино",
+      "zh_hans": "差不多娃娃",
+      "zh_hant": "差不多娃娃"
+    },
+    "ranking": 368,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 49967
+        },
+        {
+          "moveId": "POUND",
+          "uses": 65433
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 36442
+        },
+        {
+          "moveId": "DISARMING_VOICE",
+          "uses": 65285
+        },
+        {
+          "moveId": "DAZZLING_GLEAM",
+          "uses": 13458
+        }
+      ]
+    },
+    "moveset": [
+      "POUND",
+      "DISARMING_VOICE",
+      "HYPER_BEAM"
     ]
   },
   "timburr": {
-    "legal": false,
+    "legal": true,
     "dex": 532,
     "types": [
       "fighting",
       "none"
+    ],
+    "speciesName": {
+      "de": "Praktibalk",
+      "fr": "Charpenti",
+      "en": "Timburr",
+      "es": "Timburr",
+      "th": "ด็อคโคเรอร์",
+      "ja": "ドッコラー",
+      "ko": "으랏차",
+      "ru": "Тимбурр",
+      "zh_hans": "搬运小匠",
+      "zh_hant": "搬運小匠"
+    },
+    "ranking": 356,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "POUND",
+          "uses": 44020
+        },
+        {
+          "moveId": "LOW_KICK",
+          "uses": 71380
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ROCK_TOMB",
+          "uses": 27766
+        },
+        {
+          "moveId": "LOW_SWEEP",
+          "uses": 19751
+        },
+        {
+          "moveId": "BRICK_BREAK",
+          "uses": 67714
+        }
+      ]
+    },
+    "moveset": [
+      "LOW_KICK",
+      "BRICK_BREAK",
+      "ROCK_TOMB"
     ]
   },
   "gurdurr": {
-    "legal": false,
+    "legal": true,
     "dex": 533,
     "types": [
       "fighting",
       "none"
+    ],
+    "speciesName": {
+      "de": "Strepoli",
+      "fr": "Ouvrifier",
+      "en": "Gurdurr",
+      "es": "Gurdurr",
+      "th": "โดเท็คคทซึ",
+      "ja": "ドテッコツ",
+      "ko": "토쇠골",
+      "ru": "Гурдурр",
+      "zh_hans": "铁骨土人",
+      "zh_hant": "鐵骨土人"
+    },
+    "ranking": 579,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "POISON_JAB",
+          "uses": 86696
+        },
+        {
+          "moveId": "LOW_KICK",
+          "uses": 28704
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "STONE_EDGE",
+          "uses": 47949
+        },
+        {
+          "moveId": "LOW_SWEEP",
+          "uses": 15491
+        },
+        {
+          "moveId": "BRICK_BREAK",
+          "uses": 52239
+        }
+      ]
+    },
+    "moveset": [
+      "POISON_JAB",
+      "BRICK_BREAK",
+      "STONE_EDGE"
     ]
   },
   "conkeldurr": {
-    "legal": false,
+    "legal": true,
     "dex": 534,
     "types": [
       "fighting",
       "none"
+    ],
+    "speciesName": {
+      "de": "Meistagrif",
+      "fr": "Bétochef",
+      "en": "Conkeldurr",
+      "es": "Conkeldurr",
+      "th": "โรบูชิน",
+      "ja": "ローブシン",
+      "ko": "노보청",
+      "ru": "Конкельдурр",
+      "zh_hans": "修缮老头",
+      "zh_hant": "修繕老頭"
+    },
+    "ranking": 529,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "POISON_JAB",
+          "uses": 46875
+        },
+        {
+          "moveId": "COUNTER",
+          "uses": 68525
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "STONE_EDGE",
+          "uses": 44624
+        },
+        {
+          "moveId": "FOCUS_BLAST",
+          "uses": 15224
+        },
+        {
+          "moveId": "DYNAMIC_PUNCH",
+          "uses": 55686
+        }
+      ]
+    },
+    "moveset": [
+      "COUNTER",
+      "DYNAMIC_PUNCH",
+      "STONE_EDGE"
     ]
   },
   "tympole": {
-    "legal": false,
+    "legal": true,
     "dex": 535,
     "types": [
       "water",
       "none"
-    ]
+    ],
+    "speciesName": {
+      "de": "Schallquap",
+      "fr": "Tritonde",
+      "en": "Tympole",
+      "es": "Tympole",
+      "th": "โอทามาโร",
+      "ja": "オタマロ",
+      "ko": "동챙이",
+      "ru": "Тимпол",
+      "zh_hans": "圆蝌蚪",
+      "zh_hant": "圓蝌蚪"
+    }
   },
   "palpitoad": {
-    "legal": false,
+    "legal": true,
     "dex": 536,
     "types": [
       "water",
       "ground"
+    ],
+    "speciesName": {
+      "de": "Mebrana",
+      "fr": "Batracné",
+      "en": "Palpitoad",
+      "es": "Palpitoad",
+      "th": "กามาการุ",
+      "ja": "ガマガル",
+      "ko": "두까비",
+      "ru": "Палпитоад",
+      "zh_hans": "蓝蟾蜍",
+      "zh_hant": "藍蟾蜍"
+    },
+    "ranking": 550,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "MUD_SHOT",
+          "uses": 63565
+        },
+        {
+          "moveId": "BUBBLE",
+          "uses": 51835
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "WATER_PULSE",
+          "uses": 24652
+        },
+        {
+          "moveId": "SLUDGE_WAVE",
+          "uses": 30316
+        },
+        {
+          "moveId": "EARTH_POWER",
+          "uses": 60307
+        }
+      ]
+    },
+    "moveset": [
+      "MUD_SHOT",
+      "EARTH_POWER",
+      "SLUDGE_WAVE"
     ]
   },
   "seismitoad": {
-    "legal": false,
+    "legal": true,
     "dex": 537,
     "types": [
       "water",
       "ground"
+    ],
+    "speciesName": {
+      "de": "Branawarz",
+      "fr": "Crapustule",
+      "en": "Seismitoad",
+      "es": "Seismitoad",
+      "th": "กามาเกโรเกะ",
+      "ja": "ガマゲロゲ",
+      "ko": "두빅굴",
+      "ru": "Сейсмитоад",
+      "zh_hans": "蟾蜍王",
+      "zh_hant": "蟾蜍王"
+    },
+    "ranking": 578,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "MUD_SHOT",
+          "uses": 62924
+        },
+        {
+          "moveId": "BUBBLE",
+          "uses": 52476
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SLUDGE_BOMB",
+          "uses": 31147
+        },
+        {
+          "moveId": "MUDDY_WATER",
+          "uses": 41297
+        },
+        {
+          "moveId": "EARTH_POWER",
+          "uses": 42976
+        }
+      ]
+    },
+    "moveset": [
+      "MUD_SHOT",
+      "EARTH_POWER",
+      "SLUDGE_BOMB"
     ]
   },
   "throh": {
-    "legal": false,
+    "legal": true,
     "dex": 538,
     "types": [
       "fighting",
       "none"
+    ],
+    "speciesName": {
+      "de": "Jiutesto",
+      "fr": "Judokrak",
+      "en": "Throh",
+      "es": "Throh",
+      "th": "นาเกคิ",
+      "ja": "ナゲキ",
+      "ko": "던지미",
+      "ru": "Тро",
+      "zh_hans": "投射鬼",
+      "zh_hant": "投射鬼"
+    },
+    "ranking": 404,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 42645
+        },
+        {
+          "moveId": "LOW_KICK",
+          "uses": 72755
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "LOW_SWEEP",
+          "uses": 25794
+        },
+        {
+          "moveId": "FOCUS_BLAST",
+          "uses": 28380
+        },
+        {
+          "moveId": "BODY_SLAM",
+          "uses": 61256
+        }
+      ]
+    },
+    "moveset": [
+      "LOW_KICK",
+      "BODY_SLAM",
+      "FOCUS_BLAST"
     ]
   },
   "sawk": {
-    "legal": false,
+    "legal": true,
     "dex": 539,
     "types": [
       "fighting",
       "none"
+    ],
+    "speciesName": {
+      "de": "Karadonis",
+      "fr": "Karaclée",
+      "en": "Sawk",
+      "es": "Sawk",
+      "th": "ดาเกคิ",
+      "ja": "ダゲキ",
+      "ko": "타격귀",
+      "ru": "Соук",
+      "zh_hans": "打击鬼",
+      "zh_hant": "打擊鬼"
+    },
+    "ranking": 521,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "POISON_JAB",
+          "uses": 87971
+        },
+        {
+          "moveId": "LOW_KICK",
+          "uses": 27429
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "LOW_SWEEP",
+          "uses": 25578
+        },
+        {
+          "moveId": "FOCUS_BLAST",
+          "uses": 28529
+        },
+        {
+          "moveId": "BODY_SLAM",
+          "uses": 61236
+        }
+      ]
+    },
+    "moveset": [
+      "POISON_JAB",
+      "BODY_SLAM",
+      "FOCUS_BLAST"
     ]
   },
   "sewaddle": {
-    "legal": false,
+    "legal": true,
     "dex": 540,
     "types": [
       "bug",
       "grass"
-    ]
+    ],
+    "speciesName": {
+      "de": "Strawickl",
+      "fr": "Larveyette",
+      "en": "Sewaddle",
+      "es": "Sewaddle",
+      "th": "คูรูมีรุ",
+      "ja": "クルミル",
+      "ko": "두르보",
+      "ru": "Севадл",
+      "zh_hans": "虫宝包",
+      "zh_hant": "蟲寶包"
+    }
   },
   "swadloon": {
-    "legal": false,
+    "legal": true,
     "dex": 541,
     "types": [
       "bug",
       "grass"
+    ],
+    "speciesName": {
+      "de": "Folikon",
+      "fr": "Couverdure",
+      "en": "Swadloon",
+      "es": "Swadloon",
+      "th": "คูรูมายุ",
+      "ja": "クルマユ",
+      "ko": "두르쿤",
+      "ru": "Свадлун",
+      "zh_hans": "宝包茧",
+      "zh_hant": "寶包繭"
+    },
+    "ranking": 484,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "STRUGGLE_BUG",
+          "uses": 42743
+        },
+        {
+          "moveId": "BUG_BITE",
+          "uses": 72657
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SILVER_WIND",
+          "uses": 29977
+        },
+        {
+          "moveId": "ENERGY_BALL",
+          "uses": 51400
+        },
+        {
+          "moveId": "BUG_BUZZ",
+          "uses": 34036
+        }
+      ]
+    },
+    "moveset": [
+      "BUG_BITE",
+      "ENERGY_BALL",
+      "BUG_BUZZ"
     ]
   },
   "leavanny": {
-    "legal": false,
+    "legal": true,
     "dex": 542,
     "types": [
       "bug",
       "grass"
+    ],
+    "speciesName": {
+      "de": "Matrifol",
+      "fr": "Manternel",
+      "en": "Leavanny",
+      "es": "Leavanny",
+      "th": "ฮาฮาโคโมริ",
+      "ja": "ハハコモリ",
+      "ko": "모아머",
+      "ru": "Левани",
+      "zh_hans": "保母虫",
+      "zh_hant": "保母蟲"
+    },
+    "ranking": 580,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "RAZOR_LEAF",
+          "uses": 51092
+        },
+        {
+          "moveId": "BUG_BITE",
+          "uses": 64308
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "X_SCISSOR",
+          "uses": 30931
+        },
+        {
+          "moveId": "SILVER_WIND",
+          "uses": 7186
+        },
+        {
+          "moveId": "LEAF_STORM",
+          "uses": 8497
+        },
+        {
+          "moveId": "LEAF_BLADE",
+          "uses": 68682
+        }
+      ]
+    },
+    "moveset": [
+      "RAZOR_LEAF",
+      "LEAF_BLADE",
+      "X_SCISSOR"
     ]
   },
   "venipede": {
-    "legal": false,
+    "legal": true,
     "dex": 543,
     "types": [
       "bug",
       "poison"
-    ]
+    ],
+    "speciesName": {
+      "de": "Toxiped",
+      "fr": "Venipatte",
+      "en": "Venipede",
+      "es": "Venipede",
+      "th": "ฟูชิเดะ",
+      "ja": "フシデ",
+      "ko": "마디네",
+      "ru": "Венипид",
+      "zh_hans": "百足蜈蚣",
+      "zh_hant": "百足蜈蚣"
+    }
   },
   "whirlipede": {
-    "legal": false,
+    "legal": true,
     "dex": 544,
     "types": [
       "bug",
       "poison"
+    ],
+    "speciesName": {
+      "de": "Rollum",
+      "fr": "Scobolide",
+      "en": "Whirlipede",
+      "es": "Whirlipede",
+      "th": "วีกา",
+      "ja": "ホイーガ",
+      "ko": "휠구",
+      "ru": "Вирлипид",
+      "zh_hans": "车轮球",
+      "zh_hant": "車輪毬"
+    },
+    "ranking": 462,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "POISON_STING",
+          "uses": 60097
+        },
+        {
+          "moveId": "BUG_BITE",
+          "uses": 55303
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SLUDGE_BOMB",
+          "uses": 50729
+        },
+        {
+          "moveId": "SIGNAL_BEAM",
+          "uses": 42757
+        },
+        {
+          "moveId": "GYRO_BALL",
+          "uses": 21795
+        }
+      ]
+    },
+    "moveset": [
+      "POISON_STING",
+      "SLUDGE_BOMB",
+      "SIGNAL_BEAM"
     ]
   },
   "scolipede": {
-    "legal": false,
+    "legal": true,
     "dex": 545,
     "types": [
       "bug",
       "poison"
+    ],
+    "speciesName": {
+      "de": "Cerapendra",
+      "fr": "Brutapode",
+      "en": "Scolipede",
+      "es": "Scolipede",
+      "th": "เพนโดรา",
+      "ja": "ペンドラー",
+      "ko": "펜드라",
+      "ru": "Сколипид",
+      "zh_hans": "蜈蚣王",
+      "zh_hant": "蜈蚣王"
+    },
+    "ranking": 581,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "POISON_JAB",
+          "uses": 65734
+        },
+        {
+          "moveId": "BUG_BITE",
+          "uses": 49666
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "X_SCISSOR",
+          "uses": 39869
+        },
+        {
+          "moveId": "SLUDGE_BOMB",
+          "uses": 30918
+        },
+        {
+          "moveId": "MEGAHORN",
+          "uses": 31758
+        },
+        {
+          "moveId": "GYRO_BALL",
+          "uses": 12845
+        }
+      ]
+    },
+    "moveset": [
+      "POISON_JAB",
+      "X_SCISSOR",
+      "SLUDGE_BOMB"
     ]
   },
   "cottonee": {
-    "legal": false,
+    "legal": true,
     "dex": 546,
     "types": [
       "grass",
       "fairy"
-    ]
+    ],
+    "speciesName": {
+      "de": "Waumboll",
+      "fr": "Doudouvet",
+      "en": "Cottonee",
+      "es": "Cottonee",
+      "th": "โมนเมน",
+      "ja": "モンメン",
+      "ko": "소미안",
+      "ru": "Коттони",
+      "zh_hans": "木棉球",
+      "zh_hant": "木棉球"
+    }
   },
   "whimsicott": {
-    "legal": false,
+    "legal": true,
     "dex": 547,
     "types": [
       "grass",
       "fairy"
+    ],
+    "speciesName": {
+      "de": "Elfun",
+      "fr": "Farfaduvet",
+      "en": "Whimsicott",
+      "es": "Whimsicott",
+      "th": "เอลฟุน",
+      "ja": "エルフーン",
+      "ko": "엘풍",
+      "ru": "Вимсискотт",
+      "zh_hans": "风妖精",
+      "zh_hant": "風妖精"
+    },
+    "price": 5,
+    "ranking": 647,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "RAZOR_LEAF",
+          "uses": 52505
+        },
+        {
+          "moveId": "CHARM",
+          "uses": 62895
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "MOONBLAST",
+          "uses": 41625
+        },
+        {
+          "moveId": "HURRICANE",
+          "uses": 23868
+        },
+        {
+          "moveId": "GRASS_KNOT",
+          "uses": 49997
+        }
+      ]
+    },
+    "moveset": [
+      "CHARM",
+      "GRASS_KNOT",
+      "MOONBLAST"
     ]
   },
   "petilil": {
-    "legal": false,
+    "legal": true,
     "dex": 548,
     "types": [
       "grass",
       "none"
-    ]
+    ],
+    "speciesName": {
+      "de": "Lilminip",
+      "fr": "Chlorobule",
+      "en": "Petilil",
+      "es": "Petilil",
+      "th": "จูริเน",
+      "ja": "チュリネ",
+      "ko": "치릴리",
+      "ru": "Петилил",
+      "zh_hans": "百合根娃娃",
+      "zh_hant": "百合根娃娃"
+    }
   },
   "lilligant": {
-    "legal": false,
+    "legal": true,
     "dex": 549,
     "types": [
       "grass",
       "none"
+    ],
+    "speciesName": {
+      "de": "Dressella",
+      "fr": "Fragilady",
+      "en": "Lilligant",
+      "es": "Lilligant",
+      "th": "เดรเดีย",
+      "ja": "ドレディア",
+      "ko": "드레디어",
+      "ru": "Лиллигант",
+      "zh_hans": "裙儿小姐",
+      "zh_hant": "裙兒小姐"
+    },
+    "ranking": 534,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "HIDDEN_POWER_WATER",
+          "uses": 6668
+        },
+        {
+          "moveId": "HIDDEN_POWER_STEEL",
+          "uses": 5774
+        },
+        {
+          "moveId": "HIDDEN_POWER_ROCK",
+          "uses": 6888
+        },
+        {
+          "moveId": "HIDDEN_POWER_PSYCHIC",
+          "uses": 5941
+        },
+        {
+          "moveId": "HIDDEN_POWER_POISON",
+          "uses": 5482
+        },
+        {
+          "moveId": "HIDDEN_POWER_ICE",
+          "uses": 6980
+        },
+        {
+          "moveId": "HIDDEN_POWER_GROUND",
+          "uses": 7329
+        },
+        {
+          "moveId": "HIDDEN_POWER_GRASS",
+          "uses": 9679
+        },
+        {
+          "moveId": "HIDDEN_POWER_GHOST",
+          "uses": 6516
+        },
+        {
+          "moveId": "HIDDEN_POWER_FLYING",
+          "uses": 6752
+        },
+        {
+          "moveId": "HIDDEN_POWER_FIRE",
+          "uses": 6859
+        },
+        {
+          "moveId": "HIDDEN_POWER_FIGHTING",
+          "uses": 6850
+        },
+        {
+          "moveId": "HIDDEN_POWER_ELECTRIC",
+          "uses": 7135
+        },
+        {
+          "moveId": "HIDDEN_POWER_DRAGON",
+          "uses": 5716
+        },
+        {
+          "moveId": "HIDDEN_POWER_DARK",
+          "uses": 6335
+        },
+        {
+          "moveId": "HIDDEN_POWER_BUG",
+          "uses": 5706
+        },
+        {
+          "moveId": "CHARM",
+          "uses": 9281
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SOLAR_BEAM",
+          "uses": 22865
+        },
+        {
+          "moveId": "PETAL_BLIZZARD",
+          "uses": 56432
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 36339
+        }
+      ]
+    },
+    "moveset": [
+      "CHARM",
+      "PETAL_BLIZZARD",
+      "HYPER_BEAM"
     ]
   },
   "basculin": {
-    "legal": false,
+    "legal": true,
     "dex": 550,
     "types": [
       "water",
@@ -8641,38 +10574,222 @@
     ],
     "tags": [
       "regional"
+    ],
+    "speciesName": {
+      "de": "Barschuft",
+      "fr": "Bargantua",
+      "en": "Basculin",
+      "es": "Basculin",
+      "th": "บาสราโอ",
+      "ja": "バスラオ",
+      "ko": "배쓰나이",
+      "ru": "Баскулин",
+      "zh_hans": "勇士鲈鱼",
+      "zh_hant": "勇士鱸魚"
+    },
+    "ranking": 529,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "WATER_GUN",
+          "uses": 86700
+        },
+        {
+          "moveId": "TACKLE",
+          "uses": 28700
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "MUDDY_WATER",
+          "uses": 23026
+        },
+        {
+          "moveId": "AQUA_TAIL",
+          "uses": 80495
+        },
+        {
+          "moveId": "AQUA_JET",
+          "uses": 11832
+        }
+      ]
+    },
+    "moveset": [
+      "WATER_GUN",
+      "AQUA_TAIL",
+      "MUDDY_WATER"
     ]
   },
   "sandile": {
-    "legal": false,
+    "legal": true,
     "dex": 551,
     "types": [
       "ground",
       "dark"
-    ]
+    ],
+    "speciesName": {
+      "de": "Ganovil",
+      "fr": "Mascaïman",
+      "en": "Sandile",
+      "es": "Sandile",
+      "th": "เมะกุโรโกะ",
+      "ja": "メグロコ",
+      "ko": "깜눈크",
+      "ru": "Сэндайл",
+      "zh_hans": "黑眼鳄",
+      "zh_hant": "黑眼鱷"
+    }
   },
   "krokorok": {
-    "legal": false,
+    "legal": true,
     "dex": 552,
     "types": [
       "ground",
       "dark"
+    ],
+    "speciesName": {
+      "de": "Rokkaiman",
+      "fr": "Escroco",
+      "en": "Krokorok",
+      "es": "Krokorok",
+      "th": "วารุวิล",
+      "ja": "ワルビル",
+      "ko": "악비르",
+      "ru": "Крокорок",
+      "zh_hans": "混混鳄",
+      "zh_hant": "混混鱷"
+    },
+    "ranking": 502,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "MUD_SLAP",
+          "uses": 66758
+        },
+        {
+          "moveId": "BITE",
+          "uses": 48642
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "EARTHQUAKE",
+          "uses": 37785
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 54215
+        },
+        {
+          "moveId": "BULLDOZE",
+          "uses": 23333
+        }
+      ]
+    },
+    "moveset": [
+      "MUD_SLAP",
+      "CRUNCH",
+      "EARTHQUAKE"
     ]
   },
   "krookodile": {
-    "legal": false,
+    "legal": true,
     "dex": 553,
     "types": [
       "ground",
       "dark"
+    ],
+    "speciesName": {
+      "de": "Rabigator",
+      "fr": "Crocorible",
+      "en": "Krookodile",
+      "es": "Krookodile",
+      "th": "วารุเวียล",
+      "ja": "ワルビアル",
+      "ko": "악비아르",
+      "ru": "Крукодайл",
+      "zh_hans": "流氓鳄",
+      "zh_hant": "流氓鱷"
+    },
+    "ranking": 542,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SNARL",
+          "uses": 66357
+        },
+        {
+          "moveId": "MUD_SLAP",
+          "uses": 49043
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "OUTRAGE",
+          "uses": 25673
+        },
+        {
+          "moveId": "EARTHQUAKE",
+          "uses": 39901
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 49717
+        }
+      ]
+    },
+    "moveset": [
+      "SNARL",
+      "CRUNCH",
+      "EARTHQUAKE"
     ]
   },
   "darumaka": {
-    "legal": false,
+    "legal": true,
     "dex": 554,
     "types": [
       "fire",
       "none"
+    ],
+    "speciesName": {
+      "de": "Flampion",
+      "fr": "Darumarond",
+      "en": "Darumaka",
+      "es": "Darumaka",
+      "th": "ดารุมักกะ",
+      "ja": "ダルマッカ",
+      "ko": "달막화",
+      "ru": "Дарумакка",
+      "zh_hans": "火红不倒翁",
+      "zh_hant": "火紅不倒翁"
+    },
+    "ranking": 547,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TACKLE",
+          "uses": 29912
+        },
+        {
+          "moveId": "FIRE_FANG",
+          "uses": 85488
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "FLAME_CHARGE",
+          "uses": 35636
+        },
+        {
+          "moveId": "FIRE_PUNCH",
+          "uses": 79764
+        }
+      ]
+    },
+    "moveset": [
+      "FIRE_FANG",
+      "FIRE_PUNCH",
+      "FLAME_CHARGE"
     ]
   },
   "darumaka_galarian": {
@@ -8710,11 +10827,63 @@
     ]
   },
   "darmanitan_standard": {
-    "legal": false,
+    "legal": true,
     "dex": 555,
     "types": [
       "fire",
       "none"
+    ],
+    "speciesName": {
+      "de": "Flampivian (Standard)",
+      "fr": "Darumacho (Standard)",
+      "en": "Darmanitan (Standard)",
+      "es": "Darmanitan (Forma Normal)",
+      "th": "ฮิฮิดารุมะ (Standard)",
+      "ja": "ヒヒダルマ (Standard)",
+      "ko": "불비달마 (Standard)",
+      "ru": "Дарманитан (Standard)",
+      "zh_hans": "达摩狒狒 (Standard)",
+      "zh_hant": "達摩狒狒 (Standard)"
+    },
+    "ranking": 541,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TACKLE",
+          "uses": 10315
+        },
+        {
+          "moveId": "INCINERATE",
+          "uses": 73671
+        },
+        {
+          "moveId": "FIRE_FANG",
+          "uses": 31439
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ROCK_SLIDE",
+          "uses": 39136
+        },
+        {
+          "moveId": "PSYCHIC",
+          "uses": 22783
+        },
+        {
+          "moveId": "OVERHEAT",
+          "uses": 32393
+        },
+        {
+          "moveId": "FOCUS_BLAST",
+          "uses": 21188
+        }
+      ]
+    },
+    "moveset": [
+      "INCINERATE",
+      "ROCK_SLIDE",
+      "OVERHEAT"
     ]
   },
   "darmanitan_zen": {
@@ -8729,7 +10898,7 @@
     ]
   },
   "maractus": {
-    "legal": false,
+    "legal": true,
     "dex": 556,
     "types": [
       "grass",
@@ -8737,42 +10906,264 @@
     ],
     "tags": [
       "regional"
+    ],
+    "speciesName": {
+      "de": "Maracamba",
+      "fr": "Maracachi",
+      "en": "Maractus",
+      "es": "Maractus",
+      "th": "มาราคัจจิ",
+      "ja": "マラカッチ",
+      "ko": "마라카치",
+      "ru": "Марактус",
+      "zh_hans": "街头沙铃",
+      "zh_hant": "街頭沙鈴"
+    },
+    "ranking": 466,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "POISON_JAB",
+          "uses": 56436
+        },
+        {
+          "moveId": "BULLET_SEED",
+          "uses": 58964
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SOLAR_BEAM",
+          "uses": 19384
+        },
+        {
+          "moveId": "PETAL_BLIZZARD",
+          "uses": 47778
+        },
+        {
+          "moveId": "AERIAL_ACE",
+          "uses": 48460
+        }
+      ]
+    },
+    "moveset": [
+      "BULLET_SEED",
+      "AERIAL_ACE",
+      "PETAL_BLIZZARD"
     ]
   },
   "dwebble": {
-    "legal": false,
+    "legal": true,
     "dex": 557,
     "types": [
       "bug",
       "rock"
+    ],
+    "speciesName": {
+      "de": "Lithomith",
+      "fr": "Crabicoque",
+      "en": "Dwebble",
+      "es": "Dwebble",
+      "th": "อิชิซึไม",
+      "ja": "イシズマイ",
+      "ko": "돌살이",
+      "ru": "Двэббл",
+      "zh_hans": "石居蟹",
+      "zh_hant": "石居蟹"
+    },
+    "ranking": 567,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SMACK_DOWN",
+          "uses": 87587
+        },
+        {
+          "moveId": "CUT",
+          "uses": 27813
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "X_SCISSOR",
+          "uses": 56299
+        },
+        {
+          "moveId": "ROCK_TOMB",
+          "uses": 9562
+        },
+        {
+          "moveId": "ROCK_BLAST",
+          "uses": 49565
+        }
+      ]
+    },
+    "moveset": [
+      "SMACK_DOWN",
+      "X_SCISSOR",
+      "ROCK_BLAST"
     ]
   },
   "crustle": {
-    "legal": false,
+    "legal": true,
     "dex": 558,
     "types": [
       "bug",
       "rock"
+    ],
+    "speciesName": {
+      "de": "Castellith",
+      "fr": "Crabaraque",
+      "en": "Crustle",
+      "es": "Crustle",
+      "th": "อิวาพาเลซ",
+      "ja": "イワパレス",
+      "ko": "암팰리스",
+      "ru": "Крастл",
+      "zh_hans": "岩殿居蟹",
+      "zh_hant": "岩殿居蟹"
+    },
+    "price": 3,
+    "ranking": 629,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SMACK_DOWN",
+          "uses": 53142
+        },
+        {
+          "moveId": "FURY_CUTTER",
+          "uses": 62258
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "X_SCISSOR",
+          "uses": 40543
+        },
+        {
+          "moveId": "ROCK_SLIDE",
+          "uses": 43529
+        },
+        {
+          "moveId": "ROCK_BLAST",
+          "uses": 31333
+        }
+      ]
+    },
+    "moveset": [
+      "FURY_CUTTER",
+      "ROCK_SLIDE",
+      "X_SCISSOR"
     ]
   },
   "scraggy": {
-    "legal": false,
+    "legal": true,
     "dex": 559,
     "types": [
       "dark",
       "fighting"
+    ],
+    "speciesName": {
+      "de": "Zurrokex",
+      "fr": "Baggiguane",
+      "en": "Scraggy",
+      "es": "Scraggy",
+      "th": "ซึรุกกุ",
+      "ja": "ズルッグ",
+      "ko": "곤율랭",
+      "ru": "Скрэгги",
+      "zh_hans": "滑头小子",
+      "zh_hant": "滑頭小子"
+    },
+    "ranking": 574,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ROCK_SMASH",
+          "uses": 41283
+        },
+        {
+          "moveId": "FEINT_ATTACK",
+          "uses": 74117
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "FOUL_PLAY",
+          "uses": 56681
+        },
+        {
+          "moveId": "BRICK_BREAK",
+          "uses": 50523
+        },
+        {
+          "moveId": "ACID_SPRAY",
+          "uses": 8246
+        }
+      ]
+    },
+    "moveset": [
+      "FEINT_ATTACK",
+      "FOUL_PLAY",
+      "BRICK_BREAK"
     ]
   },
   "scrafty": {
-    "legal": false,
+    "legal": true,
     "dex": 560,
     "types": [
       "dark",
       "fighting"
+    ],
+    "speciesName": {
+      "de": "Irokex",
+      "fr": "Baggaïd",
+      "en": "Scrafty",
+      "es": "Scrafty",
+      "th": "ซึรุซึคิน",
+      "ja": "ズルズキン",
+      "ko": "곤율거니",
+      "ru": "Скрафти",
+      "zh_hans": "头巾混混",
+      "zh_hant": "頭巾混混"
+    },
+    "price": 5,
+    "ranking": 747,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SNARL",
+          "uses": 48142
+        },
+        {
+          "moveId": "COUNTER",
+          "uses": 67258
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "POWER_UP_PUNCH",
+          "uses": 31663
+        },
+        {
+          "moveId": "FOUL_PLAY",
+          "uses": 73099
+        },
+        {
+          "moveId": "ACID_SPRAY",
+          "uses": 10735
+        }
+      ]
+    },
+    "moveset": [
+      "COUNTER",
+      "FOUL_PLAY",
+      "POWER_UP_PUNCH"
     ]
   },
   "sigilyph": {
-    "legal": false,
+    "legal": true,
     "dex": 561,
     "types": [
       "psychic",
@@ -8780,15 +11171,75 @@
     ],
     "tags": [
       "regional"
+    ],
+    "speciesName": {
+      "de": "Symvolara",
+      "fr": "Cryptéro",
+      "en": "Sigilyph",
+      "es": "Sigilyph",
+      "th": "ซิมโบลา",
+      "ja": "シンボラー",
+      "ko": "심보러",
+      "ru": "Сиджилиф",
+      "zh_hans": "象征鸟",
+      "zh_hant": "象徵鳥"
+    },
+    "ranking": 451,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 30360
+        },
+        {
+          "moveId": "AIR_SLASH",
+          "uses": 85040
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SIGNAL_BEAM",
+          "uses": 32034
+        },
+        {
+          "moveId": "PSYBEAM",
+          "uses": 23357
+        },
+        {
+          "moveId": "ANCIENT_POWER",
+          "uses": 32754
+        },
+        {
+          "moveId": "AIR_CUTTER",
+          "uses": 27430
+        }
+      ]
+    },
+    "moveset": [
+      "AIR_SLASH",
+      "ANCIENT_POWER",
+      "SIGNAL_BEAM"
     ]
   },
   "yamask": {
-    "legal": false,
+    "legal": true,
     "dex": 562,
     "types": [
       "ghost",
       "none"
-    ]
+    ],
+    "speciesName": {
+      "de": "Makabaja",
+      "fr": "Tutafeh",
+      "en": "Yamask",
+      "es": "Yamask",
+      "th": "เดซึมาซึ",
+      "ja": "デスマス",
+      "ko": "데스마스",
+      "ru": "Ямаск",
+      "zh_hans": "哭哭面具",
+      "zh_hant": "哭哭面具"
+    }
   },
   "yamask_galarian": {
     "legal": false,
@@ -8802,59 +11253,339 @@
     ]
   },
   "cofagrigus": {
-    "legal": false,
+    "legal": true,
     "dex": 563,
     "types": [
       "ghost",
       "none"
+    ],
+    "speciesName": {
+      "de": "Echnatoll",
+      "fr": "Tutankafer",
+      "en": "Cofagrigus",
+      "es": "Cofagrigus",
+      "th": "เดซึคาน",
+      "ja": "デスカーン",
+      "ko": "데스니칸",
+      "ru": "Кофагригус",
+      "zh_hans": "死神棺",
+      "zh_hant": "死神棺"
+    },
+    "ranking": 327,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 33113
+        },
+        {
+          "moveId": "ASTONISH",
+          "uses": 82287
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SHADOW_BALL",
+          "uses": 52041
+        },
+        {
+          "moveId": "PSYCHIC",
+          "uses": 29140
+        },
+        {
+          "moveId": "DARK_PULSE",
+          "uses": 34194
+        }
+      ]
+    },
+    "moveset": [
+      "ASTONISH",
+      "SHADOW_BALL",
+      "DARK_PULSE"
     ]
   },
   "tirtouga": {
-    "legal": false,
+    "legal": true,
     "dex": 564,
     "types": [
       "water",
       "rock"
+    ],
+    "speciesName": {
+      "de": "Galapaflos",
+      "fr": "Carapagos",
+      "en": "Tirtouga",
+      "es": "Tirtouga",
+      "th": "โปรโตกา",
+      "ja": "プロトーガ",
+      "ko": "프로토가",
+      "ru": "Тиртуга",
+      "zh_hans": "原盖海龟",
+      "zh_hant": "原蓋海龜"
+    },
+    "ranking": 597,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "WATER_GUN",
+          "uses": 74855
+        },
+        {
+          "moveId": "BITE",
+          "uses": 40545
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SURF",
+          "uses": 50112
+        },
+        {
+          "moveId": "BODY_SLAM",
+          "uses": 42654
+        },
+        {
+          "moveId": "ANCIENT_POWER",
+          "uses": 22606
+        }
+      ]
+    },
+    "moveset": [
+      "WATER_GUN",
+      "SURF",
+      "BODY_SLAM"
     ]
   },
   "carracosta": {
-    "legal": false,
+    "legal": true,
     "dex": 565,
     "types": [
       "water",
       "rock"
+    ],
+    "speciesName": {
+      "de": "Karippas",
+      "fr": "Mégapagos",
+      "en": "Carracosta",
+      "es": "Carracosta",
+      "th": "อบาโกรา",
+      "ja": "アバゴーラ",
+      "ko": "늑골라",
+      "ru": "Карракоста",
+      "zh_hans": "肋骨海龟",
+      "zh_hant": "肋骨海龜"
+    },
+    "ranking": 577,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "WATER_GUN",
+          "uses": 59858
+        },
+        {
+          "moveId": "ROCK_THROW",
+          "uses": 55542
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SURF",
+          "uses": 50065
+        },
+        {
+          "moveId": "BODY_SLAM",
+          "uses": 42670
+        },
+        {
+          "moveId": "ANCIENT_POWER",
+          "uses": 22676
+        }
+      ]
+    },
+    "moveset": [
+      "WATER_GUN",
+      "SURF",
+      "BODY_SLAM"
     ]
   },
   "archen": {
-    "legal": false,
+    "legal": true,
     "dex": 566,
     "types": [
       "rock",
       "flying"
+    ],
+    "speciesName": {
+      "de": "Flapteryx",
+      "fr": "Arkéapti",
+      "en": "Archen",
+      "es": "Archen",
+      "th": "อาเคน",
+      "ja": "アーケン",
+      "ko": "아켄",
+      "ru": "Аркен",
+      "zh_hans": "始祖小鸟",
+      "zh_hant": "始祖小鳥"
+    },
+    "ranking": 511,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "WING_ATTACK",
+          "uses": 67285
+        },
+        {
+          "moveId": "QUICK_ATTACK",
+          "uses": 48115
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "DRAGON_CLAW",
+          "uses": 45570
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 37577
+        },
+        {
+          "moveId": "ANCIENT_POWER",
+          "uses": 32145
+        }
+      ]
+    },
+    "moveset": [
+      "WING_ATTACK",
+      "DRAGON_CLAW",
+      "CRUNCH"
     ]
   },
   "archeops": {
-    "legal": false,
+    "legal": true,
     "dex": 567,
     "types": [
       "rock",
       "flying"
+    ],
+    "speciesName": {
+      "de": "Aeropteryx",
+      "fr": "Aéroptéryx",
+      "en": "Archeops",
+      "es": "Archeops",
+      "th": "อาเคโอส",
+      "ja": "アーケオス",
+      "ko": "아케오스",
+      "ru": "Аркеопс",
+      "zh_hans": "始祖大鸟",
+      "zh_hant": "始祖大鳥"
+    },
+    "ranking": 507,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "WING_ATTACK",
+          "uses": 75635
+        },
+        {
+          "moveId": "STEEL_WING",
+          "uses": 39765
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "DRAGON_CLAW",
+          "uses": 45501
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 37692
+        },
+        {
+          "moveId": "ANCIENT_POWER",
+          "uses": 32131
+        }
+      ]
+    },
+    "moveset": [
+      "WING_ATTACK",
+      "DRAGON_CLAW",
+      "CRUNCH"
     ]
   },
   "trubbish": {
-    "legal": false,
+    "legal": true,
     "dex": 568,
     "types": [
       "poison",
       "none"
-    ]
+    ],
+    "speciesName": {
+      "de": "Unratütox",
+      "fr": "Miamiasme",
+      "en": "Trubbish",
+      "es": "Trubbish",
+      "th": "ยาบุคุรอน",
+      "ja": "ヤブクロン",
+      "ko": "깨봉이",
+      "ru": "Траббиш",
+      "zh_hans": "破破袋",
+      "zh_hant": "破破袋"
+    }
   },
   "garbodor": {
-    "legal": false,
+    "legal": true,
     "dex": 569,
     "types": [
       "poison",
       "none"
+    ],
+    "speciesName": {
+      "de": "Deponitox",
+      "fr": "Miasmax",
+      "en": "Garbodor",
+      "es": "Garbodor",
+      "th": "ดัสต์ดาส",
+      "ja": "ダストダス",
+      "ko": "더스트나",
+      "ru": "Гарбодор",
+      "zh_hans": "灰尘山",
+      "zh_hant": "灰塵山"
+    },
+    "ranking": 534,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TAKE_DOWN",
+          "uses": 19825
+        },
+        {
+          "moveId": "INFESTATION",
+          "uses": 95575
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SEED_BOMB",
+          "uses": 35455
+        },
+        {
+          "moveId": "GUNK_SHOT",
+          "uses": 17574
+        },
+        {
+          "moveId": "BODY_SLAM",
+          "uses": 54766
+        },
+        {
+          "moveId": "ACID_SPRAY",
+          "uses": 7553
+        }
+      ]
+    },
+    "moveset": [
+      "INFESTATION",
+      "BODY_SLAM",
+      "SEED_BOMB"
     ]
   },
   "zorua": {
@@ -8880,383 +11611,2402 @@
     ]
   },
   "minccino": {
-    "legal": false,
+    "legal": true,
     "dex": 572,
     "types": [
       "normal",
       "none"
-    ]
+    ],
+    "speciesName": {
+      "de": "Picochilla",
+      "fr": "Chinchidou",
+      "en": "Minccino",
+      "es": "Minccino",
+      "th": "จิลามี",
+      "ja": "チラーミィ",
+      "ko": "치라미",
+      "ru": "Минчино",
+      "zh_hans": "泡沫栗鼠",
+      "zh_hant": "泡沫栗鼠"
+    }
   },
   "cinccino": {
-    "legal": false,
+    "legal": true,
     "dex": 573,
     "types": [
       "normal",
       "none"
+    ],
+    "speciesName": {
+      "de": "Chillabell",
+      "fr": "Pashmilla",
+      "en": "Cinccino",
+      "es": "Cinccino",
+      "th": "จิลัคจิโน",
+      "ja": "チラチーノ",
+      "ko": "치라치노",
+      "ru": "Чинчино",
+      "zh_hans": "奇诺栗鼠",
+      "zh_hant": "奇諾栗鼠"
+    },
+    "ranking": 542,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "POUND",
+          "uses": 27105
+        },
+        {
+          "moveId": "CHARM",
+          "uses": 88295
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 34742
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 23595
+        },
+        {
+          "moveId": "AQUA_TAIL",
+          "uses": 57043
+        }
+      ]
+    },
+    "moveset": [
+      "CHARM",
+      "AQUA_TAIL",
+      "THUNDERBOLT"
     ]
   },
   "gothita": {
-    "legal": false,
+    "legal": true,
     "dex": 574,
     "types": [
       "psychic",
       "none"
-    ]
+    ],
+    "speciesName": {
+      "de": "Mollimorba",
+      "fr": "Scrutella",
+      "en": "Gothita",
+      "es": "Gothita",
+      "th": "โกธิมู",
+      "ja": "ゴチム",
+      "ko": "고디탱",
+      "ru": "Гофита",
+      "zh_hans": "哥德宝宝",
+      "zh_hant": "哥德寶寶"
+    }
   },
   "gothorita": {
-    "legal": false,
+    "legal": true,
     "dex": 575,
     "types": [
       "psychic",
       "none"
+    ],
+    "speciesName": {
+      "de": "Hypnomorba",
+      "fr": "Mesmérella",
+      "en": "Gothorita",
+      "es": "Gothorita",
+      "th": "โกธิมิรุ",
+      "ja": "ゴチミル",
+      "ko": "고디보미",
+      "ru": "Гофорита",
+      "zh_hans": "哥德小童",
+      "zh_hant": "哥德小童"
+    },
+    "ranking": 494,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "POUND",
+          "uses": 19018
+        },
+        {
+          "moveId": "CONFUSION",
+          "uses": 96382
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "PSYCHIC",
+          "uses": 70493
+        },
+        {
+          "moveId": "PSYBEAM",
+          "uses": 14351
+        },
+        {
+          "moveId": "FUTURE_SIGHT",
+          "uses": 30363
+        }
+      ]
+    },
+    "moveset": [
+      "CONFUSION",
+      "PSYCHIC",
+      "FUTURE_SIGHT"
     ]
   },
   "gothitelle": {
-    "legal": false,
+    "legal": true,
     "dex": 576,
     "types": [
       "psychic",
       "none"
+    ],
+    "speciesName": {
+      "de": "Morbitesse",
+      "fr": "Sidérella",
+      "en": "Gothitelle",
+      "es": "Gothitelle",
+      "th": "โกธิรูเซล",
+      "ja": "ゴチルゼル",
+      "ko": "고디모아젤",
+      "ru": "Гофителль",
+      "zh_hans": "哥德小姐",
+      "zh_hant": "哥德小姐"
+    },
+    "ranking": 524,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "CONFUSION",
+          "uses": 68513
+        },
+        {
+          "moveId": "CHARM",
+          "uses": 46887
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ROCK_SLIDE",
+          "uses": 55625
+        },
+        {
+          "moveId": "PSYCHIC",
+          "uses": 41819
+        },
+        {
+          "moveId": "FUTURE_SIGHT",
+          "uses": 18113
+        }
+      ]
+    },
+    "moveset": [
+      "CONFUSION",
+      "ROCK_SLIDE",
+      "PSYCHIC"
     ]
   },
   "solosis": {
-    "legal": false,
+    "legal": true,
     "dex": 577,
     "types": [
       "psychic",
       "none"
+    ],
+    "speciesName": {
+      "de": "Monozyto",
+      "fr": "Nucléos",
+      "en": "Solosis",
+      "es": "Solosis",
+      "th": "ยูนิรัน",
+      "ja": "ユニラン",
+      "ko": "유니란",
+      "ru": "Солозис",
+      "zh_hans": "单卵细胞球",
+      "zh_hant": "單卵細胞球"
+    },
+    "ranking": 351,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 3169
+        },
+        {
+          "moveId": "HIDDEN_POWER_WATER",
+          "uses": 6980
+        },
+        {
+          "moveId": "HIDDEN_POWER_STEEL",
+          "uses": 6101
+        },
+        {
+          "moveId": "HIDDEN_POWER_ROCK",
+          "uses": 7448
+        },
+        {
+          "moveId": "HIDDEN_POWER_PSYCHIC",
+          "uses": 8434
+        },
+        {
+          "moveId": "HIDDEN_POWER_POISON",
+          "uses": 5835
+        },
+        {
+          "moveId": "HIDDEN_POWER_ICE",
+          "uses": 7463
+        },
+        {
+          "moveId": "HIDDEN_POWER_GROUND",
+          "uses": 7710
+        },
+        {
+          "moveId": "HIDDEN_POWER_GRASS",
+          "uses": 7004
+        },
+        {
+          "moveId": "HIDDEN_POWER_GHOST",
+          "uses": 6832
+        },
+        {
+          "moveId": "HIDDEN_POWER_FLYING",
+          "uses": 7310
+        },
+        {
+          "moveId": "HIDDEN_POWER_FIRE",
+          "uses": 7371
+        },
+        {
+          "moveId": "HIDDEN_POWER_FIGHTING",
+          "uses": 7193
+        },
+        {
+          "moveId": "HIDDEN_POWER_ELECTRIC",
+          "uses": 7626
+        },
+        {
+          "moveId": "HIDDEN_POWER_DRAGON",
+          "uses": 6110
+        },
+        {
+          "moveId": "HIDDEN_POWER_DARK",
+          "uses": 6673
+        },
+        {
+          "moveId": "HIDDEN_POWER_BUG",
+          "uses": 6071
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDER",
+          "uses": 36909
+        },
+        {
+          "moveId": "PSYSHOCK",
+          "uses": 59534
+        },
+        {
+          "moveId": "NIGHT_SHADE",
+          "uses": 19021
+        }
+      ]
+    },
+    "moveset": [
+      "HIDDEN_POWER_PSYCHIC",
+      "PSYSHOCK",
+      "THUNDER"
     ]
   },
   "duosion": {
-    "legal": false,
+    "legal": true,
     "dex": 578,
     "types": [
       "psychic",
       "none"
+    ],
+    "speciesName": {
+      "de": "Mitodos",
+      "fr": "Méios",
+      "en": "Duosion",
+      "es": "Duosion",
+      "th": "ดาบูลัน",
+      "ja": "ダブラン",
+      "ko": "듀란",
+      "ru": "Дуозион",
+      "zh_hans": "双卵细胞球",
+      "zh_hant": "雙卵細胞球"
+    },
+    "ranking": 351,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 3182
+        },
+        {
+          "moveId": "HIDDEN_POWER_WATER",
+          "uses": 7032
+        },
+        {
+          "moveId": "HIDDEN_POWER_STEEL",
+          "uses": 6100
+        },
+        {
+          "moveId": "HIDDEN_POWER_ROCK",
+          "uses": 7453
+        },
+        {
+          "moveId": "HIDDEN_POWER_PSYCHIC",
+          "uses": 8326
+        },
+        {
+          "moveId": "HIDDEN_POWER_POISON",
+          "uses": 5868
+        },
+        {
+          "moveId": "HIDDEN_POWER_ICE",
+          "uses": 7567
+        },
+        {
+          "moveId": "HIDDEN_POWER_GROUND",
+          "uses": 7721
+        },
+        {
+          "moveId": "HIDDEN_POWER_GRASS",
+          "uses": 6944
+        },
+        {
+          "moveId": "HIDDEN_POWER_GHOST",
+          "uses": 6792
+        },
+        {
+          "moveId": "HIDDEN_POWER_FLYING",
+          "uses": 7237
+        },
+        {
+          "moveId": "HIDDEN_POWER_FIRE",
+          "uses": 7395
+        },
+        {
+          "moveId": "HIDDEN_POWER_FIGHTING",
+          "uses": 7232
+        },
+        {
+          "moveId": "HIDDEN_POWER_ELECTRIC",
+          "uses": 7650
+        },
+        {
+          "moveId": "HIDDEN_POWER_DRAGON",
+          "uses": 6104
+        },
+        {
+          "moveId": "HIDDEN_POWER_DARK",
+          "uses": 6713
+        },
+        {
+          "moveId": "HIDDEN_POWER_BUG",
+          "uses": 6160
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDER",
+          "uses": 36940
+        },
+        {
+          "moveId": "PSYSHOCK",
+          "uses": 59505
+        },
+        {
+          "moveId": "NIGHT_SHADE",
+          "uses": 18949
+        }
+      ]
+    },
+    "moveset": [
+      "HIDDEN_POWER_PSYCHIC",
+      "PSYSHOCK",
+      "THUNDER"
     ]
   },
   "reuniclus": {
-    "legal": false,
+    "legal": true,
     "dex": 579,
     "types": [
       "psychic",
       "none"
+    ],
+    "speciesName": {
+      "de": "Zytomega",
+      "fr": "Symbios",
+      "en": "Reuniclus",
+      "es": "Reuniclus",
+      "th": "แลนคูลัส",
+      "ja": "ランクルス",
+      "ko": "란쿨루스",
+      "ru": "Реониклус",
+      "zh_hans": "人造细胞卵",
+      "zh_hant": "人造細胞卵"
+    },
+    "ranking": 322,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 3001
+        },
+        {
+          "moveId": "HIDDEN_POWER_WATER",
+          "uses": 7038
+        },
+        {
+          "moveId": "HIDDEN_POWER_STEEL",
+          "uses": 6116
+        },
+        {
+          "moveId": "HIDDEN_POWER_ROCK",
+          "uses": 7476
+        },
+        {
+          "moveId": "HIDDEN_POWER_PSYCHIC",
+          "uses": 8238
+        },
+        {
+          "moveId": "HIDDEN_POWER_POISON",
+          "uses": 5902
+        },
+        {
+          "moveId": "HIDDEN_POWER_ICE",
+          "uses": 7537
+        },
+        {
+          "moveId": "HIDDEN_POWER_GROUND",
+          "uses": 7737
+        },
+        {
+          "moveId": "HIDDEN_POWER_GRASS",
+          "uses": 7054
+        },
+        {
+          "moveId": "HIDDEN_POWER_GHOST",
+          "uses": 6987
+        },
+        {
+          "moveId": "HIDDEN_POWER_FLYING",
+          "uses": 7266
+        },
+        {
+          "moveId": "HIDDEN_POWER_FIRE",
+          "uses": 7514
+        },
+        {
+          "moveId": "HIDDEN_POWER_FIGHTING",
+          "uses": 7196
+        },
+        {
+          "moveId": "HIDDEN_POWER_ELECTRIC",
+          "uses": 7705
+        },
+        {
+          "moveId": "HIDDEN_POWER_DRAGON",
+          "uses": 6101
+        },
+        {
+          "moveId": "HIDDEN_POWER_DARK",
+          "uses": 6784
+        },
+        {
+          "moveId": "HIDDEN_POWER_BUG",
+          "uses": 6140
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDER",
+          "uses": 33677
+        },
+        {
+          "moveId": "SHADOW_BALL",
+          "uses": 42981
+        },
+        {
+          "moveId": "FUTURE_SIGHT",
+          "uses": 38774
+        }
+      ]
+    },
+    "moveset": [
+      "HIDDEN_POWER_FIGHTING",
+      "SHADOW_BALL",
+      "FUTURE_SIGHT"
     ]
   },
   "ducklett": {
-    "legal": false,
+    "legal": true,
     "dex": 580,
     "types": [
       "water",
       "flying"
-    ]
+    ],
+    "speciesName": {
+      "de": "Piccolente",
+      "fr": "Couaneton",
+      "en": "Ducklett",
+      "es": "Ducklett",
+      "th": "โคอารูฮิ",
+      "ja": "コアルヒー",
+      "ko": "꼬지보리",
+      "ru": "Даклетт",
+      "zh_hans": "鸭宝宝",
+      "zh_hant": "鴨寶寶"
+    }
   },
   "swanna": {
-    "legal": false,
+    "legal": true,
     "dex": 581,
     "types": [
       "water",
       "flying"
+    ],
+    "speciesName": {
+      "de": "Swaroness",
+      "fr": "Lakmécygne",
+      "en": "Swanna",
+      "es": "Swanna",
+      "th": "สวอนนา",
+      "ja": "スワンナ",
+      "ko": "스완나",
+      "ru": "Сванна",
+      "zh_hans": "首席天鹅",
+      "zh_hant": "首席天鵝"
+    },
+    "ranking": 434,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "WATER_GUN",
+          "uses": 60212
+        },
+        {
+          "moveId": "AIR_SLASH",
+          "uses": 55188
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ICE_BEAM",
+          "uses": 40429
+        },
+        {
+          "moveId": "HURRICANE",
+          "uses": 46775
+        },
+        {
+          "moveId": "BUBBLE_BEAM",
+          "uses": 28243
+        }
+      ]
+    },
+    "moveset": [
+      "AIR_SLASH",
+      "HURRICANE",
+      "ICE_BEAM"
     ]
   },
   "vanillite": {
-    "legal": false,
+    "legal": true,
     "dex": 582,
     "types": [
       "ice",
       "none"
-    ]
+    ],
+    "speciesName": {
+      "de": "Gelatini",
+      "fr": "Sorbébé",
+      "en": "Vanillite",
+      "es": "Vanillite",
+      "th": "วานิเพ็ตติ",
+      "ja": "バニプッチ",
+      "ko": "바닐프티",
+      "ru": "Ваниллайт",
+      "zh_hans": "迷你冰",
+      "zh_hant": "迷你冰"
+    }
   },
   "vanillish": {
-    "legal": false,
+    "legal": true,
     "dex": 583,
     "types": [
       "ice",
       "none"
+    ],
+    "speciesName": {
+      "de": "Gelatroppo",
+      "fr": "Sorboul",
+      "en": "Vanillish",
+      "es": "Vanillish",
+      "th": "วานิริช",
+      "ja": "バニリッチ",
+      "ko": "바닐리치",
+      "ru": "Ваниллиш",
+      "zh_hans": "多多冰",
+      "zh_hant": "多多冰"
+    },
+    "ranking": 514,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "FROST_BREATH",
+          "uses": 80754
+        },
+        {
+          "moveId": "ASTONISH",
+          "uses": 34646
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SIGNAL_BEAM",
+          "uses": 25677
+        },
+        {
+          "moveId": "ICY_WIND",
+          "uses": 67884
+        },
+        {
+          "moveId": "ICE_BEAM",
+          "uses": 21779
+        }
+      ]
+    },
+    "moveset": [
+      "FROST_BREATH",
+      "ICY_WIND",
+      "SIGNAL_BEAM"
     ]
   },
   "vanilluxe": {
-    "legal": false,
+    "legal": true,
     "dex": 584,
     "types": [
       "ice",
       "none"
+    ],
+    "speciesName": {
+      "de": "Gelatwino",
+      "fr": "Sorbouboul",
+      "en": "Vanilluxe",
+      "es": "Vanilluxe",
+      "th": "ไบวานิลลา",
+      "ja": "バイバニラ",
+      "ko": "배바닐라",
+      "ru": "Ваниллакс",
+      "zh_hans": "双倍多多冰",
+      "zh_hant": "雙倍多多冰"
+    },
+    "ranking": 440,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "FROST_BREATH",
+          "uses": 80763
+        },
+        {
+          "moveId": "ASTONISH",
+          "uses": 34637
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SIGNAL_BEAM",
+          "uses": 37457
+        },
+        {
+          "moveId": "FLASH_CANNON",
+          "uses": 25756
+        },
+        {
+          "moveId": "BLIZZARD",
+          "uses": 52175
+        }
+      ]
+    },
+    "moveset": [
+      "FROST_BREATH",
+      "BLIZZARD",
+      "SIGNAL_BEAM"
     ]
   },
   "deerling": {
-    "legal": false,
+    "legal": true,
     "dex": 585,
     "types": [
       "normal",
       "grass"
+    ],
+    "speciesName": {
+      "de": "Sesokitz",
+      "fr": "Vivaldaim",
+      "en": "Deerling",
+      "es": "Deerling",
+      "th": "ชิคิจิกะ",
+      "ja": "シキジカ",
+      "ko": "사철록",
+      "ru": "Дирлинг",
+      "zh_hans": "四季鹿",
+      "zh_hant": "四季鹿"
+    },
+    "ranking": 337,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TAKE_DOWN",
+          "uses": 48861
+        },
+        {
+          "moveId": "TACKLE",
+          "uses": 66539
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "WILD_CHARGE",
+          "uses": 61501
+        },
+        {
+          "moveId": "SEED_BOMB",
+          "uses": 38760
+        },
+        {
+          "moveId": "ENERGY_BALL",
+          "uses": 15280
+        }
+      ]
+    },
+    "moveset": [
+      "TACKLE",
+      "WILD_CHARGE",
+      "SEED_BOMB"
     ]
   },
   "sawsbuck": {
-    "legal": false,
+    "legal": true,
     "dex": 586,
     "types": [
       "normal",
       "grass"
+    ],
+    "speciesName": {
+      "de": "Kronjuwild",
+      "fr": "Haydaim",
+      "en": "Sawsbuck",
+      "es": "Sawsbuck",
+      "th": "เมบูคิจิกะ",
+      "ja": "メブキジカ",
+      "ko": "바라철록",
+      "ru": "Соусбак",
+      "zh_hans": "芽吹鹿",
+      "zh_hant": "芽吹鹿"
+    },
+    "ranking": 416,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TAKE_DOWN",
+          "uses": 26174
+        },
+        {
+          "moveId": "FEINT_ATTACK",
+          "uses": 89226
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "WILD_CHARGE",
+          "uses": 56432
+        },
+        {
+          "moveId": "SOLAR_BEAM",
+          "uses": 19625
+        },
+        {
+          "moveId": "MEGAHORN",
+          "uses": 24171
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 15284
+        }
+      ]
+    },
+    "moveset": [
+      "FEINT_ATTACK",
+      "WILD_CHARGE",
+      "MEGAHORN"
     ]
   },
   "emolga": {
-    "legal": false,
+    "legal": true,
     "dex": 587,
     "types": [
       "electric",
       "flying"
+    ],
+    "speciesName": {
+      "de": "Emolga",
+      "fr": "Emolga",
+      "en": "Emolga",
+      "es": "Emolga",
+      "th": "เอมอนกา",
+      "ja": "エモンガ",
+      "ko": "에몽가",
+      "ru": "Эмолга",
+      "zh_hans": "电飞鼠",
+      "zh_hant": "電飛鼠"
+    },
+    "ranking": 563,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "THUNDER_SHOCK",
+          "uses": 69707
+        },
+        {
+          "moveId": "QUICK_ATTACK",
+          "uses": 45693
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 21418
+        },
+        {
+          "moveId": "DISCHARGE",
+          "uses": 50220
+        },
+        {
+          "moveId": "AERIAL_ACE",
+          "uses": 43772
+        }
+      ]
+    },
+    "moveset": [
+      "THUNDER_SHOCK",
+      "DISCHARGE",
+      "AERIAL_ACE"
     ]
   },
   "karrablast": {
-    "legal": false,
+    "legal": true,
     "dex": 588,
     "types": [
       "bug",
       "none"
+    ],
+    "speciesName": {
+      "de": "Laukaps",
+      "fr": "Carabing",
+      "en": "Karrablast",
+      "es": "Karrablast",
+      "th": "คาบูรูโมะ",
+      "ja": "カブルモ",
+      "ko": "딱정곤",
+      "ru": "Каррабласт",
+      "zh_hans": "盖盖虫",
+      "zh_hant": "蓋蓋蟲"
+    },
+    "ranking": 523,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "PECK",
+          "uses": 35004
+        },
+        {
+          "moveId": "FURY_CUTTER",
+          "uses": 80396
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "X_SCISSOR",
+          "uses": 38870
+        },
+        {
+          "moveId": "SIGNAL_BEAM",
+          "uses": 10784
+        },
+        {
+          "moveId": "DRILL_RUN",
+          "uses": 43392
+        },
+        {
+          "moveId": "AERIAL_ACE",
+          "uses": 22159
+        }
+      ]
+    },
+    "moveset": [
+      "FURY_CUTTER",
+      "DRILL_RUN",
+      "X_SCISSOR"
     ]
   },
   "escavalier": {
-    "legal": false,
+    "legal": true,
     "dex": 589,
     "types": [
       "bug",
       "steel"
+    ],
+    "speciesName": {
+      "de": "Cavalanzas",
+      "fr": "Lançargot",
+      "en": "Escavalier",
+      "es": "Escavalier",
+      "th": "ชูวัลโก",
+      "ja": "シュバルゴ",
+      "ko": "슈바르고",
+      "ru": "Эскавалир",
+      "zh_hans": "骑士蜗牛",
+      "zh_hant": "騎士蝸牛"
+    },
+    "price": 3,
+    "ranking": 639,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "COUNTER",
+          "uses": 68841
+        },
+        {
+          "moveId": "BUG_BITE",
+          "uses": 46559
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "MEGAHORN",
+          "uses": 36780
+        },
+        {
+          "moveId": "DRILL_RUN",
+          "uses": 47838
+        },
+        {
+          "moveId": "AERIAL_ACE",
+          "uses": 24611
+        },
+        {
+          "moveId": "ACID_SPRAY",
+          "uses": 6221
+        }
+      ]
+    },
+    "moveset": [
+      "COUNTER",
+      "DRILL_RUN",
+      "MEGAHORN"
     ]
   },
   "foongus": {
-    "legal": false,
+    "legal": true,
     "dex": 590,
     "types": [
       "grass",
       "poison"
-    ]
+    ],
+    "speciesName": {
+      "de": "Tarnpignon",
+      "fr": "Trompignon",
+      "en": "Foongus",
+      "es": "Foongus",
+      "th": "ทามาเกะทาเคะ",
+      "ja": "タマゲタケ",
+      "ko": "깜놀버슬",
+      "ru": "Фунгус",
+      "zh_hans": "宝贝球菇",
+      "zh_hant": "寶貝球菇"
+    }
   },
   "amoonguss": {
-    "legal": false,
+    "legal": true,
     "dex": 591,
     "types": [
       "grass",
       "poison"
+    ],
+    "speciesName": {
+      "de": "Hutsassa",
+      "fr": "Gaulet",
+      "en": "Amoonguss",
+      "es": "Amoonguss",
+      "th": "โมโรบาเรรุ",
+      "ja": "モロバレル",
+      "ko": "뽀록나",
+      "ru": "Амунгус",
+      "zh_hans": "暴露菇",
+      "zh_hant": "暴露菇"
+    },
+    "ranking": 505,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "FEINT_ATTACK",
+          "uses": 79722
+        },
+        {
+          "moveId": "ASTONISH",
+          "uses": 35678
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SLUDGE_BOMB",
+          "uses": 34527
+        },
+        {
+          "moveId": "GRASS_KNOT",
+          "uses": 46467
+        },
+        {
+          "moveId": "FOUL_PLAY",
+          "uses": 34458
+        }
+      ]
+    },
+    "moveset": [
+      "FEINT_ATTACK",
+      "GRASS_KNOT",
+      "SLUDGE_BOMB"
     ]
   },
   "frillish": {
-    "legal": false,
+    "legal": true,
     "dex": 592,
     "types": [
       "water",
       "ghost"
+    ],
+    "speciesName": {
+      "de": "Quabbel",
+      "fr": "Viskuse",
+      "en": "Frillish",
+      "es": "Frillish",
+      "th": "พูรูริล",
+      "ja": "プルリル",
+      "ko": "탱그릴",
+      "ru": "Фрилиш",
+      "zh_hans": "轻飘飘",
+      "zh_hant": "輕飄飄"
+    },
+    "ranking": 506,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "HEX",
+          "uses": 58496
+        },
+        {
+          "moveId": "BUBBLE",
+          "uses": 56904
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "OMINOUS_WIND",
+          "uses": 48727
+        },
+        {
+          "moveId": "NIGHT_SHADE",
+          "uses": 15219
+        },
+        {
+          "moveId": "ICE_BEAM",
+          "uses": 51467
+        }
+      ]
+    },
+    "moveset": [
+      "HEX",
+      "ICE_BEAM",
+      "OMINOUS_WIND"
     ]
   },
   "jellicent": {
-    "legal": false,
+    "legal": true,
     "dex": 593,
     "types": [
       "water",
       "ghost"
+    ],
+    "speciesName": {
+      "de": "Apoquallyp",
+      "fr": "Moyade",
+      "en": "Jellicent",
+      "es": "Jellicent",
+      "th": "บูรุนเจล",
+      "ja": "ブルンゲル",
+      "ko": "탱탱겔",
+      "ru": "Джеллисент",
+      "zh_hans": "胖嘟嘟",
+      "zh_hant": "胖嘟嘟"
+    },
+    "price": 9,
+    "ranking": 694,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "HEX",
+          "uses": 59595
+        },
+        {
+          "moveId": "BUBBLE",
+          "uses": 55805
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SHADOW_BALL",
+          "uses": 56313
+        },
+        {
+          "moveId": "ICE_BEAM",
+          "uses": 36285
+        },
+        {
+          "moveId": "BUBBLE_BEAM",
+          "uses": 22687
+        }
+      ]
+    },
+    "moveset": [
+      "HEX",
+      "BUBBLE_BEAM",
+      "SHADOW_BALL"
     ]
   },
   "alomomola": {
-    "legal": false,
+    "legal": true,
     "dex": 594,
     "types": [
       "water",
       "none"
+    ],
+    "speciesName": {
+      "de": "Mamolida",
+      "fr": "Mamanbo",
+      "en": "Alomomola",
+      "es": "Alomomola",
+      "th": "มามันโบ",
+      "ja": "ママンボウ",
+      "ko": "맘복치",
+      "ru": "Аломомола",
+      "zh_hans": "保母曼波",
+      "zh_hant": "保母曼波"
+    },
+    "price": 3,
+    "ranking": 601,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "WATERFALL",
+          "uses": 12158
+        },
+        {
+          "moveId": "HIDDEN_POWER_WATER",
+          "uses": 8254
+        },
+        {
+          "moveId": "HIDDEN_POWER_STEEL",
+          "uses": 5684
+        },
+        {
+          "moveId": "HIDDEN_POWER_ROCK",
+          "uses": 6856
+        },
+        {
+          "moveId": "HIDDEN_POWER_PSYCHIC",
+          "uses": 5861
+        },
+        {
+          "moveId": "HIDDEN_POWER_POISON",
+          "uses": 5534
+        },
+        {
+          "moveId": "HIDDEN_POWER_ICE",
+          "uses": 7111
+        },
+        {
+          "moveId": "HIDDEN_POWER_GROUND",
+          "uses": 7086
+        },
+        {
+          "moveId": "HIDDEN_POWER_GRASS",
+          "uses": 6442
+        },
+        {
+          "moveId": "HIDDEN_POWER_GHOST",
+          "uses": 6332
+        },
+        {
+          "moveId": "HIDDEN_POWER_FLYING",
+          "uses": 6674
+        },
+        {
+          "moveId": "HIDDEN_POWER_FIRE",
+          "uses": 6812
+        },
+        {
+          "moveId": "HIDDEN_POWER_FIGHTING",
+          "uses": 6543
+        },
+        {
+          "moveId": "HIDDEN_POWER_ELECTRIC",
+          "uses": 6919
+        },
+        {
+          "moveId": "HIDDEN_POWER_DRAGON",
+          "uses": 5639
+        },
+        {
+          "moveId": "HIDDEN_POWER_DARK",
+          "uses": 6113
+        },
+        {
+          "moveId": "HIDDEN_POWER_BUG",
+          "uses": 5661
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "PSYCHIC",
+          "uses": 40961
+        },
+        {
+          "moveId": "HYDRO_PUMP",
+          "uses": 40466
+        },
+        {
+          "moveId": "BLIZZARD",
+          "uses": 34028
+        }
+      ]
+    },
+    "moveset": [
+      "WATERFALL",
+      "PSYCHIC",
+      "HYDRO_PUMP"
     ]
   },
   "joltik": {
-    "legal": false,
+    "legal": true,
     "dex": 595,
     "types": [
       "bug",
       "electric"
-    ]
+    ],
+    "speciesName": {
+      "de": "Wattzapf",
+      "fr": "Statitik",
+      "en": "Joltik",
+      "es": "Joltik",
+      "th": "บาชูรุ",
+      "ja": "バチュル",
+      "ko": "파쪼옥",
+      "ru": "Джолтик",
+      "zh_hans": "电电虫",
+      "zh_hant": "電電蟲"
+    }
   },
   "galvantula": {
-    "legal": false,
+    "legal": true,
     "dex": 596,
     "types": [
       "bug",
       "electric"
+    ],
+    "speciesName": {
+      "de": "Voltula",
+      "fr": "Mygavolt",
+      "en": "Galvantula",
+      "es": "Galvantula",
+      "th": "เดนทูลา",
+      "ja": "デンチュラ",
+      "ko": "전툴라",
+      "ru": "Галвантула",
+      "zh_hans": "电蜘蛛",
+      "zh_hant": "電蜘蛛"
+    },
+    "price": 5,
+    "ranking": 621,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "VOLT_SWITCH",
+          "uses": 64711
+        },
+        {
+          "moveId": "FURY_CUTTER",
+          "uses": 50689
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "LUNGE",
+          "uses": 30431
+        },
+        {
+          "moveId": "ENERGY_BALL",
+          "uses": 18814
+        },
+        {
+          "moveId": "DISCHARGE",
+          "uses": 31001
+        },
+        {
+          "moveId": "CROSS_POISON",
+          "uses": 27258
+        },
+        {
+          "moveId": "BUG_BUZZ",
+          "uses": 7984
+        }
+      ]
+    },
+    "moveset": [
+      "VOLT_SWITCH",
+      "DISCHARGE",
+      "LUNGE"
     ]
   },
   "ferroseed": {
-    "legal": false,
+    "legal": true,
     "dex": 597,
     "types": [
       "grass",
       "steel"
+    ],
+    "speciesName": {
+      "de": "Kastadur",
+      "fr": "Grindur",
+      "en": "Ferroseed",
+      "es": "Ferroseed",
+      "th": "เทสซีด",
+      "ja": "テッシード",
+      "ko": "철시드",
+      "ru": "Ферросид",
+      "zh_hans": "种子铁球",
+      "zh_hant": "種子鐵球"
+    },
+    "ranking": 371,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "TACKLE",
+          "uses": 44080
+        },
+        {
+          "moveId": "METAL_CLAW",
+          "uses": 71320
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "IRON_HEAD",
+          "uses": 70750
+        },
+        {
+          "moveId": "GYRO_BALL",
+          "uses": 22180
+        },
+        {
+          "moveId": "FLASH_CANNON",
+          "uses": 22512
+        }
+      ]
+    },
+    "moveset": [
+      "METAL_CLAW",
+      "IRON_HEAD",
+      "FLASH_CANNON"
     ]
   },
   "ferrothorn": {
-    "legal": false,
+    "legal": true,
     "dex": 598,
     "types": [
       "grass",
       "steel"
+    ],
+    "speciesName": {
+      "de": "Tentantel",
+      "fr": "Noacier",
+      "en": "Ferrothorn",
+      "es": "Ferrothorn",
+      "th": "นัทเทรย์",
+      "ja": "ナットレイ",
+      "ko": "너트령",
+      "ru": "Ферроторн",
+      "zh_hans": "坚果哑铃",
+      "zh_hant": "堅果啞鈴"
+    },
+    "price": 5,
+    "ranking": 628,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "METAL_CLAW",
+          "uses": 43835
+        },
+        {
+          "moveId": "BULLET_SEED",
+          "uses": 71565
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDER",
+          "uses": 22023
+        },
+        {
+          "moveId": "POWER_WHIP",
+          "uses": 42310
+        },
+        {
+          "moveId": "MIRROR_SHOT",
+          "uses": 30148
+        },
+        {
+          "moveId": "FLASH_CANNON",
+          "uses": 15715
+        },
+        {
+          "moveId": "ACID_SPRAY",
+          "uses": 5193
+        }
+      ]
+    },
+    "moveset": [
+      "BULLET_SEED",
+      "POWER_WHIP",
+      "THUNDER"
     ]
   },
   "klink": {
-    "legal": false,
+    "legal": true,
     "dex": 599,
     "types": [
       "steel",
       "none"
-    ]
+    ],
+    "speciesName": {
+      "de": "Klikk",
+      "fr": "Tic",
+      "en": "Klink",
+      "es": "Klink",
+      "th": "เกียร์",
+      "ja": "ギアル",
+      "ko": "기어르",
+      "ru": "Клинк",
+      "zh_hans": "齿轮儿",
+      "zh_hant": "齒輪兒"
+    }
   },
   "klang": {
-    "legal": false,
+    "legal": true,
     "dex": 600,
     "types": [
       "steel",
       "none"
+    ],
+    "speciesName": {
+      "de": "Kliklak",
+      "fr": "Clic",
+      "en": "Klang",
+      "es": "Klang",
+      "th": "กิเกียร์",
+      "ja": "ギギアル",
+      "ko": "기기어르",
+      "ru": "Клэнг",
+      "zh_hans": "齿轮组",
+      "zh_hant": "齒輪組"
+    },
+    "ranking": 586,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "THUNDER_SHOCK",
+          "uses": 71305
+        },
+        {
+          "moveId": "CHARGE_BEAM",
+          "uses": 44095
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ZAP_CANNON",
+          "uses": 17673
+        },
+        {
+          "moveId": "VICE_GRIP",
+          "uses": 39879
+        },
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 57702
+        }
+      ]
+    },
+    "moveset": [
+      "THUNDER_SHOCK",
+      "THUNDERBOLT",
+      "VICE_GRIP"
     ]
   },
   "klinklang": {
-    "legal": false,
+    "legal": true,
     "dex": 601,
     "types": [
       "steel",
       "none"
+    ],
+    "speciesName": {
+      "de": "Klikdiklak",
+      "fr": "Cliticlic",
+      "en": "Klinklang",
+      "es": "Klinklang",
+      "th": "กิกิเกียร์",
+      "ja": "ギギギアル",
+      "ko": "기기기어르",
+      "ru": "Клинклэнг",
+      "zh_hans": "齿轮怪",
+      "zh_hant": "齒輪怪"
+    },
+    "ranking": 571,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "THUNDER_SHOCK",
+          "uses": 71204
+        },
+        {
+          "moveId": "CHARGE_BEAM",
+          "uses": 44196
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ZAP_CANNON",
+          "uses": 25998
+        },
+        {
+          "moveId": "MIRROR_SHOT",
+          "uses": 46451
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 18747
+        },
+        {
+          "moveId": "FLASH_CANNON",
+          "uses": 24185
+        }
+      ]
+    },
+    "moveset": [
+      "THUNDER_SHOCK",
+      "MIRROR_SHOT",
+      "ZAP_CANNON"
     ]
   },
   "tynamo": {
-    "legal": false,
+    "legal": true,
     "dex": 602,
     "types": [
       "electric",
       "none"
-    ]
+    ],
+    "speciesName": {
+      "de": "Zapplardin",
+      "fr": "Anchwatt",
+      "en": "Tynamo",
+      "es": "Tynamo",
+      "th": "ชิบิชิราซึ",
+      "ja": "シビシラス",
+      "ko": "저리어",
+      "ru": "Тайнамо",
+      "zh_hans": "麻麻小鱼",
+      "zh_hant": "麻麻小魚"
+    }
   },
   "eelektrik": {
-    "legal": false,
+    "legal": true,
     "dex": 603,
     "types": [
       "electric",
       "none"
+    ],
+    "speciesName": {
+      "de": "Zapplalek",
+      "fr": "Lampéroie",
+      "en": "Eelektrik",
+      "es": "Eelektrik",
+      "th": "ชิบิบีล",
+      "ja": "シビビール",
+      "ko": "저리릴",
+      "ru": "Илектрик",
+      "zh_hans": "麻麻鳗",
+      "zh_hant": "麻麻鰻"
+    },
+    "ranking": 523,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SPARK",
+          "uses": 85397
+        },
+        {
+          "moveId": "ACID",
+          "uses": 30003
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 21060
+        },
+        {
+          "moveId": "DISCHARGE",
+          "uses": 49464
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 44668
+        }
+      ]
+    },
+    "moveset": [
+      "SPARK",
+      "DISCHARGE",
+      "CRUNCH"
     ]
   },
   "eelektross": {
-    "legal": false,
+    "legal": true,
     "dex": 604,
     "types": [
       "electric",
       "none"
+    ],
+    "speciesName": {
+      "de": "Zapplarang",
+      "fr": "Ohmassacre",
+      "en": "Eelektross",
+      "es": "Eelektross",
+      "th": "ชิบิรูดอน",
+      "ja": "シビルドン",
+      "ko": "저리더프",
+      "ru": "Илектросс",
+      "zh_hans": "麻麻鳗鱼王",
+      "zh_hant": "麻麻鰻魚王"
+    },
+    "ranking": 600,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SPARK",
+          "uses": 85025
+        },
+        {
+          "moveId": "ACID",
+          "uses": 30375
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDERBOLT",
+          "uses": 36945
+        },
+        {
+          "moveId": "DRAGON_CLAW",
+          "uses": 40170
+        },
+        {
+          "moveId": "CRUNCH",
+          "uses": 32419
+        },
+        {
+          "moveId": "ACID_SPRAY",
+          "uses": 5850
+        }
+      ]
+    },
+    "moveset": [
+      "SPARK",
+      "DRAGON_CLAW",
+      "THUNDERBOLT"
     ]
   },
   "elgyem": {
-    "legal": false,
+    "legal": true,
     "dex": 605,
     "types": [
       "psychic",
       "none"
+    ],
+    "speciesName": {
+      "de": "Pygraulon",
+      "fr": "Lewsor",
+      "en": "Elgyem",
+      "es": "Elgyem",
+      "th": "ลีเกรย์",
+      "ja": "リグレー",
+      "ko": "리그레",
+      "ru": "Илджием",
+      "zh_hans": "小灰怪",
+      "zh_hant": "小灰怪"
+    },
+    "ranking": 470,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "CONFUSION",
+          "uses": 87083
+        },
+        {
+          "moveId": "ASTONISH",
+          "uses": 28317
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "PSYCHIC",
+          "uses": 53513
+        },
+        {
+          "moveId": "PSYBEAM",
+          "uses": 10686
+        },
+        {
+          "moveId": "DARK_PULSE",
+          "uses": 51053
+        }
+      ]
+    },
+    "moveset": [
+      "CONFUSION",
+      "PSYCHIC",
+      "DARK_PULSE"
     ]
   },
   "beheeyem": {
-    "legal": false,
+    "legal": true,
     "dex": 606,
     "types": [
       "psychic",
       "none"
+    ],
+    "speciesName": {
+      "de": "Megalon",
+      "fr": "Neitram",
+      "en": "Beheeyem",
+      "es": "Beheeyem",
+      "th": "โอเบ็ม",
+      "ja": "オーベム",
+      "ko": "벰크",
+      "ru": "Бихием",
+      "zh_hans": "大宇怪",
+      "zh_hant": "大宇怪"
+    },
+    "ranking": 467,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "CONFUSION",
+          "uses": 87385
+        },
+        {
+          "moveId": "ASTONISH",
+          "uses": 28015
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ROCK_SLIDE",
+          "uses": 46063
+        },
+        {
+          "moveId": "PSYCHIC",
+          "uses": 36548
+        },
+        {
+          "moveId": "DARK_PULSE",
+          "uses": 32959
+        }
+      ]
+    },
+    "moveset": [
+      "CONFUSION",
+      "ROCK_SLIDE",
+      "PSYCHIC"
     ]
   },
   "litwick": {
-    "legal": false,
+    "legal": true,
     "dex": 607,
     "types": [
       "ghost",
       "fire"
-    ]
+    ],
+    "speciesName": {
+      "de": "Lichtel",
+      "fr": "Funécire",
+      "en": "Litwick",
+      "es": "Litwick",
+      "th": "ฮิโตโมชิ",
+      "ja": "ヒトモシ",
+      "ko": "불켜미",
+      "ru": "Литвик",
+      "zh_hans": "烛光灵",
+      "zh_hant": "燭光靈"
+    }
   },
   "lampent": {
-    "legal": false,
+    "legal": true,
     "dex": 608,
     "types": [
       "ghost",
       "fire"
+    ],
+    "speciesName": {
+      "de": "Laternecto",
+      "fr": "Mélancolux",
+      "en": "Lampent",
+      "es": "Lampent",
+      "th": "แลมพูลา",
+      "ja": "ランプラー",
+      "ko": "램프라",
+      "ru": "Лампент",
+      "zh_hans": "灯火幽灵",
+      "zh_hant": "燈火幽靈"
+    },
+    "ranking": 495,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "EMBER",
+          "uses": 82176
+        },
+        {
+          "moveId": "ASTONISH",
+          "uses": 33224
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "HEAT_WAVE",
+          "uses": 13076
+        },
+        {
+          "moveId": "FLAME_BURST",
+          "uses": 49076
+        },
+        {
+          "moveId": "ENERGY_BALL",
+          "uses": 53323
+        }
+      ]
+    },
+    "moveset": [
+      "EMBER",
+      "ENERGY_BALL",
+      "FLAME_BURST"
     ]
   },
   "chandelure": {
-    "legal": false,
+    "legal": true,
     "dex": 609,
     "types": [
       "ghost",
       "fire"
+    ],
+    "speciesName": {
+      "de": "Skelabra",
+      "fr": "Lugulabre",
+      "en": "Chandelure",
+      "es": "Chandelure",
+      "th": "แชนเดลา",
+      "ja": "シャンデラ",
+      "ko": "샹델라",
+      "ru": "Шанделюр",
+      "zh_hans": "水晶灯火灵",
+      "zh_hant": "水晶燈火靈"
+    },
+    "ranking": 538,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "INCINERATE",
+          "uses": 53055
+        },
+        {
+          "moveId": "HEX",
+          "uses": 33356
+        },
+        {
+          "moveId": "FIRE_SPIN",
+          "uses": 28970
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SHADOW_BALL",
+          "uses": 33952
+        },
+        {
+          "moveId": "OVERHEAT",
+          "uses": 25411
+        },
+        {
+          "moveId": "FLAME_CHARGE",
+          "uses": 32877
+        },
+        {
+          "moveId": "ENERGY_BALL",
+          "uses": 23146
+        }
+      ]
+    },
+    "moveset": [
+      "INCINERATE",
+      "SHADOW_BALL",
+      "FLAME_CHARGE"
     ]
   },
   "axew": {
-    "legal": false,
+    "legal": true,
     "dex": 610,
     "types": [
       "dragon",
       "none"
+    ],
+    "speciesName": {
+      "de": "Milza",
+      "fr": "Coupenotte",
+      "en": "Axew",
+      "es": "Axew",
+      "th": "คิบาโกะ",
+      "ja": "キバゴ",
+      "ko": "터검니",
+      "ru": "Эксью",
+      "zh_hans": "牙牙",
+      "zh_hant": "牙牙"
+    },
+    "ranking": 434,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SCRATCH",
+          "uses": 77064
+        },
+        {
+          "moveId": "IRON_TAIL",
+          "uses": 38336
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "DRAGON_PULSE",
+          "uses": 10581
+        },
+        {
+          "moveId": "DRAGON_CLAW",
+          "uses": 56682
+        },
+        {
+          "moveId": "AQUA_TAIL",
+          "uses": 48162
+        }
+      ]
+    },
+    "moveset": [
+      "SCRATCH",
+      "DRAGON_CLAW",
+      "AQUA_TAIL"
     ]
   },
   "fraxure": {
-    "legal": false,
+    "legal": true,
     "dex": 611,
     "types": [
       "dragon",
       "none"
+    ],
+    "speciesName": {
+      "de": "Sharfax",
+      "fr": "Incisache",
+      "en": "Fraxure",
+      "es": "Fraxure",
+      "th": "โอโนนโดะ",
+      "ja": "オノンド",
+      "ko": "액슨도",
+      "ru": "Фраксур",
+      "zh_hans": "斧牙龙",
+      "zh_hant": "斧牙龍"
+    },
+    "price": 3,
+    "ranking": 635,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "IRON_TAIL",
+          "uses": 18076
+        },
+        {
+          "moveId": "DRAGON_TAIL",
+          "uses": 97324
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "NIGHT_SLASH",
+          "uses": 37465
+        },
+        {
+          "moveId": "DRAGON_CLAW",
+          "uses": 42249
+        },
+        {
+          "moveId": "AQUA_TAIL",
+          "uses": 35781
+        }
+      ]
+    },
+    "moveset": [
+      "DRAGON_TAIL",
+      "DRAGON_CLAW",
+      "NIGHT_SLASH"
     ]
   },
   "haxorus": {
-    "legal": false,
+    "legal": true,
     "dex": 612,
     "types": [
       "dragon",
       "none"
+    ],
+    "speciesName": {
+      "de": "Maxax",
+      "fr": "Tranchodon",
+      "en": "Haxorus",
+      "es": "Haxorus",
+      "th": "โอโนโนคุส",
+      "ja": "オノノクス",
+      "ko": "액스라이즈",
+      "ru": "Гаксорус",
+      "zh_hans": "双斧战龙",
+      "zh_hant": "雙斧戰龍"
+    },
+    "ranking": 624,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "DRAGON_TAIL",
+          "uses": 55219
+        },
+        {
+          "moveId": "COUNTER",
+          "uses": 60181
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SURF",
+          "uses": 29366
+        },
+        {
+          "moveId": "NIGHT_SLASH",
+          "uses": 32176
+        },
+        {
+          "moveId": "EARTHQUAKE",
+          "uses": 16991
+        },
+        {
+          "moveId": "DRAGON_CLAW",
+          "uses": 36881
+        }
+      ]
+    },
+    "moveset": [
+      "COUNTER",
+      "DRAGON_CLAW",
+      "NIGHT_SLASH"
     ]
   },
   "cubchoo": {
-    "legal": false,
+    "legal": true,
     "dex": 613,
     "types": [
       "ice",
       "none"
-    ]
+    ],
+    "speciesName": {
+      "de": "Petznief",
+      "fr": "Polarhume",
+      "en": "Cubchoo",
+      "es": "Cubchoo",
+      "th": "คูมะชุน",
+      "ja": "クマシュン",
+      "ko": "코고미",
+      "ru": "Кабчу",
+      "zh_hans": "喷嚏熊",
+      "zh_hant": "噴嚏熊"
+    }
   },
   "beartic": {
-    "legal": false,
+    "legal": true,
     "dex": 614,
     "types": [
       "ice",
       "none"
+    ],
+    "speciesName": {
+      "de": "Siberio",
+      "fr": "Polagriffe",
+      "en": "Beartic",
+      "es": "Beartic",
+      "th": "ทันแบร์",
+      "ja": "ツンベアー",
+      "ko": "툰베어",
+      "ru": "Бертик",
+      "zh_hans": "冻原熊",
+      "zh_hant": "凍原熊"
+    },
+    "ranking": 536,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "POWDER_SNOW",
+          "uses": 75859
+        },
+        {
+          "moveId": "CHARM",
+          "uses": 39541
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SURF",
+          "uses": 46581
+        },
+        {
+          "moveId": "PLAY_ROUGH",
+          "uses": 20380
+        },
+        {
+          "moveId": "ICE_PUNCH",
+          "uses": 48493
+        }
+      ]
+    },
+    "moveset": [
+      "POWDER_SNOW",
+      "ICE_PUNCH",
+      "SURF"
     ]
   },
   "cryogonal": {
-    "legal": false,
+    "legal": true,
     "dex": 615,
     "types": [
       "ice",
       "none"
+    ],
+    "speciesName": {
+      "de": "Frigometri",
+      "fr": "Hexagel",
+      "en": "Cryogonal",
+      "es": "Cryogonal",
+      "th": "ฟรีจิโอ",
+      "ja": "フリージオ",
+      "ko": "프리지오",
+      "ru": "Криогонал",
+      "zh_hans": "几何雪花",
+      "zh_hant": "幾何雪花"
+    },
+    "ranking": 567,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ICE_SHARD",
+          "uses": 67049
+        },
+        {
+          "moveId": "FROST_BREATH",
+          "uses": 48351
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "WATER_PULSE",
+          "uses": 13446
+        },
+        {
+          "moveId": "SOLAR_BEAM",
+          "uses": 19899
+        },
+        {
+          "moveId": "NIGHT_SLASH",
+          "uses": 55751
+        },
+        {
+          "moveId": "AURORA_BEAM",
+          "uses": 26345
+        }
+      ]
+    },
+    "moveset": [
+      "ICE_SHARD",
+      "NIGHT_SLASH",
+      "AURORA_BEAM"
     ]
   },
   "shelmet": {
-    "legal": false,
+    "legal": true,
     "dex": 616,
     "types": [
       "bug",
       "none"
-    ]
+    ],
+    "speciesName": {
+      "de": "Schnuthelm",
+      "fr": "Escargaume",
+      "en": "Shelmet",
+      "es": "Shelmet",
+      "th": "โชโบมากิ",
+      "ja": "チョボマキ",
+      "ko": "쪼마리",
+      "ru": "Шелмет",
+      "zh_hans": "小嘴蜗",
+      "zh_hant": "小嘴蝸"
+    }
   },
   "accelgor": {
-    "legal": false,
+    "legal": true,
     "dex": 617,
     "types": [
       "bug",
       "none"
+    ],
+    "speciesName": {
+      "de": "Hydragil",
+      "fr": "Limaspeed",
+      "en": "Accelgor",
+      "es": "Accelgor",
+      "th": "อกิลดา",
+      "ja": "アギルダー",
+      "ko": "어지리더",
+      "ru": "Аксельгор",
+      "zh_hans": "敏捷虫",
+      "zh_hant": "敏捷蟲"
+    },
+    "ranking": 414,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "INFESTATION",
+          "uses": 85268
+        },
+        {
+          "moveId": "ACID",
+          "uses": 30132
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SIGNAL_BEAM",
+          "uses": 44359
+        },
+        {
+          "moveId": "FOCUS_BLAST",
+          "uses": 37992
+        },
+        {
+          "moveId": "BUG_BUZZ",
+          "uses": 21073
+        },
+        {
+          "moveId": "ACID_SPRAY",
+          "uses": 11925
+        }
+      ]
+    },
+    "moveset": [
+      "INFESTATION",
+      "BUG_BUZZ",
+      "ACID_SPRAY"
     ]
   },
   "stunfisk": {
-    "legal": false,
+    "legal": true,
     "dex": 618,
     "types": [
       "ground",
       "electric"
+    ],
+    "speciesName": {
+      "de": "Flunschlik",
+      "fr": "Limonde",
+      "en": "Stunfisk",
+      "es": "Stunfisk",
+      "th": "แมกเกียว",
+      "ja": "マッギョ",
+      "ko": "메더",
+      "ru": "Станфиск",
+      "zh_hans": "泥巴鱼",
+      "zh_hant": "泥巴魚"
+    },
+    "price": 5,
+    "ranking": 643,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "THUNDER_SHOCK",
+          "uses": 57323
+        },
+        {
+          "moveId": "MUD_SHOT",
+          "uses": 58077
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "MUD_BOMB",
+          "uses": 47474
+        },
+        {
+          "moveId": "MUDDY_WATER",
+          "uses": 25133
+        },
+        {
+          "moveId": "DISCHARGE",
+          "uses": 42728
+        }
+      ]
+    },
+    "moveset": [
+      "THUNDER_SHOCK",
+      "MUD_BOMB",
+      "DISCHARGE"
     ]
   },
   "stunfisk_galarian": {
-    "legal": false,
+    "legal": true,
     "dex": 618,
     "types": [
       "ground",
@@ -9264,22 +14014,159 @@
     ],
     "tags": [
       "galarian"
+    ],
+    "speciesName": {
+      "de": "Flunschlik (Galar)",
+      "fr": "Limonde (Galarian)",
+      "en": "Stunfisk (Galarian)",
+      "es": "Stunfisk (Galar)",
+      "th": "แมกเกียว (Galarian)",
+      "ja": "マッギョ (Galarian)",
+      "ko": "메더 (Galarian)",
+      "ru": "Станфиск (Galarian)",
+      "zh_hans": "泥巴鱼 (Galarian)",
+      "zh_hant": "泥巴魚 (Galarian)"
+    },
+    "price": 9,
+    "ranking": 732,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "MUD_SHOT",
+          "uses": 75934
+        },
+        {
+          "moveId": "METAL_CLAW",
+          "uses": 39466
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ROCK_SLIDE",
+          "uses": 40008
+        },
+        {
+          "moveId": "MUDDY_WATER",
+          "uses": 24383
+        },
+        {
+          "moveId": "FLASH_CANNON",
+          "uses": 16837
+        },
+        {
+          "moveId": "EARTHQUAKE",
+          "uses": 34199
+        }
+      ]
+    },
+    "moveset": [
+      "MUD_SHOT",
+      "ROCK_SLIDE",
+      "EARTHQUAKE"
     ]
   },
   "mienfoo": {
-    "legal": false,
+    "legal": true,
     "dex": 619,
     "types": [
       "fighting",
       "none"
+    ],
+    "speciesName": {
+      "de": "Fu",
+      "fr": "Kungfouine",
+      "en": "Mienfoo",
+      "es": "Mienfoo",
+      "th": "โคโจฟู",
+      "ja": "コジョフー",
+      "ko": "비조푸",
+      "ru": "Меньфу",
+      "zh_hans": "功夫鼬",
+      "zh_hant": "功夫鼬"
+    },
+    "ranking": 300,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "POUND",
+          "uses": 42235
+        },
+        {
+          "moveId": "LOW_KICK",
+          "uses": 73165
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "LOW_SWEEP",
+          "uses": 17321
+        },
+        {
+          "moveId": "FOCUS_BLAST",
+          "uses": 38757
+        },
+        {
+          "moveId": "BRICK_BREAK",
+          "uses": 59194
+        }
+      ]
+    },
+    "moveset": [
+      "LOW_KICK",
+      "BRICK_BREAK",
+      "FOCUS_BLAST"
     ]
   },
   "mienshao": {
-    "legal": false,
+    "legal": true,
     "dex": 620,
     "types": [
       "fighting",
       "none"
+    ],
+    "speciesName": {
+      "de": "Shu",
+      "fr": "Shaofouine",
+      "en": "Mienshao",
+      "es": "Mienshao",
+      "th": "โคโจนโดะ",
+      "ja": "コジョンド",
+      "ko": "비조도",
+      "ru": "Меньшао",
+      "zh_hans": "师父鼬",
+      "zh_hant": "師父鼬"
+    },
+    "ranking": 492,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "POISON_JAB",
+          "uses": 89036
+        },
+        {
+          "moveId": "LOW_KICK",
+          "uses": 26364
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "STONE_EDGE",
+          "uses": 37201
+        },
+        {
+          "moveId": "GRASS_KNOT",
+          "uses": 36126
+        },
+        {
+          "moveId": "BRICK_BREAK",
+          "uses": 42037
+        }
+      ]
+    },
+    "moveset": [
+      "POISON_JAB",
+      "BRICK_BREAK",
+      "GRASS_KNOT"
     ]
   },
   "druddigon": {
@@ -9294,39 +14181,219 @@
     ]
   },
   "golett": {
-    "legal": false,
+    "legal": true,
     "dex": 622,
     "types": [
       "ground",
       "ghost"
+    ],
+    "speciesName": {
+      "de": "Golbit",
+      "fr": "Gringolem",
+      "en": "Golett",
+      "es": "Golett",
+      "th": "โกบิท",
+      "ja": "ゴビット",
+      "ko": "골비람",
+      "ru": "Голетт",
+      "zh_hans": "泥偶小人",
+      "zh_hant": "泥偶小人"
+    },
+    "ranking": 528,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "MUD_SLAP",
+          "uses": 77624
+        },
+        {
+          "moveId": "ASTONISH",
+          "uses": 37776
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SHADOW_PUNCH",
+          "uses": 59917
+        },
+        {
+          "moveId": "NIGHT_SHADE",
+          "uses": 10967
+        },
+        {
+          "moveId": "BRICK_BREAK",
+          "uses": 44525
+        }
+      ]
+    },
+    "moveset": [
+      "MUD_SLAP",
+      "SHADOW_PUNCH",
+      "BRICK_BREAK"
     ]
   },
   "golurk": {
-    "legal": false,
+    "legal": true,
     "dex": 623,
     "types": [
       "ground",
       "ghost"
+    ],
+    "speciesName": {
+      "de": "Golgantes",
+      "fr": "Golemastoc",
+      "en": "Golurk",
+      "es": "Golurk",
+      "th": "โกลูก",
+      "ja": "ゴルーグ",
+      "ko": "골루그",
+      "ru": "Голурк",
+      "zh_hans": "泥偶巨人",
+      "zh_hant": "泥偶巨人"
+    },
+    "ranking": 557,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "MUD_SLAP",
+          "uses": 77743
+        },
+        {
+          "moveId": "ASTONISH",
+          "uses": 37657
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SHADOW_PUNCH",
+          "uses": 44290
+        },
+        {
+          "moveId": "EARTH_POWER",
+          "uses": 35886
+        },
+        {
+          "moveId": "DYNAMIC_PUNCH",
+          "uses": 35280
+        }
+      ]
+    },
+    "moveset": [
+      "MUD_SLAP",
+      "SHADOW_PUNCH",
+      "EARTH_POWER"
     ]
   },
   "pawniard": {
-    "legal": false,
+    "legal": true,
     "dex": 624,
     "types": [
       "dark",
       "steel"
+    ],
+    "speciesName": {
+      "de": "Gladiantri",
+      "fr": "Scalpion",
+      "en": "Pawniard",
+      "es": "Pawniard",
+      "th": "โคมาทานา",
+      "ja": "コマタナ",
+      "ko": "자망칼",
+      "ru": "Паониард",
+      "zh_hans": "驹刀小兵",
+      "zh_hant": "駒刀小兵"
+    },
+    "ranking": 573,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SCRATCH",
+          "uses": 35603
+        },
+        {
+          "moveId": "FURY_CUTTER",
+          "uses": 79797
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "X_SCISSOR",
+          "uses": 27855
+        },
+        {
+          "moveId": "NIGHT_SLASH",
+          "uses": 62256
+        },
+        {
+          "moveId": "IRON_HEAD",
+          "uses": 25304
+        }
+      ]
+    },
+    "moveset": [
+      "FURY_CUTTER",
+      "NIGHT_SLASH",
+      "X_SCISSOR"
     ]
   },
   "bisharp": {
-    "legal": false,
+    "legal": true,
     "dex": 625,
     "types": [
       "dark",
       "steel"
+    ],
+    "speciesName": {
+      "de": "Caesurio",
+      "fr": "Scalproie",
+      "en": "Bisharp",
+      "es": "Bisharp",
+      "th": "คิริคิซัน",
+      "ja": "キリキザン",
+      "ko": "절각참",
+      "ru": "Бишарп",
+      "zh_hans": "劈斩司令",
+      "zh_hant": "劈斬司令"
+    },
+    "ranking": 599,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SNARL",
+          "uses": 73862
+        },
+        {
+          "moveId": "METAL_CLAW",
+          "uses": 41538
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "X_SCISSOR",
+          "uses": 29483
+        },
+        {
+          "moveId": "IRON_HEAD",
+          "uses": 26617
+        },
+        {
+          "moveId": "FOCUS_BLAST",
+          "uses": 20784
+        },
+        {
+          "moveId": "DARK_PULSE",
+          "uses": 38442
+        }
+      ]
+    },
+    "moveset": [
+      "SNARL",
+      "DARK_PULSE",
+      "X_SCISSOR"
     ]
   },
   "bouffalant": {
-    "legal": false,
+    "legal": true,
     "dex": 626,
     "types": [
       "normal",
@@ -9334,42 +14401,275 @@
     ],
     "tags": [
       "regional"
+    ],
+    "speciesName": {
+      "de": "Bisofank",
+      "fr": "Frison",
+      "en": "Bouffalant",
+      "es": "Bouffalant",
+      "th": "บัฟฟรอน",
+      "ja": "バッフロン",
+      "ko": "버프론",
+      "ru": "Буффалант",
+      "zh_hans": "爆爆头水牛",
+      "zh_hant": "爆爆頭水牛"
+    },
+    "ranking": 581,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "ZEN_HEADBUTT",
+          "uses": 17626
+        },
+        {
+          "moveId": "MUD_SHOT",
+          "uses": 97774
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "STOMP",
+          "uses": 41846
+        },
+        {
+          "moveId": "SKULL_BASH",
+          "uses": 14494
+        },
+        {
+          "moveId": "MEGAHORN",
+          "uses": 28612
+        },
+        {
+          "moveId": "EARTHQUAKE",
+          "uses": 30378
+        }
+      ]
+    },
+    "moveset": [
+      "MUD_SHOT",
+      "STOMP",
+      "EARTHQUAKE"
     ]
   },
   "rufflet": {
-    "legal": false,
+    "legal": true,
     "dex": 627,
     "types": [
       "normal",
       "flying"
+    ],
+    "speciesName": {
+      "de": "Geronimatz",
+      "fr": "Furaiglon",
+      "en": "Rufflet",
+      "es": "Rufflet",
+      "th": "วาชิบอน",
+      "ja": "ワシボン",
+      "ko": "수리둥보",
+      "ru": "Раффлет",
+      "zh_hans": "毛头小鹰",
+      "zh_hant": "毛頭小鷹"
+    },
+    "ranking": 529,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "WING_ATTACK",
+          "uses": 77261
+        },
+        {
+          "moveId": "PECK",
+          "uses": 38139
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ROCK_TOMB",
+          "uses": 13327
+        },
+        {
+          "moveId": "BRAVE_BIRD",
+          "uses": 72681
+        },
+        {
+          "moveId": "AERIAL_ACE",
+          "uses": 29383
+        }
+      ]
+    },
+    "moveset": [
+      "WING_ATTACK",
+      "BRAVE_BIRD",
+      "AERIAL_ACE"
     ]
   },
   "braviary": {
-    "legal": false,
+    "legal": true,
     "dex": 628,
     "types": [
       "normal",
       "flying"
+    ],
+    "speciesName": {
+      "de": "Washakwil",
+      "fr": "Gueriaigle",
+      "en": "Braviary",
+      "es": "Braviary",
+      "th": "วอร์เกิล",
+      "ja": "ウォーグル",
+      "ko": "워글",
+      "ru": "Брэйвиари",
+      "zh_hans": "勇士鹰",
+      "zh_hant": "勇士鷹"
+    },
+    "ranking": 472,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "STEEL_WING",
+          "uses": 35879
+        },
+        {
+          "moveId": "AIR_SLASH",
+          "uses": 79521
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "ROCK_SLIDE",
+          "uses": 25404
+        },
+        {
+          "moveId": "HEAT_WAVE",
+          "uses": 5065
+        },
+        {
+          "moveId": "CLOSE_COMBAT",
+          "uses": 39466
+        },
+        {
+          "moveId": "BRAVE_BIRD",
+          "uses": 45367
+        }
+      ]
+    },
+    "moveset": [
+      "AIR_SLASH",
+      "BRAVE_BIRD",
+      "CLOSE_COMBAT"
     ]
   },
   "vullaby": {
-    "legal": false,
+    "legal": true,
     "dex": 629,
     "types": [
       "dark",
       "flying"
+    ],
+    "speciesName": {
+      "de": "Skallyk",
+      "fr": "Vostourno",
+      "en": "Vullaby",
+      "es": "Vullaby",
+      "th": "วัลไจ",
+      "ja": "バルチャイ",
+      "ko": "벌차이",
+      "ru": "Валлаби",
+      "zh_hans": "秃鹰小子",
+      "zh_hant": "禿鷹小子"
+    },
+    "ranking": 612,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "FEINT_ATTACK",
+          "uses": 57356
+        },
+        {
+          "moveId": "AIR_SLASH",
+          "uses": 58044
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "FOUL_PLAY",
+          "uses": 38147
+        },
+        {
+          "moveId": "DARK_PULSE",
+          "uses": 16161
+        },
+        {
+          "moveId": "BRAVE_BIRD",
+          "uses": 61058
+        }
+      ]
+    },
+    "moveset": [
+      "AIR_SLASH",
+      "BRAVE_BIRD",
+      "FOUL_PLAY"
     ]
   },
   "mandibuzz": {
-    "legal": false,
+    "legal": true,
     "dex": 630,
     "types": [
       "dark",
       "flying"
+    ],
+    "speciesName": {
+      "de": "Grypheldis",
+      "fr": "Vaututrice",
+      "en": "Mandibuzz",
+      "es": "Mandibuzz",
+      "th": "วัลจีนา",
+      "ja": "バルジーナ",
+      "ko": "버랜지나",
+      "ru": "Мандибазз",
+      "zh_hans": "秃鹰娜",
+      "zh_hant": "禿鷹娜"
+    },
+    "price": 9,
+    "ranking": 662,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "SNARL",
+          "uses": 63782
+        },
+        {
+          "moveId": "AIR_SLASH",
+          "uses": 51618
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "SHADOW_BALL",
+          "uses": 26749
+        },
+        {
+          "moveId": "FOUL_PLAY",
+          "uses": 40415
+        },
+        {
+          "moveId": "DARK_PULSE",
+          "uses": 17347
+        },
+        {
+          "moveId": "AERIAL_ACE",
+          "uses": 30980
+        }
+      ]
+    },
+    "moveset": [
+      "SNARL",
+      "FOUL_PLAY",
+      "AERIAL_ACE"
     ]
   },
   "heatmor": {
-    "legal": false,
+    "legal": true,
     "dex": 631,
     "types": [
       "fire",
@@ -9377,10 +14677,54 @@
     ],
     "tags": [
       "regional"
+    ],
+    "speciesName": {
+      "de": "Furnifraß",
+      "fr": "Aflamanoir",
+      "en": "Heatmor",
+      "es": "Heatmor",
+      "th": "คุยทาแรน",
+      "ja": "クイタラン",
+      "ko": "앤티골",
+      "ru": "Хитмор",
+      "zh_hans": "食蚁炉",
+      "zh_hant": "食蟻爐"
+    },
+    "ranking": 552,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "LICK",
+          "uses": 49104
+        },
+        {
+          "moveId": "FIRE_SPIN",
+          "uses": 66296
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "THUNDER_PUNCH",
+          "uses": 47315
+        },
+        {
+          "moveId": "POWER_UP_PUNCH",
+          "uses": 18400
+        },
+        {
+          "moveId": "FLAMETHROWER",
+          "uses": 49684
+        }
+      ]
+    },
+    "moveset": [
+      "FIRE_SPIN",
+      "FLAMETHROWER",
+      "THUNDER_PUNCH"
     ]
   },
   "durant": {
-    "legal": false,
+    "legal": true,
     "dex": 632,
     "types": [
       "bug",
@@ -9388,30 +14732,175 @@
     ],
     "tags": [
       "regional"
+    ],
+    "speciesName": {
+      "de": "Fermicula",
+      "fr": "Fermite",
+      "en": "Durant",
+      "es": "Durant",
+      "th": "ไอแอนท์",
+      "ja": "アイアント",
+      "ko": "아이앤트",
+      "ru": "Дюрант",
+      "zh_hans": "铁蚁",
+      "zh_hant": "鐵蟻"
+    },
+    "ranking": 574,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "METAL_CLAW",
+          "uses": 49496
+        },
+        {
+          "moveId": "BUG_BITE",
+          "uses": 65904
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "X_SCISSOR",
+          "uses": 49186
+        },
+        {
+          "moveId": "STONE_EDGE",
+          "uses": 36081
+        },
+        {
+          "moveId": "IRON_HEAD",
+          "uses": 30161
+        }
+      ]
+    },
+    "moveset": [
+      "BUG_BITE",
+      "X_SCISSOR",
+      "STONE_EDGE"
     ]
   },
   "deino": {
-    "legal": false,
+    "legal": true,
     "dex": 633,
     "types": [
       "dark",
       "dragon"
-    ]
+    ],
+    "speciesName": {
+      "de": "Kapuno",
+      "fr": "Solochi",
+      "en": "Deino",
+      "es": "Deino",
+      "th": "โมโนซึ",
+      "ja": "モノズ",
+      "ko": "모노두",
+      "ru": "Дайно",
+      "zh_hans": "单首龙",
+      "zh_hant": "單首龍"
+    }
   },
   "zweilous": {
-    "legal": false,
+    "legal": true,
     "dex": 634,
     "types": [
       "dark",
       "dragon"
+    ],
+    "speciesName": {
+      "de": "Duodino",
+      "fr": "Diamat",
+      "en": "Zweilous",
+      "es": "Zweilous",
+      "th": "จิเฮด",
+      "ja": "ジヘッド",
+      "ko": "디헤드",
+      "ru": "Звайлос",
+      "zh_hans": "双头龙",
+      "zh_hant": "雙頭龍"
+    },
+    "price": 5,
+    "ranking": 710,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "DRAGON_BREATH",
+          "uses": 74392
+        },
+        {
+          "moveId": "BITE",
+          "uses": 41008
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "DRAGON_PULSE",
+          "uses": 21383
+        },
+        {
+          "moveId": "DARK_PULSE",
+          "uses": 40596
+        },
+        {
+          "moveId": "BODY_SLAM",
+          "uses": 53547
+        }
+      ]
+    },
+    "moveset": [
+      "DRAGON_BREATH",
+      "BODY_SLAM",
+      "DARK_PULSE"
     ]
   },
   "hydreigon": {
-    "legal": false,
+    "legal": true,
     "dex": 635,
     "types": [
       "dark",
       "dragon"
+    ],
+    "speciesName": {
+      "de": "Trikephalo",
+      "fr": "Trioxhydre",
+      "en": "Hydreigon",
+      "es": "Hydreigon",
+      "th": "ซาซันดรา",
+      "ja": "サザンドラ",
+      "ko": "삼삼드래",
+      "ru": "Гидрайгон",
+      "zh_hans": "三头龙",
+      "zh_hant": "三頭龍"
+    },
+    "ranking": 582,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "DRAGON_BREATH",
+          "uses": 75007
+        },
+        {
+          "moveId": "BITE",
+          "uses": 40393
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "FLASH_CANNON",
+          "uses": 21243
+        },
+        {
+          "moveId": "DRAGON_PULSE",
+          "uses": 33924
+        },
+        {
+          "moveId": "DARK_PULSE",
+          "uses": 60198
+        }
+      ]
+    },
+    "moveset": [
+      "DRAGON_BREATH",
+      "DARK_PULSE",
+      "DRAGON_PULSE"
     ]
   },
   "larvesta": {
@@ -9437,7 +14926,7 @@
     ]
   },
   "cobalion": {
-    "legal": false,
+    "legal": true,
     "dex": 638,
     "types": [
       "steel",
@@ -9445,10 +14934,22 @@
     ],
     "tags": [
       "legendary"
-    ]
+    ],
+    "speciesName": {
+      "de": "Kobalium",
+      "fr": "Cobaltium",
+      "en": "Cobalion",
+      "es": "Cobalion",
+      "th": "โคบัลออน",
+      "ja": "コバルオン",
+      "ko": "코바르온",
+      "ru": "Кобалион",
+      "zh_hans": "勾帕路翁",
+      "zh_hant": "勾帕路翁"
+    }
   },
   "terrakion": {
-    "legal": false,
+    "legal": true,
     "dex": 639,
     "types": [
       "rock",
@@ -9456,10 +14957,22 @@
     ],
     "tags": [
       "legendary"
-    ]
+    ],
+    "speciesName": {
+      "de": "Terrakium",
+      "fr": "Terrakium",
+      "en": "Terrakion",
+      "es": "Terrakion",
+      "th": "เทราคิออน",
+      "ja": "テラキオン",
+      "ko": "테라키온",
+      "ru": "Терракион",
+      "zh_hans": "代拉基翁",
+      "zh_hant": "代拉基翁"
+    }
   },
   "virizion": {
-    "legal": false,
+    "legal": true,
     "dex": 640,
     "types": [
       "grass",
@@ -9467,10 +14980,22 @@
     ],
     "tags": [
       "legendary"
-    ]
+    ],
+    "speciesName": {
+      "de": "Viridium",
+      "fr": "Viridium",
+      "en": "Virizion",
+      "es": "Virizion",
+      "th": "วิริซิออน",
+      "ja": "ビリジオン",
+      "ko": "비리디온",
+      "ru": "Виризион",
+      "zh_hans": "毕力吉翁",
+      "zh_hant": "畢力吉翁"
+    }
   },
   "tornadus_incarnate": {
-    "legal": false,
+    "legal": true,
     "dex": 641,
     "types": [
       "flying",
@@ -9478,10 +15003,22 @@
     ],
     "tags": [
       "legendary"
-    ]
+    ],
+    "speciesName": {
+      "de": "Boreos (Inkarnationsform)",
+      "fr": "Boréas (Incarnate)",
+      "en": "Tornadus (Incarnate)",
+      "es": "Tornadus (Forma Avatar)",
+      "th": "ทอร์เนลอส (Incarnate)",
+      "ja": "トルネロス (Incarnate)",
+      "ko": "토네로스 (Incarnate)",
+      "ru": "Торнадус (Incarnate)",
+      "zh_hans": "龙卷云 (Incarnate)",
+      "zh_hant": "龍捲雲 (Incarnate)"
+    }
   },
   "tornadus_therian": {
-    "legal": false,
+    "legal": true,
     "dex": 641,
     "types": [
       "flying",
@@ -9489,10 +15026,22 @@
     ],
     "tags": [
       "legendary"
-    ]
+    ],
+    "speciesName": {
+      "de": "Boreos (Tiergeistform)",
+      "fr": "Boréas (Therian)",
+      "en": "Tornadus (Therian)",
+      "es": "Tornadus (Forma Tótem)",
+      "th": "ทอร์เนลอส (Therian)",
+      "ja": "トルネロス (Therian)",
+      "ko": "토네로스 (Therian)",
+      "ru": "Торнадус (Therian)",
+      "zh_hans": "龙卷云 (Therian)",
+      "zh_hant": "龍捲雲 (Therian)"
+    }
   },
   "thundurus_incarnate": {
-    "legal": false,
+    "legal": true,
     "dex": 642,
     "types": [
       "electric",
@@ -9500,10 +15049,22 @@
     ],
     "tags": [
       "legendary"
-    ]
+    ],
+    "speciesName": {
+      "de": "Voltolos (Inkarnationsform)",
+      "fr": "Fulguris (Incarnate)",
+      "en": "Thundurus (Incarnate)",
+      "es": "Thundurus (Forma Avatar)",
+      "th": "โวลโทลอส (Incarnate)",
+      "ja": "ボルトロス (Incarnate)",
+      "ko": "볼트로스 (Incarnate)",
+      "ru": "Тандурус (Incarnate)",
+      "zh_hans": "雷电云 (Incarnate)",
+      "zh_hant": "雷電雲 (Incarnate)"
+    }
   },
   "thundurus_therian": {
-    "legal": false,
+    "legal": true,
     "dex": 642,
     "types": [
       "electric",
@@ -9511,10 +15072,22 @@
     ],
     "tags": [
       "legendary"
-    ]
+    ],
+    "speciesName": {
+      "de": "Voltolos (Tiergeistform)",
+      "fr": "Fulguris (Therian)",
+      "en": "Thundurus (Therian)",
+      "es": "Thundurus (Forma Tótem)",
+      "th": "โวลโทลอส (Therian)",
+      "ja": "ボルトロス (Therian)",
+      "ko": "볼트로스 (Therian)",
+      "ru": "Тандурус (Therian)",
+      "zh_hans": "雷电云 (Therian)",
+      "zh_hant": "雷電雲 (Therian)"
+    }
   },
   "reshiram": {
-    "legal": false,
+    "legal": true,
     "dex": 643,
     "types": [
       "dragon",
@@ -9522,10 +15095,22 @@
     ],
     "tags": [
       "legendary"
-    ]
+    ],
+    "speciesName": {
+      "de": "Reshiram",
+      "fr": "Reshiram",
+      "en": "Reshiram",
+      "es": "Reshiram",
+      "th": "เรชิรัม",
+      "ja": "レシラム",
+      "ko": "레시라무",
+      "ru": "Реширам",
+      "zh_hans": "雷希拉姆",
+      "zh_hant": "雷希拉姆"
+    }
   },
   "zekrom": {
-    "legal": false,
+    "legal": true,
     "dex": 644,
     "types": [
       "dragon",
@@ -9533,10 +15118,22 @@
     ],
     "tags": [
       "legendary"
-    ]
+    ],
+    "speciesName": {
+      "de": "Zekrom",
+      "fr": "Zekrom",
+      "en": "Zekrom",
+      "es": "Zekrom",
+      "th": "เซครอม",
+      "ja": "ゼクロム",
+      "ko": "제크로무",
+      "ru": "Зекром",
+      "zh_hans": "捷克罗姆",
+      "zh_hant": "捷克羅姆"
+    }
   },
   "landorus_incarnate": {
-    "legal": false,
+    "legal": true,
     "dex": 645,
     "types": [
       "ground",
@@ -9544,10 +15141,22 @@
     ],
     "tags": [
       "legendary"
-    ]
+    ],
+    "speciesName": {
+      "de": "Demeteros (Inkarnationsform)",
+      "fr": "Démétéros (Incarnate)",
+      "en": "Landorus (Incarnate)",
+      "es": "Landorus (Forma Avatar)",
+      "th": "แลนโดลอส (Incarnate)",
+      "ja": "ランドロス (Incarnate)",
+      "ko": "랜드로스 (Incarnate)",
+      "ru": "Лэндорус (Incarnate)",
+      "zh_hans": "土地云 (Incarnate)",
+      "zh_hant": "土地雲 (Incarnate)"
+    }
   },
   "landorus_therian": {
-    "legal": false,
+    "legal": true,
     "dex": 645,
     "types": [
       "ground",
@@ -9555,10 +15164,22 @@
     ],
     "tags": [
       "legendary"
-    ]
+    ],
+    "speciesName": {
+      "de": "Demeteros (Tiergeistform)",
+      "fr": "Démétéros (Therian)",
+      "en": "Landorus (Therian)",
+      "es": "Landorus (Forma Tótem)",
+      "th": "แลนโดลอส (Therian)",
+      "ja": "ランドロス (Therian)",
+      "ko": "랜드로스 (Therian)",
+      "ru": "Лэндорус (Therian)",
+      "zh_hans": "土地云 (Therian)",
+      "zh_hant": "土地雲 (Therian)"
+    }
   },
   "kyurem": {
-    "legal": false,
+    "legal": true,
     "dex": 646,
     "types": [
       "dragon",
@@ -9566,7 +15187,19 @@
     ],
     "tags": [
       "legendary"
-    ]
+    ],
+    "speciesName": {
+      "de": "Kyurem",
+      "fr": "Kyurem",
+      "en": "Kyurem",
+      "es": "Kyurem",
+      "th": "คิวเรม",
+      "ja": "キュレム",
+      "ko": "큐레무",
+      "ru": "Кюрем",
+      "zh_hans": "酋雷姆",
+      "zh_hant": "酋雷姆"
+    }
   },
   "kyurem_black": {
     "legal": false,
@@ -9637,7 +15270,7 @@
     ]
   },
   "genesect": {
-    "legal": false,
+    "legal": true,
     "dex": 649,
     "types": [
       "bug",
@@ -9646,10 +15279,54 @@
     "tags": [
       "mythical",
       "untradeable"
+    ],
+    "speciesName": {
+      "de": "Genesect",
+      "fr": "Genesect",
+      "en": "Genesect",
+      "es": "Genesect",
+      "th": "เกโนเซ็กท์",
+      "ja": "ゲノセクト",
+      "ko": "게노세크트",
+      "ru": "Генесект",
+      "zh_hans": "盖诺赛克特",
+      "zh_hant": "蓋諾賽克特"
+    },
+    "ranking": 624,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "METAL_CLAW",
+          "uses": 43130
+        },
+        {
+          "moveId": "FURY_CUTTER",
+          "uses": 72270
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "X_SCISSOR",
+          "uses": 51580
+        },
+        {
+          "moveId": "MAGNET_BOMB",
+          "uses": 48539
+        },
+        {
+          "moveId": "HYPER_BEAM",
+          "uses": 15302
+        }
+      ]
+    },
+    "moveset": [
+      "FURY_CUTTER",
+      "X_SCISSOR",
+      "MAGNET_BOMB"
     ]
   },
   "genesect_burn": {
-    "legal": false,
+    "legal": true,
     "dex": 649,
     "types": [
       "bug",
@@ -9658,7 +15335,19 @@
     "tags": [
       "mythical",
       "untradeable"
-    ]
+    ],
+    "speciesName": {
+      "de": "Genesect (Flammenmodul)",
+      "fr": "Genesect (Burn)",
+      "en": "Genesect (Burn)",
+      "es": "Genesect (FireROM)",
+      "th": "เกโนเซ็กท์ (Burn)",
+      "ja": "ゲノセクト (Burn)",
+      "ko": "게노세크트 (Burn)",
+      "ru": "Генесект (Burn)",
+      "zh_hans": "盖诺赛克特 (Burn)",
+      "zh_hant": "蓋諾賽克特 (Burn)"
+    }
   },
   "genesect_chill": {
     "legal": false,
