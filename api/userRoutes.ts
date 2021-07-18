@@ -80,6 +80,7 @@ router.post('/', async (req, res) => {
                         friends: [],
                         requests: [],
                         challenges: [],
+                        pendingChallenge: "",
                         rank: 0,
                         achievements: [],
                         battleBackground: 'default',
@@ -170,7 +171,7 @@ router.get('/friends',
 router.post('/request/send', 
     (req, res, next) => protect(req, res, next),
     (req: any, res) => {
-        if(req.body.googleId){
+        if(!!req.body.googleId){
             try{
                 const friendDocRef = firestore.collection('users').doc(req.body.googleId)
                 friendDocRef.get().then((friendToUpdate: any) => {
@@ -213,7 +214,7 @@ router.post('/request/send',
 router.post('/request/accept', 
     (req, res, next) => protect(req, res, next),
     (req: any, res) => {
-        if(req.body.googleId){
+        if(!!req.body.googleId){
             const userID = req.user.googleId;
             const friendID = req.body.googleId;
             try{
@@ -281,7 +282,7 @@ router.post('/request/accept',
 router.post('/request/deny', 
     (req, res, next) => protect(req, res, next),
     (req: any, res) => {
-        if(req.body.googleId){
+        if(!!req.body.googleId){
             try{
                 const userDocRef = firestore.collection('users').doc(req.user.googleId);
                 userDocRef.get().then((userToUpdate: any) => {
@@ -321,7 +322,7 @@ router.post('/request/deny',
 router.post('/unfriend', 
     (req, res, next) => protect(req, res, next),
     (req: any, res) => {
-        if(req.body.googleId){
+        if(!!req.body.googleId){
             const userID = req.user.googleId;
             const friendID = req.body.googleId;
             try{
@@ -399,7 +400,7 @@ router.get('/search/:username', (req: any, res) => {
 //put with /api/room/data/:id
 
 //get profile details for a friend (user?)
-router.get('/friend/details/:uid', (req, res) => {
+router.get('/friend/details/:uid', (req: any, res) => {
     try{
         firestore.collection('users').doc(req.params.uid).get().then((docSnapshot: any) => {
             if(docSnapshot.exists){
@@ -431,6 +432,152 @@ router.get('/friend/details/:uid', (req, res) => {
 });
 
 //send/accept/deny battle challenge (include format) (and team?)
+
+//send battle challenge
+router.post('/battle/send/:uid', 
+    (req, res, next) => protect(req, res, next),
+    (req: any, res) => {
+        if(!!req.params.uid && !!req.body.challenge){
+            const friendID = req.params.uid;
+            try{
+                const friendDocRef = firestore.collection('users').doc(friendID)
+                friendDocRef.get().then((friendToUpdate: any) => {
+                    const friendsChallenges: string[] = friendToUpdate.data().challenges || [];
+                    if(friendsChallenges.length > 10){
+                        res.status(401).json({error: 'User has too many challenge requests!'});
+                    }else if(friendsChallenges.some((c: any) => c.friend === req.user.googleId)){
+                        res.status(500).json({error: 'Internal server error'});
+                    }else{
+                        friendDocRef.update({
+                            challenges: [...friendsChallenges, req.body.challenge]
+                        }).then(() => {
+                            console.log('updated friends challenges, sent request');
+                            res.sendStatus(200);
+                        }).catch(err => {
+                            console.log(err);
+                            res.status(500).json({error: "Internal server error"})
+                        });
+                    }
+                }).catch(err => {
+                    console.log(err);
+                    res.status(500).json({error: "Internal server error"})
+                })
+            }catch(err){
+                console.log(err);
+                res.status(500).json({error: "Internal server error"})
+            }
+        }
+    }
+)
+
+//cancel battle challenge
+router.post('/battle/cancel/:uid', 
+    (req, res, next) => protect(req, res, next),
+    (req: any, res) => {
+        if(!!req.params.uid){
+            const userID = req.user.googleId;
+            const friendID = req.params.uid;
+            try{
+                const friendDocRef = firestore.collection('users').doc(friendID)
+                friendDocRef.get().then((friendToUpdate: any) => {
+                    const friendsChallenges: string[] = friendToUpdate.data().challenges || [];
+                    if(friendsChallenges.some((c: any) => c.friend === userID)){
+                        friendDocRef.update({
+                            challenges: friendsChallenges.filter((c: any) => c.friend !== userID)
+                        }).then(() => {
+                            console.log('updated friends challenges, cancelled request');
+                            res.sendStatus(200);
+                        }).catch(err => {
+                            console.log(err);
+                            res.status(500).json({error: "Internal server error"})
+                        });
+                    }else{
+                        res.status(500).json({error: 'Internal server error'});
+                    }
+                }).catch(err => {
+                    console.log(err);
+                    res.status(500).json({error: "Internal server error"})
+                })
+            }catch(err){
+                console.log(err);
+                res.status(500).json({error: "Internal server error"})
+            }
+        }
+    }
+)
+
+//deny battle challenge
+router.post('/battle/deny/:uid', 
+    (req, res, next) => protect(req, res, next),
+    (req: any, res) => {
+        if(!!req.params.uid){
+            const userID = req.user.googleId;
+            const friendID = req.params.uid;
+            try{
+                const userDocRef = firestore.collection('users').doc(userID)
+                userDocRef.get().then((userToUpdate: any) => {
+                    const usersChallenges: string[] = userToUpdate.data().challenges || [];
+                    if(usersChallenges.some((c: any) => c.friend === friendID)){
+                        userDocRef.update({
+                            challenges: usersChallenges.filter((c: any) => c.friend !== friendID)
+                        }).then(() => {
+                            console.log('updated users challenges, denied request');
+                            res.sendStatus(200);
+                        }).catch(err => {
+                            console.log(err);
+                            res.status(500).json({error: "Internal server error"})
+                        });
+                    }else{
+                        res.status(500).json({error: 'Internal server error'});
+                    }
+                }).catch(err => {
+                    console.log(err);
+                    res.status(500).json({error: "Internal server error"})
+                })
+            }catch(err){
+                console.log(err);
+                res.status(500).json({error: "Internal server error"})
+            }
+        }
+    }
+)
+
+//accept battle challenge
+router.post('/battle/accept/:uid', 
+    (req, res, next) => protect(req, res, next),
+    (req: any, res) => {
+        if(!!req.params.uid){
+            const userID = req.user.googleId;
+            const friendID = req.params.uid;
+            try{
+                const userDocRef = firestore.collection('users').doc(userID)
+                userDocRef.get().then((userToUpdate: any) => {
+                    const usersChallenges: string[] = userToUpdate.data().challenges || [];
+                    if(usersChallenges.some((c: any) => c.friend === friendID)){
+                        const acceptedChallenge = usersChallenges.find((c: any) => c.friend === friendID);
+                        userDocRef.update({
+                            challenges: usersChallenges.filter((c: any) => c.friend !== friendID)
+                        }).then(() => {
+                            console.log('updated users challenges, accepted request');
+                            res.json(acceptedChallenge);
+                        }).catch(err => {
+                            console.log(err);
+                            res.status(500).json({error: "Internal server error"})
+                        });
+                    }else{
+                        res.status(500).json({error: 'Internal server error'});
+                    }
+                }).catch(err => {
+                    console.log(err);
+                    res.status(500).json({error: "Internal server error"})
+                })
+            }catch(err){
+                console.log(err);
+                res.status(500).json({error: "Internal server error"})
+            }
+        }
+    }
+)
 
 //update displayName creation on frontend to query for existing usernames and modify username if necessary,
 //also sanitize string
