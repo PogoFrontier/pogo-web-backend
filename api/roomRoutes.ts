@@ -3,6 +3,7 @@ import { reduceTeamMemberForOpponent } from "../actions/reduceInformation";
 import { TeamMember } from "../types/team"
 import { storeClient } from "../redis/clients";
 import { Room } from "../types/room";
+import { firestore } from './rest_server';
 
 const router = e.Router();
 
@@ -11,7 +12,7 @@ const router = e.Router();
 // @access Public (for now)
 router.get('/data/:room', async (req, res) => {
     try{
-      storeClient.get("room:" + req.params.room, (err, reply) => {
+      storeClient.get("room:" + req.params.room, async (err, reply) => {
         if (err) {
           res.status(500).json({message: "Internal server error"});
           return;
@@ -22,7 +23,8 @@ router.get('/data/:room', async (req, res) => {
           return;
         }
 
-        let asJSON = JSON.parse(reply)
+        let asJSON = JSON.parse(reply);
+        const usersToUpdate: string[] = [];
         asJSON = {
           id: asJSON.id,
           players: asJSON.players.map((player: any) => {
@@ -30,6 +32,7 @@ router.get('/data/:room', async (req, res) => {
               return
             }
             let currentPokemon: TeamMember = player.current.team[player.current.active]
+            usersToUpdate.push(player.id);
             return {
               id: player.id,
               current: {
@@ -40,6 +43,32 @@ router.get('/data/:room', async (req, res) => {
               }
             }
           })
+        }
+
+        // here, search for both players in firestore, if both are stored,
+        // add ids to each other's recently played users
+        try{
+          const [user1ID, user2ID] = [usersToUpdate[0], usersToUpdate[1]]
+          const [user1DocRef, user2DocRef] = [
+            firestore.collection('users').doc(user1ID), 
+            firestore.collection('users').doc(user2ID)
+          ]
+          const [user1DocSnapshot, user2DocSnapshot] = [
+            await user1DocRef.get(), 
+            await user2DocRef.get()
+          ]
+          if(user1DocSnapshot.exists && user2DocSnapshot.exists){
+            const [[...user1Recents], [...user2Recents]] = [
+              user1DocSnapshot.data()?.recentlyPlayed || [],
+              user2DocSnapshot.data()?.recentlyPlayed || [],
+            ];
+            user1Recents.length > 2 && user1Recents.shift();
+            user2Recents.length > 2 && user2Recents.shift();
+            await user1DocRef.update({recentlyPlayed: user1Recents.push(user2ID)});
+            await user2DocRef.update({recentlyPlayed: user2Recents.push(user1ID)});
+          }
+        }catch(err){
+          console.log(err)
         }
 
         res.json(asJSON);
