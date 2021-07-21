@@ -1,5 +1,5 @@
 import e from "express";
-import { firestore } from './rest_server';
+import { firestore } from "../firestore/firestore";
 import {protect, generateToken} from '../actions/api_utils';
 
 const router = e.Router();

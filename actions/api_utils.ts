@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import { firestore } from '../api/rest_server';
+import { firestore } from "../firestore/firestore";
 import { User } from '../types/user'
 
 const generateToken = (id: string) => {
