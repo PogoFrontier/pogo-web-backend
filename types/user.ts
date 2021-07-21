@@ -1,3 +1,3 @@
 export interface User {
-    socketId: string
+    googleId: string
 }

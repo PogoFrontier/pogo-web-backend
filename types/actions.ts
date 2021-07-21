@@ -1,4 +1,5 @@
 export const CODE = {
+  authentication: "AUTHENTICATION",
   room: "ROOM",
   matchmaking_search_battle: "MATCHMAKING_SEARCH_BATTLE",
   matchmaking_quit: "MATCHMAKING_QUIT",

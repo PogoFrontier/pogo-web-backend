@@ -63,10 +63,10 @@ async function onJoin(id: string, payload: OnJoinPayload) {
     }
 }
 
-function isAllowed(room: Room, socketId: string): {allowed: boolean, reason: string} {
+function isAllowed(room: Room, id: string): {allowed: boolean, reason: string} {
 
     // Do we already have two players? If yes, get out.
-    if (room.players.some(player => player !== null && player.id === socketId)) {
+    if (!room.players.some(player => player === null)) {
         return {
             allowed: false,
             reason: "Room is already full"
@@ -74,7 +74,7 @@ function isAllowed(room: Room, socketId: string): {allowed: boolean, reason: str
     }
 
     // Is player already in that room? If yes, get out.
-    if (room.players.some(player => player !== null && player.id === socketId)) {
+    if (room.players.some(player => player !== null && player.id === id)) {
         return {
             allowed: false,
             reason: "You already joined this room"
@@ -82,7 +82,7 @@ function isAllowed(room: Room, socketId: string): {allowed: boolean, reason: str
     }
 
     // Are there reservations and is this player not on the list? If yes, get out.
-    if (room.reservedSeats && !room.reservedSeats.includes(socketId)) {
+    if (room.reservedSeats && !room.reservedSeats.includes(id)) {
         return {
             allowed: false,
             reason: "You cannot enter this private room"

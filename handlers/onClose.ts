@@ -11,17 +11,17 @@ function onClose(user: User, room: string) {
   if (currentRoom) {
 
       if (currentRoom.players) {
-          const index = currentRoom.players.findIndex(x => x && x.id === user.socketId);
+        const index = currentRoom.players.findIndex(x => x && x.id === user.googleId);
           currentRoom.players[index] = null;
           if (currentRoom.rated || currentRoom.status !== RoomStatus.SELECTING && currentRoom.status !== RoomStatus.STARTING) {
             endGame(room, false, ["p2", "p1"][index] as "p1" | "p2");
-            console.info(`Socket ${user.socketId} has been removed from room ${room}, causing game end.`);
+            console.info(`Socket ${user.googleId} has been removed from room ${room}, causing game end.`);
           } else {
             currentRoom.status = RoomStatus.SELECTING;
             to(room, JSON.stringify({
                 type: CODE.room_leave,
             }), );
-            console.info(`Socket ${user.socketId} has been removed from room ${room}.`);
+            console.info(`Socket ${user.googleId} has been removed from room ${room}.`);
           }
       }
 
@@ -47,7 +47,7 @@ function onClose(user: User, room: string) {
       }
   }
 
-  console.info(`Socket ${user.socketId} has disconnected.`);
+  console.info(`Socket ${user.googleId} has disconnected.`);
 }
 
 export default onClose;

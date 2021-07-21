@@ -14,6 +14,7 @@ import r from "./data/rules.json";
 import onMatchmakingQuit from "./handlers/matchmaking/quit";
 import onMatchmakingSearchBattle from "./handlers/matchmaking/searchBattle";
 import { pubClient, subClient } from "./redis/clients";
+import { checkToken } from "./actions/api_utils";
 
 export const moves: any = m;
 export const rules: any = r;
@@ -36,29 +37,42 @@ const cors: any = c();
 app.use(cors);
 
 function onNewWebsocketConnection(ws: WebSocket, req: Request) {
-    const id = req.url.substring(1);
     let room = "";
     let formatsUsedForMatchmaking = Array<Rule>();
-    let user: User = {
-        socketId: id
-    }
+    let user: User | null = null
 
     const subClientForWS = subClient.duplicate();
 
     subClientForWS.on("message", (chan, msg) => {
         ws.send(msg);
     });
-    subClientForWS.subscribe("messagesToUser:" + id);
 
     ws.onmessage = function(this, ev) {
         const data: string = ev.data;
 
         if (data === ping) {
             ws.send(pong);
-        } else if (isNewRoom(data)) {
-            const { type, payload } = JSON.parse(data)
+        } else if (isAuthentication(data)) {
+            if(user) {
+                return;
+            }
+            const { token } = JSON.parse(data)
+            checkToken(token, (userParam) => {
+                user = userParam;
 
-            onNewRoom(id, payload, roomId => {
+                // Now that we have the userId we can listen to messages
+                subClientForWS.subscribe("messagesToUser:" + user.googleId);
+                ws.send(JSON.stringify("$Authentication Success"))
+            }, () => {
+                ws.send(JSON.stringify("$Authentication Failed"))
+            })
+        } else if (!user) {
+            return;
+
+        } else if (isNewRoom(data)) {
+            const { payload } = JSON.parse(data)
+
+            onNewRoom(user.googleId, payload, roomId => {
                 room = roomId;
             });
         } else if (isMatchmaking(data)) {
@@ -82,7 +96,7 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
         } else{
             // Publish on redis so the host of this room receives this
             const publication = {
-                sender: id,
+                sender: user.googleId,
                 data: data
             };
             pubClient.publish("commands:" + room, JSON.stringify(publication), (err, reply) => {
@@ -100,16 +114,18 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
     ws.onclose = () => {
         subClientForWS.unsubscribe();
         subClientForWS.quit();
-        pubClient.publish("commands:" + room, JSON.stringify({
-            sender: id,
-            data: {
-                type: CODE.close,
-                payload: {
-                    room: room
+        if (user) {
+            pubClient.publish("commands:" + room, JSON.stringify({
+                sender: user.googleId,
+                data: {
+                    type: CODE.close,
+                    payload: {
+                        room: room
+                    }
                 }
-            }
-        }));
-        quitAll(user, formatsUsedForMatchmaking);
+            }));
+            quitAll(user, formatsUsedForMatchmaking);
+        }
     };
 }
 
@@ -132,10 +148,19 @@ function startServer() {
 }
 
 function isNewRoom(data: string): boolean {
-    try{
+    try {
         const { type } = JSON.parse(data);
         return type === CODE.room;
-    } catch(e) {
+    } catch (e) {
+        return false;
+    }
+}
+
+function isAuthentication(data: string): boolean {
+    try {
+        const { type } = JSON.parse(data);
+        return type === CODE.authentication;
+    } catch (e) {
         return false;
     }
 }

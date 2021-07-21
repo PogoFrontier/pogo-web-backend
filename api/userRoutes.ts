@@ -559,6 +559,7 @@ router.post('/battle/accept/:uid',
                             challenges: usersChallenges.filter((c: any) => c.friend !== friendID)
                         }).then(() => {
                             console.log('updated users challenges, accepted request');
+                            // TODO: start battle
                             res.json(acceptedChallenge);
                         }).catch(err => {
                             console.log(err);
