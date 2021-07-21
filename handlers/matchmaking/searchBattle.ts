@@ -48,7 +48,7 @@ function searchBattle(user: User, payload: SearchBattlePayload, recursionCounter
 
             // It worked. Now let's start the match
             if(removedRequests === 1) {
-                startMatch(payload.format, [user, match]);
+                startMatch(payload.format, [user, match], true);
                 return;
             }
             

@@ -1,6 +1,9 @@
 import e from "express";
 import { firestore } from "../firestore/firestore";
 import {protect, generateToken} from '../actions/api_utils';
+import { Challenge } from "../types/challenge"
+import { parseToRule } from "../actions/parseToRule";
+import startMatch from "../handlers/matchmaking/startMatch";
 
 const router = e.Router();
  
@@ -440,16 +443,22 @@ router.post('/battle/send/:uid',
         if(!!req.params.uid && !!req.body.challenge){
             const friendID = req.params.uid;
             try{
+                // Check and control challenge
+                const challenge = {
+                    friend: req.user.googleId,
+                    format: parseToRule(req.body.challenge.format)
+                }
+
                 const friendDocRef = firestore.collection('users').doc(friendID)
                 friendDocRef.get().then((friendToUpdate: any) => {
-                    const friendsChallenges: string[] = friendToUpdate.data().challenges || [];
+                    const friendsChallenges: Challenge[] = friendToUpdate.data().challenges || [];
                     if(friendsChallenges.length > 10){
                         res.status(401).json({error: 'User has too many challenge requests!'});
-                    }else if(friendsChallenges.some((c: any) => c.friend === req.user.googleId)){
+                    } else if (friendsChallenges.some((c) => c.friend === req.user.googleId)){
                         res.status(500).json({error: 'Internal server error'});
                     }else{
                         friendDocRef.update({
-                            challenges: [...friendsChallenges, req.body.challenge]
+                            challenges: [...friendsChallenges, challenge]
                         }).then(() => {
                             console.log('updated friends challenges, sent request');
                             res.sendStatus(200);
@@ -480,10 +489,10 @@ router.post('/battle/cancel/:uid',
             try{
                 const friendDocRef = firestore.collection('users').doc(friendID)
                 friendDocRef.get().then((friendToUpdate: any) => {
-                    const friendsChallenges: string[] = friendToUpdate.data().challenges || [];
-                    if(friendsChallenges.some((c: any) => c.friend === userID)){
+                    const friendsChallenges: Challenge[] = friendToUpdate.data().challenges || [];
+                    if(friendsChallenges.some((c) => c.friend === userID)){
                         friendDocRef.update({
-                            challenges: friendsChallenges.filter((c: any) => c.friend !== userID)
+                            challenges: friendsChallenges.filter((c) => c.friend !== userID)
                         }).then(() => {
                             console.log('updated friends challenges, cancelled request');
                             res.sendStatus(200);
@@ -516,8 +525,8 @@ router.post('/battle/deny/:uid',
             try{
                 const userDocRef = firestore.collection('users').doc(userID)
                 userDocRef.get().then((userToUpdate: any) => {
-                    const usersChallenges: string[] = userToUpdate.data().challenges || [];
-                    if(usersChallenges.some((c: any) => c.friend === friendID)){
+                    const usersChallenges: Challenge[] = userToUpdate.data().challenges || [];
+                    if(usersChallenges.some((c) => c.friend === friendID)){
                         userDocRef.update({
                             challenges: usersChallenges.filter((c: any) => c.friend !== friendID)
                         }).then(() => {
@@ -552,14 +561,17 @@ router.post('/battle/accept/:uid',
             try{
                 const userDocRef = firestore.collection('users').doc(userID)
                 userDocRef.get().then((userToUpdate: any) => {
-                    const usersChallenges: string[] = userToUpdate.data().challenges || [];
-                    if(usersChallenges.some((c: any) => c.friend === friendID)){
-                        const acceptedChallenge = usersChallenges.find((c: any) => c.friend === friendID);
+                    const usersChallenges: Challenge[] = userToUpdate.data().challenges || [];
+                    const acceptedChallenge = usersChallenges.find((c) => c.friend === friendID);
+                    if(acceptedChallenge){
                         userDocRef.update({
-                            challenges: usersChallenges.filter((c: any) => c.friend !== friendID)
+                            challenges: usersChallenges.filter((c) => c.friend !== friendID)
                         }).then(() => {
                             console.log('updated users challenges, accepted request');
-                            // TODO: start battle
+                            
+                            // start battle
+                            startMatch(acceptedChallenge.format, [userID, friendID], false)
+
                             res.json(acceptedChallenge);
                         }).catch(err => {
                             console.log(err);

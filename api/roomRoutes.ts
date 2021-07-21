@@ -3,7 +3,7 @@ import { reduceTeamMemberForOpponent } from "../actions/reduceInformation";
 import { TeamMember } from "../types/team"
 import { storeClient } from "../redis/clients";
 import { Room } from "../types/room";
-import { firestore } from './rest_server';
+import { firestore } from '../firestore/firestore';
 
 const router = e.Router();
 

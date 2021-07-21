@@ -9,7 +9,7 @@ import endGame from "../endGame";
 import { TeamMember } from "../../types/team";
 import { parseToRule } from "../../actions/parseToRule";
 
-function startMatch(format: RuleDescription, users: [User, User]) {
+function startMatch(format: RuleDescription, users: [User, User], rated: boolean) {
     const roomId = uuid();
 
     useRoom(roomId, (err, isNew) => {
@@ -40,7 +40,7 @@ function startMatch(format: RuleDescription, users: [User, User]) {
             subClient: subClient.duplicate(),
             reservedSeats: [users[0].googleId, users[1].googleId],
             format: format,
-            rated: true
+            rated: rated
         }
         rooms.set(roomId, roomObj);
 
