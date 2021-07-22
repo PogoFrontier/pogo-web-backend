@@ -1,6 +1,10 @@
 export const CODE = {
   authentication: "AUTHENTICATION",
   room: "ROOM",
+  challenge_open: "CHALLENGE_OPEN",
+  challenge_quit: "CHALLENGE_QUIT",
+  challenge_decline: "CHALLENGE_DECLINE",
+  challenge_accept: "CHALLENGE_ACCEPT",
   matchmaking_search_battle: "MATCHMAKING_SEARCH_BATTLE",
   matchmaking_quit: "MATCHMAKING_QUIT",
   close: "CLOSE",

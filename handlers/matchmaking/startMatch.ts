@@ -2,14 +2,13 @@ import { rooms } from "../../matchhandling_server";
 import { pubClient, subClient } from "../../redis/clients";
 import { Room, RoomStatus } from "../../types/room";
 import { RuleDescription } from "../../types/rule";
-import { User } from "../../types/user";
 import {v4 as uuid } from "uuid";
 import { setupRoom, useRoom } from "../../redis/rooms";
 import endGame from "../endGame";
 import { TeamMember } from "../../types/team";
 import { parseToRule } from "../../actions/parseToRule";
 
-function startMatch(format: RuleDescription, users: [User, User], rated: boolean) {
+function startMatch(format: RuleDescription, users: [string, string], rated: boolean) {
     const roomId = uuid();
 
     useRoom(roomId, (err, isNew) => {
@@ -25,7 +24,8 @@ function startMatch(format: RuleDescription, users: [User, User], rated: boolean
         }
 
         // Convert RuleDescription into Rule
-        try{        
+        const formatName = typeof format === "string" ? format : undefined
+        try{
             format = parseToRule(format);
         } catch(e) {
             console.error(e);
@@ -38,8 +38,9 @@ function startMatch(format: RuleDescription, users: [User, User], rated: boolean
             players: [null, null],
             status: RoomStatus.SELECTING,
             subClient: subClient.duplicate(),
-            reservedSeats: [users[0].googleId, users[1].googleId],
+            reservedSeats: users,
             format: format,
+            formatName: formatName,
             rated: rated
         }
         rooms.set(roomId, roomObj);
@@ -48,7 +49,7 @@ function startMatch(format: RuleDescription, users: [User, User], rated: boolean
 
         // Notify players to join the room
         for (const user of users) {
-            pubClient.publish("messagesToUser:" + user.googleId, "$PROMT_JOIN" + roomId);
+            pubClient.publish("messagesToUser:" + user, "$PROMT_JOIN" + roomId);
         }
 
         // If one player doesn't make it in time, quit
@@ -56,10 +57,10 @@ function startMatch(format: RuleDescription, users: [User, User], rated: boolean
             // If both didn't make it, it's a tie
             if (roomObj.players[0] === null) {
                 roomObj.players = [{
-                    id: users[0].googleId,
+                    id: users[0],
                     team: Array<TeamMember>()
                 },{
-                        id: users[1].googleId,
+                        id: users[1],
                     team: Array<TeamMember>()
                 }];
 
@@ -68,7 +69,7 @@ function startMatch(format: RuleDescription, users: [User, User], rated: boolean
                 //If one made it and the other not, we have a default winner
             } else if(roomObj.players[1] === null) {
                 roomObj.players[1] = {
-                    id: users.find(user => user.googleId !== roomObj.players[0]?.id)!.googleId,
+                    id: users.find(user => user !== roomObj.players[0]?.id)!,
                     team: Array<TeamMember>()
                 }
                 endGame(roomId, false, "p1");

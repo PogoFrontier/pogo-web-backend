@@ -72,3 +72,16 @@ export interface Anim {
   type: "faint" | a["FAST_ATTACK"] | a["CHARGE_ATTACK"] | a["SWITCH"],
   turn?: number
 }
+
+export interface OpenChallengePayload {
+  opponentId: string,
+  format: RuleDescription
+}
+
+export interface QuitChallengePayload {
+  opponentId: string
+}
+
+export interface DeclineOrAcceptChallengePayload {
+  challengerId: string
+}

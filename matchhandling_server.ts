@@ -4,6 +4,7 @@ import websocket from 'ws';
 import c from 'cors';
 import deepEqual from "deep-equal";
 import quitAll from "./handlers/matchmaking/quitAll";
+import quitAllChallenges from "./handlers/challenges/quitAll"
 import onNewRoom from "./handlers/onNewRoom";
 import { CODE } from "./types/actions";
 import { Room } from "./types/room";
@@ -15,6 +16,13 @@ import onMatchmakingQuit from "./handlers/matchmaking/quit";
 import onMatchmakingSearchBattle from "./handlers/matchmaking/searchBattle";
 import { pubClient, subClient } from "./redis/clients";
 import { checkToken } from "./actions/api_utils";
+import openChallenge from "./handlers/challenges/open";
+import quitChallenge from "./handlers/challenges/quit";
+import decline from "./handlers/challenges/decline";
+import accept from "./handlers/challenges/accept";
+import getAll from "./handlers/challenges/getAll";
+import startMatchChecking from "./handlers/matchmaking/matchChecker"
+startMatchChecking()
 
 export const moves: any = m;
 export const rules: any = r;
@@ -63,6 +71,9 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
                 // Now that we have the userId we can listen to messages
                 subClientForWS.subscribe("messagesToUser:" + user.googleId);
                 ws.send(JSON.stringify("$Authentication Success"))
+
+                // Check for challenges
+                getAll(user.googleId)
             }, () => {
                 ws.send(JSON.stringify("$Authentication Failed"))
             })
@@ -75,6 +86,26 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
             onNewRoom(user.googleId, payload, roomId => {
                 room = roomId;
             });
+        } else if (isAboutDirectChallenges(data)) {
+            const { type, payload } = JSON.parse(data)
+
+            switch (type) {
+                case CODE.challenge_open:
+                    openChallenge(user.googleId, payload)
+                    break;
+                case CODE.challenge_quit:
+                    quitChallenge(user.googleId, payload)
+                    break;
+                case CODE.challenge_decline:
+                    decline(user.googleId, payload)
+                    break;
+                case CODE.challenge_accept:
+                    accept(user.googleId, payload)
+                    break;
+                default:
+                    console.error(`Message not recognized: ${data}`);
+            }
+
         } else if (isMatchmaking(data)) {
             const { type, payload } = JSON.parse(data)
 
@@ -125,6 +156,7 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
                 }
             }));
             quitAll(user, formatsUsedForMatchmaking);
+            quitAllChallenges(user.googleId)
         }
     };
 }
@@ -165,11 +197,20 @@ function isAuthentication(data: string): boolean {
     }
 }
 
+function isAboutDirectChallenges(data: string): boolean {
+    try {
+        const { type } = JSON.parse(data);
+        return typeof type === "string" && type.startsWith("CHALLENGE_");
+    } catch (e) {
+        return false;
+    }
+}
+
 function isMatchmaking(data: string): boolean {
-    try{
+    try {
         const { type } = JSON.parse(data);
         return typeof type === "string" && type.startsWith("MATCHMAKING_");
-    } catch(e) {
+    } catch (e) {
         return false;
     }
 }

@@ -40,7 +40,7 @@ function onAny(senderId: string, roomId: string, data: string) {
                     onReadyGame(senderId, payload);
                     break;
                 case CODE.close:
-                    onClose({ googleId: senderId}, payload.room);
+                    onClose(senderId, payload.room);
                     break;
                 default:
                     console.error(`Message not recognized: ${data}`);
