@@ -14,7 +14,6 @@ export const SERVER_PORT = 8081;
 //initialize node server app
 const app: e.Application = e();
 
-
 //use json
 app.use(e.json());
 

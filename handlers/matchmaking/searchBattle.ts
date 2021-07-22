@@ -31,7 +31,7 @@ function searchBattle(user: User, payload: SearchBattlePayload, recursionCounter
 
         const userWithTimestamp: UserInQueue = {
             ...user,
-            waitingSince: new Date()
+            waitingSince: new Date().getTime()
         }
 
         // No partner found? Let's put this player on the list so another server can match him

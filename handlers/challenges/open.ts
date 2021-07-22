@@ -17,7 +17,7 @@ function openChallenge(challengerId: string, payload: OpenChallengePayload) {
         }
 
         // You cannot send challenges to strangers
-        if (!user.data()?.friends.includes(opponentId)) {
+        if (!user.data()?.friends?.includes(opponentId)) {
             return
         }
 
@@ -42,6 +42,8 @@ function openChallenge(challengerId: string, payload: OpenChallengePayload) {
                 format: format
             }))
         })
+    }).catch(err => {
+        console.error(err);
     })
 }
 

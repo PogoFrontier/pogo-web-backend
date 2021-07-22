@@ -2,7 +2,7 @@ import { rooms } from "../matchhandling_server";
 import { Room, RoomStatus } from "../types/room";
 import { pubClient, storeClient } from "../redis/clients";
 import { reduceTeamForEnd } from "../actions/reduceInformation"
-import { updateRankings } from "../actions/rankings";
+import { updateRatings } from "../actions/ratings";
 
 function endGame(room: string, timeout?: boolean, predefinedResult?: whoWon) {
   const currentRoom = rooms.get(room);
@@ -71,7 +71,7 @@ function endGame(room: string, timeout?: boolean, predefinedResult?: whoWon) {
 
     //update rankings
     if (currentRoom.rated && currentRoom.reservedSeats && currentRoom.formatName && result !== "tie") {
-      updateRankings(currentRoom.reservedSeats!, result === "p1", currentRoom.formatName)
+      updateRatings(currentRoom.reservedSeats!, result === "p1", currentRoom.formatName)
     }
   }
   rooms.delete(room);

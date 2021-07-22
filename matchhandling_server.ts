@@ -61,7 +61,7 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
         if (data === ping) {
             ws.send(pong);
         } else if (isAuthentication(data)) {
-            if(user) {
+            if (user) {
                 return;
             }
             const { token } = JSON.parse(data)
@@ -70,12 +70,12 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
 
                 // Now that we have the userId we can listen to messages
                 subClientForWS.subscribe("messagesToUser:" + user.googleId);
-                ws.send(JSON.stringify("$Authentication Success"))
+                ws.send("$Authentication Success")
 
                 // Check for challenges
                 getAll(user.googleId)
             }, () => {
-                ws.send(JSON.stringify("$Authentication Failed"))
+                ws.send("$Authentication Failed")
             })
         } else if (!user) {
             return;

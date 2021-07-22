@@ -4,7 +4,7 @@ export interface User {
 }
 
 export type UserInQueue = User & {
-    waitingSince: Date
+    waitingSince: number
 }
 
 // Later we should replace this with an object containing numbers for each format
