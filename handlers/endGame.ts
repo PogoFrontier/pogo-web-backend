@@ -33,14 +33,12 @@ function endGame(room: string, timeout?: boolean, predefinedResult?: whoWon) {
       }
     })
 
-    if (predefinedResult) {
-      sendResult(currentRoom, predefinedResult);
-      return;
-    }
 
     // Send results to players
     let result: "p1" | "p2" | "tie" = "tie"
-    if (rooms.get(room)!.players && rooms.get(room)!.players.length === 2) {
+    if (predefinedResult) {
+      result = predefinedResult
+    } else if (rooms.get(room)!.players && rooms.get(room)!.players.length === 2) {
       const currentRoom = rooms.get(room)!;
       let p = rooms.get(room)!.players[0];
       let o = rooms.get(room)!.players[1];
