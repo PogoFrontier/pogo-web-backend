@@ -1,5 +1,6 @@
 export interface User {
     googleId: string
+    isGuest: boolean
     ranking: ELO
 }
 

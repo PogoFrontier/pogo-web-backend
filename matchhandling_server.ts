@@ -22,6 +22,7 @@ import decline from "./handlers/challenges/decline";
 import accept from "./handlers/challenges/accept";
 import getAll from "./handlers/challenges/getAll";
 import startMatchChecking from "./handlers/matchmaking/matchChecker"
+import { v4 as uuid } from "uuid"
 startMatchChecking()
 
 export const moves: any = m;
@@ -64,7 +65,17 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
             if (user) {
                 return;
             }
-            const { token } = JSON.parse(data)
+            const { asGuestUser, token } = JSON.parse(data)
+
+            if(asGuestUser) {
+                user = {
+                    googleId: uuid(),
+                    isGuest: true,
+                    ranking: 1000
+                }
+                return;
+            }
+            
             checkToken(token, (userParam) => {
                 user = userParam;
 
@@ -87,6 +98,12 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
                 room = roomId;
             });
         } else if (isAboutDirectChallenges(data)) {
+
+            //Guest users can't challenge directly
+            if(user.isGuest) {
+                return;
+            }
+
             const { type, payload } = JSON.parse(data)
 
             switch (type) {

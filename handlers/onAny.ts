@@ -8,10 +8,20 @@ import onGetOpponent from "./onGetOpponent";
 import onJoin from "./onJoin";
 import onTeamSubmit from "./onTeamSubmit";
 import { onReadyGame } from "./onReadyGame";
+import endGame from "./endGame";
 
 function onAny(senderId: string, roomId: string, data: string) {
-    if (typeof data === "string" && data.startsWith("$")) {
-        if (rooms.get(roomId) && rooms.get(roomId)?.status === RoomStatus.CHARGE) {
+    const room = rooms.get(roomId)
+    if (data === "forfeit") {
+        if (room) {
+            const playerNum = room.players.findIndex((player) => player !== null && player.id === senderId)
+            const result = playerNum === 0 ? "p2" : "p1"
+            if(playerNum !== -1) {
+                endGame(roomId, false, result)
+            }
+        }
+    } else if (typeof data === "string" && data.startsWith("$")) {
+        if (room && room.status === RoomStatus.CHARGE) {
             onSetCharge({ id: senderId, room: roomId, data })
         }
     } else if (typeof data === "string" && data.startsWith("#")) {

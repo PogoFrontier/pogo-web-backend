@@ -15,6 +15,12 @@ function searchBattle(user: User, payload: SearchBattlePayload, recursionCounter
         console.error(e);
         return;
     }
+
+    // Guest users cannot participate in ranked matches
+    if(user.isGuest && !format.unranked) {
+        return;
+    }
+
     const key = getBattleRequestKey(payload.format);
 
     // Get current battle requests for this format
@@ -53,7 +59,7 @@ function searchBattle(user: User, payload: SearchBattlePayload, recursionCounter
 
             // It worked. Now let's start the match
             if(removedRequests === 1) {
-                startMatch(payload.format, [user.googleId, match.googleId], true);
+                startMatch(payload.format, [user.googleId, match.googleId], !format.unranked);
                 return;
             }
             

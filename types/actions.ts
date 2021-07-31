@@ -22,5 +22,6 @@ export const CODE = {
 export const Actions = {
   FAST_ATTACK: "fa",
   SWITCH: "sw",
-  CHARGE_ATTACK: "ca"
+  CHARGE_ATTACK: "ca",
+  FORFEIT: "forfeit"
 }

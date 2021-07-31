@@ -76,9 +76,11 @@ function endGame(room: string, timeout?: boolean, predefinedResult?: whoWon) {
 }
 
 type whoWon = "p1" | "p2" | "tie";
+
 function sendResult(room: Room, result: whoWon) {
   let p = room.players[0];
   let o = room.players[1];
+   
   if(result === "p1") {
     if(p)
       pubClient.publish("messagesToUser:" + p.id, "$endwon|" + JSON.stringify(reduceTeamForEnd(p.current?.team)));

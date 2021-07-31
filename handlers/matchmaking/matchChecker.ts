@@ -35,7 +35,7 @@ setInterval(() => {
                                 }
 
                                 // start the match
-                                startMatch(format, [request.googleId, match.googleId], true);
+                                startMatch(format, [request.googleId, match.googleId], !key.endsWith("_UNRANKED"));
                             })
 
                     }
