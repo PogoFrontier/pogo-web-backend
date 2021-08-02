@@ -32,13 +32,16 @@ function searchBattle(user: User, payload: SearchBattlePayload, recursionCounter
 
         const usersInQueue: Array<UserInQueue> = requests.map(request => JSON.parse(request));
 
-        // Find a good battle partner for this player
-        const match = getMatch(payload.format, user, usersInQueue);
-
         const userWithTimestamp: UserInQueue = {
             ...user,
             waitingSince: new Date().getTime()
         }
+        if(format.unranked) {
+            userWithTimestamp.ranking = 0
+        }
+
+        // Find a good battle partner for this player
+        const match = getMatch(payload.format, userWithTimestamp, usersInQueue);
 
         // No partner found? Let's put this player on the list so another server can match him
         if (!match) {

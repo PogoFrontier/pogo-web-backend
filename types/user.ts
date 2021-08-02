@@ -9,4 +9,4 @@ export type UserInQueue = User & {
 }
 
 // Later we should replace this with an object containing numbers for each format
-export type ELO = number
+export type ELO = object | number

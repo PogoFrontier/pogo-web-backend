@@ -12,6 +12,7 @@ export interface Rule {
     advancedOptions?:  AdvancedOptions
     pointLimitOptions?: PointLimitOptions
     classes?: ClassOption[]
+    ratingCategory?: string
     unranked?: boolean
 }
 

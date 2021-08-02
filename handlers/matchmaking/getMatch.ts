@@ -2,9 +2,9 @@ import { RuleDescription } from "../../types/rule";
 import { User, UserInQueue } from "../../types/user";
 import { getRating } from "../../actions/ratings"
 
-function getMatch(format: RuleDescription, user: User | UserInQueue, battleRequests: Array<UserInQueue>): User | undefined {
+function getMatch(format: RuleDescription, user: UserInQueue, battleRequests: Array<UserInQueue>): User | undefined {
     const userRanking = getRating(user, format)
-    const timeUserWaiting = ("waitingSince" in user) ? new Date().getTime() - user.waitingSince : 0;
+    const timeUserWaiting = new Date().getTime() - user.waitingSince;
     
     // Find players with a similar rank
     let matchingUsersInQueue = battleRequests.filter((userInQueue) => {
@@ -13,7 +13,7 @@ function getMatch(format: RuleDescription, user: User | UserInQueue, battleReque
         //Right now its timeInSecond*10, however, a step-by-step difference is also a possibility
         const maxRankingDifference = timeWaiting / 100;
 
-        const rankingDifference = Math.abs(userInQueue.ranking - userRanking);
+        const rankingDifference = Math.abs(getRating(userInQueue, format) - userRanking);
         return rankingDifference <= maxRankingDifference;
     })
 
