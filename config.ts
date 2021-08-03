@@ -3,7 +3,7 @@ export const SWAP_COOLDOWN = 60;
 export const GAME_TIME = 240;
 export const SWITCH_WAIT = 12;
 export const SWITCH_WAIT_LAST = 3;
-export const CHARGE_WAIT = 8;
+export const CHARGE_WAIT = 1;
 export const ANIMATING_WAIT = 3;
 // in ms
 export const TURN_LENGTH = 500;
