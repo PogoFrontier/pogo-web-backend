@@ -73,5 +73,6 @@ export interface Room {
     cmp?: Move
   },
   format: Rule,
+  formatName?: string,
   subClient: Cluster | Redis | any
 }

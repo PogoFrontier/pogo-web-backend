@@ -1,5 +1,6 @@
 import { RuleDescription, Rule } from "../types/rule";
 import r from '../data/rules.json';
+import unrankedRules from '../data/unrankedrules.json';
 
 const RULESETS: {
   [key: string]: Object
@@ -7,13 +8,29 @@ const RULESETS: {
 
 export function parseToRule(format: RuleDescription): Rule {
   if (!instanceOfRule(format)) {
-      let rule = RULESETS[format] as Rule
-      if (!rule) {
-          throw new Error(`Format ${format} doesn't exist.`);
+
+    // Check for the unranked suffix
+    let unranked = false
+    if(format.endsWith("_UNRANKED")) {
+      unranked = true
+      format = format.slice(0, -"UNRANKED".length)
+
+      if(!unrankedRules.includes(format)) {
+        throw new Error("Invalid unrakned format")
       }
-      return rule;
+    }
+
+    let rule = {...RULESETS[format]} as Rule
+    rule.unranked = unranked
+
+    if (!rule) {
+      throw new Error(`Format ${format} doesn't exist.`);
+    }
+
+    return rule;
   }
 
+  format.unranked = false
   return format;
 }
 

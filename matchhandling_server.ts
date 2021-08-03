@@ -4,6 +4,7 @@ import websocket from 'ws';
 import c from 'cors';
 import deepEqual from "deep-equal";
 import quitAll from "./handlers/matchmaking/quitAll";
+import quitAllChallenges from "./handlers/challenges/quitAll"
 import onNewRoom from "./handlers/onNewRoom";
 import { CODE } from "./types/actions";
 import { Room } from "./types/room";
@@ -14,6 +15,15 @@ import r from "./data/rules.json";
 import onMatchmakingQuit from "./handlers/matchmaking/quit";
 import onMatchmakingSearchBattle from "./handlers/matchmaking/searchBattle";
 import { pubClient, subClient } from "./redis/clients";
+import { checkToken } from "./actions/api_utils";
+import openChallenge from "./handlers/challenges/open";
+import quitChallenge from "./handlers/challenges/quit";
+import decline from "./handlers/challenges/decline";
+import accept from "./handlers/challenges/accept";
+import getAll from "./handlers/challenges/getAll";
+import startMatchChecking from "./handlers/matchmaking/matchChecker"
+import { v4 as uuid } from "uuid"
+startMatchChecking()
 
 export const moves: any = m;
 export const rules: any = r;
@@ -36,31 +46,83 @@ const cors: any = c();
 app.use(cors);
 
 function onNewWebsocketConnection(ws: WebSocket, req: Request) {
-    const id = req.url.substring(1);
     let room = "";
     let formatsUsedForMatchmaking = Array<Rule>();
-    let user: User = {
-        socketId: id
-    }
+    let user: User | null = null
 
     const subClientForWS = subClient.duplicate();
 
     subClientForWS.on("message", (chan, msg) => {
         ws.send(msg);
     });
-    subClientForWS.subscribe("messagesToUser:" + id);
 
     ws.onmessage = function(this, ev) {
         const data: string = ev.data;
 
         if (data === ping) {
             ws.send(pong);
-        } else if (isNewRoom(data)) {
-            const { type, payload } = JSON.parse(data)
+        } else if (isAuthentication(data)) {
+            if (user) {
+                return;
+            }
+            const { asGuestUser, token } = JSON.parse(data)
 
-            onNewRoom(id, payload, roomId => {
+            if(asGuestUser) {
+                user = {
+                    googleId: uuid(),
+                    isGuest: true,
+                    ranking: 1000
+                }
+                return;
+            }
+            
+            checkToken(token, (userParam) => {
+                user = userParam;
+
+                // Now that we have the userId we can listen to messages
+                subClientForWS.subscribe("messagesToUser:" + user.googleId);
+                ws.send("$Authentication Success")
+
+                // Check for challenges
+                getAll(user.googleId)
+            }, () => {
+                ws.send("$Authentication Failed")
+            })
+        } else if (!user) {
+            return;
+
+        } else if (isNewRoom(data)) {
+            const { payload } = JSON.parse(data)
+
+            onNewRoom(user.googleId, payload, roomId => {
                 room = roomId;
             });
+        } else if (isAboutDirectChallenges(data)) {
+
+            //Guest users can't challenge directly
+            if(user.isGuest) {
+                return;
+            }
+
+            const { type, payload } = JSON.parse(data)
+
+            switch (type) {
+                case CODE.challenge_open:
+                    openChallenge(user.googleId, payload)
+                    break;
+                case CODE.challenge_quit:
+                    quitChallenge(user.googleId, payload)
+                    break;
+                case CODE.challenge_decline:
+                    decline(user.googleId, payload)
+                    break;
+                case CODE.challenge_accept:
+                    accept(user.googleId, payload)
+                    break;
+                default:
+                    console.error(`Message not recognized: ${data}`);
+            }
+
         } else if (isMatchmaking(data)) {
             const { type, payload } = JSON.parse(data)
 
@@ -82,7 +144,7 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
         } else{
             // Publish on redis so the host of this room receives this
             const publication = {
-                sender: id,
+                sender: user.googleId,
                 data: data
             };
             pubClient.publish("commands:" + room, JSON.stringify(publication), (err, reply) => {
@@ -100,16 +162,19 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
     ws.onclose = () => {
         subClientForWS.unsubscribe();
         subClientForWS.quit();
-        pubClient.publish("commands:" + room, JSON.stringify({
-            sender: id,
-            data: {
-                type: CODE.close,
-                payload: {
-                    room: room
+        if (user) {
+            pubClient.publish("commands:" + room, JSON.stringify({
+                sender: user.googleId,
+                data: {
+                    type: CODE.close,
+                    payload: {
+                        room: room
+                    }
                 }
-            }
-        }));
-        quitAll(user, formatsUsedForMatchmaking);
+            }));
+            quitAll(user, formatsUsedForMatchmaking);
+            quitAllChallenges(user.googleId)
+        }
     };
 }
 
@@ -132,19 +197,37 @@ function startServer() {
 }
 
 function isNewRoom(data: string): boolean {
-    try{
+    try {
         const { type } = JSON.parse(data);
         return type === CODE.room;
-    } catch(e) {
+    } catch (e) {
+        return false;
+    }
+}
+
+function isAuthentication(data: string): boolean {
+    try {
+        const { type } = JSON.parse(data);
+        return type === CODE.authentication;
+    } catch (e) {
+        return false;
+    }
+}
+
+function isAboutDirectChallenges(data: string): boolean {
+    try {
+        const { type } = JSON.parse(data);
+        return typeof type === "string" && type.startsWith("CHALLENGE_");
+    } catch (e) {
         return false;
     }
 }
 
 function isMatchmaking(data: string): boolean {
-    try{
+    try {
         const { type } = JSON.parse(data);
         return typeof type === "string" && type.startsWith("MATCHMAKING_");
-    } catch(e) {
+    } catch (e) {
         return false;
     }
 }
