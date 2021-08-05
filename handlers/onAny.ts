@@ -7,6 +7,7 @@ import onClose from "./onClose";
 import onGetOpponent from "./onGetOpponent";
 import onJoin from "./onJoin";
 import onTeamSubmit from "./onTeamSubmit";
+import onStartTimer from "./onStartTimer";
 import { onReadyGame } from "./onReadyGame";
 import endGame from "./endGame";
 
@@ -34,7 +35,10 @@ function onAny(senderId: string, roomId: string, data: string) {
         }
     } else {
         try{
-            const { type, payload } = JSON.parse(data);
+            let { type, payload } = JSON.parse(data);
+            if(!payload) {
+                payload = {}
+            }
             payload.room = roomId;
             switch (type) {
                 case CODE.get_opponent:
@@ -45,6 +49,9 @@ function onAny(senderId: string, roomId: string, data: string) {
                     break;
                 case CODE.team_submit:
                     onTeamSubmit(senderId, payload);
+                    break;
+                case CODE.start_timer:
+                    onStartTimer(senderId, payload);
                     break;
                 case CODE.ready_game:
                     onReadyGame(senderId, payload);

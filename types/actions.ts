@@ -11,6 +11,7 @@ export const CODE = {
   get_opponent: "GET_OPPONENT",
   room_leave: "ROOM_LEAVE",
   room_join: "ROOM_JOIN",
+  start_timer: "START_TIMER",
   team_submit: "TEAM_SUBMIT",
   team_confirm: "TEAM_CONFIRM",
   ready_game: 'READY_GAME',
