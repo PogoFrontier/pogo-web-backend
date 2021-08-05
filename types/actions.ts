@@ -17,7 +17,8 @@ export const CODE = {
   ready_game: 'READY_GAME',
   game_check: 'GAME_CHECK',
   game_start: 'GAME_START',
-  turn: 'TURN'
+  turn: 'TURN',
+  UnrankedSuffix: "_UNRANKED"
 }
 
 export const Actions = {
