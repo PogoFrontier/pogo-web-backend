@@ -13,10 +13,10 @@ export function parseToRule(format: RuleDescription): Rule {
     let unranked = false
     if(format.endsWith("_UNRANKED")) {
       unranked = true
-      format = format.slice(0, -"UNRANKED".length)
+      format = format.slice(0, -"_UNRANKED".length)
 
       if(!unrankedRules.includes(format)) {
-        throw new Error("Invalid unrakned format")
+        throw new Error("Invalid unranked format")
       }
     }
 

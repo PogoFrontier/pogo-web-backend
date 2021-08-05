@@ -73,6 +73,8 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
                     isGuest: true,
                     ranking: 1000
                 }
+                subClientForWS.subscribe("messagesToUser:" + user.googleId);
+                ws.send("$Authentication Success")
                 return;
             }
             
