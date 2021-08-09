@@ -21,6 +21,10 @@ function onStartTimer(id: string, payload: OnTeamSubmitPayload) {
     currentRoom.timeout = setTimeout(() => {
       // Both selected. Moving on.
       if(currentRoom.status !== RoomStatus.SELECTING) {
+        if (currentRoom.timeout) {
+          clearTimeout(currentRoom.timeout);
+          delete currentRoom.timeout;
+        }
         return
       }
 

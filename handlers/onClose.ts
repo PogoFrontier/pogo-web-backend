@@ -18,6 +18,10 @@ function onClose(userId: string, room: string) {
             console.info(`Socket ${userId} has been removed from room ${room}, causing game end.`);
           } else {
             currentRoom.status = RoomStatus.SELECTING;
+            if (currentRoom.timeout) {
+              clearTimeout(currentRoom.timeout);
+              delete currentRoom.timeout;
+            }
             to(room, JSON.stringify({
                 type: CODE.room_leave,
             }), );
