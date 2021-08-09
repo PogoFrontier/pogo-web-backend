@@ -40,6 +40,11 @@ function searchBattle(user: User, payload: SearchBattlePayload, recursionCounter
             userWithTimestamp.ranking = 0
         }
 
+        if (usersInQueue.some(userInQueue => userInQueue.googleId === user.googleId)) {
+            console.error("This is an attempt to enter the queue twice")
+            return;
+        }
+
         // Find a good battle partner for this player
         const match = getMatch(payload.format, userWithTimestamp, usersInQueue);
 
