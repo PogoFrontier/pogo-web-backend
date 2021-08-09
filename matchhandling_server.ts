@@ -67,12 +67,14 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
             }
             const { asGuestUser, token } = JSON.parse(data)
 
-            if(asGuestUser) {
+            if(asGuestUser || !token) {
                 user = {
                     googleId: uuid(),
                     isGuest: true,
                     ranking: 1000
                 }
+                subClientForWS.subscribe("messagesToUser:" + user.googleId);
+                ws.send("$Authentication Success")
                 return;
             }
             

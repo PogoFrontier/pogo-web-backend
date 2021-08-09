@@ -7,7 +7,7 @@ import { startCountdown } from "./onReadyGame";
 
 function onTeamSubmit(id: string, payload: OnTeamSubmitPayload) {
   const { room, indexes } = payload;
-  if(!areIndexesValid) {
+  if(!areIndexesValid(indexes)) {
     console.error("Invalid team submit indexes: " + indexes.join(", "));
     return;
   }
@@ -50,13 +50,22 @@ function onTeamSubmit(id: string, payload: OnTeamSubmitPayload) {
 
       console.info(`Player ${id} is ready in room ${room}.`);
 
+      // If both players are ready...
       const j = i === 0 ? 1 : 0;
       if (currentRoom.players[j] && currentRoom.players[j]!.current) {
+        // Clear timeout for team selection
+        if(currentRoom.timeout) {
+          clearTimeout(currentRoom.timeout)
+          delete currentRoom.timeout
+        }
+
+        // Notify players
         currentRoom.status = RoomStatus.READY
         to(room, JSON.stringify({
             type: CODE.team_confirm,
         }));
 
+        // Start battle
         setTimeout(() => {
           if(currentRoom.status === RoomStatus.READY) {
               console.info(`Room ${room} is starting countdown`)

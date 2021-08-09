@@ -6,6 +6,8 @@ export interface TeamMember extends team.TeamMember {
 }
 export interface Current extends team.Current {
 }
+export interface Pokemon extends team.Pokemon {
+}
 export interface Rule extends rule.Rule {
 }
 export interface TurnAction extends room.TurnAction {

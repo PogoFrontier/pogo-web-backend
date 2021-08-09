@@ -1,6 +1,7 @@
 import startMatch from "./startMatch";
 import { storeClient } from "../../redis/clients";
 import getMatch from "./getMatch";
+import { CODE } from "../../types/actions";
 
 // Every 10s go through the requests and try to match players with each other
 export default function start() {
@@ -35,7 +36,7 @@ setInterval(() => {
                                 }
 
                                 // start the match
-                                startMatch(format, [request.googleId, match.googleId], !key.endsWith("_UNRANKED"));
+                                startMatch(format, [request.googleId, match.googleId], !key.endsWith(CODE.UnrankedSuffix));
                             })
 
                     }

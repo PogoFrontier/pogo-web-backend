@@ -53,7 +53,7 @@ function startMatch(format: RuleDescription, users: [string, string], rated: boo
         }
 
         // If one player doesn't make it in time, quit
-        roomObj.joinTimeout = setTimeout(() => {
+        roomObj.timeout = setTimeout(() => {
             // If both didn't make it, it's a tie
             if (roomObj.players[0] === null) {
                 roomObj.players = [{

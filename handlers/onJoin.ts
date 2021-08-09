@@ -49,9 +49,10 @@ async function onJoin(id: string, payload: OnJoinPayload) {
 
                 console.info(`Socket ${id} has joined ${room}.`);
 
-                // Clear joinTimeout
-                if (i === 1 && currentRoom.joinTimeout) {
-                    clearTimeout(currentRoom.joinTimeout);
+                // Clear timeout
+                if (i === 1 && currentRoom.timeout) {
+                    clearTimeout(currentRoom.timeout);
+                    delete currentRoom.timeout
                 }
 
                 // Notify user

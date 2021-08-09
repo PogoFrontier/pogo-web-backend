@@ -1,31 +1,31 @@
 {
-  "name": "@adibkhan/pogo-web-backend",
-  "version": "1.0.37",
-  "description": "",
-  "main": "index.cjs",
-  "types": "index.d.ts",
-  "keywords": [],
-  "scripts": {
-    "prepublishOnly": "rm -rf ./index.d.ts && rm -rf ./index.cjs && webpack --mode=production && rm -rf ./room.d.ts && rm -rf ./actions.d.ts"
-  },
-  "author": "adibkhan",
-  "license": "MIT",
-  "type": "module",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DeveloperKhan/pogo-web-backend.git"
-  },
-  "peerDependencies": {
-    "react": "^17.0.1"
-  },
-  "dependencies": {
-    "@types/ioredis": "^4.26.0"
-  },
-  "devDependencies": {
-    "awesome-typescript-loader": "^5.2.1",
-    "ioredis": "^4.27.1",
-    "typescript": "^4.1.3",
-    "webpack": "^5.10.1",
-    "webpack-cli": "^4.2.0"
-  }
+    "name": "@adibkhan/pogo-web-backend",
+    "version": "1.0.39",
+    "description": "",
+    "main": "index.cjs",
+    "types": "index.d.ts",
+    "keywords": [],
+    "scripts": {
+        "prepublishOnly": "rm -rf ./index.d.ts && rm -rf ./index.cjs && webpack --mode=production && rm -rf ./room.d.ts && rm -rf ./actions.d.ts"
+    },
+    "author": "adibkhan",
+    "license": "MIT",
+    "type": "module",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DeveloperKhan/pogo-web-backend.git"
+    },
+    "peerDependencies": {
+        "react": "^17.0.1"
+    },
+    "dependencies": {
+        "@types/ioredis": "^4.26.0"
+    },
+    "devDependencies": {
+        "awesome-typescript-loader": "^5.2.1",
+        "ioredis": "^4.27.1",
+        "typescript": "^4.1.3",
+        "webpack": "^5.10.1",
+        "webpack-cli": "^4.2.0"
+    }
 }
