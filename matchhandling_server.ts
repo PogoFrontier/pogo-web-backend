@@ -67,7 +67,7 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
             }
             const { asGuestUser, token } = JSON.parse(data)
 
-            if(asGuestUser) {
+            if(asGuestUser || !token) {
                 user = {
                     googleId: uuid(),
                     isGuest: true,
