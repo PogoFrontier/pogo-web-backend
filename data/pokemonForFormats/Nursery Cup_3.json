@@ -1703,18 +1703,7 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": {
-      "de": "Flegmon",
-      "fr": "Ramoloss",
-      "en": "Slowpoke",
-      "es": "Slowpoke",
-      "th": "ยาดง",
-      "ja": "ヤドン",
-      "ko": "야돈",
-      "ru": "Слоупок",
-      "zh_hans": "呆呆兽",
-      "zh_hant": "呆呆獸"
-    }
+    "speciesName": "Slowpoke"
   },
   "slowpoke_shadow": {
     "legal": false,
@@ -3212,18 +3201,7 @@
       "water",
       "electric"
     ],
-    "speciesName": {
-      "de": "Lampi",
-      "fr": "Loupio",
-      "en": "Chinchou",
-      "es": "Chinchou",
-      "th": "ชอนชี",
-      "ja": "チョンチー",
-      "ko": "초라기",
-      "ru": "Чинчоу",
-      "zh_hans": "灯笼鱼",
-      "zh_hant": "燈籠魚"
-    }
+    "speciesName": "Chinchou"
   },
   "lanturn": {
     "legal": false,
@@ -5440,18 +5418,7 @@
       "water",
       "none"
     ],
-    "speciesName": {
-      "de": "Wailmer",
-      "fr": "Wailmer",
-      "en": "Wailmer",
-      "es": "Wailmer",
-      "th": "เวลโกะ",
-      "ja": "ホエルコ",
-      "ko": "고래왕자",
-      "ru": "Вэйлмер",
-      "zh_hans": "吼吼鲸",
-      "zh_hant": "吼吼鯨"
-    }
+    "speciesName": "Wailmer"
   },
   "wailord": {
     "legal": false,
@@ -6086,18 +6053,7 @@
       "water",
       "none"
     ],
-    "speciesName": {
-      "de": "Perlu",
-      "fr": "Coquiperl",
-      "en": "Clamperl",
-      "es": "Clamperl",
-      "th": "ปาลูลุ",
-      "ja": "パールル",
-      "ko": "진주몽",
-      "ru": "Кламперл",
-      "zh_hans": "珍珠贝",
-      "zh_hant": "珍珠貝"
-    }
+    "speciesName": "Clamperl"
   },
   "huntail": {
     "legal": false,
@@ -7305,18 +7261,7 @@
       "water",
       "flying"
     ],
-    "speciesName": {
-      "de": "Mantirps",
-      "fr": "Babimanta",
-      "en": "Mantyke",
-      "es": "Mantyke",
-      "th": "ทาแมนทา",
-      "ja": "タマンタ",
-      "ko": "타만타",
-      "ru": "Мантик",
-      "zh_hans": "小球飞鱼",
-      "zh_hant": "小球飛魚"
-    }
+    "speciesName": "Mantyke"
   },
   "snover": {
     "legal": false,
@@ -8780,18 +8725,7 @@
       "water",
       "rock"
     ],
-    "speciesName": {
-      "de": "Galapaflos",
-      "fr": "Carapagos",
-      "en": "Tirtouga",
-      "es": "Tirtouga",
-      "th": "โปรโตกา",
-      "ja": "プロトーガ",
-      "ko": "프로토가",
-      "ru": "Тиртуга",
-      "zh_hans": "原盖海龟",
-      "zh_hant": "原蓋海龜"
-    }
+    "speciesName": "Tirtouga"
   },
   "carracosta": {
     "legal": false,
@@ -9598,7 +9532,8 @@
       "psychic"
     ],
     "tags": [
-      "unreleased"
+      "mythical",
+      "untradeable"
     ]
   },
   "meloetta_pirouette": {
@@ -9609,6 +9544,8 @@
       "fighting"
     ],
     "tags": [
+      "mythical",
+      "untradeable",
       "unreleased"
     ]
   },
@@ -10418,6 +10355,32 @@
     ],
     "tags": [
       "galarian"
+    ]
+  },
+  "zacian": {
+    "legal": false,
+    "dex": 888,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "tags": [
+      "galarian",
+      "legendary",
+      "unreleased"
+    ]
+  },
+  "zamazenta": {
+    "legal": false,
+    "dex": 888,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "galarian",
+      "legendary",
+      "unreleased"
     ]
   }
 }

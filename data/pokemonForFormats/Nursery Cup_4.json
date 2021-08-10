@@ -955,18 +955,7 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": {
-      "de": "Myrapla",
-      "fr": "Mystherbe",
-      "en": "Oddish",
-      "es": "Oddish",
-      "th": "นาโซโนะคุสะ",
-      "ja": "ナゾノクサ",
-      "ko": "뚜벅쵸",
-      "ru": "Оддиш",
-      "zh_hans": "走路草",
-      "zh_hant": "走路草"
-    }
+    "speciesName": "Oddish"
   },
   "oddish_shadow": {
     "legal": false,
@@ -5699,18 +5688,7 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": {
-      "de": "Liliep",
-      "fr": "Lilia",
-      "en": "Lileep",
-      "es": "Lileep",
-      "th": "ลิลีลา",
-      "ja": "リリーラ",
-      "ko": "릴링",
-      "ru": "Лилип",
-      "zh_hans": "触手百合",
-      "zh_hant": "觸手百合"
-    }
+    "speciesName": "Lileep"
   },
   "lileep_shadow": {
     "legal": false,
@@ -6401,18 +6379,7 @@
       "starter",
       "shadoweligible"
     ],
-    "speciesName": {
-      "de": "Chelast",
-      "fr": "Tortipouss",
-      "en": "Turtwig",
-      "es": "Turtwig",
-      "th": "นาเอเติล",
-      "ja": "ナエトル",
-      "ko": "모부기",
-      "ru": "Туртвиг",
-      "zh_hans": "草苗龟",
-      "zh_hant": "草苗龜"
-    }
+    "speciesName": "Turtwig"
   },
   "turtwig_shadow": {
     "legal": false,
@@ -7304,18 +7271,7 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": {
-      "de": "Shnebedeck",
-      "fr": "Blizzi",
-      "en": "Snover",
-      "es": "Snover",
-      "th": "ยูกิคาบูริ",
-      "ja": "ユキカブリ",
-      "ko": "눈쓰개",
-      "ru": "Сновер",
-      "zh_hans": "雪笠怪",
-      "zh_hant": "雪笠怪"
-    }
+    "speciesName": "Snover"
   },
   "snover_shadow": {
     "legal": false,
@@ -9574,7 +9530,8 @@
       "psychic"
     ],
     "tags": [
-      "unreleased"
+      "mythical",
+      "untradeable"
     ]
   },
   "meloetta_pirouette": {
@@ -9585,6 +9542,8 @@
       "fighting"
     ],
     "tags": [
+      "mythical",
+      "untradeable",
       "unreleased"
     ]
   },
@@ -9658,18 +9617,7 @@
       "grass",
       "none"
     ],
-    "speciesName": {
-      "de": "Igamaro",
-      "fr": "Marisson",
-      "en": "Chespin",
-      "es": "Chespin",
-      "th": "ฮาริมารอน",
-      "ja": "ハリマロン",
-      "ko": "도치마론",
-      "ru": "Чеспин",
-      "zh_hans": "哈力栗",
-      "zh_hant": "哈力栗"
-    }
+    "speciesName": "Chespin"
   },
   "quilladin": {
     "legal": false,
@@ -10406,6 +10354,32 @@
     ],
     "tags": [
       "galarian"
+    ]
+  },
+  "zacian": {
+    "legal": false,
+    "dex": 888,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "tags": [
+      "galarian",
+      "legendary",
+      "unreleased"
+    ]
+  },
+  "zamazenta": {
+    "legal": false,
+    "dex": 888,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "galarian",
+      "legendary",
+      "unreleased"
     ]
   }
 }

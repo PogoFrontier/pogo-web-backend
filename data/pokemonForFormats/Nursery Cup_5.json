@@ -4262,18 +4262,7 @@
       "ice",
       "psychic"
     ],
-    "speciesName": {
-      "de": "Kussilla",
-      "fr": "Lippouti",
-      "en": "Smoochum",
-      "es": "Smoochum",
-      "th": "มุจูล",
-      "ja": "ムチュール",
-      "ko": "뽀뽀라",
-      "ru": "Смучам",
-      "zh_hans": "迷唇娃",
-      "zh_hant": "迷唇娃"
-    }
+    "speciesName": "Smoochum"
   },
   "elekid": {
     "legal": true,
@@ -4282,18 +4271,7 @@
       "electric",
       "none"
     ],
-    "speciesName": {
-      "de": "Elekid",
-      "fr": "Élekid",
-      "en": "Elekid",
-      "es": "Elekid",
-      "th": "เอเลคิด",
-      "ja": "エレキッド",
-      "ko": "에레키드",
-      "ru": "Элекид",
-      "zh_hans": "电击怪",
-      "zh_hant": "電擊怪"
-    }
+    "speciesName": "Elekid"
   },
   "magby": {
     "legal": false,
@@ -8674,18 +8652,7 @@
       "bug",
       "rock"
     ],
-    "speciesName": {
-      "de": "Lithomith",
-      "fr": "Crabicoque",
-      "en": "Dwebble",
-      "es": "Dwebble",
-      "th": "อิชิซึไม",
-      "ja": "イシズマイ",
-      "ko": "돌살이",
-      "ru": "Двэббл",
-      "zh_hans": "石居蟹",
-      "zh_hant": "石居蟹"
-    }
+    "speciesName": "Dwebble"
   },
   "crustle": {
     "legal": false,
@@ -9562,7 +9529,8 @@
       "psychic"
     ],
     "tags": [
-      "unreleased"
+      "mythical",
+      "untradeable"
     ]
   },
   "meloetta_pirouette": {
@@ -9573,6 +9541,8 @@
       "fighting"
     ],
     "tags": [
+      "mythical",
+      "untradeable",
       "unreleased"
     ]
   },
@@ -9791,18 +9761,7 @@
       "fire",
       "normal"
     ],
-    "speciesName": {
-      "de": "Leufeo",
-      "fr": "Hélionceau",
-      "en": "Litleo",
-      "es": "Litleo",
-      "th": "ชิชิโกะ",
-      "ja": "シシコ",
-      "ko": "레오꼬",
-      "ru": "Литлео",
-      "zh_hans": "小狮狮",
-      "zh_hant": "小獅獅"
-    }
+    "speciesName": "Litleo"
   },
   "pyroar": {
     "legal": false,
@@ -9969,18 +9928,7 @@
       "fairy",
       "none"
     ],
-    "speciesName": {
-      "de": "Parfi",
-      "fr": "Fluvetin",
-      "en": "Spritzee",
-      "es": "Spritzee",
-      "th": "ชูชูป",
-      "ja": "シュシュプ",
-      "ko": "슈쁘",
-      "ru": "Спритзи",
-      "zh_hans": "粉香香",
-      "zh_hant": "粉香香"
-    }
+    "speciesName": "Spritzee"
   },
   "aromatisse": {
     "legal": false,
@@ -10051,18 +9999,7 @@
       "poison",
       "water"
     ],
-    "speciesName": {
-      "de": "Algitt",
-      "fr": "Venalgue",
-      "en": "Skrelp",
-      "es": "Skrelp",
-      "th": "คูซูโม",
-      "ja": "クズモー",
-      "ko": "수레기",
-      "ru": "Скрельп",
-      "zh_hans": "垃垃藻",
-      "zh_hant": "垃垃藻"
-    }
+    "speciesName": "Skrelp"
   },
   "dragalge": {
     "legal": false,
@@ -10418,6 +10355,32 @@
     ],
     "tags": [
       "galarian"
+    ]
+  },
+  "zacian": {
+    "legal": false,
+    "dex": 888,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "tags": [
+      "galarian",
+      "legendary",
+      "unreleased"
+    ]
+  },
+  "zamazenta": {
+    "legal": false,
+    "dex": 888,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "galarian",
+      "legendary",
+      "unreleased"
     ]
   }
 }

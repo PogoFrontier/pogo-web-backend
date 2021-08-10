@@ -1825,18 +1825,7 @@
     "tags": [
       "regional"
     ],
-    "speciesName": {
-      "de": "Porenta",
-      "fr": "Canarticho",
-      "en": "Farfetch’d",
-      "es": "Farfetch’d",
-      "th": "คาโมเนกิ",
-      "ja": "カモネギ",
-      "ko": "파오리",
-      "ru": "Фарфетчд",
-      "zh_hans": "大葱鸭",
-      "zh_hant": "大蔥鴨"
-    }
+    "speciesName": "Farfetch'd"
   },
   "farfetchd_galarian": {
     "legal": true,
@@ -1848,18 +1837,7 @@
     "tags": [
       "galarian"
     ],
-    "speciesName": {
-      "de": "Porenta (Galar)",
-      "fr": "Canarticho (Galarian)",
-      "en": "Farfetch’d (Galarian)",
-      "es": "Farfetch’d (Galar)",
-      "th": "คาโมเนกิ (Galarian)",
-      "ja": "カモネギ (Galarian)",
-      "ko": "파오리 (Galarian)",
-      "ru": "Фарфетчд (Galarian)",
-      "zh_hans": "大葱鸭 (Galarian)",
-      "zh_hant": "大蔥鴨 (Galarian)"
-    }
+    "speciesName": "Farfetch'd (Galarian)"
   },
   "doduo": {
     "legal": false,
@@ -3546,18 +3524,7 @@
       "bug",
       "flying"
     ],
-    "speciesName": {
-      "de": "Yanma",
-      "fr": "Yanma",
-      "en": "Yanma",
-      "es": "Yanma",
-      "th": "ยันยันมา",
-      "ja": "ヤンヤンマ",
-      "ko": "왕자리",
-      "ru": "Янма",
-      "zh_hans": "阳阳玛",
-      "zh_hant": "陽陽瑪"
-    }
+    "speciesName": "Yanma"
   },
   "wooper": {
     "legal": false,
@@ -6928,18 +6895,7 @@
       "ghost",
       "flying"
     ],
-    "speciesName": {
-      "de": "Driftlon",
-      "fr": "Baudrive",
-      "en": "Drifloon",
-      "es": "Drifloon",
-      "th": "ฟูวันเต",
-      "ja": "フワンテ",
-      "ko": "흔들풍손",
-      "ru": "Дрифлун",
-      "zh_hans": "飘飘球",
-      "zh_hant": "飄飄球"
-    }
+    "speciesName": "Drifloon"
   },
   "drifblim": {
     "legal": false,
@@ -9295,18 +9251,7 @@
       "normal",
       "flying"
     ],
-    "speciesName": {
-      "de": "Geronimatz",
-      "fr": "Furaiglon",
-      "en": "Rufflet",
-      "es": "Rufflet",
-      "th": "วาชิบอน",
-      "ja": "ワシボン",
-      "ko": "수리둥보",
-      "ru": "Раффлет",
-      "zh_hans": "毛头小鹰",
-      "zh_hant": "毛頭小鷹"
-    }
+    "speciesName": "Rufflet"
   },
   "braviary": {
     "legal": false,
@@ -9323,18 +9268,7 @@
       "dark",
       "flying"
     ],
-    "speciesName": {
-      "de": "Skallyk",
-      "fr": "Vostourno",
-      "en": "Vullaby",
-      "es": "Vullaby",
-      "th": "วัลไจ",
-      "ja": "バルチャイ",
-      "ko": "벌차이",
-      "ru": "Валлаби",
-      "zh_hans": "秃鹰小子",
-      "zh_hant": "禿鷹小子"
-    }
+    "speciesName": "Vullaby"
   },
   "mandibuzz": {
     "legal": false,
@@ -9598,7 +9532,8 @@
       "psychic"
     ],
     "tags": [
-      "unreleased"
+      "mythical",
+      "untradeable"
     ]
   },
   "meloetta_pirouette": {
@@ -9609,6 +9544,8 @@
       "fighting"
     ],
     "tags": [
+      "mythical",
+      "untradeable",
       "unreleased"
     ]
   },
@@ -10418,6 +10355,32 @@
     ],
     "tags": [
       "galarian"
+    ]
+  },
+  "zacian": {
+    "legal": false,
+    "dex": 888,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "tags": [
+      "galarian",
+      "legendary",
+      "unreleased"
+    ]
+  },
+  "zamazenta": {
+    "legal": false,
+    "dex": 888,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "galarian",
+      "legendary",
+      "unreleased"
     ]
   }
 }
