@@ -143,7 +143,18 @@
       "starter",
       "shadoweligible"
     ],
-    "speciesName": "Charizard",
+    "speciesName": {
+      "de": "Glurak",
+      "fr": "Dracaufeu",
+      "en": "Charizard",
+      "es": "Charizard",
+      "th": "ลิซาร์ดอน",
+      "ja": "リザードン",
+      "ko": "리자몽",
+      "ru": "Чаризард",
+      "zh_hans": "喷火龙",
+      "zh_hant": "噴火龍"
+    },
     "ranking": 628,
     "moves": {
       "fastMoves": [
@@ -222,7 +233,18 @@
       "shadoweligible",
       "mega"
     ],
-    "speciesName": "Charizard (Mega Y)"
+    "speciesName": {
+      "de": "Glurak (Mega Y)",
+      "fr": "Dracaufeu (Mega Y)",
+      "en": "Charizard (Mega Y)",
+      "es": "Charizard (Mega Y)",
+      "th": "ลิซาร์ดอน (Mega Y)",
+      "ja": "リザードン (Mega Y)",
+      "ko": "리자몽 (Mega Y)",
+      "ru": "Чаризард (Mega Y)",
+      "zh_hans": "喷火龙 (Mega Y)",
+      "zh_hant": "噴火龍 (Mega Y)"
+    }
   },
   "charizard_shadow": {
     "legal": true,
@@ -235,7 +257,18 @@
       "starter",
       "shadow"
     ],
-    "speciesName": "Charizard (Shadow)",
+    "speciesName": {
+      "de": "Glurak (Schatten)",
+      "fr": "Dracaufeu (Ombre)",
+      "en": "Charizard (Shadow)",
+      "es": "Charizard (Oscuro)",
+      "th": "ลิซาร์ดอน (Shadow)",
+      "ja": "リザードン (Shadow)",
+      "ko": "리자몽 (Shadow)",
+      "ru": "Чаризард (Shadow)",
+      "zh_hans": "喷火龙 (Shadow)",
+      "zh_hant": "噴火龍 (Shadow)"
+    },
     "ranking": 624,
     "moves": {
       "fastMoves": [
@@ -304,7 +337,18 @@
       "starter",
       "shadoweligible"
     ],
-    "speciesName": "Squirtle"
+    "speciesName": {
+      "de": "Schiggy",
+      "fr": "Carapuce",
+      "en": "Squirtle",
+      "es": "Squirtle",
+      "th": "เซนิกาเมะ",
+      "ja": "ゼニガメ",
+      "ko": "꼬부기",
+      "ru": "Сквиртл",
+      "zh_hans": "杰尼龟",
+      "zh_hant": "傑尼龜"
+    }
   },
   "squirtle_shadow": {
     "legal": true,
@@ -317,7 +361,18 @@
       "starter",
       "shadow"
     ],
-    "speciesName": "Squirtle (Shadow)"
+    "speciesName": {
+      "de": "Schiggy (Schatten)",
+      "fr": "Carapuce (Ombre)",
+      "en": "Squirtle (Shadow)",
+      "es": "Squirtle (Oscuro)",
+      "th": "เซนิกาเมะ (Shadow)",
+      "ja": "ゼニガメ (Shadow)",
+      "ko": "꼬부기 (Shadow)",
+      "ru": "Сквиртл (Shadow)",
+      "zh_hans": "杰尼龟 (Shadow)",
+      "zh_hant": "傑尼龜 (Shadow)"
+    }
   },
   "wartortle": {
     "legal": true,
@@ -330,7 +385,18 @@
       "starter",
       "shadoweligible"
     ],
-    "speciesName": "Wartortle",
+    "speciesName": {
+      "de": "Schillok",
+      "fr": "Carabaffe",
+      "en": "Wartortle",
+      "es": "Wartortle",
+      "th": "คาเมล",
+      "ja": "カメール",
+      "ko": "어니부기",
+      "ru": "Вартортл",
+      "zh_hans": "卡咪龟",
+      "zh_hant": "卡咪龜"
+    },
     "ranking": 494,
     "moves": {
       "fastMoves": [
@@ -379,7 +445,18 @@
       "starter",
       "shadow"
     ],
-    "speciesName": "Wartortle (Shadow)",
+    "speciesName": {
+      "de": "Schillok (Schatten)",
+      "fr": "Carabaffe (Ombre)",
+      "en": "Wartortle (Shadow)",
+      "es": "Wartortle (Oscuro)",
+      "th": "คาเมล (Shadow)",
+      "ja": "カメール (Shadow)",
+      "ko": "어니부기 (Shadow)",
+      "ru": "Вартортл (Shadow)",
+      "zh_hans": "卡咪龟 (Shadow)",
+      "zh_hant": "卡咪龜 (Shadow)"
+    },
     "ranking": 496,
     "moves": {
       "fastMoves": [
@@ -428,7 +505,18 @@
       "starter",
       "shadoweligible"
     ],
-    "speciesName": "Blastoise",
+    "speciesName": {
+      "de": "Turtok",
+      "fr": "Tortank",
+      "en": "Blastoise",
+      "es": "Blastoise",
+      "th": "คาเม็กซ์",
+      "ja": "カメックス",
+      "ko": "거북왕",
+      "ru": "Бластойз",
+      "zh_hans": "水箭龟",
+      "zh_hant": "水箭龜"
+    },
     "ranking": 600,
     "moves": {
       "fastMoves": [
@@ -482,7 +570,18 @@
       "shadoweligible",
       "mega"
     ],
-    "speciesName": "Blastoise (Mega)"
+    "speciesName": {
+      "de": "Turtok (Mega)",
+      "fr": "Tortank (Mega)",
+      "en": "Blastoise (Mega)",
+      "es": "Blastoise (Mega)",
+      "th": "คาเม็กซ์ (Mega)",
+      "ja": "カメックス (Mega)",
+      "ko": "거북왕 (Mega)",
+      "ru": "Бластойз (Mega)",
+      "zh_hans": "水箭龟 (Mega)",
+      "zh_hant": "水箭龜 (Mega)"
+    }
   },
   "blastoise_shadow": {
     "legal": true,
@@ -495,7 +594,18 @@
       "starter",
       "shadow"
     ],
-    "speciesName": "Blastoise (Shadow)",
+    "speciesName": {
+      "de": "Turtok (Schatten)",
+      "fr": "Tortank (Ombre)",
+      "en": "Blastoise (Shadow)",
+      "es": "Blastoise (Oscuro)",
+      "th": "คาเม็กซ์ (Shadow)",
+      "ja": "カメックス (Shadow)",
+      "ko": "거북왕 (Shadow)",
+      "ru": "Бластойз (Shadow)",
+      "zh_hans": "水箭龟 (Shadow)",
+      "zh_hant": "水箭龜 (Shadow)"
+    },
     "ranking": 588,
     "moves": {
       "fastMoves": [
@@ -564,7 +674,18 @@
       "bug",
       "flying"
     ],
-    "speciesName": "Butterfree",
+    "speciesName": {
+      "de": "Smettbo",
+      "fr": "Papilusion",
+      "en": "Butterfree",
+      "es": "Butterfree",
+      "th": "บัตเตอร์ฟรี",
+      "ja": "バタフリー",
+      "ko": "버터플",
+      "ru": "Баттерфри",
+      "zh_hans": "巴大蝶",
+      "zh_hant": "巴大蝶"
+    },
     "ranking": 408,
     "moves": {
       "fastMoves": [
@@ -687,7 +808,18 @@
       "normal",
       "flying"
     ],
-    "speciesName": "Pidgey"
+    "speciesName": {
+      "de": "Taubsi",
+      "fr": "Roucool",
+      "en": "Pidgey",
+      "es": "Pidgey",
+      "th": "ป็อปโปะ",
+      "ja": "ポッポ",
+      "ko": "구구",
+      "ru": "Пиджи",
+      "zh_hans": "波波",
+      "zh_hant": "波波"
+    }
   },
   "pidgeotto": {
     "legal": true,
@@ -696,7 +828,18 @@
       "normal",
       "flying"
     ],
-    "speciesName": "Pidgeotto",
+    "speciesName": {
+      "de": "Tauboga",
+      "fr": "Roucoups",
+      "en": "Pidgeotto",
+      "es": "Pidgeotto",
+      "th": "พีเจียน",
+      "ja": "ピジョン",
+      "ko": "피죤",
+      "ru": "Пиджеотто",
+      "zh_hans": "比比鸟",
+      "zh_hant": "比比鳥"
+    },
     "ranking": 465,
     "moves": {
       "fastMoves": [
@@ -737,7 +880,18 @@
       "normal",
       "flying"
     ],
-    "speciesName": "Pidgeot",
+    "speciesName": {
+      "de": "Tauboss",
+      "fr": "Roucarnage",
+      "en": "Pidgeot",
+      "es": "Pidgeot",
+      "th": "พีเจียต",
+      "ja": "ピジョット",
+      "ko": "피죤투",
+      "ru": "Пиджит",
+      "zh_hans": "大比鸟",
+      "zh_hant": "大比鳥"
+    },
     "ranking": 673,
     "moves": {
       "fastMoves": [
@@ -797,7 +951,18 @@
     "tags": [
       "mega"
     ],
-    "speciesName": "Pidgeot (Mega)"
+    "speciesName": {
+      "de": "Tauboss (Mega)",
+      "fr": "Roucarnage (Mega)",
+      "en": "Pidgeot (Mega)",
+      "es": "Pidgeot (Mega)",
+      "th": "พีเจียต (Mega)",
+      "ja": "ピジョット (Mega)",
+      "ko": "피죤투 (Mega)",
+      "ru": "Пиджит (Mega)",
+      "zh_hans": "大比鸟 (Mega)",
+      "zh_hant": "大比鳥 (Mega)"
+    }
   },
   "rattata": {
     "legal": false,
@@ -872,7 +1037,18 @@
       "normal",
       "flying"
     ],
-    "speciesName": "Spearow"
+    "speciesName": {
+      "de": "Habitak",
+      "fr": "Piafabec",
+      "en": "Spearow",
+      "es": "Spearow",
+      "th": "โอนิสึซึเมะ",
+      "ja": "オニスズメ",
+      "ko": "깨비참",
+      "ru": "Спироу",
+      "zh_hans": "烈雀",
+      "zh_hant": "烈雀"
+    }
   },
   "fearow": {
     "legal": true,
@@ -881,7 +1057,18 @@
       "normal",
       "flying"
     ],
-    "speciesName": "Fearow",
+    "speciesName": {
+      "de": "Ibitak",
+      "fr": "Rapasdepic",
+      "en": "Fearow",
+      "es": "Fearow",
+      "th": "โอนิดริล",
+      "ja": "オニドリル",
+      "ko": "깨비드릴조",
+      "ru": "Фироу",
+      "zh_hans": "大嘴雀",
+      "zh_hant": "大嘴雀"
+    },
     "ranking": 442,
     "moves": {
       "fastMoves": [
@@ -1243,7 +1430,18 @@
       "fairy",
       "none"
     ],
-    "speciesName": "Clefairy",
+    "speciesName": {
+      "de": "Piepi",
+      "fr": "Mélofée",
+      "en": "Clefairy",
+      "es": "Clefairy",
+      "th": "ปิปปี",
+      "ja": "ピッピ",
+      "ko": "삐삐",
+      "ru": "Клефейри",
+      "zh_hans": "皮皮",
+      "zh_hant": "皮皮"
+    },
     "ranking": 291,
     "moves": {
       "fastMoves": [
@@ -1284,7 +1482,18 @@
       "fairy",
       "none"
     ],
-    "speciesName": "Clefable",
+    "speciesName": {
+      "de": "Pixi",
+      "fr": "Mélodelfe",
+      "en": "Clefable",
+      "es": "Clefable",
+      "th": "ปิคซี",
+      "ja": "ピクシー",
+      "ko": "픽시",
+      "ru": "Клефейбл",
+      "zh_hans": "皮可西",
+      "zh_hant": "皮可西"
+    },
     "ranking": 651,
     "moves": {
       "fastMoves": [
@@ -1384,7 +1593,18 @@
     "tags": [
       "alolan"
     ],
-    "speciesName": "Ninetales (Alolan)",
+    "speciesName": {
+      "de": "Vulnona (Alola)",
+      "fr": "Feunard (Alolan)",
+      "en": "Ninetales (Alolan)",
+      "es": "Ninetales (Alola)",
+      "th": "คิวคอน (Alolan)",
+      "ja": "キュウコン (Alolan)",
+      "ko": "나인테일 (Alolan)",
+      "ru": "Найнтейлс (Alolan)",
+      "zh_hans": "九尾 (Alolan)",
+      "zh_hant": "九尾 (Alolan)"
+    },
     "ranking": 678,
     "moves": {
       "fastMoves": [
@@ -1448,7 +1668,18 @@
       "normal",
       "fairy"
     ],
-    "speciesName": "Jigglypuff"
+    "speciesName": {
+      "de": "Pummeluff",
+      "fr": "Rondoudou",
+      "en": "Jigglypuff",
+      "es": "Jigglypuff",
+      "th": "พูริน",
+      "ja": "プリン",
+      "ko": "푸린",
+      "ru": "Джигглипуф",
+      "zh_hans": "胖丁",
+      "zh_hant": "胖丁"
+    }
   },
   "wigglytuff": {
     "legal": true,
@@ -1457,7 +1688,18 @@
       "normal",
       "fairy"
     ],
-    "speciesName": "Wigglytuff",
+    "speciesName": {
+      "de": "Knuddeluff",
+      "fr": "Grodoudou",
+      "en": "Wigglytuff",
+      "es": "Wigglytuff",
+      "th": "พูคูริน",
+      "ja": "プクリン",
+      "ko": "푸크린",
+      "ru": "Вигглитаф",
+      "zh_hans": "胖可丁",
+      "zh_hant": "胖可丁"
+    },
     "ranking": 660,
     "moves": {
       "fastMoves": [
@@ -1509,7 +1751,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Zubat"
+    "speciesName": {
+      "de": "Zubat",
+      "fr": "Nosferapti",
+      "en": "Zubat",
+      "es": "Zubat",
+      "th": "ซูแบท",
+      "ja": "ズバット",
+      "ko": "주뱃",
+      "ru": "Зубат",
+      "zh_hans": "超音蝠",
+      "zh_hant": "超音蝠"
+    }
   },
   "zubat_shadow": {
     "legal": true,
@@ -1521,7 +1774,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Zubat (Shadow)"
+    "speciesName": {
+      "de": "Zubat (Schatten)",
+      "fr": "Nosferapti (Ombre)",
+      "en": "Zubat (Shadow)",
+      "es": "Zubat (Oscuro)",
+      "th": "ซูแบท (Shadow)",
+      "ja": "ズバット (Shadow)",
+      "ko": "주뱃 (Shadow)",
+      "ru": "Зубат (Shadow)",
+      "zh_hans": "超音蝠 (Shadow)",
+      "zh_hant": "超音蝠 (Shadow)"
+    }
   },
   "golbat": {
     "legal": true,
@@ -1533,7 +1797,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Golbat",
+    "speciesName": {
+      "de": "Golbat",
+      "fr": "Nosferalto",
+      "en": "Golbat",
+      "es": "Golbat",
+      "th": "โกลแบท",
+      "ja": "ゴルバット",
+      "ko": "골뱃",
+      "ru": "Голбат",
+      "zh_hans": "大嘴蝠",
+      "zh_hant": "大嘴蝠"
+    },
     "ranking": 648,
     "moves": {
       "fastMoves": [
@@ -1585,7 +1860,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Golbat (Shadow)",
+    "speciesName": {
+      "de": "Golbat (Schatten)",
+      "fr": "Nosferalto (Ombre)",
+      "en": "Golbat (Shadow)",
+      "es": "Golbat (Oscuro)",
+      "th": "โกลแบท (Shadow)",
+      "ja": "ゴルバット (Shadow)",
+      "ko": "골뱃 (Shadow)",
+      "ru": "Голбат (Shadow)",
+      "zh_hans": "大嘴蝠 (Shadow)",
+      "zh_hant": "大嘴蝠 (Shadow)"
+    },
     "ranking": 642,
     "moves": {
       "fastMoves": [
@@ -1906,7 +2192,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Psyduck"
+    "speciesName": {
+      "de": "Enton",
+      "fr": "Psykokwak",
+      "en": "Psyduck",
+      "es": "Psyduck",
+      "th": "โคดัก",
+      "ja": "コダック",
+      "ko": "고라파덕",
+      "ru": "Псидак",
+      "zh_hans": "可达鸭",
+      "zh_hant": "可達鴨"
+    }
   },
   "psyduck_shadow": {
     "legal": true,
@@ -1918,7 +2215,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Psyduck (Shadow)"
+    "speciesName": {
+      "de": "Enton (Schatten)",
+      "fr": "Psykokwak (Ombre)",
+      "en": "Psyduck (Shadow)",
+      "es": "Psyduck (Oscuro)",
+      "th": "โคดัก (Shadow)",
+      "ja": "コダック (Shadow)",
+      "ko": "고라파덕 (Shadow)",
+      "ru": "Псидак (Shadow)",
+      "zh_hans": "可达鸭 (Shadow)",
+      "zh_hant": "可達鴨 (Shadow)"
+    }
   },
   "golduck": {
     "legal": true,
@@ -1930,7 +2238,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Golduck",
+    "speciesName": {
+      "de": "Entoron",
+      "fr": "Akwakwak",
+      "en": "Golduck",
+      "es": "Golduck",
+      "th": "โกลดัก",
+      "ja": "ゴルダック",
+      "ko": "골덕",
+      "ru": "Голдак",
+      "zh_hans": "哥达鸭",
+      "zh_hant": "哥達鴨"
+    },
     "ranking": 566,
     "moves": {
       "fastMoves": [
@@ -1990,7 +2309,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Golduck (Shadow)",
+    "speciesName": {
+      "de": "Entoron (Schatten)",
+      "fr": "Akwakwak (Ombre)",
+      "en": "Golduck (Shadow)",
+      "es": "Golduck (Oscuro)",
+      "th": "โกลดัก (Shadow)",
+      "ja": "ゴルダック (Shadow)",
+      "ko": "골덕 (Shadow)",
+      "ru": "Голдак (Shadow)",
+      "zh_hans": "哥达鸭 (Shadow)",
+      "zh_hant": "哥達鴨 (Shadow)"
+    },
     "ranking": 567,
     "moves": {
       "fastMoves": [
@@ -2110,7 +2440,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Poliwag"
+    "speciesName": {
+      "de": "Quapsel",
+      "fr": "Ptitard",
+      "en": "Poliwag",
+      "es": "Poliwag",
+      "th": "เนียวโรโมะ",
+      "ja": "ニョロモ",
+      "ko": "발챙이",
+      "ru": "Поливаг",
+      "zh_hans": "蚊香蝌蚪",
+      "zh_hant": "蚊香蝌蚪"
+    }
   },
   "poliwag_shadow": {
     "legal": true,
@@ -2122,7 +2463,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Poliwag (Shadow)"
+    "speciesName": {
+      "de": "Quapsel (Schatten)",
+      "fr": "Ptitard (Ombre)",
+      "en": "Poliwag (Shadow)",
+      "es": "Poliwag (Oscuro)",
+      "th": "เนียวโรโมะ (Shadow)",
+      "ja": "ニョロモ (Shadow)",
+      "ko": "발챙이 (Shadow)",
+      "ru": "Поливаг (Shadow)",
+      "zh_hans": "蚊香蝌蚪 (Shadow)",
+      "zh_hant": "蚊香蝌蚪 (Shadow)"
+    }
   },
   "poliwhirl": {
     "legal": true,
@@ -2134,7 +2486,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Poliwhirl",
+    "speciesName": {
+      "de": "Quaputzi",
+      "fr": "Têtarte",
+      "en": "Poliwhirl",
+      "es": "Poliwhirl",
+      "th": "เนียวโรโซ",
+      "ja": "ニョロゾ",
+      "ko": "슈륙챙이",
+      "ru": "Поливирл",
+      "zh_hans": "蚊香君",
+      "zh_hant": "蚊香君"
+    },
     "ranking": 573,
     "moves": {
       "fastMoves": [
@@ -2186,7 +2549,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Poliwhirl (Shadow)",
+    "speciesName": {
+      "de": "Quaputzi (Schatten)",
+      "fr": "Têtarte (Ombre)",
+      "en": "Poliwhirl (Shadow)",
+      "es": "Poliwhirl (Oscuro)",
+      "th": "เนียวโรโซ (Shadow)",
+      "ja": "ニョロゾ (Shadow)",
+      "ko": "슈륙챙이 (Shadow)",
+      "ru": "Поливирл (Shadow)",
+      "zh_hans": "蚊香君 (Shadow)",
+      "zh_hant": "蚊香君 (Shadow)"
+    },
     "ranking": 585,
     "moves": {
       "fastMoves": [
@@ -2238,7 +2612,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Poliwrath",
+    "speciesName": {
+      "de": "Quappo",
+      "fr": "Tartard",
+      "en": "Poliwrath",
+      "es": "Poliwrath",
+      "th": "เนียวโรบอน",
+      "ja": "ニョロボン",
+      "ko": "강챙이",
+      "ru": "Поливрэт",
+      "zh_hans": "蚊香泳士",
+      "zh_hant": "蚊香泳士"
+    },
     "ranking": 617,
     "moves": {
       "fastMoves": [
@@ -2294,7 +2679,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Poliwrath (Shadow)",
+    "speciesName": {
+      "de": "Quappo (Schatten)",
+      "fr": "Tartard (Ombre)",
+      "en": "Poliwrath (Shadow)",
+      "es": "Poliwrath (Oscuro)",
+      "th": "เนียวโรบอน (Shadow)",
+      "ja": "ニョロボン (Shadow)",
+      "ko": "강챙이 (Shadow)",
+      "ru": "Поливрэт (Shadow)",
+      "zh_hans": "蚊香泳士 (Shadow)",
+      "zh_hant": "蚊香泳士 (Shadow)"
+    },
     "ranking": 633,
     "moves": {
       "fastMoves": [
@@ -2549,7 +2945,18 @@
       "water",
       "poison"
     ],
-    "speciesName": "Tentacool",
+    "speciesName": {
+      "de": "Tentacha",
+      "fr": "Tentacool",
+      "en": "Tentacool",
+      "es": "Tentacool",
+      "th": "เมโนคุราเกะ",
+      "ja": "メノクラゲ",
+      "ko": "왕눈해",
+      "ru": "Тентакул",
+      "zh_hans": "玛瑙水母",
+      "zh_hant": "瑪瑙水母"
+    },
     "ranking": 444,
     "moves": {
       "fastMoves": [
@@ -2590,7 +2997,18 @@
       "water",
       "poison"
     ],
-    "speciesName": "Tentacruel",
+    "speciesName": {
+      "de": "Tentoxa",
+      "fr": "Tentacruel",
+      "en": "Tentacruel",
+      "es": "Tentacruel",
+      "th": "โดคุคุราเกะ",
+      "ja": "ドククラゲ",
+      "ko": "독파리",
+      "ru": "Тентакруэль",
+      "zh_hans": "毒刺水母",
+      "zh_hant": "毒刺水母"
+    },
     "ranking": 606,
     "moves": {
       "fastMoves": [
@@ -2722,7 +3140,18 @@
     "tags": [
       "galarian"
     ],
-    "speciesName": "Rapidash (Galarian)",
+    "speciesName": {
+      "de": "Gallopa (Galar)",
+      "fr": "Galopa (Galarian)",
+      "en": "Rapidash (Galarian)",
+      "es": "Rapidash (Galar)",
+      "th": "แกลล็อป (Galarian)",
+      "ja": "ギャロップ (Galarian)",
+      "ko": "날쌩마 (Galarian)",
+      "ru": "Рапидаш (Galarian)",
+      "zh_hans": "烈焰马 (Galarian)",
+      "zh_hant": "烈焰馬 (Galarian)"
+    },
     "ranking": 605,
     "moves": {
       "fastMoves": [
@@ -2770,7 +3199,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Slowpoke",
+    "speciesName": {
+      "de": "Flegmon",
+      "fr": "Ramoloss",
+      "en": "Slowpoke",
+      "es": "Slowpoke",
+      "th": "ยาดง",
+      "ja": "ヤドン",
+      "ko": "야돈",
+      "ru": "Слоупок",
+      "zh_hans": "呆呆兽",
+      "zh_hant": "呆呆獸"
+    },
     "ranking": 526,
     "moves": {
       "fastMoves": [
@@ -2818,7 +3258,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Slowpoke (Shadow)",
+    "speciesName": {
+      "de": "Flegmon (Schatten)",
+      "fr": "Ramoloss (Ombre)",
+      "en": "Slowpoke (Shadow)",
+      "es": "Slowpoke (Oscuro)",
+      "th": "ยาดง (Shadow)",
+      "ja": "ヤドン (Shadow)",
+      "ko": "야돈 (Shadow)",
+      "ru": "Слоупок (Shadow)",
+      "zh_hans": "呆呆兽 (Shadow)",
+      "zh_hant": "呆呆獸 (Shadow)"
+    },
     "ranking": 517,
     "moves": {
       "fastMoves": [
@@ -2877,7 +3328,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Slowbro",
+    "speciesName": {
+      "de": "Lahmus",
+      "fr": "Flagadoss",
+      "en": "Slowbro",
+      "es": "Slowbro",
+      "th": "ยาโดรัน",
+      "ja": "ヤドラン",
+      "ko": "야도란",
+      "ru": "Слоубро",
+      "zh_hans": "呆壳兽",
+      "zh_hant": "呆殼獸"
+    },
     "ranking": 500,
     "moves": {
       "fastMoves": [
@@ -2921,7 +3383,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Slowbro (Shadow)",
+    "speciesName": {
+      "de": "Lahmus (Schatten)",
+      "fr": "Flagadoss (Ombre)",
+      "en": "Slowbro (Shadow)",
+      "es": "Slowbro (Oscuro)",
+      "th": "ยาโดรัน (Shadow)",
+      "ja": "ヤドラン (Shadow)",
+      "ko": "야도란 (Shadow)",
+      "ru": "Слоубро (Shadow)",
+      "zh_hans": "呆壳兽 (Shadow)",
+      "zh_hant": "呆殼獸 (Shadow)"
+    },
     "ranking": 519,
     "moves": {
       "fastMoves": [
@@ -3036,7 +3509,18 @@
     "tags": [
       "regional"
     ],
-    "speciesName": "Farfetch'd",
+    "speciesName": {
+      "de": "Porenta",
+      "fr": "Canarticho",
+      "en": "Farfetch’d",
+      "es": "Farfetch’d",
+      "th": "คาโมเนกิ",
+      "ja": "カモネギ",
+      "ko": "파오리",
+      "ru": "Фарфетчд",
+      "zh_hans": "大葱鸭",
+      "zh_hant": "大蔥鴨"
+    },
     "ranking": 582,
     "moves": {
       "fastMoves": [
@@ -3092,7 +3576,18 @@
       "normal",
       "flying"
     ],
-    "speciesName": "Doduo"
+    "speciesName": {
+      "de": "Dodu",
+      "fr": "Doduo",
+      "en": "Doduo",
+      "es": "Doduo",
+      "th": "โดโด",
+      "ja": "ドードー",
+      "ko": "두두",
+      "ru": "Додуо",
+      "zh_hans": "嘟嘟",
+      "zh_hant": "嘟嘟"
+    }
   },
   "dodrio": {
     "legal": true,
@@ -3101,7 +3596,18 @@
       "normal",
       "flying"
     ],
-    "speciesName": "Dodrio",
+    "speciesName": {
+      "de": "Dodri",
+      "fr": "Dodrio",
+      "en": "Dodrio",
+      "es": "Dodrio",
+      "th": "โดโดริโอ",
+      "ja": "ドードリオ",
+      "ko": "두트리오",
+      "ru": "Додрио",
+      "zh_hans": "嘟嘟利",
+      "zh_hant": "嘟嘟利"
+    },
     "ranking": 411,
     "moves": {
       "fastMoves": [
@@ -3146,7 +3652,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Seel",
+    "speciesName": {
+      "de": "Jurob",
+      "fr": "Otaria",
+      "en": "Seel",
+      "es": "Seel",
+      "th": "พาเวา",
+      "ja": "パウワウ",
+      "ko": "쥬쥬",
+      "ru": "Сил",
+      "zh_hans": "小海狮",
+      "zh_hant": "小海獅"
+    },
     "ranking": 479,
     "moves": {
       "fastMoves": [
@@ -3195,7 +3712,18 @@
       "water",
       "ice"
     ],
-    "speciesName": "Dewgong",
+    "speciesName": {
+      "de": "Jugong",
+      "fr": "Lamantine",
+      "en": "Dewgong",
+      "es": "Dewgong",
+      "th": "จูกอน",
+      "ja": "ジュゴン",
+      "ko": "쥬레곤",
+      "ru": "Дьюгонг",
+      "zh_hans": "白海狮",
+      "zh_hant": "白海獅"
+    },
     "ranking": 657,
     "moves": {
       "fastMoves": [
@@ -3317,7 +3845,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Shellder"
+    "speciesName": {
+      "de": "Muschas",
+      "fr": "Kokiyas",
+      "en": "Shellder",
+      "es": "Shellder",
+      "th": "เชลเดอร์",
+      "ja": "シェルダー",
+      "ko": "셀러",
+      "ru": "Шеллдер",
+      "zh_hans": "大舌贝",
+      "zh_hant": "大舌貝"
+    }
   },
   "shellder_shadow": {
     "legal": true,
@@ -3329,7 +3868,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Shellder (Shadow)"
+    "speciesName": {
+      "de": "Muschas (Schatten)",
+      "fr": "Kokiyas (Ombre)",
+      "en": "Shellder (Shadow)",
+      "es": "Shellder (Oscuro)",
+      "th": "เชลเดอร์ (Shadow)",
+      "ja": "シェルダー (Shadow)",
+      "ko": "셀러 (Shadow)",
+      "ru": "Шеллдер (Shadow)",
+      "zh_hans": "大舌贝 (Shadow)",
+      "zh_hant": "大舌貝 (Shadow)"
+    }
   },
   "cloyster": {
     "legal": true,
@@ -3341,7 +3891,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Cloyster",
+    "speciesName": {
+      "de": "Austos",
+      "fr": "Crustabri",
+      "en": "Cloyster",
+      "es": "Cloyster",
+      "th": "พาร์เชน",
+      "ja": "パルシェン",
+      "ko": "파르셀",
+      "ru": "Клойстер",
+      "zh_hans": "刺甲贝",
+      "zh_hant": "刺甲貝"
+    },
     "ranking": 546,
     "moves": {
       "fastMoves": [
@@ -3393,7 +3954,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Cloyster (Shadow)",
+    "speciesName": {
+      "de": "Austos (Schatten)",
+      "fr": "Crustabri (Ombre)",
+      "en": "Cloyster (Shadow)",
+      "es": "Cloyster (Oscuro)",
+      "th": "พาร์เชน (Shadow)",
+      "ja": "パルシェン (Shadow)",
+      "ko": "파르셀 (Shadow)",
+      "ru": "Клойстер (Shadow)",
+      "zh_hans": "刺甲贝 (Shadow)",
+      "zh_hant": "刺甲貝 (Shadow)"
+    },
     "ranking": 535,
     "moves": {
       "fastMoves": [
@@ -3533,7 +4105,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Krabby",
+    "speciesName": {
+      "de": "Krabby",
+      "fr": "Krabby",
+      "en": "Krabby",
+      "es": "Krabby",
+      "th": "แครบ",
+      "ja": "クラブ",
+      "ko": "크랩",
+      "ru": "Крабби",
+      "zh_hans": "大钳蟹",
+      "zh_hant": "大鉗蟹"
+    },
     "ranking": 412,
     "moves": {
       "fastMoves": [
@@ -3574,7 +4157,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Kingler",
+    "speciesName": {
+      "de": "Kingler",
+      "fr": "Krabboss",
+      "en": "Kingler",
+      "es": "Kingler",
+      "th": "คิงเกลอร์",
+      "ja": "キングラー",
+      "ko": "킹크랩",
+      "ru": "Кинглер",
+      "zh_hans": "巨钳蟹",
+      "zh_hant": "巨鉗蟹"
+    },
     "ranking": 573,
     "moves": {
       "fastMoves": [
@@ -3837,7 +4431,18 @@
     "tags": [
       "galarian"
     ],
-    "speciesName": "Weezing (Galarian)",
+    "speciesName": {
+      "de": "Smogmog (Galar)",
+      "fr": "Smogogo (Galarian)",
+      "en": "Weezing (Galarian)",
+      "es": "Weezing (Galar)",
+      "th": "มาตาโดกัซ (Galarian)",
+      "ja": "マタドガス (Galarian)",
+      "ko": "또도가스 (Galarian)",
+      "ru": "Визинг (Galarian)",
+      "zh_hans": "双弹瓦斯 (Galarian)",
+      "zh_hant": "雙彈瓦斯 (Galarian)"
+    },
     "ranking": 370,
     "moves": {
       "fastMoves": [
@@ -3951,7 +4556,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Horsea"
+    "speciesName": {
+      "de": "Seeper",
+      "fr": "Hypotrempe",
+      "en": "Horsea",
+      "es": "Horsea",
+      "th": "ทัททู",
+      "ja": "タッツー",
+      "ko": "쏘드라",
+      "ru": "Хорси",
+      "zh_hans": "墨海马",
+      "zh_hant": "墨海馬"
+    }
   },
   "horsea_shadow": {
     "legal": true,
@@ -3963,7 +4579,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Horsea (Shadow)"
+    "speciesName": {
+      "de": "Seeper (Schatten)",
+      "fr": "Hypotrempe (Ombre)",
+      "en": "Horsea (Shadow)",
+      "es": "Horsea (Oscuro)",
+      "th": "ทัททู (Shadow)",
+      "ja": "タッツー (Shadow)",
+      "ko": "쏘드라 (Shadow)",
+      "ru": "Хорси (Shadow)",
+      "zh_hans": "墨海马 (Shadow)",
+      "zh_hant": "墨海馬 (Shadow)"
+    }
   },
   "seadra": {
     "legal": true,
@@ -3975,7 +4602,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Seadra",
+    "speciesName": {
+      "de": "Seemon",
+      "fr": "Hypocéan",
+      "en": "Seadra",
+      "es": "Seadra",
+      "th": "ซีดรา",
+      "ja": "シードラ",
+      "ko": "시드라",
+      "ru": "Сидра",
+      "zh_hans": "海刺龙",
+      "zh_hant": "海刺龍"
+    },
     "ranking": 439,
     "moves": {
       "fastMoves": [
@@ -4027,7 +4665,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Seadra (Shadow)",
+    "speciesName": {
+      "de": "Seemon (Schatten)",
+      "fr": "Hypocéan (Ombre)",
+      "en": "Seadra (Shadow)",
+      "es": "Seadra (Oscuro)",
+      "th": "ซีดรา (Shadow)",
+      "ja": "シードラ (Shadow)",
+      "ko": "시드라 (Shadow)",
+      "ru": "Сидра (Shadow)",
+      "zh_hans": "海刺龙 (Shadow)",
+      "zh_hant": "海刺龍 (Shadow)"
+    },
     "ranking": 480,
     "moves": {
       "fastMoves": [
@@ -4076,7 +4725,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Goldeen",
+    "speciesName": {
+      "de": "Goldini",
+      "fr": "Poissirène",
+      "en": "Goldeen",
+      "es": "Goldeen",
+      "th": "โทซาคินโตะ",
+      "ja": "トサキント",
+      "ko": "콘치",
+      "ru": "Голдин",
+      "zh_hans": "角金鱼",
+      "zh_hant": "角金魚"
+    },
     "ranking": 466,
     "moves": {
       "fastMoves": [
@@ -4117,7 +4777,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Seaking",
+    "speciesName": {
+      "de": "Golking",
+      "fr": "Poissoroy",
+      "en": "Seaking",
+      "es": "Seaking",
+      "th": "อซึมาโอ",
+      "ja": "アズマオウ",
+      "ko": "왕콘치",
+      "ru": "Сикинг",
+      "zh_hans": "金鱼王",
+      "zh_hant": "金魚王"
+    },
     "ranking": 631,
     "moves": {
       "fastMoves": [
@@ -4170,7 +4841,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Staryu"
+    "speciesName": {
+      "de": "Sterndu",
+      "fr": "Stari",
+      "en": "Staryu",
+      "es": "Staryu",
+      "th": "ฮิโตเดมัน",
+      "ja": "ヒトデマン",
+      "ko": "별가사리",
+      "ru": "Старью",
+      "zh_hans": "海星星",
+      "zh_hant": "海星星"
+    }
   },
   "starmie": {
     "legal": true,
@@ -4179,7 +4861,18 @@
       "water",
       "psychic"
     ],
-    "speciesName": "Starmie",
+    "speciesName": {
+      "de": "Starmie",
+      "fr": "Staross",
+      "en": "Starmie",
+      "es": "Starmie",
+      "th": "สตาร์มี",
+      "ja": "スターミー",
+      "ko": "아쿠스타",
+      "ru": "Старми",
+      "zh_hans": "宝石海星",
+      "zh_hant": "寶石海星"
+    },
     "ranking": 430,
     "moves": {
       "fastMoves": [
@@ -4303,7 +4996,18 @@
     "tags": [
       "regional"
     ],
-    "speciesName": "Mr. Mime",
+    "speciesName": {
+      "de": "Pantimos",
+      "fr": "M. Mime",
+      "en": "Mr. Mime",
+      "es": "Mr. Mime",
+      "th": "บาร์เรียด",
+      "ja": "バリヤード",
+      "ko": "마임맨",
+      "ru": "Мистер Майм",
+      "zh_hans": "魔墙人偶",
+      "zh_hant": "魔牆人偶"
+    },
     "ranking": 470,
     "moves": {
       "fastMoves": [
@@ -4358,7 +5062,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Scyther",
+    "speciesName": {
+      "de": "Sichlor",
+      "fr": "Insécateur",
+      "en": "Scyther",
+      "es": "Scyther",
+      "th": "สไตรค์",
+      "ja": "ストライク",
+      "ko": "스라크",
+      "ru": "Скайтер",
+      "zh_hans": "飞天螳螂",
+      "zh_hant": "飛天螳螂"
+    },
     "ranking": 524,
     "moves": {
       "fastMoves": [
@@ -4410,7 +5125,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Scyther (Shadow)",
+    "speciesName": {
+      "de": "Sichlor (Schatten)",
+      "fr": "Insécateur (Ombre)",
+      "en": "Scyther (Shadow)",
+      "es": "Scyther (Oscuro)",
+      "th": "สไตรค์ (Shadow)",
+      "ja": "ストライク (Shadow)",
+      "ko": "스라크 (Shadow)",
+      "ru": "Скайтер (Shadow)",
+      "zh_hans": "飞天螳螂 (Shadow)",
+      "zh_hant": "飛天螳螂 (Shadow)"
+    },
     "ranking": 536,
     "moves": {
       "fastMoves": [
@@ -4551,7 +5277,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Magikarp"
+    "speciesName": {
+      "de": "Karpador",
+      "fr": "Magicarpe",
+      "en": "Magikarp",
+      "es": "Magikarp",
+      "th": "คอยคิง",
+      "ja": "コイキング",
+      "ko": "잉어킹",
+      "ru": "Мэджикарп",
+      "zh_hans": "鲤鱼王",
+      "zh_hant": "鯉魚王"
+    }
   },
   "magikarp_shadow": {
     "legal": true,
@@ -4563,7 +5300,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Magikarp (Shadow)"
+    "speciesName": {
+      "de": "Karpador (Schatten)",
+      "fr": "Magicarpe (Ombre)",
+      "en": "Magikarp (Shadow)",
+      "es": "Magikarp (Oscuro)",
+      "th": "คอยคิง (Shadow)",
+      "ja": "コイキング (Shadow)",
+      "ko": "잉어킹 (Shadow)",
+      "ru": "Мэджикарп (Shadow)",
+      "zh_hans": "鲤鱼王 (Shadow)",
+      "zh_hant": "鯉魚王 (Shadow)"
+    }
   },
   "gyarados": {
     "legal": true,
@@ -4575,7 +5323,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Gyarados",
+    "speciesName": {
+      "de": "Garados",
+      "fr": "Léviator",
+      "en": "Gyarados",
+      "es": "Gyarados",
+      "th": "เกียราดอส",
+      "ja": "ギャラドス",
+      "ko": "갸라도스",
+      "ru": "Гаярдос",
+      "zh_hans": "暴鲤龙",
+      "zh_hant": "暴鯉龍"
+    },
     "ranking": 613,
     "moves": {
       "fastMoves": [
@@ -4640,7 +5399,18 @@
       "shadoweligible",
       "mega"
     ],
-    "speciesName": "Gyarados (Mega)"
+    "speciesName": {
+      "de": "Garados (Mega)",
+      "fr": "Léviator (Mega)",
+      "en": "Gyarados (Mega)",
+      "es": "Gyarados (Mega)",
+      "th": "เกียราดอส (Mega)",
+      "ja": "ギャラドス (Mega)",
+      "ko": "갸라도스 (Mega)",
+      "ru": "Гаярдос (Mega)",
+      "zh_hans": "暴鲤龙 (Mega)",
+      "zh_hant": "暴鯉龍 (Mega)"
+    }
   },
   "gyarados_shadow": {
     "legal": true,
@@ -4652,7 +5422,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Gyarados (Shadow)",
+    "speciesName": {
+      "de": "Garados (Schatten)",
+      "fr": "Léviator (Ombre)",
+      "en": "Gyarados (Shadow)",
+      "es": "Gyarados (Oscuro)",
+      "th": "เกียราดอส (Shadow)",
+      "ja": "ギャラドス (Shadow)",
+      "ko": "갸라도스 (Shadow)",
+      "ru": "Гаярдос (Shadow)",
+      "zh_hans": "暴鲤龙 (Shadow)",
+      "zh_hant": "暴鯉龍 (Shadow)"
+    },
     "ranking": 617,
     "moves": {
       "fastMoves": [
@@ -4720,7 +5501,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Lapras",
+    "speciesName": {
+      "de": "Lapras",
+      "fr": "Lokhlass",
+      "en": "Lapras",
+      "es": "Lapras",
+      "th": "ลาพลาซ",
+      "ja": "ラプラス",
+      "ko": "라프라스",
+      "ru": "Лапрас",
+      "zh_hans": "拉普拉斯",
+      "zh_hant": "拉普拉斯"
+    },
     "ranking": 640,
     "moves": {
       "fastMoves": [
@@ -4780,7 +5572,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Lapras (Shadow)",
+    "speciesName": {
+      "de": "Lapras (Schatten)",
+      "fr": "Lokhlass (Ombre)",
+      "en": "Lapras (Shadow)",
+      "es": "Lapras (Oscuro)",
+      "th": "ลาพลาซ (Shadow)",
+      "ja": "ラプラス (Shadow)",
+      "ko": "라프라스 (Shadow)",
+      "ru": "Лапрас (Shadow)",
+      "zh_hans": "拉普拉斯 (Shadow)",
+      "zh_hant": "拉普拉斯 (Shadow)"
+    },
     "ranking": 639,
     "moves": {
       "fastMoves": [
@@ -4857,7 +5660,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Vaporeon",
+    "speciesName": {
+      "de": "Aquana",
+      "fr": "Aquali",
+      "en": "Vaporeon",
+      "es": "Vaporeon",
+      "th": "ชาวเวอร์ส",
+      "ja": "シャワーズ",
+      "ko": "샤미드",
+      "ru": "Вапореон",
+      "zh_hans": "水伊布",
+      "zh_hant": "水伊布"
+    },
     "ranking": 602,
     "moves": {
       "fastMoves": [
@@ -4943,7 +5757,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Omanyte",
+    "speciesName": {
+      "de": "Amonitas",
+      "fr": "Amonita",
+      "en": "Omanyte",
+      "es": "Omanyte",
+      "th": "ออมไนต์",
+      "ja": "オムナイト",
+      "ko": "암나이트",
+      "ru": "Оманайт",
+      "zh_hans": "菊石兽",
+      "zh_hant": "菊石獸"
+    },
     "ranking": 511,
     "moves": {
       "fastMoves": [
@@ -4999,7 +5824,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Omanyte (Shadow)",
+    "speciesName": {
+      "de": "Amonitas (Schatten)",
+      "fr": "Amonita (Ombre)",
+      "en": "Omanyte (Shadow)",
+      "es": "Omanyte (Oscuro)",
+      "th": "ออมไนต์ (Shadow)",
+      "ja": "オムナイト (Shadow)",
+      "ko": "암나이트 (Shadow)",
+      "ru": "Оманайт (Shadow)",
+      "zh_hans": "菊石兽 (Shadow)",
+      "zh_hant": "菊石獸 (Shadow)"
+    },
     "ranking": 530,
     "moves": {
       "fastMoves": [
@@ -5055,7 +5891,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Omastar",
+    "speciesName": {
+      "de": "Amoroso",
+      "fr": "Amonistar",
+      "en": "Omastar",
+      "es": "Omastar",
+      "th": "ออมสตาร์",
+      "ja": "オムスター",
+      "ko": "암스타",
+      "ru": "Омастар",
+      "zh_hans": "多刺菊石兽",
+      "zh_hant": "多刺菊石獸"
+    },
     "ranking": 561,
     "moves": {
       "fastMoves": [
@@ -5107,7 +5954,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Omastar (Shadow)",
+    "speciesName": {
+      "de": "Amoroso (Schatten)",
+      "fr": "Amonistar (Ombre)",
+      "en": "Omastar (Shadow)",
+      "es": "Omastar (Oscuro)",
+      "th": "ออมสตาร์ (Shadow)",
+      "ja": "オムスター (Shadow)",
+      "ko": "암스타 (Shadow)",
+      "ru": "Омастар (Shadow)",
+      "zh_hans": "多刺菊石兽 (Shadow)",
+      "zh_hant": "多刺菊石獸 (Shadow)"
+    },
     "ranking": 580,
     "moves": {
       "fastMoves": [
@@ -5160,7 +6018,18 @@
       "rock",
       "water"
     ],
-    "speciesName": "Kabuto",
+    "speciesName": {
+      "de": "Kabuto",
+      "fr": "Kabuto",
+      "en": "Kabuto",
+      "es": "Kabuto",
+      "th": "คาบูโตะ",
+      "ja": "カブト",
+      "ko": "투구",
+      "ru": "Кабуто",
+      "zh_hans": "化石盔",
+      "zh_hant": "化石盔"
+    },
     "ranking": 405,
     "moves": {
       "fastMoves": [
@@ -5201,7 +6070,18 @@
       "rock",
       "water"
     ],
-    "speciesName": "Kabutops",
+    "speciesName": {
+      "de": "Kabutops",
+      "fr": "Kabutops",
+      "en": "Kabutops",
+      "es": "Kabutops",
+      "th": "คาบูท็อปส์",
+      "ja": "カブトプス",
+      "ko": "투구푸스",
+      "ru": "Кабутопс",
+      "zh_hans": "镰刀盔",
+      "zh_hant": "鐮刀盔"
+    },
     "ranking": 533,
     "moves": {
       "fastMoves": [
@@ -5253,7 +6133,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Aerodactyl",
+    "speciesName": {
+      "de": "Aerodactyl",
+      "fr": "Ptéra",
+      "en": "Aerodactyl",
+      "es": "Aerodactyl",
+      "th": "พเทอรา",
+      "ja": "プテラ",
+      "ko": "프테라",
+      "ru": "Аэродактиль",
+      "zh_hans": "化石翼龙",
+      "zh_hant": "化石翼龍"
+    },
     "ranking": 535,
     "moves": {
       "fastMoves": [
@@ -5309,7 +6200,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Aerodactyl (Shadow)",
+    "speciesName": {
+      "de": "Aerodactyl (Schatten)",
+      "fr": "Ptéra (Ombre)",
+      "en": "Aerodactyl (Shadow)",
+      "es": "Aerodactyl (Oscuro)",
+      "th": "พเทอรา (Shadow)",
+      "ja": "プテラ (Shadow)",
+      "ko": "프테라 (Shadow)",
+      "ru": "Аэродактиль (Shadow)",
+      "zh_hans": "化石翼龙 (Shadow)",
+      "zh_hant": "化石翼龍 (Shadow)"
+    },
     "ranking": 572,
     "moves": {
       "fastMoves": [
@@ -5507,7 +6409,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Dragonite",
+    "speciesName": {
+      "de": "Dragoran",
+      "fr": "Dracolosse",
+      "en": "Dragonite",
+      "es": "Dragonite",
+      "th": "ไคริว",
+      "ja": "カイリュー",
+      "ko": "망나뇽",
+      "ru": "Драгонит",
+      "zh_hans": "快龙",
+      "zh_hant": "快龍"
+    },
     "ranking": 661,
     "moves": {
       "fastMoves": [
@@ -5567,7 +6480,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Dragonite (Shadow)",
+    "speciesName": {
+      "de": "Dragoran (Schatten)",
+      "fr": "Dracolosse (Ombre)",
+      "en": "Dragonite (Shadow)",
+      "es": "Dragonite (Oscuro)",
+      "th": "ไคริว (Shadow)",
+      "ja": "カイリュー (Shadow)",
+      "ko": "망나뇽 (Shadow)",
+      "ru": "Драгонит (Shadow)",
+      "zh_hans": "快龙 (Shadow)",
+      "zh_hant": "快龍 (Shadow)"
+    },
     "ranking": 673,
     "moves": {
       "fastMoves": [
@@ -5744,7 +6668,18 @@
     "tags": [
       "starter"
     ],
-    "speciesName": "Totodile",
+    "speciesName": {
+      "de": "Karnimani",
+      "fr": "Kaiminus",
+      "en": "Totodile",
+      "es": "Totodile",
+      "th": "วานิโนโกะ",
+      "ja": "ワニノコ",
+      "ko": "리아코",
+      "ru": "Тотодайл",
+      "zh_hans": "小锯鳄",
+      "zh_hant": "小鋸鱷"
+    },
     "ranking": 427,
     "moves": {
       "fastMoves": [
@@ -5788,7 +6723,18 @@
     "tags": [
       "starter"
     ],
-    "speciesName": "Croconaw",
+    "speciesName": {
+      "de": "Tyracroc",
+      "fr": "Crocrodil",
+      "en": "Croconaw",
+      "es": "Croconaw",
+      "th": "อัลลิเกต",
+      "ja": "アリゲイツ",
+      "ko": "엘리게이",
+      "ru": "Кроконав",
+      "zh_hans": "蓝鳄",
+      "zh_hant": "藍鱷"
+    },
     "ranking": 565,
     "moves": {
       "fastMoves": [
@@ -5832,7 +6778,18 @@
     "tags": [
       "starter"
     ],
-    "speciesName": "Feraligatr",
+    "speciesName": {
+      "de": "Impergator",
+      "fr": "Aligatueur",
+      "en": "Feraligatr",
+      "es": "Feraligatr",
+      "th": "ออไดล์",
+      "ja": "オーダイル",
+      "ko": "장크로다일",
+      "ru": "Фералигатр",
+      "zh_hans": "大力鳄",
+      "zh_hant": "大力鱷"
+    },
     "ranking": 563,
     "moves": {
       "fastMoves": [
@@ -5901,7 +6858,18 @@
       "normal",
       "flying"
     ],
-    "speciesName": "Hoothoot"
+    "speciesName": {
+      "de": "Hoothoot",
+      "fr": "Hoothoot",
+      "en": "Hoothoot",
+      "es": "Hoothoot",
+      "th": "โฮโฮ",
+      "ja": "ホーホー",
+      "ko": "부우부",
+      "ru": "Хутхут",
+      "zh_hans": "咕咕",
+      "zh_hant": "咕咕"
+    }
   },
   "noctowl": {
     "legal": true,
@@ -5910,7 +6878,18 @@
       "normal",
       "flying"
     ],
-    "speciesName": "Noctowl",
+    "speciesName": {
+      "de": "Noctuh",
+      "fr": "Noarfang",
+      "en": "Noctowl",
+      "es": "Noctowl",
+      "th": "โยรุโนะซึคุ",
+      "ja": "ヨルノズク",
+      "ko": "야부엉",
+      "ru": "Ноктаул",
+      "zh_hans": "猫头夜鹰",
+      "zh_hant": "貓頭夜鷹"
+    },
     "ranking": 622,
     "moves": {
       "fastMoves": [
@@ -5951,7 +6930,18 @@
       "bug",
       "flying"
     ],
-    "speciesName": "Ledyba"
+    "speciesName": {
+      "de": "Ledyba",
+      "fr": "Coxy",
+      "en": "Ledyba",
+      "es": "Ledyba",
+      "th": "เรดิบา",
+      "ja": "レディバ",
+      "ko": "레디바",
+      "ru": "Ледиба",
+      "zh_hans": "芭瓢虫",
+      "zh_hant": "芭瓢蟲"
+    }
   },
   "ledian": {
     "legal": true,
@@ -5960,7 +6950,18 @@
       "bug",
       "flying"
     ],
-    "speciesName": "Ledian",
+    "speciesName": {
+      "de": "Ledian",
+      "fr": "Coxyclaque",
+      "en": "Ledian",
+      "es": "Ledian",
+      "th": "เรเดียน",
+      "ja": "レディアン",
+      "ko": "레디안",
+      "ru": "Ледиан",
+      "zh_hans": "安瓢虫",
+      "zh_hant": "安瓢蟲"
+    },
     "ranking": 557,
     "moves": {
       "fastMoves": [
@@ -6020,7 +7021,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Crobat",
+    "speciesName": {
+      "de": "Iksbat",
+      "fr": "Nostenfer",
+      "en": "Crobat",
+      "es": "Crobat",
+      "th": "โครแบท",
+      "ja": "クロバット",
+      "ko": "크로뱃",
+      "ru": "Кробат",
+      "zh_hans": "叉字蝠",
+      "zh_hant": "叉字蝠"
+    },
     "ranking": 615,
     "moves": {
       "fastMoves": [
@@ -6072,7 +7084,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Crobat (Shadow)",
+    "speciesName": {
+      "de": "Iksbat (Schatten)",
+      "fr": "Nostenfer (Ombre)",
+      "en": "Crobat (Shadow)",
+      "es": "Crobat (Oscuro)",
+      "th": "โครแบท (Shadow)",
+      "ja": "クロバット (Shadow)",
+      "ko": "크로뱃 (Shadow)",
+      "ru": "Кробат (Shadow)",
+      "zh_hans": "叉字蝠 (Shadow)",
+      "zh_hant": "叉字蝠 (Shadow)"
+    },
     "ranking": 609,
     "moves": {
       "fastMoves": [
@@ -6125,7 +7148,18 @@
       "water",
       "electric"
     ],
-    "speciesName": "Chinchou",
+    "speciesName": {
+      "de": "Lampi",
+      "fr": "Loupio",
+      "en": "Chinchou",
+      "es": "Chinchou",
+      "th": "ชอนชี",
+      "ja": "チョンチー",
+      "ko": "초라기",
+      "ru": "Чинчоу",
+      "zh_hans": "灯笼鱼",
+      "zh_hant": "燈籠魚"
+    },
     "ranking": 584,
     "moves": {
       "fastMoves": [
@@ -6166,7 +7200,18 @@
       "water",
       "electric"
     ],
-    "speciesName": "Lanturn",
+    "speciesName": {
+      "de": "Lanturn",
+      "fr": "Lanturn",
+      "en": "Lanturn",
+      "es": "Lanturn",
+      "th": "แลนเทอร์น",
+      "ja": "ランターン",
+      "ko": "랜턴",
+      "ru": "Лантурн",
+      "zh_hans": "电灯怪",
+      "zh_hant": "電燈怪"
+    },
     "ranking": 604,
     "moves": {
       "fastMoves": [
@@ -6219,7 +7264,18 @@
       "fairy",
       "none"
     ],
-    "speciesName": "Cleffa"
+    "speciesName": {
+      "de": "Pii",
+      "fr": "Mélo",
+      "en": "Cleffa",
+      "es": "Cleffa",
+      "th": "ปี",
+      "ja": "ピィ",
+      "ko": "삐",
+      "ru": "Клеффа",
+      "zh_hans": "皮宝宝",
+      "zh_hant": "皮寶寶"
+    }
   },
   "igglybuff": {
     "legal": true,
@@ -6228,7 +7284,18 @@
       "normal",
       "fairy"
     ],
-    "speciesName": "Igglybuff"
+    "speciesName": {
+      "de": "Fluffeluff",
+      "fr": "Toudoudou",
+      "en": "Igglybuff",
+      "es": "Igglybuff",
+      "th": "พูพูริน",
+      "ja": "ププリン",
+      "ko": "푸푸린",
+      "ru": "Игглибафф",
+      "zh_hans": "宝宝丁",
+      "zh_hant": "寶寶丁"
+    }
   },
   "togepi": {
     "legal": true,
@@ -6237,7 +7304,18 @@
       "fairy",
       "none"
     ],
-    "speciesName": "Togepi"
+    "speciesName": {
+      "de": "Togepi",
+      "fr": "Togepi",
+      "en": "Togepi",
+      "es": "Togepi",
+      "th": "โทเกปี",
+      "ja": "トゲピー",
+      "ko": "토게피",
+      "ru": "Тогепи",
+      "zh_hans": "波克比",
+      "zh_hant": "波克比"
+    }
   },
   "togetic": {
     "legal": true,
@@ -6246,7 +7324,18 @@
       "fairy",
       "flying"
     ],
-    "speciesName": "Togetic",
+    "speciesName": {
+      "de": "Togetic",
+      "fr": "Togetic",
+      "en": "Togetic",
+      "es": "Togetic",
+      "th": "โทเกชิก",
+      "ja": "トゲチック",
+      "ko": "토게틱",
+      "ru": "Тогетик",
+      "zh_hans": "波克基古",
+      "zh_hant": "波克基古"
+    },
     "ranking": 502,
     "moves": {
       "fastMoves": [
@@ -6355,7 +7444,18 @@
       "psychic",
       "flying"
     ],
-    "speciesName": "Natu"
+    "speciesName": {
+      "de": "Natu",
+      "fr": "Natu",
+      "en": "Natu",
+      "es": "Natu",
+      "th": "เนที",
+      "ja": "ネイティ",
+      "ko": "네이티",
+      "ru": "Нату",
+      "zh_hans": "天然雀",
+      "zh_hant": "天然雀"
+    }
   },
   "xatu": {
     "legal": true,
@@ -6364,7 +7464,18 @@
       "psychic",
       "flying"
     ],
-    "speciesName": "Xatu",
+    "speciesName": {
+      "de": "Xatu",
+      "fr": "Xatu",
+      "en": "Xatu",
+      "es": "Xatu",
+      "th": "เนทิโอ",
+      "ja": "ネイティオ",
+      "ko": "네이티오",
+      "ru": "Ксату",
+      "zh_hans": "天然鸟",
+      "zh_hant": "天然鳥"
+    },
     "ranking": 470,
     "moves": {
       "fastMoves": [
@@ -6505,7 +7616,18 @@
       "water",
       "fairy"
     ],
-    "speciesName": "Marill"
+    "speciesName": {
+      "de": "Marill",
+      "fr": "Marill",
+      "en": "Marill",
+      "es": "Marill",
+      "th": "มาริล",
+      "ja": "マリル",
+      "ko": "마릴",
+      "ru": "Мэрилл",
+      "zh_hans": "玛力露",
+      "zh_hant": "瑪力露"
+    }
   },
   "azumarill": {
     "legal": true,
@@ -6514,7 +7636,18 @@
       "water",
       "fairy"
     ],
-    "speciesName": "Azumarill",
+    "speciesName": {
+      "de": "Azumarill",
+      "fr": "Azumarill",
+      "en": "Azumarill",
+      "es": "Azumarill",
+      "th": "มาริลลิ",
+      "ja": "マリルリ",
+      "ko": "마릴리",
+      "ru": "Азумэрилл",
+      "zh_hans": "玛力露丽",
+      "zh_hant": "瑪力露麗"
+    },
     "ranking": 650,
     "moves": {
       "fastMoves": [
@@ -6566,7 +7699,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Politoed",
+    "speciesName": {
+      "de": "Quaxo",
+      "fr": "Tarpaud",
+      "en": "Politoed",
+      "es": "Politoed",
+      "th": "นิวโรโทโน",
+      "ja": "ニョロトノ",
+      "ko": "왕구리",
+      "ru": "Политод",
+      "zh_hans": "蚊香蛙皇",
+      "zh_hant": "蚊香蛙皇"
+    },
     "ranking": 678,
     "moves": {
       "fastMoves": [
@@ -6622,7 +7766,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Politoed (Shadow)",
+    "speciesName": {
+      "de": "Quaxo (Schatten)",
+      "fr": "Tarpaud (Ombre)",
+      "en": "Politoed (Shadow)",
+      "es": "Politoed (Oscuro)",
+      "th": "นิวโรโทโน (Shadow)",
+      "ja": "ニョロトノ (Shadow)",
+      "ko": "왕구리 (Shadow)",
+      "ru": "Политод (Shadow)",
+      "zh_hans": "蚊香蛙皇 (Shadow)",
+      "zh_hant": "蚊香蛙皇 (Shadow)"
+    },
     "ranking": 688,
     "moves": {
       "fastMoves": [
@@ -6678,7 +7833,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Hoppip"
+    "speciesName": {
+      "de": "Hoppspross",
+      "fr": "Granivol",
+      "en": "Hoppip",
+      "es": "Hoppip",
+      "th": "ฮาเน็กโกะ",
+      "ja": "ハネッコ",
+      "ko": "통통코",
+      "ru": "Хоппип",
+      "zh_hans": "毽子草",
+      "zh_hant": "毽子草"
+    }
   },
   "hoppip_shadow": {
     "legal": true,
@@ -6690,7 +7856,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Hoppip (Shadow)"
+    "speciesName": {
+      "de": "Hoppspross (Schatten)",
+      "fr": "Granivol (Ombre)",
+      "en": "Hoppip (Shadow)",
+      "es": "Hoppip (Oscuro)",
+      "th": "ฮาเน็กโกะ (Shadow)",
+      "ja": "ハネッコ (Shadow)",
+      "ko": "통통코 (Shadow)",
+      "ru": "Хоппип (Shadow)",
+      "zh_hans": "毽子草 (Shadow)",
+      "zh_hant": "毽子草 (Shadow)"
+    }
   },
   "skiploom": {
     "legal": true,
@@ -6702,7 +7879,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Skiploom"
+    "speciesName": {
+      "de": "Hubelupf",
+      "fr": "Floravol",
+      "en": "Skiploom",
+      "es": "Skiploom",
+      "th": "โพพ็อกโกะ",
+      "ja": "ポポッコ",
+      "ko": "두코",
+      "ru": "Скиплум",
+      "zh_hans": "毽子花",
+      "zh_hant": "毽子花"
+    }
   },
   "skiploom_shadow": {
     "legal": true,
@@ -6714,7 +7902,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Skiploom (Shadow)"
+    "speciesName": {
+      "de": "Hubelupf (Schatten)",
+      "fr": "Floravol (Ombre)",
+      "en": "Skiploom (Shadow)",
+      "es": "Skiploom (Oscuro)",
+      "th": "โพพ็อกโกะ (Shadow)",
+      "ja": "ポポッコ (Shadow)",
+      "ko": "두코 (Shadow)",
+      "ru": "Скиплум (Shadow)",
+      "zh_hans": "毽子花 (Shadow)",
+      "zh_hant": "毽子花 (Shadow)"
+    }
   },
   "jumpluff": {
     "legal": true,
@@ -6726,7 +7925,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Jumpluff",
+    "speciesName": {
+      "de": "Papungha",
+      "fr": "Cotovol",
+      "en": "Jumpluff",
+      "es": "Jumpluff",
+      "th": "วาทักโกะ",
+      "ja": "ワタッコ",
+      "ko": "솜솜코",
+      "ru": "Джамплафф",
+      "zh_hans": "毽子绵",
+      "zh_hant": "毽子綿"
+    },
     "ranking": 627,
     "moves": {
       "fastMoves": [
@@ -6778,7 +7988,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Jumpluff (Shadow)",
+    "speciesName": {
+      "de": "Papungha (Schatten)",
+      "fr": "Cotovol (Ombre)",
+      "en": "Jumpluff (Shadow)",
+      "es": "Jumpluff (Oscuro)",
+      "th": "วาทักโกะ (Shadow)",
+      "ja": "ワタッコ (Shadow)",
+      "ko": "솜솜코 (Shadow)",
+      "ru": "Джамплафф (Shadow)",
+      "zh_hans": "毽子绵 (Shadow)",
+      "zh_hant": "毽子綿 (Shadow)"
+    },
     "ranking": 635,
     "moves": {
       "fastMoves": [
@@ -6865,7 +8086,18 @@
       "bug",
       "flying"
     ],
-    "speciesName": "Yanma",
+    "speciesName": {
+      "de": "Yanma",
+      "fr": "Yanma",
+      "en": "Yanma",
+      "es": "Yanma",
+      "th": "ยันยันมา",
+      "ja": "ヤンヤンマ",
+      "ko": "왕자리",
+      "ru": "Янма",
+      "zh_hans": "阳阳玛",
+      "zh_hant": "陽陽瑪"
+    },
     "ranking": 486,
     "moves": {
       "fastMoves": [
@@ -6909,7 +8141,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Wooper"
+    "speciesName": {
+      "de": "Felino",
+      "fr": "Axoloto",
+      "en": "Wooper",
+      "es": "Wooper",
+      "th": "อูปา",
+      "ja": "ウパー",
+      "ko": "우파",
+      "ru": "Вупер",
+      "zh_hans": "乌波",
+      "zh_hant": "烏波"
+    }
   },
   "wooper_shadow": {
     "legal": true,
@@ -6921,7 +8164,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Wooper (Shadow)"
+    "speciesName": {
+      "de": "Felino (Schatten)",
+      "fr": "Axoloto (Ombre)",
+      "en": "Wooper (Shadow)",
+      "es": "Wooper (Oscuro)",
+      "th": "อูปา (Shadow)",
+      "ja": "ウパー (Shadow)",
+      "ko": "우파 (Shadow)",
+      "ru": "Вупер (Shadow)",
+      "zh_hans": "乌波 (Shadow)",
+      "zh_hant": "烏波 (Shadow)"
+    }
   },
   "quagsire": {
     "legal": true,
@@ -6933,7 +8187,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Quagsire",
+    "speciesName": {
+      "de": "Morlord",
+      "fr": "Maraiste",
+      "en": "Quagsire",
+      "es": "Quagsire",
+      "th": "นูโอ",
+      "ja": "ヌオー",
+      "ko": "누오",
+      "ru": "Квэгсайр",
+      "zh_hans": "沼王",
+      "zh_hant": "沼王"
+    },
     "ranking": 623,
     "moves": {
       "fastMoves": [
@@ -6985,7 +8250,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Quagsire (Shadow)",
+    "speciesName": {
+      "de": "Morlord (Schatten)",
+      "fr": "Maraiste (Ombre)",
+      "en": "Quagsire (Shadow)",
+      "es": "Quagsire (Oscuro)",
+      "th": "นูโอ (Shadow)",
+      "ja": "ヌオー (Shadow)",
+      "ko": "누오 (Shadow)",
+      "ru": "Квэгсайр (Shadow)",
+      "zh_hans": "沼王 (Shadow)",
+      "zh_hant": "沼王 (Shadow)"
+    },
     "ranking": 587,
     "moves": {
       "fastMoves": [
@@ -7053,7 +8329,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Murkrow",
+    "speciesName": {
+      "de": "Kramurx",
+      "fr": "Cornèbre",
+      "en": "Murkrow",
+      "es": "Murkrow",
+      "th": "ยามิคาราซึ",
+      "ja": "ヤミカラス",
+      "ko": "니로우",
+      "ru": "Маркроу",
+      "zh_hans": "黑暗鸦",
+      "zh_hant": "黑暗鴉"
+    },
     "ranking": 490,
     "moves": {
       "fastMoves": [
@@ -7101,7 +8388,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Murkrow (Shadow)",
+    "speciesName": {
+      "de": "Kramurx (Schatten)",
+      "fr": "Cornèbre (Ombre)",
+      "en": "Murkrow (Shadow)",
+      "es": "Murkrow (Oscuro)",
+      "th": "ยามิคาราซึ (Shadow)",
+      "ja": "ヤミカラス (Shadow)",
+      "ko": "니로우 (Shadow)",
+      "ru": "Маркроу (Shadow)",
+      "zh_hans": "黑暗鸦 (Shadow)",
+      "zh_hant": "黑暗鴉 (Shadow)"
+    },
     "ranking": 488,
     "moves": {
       "fastMoves": [
@@ -7149,7 +8447,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Slowking",
+    "speciesName": {
+      "de": "Laschoking",
+      "fr": "Roigada",
+      "en": "Slowking",
+      "es": "Slowking",
+      "th": "ยาโดคิง",
+      "ja": "ヤドキング",
+      "ko": "야도킹",
+      "ru": "Слоукинг",
+      "zh_hans": "河马王",
+      "zh_hant": "河馬王"
+    },
     "ranking": 500,
     "moves": {
       "fastMoves": [
@@ -7193,7 +8502,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Slowking (Shadow)",
+    "speciesName": {
+      "de": "Laschoking (Schatten)",
+      "fr": "Roigada (Ombre)",
+      "en": "Slowking (Shadow)",
+      "es": "Slowking (Oscuro)",
+      "th": "ยาโดคิง (Shadow)",
+      "ja": "ヤドキング (Shadow)",
+      "ko": "야도킹 (Shadow)",
+      "ru": "Слоукинг (Shadow)",
+      "zh_hans": "河马王 (Shadow)",
+      "zh_hant": "河馬王 (Shadow)"
+    },
     "ranking": 520,
     "moves": {
       "fastMoves": [
@@ -7365,7 +8685,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Gligar",
+    "speciesName": {
+      "de": "Skorgla",
+      "fr": "Scorplane",
+      "en": "Gligar",
+      "es": "Gligar",
+      "th": "ไกลกา",
+      "ja": "グライガー",
+      "ko": "글라이거",
+      "ru": "Глайгер",
+      "zh_hans": "天蝎",
+      "zh_hant": "天蠍"
+    },
     "ranking": 638,
     "moves": {
       "fastMoves": [
@@ -7413,7 +8744,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Gligar (Shadow)",
+    "speciesName": {
+      "de": "Skorgla (Schatten)",
+      "fr": "Scorplane (Ombre)",
+      "en": "Gligar (Shadow)",
+      "es": "Gligar (Oscuro)",
+      "th": "ไกลกา (Shadow)",
+      "ja": "グライガー (Shadow)",
+      "ko": "글라이거 (Shadow)",
+      "ru": "Глайгер (Shadow)",
+      "zh_hans": "天蝎 (Shadow)",
+      "zh_hant": "天蠍 (Shadow)"
+    },
     "ranking": 620,
     "moves": {
       "fastMoves": [
@@ -7469,7 +8811,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Snubbull",
+    "speciesName": {
+      "de": "Snubbull",
+      "fr": "Snubbull",
+      "en": "Snubbull",
+      "es": "Snubbull",
+      "th": "บูล",
+      "ja": "ブルー",
+      "ko": "블루",
+      "ru": "Снаббл",
+      "zh_hans": "布卢",
+      "zh_hant": "布盧"
+    },
     "ranking": 454,
     "moves": {
       "fastMoves": [
@@ -7517,7 +8870,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Snubbull (Shadow)",
+    "speciesName": {
+      "de": "Snubbull (Schatten)",
+      "fr": "Snubbull (Ombre)",
+      "en": "Snubbull (Shadow)",
+      "es": "Snubbull (Oscuro)",
+      "th": "บูล (Shadow)",
+      "ja": "ブルー (Shadow)",
+      "ko": "블루 (Shadow)",
+      "ru": "Снаббл (Shadow)",
+      "zh_hans": "布卢 (Shadow)",
+      "zh_hant": "布盧 (Shadow)"
+    },
     "ranking": 484,
     "moves": {
       "fastMoves": [
@@ -7565,7 +8929,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Granbull",
+    "speciesName": {
+      "de": "Granbull",
+      "fr": "Granbull",
+      "en": "Granbull",
+      "es": "Granbull",
+      "th": "แกรนบูล",
+      "ja": "グランブル",
+      "ko": "그랑블루",
+      "ru": "Гранбулл",
+      "zh_hans": "布卢皇",
+      "zh_hant": "布盧皇"
+    },
     "ranking": 639,
     "moves": {
       "fastMoves": [
@@ -7613,7 +8988,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Granbull (Shadow)",
+    "speciesName": {
+      "de": "Granbull (Schatten)",
+      "fr": "Granbull (Ombre)",
+      "en": "Granbull (Shadow)",
+      "es": "Granbull (Oscuro)",
+      "th": "แกรนบูล (Shadow)",
+      "ja": "グランブル (Shadow)",
+      "ko": "그랑블루 (Shadow)",
+      "ru": "Гранбулл (Shadow)",
+      "zh_hans": "布卢皇 (Shadow)",
+      "zh_hant": "布盧皇 (Shadow)"
+    },
     "ranking": 681,
     "moves": {
       "fastMoves": [
@@ -7662,7 +9048,18 @@
       "water",
       "poison"
     ],
-    "speciesName": "Qwilfish",
+    "speciesName": {
+      "de": "Baldorfish",
+      "fr": "Qwilfish",
+      "en": "Qwilfish",
+      "es": "Qwilfish",
+      "th": "ฮารีเซน",
+      "ja": "ハリーセン",
+      "ko": "침바루",
+      "ru": "Квилфиш",
+      "zh_hans": "千针鱼",
+      "zh_hant": "千針魚"
+    },
     "ranking": 637,
     "moves": {
       "fastMoves": [
@@ -7895,7 +9292,18 @@
     "tags": [
       "regional"
     ],
-    "speciesName": "Corsola",
+    "speciesName": {
+      "de": "Corasonn",
+      "fr": "Corayon",
+      "en": "Corsola",
+      "es": "Corsola",
+      "th": "ซันนีโก",
+      "ja": "サニーゴ",
+      "ko": "코산호",
+      "ru": "Корсола",
+      "zh_hans": "太阳珊瑚",
+      "zh_hant": "太陽珊瑚"
+    },
     "ranking": 580,
     "moves": {
       "fastMoves": [
@@ -7936,7 +9344,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Remoraid"
+    "speciesName": {
+      "de": "Remoraid",
+      "fr": "Rémoraid",
+      "en": "Remoraid",
+      "es": "Remoraid",
+      "th": "เทปโปโอ",
+      "ja": "テッポウオ",
+      "ko": "총어",
+      "ru": "Реморейд",
+      "zh_hans": "铁炮鱼",
+      "zh_hant": "鐵炮魚"
+    }
   },
   "octillery": {
     "legal": true,
@@ -7945,7 +9364,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Octillery",
+    "speciesName": {
+      "de": "Octillery",
+      "fr": "Octillery",
+      "en": "Octillery",
+      "es": "Octillery",
+      "th": "ออคตัน",
+      "ja": "オクタン",
+      "ko": "대포무노",
+      "ru": "Октиллери",
+      "zh_hans": "章鱼桶",
+      "zh_hant": "章魚桶"
+    },
     "ranking": 448,
     "moves": {
       "fastMoves": [
@@ -7997,7 +9427,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Delibird"
+    "speciesName": {
+      "de": "Botogel",
+      "fr": "Cadoizo",
+      "en": "Delibird",
+      "es": "Delibird",
+      "th": "เดลิเบิร์ด",
+      "ja": "デリバード",
+      "ko": "딜리버드",
+      "ru": "Дэлибёд",
+      "zh_hans": "信使鸟",
+      "zh_hant": "信使鳥"
+    }
   },
   "delibird_shadow": {
     "legal": true,
@@ -8009,7 +9450,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Delibird (Shadow)"
+    "speciesName": {
+      "de": "Botogel (Schatten)",
+      "fr": "Cadoizo (Ombre)",
+      "en": "Delibird (Shadow)",
+      "es": "Delibird (Oscuro)",
+      "th": "เดลิเบิร์ด (Shadow)",
+      "ja": "デリバード (Shadow)",
+      "ko": "딜리버드 (Shadow)",
+      "ru": "Дэлибёд (Shadow)",
+      "zh_hans": "信使鸟 (Shadow)",
+      "zh_hant": "信使鳥 (Shadow)"
+    }
   },
   "mantine": {
     "legal": true,
@@ -8018,7 +9470,18 @@
       "water",
       "flying"
     ],
-    "speciesName": "Mantine",
+    "speciesName": {
+      "de": "Mantax",
+      "fr": "Démanta",
+      "en": "Mantine",
+      "es": "Mantine",
+      "th": "แมนไทน์",
+      "ja": "マンタイン",
+      "ko": "만타인",
+      "ru": "Мантин",
+      "zh_hans": "巨翅飞鱼",
+      "zh_hant": "巨翅飛魚"
+    },
     "ranking": 660,
     "moves": {
       "fastMoves": [
@@ -8148,7 +9611,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Kingdra",
+    "speciesName": {
+      "de": "Seedraking",
+      "fr": "Hyporoi",
+      "en": "Kingdra",
+      "es": "Kingdra",
+      "th": "คิงดรา",
+      "ja": "キングドラ",
+      "ko": "킹드라",
+      "ru": "Кингдра",
+      "zh_hans": "刺龙王",
+      "zh_hant": "刺龍王"
+    },
     "ranking": 586,
     "moves": {
       "fastMoves": [
@@ -8200,7 +9674,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Kingdra (Shadow)",
+    "speciesName": {
+      "de": "Seedraking (Schatten)",
+      "fr": "Hyporoi (Ombre)",
+      "en": "Kingdra (Shadow)",
+      "es": "Kingdra (Oscuro)",
+      "th": "คิงดรา (Shadow)",
+      "ja": "キングドラ (Shadow)",
+      "ko": "킹드라 (Shadow)",
+      "ru": "Кингдра (Shadow)",
+      "zh_hans": "刺龙王 (Shadow)",
+      "zh_hant": "刺龍王 (Shadow)"
+    },
     "ranking": 616,
     "moves": {
       "fastMoves": [
@@ -8631,7 +10116,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Mudkip"
+    "speciesName": {
+      "de": "Hydropi",
+      "fr": "Gobou",
+      "en": "Mudkip",
+      "es": "Mudkip",
+      "th": "มิซึโกโร",
+      "ja": "ミズゴロウ",
+      "ko": "물짱이",
+      "ru": "Мадкип",
+      "zh_hans": "水跃鱼",
+      "zh_hant": "水躍魚"
+    }
   },
   "mudkip_shadow": {
     "legal": true,
@@ -8643,7 +10139,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Mudkip (Shadow)"
+    "speciesName": {
+      "de": "Hydropi (Schatten)",
+      "fr": "Gobou (Ombre)",
+      "en": "Mudkip (Shadow)",
+      "es": "Mudkip (Oscuro)",
+      "th": "มิซึโกโร (Shadow)",
+      "ja": "ミズゴロウ (Shadow)",
+      "ko": "물짱이 (Shadow)",
+      "ru": "Мадкип (Shadow)",
+      "zh_hans": "水跃鱼 (Shadow)",
+      "zh_hant": "水躍魚 (Shadow)"
+    }
   },
   "marshtomp": {
     "legal": true,
@@ -8656,7 +10163,18 @@
       "starter",
       "shadoweligible"
     ],
-    "speciesName": "Marshtomp",
+    "speciesName": {
+      "de": "Moorabbel",
+      "fr": "Flobio",
+      "en": "Marshtomp",
+      "es": "Marshtomp",
+      "th": "นูมาโคร",
+      "ja": "ヌマクロー",
+      "ko": "늪짱이",
+      "ru": "Марштомп",
+      "zh_hans": "沼跃鱼",
+      "zh_hant": "沼躍魚"
+    },
     "ranking": 616,
     "moves": {
       "fastMoves": [
@@ -8705,7 +10223,18 @@
       "starter",
       "shadow"
     ],
-    "speciesName": "Marshtomp (Shadow)",
+    "speciesName": {
+      "de": "Moorabbel (Schatten)",
+      "fr": "Flobio (Ombre)",
+      "en": "Marshtomp (Shadow)",
+      "es": "Marshtomp (Oscuro)",
+      "th": "นูมาโคร (Shadow)",
+      "ja": "ヌマクロー (Shadow)",
+      "ko": "늪짱이 (Shadow)",
+      "ru": "Марштомп (Shadow)",
+      "zh_hans": "沼跃鱼 (Shadow)",
+      "zh_hant": "沼躍魚 (Shadow)"
+    },
     "ranking": 630,
     "moves": {
       "fastMoves": [
@@ -8754,7 +10283,18 @@
       "starter",
       "shadoweligible"
     ],
-    "speciesName": "Swampert",
+    "speciesName": {
+      "de": "Sumpex",
+      "fr": "Laggron",
+      "en": "Swampert",
+      "es": "Swampert",
+      "th": "ลากลาจ",
+      "ja": "ラグラージ",
+      "ko": "대짱이",
+      "ru": "Свамперт",
+      "zh_hans": "巨沼怪",
+      "zh_hant": "巨沼怪"
+    },
     "ranking": 684,
     "moves": {
       "fastMoves": [
@@ -8807,7 +10347,18 @@
       "starter",
       "shadow"
     ],
-    "speciesName": "Swampert (Shadow)",
+    "speciesName": {
+      "de": "Sumpex (Schatten)",
+      "fr": "Laggron (Ombre)",
+      "en": "Swampert (Shadow)",
+      "es": "Swampert (Oscuro)",
+      "th": "ลากลาจ (Shadow)",
+      "ja": "ラグラージ (Shadow)",
+      "ko": "대짱이 (Shadow)",
+      "ru": "Свамперт (Shadow)",
+      "zh_hans": "巨沼怪 (Shadow)",
+      "zh_hant": "巨沼怪 (Shadow)"
+    },
     "ranking": 691,
     "moves": {
       "fastMoves": [
@@ -8958,7 +10509,18 @@
       "bug",
       "flying"
     ],
-    "speciesName": "Beautifly",
+    "speciesName": {
+      "de": "Papinella",
+      "fr": "Charmillon",
+      "en": "Beautifly",
+      "es": "Beautifly",
+      "th": "อาเกฮันท์",
+      "ja": "アゲハント",
+      "ko": "뷰티플라이",
+      "ru": "Бьютифлай",
+      "zh_hans": "狩猎凤蝶",
+      "zh_hant": "狩獵鳳蝶"
+    },
     "ranking": 417,
     "moves": {
       "fastMoves": [
@@ -9015,7 +10577,18 @@
       "water",
       "grass"
     ],
-    "speciesName": "Lotad"
+    "speciesName": {
+      "de": "Loturzel",
+      "fr": "Nénupiot",
+      "en": "Lotad",
+      "es": "Lotad",
+      "th": "ฮาซึโบ",
+      "ja": "ハスボー",
+      "ko": "연꽃몬",
+      "ru": "Лотад",
+      "zh_hans": "莲叶童子",
+      "zh_hant": "蓮葉童子"
+    }
   },
   "lombre": {
     "legal": true,
@@ -9024,7 +10597,18 @@
       "water",
       "grass"
     ],
-    "speciesName": "Lombre",
+    "speciesName": {
+      "de": "Lombrero",
+      "fr": "Lombre",
+      "en": "Lombre",
+      "es": "Lombre",
+      "th": "ฮาซึเบรโร",
+      "ja": "ハスブレロ",
+      "ko": "로토스",
+      "ru": "Ломбре",
+      "zh_hans": "莲帽小童",
+      "zh_hant": "蓮帽小童"
+    },
     "ranking": 461,
     "moves": {
       "fastMoves": [
@@ -9065,7 +10649,18 @@
       "water",
       "grass"
     ],
-    "speciesName": "Ludicolo",
+    "speciesName": {
+      "de": "Kappalores",
+      "fr": "Ludicolo",
+      "en": "Ludicolo",
+      "es": "Ludicolo",
+      "th": "รุนปัปปา",
+      "ja": "ルンパッパ",
+      "ko": "로파파",
+      "ru": "Лудиколо",
+      "zh_hans": "乐天河童",
+      "zh_hant": "樂天河童"
+    },
     "ranking": 523,
     "moves": {
       "fastMoves": [
@@ -9184,7 +10779,18 @@
       "normal",
       "flying"
     ],
-    "speciesName": "Taillow"
+    "speciesName": {
+      "de": "Schwalbini",
+      "fr": "Nirondelle",
+      "en": "Taillow",
+      "es": "Taillow",
+      "th": "สึบาเมะ",
+      "ja": "スバメ",
+      "ko": "테일로",
+      "ru": "Тейлоу",
+      "zh_hans": "傲骨燕",
+      "zh_hant": "傲骨燕"
+    }
   },
   "swellow": {
     "legal": true,
@@ -9193,7 +10799,18 @@
       "normal",
       "flying"
     ],
-    "speciesName": "Swellow",
+    "speciesName": {
+      "de": "Schwalboss",
+      "fr": "Hélédelle",
+      "en": "Swellow",
+      "es": "Swellow",
+      "th": "โอโอสึบาเมะ",
+      "ja": "オオスバメ",
+      "ko": "스왈로",
+      "ru": "Свеллоу",
+      "zh_hans": "大王燕",
+      "zh_hant": "大王燕"
+    },
     "ranking": 502,
     "moves": {
       "fastMoves": [
@@ -9234,7 +10851,18 @@
       "water",
       "flying"
     ],
-    "speciesName": "Wingull"
+    "speciesName": {
+      "de": "Wingull",
+      "fr": "Goélise",
+      "en": "Wingull",
+      "es": "Wingull",
+      "th": "คาโมเมะ",
+      "ja": "キャモメ",
+      "ko": "갈모매",
+      "ru": "Вингалл",
+      "zh_hans": "长翅鸥",
+      "zh_hant": "長翅鷗"
+    }
   },
   "pelipper": {
     "legal": true,
@@ -9243,7 +10871,18 @@
       "water",
       "flying"
     ],
-    "speciesName": "Pelipper",
+    "speciesName": {
+      "de": "Pelipper",
+      "fr": "Bekipan",
+      "en": "Pelipper",
+      "es": "Pelipper",
+      "th": "เพลิปเปอร์",
+      "ja": "ペリッパー",
+      "ko": "패리퍼",
+      "ru": "Пелиппер",
+      "zh_hans": "大嘴鸥",
+      "zh_hant": "大嘴鷗"
+    },
     "ranking": 654,
     "moves": {
       "fastMoves": [
@@ -9291,7 +10930,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Ralts"
+    "speciesName": {
+      "de": "Trasla",
+      "fr": "Tarsal",
+      "en": "Ralts",
+      "es": "Ralts",
+      "th": "ราลท์ซ",
+      "ja": "ラルトス",
+      "ko": "랄토스",
+      "ru": "Ральтс",
+      "zh_hans": "拉鲁拉丝",
+      "zh_hant": "拉魯拉絲"
+    }
   },
   "ralts_shadow": {
     "legal": true,
@@ -9303,7 +10953,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Ralts (Shadow)"
+    "speciesName": {
+      "de": "Trasla (Schatten)",
+      "fr": "Tarsal (Ombre)",
+      "en": "Ralts (Shadow)",
+      "es": "Ralts (Oscuro)",
+      "th": "ราลท์ซ (Shadow)",
+      "ja": "ラルトス (Shadow)",
+      "ko": "랄토스 (Shadow)",
+      "ru": "Ральтс (Shadow)",
+      "zh_hans": "拉鲁拉丝 (Shadow)",
+      "zh_hant": "拉魯拉絲 (Shadow)"
+    }
   },
   "kirlia": {
     "legal": true,
@@ -9315,7 +10976,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Kirlia"
+    "speciesName": {
+      "de": "Kirlia",
+      "fr": "Kirlia",
+      "en": "Kirlia",
+      "es": "Kirlia",
+      "th": "เคอเรีย",
+      "ja": "キルリア",
+      "ko": "킬리아",
+      "ru": "Кирлия",
+      "zh_hans": "奇鲁莉安",
+      "zh_hant": "奇魯莉安"
+    }
   },
   "kirlia_shadow": {
     "legal": true,
@@ -9327,7 +10999,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Kirlia (Shadow)"
+    "speciesName": {
+      "de": "Kirlia (Schatten)",
+      "fr": "Kirlia (Ombre)",
+      "en": "Kirlia (Shadow)",
+      "es": "Kirlia (Oscuro)",
+      "th": "เคอเรีย (Shadow)",
+      "ja": "キルリア (Shadow)",
+      "ko": "킬리아 (Shadow)",
+      "ru": "Кирлия (Shadow)",
+      "zh_hans": "奇鲁莉安 (Shadow)",
+      "zh_hant": "奇魯莉安 (Shadow)"
+    }
   },
   "gardevoir": {
     "legal": true,
@@ -9339,7 +11022,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Gardevoir",
+    "speciesName": {
+      "de": "Guardevoir",
+      "fr": "Gardevoir",
+      "en": "Gardevoir",
+      "es": "Gardevoir",
+      "th": "เซอไนท์",
+      "ja": "サーナイト",
+      "ko": "가디안",
+      "ru": "Гардевуар",
+      "zh_hans": "沙奈朵",
+      "zh_hant": "沙奈朵"
+    },
     "ranking": 633,
     "moves": {
       "fastMoves": [
@@ -9391,7 +11085,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Gardevoir (Shadow)",
+    "speciesName": {
+      "de": "Guardevoir (Schatten)",
+      "fr": "Gardevoir (Ombre)",
+      "en": "Gardevoir (Shadow)",
+      "es": "Gardevoir (Oscuro)",
+      "th": "เซอไนท์ (Shadow)",
+      "ja": "サーナイト (Shadow)",
+      "ko": "가디안 (Shadow)",
+      "ru": "Гардевуар (Shadow)",
+      "zh_hans": "沙奈朵 (Shadow)",
+      "zh_hant": "沙奈朵 (Shadow)"
+    },
     "ranking": 673,
     "moves": {
       "fastMoves": [
@@ -9444,7 +11149,18 @@
       "bug",
       "water"
     ],
-    "speciesName": "Surskit"
+    "speciesName": {
+      "de": "Gehweiher",
+      "fr": "Arakdo",
+      "en": "Surskit",
+      "es": "Surskit",
+      "th": "อาเมทามะ",
+      "ja": "アメタマ",
+      "ko": "비구술",
+      "ru": "Сёрскит",
+      "zh_hans": "溜溜糖球",
+      "zh_hant": "溜溜糖球"
+    }
   },
   "masquerain": {
     "legal": true,
@@ -9453,7 +11169,18 @@
       "bug",
       "flying"
     ],
-    "speciesName": "Masquerain",
+    "speciesName": {
+      "de": "Maskeregen",
+      "fr": "Maskadra",
+      "en": "Masquerain",
+      "es": "Masquerain",
+      "th": "อาเมมอธ",
+      "ja": "アメモース",
+      "ko": "비나방",
+      "ru": "Маскверейн",
+      "zh_hans": "雨翅蛾",
+      "zh_hant": "雨翅蛾"
+    },
     "ranking": 537,
     "moves": {
       "fastMoves": [
@@ -9550,7 +11277,18 @@
       "bug",
       "flying"
     ],
-    "speciesName": "Ninjask",
+    "speciesName": {
+      "de": "Ninjask",
+      "fr": "Ninjask",
+      "en": "Ninjask",
+      "es": "Ninjask",
+      "th": "เท็คคานิน",
+      "ja": "テッカニン",
+      "ko": "아이스크",
+      "ru": "Нинджаск",
+      "zh_hans": "铁面忍者",
+      "zh_hant": "鐵面忍者"
+    },
     "ranking": 484,
     "moves": {
       "fastMoves": [
@@ -9667,7 +11405,18 @@
       "normal",
       "fairy"
     ],
-    "speciesName": "Azurill"
+    "speciesName": {
+      "de": "Azurill",
+      "fr": "Azurill",
+      "en": "Azurill",
+      "es": "Azurill",
+      "th": "รูริริ",
+      "ja": "ルリリ",
+      "ko": "루리리",
+      "ru": "Азурилл",
+      "zh_hans": "露力丽",
+      "zh_hant": "露力麗"
+    }
   },
   "nosepass": {
     "legal": false,
@@ -9739,7 +11488,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Mawile",
+    "speciesName": {
+      "de": "Flunkifer",
+      "fr": "Mysdibule",
+      "en": "Mawile",
+      "es": "Mawile",
+      "th": "คูชีท",
+      "ja": "クチート",
+      "ko": "입치트",
+      "ru": "Мэвайл",
+      "zh_hans": "大嘴娃",
+      "zh_hant": "大嘴娃"
+    },
     "ranking": 591,
     "moves": {
       "fastMoves": [
@@ -9799,7 +11559,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Mawile (Shadow)",
+    "speciesName": {
+      "de": "Flunkifer (Schatten)",
+      "fr": "Mysdibule (Ombre)",
+      "en": "Mawile (Shadow)",
+      "es": "Mawile (Oscuro)",
+      "th": "คูชีท (Shadow)",
+      "ja": "クチート (Shadow)",
+      "ko": "입치트 (Shadow)",
+      "ru": "Мэвайл (Shadow)",
+      "zh_hans": "大嘴娃 (Shadow)",
+      "zh_hant": "大嘴娃 (Shadow)"
+    },
     "ranking": 607,
     "moves": {
       "fastMoves": [
@@ -10058,7 +11829,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Carvanha"
+    "speciesName": {
+      "de": "Kanivanha",
+      "fr": "Carvanha",
+      "en": "Carvanha",
+      "es": "Carvanha",
+      "th": "คิบาเนีย",
+      "ja": "キバニア",
+      "ko": "샤프니아",
+      "ru": "Карванна",
+      "zh_hans": "利牙鱼",
+      "zh_hant": "利牙魚"
+    }
   },
   "carvanha_shadow": {
     "legal": true,
@@ -10070,7 +11852,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Carvanha (Shadow)"
+    "speciesName": {
+      "de": "Kanivanha (Schatten)",
+      "fr": "Carvanha (Ombre)",
+      "en": "Carvanha (Shadow)",
+      "es": "Carvanha (Oscuro)",
+      "th": "คิบาเนีย (Shadow)",
+      "ja": "キバニア (Shadow)",
+      "ko": "샤프니아 (Shadow)",
+      "ru": "Карванна (Shadow)",
+      "zh_hans": "利牙鱼 (Shadow)",
+      "zh_hant": "利牙魚 (Shadow)"
+    }
   },
   "sharpedo": {
     "legal": true,
@@ -10083,7 +11876,18 @@
       "shadoweligible",
       "include1500"
     ],
-    "speciesName": "Sharpedo",
+    "speciesName": {
+      "de": "Tohaido",
+      "fr": "Sharpedo",
+      "en": "Sharpedo",
+      "es": "Sharpedo",
+      "th": "ซาเมฮาเดอร์",
+      "ja": "サメハダー",
+      "ko": "샤크니아",
+      "ru": "Шарпидо",
+      "zh_hans": "巨牙鲨",
+      "zh_hant": "巨牙鯊"
+    },
     "ranking": 565,
     "moves": {
       "fastMoves": [
@@ -10132,7 +11936,18 @@
       "shadow",
       "include1500"
     ],
-    "speciesName": "Sharpedo (Shadow)",
+    "speciesName": {
+      "de": "Tohaido (Schatten)",
+      "fr": "Sharpedo (Ombre)",
+      "en": "Sharpedo (Shadow)",
+      "es": "Sharpedo (Oscuro)",
+      "th": "ซาเมฮาเดอร์ (Shadow)",
+      "ja": "サメハダー (Shadow)",
+      "ko": "샤크니아 (Shadow)",
+      "ru": "Шарпидо (Shadow)",
+      "zh_hans": "巨牙鲨 (Shadow)",
+      "zh_hant": "巨牙鯊 (Shadow)"
+    },
     "ranking": 577,
     "moves": {
       "fastMoves": [
@@ -10177,7 +11992,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Wailmer",
+    "speciesName": {
+      "de": "Wailmer",
+      "fr": "Wailmer",
+      "en": "Wailmer",
+      "es": "Wailmer",
+      "th": "เวลโกะ",
+      "ja": "ホエルコ",
+      "ko": "고래왕자",
+      "ru": "Вэйлмер",
+      "zh_hans": "吼吼鲸",
+      "zh_hant": "吼吼鯨"
+    },
     "ranking": 610,
     "moves": {
       "fastMoves": [
@@ -10218,7 +12044,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Wailord",
+    "speciesName": {
+      "de": "Wailord",
+      "fr": "Wailord",
+      "en": "Wailord",
+      "es": "Wailord",
+      "th": "เวลโอ",
+      "ja": "ホエルオー",
+      "ko": "고래왕",
+      "ru": "Вэйлорд",
+      "zh_hans": "吼鲸王",
+      "zh_hant": "吼鯨王"
+    },
     "ranking": 573,
     "moves": {
       "fastMoves": [
@@ -10392,7 +12229,18 @@
       "normal",
       "flying"
     ],
-    "speciesName": "Swablu"
+    "speciesName": {
+      "de": "Wablu",
+      "fr": "Tylton",
+      "en": "Swablu",
+      "es": "Swablu",
+      "th": "ทิลท์โท",
+      "ja": "チルット",
+      "ko": "파비코",
+      "ru": "Сваблу",
+      "zh_hans": "青绵鸟",
+      "zh_hant": "青綿鳥"
+    }
   },
   "altaria": {
     "legal": true,
@@ -10401,7 +12249,18 @@
       "dragon",
       "flying"
     ],
-    "speciesName": "Altaria",
+    "speciesName": {
+      "de": "Altaria",
+      "fr": "Altaria",
+      "en": "Altaria",
+      "es": "Altaria",
+      "th": "ทิลทาลิส",
+      "ja": "チルタリス",
+      "ko": "파비코리",
+      "ru": "Алтария",
+      "zh_hans": "七夕青鸟",
+      "zh_hant": "七夕青鳥"
+    },
     "ranking": 694,
     "moves": {
       "fastMoves": [
@@ -10449,7 +12308,18 @@
     "tags": [
       "mega"
     ],
-    "speciesName": "Altaria (Mega)"
+    "speciesName": {
+      "de": "Altaria (Mega)",
+      "fr": "Altaria (Mega)",
+      "en": "Altaria (Mega)",
+      "es": "Altaria (Mega)",
+      "th": "ทิลทาลิส (Mega)",
+      "ja": "チルタリス (Mega)",
+      "ko": "파비코리 (Mega)",
+      "ru": "Алтария (Mega)",
+      "zh_hans": "七夕青鸟 (Mega)",
+      "zh_hant": "七夕青鳥 (Mega)"
+    }
   },
   "zangoose": {
     "legal": false,
@@ -10502,7 +12372,18 @@
       "water",
       "ground"
     ],
-    "speciesName": "Barboach"
+    "speciesName": {
+      "de": "Schmerbe",
+      "fr": "Barloche",
+      "en": "Barboach",
+      "es": "Barboach",
+      "th": "โดโจทช์",
+      "ja": "ドジョッチ",
+      "ko": "미꾸리",
+      "ru": "Барбоа",
+      "zh_hans": "泥泥鳅",
+      "zh_hant": "泥泥鰍"
+    }
   },
   "whiscash": {
     "legal": true,
@@ -10511,7 +12392,18 @@
       "water",
       "ground"
     ],
-    "speciesName": "Whiscash",
+    "speciesName": {
+      "de": "Welsar",
+      "fr": "Barbicha",
+      "en": "Whiscash",
+      "es": "Whiscash",
+      "th": "นามาซูน",
+      "ja": "ナマズン",
+      "ko": "메깅",
+      "ru": "Вискэш",
+      "zh_hans": "鲶鱼王",
+      "zh_hant": "鯰魚王"
+    },
     "ranking": 687,
     "moves": {
       "fastMoves": [
@@ -10552,7 +12444,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Corphish",
+    "speciesName": {
+      "de": "Krebscorps",
+      "fr": "Écrapince",
+      "en": "Corphish",
+      "es": "Corphish",
+      "th": "เฮกานิ",
+      "ja": "ヘイガニ",
+      "ko": "가재군",
+      "ru": "Корфиш",
+      "zh_hans": "龙虾小兵",
+      "zh_hant": "龍蝦小兵"
+    },
     "ranking": 397,
     "moves": {
       "fastMoves": [
@@ -10593,7 +12496,18 @@
       "water",
       "dark"
     ],
-    "speciesName": "Crawdaunt",
+    "speciesName": {
+      "de": "Krebutack",
+      "fr": "Colhomard",
+      "en": "Crawdaunt",
+      "es": "Crawdaunt",
+      "th": "ชิซาริเกอร์",
+      "ja": "シザリガー",
+      "ko": "가재장군",
+      "ru": "Кродант",
+      "zh_hans": "铁螯龙虾",
+      "zh_hant": "鐵螯龍蝦"
+    },
     "ranking": 582,
     "moves": {
       "fastMoves": [
@@ -10742,7 +12656,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Feebas"
+    "speciesName": {
+      "de": "Barschwa",
+      "fr": "Barpau",
+      "en": "Feebas",
+      "es": "Feebas",
+      "th": "ฮินบาส",
+      "ja": "ヒンバス",
+      "ko": "빈티나",
+      "ru": "Фибас",
+      "zh_hans": "笨笨鱼",
+      "zh_hant": "笨笨魚"
+    }
   },
   "milotic": {
     "legal": true,
@@ -10751,7 +12676,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Milotic",
+    "speciesName": {
+      "de": "Milotic",
+      "fr": "Milobellus",
+      "en": "Milotic",
+      "es": "Milotic",
+      "th": "มิโลคารอส",
+      "ja": "ミロカロス",
+      "ko": "밀로틱",
+      "ru": "Майлотик",
+      "zh_hans": "美纳斯",
+      "zh_hant": "美納斯"
+    },
     "ranking": 624,
     "moves": {
       "fastMoves": [
@@ -10800,7 +12736,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Castform (Rainy)",
+    "speciesName": {
+      "de": "Formeo (Regenform)",
+      "fr": "Morphéo (Rainy)",
+      "en": "Castform (Rainy)",
+      "es": "Castform (Lluvia)",
+      "th": "โปวาลุน (Rainy)",
+      "ja": "ポワルン (Rainy)",
+      "ko": "캐스퐁 (Rainy)",
+      "ru": "Кастформ (Rainy)",
+      "zh_hans": "漂浮泡泡 (Rainy)",
+      "zh_hant": "漂浮泡泡 (Rainy)"
+    },
     "ranking": 645,
     "moves": {
       "fastMoves": [
@@ -10959,7 +12906,18 @@
     "tags": [
       "regional"
     ],
-    "speciesName": "Tropius",
+    "speciesName": {
+      "de": "Tropius",
+      "fr": "Tropius",
+      "en": "Tropius",
+      "es": "Tropius",
+      "th": "โทรพิอุส",
+      "ja": "トロピウス",
+      "ko": "트로피우스",
+      "ru": "Тропиус",
+      "zh_hans": "热带龙",
+      "zh_hant": "熱帶龍"
+    },
     "ranking": 670,
     "moves": {
       "fastMoves": [
@@ -11057,7 +13015,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Spheal"
+    "speciesName": {
+      "de": "Seemops",
+      "fr": "Obalie",
+      "en": "Spheal",
+      "es": "Spheal",
+      "th": "ทามาซาราชิ",
+      "ja": "タマザラシ",
+      "ko": "대굴레오",
+      "ru": "Сфил",
+      "zh_hans": "海豹球",
+      "zh_hant": "海豹球"
+    }
   },
   "spheal_shadow": {
     "legal": true,
@@ -11069,7 +13038,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Spheal (Shadow)"
+    "speciesName": {
+      "de": "Seemops (Schatten)",
+      "fr": "Obalie (Ombre)",
+      "en": "Spheal (Shadow)",
+      "es": "Spheal (Oscuro)",
+      "th": "ทามาซาราชิ (Shadow)",
+      "ja": "タマザラシ (Shadow)",
+      "ko": "대굴레오 (Shadow)",
+      "ru": "Сфил (Shadow)",
+      "zh_hans": "海豹球 (Shadow)",
+      "zh_hant": "海豹球 (Shadow)"
+    }
   },
   "sealeo": {
     "legal": true,
@@ -11081,7 +13061,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Sealeo",
+    "speciesName": {
+      "de": "Seejong",
+      "fr": "Phogleur",
+      "en": "Sealeo",
+      "es": "Sealeo",
+      "th": "โทดอกเกลอร์",
+      "ja": "トドグラー",
+      "ko": "씨레오",
+      "ru": "Силео",
+      "zh_hans": "海魔狮",
+      "zh_hant": "海魔獅"
+    },
     "ranking": 652,
     "moves": {
       "fastMoves": [
@@ -11129,7 +13120,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Sealeo (Shadow)",
+    "speciesName": {
+      "de": "Seejong (Schatten)",
+      "fr": "Phogleur (Ombre)",
+      "en": "Sealeo (Shadow)",
+      "es": "Sealeo (Oscuro)",
+      "th": "โทดอกเกลอร์ (Shadow)",
+      "ja": "トドグラー (Shadow)",
+      "ko": "씨레오 (Shadow)",
+      "ru": "Силео (Shadow)",
+      "zh_hans": "海魔狮 (Shadow)",
+      "zh_hant": "海魔獅 (Shadow)"
+    },
     "ranking": 668,
     "moves": {
       "fastMoves": [
@@ -11177,7 +13179,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Walrein",
+    "speciesName": {
+      "de": "Walraisa",
+      "fr": "Kaimorse",
+      "en": "Walrein",
+      "es": "Walrein",
+      "th": "โทโดเซรุกา",
+      "ja": "トドゼルガ",
+      "ko": "씨카이저",
+      "ru": "Уолрейн",
+      "zh_hans": "帝牙海狮",
+      "zh_hant": "帝牙海獅"
+    },
     "ranking": 495,
     "moves": {
       "fastMoves": [
@@ -11221,7 +13234,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Walrein (Shadow)",
+    "speciesName": {
+      "de": "Walraisa (Schatten)",
+      "fr": "Kaimorse (Ombre)",
+      "en": "Walrein (Shadow)",
+      "es": "Walrein (Oscuro)",
+      "th": "โทโดเซรุกา (Shadow)",
+      "ja": "トドゼルガ (Shadow)",
+      "ko": "씨카이저 (Shadow)",
+      "ru": "Уолрейн (Shadow)",
+      "zh_hans": "帝牙海狮 (Shadow)",
+      "zh_hant": "帝牙海獅 (Shadow)"
+    },
     "ranking": 529,
     "moves": {
       "fastMoves": [
@@ -11266,7 +13290,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Clamperl",
+    "speciesName": {
+      "de": "Perlu",
+      "fr": "Coquiperl",
+      "en": "Clamperl",
+      "es": "Clamperl",
+      "th": "ปาลูลุ",
+      "ja": "パールル",
+      "ko": "진주몽",
+      "ru": "Кламперл",
+      "zh_hans": "珍珠贝",
+      "zh_hant": "珍珠貝"
+    },
     "ranking": 524,
     "moves": {
       "fastMoves": [
@@ -11303,7 +13338,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Huntail",
+    "speciesName": {
+      "de": "Aalabyss",
+      "fr": "Serpang",
+      "en": "Huntail",
+      "es": "Huntail",
+      "th": "ฮันเทล",
+      "ja": "ハンテール",
+      "ko": "헌테일",
+      "ru": "Хантэйл",
+      "zh_hans": "猎斑鱼",
+      "zh_hant": "獵斑魚"
+    },
     "ranking": 555,
     "moves": {
       "fastMoves": [
@@ -11344,7 +13390,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Gorebyss",
+    "speciesName": {
+      "de": "Saganabyss",
+      "fr": "Rosabyss",
+      "en": "Gorebyss",
+      "es": "Gorebyss",
+      "th": "ซาคุราบีส",
+      "ja": "サクラビス",
+      "ko": "분홍장이",
+      "ru": "Горебисс",
+      "zh_hans": "樱花鱼",
+      "zh_hant": "櫻花魚"
+    },
     "ranking": 427,
     "moves": {
       "fastMoves": [
@@ -11388,7 +13445,18 @@
     "tags": [
       "regional"
     ],
-    "speciesName": "Relicanth",
+    "speciesName": {
+      "de": "Relicanth",
+      "fr": "Relicanth",
+      "en": "Relicanth",
+      "es": "Relicanth",
+      "th": "จีแลนซ์",
+      "ja": "ジーランス",
+      "ko": "시라칸",
+      "ru": "Реликант",
+      "zh_hans": "古空棘鱼",
+      "zh_hant": "古空棘魚"
+    },
     "ranking": 606,
     "moves": {
       "fastMoves": [
@@ -11429,7 +13497,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Luvdisc"
+    "speciesName": {
+      "de": "Liebiskus",
+      "fr": "Lovdisc",
+      "en": "Luvdisc",
+      "es": "Luvdisc",
+      "th": "เลิฟคัส",
+      "ja": "ラブカス",
+      "ko": "사랑동이",
+      "ru": "Лювдиск",
+      "zh_hans": "爱心鱼",
+      "zh_hant": "愛心魚"
+    }
   },
   "bagon": {
     "legal": false,
@@ -11485,7 +13564,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Salamence",
+    "speciesName": {
+      "de": "Brutalanda",
+      "fr": "Drattak",
+      "en": "Salamence",
+      "es": "Salamence",
+      "th": "โบมันเดอร์",
+      "ja": "ボーマンダ",
+      "ko": "보만다",
+      "ru": "Саламенс",
+      "zh_hans": "暴飞龙",
+      "zh_hant": "暴飛龍"
+    },
     "ranking": 548,
     "moves": {
       "fastMoves": [
@@ -11537,7 +13627,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Salamence (Shadow)",
+    "speciesName": {
+      "de": "Brutalanda (Schatten)",
+      "fr": "Drattak (Ombre)",
+      "en": "Salamence (Shadow)",
+      "es": "Salamence (Oscuro)",
+      "th": "โบมันเดอร์ (Shadow)",
+      "ja": "ボーマンダ (Shadow)",
+      "ko": "보만다 (Shadow)",
+      "ru": "Саламенс (Shadow)",
+      "zh_hans": "暴飞龙 (Shadow)",
+      "zh_hant": "暴飛龍 (Shadow)"
+    },
     "ranking": 592,
     "moves": {
       "fastMoves": [
@@ -11912,7 +14013,18 @@
     "tags": [
       "starter"
     ],
-    "speciesName": "Piplup",
+    "speciesName": {
+      "de": "Plinfa",
+      "fr": "Tiplouf",
+      "en": "Piplup",
+      "es": "Piplup",
+      "th": "โพจจามะ",
+      "ja": "ポッチャマ",
+      "ko": "팽도리",
+      "ru": "Пиплуп",
+      "zh_hans": "波加曼",
+      "zh_hant": "波加曼"
+    },
     "ranking": 405,
     "moves": {
       "fastMoves": [
@@ -11956,7 +14068,18 @@
     "tags": [
       "starter"
     ],
-    "speciesName": "Prinplup",
+    "speciesName": {
+      "de": "Pliprin",
+      "fr": "Prinplouf",
+      "en": "Prinplup",
+      "es": "Prinplup",
+      "th": "โพจไทชิ",
+      "ja": "ポッタイシ",
+      "ko": "팽태자",
+      "ru": "Принплуп",
+      "zh_hans": "波皇子",
+      "zh_hant": "波皇子"
+    },
     "ranking": 560,
     "moves": {
       "fastMoves": [
@@ -12000,7 +14123,18 @@
     "tags": [
       "starter"
     ],
-    "speciesName": "Empoleon",
+    "speciesName": {
+      "de": "Impoleon",
+      "fr": "Pingoléon",
+      "en": "Empoleon",
+      "es": "Empoleon",
+      "th": "เอ็มเพลท์",
+      "ja": "エンペルト",
+      "ko": "엠페르트",
+      "ru": "Эмполеон",
+      "zh_hans": "帝王拿波",
+      "zh_hant": "帝王拿波"
+    },
     "ranking": 648,
     "moves": {
       "fastMoves": [
@@ -12052,7 +14186,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Starly"
+    "speciesName": {
+      "de": "Staralili",
+      "fr": "Étourmi",
+      "en": "Starly",
+      "es": "Starly",
+      "th": "มุคคูรุ",
+      "ja": "ムックル",
+      "ko": "찌르꼬",
+      "ru": "Старли",
+      "zh_hans": "姆克儿",
+      "zh_hant": "姆克兒"
+    }
   },
   "starly_shadow": {
     "legal": true,
@@ -12064,7 +14209,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Starly (Shadow)"
+    "speciesName": {
+      "de": "Staralili (Schatten)",
+      "fr": "Étourmi (Ombre)",
+      "en": "Starly (Shadow)",
+      "es": "Starly (Oscuro)",
+      "th": "มุคคูรุ (Shadow)",
+      "ja": "ムックル (Shadow)",
+      "ko": "찌르꼬 (Shadow)",
+      "ru": "Старли (Shadow)",
+      "zh_hans": "姆克儿 (Shadow)",
+      "zh_hant": "姆克兒 (Shadow)"
+    }
   },
   "staravia": {
     "legal": true,
@@ -12076,7 +14232,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Staravia",
+    "speciesName": {
+      "de": "Staravia",
+      "fr": "Étourvol",
+      "en": "Staravia",
+      "es": "Staravia",
+      "th": "มุคูเบิร์ด",
+      "ja": "ムクバード",
+      "ko": "찌르버드",
+      "ru": "Старавия",
+      "zh_hans": "姆克鸟",
+      "zh_hant": "姆克鳥"
+    },
     "ranking": 485,
     "moves": {
       "fastMoves": [
@@ -12124,7 +14291,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Staravia (Shadow)",
+    "speciesName": {
+      "de": "Staravia (Schatten)",
+      "fr": "Étourvol (Ombre)",
+      "en": "Staravia (Shadow)",
+      "es": "Staravia (Oscuro)",
+      "th": "มุคูเบิร์ด (Shadow)",
+      "ja": "ムクバード (Shadow)",
+      "ko": "찌르버드 (Shadow)",
+      "ru": "Старавия (Shadow)",
+      "zh_hans": "姆克鸟 (Shadow)",
+      "zh_hant": "姆克鳥 (Shadow)"
+    },
     "ranking": 471,
     "moves": {
       "fastMoves": [
@@ -12172,7 +14350,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Staraptor",
+    "speciesName": {
+      "de": "Staraptor",
+      "fr": "Étouraptor",
+      "en": "Staraptor",
+      "es": "Staraptor",
+      "th": "มุคูฮอว์ก",
+      "ja": "ムクホーク",
+      "ko": "찌르호크",
+      "ru": "Стараптор",
+      "zh_hans": "姆克鹰",
+      "zh_hant": "姆克鷹"
+    },
     "ranking": 474,
     "moves": {
       "fastMoves": [
@@ -12216,7 +14405,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Staraptor (Shadow)",
+    "speciesName": {
+      "de": "Staraptor (Schatten)",
+      "fr": "Étouraptor (Ombre)",
+      "en": "Staraptor (Shadow)",
+      "es": "Staraptor (Oscuro)",
+      "th": "มุคูฮอว์ก (Shadow)",
+      "ja": "ムクホーク (Shadow)",
+      "ko": "찌르호크 (Shadow)",
+      "ru": "Стараптор (Shadow)",
+      "zh_hans": "姆克鹰 (Shadow)",
+      "zh_hant": "姆克鷹 (Shadow)"
+    },
     "ranking": 456,
     "moves": {
       "fastMoves": [
@@ -12286,7 +14486,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Bibarel",
+    "speciesName": {
+      "de": "Bidifas",
+      "fr": "Castorno",
+      "en": "Bibarel",
+      "es": "Bibarel",
+      "th": "บีดารุ",
+      "ja": "ビーダル",
+      "ko": "비버통",
+      "ru": "Бибарел",
+      "zh_hans": "大尾狸",
+      "zh_hant": "大尾狸"
+    },
     "ranking": 568,
     "moves": {
       "fastMoves": [
@@ -12334,7 +14545,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Bibarel (Shadow)",
+    "speciesName": {
+      "de": "Bidifas (Schatten)",
+      "fr": "Castorno (Ombre)",
+      "en": "Bibarel (Shadow)",
+      "es": "Bibarel (Oscuro)",
+      "th": "บีดารุ (Shadow)",
+      "ja": "ビーダル (Shadow)",
+      "ko": "비버통 (Shadow)",
+      "ru": "Бибарел (Shadow)",
+      "zh_hans": "大尾狸 (Shadow)",
+      "zh_hant": "大尾狸 (Shadow)"
+    },
     "ranking": 561,
     "moves": {
       "fastMoves": [
@@ -12515,7 +14737,18 @@
       "bug",
       "flying"
     ],
-    "speciesName": "Mothim",
+    "speciesName": {
+      "de": "Moterpel",
+      "fr": "Papilord",
+      "en": "Mothim",
+      "es": "Mothim",
+      "th": "กาเมล",
+      "ja": "ガーメイル",
+      "ko": "나메일",
+      "ru": "Мотим",
+      "zh_hans": "绅士蛾",
+      "zh_hant": "紳士蛾"
+    },
     "ranking": 449,
     "moves": {
       "fastMoves": [
@@ -12556,7 +14789,18 @@
       "bug",
       "flying"
     ],
-    "speciesName": "Combee"
+    "speciesName": {
+      "de": "Wadribie",
+      "fr": "Apitrini",
+      "en": "Combee",
+      "es": "Combee",
+      "th": "มิทซึฮันนี",
+      "ja": "ミツハニー",
+      "ko": "세꿀버리",
+      "ru": "Комби",
+      "zh_hans": "三蜜蜂",
+      "zh_hant": "三蜜蜂"
+    }
   },
   "vespiquen": {
     "legal": true,
@@ -12565,7 +14809,18 @@
       "bug",
       "flying"
     ],
-    "speciesName": "Vespiquen",
+    "speciesName": {
+      "de": "Honweisel",
+      "fr": "Apireine",
+      "en": "Vespiquen",
+      "es": "Vespiquen",
+      "th": "บีควิน",
+      "ja": "ビークイン",
+      "ko": "비퀸",
+      "ru": "Веспиквин",
+      "zh_hans": "蜂后",
+      "zh_hant": "蜂后"
+    },
     "ranking": 609,
     "moves": {
       "fastMoves": [
@@ -12633,7 +14888,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Buizel"
+    "speciesName": {
+      "de": "Bamelin",
+      "fr": "Mustébouée",
+      "en": "Buizel",
+      "es": "Buizel",
+      "th": "บุยเซล",
+      "ja": "ブイゼル",
+      "ko": "브이젤",
+      "ru": "Буизел",
+      "zh_hans": "泳气鼬",
+      "zh_hant": "泳氣鼬"
+    }
   },
   "floatzel": {
     "legal": true,
@@ -12642,7 +14908,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Floatzel",
+    "speciesName": {
+      "de": "Bojelin",
+      "fr": "Mustéflott",
+      "en": "Floatzel",
+      "es": "Floatzel",
+      "th": "โฟลเซล",
+      "ja": "フローゼル",
+      "ko": "플로젤",
+      "ru": "Флотцел",
+      "zh_hans": "浮潜鼬",
+      "zh_hant": "浮潛鼬"
+    },
     "ranking": 507,
     "moves": {
       "fastMoves": [
@@ -12707,7 +14984,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Shellos (East)",
+    "speciesName": {
+      "de": "Schalellos (Osten)",
+      "fr": "Sancoki (East)",
+      "en": "Shellos (East)",
+      "es": "Shellos (Este)",
+      "th": "คารานะคูชิ (East)",
+      "ja": "カラナクシ (East)",
+      "ko": "깝질무 (East)",
+      "ru": "Шеллос (East)",
+      "zh_hans": "无壳海牛 (East)",
+      "zh_hant": "無殼海牛 (East)"
+    },
     "ranking": 481,
     "moves": {
       "fastMoves": [
@@ -12808,7 +15096,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Shellos (West)",
+    "speciesName": {
+      "de": "Schalellos (Westen)",
+      "fr": "Sancoki (West)",
+      "en": "Shellos (West)",
+      "es": "Shellos (Oeste)",
+      "th": "คารานะคูชิ (West)",
+      "ja": "カラナクシ (West)",
+      "ko": "깝질무 (West)",
+      "ru": "Шеллос (West)",
+      "zh_hans": "无壳海牛 (West)",
+      "zh_hant": "無殼海牛 (West)"
+    },
     "ranking": 481,
     "moves": {
       "fastMoves": [
@@ -12912,7 +15211,18 @@
     "tags": [
       "regional"
     ],
-    "speciesName": "Gastrodon (East)",
+    "speciesName": {
+      "de": "Gastrodon (Osten)",
+      "fr": "Tritosor (East)",
+      "en": "Gastrodon (East)",
+      "es": "Gastrodon (Este)",
+      "th": "ไทรโทดอน (East)",
+      "ja": "トリトドン (East)",
+      "ko": "트리토돈 (East)",
+      "ru": "Гастродон (East)",
+      "zh_hans": "海牛兽 (East)",
+      "zh_hant": "海牛獸 (East)"
+    },
     "ranking": 619,
     "moves": {
       "fastMoves": [
@@ -13020,7 +15330,18 @@
     "tags": [
       "regional"
     ],
-    "speciesName": "Gastrodon (West)",
+    "speciesName": {
+      "de": "Gastrodon (Westen)",
+      "fr": "Tritosor (West)",
+      "en": "Gastrodon (West)",
+      "es": "Gastrodon (Oeste)",
+      "th": "ไทรโทดอน (West)",
+      "ja": "トリトドン (West)",
+      "ko": "트리토돈 (West)",
+      "ru": "Гастродон (West)",
+      "zh_hans": "海牛兽 (West)",
+      "zh_hant": "海牛獸 (West)"
+    },
     "ranking": 619,
     "moves": {
       "fastMoves": [
@@ -13147,7 +15468,18 @@
       "ghost",
       "flying"
     ],
-    "speciesName": "Drifloon",
+    "speciesName": {
+      "de": "Driftlon",
+      "fr": "Baudrive",
+      "en": "Drifloon",
+      "es": "Drifloon",
+      "th": "ฟูวันเต",
+      "ja": "フワンテ",
+      "ko": "흔들풍손",
+      "ru": "Дрифлун",
+      "zh_hans": "飘飘球",
+      "zh_hant": "飄飄球"
+    },
     "ranking": 601,
     "moves": {
       "fastMoves": [
@@ -13188,7 +15520,18 @@
       "ghost",
       "flying"
     ],
-    "speciesName": "Drifblim",
+    "speciesName": {
+      "de": "Drifzepeli",
+      "fr": "Grodrive",
+      "en": "Drifblim",
+      "es": "Drifblim",
+      "th": "ฟูวาไรด์",
+      "ja": "フワライド",
+      "ko": "둥실라이드",
+      "ru": "Дрифблим",
+      "zh_hans": "附和气球",
+      "zh_hant": "附和氣球"
+    },
     "ranking": 654,
     "moves": {
       "fastMoves": [
@@ -13281,7 +15624,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Honchkrow",
+    "speciesName": {
+      "de": "Kramshef",
+      "fr": "Corboss",
+      "en": "Honchkrow",
+      "es": "Honchkrow",
+      "th": "ดอนคาราซึ",
+      "ja": "ドンカラス",
+      "ko": "돈크로우",
+      "ru": "Хончкроу",
+      "zh_hans": "乌鸦头头",
+      "zh_hant": "烏鴉頭頭"
+    },
     "ranking": 615,
     "moves": {
       "fastMoves": [
@@ -13329,7 +15683,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Honchkrow (Shadow)",
+    "speciesName": {
+      "de": "Kramshef (Schatten)",
+      "fr": "Corboss (Ombre)",
+      "en": "Honchkrow (Shadow)",
+      "es": "Honchkrow (Oscuro)",
+      "th": "ดอนคาราซึ (Shadow)",
+      "ja": "ドンカラス (Shadow)",
+      "ko": "돈크로우 (Shadow)",
+      "ru": "Хончкроу (Shadow)",
+      "zh_hans": "乌鸦头头 (Shadow)",
+      "zh_hant": "烏鴉頭頭 (Shadow)"
+    },
     "ranking": 557,
     "moves": {
       "fastMoves": [
@@ -13470,7 +15835,18 @@
       "psychic",
       "fairy"
     ],
-    "speciesName": "Mime (Jr)"
+    "speciesName": {
+      "de": "Pantimimi",
+      "fr": "Jr",
+      "en": "Mime Jr.",
+      "es": "Mime Jr.",
+      "th": "มาเนเน",
+      "ja": "マネネ",
+      "ko": "흉내내",
+      "ru": "Майм Младший",
+      "zh_hans": "魔尼尼",
+      "zh_hant": "魔尼尼"
+    }
   },
   "happiny": {
     "legal": false,
@@ -13490,7 +15866,18 @@
     "tags": [
       "regional"
     ],
-    "speciesName": "Chatot",
+    "speciesName": {
+      "de": "Plaudagei",
+      "fr": "Pijako",
+      "en": "Chatot",
+      "es": "Chatot",
+      "th": "เพราป",
+      "ja": "ペラップ",
+      "ko": "페라페",
+      "ru": "Чатот",
+      "zh_hans": "聒噪鸟",
+      "zh_hant": "聒噪鳥"
+    },
     "ranking": 430,
     "moves": {
       "fastMoves": [
@@ -13674,7 +16061,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Finneon"
+    "speciesName": {
+      "de": "Finneon",
+      "fr": "Écayon",
+      "en": "Finneon",
+      "es": "Finneon",
+      "th": "เคโคโอ",
+      "ja": "ケイコウオ",
+      "ko": "형광어",
+      "ru": "Финнеон",
+      "zh_hans": "萤光鱼",
+      "zh_hant": "螢光魚"
+    }
   },
   "lumineon": {
     "legal": true,
@@ -13683,7 +16081,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Lumineon",
+    "speciesName": {
+      "de": "Lumineon",
+      "fr": "Luminéon",
+      "en": "Lumineon",
+      "es": "Lumineon",
+      "th": "เนโอแลนท์",
+      "ja": "ネオラント",
+      "ko": "네오라이트",
+      "ru": "Люминеон",
+      "zh_hans": "霓虹鱼",
+      "zh_hant": "霓虹魚"
+    },
     "ranking": 469,
     "moves": {
       "fastMoves": [
@@ -13724,7 +16133,18 @@
       "water",
       "flying"
     ],
-    "speciesName": "Mantyke",
+    "speciesName": {
+      "de": "Mantirps",
+      "fr": "Babimanta",
+      "en": "Mantyke",
+      "es": "Mantyke",
+      "th": "ทาแมนทา",
+      "ja": "タマンタ",
+      "ko": "타만타",
+      "ru": "Мантик",
+      "zh_hans": "小球飞鱼",
+      "zh_hant": "小球飛魚"
+    },
     "ranking": 552,
     "moves": {
       "fastMoves": [
@@ -13947,7 +16367,18 @@
       "fairy",
       "flying"
     ],
-    "speciesName": "Togekiss",
+    "speciesName": {
+      "de": "Togekiss",
+      "fr": "Togekiss",
+      "en": "Togekiss",
+      "es": "Togekiss",
+      "th": "โทเกคิส",
+      "ja": "トゲキッス",
+      "ko": "토게키스",
+      "ru": "Тогекисс",
+      "zh_hans": "波克基斯",
+      "zh_hant": "波克基斯"
+    },
     "ranking": 649,
     "moves": {
       "fastMoves": [
@@ -14056,7 +16487,18 @@
       "bug",
       "flying"
     ],
-    "speciesName": "Yanmega",
+    "speciesName": {
+      "de": "Yanmega",
+      "fr": "Yanméga",
+      "en": "Yanmega",
+      "es": "Yanmega",
+      "th": "เมกกะยันมะ",
+      "ja": "メガヤンマ",
+      "ko": "메가자리",
+      "ru": "Янмега",
+      "zh_hans": "梅卡阳玛",
+      "zh_hant": "梅卡陽瑪"
+    },
     "ranking": 468,
     "moves": {
       "fastMoves": [
@@ -14116,7 +16558,18 @@
     "tags": [
       "shadoweligible"
     ],
-    "speciesName": "Gliscor",
+    "speciesName": {
+      "de": "Skorgro",
+      "fr": "Scorvol",
+      "en": "Gliscor",
+      "es": "Gliscor",
+      "th": "ไกลออน",
+      "ja": "グライオン",
+      "ko": "글라이온",
+      "ru": "Глайскор",
+      "zh_hans": "天蝎王",
+      "zh_hant": "天蠍王"
+    },
     "ranking": 633,
     "moves": {
       "fastMoves": [
@@ -14164,7 +16617,18 @@
     "tags": [
       "shadow"
     ],
-    "speciesName": "Gliscor (Shadow)",
+    "speciesName": {
+      "de": "Skorgro (Schatten)",
+      "fr": "Scorvol (Ombre)",
+      "en": "Gliscor (Shadow)",
+      "es": "Gliscor (Oscuro)",
+      "th": "ไกลออน (Shadow)",
+      "ja": "グライオン (Shadow)",
+      "ko": "글라이온 (Shadow)",
+      "ru": "Глайскор (Shadow)",
+      "zh_hans": "天蝎王 (Shadow)",
+      "zh_hant": "天蠍王 (Shadow)"
+    },
     "ranking": 626,
     "moves": {
       "fastMoves": [
@@ -14386,7 +16850,18 @@
       "electric",
       "water"
     ],
-    "speciesName": "Rotom (Wash)",
+    "speciesName": {
+      "de": "Rotom (Wasch)",
+      "fr": "Motisma (Wash)",
+      "en": "Rotom (Wash)",
+      "es": "Rotom (Forma lavado)",
+      "th": "โรตอม (Wash)",
+      "ja": "ロトム (Wash)",
+      "ko": "로토무 (Wash)",
+      "ru": "Ротом (Wash)",
+      "zh_hans": "洛托姆 (Wash)",
+      "zh_hant": "洛托姆 (Wash)"
+    },
     "ranking": 475,
     "moves": {
       "fastMoves": [
@@ -14872,7 +17347,18 @@
     "tags": [
       "starter"
     ],
-    "speciesName": "Oshawott"
+    "speciesName": {
+      "de": "Ottaro",
+      "fr": "Moustillon",
+      "en": "Oshawott",
+      "es": "Oshawott",
+      "th": "มิจูมารุ",
+      "ja": "ミジュマル",
+      "ko": "수댕이",
+      "ru": "Ошавотт",
+      "zh_hans": "水水獭",
+      "zh_hant": "水水獺"
+    }
   },
   "dewott": {
     "legal": true,
@@ -14884,7 +17370,18 @@
     "tags": [
       "starter"
     ],
-    "speciesName": "Dewott",
+    "speciesName": {
+      "de": "Zwottronin",
+      "fr": "Mateloutre",
+      "en": "Dewott",
+      "es": "Dewott",
+      "th": "ฟุตาจิมารุ",
+      "ja": "フタチマル",
+      "ko": "쌍검자비",
+      "ru": "Девотт",
+      "zh_hans": "双刃丸",
+      "zh_hant": "雙刃丸"
+    },
     "ranking": 561,
     "moves": {
       "fastMoves": [
@@ -14928,7 +17425,18 @@
     "tags": [
       "starter"
     ],
-    "speciesName": "Samurott",
+    "speciesName": {
+      "de": "Admurai",
+      "fr": "Clamiral",
+      "en": "Samurott",
+      "es": "Samurott",
+      "th": "ไดเคนคิ",
+      "ja": "ダイケンキ",
+      "ko": "대검귀",
+      "ru": "Самуротт",
+      "zh_hans": "大剑鬼",
+      "zh_hant": "大劍鬼"
+    },
     "ranking": 400,
     "moves": {
       "fastMoves": [
@@ -15072,7 +17580,18 @@
     "tags": [
       "regional"
     ],
-    "speciesName": "Panpour"
+    "speciesName": {
+      "de": "Sodamak",
+      "fr": "Flotajou",
+      "en": "Panpour",
+      "es": "Panpour",
+      "th": "ฮิยัปปุ",
+      "ja": "ヒヤップ",
+      "ko": "앗차프",
+      "ru": "Панпур",
+      "zh_hans": "冷水猴",
+      "zh_hant": "冷水猴"
+    }
   },
   "simipour": {
     "legal": true,
@@ -15084,7 +17603,18 @@
     "tags": [
       "regional"
     ],
-    "speciesName": "Simipour",
+    "speciesName": {
+      "de": "Sodachita",
+      "fr": "Flotoutan",
+      "en": "Simipour",
+      "es": "Simipour",
+      "th": "ฮิยักกี",
+      "ja": "ヒヤッキー",
+      "ko": "앗차키",
+      "ru": "Симипур",
+      "zh_hans": "冷水猿",
+      "zh_hant": "冷水猿"
+    },
     "ranking": 512,
     "moves": {
       "fastMoves": [
@@ -15141,7 +17671,18 @@
       "normal",
       "flying"
     ],
-    "speciesName": "Pidove"
+    "speciesName": {
+      "de": "Dusselgurr",
+      "fr": "Poichigeon",
+      "en": "Pidove",
+      "es": "Pidove",
+      "th": "มาเมพาโตะ",
+      "ja": "マメパト",
+      "ko": "콩둘기",
+      "ru": "Пидав",
+      "zh_hans": "豆豆鸽",
+      "zh_hant": "豆豆鴿"
+    }
   },
   "tranquill": {
     "legal": true,
@@ -15150,7 +17691,18 @@
       "normal",
       "flying"
     ],
-    "speciesName": "Tranquill",
+    "speciesName": {
+      "de": "Navitaub",
+      "fr": "Colombeau",
+      "en": "Tranquill",
+      "es": "Tranquill",
+      "th": "ฮาโทโบ",
+      "ja": "ハトーボー",
+      "ko": "유토브",
+      "ru": "Транквилл",
+      "zh_hans": "波波鸽",
+      "zh_hant": "波波鴿"
+    },
     "ranking": 521,
     "moves": {
       "fastMoves": [
@@ -15191,7 +17743,18 @@
       "normal",
       "flying"
     ],
-    "speciesName": "Unfezant",
+    "speciesName": {
+      "de": "Fasasnob",
+      "fr": "Déflaisan",
+      "en": "Unfezant",
+      "es": "Unfezant",
+      "th": "เคนโฮโล",
+      "ja": "ケンホロウ",
+      "ko": "켄호로우",
+      "ru": "Анфезант",
+      "zh_hans": "轰隆雉鸡",
+      "zh_hant": "轟隆雉雞"
+    },
     "ranking": 468,
     "moves": {
       "fastMoves": [
@@ -15272,7 +17835,18 @@
       "psychic",
       "flying"
     ],
-    "speciesName": "Woobat"
+    "speciesName": {
+      "de": "Fleknoil",
+      "fr": "Chovsourir",
+      "en": "Woobat",
+      "es": "Woobat",
+      "th": "โคโรโมริ",
+      "ja": "コロモリ",
+      "ko": "또르박쥐",
+      "ru": "Вубэт",
+      "zh_hans": "滚滚蝙蝠",
+      "zh_hant": "滾滾蝙蝠"
+    }
   },
   "swoobat": {
     "legal": true,
@@ -15281,7 +17855,18 @@
       "psychic",
       "flying"
     ],
-    "speciesName": "Swoobat",
+    "speciesName": {
+      "de": "Fletiamo",
+      "fr": "Rhinolove",
+      "en": "Swoobat",
+      "es": "Swoobat",
+      "th": "โคโคโรโมริ",
+      "ja": "ココロモリ",
+      "ko": "맘박쥐",
+      "ru": "Свубэт",
+      "zh_hans": "心蝙蝠",
+      "zh_hant": "心蝙蝠"
+    },
     "ranking": 505,
     "moves": {
       "fastMoves": [
@@ -15370,7 +17955,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Tympole"
+    "speciesName": {
+      "de": "Schallquap",
+      "fr": "Tritonde",
+      "en": "Tympole",
+      "es": "Tympole",
+      "th": "โอทามาโร",
+      "ja": "オタマロ",
+      "ko": "동챙이",
+      "ru": "Тимпол",
+      "zh_hans": "圆蝌蚪",
+      "zh_hant": "圓蝌蚪"
+    }
   },
   "palpitoad": {
     "legal": true,
@@ -15379,7 +17975,18 @@
       "water",
       "ground"
     ],
-    "speciesName": "Palpitoad",
+    "speciesName": {
+      "de": "Mebrana",
+      "fr": "Batracné",
+      "en": "Palpitoad",
+      "es": "Palpitoad",
+      "th": "กามาการุ",
+      "ja": "ガマガル",
+      "ko": "두까비",
+      "ru": "Палпитоад",
+      "zh_hans": "蓝蟾蜍",
+      "zh_hant": "藍蟾蜍"
+    },
     "ranking": 550,
     "moves": {
       "fastMoves": [
@@ -15420,7 +18027,18 @@
       "water",
       "ground"
     ],
-    "speciesName": "Seismitoad",
+    "speciesName": {
+      "de": "Branawarz",
+      "fr": "Crapustule",
+      "en": "Seismitoad",
+      "es": "Seismitoad",
+      "th": "กามาเกโรเกะ",
+      "ja": "ガマゲロゲ",
+      "ko": "두빅굴",
+      "ru": "Сейсмитоад",
+      "zh_hans": "蟾蜍王",
+      "zh_hant": "蟾蜍王"
+    },
     "ranking": 578,
     "moves": {
       "fastMoves": [
@@ -15525,7 +18143,18 @@
       "grass",
       "fairy"
     ],
-    "speciesName": "Cottonee"
+    "speciesName": {
+      "de": "Waumboll",
+      "fr": "Doudouvet",
+      "en": "Cottonee",
+      "es": "Cottonee",
+      "th": "โมนเมน",
+      "ja": "モンメン",
+      "ko": "소미안",
+      "ru": "Коттони",
+      "zh_hans": "木棉球",
+      "zh_hant": "木棉球"
+    }
   },
   "whimsicott": {
     "legal": true,
@@ -15534,7 +18163,18 @@
       "grass",
       "fairy"
     ],
-    "speciesName": "Whimsicott",
+    "speciesName": {
+      "de": "Elfun",
+      "fr": "Farfaduvet",
+      "en": "Whimsicott",
+      "es": "Whimsicott",
+      "th": "เอลฟุน",
+      "ja": "エルフーン",
+      "ko": "엘풍",
+      "ru": "Вимсискотт",
+      "zh_hans": "风妖精",
+      "zh_hant": "風妖精"
+    },
     "ranking": 646,
     "moves": {
       "fastMoves": [
@@ -15594,7 +18234,18 @@
     "tags": [
       "regional"
     ],
-    "speciesName": "Basculin",
+    "speciesName": {
+      "de": "Barschuft",
+      "fr": "Bargantua",
+      "en": "Basculin",
+      "es": "Basculin",
+      "th": "บาสราโอ",
+      "ja": "バスラオ",
+      "ko": "배쓰나이",
+      "ru": "Баскулин",
+      "zh_hans": "勇士鲈鱼",
+      "zh_hant": "勇士鱸魚"
+    },
     "ranking": 529,
     "moves": {
       "fastMoves": [
@@ -15766,7 +18417,18 @@
     "tags": [
       "regional"
     ],
-    "speciesName": "Sigilyph",
+    "speciesName": {
+      "de": "Symvolara",
+      "fr": "Cryptéro",
+      "en": "Sigilyph",
+      "es": "Sigilyph",
+      "th": "ซิมโบลา",
+      "ja": "シンボラー",
+      "ko": "심보러",
+      "ru": "Сиджилиф",
+      "zh_hans": "象征鸟",
+      "zh_hant": "象徵鳥"
+    },
     "ranking": 450,
     "moves": {
       "fastMoves": [
@@ -15838,7 +18500,18 @@
       "water",
       "rock"
     ],
-    "speciesName": "Tirtouga",
+    "speciesName": {
+      "de": "Galapaflos",
+      "fr": "Carapagos",
+      "en": "Tirtouga",
+      "es": "Tirtouga",
+      "th": "โปรโตกา",
+      "ja": "プロトーガ",
+      "ko": "프로토가",
+      "ru": "Тиртуга",
+      "zh_hans": "原盖海龟",
+      "zh_hant": "原蓋海龜"
+    },
     "ranking": 597,
     "moves": {
       "fastMoves": [
@@ -15879,7 +18552,18 @@
       "water",
       "rock"
     ],
-    "speciesName": "Carracosta",
+    "speciesName": {
+      "de": "Karippas",
+      "fr": "Mégapagos",
+      "en": "Carracosta",
+      "es": "Carracosta",
+      "th": "อบาโกรา",
+      "ja": "アバゴーラ",
+      "ko": "늑골라",
+      "ru": "Карракоста",
+      "zh_hans": "肋骨海龟",
+      "zh_hant": "肋骨海龜"
+    },
     "ranking": 577,
     "moves": {
       "fastMoves": [
@@ -15920,7 +18604,18 @@
       "rock",
       "flying"
     ],
-    "speciesName": "Archen",
+    "speciesName": {
+      "de": "Flapteryx",
+      "fr": "Arkéapti",
+      "en": "Archen",
+      "es": "Archen",
+      "th": "อาเคน",
+      "ja": "アーケン",
+      "ko": "아켄",
+      "ru": "Аркен",
+      "zh_hans": "始祖小鸟",
+      "zh_hant": "始祖小鳥"
+    },
     "ranking": 510,
     "moves": {
       "fastMoves": [
@@ -15961,7 +18656,18 @@
       "rock",
       "flying"
     ],
-    "speciesName": "Archeops",
+    "speciesName": {
+      "de": "Aeropteryx",
+      "fr": "Aéroptéryx",
+      "en": "Archeops",
+      "es": "Archeops",
+      "th": "อาเคโอส",
+      "ja": "アーケオス",
+      "ko": "아케오스",
+      "ru": "Аркеопс",
+      "zh_hans": "始祖大鸟",
+      "zh_hant": "始祖大鳥"
+    },
     "ranking": 507,
     "moves": {
       "fastMoves": [
@@ -16104,7 +18810,18 @@
       "water",
       "flying"
     ],
-    "speciesName": "Ducklett"
+    "speciesName": {
+      "de": "Piccolente",
+      "fr": "Couaneton",
+      "en": "Ducklett",
+      "es": "Ducklett",
+      "th": "โคอารูฮิ",
+      "ja": "コアルヒー",
+      "ko": "꼬지보리",
+      "ru": "Даклетт",
+      "zh_hans": "鸭宝宝",
+      "zh_hant": "鴨寶寶"
+    }
   },
   "swanna": {
     "legal": true,
@@ -16113,7 +18830,18 @@
       "water",
       "flying"
     ],
-    "speciesName": "Swanna",
+    "speciesName": {
+      "de": "Swaroness",
+      "fr": "Lakmécygne",
+      "en": "Swanna",
+      "es": "Swanna",
+      "th": "สวอนนา",
+      "ja": "スワンナ",
+      "ko": "스완나",
+      "ru": "Сванна",
+      "zh_hans": "首席天鹅",
+      "zh_hant": "首席天鵝"
+    },
     "ranking": 434,
     "moves": {
       "fastMoves": [
@@ -16194,7 +18922,18 @@
       "electric",
       "flying"
     ],
-    "speciesName": "Emolga",
+    "speciesName": {
+      "de": "Emolga",
+      "fr": "Emolga",
+      "en": "Emolga",
+      "es": "Emolga",
+      "th": "เอมอนกา",
+      "ja": "エモンガ",
+      "ko": "에몽가",
+      "ru": "Эмолга",
+      "zh_hans": "电飞鼠",
+      "zh_hant": "電飛鼠"
+    },
     "ranking": 563,
     "moves": {
       "fastMoves": [
@@ -16267,7 +19006,18 @@
       "water",
       "ghost"
     ],
-    "speciesName": "Frillish",
+    "speciesName": {
+      "de": "Quabbel",
+      "fr": "Viskuse",
+      "en": "Frillish",
+      "es": "Frillish",
+      "th": "พูรูริล",
+      "ja": "プルリル",
+      "ko": "탱그릴",
+      "ru": "Фрилиш",
+      "zh_hans": "轻飘飘",
+      "zh_hant": "輕飄飄"
+    },
     "ranking": 505,
     "moves": {
       "fastMoves": [
@@ -16308,7 +19058,18 @@
       "water",
       "ghost"
     ],
-    "speciesName": "Jellicent",
+    "speciesName": {
+      "de": "Apoquallyp",
+      "fr": "Moyade",
+      "en": "Jellicent",
+      "es": "Jellicent",
+      "th": "บูรุนเจล",
+      "ja": "ブルンゲル",
+      "ko": "탱탱겔",
+      "ru": "Джеллисент",
+      "zh_hans": "胖嘟嘟",
+      "zh_hant": "胖嘟嘟"
+    },
     "ranking": 692,
     "moves": {
       "fastMoves": [
@@ -16349,7 +19110,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Alomomola",
+    "speciesName": {
+      "de": "Mamolida",
+      "fr": "Mamanbo",
+      "en": "Alomomola",
+      "es": "Alomomola",
+      "th": "มามันโบ",
+      "ja": "ママンボウ",
+      "ko": "맘복치",
+      "ru": "Аломомола",
+      "zh_hans": "保母曼波",
+      "zh_hant": "保母曼波"
+    },
     "ranking": 600,
     "moves": {
       "fastMoves": [
@@ -16723,7 +19495,18 @@
       "normal",
       "flying"
     ],
-    "speciesName": "Rufflet",
+    "speciesName": {
+      "de": "Geronimatz",
+      "fr": "Furaiglon",
+      "en": "Rufflet",
+      "es": "Rufflet",
+      "th": "วาชิบอน",
+      "ja": "ワシボン",
+      "ko": "수리둥보",
+      "ru": "Раффлет",
+      "zh_hans": "毛头小鹰",
+      "zh_hant": "毛頭小鷹"
+    },
     "ranking": 528,
     "moves": {
       "fastMoves": [
@@ -16764,7 +19547,18 @@
       "normal",
       "flying"
     ],
-    "speciesName": "Braviary",
+    "speciesName": {
+      "de": "Washakwil",
+      "fr": "Gueriaigle",
+      "en": "Braviary",
+      "es": "Braviary",
+      "th": "วอร์เกิล",
+      "ja": "ウォーグル",
+      "ko": "워글",
+      "ru": "Брэйвиари",
+      "zh_hans": "勇士鹰",
+      "zh_hant": "勇士鷹"
+    },
     "ranking": 471,
     "moves": {
       "fastMoves": [
@@ -16809,7 +19603,18 @@
       "dark",
       "flying"
     ],
-    "speciesName": "Vullaby",
+    "speciesName": {
+      "de": "Skallyk",
+      "fr": "Vostourno",
+      "en": "Vullaby",
+      "es": "Vullaby",
+      "th": "วัลไจ",
+      "ja": "バルチャイ",
+      "ko": "벌차이",
+      "ru": "Валлаби",
+      "zh_hans": "秃鹰小子",
+      "zh_hant": "禿鷹小子"
+    },
     "ranking": 611,
     "moves": {
       "fastMoves": [
@@ -16850,7 +19655,18 @@
       "dark",
       "flying"
     ],
-    "speciesName": "Mandibuzz",
+    "speciesName": {
+      "de": "Grypheldis",
+      "fr": "Vaututrice",
+      "en": "Mandibuzz",
+      "es": "Mandibuzz",
+      "th": "วัลจีนา",
+      "ja": "バルジーナ",
+      "ko": "버랜지나",
+      "ru": "Мандибазз",
+      "zh_hans": "秃鹰娜",
+      "zh_hant": "禿鷹娜"
+    },
     "ranking": 662,
     "moves": {
       "fastMoves": [
@@ -17277,7 +20093,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Froakie"
+    "speciesName": {
+      "de": "Froxy",
+      "fr": "Grenousse",
+      "en": "Froakie",
+      "es": "Froakie",
+      "th": "เคโรมัตซึ",
+      "ja": "ケロマツ",
+      "ko": "개구마르",
+      "ru": "Фроки",
+      "zh_hans": "呱呱泡蛙",
+      "zh_hant": "呱呱泡蛙"
+    }
   },
   "frogadier": {
     "legal": true,
@@ -17286,7 +20113,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Frogadier",
+    "speciesName": {
+      "de": "Amphizel",
+      "fr": "Croâporal",
+      "en": "Frogadier",
+      "es": "Frogadier",
+      "th": "เกโคกาชิระ",
+      "ja": "ゲコガシラ",
+      "ko": "개굴반장",
+      "ru": "Фрогадир",
+      "zh_hans": "呱头蛙",
+      "zh_hant": "呱頭蛙"
+    },
     "ranking": 493,
     "moves": {
       "fastMoves": [
@@ -17327,7 +20165,18 @@
       "water",
       "dark"
     ],
-    "speciesName": "Greninja",
+    "speciesName": {
+      "de": "Quajutsu",
+      "fr": "Amphinobi",
+      "en": "Greninja",
+      "es": "Greninja",
+      "th": "เก็คโคกะ",
+      "ja": "ゲッコウガ",
+      "ko": "개굴닌자",
+      "ru": "Грениндзя",
+      "zh_hans": "甲贺忍蛙",
+      "zh_hant": "甲賀忍蛙"
+    },
     "ranking": 553,
     "moves": {
       "fastMoves": [
@@ -17388,7 +20237,18 @@
       "normal",
       "flying"
     ],
-    "speciesName": "Fletchling"
+    "speciesName": {
+      "de": "Dartiri",
+      "fr": "Passerouge",
+      "en": "Fletchling",
+      "es": "Fletchling",
+      "th": "ยายาโคมะ",
+      "ja": "ヤヤコマ",
+      "ko": "화살꼬빈",
+      "ru": "Флечлинг",
+      "zh_hans": "小箭雀",
+      "zh_hant": "小箭雀"
+    }
   },
   "fletchinder": {
     "legal": true,
@@ -17397,7 +20257,18 @@
       "fire",
       "flying"
     ],
-    "speciesName": "Fletchinder",
+    "speciesName": {
+      "de": "Dartignis",
+      "fr": "Braisillon",
+      "en": "Fletchinder",
+      "es": "Fletchinder",
+      "th": "ฮิโนยาโคมะ",
+      "ja": "ヒノヤコマ",
+      "ko": "불화살빈",
+      "ru": "Флечиндер",
+      "zh_hans": "火箭雀",
+      "zh_hant": "火箭雀"
+    },
     "ranking": 555,
     "moves": {
       "fastMoves": [
@@ -17442,7 +20313,18 @@
       "fire",
       "flying"
     ],
-    "speciesName": "Talonflame",
+    "speciesName": {
+      "de": "Fiaro",
+      "fr": "Flambusard",
+      "en": "Talonflame",
+      "es": "Talonflame",
+      "th": "ไฟร์แอโรว์",
+      "ja": "ファイアロー",
+      "ko": "파이어로",
+      "ru": "Тэйлонфлейм",
+      "zh_hans": "烈箭鹟",
+      "zh_hant": "烈箭鶲"
+    },
     "ranking": 660,
     "moves": {
       "fastMoves": [
@@ -17694,7 +20576,18 @@
       "fairy",
       "none"
     ],
-    "speciesName": "Spritzee",
+    "speciesName": {
+      "de": "Parfi",
+      "fr": "Fluvetin",
+      "en": "Spritzee",
+      "es": "Spritzee",
+      "th": "ชูชูป",
+      "ja": "シュシュプ",
+      "ko": "슈쁘",
+      "ru": "Спритзи",
+      "zh_hans": "粉香香",
+      "zh_hant": "粉香香"
+    },
     "ranking": 629,
     "moves": {
       "fastMoves": [
@@ -17731,7 +20624,18 @@
       "fairy",
       "none"
     ],
-    "speciesName": "Aromatisse",
+    "speciesName": {
+      "de": "Parfinesse",
+      "fr": "Cocotine",
+      "en": "Aromatisse",
+      "es": "Aromatisse",
+      "th": "เฟรฟุวัน",
+      "ja": "フレフワン",
+      "ko": "프레프티르",
+      "ru": "Ароматизз",
+      "zh_hans": "芳香精",
+      "zh_hant": "芳香精"
+    },
     "ranking": 650,
     "moves": {
       "fastMoves": [
@@ -17776,7 +20680,18 @@
       "fairy",
       "none"
     ],
-    "speciesName": "Swirlix",
+    "speciesName": {
+      "de": "Flauschling",
+      "fr": "Sucroquin",
+      "en": "Swirlix",
+      "es": "Swirlix",
+      "th": "เพร็อพพัฟ",
+      "ja": "ペロッパフ",
+      "ko": "나룸퍼프",
+      "ru": "Свирликс",
+      "zh_hans": "绵绵泡芙",
+      "zh_hant": "綿綿泡芙"
+    },
     "ranking": 307,
     "moves": {
       "fastMoves": [
@@ -17809,7 +20724,18 @@
       "fairy",
       "none"
     ],
-    "speciesName": "Slurpuff",
+    "speciesName": {
+      "de": "Sabbaione",
+      "fr": "Cupcanaille",
+      "en": "Slurpuff",
+      "es": "Slurpuff",
+      "th": "เพโรรีม",
+      "ja": "ペロリーム",
+      "ko": "나루림",
+      "ru": "Сларпафф",
+      "zh_hans": "胖甜妮",
+      "zh_hant": "胖甜妮"
+    },
     "ranking": 649,
     "moves": {
       "fastMoves": [
@@ -17876,7 +20802,18 @@
       "rock",
       "water"
     ],
-    "speciesName": "Binacle"
+    "speciesName": {
+      "de": "Bithora",
+      "fr": "Opermine",
+      "en": "Binacle",
+      "es": "Binacle",
+      "th": "คาเมเทเทะ",
+      "ja": "カメテテ",
+      "ko": "거북손손",
+      "ru": "Бинакл",
+      "zh_hans": "龟脚脚",
+      "zh_hant": "龜腳腳"
+    }
   },
   "barbaracle": {
     "legal": true,
@@ -17885,7 +20822,18 @@
       "rock",
       "water"
     ],
-    "speciesName": "Barbaracle",
+    "speciesName": {
+      "de": "Thanathora",
+      "fr": "Golgopathe",
+      "en": "Barbaracle",
+      "es": "Barbaracle",
+      "th": "กาเมโนเดส",
+      "ja": "ガメノデス",
+      "ko": "거북손데스",
+      "ru": "Барбаракл",
+      "zh_hans": "龟足巨铠",
+      "zh_hant": "龜足巨鎧"
+    },
     "ranking": 634,
     "moves": {
       "fastMoves": [
@@ -17934,7 +20882,18 @@
       "poison",
       "water"
     ],
-    "speciesName": "Skrelp",
+    "speciesName": {
+      "de": "Algitt",
+      "fr": "Venalgue",
+      "en": "Skrelp",
+      "es": "Skrelp",
+      "th": "คูซูโม",
+      "ja": "クズモー",
+      "ko": "수레기",
+      "ru": "Скрельп",
+      "zh_hans": "垃垃藻",
+      "zh_hant": "垃垃藻"
+    },
     "ranking": 500,
     "moves": {
       "fastMoves": [
@@ -17987,7 +20946,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Clauncher",
+    "speciesName": {
+      "de": "Scampisto",
+      "fr": "Flingouste",
+      "en": "Clauncher",
+      "es": "Clauncher",
+      "th": "อุเด็ปโป",
+      "ja": "ウデッポウ",
+      "ko": "완철포",
+      "ru": "Клончер",
+      "zh_hans": "铁臂枪虾",
+      "zh_hant": "鐵臂槍蝦"
+    },
     "ranking": 419,
     "moves": {
       "fastMoves": [
@@ -18028,7 +20998,18 @@
       "water",
       "none"
     ],
-    "speciesName": "Clawitzer",
+    "speciesName": {
+      "de": "Wummer",
+      "fr": "Gamblast",
+      "en": "Clawitzer",
+      "es": "Clawitzer",
+      "th": "บลอสเตอร์",
+      "ja": "ブロスター",
+      "ko": "블로스터",
+      "ru": "Кловицер",
+      "zh_hans": "钢炮臂虾",
+      "zh_hant": "鋼砲臂蝦"
+    },
     "ranking": 441,
     "moves": {
       "fastMoves": [
@@ -18139,7 +21120,18 @@
       "fairy",
       "none"
     ],
-    "speciesName": "Sylveon",
+    "speciesName": {
+      "de": "Feelinara",
+      "fr": "Nymphali",
+      "en": "Sylveon",
+      "es": "Sylveon",
+      "th": "นิมเฟีย",
+      "ja": "ニンフィア",
+      "ko": "님피아",
+      "ru": "Сильвеон",
+      "zh_hans": "仙子精灵",
+      "zh_hant": "仙子精靈"
+    },
     "ranking": 653,
     "moves": {
       "fastMoves": [
@@ -18248,7 +21240,18 @@
     "tags": [
       "regional"
     ],
-    "speciesName": "Klefki",
+    "speciesName": {
+      "de": "Clavion",
+      "fr": "Trousselin",
+      "en": "Klefki",
+      "es": "Klefki",
+      "th": "เคลฟฟี",
+      "ja": "クレッフィ",
+      "ko": "클레피",
+      "ru": "Клефки",
+      "zh_hans": "钥圈兒",
+      "zh_hant": "鑰圈兒"
+    },
     "ranking": 417,
     "moves": {
       "fastMoves": [
@@ -18359,7 +21362,18 @@
       "flying",
       "dragon"
     ],
-    "speciesName": "Noibat"
+    "speciesName": {
+      "de": "eF-eM",
+      "fr": "Sonistrelle",
+      "en": "Noibat",
+      "es": "Noibat",
+      "th": "ออนแบท",
+      "ja": "オンバット",
+      "ko": "음뱃",
+      "ru": "Нойбат",
+      "zh_hans": "嗡蝠",
+      "zh_hant": "嗡蝠"
+    }
   },
   "noivern": {
     "legal": true,
@@ -18368,7 +21382,18 @@
       "flying",
       "dragon"
     ],
-    "speciesName": "Noivern",
+    "speciesName": {
+      "de": "UHaFnir",
+      "fr": "Bruyverne",
+      "en": "Noivern",
+      "es": "Noivern",
+      "th": "ออนเวิร์น",
+      "ja": "オンバーン",
+      "ko": "음번",
+      "ru": "Нойверн",
+      "zh_hans": "音波龙",
+      "zh_hant": "音波龍"
+    },
     "ranking": 444,
     "moves": {
       "fastMoves": [
@@ -18413,7 +21438,18 @@
       "fairy",
       "none"
     ],
-    "speciesName": "Xerneas"
+    "speciesName": {
+      "de": "Xerneas",
+      "fr": "Xerneas",
+      "en": "Xerneas",
+      "es": "Xerneas",
+      "th": "เซอเนียส",
+      "ja": "ゼルネアス",
+      "ko": "제르네아스",
+      "ru": "Ксернеас",
+      "zh_hans": "哲尔尼亚斯",
+      "zh_hant": "哲爾尼亞斯"
+    }
   },
   "yveltal": {
     "legal": false,

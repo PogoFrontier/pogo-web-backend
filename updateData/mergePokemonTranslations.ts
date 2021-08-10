@@ -283,8 +283,7 @@ async function mergePokemon() {
         new_pokemon.perrserker.speciesName[lang] = "Perrserker"
         new_pokemon.obstagoon.speciesName[lang] = "Obstagoon"
         new_pokemon.zamazenta.speciesName[lang] = "Zamazenta"
-        new_pokemon.zacian.SpeciesName[lang] = "Zacian"
-    
+        new_pokemon.zacian.speciesName[lang] = "Zacian"
     }
     
     fs.writeFileSync("data/pokemon.json", JSON.stringify(new_pokemon, null, 2))
