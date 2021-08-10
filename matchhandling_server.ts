@@ -74,7 +74,7 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
                     ranking: 1000
                 }
                 subClientForWS.subscribe("messagesToUser:" + user.googleId);
-                ws.send("$Authentication Success")
+                ws.send(`$Authentication Success. Id: ${user.googleId}`)
                 return;
             }
             
