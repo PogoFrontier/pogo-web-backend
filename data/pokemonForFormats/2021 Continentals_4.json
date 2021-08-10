@@ -15248,15 +15248,28 @@
     ]
   },
   "meloetta_aria": {
-    "legal": false,
+    "legal": true,
     "dex": 648,
     "types": [
       "normal",
       "psychic"
     ],
     "tags": [
-      "unreleased"
-    ]
+      "mythical",
+      "untradeable"
+    ],
+    "speciesName": {
+      "de": "Meloetta (Gesangsform)",
+      "fr": "Meloetta (Aria)",
+      "en": "Meloetta (Aria)",
+      "es": "Meloetta (Forma lírica)",
+      "th": "เมโลเอตตา (Aria)",
+      "ja": "メロエッタ (Aria)",
+      "ko": "메로엣타 (Aria)",
+      "ru": "Мелоэтта (Aria)",
+      "zh_hans": "美洛耶塔 (Aria)",
+      "zh_hant": "美洛耶塔 (Aria)"
+    }
   },
   "meloetta_pirouette": {
     "legal": false,
@@ -15266,6 +15279,8 @@
       "fighting"
     ],
     "tags": [
+      "mythical",
+      "untradeable",
       "unreleased"
     ]
   },
@@ -16131,6 +16146,32 @@
     ],
     "tags": [
       "galarian"
+    ]
+  },
+  "zacian": {
+    "legal": false,
+    "dex": 888,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "tags": [
+      "galarian",
+      "legendary",
+      "unreleased"
+    ]
+  },
+  "zamazenta": {
+    "legal": false,
+    "dex": 888,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "galarian",
+      "legendary",
+      "unreleased"
     ]
   }
 }
