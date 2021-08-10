@@ -4259,7 +4259,18 @@
   },
   "pikachu_kariyushi": {
     "dex": 25,
-    "speciesName": {},
+    "speciesName": {
+      "de": "Pikachu (undefined)",
+      "fr": "Pikachu (undefined)",
+      "en": "Pikachu (undefined)",
+      "es": "Pikachu (undefined)",
+      "th": "พิคาชู (undefined)",
+      "ja": "ピカチュウ (undefined)",
+      "ko": "피카츄 (undefined)",
+      "ru": "Пикачу (undefined)",
+      "zh_hans": "皮卡丘 (undefined)",
+      "zh_hant": "皮卡丘 (undefined)"
+    },
     "speciesId": "pikachu_kariyushi",
     "baseStats": {
       "atk": 112,
@@ -4333,7 +4344,18 @@
   },
   "pikachu_pop_star": {
     "dex": 25,
-    "speciesName": {},
+    "speciesName": {
+      "de": "Pikachu(Pop Star)",
+      "fr": "Pikachu(Pop Star)",
+      "en": "Pikachu(Pop Star)",
+      "es": "Pikachu(Pop Star)",
+      "th": "พิคาชู(Pop Star)",
+      "ja": "ピカチュウ(Pop Star)",
+      "ko": "피카츄(Pop Star)",
+      "ru": "Пикачу(Pop Star)",
+      "zh_hans": "皮卡丘(Pop Star)",
+      "zh_hant": "皮卡丘(Pop Star)"
+    },
     "speciesId": "pikachu_pop_star",
     "baseStats": {
       "atk": 112,
@@ -4407,7 +4429,18 @@
   },
   "pikachu_rock_star": {
     "dex": 25,
-    "speciesName": {},
+    "speciesName": {
+      "de": "Pikachu(Rock Star)",
+      "fr": "Pikachu(Rock Star)",
+      "en": "Pikachu(Rock Star)",
+      "es": "Pikachu(Rock Star)",
+      "th": "พิคาชู(Rock Star)",
+      "ja": "ピカチュウ(Rock Star)",
+      "ko": "피카츄(Rock Star)",
+      "ru": "Пикачу(Rock Star)",
+      "zh_hans": "皮卡丘(Rock Star)",
+      "zh_hant": "皮卡丘(Rock Star)"
+    },
     "speciesId": "pikachu_rock_star",
     "baseStats": {
       "atk": 112,
@@ -4481,7 +4514,18 @@
   },
   "pikachu_5th_anniversary": {
     "dex": 25,
-    "speciesName": {},
+    "speciesName": {
+      "de": "Pikachu(5th Anniversary)",
+      "fr": "Pikachu(5th Anniversary)",
+      "en": "Pikachu(5th Anniversary)",
+      "es": "Pikachu(5th Anniversary)",
+      "th": "พิคาชู(5th Anniversary)",
+      "ja": "ピカチュウ(5th Anniversary)",
+      "ko": "피카츄(5th Anniversary)",
+      "ru": "Пикачу(5th Anniversary)",
+      "zh_hans": "皮卡丘(5th Anniversary)",
+      "zh_hant": "皮卡丘(5th Anniversary)"
+    },
     "speciesId": "pikachu_5th_anniversary",
     "baseStats": {
       "atk": 112,
@@ -78291,8 +78335,10 @@
       "STRUGGLE"
     ],
     "tags": [
-      "unreleased"
+      "mythical",
+      "untradeable"
     ],
+    "levelCap": 40,
     "sid": 20736
   },
   "meloetta_pirouette": {
@@ -78375,6 +78421,8 @@
       "STRUGGLE"
     ],
     "tags": [
+      "mythical",
+      "untradeable",
       "unreleased"
     ],
     "sid": 20737
@@ -84621,5 +84669,125 @@
       "galarian"
     ],
     "sid": 27744
+  },
+  "zacian": {
+    "dex": 888,
+    "speciesId": "zacian",
+    "speciesName": {
+      "de": "Zacian",
+      "fr": "Zacian",
+      "en": "Zacian",
+      "es": "Zacian",
+      "th": "Zacian",
+      "ja": "Zacian",
+      "ko": "Zacian",
+      "ru": "Zacian",
+      "zh_hans": "Zacian",
+      "zh_hant": "Zacian"
+    },
+    "baseStats": {
+      "atk": 254,
+      "def": 236,
+      "hp": 192
+    },
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "fastMoves": [
+      "AIR_SLASH",
+      "BITE",
+      "FIRE_FANG",
+      "ICE_FANG",
+      "IRON_TAIL",
+      "METAL_CLAW",
+      "PSYCHO_CUT",
+      "QUICK_ATTACK",
+      "SNARL",
+      "THUNDER_FANG"
+    ],
+    "chargedMoves": [
+      "BRICK_BREAK",
+      "CLOSE_COMBAT",
+      "CRUNCH",
+      "DIG",
+      "FOCUS_BLAST",
+      "GIGA_IMPACT",
+      "HYPER_BEAM",
+      "IRON_HEAD",
+      "MOONBLAST",
+      "PLAY_ROUGH",
+      "REST",
+      "SACRED_SWORD",
+      "SWIFT",
+      "WILD_CHARGE",
+      "STRUGGLE"
+    ],
+    "tags": [
+      "galarian",
+      "legendary",
+      "unreleased"
+    ],
+    "sid": 28416
+  },
+  "zamazenta": {
+    "dex": 888,
+    "speciesId": "zamazenta",
+    "speciesName": {
+      "de": "Zamazenta",
+      "fr": "Zamazenta",
+      "en": "Zamazenta",
+      "es": "Zamazenta",
+      "th": "Zamazenta",
+      "ja": "Zamazenta",
+      "ko": "Zamazenta",
+      "ru": "Zamazenta",
+      "zh_hans": "Zamazenta",
+      "zh_hant": "Zamazenta"
+    },
+    "baseStats": {
+      "atk": 254,
+      "def": 236,
+      "hp": 192
+    },
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "fastMoves": [
+      "BITE",
+      "FIRE_FANG",
+      "ICE_FANG",
+      "IRON_TAIL",
+      "METAL_CLAW",
+      "QUICK_ATTACK",
+      "SNARL",
+      "THUNDER_FANG"
+    ],
+    "chargedMoves": [
+      "CLOSE_COMBAT",
+      "CRUNCH",
+      "DAZZLING_GLEAM",
+      "DIG",
+      "FLASH_CANNON",
+      "FOCUS_BLAST",
+      "GIGA_IMPACT",
+      "HYPER_BEAM",
+      "IRON_HEAD",
+      "MOONBLAST",
+      "PAYBACK",
+      "PLAY_ROUGH",
+      "REST",
+      "SOLAR_BEAM",
+      "SWIFT",
+      "WILD_CHARGE",
+      "STRUGGLE"
+    ],
+    "tags": [
+      "galarian",
+      "legendary",
+      "unreleased"
+    ],
+    "sid": 28448
   }
 }

@@ -2104,7 +2104,18 @@
   },
   "pikachu_kariyushi": {
     "dex": 25,
-    "speciesName": {},
+    "speciesName": {
+      "de": "Pikachu (undefined)",
+      "fr": "Pikachu (undefined)",
+      "en": "Pikachu (undefined)",
+      "es": "Pikachu (undefined)",
+      "th": "พิคาชู (undefined)",
+      "ja": "ピカチュウ (undefined)",
+      "ko": "피카츄 (undefined)",
+      "ru": "Пикачу (undefined)",
+      "zh_hans": "皮卡丘 (undefined)",
+      "zh_hant": "皮卡丘 (undefined)"
+    },
     "speciesId": "pikachu_kariyushi",
     "baseStats": {
       "atk": 112,
@@ -2128,7 +2139,18 @@
   },
   "pikachu_pop_star": {
     "dex": 25,
-    "speciesName": {},
+    "speciesName": {
+      "de": "Pikachu(Pop Star)",
+      "fr": "Pikachu(Pop Star)",
+      "en": "Pikachu(Pop Star)",
+      "es": "Pikachu(Pop Star)",
+      "th": "พิคาชู(Pop Star)",
+      "ja": "ピカチュウ(Pop Star)",
+      "ko": "피카츄(Pop Star)",
+      "ru": "Пикачу(Pop Star)",
+      "zh_hans": "皮卡丘(Pop Star)",
+      "zh_hant": "皮卡丘(Pop Star)"
+    },
     "speciesId": "pikachu_pop_star",
     "baseStats": {
       "atk": 112,
@@ -2152,7 +2174,18 @@
   },
   "pikachu_rock_star": {
     "dex": 25,
-    "speciesName": {},
+    "speciesName": {
+      "de": "Pikachu(Rock Star)",
+      "fr": "Pikachu(Rock Star)",
+      "en": "Pikachu(Rock Star)",
+      "es": "Pikachu(Rock Star)",
+      "th": "พิคาชู(Rock Star)",
+      "ja": "ピカチュウ(Rock Star)",
+      "ko": "피카츄(Rock Star)",
+      "ru": "Пикачу(Rock Star)",
+      "zh_hans": "皮卡丘(Rock Star)",
+      "zh_hant": "皮卡丘(Rock Star)"
+    },
     "speciesId": "pikachu_rock_star",
     "baseStats": {
       "atk": 112,
@@ -2176,7 +2209,18 @@
   },
   "pikachu_5th_anniversary": {
     "dex": 25,
-    "speciesName": {},
+    "speciesName": {
+      "de": "Pikachu(5th Anniversary)",
+      "fr": "Pikachu(5th Anniversary)",
+      "en": "Pikachu(5th Anniversary)",
+      "es": "Pikachu(5th Anniversary)",
+      "th": "พิคาชู(5th Anniversary)",
+      "ja": "ピカチュウ(5th Anniversary)",
+      "ko": "피카츄(5th Anniversary)",
+      "ru": "Пикачу(5th Anniversary)",
+      "zh_hans": "皮卡丘(5th Anniversary)",
+      "zh_hant": "皮卡丘(5th Anniversary)"
+    },
     "speciesId": "pikachu_5th_anniversary",
     "baseStats": {
       "atk": 112,
@@ -10443,10 +10487,12 @@
       "AQUA_TAIL",
       "HYDRO_PUMP",
       "LAST_RESORT",
-      "WATER_PULSE"
+      "WATER_PULSE",
+      "SCALD"
     ],
     "eliteMoves": [
-      "LAST_RESORT"
+      "LAST_RESORT",
+      "SCALD"
     ],
     "sid": 4288
   },
@@ -10482,10 +10528,12 @@
       "DISCHARGE",
       "LAST_RESORT",
       "THUNDER",
-      "THUNDERBOLT"
+      "THUNDERBOLT",
+      "ZAP_CANNON"
     ],
     "eliteMoves": [
-      "LAST_RESORT"
+      "LAST_RESORT",
+      "ZAP_CANNON"
     ],
     "sid": 4320
   },
@@ -10522,11 +10570,13 @@
       "FLAMETHROWER",
       "HEAT_WAVE",
       "LAST_RESORT",
-      "OVERHEAT"
+      "OVERHEAT",
+      "SUPER_POWER"
     ],
     "eliteMoves": [
       "LAST_RESORT",
-      "HEAT_WAVE"
+      "HEAT_WAVE",
+      "SUPER_POWER"
     ],
     "sid": 4352
   },
@@ -14094,10 +14144,12 @@
       "FUTURE_SIGHT",
       "LAST_RESORT",
       "PSYBEAM",
-      "PSYCHIC"
+      "PSYCHIC",
+      "SHADOW_BALL"
     ],
     "eliteMoves": [
-      "LAST_RESORT"
+      "LAST_RESORT",
+      "SHADOW_BALL"
     ],
     "sid": 6272
   },
@@ -14132,10 +14184,12 @@
     "chargedMoves": [
       "DARK_PULSE",
       "FOUL_PLAY",
-      "LAST_RESORT"
+      "LAST_RESORT",
+      "PSYCHIC"
     ],
     "eliteMoves": [
-      "LAST_RESORT"
+      "LAST_RESORT",
+      "PSYCHIC"
     ],
     "searchPriority": 13,
     "sid": 6304
@@ -29506,7 +29560,8 @@
     ],
     "fastMoves": [
       "QUICK_ATTACK",
-      "RAZOR_LEAF"
+      "RAZOR_LEAF",
+      "BULLET_SEED"
     ],
     "chargedMoves": [
       "ENERGY_BALL",
@@ -29515,7 +29570,8 @@
       "LAST_RESORT"
     ],
     "eliteMoves": [
-      "LAST_RESORT"
+      "LAST_RESORT",
+      "BULLET_SEED"
     ],
     "sid": 15040
   },
@@ -29551,10 +29607,12 @@
       "AVALANCHE",
       "ICE_BEAM",
       "ICY_WIND",
-      "LAST_RESORT"
+      "LAST_RESORT",
+      "WATER_PULSE"
     ],
     "eliteMoves": [
-      "LAST_RESORT"
+      "LAST_RESORT",
+      "WATER_PULSE"
     ],
     "sid": 15072
   },
@@ -37816,8 +37874,10 @@
       "HYPER_BEAM"
     ],
     "tags": [
-      "unreleased"
+      "mythical",
+      "untradeable"
     ],
+    "levelCap": 40,
     "sid": 20736
   },
   "meloetta_pirouette": {
@@ -37855,6 +37915,8 @@
       "HYPER_BEAM"
     ],
     "tags": [
+      "mythical",
+      "untradeable",
       "unreleased"
     ],
     "sid": 20737
@@ -40011,10 +40073,12 @@
       "MOONBLAST",
       "DAZZLING_GLEAM",
       "DRAINING_KISS",
-      "LAST_RESORT"
+      "LAST_RESORT",
+      "PSYSHOCK"
     ],
     "eliteMoves": [
-      "LAST_RESORT"
+      "LAST_RESORT",
+      "PSYSHOCK"
     ],
     "sid": 22400
   },
@@ -40975,5 +41039,94 @@
       "galarian"
     ],
     "sid": 27744
+  },
+  "zacian": {
+    "dex": 888,
+    "speciesId": "zacian",
+    "speciesName": {
+      "de": "Zacian",
+      "fr": "Zacian",
+      "en": "Zacian",
+      "es": "Zacian",
+      "th": "Zacian",
+      "ja": "Zacian",
+      "ko": "Zacian",
+      "ru": "Zacian",
+      "zh_hans": "Zacian",
+      "zh_hant": "Zacian"
+    },
+    "baseStats": {
+      "atk": 254,
+      "def": 236,
+      "hp": 192
+    },
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "fastMoves": [
+      "THUNDER_FANG",
+      "ICE_FANG",
+      "FIRE_FANG",
+      "PSYCHO_CUT",
+      "SNARL"
+    ],
+    "chargedMoves": [
+      "IRON_HEAD",
+      "CRUNCH",
+      "WILD_CHARGE",
+      "PLAY_ROUGH",
+      "CLOSE_COMBAT"
+    ],
+    "tags": [
+      "galarian",
+      "legendary",
+      "unreleased"
+    ],
+    "sid": 28416
+  },
+  "zamazenta": {
+    "dex": 888,
+    "speciesId": "zamazenta",
+    "speciesName": {
+      "de": "Zamazenta",
+      "fr": "Zamazenta",
+      "en": "Zamazenta",
+      "es": "Zamazenta",
+      "th": "Zamazenta",
+      "ja": "Zamazenta",
+      "ko": "Zamazenta",
+      "ru": "Zamazenta",
+      "zh_hans": "Zamazenta",
+      "zh_hant": "Zamazenta"
+    },
+    "baseStats": {
+      "atk": 254,
+      "def": 236,
+      "hp": 192
+    },
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "fastMoves": [
+      "SNARL",
+      "FIRE_FANG",
+      "THUNDER_FANG",
+      "ICE_FANG"
+    ],
+    "chargedMoves": [
+      "IRON_HEAD",
+      "CRUNCH",
+      "WILD_CHARGE",
+      "PLAY_ROUGH",
+      "CLOSE_COMBAT"
+    ],
+    "tags": [
+      "galarian",
+      "legendary",
+      "unreleased"
+    ],
+    "sid": 28448
   }
 }

@@ -1453,7 +1453,18 @@
       "electric",
       "none"
     ],
-    "speciesName": {}
+    "speciesName": {
+      "de": "Pikachu (undefined)",
+      "fr": "Pikachu (undefined)",
+      "en": "Pikachu (undefined)",
+      "es": "Pikachu (undefined)",
+      "th": "พิคาชู (undefined)",
+      "ja": "ピカチュウ (undefined)",
+      "ko": "피카츄 (undefined)",
+      "ru": "Пикачу (undefined)",
+      "zh_hans": "皮卡丘 (undefined)",
+      "zh_hant": "皮卡丘 (undefined)"
+    }
   },
   "pikachu_pop_star": {
     "legal": true,
@@ -1462,7 +1473,18 @@
       "electric",
       "none"
     ],
-    "speciesName": {}
+    "speciesName": {
+      "de": "Pikachu(Pop Star)",
+      "fr": "Pikachu(Pop Star)",
+      "en": "Pikachu(Pop Star)",
+      "es": "Pikachu(Pop Star)",
+      "th": "พิคาชู(Pop Star)",
+      "ja": "ピカチュウ(Pop Star)",
+      "ko": "피카츄(Pop Star)",
+      "ru": "Пикачу(Pop Star)",
+      "zh_hans": "皮卡丘(Pop Star)",
+      "zh_hant": "皮卡丘(Pop Star)"
+    }
   },
   "pikachu_rock_star": {
     "legal": true,
@@ -1471,7 +1493,18 @@
       "electric",
       "none"
     ],
-    "speciesName": {}
+    "speciesName": {
+      "de": "Pikachu(Rock Star)",
+      "fr": "Pikachu(Rock Star)",
+      "en": "Pikachu(Rock Star)",
+      "es": "Pikachu(Rock Star)",
+      "th": "พิคาชู(Rock Star)",
+      "ja": "ピカチュウ(Rock Star)",
+      "ko": "피카츄(Rock Star)",
+      "ru": "Пикачу(Rock Star)",
+      "zh_hans": "皮卡丘(Rock Star)",
+      "zh_hant": "皮卡丘(Rock Star)"
+    }
   },
   "pikachu_5th_anniversary": {
     "legal": true,
@@ -1480,7 +1513,18 @@
       "electric",
       "none"
     ],
-    "speciesName": {}
+    "speciesName": {
+      "de": "Pikachu(5th Anniversary)",
+      "fr": "Pikachu(5th Anniversary)",
+      "en": "Pikachu(5th Anniversary)",
+      "es": "Pikachu(5th Anniversary)",
+      "th": "พิคาชู(5th Anniversary)",
+      "ja": "ピカチュウ(5th Anniversary)",
+      "ko": "피카츄(5th Anniversary)",
+      "ru": "Пикачу(5th Anniversary)",
+      "zh_hans": "皮卡丘(5th Anniversary)",
+      "zh_hant": "皮卡丘(5th Anniversary)"
+    }
   },
   "raichu": {
     "legal": true,
@@ -30279,50 +30323,29 @@
     }
   },
   "meloetta_aria": {
-    "legal": true,
+    "legal": false,
     "dex": 648,
     "types": [
       "normal",
       "psychic"
     ],
     "tags": [
-      "unreleased"
-    ],
-    "speciesName": {
-      "de": "Meloetta (Gesangsform)",
-      "fr": "Meloetta (Aria)",
-      "en": "Meloetta (Aria)",
-      "es": "Meloetta (Forma lírica)",
-      "th": "เมโลเอตตา (Aria)",
-      "ja": "メロエッタ (Aria)",
-      "ko": "메로엣타 (Aria)",
-      "ru": "Мелоэтта (Aria)",
-      "zh_hans": "美洛耶塔 (Aria)",
-      "zh_hant": "美洛耶塔 (Aria)"
-    }
+      "mythical",
+      "untradeable"
+    ]
   },
   "meloetta_pirouette": {
-    "legal": true,
+    "legal": false,
     "dex": 648,
     "types": [
       "normal",
       "fighting"
     ],
     "tags": [
+      "mythical",
+      "untradeable",
       "unreleased"
-    ],
-    "speciesName": {
-      "de": "Meloetta (Tanzform)",
-      "fr": "Meloetta (Pirouette)",
-      "en": "Meloetta (Pirouette)",
-      "es": "Meloetta (Forma Danza)",
-      "th": "เมโลเอตตา (Pirouette)",
-      "ja": "メロエッタ (Pirouette)",
-      "ko": "메로엣타 (Pirouette)",
-      "ru": "Мелоэтта (Pirouette)",
-      "zh_hans": "美洛耶塔 (Pirouette)",
-      "zh_hant": "美洛耶塔 (Pirouette)"
-    }
+    ]
   },
   "genesect": {
     "legal": false,
@@ -32346,6 +32369,32 @@
       "ASTONISH",
       "SHADOW_BALL",
       "SAND_TOMB"
+    ]
+  },
+  "zacian": {
+    "legal": false,
+    "dex": 888,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "tags": [
+      "galarian",
+      "legendary",
+      "unreleased"
+    ]
+  },
+  "zamazenta": {
+    "legal": false,
+    "dex": 888,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "galarian",
+      "legendary",
+      "unreleased"
     ]
   }
 }
