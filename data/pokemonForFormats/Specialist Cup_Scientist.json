@@ -408,16 +408,16 @@
       "zh_hans": "比比鸟",
       "zh_hant": "比比鳥"
     },
-    "ranking": 464,
+    "ranking": 465,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WING_ATTACK",
-          "uses": 73096
+          "uses": 73091
         },
         {
           "moveId": "STEEL_WING",
-          "uses": 42504
+          "uses": 42509
         }
       ],
       "chargedMoves": [
@@ -431,7 +431,7 @@
         },
         {
           "moveId": "AERIAL_ACE",
-          "uses": 68116
+          "uses": 68115
         }
       ]
     },
@@ -460,20 +460,20 @@
       "zh_hans": "大比鸟",
       "zh_hant": "大比鳥"
     },
-    "ranking": 671,
+    "ranking": 673,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WING_ATTACK",
-          "uses": 34020
+          "uses": 34023
         },
         {
           "moveId": "STEEL_WING",
-          "uses": 16172
+          "uses": 16169
         },
         {
           "moveId": "GUST",
-          "uses": 38222
+          "uses": 38221
         },
         {
           "moveId": "AIR_SLASH",
@@ -628,11 +628,11 @@
       "fastMoves": [
         {
           "moveId": "QUICK_ATTACK",
-          "uses": 69648
+          "uses": 69682
         },
         {
           "moveId": "BITE",
-          "uses": 45952
+          "uses": 45918
         }
       ],
       "chargedMoves": [
@@ -642,7 +642,7 @@
         },
         {
           "moveId": "HYPER_FANG",
-          "uses": 59989
+          "uses": 59988
         },
         {
           "moveId": "HYPER_BEAM",
@@ -687,11 +687,11 @@
       "fastMoves": [
         {
           "moveId": "QUICK_ATTACK",
-          "uses": 64263
+          "uses": 64300
         },
         {
           "moveId": "BITE",
-          "uses": 51337
+          "uses": 51300
         }
       ],
       "chargedMoves": [
@@ -742,11 +742,11 @@
       "fastMoves": [
         {
           "moveId": "QUICK_ATTACK",
-          "uses": 71630
+          "uses": 71677
         },
         {
           "moveId": "BITE",
-          "uses": 43970
+          "uses": 43923
         }
       ],
       "chargedMoves": [
@@ -818,11 +818,11 @@
       "fastMoves": [
         {
           "moveId": "STEEL_WING",
-          "uses": 51000
+          "uses": 50999
         },
         {
           "moveId": "PECK",
-          "uses": 64600
+          "uses": 64601
         }
       ],
       "chargedMoves": [
@@ -954,6 +954,66 @@
       "zh_hant": "皮卡丘 (Libre)"
     }
   },
+  "pikachu_pop_star": {
+    "legal": true,
+    "dex": 25,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "speciesName": {
+      "de": "Pikachu (Pop Star)",
+      "fr": "Pikachu (Pop Star)",
+      "en": "Pikachu (Pop Star)",
+      "es": "Pikachu (Pop Star)",
+      "th": "พิคาชู (Pop Star)",
+      "ja": "ピカチュウ (Pop Star)",
+      "ko": "피카츄 (Pop Star)",
+      "ru": "Пикачу (Pop Star)",
+      "zh_hans": "皮卡丘 (Pop Star)",
+      "zh_hant": "皮卡丘 (Pop Star)"
+    }
+  },
+  "pikachu_rock_star": {
+    "legal": true,
+    "dex": 25,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "speciesName": {
+      "de": "Pikachu (Rock Star)",
+      "fr": "Pikachu (Rock Star)",
+      "en": "Pikachu (Rock Star)",
+      "es": "Pikachu (Rock Star)",
+      "th": "พิคาชู (Rock Star)",
+      "ja": "ピカチュウ (Rock Star)",
+      "ko": "피카츄 (Rock Star)",
+      "ru": "Пикачу (Rock Star)",
+      "zh_hans": "皮卡丘 (Rock Star)",
+      "zh_hant": "皮卡丘 (Rock Star)"
+    }
+  },
+  "pikachu_5th_anniversary": {
+    "legal": true,
+    "dex": 25,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "speciesName": {
+      "de": "Pikachu (5th Anniversary)",
+      "fr": "Pikachu (5th Anniversary)",
+      "en": "Pikachu (5th Anniversary)",
+      "es": "Pikachu (5th Anniversary)",
+      "th": "พิคาชู (5th Anniversary)",
+      "ja": "ピカチュウ (5th Anniversary)",
+      "ko": "피카츄 (5th Anniversary)",
+      "ru": "Пикачу (5th Anniversary)",
+      "zh_hans": "皮卡丘 (5th Anniversary)",
+      "zh_hant": "皮卡丘 (5th Anniversary)"
+    }
+  },
   "raichu": {
     "legal": true,
     "dex": 26,
@@ -973,7 +1033,7 @@
       "zh_hans": "雷丘",
       "zh_hant": "雷丘"
     },
-    "ranking": 620,
+    "ranking": 621,
     "moves": {
       "fastMoves": [
         {
@@ -1044,7 +1104,7 @@
       "zh_hans": "雷丘 (Alolan)",
       "zh_hant": "雷丘 (Alolan)"
     },
-    "ranking": 573,
+    "ranking": 571,
     "moves": {
       "fastMoves": [
         {
@@ -1123,11 +1183,11 @@
       "fastMoves": [
         {
           "moveId": "POWDER_SNOW",
-          "uses": 78458
+          "uses": 78469
         },
         {
           "moveId": "METAL_CLAW",
-          "uses": 37142
+          "uses": 37131
         }
       ],
       "chargedMoves": [
@@ -1137,11 +1197,11 @@
         },
         {
           "moveId": "GYRO_BALL",
-          "uses": 22193
+          "uses": 22192
         },
         {
           "moveId": "BLIZZARD",
-          "uses": 32653
+          "uses": 32651
         }
       ]
     },
@@ -1195,16 +1255,16 @@
       "zh_hans": "穿山王 (Alolan)",
       "zh_hant": "穿山王 (Alolan)"
     },
-    "ranking": 643,
+    "ranking": 642,
     "moves": {
       "fastMoves": [
         {
           "moveId": "POWDER_SNOW",
-          "uses": 78607
+          "uses": 78618
         },
         {
           "moveId": "METAL_CLAW",
-          "uses": 36993
+          "uses": 36982
         }
       ],
       "chargedMoves": [
@@ -1501,15 +1561,15 @@
       "fastMoves": [
         {
           "moveId": "POUND",
-          "uses": 14373
+          "uses": 14370
         },
         {
           "moveId": "FEINT_ATTACK",
-          "uses": 43006
+          "uses": 43011
         },
         {
           "moveId": "CHARM",
-          "uses": 58126
+          "uses": 58125
         }
       ],
       "chargedMoves": [
@@ -1785,16 +1845,16 @@
       "zh_hans": "三地鼠 (Alolan)",
       "zh_hant": "三地鼠 (Alolan)"
     },
-    "ranking": 518,
+    "ranking": 519,
     "moves": {
       "fastMoves": [
         {
           "moveId": "MUD_SLAP",
-          "uses": 66308
+          "uses": 66303
         },
         {
           "moveId": "METAL_CLAW",
-          "uses": 49292
+          "uses": 49297
         }
       ],
       "chargedMoves": [
@@ -1931,16 +1991,16 @@
       "zh_hans": "猫老大",
       "zh_hant": "貓老大"
     },
-    "ranking": 476,
+    "ranking": 475,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SCRATCH",
-          "uses": 54093
+          "uses": 54080
         },
         {
           "moveId": "FEINT_ATTACK",
-          "uses": 61507
+          "uses": 61520
         }
       ],
       "chargedMoves": [
@@ -1954,15 +2014,15 @@
         },
         {
           "moveId": "PLAY_ROUGH",
-          "uses": 17226
+          "uses": 17227
         },
         {
           "moveId": "PAYBACK",
-          "uses": 10161
+          "uses": 10162
         },
         {
           "moveId": "NIGHT_SLASH",
-          "uses": 41876
+          "uses": 41874
         },
         {
           "moveId": "FOUL_PLAY",
@@ -2009,16 +2069,16 @@
       "zh_hans": "猫老大 (Shadow)",
       "zh_hant": "貓老大 (Shadow)"
     },
-    "ranking": 488,
+    "ranking": 487,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SCRATCH",
-          "uses": 54530
+          "uses": 54509
         },
         {
           "moveId": "FEINT_ATTACK",
-          "uses": 61070
+          "uses": 61091
         }
       ],
       "chargedMoves": [
@@ -2028,7 +2088,7 @@
         },
         {
           "moveId": "PLAY_ROUGH",
-          "uses": 21300
+          "uses": 21301
         },
         {
           "moveId": "PAYBACK",
@@ -2036,7 +2096,7 @@
         },
         {
           "moveId": "NIGHT_SLASH",
-          "uses": 49643
+          "uses": 49641
         },
         {
           "moveId": "FRUSTRATION",
@@ -2044,7 +2104,7 @@
         },
         {
           "moveId": "FOUL_PLAY",
-          "uses": 15678
+          "uses": 15679
         }
       ]
     },
@@ -2468,16 +2528,16 @@
       "zh_hans": "小拳石 (Alolan)",
       "zh_hant": "小拳石 (Alolan)"
     },
-    "ranking": 557,
+    "ranking": 555,
     "moves": {
       "fastMoves": [
         {
           "moveId": "VOLT_SWITCH",
-          "uses": 72461
+          "uses": 72494
         },
         {
           "moveId": "ROCK_THROW",
-          "uses": 43139
+          "uses": 43106
         }
       ],
       "chargedMoves": [
@@ -2531,16 +2591,16 @@
       "zh_hans": "隆隆石 (Alolan)",
       "zh_hant": "隆隆石 (Alolan)"
     },
-    "ranking": 648,
+    "ranking": 645,
     "moves": {
       "fastMoves": [
         {
           "moveId": "VOLT_SWITCH",
-          "uses": 72641
+          "uses": 72667
         },
         {
           "moveId": "ROCK_THROW",
-          "uses": 42959
+          "uses": 42933
         }
       ],
       "chargedMoves": [
@@ -2594,22 +2654,22 @@
       "zh_hans": "隆隆岩 (Alolan)",
       "zh_hant": "隆隆岩 (Alolan)"
     },
-    "ranking": 620,
+    "ranking": 618,
     "moves": {
       "fastMoves": [
         {
           "moveId": "VOLT_SWITCH",
-          "uses": 77034
+          "uses": 77054
         },
         {
           "moveId": "ROCK_THROW",
-          "uses": 38566
+          "uses": 38546
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WILD_CHARGE",
-          "uses": 60295
+          "uses": 60296
         },
         {
           "moveId": "STONE_EDGE",
@@ -2617,7 +2677,7 @@
         },
         {
           "moveId": "ROCK_BLAST",
-          "uses": 26370
+          "uses": 26369
         }
       ]
     },
@@ -2770,11 +2830,11 @@
       "fastMoves": [
         {
           "moveId": "THUNDER_SHOCK",
-          "uses": 60588
+          "uses": 60596
         },
         {
           "moveId": "SPARK",
-          "uses": 55012
+          "uses": 55004
         }
       ],
       "chargedMoves": [
@@ -2784,7 +2844,7 @@
         },
         {
           "moveId": "RETURN",
-          "uses": 16461
+          "uses": 16462
         },
         {
           "moveId": "MAGNET_BOMB",
@@ -2792,7 +2852,7 @@
         },
         {
           "moveId": "DISCHARGE",
-          "uses": 39824
+          "uses": 39825
         }
       ]
     },
@@ -2829,17 +2889,17 @@
       "fastMoves": [
         {
           "moveId": "THUNDER_SHOCK",
-          "uses": 60566
+          "uses": 60571
         },
         {
           "moveId": "SPARK",
-          "uses": 55034
+          "uses": 55029
         }
       ],
       "chargedMoves": [
         {
           "moveId": "THUNDERBOLT",
-          "uses": 19665
+          "uses": 19664
         },
         {
           "moveId": "MAGNET_BOMB",
@@ -2851,7 +2911,7 @@
         },
         {
           "moveId": "DISCHARGE",
-          "uses": 45699
+          "uses": 45700
         }
       ]
     },
@@ -2888,33 +2948,33 @@
       "fastMoves": [
         {
           "moveId": "THUNDER_SHOCK",
-          "uses": 46642
+          "uses": 46648
         },
         {
           "moveId": "SPARK",
-          "uses": 42041
+          "uses": 42039
         },
         {
           "moveId": "CHARGE_BEAM",
-          "uses": 26798
+          "uses": 26794
         }
       ],
       "chargedMoves": [
         {
           "moveId": "ZAP_CANNON",
-          "uses": 13379
+          "uses": 13371
         },
         {
           "moveId": "MAGNET_BOMB",
-          "uses": 47185
+          "uses": 47189
         },
         {
           "moveId": "FLASH_CANNON",
-          "uses": 9824
+          "uses": 9825
         },
         {
           "moveId": "DISCHARGE",
-          "uses": 45351
+          "uses": 45354
         }
       ]
     },
@@ -2951,25 +3011,25 @@
       "fastMoves": [
         {
           "moveId": "THUNDER_SHOCK",
-          "uses": 46898
+          "uses": 46907
         },
         {
           "moveId": "SPARK",
-          "uses": 42448
+          "uses": 42446
         },
         {
           "moveId": "CHARGE_BEAM",
-          "uses": 26186
+          "uses": 26180
         }
       ],
       "chargedMoves": [
         {
           "moveId": "ZAP_CANNON",
-          "uses": 13015
+          "uses": 13007
         },
         {
           "moveId": "MAGNET_BOMB",
-          "uses": 47027
+          "uses": 47030
         },
         {
           "moveId": "FRUSTRATION",
@@ -2977,11 +3037,11 @@
         },
         {
           "moveId": "FLASH_CANNON",
-          "uses": 9815
+          "uses": 9816
         },
         {
           "moveId": "DISCHARGE",
-          "uses": 45495
+          "uses": 45499
         }
       ]
     },
@@ -3013,26 +3073,26 @@
       "zh_hans": "大葱鸭",
       "zh_hant": "大蔥鴨"
     },
-    "ranking": 581,
+    "ranking": 582,
     "moves": {
       "fastMoves": [
         {
           "moveId": "FURY_CUTTER",
-          "uses": 54570
+          "uses": 54577
         },
         {
           "moveId": "CUT",
-          "uses": 17807
+          "uses": 17801
         },
         {
           "moveId": "AIR_SLASH",
-          "uses": 43188
+          "uses": 43186
         }
       ],
       "chargedMoves": [
         {
           "moveId": "LEAF_BLADE",
-          "uses": 72921
+          "uses": 72920
         },
         {
           "moveId": "AIR_CUTTER",
@@ -3105,11 +3165,11 @@
       "fastMoves": [
         {
           "moveId": "STEEL_WING",
-          "uses": 45075
+          "uses": 45056
         },
         {
           "moveId": "FEINT_ATTACK",
-          "uses": 70525
+          "uses": 70544
         }
       ],
       "chargedMoves": [
@@ -3405,20 +3465,20 @@
       "zh_hans": "顽皮雷弹",
       "zh_hant": "頑皮雷彈"
     },
-    "ranking": 585,
+    "ranking": 584,
     "moves": {
       "fastMoves": [
         {
           "moveId": "VOLT_SWITCH",
-          "uses": 58780
+          "uses": 58798
         },
         {
           "moveId": "TACKLE",
-          "uses": 13270
+          "uses": 13255
         },
         {
           "moveId": "SPARK",
-          "uses": 43615
+          "uses": 43611
         }
       ],
       "chargedMoves": [
@@ -3624,17 +3684,17 @@
       "fastMoves": [
         {
           "moveId": "ZEN_HEADBUTT",
-          "uses": 18200
+          "uses": 18196
         },
         {
           "moveId": "LICK",
-          "uses": 97400
+          "uses": 97404
         }
       ],
       "chargedMoves": [
         {
           "moveId": "STOMP",
-          "uses": 15229
+          "uses": 15228
         },
         {
           "moveId": "POWER_WHIP",
@@ -3642,11 +3702,11 @@
         },
         {
           "moveId": "HYPER_BEAM",
-          "uses": 7040
+          "uses": 7039
         },
         {
           "moveId": "BODY_SLAM",
-          "uses": 61818
+          "uses": 61819
         }
       ]
     },
@@ -3748,22 +3808,22 @@
       "zh_hans": "吉利蛋",
       "zh_hant": "吉利蛋"
     },
-    "ranking": 612,
+    "ranking": 613,
     "moves": {
       "fastMoves": [
         {
           "moveId": "ZEN_HEADBUTT",
-          "uses": 49262
+          "uses": 49280
         },
         {
           "moveId": "POUND",
-          "uses": 66338
+          "uses": 66320
         }
       ],
       "chargedMoves": [
         {
           "moveId": "PSYCHIC",
-          "uses": 42941
+          "uses": 42942
         },
         {
           "moveId": "PSYBEAM",
@@ -3771,11 +3831,11 @@
         },
         {
           "moveId": "HYPER_BEAM",
-          "uses": 33451
+          "uses": 33449
         },
         {
           "moveId": "DAZZLING_GLEAM",
-          "uses": 30377
+          "uses": 30378
         }
       ]
     },
@@ -3829,16 +3889,16 @@
       "zh_hans": "袋兽",
       "zh_hant": "袋獸"
     },
-    "ranking": 520,
+    "ranking": 522,
     "moves": {
       "fastMoves": [
         {
           "moveId": "MUD_SLAP",
-          "uses": 84779
+          "uses": 84787
         },
         {
           "moveId": "LOW_KICK",
-          "uses": 30821
+          "uses": 30813
         }
       ],
       "chargedMoves": [
@@ -4024,16 +4084,16 @@
       "zh_hans": "电击兽",
       "zh_hant": "電擊獸"
     },
-    "ranking": 554,
+    "ranking": 553,
     "moves": {
       "fastMoves": [
         {
           "moveId": "THUNDER_SHOCK",
-          "uses": 91852
+          "uses": 91860
         },
         {
           "moveId": "LOW_KICK",
-          "uses": 23748
+          "uses": 23740
         }
       ],
       "chargedMoves": [
@@ -4047,7 +4107,7 @@
         },
         {
           "moveId": "THUNDER",
-          "uses": 17401
+          "uses": 17400
         },
         {
           "moveId": "RETURN",
@@ -4083,7 +4143,7 @@
       "zh_hans": "电击兽 (Shadow)",
       "zh_hant": "電擊獸 (Shadow)"
     },
-    "ranking": 590,
+    "ranking": 589,
     "moves": {
       "fastMoves": [
         {
@@ -4186,16 +4246,16 @@
       "zh_hans": "肯泰罗",
       "zh_hant": "肯泰羅"
     },
-    "ranking": 376,
+    "ranking": 377,
     "moves": {
       "fastMoves": [
         {
           "moveId": "ZEN_HEADBUTT",
-          "uses": 36138
+          "uses": 36142
         },
         {
           "moveId": "TACKLE",
-          "uses": 79462
+          "uses": 79458
         }
       ],
       "chargedMoves": [
@@ -4336,16 +4396,16 @@
       "zh_hans": "伊布",
       "zh_hant": "伊布"
     },
-    "ranking": 453,
+    "ranking": 454,
     "moves": {
       "fastMoves": [
         {
           "moveId": "TACKLE",
-          "uses": 35912
+          "uses": 35892
         },
         {
           "moveId": "QUICK_ATTACK",
-          "uses": 79688
+          "uses": 79708
         }
       ],
       "chargedMoves": [
@@ -4400,34 +4460,38 @@
       "zh_hans": "雷伊布",
       "zh_hant": "雷伊布"
     },
-    "ranking": 523,
+    "ranking": 520,
     "moves": {
       "fastMoves": [
         {
           "moveId": "VOLT_SWITCH",
-          "uses": 65148
+          "uses": 65236
         },
         {
           "moveId": "THUNDER_SHOCK",
-          "uses": 50452
+          "uses": 50364
         }
       ],
       "chargedMoves": [
         {
+          "moveId": "ZAP_CANNON",
+          "uses": 11275
+        },
+        {
           "moveId": "THUNDERBOLT",
-          "uses": 20596
+          "uses": 18401
         },
         {
           "moveId": "THUNDER",
-          "uses": 17820
+          "uses": 15883
         },
         {
           "moveId": "LAST_RESORT",
-          "uses": 29478
+          "uses": 26783
         },
         {
           "moveId": "DISCHARGE",
-          "uses": 47920
+          "uses": 42962
         }
       ]
     },
@@ -4472,15 +4536,15 @@
       "fastMoves": [
         {
           "moveId": "ZEN_HEADBUTT",
-          "uses": 1925
+          "uses": 1923
         },
         {
           "moveId": "TACKLE",
-          "uses": 4469
+          "uses": 4464
         },
         {
           "moveId": "QUICK_ATTACK",
-          "uses": 9871
+          "uses": 9878
         },
         {
           "moveId": "HIDDEN_POWER_WATER",
@@ -4516,7 +4580,7 @@
         },
         {
           "moveId": "HIDDEN_POWER_GHOST",
-          "uses": 5816
+          "uses": 5815
         },
         {
           "moveId": "HIDDEN_POWER_FLYING",
@@ -4528,7 +4592,7 @@
         },
         {
           "moveId": "HIDDEN_POWER_FIGHTING",
-          "uses": 6204
+          "uses": 6207
         },
         {
           "moveId": "HIDDEN_POWER_ELECTRIC",
@@ -4548,7 +4612,7 @@
         },
         {
           "moveId": "CHARGE_BEAM",
-          "uses": 7076
+          "uses": 7079
         }
       ],
       "chargedMoves": [
@@ -4578,7 +4642,7 @@
         },
         {
           "moveId": "DISCHARGE",
-          "uses": 30147
+          "uses": 30146
         }
       ]
     },
@@ -4615,15 +4679,15 @@
       "fastMoves": [
         {
           "moveId": "ZEN_HEADBUTT",
-          "uses": 2009
+          "uses": 2007
         },
         {
           "moveId": "TACKLE",
-          "uses": 4417
+          "uses": 4413
         },
         {
           "moveId": "HIDDEN_POWER_WATER",
-          "uses": 6432
+          "uses": 6433
         },
         {
           "moveId": "HIDDEN_POWER_STEEL",
@@ -4631,7 +4695,7 @@
         },
         {
           "moveId": "HIDDEN_POWER_ROCK",
-          "uses": 6728
+          "uses": 6729
         },
         {
           "moveId": "HIDDEN_POWER_PSYCHIC",
@@ -4647,7 +4711,7 @@
         },
         {
           "moveId": "HIDDEN_POWER_GROUND",
-          "uses": 7041
+          "uses": 7042
         },
         {
           "moveId": "HIDDEN_POWER_GRASS",
@@ -4667,7 +4731,7 @@
         },
         {
           "moveId": "HIDDEN_POWER_FIGHTING",
-          "uses": 6660
+          "uses": 6664
         },
         {
           "moveId": "HIDDEN_POWER_ELECTRIC",
@@ -4687,7 +4751,7 @@
         },
         {
           "moveId": "CHARGE_BEAM",
-          "uses": 8088
+          "uses": 8093
         }
       ],
       "chargedMoves": [
@@ -4705,7 +4769,7 @@
         },
         {
           "moveId": "PSYBEAM",
-          "uses": 11599
+          "uses": 11600
         },
         {
           "moveId": "HYPER_BEAM",
@@ -4717,7 +4781,7 @@
         },
         {
           "moveId": "DISCHARGE",
-          "uses": 33483
+          "uses": 33484
         }
       ]
     },
@@ -4831,20 +4895,20 @@
       "zh_hans": "卡比兽",
       "zh_hant": "卡比獸"
     },
-    "ranking": 658,
+    "ranking": 657,
     "moves": {
       "fastMoves": [
         {
           "moveId": "ZEN_HEADBUTT",
-          "uses": 15677
+          "uses": 15654
         },
         {
           "moveId": "YAWN",
-          "uses": 4018
+          "uses": 4002
         },
         {
           "moveId": "LICK",
-          "uses": 95972
+          "uses": 96010
         }
       ],
       "chargedMoves": [
@@ -4870,7 +4934,7 @@
         },
         {
           "moveId": "EARTHQUAKE",
-          "uses": 14105
+          "uses": 14104
         },
         {
           "moveId": "BODY_SLAM",
@@ -4906,20 +4970,20 @@
       "zh_hans": "卡比兽 (Shadow)",
       "zh_hant": "卡比獸 (Shadow)"
     },
-    "ranking": 651,
+    "ranking": 649,
     "moves": {
       "fastMoves": [
         {
           "moveId": "ZEN_HEADBUTT",
-          "uses": 15523
+          "uses": 15504
         },
         {
           "moveId": "YAWN",
-          "uses": 3312
+          "uses": 3302
         },
         {
           "moveId": "LICK",
-          "uses": 96889
+          "uses": 96916
         }
       ],
       "chargedMoves": [
@@ -5286,7 +5350,7 @@
       "zh_hans": "大尾立",
       "zh_hant": "大尾立"
     },
-    "ranking": 501,
+    "ranking": 502,
     "moves": {
       "fastMoves": [
         {
@@ -5358,7 +5422,7 @@
       "zh_hans": "猫头夜鹰",
       "zh_hant": "貓頭夜鷹"
     },
-    "ranking": 621,
+    "ranking": 622,
     "moves": {
       "fastMoves": [
         {
@@ -5464,16 +5528,16 @@
       "zh_hans": "灯笼鱼",
       "zh_hant": "燈籠魚"
     },
-    "ranking": 587,
+    "ranking": 584,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SPARK",
-          "uses": 60359
+          "uses": 60367
         },
         {
           "moveId": "BUBBLE",
-          "uses": 55241
+          "uses": 55233
         }
       ],
       "chargedMoves": [
@@ -5483,11 +5547,11 @@
         },
         {
           "moveId": "THUNDERBOLT",
-          "uses": 61285
+          "uses": 61286
         },
         {
           "moveId": "BUBBLE_BEAM",
-          "uses": 27844
+          "uses": 27843
         }
       ]
     },
@@ -5701,16 +5765,16 @@
       "zh_hans": "绵绵",
       "zh_hant": "綿綿"
     },
-    "ranking": 422,
+    "ranking": 424,
     "moves": {
       "fastMoves": [
         {
           "moveId": "TACKLE",
-          "uses": 36106
+          "uses": 36100
         },
         {
           "moveId": "CHARGE_BEAM",
-          "uses": 79494
+          "uses": 79500
         }
       ],
       "chargedMoves": [
@@ -5728,7 +5792,7 @@
         },
         {
           "moveId": "DISCHARGE",
-          "uses": 50371
+          "uses": 50370
         }
       ]
     },
@@ -5760,16 +5824,16 @@
       "zh_hans": "绵绵 (Shadow)",
       "zh_hant": "綿綿 (Shadow)"
     },
-    "ranking": 392,
+    "ranking": 410,
     "moves": {
       "fastMoves": [
         {
           "moveId": "TACKLE",
-          "uses": 36654
+          "uses": 36636
         },
         {
           "moveId": "CHARGE_BEAM",
-          "uses": 78946
+          "uses": 78964
         }
       ],
       "chargedMoves": [
@@ -5787,14 +5851,14 @@
         },
         {
           "moveId": "DISCHARGE",
-          "uses": 62444
+          "uses": 62445
         }
       ]
     },
     "moveset": [
       "CHARGE_BEAM",
       "DISCHARGE",
-      "POWER_GEM"
+      "THUNDERBOLT"
     ]
   },
   "ampharos": {
@@ -5819,7 +5883,7 @@
       "zh_hans": "电龙",
       "zh_hant": "電龍"
     },
-    "ranking": 599,
+    "ranking": 602,
     "moves": {
       "fastMoves": [
         {
@@ -5910,7 +5974,7 @@
       "zh_hans": "电龙 (Shadow)",
       "zh_hant": "電龍 (Shadow)"
     },
-    "ranking": 591,
+    "ranking": 592,
     "moves": {
       "fastMoves": [
         {
@@ -6115,22 +6179,22 @@
       "zh_hans": "长尾怪手",
       "zh_hant": "長尾怪手"
     },
-    "ranking": 503,
+    "ranking": 505,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SCRATCH",
-          "uses": 73971
+          "uses": 73968
         },
         {
           "moveId": "ASTONISH",
-          "uses": 41629
+          "uses": 41632
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SWIFT",
-          "uses": 18506
+          "uses": 18505
         },
         {
           "moveId": "RETURN",
@@ -6138,11 +6202,11 @@
         },
         {
           "moveId": "LOW_SWEEP",
-          "uses": 29842
+          "uses": 29843
         },
         {
           "moveId": "AERIAL_ACE",
-          "uses": 34608
+          "uses": 34607
         }
       ]
     },
@@ -6174,16 +6238,16 @@
       "zh_hans": "长尾怪手 (Shadow)",
       "zh_hant": "長尾怪手 (Shadow)"
     },
-    "ranking": 555,
+    "ranking": 556,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SCRATCH",
-          "uses": 75212
+          "uses": 75211
         },
         {
           "moveId": "ASTONISH",
-          "uses": 40388
+          "uses": 40389
         }
       ],
       "chargedMoves": [
@@ -6201,7 +6265,7 @@
         },
         {
           "moveId": "AERIAL_ACE",
-          "uses": 48639
+          "uses": 48638
         }
       ]
     },
@@ -6422,26 +6486,26 @@
       "zh_hans": "麒麟奇",
       "zh_hant": "麒麟奇"
     },
-    "ranking": 454,
+    "ranking": 455,
     "moves": {
       "fastMoves": [
         {
           "moveId": "TACKLE",
-          "uses": 31820
+          "uses": 31814
         },
         {
           "moveId": "CONFUSION",
-          "uses": 83780
+          "uses": 83786
         }
       ],
       "chargedMoves": [
         {
           "moveId": "THUNDERBOLT",
-          "uses": 48755
+          "uses": 48756
         },
         {
           "moveId": "PSYCHIC",
-          "uses": 54978
+          "uses": 54977
         },
         {
           "moveId": "MIRROR_COAT",
@@ -6499,16 +6563,16 @@
       "zh_hans": "佛烈托斯",
       "zh_hant": "佛烈托斯"
     },
-    "ranking": 651,
+    "ranking": 650,
     "moves": {
       "fastMoves": [
         {
           "moveId": "STRUGGLE_BUG",
-          "uses": 43083
+          "uses": 43080
         },
         {
           "moveId": "BUG_BITE",
-          "uses": 72517
+          "uses": 72520
         }
       ],
       "chargedMoves": [
@@ -6526,7 +6590,7 @@
         },
         {
           "moveId": "MIRROR_SHOT",
-          "uses": 29198
+          "uses": 29197
         },
         {
           "moveId": "HEAVY_SLAM",
@@ -6566,16 +6630,16 @@
       "zh_hans": "佛烈托斯 (Shadow)",
       "zh_hant": "佛烈托斯 (Shadow)"
     },
-    "ranking": 640,
+    "ranking": 638,
     "moves": {
       "fastMoves": [
         {
           "moveId": "STRUGGLE_BUG",
-          "uses": 45027
+          "uses": 45022
         },
         {
           "moveId": "BUG_BITE",
-          "uses": 70573
+          "uses": 70578
         }
       ],
       "chargedMoves": [
@@ -6601,7 +6665,7 @@
         },
         {
           "moveId": "EARTHQUAKE",
-          "uses": 27104
+          "uses": 27105
         }
       ]
     },
@@ -6635,11 +6699,11 @@
       "fastMoves": [
         {
           "moveId": "BITE",
-          "uses": 68644
+          "uses": 68647
         },
         {
           "moveId": "ASTONISH",
-          "uses": 46956
+          "uses": 46953
         }
       ],
       "chargedMoves": [
@@ -6704,20 +6768,20 @@
       "zh_hans": "大钢蛇",
       "zh_hant": "大鋼蛇"
     },
-    "ranking": 672,
+    "ranking": 670,
     "moves": {
       "fastMoves": [
         {
           "moveId": "THUNDER_FANG",
-          "uses": 40868
+          "uses": 40863
         },
         {
           "moveId": "IRON_TAIL",
-          "uses": 17482
+          "uses": 17481
         },
         {
           "moveId": "DRAGON_TAIL",
-          "uses": 57284
+          "uses": 57291
         }
       ],
       "chargedMoves": [
@@ -6870,16 +6934,16 @@
       "zh_hans": "巨钳螳螂 (Shadow)",
       "zh_hant": "巨鉗螳螂 (Shadow)"
     },
-    "ranking": 636,
+    "ranking": 634,
     "moves": {
       "fastMoves": [
         {
           "moveId": "FURY_CUTTER",
-          "uses": 58420
+          "uses": 58422
         },
         {
           "moveId": "BULLET_PUNCH",
-          "uses": 57180
+          "uses": 57178
         }
       ],
       "chargedMoves": [
@@ -6989,11 +7053,11 @@
       "fastMoves": [
         {
           "moveId": "SCRATCH",
-          "uses": 49584
+          "uses": 49589
         },
         {
           "moveId": "LICK",
-          "uses": 66016
+          "uses": 66011
         }
       ],
       "chargedMoves": [
@@ -7043,16 +7107,16 @@
       "zh_hans": "熊宝宝 (Shadow)",
       "zh_hant": "熊寶寶 (Shadow)"
     },
-    "ranking": 484,
+    "ranking": 483,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SCRATCH",
-          "uses": 48485
+          "uses": 48473
         },
         {
           "moveId": "LICK",
-          "uses": 67115
+          "uses": 67127
         }
       ],
       "chargedMoves": [
@@ -7066,7 +7130,7 @@
         },
         {
           "moveId": "CRUNCH",
-          "uses": 40966
+          "uses": 40967
         },
         {
           "moveId": "CROSS_CHOP",
@@ -7102,41 +7166,41 @@
       "zh_hans": "圈圈熊",
       "zh_hant": "圈圈熊"
     },
-    "ranking": 494,
+    "ranking": 525,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SHADOW_CLAW",
-          "uses": 49810
+          "uses": 49942
         },
         {
           "moveId": "METAL_CLAW",
-          "uses": 17984
+          "uses": 17921
         },
         {
           "moveId": "COUNTER",
-          "uses": 47718
+          "uses": 47651
         }
       ],
       "chargedMoves": [
         {
           "moveId": "PLAY_ROUGH",
-          "uses": 24016
+          "uses": 24031
         },
         {
           "moveId": "HYPER_BEAM",
-          "uses": 23414
+          "uses": 23413
         },
         {
           "moveId": "CLOSE_COMBAT",
-          "uses": 68008
+          "uses": 67980
         }
       ]
     },
     "moveset": [
-      "COUNTER",
+      "SHADOW_CLAW",
       "CLOSE_COMBAT",
-      "HYPER_BEAM"
+      "PLAY_ROUGH"
     ]
   },
   "ursaring_shadow": {
@@ -7161,30 +7225,30 @@
       "zh_hans": "圈圈熊 (Shadow)",
       "zh_hant": "圈圈熊 (Shadow)"
     },
-    "ranking": 493,
+    "ranking": 499,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SHADOW_CLAW",
-          "uses": 50012
+          "uses": 50034
         },
         {
           "moveId": "METAL_CLAW",
-          "uses": 17272
+          "uses": 17244
         },
         {
           "moveId": "COUNTER",
-          "uses": 48301
+          "uses": 48308
         }
       ],
       "chargedMoves": [
         {
           "moveId": "PLAY_ROUGH",
-          "uses": 23924
+          "uses": 23923
         },
         {
           "moveId": "HYPER_BEAM",
-          "uses": 23411
+          "uses": 23414
         },
         {
           "moveId": "FRUSTRATION",
@@ -7192,14 +7256,14 @@
         },
         {
           "moveId": "CLOSE_COMBAT",
-          "uses": 67924
+          "uses": 67923
         }
       ]
     },
     "moveset": [
-      "COUNTER",
+      "SHADOW_CLAW",
       "CLOSE_COMBAT",
-      "HYPER_BEAM"
+      "PLAY_ROUGH"
     ]
   },
   "slugma": {
@@ -7341,16 +7405,16 @@
       "zh_hans": "盔甲鸟",
       "zh_hant": "盔甲鳥"
     },
-    "ranking": 670,
+    "ranking": 668,
     "moves": {
       "fastMoves": [
         {
           "moveId": "STEEL_WING",
-          "uses": 47618
+          "uses": 47607
         },
         {
           "moveId": "AIR_SLASH",
-          "uses": 67982
+          "uses": 67993
         }
       ],
       "chargedMoves": [
@@ -7400,16 +7464,16 @@
       "zh_hans": "盔甲鸟 (Shadow)",
       "zh_hant": "盔甲鳥 (Shadow)"
     },
-    "ranking": 653,
+    "ranking": 650,
     "moves": {
       "fastMoves": [
         {
           "moveId": "STEEL_WING",
-          "uses": 46517
+          "uses": 46515
         },
         {
           "moveId": "AIR_SLASH",
-          "uses": 69083
+          "uses": 69085
         }
       ],
       "chargedMoves": [
@@ -7553,12 +7617,12 @@
       "zh_hans": "3D龙II",
       "zh_hant": "3D龍2"
     },
-    "ranking": 521,
+    "ranking": 522,
     "moves": {
       "fastMoves": [
         {
           "moveId": "LOCK_ON",
-          "uses": 12776
+          "uses": 12782
         },
         {
           "moveId": "HIDDEN_POWER_WATER",
@@ -7606,7 +7670,7 @@
         },
         {
           "moveId": "HIDDEN_POWER_FIGHTING",
-          "uses": 6419
+          "uses": 6421
         },
         {
           "moveId": "HIDDEN_POWER_ELECTRIC",
@@ -7626,7 +7690,7 @@
         },
         {
           "moveId": "CHARGE_BEAM",
-          "uses": 6611
+          "uses": 6613
         }
       ],
       "chargedMoves": [
@@ -7676,16 +7740,16 @@
       "zh_hans": "3D龙II (Shadow)",
       "zh_hant": "3D龍2 (Shadow)"
     },
-    "ranking": 520,
+    "ranking": 519,
     "moves": {
       "fastMoves": [
         {
           "moveId": "LOCK_ON",
-          "uses": 13708
+          "uses": 13716
         },
         {
           "moveId": "HIDDEN_POWER_WATER",
-          "uses": 6050
+          "uses": 6049
         },
         {
           "moveId": "HIDDEN_POWER_STEEL",
@@ -7693,15 +7757,15 @@
         },
         {
           "moveId": "HIDDEN_POWER_ROCK",
-          "uses": 6350
+          "uses": 6349
         },
         {
           "moveId": "HIDDEN_POWER_PSYCHIC",
-          "uses": 5312
+          "uses": 5311
         },
         {
           "moveId": "HIDDEN_POWER_POISON",
-          "uses": 5051
+          "uses": 5050
         },
         {
           "moveId": "HIDDEN_POWER_ICE",
@@ -7709,7 +7773,7 @@
         },
         {
           "moveId": "HIDDEN_POWER_GROUND",
-          "uses": 6609
+          "uses": 6608
         },
         {
           "moveId": "HIDDEN_POWER_GRASS",
@@ -7721,7 +7785,7 @@
         },
         {
           "moveId": "HIDDEN_POWER_FLYING",
-          "uses": 6169
+          "uses": 6168
         },
         {
           "moveId": "HIDDEN_POWER_FIRE",
@@ -7729,19 +7793,19 @@
         },
         {
           "moveId": "HIDDEN_POWER_FIGHTING",
-          "uses": 6303
+          "uses": 6305
         },
         {
           "moveId": "HIDDEN_POWER_ELECTRIC",
-          "uses": 6349
+          "uses": 6348
         },
         {
           "moveId": "HIDDEN_POWER_DRAGON",
-          "uses": 5244
+          "uses": 5243
         },
         {
           "moveId": "HIDDEN_POWER_DARK",
-          "uses": 5809
+          "uses": 5808
         },
         {
           "moveId": "HIDDEN_POWER_BUG",
@@ -7749,7 +7813,7 @@
         },
         {
           "moveId": "CHARGE_BEAM",
-          "uses": 6686
+          "uses": 6687
         }
       ],
       "chargedMoves": [
@@ -7767,7 +7831,7 @@
         },
         {
           "moveId": "HYPER_BEAM",
-          "uses": 22941
+          "uses": 22942
         },
         {
           "moveId": "FRUSTRATION",
@@ -7808,21 +7872,21 @@
       "fastMoves": [
         {
           "moveId": "ZEN_HEADBUTT",
-          "uses": 31477
+          "uses": 31466
         },
         {
           "moveId": "TACKLE",
-          "uses": 84123
+          "uses": 84134
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WILD_CHARGE",
-          "uses": 50481
+          "uses": 50482
         },
         {
           "moveId": "STOMP",
-          "uses": 27735
+          "uses": 27734
         },
         {
           "moveId": "RETURN",
@@ -7867,11 +7931,11 @@
       "fastMoves": [
         {
           "moveId": "ZEN_HEADBUTT",
-          "uses": 32350
+          "uses": 32348
         },
         {
           "moveId": "TACKLE",
-          "uses": 83250
+          "uses": 83252
         }
       ],
       "chargedMoves": [
@@ -7881,7 +7945,7 @@
         },
         {
           "moveId": "STOMP",
-          "uses": 33442
+          "uses": 33443
         },
         {
           "moveId": "MEGAHORN",
@@ -7962,16 +8026,16 @@
       "zh_hans": "电击怪",
       "zh_hant": "電擊怪"
     },
-    "ranking": 488,
+    "ranking": 490,
     "moves": {
       "fastMoves": [
         {
           "moveId": "THUNDER_SHOCK",
-          "uses": 92944
+          "uses": 92958
         },
         {
           "moveId": "LOW_KICK",
-          "uses": 22656
+          "uses": 22642
         }
       ],
       "chargedMoves": [
@@ -7989,7 +8053,7 @@
         },
         {
           "moveId": "BRICK_BREAK",
-          "uses": 35559
+          "uses": 35560
         }
       ]
     },
@@ -8026,22 +8090,22 @@
       "zh_hans": "大奶罐",
       "zh_hant": "大奶罐"
     },
-    "ranking": 467,
+    "ranking": 468,
     "moves": {
       "fastMoves": [
         {
           "moveId": "ZEN_HEADBUTT",
-          "uses": 31286
+          "uses": 31290
         },
         {
           "moveId": "TACKLE",
-          "uses": 84314
+          "uses": 84310
         }
       ],
       "chargedMoves": [
         {
           "moveId": "THUNDERBOLT",
-          "uses": 21006
+          "uses": 20988
         },
         {
           "moveId": "STOMP",
@@ -8053,18 +8117,18 @@
         },
         {
           "moveId": "GYRO_BALL",
-          "uses": 9446
+          "uses": 9447
         },
         {
           "moveId": "BODY_SLAM",
-          "uses": 51867
+          "uses": 51901
         }
       ]
     },
     "moveset": [
       "TACKLE",
       "BODY_SLAM",
-      "ICE_BEAM"
+      "THUNDERBOLT"
     ]
   },
   "blissey": {
@@ -8091,17 +8155,17 @@
       "fastMoves": [
         {
           "moveId": "ZEN_HEADBUTT",
-          "uses": 49594
+          "uses": 49590
         },
         {
           "moveId": "POUND",
-          "uses": 66006
+          "uses": 66010
         }
       ],
       "chargedMoves": [
         {
           "moveId": "PSYCHIC",
-          "uses": 47061
+          "uses": 47060
         },
         {
           "moveId": "HYPER_BEAM",
@@ -8109,7 +8173,7 @@
         },
         {
           "moveId": "DAZZLING_GLEAM",
-          "uses": 32450
+          "uses": 32449
         }
       ]
     },
@@ -8546,16 +8610,16 @@
       "zh_hans": "直冲熊",
       "zh_hant": "直衝熊"
     },
-    "ranking": 584,
+    "ranking": 583,
     "moves": {
       "fastMoves": [
         {
           "moveId": "TACKLE",
-          "uses": 27809
+          "uses": 27783
         },
         {
           "moveId": "SHADOW_CLAW",
-          "uses": 87791
+          "uses": 87817
         }
       ],
       "chargedMoves": [
@@ -8569,7 +8633,7 @@
         },
         {
           "moveId": "DIG",
-          "uses": 16470
+          "uses": 16471
         }
       ]
     },
@@ -8601,26 +8665,26 @@
       "zh_hans": "直冲熊 (Galarian)",
       "zh_hant": "直衝熊 (Galarian)"
     },
-    "ranking": 599,
+    "ranking": 601,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SNARL",
-          "uses": 68107
+          "uses": 68126
         },
         {
           "moveId": "LICK",
-          "uses": 47493
+          "uses": 47474
         }
       ],
       "chargedMoves": [
         {
           "moveId": "GUNK_SHOT",
-          "uses": 14578
+          "uses": 14580
         },
         {
           "moveId": "DIG",
-          "uses": 13217
+          "uses": 13216
         },
         {
           "moveId": "BODY_SLAM",
@@ -8803,16 +8867,16 @@
       "zh_hans": "大王燕",
       "zh_hant": "大王燕"
     },
-    "ranking": 503,
+    "ranking": 502,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WING_ATTACK",
-          "uses": 81208
+          "uses": 81226
         },
         {
           "moveId": "STEEL_WING",
-          "uses": 34392
+          "uses": 34374
         }
       ],
       "chargedMoves": [
@@ -8822,7 +8886,7 @@
         },
         {
           "moveId": "BRAVE_BIRD",
-          "uses": 59153
+          "uses": 59152
         },
         {
           "moveId": "AERIAL_ACE",
@@ -8994,11 +9058,11 @@
       "fastMoves": [
         {
           "moveId": "SCRATCH",
-          "uses": 37710
+          "uses": 37712
         },
         {
           "moveId": "COUNTER",
-          "uses": 77890
+          "uses": 77888
         }
       ],
       "chargedMoves": [
@@ -9041,7 +9105,7 @@
       "zh_hans": "请假王",
       "zh_hant": "請假王"
     },
-    "ranking": 166,
+    "ranking": 165,
     "moves": {
       "fastMoves": [
         {
@@ -9060,7 +9124,7 @@
         },
         {
           "moveId": "EARTHQUAKE",
-          "uses": 25292
+          "uses": 25293
         },
         {
           "moveId": "BODY_SLAM",
@@ -9142,17 +9206,17 @@
       "fastMoves": [
         {
           "moveId": "ROCK_SMASH",
-          "uses": 46911
+          "uses": 46917
         },
         {
           "moveId": "BITE",
-          "uses": 68689
+          "uses": 68683
         }
       ],
       "chargedMoves": [
         {
           "moveId": "STOMP",
-          "uses": 43288
+          "uses": 43289
         },
         {
           "moveId": "FLAMETHROWER",
@@ -9160,7 +9224,7 @@
         },
         {
           "moveId": "DISARMING_VOICE",
-          "uses": 40100
+          "uses": 40101
         }
       ]
     },
@@ -9189,22 +9253,22 @@
       "zh_hans": "爆音怪",
       "zh_hant": "爆音怪"
     },
-    "ranking": 464,
+    "ranking": 463,
     "moves": {
       "fastMoves": [
         {
           "moveId": "BITE",
-          "uses": 71317
+          "uses": 71315
         },
         {
           "moveId": "ASTONISH",
-          "uses": 44283
+          "uses": 44285
         }
       ],
       "chargedMoves": [
         {
           "moveId": "FIRE_BLAST",
-          "uses": 21546
+          "uses": 21548
         },
         {
           "moveId": "DISARMING_VOICE",
@@ -9218,8 +9282,8 @@
     },
     "moveset": [
       "BITE",
-      "CRUNCH",
-      "DISARMING_VOICE"
+      "DISARMING_VOICE",
+      "CRUNCH"
     ]
   },
   "makuhita": {
@@ -9347,20 +9411,20 @@
       "zh_hans": "优雅猫",
       "zh_hant": "優雅貓"
     },
-    "ranking": 550,
+    "ranking": 551,
     "moves": {
       "fastMoves": [
         {
           "moveId": "ZEN_HEADBUTT",
-          "uses": 10685
+          "uses": 10678
         },
         {
           "moveId": "FEINT_ATTACK",
-          "uses": 55962
+          "uses": 55978
         },
         {
           "moveId": "CHARM",
-          "uses": 48937
+          "uses": 48927
         }
       ],
       "chargedMoves": [
@@ -9428,24 +9492,24 @@
       "zh_hans": "大嘴娃",
       "zh_hant": "大嘴娃"
     },
-    "ranking": 593,
+    "ranking": 591,
     "moves": {
       "fastMoves": [
         {
           "moveId": "ICE_FANG",
-          "uses": 37371
+          "uses": 37374
         },
         {
           "moveId": "FIRE_FANG",
-          "uses": 36347
+          "uses": 36356
         },
         {
           "moveId": "BITE",
-          "uses": 25688
+          "uses": 25682
         },
         {
           "moveId": "ASTONISH",
-          "uses": 16244
+          "uses": 16241
         }
       ],
       "chargedMoves": [
@@ -9455,7 +9519,7 @@
         },
         {
           "moveId": "RETURN",
-          "uses": 18869
+          "uses": 18871
         },
         {
           "moveId": "POWER_UP_PUNCH",
@@ -9463,11 +9527,11 @@
         },
         {
           "moveId": "PLAY_ROUGH",
-          "uses": 30840
+          "uses": 30839
         },
         {
           "moveId": "IRON_HEAD",
-          "uses": 31906
+          "uses": 31908
         }
       ]
     },
@@ -9499,30 +9563,30 @@
       "zh_hans": "大嘴娃 (Shadow)",
       "zh_hant": "大嘴娃 (Shadow)"
     },
-    "ranking": 610,
+    "ranking": 607,
     "moves": {
       "fastMoves": [
         {
           "moveId": "ICE_FANG",
-          "uses": 37767
+          "uses": 37766
         },
         {
           "moveId": "FIRE_FANG",
-          "uses": 36779
+          "uses": 36780
         },
         {
           "moveId": "BITE",
-          "uses": 24621
+          "uses": 24622
         },
         {
           "moveId": "ASTONISH",
-          "uses": 16551
+          "uses": 16552
         }
       ],
       "chargedMoves": [
         {
           "moveId": "VICE_GRIP",
-          "uses": 21030
+          "uses": 21029
         },
         {
           "moveId": "POWER_UP_PUNCH",
@@ -9530,11 +9594,11 @@
         },
         {
           "moveId": "PLAY_ROUGH",
-          "uses": 36676
+          "uses": 36677
         },
         {
           "moveId": "IRON_HEAD",
-          "uses": 37956
+          "uses": 37955
         },
         {
           "moveId": "FRUSTRATION",
@@ -9570,16 +9634,16 @@
       "zh_hans": "可可多拉",
       "zh_hant": "可可多拉"
     },
-    "ranking": 509,
+    "ranking": 506,
     "moves": {
       "fastMoves": [
         {
           "moveId": "TACKLE",
-          "uses": 37691
+          "uses": 37670
         },
         {
           "moveId": "METAL_CLAW",
-          "uses": 77909
+          "uses": 77930
         }
       ],
       "chargedMoves": [
@@ -9597,7 +9661,7 @@
         },
         {
           "moveId": "BODY_SLAM",
-          "uses": 57378
+          "uses": 57376
         }
       ]
     },
@@ -9629,16 +9693,16 @@
       "zh_hans": "可可多拉 (Shadow)",
       "zh_hant": "可可多拉 (Shadow)"
     },
-    "ranking": 517,
+    "ranking": 515,
     "moves": {
       "fastMoves": [
         {
           "moveId": "TACKLE",
-          "uses": 35769
+          "uses": 35744
         },
         {
           "moveId": "METAL_CLAW",
-          "uses": 79831
+          "uses": 79856
         }
       ],
       "chargedMoves": [
@@ -9656,7 +9720,7 @@
         },
         {
           "moveId": "BODY_SLAM",
-          "uses": 62026
+          "uses": 62025
         }
       ]
     },
@@ -9688,16 +9752,16 @@
       "zh_hans": "可多拉",
       "zh_hant": "可多拉"
     },
-    "ranking": 555,
+    "ranking": 552,
     "moves": {
       "fastMoves": [
         {
           "moveId": "METAL_CLAW",
-          "uses": 82334
+          "uses": 82353
         },
         {
           "moveId": "IRON_TAIL",
-          "uses": 33266
+          "uses": 33247
         }
       ],
       "chargedMoves": [
@@ -9747,16 +9811,16 @@
       "zh_hans": "可多拉 (Shadow)",
       "zh_hant": "可多拉 (Shadow)"
     },
-    "ranking": 553,
+    "ranking": 549,
     "moves": {
       "fastMoves": [
         {
           "moveId": "METAL_CLAW",
-          "uses": 82774
+          "uses": 82795
         },
         {
           "moveId": "IRON_TAIL",
-          "uses": 32826
+          "uses": 32805
         }
       ],
       "chargedMoves": [
@@ -9806,20 +9870,20 @@
       "zh_hans": "波士可多拉",
       "zh_hant": "波士可多拉"
     },
-    "ranking": 565,
+    "ranking": 562,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SMACK_DOWN",
-          "uses": 50697
+          "uses": 50695
         },
         {
           "moveId": "IRON_TAIL",
-          "uses": 15861
+          "uses": 15847
         },
         {
           "moveId": "DRAGON_TAIL",
-          "uses": 48971
+          "uses": 48986
         }
       ],
       "chargedMoves": [
@@ -9829,11 +9893,11 @@
         },
         {
           "moveId": "STONE_EDGE",
-          "uses": 52275
+          "uses": 52276
         },
         {
           "moveId": "HEAVY_SLAM",
-          "uses": 35645
+          "uses": 35644
         }
       ]
     },
@@ -9865,7 +9929,7 @@
       "zh_hans": "波士可多拉 (Shadow)",
       "zh_hant": "波士可多拉 (Shadow)"
     },
-    "ranking": 587,
+    "ranking": 585,
     "moves": {
       "fastMoves": [
         {
@@ -9874,11 +9938,11 @@
         },
         {
           "moveId": "IRON_TAIL",
-          "uses": 15420
+          "uses": 15408
         },
         {
           "moveId": "DRAGON_TAIL",
-          "uses": 49201
+          "uses": 49213
         }
       ],
       "chargedMoves": [
@@ -9892,7 +9956,7 @@
         },
         {
           "moveId": "HEAVY_SLAM",
-          "uses": 35588
+          "uses": 35586
         },
         {
           "moveId": "FRUSTRATION",
@@ -9990,7 +10054,7 @@
       "zh_hans": "雷电兽",
       "zh_hant": "雷電獸"
     },
-    "ranking": 533,
+    "ranking": 532,
     "moves": {
       "fastMoves": [
         {
@@ -10072,16 +10136,16 @@
       "zh_hans": "雷电兽 (Shadow)",
       "zh_hant": "雷電獸 (Shadow)"
     },
-    "ranking": 494,
+    "ranking": 496,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SNARL",
-          "uses": 69164
+          "uses": 69167
         },
         {
           "moveId": "CHARGE_BEAM",
-          "uses": 46436
+          "uses": 46433
         }
       ],
       "chargedMoves": [
@@ -10128,16 +10192,16 @@
       "zh_hans": "正电拍拍",
       "zh_hant": "正電拍拍"
     },
-    "ranking": 502,
+    "ranking": 500,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SPARK",
-          "uses": 68400
+          "uses": 68403
         },
         {
           "moveId": "QUICK_ATTACK",
-          "uses": 47200
+          "uses": 47197
         }
       ],
       "chargedMoves": [
@@ -10184,7 +10248,7 @@
       "zh_hans": "负电拍拍",
       "zh_hant": "負電拍拍"
     },
-    "ranking": 554,
+    "ranking": 555,
     "moves": {
       "fastMoves": [
         {
@@ -10396,11 +10460,11 @@
       "fastMoves": [
         {
           "moveId": "SUCKER_PUNCH",
-          "uses": 55089
+          "uses": 55082
         },
         {
           "moveId": "PSYCHO_CUT",
-          "uses": 60511
+          "uses": 60518
         }
       ],
       "chargedMoves": [
@@ -10410,7 +10474,7 @@
         },
         {
           "moveId": "ICY_WIND",
-          "uses": 72468
+          "uses": 72467
         },
         {
           "moveId": "DIG",
@@ -10567,7 +10631,7 @@
       "zh_hans": "猫鼬斩",
       "zh_hant": "貓鼬斬"
     },
-    "ranking": 660,
+    "ranking": 662,
     "moves": {
       "fastMoves": [
         {
@@ -10582,7 +10646,7 @@
       "chargedMoves": [
         {
           "moveId": "NIGHT_SLASH",
-          "uses": 50271
+          "uses": 50272
         },
         {
           "moveId": "DIG",
@@ -10590,7 +10654,7 @@
         },
         {
           "moveId": "CLOSE_COMBAT",
-          "uses": 57885
+          "uses": 57884
         }
       ]
     },
@@ -10809,17 +10873,17 @@
       "fastMoves": [
         {
           "moveId": "TACKLE",
-          "uses": 31553
+          "uses": 31548
         },
         {
           "moveId": "HEX",
-          "uses": 84047
+          "uses": 84052
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WEATHER_BALL_ROCK",
-          "uses": 65365
+          "uses": 65364
         },
         {
           "moveId": "HURRICANE",
@@ -11268,16 +11332,16 @@
       "zh_hans": "金属怪",
       "zh_hant": "金屬怪"
     },
-    "ranking": 517,
+    "ranking": 515,
     "moves": {
       "fastMoves": [
         {
           "moveId": "ZEN_HEADBUTT",
-          "uses": 33003
+          "uses": 33005
         },
         {
           "moveId": "METAL_CLAW",
-          "uses": 82597
+          "uses": 82595
         }
       ],
       "chargedMoves": [
@@ -11287,7 +11351,7 @@
         },
         {
           "moveId": "PSYSHOCK",
-          "uses": 49859
+          "uses": 49858
         },
         {
           "moveId": "PSYCHIC",
@@ -11327,16 +11391,16 @@
       "zh_hans": "金属怪 (Shadow)",
       "zh_hant": "金屬怪 (Shadow)"
     },
-    "ranking": 495,
+    "ranking": 493,
     "moves": {
       "fastMoves": [
         {
           "moveId": "ZEN_HEADBUTT",
-          "uses": 33507
+          "uses": 33501
         },
         {
           "moveId": "METAL_CLAW",
-          "uses": 82093
+          "uses": 82099
         }
       ],
       "chargedMoves": [
@@ -11350,7 +11414,7 @@
         },
         {
           "moveId": "GYRO_BALL",
-          "uses": 31309
+          "uses": 31308
         },
         {
           "moveId": "FRUSTRATION",
@@ -11386,16 +11450,16 @@
       "zh_hans": "巨金怪",
       "zh_hant": "巨金怪"
     },
-    "ranking": 486,
+    "ranking": 484,
     "moves": {
       "fastMoves": [
         {
           "moveId": "ZEN_HEADBUTT",
-          "uses": 17432
+          "uses": 17443
         },
         {
           "moveId": "BULLET_PUNCH",
-          "uses": 98168
+          "uses": 98157
         }
       ],
       "chargedMoves": [
@@ -11409,7 +11473,7 @@
         },
         {
           "moveId": "FLASH_CANNON",
-          "uses": 7859
+          "uses": 7858
         },
         {
           "moveId": "EARTHQUAKE",
@@ -11445,7 +11509,7 @@
       "zh_hans": "巨金怪 (Shadow)",
       "zh_hant": "巨金怪 (Shadow)"
     },
-    "ranking": 476,
+    "ranking": 473,
     "moves": {
       "fastMoves": [
         {
@@ -11783,7 +11847,7 @@
       "zh_hans": "帝王拿波",
       "zh_hant": "帝王拿波"
     },
-    "ranking": 651,
+    "ranking": 648,
     "moves": {
       "fastMoves": [
         {
@@ -11810,7 +11874,7 @@
         },
         {
           "moveId": "DRILL_PECK",
-          "uses": 31444
+          "uses": 31445
         },
         {
           "moveId": "BLIZZARD",
@@ -11892,7 +11956,7 @@
       "zh_hans": "姆克鸟",
       "zh_hant": "姆克鳥"
     },
-    "ranking": 487,
+    "ranking": 485,
     "moves": {
       "fastMoves": [
         {
@@ -11978,7 +12042,7 @@
         },
         {
           "moveId": "AERIAL_ACE",
-          "uses": 30117
+          "uses": 30116
         }
       ]
     },
@@ -12010,7 +12074,7 @@
       "zh_hans": "姆克鹰",
       "zh_hant": "姆克鷹"
     },
-    "ranking": 475,
+    "ranking": 474,
     "moves": {
       "fastMoves": [
         {
@@ -12170,16 +12234,16 @@
       "zh_hans": "大尾狸",
       "zh_hant": "大尾狸"
     },
-    "ranking": 569,
+    "ranking": 568,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 92511
+          "uses": 92524
         },
         {
           "moveId": "TAKE_DOWN",
-          "uses": 23089
+          "uses": 23076
         }
       ],
       "chargedMoves": [
@@ -12229,16 +12293,16 @@
       "zh_hans": "大尾狸 (Shadow)",
       "zh_hant": "大尾狸 (Shadow)"
     },
-    "ranking": 564,
+    "ranking": 561,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WATER_GUN",
-          "uses": 91998
+          "uses": 92013
         },
         {
           "moveId": "TAKE_DOWN",
-          "uses": 23602
+          "uses": 23587
         }
       ],
       "chargedMoves": [
@@ -12321,16 +12385,16 @@
       "zh_hans": "勒克猫",
       "zh_hant": "勒克貓"
     },
-    "ranking": 534,
+    "ranking": 532,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SPARK",
-          "uses": 84847
+          "uses": 84886
         },
         {
           "moveId": "BITE",
-          "uses": 30753
+          "uses": 30714
         }
       ],
       "chargedMoves": [
@@ -12373,90 +12437,90 @@
       "zh_hans": "伦琴猫",
       "zh_hant": "倫琴貓"
     },
-    "ranking": 507,
+    "ranking": 503,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SPARK",
-          "uses": 17010
+          "uses": 17032
         },
         {
           "moveId": "SNARL",
-          "uses": 13763
+          "uses": 13781
         },
         {
           "moveId": "HIDDEN_POWER_WATER",
-          "uses": 5316
+          "uses": 5314
         },
         {
           "moveId": "HIDDEN_POWER_STEEL",
-          "uses": 4632
+          "uses": 4630
         },
         {
           "moveId": "HIDDEN_POWER_ROCK",
-          "uses": 5560
+          "uses": 5558
         },
         {
           "moveId": "HIDDEN_POWER_PSYCHIC",
-          "uses": 4606
+          "uses": 4603
         },
         {
           "moveId": "HIDDEN_POWER_POISON",
-          "uses": 4291
+          "uses": 4288
         },
         {
           "moveId": "HIDDEN_POWER_ICE",
-          "uses": 5668
+          "uses": 5666
         },
         {
           "moveId": "HIDDEN_POWER_GROUND",
-          "uses": 5982
+          "uses": 5980
         },
         {
           "moveId": "HIDDEN_POWER_GRASS",
-          "uses": 5321
+          "uses": 5319
         },
         {
           "moveId": "HIDDEN_POWER_GHOST",
-          "uses": 5193
+          "uses": 5190
         },
         {
           "moveId": "HIDDEN_POWER_FLYING",
-          "uses": 5441
+          "uses": 5438
         },
         {
           "moveId": "HIDDEN_POWER_FIRE",
-          "uses": 5656
+          "uses": 5654
         },
         {
           "moveId": "HIDDEN_POWER_FIGHTING",
-          "uses": 5609
+          "uses": 5607
         },
         {
           "moveId": "HIDDEN_POWER_ELECTRIC",
-          "uses": 7216
+          "uses": 7215
         },
         {
           "moveId": "HIDDEN_POWER_DRAGON",
-          "uses": 4488
+          "uses": 4485
         },
         {
           "moveId": "HIDDEN_POWER_DARK",
-          "uses": 4961
+          "uses": 4958
         },
         {
           "moveId": "HIDDEN_POWER_BUG",
-          "uses": 4557
+          "uses": 4555
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WILD_CHARGE",
-          "uses": 74019
+          "uses": 74020
         },
         {
           "moveId": "HYPER_BEAM",
-          "uses": 11336
+          "uses": 11334
         },
         {
           "moveId": "CRUNCH",
@@ -12541,22 +12605,22 @@
       "zh_hans": "护城龙",
       "zh_hant": "護城龍"
     },
-    "ranking": 683,
+    "ranking": 681,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SMACK_DOWN",
-          "uses": 88502
+          "uses": 88506
         },
         {
           "moveId": "IRON_TAIL",
-          "uses": 27098
+          "uses": 27094
         }
       ],
       "chargedMoves": [
         {
           "moveId": "STONE_EDGE",
-          "uses": 57214
+          "uses": 57213
         },
         {
           "moveId": "FLASH_CANNON",
@@ -12633,7 +12697,7 @@
       "zh_hans": "结草贵妇 (Trash)",
       "zh_hant": "結草貴婦 (Trash)"
     },
-    "ranking": 606,
+    "ranking": 604,
     "moves": {
       "fastMoves": [
         {
@@ -12712,16 +12776,16 @@
       "zh_hans": "帕奇利兹",
       "zh_hant": "帕奇利茲"
     },
-    "ranking": 663,
+    "ranking": 662,
     "moves": {
       "fastMoves": [
         {
           "moveId": "VOLT_SWITCH",
-          "uses": 65982
+          "uses": 65988
         },
         {
           "moveId": "SPARK",
-          "uses": 49618
+          "uses": 49612
         }
       ],
       "chargedMoves": [
@@ -12845,16 +12909,16 @@
       "zh_hans": "双尾怪手",
       "zh_hant": "雙尾怪手"
     },
-    "ranking": 493,
+    "ranking": 495,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SCRATCH",
-          "uses": 74921
+          "uses": 74920
         },
         {
           "moveId": "ASTONISH",
-          "uses": 40679
+          "uses": 40680
         }
       ],
       "chargedMoves": [
@@ -12868,7 +12932,7 @@
         },
         {
           "moveId": "HYPER_BEAM",
-          "uses": 13396
+          "uses": 13397
         },
         {
           "moveId": "AERIAL_ACE",
@@ -12904,16 +12968,16 @@
       "zh_hans": "双尾怪手 (Shadow)",
       "zh_hant": "雙尾怪手 (Shadow)"
     },
-    "ranking": 539,
+    "ranking": 541,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SCRATCH",
-          "uses": 73745
+          "uses": 73744
         },
         {
           "moveId": "ASTONISH",
-          "uses": 41855
+          "uses": 41856
         }
       ],
       "chargedMoves": [
@@ -12931,7 +12995,7 @@
         },
         {
           "moveId": "AERIAL_ACE",
-          "uses": 44505
+          "uses": 44504
         }
       ]
     },
@@ -12981,21 +13045,21 @@
       "fastMoves": [
         {
           "moveId": "QUICK_ATTACK",
-          "uses": 89211
+          "uses": 89224
         },
         {
           "moveId": "POUND",
-          "uses": 26389
+          "uses": 26376
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SWIFT",
-          "uses": 35788
+          "uses": 35787
         },
         {
           "moveId": "FIRE_PUNCH",
-          "uses": 79812
+          "uses": 79813
         }
       ]
     },
@@ -13024,16 +13088,16 @@
       "zh_hans": "长耳兔",
       "zh_hant": "長耳兔"
     },
-    "ranking": 298,
+    "ranking": 300,
     "moves": {
       "fastMoves": [
         {
           "moveId": "POUND",
-          "uses": 56772
+          "uses": 56769
         },
         {
           "moveId": "LOW_KICK",
-          "uses": 58828
+          "uses": 58831
         }
       ],
       "chargedMoves": [
@@ -13163,16 +13227,16 @@
       "zh_hans": "东施喵",
       "zh_hant": "東施喵"
     },
-    "ranking": 512,
+    "ranking": 511,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SHADOW_CLAW",
-          "uses": 77245
+          "uses": 77268
         },
         {
           "moveId": "SCRATCH",
-          "uses": 38355
+          "uses": 38332
         }
       ],
       "chargedMoves": [
@@ -13192,8 +13256,8 @@
     },
     "moveset": [
       "SHADOW_CLAW",
-      "AERIAL_ACE",
-      "THUNDER"
+      "THUNDER",
+      "AERIAL_ACE"
     ]
   },
   "chingling": {
@@ -13287,7 +13351,7 @@
       "zh_hans": "青铜钟",
       "zh_hant": "青銅鐘"
     },
-    "ranking": 619,
+    "ranking": 618,
     "moves": {
       "fastMoves": [
         {
@@ -13322,7 +13386,7 @@
         },
         {
           "moveId": "BULLDOZE",
-          "uses": 14847
+          "uses": 14848
         }
       ]
     },
@@ -13413,7 +13477,7 @@
         },
         {
           "moveId": "HEAT_WAVE",
-          "uses": 14699
+          "uses": 14698
         }
       ]
     },
@@ -13479,11 +13543,11 @@
       "fastMoves": [
         {
           "moveId": "TACKLE",
-          "uses": 38874
+          "uses": 38868
         },
         {
           "moveId": "LICK",
-          "uses": 76726
+          "uses": 76732
         }
       ],
       "chargedMoves": [
@@ -13534,22 +13598,22 @@
       "zh_hans": "路卡利欧",
       "zh_hant": "路卡利歐"
     },
-    "ranking": 677,
+    "ranking": 675,
     "moves": {
       "fastMoves": [
         {
           "moveId": "COUNTER",
-          "uses": 69086
+          "uses": 69080
         },
         {
           "moveId": "BULLET_PUNCH",
-          "uses": 46514
+          "uses": 46520
         }
       ],
       "chargedMoves": [
         {
           "moveId": "SHADOW_BALL",
-          "uses": 26086
+          "uses": 26087
         },
         {
           "moveId": "POWER_UP_PUNCH",
@@ -13557,7 +13621,7 @@
         },
         {
           "moveId": "FLASH_CANNON",
-          "uses": 13007
+          "uses": 13008
         },
         {
           "moveId": "CLOSE_COMBAT",
@@ -13565,7 +13629,7 @@
         },
         {
           "moveId": "AURA_SPHERE",
-          "uses": 12216
+          "uses": 12215
         }
       ]
     },
@@ -13791,11 +13855,11 @@
       "fastMoves": [
         {
           "moveId": "SPARK",
-          "uses": 71541
+          "uses": 71552
         },
         {
           "moveId": "CHARGE_BEAM",
-          "uses": 44059
+          "uses": 44048
         }
       ],
       "chargedMoves": [
@@ -13805,7 +13869,7 @@
         },
         {
           "moveId": "WILD_CHARGE",
-          "uses": 66725
+          "uses": 66724
         },
         {
           "moveId": "MIRROR_SHOT",
@@ -13845,16 +13909,16 @@
       "zh_hans": "自爆磁怪 (Shadow)",
       "zh_hant": "自爆磁怪 (Shadow)"
     },
-    "ranking": 658,
+    "ranking": 659,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SPARK",
-          "uses": 72653
+          "uses": 72666
         },
         {
           "moveId": "CHARGE_BEAM",
-          "uses": 42947
+          "uses": 42934
         }
       ],
       "chargedMoves": [
@@ -13910,11 +13974,11 @@
       "fastMoves": [
         {
           "moveId": "ZEN_HEADBUTT",
-          "uses": 17969
+          "uses": 17960
         },
         {
           "moveId": "LICK",
-          "uses": 97631
+          "uses": 97640
         }
       ],
       "chargedMoves": [
@@ -13936,7 +14000,7 @@
         },
         {
           "moveId": "BODY_SLAM",
-          "uses": 54961
+          "uses": 54960
         }
       ]
     },
@@ -14226,16 +14290,16 @@
       "zh_hans": "3D龙Z",
       "zh_hant": "3D龍Z"
     },
-    "ranking": 433,
+    "ranking": 434,
     "moves": {
       "fastMoves": [
         {
           "moveId": "LOCK_ON",
-          "uses": 14759
+          "uses": 14767
         },
         {
           "moveId": "HIDDEN_POWER_WATER",
-          "uses": 5925
+          "uses": 5924
         },
         {
           "moveId": "HIDDEN_POWER_STEEL",
@@ -14243,15 +14307,15 @@
         },
         {
           "moveId": "HIDDEN_POWER_ROCK",
-          "uses": 6243
+          "uses": 6242
         },
         {
           "moveId": "HIDDEN_POWER_PSYCHIC",
-          "uses": 5225
+          "uses": 5224
         },
         {
           "moveId": "HIDDEN_POWER_POISON",
-          "uses": 4978
+          "uses": 4977
         },
         {
           "moveId": "HIDDEN_POWER_ICE",
@@ -14259,7 +14323,7 @@
         },
         {
           "moveId": "HIDDEN_POWER_GROUND",
-          "uses": 6567
+          "uses": 6566
         },
         {
           "moveId": "HIDDEN_POWER_GRASS",
@@ -14271,7 +14335,7 @@
         },
         {
           "moveId": "HIDDEN_POWER_FLYING",
-          "uses": 6091
+          "uses": 6090
         },
         {
           "moveId": "HIDDEN_POWER_FIRE",
@@ -14279,19 +14343,19 @@
         },
         {
           "moveId": "HIDDEN_POWER_FIGHTING",
-          "uses": 6161
+          "uses": 6163
         },
         {
           "moveId": "HIDDEN_POWER_ELECTRIC",
-          "uses": 6260
+          "uses": 6259
         },
         {
           "moveId": "HIDDEN_POWER_DRAGON",
-          "uses": 5151
+          "uses": 5150
         },
         {
           "moveId": "HIDDEN_POWER_DARK",
-          "uses": 5730
+          "uses": 5729
         },
         {
           "moveId": "HIDDEN_POWER_BUG",
@@ -14299,7 +14363,7 @@
         },
         {
           "moveId": "CHARGE_BEAM",
-          "uses": 6814
+          "uses": 6815
         }
       ],
       "chargedMoves": [
@@ -14358,39 +14422,39 @@
       "fastMoves": [
         {
           "moveId": "LOCK_ON",
-          "uses": 16410
+          "uses": 16425
         },
         {
           "moveId": "HIDDEN_POWER_WATER",
-          "uses": 5857
+          "uses": 5855
         },
         {
           "moveId": "HIDDEN_POWER_STEEL",
-          "uses": 5138
+          "uses": 5136
         },
         {
           "moveId": "HIDDEN_POWER_ROCK",
-          "uses": 6197
+          "uses": 6195
         },
         {
           "moveId": "HIDDEN_POWER_PSYCHIC",
-          "uses": 5122
+          "uses": 5120
         },
         {
           "moveId": "HIDDEN_POWER_POISON",
-          "uses": 4867
+          "uses": 4865
         },
         {
           "moveId": "HIDDEN_POWER_ICE",
-          "uses": 6421
+          "uses": 6419
         },
         {
           "moveId": "HIDDEN_POWER_GROUND",
-          "uses": 6431
+          "uses": 6429
         },
         {
           "moveId": "HIDDEN_POWER_GRASS",
-          "uses": 6036
+          "uses": 6034
         },
         {
           "moveId": "HIDDEN_POWER_GHOST",
@@ -14398,35 +14462,35 @@
         },
         {
           "moveId": "HIDDEN_POWER_FLYING",
-          "uses": 6003
+          "uses": 6001
         },
         {
           "moveId": "HIDDEN_POWER_FIRE",
-          "uses": 6248
+          "uses": 6246
         },
         {
           "moveId": "HIDDEN_POWER_FIGHTING",
-          "uses": 6041
+          "uses": 6042
         },
         {
           "moveId": "HIDDEN_POWER_ELECTRIC",
-          "uses": 6223
+          "uses": 6221
         },
         {
           "moveId": "HIDDEN_POWER_DRAGON",
-          "uses": 5006
+          "uses": 5004
         },
         {
           "moveId": "HIDDEN_POWER_DARK",
-          "uses": 5524
+          "uses": 5522
         },
         {
           "moveId": "HIDDEN_POWER_BUG",
-          "uses": 5126
+          "uses": 5124
         },
         {
           "moveId": "CHARGE_BEAM",
-          "uses": 7090
+          "uses": 7091
         }
       ],
       "chargedMoves": [
@@ -14506,16 +14570,16 @@
       "zh_hans": "大朝北鼻",
       "zh_hant": "大朝北鼻"
     },
-    "ranking": 627,
+    "ranking": 624,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SPARK",
-          "uses": 61775
+          "uses": 61784
         },
         {
           "moveId": "ROCK_THROW",
-          "uses": 53825
+          "uses": 53816
         }
       ],
       "chargedMoves": [
@@ -14533,7 +14597,7 @@
         },
         {
           "moveId": "MAGNET_BOMB",
-          "uses": 35422
+          "uses": 35421
         }
       ]
     },
@@ -14565,22 +14629,22 @@
       "zh_hans": "大朝北鼻 (Shadow)",
       "zh_hant": "大朝北鼻 (Shadow)"
     },
-    "ranking": 615,
+    "ranking": 612,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SPARK",
-          "uses": 60907
+          "uses": 60929
         },
         {
           "moveId": "ROCK_THROW",
-          "uses": 54693
+          "uses": 54671
         }
       ],
       "chargedMoves": [
         {
           "moveId": "THUNDERBOLT",
-          "uses": 24476
+          "uses": 24475
         },
         {
           "moveId": "ROCK_SLIDE",
@@ -14706,16 +14770,16 @@
       "zh_hans": "洛托姆 (Wash)",
       "zh_hant": "洛托姆 (Wash)"
     },
-    "ranking": 478,
+    "ranking": 475,
     "moves": {
       "fastMoves": [
         {
           "moveId": "THUNDER_SHOCK",
-          "uses": 90239
+          "uses": 90245
         },
         {
           "moveId": "ASTONISH",
-          "uses": 25361
+          "uses": 25355
         }
       ],
       "chargedMoves": [
@@ -15253,16 +15317,16 @@
       "zh_hans": "步哨鼠",
       "zh_hant": "步哨鼠"
     },
-    "ranking": 450,
+    "ranking": 447,
     "moves": {
       "fastMoves": [
         {
           "moveId": "LOW_KICK",
-          "uses": 37246
+          "uses": 37262
         },
         {
           "moveId": "BITE",
-          "uses": 78354
+          "uses": 78338
         }
       ],
       "chargedMoves": [
@@ -15283,7 +15347,7 @@
     "moveset": [
       "BITE",
       "HYPER_FANG",
-      "CRUNCH"
+      "GRASS_KNOT"
     ]
   },
   "lillipup": {
@@ -15325,22 +15389,22 @@
       "zh_hans": "哈约克",
       "zh_hant": "哈約克"
     },
-    "ranking": 365,
+    "ranking": 366,
     "moves": {
       "fastMoves": [
         {
           "moveId": "TAKE_DOWN",
-          "uses": 29918
+          "uses": 29930
         },
         {
           "moveId": "LICK",
-          "uses": 85682
+          "uses": 85670
         }
       ],
       "chargedMoves": [
         {
           "moveId": "THUNDERBOLT",
-          "uses": 53247
+          "uses": 53248
         },
         {
           "moveId": "PLAY_ROUGH",
@@ -15348,7 +15412,7 @@
         },
         {
           "moveId": "DIG",
-          "uses": 21359
+          "uses": 21358
         }
       ]
     },
@@ -15377,7 +15441,7 @@
       "zh_hans": "长毛狗",
       "zh_hant": "長毛狗"
     },
-    "ranking": 413,
+    "ranking": 412,
     "moves": {
       "fastMoves": [
         {
@@ -15386,11 +15450,11 @@
         },
         {
           "moveId": "LICK",
-          "uses": 53691
+          "uses": 53676
         },
         {
           "moveId": "ICE_FANG",
-          "uses": 47404
+          "uses": 47418
         }
       ],
       "chargedMoves": [
@@ -15556,11 +15620,11 @@
       "fastMoves": [
         {
           "moveId": "STEEL_WING",
-          "uses": 43351
+          "uses": 43344
         },
         {
           "moveId": "AIR_SLASH",
-          "uses": 72249
+          "uses": 72256
         }
       ],
       "chargedMoves": [
@@ -15574,7 +15638,7 @@
         },
         {
           "moveId": "AERIAL_ACE",
-          "uses": 21316
+          "uses": 21315
         }
       ]
     },
@@ -15603,16 +15667,16 @@
       "zh_hans": "轰隆雉鸡",
       "zh_hant": "轟隆雉雞"
     },
-    "ranking": 469,
+    "ranking": 468,
     "moves": {
       "fastMoves": [
         {
           "moveId": "STEEL_WING",
-          "uses": 42994
+          "uses": 42984
         },
         {
           "moveId": "AIR_SLASH",
-          "uses": 72606
+          "uses": 72616
         }
       ],
       "chargedMoves": [
@@ -15675,16 +15739,16 @@
       "zh_hans": "雷电斑马",
       "zh_hant": "雷電斑馬"
     },
-    "ranking": 583,
+    "ranking": 582,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SPARK",
-          "uses": 98543
+          "uses": 98567
         },
         {
           "moveId": "LOW_KICK",
-          "uses": 17057
+          "uses": 17033
         }
       ],
       "chargedMoves": [
@@ -15775,20 +15839,20 @@
       "zh_hans": "龙头地鼠",
       "zh_hant": "龍頭地鼠"
     },
-    "ranking": 602,
+    "ranking": 601,
     "moves": {
       "fastMoves": [
         {
           "moveId": "MUD_SLAP",
-          "uses": 32863
+          "uses": 32856
         },
         {
           "moveId": "MUD_SHOT",
-          "uses": 56128
+          "uses": 56143
         },
         {
           "moveId": "METAL_CLAW",
-          "uses": 26683
+          "uses": 26677
         }
       ],
       "chargedMoves": [
@@ -15835,16 +15899,16 @@
       "zh_hans": "差不多娃娃",
       "zh_hant": "差不多娃娃"
     },
-    "ranking": 369,
+    "ranking": 368,
     "moves": {
       "fastMoves": [
         {
           "moveId": "ZEN_HEADBUTT",
-          "uses": 50048
+          "uses": 50051
         },
         {
           "moveId": "POUND",
-          "uses": 65552
+          "uses": 65549
         }
       ],
       "chargedMoves": [
@@ -16298,22 +16362,22 @@
       "zh_hans": "奇诺栗鼠",
       "zh_hant": "奇諾栗鼠"
     },
-    "ranking": 540,
+    "ranking": 541,
     "moves": {
       "fastMoves": [
         {
           "moveId": "POUND",
-          "uses": 27175
+          "uses": 27173
         },
         {
           "moveId": "CHARM",
-          "uses": 88425
+          "uses": 88427
         }
       ],
       "chargedMoves": [
         {
           "moveId": "THUNDERBOLT",
-          "uses": 34817
+          "uses": 34816
         },
         {
           "moveId": "HYPER_BEAM",
@@ -16438,22 +16502,22 @@
       "zh_hans": "四季鹿",
       "zh_hant": "四季鹿"
     },
-    "ranking": 334,
+    "ranking": 337,
     "moves": {
       "fastMoves": [
         {
           "moveId": "TAKE_DOWN",
-          "uses": 48910
+          "uses": 48937
         },
         {
           "moveId": "TACKLE",
-          "uses": 66690
+          "uses": 66663
         }
       ],
       "chargedMoves": [
         {
           "moveId": "WILD_CHARGE",
-          "uses": 61636
+          "uses": 61638
         },
         {
           "moveId": "SEED_BOMB",
@@ -16490,16 +16554,16 @@
       "zh_hans": "芽吹鹿",
       "zh_hant": "芽吹鹿"
     },
-    "ranking": 412,
+    "ranking": 416,
     "moves": {
       "fastMoves": [
         {
           "moveId": "TAKE_DOWN",
-          "uses": 26234
+          "uses": 26221
         },
         {
           "moveId": "FEINT_ATTACK",
-          "uses": 89366
+          "uses": 89379
         }
       ],
       "chargedMoves": [
@@ -16546,16 +16610,16 @@
       "zh_hans": "电飞鼠",
       "zh_hant": "電飛鼠"
     },
-    "ranking": 562,
+    "ranking": 563,
     "moves": {
       "fastMoves": [
         {
           "moveId": "THUNDER_SHOCK",
-          "uses": 69844
+          "uses": 69841
         },
         {
           "moveId": "QUICK_ATTACK",
-          "uses": 45756
+          "uses": 45759
         }
       ],
       "chargedMoves": [
@@ -16606,7 +16670,7 @@
       "zh_hans": "骑士蜗牛",
       "zh_hant": "騎士蝸牛"
     },
-    "ranking": 640,
+    "ranking": 639,
     "moves": {
       "fastMoves": [
         {
@@ -16722,16 +16786,16 @@
       "zh_hans": "电蜘蛛",
       "zh_hant": "電蜘蛛"
     },
-    "ranking": 622,
+    "ranking": 621,
     "moves": {
       "fastMoves": [
         {
           "moveId": "VOLT_SWITCH",
-          "uses": 64836
+          "uses": 64843
         },
         {
           "moveId": "FURY_CUTTER",
-          "uses": 50764
+          "uses": 50757
         }
       ],
       "chargedMoves": [
@@ -16787,11 +16851,11 @@
       "fastMoves": [
         {
           "moveId": "TACKLE",
-          "uses": 44165
+          "uses": 44155
         },
         {
           "moveId": "METAL_CLAW",
-          "uses": 71435
+          "uses": 71445
         }
       ],
       "chargedMoves": [
@@ -16801,7 +16865,7 @@
         },
         {
           "moveId": "GYRO_BALL",
-          "uses": 22220
+          "uses": 22219
         },
         {
           "moveId": "FLASH_CANNON",
@@ -16839,25 +16903,25 @@
       "fastMoves": [
         {
           "moveId": "METAL_CLAW",
-          "uses": 43936
+          "uses": 43921
         },
         {
           "moveId": "BULLET_SEED",
-          "uses": 71664
+          "uses": 71679
         }
       ],
       "chargedMoves": [
         {
           "moveId": "THUNDER",
-          "uses": 22077
+          "uses": 22078
         },
         {
           "moveId": "POWER_WHIP",
-          "uses": 42361
+          "uses": 42362
         },
         {
           "moveId": "MIRROR_SHOT",
-          "uses": 30206
+          "uses": 30204
         },
         {
           "moveId": "FLASH_CANNON",
@@ -16865,7 +16929,7 @@
         },
         {
           "moveId": "ACID_SPRAY",
-          "uses": 5202
+          "uses": 5203
         }
       ]
     },
@@ -16914,30 +16978,30 @@
       "zh_hans": "齿轮组",
       "zh_hant": "齒輪組"
     },
-    "ranking": 587,
+    "ranking": 586,
     "moves": {
       "fastMoves": [
         {
           "moveId": "THUNDER_SHOCK",
-          "uses": 71416
+          "uses": 71417
         },
         {
           "moveId": "CHARGE_BEAM",
-          "uses": 44184
+          "uses": 44183
         }
       ],
       "chargedMoves": [
         {
           "moveId": "ZAP_CANNON",
-          "uses": 17707
+          "uses": 17706
         },
         {
           "moveId": "VICE_GRIP",
-          "uses": 39933
+          "uses": 39932
         },
         {
           "moveId": "THUNDERBOLT",
-          "uses": 57813
+          "uses": 57814
         }
       ]
     },
@@ -16966,16 +17030,16 @@
       "zh_hans": "齿轮怪",
       "zh_hant": "齒輪怪"
     },
-    "ranking": 573,
+    "ranking": 571,
     "moves": {
       "fastMoves": [
         {
           "moveId": "THUNDER_SHOCK",
-          "uses": 71321
+          "uses": 71331
         },
         {
           "moveId": "CHARGE_BEAM",
-          "uses": 44279
+          "uses": 44269
         }
       ],
       "chargedMoves": [
@@ -16985,7 +17049,7 @@
         },
         {
           "moveId": "MIRROR_SHOT",
-          "uses": 46527
+          "uses": 46528
         },
         {
           "moveId": "HYPER_BEAM",
@@ -17042,16 +17106,16 @@
       "zh_hans": "麻麻鳗",
       "zh_hant": "麻麻鰻"
     },
-    "ranking": 524,
+    "ranking": 522,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SPARK",
-          "uses": 85526
+          "uses": 85553
         },
         {
           "moveId": "ACID",
-          "uses": 30074
+          "uses": 30047
         }
       ],
       "chargedMoves": [
@@ -17061,11 +17125,11 @@
         },
         {
           "moveId": "DISCHARGE",
-          "uses": 49566
+          "uses": 49567
         },
         {
           "moveId": "CRUNCH",
-          "uses": 44722
+          "uses": 44721
         }
       ]
     },
@@ -17094,16 +17158,16 @@
       "zh_hans": "麻麻鳗鱼王",
       "zh_hant": "麻麻鰻魚王"
     },
-    "ranking": 598,
+    "ranking": 600,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SPARK",
-          "uses": 85149
+          "uses": 85167
         },
         {
           "moveId": "ACID",
-          "uses": 30451
+          "uses": 30433
         }
       ],
       "chargedMoves": [
@@ -17113,11 +17177,11 @@
         },
         {
           "moveId": "DRAGON_CLAW",
-          "uses": 40237
+          "uses": 40236
         },
         {
           "moveId": "CRUNCH",
-          "uses": 32466
+          "uses": 32465
         },
         {
           "moveId": "ACID_SPRAY",
@@ -17254,7 +17318,7 @@
       "zh_hans": "泥巴鱼",
       "zh_hant": "泥巴魚"
     },
-    "ranking": 640,
+    "ranking": 643,
     "moves": {
       "fastMoves": [
         {
@@ -17360,16 +17424,16 @@
       "zh_hans": "驹刀小兵",
       "zh_hant": "駒刀小兵"
     },
-    "ranking": 573,
+    "ranking": 572,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SCRATCH",
-          "uses": 35682
+          "uses": 35671
         },
         {
           "moveId": "FURY_CUTTER",
-          "uses": 79918
+          "uses": 79929
         }
       ],
       "chargedMoves": [
@@ -17412,26 +17476,26 @@
       "zh_hans": "劈斩司令",
       "zh_hant": "劈斬司令"
     },
-    "ranking": 600,
+    "ranking": 599,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SNARL",
-          "uses": 73969
+          "uses": 73984
         },
         {
           "moveId": "METAL_CLAW",
-          "uses": 41631
+          "uses": 41616
         }
       ],
       "chargedMoves": [
         {
           "moveId": "X_SCISSOR",
-          "uses": 29519
+          "uses": 29521
         },
         {
           "moveId": "IRON_HEAD",
-          "uses": 26667
+          "uses": 26666
         },
         {
           "moveId": "FOCUS_BLAST",
@@ -17471,41 +17535,41 @@
       "zh_hans": "爆爆头水牛",
       "zh_hant": "爆爆頭水牛"
     },
-    "ranking": 576,
+    "ranking": 580,
     "moves": {
       "fastMoves": [
         {
           "moveId": "ZEN_HEADBUTT",
-          "uses": 17722
+          "uses": 17668
         },
         {
           "moveId": "MUD_SHOT",
-          "uses": 97878
+          "uses": 97932
         }
       ],
       "chargedMoves": [
         {
           "moveId": "STOMP",
-          "uses": 41953
+          "uses": 41946
         },
         {
           "moveId": "SKULL_BASH",
-          "uses": 14526
+          "uses": 14529
         },
         {
           "moveId": "MEGAHORN",
-          "uses": 28652
+          "uses": 28653
         },
         {
           "moveId": "EARTHQUAKE",
-          "uses": 30398
+          "uses": 30401
         }
       ]
     },
     "moveset": [
       "MUD_SHOT",
       "STOMP",
-      "MEGAHORN"
+      "EARTHQUAKE"
     ]
   },
   "rufflet": {
@@ -17527,16 +17591,16 @@
       "zh_hans": "毛头小鹰",
       "zh_hant": "毛頭小鷹"
     },
-    "ranking": 529,
+    "ranking": 528,
     "moves": {
       "fastMoves": [
         {
           "moveId": "WING_ATTACK",
-          "uses": 77399
+          "uses": 77403
         },
         {
           "moveId": "PECK",
-          "uses": 38201
+          "uses": 38197
         }
       ],
       "chargedMoves": [
@@ -17546,7 +17610,7 @@
         },
         {
           "moveId": "BRAVE_BIRD",
-          "uses": 72802
+          "uses": 72803
         },
         {
           "moveId": "AERIAL_ACE",
@@ -17584,11 +17648,11 @@
       "fastMoves": [
         {
           "moveId": "STEEL_WING",
-          "uses": 35979
+          "uses": 35954
         },
         {
           "moveId": "AIR_SLASH",
-          "uses": 79621
+          "uses": 79646
         }
       ],
       "chargedMoves": [
@@ -17665,16 +17729,16 @@
       "zh_hans": "铁蚁",
       "zh_hant": "鐵蟻"
     },
-    "ranking": 576,
+    "ranking": 574,
     "moves": {
       "fastMoves": [
         {
           "moveId": "METAL_CLAW",
-          "uses": 49593
+          "uses": 49590
         },
         {
           "moveId": "BUG_BITE",
-          "uses": 66007
+          "uses": 66010
         }
       ],
       "chargedMoves": [
@@ -17930,7 +17994,8 @@
       "psychic"
     ],
     "tags": [
-      "unreleased"
+      "mythical",
+      "untradeable"
     ]
   },
   "meloetta_pirouette": {
@@ -17941,6 +18006,8 @@
       "fighting"
     ],
     "tags": [
+      "mythical",
+      "untradeable",
       "unreleased"
     ]
   },
@@ -18123,11 +18190,11 @@
       "fastMoves": [
         {
           "moveId": "QUICK_ATTACK",
-          "uses": 50316
+          "uses": 50305
         },
         {
           "moveId": "MUD_SHOT",
-          "uses": 65284
+          "uses": 65295
         }
       ],
       "chargedMoves": [
@@ -18151,8 +18218,8 @@
     },
     "moveset": [
       "MUD_SHOT",
-      "EARTHQUAKE",
-      "FIRE_PUNCH"
+      "FIRE_PUNCH",
+      "EARTHQUAKE"
     ]
   },
   "fletchling": {
@@ -18243,20 +18310,20 @@
       "zh_hans": "小狮狮",
       "zh_hant": "小獅獅"
     },
-    "ranking": 553,
+    "ranking": 550,
     "moves": {
       "fastMoves": [
         {
           "moveId": "TACKLE",
-          "uses": 21802
+          "uses": 21783
         },
         {
           "moveId": "FIRE_FANG",
-          "uses": 43235
+          "uses": 43231
         },
         {
           "moveId": "EMBER",
-          "uses": 50533
+          "uses": 50556
         }
       ],
       "chargedMoves": [
@@ -18304,11 +18371,11 @@
       "fastMoves": [
         {
           "moveId": "TAKE_DOWN",
-          "uses": 23975
+          "uses": 23967
         },
         {
           "moveId": "FIRE_FANG",
-          "uses": 91625
+          "uses": 91633
         }
       ],
       "chargedMoves": [
@@ -18318,7 +18385,7 @@
         },
         {
           "moveId": "OVERHEAT",
-          "uses": 30157
+          "uses": 30158
         },
         {
           "moveId": "FLAME_CHARGE",
@@ -18326,7 +18393,7 @@
         },
         {
           "moveId": "DARK_PULSE",
-          "uses": 27603
+          "uses": 27604
         }
       ]
     },
@@ -18741,16 +18808,16 @@
       "zh_hans": "钥圈兒",
       "zh_hant": "鑰圈兒"
     },
-    "ranking": 422,
+    "ranking": 417,
     "moves": {
       "fastMoves": [
         {
           "moveId": "TACKLE",
-          "uses": 54027
+          "uses": 54022
         },
         {
           "moveId": "ASTONISH",
-          "uses": 61573
+          "uses": 61578
         }
       ],
       "chargedMoves": [
@@ -18935,16 +19002,16 @@
       "zh_hans": "Obstagoon",
       "zh_hant": "Obstagoon"
     },
-    "ranking": 668,
+    "ranking": 670,
     "moves": {
       "fastMoves": [
         {
           "moveId": "LICK",
-          "uses": 45511
+          "uses": 45512
         },
         {
           "moveId": "COUNTER",
-          "uses": 70089
+          "uses": 70088
         }
       ],
       "chargedMoves": [
@@ -18954,7 +19021,7 @@
         },
         {
           "moveId": "HYPER_BEAM",
-          "uses": 13826
+          "uses": 13827
         },
         {
           "moveId": "GUNK_SHOT",
@@ -18962,7 +19029,7 @@
         },
         {
           "moveId": "CROSS_CHOP",
-          "uses": 36703
+          "uses": 36705
         }
       ]
     },
@@ -18994,16 +19061,16 @@
       "zh_hans": "Perrserker",
       "zh_hant": "Perrserker"
     },
-    "ranking": 630,
+    "ranking": 628,
     "moves": {
       "fastMoves": [
         {
           "moveId": "SHADOW_CLAW",
-          "uses": 79794
+          "uses": 79799
         },
         {
           "moveId": "METAL_CLAW",
-          "uses": 35806
+          "uses": 35801
         }
       ],
       "chargedMoves": [
@@ -19017,7 +19084,7 @@
         },
         {
           "moveId": "FOUL_PLAY",
-          "uses": 28366
+          "uses": 28365
         },
         {
           "moveId": "CLOSE_COMBAT",
@@ -19062,6 +19129,32 @@
     ],
     "tags": [
       "galarian"
+    ]
+  },
+  "zacian": {
+    "legal": false,
+    "dex": 888,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "tags": [
+      "galarian",
+      "legendary",
+      "unreleased"
+    ]
+  },
+  "zamazenta": {
+    "legal": false,
+    "dex": 888,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "galarian",
+      "legendary",
+      "unreleased"
     ]
   }
 }

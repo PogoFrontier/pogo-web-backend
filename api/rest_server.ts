@@ -1,8 +1,6 @@
 import e from "express";
 import c from 'cors';
 import http from 'http';
-import firebase from 'firebase-admin';
-import SERVICE_ACCOUNT from '../project-grookey-6a7326cb8d5a';
 import pokemonRoutes from "./pokemonRoutes";
 import moveRoutes from "./moveRoutes";
 import userRoutes from "./userRoutes";
@@ -15,13 +13,6 @@ export const SERVER_PORT = 8081;
 
 //initialize node server app
 const app: e.Application = e();
-
-//initialize firebase and firestore
-const serviceAccount: any = SERVICE_ACCOUNT;
-firebase.initializeApp({
-    credential: firebase.credential.cert(serviceAccount)
-});
-export const firestore = firebase.firestore();
 
 //use json
 app.use(e.json());

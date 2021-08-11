@@ -54,6 +54,9 @@ router.get('', (req, res) => {
             if(movesetOption !== "norestrictions") {
                 let pokemonSource = movesetOption === "mainseries" ? pokemon2 : pokemon;
                 Object.keys(result).forEach(speciedId => {
+                    if(!pokemonSource[speciedId]) {
+                        return
+                    }
                     if(!result[speciedId].moves) {
                         result[speciedId].moves = {
                             fastMoves: pokemonSource[speciedId].fastMoves.map((move: any) => {

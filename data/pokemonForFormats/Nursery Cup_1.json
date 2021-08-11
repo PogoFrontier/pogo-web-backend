@@ -554,6 +554,30 @@
       "none"
     ]
   },
+  "pikachu_pop_star": {
+    "legal": false,
+    "dex": 25,
+    "types": [
+      "electric",
+      "none"
+    ]
+  },
+  "pikachu_rock_star": {
+    "legal": false,
+    "dex": 25,
+    "types": [
+      "electric",
+      "none"
+    ]
+  },
+  "pikachu_5th_anniversary": {
+    "legal": false,
+    "dex": 25,
+    "types": [
+      "electric",
+      "none"
+    ]
+  },
   "raichu": {
     "legal": false,
     "dex": 26,
@@ -9554,7 +9578,8 @@
       "psychic"
     ],
     "tags": [
-      "unreleased"
+      "mythical",
+      "untradeable"
     ]
   },
   "meloetta_pirouette": {
@@ -9565,6 +9590,8 @@
       "fighting"
     ],
     "tags": [
+      "mythical",
+      "untradeable",
       "unreleased"
     ]
   },
@@ -10374,6 +10401,32 @@
     ],
     "tags": [
       "galarian"
+    ]
+  },
+  "zacian": {
+    "legal": false,
+    "dex": 888,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "tags": [
+      "galarian",
+      "legendary",
+      "unreleased"
+    ]
+  },
+  "zamazenta": {
+    "legal": false,
+    "dex": 888,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "galarian",
+      "legendary",
+      "unreleased"
     ]
   }
 }

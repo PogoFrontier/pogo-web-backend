@@ -73,3 +73,16 @@ export interface Anim {
   turn?: number,
   id: string
 }
+
+export interface OpenChallengePayload {
+  opponentId: string,
+  format: RuleDescription
+}
+
+export interface QuitChallengePayload {
+  opponentId: string
+}
+
+export interface DeclineOrAcceptChallengePayload {
+  challengerId: string
+}

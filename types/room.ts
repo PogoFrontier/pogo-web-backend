@@ -94,7 +94,7 @@ export interface Room {
   wait?: number,
   timer?: any,
   timerId?: string,
-  joinTimeout?: NodeJS.Timeout,
+  timeout?: NodeJS.Timeout,
   reservedSeats?: [string, string],
   rated?: boolean,
   charge?: {
@@ -105,5 +105,6 @@ export interface Room {
     cmp?: Move
   },
   format: Rule,
+  formatName?: string,
   subClient: Cluster | Redis | any
 }
