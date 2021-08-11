@@ -208,10 +208,9 @@ async function mergePokemon() {
             if(parseName(en[i]).startsWith("pikachu")){
                 new_pokemon[parseName(en[i]) + "_libre"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_libre
                 new_pokemon[parseName(en[i]) + "_flying"].speciesName[lang] = eval(lang)[i] + " (" + strings.flying + ")"
-                new_pokemon[parseName(en[i]) + "_kariyushi"].speciesName[lang] = eval(lang)[i] + " (" + strings.kariyushi + ")"
-                new_pokemon[parseName(en[i]) + "_rock_star"].speciesName[lang] = eval(lang)[i] + strings.pokemon_rockstar
-                new_pokemon[parseName(en[i]) + "_pop_star"].speciesName[lang] = eval(lang)[i] + strings.pokemon_popstar
-                new_pokemon[parseName(en[i]) + "_5th_anniversary"].speciesName[lang] = eval(lang)[i] + strings.pokemon_5thanniversary
+                new_pokemon[parseName(en[i]) + "_rock_star"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_rockstar
+                new_pokemon[parseName(en[i]) + "_pop_star"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_popstar
+                new_pokemon[parseName(en[i]) + "_5th_anniversary"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_5thanniversary
        
             }
             //special formatting needed for mewtwo
