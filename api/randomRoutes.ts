@@ -32,7 +32,7 @@ router.get('/:rule', async (req, res) => {
       }
     } catch(err) {
         console.error(err);
-        res.status(500).json({message: "Could not find rule of name: " + req.params.rule});
+        res.sendStatus(500).json({message: "Could not find rule of name: " + req.params.rule});
     }
 });
 

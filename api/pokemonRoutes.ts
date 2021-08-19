@@ -86,7 +86,7 @@ router.get('', (req, res) => {
         res.json(result);
     }catch(err){
         console.error(err);
-        res.status(500).json({message: "Internal server error"});
+        res.sendStatus(500).json({message: "Internal server error"});
     }
 });
 
@@ -106,7 +106,7 @@ router.get('/names', (req, res) => {
         }));
     }catch(err){
         console.error(err);
-        res.status(500).json({message: "Internal server error"});
+        res.sendStatus(500).json({message: "Internal server error"});
     }
 });
 
@@ -142,10 +142,10 @@ router.get('/:id', (req, res) => {
             result = {...result, ...JSON.parse(fs.readFileSync(fileName).toString())[req.params.id]};
         }
 
-        result ? res.json(result) : res.status(404).json(`Could not find Pokemon of id: ${req.params.id}`);
+        result ? res.json(result) : res.sendStatus(404).json(`Could not find Pokemon of id: ${req.params.id}`);
     }catch(err){
         console.error(err);
-        res.status(500).json({message: "Internal server error"});
+        res.sendStatus(500).json({message: "Internal server error"});
     }
 });
 
@@ -161,7 +161,7 @@ function getQueryParams(req: e.Request, res: e.Response): {
     const format = req.query.format;
     // Check for valid format
     if (format !== undefined && (typeof format !== "string" || !Object.keys(rules).includes(format))) {
-        res.status(400).json({messsage: "invalid format"})
+        res.sendStatus(400).json({messsage: "invalid format"})
         return
     }
     //get lang param
@@ -170,7 +170,7 @@ function getQueryParams(req: e.Request, res: e.Response): {
     const className = req.query.class;
     // Check for valid class
     if (className !== undefined && (typeof className !== "string" || !rules[format ? format : ""]?.classes?.some((classObj: ClassOption) => classObj.name === className))) {
-        res.status(400).json({messsage: "invalid class"})
+        res.sendStatus(400).json({messsage: "invalid class"})
         return
     }
 
@@ -181,7 +181,7 @@ function getQueryParams(req: e.Request, res: e.Response): {
     let positionParam = (req.query.position);
     let position = 0;
     if (positionParam !== undefined && typeof positionParam !== "string") {
-        res.status(400).json({messsage: "typeof position is not string"})
+        res.sendStatus(400).json({messsage: "typeof position is not string"})
         return
     } else if (positionParam !== undefined){
         position = parseInt(positionParam)
@@ -191,7 +191,7 @@ function getQueryParams(req: e.Request, res: e.Response): {
     let usedPointsParam = (req.query.usedPoints);
     let usedPoints = 0;
     if (usedPointsParam !== undefined && typeof usedPointsParam !== "string") {
-        res.status(400).json({messsage: "typeof usedPoints is not string"})
+        res.sendStatus(400).json({messsage: "typeof usedPoints is not string"})
         return
     } else if (usedPointsParam !== undefined){
         usedPoints = parseInt(usedPointsParam)
