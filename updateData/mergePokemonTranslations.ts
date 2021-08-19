@@ -272,20 +272,29 @@ async function mergePokemon() {
 
             //Formatting for all pokemon, basic rule
             new_pokemon[parseName(en[i])].speciesName[lang] = eval(lang)[i]
-
         }
         
         //Since the API does not yet have gen 8 pokemon, we have to add those manually.
-        new_pokemon.runerigus.speciesName[lang] = "Runerigus"
-        new_pokemon.mr_rime.speciesName[lang] = "Mr. Rime"
-        new_pokemon.sirfetchd.speciesName[lang] = "Sirfetch'd"
-        new_pokemon.perrserker.speciesName[lang] = "Perrserker"
-        new_pokemon.obstagoon.speciesName[lang] = "Obstagoon"
-        new_pokemon.zamazenta.speciesName[lang] = "Zamazenta"
-        new_pokemon.zacian.speciesName[lang] = "Zacian"
+        Object.keys(new_pokemon).forEach(
+            x => {
+                if (!new_pokemon[x].speciesName[lang]) {
+                    new_pokemon[x].speciesName[lang] = parseId(new_pokemon[x].speciesId)
+                }
+            }
+        )
     }
     
     fs.writeFileSync("data/pokemon.json", JSON.stringify(new_pokemon, null, 2))
+}
+
+function toTitleCase(str: string) {
+    return str.replace(/\w\S*/g, function(txt: string){
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
+}
+
+function parseId(id: string) {
+    return toTitleCase(id.replace(/_/g, ' '))
 }
 
 mergePokemon()

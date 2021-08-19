@@ -221,7 +221,7 @@
         "flags": {
             "speciesClauseByForm": "true"
         },
-        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/continentals-3/overall/rankings-1500.json",        
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/continentals-3/overall/rankings-1500.json",
         "teamPattern": [{
             "include": [{
                 "filterType": "dex",
@@ -230,7 +230,8 @@
             "exclude": [{
                 "filterType": "tag",
                 "values": ["galarian", "alolan"]
-            }]}, {
+            }]
+        }, {
             "include": [{
                 "filterType": "dex",
                 "values": ["152-251"]
@@ -238,7 +239,8 @@
             "exclude": [{
                 "filterType": "tag",
                 "values": ["galarian", "alolan"]
-            }]}, {
+            }]
+        }, {
             "include": [{
                 "filterType": "dex",
                 "values": ["252-386"]
@@ -246,7 +248,8 @@
             "exclude": [{
                 "filterType": "tag",
                 "values": ["galarian", "alolan"]
-            }]}, {
+            }]
+        }, {
             "include": [{
                 "filterType": "dex",
                 "values": ["387-493"]
@@ -254,7 +257,8 @@
             "exclude": [{
                 "filterType": "tag",
                 "values": ["galarian", "alolan"]
-            }]}, {
+            }]
+        }, {
             "include": [{
                 "filterType": "dex",
                 "values": ["494-649"]
@@ -265,7 +269,8 @@
             }, {
                 "filterType": "id",
                 "values": ["darumaka_galarian", "darmanitan_galarian_standard", "darmanitan_galarian_zen", "yamask_galarian"]
-            }]}, {
+            }]
+        }, {
             "include": [{
                 "filterType": "dex",
                 "values": ["650-1000"]
@@ -276,15 +281,15 @@
             "exclude": [{
                 "filterType": "id",
                 "values": ["stunfisk_galarian"]
-            }]}
-        ],
+            }]
+        }],
         "pointLimitOptions": {
             "maxPoints": 14,
             "prices": [{
                 "pokemonIds": ["lickitung", "hypno", "hypno_shadow", "mew", "skarmory", "skarmory_shadow", "umbreon", "azumarill", "altaria", "registeel", "sableye", "sableye_shadow", "medicham", "deoxys_defense", "abomasnow", "abomasnow_shadow", "cresselia", "bastiodon", "jellicent", "mandibuzz", "stunfisk_galarian", "talonflame", "marowak_alolan", "ninetales_alolan", "diggersby"],
                 "price": 9
             }, {
-                "pokemonIds": ["clefable", "venusaur", "venusaur_shadow", "nidoqueen", "nidoqueen_shadow", "dewgong", "machamp", "machamp_shadow", "wigglytuff",  "meganium", "jumpluff", "jumpluff_shadow", "politoed", "politoed_shadow", "granbull", "granbull_shadow", "lugia", "wobbuffet", "wobuffet_shadow", "tropius", "swampert", "swampert_shadow", "vigoroth", "gardevoir", "gardevoir_shadow", "regirock", "togekiss", "drifblim", "toxicroak", "munchlax", "froslass", "lickilicky", "ferrothorn", "zweilous", "whimsicott", "stunfisk", "scrafty", "galvantula", "melmetal", "slurpuff", "muk_alolan", "raichu_alolan", "spritzee", "aromatisse", "sylveon"],
+                "pokemonIds": ["clefable", "venusaur", "venusaur_shadow", "nidoqueen", "nidoqueen_shadow", "dewgong", "machamp", "machamp_shadow", "wigglytuff", "meganium", "jumpluff", "jumpluff_shadow", "politoed", "politoed_shadow", "granbull", "granbull_shadow", "lugia", "wobbuffet", "wobuffet_shadow", "tropius", "swampert", "swampert_shadow", "vigoroth", "gardevoir", "gardevoir_shadow", "regirock", "togekiss", "drifblim", "toxicroak", "munchlax", "froslass", "lickilicky", "ferrothorn", "zweilous", "whimsicott", "stunfisk", "scrafty", "galvantula", "melmetal", "slurpuff", "muk_alolan", "raichu_alolan", "spritzee", "aromatisse", "sylveon"],
                 "price": 5
             }, {
                 "pokemonIds": ["golbat", "golbat_shadow", "snorlax", "snorlax_shadow", "golking", "primeape", "beedrill", "beedrill_shadow", "lapras", "lapras_shadow", "articuno", "articuno_shadow", "zapdos", "zapdos_shadow", "noctowl", "quagsire", "quagsire_shadow", "ariados", "lanturn", "bellossom", "raikou", "raikou_shadow", "steelix", "mantine", "castform_rainy", "castform_sunny", "castform_snowy", "castform", "regice", "whiscash", "shiftry", "shiftry_shadow", "pelipper", "gliscor", "gliscor_shadow", "magnezone", "magnezone_shadow", "skuntank", "skuntank_shadow", "electivire", "electivire_shadow", "pachirisu", "roserade", "empoleon", "drapion", "drapion_shadow", "zebstrika", "serperior", "fraxure", "alomomola", "excadrill", "escavalier", "victini", "crustle", "chestnaught", "dragalge", "obstagoon", "pangoro", "goodra"],
