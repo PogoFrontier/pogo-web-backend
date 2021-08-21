@@ -295,6 +295,9 @@ export function doesClassDescribePokemon(speciesId: string, classOption: ClassOp
 
 
 function doesSelectorDescribePokémon(tag: Selector, poke: PokemonSpecies): boolean {
+    if (!poke) {
+      return false
+    }
     switch (tag.filterType) {
         case "tag":
             return !!poke.tags && tag.values.some(value => poke.tags!.includes(value));

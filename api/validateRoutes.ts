@@ -28,11 +28,11 @@ router.get('/:team/:meta/:language', async (req, res) => {
         } else {
             //Get strings
             
-            res.status(404).json(strings.no_valid_meta.replace('%1',req.params.meta));
+            res.sendStatus(404).json(strings.no_valid_meta.replace('%1',req.params.meta));
         }
     } catch(err) {
         console.error(err)
-        res.status(500).json({message: "Internal server error"});
+        res.sendStatus(500).json({message: "Internal server error"});
     }
 });
 

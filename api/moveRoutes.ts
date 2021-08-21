@@ -9,10 +9,10 @@ const router = e.Router();
 router.get('/:id', async (req, res) => {
     try {
         const result: any = moves[req.params.id];
-        result ? res.json(result) : res.status(404).json(`Could not find move of id: ${req.params.id}`);
+        result ? res.json(result) : res.sendStatus(404).json(`Could not find move of id: ${req.params.id}`);
     } catch (err) {
         console.error(err);
-        res.status(500).json({message: "Internal server error"});
+        res.sendStatus(500).json({message: "Internal server error"});
     }
 });
 

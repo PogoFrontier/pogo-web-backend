@@ -14,12 +14,12 @@ router.get('/data/:room', async (req, res) => {
     try{
       storeClient.get("room:" + req.params.room, async (err, reply) => {
         if (err) {
-          res.status(500).json({message: "Internal server error"});
+          res.sendStatus(500).json({message: "Internal server error"});
           return;
         }
 
         if(!reply) {
-          res.status(404).json(`Could not find room of id: ${req.params.room}`);
+          res.sendStatus(404).json(`Could not find room of id: ${req.params.room}`);
           return;
         }
 
@@ -75,7 +75,7 @@ router.get('/data/:room', async (req, res) => {
       });
     } catch(err) {
         console.error(err);
-        res.status(500).json({message: "Internal server error"});
+        res.sendStatus(500).json({message: "Internal server error"});
     }
 });
 
@@ -119,7 +119,7 @@ router.get('/list', async (req, res) => {
       });
   } catch(err) {
       console.error(err);
-      res.status(500).json({message: "Internal server error"});
+      res.sendStatus(500).json({message: "Internal server error"});
   }
 });
 
@@ -156,7 +156,7 @@ router.get('/status', async (req, res) => {
       });
   } catch (err) {
       console.error(err);
-      res.status(500).json({message: "Internal server error"});
+      res.sendStatus(500).json({message: "Internal server error"});
   }
 });
 

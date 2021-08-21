@@ -23,11 +23,11 @@ router.get('/signin/:id', async (req, res) => {
             }
         }).catch(err => {
             console.log(err);
-            res.status(500).json({error: "Internal server error"})
+            res.sendStatus(500).json({error: "Internal server error"})
         })
     }catch(err){
         console.log(err);
-        res.status(500).json({error: "Internal server error"});
+        res.sendStatus(500).json({error: "Internal server error"});
     }
 });
 
@@ -45,15 +45,15 @@ router.get('/profile',
                     res.json(user.data());
                 });
             }else{
-                res.status(404).json({error: `User not found.`})
+                res.sendStatus(404).json({error: `User not found.`})
             }
         }).catch(err => {
             console.log(err);
-            res.status(500).json({error: "Internal server error"})
+            res.sendStatus(500).json({error: "Internal server error"})
         })
     }catch(err){
         console.log(err);
-        res.status(500).json({error: "Internal server error"});
+        res.sendStatus(500).json({error: "Internal server error"});
     }
 });
 
@@ -68,7 +68,7 @@ router.post('/', async (req, res) => {
             const docRef = firestore.collection('users').doc(userAuth.uid);
             docRef.get().then(user => {
                 if(user.data()){
-                    res.status(401).json({error: 'User already exists.'});
+                    res.sendStatus(401).json({error: 'User already exists.'});
                 }else{
                     const un = username ? username : userAuth.displayName //.sanitize
                     docRef.set({
@@ -97,7 +97,7 @@ router.post('/', async (req, res) => {
                                     token: generateToken(userAuth.uid)
                                 });
                             }else{
-                                res.status(500).json({error: 'Internal server error'});
+                                res.sendStatus(500).json({error: 'Internal server error'});
                             }
                         });
                     });
@@ -108,7 +108,7 @@ router.post('/', async (req, res) => {
         }
     }catch(err){
         console.log(err);
-        res.status(500).json({error: "Internal server error"});
+        res.sendStatus(500).json({error: "Internal server error"});
     }
 })
 
@@ -128,18 +128,18 @@ router.post('/setteams',
                             res.json(user.data());
                         }).catch(err => {
                             console.log(err);
-                            res.status(500).json({error: "Internal server error"})
+                            res.sendStatus(500).json({error: "Internal server error"})
                         });
                     }else{
-                        res.status(404).json({error: `User not found.`})
+                        res.sendStatus(404).json({error: `User not found.`})
                     }
                 }).catch(err => {
                     console.log(err);
-                    res.status(500).json({error: "Internal server error"})
+                    res.sendStatus(500).json({error: "Internal server error"})
                 })
             }catch(err){
                 console.log(err);
-                res.status(500).json({error: "Internal server error"});
+                res.sendStatus(500).json({error: "Internal server error"});
             }
         }
     }
@@ -160,7 +160,7 @@ router.get('/friends',
                 res.json([]);
         }).catch(err => {
             console.log(err);
-            res.status(500).json({error: "Internal server error"})
+            res.sendStatus(500).json({error: "Internal server error"})
         });
     }
 )
@@ -184,23 +184,23 @@ router.post('/request/send',
                                 res.sendStatus(200);
                             }).catch(err => {
                                 console.log(err);
-                                res.status(500).json({error: "Internal server error"})
+                                res.sendStatus(500).json({error: "Internal server error"})
                             });
                         }else{
                             //return err, request already exists
-                            res.status(403).json({error: "Request already exists!"})
+                            res.sendStatus(403).json({error: "Request already exists!"})
                         }
                     } else {
                         console.log("User not found");
-                        res.status(400).json({error: "User to request not found."});
+                        res.sendStatus(400).json({error: "User to request not found."});
                     }
                 }).catch(err => {
                     console.log(err);
-                    res.status(500).json({error: "Internal server error"})
+                    res.sendStatus(500).json({error: "Internal server error"})
                 })
             }catch(err){
                 console.log(err);
-                res.status(400).json({error: "User to request not found."})
+                res.sendStatus(400).json({error: "User to request not found."})
             }
         }
     }
@@ -244,33 +244,33 @@ router.post('/request/accept',
                                             res.sendStatus(200);
                                         }).catch(err => {
                                             console.log(err);
-                                            res.status(500).json({error: "Internal server error"})
+                                            res.sendStatus(500).json({error: "Internal server error"})
                                         });
                                     }).catch(err => {
                                         console.log(err);
-                                        res.status(500).json({error: "Internal server error"})
+                                        res.sendStatus(500).json({error: "Internal server error"})
                                     });
                                 }else{
-                                    res.status(403).json({error: "Request has already been accepted, or no longer exists in your request list."})
+                                    res.sendStatus(403).json({error: "Request has already been accepted, or no longer exists in your request list."})
                                 }
                             }else{
                                 console.log('Attempted to add friend that does not exist');
-                                res.status(400).json({error: "User to accept request from not found."})
+                                res.sendStatus(400).json({error: "User to accept request from not found."})
                             }
                         }).catch(err => {
                             console.log(err);
-                            res.status(500).json({error: "Internal server error"})
+                            res.sendStatus(500).json({error: "Internal server error"})
                         });
                     } else {
-                        res.status(500).json({error: "Internal server error"})
+                        res.sendStatus(500).json({error: "Internal server error"})
                     }
                 }).catch(err => {
                     console.log(err);
-                    res.status(500).json({error: "Internal server error"})
+                    res.sendStatus(500).json({error: "Internal server error"})
                 })
             }catch(err){
                 console.log(err);
-                res.status(400).json({error: "User not found."})
+                res.sendStatus(400).json({error: "User not found."})
             }
         }
     }
@@ -295,22 +295,22 @@ router.post('/request/deny',
                                 res.sendStatus(200);
                             }).catch(err => {
                                 console.log(err);
-                                res.status(500).json({error: "Internal server error"})
+                                res.sendStatus(500).json({error: "Internal server error"})
                             });
                         }else{
                             console.log("User not found");
-                            res.status(400).json({error: "User to deny request from not found."});
+                            res.sendStatus(400).json({error: "User to deny request from not found."});
                         }
                     } else {
-                        res.status(500).json({error: "Internal server error"})
+                        res.sendStatus(500).json({error: "Internal server error"})
                     }
                 }).catch(err => {
                     console.log(err);
-                    res.status(500).json({error: "Internal server error"})
+                    res.sendStatus(500).json({error: "Internal server error"})
                 });
             }catch(err){
                 console.log(err);
-                res.status(500).json({error: "Internal server error"})
+                res.sendStatus(500).json({error: "Internal server error"})
             }
         }
     }
@@ -348,30 +348,30 @@ router.post('/unfriend',
                                         res.sendStatus(200);
                                     }).catch(err => {
                                         console.log(err);
-                                        res.status(500).json({error: "Internal server error"})
+                                        res.sendStatus(500).json({error: "Internal server error"})
                                     });
                                 }).catch(err => {
                                     console.log(err);
-                                    res.status(500).json({error: "Internal server error"})
+                                    res.sendStatus(500).json({error: "Internal server error"})
                                 });
                             } else {
                                 console.log('Attempted to delete friend that does not exist');
-                                res.status(400).json({error: "User to delete not found."})
+                                res.sendStatus(400).json({error: "User to delete not found."})
                             }
                         }).catch(err => {
                             console.log(err);
-                            res.status(500).json({error: "Internal server error"})
+                            res.sendStatus(500).json({error: "Internal server error"})
                         })
                     } else {
-                        res.status(500).json({error: "Internal server error"})
+                        res.sendStatus(500).json({error: "Internal server error"})
                     }
                 }).catch(err => {
                     console.log(err);
-                    res.status(500).json({error: "Internal server error"})
+                    res.sendStatus(500).json({error: "Internal server error"})
                 })
             }catch(err){
                 console.log(err);
-                res.status(400).json({error: "User not found."})
+                res.sendStatus(400).json({error: "User not found."})
             }
         }
     }
@@ -391,7 +391,7 @@ router.get('/search/:username', (req: any, res) => {
             res.json([]);
     }).catch(err => {
         console.log(err);
-        res.status(500).json({error: "Internal server error"})
+        res.sendStatus(500).json({error: "Internal server error"})
     });
 })
 
@@ -419,15 +419,15 @@ router.get('/friend/details/:uid', (req: any, res) => {
                     favorite
                 });
             }else{
-                res.status(400).json({error: "User not found."})
+                res.sendStatus(400).json({error: "User not found."})
             }
         }).catch(err => {
             console.log(err);
-            res.status(500).json({error: "Internal server error"})
+            res.sendStatus(500).json({error: "Internal server error"})
         });
     }catch(err){
         console.log(err);
-        res.status(500).json({error: "Internal server error"})
+        res.sendStatus(500).json({error: "Internal server error"})
     }
 });
 

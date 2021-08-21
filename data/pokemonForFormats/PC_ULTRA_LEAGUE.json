@@ -1706,6 +1706,26 @@
       "zh_hant": "皮卡丘"
     }
   },
+  "pikachu_5th_anniversary": {
+    "legal": true,
+    "dex": 25,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "speciesName": {
+      "de": "Pikachu (5th Anniversary)",
+      "fr": "Pikachu (5th Anniversary)",
+      "en": "Pikachu (5th Anniversary)",
+      "es": "Pikachu (5th Anniversary)",
+      "th": "พิคาชู (5th Anniversary)",
+      "ja": "ピカチュウ (5th Anniversary)",
+      "ko": "피카츄 (5th Anniversary)",
+      "ru": "Пикачу (5th Anniversary)",
+      "zh_hans": "皮卡丘 (5th Anniversary)",
+      "zh_hant": "皮卡丘 (5th Anniversary)"
+    }
+  },
   "pikachu_flying": {
     "legal": true,
     "dex": 25,
@@ -1784,26 +1804,6 @@
       "ru": "Пикачу (Rock Star)",
       "zh_hans": "皮卡丘 (Rock Star)",
       "zh_hant": "皮卡丘 (Rock Star)"
-    }
-  },
-  "pikachu_5th_anniversary": {
-    "legal": true,
-    "dex": 25,
-    "types": [
-      "electric",
-      "none"
-    ],
-    "speciesName": {
-      "de": "Pikachu (5th Anniversary)",
-      "fr": "Pikachu (5th Anniversary)",
-      "en": "Pikachu (5th Anniversary)",
-      "es": "Pikachu (5th Anniversary)",
-      "th": "พิคาชู (5th Anniversary)",
-      "ja": "ピカチュウ (5th Anniversary)",
-      "ko": "피카츄 (5th Anniversary)",
-      "ru": "Пикачу (5th Anniversary)",
-      "zh_hans": "皮卡丘 (5th Anniversary)",
-      "zh_hant": "皮卡丘 (5th Anniversary)"
     }
   },
   "raichu": {
@@ -6084,29 +6084,6 @@
       "zh_hant": "呆呆獸"
     }
   },
-  "slowpoke_shadow": {
-    "legal": true,
-    "dex": 79,
-    "types": [
-      "water",
-      "psychic"
-    ],
-    "tags": [
-      "shadow"
-    ],
-    "speciesName": {
-      "de": "Flegmon (Schatten)",
-      "fr": "Ramoloss (Ombre)",
-      "en": "Slowpoke (Shadow)",
-      "es": "Slowpoke (Oscuro)",
-      "th": "ยาดง (Shadow)",
-      "ja": "ヤドン (Shadow)",
-      "ko": "야돈 (Shadow)",
-      "ru": "Слоупок (Shadow)",
-      "zh_hans": "呆呆兽 (Shadow)",
-      "zh_hant": "呆呆獸 (Shadow)"
-    }
-  },
   "slowpoke_galarian": {
     "legal": true,
     "dex": 79,
@@ -6128,6 +6105,29 @@
       "ru": "Слоупок (Galarian)",
       "zh_hans": "呆呆兽 (Galarian)",
       "zh_hant": "呆呆獸 (Galarian)"
+    }
+  },
+  "slowpoke_shadow": {
+    "legal": true,
+    "dex": 79,
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": {
+      "de": "Flegmon (Schatten)",
+      "fr": "Ramoloss (Ombre)",
+      "en": "Slowpoke (Shadow)",
+      "es": "Slowpoke (Oscuro)",
+      "th": "ยาดง (Shadow)",
+      "ja": "ヤドン (Shadow)",
+      "ko": "야돈 (Shadow)",
+      "ru": "Слоупок (Shadow)",
+      "zh_hans": "呆呆兽 (Shadow)",
+      "zh_hant": "呆呆獸 (Shadow)"
     }
   },
   "slowbro": {
@@ -6180,65 +6180,6 @@
         {
           "moveId": "ICE_BEAM",
           "uses": 18883
-        }
-      ]
-    },
-    "moveset": [
-      "CONFUSION",
-      "PSYCHIC",
-      "ICE_BEAM"
-    ]
-  },
-  "slowbro_shadow": {
-    "legal": true,
-    "dex": 80,
-    "types": [
-      "water",
-      "psychic"
-    ],
-    "tags": [
-      "shadow"
-    ],
-    "speciesName": {
-      "de": "Lahmus (Schatten)",
-      "fr": "Flagadoss (Ombre)",
-      "en": "Slowbro (Shadow)",
-      "es": "Slowbro (Oscuro)",
-      "th": "ยาโดรัน (Shadow)",
-      "ja": "ヤドラン (Shadow)",
-      "ko": "야도란 (Shadow)",
-      "ru": "Слоубро (Shadow)",
-      "zh_hans": "呆壳兽 (Shadow)",
-      "zh_hant": "呆殼獸 (Shadow)"
-    },
-    "ranking": 513,
-    "moves": {
-      "fastMoves": [
-        {
-          "moveId": "WATER_GUN",
-          "uses": 29386
-        },
-        {
-          "moveId": "CONFUSION",
-          "uses": 37714
-        }
-      ],
-      "chargedMoves": [
-        {
-          "moveId": "WATER_PULSE",
-          "uses": 13768
-        },
-        {
-          "moveId": "PSYCHIC",
-          "uses": 30465
-        },
-        {
-          "moveId": "ICE_BEAM",
-          "uses": 22687
-        },
-        {
-          "moveId": "FRUSTRATION",
-          "uses": 4
         }
       ]
     },
@@ -6326,6 +6267,65 @@
       "zh_hans": "呆壳兽 (Mega)",
       "zh_hant": "呆殼獸 (Mega)"
     }
+  },
+  "slowbro_shadow": {
+    "legal": true,
+    "dex": 80,
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": {
+      "de": "Lahmus (Schatten)",
+      "fr": "Flagadoss (Ombre)",
+      "en": "Slowbro (Shadow)",
+      "es": "Slowbro (Oscuro)",
+      "th": "ยาโดรัน (Shadow)",
+      "ja": "ヤドラン (Shadow)",
+      "ko": "야도란 (Shadow)",
+      "ru": "Слоубро (Shadow)",
+      "zh_hans": "呆壳兽 (Shadow)",
+      "zh_hant": "呆殼獸 (Shadow)"
+    },
+    "ranking": 513,
+    "moves": {
+      "fastMoves": [
+        {
+          "moveId": "WATER_GUN",
+          "uses": 29386
+        },
+        {
+          "moveId": "CONFUSION",
+          "uses": 37714
+        }
+      ],
+      "chargedMoves": [
+        {
+          "moveId": "WATER_PULSE",
+          "uses": 13768
+        },
+        {
+          "moveId": "PSYCHIC",
+          "uses": 30465
+        },
+        {
+          "moveId": "ICE_BEAM",
+          "uses": 22687
+        },
+        {
+          "moveId": "FRUSTRATION",
+          "uses": 4
+        }
+      ]
+    },
+    "moveset": [
+      "CONFUSION",
+      "PSYCHIC",
+      "ICE_BEAM"
+    ]
   },
   "magnemite": {
     "legal": true,
@@ -14164,6 +14164,30 @@
       "BLIZZARD"
     ]
   },
+  "slowking_galarian": {
+    "legal": true,
+    "dex": 199,
+    "types": [
+      "poison",
+      "psychic"
+    ],
+    "tags": [
+      "galarian",
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Laschoking (Galar)",
+      "fr": "Roigada (Galarian)",
+      "en": "Slowking (Galarian)",
+      "es": "Slowking (Galar)",
+      "th": "ยาโดคิง (Galarian)",
+      "ja": "ヤドキング (Galarian)",
+      "ko": "야도킹 (Galarian)",
+      "ru": "Слоукинг (Galarian)",
+      "zh_hans": "河马王 (Galarian)",
+      "zh_hant": "河馬王 (Galarian)"
+    }
+  },
   "slowking_shadow": {
     "legal": true,
     "dex": 199,
@@ -14222,30 +14246,6 @@
       "PSYCHIC",
       "BLIZZARD"
     ]
-  },
-  "slowking_galarian": {
-    "legal": true,
-    "dex": 199,
-    "types": [
-      "poison",
-      "psychic"
-    ],
-    "tags": [
-      "galarian",
-      "unreleased"
-    ],
-    "speciesName": {
-      "de": "Laschoking (Galar)",
-      "fr": "Roigada (Galarian)",
-      "en": "Slowking (Galarian)",
-      "es": "Slowking (Galar)",
-      "th": "ยาโดคิง (Galarian)",
-      "ja": "ヤドキング (Galarian)",
-      "ko": "야도킹 (Galarian)",
-      "ru": "Слоукинг (Galarian)",
-      "zh_hans": "河马王 (Galarian)",
-      "zh_hant": "河馬王 (Galarian)"
-    }
   },
   "misdreavus": {
     "legal": true,
@@ -39338,6 +39338,121 @@
       "unreleased"
     ]
   },
+  "diancie": {
+    "legal": true,
+    "dex": 719,
+    "types": [
+      "rock",
+      "fairy"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Diancie",
+      "fr": "Diancie",
+      "en": "Diancie",
+      "es": "Diancie",
+      "th": "ดีแอนซี",
+      "ja": "ディアンシー",
+      "ko": "디안시",
+      "ru": "Дианси",
+      "zh_hans": "蒂安希",
+      "zh_hant": "蒂安希"
+    }
+  },
+  "hoopa": {
+    "legal": true,
+    "dex": 720,
+    "types": [
+      "psychic",
+      "ghost"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Hoopa",
+      "fr": "Hoopa",
+      "en": "Hoopa",
+      "es": "Hoopa",
+      "th": "ฮูปา",
+      "ja": "フーパ",
+      "ko": "후파",
+      "ru": "Хупа",
+      "zh_hans": "胡帕",
+      "zh_hant": "胡帕"
+    }
+  },
+  "hoopa_confined": {
+    "legal": true,
+    "dex": 720,
+    "types": [
+      "psychic",
+      "ghost"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Hoopa Confined",
+      "fr": "Hoopa Confined",
+      "en": "Hoopa Confined",
+      "es": "Hoopa Confined",
+      "th": "Hoopa Confined",
+      "ja": "Hoopa Confined",
+      "ko": "Hoopa Confined",
+      "ru": "Hoopa Confined",
+      "zh_hans": "Hoopa Confined",
+      "zh_hant": "Hoopa Confined"
+    }
+  },
+  "hoopa_unbound": {
+    "legal": true,
+    "dex": 720,
+    "types": [
+      "psychic",
+      "dark"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Hoopa Unbound",
+      "fr": "Hoopa Unbound",
+      "en": "Hoopa Unbound",
+      "es": "Hoopa Unbound",
+      "th": "Hoopa Unbound",
+      "ja": "Hoopa Unbound",
+      "ko": "Hoopa Unbound",
+      "ru": "Hoopa Unbound",
+      "zh_hans": "Hoopa Unbound",
+      "zh_hant": "Hoopa Unbound"
+    }
+  },
+  "volcanion": {
+    "legal": true,
+    "dex": 721,
+    "types": [
+      "fire",
+      "water"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Volcanion",
+      "fr": "Volcanion",
+      "en": "Volcanion",
+      "es": "Volcanion",
+      "th": "โวลเคเนียน",
+      "ja": "ボルケニオン",
+      "ko": "볼케니온",
+      "ru": "Вулканион",
+      "zh_hans": "波尔凯尼恩",
+      "zh_hant": "波爾凱尼恩"
+    }
+  },
   "meltan": {
     "legal": false,
     "dex": 808,
@@ -39359,6 +39474,1340 @@
     "tags": [
       "mythical"
     ]
+  },
+  "grookey": {
+    "legal": true,
+    "dex": 810,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Grookey",
+      "fr": "Grookey",
+      "en": "Grookey",
+      "es": "Grookey",
+      "th": "Grookey",
+      "ja": "Grookey",
+      "ko": "Grookey",
+      "ru": "Grookey",
+      "zh_hans": "Grookey",
+      "zh_hant": "Grookey"
+    }
+  },
+  "thwackey": {
+    "legal": true,
+    "dex": 811,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Thwackey",
+      "fr": "Thwackey",
+      "en": "Thwackey",
+      "es": "Thwackey",
+      "th": "Thwackey",
+      "ja": "Thwackey",
+      "ko": "Thwackey",
+      "ru": "Thwackey",
+      "zh_hans": "Thwackey",
+      "zh_hant": "Thwackey"
+    }
+  },
+  "rillaboom": {
+    "legal": true,
+    "dex": 812,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Rillaboom",
+      "fr": "Rillaboom",
+      "en": "Rillaboom",
+      "es": "Rillaboom",
+      "th": "Rillaboom",
+      "ja": "Rillaboom",
+      "ko": "Rillaboom",
+      "ru": "Rillaboom",
+      "zh_hans": "Rillaboom",
+      "zh_hant": "Rillaboom"
+    }
+  },
+  "scorbunny": {
+    "legal": true,
+    "dex": 813,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Scorbunny",
+      "fr": "Scorbunny",
+      "en": "Scorbunny",
+      "es": "Scorbunny",
+      "th": "Scorbunny",
+      "ja": "Scorbunny",
+      "ko": "Scorbunny",
+      "ru": "Scorbunny",
+      "zh_hans": "Scorbunny",
+      "zh_hant": "Scorbunny"
+    }
+  },
+  "raboot": {
+    "legal": true,
+    "dex": 814,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Raboot",
+      "fr": "Raboot",
+      "en": "Raboot",
+      "es": "Raboot",
+      "th": "Raboot",
+      "ja": "Raboot",
+      "ko": "Raboot",
+      "ru": "Raboot",
+      "zh_hans": "Raboot",
+      "zh_hant": "Raboot"
+    }
+  },
+  "cinderace": {
+    "legal": true,
+    "dex": 815,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Cinderace",
+      "fr": "Cinderace",
+      "en": "Cinderace",
+      "es": "Cinderace",
+      "th": "Cinderace",
+      "ja": "Cinderace",
+      "ko": "Cinderace",
+      "ru": "Cinderace",
+      "zh_hans": "Cinderace",
+      "zh_hant": "Cinderace"
+    }
+  },
+  "sobble": {
+    "legal": true,
+    "dex": 816,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Sobble",
+      "fr": "Sobble",
+      "en": "Sobble",
+      "es": "Sobble",
+      "th": "Sobble",
+      "ja": "Sobble",
+      "ko": "Sobble",
+      "ru": "Sobble",
+      "zh_hans": "Sobble",
+      "zh_hant": "Sobble"
+    }
+  },
+  "drizzile": {
+    "legal": true,
+    "dex": 817,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Drizzile",
+      "fr": "Drizzile",
+      "en": "Drizzile",
+      "es": "Drizzile",
+      "th": "Drizzile",
+      "ja": "Drizzile",
+      "ko": "Drizzile",
+      "ru": "Drizzile",
+      "zh_hans": "Drizzile",
+      "zh_hant": "Drizzile"
+    }
+  },
+  "inteleon": {
+    "legal": true,
+    "dex": 818,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Inteleon",
+      "fr": "Inteleon",
+      "en": "Inteleon",
+      "es": "Inteleon",
+      "th": "Inteleon",
+      "ja": "Inteleon",
+      "ko": "Inteleon",
+      "ru": "Inteleon",
+      "zh_hans": "Inteleon",
+      "zh_hant": "Inteleon"
+    }
+  },
+  "skwovet": {
+    "legal": true,
+    "dex": 819,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Skwovet",
+      "fr": "Skwovet",
+      "en": "Skwovet",
+      "es": "Skwovet",
+      "th": "Skwovet",
+      "ja": "Skwovet",
+      "ko": "Skwovet",
+      "ru": "Skwovet",
+      "zh_hans": "Skwovet",
+      "zh_hant": "Skwovet"
+    }
+  },
+  "greedent": {
+    "legal": true,
+    "dex": 820,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Greedent",
+      "fr": "Greedent",
+      "en": "Greedent",
+      "es": "Greedent",
+      "th": "Greedent",
+      "ja": "Greedent",
+      "ko": "Greedent",
+      "ru": "Greedent",
+      "zh_hans": "Greedent",
+      "zh_hant": "Greedent"
+    }
+  },
+  "rookidee": {
+    "legal": true,
+    "dex": 821,
+    "types": [
+      "flying",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Rookidee",
+      "fr": "Rookidee",
+      "en": "Rookidee",
+      "es": "Rookidee",
+      "th": "Rookidee",
+      "ja": "Rookidee",
+      "ko": "Rookidee",
+      "ru": "Rookidee",
+      "zh_hans": "Rookidee",
+      "zh_hant": "Rookidee"
+    }
+  },
+  "corvisquire": {
+    "legal": true,
+    "dex": 822,
+    "types": [
+      "flying",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Corvisquire",
+      "fr": "Corvisquire",
+      "en": "Corvisquire",
+      "es": "Corvisquire",
+      "th": "Corvisquire",
+      "ja": "Corvisquire",
+      "ko": "Corvisquire",
+      "ru": "Corvisquire",
+      "zh_hans": "Corvisquire",
+      "zh_hant": "Corvisquire"
+    }
+  },
+  "corviknight": {
+    "legal": true,
+    "dex": 823,
+    "types": [
+      "flying",
+      "steel"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Corviknight",
+      "fr": "Corviknight",
+      "en": "Corviknight",
+      "es": "Corviknight",
+      "th": "Corviknight",
+      "ja": "Corviknight",
+      "ko": "Corviknight",
+      "ru": "Corviknight",
+      "zh_hans": "Corviknight",
+      "zh_hant": "Corviknight"
+    }
+  },
+  "blipbug": {
+    "legal": true,
+    "dex": 824,
+    "types": [
+      "bug",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Blipbug",
+      "fr": "Blipbug",
+      "en": "Blipbug",
+      "es": "Blipbug",
+      "th": "Blipbug",
+      "ja": "Blipbug",
+      "ko": "Blipbug",
+      "ru": "Blipbug",
+      "zh_hans": "Blipbug",
+      "zh_hant": "Blipbug"
+    }
+  },
+  "dottler": {
+    "legal": true,
+    "dex": 825,
+    "types": [
+      "bug",
+      "psychic"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Dottler",
+      "fr": "Dottler",
+      "en": "Dottler",
+      "es": "Dottler",
+      "th": "Dottler",
+      "ja": "Dottler",
+      "ko": "Dottler",
+      "ru": "Dottler",
+      "zh_hans": "Dottler",
+      "zh_hant": "Dottler"
+    }
+  },
+  "orbeetle": {
+    "legal": true,
+    "dex": 826,
+    "types": [
+      "bug",
+      "psychic"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Orbeetle",
+      "fr": "Orbeetle",
+      "en": "Orbeetle",
+      "es": "Orbeetle",
+      "th": "Orbeetle",
+      "ja": "Orbeetle",
+      "ko": "Orbeetle",
+      "ru": "Orbeetle",
+      "zh_hans": "Orbeetle",
+      "zh_hant": "Orbeetle"
+    }
+  },
+  "nickit": {
+    "legal": true,
+    "dex": 827,
+    "types": [
+      "dark",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Nickit",
+      "fr": "Nickit",
+      "en": "Nickit",
+      "es": "Nickit",
+      "th": "Nickit",
+      "ja": "Nickit",
+      "ko": "Nickit",
+      "ru": "Nickit",
+      "zh_hans": "Nickit",
+      "zh_hant": "Nickit"
+    }
+  },
+  "thievul": {
+    "legal": true,
+    "dex": 828,
+    "types": [
+      "dark",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Thievul",
+      "fr": "Thievul",
+      "en": "Thievul",
+      "es": "Thievul",
+      "th": "Thievul",
+      "ja": "Thievul",
+      "ko": "Thievul",
+      "ru": "Thievul",
+      "zh_hans": "Thievul",
+      "zh_hant": "Thievul"
+    }
+  },
+  "gossifleur": {
+    "legal": true,
+    "dex": 829,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Gossifleur",
+      "fr": "Gossifleur",
+      "en": "Gossifleur",
+      "es": "Gossifleur",
+      "th": "Gossifleur",
+      "ja": "Gossifleur",
+      "ko": "Gossifleur",
+      "ru": "Gossifleur",
+      "zh_hans": "Gossifleur",
+      "zh_hant": "Gossifleur"
+    }
+  },
+  "eldegoss": {
+    "legal": true,
+    "dex": 830,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Eldegoss",
+      "fr": "Eldegoss",
+      "en": "Eldegoss",
+      "es": "Eldegoss",
+      "th": "Eldegoss",
+      "ja": "Eldegoss",
+      "ko": "Eldegoss",
+      "ru": "Eldegoss",
+      "zh_hans": "Eldegoss",
+      "zh_hant": "Eldegoss"
+    }
+  },
+  "wooloo": {
+    "legal": true,
+    "dex": 831,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Wooloo",
+      "fr": "Wooloo",
+      "en": "Wooloo",
+      "es": "Wooloo",
+      "th": "Wooloo",
+      "ja": "Wooloo",
+      "ko": "Wooloo",
+      "ru": "Wooloo",
+      "zh_hans": "Wooloo",
+      "zh_hant": "Wooloo"
+    }
+  },
+  "dubwool": {
+    "legal": true,
+    "dex": 832,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Dubwool",
+      "fr": "Dubwool",
+      "en": "Dubwool",
+      "es": "Dubwool",
+      "th": "Dubwool",
+      "ja": "Dubwool",
+      "ko": "Dubwool",
+      "ru": "Dubwool",
+      "zh_hans": "Dubwool",
+      "zh_hant": "Dubwool"
+    }
+  },
+  "chewtle": {
+    "legal": true,
+    "dex": 833,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Chewtle",
+      "fr": "Chewtle",
+      "en": "Chewtle",
+      "es": "Chewtle",
+      "th": "Chewtle",
+      "ja": "Chewtle",
+      "ko": "Chewtle",
+      "ru": "Chewtle",
+      "zh_hans": "Chewtle",
+      "zh_hant": "Chewtle"
+    }
+  },
+  "drednaw": {
+    "legal": true,
+    "dex": 834,
+    "types": [
+      "water",
+      "rock"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Drednaw",
+      "fr": "Drednaw",
+      "en": "Drednaw",
+      "es": "Drednaw",
+      "th": "Drednaw",
+      "ja": "Drednaw",
+      "ko": "Drednaw",
+      "ru": "Drednaw",
+      "zh_hans": "Drednaw",
+      "zh_hant": "Drednaw"
+    }
+  },
+  "yamper": {
+    "legal": true,
+    "dex": 835,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Yamper",
+      "fr": "Yamper",
+      "en": "Yamper",
+      "es": "Yamper",
+      "th": "Yamper",
+      "ja": "Yamper",
+      "ko": "Yamper",
+      "ru": "Yamper",
+      "zh_hans": "Yamper",
+      "zh_hant": "Yamper"
+    }
+  },
+  "boltund": {
+    "legal": true,
+    "dex": 836,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Boltund",
+      "fr": "Boltund",
+      "en": "Boltund",
+      "es": "Boltund",
+      "th": "Boltund",
+      "ja": "Boltund",
+      "ko": "Boltund",
+      "ru": "Boltund",
+      "zh_hans": "Boltund",
+      "zh_hant": "Boltund"
+    }
+  },
+  "rolycoly": {
+    "legal": true,
+    "dex": 837,
+    "types": [
+      "rock",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Rolycoly",
+      "fr": "Rolycoly",
+      "en": "Rolycoly",
+      "es": "Rolycoly",
+      "th": "Rolycoly",
+      "ja": "Rolycoly",
+      "ko": "Rolycoly",
+      "ru": "Rolycoly",
+      "zh_hans": "Rolycoly",
+      "zh_hant": "Rolycoly"
+    }
+  },
+  "carkol": {
+    "legal": true,
+    "dex": 838,
+    "types": [
+      "rock",
+      "fire"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Carkol",
+      "fr": "Carkol",
+      "en": "Carkol",
+      "es": "Carkol",
+      "th": "Carkol",
+      "ja": "Carkol",
+      "ko": "Carkol",
+      "ru": "Carkol",
+      "zh_hans": "Carkol",
+      "zh_hant": "Carkol"
+    }
+  },
+  "coalossal": {
+    "legal": true,
+    "dex": 839,
+    "types": [
+      "rock",
+      "fire"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Coalossal",
+      "fr": "Coalossal",
+      "en": "Coalossal",
+      "es": "Coalossal",
+      "th": "Coalossal",
+      "ja": "Coalossal",
+      "ko": "Coalossal",
+      "ru": "Coalossal",
+      "zh_hans": "Coalossal",
+      "zh_hant": "Coalossal"
+    }
+  },
+  "applin": {
+    "legal": true,
+    "dex": 840,
+    "types": [
+      "grass",
+      "dragon"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Applin",
+      "fr": "Applin",
+      "en": "Applin",
+      "es": "Applin",
+      "th": "Applin",
+      "ja": "Applin",
+      "ko": "Applin",
+      "ru": "Applin",
+      "zh_hans": "Applin",
+      "zh_hant": "Applin"
+    }
+  },
+  "flapple": {
+    "legal": true,
+    "dex": 841,
+    "types": [
+      "grass",
+      "dragon"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Flapple",
+      "fr": "Flapple",
+      "en": "Flapple",
+      "es": "Flapple",
+      "th": "Flapple",
+      "ja": "Flapple",
+      "ko": "Flapple",
+      "ru": "Flapple",
+      "zh_hans": "Flapple",
+      "zh_hant": "Flapple"
+    }
+  },
+  "appletun": {
+    "legal": true,
+    "dex": 842,
+    "types": [
+      "grass",
+      "dragon"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Appletun",
+      "fr": "Appletun",
+      "en": "Appletun",
+      "es": "Appletun",
+      "th": "Appletun",
+      "ja": "Appletun",
+      "ko": "Appletun",
+      "ru": "Appletun",
+      "zh_hans": "Appletun",
+      "zh_hant": "Appletun"
+    }
+  },
+  "silicobra": {
+    "legal": true,
+    "dex": 843,
+    "types": [
+      "ground",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Silicobra",
+      "fr": "Silicobra",
+      "en": "Silicobra",
+      "es": "Silicobra",
+      "th": "Silicobra",
+      "ja": "Silicobra",
+      "ko": "Silicobra",
+      "ru": "Silicobra",
+      "zh_hans": "Silicobra",
+      "zh_hant": "Silicobra"
+    }
+  },
+  "sandaconda": {
+    "legal": true,
+    "dex": 844,
+    "types": [
+      "ground",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Sandaconda",
+      "fr": "Sandaconda",
+      "en": "Sandaconda",
+      "es": "Sandaconda",
+      "th": "Sandaconda",
+      "ja": "Sandaconda",
+      "ko": "Sandaconda",
+      "ru": "Sandaconda",
+      "zh_hans": "Sandaconda",
+      "zh_hant": "Sandaconda"
+    }
+  },
+  "cramorant": {
+    "legal": true,
+    "dex": 845,
+    "types": [
+      "flying",
+      "water"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Cramorant",
+      "fr": "Cramorant",
+      "en": "Cramorant",
+      "es": "Cramorant",
+      "th": "Cramorant",
+      "ja": "Cramorant",
+      "ko": "Cramorant",
+      "ru": "Cramorant",
+      "zh_hans": "Cramorant",
+      "zh_hant": "Cramorant"
+    }
+  },
+  "arrokuda": {
+    "legal": true,
+    "dex": 846,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Arrokuda",
+      "fr": "Arrokuda",
+      "en": "Arrokuda",
+      "es": "Arrokuda",
+      "th": "Arrokuda",
+      "ja": "Arrokuda",
+      "ko": "Arrokuda",
+      "ru": "Arrokuda",
+      "zh_hans": "Arrokuda",
+      "zh_hant": "Arrokuda"
+    }
+  },
+  "barraskewda": {
+    "legal": true,
+    "dex": 847,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Barraskewda",
+      "fr": "Barraskewda",
+      "en": "Barraskewda",
+      "es": "Barraskewda",
+      "th": "Barraskewda",
+      "ja": "Barraskewda",
+      "ko": "Barraskewda",
+      "ru": "Barraskewda",
+      "zh_hans": "Barraskewda",
+      "zh_hant": "Barraskewda"
+    }
+  },
+  "toxel": {
+    "legal": true,
+    "dex": 848,
+    "types": [
+      "electric",
+      "poison"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Toxel",
+      "fr": "Toxel",
+      "en": "Toxel",
+      "es": "Toxel",
+      "th": "Toxel",
+      "ja": "Toxel",
+      "ko": "Toxel",
+      "ru": "Toxel",
+      "zh_hans": "Toxel",
+      "zh_hant": "Toxel"
+    }
+  },
+  "toxtricity": {
+    "legal": true,
+    "dex": 849,
+    "types": [
+      "electric",
+      "poison"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Toxtricity",
+      "fr": "Toxtricity",
+      "en": "Toxtricity",
+      "es": "Toxtricity",
+      "th": "Toxtricity",
+      "ja": "Toxtricity",
+      "ko": "Toxtricity",
+      "ru": "Toxtricity",
+      "zh_hans": "Toxtricity",
+      "zh_hant": "Toxtricity"
+    }
+  },
+  "toxtricity_amped": {
+    "legal": true,
+    "dex": 849,
+    "types": [
+      "electric",
+      "poison"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Toxtricity Amped",
+      "fr": "Toxtricity Amped",
+      "en": "Toxtricity Amped",
+      "es": "Toxtricity Amped",
+      "th": "Toxtricity Amped",
+      "ja": "Toxtricity Amped",
+      "ko": "Toxtricity Amped",
+      "ru": "Toxtricity Amped",
+      "zh_hans": "Toxtricity Amped",
+      "zh_hant": "Toxtricity Amped"
+    }
+  },
+  "toxtricity_low_key": {
+    "legal": true,
+    "dex": 849,
+    "types": [
+      "electric",
+      "poison"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Toxtricity Low Key",
+      "fr": "Toxtricity Low Key",
+      "en": "Toxtricity Low Key",
+      "es": "Toxtricity Low Key",
+      "th": "Toxtricity Low Key",
+      "ja": "Toxtricity Low Key",
+      "ko": "Toxtricity Low Key",
+      "ru": "Toxtricity Low Key",
+      "zh_hans": "Toxtricity Low Key",
+      "zh_hant": "Toxtricity Low Key"
+    }
+  },
+  "sizzlipede": {
+    "legal": true,
+    "dex": 850,
+    "types": [
+      "fire",
+      "bug"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Sizzlipede",
+      "fr": "Sizzlipede",
+      "en": "Sizzlipede",
+      "es": "Sizzlipede",
+      "th": "Sizzlipede",
+      "ja": "Sizzlipede",
+      "ko": "Sizzlipede",
+      "ru": "Sizzlipede",
+      "zh_hans": "Sizzlipede",
+      "zh_hant": "Sizzlipede"
+    }
+  },
+  "centiskorch": {
+    "legal": true,
+    "dex": 851,
+    "types": [
+      "fire",
+      "bug"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Centiskorch",
+      "fr": "Centiskorch",
+      "en": "Centiskorch",
+      "es": "Centiskorch",
+      "th": "Centiskorch",
+      "ja": "Centiskorch",
+      "ko": "Centiskorch",
+      "ru": "Centiskorch",
+      "zh_hans": "Centiskorch",
+      "zh_hant": "Centiskorch"
+    }
+  },
+  "clobbopus": {
+    "legal": true,
+    "dex": 852,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Clobbopus",
+      "fr": "Clobbopus",
+      "en": "Clobbopus",
+      "es": "Clobbopus",
+      "th": "Clobbopus",
+      "ja": "Clobbopus",
+      "ko": "Clobbopus",
+      "ru": "Clobbopus",
+      "zh_hans": "Clobbopus",
+      "zh_hant": "Clobbopus"
+    }
+  },
+  "grapploct": {
+    "legal": true,
+    "dex": 853,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Grapploct",
+      "fr": "Grapploct",
+      "en": "Grapploct",
+      "es": "Grapploct",
+      "th": "Grapploct",
+      "ja": "Grapploct",
+      "ko": "Grapploct",
+      "ru": "Grapploct",
+      "zh_hans": "Grapploct",
+      "zh_hant": "Grapploct"
+    }
+  },
+  "sinistea": {
+    "legal": true,
+    "dex": 854,
+    "types": [
+      "ghost",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Sinistea",
+      "fr": "Sinistea",
+      "en": "Sinistea",
+      "es": "Sinistea",
+      "th": "Sinistea",
+      "ja": "Sinistea",
+      "ko": "Sinistea",
+      "ru": "Sinistea",
+      "zh_hans": "Sinistea",
+      "zh_hant": "Sinistea"
+    }
+  },
+  "sinistea_antique": {
+    "legal": true,
+    "dex": 854,
+    "types": [
+      "ghost",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Sinistea Antique",
+      "fr": "Sinistea Antique",
+      "en": "Sinistea Antique",
+      "es": "Sinistea Antique",
+      "th": "Sinistea Antique",
+      "ja": "Sinistea Antique",
+      "ko": "Sinistea Antique",
+      "ru": "Sinistea Antique",
+      "zh_hans": "Sinistea Antique",
+      "zh_hant": "Sinistea Antique"
+    }
+  },
+  "sinistea_phony": {
+    "legal": true,
+    "dex": 854,
+    "types": [
+      "ghost",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Sinistea Phony",
+      "fr": "Sinistea Phony",
+      "en": "Sinistea Phony",
+      "es": "Sinistea Phony",
+      "th": "Sinistea Phony",
+      "ja": "Sinistea Phony",
+      "ko": "Sinistea Phony",
+      "ru": "Sinistea Phony",
+      "zh_hans": "Sinistea Phony",
+      "zh_hant": "Sinistea Phony"
+    }
+  },
+  "polteageist": {
+    "legal": true,
+    "dex": 855,
+    "types": [
+      "ghost",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Polteageist",
+      "fr": "Polteageist",
+      "en": "Polteageist",
+      "es": "Polteageist",
+      "th": "Polteageist",
+      "ja": "Polteageist",
+      "ko": "Polteageist",
+      "ru": "Polteageist",
+      "zh_hans": "Polteageist",
+      "zh_hant": "Polteageist"
+    }
+  },
+  "polteageist_antique": {
+    "legal": true,
+    "dex": 855,
+    "types": [
+      "ghost",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Polteageist Antique",
+      "fr": "Polteageist Antique",
+      "en": "Polteageist Antique",
+      "es": "Polteageist Antique",
+      "th": "Polteageist Antique",
+      "ja": "Polteageist Antique",
+      "ko": "Polteageist Antique",
+      "ru": "Polteageist Antique",
+      "zh_hans": "Polteageist Antique",
+      "zh_hant": "Polteageist Antique"
+    }
+  },
+  "polteageist_phony": {
+    "legal": true,
+    "dex": 855,
+    "types": [
+      "ghost",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Polteageist Phony",
+      "fr": "Polteageist Phony",
+      "en": "Polteageist Phony",
+      "es": "Polteageist Phony",
+      "th": "Polteageist Phony",
+      "ja": "Polteageist Phony",
+      "ko": "Polteageist Phony",
+      "ru": "Polteageist Phony",
+      "zh_hans": "Polteageist Phony",
+      "zh_hant": "Polteageist Phony"
+    }
+  },
+  "hatenna": {
+    "legal": true,
+    "dex": 856,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Hatenna",
+      "fr": "Hatenna",
+      "en": "Hatenna",
+      "es": "Hatenna",
+      "th": "Hatenna",
+      "ja": "Hatenna",
+      "ko": "Hatenna",
+      "ru": "Hatenna",
+      "zh_hans": "Hatenna",
+      "zh_hant": "Hatenna"
+    }
+  },
+  "hattrem": {
+    "legal": true,
+    "dex": 857,
+    "types": [
+      "psychic",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Hattrem",
+      "fr": "Hattrem",
+      "en": "Hattrem",
+      "es": "Hattrem",
+      "th": "Hattrem",
+      "ja": "Hattrem",
+      "ko": "Hattrem",
+      "ru": "Hattrem",
+      "zh_hans": "Hattrem",
+      "zh_hant": "Hattrem"
+    }
+  },
+  "hatterene": {
+    "legal": true,
+    "dex": 858,
+    "types": [
+      "psychic",
+      "fairy"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Hatterene",
+      "fr": "Hatterene",
+      "en": "Hatterene",
+      "es": "Hatterene",
+      "th": "Hatterene",
+      "ja": "Hatterene",
+      "ko": "Hatterene",
+      "ru": "Hatterene",
+      "zh_hans": "Hatterene",
+      "zh_hant": "Hatterene"
+    }
+  },
+  "impidimp": {
+    "legal": true,
+    "dex": 859,
+    "types": [
+      "dark",
+      "fairy"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Impidimp",
+      "fr": "Impidimp",
+      "en": "Impidimp",
+      "es": "Impidimp",
+      "th": "Impidimp",
+      "ja": "Impidimp",
+      "ko": "Impidimp",
+      "ru": "Impidimp",
+      "zh_hans": "Impidimp",
+      "zh_hant": "Impidimp"
+    }
+  },
+  "morgrem": {
+    "legal": true,
+    "dex": 860,
+    "types": [
+      "dark",
+      "fairy"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Morgrem",
+      "fr": "Morgrem",
+      "en": "Morgrem",
+      "es": "Morgrem",
+      "th": "Morgrem",
+      "ja": "Morgrem",
+      "ko": "Morgrem",
+      "ru": "Morgrem",
+      "zh_hans": "Morgrem",
+      "zh_hant": "Morgrem"
+    }
+  },
+  "grimmsnarl": {
+    "legal": true,
+    "dex": 861,
+    "types": [
+      "dark",
+      "fairy"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Grimmsnarl",
+      "fr": "Grimmsnarl",
+      "en": "Grimmsnarl",
+      "es": "Grimmsnarl",
+      "th": "Grimmsnarl",
+      "ja": "Grimmsnarl",
+      "ko": "Grimmsnarl",
+      "ru": "Grimmsnarl",
+      "zh_hans": "Grimmsnarl",
+      "zh_hant": "Grimmsnarl"
+    }
   },
   "obstagoon": {
     "legal": true,
@@ -39478,6 +40927,29 @@
       "FOUL_PLAY"
     ]
   },
+  "cursola": {
+    "legal": true,
+    "dex": 864,
+    "types": [
+      "ghost",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Cursola",
+      "fr": "Cursola",
+      "en": "Cursola",
+      "es": "Cursola",
+      "th": "Cursola",
+      "ja": "Cursola",
+      "ko": "Cursola",
+      "ru": "Cursola",
+      "zh_hans": "Cursola",
+      "zh_hant": "Cursola"
+    }
+  },
   "sirfetchd": {
     "legal": true,
     "dex": 865,
@@ -39489,16 +40961,16 @@
       "galarian"
     ],
     "speciesName": {
-      "de": "Sirfetch'd",
-      "fr": "Sirfetch'd",
-      "en": "Sirfetch'd",
-      "es": "Sirfetch'd",
-      "th": "Sirfetch'd",
-      "ja": "Sirfetch'd",
-      "ko": "Sirfetch'd",
-      "ru": "Sirfetch'd",
-      "zh_hans": "Sirfetch'd",
-      "zh_hant": "Sirfetch'd"
+      "de": "Sirfetchd",
+      "fr": "Sirfetchd",
+      "en": "Sirfetchd",
+      "es": "Sirfetchd",
+      "th": "Sirfetchd",
+      "ja": "Sirfetchd",
+      "ko": "Sirfetchd",
+      "ru": "Sirfetchd",
+      "zh_hans": "Sirfetchd",
+      "zh_hant": "Sirfetchd"
     },
     "ranking": 679,
     "moves": {
@@ -39548,16 +41020,16 @@
       "galarian"
     ],
     "speciesName": {
-      "de": "Mr. Rime",
-      "fr": "Mr. Rime",
-      "en": "Mr. Rime",
-      "es": "Mr. Rime",
-      "th": "Mr. Rime",
-      "ja": "Mr. Rime",
-      "ko": "Mr. Rime",
-      "ru": "Mr. Rime",
-      "zh_hans": "Mr. Rime",
-      "zh_hant": "Mr. Rime"
+      "de": "Mr Rime",
+      "fr": "Mr Rime",
+      "en": "Mr Rime",
+      "es": "Mr Rime",
+      "th": "Mr Rime",
+      "ja": "Mr Rime",
+      "ko": "Mr Rime",
+      "ru": "Mr Rime",
+      "zh_hans": "Mr Rime",
+      "zh_hant": "Mr Rime"
     },
     "ranking": 556,
     "moves": {
@@ -39651,30 +41123,1039 @@
       "SAND_TOMB"
     ]
   },
+  "milcery": {
+    "legal": true,
+    "dex": 868,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Milcery",
+      "fr": "Milcery",
+      "en": "Milcery",
+      "es": "Milcery",
+      "th": "Milcery",
+      "ja": "Milcery",
+      "ko": "Milcery",
+      "ru": "Milcery",
+      "zh_hans": "Milcery",
+      "zh_hant": "Milcery"
+    }
+  },
+  "alcremie": {
+    "legal": true,
+    "dex": 869,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Alcremie",
+      "fr": "Alcremie",
+      "en": "Alcremie",
+      "es": "Alcremie",
+      "th": "Alcremie",
+      "ja": "Alcremie",
+      "ko": "Alcremie",
+      "ru": "Alcremie",
+      "zh_hans": "Alcremie",
+      "zh_hant": "Alcremie"
+    }
+  },
+  "falinks": {
+    "legal": true,
+    "dex": 870,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Falinks",
+      "fr": "Falinks",
+      "en": "Falinks",
+      "es": "Falinks",
+      "th": "Falinks",
+      "ja": "Falinks",
+      "ko": "Falinks",
+      "ru": "Falinks",
+      "zh_hans": "Falinks",
+      "zh_hant": "Falinks"
+    }
+  },
+  "pincurchin": {
+    "legal": true,
+    "dex": 871,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Pincurchin",
+      "fr": "Pincurchin",
+      "en": "Pincurchin",
+      "es": "Pincurchin",
+      "th": "Pincurchin",
+      "ja": "Pincurchin",
+      "ko": "Pincurchin",
+      "ru": "Pincurchin",
+      "zh_hans": "Pincurchin",
+      "zh_hant": "Pincurchin"
+    }
+  },
+  "snom": {
+    "legal": true,
+    "dex": 872,
+    "types": [
+      "ice",
+      "bug"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Snom",
+      "fr": "Snom",
+      "en": "Snom",
+      "es": "Snom",
+      "th": "Snom",
+      "ja": "Snom",
+      "ko": "Snom",
+      "ru": "Snom",
+      "zh_hans": "Snom",
+      "zh_hant": "Snom"
+    }
+  },
+  "frosmoth": {
+    "legal": true,
+    "dex": 873,
+    "types": [
+      "ice",
+      "bug"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Frosmoth",
+      "fr": "Frosmoth",
+      "en": "Frosmoth",
+      "es": "Frosmoth",
+      "th": "Frosmoth",
+      "ja": "Frosmoth",
+      "ko": "Frosmoth",
+      "ru": "Frosmoth",
+      "zh_hans": "Frosmoth",
+      "zh_hant": "Frosmoth"
+    }
+  },
+  "stonjourner": {
+    "legal": true,
+    "dex": 874,
+    "types": [
+      "rock",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Stonjourner",
+      "fr": "Stonjourner",
+      "en": "Stonjourner",
+      "es": "Stonjourner",
+      "th": "Stonjourner",
+      "ja": "Stonjourner",
+      "ko": "Stonjourner",
+      "ru": "Stonjourner",
+      "zh_hans": "Stonjourner",
+      "zh_hant": "Stonjourner"
+    }
+  },
+  "eiscue": {
+    "legal": true,
+    "dex": 875,
+    "types": [
+      "ice",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Eiscue",
+      "fr": "Eiscue",
+      "en": "Eiscue",
+      "es": "Eiscue",
+      "th": "Eiscue",
+      "ja": "Eiscue",
+      "ko": "Eiscue",
+      "ru": "Eiscue",
+      "zh_hans": "Eiscue",
+      "zh_hant": "Eiscue"
+    }
+  },
+  "eiscue_ice": {
+    "legal": true,
+    "dex": 875,
+    "types": [
+      "ice",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Eiscue Ice",
+      "fr": "Eiscue Ice",
+      "en": "Eiscue Ice",
+      "es": "Eiscue Ice",
+      "th": "Eiscue Ice",
+      "ja": "Eiscue Ice",
+      "ko": "Eiscue Ice",
+      "ru": "Eiscue Ice",
+      "zh_hans": "Eiscue Ice",
+      "zh_hant": "Eiscue Ice"
+    }
+  },
+  "eiscue_noice": {
+    "legal": true,
+    "dex": 875,
+    "types": [
+      "ice",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Eiscue Noice",
+      "fr": "Eiscue Noice",
+      "en": "Eiscue Noice",
+      "es": "Eiscue Noice",
+      "th": "Eiscue Noice",
+      "ja": "Eiscue Noice",
+      "ko": "Eiscue Noice",
+      "ru": "Eiscue Noice",
+      "zh_hans": "Eiscue Noice",
+      "zh_hant": "Eiscue Noice"
+    }
+  },
+  "indeedee": {
+    "legal": true,
+    "dex": 876,
+    "types": [
+      "psychic",
+      "normal"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Indeedee",
+      "fr": "Indeedee",
+      "en": "Indeedee",
+      "es": "Indeedee",
+      "th": "Indeedee",
+      "ja": "Indeedee",
+      "ko": "Indeedee",
+      "ru": "Indeedee",
+      "zh_hans": "Indeedee",
+      "zh_hant": "Indeedee"
+    }
+  },
+  "indeedee_female": {
+    "legal": true,
+    "dex": 876,
+    "types": [
+      "psychic",
+      "normal"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Indeedee Female",
+      "fr": "Indeedee Female",
+      "en": "Indeedee Female",
+      "es": "Indeedee Female",
+      "th": "Indeedee Female",
+      "ja": "Indeedee Female",
+      "ko": "Indeedee Female",
+      "ru": "Indeedee Female",
+      "zh_hans": "Indeedee Female",
+      "zh_hant": "Indeedee Female"
+    }
+  },
+  "indeedee_male": {
+    "legal": true,
+    "dex": 876,
+    "types": [
+      "psychic",
+      "normal"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Indeedee Male",
+      "fr": "Indeedee Male",
+      "en": "Indeedee Male",
+      "es": "Indeedee Male",
+      "th": "Indeedee Male",
+      "ja": "Indeedee Male",
+      "ko": "Indeedee Male",
+      "ru": "Indeedee Male",
+      "zh_hans": "Indeedee Male",
+      "zh_hant": "Indeedee Male"
+    }
+  },
+  "morpeko": {
+    "legal": true,
+    "dex": 877,
+    "types": [
+      "electric",
+      "dark"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Morpeko",
+      "fr": "Morpeko",
+      "en": "Morpeko",
+      "es": "Morpeko",
+      "th": "Morpeko",
+      "ja": "Morpeko",
+      "ko": "Morpeko",
+      "ru": "Morpeko",
+      "zh_hans": "Morpeko",
+      "zh_hant": "Morpeko"
+    }
+  },
+  "morpeko_full_belly": {
+    "legal": true,
+    "dex": 877,
+    "types": [
+      "electric",
+      "dark"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Morpeko Full Belly",
+      "fr": "Morpeko Full Belly",
+      "en": "Morpeko Full Belly",
+      "es": "Morpeko Full Belly",
+      "th": "Morpeko Full Belly",
+      "ja": "Morpeko Full Belly",
+      "ko": "Morpeko Full Belly",
+      "ru": "Morpeko Full Belly",
+      "zh_hans": "Morpeko Full Belly",
+      "zh_hant": "Morpeko Full Belly"
+    }
+  },
+  "morpeko_hangry": {
+    "legal": true,
+    "dex": 877,
+    "types": [
+      "electric",
+      "dark"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Morpeko Hangry",
+      "fr": "Morpeko Hangry",
+      "en": "Morpeko Hangry",
+      "es": "Morpeko Hangry",
+      "th": "Morpeko Hangry",
+      "ja": "Morpeko Hangry",
+      "ko": "Morpeko Hangry",
+      "ru": "Morpeko Hangry",
+      "zh_hans": "Morpeko Hangry",
+      "zh_hant": "Morpeko Hangry"
+    }
+  },
+  "cufant": {
+    "legal": true,
+    "dex": 878,
+    "types": [
+      "steel",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Cufant",
+      "fr": "Cufant",
+      "en": "Cufant",
+      "es": "Cufant",
+      "th": "Cufant",
+      "ja": "Cufant",
+      "ko": "Cufant",
+      "ru": "Cufant",
+      "zh_hans": "Cufant",
+      "zh_hant": "Cufant"
+    }
+  },
+  "copperajah": {
+    "legal": true,
+    "dex": 879,
+    "types": [
+      "steel",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Copperajah",
+      "fr": "Copperajah",
+      "en": "Copperajah",
+      "es": "Copperajah",
+      "th": "Copperajah",
+      "ja": "Copperajah",
+      "ko": "Copperajah",
+      "ru": "Copperajah",
+      "zh_hans": "Copperajah",
+      "zh_hant": "Copperajah"
+    }
+  },
+  "dracozolt": {
+    "legal": true,
+    "dex": 880,
+    "types": [
+      "electric",
+      "dragon"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Dracozolt",
+      "fr": "Dracozolt",
+      "en": "Dracozolt",
+      "es": "Dracozolt",
+      "th": "Dracozolt",
+      "ja": "Dracozolt",
+      "ko": "Dracozolt",
+      "ru": "Dracozolt",
+      "zh_hans": "Dracozolt",
+      "zh_hant": "Dracozolt"
+    }
+  },
+  "arctozolt": {
+    "legal": true,
+    "dex": 881,
+    "types": [
+      "electric",
+      "ice"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Arctozolt",
+      "fr": "Arctozolt",
+      "en": "Arctozolt",
+      "es": "Arctozolt",
+      "th": "Arctozolt",
+      "ja": "Arctozolt",
+      "ko": "Arctozolt",
+      "ru": "Arctozolt",
+      "zh_hans": "Arctozolt",
+      "zh_hant": "Arctozolt"
+    }
+  },
+  "dracovish": {
+    "legal": true,
+    "dex": 882,
+    "types": [
+      "water",
+      "dragon"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Dracovish",
+      "fr": "Dracovish",
+      "en": "Dracovish",
+      "es": "Dracovish",
+      "th": "Dracovish",
+      "ja": "Dracovish",
+      "ko": "Dracovish",
+      "ru": "Dracovish",
+      "zh_hans": "Dracovish",
+      "zh_hant": "Dracovish"
+    }
+  },
+  "arctovish": {
+    "legal": true,
+    "dex": 883,
+    "types": [
+      "water",
+      "ice"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Arctovish",
+      "fr": "Arctovish",
+      "en": "Arctovish",
+      "es": "Arctovish",
+      "th": "Arctovish",
+      "ja": "Arctovish",
+      "ko": "Arctovish",
+      "ru": "Arctovish",
+      "zh_hans": "Arctovish",
+      "zh_hant": "Arctovish"
+    }
+  },
+  "duraludon": {
+    "legal": true,
+    "dex": 884,
+    "types": [
+      "steel",
+      "dragon"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Duraludon",
+      "fr": "Duraludon",
+      "en": "Duraludon",
+      "es": "Duraludon",
+      "th": "Duraludon",
+      "ja": "Duraludon",
+      "ko": "Duraludon",
+      "ru": "Duraludon",
+      "zh_hans": "Duraludon",
+      "zh_hant": "Duraludon"
+    }
+  },
+  "dreepy": {
+    "legal": true,
+    "dex": 885,
+    "types": [
+      "dragon",
+      "ghost"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Dreepy",
+      "fr": "Dreepy",
+      "en": "Dreepy",
+      "es": "Dreepy",
+      "th": "Dreepy",
+      "ja": "Dreepy",
+      "ko": "Dreepy",
+      "ru": "Dreepy",
+      "zh_hans": "Dreepy",
+      "zh_hant": "Dreepy"
+    }
+  },
+  "drakloak": {
+    "legal": true,
+    "dex": 886,
+    "types": [
+      "dragon",
+      "ghost"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Drakloak",
+      "fr": "Drakloak",
+      "en": "Drakloak",
+      "es": "Drakloak",
+      "th": "Drakloak",
+      "ja": "Drakloak",
+      "ko": "Drakloak",
+      "ru": "Drakloak",
+      "zh_hans": "Drakloak",
+      "zh_hant": "Drakloak"
+    }
+  },
+  "dragapult": {
+    "legal": true,
+    "dex": 887,
+    "types": [
+      "dragon",
+      "ghost"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Dragapult",
+      "fr": "Dragapult",
+      "en": "Dragapult",
+      "es": "Dragapult",
+      "th": "Dragapult",
+      "ja": "Dragapult",
+      "ko": "Dragapult",
+      "ru": "Dragapult",
+      "zh_hans": "Dragapult",
+      "zh_hant": "Dragapult"
+    }
+  },
   "zacian": {
-    "legal": false,
+    "legal": true,
+    "dex": 888,
+    "types": [
+      "fairy",
+      "steel"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Zacian",
+      "fr": "Zacian",
+      "en": "Zacian",
+      "es": "Zacian",
+      "th": "Zacian",
+      "ja": "Zacian",
+      "ko": "Zacian",
+      "ru": "Zacian",
+      "zh_hans": "Zacian",
+      "zh_hant": "Zacian"
+    }
+  },
+  "zacian_crowned_sword": {
+    "legal": true,
+    "dex": 888,
+    "types": [
+      "fairy",
+      "steel"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Zacian Crowned Sword",
+      "fr": "Zacian Crowned Sword",
+      "en": "Zacian Crowned Sword",
+      "es": "Zacian Crowned Sword",
+      "th": "Zacian Crowned Sword",
+      "ja": "Zacian Crowned Sword",
+      "ko": "Zacian Crowned Sword",
+      "ru": "Zacian Crowned Sword",
+      "zh_hans": "Zacian Crowned Sword",
+      "zh_hant": "Zacian Crowned Sword"
+    }
+  },
+  "zacian_hero": {
+    "legal": true,
     "dex": 888,
     "types": [
       "fairy",
       "none"
     ],
     "tags": [
-      "galarian",
-      "legendary",
       "unreleased"
-    ]
+    ],
+    "speciesName": {
+      "de": "Zacian Hero",
+      "fr": "Zacian Hero",
+      "en": "Zacian Hero",
+      "es": "Zacian Hero",
+      "th": "Zacian Hero",
+      "ja": "Zacian Hero",
+      "ko": "Zacian Hero",
+      "ru": "Zacian Hero",
+      "zh_hans": "Zacian Hero",
+      "zh_hant": "Zacian Hero"
+    }
   },
   "zamazenta": {
-    "legal": false,
-    "dex": 888,
+    "legal": true,
+    "dex": 889,
+    "types": [
+      "fighting",
+      "steel"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Zamazenta",
+      "fr": "Zamazenta",
+      "en": "Zamazenta",
+      "es": "Zamazenta",
+      "th": "Zamazenta",
+      "ja": "Zamazenta",
+      "ko": "Zamazenta",
+      "ru": "Zamazenta",
+      "zh_hans": "Zamazenta",
+      "zh_hant": "Zamazenta"
+    }
+  },
+  "zamazenta_crowned_shield": {
+    "legal": true,
+    "dex": 889,
+    "types": [
+      "fighting",
+      "steel"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Zamazenta Crowned Shield",
+      "fr": "Zamazenta Crowned Shield",
+      "en": "Zamazenta Crowned Shield",
+      "es": "Zamazenta Crowned Shield",
+      "th": "Zamazenta Crowned Shield",
+      "ja": "Zamazenta Crowned Shield",
+      "ko": "Zamazenta Crowned Shield",
+      "ru": "Zamazenta Crowned Shield",
+      "zh_hans": "Zamazenta Crowned Shield",
+      "zh_hant": "Zamazenta Crowned Shield"
+    }
+  },
+  "zamazenta_hero": {
+    "legal": true,
+    "dex": 889,
     "types": [
       "fighting",
       "none"
     ],
     "tags": [
-      "galarian",
-      "legendary",
       "unreleased"
-    ]
+    ],
+    "speciesName": {
+      "de": "Zamazenta Hero",
+      "fr": "Zamazenta Hero",
+      "en": "Zamazenta Hero",
+      "es": "Zamazenta Hero",
+      "th": "Zamazenta Hero",
+      "ja": "Zamazenta Hero",
+      "ko": "Zamazenta Hero",
+      "ru": "Zamazenta Hero",
+      "zh_hans": "Zamazenta Hero",
+      "zh_hant": "Zamazenta Hero"
+    }
+  },
+  "eternatus": {
+    "legal": true,
+    "dex": 890,
+    "types": [
+      "poison",
+      "dragon"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Eternatus",
+      "fr": "Eternatus",
+      "en": "Eternatus",
+      "es": "Eternatus",
+      "th": "Eternatus",
+      "ja": "Eternatus",
+      "ko": "Eternatus",
+      "ru": "Eternatus",
+      "zh_hans": "Eternatus",
+      "zh_hant": "Eternatus"
+    }
+  },
+  "eternatus_eternamax": {
+    "legal": true,
+    "dex": 890,
+    "types": [
+      "poison",
+      "dragon"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Eternatus Eternamax",
+      "fr": "Eternatus Eternamax",
+      "en": "Eternatus Eternamax",
+      "es": "Eternatus Eternamax",
+      "th": "Eternatus Eternamax",
+      "ja": "Eternatus Eternamax",
+      "ko": "Eternatus Eternamax",
+      "ru": "Eternatus Eternamax",
+      "zh_hans": "Eternatus Eternamax",
+      "zh_hant": "Eternatus Eternamax"
+    }
+  },
+  "kubfu": {
+    "legal": true,
+    "dex": 891,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Kubfu",
+      "fr": "Kubfu",
+      "en": "Kubfu",
+      "es": "Kubfu",
+      "th": "Kubfu",
+      "ja": "Kubfu",
+      "ko": "Kubfu",
+      "ru": "Kubfu",
+      "zh_hans": "Kubfu",
+      "zh_hant": "Kubfu"
+    }
+  },
+  "urshifu": {
+    "legal": true,
+    "dex": 892,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Urshifu",
+      "fr": "Urshifu",
+      "en": "Urshifu",
+      "es": "Urshifu",
+      "th": "Urshifu",
+      "ja": "Urshifu",
+      "ko": "Urshifu",
+      "ru": "Urshifu",
+      "zh_hans": "Urshifu",
+      "zh_hant": "Urshifu"
+    }
+  },
+  "urshifu_rapid_strike": {
+    "legal": true,
+    "dex": 892,
+    "types": [
+      "fighting",
+      "water"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Urshifu Rapid Strike",
+      "fr": "Urshifu Rapid Strike",
+      "en": "Urshifu Rapid Strike",
+      "es": "Urshifu Rapid Strike",
+      "th": "Urshifu Rapid Strike",
+      "ja": "Urshifu Rapid Strike",
+      "ko": "Urshifu Rapid Strike",
+      "ru": "Urshifu Rapid Strike",
+      "zh_hans": "Urshifu Rapid Strike",
+      "zh_hant": "Urshifu Rapid Strike"
+    }
+  },
+  "urshifu_single_strike": {
+    "legal": true,
+    "dex": 892,
+    "types": [
+      "fighting",
+      "dark"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Urshifu Single Strike",
+      "fr": "Urshifu Single Strike",
+      "en": "Urshifu Single Strike",
+      "es": "Urshifu Single Strike",
+      "th": "Urshifu Single Strike",
+      "ja": "Urshifu Single Strike",
+      "ko": "Urshifu Single Strike",
+      "ru": "Urshifu Single Strike",
+      "zh_hans": "Urshifu Single Strike",
+      "zh_hant": "Urshifu Single Strike"
+    }
+  },
+  "zarude": {
+    "legal": true,
+    "dex": 893,
+    "types": [
+      "dark",
+      "grass"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Zarude",
+      "fr": "Zarude",
+      "en": "Zarude",
+      "es": "Zarude",
+      "th": "Zarude",
+      "ja": "Zarude",
+      "ko": "Zarude",
+      "ru": "Zarude",
+      "zh_hans": "Zarude",
+      "zh_hant": "Zarude"
+    }
+  },
+  "regieleki": {
+    "legal": true,
+    "dex": 894,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Regieleki",
+      "fr": "Regieleki",
+      "en": "Regieleki",
+      "es": "Regieleki",
+      "th": "Regieleki",
+      "ja": "Regieleki",
+      "ko": "Regieleki",
+      "ru": "Regieleki",
+      "zh_hans": "Regieleki",
+      "zh_hant": "Regieleki"
+    }
+  },
+  "regidrago": {
+    "legal": true,
+    "dex": 895,
+    "types": [
+      "dragon",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Regidrago",
+      "fr": "Regidrago",
+      "en": "Regidrago",
+      "es": "Regidrago",
+      "th": "Regidrago",
+      "ja": "Regidrago",
+      "ko": "Regidrago",
+      "ru": "Regidrago",
+      "zh_hans": "Regidrago",
+      "zh_hant": "Regidrago"
+    }
+  },
+  "glastrier": {
+    "legal": true,
+    "dex": 896,
+    "types": [
+      "ice",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Glastrier",
+      "fr": "Glastrier",
+      "en": "Glastrier",
+      "es": "Glastrier",
+      "th": "Glastrier",
+      "ja": "Glastrier",
+      "ko": "Glastrier",
+      "ru": "Glastrier",
+      "zh_hans": "Glastrier",
+      "zh_hant": "Glastrier"
+    }
+  },
+  "spectrier": {
+    "legal": true,
+    "dex": 897,
+    "types": [
+      "ghost",
+      "none"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Spectrier",
+      "fr": "Spectrier",
+      "en": "Spectrier",
+      "es": "Spectrier",
+      "th": "Spectrier",
+      "ja": "Spectrier",
+      "ko": "Spectrier",
+      "ru": "Spectrier",
+      "zh_hans": "Spectrier",
+      "zh_hant": "Spectrier"
+    }
+  },
+  "calyrex": {
+    "legal": true,
+    "dex": 898,
+    "types": [
+      "psychic",
+      "grass"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Calyrex",
+      "fr": "Calyrex",
+      "en": "Calyrex",
+      "es": "Calyrex",
+      "th": "Calyrex",
+      "ja": "Calyrex",
+      "ko": "Calyrex",
+      "ru": "Calyrex",
+      "zh_hans": "Calyrex",
+      "zh_hant": "Calyrex"
+    }
+  },
+  "calyrex_ice_rider": {
+    "legal": true,
+    "dex": 898,
+    "types": [
+      "psychic",
+      "ice"
+    ],
+    "tags": [
+      "unreleased"
+    ],
+    "speciesName": {
+      "de": "Calyrex Ice Rider",
+      "fr": "Calyrex Ice Rider",
+      "en": "Calyrex Ice Rider",
+      "es": "Calyrex Ice Rider",
+      "th": "Calyrex Ice Rider",
+      "ja": "Calyrex Ice Rider",
+      "ko": "Calyrex Ice Rider",
+      "ru": "Calyrex Ice Rider",
+      "zh_hans": "Calyrex Ice Rider",
+      "zh_hant": "Calyrex Ice Rider"
+    }
   }
 }
