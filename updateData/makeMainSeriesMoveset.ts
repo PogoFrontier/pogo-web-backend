@@ -64,6 +64,44 @@ for(let id of Object.keys(pokemonList)) {
     if(key.startsWith("pyroar")) {
         key = "pyroar";
     }
+    if(key.startsWith("hoopa")) {
+        key = "hoopa";
+    }
+    if(key.startsWith("toxtricity")) {
+        key = "toxtricity";
+    }
+    if(key.startsWith("zacian")) {
+        key = "zacian";
+    }
+    if(key.startsWith("zamazenta")) {
+        key = "zamazenta";
+    }
+    if(key.startsWith("sinistea")) {
+        key = "sinistea";
+    }
+    if(key.startsWith("polteageist")) {
+        key = "polteageist";
+    }
+    if(key.startsWith("calyrex")) {
+        key = "calyrex";
+    }
+    if(key.startsWith("eiscue")) {
+        key = "eiscue";
+    }
+    if(key.startsWith("indeedee")) {
+        key = "indeedee";
+    }
+    if(key.startsWith("morpeko")) {
+        key = "morpeko";
+    }
+    if(key.startsWith("eternatus")) {
+        key = "eternatus";
+    }
+    if(key.startsWith("urshifu")) {
+        key = "urshifu";
+    }
+    
+    
     let pokeWithLearnset = Learnsets[key];
     if(!pokeWithLearnset || !pokeWithLearnset.learnset) {
         console.error("Unidentified pokemon " + key);

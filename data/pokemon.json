@@ -2035,7 +2035,7 @@
     "dex": 25,
     "speciesName": {
       "de": "Pikachu (5th Anniversary)",
-      "fr": "Pikachu (5th Anniversary)",
+      "fr": "Pikachu (5ème Anniversaire)",
       "en": "Pikachu (5th Anniversary)",
       "es": "Pikachu (5th Anniversary)",
       "th": "พิคาชู (5th Anniversary)",
@@ -2104,6 +2104,41 @@
       "THUNDERBOLT",
       "WILD_CHARGE",
       "FLY"
+    ],
+    "sid": 812
+  },
+  "pikachu_kariyushi": {
+    "dex": 25,
+    "speciesName": {
+      "de": "Pikachu (Kariyushi)",
+      "fr": "Pikachu (Kariyushi)",
+      "en": "Pikachu (Kariyushi)",
+      "es": "Pikachu (Kariyushi)",
+      "th": "พิคาชู (Kariyushi)",
+      "ja": "ピカチュウ (Kariyushi)",
+      "ko": "피카츄 (Kariyushi)",
+      "ru": "Пикачу (Kariyushi)",
+      "zh_hans": "皮卡丘 (Kariyushi)",
+      "zh_hant": "皮卡丘 (Kariyushi)"
+    },
+    "speciesId": "pikachu_kariyushi",
+    "baseStats": {
+      "atk": 112,
+      "def": 96,
+      "hp": 111
+    },
+    "types": [
+      "electric",
+      "none"
+    ],
+    "fastMoves": [
+      "THUNDER_SHOCK",
+      "QUICK_ATTACK"
+    ],
+    "chargedMoves": [
+      "DISCHARGE",
+      "THUNDERBOLT",
+      "WILD_CHARGE"
     ],
     "sid": 812
   },
@@ -4105,6 +4140,7 @@
     ],
     "legacyMoves": [
       "MUD_SHOT",
+      "RETURN",
       "RETURN"
     ],
     "level25CP": 351,
@@ -4225,6 +4261,7 @@
     ],
     "legacyMoves": [
       "MUD_SHOT",
+      "RETURN",
       "RETURN"
     ],
     "level25CP": 908,
@@ -7193,6 +7230,7 @@
     ],
     "legacyMoves": [
       "ACID",
+      "RETURN",
       "RETURN"
     ],
     "level25CP": 787,
@@ -8790,6 +8828,7 @@
     ],
     "legacyMoves": [
       "ACID",
+      "RETURN",
       "RETURN"
     ],
     "level25CP": 690,
@@ -8873,6 +8912,7 @@
     ],
     "legacyMoves": [
       "ACID",
+      "RETURN",
       "RETURN"
     ],
     "level25CP": 1391,
@@ -10606,6 +10646,7 @@
     ],
     "legacyMoves": [
       "QUICK_ATTACK",
+      "RETURN",
       "RETURN"
     ],
     "level25CP": 1016,
@@ -15889,6 +15930,7 @@
     ],
     "legacyMoves": [
       "QUICK_ATTACK",
+      "RETURN",
       "RETURN"
     ],
     "level25CP": 612,
@@ -22577,6 +22619,7 @@
     ],
     "legacyMoves": [
       "BULLET_SEED",
+      "RETURN",
       "RETURN"
     ],
     "level25CP": 736,
@@ -30956,7 +30999,7 @@
     "dex": 492,
     "speciesName": {
       "de": "Shaymin (Zenitform)",
-      "fr": "Shaymin (Sky)",
+      "fr": "Shaymin (Ciel)",
       "en": "Shaymin (Sky)",
       "es": "Shaymin (Cielo)",
       "th": "เชมิน (Sky)",
@@ -40655,6 +40698,9 @@
       "GIGA_IMPACT",
       "THUNDER"
     ],
+    "tags": [
+      "legendary"
+    ],
     "sid": 22913
   },
   "yveltal": {
@@ -40820,16 +40866,16 @@
   "hoopa_confined": {
     "dex": 720,
     "speciesName": {
-      "de": "Hoopa Confined",
-      "fr": "Hoopa Confined",
-      "en": "Hoopa Confined",
-      "es": "Hoopa Confined",
-      "th": "Hoopa Confined",
-      "ja": "Hoopa Confined",
-      "ko": "Hoopa Confined",
-      "ru": "Hoopa Confined",
-      "zh_hans": "Hoopa Confined",
-      "zh_hant": "Hoopa Confined"
+      "de": "Hoopa undefined",
+      "fr": "Hoopa undefined",
+      "en": "Hoopa undefined",
+      "es": "Hoopa undefined",
+      "th": "ฮูปา undefined",
+      "ja": "フーパ undefined",
+      "ko": "후파 undefined",
+      "ru": "Хупа undefined",
+      "zh_hans": "胡帕 undefined",
+      "zh_hant": "胡帕 undefined"
     },
     "speciesId": "hoopa_confined",
     "baseStats": {
@@ -40853,21 +40899,21 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 23040
+    "sid": null
   },
   "hoopa_unbound": {
     "dex": 720,
     "speciesName": {
-      "de": "Hoopa Unbound",
-      "fr": "Hoopa Unbound",
-      "en": "Hoopa Unbound",
-      "es": "Hoopa Unbound",
-      "th": "Hoopa Unbound",
-      "ja": "Hoopa Unbound",
-      "ko": "Hoopa Unbound",
-      "ru": "Hoopa Unbound",
-      "zh_hans": "Hoopa Unbound",
-      "zh_hant": "Hoopa Unbound"
+      "de": "Hoopa undefined",
+      "fr": "Hoopa undefined",
+      "en": "Hoopa undefined",
+      "es": "Hoopa undefined",
+      "th": "ฮูปา undefined",
+      "ja": "フーパ undefined",
+      "ko": "후파 undefined",
+      "ru": "Хупа undefined",
+      "zh_hans": "胡帕 undefined",
+      "zh_hant": "胡帕 undefined"
     },
     "speciesId": "hoopa_unbound",
     "baseStats": {
@@ -41012,16 +41058,16 @@
   "grookey": {
     "dex": 810,
     "speciesName": {
-      "de": "Grookey",
-      "fr": "Grookey",
+      "de": "Chimpep",
+      "fr": "Ouistempo",
       "en": "Grookey",
       "es": "Grookey",
-      "th": "Grookey",
-      "ja": "Grookey",
-      "ko": "Grookey",
-      "ru": "Grookey",
-      "zh_hans": "Grookey",
-      "zh_hant": "Grookey"
+      "th": "ซารุโนริ",
+      "ja": "サルノリ",
+      "ko": "흥나숭",
+      "ru": "Груки ",
+      "zh_hans": "敲音猴",
+      "zh_hant": "敲音猴"
     },
     "speciesId": "grookey",
     "baseStats": {
@@ -41049,16 +41095,16 @@
   "thwackey": {
     "dex": 811,
     "speciesName": {
-      "de": "Thwackey",
-      "fr": "Thwackey",
+      "de": "Chimstix",
+      "fr": "Badabouin",
       "en": "Thwackey",
       "es": "Thwackey",
-      "th": "Thwackey",
-      "ja": "Thwackey",
-      "ko": "Thwackey",
-      "ru": "Thwackey",
-      "zh_hans": "Thwackey",
-      "zh_hant": "Thwackey"
+      "th": "บาจินคี",
+      "ja": "バチンキー",
+      "ko": "채키몽",
+      "ru": "Тваки",
+      "zh_hans": "啪咚猴",
+      "zh_hant": "啪咚猴"
     },
     "speciesId": "thwackey",
     "baseStats": {
@@ -41086,16 +41132,16 @@
   "rillaboom": {
     "dex": 812,
     "speciesName": {
-      "de": "Rillaboom",
-      "fr": "Rillaboom",
+      "de": "Gortrom",
+      "fr": "Gorythmic",
       "en": "Rillaboom",
       "es": "Rillaboom",
-      "th": "Rillaboom",
-      "ja": "Rillaboom",
-      "ko": "Rillaboom",
-      "ru": "Rillaboom",
-      "zh_hans": "Rillaboom",
-      "zh_hant": "Rillaboom"
+      "th": "กอริลลันดา",
+      "ja": "ゴリランダー",
+      "ko": "고릴타",
+      "ru": "Риллабум",
+      "zh_hans": "轰擂金刚猩",
+      "zh_hant": "轰擂金刚猩"
     },
     "speciesId": "rillaboom",
     "baseStats": {
@@ -41124,16 +41170,16 @@
   "scorbunny": {
     "dex": 813,
     "speciesName": {
-      "de": "Scorbunny",
-      "fr": "Scorbunny",
+      "de": "Hopplo",
+      "fr": "Flambino",
       "en": "Scorbunny",
       "es": "Scorbunny",
-      "th": "Scorbunny",
-      "ja": "Scorbunny",
-      "ko": "Scorbunny",
-      "ru": "Scorbunny",
-      "zh_hans": "Scorbunny",
-      "zh_hant": "Scorbunny"
+      "th": "ฮิบานี",
+      "ja": "ヒバニー",
+      "ko": "염버니",
+      "ru": "Скорбанни",
+      "zh_hans": "炎兔儿",
+      "zh_hant": "炎兔兒"
     },
     "speciesId": "scorbunny",
     "baseStats": {
@@ -41161,16 +41207,16 @@
   "raboot": {
     "dex": 814,
     "speciesName": {
-      "de": "Raboot",
-      "fr": "Raboot",
+      "de": "Kickerlo",
+      "fr": "Lapyro",
       "en": "Raboot",
       "es": "Raboot",
-      "th": "Raboot",
-      "ja": "Raboot",
-      "ko": "Raboot",
-      "ru": "Raboot",
-      "zh_hans": "Raboot",
-      "zh_hant": "Raboot"
+      "th": "แรบบิฟุต",
+      "ja": "ラビフット",
+      "ko": "래비풋",
+      "ru": "Рабут",
+      "zh_hans": "腾蹴小将",
+      "zh_hant": "腾蹴小将"
     },
     "speciesId": "raboot",
     "baseStats": {
@@ -41198,16 +41244,16 @@
   "cinderace": {
     "dex": 815,
     "speciesName": {
-      "de": "Cinderace",
-      "fr": "Cinderace",
+      "de": "Liberlo",
+      "fr": "Pyrobut",
       "en": "Cinderace",
       "es": "Cinderace",
-      "th": "Cinderace",
-      "ja": "Cinderace",
-      "ko": "Cinderace",
-      "ru": "Cinderace",
-      "zh_hans": "Cinderace",
-      "zh_hant": "Cinderace"
+      "th": "เอสเบิร์น",
+      "ja": "エースバーン",
+      "ko": "에이스번",
+      "ru": "Синдерэйс",
+      "zh_hans": "闪焰王牌",
+      "zh_hant": "闪焰王牌"
     },
     "speciesId": "cinderace",
     "baseStats": {
@@ -41236,16 +41282,16 @@
   "sobble": {
     "dex": 816,
     "speciesName": {
-      "de": "Sobble",
-      "fr": "Sobble",
+      "de": "Memmeon",
+      "fr": "Larméléon",
       "en": "Sobble",
       "es": "Sobble",
-      "th": "Sobble",
-      "ja": "Sobble",
-      "ko": "Sobble",
-      "ru": "Sobble",
-      "zh_hans": "Sobble",
-      "zh_hant": "Sobble"
+      "th": "เมซซอน",
+      "ja": "メッソン",
+      "ko": "울머기",
+      "ru": "Соббл",
+      "zh_hans": "泪眼蜥",
+      "zh_hant": "淚眼蜥"
     },
     "speciesId": "sobble",
     "baseStats": {
@@ -41273,16 +41319,16 @@
   "drizzile": {
     "dex": 817,
     "speciesName": {
-      "de": "Drizzile",
-      "fr": "Drizzile",
+      "de": "Phlegleon",
+      "fr": "Arrozard",
       "en": "Drizzile",
       "es": "Drizzile",
-      "th": "Drizzile",
-      "ja": "Drizzile",
-      "ko": "Drizzile",
-      "ru": "Drizzile",
-      "zh_hans": "Drizzile",
-      "zh_hant": "Drizzile"
+      "th": "จิเมเลียน",
+      "ja": "ジメレオン",
+      "ko": "누겔레온",
+      "ru": "Дриззайл",
+      "zh_hans": "变涩蜥",
+      "zh_hant": "变涩蜥"
     },
     "speciesId": "drizzile",
     "baseStats": {
@@ -41310,16 +41356,16 @@
   "inteleon": {
     "dex": 818,
     "speciesName": {
-      "de": "Inteleon",
-      "fr": "Inteleon",
+      "de": "Intelleon",
+      "fr": "Lézargus",
       "en": "Inteleon",
       "es": "Inteleon",
-      "th": "Inteleon",
-      "ja": "Inteleon",
-      "ko": "Inteleon",
-      "ru": "Inteleon",
-      "zh_hans": "Inteleon",
-      "zh_hant": "Inteleon"
+      "th": "อินเทเลียน",
+      "ja": "インテレオン",
+      "ko": "인텔리레온",
+      "ru": "Интелеон",
+      "zh_hans": "千面避役",
+      "zh_hant": "千面避役"
     },
     "speciesId": "inteleon",
     "baseStats": {
@@ -41348,16 +41394,16 @@
   "skwovet": {
     "dex": 819,
     "speciesName": {
-      "de": "Skwovet",
-      "fr": "Skwovet",
+      "de": "Raffel",
+      "fr": "Rongourmand",
       "en": "Skwovet",
       "es": "Skwovet",
-      "th": "Skwovet",
-      "ja": "Skwovet",
-      "ko": "Skwovet",
-      "ru": "Skwovet",
-      "zh_hans": "Skwovet",
-      "zh_hant": "Skwovet"
+      "th": "เลโดมุชิ",
+      "ja": "ホシガリス",
+      "ko": "탐리스",
+      "ru": "Dottler",
+      "zh_hans": "贪心栗鼠",
+      "zh_hant": "貪心栗鼠"
     },
     "speciesId": "skwovet",
     "baseStats": {
@@ -41378,24 +41424,21 @@
       "BODY_SLAM",
       "CRUNCH"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "sid": 26208
   },
   "greedent": {
     "dex": 820,
     "speciesName": {
-      "de": "Greedent",
-      "fr": "Greedent",
+      "de": "Schlaraffel",
+      "fr": "Rongrigou",
       "en": "Greedent",
       "es": "Greedent",
-      "th": "Greedent",
-      "ja": "Greedent",
-      "ko": "Greedent",
-      "ru": "Greedent",
-      "zh_hans": "Greedent",
-      "zh_hant": "Greedent"
+      "th": "อิออร์บ",
+      "ja": "ヨクバリス",
+      "ko": "요씽리스 ",
+      "ru": "Orbeetle",
+      "zh_hans": "藏饱栗鼠",
+      "zh_hant": "藏飽栗鼠"
     },
     "speciesId": "greedent",
     "baseStats": {
@@ -41416,24 +41459,21 @@
       "BODY_SLAM",
       "CRUNCH"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "sid": 26240
   },
   "rookidee": {
     "dex": 821,
     "speciesName": {
-      "de": "Rookidee",
-      "fr": "Rookidee",
+      "de": "Meikro",
+      "fr": "Minisange",
       "en": "Rookidee",
       "es": "Rookidee",
-      "th": "Rookidee",
-      "ja": "Rookidee",
-      "ko": "Rookidee",
-      "ru": "Rookidee",
-      "zh_hans": "Rookidee",
-      "zh_hant": "Rookidee"
+      "th": "อาโอคาราสึ",
+      "ja": "ココガラ",
+      "ko": "파라꼬",
+      "ru": "Corvisquire",
+      "zh_hans": "稚山雀",
+      "zh_hant": "稚山雀"
     },
     "speciesId": "rookidee",
     "baseStats": {
@@ -41461,16 +41501,16 @@
   "corvisquire": {
     "dex": 822,
     "speciesName": {
-      "de": "Corvisquire",
-      "fr": "Corvisquire",
+      "de": "Kranoviz",
+      "fr": "Bleuseille",
       "en": "Corvisquire",
       "es": "Corvisquire",
-      "th": "Corvisquire",
-      "ja": "Corvisquire",
-      "ko": "Corvisquire",
-      "ru": "Corvisquire",
-      "zh_hans": "Corvisquire",
-      "zh_hant": "Corvisquire"
+      "th": "อาร์เมอร์การ์",
+      "ja": "アオガラス",
+      "ko": "파크로우",
+      "ru": "Корвинайт",
+      "zh_hans": "蓝鸦",
+      "zh_hant": "藍鴉"
     },
     "speciesId": "corvisquire",
     "baseStats": {
@@ -41498,16 +41538,16 @@
   "corviknight": {
     "dex": 823,
     "speciesName": {
-      "de": "Corviknight",
-      "fr": "Corviknight",
+      "de": "Krarmor",
+      "fr": "Corvaillus",
       "en": "Corviknight",
       "es": "Corviknight",
-      "th": "Corviknight",
-      "ja": "Corviknight",
-      "ko": "Corviknight",
-      "ru": "Corviknight",
-      "zh_hans": "Corviknight",
-      "zh_hant": "Corviknight"
+      "th": "ซัจจิมุชิ",
+      "ja": "アーマーガア",
+      "ko": "아마까오",
+      "ru": "Blipbug",
+      "zh_hans": "钢铠鸦",
+      "zh_hant": "鋼鎧鴉"
     },
     "speciesId": "corviknight",
     "baseStats": {
@@ -41536,16 +41576,16 @@
   "blipbug": {
     "dex": 824,
     "speciesName": {
-      "de": "Blipbug",
-      "fr": "Blipbug",
+      "de": "Sensect",
+      "fr": "Larvadar",
       "en": "Blipbug",
       "es": "Blipbug",
-      "th": "Blipbug",
-      "ja": "Blipbug",
-      "ko": "Blipbug",
-      "ru": "Blipbug",
-      "zh_hans": "Blipbug",
-      "zh_hant": "Blipbug"
+      "th": "โฮชิกะริสึ",
+      "ja": "サッチムシ",
+      "ko": "두루지벌레",
+      "ru": "Сквовет",
+      "zh_hans": "索侦虫",
+      "zh_hant": "索偵蟲"
     },
     "speciesId": "blipbug",
     "baseStats": {
@@ -41571,16 +41611,16 @@
   "dottler": {
     "dex": 825,
     "speciesName": {
-      "de": "Dottler",
-      "fr": "Dottler",
+      "de": "Keradar",
+      "fr": "Coléodôme",
       "en": "Dottler",
       "es": "Dottler",
-      "th": "Dottler",
-      "ja": "Dottler",
-      "ko": "Dottler",
-      "ru": "Dottler",
-      "zh_hans": "Dottler",
-      "zh_hant": "Dottler"
+      "th": "โยคุบะริสึ",
+      "ja": "レドームシ",
+      "ko": "레돔벌레",
+      "ru": "Гридент",
+      "zh_hans": "天罩虫",
+      "zh_hant": "天罩蟲"
     },
     "speciesId": "dottler",
     "baseStats": {
@@ -41608,16 +41648,16 @@
   "orbeetle": {
     "dex": 826,
     "speciesName": {
-      "de": "Orbeetle",
-      "fr": "Orbeetle",
+      "de": "Maritellit",
+      "fr": "Astronelle",
       "en": "Orbeetle",
       "es": "Orbeetle",
-      "th": "Orbeetle",
-      "ja": "Orbeetle",
-      "ko": "Orbeetle",
-      "ru": "Orbeetle",
-      "zh_hans": "Orbeetle",
-      "zh_hant": "Orbeetle"
+      "th": "โคโคการะ",
+      "ja": "イオルブ",
+      "ko": "이올브",
+      "ru": "Rookidee",
+      "zh_hans": "以欧路普",
+      "zh_hant": "以歐路普"
     },
     "speciesId": "orbeetle",
     "baseStats": {
@@ -41645,16 +41685,16 @@
   "nickit": {
     "dex": 827,
     "speciesName": {
-      "de": "Nickit",
-      "fr": "Nickit",
+      "de": "Kleptifux",
+      "fr": "Goupilou",
       "en": "Nickit",
       "es": "Nickit",
-      "th": "Nickit",
-      "ja": "Nickit",
-      "ko": "Nickit",
+      "th": "คุสุเนะ",
+      "ja": "クスネ",
+      "ko": "훔처우",
       "ru": "Nickit",
-      "zh_hans": "Nickit",
-      "zh_hant": "Nickit"
+      "zh_hans": "偷儿狐",
+      "zh_hant": "偷兒狐"
     },
     "speciesId": "nickit",
     "baseStats": {
@@ -41682,16 +41722,16 @@
   "thievul": {
     "dex": 828,
     "speciesName": {
-      "de": "Thievul",
-      "fr": "Thievul",
+      "de": "Gaunux",
+      "fr": "Roublenard",
       "en": "Thievul",
       "es": "Thievul",
-      "th": "Thievul",
-      "ja": "Thievul",
-      "ko": "Thievul",
+      "th": "ฟ็อกสไล",
+      "ja": "フォクスライ",
+      "ko": "폭슬라이",
       "ru": "Thievul",
-      "zh_hans": "Thievul",
-      "zh_hant": "Thievul"
+      "zh_hans": "狐大盗",
+      "zh_hant": "狐大盜"
     },
     "speciesId": "thievul",
     "baseStats": {
@@ -41719,16 +41759,16 @@
   "gossifleur": {
     "dex": 829,
     "speciesName": {
-      "de": "Gossifleur",
-      "fr": "Gossifleur",
+      "de": "Cottini",
+      "fr": "Tournicoton",
       "en": "Gossifleur",
       "es": "Gossifleur",
-      "th": "Gossifleur",
-      "ja": "Gossifleur",
-      "ko": "Gossifleur",
-      "ru": "Gossifleur",
-      "zh_hans": "Gossifleur",
-      "zh_hant": "Gossifleur"
+      "th": "พัลส์วัน",
+      "ja": "ヒメンカ",
+      "ko": "꼬모카",
+      "ru": "Boltund",
+      "zh_hans": "幼棉棉",
+      "zh_hant": "幼棉棉"
     },
     "speciesId": "gossifleur",
     "baseStats": {
@@ -41756,16 +41796,16 @@
   "eldegoss": {
     "dex": 830,
     "speciesName": {
-      "de": "Eldegoss",
-      "fr": "Eldegoss",
+      "de": "Cottomi",
+      "fr": "Blancoton",
       "en": "Eldegoss",
       "es": "Eldegoss",
-      "th": "Eldegoss",
-      "ja": "Eldegoss",
-      "ko": "Eldegoss",
-      "ru": "Eldegoss",
-      "zh_hans": "Eldegoss",
-      "zh_hant": "Eldegoss"
+      "th": "ทันด้ง",
+      "ja": "ワタシラガ",
+      "ko": "백솜모카",
+      "ru": "Роликоли",
+      "zh_hans": "白蓬蓬",
+      "zh_hant": "白蓬蓬"
     },
     "speciesId": "eldegoss",
     "baseStats": {
@@ -41793,16 +41833,16 @@
   "wooloo": {
     "dex": 831,
     "speciesName": {
-      "de": "Wooloo",
-      "fr": "Wooloo",
+      "de": "Wolly",
+      "fr": "Moumouton",
       "en": "Wooloo",
       "es": "Wooloo",
-      "th": "Wooloo",
-      "ja": "Wooloo",
-      "ko": "Wooloo",
-      "ru": "Wooloo",
-      "zh_hans": "Wooloo",
-      "zh_hant": "Wooloo"
+      "th": "วาตะชิรากะ",
+      "ja": "ウールー",
+      "ko": "우르",
+      "ru": "Эльдегосс",
+      "zh_hans": "毛辫羊",
+      "zh_hant": "毛辮羊"
     },
     "speciesId": "wooloo",
     "baseStats": {
@@ -41823,24 +41863,21 @@
       "PAYBACK",
       "STOMP"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "sid": 26592
   },
   "dubwool": {
     "dex": 832,
     "speciesName": {
-      "de": "Dubwool",
-      "fr": "Dubwool",
+      "de": "Zwollock",
+      "fr": "Moumouflon",
       "en": "Dubwool",
       "es": "Dubwool",
-      "th": "Dubwool",
-      "ja": "Dubwool",
-      "ko": "Dubwool",
-      "ru": "Dubwool",
-      "zh_hans": "Dubwool",
-      "zh_hant": "Dubwool"
+      "th": "วูลู",
+      "ja": "バイウールー",
+      "ko": "배우르",
+      "ru": "Вулу",
+      "zh_hans": "毛毛角羊",
+      "zh_hant": "毛毛角羊"
     },
     "speciesId": "dubwool",
     "baseStats": {
@@ -41861,24 +41898,21 @@
       "PAYBACK",
       "BODY_SLAM"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "sid": 26624
   },
   "chewtle": {
     "dex": 833,
     "speciesName": {
-      "de": "Chewtle",
-      "fr": "Chewtle",
+      "de": "Kamehaps",
+      "fr": "Khélocrok",
       "en": "Chewtle",
       "es": "Chewtle",
-      "th": "Chewtle",
-      "ja": "Chewtle",
-      "ko": "Chewtle",
-      "ru": "Chewtle",
-      "zh_hans": "Chewtle",
-      "zh_hant": "Chewtle"
+      "th": "ไบวูลู",
+      "ja": "カムカメ",
+      "ko": "깨물부기",
+      "ru": "Дабвул",
+      "zh_hans": "咬咬龟",
+      "zh_hant": "咬咬龜"
     },
     "speciesId": "chewtle",
     "baseStats": {
@@ -41906,16 +41940,16 @@
   "drednaw": {
     "dex": 834,
     "speciesName": {
-      "de": "Drednaw",
-      "fr": "Drednaw",
+      "de": "Kamalm",
+      "fr": "Torgamord",
       "en": "Drednaw",
       "es": "Drednaw",
-      "th": "Drednaw",
-      "ja": "Drednaw",
-      "ko": "Drednaw",
-      "ru": "Drednaw",
-      "zh_hans": "Drednaw",
-      "zh_hant": "Drednaw"
+      "th": "คามุคาเมะ",
+      "ja": "カジリガメ",
+      "ko": "갈가부기",
+      "ru": "Chewtle",
+      "zh_hans": "暴噬龟",
+      "zh_hant": "暴噬龜"
     },
     "speciesId": "drednaw",
     "baseStats": {
@@ -41944,16 +41978,16 @@
   "yamper": {
     "dex": 835,
     "speciesName": {
-      "de": "Yamper",
-      "fr": "Yamper",
+      "de": "Voldi",
+      "fr": "Voltoutou",
       "en": "Yamper",
       "es": "Yamper",
-      "th": "Yamper",
-      "ja": "Yamper",
-      "ko": "Yamper",
-      "ru": "Yamper",
-      "zh_hans": "Yamper",
-      "zh_hant": "Yamper"
+      "th": "คาจิริกาเมะ",
+      "ja": "ワンパチ",
+      "ko": "멍파치",
+      "ru": "Дрэдно",
+      "zh_hans": "来电汪",
+      "zh_hant": "來電汪"
     },
     "speciesId": "yamper",
     "baseStats": {
@@ -41981,16 +42015,16 @@
   "boltund": {
     "dex": 836,
     "speciesName": {
-      "de": "Boltund",
-      "fr": "Boltund",
+      "de": "Bellektro",
+      "fr": "Fulgudog",
       "en": "Boltund",
       "es": "Boltund",
-      "th": "Boltund",
-      "ja": "Boltund",
-      "ko": "Boltund",
-      "ru": "Boltund",
-      "zh_hans": "Boltund",
-      "zh_hant": "Boltund"
+      "th": "วันปาจิ",
+      "ja": "パルスワン",
+      "ko": "펄스멍",
+      "ru": "Ямпер",
+      "zh_hans": "逐电犬",
+      "zh_hant": "逐電犬"
     },
     "speciesId": "boltund",
     "baseStats": {
@@ -42018,16 +42052,16 @@
   "rolycoly": {
     "dex": 837,
     "speciesName": {
-      "de": "Rolycoly",
-      "fr": "Rolycoly",
+      "de": "Klonkett",
+      "fr": "Charbi",
       "en": "Rolycoly",
       "es": "Rolycoly",
-      "th": "Rolycoly",
-      "ja": "Rolycoly",
-      "ko": "Rolycoly",
-      "ru": "Rolycoly",
-      "zh_hans": "Rolycoly",
-      "zh_hant": "Rolycoly"
+      "th": "คาจิชชู",
+      "ja": "タンドン",
+      "ko": "탄동",
+      "ru": "Applin",
+      "zh_hans": "小炭仔",
+      "zh_hant": "小炭仔"
     },
     "speciesId": "rolycoly",
     "baseStats": {
@@ -42055,16 +42089,16 @@
   "carkol": {
     "dex": 838,
     "speciesName": {
-      "de": "Carkol",
-      "fr": "Carkol",
+      "de": "Wagong",
+      "fr": "Wagomine",
       "en": "Carkol",
       "es": "Carkol",
-      "th": "Carkol",
-      "ja": "Carkol",
-      "ko": "Carkol",
-      "ru": "Carkol",
-      "zh_hans": "Carkol",
-      "zh_hant": "Carkol"
+      "th": "แอปปริว",
+      "ja": "トロッゴン",
+      "ko": "탄차곤",
+      "ru": "Flapple",
+      "zh_hans": "大炭车",
+      "zh_hant": "大炭車"
     },
     "speciesId": "carkol",
     "baseStats": {
@@ -42093,16 +42127,16 @@
   "coalossal": {
     "dex": 839,
     "speciesName": {
-      "de": "Coalossal",
-      "fr": "Coalossal",
+      "de": "Montecarbo",
+      "fr": "Monthracite",
       "en": "Coalossal",
       "es": "Coalossal",
-      "th": "Coalossal",
-      "ja": "Coalossal",
-      "ko": "Coalossal",
-      "ru": "Coalossal",
-      "zh_hans": "Coalossal",
-      "zh_hant": "Coalossal"
+      "th": "ทารุปเปิล",
+      "ja": "セキタンザン",
+      "ko": "석탄산",
+      "ru": "Appletun",
+      "zh_hans": "巨炭山",
+      "zh_hant": "巨炭山"
     },
     "speciesId": "coalossal",
     "baseStats": {
@@ -42131,16 +42165,16 @@
   "applin": {
     "dex": 840,
     "speciesName": {
-      "de": "Applin",
-      "fr": "Applin",
+      "de": "Knapfel",
+      "fr": "Verpom",
       "en": "Applin",
       "es": "Applin",
-      "th": "Applin",
-      "ja": "Applin",
-      "ko": "Applin",
-      "ru": "Applin",
-      "zh_hans": "Applin",
-      "zh_hant": "Applin"
+      "th": "เอเลซัน",
+      "ja": "カジッチュ",
+      "ko": "과사삭벌레",
+      "ru": "Toxel",
+      "zh_hans": "啃果虫",
+      "zh_hant": "啃果蟲"
     },
     "speciesId": "applin",
     "baseStats": {
@@ -42166,16 +42200,16 @@
   "flapple": {
     "dex": 841,
     "speciesName": {
-      "de": "Flapple",
-      "fr": "Flapple",
+      "de": "Drapfel",
+      "fr": "Pomdrapi",
       "en": "Flapple",
       "es": "Flapple",
-      "th": "Flapple",
-      "ja": "Flapple",
-      "ko": "Flapple",
-      "ru": "Flapple",
-      "zh_hans": "Flapple",
-      "zh_hant": "Flapple"
+      "th": "สตรินเดอร์",
+      "ja": "アップリュー",
+      "ko": "애프룡",
+      "ru": "Toxtricity",
+      "zh_hans": "苹裹龙",
+      "zh_hant": "蘋裹龍"
     },
     "speciesId": "flapple",
     "baseStats": {
@@ -42205,22 +42239,22 @@
   "appletun": {
     "dex": 842,
     "speciesName": {
-      "de": "Appletun",
-      "fr": "Appletun",
+      "de": "Schlapfel",
+      "fr": "Dratatin",
       "en": "Appletun",
       "es": "Appletun",
-      "th": "Appletun",
-      "ja": "Appletun",
-      "ko": "Appletun",
-      "ru": "Appletun",
-      "zh_hans": "Appletun",
-      "zh_hant": "Appletun"
+      "th": "ยาคุเดะ",
+      "ja": "タルップル",
+      "ko": "단지래플",
+      "ru": "Sizzlipede",
+      "zh_hans": "丰蜜龙",
+      "zh_hant": "豐蜜龍"
     },
     "speciesId": "appletun",
     "baseStats": {
-      "atk": 214,
-      "def": 144,
-      "hp": 172
+      "atk": 178,
+      "def": 146,
+      "hp": 242
     },
     "types": [
       "grass",
@@ -42244,16 +42278,16 @@
   "silicobra": {
     "dex": 843,
     "speciesName": {
-      "de": "Silicobra",
-      "fr": "Silicobra",
+      "de": "Salanga",
+      "fr": "Dunaja",
       "en": "Silicobra",
       "es": "Silicobra",
-      "th": "Silicobra",
-      "ja": "Silicobra",
-      "ko": "Silicobra",
-      "ru": "Silicobra",
-      "zh_hans": "Silicobra",
-      "zh_hant": "Silicobra"
+      "th": "ซานิกอน",
+      "ja": "スナヘビ",
+      "ko": "모래뱀",
+      "ru": "Курсола",
+      "zh_hans": "沙包蛇",
+      "zh_hant": "沙包蛇"
     },
     "speciesId": "silicobra",
     "baseStats": {
@@ -42282,16 +42316,16 @@
   "sandaconda": {
     "dex": 844,
     "speciesName": {
-      "de": "Sandaconda",
-      "fr": "Sandaconda",
+      "de": "Sanaconda",
+      "fr": "Dunaconda",
       "en": "Sandaconda",
       "es": "Sandaconda",
-      "th": "Sandaconda",
-      "ja": "Sandaconda",
-      "ko": "Sandaconda",
-      "ru": "Sandaconda",
-      "zh_hans": "Sandaconda",
-      "zh_hant": "Sandaconda"
+      "th": "เนงิกะไนท์",
+      "ja": "サダイジャ",
+      "ko": "사다이사",
+      "ru": "Сирфетчд",
+      "zh_hans": "沙螺蟒",
+      "zh_hant": "沙螺蟒"
     },
     "speciesId": "sandaconda",
     "baseStats": {
@@ -42320,16 +42354,16 @@
   "cramorant": {
     "dex": 845,
     "speciesName": {
-      "de": "Cramorant",
-      "fr": "Cramorant",
+      "de": "Urgl",
+      "fr": "Nigosier",
       "en": "Cramorant",
       "es": "Cramorant",
-      "th": "Cramorant",
-      "ja": "Cramorant",
-      "ko": "Cramorant",
-      "ru": "Cramorant",
-      "zh_hans": "Cramorant",
-      "zh_hant": "Cramorant"
+      "th": "โอลองเกะ",
+      "ja": "ウッウ",
+      "ko": "윽우지",
+      "ru": "Grimmsnarl",
+      "zh_hans": "古月鸟",
+      "zh_hant": "古月鳥"
     },
     "speciesId": "cramorant",
     "baseStats": {
@@ -42358,16 +42392,16 @@
   "arrokuda": {
     "dex": 846,
     "speciesName": {
-      "de": "Arrokuda",
-      "fr": "Arrokuda",
+      "de": "Pikuda",
+      "fr": "Embrochet",
       "en": "Arrokuda",
       "es": "Arrokuda",
-      "th": "Arrokuda",
-      "ja": "Arrokuda",
-      "ko": "Arrokuda",
-      "ru": "Arrokuda",
-      "zh_hans": "Arrokuda",
-      "zh_hant": "Arrokuda"
+      "th": "ซึนะเฮบิ",
+      "ja": "サシカマス",
+      "ko": "찌로꼬치",
+      "ru": "Silicobra",
+      "zh_hans": "刺梭鱼",
+      "zh_hant": "刺梭魚"
     },
     "speciesId": "arrokuda",
     "baseStats": {
@@ -42397,16 +42431,16 @@
   "barraskewda": {
     "dex": 847,
     "speciesName": {
-      "de": "Barraskewda",
-      "fr": "Barraskewda",
+      "de": "Barrakiefa",
+      "fr": "Hastacuda",
       "en": "Barraskewda",
       "es": "Barraskewda",
-      "th": "Barraskewda",
-      "ja": "Barraskewda",
-      "ko": "Barraskewda",
-      "ru": "Barraskewda",
-      "zh_hans": "Barraskewda",
-      "zh_hant": "Barraskewda"
+      "th": "ซาไดจา",
+      "ja": "カマスジョー",
+      "ko": "꼬치조",
+      "ru": "Сандаконда",
+      "zh_hans": "戽斗尖梭",
+      "zh_hant": "戽斗尖梭"
     },
     "speciesId": "barraskewda",
     "baseStats": {
@@ -42437,15 +42471,15 @@
     "dex": 848,
     "speciesName": {
       "de": "Toxel",
-      "fr": "Toxel",
+      "fr": "Toxizap",
       "en": "Toxel",
       "es": "Toxel",
-      "th": "Toxel",
-      "ja": "Toxel",
-      "ko": "Toxel",
-      "ru": "Toxel",
-      "zh_hans": "Toxel",
-      "zh_hant": "Toxel"
+      "th": "ทาจิฟซากุมะ",
+      "ja": "エレズン",
+      "ko": "일레즌",
+      "ru": "Обстагун",
+      "zh_hans": "毒电婴",
+      "zh_hant": "毒電嬰"
     },
     "speciesId": "toxel",
     "baseStats": {
@@ -42471,16 +42505,16 @@
   "toxtricity": {
     "dex": 849,
     "speciesName": {
-      "de": "Toxtricity",
-      "fr": "Toxtricity",
+      "de": "Riffex",
+      "fr": "Salarsen",
       "en": "Toxtricity",
       "es": "Toxtricity",
-      "th": "Toxtricity",
-      "ja": "Toxtricity",
-      "ko": "Toxtricity",
-      "ru": "Toxtricity",
-      "zh_hans": "Toxtricity",
-      "zh_hant": "Toxtricity"
+      "th": "เนียคิง",
+      "ja": "ストリンダー",
+      "ko": "스트린더",
+      "ru": "Перрсеркер",
+      "zh_hans": "颤弦蝾螈",
+      "zh_hant": "顫弦蠑螈"
     },
     "speciesId": "toxtricity",
     "baseStats": {
@@ -42511,16 +42545,16 @@
   "toxtricity_amped": {
     "dex": 849,
     "speciesName": {
-      "de": "Toxtricity Amped",
-      "fr": "Toxtricity Amped",
-      "en": "Toxtricity Amped",
-      "es": "Toxtricity Amped",
-      "th": "Toxtricity Amped",
-      "ja": "Toxtricity Amped",
-      "ko": "Toxtricity Amped",
-      "ru": "Toxtricity Amped",
-      "zh_hans": "Toxtricity Amped",
-      "zh_hant": "Toxtricity Amped"
+      "de": "Riffex undefined",
+      "fr": "Salarsen undefined",
+      "en": "Toxtricity undefined",
+      "es": "Toxtricity undefined",
+      "th": "เนียคิง undefined",
+      "ja": "ストリンダー undefined",
+      "ko": "스트린더 undefined",
+      "ru": "Перрсеркер undefined",
+      "zh_hans": "颤弦蝾螈 undefined",
+      "zh_hant": "顫弦蠑螈 undefined"
     },
     "speciesId": "toxtricity_amped",
     "baseStats": {
@@ -42546,21 +42580,21 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 27168
+    "sid": null
   },
   "toxtricity_low_key": {
     "dex": 849,
     "speciesName": {
-      "de": "Toxtricity Low Key",
-      "fr": "Toxtricity Low Key",
-      "en": "Toxtricity Low Key",
-      "es": "Toxtricity Low Key",
-      "th": "Toxtricity Low Key",
-      "ja": "Toxtricity Low Key",
-      "ko": "Toxtricity Low Key",
-      "ru": "Toxtricity Low Key",
-      "zh_hans": "Toxtricity Low Key",
-      "zh_hant": "Toxtricity Low Key"
+      "de": "Riffex undefined",
+      "fr": "Salarsen undefined",
+      "en": "Toxtricity undefined",
+      "es": "Toxtricity undefined",
+      "th": "เนียคิง undefined",
+      "ja": "ストリンダー undefined",
+      "ko": "스트린더 undefined",
+      "ru": "Перрсеркер undefined",
+      "zh_hans": "颤弦蝾螈 undefined",
+      "zh_hant": "顫弦蠑螈 undefined"
     },
     "speciesId": "toxtricity_low_key",
     "baseStats": {
@@ -42591,16 +42625,16 @@
   "sizzlipede": {
     "dex": 850,
     "speciesName": {
-      "de": "Sizzlipede",
-      "fr": "Sizzlipede",
+      "de": "Thermopod",
+      "fr": "Grillepattes",
       "en": "Sizzlipede",
       "es": "Sizzlipede",
-      "th": "Sizzlipede",
-      "ja": "Sizzlipede",
-      "ko": "Sizzlipede",
-      "ru": "Sizzlipede",
-      "zh_hans": "Sizzlipede",
-      "zh_hant": "Sizzlipede"
+      "th": "โทร็อกกอน",
+      "ja": "ヤクデ",
+      "ko": "태우지네",
+      "ru": "Carkol",
+      "zh_hans": "烧火蚣",
+      "zh_hant": "燒火蚣"
     },
     "speciesId": "sizzlipede",
     "baseStats": {
@@ -42629,16 +42663,16 @@
   "centiskorch": {
     "dex": 851,
     "speciesName": {
-      "de": "Centiskorch",
-      "fr": "Centiskorch",
+      "de": "Infernopod",
+      "fr": "Scolocendre",
       "en": "Centiskorch",
       "es": "Centiskorch",
-      "th": "Centiskorch",
-      "ja": "Centiskorch",
-      "ko": "Centiskorch",
-      "ru": "Centiskorch",
-      "zh_hans": "Centiskorch",
-      "zh_hant": "Centiskorch"
+      "th": "เซคิทันซัง",
+      "ja": "マルヤクデ",
+      "ko": "다태우지네",
+      "ru": "Coalossal",
+      "zh_hans": "焚焰蚣",
+      "zh_hant": "焚焰蚣"
     },
     "speciesId": "centiskorch",
     "baseStats": {
@@ -42668,16 +42702,16 @@
   "clobbopus": {
     "dex": 852,
     "speciesName": {
-      "de": "Clobbopus",
-      "fr": "Clobbopus",
+      "de": "Klopptopus",
+      "fr": "Poulpaf",
       "en": "Clobbopus",
       "es": "Clobbopus",
-      "th": "Clobbopus",
-      "ja": "Clobbopus",
-      "ko": "Clobbopus",
-      "ru": "Clobbopus",
-      "zh_hans": "Clobbopus",
-      "zh_hant": "Clobbopus"
+      "th": "อิชิเฮนจิน",
+      "ja": "タタッコ",
+      "ko": "때때무노",
+      "ru": "Стонджорнер",
+      "zh_hans": "拳拳蛸",
+      "zh_hant": "拳拳蛸"
     },
     "speciesId": "clobbopus",
     "baseStats": {
@@ -42705,16 +42739,16 @@
   "grapploct": {
     "dex": 853,
     "speciesName": {
-      "de": "Grapploct",
-      "fr": "Grapploct",
+      "de": "Kaocto",
+      "fr": "Krakos",
       "en": "Grapploct",
       "es": "Grapploct",
-      "th": "Grapploct",
-      "ja": "Grapploct",
-      "ko": "Grapploct",
-      "ru": "Grapploct",
-      "zh_hans": "Grapploct",
-      "zh_hant": "Grapploct"
+      "th": "โคโอริปโปะ",
+      "ja": "オトスパス",
+      "ko": "케오퍼스",
+      "ru": "Айскью",
+      "zh_hans": "八爪武师",
+      "zh_hant": "八爪武師"
     },
     "speciesId": "grapploct",
     "baseStats": {
@@ -42744,16 +42778,16 @@
   "sinistea": {
     "dex": 854,
     "speciesName": {
-      "de": "Sinistea",
-      "fr": "Sinistea",
+      "de": "Fatalitee",
+      "fr": "Théffroi",
       "en": "Sinistea",
       "es": "Sinistea",
-      "th": "Sinistea",
-      "ja": "Sinistea",
-      "ko": "Sinistea",
-      "ru": "Sinistea",
-      "zh_hans": "Sinistea",
-      "zh_hant": "Sinistea"
+      "th": "เดธเบิร์น",
+      "ja": "ヤバチャ",
+      "ko": "데인차",
+      "ru": "Рунеригус",
+      "zh_hans": "来悲茶",
+      "zh_hant": "來悲茶"
     },
     "speciesId": "sinistea",
     "baseStats": {
@@ -42782,16 +42816,16 @@
   "sinistea_antique": {
     "dex": 854,
     "speciesName": {
-      "de": "Sinistea Antique",
-      "fr": "Sinistea Antique",
-      "en": "Sinistea Antique",
-      "es": "Sinistea Antique",
-      "th": "Sinistea Antique",
-      "ja": "Sinistea Antique",
-      "ko": "Sinistea Antique",
-      "ru": "Sinistea Antique",
-      "zh_hans": "Sinistea Antique",
-      "zh_hant": "Sinistea Antique"
+      "de": "Fatalitee undefined",
+      "fr": "Théffroi undefined",
+      "en": "Sinistea undefined",
+      "es": "Sinistea undefined",
+      "th": "เดธเบิร์น undefined",
+      "ja": "ヤバチャ undefined",
+      "ko": "데인차 undefined",
+      "ru": "Рунеригус undefined",
+      "zh_hans": "来悲茶 undefined",
+      "zh_hant": "來悲茶 undefined"
     },
     "speciesId": "sinistea_antique",
     "baseStats": {
@@ -42820,16 +42854,16 @@
   "sinistea_phony": {
     "dex": 854,
     "speciesName": {
-      "de": "Sinistea Phony",
-      "fr": "Sinistea Phony",
-      "en": "Sinistea Phony",
-      "es": "Sinistea Phony",
-      "th": "Sinistea Phony",
-      "ja": "Sinistea Phony",
-      "ko": "Sinistea Phony",
-      "ru": "Sinistea Phony",
-      "zh_hans": "Sinistea Phony",
-      "zh_hant": "Sinistea Phony"
+      "de": "Fatalitee undefined",
+      "fr": "Théffroi undefined",
+      "en": "Sinistea undefined",
+      "es": "Sinistea undefined",
+      "th": "เดธเบิร์น undefined",
+      "ja": "ヤバチャ undefined",
+      "ko": "데인차 undefined",
+      "ru": "Рунеригус undefined",
+      "zh_hans": "来悲茶 undefined",
+      "zh_hant": "來悲茶 undefined"
     },
     "speciesId": "sinistea_phony",
     "baseStats": {
@@ -42853,21 +42887,21 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 27328
+    "sid": null
   },
   "polteageist": {
     "dex": 855,
     "speciesName": {
-      "de": "Polteageist",
-      "fr": "Polteageist",
+      "de": "Mortipot",
+      "fr": "Polthégeist",
       "en": "Polteageist",
       "es": "Polteageist",
-      "th": "Polteageist",
-      "ja": "Polteageist",
-      "ko": "Polteageist",
-      "ru": "Polteageist",
-      "zh_hans": "Polteageist",
-      "zh_hant": "Polteageist"
+      "th": "มาโฮมิล",
+      "ja": "ポットデス",
+      "ko": "포트데스",
+      "ru": "Milcery",
+      "zh_hans": "怖思壶",
+      "zh_hant": "怖思壺"
     },
     "speciesId": "polteageist",
     "baseStats": {
@@ -42897,16 +42931,16 @@
   "polteageist_antique": {
     "dex": 855,
     "speciesName": {
-      "de": "Polteageist Antique",
-      "fr": "Polteageist Antique",
-      "en": "Polteageist Antique",
-      "es": "Polteageist Antique",
-      "th": "Polteageist Antique",
-      "ja": "Polteageist Antique",
-      "ko": "Polteageist Antique",
-      "ru": "Polteageist Antique",
-      "zh_hans": "Polteageist Antique",
-      "zh_hant": "Polteageist Antique"
+      "de": "Mortipot undefined",
+      "fr": "Polthégeist undefined",
+      "en": "Polteageist undefined",
+      "es": "Polteageist undefined",
+      "th": "มาโฮมิล undefined",
+      "ja": "ポットデス undefined",
+      "ko": "포트데스 undefined",
+      "ru": "Milcery undefined",
+      "zh_hans": "怖思壶 undefined",
+      "zh_hant": "怖思壺 undefined"
     },
     "speciesId": "polteageist_antique",
     "baseStats": {
@@ -42936,16 +42970,16 @@
   "polteageist_phony": {
     "dex": 855,
     "speciesName": {
-      "de": "Polteageist Phony",
-      "fr": "Polteageist Phony",
-      "en": "Polteageist Phony",
-      "es": "Polteageist Phony",
-      "th": "Polteageist Phony",
-      "ja": "Polteageist Phony",
-      "ko": "Polteageist Phony",
-      "ru": "Polteageist Phony",
-      "zh_hans": "Polteageist Phony",
-      "zh_hant": "Polteageist Phony"
+      "de": "Mortipot undefined",
+      "fr": "Polthégeist undefined",
+      "en": "Polteageist undefined",
+      "es": "Polteageist undefined",
+      "th": "มาโฮมิล undefined",
+      "ja": "ポットデス undefined",
+      "ko": "포트데스 undefined",
+      "ru": "Milcery undefined",
+      "zh_hans": "怖思壶 undefined",
+      "zh_hant": "怖思壺 undefined"
     },
     "speciesId": "polteageist_phony",
     "baseStats": {
@@ -42970,21 +43004,21 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 27360
+    "sid": null
   },
   "hatenna": {
     "dex": 856,
     "speciesName": {
-      "de": "Hatenna",
-      "fr": "Hatenna",
+      "de": "Brimova",
+      "fr": "Bibichut",
       "en": "Hatenna",
       "es": "Hatenna",
-      "th": "Hatenna",
-      "ja": "Hatenna",
-      "ko": "Hatenna",
-      "ru": "Hatenna",
-      "zh_hans": "Hatenna",
-      "zh_hant": "Hatenna"
+      "th": "มิบริม",
+      "ja": "ミブリム",
+      "ko": "몸지브림",
+      "ru": "Хатенна",
+      "zh_hans": "迷布莉姆",
+      "zh_hant": "迷布莉姆"
     },
     "speciesId": "hatenna",
     "baseStats": {
@@ -43013,16 +43047,16 @@
   "hattrem": {
     "dex": 857,
     "speciesName": {
-      "de": "Hattrem",
-      "fr": "Hattrem",
+      "de": "Brimano",
+      "fr": "Chapotus",
       "en": "Hattrem",
       "es": "Hattrem",
-      "th": "Hattrem",
-      "ja": "Hattrem",
-      "ko": "Hattrem",
+      "th": "เทบริม",
+      "ja": "テブリム",
+      "ko": "손지브림",
       "ru": "Hattrem",
-      "zh_hans": "Hattrem",
-      "zh_hant": "Hattrem"
+      "zh_hans": "提布莉姆",
+      "zh_hant": "提布莉姆"
     },
     "speciesId": "hattrem",
     "baseStats": {
@@ -43051,16 +43085,16 @@
   "hatterene": {
     "dex": 858,
     "speciesName": {
-      "de": "Hatterene",
-      "fr": "Hatterene",
+      "de": "Silembrim",
+      "fr": "Sorcilence",
       "en": "Hatterene",
       "es": "Hatterene",
-      "th": "Hatterene",
-      "ja": "Hatterene",
-      "ko": "Hatterene",
+      "th": "บริมออน",
+      "ja": "ブリムオン",
+      "ko": "브리무음",
       "ru": "Hatterene",
-      "zh_hans": "Hatterene",
-      "zh_hant": "Hatterene"
+      "zh_hans": "布莉姆温",
+      "zh_hant": "布莉姆溫"
     },
     "speciesId": "hatterene",
     "baseStats": {
@@ -43091,16 +43125,16 @@
   "impidimp": {
     "dex": 859,
     "speciesName": {
-      "de": "Impidimp",
-      "fr": "Impidimp",
+      "de": "Bähmon",
+      "fr": "Grimalin",
       "en": "Impidimp",
       "es": "Impidimp",
-      "th": "Impidimp",
-      "ja": "Impidimp",
-      "ko": "Impidimp",
-      "ru": "Impidimp",
-      "zh_hans": "Impidimp",
-      "zh_hant": "Impidimp"
+      "th": "โอโทสพัส",
+      "ja": "ベロバー",
+      "ko": "메롱꿍",
+      "ru": "Grapploct",
+      "zh_hans": "捣蛋小妖",
+      "zh_hant": "搗蛋小妖"
     },
     "speciesId": "impidimp",
     "baseStats": {
@@ -43129,16 +43163,16 @@
   "morgrem": {
     "dex": 860,
     "speciesName": {
-      "de": "Morgrem",
-      "fr": "Morgrem",
+      "de": "Pelzebub",
+      "fr": "Fourbelin",
       "en": "Morgrem",
       "es": "Morgrem",
-      "th": "Morgrem",
-      "ja": "Morgrem",
-      "ko": "Morgrem",
-      "ru": "Morgrem",
-      "zh_hans": "Morgrem",
-      "zh_hant": "Morgrem"
+      "th": "ยาบาฉะ",
+      "ja": "ギモー",
+      "ko": "쏘겨모",
+      "ru": "Sinistea",
+      "zh_hans": "诈唬魔",
+      "zh_hant": "詐唬魔"
     },
     "speciesId": "morgrem",
     "baseStats": {
@@ -43167,16 +43201,16 @@
   "grimmsnarl": {
     "dex": 861,
     "speciesName": {
-      "de": "Grimmsnarl",
-      "fr": "Grimmsnarl",
+      "de": "Olangaar",
+      "fr": "Angoliath",
       "en": "Grimmsnarl",
       "es": "Grimmsnarl",
-      "th": "Grimmsnarl",
-      "ja": "Grimmsnarl",
-      "ko": "Grimmsnarl",
-      "ru": "Grimmsnarl",
-      "zh_hans": "Grimmsnarl",
-      "zh_hant": "Grimmsnarl"
+      "th": "พอตเดธ",
+      "ja": "オーロンゲ",
+      "ko": "오롱털",
+      "ru": "Полтигейст",
+      "zh_hans": "长毛巨魔",
+      "zh_hant": "長毛巨魔"
     },
     "speciesId": "grimmsnarl",
     "baseStats": {
@@ -43207,16 +43241,16 @@
   "obstagoon": {
     "dex": 862,
     "speciesName": {
-      "de": "Obstagoon",
-      "fr": "Obstagoon",
+      "de": "Barrikadax",
+      "fr": "Ixon",
       "en": "Obstagoon",
       "es": "Obstagoon",
-      "th": "Obstagoon",
-      "ja": "Obstagoon",
-      "ko": "Obstagoon",
-      "ru": "Obstagoon",
-      "zh_hans": "Obstagoon",
-      "zh_hant": "Obstagoon"
+      "th": "ฮิเมงกะ",
+      "ja": "タチフサグマ",
+      "ko": "가로막구리",
+      "ru": "Госсифлёр",
+      "zh_hans": "堵拦熊",
+      "zh_hant": "堵攔熊"
     },
     "speciesId": "obstagoon",
     "baseStats": {
@@ -43238,24 +43272,21 @@
       "HYPER_BEAM",
       "GUNK_SHOT"
     ],
-    "tags": [
-      "galarian"
-    ],
     "sid": 27584
   },
   "perrserker": {
     "dex": 863,
     "speciesName": {
-      "de": "Perrserker",
-      "fr": "Perrserker",
+      "de": "Mauzinger",
+      "fr": "Berserkatt",
       "en": "Perrserker",
       "es": "Perrserker",
-      "th": "Perrserker",
-      "ja": "Perrserker",
-      "ko": "Perrserker",
-      "ru": "Perrserker",
-      "zh_hans": "Perrserker",
-      "zh_hant": "Perrserker"
+      "th": "อุ๊อุ",
+      "ja": "ニャイキング",
+      "ko": "나이킹",
+      "ru": "Cramorant",
+      "zh_hans": "喵头目",
+      "zh_hant": "喵頭目"
     },
     "speciesId": "perrserker",
     "baseStats": {
@@ -43277,25 +43308,22 @@
       "PLAY_ROUGH",
       "FOUL_PLAY"
     ],
-    "tags": [
-      "galarian"
-    ],
     "searchPriority": 3,
     "sid": 27616
   },
   "cursola": {
     "dex": 864,
     "speciesName": {
-      "de": "Cursola",
-      "fr": "Cursola",
+      "de": "Gorgasonn",
+      "fr": "Corayôme",
       "en": "Cursola",
       "es": "Cursola",
-      "th": "Cursola",
-      "ja": "Cursola",
-      "ko": "Cursola",
-      "ru": "Cursola",
-      "zh_hans": "Cursola",
-      "zh_hant": "Cursola"
+      "th": "ทาทักโกะ",
+      "ja": "サニゴーン",
+      "ko": "산호르곤",
+      "ru": "Clobbopus",
+      "zh_hans": "魔灵珊瑚",
+      "zh_hant": "魔靈珊瑚"
     },
     "speciesId": "cursola",
     "baseStats": {
@@ -43325,16 +43353,16 @@
   "sirfetchd": {
     "dex": 865,
     "speciesName": {
-      "de": "Sirfetchd",
-      "fr": "Sirfetchd",
-      "en": "Sirfetchd",
-      "es": "Sirfetchd",
-      "th": "Sirfetchd",
-      "ja": "Sirfetchd",
-      "ko": "Sirfetchd",
-      "ru": "Sirfetchd",
-      "zh_hans": "Sirfetchd",
-      "zh_hant": "Sirfetchd"
+      "de": "Lauchzelot",
+      "fr": "Palarticho",
+      "en": "Sirfetch'd",
+      "es": "Sirfetch'd",
+      "th": "มารุยาคุเดะ",
+      "ja": "ネギガナイト",
+      "ko": "창파나이트",
+      "ru": "Сентискорч",
+      "zh_hans": "葱游兵",
+      "zh_hant": "蔥遊兵"
     },
     "speciesId": "sirfetchd",
     "baseStats": {
@@ -43356,24 +43384,21 @@
       "LEAF_BLADE",
       "NIGHT_SLASH"
     ],
-    "tags": [
-      "galarian"
-    ],
     "sid": 27680
   },
   "mr_rime": {
     "dex": 866,
     "speciesName": {
-      "de": "Mr Rime",
-      "fr": "Mr Rime",
-      "en": "Mr Rime",
-      "es": "Mr Rime",
-      "th": "Mr Rime",
-      "ja": "Mr Rime",
-      "ko": "Mr Rime",
-      "ru": "Mr Rime",
-      "zh_hans": "Mr Rime",
-      "zh_hant": "Mr Rime"
+      "de": "Pantifrost",
+      "fr": "M. Glaquette",
+      "en": "Mr. Rime",
+      "es": "Mr. Rime",
+      "th": "โมรุเปโกะ",
+      "ja": "バリコオル",
+      "ko": "마임꽁꽁",
+      "ru": "Морпеко",
+      "zh_hans": "踏冰人偶",
+      "zh_hant": "踏冰人偶"
     },
     "speciesId": "mr_rime",
     "baseStats": {
@@ -43396,9 +43421,6 @@
       "ICE_PUNCH",
       "ICY_WIND"
     ],
-    "tags": [
-      "galarian"
-    ],
     "searchPriority": 2,
     "sid": 27712
   },
@@ -43406,16 +43428,16 @@
     "dex": 867,
     "speciesId": "runerigus",
     "speciesName": {
-      "de": "Runerigus",
-      "fr": "Runerigus",
+      "de": "Oghnatoll",
+      "fr": "Tutétékri",
       "en": "Runerigus",
       "es": "Runerigus",
-      "th": "Runerigus",
-      "ja": "Runerigus",
-      "ko": "Runerigus",
-      "ru": "Runerigus",
-      "zh_hans": "Runerigus",
-      "zh_hant": "Runerigus"
+      "th": "บาลิโคโอรุ",
+      "ja": "デスバーン",
+      "ko": "데스판",
+      "ru": "Мистер Райм",
+      "zh_hans": "死神板",
+      "zh_hant": "死神板"
     },
     "baseStats": {
       "atk": 163,
@@ -43434,24 +43456,21 @@
       "SAND_TOMB",
       "ROCK_TOMB"
     ],
-    "tags": [
-      "galarian"
-    ],
     "sid": 27744
   },
   "milcery": {
     "dex": 868,
     "speciesName": {
-      "de": "Milcery",
-      "fr": "Milcery",
+      "de": "Hokumil",
+      "fr": "Crèmy",
       "en": "Milcery",
       "es": "Milcery",
-      "th": "Milcery",
-      "ja": "Milcery",
-      "ko": "Milcery",
-      "ru": "Milcery",
-      "zh_hans": "Milcery",
-      "zh_hant": "Milcery"
+      "th": "ซาชิคามาสึ",
+      "ja": "マホミル",
+      "ko": "마빌크",
+      "ru": "Arrokuda",
+      "zh_hans": "小仙奶",
+      "zh_hant": "小仙奶"
     },
     "speciesId": "milcery",
     "baseStats": {
@@ -43478,16 +43497,16 @@
   "alcremie": {
     "dex": 869,
     "speciesName": {
-      "de": "Alcremie",
-      "fr": "Alcremie",
+      "de": "Pokusan",
+      "fr": "Charmilly",
       "en": "Alcremie",
       "es": "Alcremie",
-      "th": "Alcremie",
-      "ja": "Alcremie",
-      "ko": "Alcremie",
-      "ru": "Alcremie",
-      "zh_hans": "Alcremie",
-      "zh_hant": "Alcremie"
+      "th": "คามาสึโจ",
+      "ja": "マホイップ",
+      "ko": "마휘핑",
+      "ru": "Barraskewda",
+      "zh_hans": "霜奶仙",
+      "zh_hant": "霜奶仙"
     },
     "speciesId": "alcremie",
     "baseStats": {
@@ -43516,16 +43535,16 @@
   "falinks": {
     "dex": 870,
     "speciesName": {
-      "de": "Falinks",
-      "fr": "Falinks",
+      "de": "Legios",
+      "fr": "Hexadron",
       "en": "Falinks",
       "es": "Falinks",
-      "th": "Falinks",
-      "ja": "Falinks",
-      "ko": "Falinks",
-      "ru": "Falinks",
-      "zh_hans": "Falinks",
-      "zh_hant": "Falinks"
+      "th": "บาจินอุนิ",
+      "ja": "タイレーツ",
+      "ko": "대여르",
+      "ru": "Pincurchin",
+      "zh_hans": "列阵兵",
+      "zh_hant": "列陣兵"
     },
     "speciesId": "falinks",
     "baseStats": {
@@ -43546,24 +43565,21 @@
       "BRICK_BREAK",
       "MEGAHORN"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "sid": 27840
   },
   "pincurchin": {
     "dex": 871,
     "speciesName": {
-      "de": "Pincurchin",
-      "fr": "Pincurchin",
+      "de": "Britzigel",
+      "fr": "Wattapik",
       "en": "Pincurchin",
       "es": "Pincurchin",
-      "th": "Pincurchin",
-      "ja": "Pincurchin",
-      "ko": "Pincurchin",
-      "ru": "Pincurchin",
-      "zh_hans": "Pincurchin",
-      "zh_hant": "Pincurchin"
+      "th": "อิเอซซัน",
+      "ja": "バチンウニ",
+      "ko": "찌르성게",
+      "ru": "Indeedee",
+      "zh_hans": "啪嚓海胆",
+      "zh_hant": "啪嚓海膽"
     },
     "speciesId": "pincurchin",
     "baseStats": {
@@ -43593,16 +43609,16 @@
   "snom": {
     "dex": 872,
     "speciesName": {
-      "de": "Snom",
-      "fr": "Snom",
+      "de": "Snomnom",
+      "fr": "Frissonille",
       "en": "Snom",
       "es": "Snom",
-      "th": "Snom",
-      "ja": "Snom",
-      "ko": "Snom",
+      "th": "ยูกิฮามิ",
+      "ja": "ユキハミ",
+      "ko": "누니머기",
       "ru": "Snom",
-      "zh_hans": "Snom",
-      "zh_hant": "Snom"
+      "zh_hans": "雪吞虫",
+      "zh_hant": "雪吞虫"
     },
     "speciesId": "snom",
     "baseStats": {
@@ -43630,16 +43646,16 @@
   "frosmoth": {
     "dex": 873,
     "speciesName": {
-      "de": "Frosmoth",
-      "fr": "Frosmoth",
+      "de": "Mottineva",
+      "fr": "Beldeneige",
       "en": "Frosmoth",
       "es": "Frosmoth",
-      "th": "Frosmoth",
-      "ja": "Frosmoth",
-      "ko": "Frosmoth",
+      "th": "มอสโนว์",
+      "ja": "モスノウ",
+      "ko": "모스노우",
       "ru": "Frosmoth",
-      "zh_hans": "Frosmoth",
-      "zh_hant": "Frosmoth"
+      "zh_hans": "雪绒蛾",
+      "zh_hant": "雪绒蛾"
     },
     "speciesId": "frosmoth",
     "baseStats": {
@@ -43669,16 +43685,16 @@
   "stonjourner": {
     "dex": 874,
     "speciesName": {
-      "de": "Stonjourner",
-      "fr": "Stonjourner",
+      "de": "Humanolith",
+      "fr": "Dolman",
       "en": "Stonjourner",
       "es": "Stonjourner",
-      "th": "Stonjourner",
-      "ja": "Stonjourner",
-      "ko": "Stonjourner",
-      "ru": "Stonjourner",
-      "zh_hans": "Stonjourner",
-      "zh_hant": "Stonjourner"
+      "th": "โซโด",
+      "ja": "イシヘンジン",
+      "ko": "돌헨진",
+      "ru": "Cufant",
+      "zh_hans": "巨石丁",
+      "zh_hant": "巨石丁"
     },
     "speciesId": "stonjourner",
     "baseStats": {
@@ -43706,16 +43722,16 @@
   "eiscue": {
     "dex": 875,
     "speciesName": {
-      "de": "Eiscue",
-      "fr": "Eiscue",
+      "de": "Kubuin",
+      "fr": "Bekaglaçon",
       "en": "Eiscue",
       "es": "Eiscue",
-      "th": "Eiscue",
-      "ja": "Eiscue",
-      "ko": "Eiscue",
-      "ru": "Eiscue",
-      "zh_hans": "Eiscue",
-      "zh_hant": "Eiscue"
+      "th": "ไดโอโด",
+      "ja": "コオリッポ",
+      "ko": "빙큐보",
+      "ru": "Copperajah",
+      "zh_hans": "冰砌鹅",
+      "zh_hant": "冰砌鵝"
     },
     "speciesId": "eiscue",
     "baseStats": {
@@ -43743,16 +43759,16 @@
   "eiscue_ice": {
     "dex": 875,
     "speciesName": {
-      "de": "Eiscue Ice",
-      "fr": "Eiscue Ice",
-      "en": "Eiscue Ice",
-      "es": "Eiscue Ice",
-      "th": "Eiscue Ice",
-      "ja": "Eiscue Ice",
-      "ko": "Eiscue Ice",
-      "ru": "Eiscue Ice",
-      "zh_hans": "Eiscue Ice",
-      "zh_hant": "Eiscue Ice"
+      "de": "Kubuin undefined",
+      "fr": "Bekaglaçon undefined",
+      "en": "Eiscue undefined",
+      "es": "Eiscue undefined",
+      "th": "ไดโอโด undefined",
+      "ja": "コオリッポ undefined",
+      "ko": "빙큐보 undefined",
+      "ru": "Copperajah undefined",
+      "zh_hans": "冰砌鹅 undefined",
+      "zh_hant": "冰砌鵝 undefined"
     },
     "speciesId": "eiscue_ice",
     "baseStats": {
@@ -43775,21 +43791,21 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 28000
+    "sid": null
   },
   "eiscue_noice": {
     "dex": 875,
     "speciesName": {
-      "de": "Eiscue Noice",
-      "fr": "Eiscue Noice",
-      "en": "Eiscue Noice",
-      "es": "Eiscue Noice",
-      "th": "Eiscue Noice",
-      "ja": "Eiscue Noice",
-      "ko": "Eiscue Noice",
-      "ru": "Eiscue Noice",
-      "zh_hans": "Eiscue Noice",
-      "zh_hant": "Eiscue Noice"
+      "de": "Kubuin undefined",
+      "fr": "Bekaglaçon undefined",
+      "en": "Eiscue undefined",
+      "es": "Eiscue undefined",
+      "th": "ไดโอโด undefined",
+      "ja": "コオリッポ undefined",
+      "ko": "빙큐보 undefined",
+      "ru": "Copperajah undefined",
+      "zh_hans": "冰砌鹅 undefined",
+      "zh_hant": "冰砌鵝 undefined"
     },
     "speciesId": "eiscue_noice",
     "baseStats": {
@@ -43817,16 +43833,16 @@
   "indeedee": {
     "dex": 876,
     "speciesName": {
-      "de": "Indeedee",
-      "fr": "Indeedee",
+      "de": "Servol",
+      "fr": "Wimessir",
       "en": "Indeedee",
       "es": "Indeedee",
-      "th": "Indeedee",
-      "ja": "Indeedee",
-      "ko": "Indeedee",
-      "ru": "Indeedee",
-      "zh_hans": "Indeedee",
-      "zh_hant": "Indeedee"
+      "th": "มาวิป",
+      "ja": "イエッサン",
+      "ko": "에써르",
+      "ru": "Алкреми",
+      "zh_hans": "爱管侍",
+      "zh_hant": "愛管侍"
     },
     "speciesId": "indeedee",
     "baseStats": {
@@ -43854,16 +43870,16 @@
   "indeedee_female": {
     "dex": 876,
     "speciesName": {
-      "de": "Indeedee Female",
-      "fr": "Indeedee Female",
-      "en": "Indeedee Female",
-      "es": "Indeedee Female",
-      "th": "Indeedee Female",
-      "ja": "Indeedee Female",
-      "ko": "Indeedee Female",
-      "ru": "Indeedee Female",
-      "zh_hans": "Indeedee Female",
-      "zh_hant": "Indeedee Female"
+      "de": "Servol (Weiblich)",
+      "fr": "Wimessir (Female)",
+      "en": "Indeedee (Female)",
+      "es": "Indeedee (Hembra)",
+      "th": "มาวิป (Female)",
+      "ja": "イエッサン (Female)",
+      "ko": "에써르 (Female)",
+      "ru": "Алкреми (Female)",
+      "zh_hans": "爱管侍 (Female)",
+      "zh_hant": "愛管侍 (Female)"
     },
     "speciesId": "indeedee_female",
     "baseStats": {
@@ -43891,16 +43907,16 @@
   "indeedee_male": {
     "dex": 876,
     "speciesName": {
-      "de": "Indeedee Male",
-      "fr": "Indeedee Male",
-      "en": "Indeedee Male",
-      "es": "Indeedee Male",
-      "th": "Indeedee Male",
-      "ja": "Indeedee Male",
-      "ko": "Indeedee Male",
-      "ru": "Indeedee Male",
-      "zh_hans": "Indeedee Male",
-      "zh_hant": "Indeedee Male"
+      "de": "Servol undefined",
+      "fr": "Wimessir undefined",
+      "en": "Indeedee undefined",
+      "es": "Indeedee undefined",
+      "th": "มาวิป undefined",
+      "ja": "イエッサン undefined",
+      "ko": "에써르 undefined",
+      "ru": "Алкреми undefined",
+      "zh_hans": "爱管侍 undefined",
+      "zh_hant": "愛管侍 undefined"
     },
     "speciesId": "indeedee_male",
     "baseStats": {
@@ -43923,7 +43939,7 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 28032
+    "sid": null
   },
   "morpeko": {
     "dex": 877,
@@ -43932,12 +43948,12 @@
       "fr": "Morpeko",
       "en": "Morpeko",
       "es": "Morpeko",
-      "th": "Morpeko",
-      "ja": "Morpeko",
-      "ko": "Morpeko",
-      "ru": "Morpeko",
-      "zh_hans": "Morpeko",
-      "zh_hant": "Morpeko"
+      "th": "ไทเรสึ",
+      "ja": "モルペコ",
+      "ko": "모르페코",
+      "ru": "Фалинкс",
+      "zh_hans": "莫鲁贝可",
+      "zh_hant": "莫魯貝可"
     },
     "speciesId": "morpeko",
     "baseStats": {
@@ -43967,16 +43983,16 @@
   "morpeko_full_belly": {
     "dex": 877,
     "speciesName": {
-      "de": "Morpeko Full Belly",
-      "fr": "Morpeko Full Belly",
-      "en": "Morpeko Full Belly",
-      "es": "Morpeko Full Belly",
-      "th": "Morpeko Full Belly",
-      "ja": "Morpeko Full Belly",
-      "ko": "Morpeko Full Belly",
-      "ru": "Morpeko Full Belly",
-      "zh_hans": "Morpeko Full Belly",
-      "zh_hant": "Morpeko Full Belly"
+      "de": "Morpeko undefined",
+      "fr": "Morpeko undefined",
+      "en": "Morpeko undefined",
+      "es": "Morpeko undefined",
+      "th": "ไทเรสึ undefined",
+      "ja": "モルペコ undefined",
+      "ko": "모르페코 undefined",
+      "ru": "Фалинкс undefined",
+      "zh_hans": "莫鲁贝可 undefined",
+      "zh_hant": "莫魯貝可 undefined"
     },
     "speciesId": "morpeko_full_belly",
     "baseStats": {
@@ -44001,21 +44017,21 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 28064
+    "sid": null
   },
   "morpeko_hangry": {
     "dex": 877,
     "speciesName": {
-      "de": "Morpeko Hangry",
-      "fr": "Morpeko Hangry",
-      "en": "Morpeko Hangry",
-      "es": "Morpeko Hangry",
-      "th": "Morpeko Hangry",
-      "ja": "Morpeko Hangry",
-      "ko": "Morpeko Hangry",
-      "ru": "Morpeko Hangry",
-      "zh_hans": "Morpeko Hangry",
-      "zh_hant": "Morpeko Hangry"
+      "de": "Morpeko undefined",
+      "fr": "Morpeko undefined",
+      "en": "Morpeko undefined",
+      "es": "Morpeko undefined",
+      "th": "ไทเรสึ undefined",
+      "ja": "モルペコ undefined",
+      "ko": "모르페코 undefined",
+      "ru": "Фалинкс undefined",
+      "zh_hans": "莫鲁贝可 undefined",
+      "zh_hant": "莫魯貝可 undefined"
     },
     "speciesId": "morpeko_hangry",
     "baseStats": {
@@ -44045,16 +44061,16 @@
   "cufant": {
     "dex": 878,
     "speciesName": {
-      "de": "Cufant",
-      "fr": "Cufant",
+      "de": "Kupfanti",
+      "fr": "Charibari",
       "en": "Cufant",
       "es": "Cufant",
-      "th": "Cufant",
-      "ja": "Cufant",
-      "ko": "Cufant",
-      "ru": "Cufant",
-      "zh_hans": "Cufant",
-      "zh_hant": "Cufant"
+      "th": "เบโรบา",
+      "ja": "ゾウドウ",
+      "ko": "끼리동",
+      "ru": "Impidimp",
+      "zh_hans": "铜象",
+      "zh_hant": "銅象"
     },
     "speciesId": "cufant",
     "baseStats": {
@@ -44083,16 +44099,16 @@
   "copperajah": {
     "dex": 879,
     "speciesName": {
-      "de": "Copperajah",
-      "fr": "Copperajah",
+      "de": "Patinaraja",
+      "fr": "Pachyradjah",
       "en": "Copperajah",
       "es": "Copperajah",
-      "th": "Copperajah",
-      "ja": "Copperajah",
-      "ko": "Copperajah",
-      "ru": "Copperajah",
-      "zh_hans": "Copperajah",
-      "zh_hant": "Copperajah"
+      "th": "กิโม",
+      "ja": "ダイオウドウ",
+      "ko": "대왕끼리동",
+      "ru": "Morgrem",
+      "zh_hans": "大王铜象",
+      "zh_hant": "大王銅象"
     },
     "speciesId": "copperajah",
     "baseStats": {
@@ -44122,16 +44138,16 @@
   "dracozolt": {
     "dex": 880,
     "speciesName": {
-      "de": "Dracozolt",
-      "fr": "Dracozolt",
+      "de": "Lectragon",
+      "fr": "Galvagon",
       "en": "Dracozolt",
       "es": "Dracozolt",
-      "th": "Dracozolt",
-      "ja": "Dracozolt",
-      "ko": "Dracozolt",
-      "ru": "Dracozolt",
-      "zh_hans": "Dracozolt",
-      "zh_hant": "Dracozolt"
+      "th": "พัจจิรุดอน",
+      "ja": "パッチラゴン",
+      "ko": "파치래곤",
+      "ru": "Arctozolt",
+      "zh_hans": "雷鸟龙",
+      "zh_hant": "雷鳥龍"
     },
     "speciesId": "dracozolt",
     "baseStats": {
@@ -44160,16 +44176,16 @@
   "arctozolt": {
     "dex": 881,
     "speciesName": {
-      "de": "Arctozolt",
-      "fr": "Arctozolt",
+      "de": "Lecryodon",
+      "fr": "Galvagla",
       "en": "Arctozolt",
       "es": "Arctozolt",
-      "th": "Arctozolt",
-      "ja": "Arctozolt",
-      "ko": "Arctozolt",
-      "ru": "Arctozolt",
-      "zh_hans": "Arctozolt",
-      "zh_hant": "Arctozolt"
+      "th": "อุโอโนรากอน",
+      "ja": "パッチルドン",
+      "ko": "파치르돈",
+      "ru": "Dracovish",
+      "zh_hans": "雷鸟海兽",
+      "zh_hant": "雷鳥海獸"
     },
     "speciesId": "arctozolt",
     "baseStats": {
@@ -44198,16 +44214,16 @@
   "dracovish": {
     "dex": 882,
     "speciesName": {
-      "de": "Dracovish",
-      "fr": "Dracovish",
+      "de": "Pescragon",
+      "fr": "Hydragon",
       "en": "Dracovish",
       "es": "Dracovish",
-      "th": "Dracovish",
-      "ja": "Dracovish",
-      "ko": "Dracovish",
-      "ru": "Dracovish",
-      "zh_hans": "Dracovish",
-      "zh_hant": "Dracovish"
+      "th": "อุโอจิรุดอน",
+      "ja": "ウオノラゴン",
+      "ko": "어래곤",
+      "ru": "Arctovish",
+      "zh_hans": "鳃鱼龙",
+      "zh_hant": "鰓魚龍"
     },
     "speciesId": "dracovish",
     "baseStats": {
@@ -44236,16 +44252,16 @@
   "arctovish": {
     "dex": 883,
     "speciesName": {
-      "de": "Arctovish",
-      "fr": "Arctovish",
+      "de": "Pescryodon",
+      "fr": "Hydragla",
       "en": "Arctovish",
       "es": "Arctovish",
-      "th": "Arctovish",
-      "ja": "Arctovish",
-      "ko": "Arctovish",
-      "ru": "Arctovish",
-      "zh_hans": "Arctovish",
-      "zh_hant": "Arctovish"
+      "th": "ดิวรัลดอน",
+      "ja": "ウオチルドン",
+      "ko": "어치르돈",
+      "ru": "Дюралюдон",
+      "zh_hans": "鳃鱼海兽",
+      "zh_hant": "鰓魚海獸"
     },
     "speciesId": "arctovish",
     "baseStats": {
@@ -44275,15 +44291,15 @@
     "dex": 884,
     "speciesName": {
       "de": "Duraludon",
-      "fr": "Duraludon",
+      "fr": "Duralugon",
       "en": "Duraludon",
       "es": "Duraludon",
-      "th": "Duraludon",
-      "ja": "Duraludon",
-      "ko": "Duraludon",
-      "ru": "Duraludon",
-      "zh_hans": "Duraludon",
-      "zh_hant": "Duraludon"
+      "th": "พัจจิรากอน",
+      "ja": "ジュラルドン",
+      "ko": "두랄루돈",
+      "ru": "Dracozolt",
+      "zh_hans": "铝钢龙",
+      "zh_hant": "鋁鋼龍"
     },
     "speciesId": "duraludon",
     "baseStats": {
@@ -44312,16 +44328,16 @@
   "dreepy": {
     "dex": 885,
     "speciesName": {
-      "de": "Dreepy",
-      "fr": "Dreepy",
+      "de": "Grolldra",
+      "fr": "Fantyrm",
       "en": "Dreepy",
       "es": "Dreepy",
-      "th": "Dreepy",
-      "ja": "Dreepy",
-      "ko": "Dreepy",
+      "th": "โดราเมชิยะ",
+      "ja": "ドラメシヤ",
+      "ko": "드라꼰",
       "ru": "Dreepy",
-      "zh_hans": "Dreepy",
-      "zh_hant": "Dreepy"
+      "zh_hans": "多龙梅西亚",
+      "zh_hant": "多龍梅西亞"
     },
     "speciesId": "dreepy",
     "baseStats": {
@@ -44348,16 +44364,16 @@
   "drakloak": {
     "dex": 886,
     "speciesName": {
-      "de": "Drakloak",
-      "fr": "Drakloak",
+      "de": "Phandra",
+      "fr": "Dispareptil",
       "en": "Drakloak",
       "es": "Drakloak",
-      "th": "Drakloak",
-      "ja": "Drakloak",
-      "ko": "Drakloak",
+      "th": "โดรอนจิ",
+      "ja": "ドロンチ",
+      "ko": "드래런치",
       "ru": "Drakloak",
-      "zh_hans": "Drakloak",
-      "zh_hant": "Drakloak"
+      "zh_hans": "多龙奇",
+      "zh_hant": "多龍奇"
     },
     "speciesId": "drakloak",
     "baseStats": {
@@ -44386,16 +44402,16 @@
   "dragapult": {
     "dex": 887,
     "speciesName": {
-      "de": "Dragapult",
-      "fr": "Dragapult",
+      "de": "Katapuldra",
+      "fr": "Lanssorien",
       "en": "Dragapult",
       "es": "Dragapult",
-      "th": "Dragapult",
-      "ja": "Dragapult",
-      "ko": "Dragapult",
+      "th": "โดราพัลท์",
+      "ja": "ドラパルト",
+      "ko": "드래펄트",
       "ru": "Dragapult",
-      "zh_hans": "Dragapult",
-      "zh_hant": "Dragapult"
+      "zh_hans": "多龙巴鲁托",
+      "zh_hant": "多龍巴魯托"
     },
     "speciesId": "dragapult",
     "baseStats": {
@@ -44428,12 +44444,12 @@
       "fr": "Zacian",
       "en": "Zacian",
       "es": "Zacian",
-      "th": "Zacian",
-      "ja": "Zacian",
-      "ko": "Zacian",
-      "ru": "Zacian",
-      "zh_hans": "Zacian",
-      "zh_hant": "Zacian"
+      "th": "ซาเชียน",
+      "ja": "ザシアン",
+      "ko": "자시안",
+      "ru": "Зэйшиан",
+      "zh_hans": "苍响",
+      "zh_hant": "蒼響"
     },
     "speciesId": "zacian",
     "baseStats": {
@@ -44462,19 +44478,61 @@
     ],
     "sid": 28416
   },
+  "zacian_hero": {
+    "dex": 888,
+    "speciesName": {
+      "de": "Zacian undefined",
+      "fr": "Zacian undefined",
+      "en": "Zacian undefined",
+      "es": "Zacian undefined",
+      "th": "ซาเชียน undefined",
+      "ja": "ザシアン undefined",
+      "ko": "자시안 undefined",
+      "ru": "Зэйшиан undefined",
+      "zh_hans": "苍响 undefined",
+      "zh_hant": "蒼響 undefined"
+    },
+    "speciesId": "zacian_hero",
+    "baseStats": {
+      "atk": 254,
+      "def": 236,
+      "hp": 192
+    },
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "fastMoves": [
+      "METAL_CLAW",
+      "SNARL",
+      "QUICK_ATTACK",
+      "FIRE_FANG"
+    ],
+    "chargedMoves": [
+      "PLAY_ROUGH",
+      "IRON_HEAD",
+      "WILD_CHARGE",
+      "CLOSE_COMBAT"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "searchPriority": 5,
+    "sid": null
+  },
   "zacian_crowned_sword": {
     "dex": 888,
     "speciesName": {
-      "de": "Zacian Crowned Sword",
-      "fr": "Zacian Crowned Sword",
-      "en": "Zacian Crowned Sword",
-      "es": "Zacian Crowned Sword",
-      "th": "Zacian Crowned Sword",
-      "ja": "Zacian Crowned Sword",
-      "ko": "Zacian Crowned Sword",
-      "ru": "Zacian Crowned Sword",
-      "zh_hans": "Zacian Crowned Sword",
-      "zh_hant": "Zacian Crowned Sword"
+      "de": "Zacian undefined",
+      "fr": "Zacian undefined",
+      "en": "Zacian undefined",
+      "es": "Zacian undefined",
+      "th": "ซาเชียน undefined",
+      "ja": "ザシアン undefined",
+      "ko": "자시안 undefined",
+      "ru": "Зэйшиан undefined",
+      "zh_hans": "苍响 undefined",
+      "zh_hant": "蒼響 undefined"
     },
     "speciesId": "zacian_crowned_sword",
     "baseStats": {
@@ -44501,49 +44559,7 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 28417
-  },
-  "zacian_hero": {
-    "dex": 888,
-    "speciesName": {
-      "de": "Zacian Hero",
-      "fr": "Zacian Hero",
-      "en": "Zacian Hero",
-      "es": "Zacian Hero",
-      "th": "Zacian Hero",
-      "ja": "Zacian Hero",
-      "ko": "Zacian Hero",
-      "ru": "Zacian Hero",
-      "zh_hans": "Zacian Hero",
-      "zh_hant": "Zacian Hero"
-    },
-    "speciesId": "zacian_hero",
-    "baseStats": {
-      "atk": 254,
-      "def": 236,
-      "hp": 192
-    },
-    "types": [
-      "fairy",
-      "none"
-    ],
-    "fastMoves": [
-      "METAL_CLAW",
-      "SNARL",
-      "QUICK_ATTACK",
-      "FIRE_FANG"
-    ],
-    "chargedMoves": [
-      "PLAY_ROUGH",
-      "IRON_HEAD",
-      "WILD_CHARGE",
-      "CLOSE_COMBAT"
-    ],
-    "searchPriority": 5,
-    "tags": [
-      "unreleased"
-    ],
-    "sid": 28416
+    "sid": null
   },
   "zamazenta": {
     "dex": 889,
@@ -44552,12 +44568,12 @@
       "fr": "Zamazenta",
       "en": "Zamazenta",
       "es": "Zamazenta",
-      "th": "Zamazenta",
-      "ja": "Zamazenta",
-      "ko": "Zamazenta",
-      "ru": "Zamazenta",
-      "zh_hans": "Zamazenta",
-      "zh_hant": "Zamazenta"
+      "th": "ซามาเซนตา",
+      "ja": "ザマゼンタ",
+      "ko": "자마젠타",
+      "ru": "Земазента",
+      "zh_hans": "藏玛然特",
+      "zh_hant": "藏瑪然特"
     },
     "speciesId": "zamazenta",
     "baseStats": {
@@ -44586,19 +44602,61 @@
     ],
     "sid": 28448
   },
+  "zamazenta_hero": {
+    "dex": 889,
+    "speciesName": {
+      "de": "Zamazenta undefined",
+      "fr": "Zamazenta undefined",
+      "en": "Zamazenta undefined",
+      "es": "Zamazenta undefined",
+      "th": "ซามาเซนตา undefined",
+      "ja": "ザマゼンタ undefined",
+      "ko": "자마젠타 undefined",
+      "ru": "Земазента undefined",
+      "zh_hans": "藏玛然特 undefined",
+      "zh_hant": "藏瑪然特 undefined"
+    },
+    "speciesId": "zamazenta_hero",
+    "baseStats": {
+      "atk": 254,
+      "def": 236,
+      "hp": 192
+    },
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "fastMoves": [
+      "METAL_CLAW",
+      "SNARL",
+      "QUICK_ATTACK",
+      "ICE_FANG"
+    ],
+    "chargedMoves": [
+      "MOONBLAST",
+      "IRON_HEAD",
+      "CRUNCH",
+      "CLOSE_COMBAT"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "searchPriority": 5,
+    "sid": null
+  },
   "zamazenta_crowned_shield": {
     "dex": 889,
     "speciesName": {
-      "de": "Zamazenta Crowned Shield",
-      "fr": "Zamazenta Crowned Shield",
-      "en": "Zamazenta Crowned Shield",
-      "es": "Zamazenta Crowned Shield",
-      "th": "Zamazenta Crowned Shield",
-      "ja": "Zamazenta Crowned Shield",
-      "ko": "Zamazenta Crowned Shield",
-      "ru": "Zamazenta Crowned Shield",
-      "zh_hans": "Zamazenta Crowned Shield",
-      "zh_hant": "Zamazenta Crowned Shield"
+      "de": "Zamazenta undefined",
+      "fr": "Zamazenta undefined",
+      "en": "Zamazenta undefined",
+      "es": "Zamazenta undefined",
+      "th": "ซามาเซนตา undefined",
+      "ja": "ザマゼンタ undefined",
+      "ko": "자마젠타 undefined",
+      "ru": "Земазента undefined",
+      "zh_hans": "藏玛然特 undefined",
+      "zh_hant": "藏瑪然特 undefined"
     },
     "speciesId": "zamazenta_crowned_shield",
     "baseStats": {
@@ -44625,63 +44683,21 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 28449
-  },
-  "zamazenta_hero": {
-    "dex": 889,
-    "speciesName": {
-      "de": "Zamazenta Hero",
-      "fr": "Zamazenta Hero",
-      "en": "Zamazenta Hero",
-      "es": "Zamazenta Hero",
-      "th": "Zamazenta Hero",
-      "ja": "Zamazenta Hero",
-      "ko": "Zamazenta Hero",
-      "ru": "Zamazenta Hero",
-      "zh_hans": "Zamazenta Hero",
-      "zh_hant": "Zamazenta Hero"
-    },
-    "speciesId": "zamazenta_hero",
-    "baseStats": {
-      "atk": 254,
-      "def": 236,
-      "hp": 192
-    },
-    "types": [
-      "fighting",
-      "none"
-    ],
-    "fastMoves": [
-      "METAL_CLAW",
-      "SNARL",
-      "QUICK_ATTACK",
-      "ICE_FANG"
-    ],
-    "chargedMoves": [
-      "MOONBLAST",
-      "IRON_HEAD",
-      "CRUNCH",
-      "CLOSE_COMBAT"
-    ],
-    "searchPriority": 5,
-    "tags": [
-      "unreleased"
-    ],
-    "sid": 28448
+    "sid": null
   },
   "eternatus": {
     "dex": 890,
     "speciesName": {
-      "de": "Eternatus",
-      "fr": "Eternatus",
+      "de": "Endynalos",
+      "fr": "Éthernatos",
       "en": "Eternatus",
       "es": "Eternatus",
-      "th": "Eternatus",
-      "ja": "Eternatus",
-      "ko": "Eternatus",
-      "ru": "Eternatus",
-      "zh_hans": "Eternatus",
-      "zh_hant": "Eternatus"
+      "th": "มุเก็นไดนา",
+      "ja": "ムゲンダイナ",
+      "ko": "무한다이노",
+      "ru": "Этернатус",
+      "zh_hans": "无极汰那",
+      "zh_hant": "無極汰那"
     },
     "speciesId": "eternatus",
     "baseStats": {
@@ -44710,16 +44726,16 @@
   "eternatus_eternamax": {
     "dex": 890,
     "speciesName": {
-      "de": "Eternatus Eternamax",
-      "fr": "Eternatus Eternamax",
-      "en": "Eternatus Eternamax",
-      "es": "Eternatus Eternamax",
-      "th": "Eternatus Eternamax",
-      "ja": "Eternatus Eternamax",
-      "ko": "Eternatus Eternamax",
-      "ru": "Eternatus Eternamax",
-      "zh_hans": "Eternatus Eternamax",
-      "zh_hant": "Eternatus Eternamax"
+      "de": "Endynalos undefined",
+      "fr": "Éthernatos undefined",
+      "en": "Eternatus undefined",
+      "es": "Eternatus undefined",
+      "th": "มุเก็นไดนา undefined",
+      "ja": "ムゲンダイナ undefined",
+      "ko": "무한다이노 undefined",
+      "ru": "Этернатус undefined",
+      "zh_hans": "无极汰那 undefined",
+      "zh_hant": "無極汰那 undefined"
     },
     "speciesId": "eternatus_eternamax",
     "baseStats": {
@@ -44749,16 +44765,16 @@
   "kubfu": {
     "dex": 891,
     "speciesName": {
-      "de": "Kubfu",
-      "fr": "Kubfu",
+      "de": "Dakuma",
+      "fr": "Wushours",
       "en": "Kubfu",
       "es": "Kubfu",
-      "th": "Kubfu",
-      "ja": "Kubfu",
-      "ko": "Kubfu",
-      "ru": "Kubfu",
-      "zh_hans": "Kubfu",
-      "zh_hant": "Kubfu"
+      "th": "ดาคุมะ",
+      "ja": "ダクマ",
+      "ko": "치고마",
+      "ru": "Кабфу",
+      "zh_hans": "熊徒弟",
+      "zh_hant": "熊徒弟"
     },
     "speciesId": "kubfu",
     "baseStats": {
@@ -44787,22 +44803,22 @@
   "urshifu": {
     "dex": 892,
     "speciesName": {
-      "de": "Urshifu",
-      "fr": "Urshifu",
+      "de": "Wulaosu",
+      "fr": "Shifours",
       "en": "Urshifu",
       "es": "Urshifu",
-      "th": "Urshifu",
-      "ja": "Urshifu",
-      "ko": "Urshifu",
-      "ru": "Urshifu",
-      "zh_hans": "Urshifu",
-      "zh_hant": "Urshifu"
+      "th": "วูลาโอส",
+      "ja": "ウーラオス",
+      "ko": "우라오스",
+      "ru": "Уршифу",
+      "zh_hans": "武道熊师",
+      "zh_hant": "武道熊師"
     },
     "speciesId": "urshifu",
     "baseStats": {
-      "atk": 231,
-      "def": 162,
-      "hp": 205
+      "atk": 254,
+      "def": 177,
+      "hp": 225
     },
     "types": [
       "fighting",
@@ -44825,22 +44841,22 @@
   "urshifu_rapid_strike": {
     "dex": 892,
     "speciesName": {
-      "de": "Urshifu Rapid Strike",
-      "fr": "Urshifu Rapid Strike",
-      "en": "Urshifu Rapid Strike",
-      "es": "Urshifu Rapid Strike",
-      "th": "Urshifu Rapid Strike",
-      "ja": "Urshifu Rapid Strike",
-      "ko": "Urshifu Rapid Strike",
-      "ru": "Urshifu Rapid Strike",
-      "zh_hans": "Urshifu Rapid Strike",
-      "zh_hant": "Urshifu Rapid Strike"
+      "de": "Wulaosu undefined",
+      "fr": "Shifours undefined",
+      "en": "Urshifu undefined",
+      "es": "Urshifu undefined",
+      "th": "วูลาโอส undefined",
+      "ja": "ウーラオス undefined",
+      "ko": "우라오스 undefined",
+      "ru": "Уршифу undefined",
+      "zh_hans": "武道熊师 undefined",
+      "zh_hant": "武道熊師 undefined"
     },
     "speciesId": "urshifu_rapid_strike",
     "baseStats": {
-      "atk": 231,
-      "def": 162,
-      "hp": 205
+      "atk": 254,
+      "def": 177,
+      "hp": 225
     },
     "types": [
       "fighting",
@@ -44865,22 +44881,22 @@
   "urshifu_single_strike": {
     "dex": 892,
     "speciesName": {
-      "de": "Urshifu Single Strike",
-      "fr": "Urshifu Single Strike",
-      "en": "Urshifu Single Strike",
-      "es": "Urshifu Single Strike",
-      "th": "Urshifu Single Strike",
-      "ja": "Urshifu Single Strike",
-      "ko": "Urshifu Single Strike",
-      "ru": "Urshifu Single Strike",
-      "zh_hans": "Urshifu Single Strike",
-      "zh_hant": "Urshifu Single Strike"
+      "de": "Wulaosu undefined",
+      "fr": "Shifours undefined",
+      "en": "Urshifu undefined",
+      "es": "Urshifu undefined",
+      "th": "วูลาโอส undefined",
+      "ja": "ウーラオス undefined",
+      "ko": "우라오스 undefined",
+      "ru": "Уршифу undefined",
+      "zh_hans": "武道熊师 undefined",
+      "zh_hant": "武道熊師 undefined"
     },
     "speciesId": "urshifu_single_strike",
     "baseStats": {
-      "atk": 231,
-      "def": 162,
-      "hp": 205
+      "atk": 254,
+      "def": 177,
+      "hp": 225
     },
     "types": [
       "fighting",
@@ -44900,7 +44916,7 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 28544
+    "sid": null
   },
   "zarude": {
     "dex": 893,
@@ -44909,12 +44925,12 @@
       "fr": "Zarude",
       "en": "Zarude",
       "es": "Zarude",
-      "th": "Zarude",
-      "ja": "Zarude",
-      "ko": "Zarude",
-      "ru": "Zarude",
-      "zh_hans": "Zarude",
-      "zh_hant": "Zarude"
+      "th": "ซารู้ด",
+      "ja": "ザルード",
+      "ko": "자루도",
+      "ru": "Заруд",
+      "zh_hans": "萨戮德",
+      "zh_hant": "薩戮德"
     },
     "speciesId": "zarude",
     "baseStats": {
@@ -44947,18 +44963,18 @@
       "fr": "Regieleki",
       "en": "Regieleki",
       "es": "Regieleki",
-      "th": "Regieleki",
-      "ja": "Regieleki",
-      "ko": "Regieleki",
-      "ru": "Regieleki",
-      "zh_hans": "Regieleki",
-      "zh_hant": "Regieleki"
+      "th": "เรจิเอเลคิ",
+      "ja": "レジエレキ",
+      "ko": "레지에레키",
+      "ru": "Реджилеки",
+      "zh_hans": "雷吉艾勒奇",
+      "zh_hant": "雷吉艾勒奇"
     },
     "speciesId": "regieleki",
     "baseStats": {
-      "atk": 228,
-      "def": 114,
-      "hp": 173
+      "atk": 250,
+      "def": 125,
+      "hp": 190
     },
     "types": [
       "electric",
@@ -44971,7 +44987,7 @@
     "chargedMoves": [
       "THUNDERBOLT",
       "THUNDER",
-      "WILD_CHARGE"
+      "HYPER_BEAM"
     ],
     "tags": [
       "unreleased"
@@ -44985,29 +45001,28 @@
       "fr": "Regidrago",
       "en": "Regidrago",
       "es": "Regidrago",
-      "th": "Regidrago",
-      "ja": "Regidrago",
-      "ko": "Regidrago",
-      "ru": "Regidrago",
-      "zh_hans": "Regidrago",
-      "zh_hant": "Regidrago"
+      "th": "เรจิดราโก",
+      "ja": "レジドラゴ",
+      "ko": "레지드래고",
+      "ru": "Реджидраго",
+      "zh_hans": "雷吉铎拉戈",
+      "zh_hant": "雷吉鐸拉戈"
     },
     "speciesId": "regidrago",
     "baseStats": {
-      "atk": 184,
-      "def": 92,
-      "hp": 364
+      "atk": 202,
+      "def": 101,
+      "hp": 400
     },
     "types": [
       "dragon",
       "none"
     ],
     "fastMoves": [
-      "BITE",
-      "LOCK_ON"
+      "BITE"
     ],
     "chargedMoves": [
-      "DRAGON_CLAW",
+      "HYPER_BEAM",
       "OUTRAGE",
       "DRAGON_PULSE"
     ],
@@ -45019,22 +45034,22 @@
   "glastrier": {
     "dex": 896,
     "speciesName": {
-      "de": "Glastrier",
-      "fr": "Glastrier",
+      "de": "Polaross",
+      "fr": "Blizzeval",
       "en": "Glastrier",
       "es": "Glastrier",
-      "th": "Glastrier",
-      "ja": "Glastrier",
-      "ko": "Glastrier",
-      "ru": "Glastrier",
-      "zh_hans": "Glastrier",
-      "zh_hant": "Glastrier"
+      "th": "บลิซซาพอส",
+      "ja": "ブリザポス",
+      "ko": "블리자포스",
+      "ru": "Гластрир",
+      "zh_hans": "雪暴马",
+      "zh_hant": "雪暴馬"
     },
     "speciesId": "glastrier",
     "baseStats": {
-      "atk": 224,
-      "def": 203,
-      "hp": 205
+      "atk": 246,
+      "def": 223,
+      "hp": 225
     },
     "types": [
       "ice",
@@ -45057,16 +45072,16 @@
   "spectrier": {
     "dex": 897,
     "speciesName": {
-      "de": "Spectrier",
-      "fr": "Spectrier",
+      "de": "Phantoross",
+      "fr": "Spectreval",
       "en": "Spectrier",
       "es": "Spectrier",
-      "th": "Spectrier",
-      "ja": "Spectrier",
-      "ko": "Spectrier",
-      "ru": "Spectrier",
-      "zh_hans": "Spectrier",
-      "zh_hant": "Spectrier"
+      "th": "เรสพอส",
+      "ja": "レイスポス",
+      "ko": "레이스포스",
+      "ru": "Спектрир",
+      "zh_hans": "灵幽马",
+      "zh_hant": "靈幽馬"
     },
     "speciesId": "spectrier",
     "baseStats": {
@@ -45095,22 +45110,22 @@
   "calyrex": {
     "dex": 898,
     "speciesName": {
-      "de": "Calyrex",
-      "fr": "Calyrex",
+      "de": "Coronospa",
+      "fr": "Sylveroy",
       "en": "Calyrex",
       "es": "Calyrex",
-      "th": "Calyrex",
-      "ja": "Calyrex",
-      "ko": "Calyrex",
-      "ru": "Calyrex",
-      "zh_hans": "Calyrex",
-      "zh_hant": "Calyrex"
+      "th": "บัดเดร็กซ์",
+      "ja": "バドレックス",
+      "ko": "버드렉스",
+      "ru": "Калирекс",
+      "zh_hans": "蕾冠王",
+      "zh_hant": "蕾冠王"
     },
     "speciesId": "calyrex",
     "baseStats": {
-      "atk": 147,
-      "def": 147,
-      "hp": 205
+      "atk": 162,
+      "def": 162,
+      "hp": 225
     },
     "types": [
       "psychic",
@@ -45133,16 +45148,16 @@
   "calyrex_ice_rider": {
     "dex": 898,
     "speciesName": {
-      "de": "Calyrex Ice Rider",
-      "fr": "Calyrex Ice Rider",
-      "en": "Calyrex Ice Rider",
-      "es": "Calyrex Ice Rider",
-      "th": "Calyrex Ice Rider",
-      "ja": "Calyrex Ice Rider",
-      "ko": "Calyrex Ice Rider",
-      "ru": "Calyrex Ice Rider",
-      "zh_hans": "Calyrex Ice Rider",
-      "zh_hant": "Calyrex Ice Rider"
+      "de": "Coronospa undefined",
+      "fr": "Sylveroy undefined",
+      "en": "Calyrex undefined",
+      "es": "Calyrex undefined",
+      "th": "บัดเดร็กซ์ undefined",
+      "ja": "バドレックス undefined",
+      "ko": "버드렉스 undefined",
+      "ru": "Калирекс undefined",
+      "zh_hans": "蕾冠王 undefined",
+      "zh_hant": "蕾冠王 undefined"
     },
     "speciesId": "calyrex_ice_rider",
     "baseStats": {
@@ -45167,6 +45182,6 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 28737
+    "sid": null
   }
 }
