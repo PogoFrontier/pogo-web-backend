@@ -610,6 +610,14 @@
       "none"
     ]
   },
+  "pikachu_kariyushi": {
+    "legal": false,
+    "dex": 25,
+    "types": [
+      "electric",
+      "none"
+    ]
+  },
   "pikachu_libre": {
     "legal": false,
     "dex": 25,
@@ -12995,6 +13003,9 @@
       "fairy",
       "none"
     ],
+    "tags": [
+      "legendary"
+    ],
     "speciesName": {
       "de": "Xerneas",
       "fr": "Xerneas",
@@ -13281,26 +13292,44 @@
     ]
   },
   "skwovet": {
-    "legal": false,
+    "legal": true,
     "dex": 819,
     "types": [
       "normal",
       "none"
     ],
-    "tags": [
-      "unreleased"
-    ]
+    "speciesName": {
+      "de": "Raffel",
+      "fr": "Rongourmand",
+      "en": "Skwovet",
+      "es": "Skwovet",
+      "th": "เลโดมุชิ",
+      "ja": "ホシガリス",
+      "ko": "탐리스",
+      "ru": "Dottler",
+      "zh_hans": "贪心栗鼠",
+      "zh_hant": "貪心栗鼠"
+    }
   },
   "greedent": {
-    "legal": false,
+    "legal": true,
     "dex": 820,
     "types": [
       "normal",
       "none"
     ],
-    "tags": [
-      "unreleased"
-    ]
+    "speciesName": {
+      "de": "Schlaraffel",
+      "fr": "Rongrigou",
+      "en": "Greedent",
+      "es": "Greedent",
+      "th": "อิออร์บ",
+      "ja": "ヨクバリス",
+      "ko": "요씽리스 ",
+      "ru": "Orbeetle",
+      "zh_hans": "藏饱栗鼠",
+      "zh_hant": "藏飽栗鼠"
+    }
   },
   "rookidee": {
     "legal": false,
@@ -13413,26 +13442,44 @@
     ]
   },
   "wooloo": {
-    "legal": false,
+    "legal": true,
     "dex": 831,
     "types": [
       "normal",
       "none"
     ],
-    "tags": [
-      "unreleased"
-    ]
+    "speciesName": {
+      "de": "Wolly",
+      "fr": "Moumouton",
+      "en": "Wooloo",
+      "es": "Wooloo",
+      "th": "วาตะชิรากะ",
+      "ja": "ウールー",
+      "ko": "우르",
+      "ru": "Эльдегосс",
+      "zh_hans": "毛辫羊",
+      "zh_hant": "毛辮羊"
+    }
   },
   "dubwool": {
-    "legal": false,
+    "legal": true,
     "dex": 832,
     "types": [
       "normal",
       "none"
     ],
-    "tags": [
-      "unreleased"
-    ]
+    "speciesName": {
+      "de": "Zwollock",
+      "fr": "Moumouflon",
+      "en": "Dubwool",
+      "es": "Dubwool",
+      "th": "วูลู",
+      "ja": "バイウールー",
+      "ko": "배우르",
+      "ru": "Вулу",
+      "zh_hans": "毛毛角羊",
+      "zh_hant": "毛毛角羊"
+    }
   },
   "chewtle": {
     "legal": false,
@@ -13826,20 +13873,17 @@
       "dark",
       "normal"
     ],
-    "tags": [
-      "galarian"
-    ],
     "speciesName": {
-      "de": "Obstagoon",
-      "fr": "Obstagoon",
+      "de": "Barrikadax",
+      "fr": "Ixon",
       "en": "Obstagoon",
       "es": "Obstagoon",
-      "th": "Obstagoon",
-      "ja": "Obstagoon",
-      "ko": "Obstagoon",
-      "ru": "Obstagoon",
-      "zh_hans": "Obstagoon",
-      "zh_hant": "Obstagoon"
+      "th": "ฮิเมงกะ",
+      "ja": "タチフサグマ",
+      "ko": "가로막구리",
+      "ru": "Госсифлёр",
+      "zh_hans": "堵拦熊",
+      "zh_hant": "堵攔熊"
     },
     "price": 3,
     "ranking": 670,
@@ -13886,20 +13930,17 @@
       "steel",
       "none"
     ],
-    "tags": [
-      "galarian"
-    ],
     "speciesName": {
-      "de": "Perrserker",
-      "fr": "Perrserker",
+      "de": "Mauzinger",
+      "fr": "Berserkatt",
       "en": "Perrserker",
       "es": "Perrserker",
-      "th": "Perrserker",
-      "ja": "Perrserker",
-      "ko": "Perrserker",
-      "ru": "Perrserker",
-      "zh_hans": "Perrserker",
-      "zh_hant": "Perrserker"
+      "th": "อุ๊อุ",
+      "ja": "ニャイキング",
+      "ko": "나이킹",
+      "ru": "Cramorant",
+      "zh_hans": "喵头目",
+      "zh_hant": "喵頭目"
     },
     "ranking": 629,
     "moves": {
@@ -13956,20 +13997,17 @@
       "fighting",
       "none"
     ],
-    "tags": [
-      "galarian"
-    ],
     "speciesName": {
-      "de": "Sirfetchd",
-      "fr": "Sirfetchd",
-      "en": "Sirfetchd",
-      "es": "Sirfetchd",
-      "th": "Sirfetchd",
-      "ja": "Sirfetchd",
-      "ko": "Sirfetchd",
-      "ru": "Sirfetchd",
-      "zh_hans": "Sirfetchd",
-      "zh_hant": "Sirfetchd"
+      "de": "Lauchzelot",
+      "fr": "Palarticho",
+      "en": "Sirfetch'd",
+      "es": "Sirfetch'd",
+      "th": "มารุยาคุเดะ",
+      "ja": "ネギガナイト",
+      "ko": "창파나이트",
+      "ru": "Сентискорч",
+      "zh_hans": "葱游兵",
+      "zh_hant": "蔥遊兵"
     },
     "ranking": 647,
     "moves": {
@@ -14015,20 +14053,17 @@
       "ice",
       "psychic"
     ],
-    "tags": [
-      "galarian"
-    ],
     "speciesName": {
-      "de": "Mr Rime",
-      "fr": "Mr Rime",
-      "en": "Mr Rime",
-      "es": "Mr Rime",
-      "th": "Mr Rime",
-      "ja": "Mr Rime",
-      "ko": "Mr Rime",
-      "ru": "Mr Rime",
-      "zh_hans": "Mr Rime",
-      "zh_hant": "Mr Rime"
+      "de": "Pantifrost",
+      "fr": "M. Glaquette",
+      "en": "Mr. Rime",
+      "es": "Mr. Rime",
+      "th": "โมรุเปโกะ",
+      "ja": "バリコオル",
+      "ko": "마임꽁꽁",
+      "ru": "Морпеко",
+      "zh_hans": "踏冰人偶",
+      "zh_hant": "踏冰人偶"
     },
     "ranking": 511,
     "moves": {
@@ -14078,20 +14113,17 @@
       "ground",
       "ghost"
     ],
-    "tags": [
-      "galarian"
-    ],
     "speciesName": {
-      "de": "Runerigus",
-      "fr": "Runerigus",
+      "de": "Oghnatoll",
+      "fr": "Tutétékri",
       "en": "Runerigus",
       "es": "Runerigus",
-      "th": "Runerigus",
-      "ja": "Runerigus",
-      "ko": "Runerigus",
-      "ru": "Runerigus",
-      "zh_hans": "Runerigus",
-      "zh_hant": "Runerigus"
+      "th": "บาลิโคโอรุ",
+      "ja": "デスバーン",
+      "ko": "데스판",
+      "ru": "Мистер Райм",
+      "zh_hans": "死神板",
+      "zh_hant": "死神板"
     },
     "ranking": 429,
     "moves": {
@@ -14145,15 +14177,24 @@
     ]
   },
   "falinks": {
-    "legal": false,
+    "legal": true,
     "dex": 870,
     "types": [
       "fighting",
       "none"
     ],
-    "tags": [
-      "unreleased"
-    ]
+    "speciesName": {
+      "de": "Legios",
+      "fr": "Hexadron",
+      "en": "Falinks",
+      "es": "Falinks",
+      "th": "บาจินอุนิ",
+      "ja": "タイレーツ",
+      "ko": "대여르",
+      "ru": "Pincurchin",
+      "zh_hans": "列阵兵",
+      "zh_hant": "列陣兵"
+    }
   },
   "pincurchin": {
     "legal": false,
@@ -14419,23 +14460,35 @@
       "unreleased"
     ]
   },
+  "zacian_hero": {
+    "legal": true,
+    "dex": 888,
+    "types": [
+      "fairy",
+      "none"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": {
+      "de": "Zacian (Hero)",
+      "fr": "Zacian (Hero)",
+      "en": "Zacian (Hero)",
+      "es": "Zacian (Hero)",
+      "th": "ซาเชียน (Hero)",
+      "ja": "ザシアン (Hero)",
+      "ko": "자시안 (Hero)",
+      "ru": "Зэйшиан (Hero)",
+      "zh_hans": "苍响 (Hero)",
+      "zh_hant": "蒼響 (Hero)"
+    }
+  },
   "zacian_crowned_sword": {
     "legal": false,
     "dex": 888,
     "types": [
       "fairy",
       "steel"
-    ],
-    "tags": [
-      "unreleased"
-    ]
-  },
-  "zacian_hero": {
-    "legal": false,
-    "dex": 888,
-    "types": [
-      "fairy",
-      "none"
     ],
     "tags": [
       "unreleased"
@@ -14452,23 +14505,35 @@
       "unreleased"
     ]
   },
+  "zamazenta_hero": {
+    "legal": true,
+    "dex": 889,
+    "types": [
+      "fighting",
+      "none"
+    ],
+    "tags": [
+      "legendary"
+    ],
+    "speciesName": {
+      "de": "Zamazenta (Hero)",
+      "fr": "Zamazenta (Hero)",
+      "en": "Zamazenta (Hero)",
+      "es": "Zamazenta (Hero)",
+      "th": "ซามาเซนตา (Hero)",
+      "ja": "ザマゼンタ (Hero)",
+      "ko": "자마젠타 (Hero)",
+      "ru": "Земазента (Hero)",
+      "zh_hans": "藏玛然特 (Hero)",
+      "zh_hant": "藏瑪然特 (Hero)"
+    }
+  },
   "zamazenta_crowned_shield": {
     "legal": false,
     "dex": 889,
     "types": [
       "fighting",
       "steel"
-    ],
-    "tags": [
-      "unreleased"
-    ]
-  },
-  "zamazenta_hero": {
-    "legal": false,
-    "dex": 889,
-    "types": [
-      "fighting",
-      "none"
     ],
     "tags": [
       "unreleased"

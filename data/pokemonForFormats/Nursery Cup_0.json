@@ -554,6 +554,14 @@
       "none"
     ]
   },
+  "pikachu_kariyushi": {
+    "legal": false,
+    "dex": 25,
+    "types": [
+      "electric",
+      "none"
+    ]
+  },
   "pikachu_libre": {
     "legal": false,
     "dex": 25,
@@ -10361,6 +10369,9 @@
     "types": [
       "fairy",
       "none"
+    ],
+    "tags": [
+      "legendary"
     ]
   },
   "yveltal": {
@@ -10568,9 +10579,6 @@
     "types": [
       "normal",
       "none"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "greedent": {
@@ -10579,9 +10587,6 @@
     "types": [
       "normal",
       "none"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "rookidee": {
@@ -10700,9 +10705,6 @@
     "types": [
       "normal",
       "none"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "dubwool": {
@@ -10711,9 +10713,6 @@
     "types": [
       "normal",
       "none"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "chewtle": {
@@ -11107,9 +11106,6 @@
     "types": [
       "dark",
       "normal"
-    ],
-    "tags": [
-      "galarian"
     ]
   },
   "perrserker": {
@@ -11118,9 +11114,6 @@
     "types": [
       "steel",
       "none"
-    ],
-    "tags": [
-      "galarian"
     ]
   },
   "cursola": {
@@ -11140,9 +11133,6 @@
     "types": [
       "fighting",
       "none"
-    ],
-    "tags": [
-      "galarian"
     ]
   },
   "mr_rime": {
@@ -11151,9 +11141,6 @@
     "types": [
       "ice",
       "psychic"
-    ],
-    "tags": [
-      "galarian"
     ]
   },
   "runerigus": {
@@ -11162,9 +11149,6 @@
     "types": [
       "ground",
       "ghost"
-    ],
-    "tags": [
-      "galarian"
     ]
   },
   "milcery": {
@@ -11195,9 +11179,6 @@
     "types": [
       "fighting",
       "none"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "pincurchin": {
@@ -11464,23 +11445,23 @@
       "unreleased"
     ]
   },
-  "zacian_crowned_sword": {
-    "legal": false,
-    "dex": 888,
-    "types": [
-      "fairy",
-      "steel"
-    ],
-    "tags": [
-      "unreleased"
-    ]
-  },
   "zacian_hero": {
     "legal": false,
     "dex": 888,
     "types": [
       "fairy",
       "none"
+    ],
+    "tags": [
+      "legendary"
+    ]
+  },
+  "zacian_crowned_sword": {
+    "legal": false,
+    "dex": 888,
+    "types": [
+      "fairy",
+      "steel"
     ],
     "tags": [
       "unreleased"
@@ -11497,23 +11478,23 @@
       "unreleased"
     ]
   },
-  "zamazenta_crowned_shield": {
-    "legal": false,
-    "dex": 889,
-    "types": [
-      "fighting",
-      "steel"
-    ],
-    "tags": [
-      "unreleased"
-    ]
-  },
   "zamazenta_hero": {
     "legal": false,
     "dex": 889,
     "types": [
       "fighting",
       "none"
+    ],
+    "tags": [
+      "legendary"
+    ]
+  },
+  "zamazenta_crowned_shield": {
+    "legal": false,
+    "dex": 889,
+    "types": [
+      "fighting",
+      "steel"
     ],
     "tags": [
       "unreleased"

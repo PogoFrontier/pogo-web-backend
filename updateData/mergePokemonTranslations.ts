@@ -211,6 +211,8 @@ async function mergePokemon() {
                 new_pokemon[parseName(en[i]) + "_rock_star"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_rockstar
                 new_pokemon[parseName(en[i]) + "_pop_star"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_popstar
                 new_pokemon[parseName(en[i]) + "_5th_anniversary"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_5thanniversary
+                new_pokemon[parseName(en[i]) + "_kariyushi"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_kariyushi
+
        
             }
             //special formatting needed for mewtwo
@@ -235,6 +237,52 @@ async function mergePokemon() {
                 new_pokemon[parseName(en[i]) + "_rainy"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_rainy
                 new_pokemon[parseName(en[i]) + "_snowy"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_snowy
                 new_pokemon[parseName(en[i]) + "_sunny"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_sunny
+            }
+            if(parseName(en[i]).startsWith("hoopa")){
+                new_pokemon[parseName(en[i]) + "_confined"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_confined
+                new_pokemon[parseName(en[i]) + "_unbound"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_unbound
+            }
+            if(parseName(en[i]).startsWith("toxtricity")){
+                new_pokemon[parseName(en[i]) + "_amped"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_amped
+                new_pokemon[parseName(en[i]) + "_low_key"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_low_key
+            }
+            if(parseName(en[i]).startsWith("sinistea")){
+                new_pokemon[parseName(en[i]) + "_antique"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_antique
+                new_pokemon[parseName(en[i]) + "_phony"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_phony
+            }
+            if(parseName(en[i]).startsWith("polteageist")){
+                new_pokemon[parseName(en[i]) + "_antique"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_antique
+                new_pokemon[parseName(en[i]) + "_phony"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_phony
+            }
+            if(parseName(en[i]).startsWith("eiscue")){
+                new_pokemon[parseName(en[i]) + "_ice"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_ice
+                new_pokemon[parseName(en[i]) + "_noice"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_noice
+            }
+            if(parseName(en[i]).startsWith("indeedee")){
+                new_pokemon[parseName(en[i]) + "_female"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_female
+                new_pokemon[parseName(en[i]) + "_male"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_male
+            }
+            if(parseName(en[i]).startsWith("morpeko")){
+                new_pokemon[parseName(en[i]) + "_full_belly"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_full_belly
+                new_pokemon[parseName(en[i]) + "_hangry"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_hangry
+            }
+            if(parseName(en[i]).startsWith("zacian")){
+                new_pokemon[parseName(en[i]) + "_hero"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_hero
+                new_pokemon[parseName(en[i]) + "_crowned_sword"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_crowned_sword
+            }
+            if(parseName(en[i]).startsWith("zamazenta")){
+                new_pokemon[parseName(en[i]) + "_hero"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_hero
+                new_pokemon[parseName(en[i]) + "_crowned_shield"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_crowned_sword
+            }
+            if(parseName(en[i]).startsWith("eternatus")){
+                new_pokemon[parseName(en[i]) + "_eternamax"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_eternamax
+            }
+            if(parseName(en[i]).startsWith("urshifu")){
+                new_pokemon[parseName(en[i]) + "_rapid_strike"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_rapid_strike
+                new_pokemon[parseName(en[i]) + "_single_strike"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_single_strike
+            }
+            if(parseName(en[i]).startsWith("calyrex")){
+                new_pokemon[parseName(en[i]) + "_ice_rider"].speciesName[lang] = eval(lang)[i] + " " + strings.pokemon_ice_rider
             }
 
             //mega pokemon except charizard
@@ -274,14 +322,6 @@ async function mergePokemon() {
             new_pokemon[parseName(en[i])].speciesName[lang] = eval(lang)[i]
         }
         
-        //Since the API does not yet have gen 8 pokemon, we have to add those manually.
-        Object.keys(new_pokemon).forEach(
-            x => {
-                if (!new_pokemon[x].speciesName[lang]) {
-                    new_pokemon[x].speciesName[lang] = parseId(new_pokemon[x].speciesId)
-                }
-            }
-        )
     }
     
     fs.writeFileSync("data/pokemon.json", JSON.stringify(new_pokemon, null, 2))
