@@ -8,6 +8,5 @@ export default {
   "auth_uri": process.env.AUTH_URI,
   "token_uri": process.env.TOKEN_URI,
   "auth_provider_x509_cert_url": process.env.AUTH_PROVIDER,
-  "client_x509_cert_url": process.env.CLIENT_URL,
-  "lokalise_key" : process.env.LOKALISE_KEY
+  "client_x509_cert_url": process.env.CLIENT_URL
 }
