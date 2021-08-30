@@ -37,8 +37,10 @@ export interface MoveAnimParticle {
 export interface MoveAnim {
   type: "ca" | "fa"
   particles: MoveAnimParticle[]
-  self?: "wiggle" | "basic" | "jump" | "squish" | "maximize" | "minimize" | "fly" | "dig" | "teleport" | "blitz"
-  opponent?: "wiggle" | "basic" | "jump" | "squish" | "maximize" | "minimize" | "fly" | "dig" | "teleport" | "blitz"
+  self?: "wiggle" | "basic" | "jump" | "squish" | "maximize" | "minimize" | "fly" | "dig" | "teleport" | "blitz" | "knockback"
+  selfDelay?: number
+  opponent?: "wiggle" | "basic" | "jump" | "squish" | "maximize" | "minimize" | "fly" | "dig" | "teleport" | "blitz" | "knockback"
+  opponentDelay?: number
   background?: {
     color: string
     name?: string
