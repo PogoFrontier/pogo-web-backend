@@ -115,31 +115,75 @@ router.post('/', async (req, res) => {
 // @desc Update a users teams, validate with token
 // @route POST /api/users/setteams
 // @access Protected
-router.post('/setteams', 
-    (req, res, next) => protect(req, res, next), 
+router.post('/setteams',
+    (req, res, next) => protect(req, res, next),
     (req: any, res) => {
-        const {teams} = req.body;
-        if(teams){
-            try{
+        const { teams } = req.body;
+        if (teams) {
+            try {
                 const docRef = firestore.collection('users').doc(req.user.googleId);
                 docRef.get().then(user => {
-                    if(user.data()){
-                        docRef.update({teams: teams}).then(() => {
+                    if (user.data()) {
+                        docRef.update({ teams: teams }).then(() => {
                             res.json(user.data());
                         }).catch(err => {
                             console.log(err);
-                            res.sendStatus(500).json({error: "Internal server error"})
+                            res.sendStatus(500).json({ error: "Internal server error" })
                         });
-                    }else{
-                        res.sendStatus(404).json({error: `User not found.`})
+                    } else {
+                        res.sendStatus(404).json({ error: `User not found.` })
                     }
                 }).catch(err => {
                     console.log(err);
-                    res.sendStatus(500).json({error: "Internal server error"})
+                    res.sendStatus(500).json({ error: "Internal server error" })
                 })
-            }catch(err){
+            } catch (err) {
                 console.log(err);
-                res.sendStatus(500).json({error: "Internal server error"});
+                res.sendStatus(500).json({ error: "Internal server error" });
+            }
+        }
+    }
+)
+
+// @desc Update a users username, validate with token
+// @route POST /api/users/username
+// @access Protected
+router.post('/username',
+    (req, res, next) => protect(req, res, next),
+    (req: any, res) => {
+        const { username } = req.body;
+        if (username) {
+            try {
+                firestore.collection('users').where("username", "==", username).get().
+                    then((duplicate) => {
+                        if(!duplicate.empty) {
+                            res.sendStatus(409).json({ error: `duplicate` });
+                            return;
+                        }
+
+                        const docRef = firestore.collection('users').doc(req.user.googleId);
+                        docRef.get().then(user => {
+                            if (user.data()) {
+                                docRef.update({ username: username }).then((writeResult) => {
+                                    res.json({...user, username: username});
+                                }).catch(err => {
+                                    console.log(err);
+                                    res.sendStatus(500).json({ error: "Internal server error" })
+                                });
+                            } else {
+                                res.sendStatus(404).json({ error: `User not found.` })
+                            }
+                        }).catch(err => {
+                            console.log(err);
+                            res.sendStatus(500).json({ error: "Internal server error" })
+                        })
+                    }).catch(err => {
+                        console.log(err);
+                        res.sendStatus(500).json({ error: "Internal server error" })
+                    });
+            } catch (err) {
+                console.log(err);
+                res.sendStatus(500).json({ error: "Internal server error" });
             }
         }
     }

@@ -125,7 +125,7 @@ router.get('/:id', (req, res) => {
         let result: any = {}
 
         const movesetOption = req.query.movesetOption;
-        result = movesetOption === "mainseries" ? pokemon2[req.params.id] : pokemon[req.params.id];
+        result = movesetOption === "mainseries" ? { ...pokemon2[req.params.id] } : { ...pokemon[req.params.id] };
         if (movesetOption === "norestrictions") {
             result.fastMoves = quickmoves;
             result.chargedMoves = chargemoves;
