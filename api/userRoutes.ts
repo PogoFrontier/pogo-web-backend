@@ -1,4 +1,4 @@
-import e from "express";
+import e, { request } from "express";
 import { firestore } from "../firestore/firestore";
 import {protect, generateToken} from '../actions/api_utils';
 
@@ -209,31 +209,76 @@ router.get('/friends',
     }
 )
 
+// @desc Find out if a friend request is possible
+// @route POST /api/users/request/possible/:username
+// @access Protected
+router.get('/request/possible/:username',
+    (req, res, next) => protect(req, res, next),
+    (req: any, res) => {
+        if (!!req.params.username) {
+            try {
+                const friendDocRef = firestore.collection('users').where("username", "==", req.params.username)
+                friendDocRef.get().then((friendToUpdate) => {
+                    if (!friendToUpdate.empty) {
+                        friendToUpdate.forEach((newFriendMaybe) => {
+                            if (!newFriendMaybe.data().requests?.includes(req.user.googleId)) {
+                                res.sendStatus(200);
+                            } else {
+                                //return err, request already exists
+                                res.sendStatus(403).json({ error: "Request already exists!" })
+                            }
+                        })
+                    } else {
+                        console.log("User not found");
+                        res.sendStatus(404).json({ error: "User not found" });
+                    }
+                }).catch(err => {
+                    console.log(err);
+                    res.sendStatus(500).json({ error: "Internal server error" })
+                })
+            } catch (err) {
+                console.log(err);
+                res.sendStatus(400).json({ error: "User to request not found." })
+            }
+        }
+    }
+)
+
 // @desc Send friend request to a user
 // @route POST /api/users/request/send
 // @access Protected
 router.post('/request/send', 
     (req, res, next) => protect(req, res, next),
     (req: any, res) => {
-        if(!!req.body.googleId){
+        if(!!req.body.username){
             try{
-                const friendDocRef = firestore.collection('users').doc(req.body.googleId)
-                friendDocRef.get().then((friendToUpdate: any) => {
-                    if(friendToUpdate.data()){
-                        const friendsRequests: string[] = friendToUpdate.data().requests || [];
-                        if(!friendsRequests.includes(req.user.googleId)){
-                            friendDocRef.update({
-                                requests: [...friendsRequests, req.user.googleId]
-                            }).then(() => {
-                                res.sendStatus(200);
-                            }).catch(err => {
-                                console.log(err);
-                                res.sendStatus(500).json({error: "Internal server error"})
-                            });
-                        }else{
-                            //return err, request already exists
-                            res.sendStatus(403).json({error: "Request already exists!"})
-                        }
+                // Get user with this name
+                const friendDocRef = firestore.collection('users').where("username", "==", req.body.username)
+                friendDocRef.get().then((friendToUpdate) => {
+
+                    // Check if we can send a friend request
+                    if (!friendToUpdate.empty) {
+                        friendToUpdate.forEach((newFriendMaybe) => {
+                            let requests = newFriendMaybe.data().requests
+                            if (!requests) {
+                                requests = []
+                            }
+                            if (!requests.includes(req.user.googleId)) {
+
+                                // Send friend request
+                                firestore.collection('users').doc(newFriendMaybe.id).update({
+                                    requests: [...requests, req.user.googleId]
+                                }).then(() => {
+                                    res.sendStatus(200);
+                                }).catch((err: Error) => {
+                                    console.log(err);
+                                    res.sendStatus(500).json({ error: "Internal server error" })
+                                });
+                            } else {
+                                //return err, request already exists
+                                res.sendStatus(403).json({ error: "Request already exists!" })
+                            }
+                        })
                     } else {
                         console.log("User not found");
                         res.sendStatus(400).json({error: "User to request not found."});
