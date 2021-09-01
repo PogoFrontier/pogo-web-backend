@@ -165,7 +165,7 @@ router.post('/username',
                         docRef.get().then(user => {
                             if (user.data()) {
                                 docRef.update({ username: username }).then((writeResult) => {
-                                    res.json({...user, username: username});
+                                    res.json({...user.data(), username: username});
                                 }).catch(err => {
                                     console.log(err);
                                     res.sendStatus(500).json({ error: "Internal server error" })
