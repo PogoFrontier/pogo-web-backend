@@ -220,16 +220,29 @@ router.get('/request/possible/:username',
                 const friendDocRef = firestore.collection('users').where("username", "==", req.params.username)
                 friendDocRef.get().then((friendToUpdate) => {
                     if (!friendToUpdate.empty) {
+                        let index0 = true
                         friendToUpdate.forEach((newFriendMaybe) => {
+                            if(!index0) {
+                                return
+                            }
+                            index0 = false
                             if (!newFriendMaybe.data().requests?.includes(req.user.googleId)) {
-                                res.sendStatus(200);
+                                firestore.collection('users').doc(req.user.googleId).get().then(sender => {
+                                    if (sender.data()?.requests?.includes(newFriendMaybe.id)) {
+                                        res.sendStatus(409)
+                                        return
+                                    }
+                                    res.sendStatus(200);
+                                }).catch(err => {
+                                    console.log(err);
+                                    res.sendStatus(500).json({ error: "Internal server error" })
+                                })
                             } else {
                                 //return err, request already exists
                                 res.sendStatus(403).json({ error: "Request already exists!" })
                             }
                         })
                     } else {
-                        console.log("User not found");
                         res.sendStatus(404).json({ error: "User not found" });
                     }
                 }).catch(err => {
@@ -264,16 +277,25 @@ router.post('/request/send',
                                 requests = []
                             }
                             if (!requests.includes(req.user.googleId)) {
+                                firestore.collection('users').doc(req.user.googleId).get().then(sender => {
+                                    if(sender.data()?.requests?.includes(newFriendMaybe.id)) {
+                                        res.sendStatus(409)
+                                        return
+                                    }
 
-                                // Send friend request
-                                firestore.collection('users').doc(newFriendMaybe.id).update({
-                                    requests: [...requests, req.user.googleId]
-                                }).then(() => {
-                                    res.sendStatus(200);
-                                }).catch((err: Error) => {
+                                    // Send friend request
+                                    firestore.collection('users').doc(newFriendMaybe.id).update({
+                                        requests: [...requests, req.user.googleId]
+                                    }).then(() => {
+                                        res.sendStatus(200);
+                                    }).catch((err: Error) => {
+                                        console.log(err);
+                                        res.sendStatus(500).json({ error: "Internal server error" })
+                                    });
+                                }).catch(err => {
                                     console.log(err);
                                     res.sendStatus(500).json({ error: "Internal server error" })
-                                });
+                                })
                             } else {
                                 //return err, request already exists
                                 res.sendStatus(403).json({ error: "Request already exists!" })
