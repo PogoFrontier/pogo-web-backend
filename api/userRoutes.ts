@@ -226,9 +226,9 @@ router.get('/request/possible/:username',
                                 return
                             }
                             index0 = false
-                            if (!newFriendMaybe.data().requests?.includes(req.user.googleId)) {
+                            if (!newFriendMaybe.data().requests?.map((r: any) => r.id).includes(req.user.googleId)) {
                                 firestore.collection('users').doc(req.user.googleId).get().then(sender => {
-                                    if (sender.data()?.requests?.includes(newFriendMaybe.id)) {
+                                    if (sender.data()?.requests?.map((r: any) => r.id).includes(newFriendMaybe.id)) {
                                         res.sendStatus(409)
                                         return
                                     }
@@ -276,16 +276,20 @@ router.post('/request/send',
                             if (!requests) {
                                 requests = []
                             }
-                            if (!requests.includes(req.user.googleId)) {
+                            if (!requests.map((r: any) => r.id).includes(req.user.googleId)) {
                                 firestore.collection('users').doc(req.user.googleId).get().then(sender => {
-                                    if(sender.data()?.requests?.includes(newFriendMaybe.id)) {
+                                    if(sender.data()?.requests?.map((r: any) => r.id).includes(newFriendMaybe.id)) {
                                         res.sendStatus(409)
+                                        return
+                                    }
+                                    if (!sender.data()?.username) {
+                                        res.sendStatus(401)
                                         return
                                     }
 
                                     // Send friend request
                                     firestore.collection('users').doc(newFriendMaybe.id).update({
-                                        requests: [...requests, req.user.googleId]
+                                        requests: [...requests, { id: req.user.googleId, username: sender.data()?.username}]
                                     }).then(() => {
                                         res.sendStatus(200);
                                     }).catch((err: Error) => {
@@ -334,17 +338,19 @@ router.post('/request/accept',
                 userDocRef.get().then((userToUpdate: any) => {
                     if(userToUpdate.data()){
                         friendDocRef.get().then((friendToUpdate: any) => {
-                            if(friendToUpdate.data()){
-                                const usersRequests: string[] = userToUpdate.data().requests || [];
+                            if (friendToUpdate.data()) {
+                                const usersRequests: { id: string, username: string }[] = userToUpdate.data().requests || [];
                                 const usersFriends: string[] = userToUpdate.data().friends || [];
                                 const friendsList: string[] = friendToUpdate.data().friends || [];
+                                const reqIndex = usersRequests.map(r => r.id).indexOf(req.body.googleId)
                                 if(
-                                    usersRequests.includes(friendID) && 
+                                    reqIndex !== -1 && 
                                     !usersFriends.includes(friendID) &&
                                     !friendsList.includes(userID)
-                                ){
+                                ) {
+                                    usersRequests.splice(reqIndex, 1)
                                     userDocRef.update({
-                                        requests: usersRequests.splice(usersRequests.indexOf(friendID)),
+                                        requests: usersRequests,
                                         friends: [...usersFriends, friendID]
                                     }).then(() => {
                                         console.log('updated users friend list');
@@ -398,10 +404,12 @@ router.post('/request/deny',
                 const userDocRef = firestore.collection('users').doc(req.user.googleId);
                 userDocRef.get().then((userToUpdate: any) => {
                     if(userToUpdate.data()){
-                        const usersRequests: string[] = userToUpdate.data().requests || [];
-                        if(usersRequests.includes(req.body.googleId)){
+                        const usersRequests: {id: string, username: string}[] = userToUpdate.data().requests || [];
+                        const index = usersRequests.map(r => r.id).indexOf(req.body.googleId)
+                        if (index !== -1){
+                            usersRequests.splice(index, 1)
                             userDocRef.update({
-                                requests: usersRequests.splice(usersRequests.indexOf(req.body.googleId))
+                                requests: usersRequests
                             }).then(() => {
                                 res.sendStatus(200);
                             }).catch(err => {
@@ -410,7 +418,7 @@ router.post('/request/deny',
                             });
                         }else{
                             console.log("User not found");
-                            res.sendStatus(400).json({error: "User to deny request from not found."});
+                            res.sendStatus(400)
                         }
                     } else {
                         res.sendStatus(500).json({error: "Internal server error"})
@@ -494,7 +502,7 @@ router.get('/search/:username', (req: any, res) => {
     var name = JSON.stringify(req.params.username);
     name = JSON.parse(name.toLowerCase());
     const collRef = firestore.collection('users');
-    collRef.where('usernameNCS', '>=', name).where('usernameNCS', '<=', name+'\uf8ff')
+    collRef.where('username', '>=', name).where('username', '<=', name+'\uf8ff')
     .get().then(querySnapshot => {
         if(querySnapshot.size > 0)
             res.json(querySnapshot.docs.map(doc => doc.data().username));
