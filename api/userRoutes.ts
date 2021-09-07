@@ -23,11 +23,11 @@ router.get('/signin/:id', async (req, res) => {
             }
         }).catch(err => {
             console.log(err);
-            res.sendStatus(500).json({error: "Internal server error"})
+            res.sendStatus(500)
         })
     }catch(err){
         console.log(err);
-        res.sendStatus(500).json({error: "Internal server error"});
+        res.sendStatus(500)
     }
 });
 
@@ -45,15 +45,15 @@ router.get('/profile',
                     res.json(user.data());
                 });
             }else{
-                res.sendStatus(404).json({error: `User not found.`})
+                res.sendStatus(404)
             }
         }).catch(err => {
             console.log(err);
-            res.sendStatus(500).json({error: "Internal server error"})
+            res.sendStatus(500)
         })
     }catch(err){
         console.log(err);
-        res.sendStatus(500).json({error: "Internal server error"});
+        res.sendStatus(500);
     }
 });
 
@@ -68,7 +68,7 @@ router.post('/', async (req, res) => {
             const docRef = firestore.collection('users').doc(userAuth.uid);
             docRef.get().then(user => {
                 if(user.data()){
-                    res.sendStatus(401).json({error: 'User already exists.'});
+                    res.sendStatus(401)
                 }else{
                     const un = username ? username : userAuth.displayName //.sanitize
                     docRef.set({
@@ -97,7 +97,7 @@ router.post('/', async (req, res) => {
                                     token: generateToken(userAuth.uid)
                                 });
                             }else{
-                                res.sendStatus(500).json({error: 'Internal server error'});
+                                res.sendStatus(500)
                             }
                         });
                     });
@@ -108,7 +108,7 @@ router.post('/', async (req, res) => {
         }
     }catch(err){
         console.log(err);
-        res.sendStatus(500).json({error: "Internal server error"});
+        res.sendStatus(500);
     }
 })
 
@@ -128,18 +128,18 @@ router.post('/setteams',
                             res.json(user.data());
                         }).catch(err => {
                             console.log(err);
-                            res.sendStatus(500).json({ error: "Internal server error" })
+                            res.sendStatus(500);
                         });
                     } else {
-                        res.sendStatus(404).json({ error: `User not found.` })
+                        res.sendStatus(404)
                     }
                 }).catch(err => {
                     console.log(err);
-                    res.sendStatus(500).json({ error: "Internal server error" })
+                    res.sendStatus(500);
                 })
             } catch (err) {
                 console.log(err);
-                res.sendStatus(500).json({ error: "Internal server error" });
+                res.sendStatus(500);
             }
         }
     }
@@ -157,7 +157,7 @@ router.post('/username',
                 firestore.collection('users').where("username", "==", username).get().
                     then((duplicate) => {
                         if(!duplicate.empty) {
-                            res.sendStatus(409).json({ error: `duplicate` });
+                            res.sendStatus(409);
                             return;
                         }
 
@@ -168,22 +168,22 @@ router.post('/username',
                                     res.json({...user.data(), username: username});
                                 }).catch(err => {
                                     console.log(err);
-                                    res.sendStatus(500).json({ error: "Internal server error" })
+                                    res.sendStatus(500);
                                 });
                             } else {
-                                res.sendStatus(404).json({ error: `User not found.` })
+                                res.sendStatus(404);
                             }
                         }).catch(err => {
                             console.log(err);
-                            res.sendStatus(500).json({ error: "Internal server error" })
+                            res.sendStatus(500);
                         })
                     }).catch(err => {
                         console.log(err);
-                        res.sendStatus(500).json({ error: "Internal server error" })
+                        res.sendStatus(500);
                     });
             } catch (err) {
                 console.log(err);
-                res.sendStatus(500).json({ error: "Internal server error" });
+                res.sendStatus(500);
             }
         }
     }
@@ -204,7 +204,7 @@ router.get('/friends',
                 res.json([]);
         }).catch(err => {
             console.log(err);
-            res.sendStatus(500).json({error: "Internal server error"})
+            res.sendStatus(500);
         });
     }
 )
@@ -235,23 +235,23 @@ router.get('/request/possible/:username',
                                     res.sendStatus(200);
                                 }).catch(err => {
                                     console.log(err);
-                                    res.sendStatus(500).json({ error: "Internal server error" })
+                                    res.sendStatus(500);
                                 })
                             } else {
                                 //return err, request already exists
-                                res.sendStatus(403).json({ error: "Request already exists!" })
+                                res.sendStatus(403);
                             }
                         })
                     } else {
-                        res.sendStatus(404).json({ error: "User not found" });
+                        res.sendStatus(404);
                     }
                 }).catch(err => {
                     console.log(err);
-                    res.sendStatus(500).json({ error: "Internal server error" })
+                    res.sendStatus(500);
                 })
             } catch (err) {
                 console.log(err);
-                res.sendStatus(400).json({ error: "User to request not found." })
+                res.sendStatus(400);
             }
         }
     }
@@ -294,28 +294,28 @@ router.post('/request/send',
                                         res.sendStatus(200);
                                     }).catch((err: Error) => {
                                         console.log(err);
-                                        res.sendStatus(500).json({ error: "Internal server error" })
+                                        res.sendStatus(500);
                                     });
                                 }).catch(err => {
                                     console.log(err);
-                                    res.sendStatus(500).json({ error: "Internal server error" })
+                                    res.sendStatus(500);
                                 })
                             } else {
                                 //return err, request already exists
-                                res.sendStatus(403).json({ error: "Request already exists!" })
+                                res.sendStatus(403);
                             }
                         })
                     } else {
                         console.log("User not found");
-                        res.sendStatus(400).json({error: "User to request not found."});
+                        res.sendStatus(400);
                     }
                 }).catch(err => {
                     console.log(err);
-                    res.sendStatus(500).json({error: "Internal server error"})
+                    res.sendStatus(500);
                 })
             }catch(err){
                 console.log(err);
-                res.sendStatus(400).json({error: "User to request not found."})
+                res.sendStatus(400);
             }
         }
     }
@@ -361,33 +361,33 @@ router.post('/request/accept',
                                             res.sendStatus(200);
                                         }).catch(err => {
                                             console.log(err);
-                                            res.sendStatus(500).json({error: "Internal server error"})
+                                            res.sendStatus(500);
                                         });
                                     }).catch(err => {
                                         console.log(err);
-                                        res.sendStatus(500).json({error: "Internal server error"})
+                                        res.sendStatus(500);
                                     });
                                 }else{
-                                    res.sendStatus(403).json({error: "Request has already been accepted, or no longer exists in your request list."})
+                                    res.sendStatus(403);
                                 }
                             }else{
                                 console.log('Attempted to add friend that does not exist');
-                                res.sendStatus(400).json({error: "User to accept request from not found."})
+                                res.sendStatus(400);
                             }
                         }).catch(err => {
                             console.log(err);
-                            res.sendStatus(500).json({error: "Internal server error"})
+                            res.sendStatus(500);
                         });
                     } else {
-                        res.sendStatus(500).json({error: "Internal server error"})
+                        res.sendStatus(500);
                     }
                 }).catch(err => {
                     console.log(err);
-                    res.sendStatus(500).json({error: "Internal server error"})
+                    res.sendStatus(500)
                 })
             }catch(err){
                 console.log(err);
-                res.sendStatus(400).json({error: "User not found."})
+                res.sendStatus(500);
             }
         }
     }
@@ -414,22 +414,22 @@ router.post('/request/deny',
                                 res.sendStatus(200);
                             }).catch(err => {
                                 console.log(err);
-                                res.sendStatus(500).json({error: "Internal server error"})
+                                res.sendStatus(500)
                             });
                         }else{
                             console.log("User not found");
                             res.sendStatus(400)
                         }
                     } else {
-                        res.sendStatus(500).json({error: "Internal server error"})
+                        res.sendStatus(500)
                     }
                 }).catch(err => {
                     console.log(err);
-                    res.sendStatus(500).json({error: "Internal server error"})
+                    res.sendStatus(500)
                 });
             }catch(err){
                 console.log(err);
-                res.sendStatus(500).json({error: "Internal server error"})
+                res.sendStatus(500)
             }
         }
     }
@@ -467,30 +467,30 @@ router.post('/unfriend',
                                         res.sendStatus(200);
                                     }).catch(err => {
                                         console.log(err);
-                                        res.sendStatus(500).json({error: "Internal server error"})
+                                        res.sendStatus(500)
                                     });
                                 }).catch(err => {
                                     console.log(err);
-                                    res.sendStatus(500).json({error: "Internal server error"})
+                                    res.sendStatus(500)
                                 });
                             } else {
                                 console.log('Attempted to delete friend that does not exist');
-                                res.sendStatus(400).json({error: "User to delete not found."})
+                                res.sendStatus(400)
                             }
                         }).catch(err => {
                             console.log(err);
-                            res.sendStatus(500).json({error: "Internal server error"})
+                            res.sendStatus(500)
                         })
                     } else {
-                        res.sendStatus(500).json({error: "Internal server error"})
+                        res.sendStatus(500)
                     }
                 }).catch(err => {
                     console.log(err);
-                    res.sendStatus(500).json({error: "Internal server error"})
+                    res.sendStatus(500)
                 })
             }catch(err){
                 console.log(err);
-                res.sendStatus(400).json({error: "User not found."})
+                res.sendStatus(500)
             }
         }
     }
@@ -510,7 +510,7 @@ router.get('/search/:username', (req: any, res) => {
             res.json([]);
     }).catch(err => {
         console.log(err);
-        res.sendStatus(500).json({error: "Internal server error"})
+        res.sendStatus(500)
     });
 })
 
@@ -538,15 +538,15 @@ router.get('/friend/details/:uid', (req: any, res) => {
                     favorite
                 });
             }else{
-                res.sendStatus(400).json({error: "User not found."})
+                res.sendStatus(400)
             }
         }).catch(err => {
             console.log(err);
-            res.sendStatus(500).json({error: "Internal server error"})
+            res.sendStatus(500)
         });
     }catch(err){
         console.log(err);
-        res.sendStatus(500).json({error: "Internal server error"})
+        res.sendStatus(500)
     }
 });
 
