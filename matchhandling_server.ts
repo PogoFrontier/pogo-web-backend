@@ -14,7 +14,7 @@ import m  from "./data/moves.json";
 import r from "./data/rules.json";
 import onMatchmakingQuit from "./handlers/matchmaking/quit";
 import onMatchmakingSearchBattle from "./handlers/matchmaking/searchBattle";
-import { pubClient, subClient } from "./redis/clients";
+import { pubClient, subClient, storeClient } from "./redis/clients";
 import { checkToken } from "./actions/api_utils";
 import openChallenge from "./handlers/challenges/open";
 import quitChallenge from "./handlers/challenges/quit";
@@ -23,6 +23,8 @@ import accept from "./handlers/challenges/accept";
 import getAll from "./handlers/challenges/getAll";
 import startMatchChecking from "./handlers/matchmaking/matchChecker"
 import { v4 as uuid } from "uuid"
+import { getUserStatusKey } from "./redis/getKey";
+import { firestore } from "./firestore/firestore";
 startMatchChecking()
 
 export const moves: any = m;
@@ -53,6 +55,9 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
     const subClientForWS = subClient.duplicate();
 
     subClientForWS.on("message", (chan, msg) => {
+        if(user && !user.isGuest && isEnd(msg)) {
+            storeClient.set(getUserStatusKey(user.googleId), "idle")
+        } 
         ws.send(msg);
     });
 
@@ -84,6 +89,8 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
                 // Now that we have the userId we can listen to messages
                 subClientForWS.subscribe("messagesToUser:" + user.googleId);
                 ws.send("$Authentication Success")
+
+                storeClient.set(getUserStatusKey(user.googleId), "idle")
 
                 // Check for challenges
                 getAll(user.googleId)
@@ -134,9 +141,15 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
                     if (!formatsUsedForMatchmaking.find(item => deepEqual(payload.format, item))) {
                         formatsUsedForMatchmaking.push(payload.format);
                     }
+                    if(!user.isGuest) {
+                        storeClient.set(getUserStatusKey(user.googleId), "in matchmaking")
+                    }
                     onMatchmakingSearchBattle(user, payload);
                     break;
                 case CODE.matchmaking_quit:
+                    if (!user.isGuest) {
+                        storeClient.set(getUserStatusKey(user.googleId), "idle")
+                    }
                     onMatchmakingQuit(user, payload);
                     break;
                 default:
@@ -144,6 +157,10 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
             }
 
         } else{
+            if (!user.isGuest && isJoin(data)) {
+                storeClient.set(getUserStatusKey(user.googleId), "battling")
+            }
+
             // Publish on redis so the host of this room receives this
             const publication = {
                 sender: user.googleId,
@@ -164,6 +181,7 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
     ws.onclose = () => {
         subClientForWS.unsubscribe();
         subClientForWS.quit();
+
         if (user) {
             pubClient.publish("commands:" + room, JSON.stringify({
                 sender: user.googleId,
@@ -174,8 +192,18 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
                     }
                 }
             }));
+
             quitAll(user, formatsUsedForMatchmaking);
             quitAllChallenges(user.googleId)
+
+            if(!user.isGuest) {
+                storeClient.del(getUserStatusKey(user.googleId))
+
+                const docRef = firestore.collection('users').doc(user.googleId);
+                docRef.update({ lastActivity: new Date() }).catch(err => {
+                    console.error(err);
+                });
+            }
         }
     };
 }
@@ -232,6 +260,19 @@ function isMatchmaking(data: string): boolean {
     } catch (e) {
         return false;
     }
+}
+
+function isJoin(data: string): boolean {
+    try {
+        const { type } = JSON.parse(data);
+        return type === CODE.room_join;
+    } catch (e) {
+        return false;
+    }
+}
+
+function isEnd(data: string): boolean {
+    return data.endsWith("$end")
 }
 
 startServer();

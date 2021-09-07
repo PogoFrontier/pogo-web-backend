@@ -1,6 +1,8 @@
 import e, { request } from "express";
 import { firestore } from "../firestore/firestore";
 import {protect, generateToken} from '../actions/api_utils';
+import { storeClient } from "../redis/clients";
+import { getUserStatusKey } from "../redis/getKey";
 
 const router = e.Router();
  
@@ -197,10 +199,23 @@ router.get('/friends',
     (req: any, res) => {
         const collRef = firestore.collection('users');
         collRef.where('friends', 'array-contains', req.user.googleId)
-        .select("username", "lastLogin").get().then(querySnapshot => {
-            if(querySnapshot.size > 0)
-                res.json(querySnapshot.docs.map(doc => doc.data()));
-            else
+        .select("username", "lastActivity").get().then(querySnapshot => {
+            if (querySnapshot.size > 0) {
+                storeClient.mget(querySnapshot.docs.map(doc => getUserStatusKey(doc.id)), (err, reply) => {
+                    if (err) {
+                        console.log(err);
+                        res.sendStatus(500);
+                        return
+                    }
+
+                    res.json(querySnapshot.docs.map((doc, index) => {
+                        return {
+                            ...doc.data(),
+                            status: reply[index]
+                        }
+                    }));
+                })
+            } else
                 res.json([]);
         }).catch(err => {
             console.log(err);
