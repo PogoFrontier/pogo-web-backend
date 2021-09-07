@@ -1,4 +1,4 @@
-import e from "express";
+import e, { request } from "express";
 import { firestore } from "../firestore/firestore";
 import {protect, generateToken} from '../actions/api_utils';
 
@@ -23,11 +23,11 @@ router.get('/signin/:id', async (req, res) => {
             }
         }).catch(err => {
             console.log(err);
-            res.sendStatus(500).json({error: "Internal server error"})
+            res.sendStatus(500)
         })
     }catch(err){
         console.log(err);
-        res.sendStatus(500).json({error: "Internal server error"});
+        res.sendStatus(500)
     }
 });
 
@@ -45,15 +45,15 @@ router.get('/profile',
                     res.json(user.data());
                 });
             }else{
-                res.sendStatus(404).json({error: `User not found.`})
+                res.sendStatus(404)
             }
         }).catch(err => {
             console.log(err);
-            res.sendStatus(500).json({error: "Internal server error"})
+            res.sendStatus(500)
         })
     }catch(err){
         console.log(err);
-        res.sendStatus(500).json({error: "Internal server error"});
+        res.sendStatus(500);
     }
 });
 
@@ -68,7 +68,7 @@ router.post('/', async (req, res) => {
             const docRef = firestore.collection('users').doc(userAuth.uid);
             docRef.get().then(user => {
                 if(user.data()){
-                    res.sendStatus(401).json({error: 'User already exists.'});
+                    res.sendStatus(401)
                 }else{
                     const un = username ? username : userAuth.displayName //.sanitize
                     docRef.set({
@@ -97,7 +97,7 @@ router.post('/', async (req, res) => {
                                     token: generateToken(userAuth.uid)
                                 });
                             }else{
-                                res.sendStatus(500).json({error: 'Internal server error'});
+                                res.sendStatus(500)
                             }
                         });
                     });
@@ -108,7 +108,7 @@ router.post('/', async (req, res) => {
         }
     }catch(err){
         console.log(err);
-        res.sendStatus(500).json({error: "Internal server error"});
+        res.sendStatus(500);
     }
 })
 
@@ -128,18 +128,18 @@ router.post('/setteams',
                             res.json(user.data());
                         }).catch(err => {
                             console.log(err);
-                            res.sendStatus(500).json({ error: "Internal server error" })
+                            res.sendStatus(500);
                         });
                     } else {
-                        res.sendStatus(404).json({ error: `User not found.` })
+                        res.sendStatus(404)
                     }
                 }).catch(err => {
                     console.log(err);
-                    res.sendStatus(500).json({ error: "Internal server error" })
+                    res.sendStatus(500);
                 })
             } catch (err) {
                 console.log(err);
-                res.sendStatus(500).json({ error: "Internal server error" });
+                res.sendStatus(500);
             }
         }
     }
@@ -157,7 +157,7 @@ router.post('/username',
                 firestore.collection('users').where("username", "==", username).get().
                     then((duplicate) => {
                         if(!duplicate.empty) {
-                            res.sendStatus(409).json({ error: `duplicate` });
+                            res.sendStatus(409);
                             return;
                         }
 
@@ -165,25 +165,25 @@ router.post('/username',
                         docRef.get().then(user => {
                             if (user.data()) {
                                 docRef.update({ username: username }).then((writeResult) => {
-                                    res.json({...user, username: username});
+                                    res.json({...user.data(), username: username});
                                 }).catch(err => {
                                     console.log(err);
-                                    res.sendStatus(500).json({ error: "Internal server error" })
+                                    res.sendStatus(500);
                                 });
                             } else {
-                                res.sendStatus(404).json({ error: `User not found.` })
+                                res.sendStatus(404);
                             }
                         }).catch(err => {
                             console.log(err);
-                            res.sendStatus(500).json({ error: "Internal server error" })
+                            res.sendStatus(500);
                         })
                     }).catch(err => {
                         console.log(err);
-                        res.sendStatus(500).json({ error: "Internal server error" })
+                        res.sendStatus(500);
                     });
             } catch (err) {
                 console.log(err);
-                res.sendStatus(500).json({ error: "Internal server error" });
+                res.sendStatus(500);
             }
         }
     }
@@ -204,8 +204,56 @@ router.get('/friends',
                 res.json([]);
         }).catch(err => {
             console.log(err);
-            res.sendStatus(500).json({error: "Internal server error"})
+            res.sendStatus(500);
         });
+    }
+)
+
+// @desc Find out if a friend request is possible
+// @route POST /api/users/request/possible/:username
+// @access Protected
+router.get('/request/possible/:username',
+    (req, res, next) => protect(req, res, next),
+    (req: any, res) => {
+        if (!!req.params.username) {
+            try {
+                const friendDocRef = firestore.collection('users').where("username", "==", req.params.username)
+                friendDocRef.get().then((friendToUpdate) => {
+                    if (!friendToUpdate.empty) {
+                        let index0 = true
+                        friendToUpdate.forEach((newFriendMaybe) => {
+                            if(!index0) {
+                                return
+                            }
+                            index0 = false
+                            if (!newFriendMaybe.data().requests?.map((r: any) => r.id).includes(req.user.googleId)) {
+                                firestore.collection('users').doc(req.user.googleId).get().then(sender => {
+                                    if (sender.data()?.requests?.map((r: any) => r.id).includes(newFriendMaybe.id)) {
+                                        res.sendStatus(409)
+                                        return
+                                    }
+                                    res.sendStatus(200);
+                                }).catch(err => {
+                                    console.log(err);
+                                    res.sendStatus(500);
+                                })
+                            } else {
+                                //return err, request already exists
+                                res.sendStatus(403);
+                            }
+                        })
+                    } else {
+                        res.sendStatus(404);
+                    }
+                }).catch(err => {
+                    console.log(err);
+                    res.sendStatus(500);
+                })
+            } catch (err) {
+                console.log(err);
+                res.sendStatus(400);
+            }
+        }
     }
 )
 
@@ -215,36 +263,59 @@ router.get('/friends',
 router.post('/request/send', 
     (req, res, next) => protect(req, res, next),
     (req: any, res) => {
-        if(!!req.body.googleId){
+        if(!!req.body.username){
             try{
-                const friendDocRef = firestore.collection('users').doc(req.body.googleId)
-                friendDocRef.get().then((friendToUpdate: any) => {
-                    if(friendToUpdate.data()){
-                        const friendsRequests: string[] = friendToUpdate.data().requests || [];
-                        if(!friendsRequests.includes(req.user.googleId)){
-                            friendDocRef.update({
-                                requests: [...friendsRequests, req.user.googleId]
-                            }).then(() => {
-                                res.sendStatus(200);
-                            }).catch(err => {
-                                console.log(err);
-                                res.sendStatus(500).json({error: "Internal server error"})
-                            });
-                        }else{
-                            //return err, request already exists
-                            res.sendStatus(403).json({error: "Request already exists!"})
-                        }
+                // Get user with this name
+                const friendDocRef = firestore.collection('users').where("username", "==", req.body.username)
+                friendDocRef.get().then((friendToUpdate) => {
+
+                    // Check if we can send a friend request
+                    if (!friendToUpdate.empty) {
+                        friendToUpdate.forEach((newFriendMaybe) => {
+                            let requests = newFriendMaybe.data().requests
+                            if (!requests) {
+                                requests = []
+                            }
+                            if (!requests.map((r: any) => r.id).includes(req.user.googleId)) {
+                                firestore.collection('users').doc(req.user.googleId).get().then(sender => {
+                                    if(sender.data()?.requests?.map((r: any) => r.id).includes(newFriendMaybe.id)) {
+                                        res.sendStatus(409)
+                                        return
+                                    }
+                                    if (!sender.data()?.username) {
+                                        res.sendStatus(401)
+                                        return
+                                    }
+
+                                    // Send friend request
+                                    firestore.collection('users').doc(newFriendMaybe.id).update({
+                                        requests: [...requests, { id: req.user.googleId, username: sender.data()?.username}]
+                                    }).then(() => {
+                                        res.sendStatus(200);
+                                    }).catch((err: Error) => {
+                                        console.log(err);
+                                        res.sendStatus(500);
+                                    });
+                                }).catch(err => {
+                                    console.log(err);
+                                    res.sendStatus(500);
+                                })
+                            } else {
+                                //return err, request already exists
+                                res.sendStatus(403);
+                            }
+                        })
                     } else {
                         console.log("User not found");
-                        res.sendStatus(400).json({error: "User to request not found."});
+                        res.sendStatus(400);
                     }
                 }).catch(err => {
                     console.log(err);
-                    res.sendStatus(500).json({error: "Internal server error"})
+                    res.sendStatus(500);
                 })
             }catch(err){
                 console.log(err);
-                res.sendStatus(400).json({error: "User to request not found."})
+                res.sendStatus(400);
             }
         }
     }
@@ -267,17 +338,19 @@ router.post('/request/accept',
                 userDocRef.get().then((userToUpdate: any) => {
                     if(userToUpdate.data()){
                         friendDocRef.get().then((friendToUpdate: any) => {
-                            if(friendToUpdate.data()){
-                                const usersRequests: string[] = userToUpdate.data().requests || [];
+                            if (friendToUpdate.data()) {
+                                const usersRequests: { id: string, username: string }[] = userToUpdate.data().requests || [];
                                 const usersFriends: string[] = userToUpdate.data().friends || [];
                                 const friendsList: string[] = friendToUpdate.data().friends || [];
+                                const reqIndex = usersRequests.map(r => r.id).indexOf(req.body.googleId)
                                 if(
-                                    usersRequests.includes(friendID) && 
+                                    reqIndex !== -1 && 
                                     !usersFriends.includes(friendID) &&
                                     !friendsList.includes(userID)
-                                ){
+                                ) {
+                                    usersRequests.splice(reqIndex, 1)
                                     userDocRef.update({
-                                        requests: usersRequests.splice(usersRequests.indexOf(friendID)),
+                                        requests: usersRequests,
                                         friends: [...usersFriends, friendID]
                                     }).then(() => {
                                         console.log('updated users friend list');
@@ -288,33 +361,33 @@ router.post('/request/accept',
                                             res.sendStatus(200);
                                         }).catch(err => {
                                             console.log(err);
-                                            res.sendStatus(500).json({error: "Internal server error"})
+                                            res.sendStatus(500);
                                         });
                                     }).catch(err => {
                                         console.log(err);
-                                        res.sendStatus(500).json({error: "Internal server error"})
+                                        res.sendStatus(500);
                                     });
                                 }else{
-                                    res.sendStatus(403).json({error: "Request has already been accepted, or no longer exists in your request list."})
+                                    res.sendStatus(403);
                                 }
                             }else{
                                 console.log('Attempted to add friend that does not exist');
-                                res.sendStatus(400).json({error: "User to accept request from not found."})
+                                res.sendStatus(400);
                             }
                         }).catch(err => {
                             console.log(err);
-                            res.sendStatus(500).json({error: "Internal server error"})
+                            res.sendStatus(500);
                         });
                     } else {
-                        res.sendStatus(500).json({error: "Internal server error"})
+                        res.sendStatus(500);
                     }
                 }).catch(err => {
                     console.log(err);
-                    res.sendStatus(500).json({error: "Internal server error"})
+                    res.sendStatus(500)
                 })
             }catch(err){
                 console.log(err);
-                res.sendStatus(400).json({error: "User not found."})
+                res.sendStatus(500);
             }
         }
     }
@@ -331,30 +404,32 @@ router.post('/request/deny',
                 const userDocRef = firestore.collection('users').doc(req.user.googleId);
                 userDocRef.get().then((userToUpdate: any) => {
                     if(userToUpdate.data()){
-                        const usersRequests: string[] = userToUpdate.data().requests || [];
-                        if(usersRequests.includes(req.body.googleId)){
+                        const usersRequests: {id: string, username: string}[] = userToUpdate.data().requests || [];
+                        const index = usersRequests.map(r => r.id).indexOf(req.body.googleId)
+                        if (index !== -1){
+                            usersRequests.splice(index, 1)
                             userDocRef.update({
-                                requests: usersRequests.splice(usersRequests.indexOf(req.body.googleId))
+                                requests: usersRequests
                             }).then(() => {
                                 res.sendStatus(200);
                             }).catch(err => {
                                 console.log(err);
-                                res.sendStatus(500).json({error: "Internal server error"})
+                                res.sendStatus(500)
                             });
                         }else{
                             console.log("User not found");
-                            res.sendStatus(400).json({error: "User to deny request from not found."});
+                            res.sendStatus(400)
                         }
                     } else {
-                        res.sendStatus(500).json({error: "Internal server error"})
+                        res.sendStatus(500)
                     }
                 }).catch(err => {
                     console.log(err);
-                    res.sendStatus(500).json({error: "Internal server error"})
+                    res.sendStatus(500)
                 });
             }catch(err){
                 console.log(err);
-                res.sendStatus(500).json({error: "Internal server error"})
+                res.sendStatus(500)
             }
         }
     }
@@ -392,30 +467,30 @@ router.post('/unfriend',
                                         res.sendStatus(200);
                                     }).catch(err => {
                                         console.log(err);
-                                        res.sendStatus(500).json({error: "Internal server error"})
+                                        res.sendStatus(500)
                                     });
                                 }).catch(err => {
                                     console.log(err);
-                                    res.sendStatus(500).json({error: "Internal server error"})
+                                    res.sendStatus(500)
                                 });
                             } else {
                                 console.log('Attempted to delete friend that does not exist');
-                                res.sendStatus(400).json({error: "User to delete not found."})
+                                res.sendStatus(400)
                             }
                         }).catch(err => {
                             console.log(err);
-                            res.sendStatus(500).json({error: "Internal server error"})
+                            res.sendStatus(500)
                         })
                     } else {
-                        res.sendStatus(500).json({error: "Internal server error"})
+                        res.sendStatus(500)
                     }
                 }).catch(err => {
                     console.log(err);
-                    res.sendStatus(500).json({error: "Internal server error"})
+                    res.sendStatus(500)
                 })
             }catch(err){
                 console.log(err);
-                res.sendStatus(400).json({error: "User not found."})
+                res.sendStatus(500)
             }
         }
     }
@@ -427,7 +502,7 @@ router.get('/search/:username', (req: any, res) => {
     var name = JSON.stringify(req.params.username);
     name = JSON.parse(name.toLowerCase());
     const collRef = firestore.collection('users');
-    collRef.where('usernameNCS', '>=', name).where('usernameNCS', '<=', name+'\uf8ff')
+    collRef.where('username', '>=', name).where('username', '<=', name+'\uf8ff')
     .get().then(querySnapshot => {
         if(querySnapshot.size > 0)
             res.json(querySnapshot.docs.map(doc => doc.data().username));
@@ -435,7 +510,7 @@ router.get('/search/:username', (req: any, res) => {
             res.json([]);
     }).catch(err => {
         console.log(err);
-        res.sendStatus(500).json({error: "Internal server error"})
+        res.sendStatus(500)
     });
 })
 
@@ -463,15 +538,15 @@ router.get('/friend/details/:uid', (req: any, res) => {
                     favorite
                 });
             }else{
-                res.sendStatus(400).json({error: "User not found."})
+                res.sendStatus(400)
             }
         }).catch(err => {
             console.log(err);
-            res.sendStatus(500).json({error: "Internal server error"})
+            res.sendStatus(500)
         });
     }catch(err){
         console.log(err);
-        res.sendStatus(500).json({error: "Internal server error"})
+        res.sendStatus(500)
     }
 });
 
