@@ -33,7 +33,9 @@ function searchBattle(user: User, payload: SearchBattlePayload, recursionCounter
         const usersInQueue: Array<UserInQueue> = requests.map(request => JSON.parse(request));
 
         const userWithTimestamp: UserInQueue = {
-            ...user,
+            googleId: user.googleId,
+            username: user.username,
+            isGuest: user.isGuest,
             waitingSince: new Date().getTime()
         }
         if(format.unranked) {
@@ -67,7 +69,7 @@ function searchBattle(user: User, payload: SearchBattlePayload, recursionCounter
 
             // It worked. Now let's start the match
             if(removedRequests === 1) {
-                startMatch(payload.format, [user.googleId, match.googleId], !format.unranked);
+                startMatch(payload.format, [user, match], !format.unranked);
                 return;
             }
             

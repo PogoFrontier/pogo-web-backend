@@ -1,20 +1,21 @@
 import { RuleDescription } from "../../types/rule"
+import { User } from "../../types/user"
 
-export function getKeyValue(challengerId: string, opponentId: string, format: RuleDescription) {
+export function getKeyValue(challenger: User, opponentId: string, format: RuleDescription) {
     return {
-        key: "challenge:" + opponentId + ":by:" + challengerId,
+        key: "challenge:" + opponentId + ":by:" + JSON.stringify({id: challenger.googleId, username: challenger.username}),
         value: JSON.stringify(format)
     }
 }
 
-export function getKeyPatternForChallengesToMe(userId: string) {
-    return "challenge:" + userId + ":by:*"
+export function getKeyPatternForChallengesToMe(user: User) {
+    return "challenge:" + user.googleId + ":by:*"
 }
 
-export function getKeyPatternForChallengesByMe(userId: string) {
-    return "challenge:*:by:" + userId
+export function getKeyPatternForChallengesByMe(user: User) {
+    return "challenge:*:by:" + JSON.stringify({ id: user.googleId, username: user.username })
 }
 
 export function getChallengerOfKey(key: string) {
-    return key.split(":")[2]!
+    return JSON.parse(key.split(":")[2]!)
 }

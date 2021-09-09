@@ -1,7 +1,8 @@
 export interface User {
     googleId: string
     isGuest: boolean
-    ranking: ELO
+    ranking?: ELO
+    username?: string
 }
 
 export type UserInQueue = User & {

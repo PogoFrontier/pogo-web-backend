@@ -8,15 +8,16 @@ import { Room } from "../types/room";
 import { pubClient } from "../redis/clients";
 import { getRandomTeam } from "../team/randomTeam";
 import { getStrings } from "../actions/getTranslation";
+import { User } from "../types/user";
 
-async function onJoin(id: string, payload: OnJoinPayload) {
+async function onJoin(user: User, payload: OnJoinPayload) {
     let { room, team } = payload;
     const currentRoom = rooms.get(room);
 
     if (currentRoom) {
-        const { allowed, reason } = isAllowed(currentRoom, id)
+        const { allowed, reason } = isAllowed(currentRoom, user.googleId)
         if(!allowed) {
-            pubClient.publish("messagesToUser:" + id, "$error" + reason);
+            pubClient.publish("messagesToUser:" + user.googleId, "$error" + reason);
             return;
         }
 
@@ -25,7 +26,7 @@ async function onJoin(id: string, payload: OnJoinPayload) {
         }
 
         if (!team || !Array.isArray(team) || team.length <= 0) {
-            pubClient.publish("messagesToUser:" + id, "$errorYour team has an invalid format. It should be an array.");
+            pubClient.publish("messagesToUser:" + user.googleId, "$errorYour team has an invalid format. It should be an array.");
             return;
         }
         
@@ -34,20 +35,24 @@ async function onJoin(id: string, payload: OnJoinPayload) {
         await getStrings("en").then(s => strings = s)
         const { isValid, violations } = isTeamValid(teamMembers, currentRoom.format, strings);
         if (!isValid) {
-            pubClient.publish("messagesToUser:" + id, "$errorYour team is invalid.\n" + violations.join("\r"));
+            pubClient.publish("messagesToUser:" + user.googleId, "$errorYour team is invalid.\n" + violations.join("\r"));
             return;
         }
 
         for (let i = 0; i < currentRoom.players.length; i++) {
             if (currentRoom.players[i] === null) {
                 
-                currentRoom.players[i] = { id, team: teamMembers }
+                currentRoom.players[i] = { 
+                    id: user.googleId,
+                    isGuest: !!user.isGuest,
+                    username: user.username || "Guest", team: teamMembers
+                }
                 to(room, JSON.stringify({
                     type: CODE.room_join,
                     payload: { team: reduceTeam(teamMembers) }
-                }), id)
+                }), user.username)
 
-                console.info(`Socket ${id} has joined ${room}.`);
+                console.info(`Socket ${user.googleId} has joined ${room}.`);
 
                 // Clear timeout
                 if (i === 1 && currentRoom.timeout) {
@@ -56,7 +61,7 @@ async function onJoin(id: string, payload: OnJoinPayload) {
                 }
 
                 // Notify user
-                pubClient.publish("messagesToUser:" + id, "$start");
+                pubClient.publish("messagesToUser:" + user.googleId, "$start");
 
                 return room;
             }

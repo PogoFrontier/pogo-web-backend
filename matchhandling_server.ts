@@ -93,7 +93,7 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
                 storeClient.set(getUserStatusKey(user.googleId), "idle")
 
                 // Check for challenges
-                getAll(user.googleId)
+                getAll(user)
             }, () => {
                 ws.send("$Authentication Failed")
             })
@@ -103,7 +103,7 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
         } else if (isNewRoom(data)) {
             const { payload } = JSON.parse(data)
 
-            onNewRoom(user.googleId, payload, roomId => {
+            onNewRoom(user, payload, roomId => {
                 room = roomId;
             });
         } else if (isAboutDirectChallenges(data)) {
@@ -120,13 +120,13 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
                     openChallenge(user.googleId, payload)
                     break;
                 case CODE.challenge_quit:
-                    quitChallenge(user.googleId, payload)
+                    quitChallenge(user, payload)
                     break;
                 case CODE.challenge_decline:
                     decline(user.googleId, payload)
                     break;
                 case CODE.challenge_accept:
-                    accept(user.googleId, payload)
+                    accept(user, payload)
                     break;
                 default:
                     console.error(`Message not recognized: ${data}`);
@@ -163,7 +163,7 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
 
             // Publish on redis so the host of this room receives this
             const publication = {
-                sender: user.googleId,
+                sender: user,
                 data: data
             };
             pubClient.publish("commands:" + room, JSON.stringify(publication), (err, reply) => {
@@ -194,7 +194,7 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
             }));
 
             quitAll(user, formatsUsedForMatchmaking);
-            quitAllChallenges(user.googleId)
+            quitAllChallenges(user)
 
             if(!user.isGuest) {
                 storeClient.del(getUserStatusKey(user.googleId))

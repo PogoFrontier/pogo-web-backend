@@ -1,13 +1,14 @@
 import { storeClient, pubClient } from "../../redis/clients"
 import { getKeyPatternForChallengesByMe } from "./util"
+import { User } from "../../types/user"
 
-function quitAll(challengerId: string) {
-    storeClient.keys(getKeyPatternForChallengesByMe(challengerId)).then((keys) => {
+function quitAll(challenger: User) {
+    storeClient.keys(getKeyPatternForChallengesByMe(challenger)).then((keys) => {
         for(let key in keys) {
             storeClient.del(key)
 
             const opponentId = key.split(":")[1]
-            pubClient.publish("messagesToUser:" + opponentId, "$challengeCancelled|" + challengerId)
+            pubClient.publish("messagesToUser:" + opponentId, "$challengeCancelled|" + JSON.stringify({ id: challenger.googleId, username: challenger.username }))
         }
     })
 }
