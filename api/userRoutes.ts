@@ -211,7 +211,8 @@ router.get('/friends',
                     res.json(querySnapshot.docs.map((doc, index) => {
                         return {
                             ...doc.data(),
-                            status: reply[index]
+                            status: reply[index],
+                            id: doc.id
                         }
                     }));
                 })
@@ -470,13 +471,15 @@ router.post('/unfriend',
                             if(
                                 usersList.includes(friendID) &&
                                 friendsList.includes(userID)
-                            ){
+                            ) {
+                                usersList.splice(usersList.indexOf(friendID), 1)
+                                friendsList.splice(friendsList.indexOf(userID), 1)
                                 userDocRef.update({
-                                    friends: usersList.splice(usersList.indexOf(friendID))
+                                    friends: usersList
                                 }).then(() => {
                                     console.log('updated users friend list');
                                     friendDocRef.update({
-                                        friends: friendsList.splice(friendsList.indexOf(userID))
+                                        friends: friendsList
                                     }).then(() => {
                                         console.log('updated friends friend list');
                                         res.sendStatus(200);
