@@ -91,9 +91,6 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
                 ws.send("$Authentication Success")
 
                 storeClient.set(getUserStatusKey(user.googleId), "idle")
-
-                // Check for challenges
-                getAll(user)
             }, () => {
                 ws.send("$Authentication Failed")
             })
@@ -116,6 +113,9 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
             const { type, payload } = JSON.parse(data)
 
             switch (type) {
+                case CODE.challenge_reload:
+                    getAll(user)
+                    break;
                 case CODE.challenge_open:
                     openChallenge(user.googleId, payload)
                     break;

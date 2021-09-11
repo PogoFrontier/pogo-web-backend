@@ -4,7 +4,7 @@ import { User } from "../../types/user"
 
 function quitAll(challenger: User) {
     storeClient.keys(getKeyPatternForChallengesByMe(challenger)).then((keys) => {
-        for(let key in keys) {
+        for(let key of keys) {
             storeClient.del(key)
 
             const opponentId = key.split(":")[1]

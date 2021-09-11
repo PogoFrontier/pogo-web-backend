@@ -1,6 +1,7 @@
 export const CODE = {
   authentication: "AUTHENTICATION",
   room: "ROOM",
+  challenge_reload: "CHALLENGE_RELOAD",
   challenge_open: "CHALLENGE_OPEN",
   challenge_quit: "CHALLENGE_QUIT",
   challenge_decline: "CHALLENGE_DECLINE",
