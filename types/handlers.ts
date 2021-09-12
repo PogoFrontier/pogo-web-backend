@@ -76,7 +76,7 @@ export interface Anim {
 
 export interface OpenChallengePayload {
   opponentId: string,
-  format: RuleDescription
+  format: string
 }
 
 export interface QuitChallengePayload {

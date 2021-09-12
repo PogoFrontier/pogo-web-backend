@@ -14,6 +14,9 @@ function openChallenge(challengerId: string, payload: OpenChallengePayload) {
     } catch (e) {
         return;
     }
+    if(typeof format !== "string") {
+        return
+    }
 
     const userDocRef = firestore.collection('users').doc(challengerId)
     userDocRef.get().then(user => {

@@ -1,10 +1,10 @@
 import { RuleDescription } from "../../types/rule"
 import { User } from "../../types/user"
 
-export function getKeyValue(challenger: User, opponentId: string, format: RuleDescription) {
+export function getKeyValue(challenger: User, opponentId: string, format: string) {
     return {
         key: "challenge:" + opponentId + ":by:" + JSON.stringify({ googleId: challenger.googleId, username: challenger.username}),
-        value: JSON.stringify(format)
+        value: format
     }
 }
 
