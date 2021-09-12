@@ -71,7 +71,8 @@ router.post('/', async (req, res) => {
             docRef.get().then(user => {
                 if(user.data()){
                     res.sendStatus(401)
-                }else{
+                } else {
+                    console.log(userAuth)
                     const un = username ? username : userAuth.displayName //.sanitize
                     docRef.set({
                         googleId: userAuth.uid,
