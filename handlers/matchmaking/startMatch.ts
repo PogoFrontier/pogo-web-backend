@@ -13,7 +13,7 @@ import { firestore } from "../../firestore/firestore";
 function startMatch(format: RuleDescription, users: [User, User], rated: boolean) {
     const roomId = uuid();
 
-    useRoom(roomId, (err, isNew) => {
+    useRoom(roomId, async (err, isNew) => {
         if (err) {
             console.error(err);
             return;
@@ -55,38 +55,52 @@ function startMatch(format: RuleDescription, users: [User, User], rated: boolean
         }
 
         // Save each opponent to battle history
-        users.forEach((u, i) => {
-            if(u.isGuest) {
-                return
-            }
+        try {
+            await firestore.runTransaction(async t => {
+                const battleHistories: [any, any] = [null, null]
+                for(const i in users) {
+                    const u = users[i]
+                    if (u.isGuest) {
+                        continue
+                    }
 
-            const docRef = firestore.collection('users').doc(u.googleId);
-            docRef.get().then(user => {
-                const userData = user.data()
-                if(!userData) {
-                    return
-                }
+                    // Get user from database
+                    const docRef = firestore.collection('users').doc(u.googleId);
+                    const user = await t.get(docRef)
+                    const userData = user.data()
+                    if (!userData) {
+                        return
+                    }
 
-                let battleHistory: Array<User> = userData.battleHistory
-                if(!battleHistory) {
-                    battleHistory = []
+                    // Save opponent to battle history
+                    let battleHistory: Array<User> = userData.battleHistory
+                    if (!battleHistory) {
+                        battleHistory = []
+                    }
+                    if (battleHistory.length > 19) {
+                        battleHistory.pop()
+                    }
+                    const opponent = users[[1, 0][i]]
+                    battleHistory.push({
+                        googleId: opponent.googleId,
+                        isGuest: !!opponent.isGuest,
+                        username: opponent.username,
+                    })
+                    battleHistories[i] = battleHistory
                 }
-                if(battleHistory.length > 19) {
-                    battleHistory.pop()
+                
+                for (const i in users) {
+                    const u = users[i]
+                    if (u.isGuest) {
+                        continue
+                    }
+                    const docRef = firestore.collection('users').doc(u.googleId);
+                    t.update(docRef, { battleHistory: battleHistories[i] })
                 }
-                const opponent = users[[1, 0][i]]
-                battleHistory.push({
-                    googleId: opponent.googleId,
-                    isGuest: !!opponent.isGuest,
-                    username: opponent.username,
-                })
-                docRef.update({ battleHistory: battleHistory }).catch(err => {
-                    console.error(err);
-                });
-            }).catch(err => {
-                console.log(err);
             })
-        })
+        } catch (e) {
+            console.error(e)
+        }
 
         // If one player doesn't make it in time, quit
         roomObj.timeout = setTimeout(() => {
