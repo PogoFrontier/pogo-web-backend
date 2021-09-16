@@ -1,5 +1,6 @@
 import fs from "fs"
 import p from "../data/pokemon.json";
+import { Pokedex as dex } from "../data/pokedex";
 import m from "../data/moves.json";
 import { Learnsets } from '../data/learnsets'
 
@@ -12,6 +13,7 @@ const wbTypes = ['fire', 'ice', 'rock', "normal", 'water']
 for(let id of Object.keys(pokemonList)) {
     let pokemon = pokemonList[id];
 
+    // Adapt key to match pokemon showdown
     let key: string= pokemon.speciesId.replace("shadow", "").replace("therian", "").replace("incarnate", "").replace("galarian", "galar").replace("alolan", "alola").replace("_zen", "").replace("_standard", "").replace("female", "f").replace("male", "m").replace("_mega", "").replace(/_/g, "")
     if(key.startsWith("charizard")) {
         key = "charizard";
@@ -101,82 +103,106 @@ for(let id of Object.keys(pokemonList)) {
         key = "urshifu";
     }
     
-    
+    let collectedQuickmoves: string[] = []
+    let collectedChargemoves: string[] = []
+
+    while(true) {
+        const { quickmoves, chargemoves } = getLearnsetsOfKey(key, collectedQuickmoves, collectedChargemoves)
+        collectedQuickmoves = quickmoves
+        collectedChargemoves = chargemoves
+
+        const origin = dex[key].prevo || dex[key].baseSpecies
+        if(!origin || ["Galar", "Alola"].includes(dex[key].forme) && !dex[key].prevo) {
+            break;
+        }
+        key = origin.toLowerCase().replace("-", "").replace(".", "").replace(" ", "").replace(":", "").replace("é", "e").replace("é", "e").replace("’", "")
+    }
+
+    // Add special moves that don't appear in learnsets
+    if (pokemon.speciesId.startsWith("Genesect")) {
+        let suffix = pokemon.speciesId.split("_")[1];
+        if (!suffix) {
+            suffix = "normal"
+        }
+        collectedChargemoves.push("TECHNO_BLAST_" + suffix.toUpperCase())
+        continue;
+    }
+    if(pokemon.speciesId === "smeargle") {
+        for (let move of Object.keys(localMoves)) {
+            if (move.includes("BLASTOISE")){
+                continue;
+            }
+            if (localMoves[move].energy){
+                collectedChargemoves.push(move);
+            } else {
+                collectedQuickmoves.push(move);
+            }
+        }
+    } else {
+        // Add struggle to every Pokemon
+        collectedChargemoves.push("STRUGGLE");
+    } 
+    if(pokemon.speciesId === "pikachu_flying") {
+        collectedChargemoves.push("FLY")
+    }
+    if(pokemon.speciesId === "pikachu_libre") {
+        collectedChargemoves.push("FLYING_PRESS")
+    }
+
+    pokemon.fastMoves = collectedQuickmoves;
+    pokemon.chargedMoves = collectedChargemoves;
+    delete pokemon.eliteMoves
+    console.log("Complete " + pokemon.speciesId)
+}
+
+function getLearnsetsOfKey(key: string, quickmoves: string[], chargemoves: string[]) {
+
     let pokeWithLearnset = Learnsets[key];
-    if(!pokeWithLearnset || !pokeWithLearnset.learnset) {
+    if (!pokeWithLearnset || !pokeWithLearnset.learnset) {
         console.error("Unidentified pokemon " + key);
         process.exit(1);
     }
-    if (key.startsWith("rotom") && key !== "rotom"){
-        const baseLearnset = Learnsets["rotom"];
-        for (let move of Object.keys(baseLearnset)) {
-            pokeWithLearnset[move] = baseLearnset[move]
-        }
-    }
-    
-    let quickmoves = []
-    let chargemoves = []
-    
+
     for (let move of Object.keys(pokeWithLearnset.learnset)) {
         let moveId: string | undefined = Object.keys(localMoves).find((moveId) => moveId.toLowerCase().replace("_", "").replace("_", "") === move);
+        if(moveId && (quickmoves.includes(moveId) || chargemoves.includes(moveId))) {
+            continue;
+        }
 
-        if (move === "hiddenpower")  {
+        if (move === "hiddenpower") {
+            if(quickmoves.includes("HIDDEN_POWER_NORMAL")) {
+                continue
+            }
             for (let type of hpTypes) {
                 quickmoves.push("HIDDEN_POWER_" + type.toUpperCase())
             }
             continue;
         } else if (move === "weatherball") {
+            if (chargemoves.includes("WEATHER_BALL_NORMAL")) {
+                continue
+            }
             for (let type of wbTypes) {
-                quickmoves.push("WEATHER_BALL_" + type.toUpperCase())
+                chargemoves.push("WEATHER_BALL_" + type.toUpperCase())
             }
-            continue;
-        }else if (move === "technoblast") {
-            let suffix = pokemon.speciesId.split("_")[1];
-            if (!suffix) {
-                suffix = "normal"
-            }
-            quickmoves.push("TECHNO_BLAST_" + suffix.toUpperCase())
             continue;
         }
         if (!moveId) {
             continue;
         }
-        
+
         let moveDataInPoGO = localMoves[moveId];
-        
-        if (moveDataInPoGO.energy){
+
+        if (moveDataInPoGO.energy) {
             chargemoves.push(moveId);
         } else {
             quickmoves.push(moveId)
         }
     }
 
-    if(pokemon.speciesId === "smeargle") {
-        chargemoves = [];
-        for (let move of Object.keys(localMoves)) {
-            if (move.includes("BLASTOISE")){
-                continue;
-            }
-            if (localMoves[move].energy){
-                chargemoves.push(move);
-            } else {
-                quickmoves.push(move);
-            }
-        }
-    } else {
-        // Add struggle to every Pokemon
-        chargemoves.push("STRUGGLE");
-    } 
-    if(pokemon.speciesId === "pikachu_flying") {
-        chargemoves.push("FLY")
+    return {
+        quickmoves,
+        chargemoves
     }
-    if(pokemon.speciesId === "pikachu_libre") {
-        chargemoves.push("FLYING_PRESS")
-    }
-
-    pokemon.fastMoves = quickmoves;
-    pokemon.chargedMoves = chargemoves;
-    delete pokemon.eliteMoves
 }
 
 fs.writeFileSync("data/pokemonWithMainSeriesMoves.json", JSON.stringify(pokemonList, null, 2))
