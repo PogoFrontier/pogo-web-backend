@@ -152,7 +152,6 @@ for(let id of Object.keys(pokemonList)) {
     pokemon.fastMoves = collectedQuickmoves;
     pokemon.chargedMoves = collectedChargemoves;
     delete pokemon.eliteMoves
-    console.log("Complete " + pokemon.speciesId)
 }
 
 function getLearnsetsOfKey(key: string, quickmoves: string[], chargemoves: string[]) {

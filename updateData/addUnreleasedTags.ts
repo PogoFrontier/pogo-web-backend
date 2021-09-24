@@ -4,8 +4,45 @@ import https from "https"
 let pokemonList: any = {}
 const unreleasedTag = "unreleased"
 
+const replaceMap = {
+    "_shadow": "",
+    "_alolan": "_alola",
+    "_galarian": "_galar",
+    "_female": "_f",
+    "indeedee_male": "indeedee",
+    "_male": "_m",
+    "pikachu_kariyushi": "pikachu_pop_star",
+    "pikachu_5th_anniversary": "pikachu_pop_star",
+    "pikachu_flying": "pikachu_pop_star",
+    "_armored": "",
+    "_plant": "",
+    "_overcast": "",
+    "cherrim_sunny": "cherrim_sunshine",
+    "_east_sea": "_east",
+    "_west_sea": "",
+    "_altered": "",
+    "_land": "",
+    "_standard": "",
+    "_incarnate": "",
+    "_ordinary": "",
+    "_aria": "",
+    "pyroar_f": "pyroar",
+    "_confined": "",
+    "_amped": "_low_key",
+    "_phony": "",
+    "eiscue_ice": "eiscue",
+    "_full_belly": "",
+    "_hero": "",
+    "_sword": "",
+    "_shield": "",
+    "_single_strike": "",
+    "_ice_rider": "_ice"
+}
+
 const getSid = (speciesId: string, sids: any) => {
-    speciesId = speciesId.replace("_shadow", "").replace("_alolan", "_alola").replace("_galarian", "_galar").replace("_female", "_f").replace("_male", "_m").replace("pikachu_kariyushi", "pikachu_pop_star").replace("pikachu_5th_anniversary", "pikachu_pop_star").replace("pikachu_flying", "pikachu_pop_star").replace("_armored", "").replace("_plant", "").replace("_overcast", "").replace("cherrim_sunny", "cherrim_sunshine").replace("_east_sea", "_east").replace("_west_sea", "").replace("_altered", "").replace("_land", "").replace("_standard", "").replace("_incarnate", "").replace("_ordinary", "").replace("_aria", "").replace("_altered", "").replace("pyroar_f", "pyroar")
+    for(const needle of Object.keys(replaceMap)) {
+        speciesId = speciesId.replace(needle, replaceMap[needle])
+    }
     return parseInt(Object.keys(sids).find(sid => {
         let sidObj = sids[sid]
         let sidString = sidObj.base
