@@ -9684,6 +9684,9 @@
     "types": [
       "grass",
       "none"
+    ],
+    "tags": [
+      "starter"
     ]
   },
   "quilladin": {
@@ -9692,6 +9695,9 @@
     "types": [
       "grass",
       "none"
+    ],
+    "tags": [
+      "starter"
     ]
   },
   "chesnaught": {
@@ -9700,6 +9706,9 @@
     "types": [
       "grass",
       "fighting"
+    ],
+    "tags": [
+      "starter"
     ]
   },
   "fennekin": {
@@ -9708,6 +9717,9 @@
     "types": [
       "fire",
       "none"
+    ],
+    "tags": [
+      "starter"
     ]
   },
   "braixen": {
@@ -9716,6 +9728,9 @@
     "types": [
       "fire",
       "none"
+    ],
+    "tags": [
+      "starter"
     ]
   },
   "delphox": {
@@ -9724,6 +9739,9 @@
     "types": [
       "fire",
       "psychic"
+    ],
+    "tags": [
+      "starter"
     ]
   },
   "froakie": {
@@ -9732,6 +9750,9 @@
     "types": [
       "water",
       "none"
+    ],
+    "tags": [
+      "starter"
     ]
   },
   "frogadier": {
@@ -9740,6 +9761,9 @@
     "types": [
       "water",
       "none"
+    ],
+    "tags": [
+      "starter"
     ]
   },
   "greninja": {
@@ -9748,6 +9772,9 @@
     "types": [
       "water",
       "dark"
+    ],
+    "tags": [
+      "starter"
     ]
   },
   "bunnelby": {
@@ -9927,9 +9954,6 @@
     "types": [
       "normal",
       "none"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "espurr": {
@@ -10027,9 +10051,6 @@
     "types": [
       "dark",
       "psychic"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "malamar": {
@@ -10038,9 +10059,6 @@
     "types": [
       "dark",
       "psychic"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "binacle": {
@@ -10368,7 +10386,7 @@
       "ghost"
     ],
     "tags": [
-      "unreleased"
+      "mythical"
     ]
   },
   "hoopa_confined": {
@@ -10379,6 +10397,7 @@
       "ghost"
     ],
     "tags": [
+      "mythical",
       "unreleased"
     ]
   },
@@ -10390,6 +10409,7 @@
       "dark"
     ],
     "tags": [
+      "mythical",
       "unreleased"
     ]
   },
@@ -10412,7 +10432,8 @@
       "none"
     ],
     "tags": [
-      "mythical"
+      "mythical",
+      "include1500"
     ]
   },
   "melmetal": {

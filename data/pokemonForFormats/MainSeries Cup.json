@@ -1134,10 +1134,10 @@
       "none"
     ],
     "speciesName": {
-      "de": "Pikachu (5th Anniversary)",
+      "de": "Pikachu (5. Jubiläum)",
       "fr": "Pikachu (5ème Anniversaire)",
       "en": "Pikachu (5th Anniversary)",
-      "es": "Pikachu (5th Anniversary)",
+      "es": "Pikachu (5º Aniversario)",
       "th": "พิคาชู (5th Anniversary)",
       "ja": "ピカチュウ (5th Anniversary)",
       "ko": "피카츄 (5th Anniversary)",
@@ -1214,10 +1214,10 @@
       "none"
     ],
     "speciesName": {
-      "de": "Pikachu (Pop Star)",
+      "de": "Pikachu (Popstar)",
       "fr": "Pikachu (Pop Star)",
       "en": "Pikachu (Pop Star)",
-      "es": "Pikachu (Pop Star)",
+      "es": "Pikachu (Estrella del Pop)",
       "th": "พิคาชู (Pop Star)",
       "ja": "ピカチュウ (Pop Star)",
       "ko": "피카츄 (Pop Star)",
@@ -1234,10 +1234,10 @@
       "none"
     ],
     "speciesName": {
-      "de": "Pikachu (Rock Star)",
+      "de": "Pikachu (Rockstar)",
       "fr": "Pikachu (Rock Star)",
       "en": "Pikachu (Rock Star)",
-      "es": "Pikachu (Rock Star)",
+      "es": "Pikachu (Roquera)",
       "th": "พิคาชู (Rock Star)",
       "ja": "ピカチュウ (Rock Star)",
       "ko": "피카츄 (Rock Star)",
@@ -21109,6 +21109,9 @@
       "grass",
       "none"
     ],
+    "tags": [
+      "starter"
+    ],
     "speciesName": {
       "de": "Igamaro",
       "fr": "Marisson",
@@ -21128,6 +21131,9 @@
     "types": [
       "grass",
       "none"
+    ],
+    "tags": [
+      "starter"
     ],
     "speciesName": {
       "de": "Igastarnish",
@@ -21149,6 +21155,9 @@
       "grass",
       "fighting"
     ],
+    "tags": [
+      "starter"
+    ],
     "speciesName": {
       "de": "Brigaron",
       "fr": "Blindépique",
@@ -21168,6 +21177,9 @@
     "types": [
       "fire",
       "none"
+    ],
+    "tags": [
+      "starter"
     ],
     "speciesName": {
       "de": "Fynx",
@@ -21189,6 +21201,9 @@
       "fire",
       "none"
     ],
+    "tags": [
+      "starter"
+    ],
     "speciesName": {
       "de": "Rutena",
       "fr": "Roussil",
@@ -21208,6 +21223,9 @@
     "types": [
       "fire",
       "psychic"
+    ],
+    "tags": [
+      "starter"
     ],
     "speciesName": {
       "de": "Fennexis",
@@ -21229,6 +21247,9 @@
       "water",
       "none"
     ],
+    "tags": [
+      "starter"
+    ],
     "speciesName": {
       "de": "Froxy",
       "fr": "Grenousse",
@@ -21249,6 +21270,9 @@
       "water",
       "none"
     ],
+    "tags": [
+      "starter"
+    ],
     "speciesName": {
       "de": "Amphizel",
       "fr": "Croâporal",
@@ -21268,6 +21292,9 @@
     "types": [
       "water",
       "dark"
+    ],
+    "tags": [
+      "starter"
     ],
     "speciesName": {
       "de": "Quajutsu",
@@ -21676,9 +21703,6 @@
       "normal",
       "none"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "speciesName": {
       "de": "Coiffwaff",
       "fr": "Couafarel",
@@ -21896,9 +21920,6 @@
       "dark",
       "psychic"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "speciesName": {
       "de": "Iscalar",
       "fr": "Sepiatop",
@@ -21918,9 +21939,6 @@
     "types": [
       "dark",
       "psychic"
-    ],
-    "tags": [
-      "unreleased"
     ],
     "speciesName": {
       "de": "Calamanero",
@@ -22644,7 +22662,7 @@
       "ghost"
     ],
     "tags": [
-      "unreleased"
+      "mythical"
     ],
     "speciesName": {
       "de": "Hoopa",
@@ -22667,13 +22685,14 @@
       "ghost"
     ],
     "tags": [
+      "mythical",
       "unreleased"
     ],
     "speciesName": {
-      "de": "Hoopa (Confined)",
+      "de": "Hoopa (Gebannt)",
       "fr": "Hoopa (Confined)",
       "en": "Hoopa (Confined)",
-      "es": "Hoopa (Confined)",
+      "es": "Hoopa (Contenida)",
       "th": "ฮูปา (Confined)",
       "ja": "フーパ (Confined)",
       "ko": "후파 (Confined)",
@@ -22690,13 +22709,14 @@
       "dark"
     ],
     "tags": [
+      "mythical",
       "unreleased"
     ],
     "speciesName": {
-      "de": "Hoopa (Unbound)",
+      "de": "Hoopa (Entfesselt)",
       "fr": "Hoopa (Unbound)",
       "en": "Hoopa (Unbound)",
-      "es": "Hoopa (Unbound)",
+      "es": "Hoopa (Desatada)",
       "th": "ฮูปา (Unbound)",
       "ja": "フーパ (Unbound)",
       "ko": "후파 (Unbound)",
@@ -22736,7 +22756,8 @@
       "none"
     ],
     "tags": [
-      "mythical"
+      "mythical",
+      "include1500"
     ],
     "speciesName": {
       "de": "Meltan",
@@ -23693,10 +23714,10 @@
       "unreleased"
     ],
     "speciesName": {
-      "de": "Riffex (Amped)",
+      "de": "Riffex (Hoch-Form)",
       "fr": "Salarsen (Amped)",
       "en": "Toxtricity (Amped)",
-      "es": "Toxtricity (Amped)",
+      "es": "Toxtricity (Aguda)",
       "th": "เนียคิง (Amped)",
       "ja": "ストリンダー (Amped)",
       "ko": "스트린더 (Amped)",
@@ -23716,10 +23737,10 @@
       "unreleased"
     ],
     "speciesName": {
-      "de": "Riffex (Low key)",
+      "de": "Riffex (Tief-Form)",
       "fr": "Salarsen (Low key)",
       "en": "Toxtricity (Low key)",
-      "es": "Toxtricity (Low key)",
+      "es": "Toxtricity (Grave)",
       "th": "เนียคิง (Low key)",
       "ja": "ストリンダー (Low key)",
       "ko": "스트린더 (Low key)",
@@ -23854,10 +23875,10 @@
       "unreleased"
     ],
     "speciesName": {
-      "de": "Fatalitee (Antique)",
+      "de": "Fatalitee (Orginalform)",
       "fr": "Théffroi (Antique)",
       "en": "Sinistea (Antique)",
-      "es": "Sinistea (Antique)",
+      "es": "Sinistea (Genuina)",
       "th": "เดธเบิร์น (Antique)",
       "ja": "ヤバチャ (Antique)",
       "ko": "데인차 (Antique)",
@@ -23877,10 +23898,10 @@
       "unreleased"
     ],
     "speciesName": {
-      "de": "Fatalitee (Phony)",
+      "de": "Fatalitee (Fälschungsform)",
       "fr": "Théffroi (Phony)",
       "en": "Sinistea (Phony)",
-      "es": "Sinistea (Phony)",
+      "es": "Sinistea (Arcaica)",
       "th": "เดธเบิร์น (Phony)",
       "ja": "ヤバチャ (Phony)",
       "ko": "데인차 (Phony)",
@@ -23923,10 +23944,10 @@
       "unreleased"
     ],
     "speciesName": {
-      "de": "Mortipot (Antique)",
+      "de": "Mortipot (Orginalform)",
       "fr": "Polthégeist (Antique)",
       "en": "Polteageist (Antique)",
-      "es": "Polteageist (Antique)",
+      "es": "Polteageist (Genuina)",
       "th": "มาโฮมิล (Antique)",
       "ja": "ポットデス (Antique)",
       "ko": "포트데스 (Antique)",
@@ -23946,10 +23967,10 @@
       "unreleased"
     ],
     "speciesName": {
-      "de": "Mortipot (Phony)",
+      "de": "Mortipot (Fälschungsform)",
       "fr": "Polthégeist (Phony)",
       "en": "Polteageist (Phony)",
-      "es": "Polteageist (Phony)",
+      "es": "Polteageist (Arcaica)",
       "th": "มาโฮมิล (Phony)",
       "ja": "ポットデス (Phony)",
       "ko": "포트데스 (Phony)",
@@ -24411,10 +24432,10 @@
       "unreleased"
     ],
     "speciesName": {
-      "de": "Kubuin (Ice)",
+      "de": "Kubuin (Tiefkühlkopf)",
       "fr": "Bekaglaçon (Ice)",
       "en": "Eiscue (Ice)",
-      "es": "Eiscue (Ice)",
+      "es": "Eiscue (Cara Hielo)",
       "th": "ไดโอโด (Ice)",
       "ja": "コオリッポ (Ice)",
       "ko": "빙큐보 (Ice)",
@@ -24434,10 +24455,10 @@
       "unreleased"
     ],
     "speciesName": {
-      "de": "Kubuin (No ice)",
+      "de": "Kubuin (Wohlfühlkopf)",
       "fr": "Bekaglaçon (No ice)",
       "en": "Eiscue (No ice)",
-      "es": "Eiscue (No ice)",
+      "es": "Eiscue (Cara Deshielo)",
       "th": "ไดโอโด (No ice)",
       "ja": "コオリッポ (No ice)",
       "ko": "빙큐보 (No ice)",
@@ -24503,10 +24524,10 @@
       "unreleased"
     ],
     "speciesName": {
-      "de": "Servol (Weiblich)",
+      "de": "Servol Männlich",
       "fr": "Wimessir (Male)",
       "en": "Indeedee (Male)",
-      "es": "Indeedee (Hembra)",
+      "es": "Indeedee (Macho Ibérico)",
       "th": "มาวิป (Male)",
       "ja": "イエッサン (Male)",
       "ko": "에써르 (Male)",
@@ -24549,10 +24570,10 @@
       "unreleased"
     ],
     "speciesName": {
-      "de": "Morpeko (Full belly)",
+      "de": "Morpeko (Pappsattmuster)",
       "fr": "Morpeko (Full belly)",
       "en": "Morpeko (Full belly)",
-      "es": "Morpeko (Full belly)",
+      "es": "Morpeko (Saciada)",
       "th": "ไทเรสึ (Full belly)",
       "ja": "モルペコ (Full belly)",
       "ko": "모르페코 (Full belly)",
@@ -24572,10 +24593,10 @@
       "unreleased"
     ],
     "speciesName": {
-      "de": "Morpeko (Hangry)",
+      "de": "Morpeko (Kohldampfmuster)",
       "fr": "Morpeko (Hangry)",
       "en": "Morpeko (Hangry)",
-      "es": "Morpeko (Hangry)",
+      "es": "Morpeko (Voraz)",
       "th": "ไทเรสึ (Hangry)",
       "ja": "モルペコ (Hangry)",
       "ko": "모르페코 (Hangry)",
@@ -24848,10 +24869,10 @@
       "legendary"
     ],
     "speciesName": {
-      "de": "Zacian (Hero)",
+      "de": "Zacian (Heldenhafter Krieger)",
       "fr": "Zacian (Hero)",
       "en": "Zacian (Hero)",
-      "es": "Zacian (Hero)",
+      "es": "Zacian (Guerrero avanzado)",
       "th": "ซาเชียน (Hero)",
       "ja": "ザシアン (Hero)",
       "ko": "자시안 (Hero)",
@@ -24871,10 +24892,10 @@
       "unreleased"
     ],
     "speciesName": {
-      "de": "Zacian (Crowned sword)",
+      "de": "Zacian (König des Schwertes)",
       "fr": "Zacian (Crowned sword)",
       "en": "Zacian (Crowned sword)",
-      "es": "Zacian (Crowned sword)",
+      "es": "Zacian (Espada Suprema)",
       "th": "ซาเชียน (Crowned sword)",
       "ja": "ザシアン (Crowned sword)",
       "ko": "자시안 (Crowned sword)",
@@ -24917,10 +24938,10 @@
       "legendary"
     ],
     "speciesName": {
-      "de": "Zamazenta (Hero)",
+      "de": "Zamazenta (Heldenhafter Krieger)",
       "fr": "Zamazenta (Hero)",
       "en": "Zamazenta (Hero)",
-      "es": "Zamazenta (Hero)",
+      "es": "Zamazenta (Guerrero avanzado)",
       "th": "ซามาเซนตา (Hero)",
       "ja": "ザマゼンタ (Hero)",
       "ko": "자마젠타 (Hero)",
@@ -24940,10 +24961,10 @@
       "unreleased"
     ],
     "speciesName": {
-      "de": "Zamazenta (Crowned sword)",
+      "de": "Zamazenta (König des Schwertes)",
       "fr": "Zamazenta (Crowned sword)",
       "en": "Zamazenta (Crowned sword)",
-      "es": "Zamazenta (Crowned sword)",
+      "es": "Zamazenta (Espada Suprema)",
       "th": "ซามาเซนตา (Crowned sword)",
       "ja": "ザマゼンタ (Crowned sword)",
       "ko": "자마젠타 (Crowned sword)",
@@ -24986,10 +25007,10 @@
       "unreleased"
     ],
     "speciesName": {
-      "de": "Endynalos (Eternamax)",
+      "de": "Endynalos (Unendynamax)",
       "fr": "Éthernatos (Eternamax)",
       "en": "Eternatus (Eternamax)",
-      "es": "Eternatus (Eternamax)",
+      "es": "Eternatus (Dinamax Infinito)",
       "th": "มุเก็นไดนา (Eternamax)",
       "ja": "ムゲンダイナ (Eternamax)",
       "ko": "무한다이노 (Eternamax)",
@@ -25055,10 +25076,10 @@
       "unreleased"
     ],
     "speciesName": {
-      "de": "Wulaosu (Rapid strike)",
+      "de": "Wulaosu (Fließender Stil)",
       "fr": "Shifours (Rapid strike)",
       "en": "Urshifu (Rapid strike)",
-      "es": "Urshifu (Rapid strike)",
+      "es": "Urshifu (Estilo Fluido)",
       "th": "วูลาโอส (Rapid strike)",
       "ja": "ウーラオス (Rapid strike)",
       "ko": "우라오스 (Rapid strike)",
@@ -25078,10 +25099,10 @@
       "unreleased"
     ],
     "speciesName": {
-      "de": "Wulaosu (Single strike)",
+      "de": "Wulaosu (Fokussierter Stil)",
       "fr": "Shifours (Single strike)",
       "en": "Urshifu (Single strike)",
-      "es": "Urshifu (Single strike)",
+      "es": "Urshifu (Estilo Brusco)",
       "th": "วูลาโอส (Single strike)",
       "ja": "ウーラオス (Single strike)",
       "ko": "우라오스 (Single strike)",
@@ -25239,10 +25260,10 @@
       "unreleased"
     ],
     "speciesName": {
-      "de": "Coronospa (Ice rider)",
+      "de": "Coronospa (Schimmelreiter)",
       "fr": "Sylveroy (Ice rider)",
       "en": "Calyrex (Ice rider)",
-      "es": "Calyrex (Ice rider)",
+      "es": "Calyrex (Jinete Glacial)",
       "th": "บัดเดร็กซ์ (Ice rider)",
       "ja": "バドレックス (Ice rider)",
       "ko": "버드렉스 (Ice rider)",
