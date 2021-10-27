@@ -23,9 +23,8 @@ async function onJoin(user: User, payload: OnJoinPayload) {
 
         if(currentRoom.format.advancedOptions?.random) {
             team = getRandomTeam(currentRoom.format, "en")
-        }
-
-        if (!team || !Array.isArray(team) || team.length <= 0) {
+            pubClient.publish("messagesToUser:" + user.googleId, "$yourTeamIs:" + JSON.stringify(team));
+        } else if (!team || !Array.isArray(team) || team.length <= 0) {
             pubClient.publish("messagesToUser:" + user.googleId, "$errorYour team has an invalid format. It should be an array.");
             return;
         }

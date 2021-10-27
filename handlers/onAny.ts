@@ -11,6 +11,7 @@ import onStartTimer from "./onStartTimer";
 import { onReadyGame } from "./onReadyGame";
 import endGame from "./endGame";
 import { User } from "../types/user";
+import onGetOwnTeam from "./onGetOwnTeam";
 
 function onAny(user: User, roomId: string, data: string) {
     const room = rooms.get(roomId)
@@ -44,6 +45,9 @@ function onAny(user: User, roomId: string, data: string) {
             switch (type) {
                 case CODE.get_opponent:
                     onGetOpponent(user.googleId, payload);
+                    break;
+                case CODE.get_own_team:
+                    onGetOwnTeam(user.googleId, payload);
                     break;
                 case CODE.room_join:
                     onJoin(user, payload);
