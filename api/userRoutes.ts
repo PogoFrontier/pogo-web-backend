@@ -80,6 +80,12 @@ router.post('/', async (req, res) => {
                 }
 
                 const un = username ? username : userAuth.displayName //.sanitize
+                // Send user info to client
+                const newUser = await t.get(docRef);
+                if(!newUser?.data()) {
+                    res.sendStatus(500)
+                    return;
+                }
                 t.set(docRef, {
                     googleId: userAuth.uid,
                     username: un,
@@ -100,12 +106,7 @@ router.post('/', async (req, res) => {
                     isDeleted: false
                 })
 
-                // Send user info to client
-                const newUser = await t.get(docRef);
-                if(!newUser?.data()) {
-                    res.sendStatus(500)
-                    return;
-                }
+                
                 res.json({
                     userData: newUser.data(),
                     token: generateToken(userAuth.uid)
