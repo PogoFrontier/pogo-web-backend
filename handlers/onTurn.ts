@@ -110,7 +110,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
             payload[i] = {
               id: currentRoom.players[i]!.id,
               active: shouldSwitch[i],
-              hp: newActivePokemon && newActivePokemon.current?.hp ? newActivePokemon.current.hp / newActivePokemon.hp : 0,
+              hp: newActivePokemon && newActivePokemon.current?.hp ? newActivePokemon.current.hp / newActivePokemon.hp : 1,
               shouldReturn: true
             };
           } else {

@@ -10,12 +10,14 @@ import onTeamSubmit from "./onTeamSubmit";
 import onStartTimer from "./onStartTimer";
 import { onReadyGame } from "./onReadyGame";
 import endGame from "./endGame";
+import { User } from "../types/user";
+import onGetOwnTeam from "./onGetOwnTeam";
 
-function onAny(senderId: string, roomId: string, data: string) {
+function onAny(user: User, roomId: string, data: string) {
     const room = rooms.get(roomId)
     if (data === "forfeit") {
         if (room) {
-            const playerNum = room.players.findIndex((player) => player !== null && player.id === senderId)
+            const playerNum = room.players.findIndex((player) => player !== null && player.id === user.googleId)
             const result = playerNum === 0 ? "p2" : "p1"
             if(playerNum !== -1) {
                 endGame(roomId, false, result)
@@ -23,7 +25,7 @@ function onAny(senderId: string, roomId: string, data: string) {
         }
     } else if (typeof data === "string" && data.startsWith("$")) {
         if (room && room.status === RoomStatus.CHARGE) {
-            onSetCharge({ id: senderId, room: roomId, data })
+            onSetCharge({ id: user.googleId, room: roomId, data })
         }
     } else if (typeof data === "string" && data.startsWith("#")) {
         if (rooms.get(roomId)
@@ -31,7 +33,7 @@ function onAny(senderId: string, roomId: string, data: string) {
         && rooms.get(roomId)?.status !== RoomStatus.STARTING
         && rooms.get(roomId)?.status !== RoomStatus.CHARGE
         && rooms.get(roomId)?.status !== RoomStatus.ANIMATING) {
-            onAction({ id: senderId, room: roomId, data });
+            onAction({ id: user.googleId, room: roomId, data });
         }
     } else {
         try{
@@ -42,22 +44,25 @@ function onAny(senderId: string, roomId: string, data: string) {
             payload.room = roomId;
             switch (type) {
                 case CODE.get_opponent:
-                    onGetOpponent(senderId, payload);
+                    onGetOpponent(user.googleId, payload);
+                    break;
+                case CODE.get_own_team:
+                    onGetOwnTeam(user.googleId, payload);
                     break;
                 case CODE.room_join:
-                    onJoin(senderId, payload);
+                    onJoin(user, payload);
                     break;
                 case CODE.team_submit:
-                    onTeamSubmit(senderId, payload);
+                    onTeamSubmit(user.googleId, payload);
                     break;
                 case CODE.start_timer:
-                    onStartTimer(senderId, payload);
+                    onStartTimer(user.googleId, payload);
                     break;
                 case CODE.ready_game:
-                    onReadyGame(senderId, payload);
+                    onReadyGame(user.googleId, payload);
                     break;
                 case CODE.close:
-                    onClose(senderId, payload.room);
+                    onClose(user.googleId, payload.room);
                     break;
                 default:
                     console.error(`Message not recognized: ${data}`);

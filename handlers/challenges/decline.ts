@@ -3,14 +3,14 @@ import { storeClient, pubClient } from '../../redis/clients';
 import { DeclineOrAcceptChallengePayload } from '../../types/handlers'
 
 function decline(userId: string, payload: DeclineOrAcceptChallengePayload) {
-    const { challengerId } = payload
+    const { challenger } = payload
 
     const {
         key
-    } = getKeyValue(challengerId, userId, "")
+    } = getKeyValue(challenger, userId, "")
 
     storeClient.del(key)
-    pubClient.publish("messagesToUser:" + challengerId, "$challengeDeclined|" + userId)
+    pubClient.publish("messagesToUser:" + challenger.googleId, "$challengeDeclined|" + userId)
 }
 
 export default decline;

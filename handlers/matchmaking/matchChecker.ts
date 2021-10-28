@@ -36,7 +36,7 @@ setInterval(() => {
                                 }
 
                                 // start the match
-                                startMatch(format, [request.googleId, match.googleId], !key.endsWith(CODE.UnrankedSuffix));
+                                startMatch(format, [request, match], !key.endsWith(CODE.UnrankedSuffix));
                             })
 
                     }

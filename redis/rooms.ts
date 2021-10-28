@@ -1,6 +1,7 @@
 import {storeClient, subClient} from './clients';
 import {Room} from '../types/room';
 import onAny from '../handlers/onAny';
+import { User } from '../types/user';
 
 export function useRoom(id: string, callback: (err: Error | null, isNew: boolean) => void) {
     // Set flag on redis that this room is used by this server
@@ -12,7 +13,7 @@ export function useRoom(id: string, callback: (err: Error | null, isNew: boolean
 }
 
 type messageFormat = {
-    sender: string,
+    sender: User,
     data: any
 }
 
@@ -40,13 +41,13 @@ export function setupRoom(room: Room) {
     // Messages from the clients are 
     subClient.on("message", (_: any, message: string) => {
         const msgObj: messageFormat = JSON.parse(message);
-        const id = msgObj.sender;
+        const user = msgObj.sender;
         let data = msgObj.data;
         if(!(typeof data === "string")) {
             data = JSON.stringify(data);
         }
 
-        onAny(id, room.id, data);
+        onAny(user, room.id, data);
     });
 
     subClient.subscribe("commands:" + room.id);

@@ -38,6 +38,8 @@ export interface TurnAction {
 export interface Player {
   id: string,
   team: TeamMember[],
+  username: string,
+  isGuest: boolean,
   current?: Playercurrent
 }
 

@@ -6,13 +6,12 @@ import { useRoom, setupRoom } from "../redis/rooms";
 import { subClient, pubClient } from "../redis/clients";
 import onJoin from "./onJoin";
 import { parseToRule } from "../actions/parseToRule";
+import { User } from "../types/user";
 
-function onNewRoom(id: string, payload: OnNewRoomPayload, callback:  (roomId: string) => void) {
+function onNewRoom(user: User, payload: OnNewRoomPayload, callback:  (roomId: string) => void) {
   const { room, team } = payload;
 
   useRoom(room, (err, isNew) => {
-    const player = {id, team};
-
     if (err) {
       console.error(err);
       return;
@@ -41,12 +40,12 @@ function onNewRoom(id: string, payload: OnNewRoomPayload, callback:  (roomId: st
 
       setupRoom(roomObj);
 
-      console.info(`Room ${room} has been created. Socket ${id} has joined.`);
+      console.info(`Room ${room} has been created. Socket ${user.googleId} has joined.`);
 
     }
 
     let joinObj = {
-      sender: id,
+      sender: user,
       data: {
         type: CODE.room_join,
         payload: {
@@ -56,7 +55,7 @@ function onNewRoom(id: string, payload: OnNewRoomPayload, callback:  (roomId: st
       }
     }
     if (isNew) {
-      onJoin(id, joinObj.data.payload);
+      onJoin(user, joinObj.data.payload);
     } else {
       pubClient.publish("commands:" + room, JSON.stringify(joinObj));
     }

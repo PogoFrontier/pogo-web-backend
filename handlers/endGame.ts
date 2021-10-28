@@ -67,7 +67,7 @@ function endGame(room: string, timeout?: boolean, predefinedResult?: whoWon) {
 
     sendResult(currentRoom, result);
 
-    //update rankings
+    // update rankings
     if (currentRoom.rated && currentRoom.reservedSeats && currentRoom.formatName && result !== "tie") {
       updateRatings(currentRoom.reservedSeats!, result === "p1", currentRoom.formatName)
     }

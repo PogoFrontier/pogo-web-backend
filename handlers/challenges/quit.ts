@@ -1,16 +1,17 @@
 import { storeClient, pubClient } from "../../redis/clients"
 import { getKeyValue } from "./util"
 import { QuitChallengePayload } from "../../types/handlers"
+import { User } from '../../types/user';
 
-function quitChallenge(challengerId: string, payload: QuitChallengePayload) {
+function quitChallenge(challenger: User, payload: QuitChallengePayload) {
     const { opponentId } = payload
 
     const {
         key
-    } = getKeyValue(challengerId, opponentId, "")
+    } = getKeyValue(challenger, opponentId, "")
 
     storeClient.del(key)
-    pubClient.publish("messagesToUser:" + opponentId, "$challengeCancelled|" + challengerId)
+    pubClient.publish("messagesToUser:" + opponentId, "$challengeCancelled|" + JSON.stringify({ id: challenger.googleId, username: challenger.username }))
 }
 
 export default quitChallenge;

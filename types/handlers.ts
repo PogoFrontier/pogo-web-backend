@@ -2,6 +2,7 @@ import { TeamMember, TeamMemberDescription } from "./team";
 import { RuleDescription } from "./rule";
 import { Move } from "./room";
 import { Actions } from "./actions";
+import { User } from "./user";
 
 export interface OnGetOpponentPayload {
   room: string,
@@ -75,7 +76,7 @@ export interface Anim {
 
 export interface OpenChallengePayload {
   opponentId: string,
-  format: RuleDescription
+  format: string
 }
 
 export interface QuitChallengePayload {
@@ -83,5 +84,5 @@ export interface QuitChallengePayload {
 }
 
 export interface DeclineOrAcceptChallengePayload {
-  challengerId: string
+  challenger: User
 }

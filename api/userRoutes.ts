@@ -1,6 +1,8 @@
 import e, { request } from "express";
 import { firestore } from "../firestore/firestore";
 import {protect, generateToken} from '../actions/api_utils';
+import { storeClient } from "../redis/clients";
+import { getUserStatusKey } from "../redis/getKey";
 
 const router = e.Router();
  
@@ -64,47 +66,52 @@ router.post('/', async (req, res) => {
     try{
         const {userAuth, username, teams} = req.body;
         if(userAuth){
-            //check if user already exists first
-            const docRef = firestore.collection('users').doc(userAuth.uid);
-            docRef.get().then(user => {
-                if(user.data()){
+
+            // Start transaction
+            await firestore.runTransaction(async (t) => {
+
+                //check if user already exists first
+                const docRef = firestore.collection('users').doc(userAuth.uid);
+                const user = await t.get(docRef);
+
+                if (user.data()) {
                     res.sendStatus(401)
-                }else{
-                    const un = username ? username : userAuth.displayName //.sanitize
-                    docRef.set({
-                        googleId: userAuth.uid,
-                        username: un,
-                        usernameNCS: un.toLowerCase(),
-                        email: userAuth.email,
-                        teams: teams ? teams : [],
-                        friends: [],
-                        requests: [],
-                        challenges: [],
-                        pendingChallenge: "",
-                        rank: 0,
-                        achievements: [],
-                        battleBackground: 'default',
-                        profilePic: 'default',
-                        favorite: null,
-                        createdAt: Date.now(),
-                        lastLogin: Date.now(),
-                        isDeleted: false
-                    }).then(() => {
-                        docRef.get().then(userDoc => {
-                            if(userDoc && userDoc.data()){
-                                res.json({
-                                    userData: userDoc.data(),
-                                    token: generateToken(userAuth.uid)
-                                });
-                            }else{
-                                res.sendStatus(500)
-                            }
-                        });
-                    });
+                    return;
                 }
+
+                const un = username ? username : userAuth.displayName //.sanitize
+                // Send user info to client
+                const newUser = await t.get(docRef);
+                if(!newUser?.data()) {
+                    res.sendStatus(500)
+                    return;
+                }
+                t.set(docRef, {
+                    googleId: userAuth.uid,
+                    username: un,
+                    usernameNCS: un.toLowerCase(),
+                    email: userAuth.email,
+                    teams: teams ? teams : [],
+                    friends: [],
+                    requests: [],
+                    challenges: [],
+                    pendingChallenge: "",
+                    rank: 0,
+                    achievements: [],
+                    battleBackground: 'default',
+                    profilePic: 'default',
+                    favorite: null,
+                    createdAt: Date.now(),
+                    lastLogin: Date.now(),
+                    isDeleted: false
+                })
+
+                
+                res.json({
+                    userData: newUser.data(),
+                    token: generateToken(userAuth.uid)
+                });
             });
-        }else{
-            return;
         }
     }catch(err){
         console.log(err);
@@ -117,30 +124,31 @@ router.post('/', async (req, res) => {
 // @access Protected
 router.post('/setteams',
     (req, res, next) => protect(req, res, next),
-    (req: any, res) => {
+    async (req: any, res) => {
         const { teams } = req.body;
-        if (teams) {
-            try {
+        if(!teams) {
+            return
+        }
+
+        try {
+            // Start transaction
+            await firestore.runTransaction(async (t) => {
                 const docRef = firestore.collection('users').doc(req.user.googleId);
-                docRef.get().then(user => {
-                    if (user.data()) {
-                        docRef.update({ teams: teams }).then(() => {
-                            res.json(user.data());
-                        }).catch(err => {
-                            console.log(err);
-                            res.sendStatus(500);
-                        });
-                    } else {
-                        res.sendStatus(404)
-                    }
-                }).catch(err => {
-                    console.log(err);
-                    res.sendStatus(500);
-                })
-            } catch (err) {
-                console.log(err);
-                res.sendStatus(500);
-            }
+
+                // Check if user exists
+                const user = await t.get(docRef);
+                if (!user.data()) {
+                    res.sendStatus(404);
+                    return;
+                }
+
+                // Save teams
+                t.update(docRef, { teams: teams })
+            })
+
+        } catch (err) {
+            console.log(err);
+            res.sendStatus(500);
         }
     }
 )
@@ -150,41 +158,41 @@ router.post('/setteams',
 // @access Protected
 router.post('/username',
     (req, res, next) => protect(req, res, next),
-    (req: any, res) => {
+    async (req: any, res) => {
         const { username } = req.body;
-        if (username) {
-            try {
-                firestore.collection('users').where("username", "==", username).get().
-                    then((duplicate) => {
-                        if(!duplicate.empty) {
-                            res.sendStatus(409);
-                            return;
-                        }
+        if(!username) {
+            return
+        }
 
-                        const docRef = firestore.collection('users').doc(req.user.googleId);
-                        docRef.get().then(user => {
-                            if (user.data()) {
-                                docRef.update({ username: username }).then((writeResult) => {
-                                    res.json({...user.data(), username: username});
-                                }).catch(err => {
-                                    console.log(err);
-                                    res.sendStatus(500);
-                                });
-                            } else {
-                                res.sendStatus(404);
-                            }
-                        }).catch(err => {
-                            console.log(err);
-                            res.sendStatus(500);
-                        })
-                    }).catch(err => {
-                        console.log(err);
-                        res.sendStatus(500);
-                    });
-            } catch (err) {
-                console.log(err);
-                res.sendStatus(500);
-            }
+        try {
+            // Start transaction
+            await firestore.runTransaction(async (t) => {
+
+                // Check for duplicates of that name
+                const duplicate = await t.get(firestore.collection('users').where("username", "==", username))
+                if (!duplicate.empty) {
+                    res.sendStatus(409);
+                    return;
+                }
+
+                // Get user
+                const docRef = firestore.collection('users').doc(req.user.googleId);
+                const user = await t.get(docRef)
+                if(!user.data()) {
+                    res.sendStatus(404);
+                    return
+                }
+
+                // Update username
+                await t.update(docRef, { username: username })
+
+                // Send response
+                res.json({ ...user.data(), username: username });
+                
+            })
+        } catch (err) {
+            console.log(err);
+            res.sendStatus(500);
         }
     }
 )
@@ -197,10 +205,24 @@ router.get('/friends',
     (req: any, res) => {
         const collRef = firestore.collection('users');
         collRef.where('friends', 'array-contains', req.user.googleId)
-        .select("username", "lastLogin").get().then(querySnapshot => {
-            if(querySnapshot.size > 0)
-                res.json(querySnapshot.docs.map(doc => doc.data()));
-            else
+        .select("username", "lastActivity").get().then(querySnapshot => {
+            if (querySnapshot.size > 0) {
+                storeClient.mget(querySnapshot.docs.map(doc => getUserStatusKey(doc.id)), (err, reply) => {
+                    if (err) {
+                        console.log(err);
+                        res.sendStatus(500);
+                        return
+                    }
+
+                    res.json(querySnapshot.docs.map((doc, index) => {
+                        return {
+                            ...doc.data(),
+                            status: reply[index],
+                            id: doc.id
+                        }
+                    }));
+                })
+            } else
                 res.json([]);
         }).catch(err => {
             console.log(err);
@@ -214,45 +236,58 @@ router.get('/friends',
 // @access Protected
 router.get('/request/possible/:username',
     (req, res, next) => protect(req, res, next),
-    (req: any, res) => {
-        if (!!req.params.username) {
-            try {
+    async (req: any, res) => {
+        const { username } = req.params;
+        if (!username) {
+            return
+        }
+
+        try {
+            // Start transaction
+            await firestore.runTransaction(async (t) => {
+
+                // Get user
+                const senderDocRef = firestore.collection('users').doc(req.user.googleId)
+                const sender = await t.get(senderDocRef);
+                // Do you have a username?
+                if (!sender.data()?.username) {
+                    res.sendStatus(401)
+                    return
+                }
+
+                // Get friend
                 const friendDocRef = firestore.collection('users').where("username", "==", req.params.username)
-                friendDocRef.get().then((friendToUpdate) => {
-                    if (!friendToUpdate.empty) {
-                        let index0 = true
-                        friendToUpdate.forEach((newFriendMaybe) => {
-                            if(!index0) {
-                                return
-                            }
-                            index0 = false
-                            if (!newFriendMaybe.data().requests?.map((r: any) => r.id).includes(req.user.googleId)) {
-                                firestore.collection('users').doc(req.user.googleId).get().then(sender => {
-                                    if (sender.data()?.requests?.map((r: any) => r.id).includes(newFriendMaybe.id)) {
-                                        res.sendStatus(409)
-                                        return
-                                    }
-                                    res.sendStatus(200);
-                                }).catch(err => {
-                                    console.log(err);
-                                    res.sendStatus(500);
-                                })
-                            } else {
-                                //return err, request already exists
-                                res.sendStatus(403);
-                            }
-                        })
-                    } else {
-                        res.sendStatus(404);
+                const friendToUpdate = await t.get(friendDocRef);
+                if (friendToUpdate.empty) {
+                    res.sendStatus(404);
+                    return;
+                }
+
+                // Iterate over the 1 friend. 
+                let index0 = true
+                friendToUpdate.forEach((newFriendMaybe) => {
+                    if (!index0) {
+                        return
                     }
-                }).catch(err => {
-                    console.log(err);
-                    res.sendStatus(500);
+                    index0 = false
+
+                    // Has anyone already sent a friend request?
+                    if (newFriendMaybe.data().requests?.map((r: any) => r.id).includes(req.user.googleId)) {
+                        res.sendStatus(403);
+                        return;
+                    }
+                    if (sender.data()?.requests?.map((r: any) => r.id).includes(newFriendMaybe.id)) {
+                        res.sendStatus(409)
+                        return
+                    }
+
+                    // It's possible
+                    res.sendStatus(200);
                 })
-            } catch (err) {
-                console.log(err);
-                res.sendStatus(400);
-            }
+            })
+        } catch (err) {
+            console.log(err);
+            res.sendStatus(400);
         }
     }
 )
@@ -262,61 +297,69 @@ router.get('/request/possible/:username',
 // @access Protected
 router.post('/request/send', 
     (req, res, next) => protect(req, res, next),
-    (req: any, res) => {
-        if(!!req.body.username){
-            try{
-                // Get user with this name
-                const friendDocRef = firestore.collection('users').where("username", "==", req.body.username)
-                friendDocRef.get().then((friendToUpdate) => {
+    async (req: any, res) => {
+        const { username } = req.body;
+        if (!username) {
+            return
+        }
 
-                    // Check if we can send a friend request
-                    if (!friendToUpdate.empty) {
-                        friendToUpdate.forEach((newFriendMaybe) => {
-                            let requests = newFriendMaybe.data().requests
-                            if (!requests) {
-                                requests = []
-                            }
-                            if (!requests.map((r: any) => r.id).includes(req.user.googleId)) {
-                                firestore.collection('users').doc(req.user.googleId).get().then(sender => {
-                                    if(sender.data()?.requests?.map((r: any) => r.id).includes(newFriendMaybe.id)) {
-                                        res.sendStatus(409)
-                                        return
-                                    }
-                                    if (!sender.data()?.username) {
-                                        res.sendStatus(401)
-                                        return
-                                    }
+        try {
+            // Start transaction
+            await firestore.runTransaction(async (t) => {
 
-                                    // Send friend request
-                                    firestore.collection('users').doc(newFriendMaybe.id).update({
-                                        requests: [...requests, { id: req.user.googleId, username: sender.data()?.username}]
-                                    }).then(() => {
-                                        res.sendStatus(200);
-                                    }).catch((err: Error) => {
-                                        console.log(err);
-                                        res.sendStatus(500);
-                                    });
-                                }).catch(err => {
-                                    console.log(err);
-                                    res.sendStatus(500);
-                                })
-                            } else {
-                                //return err, request already exists
-                                res.sendStatus(403);
-                            }
-                        })
-                    } else {
-                        console.log("User not found");
-                        res.sendStatus(400);
+                // Get user
+                const senderDocRef = firestore.collection('users').doc(req.user.googleId)
+                const sender = await t.get(senderDocRef);
+
+                // Do you have a username?
+                if (!sender.data()?.username) {
+                    res.sendStatus(401)
+                    return
+                }
+
+                // Get friend
+                const friendDocRef = firestore.collection('users').where("username", "==", username)
+                const friendToUpdate = await t.get(friendDocRef);
+                if (friendToUpdate.empty) {
+                    res.sendStatus(404);
+                    return;
+                }
+
+                // Iterate over the 1 friend
+                let index0 = true
+                friendToUpdate.forEach((newFriendMaybe) => {
+                    if (!index0) {
+                        return
                     }
-                }).catch(err => {
-                    console.log(err);
-                    res.sendStatus(500);
+                    index0 = false
+
+                    let requests = newFriendMaybe.data().requests
+                    if (!requests) {
+                        requests = []
+                    }
+
+                    // Has anyone already sent a friend request?
+                    if (requests.map((r: any) => r.id).includes(req.user.googleId)) {
+                        res.sendStatus(403);
+                        return;
+                    }
+                    if (sender.data()?.requests?.map((r: any) => r.id).includes(newFriendMaybe.id)) {
+                        res.sendStatus(409)
+                        return
+                    }
+
+                    // Update friend
+                    t.update(firestore.collection('users').doc(newFriendMaybe.id), {
+                        requests: [...requests, { id: req.user.googleId, username: sender.data()?.username }]
+                    })
+
+                    // Send status
+                    res.sendStatus(200);
                 })
-            }catch(err){
-                console.log(err);
-                res.sendStatus(400);
-            }
+            })
+        } catch (err) {
+            console.log(err);
+            res.sendStatus(500);
         }
     }
 )
@@ -328,68 +371,69 @@ router.post('/request/send',
 // @access Protected
 router.post('/request/accept', 
     (req, res, next) => protect(req, res, next),
-    (req: any, res) => {
-        if(!!req.body.googleId){
-            const userID = req.user.googleId;
-            const friendID = req.body.googleId;
-            try{
+    async (req: any, res) => {
+        if(!req.body.googleId) {
+            return;
+        }
+        const userID = req.user.googleId;
+        const friendID = req.body.googleId;
+
+        try {
+            // Start transaction
+            await firestore.runTransaction(async (t) => {
                 const userDocRef = firestore.collection('users').doc(userID)
                 const friendDocRef = firestore.collection('users').doc(friendID)
-                userDocRef.get().then((userToUpdate: any) => {
-                    if(userToUpdate.data()){
-                        friendDocRef.get().then((friendToUpdate: any) => {
-                            if (friendToUpdate.data()) {
-                                const usersRequests: { id: string, username: string }[] = userToUpdate.data().requests || [];
-                                const usersFriends: string[] = userToUpdate.data().friends || [];
-                                const friendsList: string[] = friendToUpdate.data().friends || [];
-                                const reqIndex = usersRequests.map(r => r.id).indexOf(req.body.googleId)
-                                if(
-                                    reqIndex !== -1 && 
-                                    !usersFriends.includes(friendID) &&
-                                    !friendsList.includes(userID)
-                                ) {
-                                    usersRequests.splice(reqIndex, 1)
-                                    userDocRef.update({
-                                        requests: usersRequests,
-                                        friends: [...usersFriends, friendID]
-                                    }).then(() => {
-                                        console.log('updated users friend list');
-                                        friendDocRef.update({
-                                            friends: [...friendsList, userID]
-                                        }).then(() => {
-                                            console.log('updated friends friend list');
-                                            res.sendStatus(200);
-                                        }).catch(err => {
-                                            console.log(err);
-                                            res.sendStatus(500);
-                                        });
-                                    }).catch(err => {
-                                        console.log(err);
-                                        res.sendStatus(500);
-                                    });
-                                }else{
-                                    res.sendStatus(403);
-                                }
-                            }else{
-                                console.log('Attempted to add friend that does not exist');
-                                res.sendStatus(400);
-                            }
-                        }).catch(err => {
-                            console.log(err);
-                            res.sendStatus(500);
-                        });
-                    } else {
-                        res.sendStatus(500);
-                    }
-                }).catch(err => {
-                    console.log(err);
-                    res.sendStatus(500)
+                const userToUpdate = await t.get(userDocRef)
+                const friendToUpdate = await t.get(friendDocRef)
+                const userData = userToUpdate.data()
+                const friendData = friendToUpdate.data()
+
+                // Do the two users exist?
+                if (!userData) {
+                    res.sendStatus(500);
+                    return;
+                }
+                if (!friendData) {
+                    console.log('Attempted to add friend that does not exist');
+                    res.sendStatus(400);
+                    return;
+                }
+
+                // Get lists from data
+                const usersRequests: { id: string, username: string }[] = userData.requests || [];
+                const usersFriends: string[] = userData.friends || [];
+                const friendsList: string[] = friendData.friends || [];
+                const reqIndex = usersRequests.map(r => r.id).indexOf(req.body.googleId)
+
+                // Are they already friends? Do we have a friend request?
+                if (
+                    reqIndex === -1 ||
+                    usersFriends.includes(friendID) ||
+                    friendsList.includes(userID)
+                ) {
+                    res.sendStatus(403);
+                    return
+                }
+
+                // Update data
+                usersRequests.splice(reqIndex, 1)
+                t.update(userDocRef, {
+                    requests: usersRequests,
+                    friends: [...usersFriends, friendID]
                 })
-            }catch(err){
-                console.log(err);
-                res.sendStatus(500);
-            }
+                t.update(friendDocRef, {
+                    friends: [...friendsList, userID]
+                })
+
+                // Send status
+                res.sendStatus(200);
+
+            })
+        } catch (err) {
+            console.log(err);
+            res.sendStatus(500);
         }
+
     }
 );
 
@@ -398,39 +442,52 @@ router.post('/request/accept',
 // @access Protected
 router.post('/request/deny', 
     (req, res, next) => protect(req, res, next),
-    (req: any, res) => {
-        if(!!req.body.googleId){
-            try{
-                const userDocRef = firestore.collection('users').doc(req.user.googleId);
-                userDocRef.get().then((userToUpdate: any) => {
-                    if(userToUpdate.data()){
-                        const usersRequests: {id: string, username: string}[] = userToUpdate.data().requests || [];
-                        const index = usersRequests.map(r => r.id).indexOf(req.body.googleId)
-                        if (index !== -1){
-                            usersRequests.splice(index, 1)
-                            userDocRef.update({
-                                requests: usersRequests
-                            }).then(() => {
-                                res.sendStatus(200);
-                            }).catch(err => {
-                                console.log(err);
-                                res.sendStatus(500)
-                            });
-                        }else{
-                            console.log("User not found");
-                            res.sendStatus(400)
-                        }
-                    } else {
-                        res.sendStatus(500)
-                    }
-                }).catch(err => {
-                    console.log(err);
-                    res.sendStatus(500)
-                });
-            }catch(err){
-                console.log(err);
-                res.sendStatus(500)
-            }
+    async (req: any, res) => {
+        if (!req.body.googleId) {
+            return;
+        }
+
+        const userID = req.user.googleId;
+
+
+        try {
+            // Start transaction
+            await firestore.runTransaction(async (t) => {
+                const userDocRef = firestore.collection('users').doc(userID)
+                const userToUpdate = await t.get(userDocRef)
+                const userData = userToUpdate.data()
+
+                // Do the two users exist?
+                if (!userData) {
+                    res.sendStatus(500);
+                    return;
+                }
+
+                // Get lists from data
+                const usersRequests: { id: string, username: string }[] = userData.requests || [];
+                const reqIndex = usersRequests.map(r => r.id).indexOf(req.body.googleId)
+
+                // Are they already friends? Do we have a friend request?
+                if (
+                    reqIndex === -1
+                ) {
+                    res.sendStatus(403);
+                    return
+                }
+
+                // Update data
+                usersRequests.splice(reqIndex, 1)
+                t.update(userDocRef, {
+                    requests: usersRequests
+                })
+
+                // Send status
+                res.sendStatus(200);
+
+            })
+        } catch (err) {
+            console.log(err);
+            res.sendStatus(500);
         }
     }
 );
@@ -440,58 +497,65 @@ router.post('/request/deny',
 // @access Protected
 router.post('/unfriend', 
     (req, res, next) => protect(req, res, next),
-    (req: any, res) => {
-        if(!!req.body.googleId){
-            const userID = req.user.googleId;
-            const friendID = req.body.googleId;
-            try{
+    async (req: any, res) => {
+        if (!req.body.googleId) {
+            return;
+        }
+        const userID = req.user.googleId;
+        const friendID = req.body.googleId;
+
+        try {
+            // Start transaction
+            await firestore.runTransaction(async (t) => {
                 const userDocRef = firestore.collection('users').doc(userID)
                 const friendDocRef = firestore.collection('users').doc(friendID)
-                userDocRef.get().then((userToUpdate: any) => {
-                    if(userToUpdate.data()){
-                        friendDocRef.get().then((friendToUpdate: any) => {
-                            const usersList: string[] = userToUpdate.data().friends || [];
-                            const friendsList: string[] = friendToUpdate.data().friends || [];
-                            if(
-                                usersList.includes(friendID) &&
-                                friendsList.includes(userID)
-                            ){
-                                userDocRef.update({
-                                    friends: usersList.splice(usersList.indexOf(friendID))
-                                }).then(() => {
-                                    console.log('updated users friend list');
-                                    friendDocRef.update({
-                                        friends: friendsList.splice(friendsList.indexOf(userID))
-                                    }).then(() => {
-                                        console.log('updated friends friend list');
-                                        res.sendStatus(200);
-                                    }).catch(err => {
-                                        console.log(err);
-                                        res.sendStatus(500)
-                                    });
-                                }).catch(err => {
-                                    console.log(err);
-                                    res.sendStatus(500)
-                                });
-                            } else {
-                                console.log('Attempted to delete friend that does not exist');
-                                res.sendStatus(400)
-                            }
-                        }).catch(err => {
-                            console.log(err);
-                            res.sendStatus(500)
-                        })
-                    } else {
-                        res.sendStatus(500)
-                    }
-                }).catch(err => {
-                    console.log(err);
-                    res.sendStatus(500)
+                const userToUpdate = await t.get(userDocRef)
+                const friendToUpdate = await t.get(friendDocRef)
+                const userData = userToUpdate.data()
+                const friendData = friendToUpdate.data()
+
+                // Do the two users exist?
+                if (!userData) {
+                    res.sendStatus(500);
+                    return;
+                }
+                if (!friendData) {
+                    console.log('Attempted to add friend that does not exist');
+                    res.sendStatus(400);
+                    return;
+                }
+
+                // Get lists from data
+                const usersList: string[] = userData.friends || [];
+                const friendsList: string[] = friendData.friends || [];
+
+                // Are they already friends? Do we have a friend request?
+                if (
+                    !usersList.includes(friendID) ||
+                    !friendsList.includes(userID)
+                ) {
+                    console.log('Attempted to delete friend that does not exist');
+                    res.sendStatus(400)
+                    return
+                }
+
+                // Update data
+                usersList.splice(usersList.indexOf(friendID), 1)
+                friendsList.splice(friendsList.indexOf(userID), 1)
+                t.update(userDocRef, {
+                    friends: usersList
                 })
-            }catch(err){
-                console.log(err);
-                res.sendStatus(500)
-            }
+                t.update(friendDocRef, {
+                    friends: friendsList
+                })
+
+                // Send status
+                res.sendStatus(200);
+
+            })
+        } catch (err) {
+            console.log(err);
+            res.sendStatus(500);
         }
     }
 );
