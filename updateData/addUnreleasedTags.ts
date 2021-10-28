@@ -27,6 +27,7 @@ const replaceMap = {
     "_ordinary": "",
     "_aria": "",
     "pyroar_f": "pyroar",
+    "_average": "",
     "_confined": "",
     "_amped": "_low_key",
     "_phony": "",

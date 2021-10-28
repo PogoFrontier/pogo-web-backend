@@ -66,6 +66,12 @@ for(let id of Object.keys(pokemonList)) {
     if(key.startsWith("pyroar")) {
         key = "pyroar";
     }
+    if (key.startsWith("pumpkaboo")) {
+        key = "pumpkaboo";
+    }
+    if (key.startsWith("gourgeist")) {
+        key = "gourgeist";
+    }
     if(key.startsWith("hoopa")) {
         key = "hoopa";
     }

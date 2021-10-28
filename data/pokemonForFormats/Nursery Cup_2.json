@@ -3660,8 +3660,7 @@
       "psychic"
     ],
     "tags": [
-      "galarian",
-      "unreleased"
+      "galarian"
     ]
   },
   "slowking_shadow": {
@@ -9661,8 +9660,7 @@
     ],
     "tags": [
       "mythical",
-      "untradeable",
-      "unreleased"
+      "untradeable"
     ]
   },
   "genesect_shock": {
@@ -10268,12 +10266,9 @@
     "types": [
       "ghost",
       "grass"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
-  "pumpkaboo": {
+  "pumpkaboo_average": {
     "legal": false,
     "dex": 710,
     "types": [
@@ -10281,10 +10276,40 @@
       "grass"
     ],
     "tags": [
-      "unreleased"
+      "teambuilderexclude"
     ]
   },
-  "gourgeist": {
+  "pumpkaboo_large": {
+    "legal": false,
+    "dex": 710,
+    "types": [
+      "ghost",
+      "grass"
+    ],
+    "tags": [
+      "teambuilderexclude"
+    ]
+  },
+  "pumpkaboo_small": {
+    "legal": false,
+    "dex": 710,
+    "types": [
+      "ghost",
+      "grass"
+    ],
+    "tags": [
+      "teambuilderexclude"
+    ]
+  },
+  "pumpkaboo_super": {
+    "legal": false,
+    "dex": 710,
+    "types": [
+      "ghost",
+      "grass"
+    ]
+  },
+  "gourgeist_average": {
     "legal": false,
     "dex": 711,
     "types": [
@@ -10292,7 +10317,37 @@
       "grass"
     ],
     "tags": [
-      "unreleased"
+      "teambuilderexclude"
+    ]
+  },
+  "gourgeist_large": {
+    "legal": false,
+    "dex": 711,
+    "types": [
+      "ghost",
+      "grass"
+    ],
+    "tags": [
+      "teambuilderexclude"
+    ]
+  },
+  "gourgeist_small": {
+    "legal": false,
+    "dex": 711,
+    "types": [
+      "ghost",
+      "grass"
+    ],
+    "tags": [
+      "teambuilderexclude"
+    ]
+  },
+  "gourgeist_super": {
+    "legal": false,
+    "dex": 711,
+    "types": [
+      "ghost",
+      "grass"
     ]
   },
   "bergmite": {
@@ -11547,7 +11602,8 @@
       "grass"
     ],
     "tags": [
-      "unreleased"
+      "mythical",
+      "untradeable"
     ]
   },
   "regieleki": {
