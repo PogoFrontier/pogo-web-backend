@@ -24,7 +24,7 @@
     ]
   },
   "ivysaur": {
-    "legal": false,
+    "legal": true,
     "dex": 2,
     "types": [
       "grass",
@@ -33,10 +33,22 @@
     "tags": [
       "starter",
       "shadoweligible"
-    ]
+    ],
+    "speciesName": {
+      "de": "Bisaknosp",
+      "fr": "Herbizarre",
+      "en": "Ivysaur",
+      "es": "Ivysaur",
+      "th": "ฟุชิกิโซ",
+      "ja": "フシギソウ",
+      "ko": "이상해풀",
+      "ru": "Ивизавр",
+      "zh_hans": "妙蛙草",
+      "zh_hant": "妙蛙草"
+    }
   },
   "ivysaur_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 2,
     "types": [
       "grass",
@@ -45,7 +57,19 @@
     "tags": [
       "starter",
       "shadow"
-    ]
+    ],
+    "speciesName": {
+      "de": "Bisaknosp (Schatten)",
+      "fr": "Herbizarre (Ombre)",
+      "en": "Ivysaur (Shadow)",
+      "es": "Ivysaur (Oscuro)",
+      "th": "ฟุชิกิโซ (Shadow)",
+      "ja": "フシギソウ (Shadow)",
+      "ko": "이상해풀 (Shadow)",
+      "ru": "Ивизавр (Shadow)",
+      "zh_hans": "妙蛙草 (Shadow)",
+      "zh_hant": "妙蛙草 (Shadow)"
+    }
   },
   "venusaur": {
     "legal": false,
@@ -109,7 +133,7 @@
     ]
   },
   "charmeleon": {
-    "legal": false,
+    "legal": true,
     "dex": 5,
     "types": [
       "fire",
@@ -118,10 +142,22 @@
     "tags": [
       "starter",
       "shadoweligible"
-    ]
+    ],
+    "speciesName": {
+      "de": "Glutexo",
+      "fr": "Reptincel",
+      "en": "Charmeleon",
+      "es": "Charmeleon",
+      "th": "ลิซาร์โดะ",
+      "ja": "リザード",
+      "ko": "리자드",
+      "ru": "Чармелеон",
+      "zh_hans": "火恐龙",
+      "zh_hant": "火恐龍"
+    }
   },
   "charmeleon_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 5,
     "types": [
       "fire",
@@ -130,7 +166,19 @@
     "tags": [
       "starter",
       "shadow"
-    ]
+    ],
+    "speciesName": {
+      "de": "Glutexo (Schatten)",
+      "fr": "Reptincel (Ombre)",
+      "en": "Charmeleon (Shadow)",
+      "es": "Charmeleon (Oscuro)",
+      "th": "ลิซาร์โดะ (Shadow)",
+      "ja": "リザード (Shadow)",
+      "ko": "리자드 (Shadow)",
+      "ru": "Чармелеон (Shadow)",
+      "zh_hans": "火恐龙 (Shadow)",
+      "zh_hant": "火恐龍 (Shadow)"
+    }
   },
   "charizard": {
     "legal": false,
@@ -207,7 +255,7 @@
     ]
   },
   "wartortle": {
-    "legal": false,
+    "legal": true,
     "dex": 8,
     "types": [
       "water",
@@ -216,10 +264,22 @@
     "tags": [
       "starter",
       "shadoweligible"
-    ]
+    ],
+    "speciesName": {
+      "de": "Schillok",
+      "fr": "Carabaffe",
+      "en": "Wartortle",
+      "es": "Wartortle",
+      "th": "คาเมล",
+      "ja": "カメール",
+      "ko": "어니부기",
+      "ru": "Вартортл",
+      "zh_hans": "卡咪龟",
+      "zh_hant": "卡咪龜"
+    }
   },
   "wartortle_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 8,
     "types": [
       "water",
@@ -228,7 +288,19 @@
     "tags": [
       "starter",
       "shadow"
-    ]
+    ],
+    "speciesName": {
+      "de": "Schillok (Schatten)",
+      "fr": "Carabaffe (Ombre)",
+      "en": "Wartortle (Shadow)",
+      "es": "Wartortle (Oscuro)",
+      "th": "คาเมล (Shadow)",
+      "ja": "カメール (Shadow)",
+      "ko": "어니부기 (Shadow)",
+      "ru": "Вартортл (Shadow)",
+      "zh_hans": "卡咪龟 (Shadow)",
+      "zh_hant": "卡咪龜 (Shadow)"
+    }
   },
   "blastoise": {
     "legal": false,
@@ -438,7 +510,7 @@
     ]
   },
   "raticate": {
-    "legal": false,
+    "legal": true,
     "dex": 20,
     "types": [
       "normal",
@@ -446,7 +518,19 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": {
+      "de": "Rattikarl",
+      "fr": "Rattatac",
+      "en": "Raticate",
+      "es": "Raticate",
+      "th": "รัตตา",
+      "ja": "ラッタ",
+      "ko": "레트라",
+      "ru": "Рэтикейт",
+      "zh_hans": "拉达",
+      "zh_hant": "拉達"
+    }
   },
   "raticate_alolan": {
     "legal": false,
@@ -460,7 +544,7 @@
     ]
   },
   "raticate_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 20,
     "types": [
       "normal",
@@ -468,7 +552,19 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": {
+      "de": "Rattikarl (Schatten)",
+      "fr": "Rattatac (Ombre)",
+      "en": "Raticate (Shadow)",
+      "es": "Raticate (Oscuro)",
+      "th": "รัตตา (Shadow)",
+      "ja": "ラッタ (Shadow)",
+      "ko": "레트라 (Shadow)",
+      "ru": "Рэтикейт (Shadow)",
+      "zh_hans": "拉达 (Shadow)",
+      "zh_hant": "拉達 (Shadow)"
+    }
   },
   "spearow": {
     "legal": false,
@@ -595,7 +691,7 @@
     ]
   },
   "raichu_alolan": {
-    "legal": false,
+    "legal": true,
     "dex": 26,
     "types": [
       "electric",
@@ -603,7 +699,19 @@
     ],
     "tags": [
       "alolan"
-    ]
+    ],
+    "speciesName": {
+      "de": "Raichu (Alola)",
+      "fr": "Raichu (Alolan)",
+      "en": "Raichu (Alolan)",
+      "es": "Raichu (Alola)",
+      "th": "ไรชู (Alolan)",
+      "ja": "ライチュウ (Alolan)",
+      "ko": "라이츄 (Alolan)",
+      "ru": "Райчу (Alolan)",
+      "zh_hans": "雷丘 (Alolan)",
+      "zh_hant": "雷丘 (Alolan)"
+    }
   },
   "sandshrew": {
     "legal": false,
@@ -694,7 +802,7 @@
     ]
   },
   "nidorina": {
-    "legal": false,
+    "legal": true,
     "dex": 30,
     "types": [
       "poison",
@@ -702,10 +810,22 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": {
+      "de": "Nidorina",
+      "fr": "Nidorina",
+      "en": "Nidorina",
+      "es": "Nidorina",
+      "th": "นิโดรินา",
+      "ja": "ニドリーナ",
+      "ko": "니드리나",
+      "ru": "Нидорина",
+      "zh_hans": "尼多娜",
+      "zh_hant": "尼多娜"
+    }
   },
   "nidorina_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 30,
     "types": [
       "poison",
@@ -713,7 +833,19 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": {
+      "de": "Nidorina (Schatten)",
+      "fr": "Nidorina (Ombre)",
+      "en": "Nidorina (Shadow)",
+      "es": "Nidorina (Oscuro)",
+      "th": "นิโดรินา (Shadow)",
+      "ja": "ニドリーナ (Shadow)",
+      "ko": "니드리나 (Shadow)",
+      "ru": "Нидорина (Shadow)",
+      "zh_hans": "尼多娜 (Shadow)",
+      "zh_hant": "尼多娜 (Shadow)"
+    }
   },
   "nidoqueen": {
     "legal": false,
@@ -760,7 +892,7 @@
     ]
   },
   "nidorino": {
-    "legal": false,
+    "legal": true,
     "dex": 33,
     "types": [
       "poison",
@@ -768,10 +900,22 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": {
+      "de": "Nidorino",
+      "fr": "Nidorino",
+      "en": "Nidorino",
+      "es": "Nidorino",
+      "th": "นิโดริโน",
+      "ja": "ニドリーノ",
+      "ko": "니드리노",
+      "ru": "Нидорино",
+      "zh_hans": "尼多力诺",
+      "zh_hant": "尼多力諾"
+    }
   },
   "nidorino_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 33,
     "types": [
       "poison",
@@ -779,7 +923,19 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": {
+      "de": "Nidorino (Schatten)",
+      "fr": "Nidorino (Ombre)",
+      "en": "Nidorino (Shadow)",
+      "es": "Nidorino (Oscuro)",
+      "th": "นิโดริโน (Shadow)",
+      "ja": "ニドリーノ (Shadow)",
+      "ko": "니드리노 (Shadow)",
+      "ru": "Нидорино (Shadow)",
+      "zh_hans": "尼多力诺 (Shadow)",
+      "zh_hant": "尼多力諾 (Shadow)"
+    }
   },
   "nidoking": {
     "legal": false,
@@ -853,7 +1009,7 @@
     ]
   },
   "ninetales": {
-    "legal": false,
+    "legal": true,
     "dex": 38,
     "types": [
       "fire",
@@ -861,7 +1017,19 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": {
+      "de": "Vulnona",
+      "fr": "Feunard",
+      "en": "Ninetales",
+      "es": "Ninetales",
+      "th": "คิวคอน",
+      "ja": "キュウコン",
+      "ko": "나인테일",
+      "ru": "Найнтейлс",
+      "zh_hans": "九尾",
+      "zh_hant": "九尾"
+    }
   },
   "ninetales_alolan": {
     "legal": false,
@@ -875,7 +1043,7 @@
     ]
   },
   "ninetales_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 38,
     "types": [
       "fire",
@@ -883,7 +1051,19 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": {
+      "de": "Vulnona (Schatten)",
+      "fr": "Feunard (Ombre)",
+      "en": "Ninetales (Shadow)",
+      "es": "Ninetales (Oscuro)",
+      "th": "คิวคอน (Shadow)",
+      "ja": "キュウコン (Shadow)",
+      "ko": "나인테일 (Shadow)",
+      "ru": "Найнтейлс (Shadow)",
+      "zh_hans": "九尾 (Shadow)",
+      "zh_hant": "九尾 (Shadow)"
+    }
   },
   "jigglypuff": {
     "legal": false,
@@ -894,12 +1074,24 @@
     ]
   },
   "wigglytuff": {
-    "legal": false,
+    "legal": true,
     "dex": 40,
     "types": [
       "normal",
       "fairy"
-    ]
+    ],
+    "speciesName": {
+      "de": "Knuddeluff",
+      "fr": "Grodoudou",
+      "en": "Wigglytuff",
+      "es": "Wigglytuff",
+      "th": "พูคูริน",
+      "ja": "プクリン",
+      "ko": "푸크린",
+      "ru": "Вигглитаф",
+      "zh_hans": "胖可丁",
+      "zh_hant": "胖可丁"
+    }
   },
   "zubat": {
     "legal": false,
@@ -990,7 +1182,7 @@
     ]
   },
   "vileplume": {
-    "legal": false,
+    "legal": true,
     "dex": 45,
     "types": [
       "grass",
@@ -998,10 +1190,22 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": {
+      "de": "Giflor",
+      "fr": "Rafflesia",
+      "en": "Vileplume",
+      "es": "Vileplume",
+      "th": "รัฟเฟรเซีย",
+      "ja": "ラフレシア",
+      "ko": "라플레시아",
+      "ru": "Вайлплум",
+      "zh_hans": "霸王花",
+      "zh_hant": "霸王花"
+    }
   },
   "vileplume_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 45,
     "types": [
       "grass",
@@ -1009,7 +1213,19 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": {
+      "de": "Giflor (Schatten)",
+      "fr": "Rafflesia (Ombre)",
+      "en": "Vileplume (Shadow)",
+      "es": "Vileplume (Oscuro)",
+      "th": "รัฟเฟรเซีย (Shadow)",
+      "ja": "ラフレシア (Shadow)",
+      "ko": "라플레시아 (Shadow)",
+      "ru": "Вайлплум (Shadow)",
+      "zh_hans": "霸王花 (Shadow)",
+      "zh_hant": "霸王花 (Shadow)"
+    }
   },
   "paras": {
     "legal": false,
@@ -1050,7 +1266,7 @@
     ]
   },
   "venomoth": {
-    "legal": false,
+    "legal": true,
     "dex": 49,
     "types": [
       "bug",
@@ -1058,10 +1274,22 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": {
+      "de": "Omot",
+      "fr": "Aéromite",
+      "en": "Venomoth",
+      "es": "Venomoth",
+      "th": "มอร์ฟอน",
+      "ja": "モルフォン",
+      "ko": "도나리",
+      "ru": "Веномот",
+      "zh_hans": "摩鲁蛾",
+      "zh_hant": "摩魯蛾"
+    }
   },
   "venomoth_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 49,
     "types": [
       "bug",
@@ -1069,7 +1297,19 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": {
+      "de": "Omot (Schatten)",
+      "fr": "Aéromite (Ombre)",
+      "en": "Venomoth (Shadow)",
+      "es": "Venomoth (Oscuro)",
+      "th": "มอร์ฟอน (Shadow)",
+      "ja": "モルフォン (Shadow)",
+      "ko": "도나리 (Shadow)",
+      "ru": "Веномот (Shadow)",
+      "zh_hans": "摩鲁蛾 (Shadow)",
+      "zh_hant": "摩魯蛾 (Shadow)"
+    }
   },
   "diglett": {
     "legal": false,
@@ -1341,7 +1581,7 @@
     ]
   },
   "poliwhirl": {
-    "legal": false,
+    "legal": true,
     "dex": 61,
     "types": [
       "water",
@@ -1349,10 +1589,22 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": {
+      "de": "Quaputzi",
+      "fr": "Têtarte",
+      "en": "Poliwhirl",
+      "es": "Poliwhirl",
+      "th": "เนียวโรโซ",
+      "ja": "ニョロゾ",
+      "ko": "슈륙챙이",
+      "ru": "Поливирл",
+      "zh_hans": "蚊香君",
+      "zh_hant": "蚊香君"
+    }
   },
   "poliwhirl_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 61,
     "types": [
       "water",
@@ -1360,7 +1612,19 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": {
+      "de": "Quaputzi (Schatten)",
+      "fr": "Têtarte (Ombre)",
+      "en": "Poliwhirl (Shadow)",
+      "es": "Poliwhirl (Oscuro)",
+      "th": "เนียวโรโซ (Shadow)",
+      "ja": "ニョロゾ (Shadow)",
+      "ko": "슈륙챙이 (Shadow)",
+      "ru": "Поливирл (Shadow)",
+      "zh_hans": "蚊香君 (Shadow)",
+      "zh_hant": "蚊香君 (Shadow)"
+    }
   },
   "poliwrath": {
     "legal": false,
@@ -1585,7 +1849,7 @@
     ]
   },
   "victreebel": {
-    "legal": false,
+    "legal": true,
     "dex": 71,
     "types": [
       "grass",
@@ -1593,10 +1857,22 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": {
+      "de": "Sarzenia",
+      "fr": "Empiflor",
+      "en": "Victreebel",
+      "es": "Victreebel",
+      "th": "อุซึบ็อท",
+      "ja": "ウツボット",
+      "ko": "우츠보트",
+      "ru": "Виктрибел",
+      "zh_hans": "大食花",
+      "zh_hant": "大食花"
+    }
   },
   "victreebel_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 71,
     "types": [
       "grass",
@@ -1604,7 +1880,19 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": {
+      "de": "Sarzenia (Schatten)",
+      "fr": "Empiflor (Ombre)",
+      "en": "Victreebel (Shadow)",
+      "es": "Victreebel (Oscuro)",
+      "th": "อุซึบ็อท (Shadow)",
+      "ja": "ウツボット (Shadow)",
+      "ko": "우츠보트 (Shadow)",
+      "ru": "Виктрибел (Shadow)",
+      "zh_hans": "大食花 (Shadow)",
+      "zh_hant": "大食花 (Shadow)"
+    }
   },
   "tentacool": {
     "legal": false,
@@ -1631,7 +1919,7 @@
     ]
   },
   "geodude_alolan": {
-    "legal": false,
+    "legal": true,
     "dex": 74,
     "types": [
       "rock",
@@ -1639,7 +1927,19 @@
     ],
     "tags": [
       "alolan"
-    ]
+    ],
+    "speciesName": {
+      "de": "Kleinstein (Alola)",
+      "fr": "Racaillou (Alolan)",
+      "en": "Geodude (Alolan)",
+      "es": "Geodude (Alola)",
+      "th": "อิชิซึบูเตะ (Alolan)",
+      "ja": "イシツブテ (Alolan)",
+      "ko": "꼬마돌 (Alolan)",
+      "ru": "Джеодуд (Alolan)",
+      "zh_hans": "小拳石 (Alolan)",
+      "zh_hant": "小拳石 (Alolan)"
+    }
   },
   "graveler": {
     "legal": false,
@@ -1840,7 +2140,7 @@
     ]
   },
   "farfetchd": {
-    "legal": false,
+    "legal": true,
     "dex": 83,
     "types": [
       "normal",
@@ -1848,7 +2148,19 @@
     ],
     "tags": [
       "regional"
-    ]
+    ],
+    "speciesName": {
+      "de": "Porenta",
+      "fr": "Canarticho",
+      "en": "Farfetch’d",
+      "es": "Farfetch’d",
+      "th": "คาโมเนกิ",
+      "ja": "カモネギ",
+      "ko": "파오리",
+      "ru": "Фарфетчд",
+      "zh_hans": "大葱鸭",
+      "zh_hant": "大蔥鴨"
+    }
   },
   "farfetchd_galarian": {
     "legal": false,
@@ -2318,7 +2630,7 @@
     ]
   },
   "weezing_galarian": {
-    "legal": false,
+    "legal": true,
     "dex": 110,
     "types": [
       "poison",
@@ -2326,7 +2638,19 @@
     ],
     "tags": [
       "galarian"
-    ]
+    ],
+    "speciesName": {
+      "de": "Smogmog (Galar)",
+      "fr": "Smogogo (Galarian)",
+      "en": "Weezing (Galarian)",
+      "es": "Weezing (Galar)",
+      "th": "มาตาโดกัซ (Galarian)",
+      "ja": "マタドガス (Galarian)",
+      "ko": "또도가스 (Galarian)",
+      "ru": "Визинг (Galarian)",
+      "zh_hans": "双弹瓦斯 (Galarian)",
+      "zh_hant": "雙彈瓦斯 (Galarian)"
+    }
   },
   "weezing_shadow": {
     "legal": false,
@@ -2706,12 +3030,24 @@
     ]
   },
   "jolteon": {
-    "legal": false,
+    "legal": true,
     "dex": 135,
     "types": [
       "electric",
       "none"
-    ]
+    ],
+    "speciesName": {
+      "de": "Blitza",
+      "fr": "Voltali",
+      "en": "Jolteon",
+      "es": "Jolteon",
+      "th": "ธันเดอร์ส",
+      "ja": "サンダース",
+      "ko": "쥬피썬더",
+      "ru": "Джолтеон",
+      "zh_hans": "雷伊布",
+      "zh_hant": "雷伊布"
+    }
   },
   "flareon": {
     "legal": false,
@@ -2942,7 +3278,7 @@
     ]
   },
   "dragonair": {
-    "legal": false,
+    "legal": true,
     "dex": 148,
     "types": [
       "dragon",
@@ -2950,10 +3286,22 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": {
+      "de": "Dragonir",
+      "fr": "Draco",
+      "en": "Dragonair",
+      "es": "Dragonair",
+      "th": "ฮาคุริว",
+      "ja": "ハクリュー",
+      "ko": "신뇽",
+      "ru": "Драгонэйр",
+      "zh_hans": "哈克龙",
+      "zh_hant": "哈克龍"
+    }
   },
   "dragonair_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 148,
     "types": [
       "dragon",
@@ -2961,7 +3309,19 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": {
+      "de": "Dragonir (Schatten)",
+      "fr": "Draco (Ombre)",
+      "en": "Dragonair (Shadow)",
+      "es": "Dragonair (Oscuro)",
+      "th": "ฮาคุริว (Shadow)",
+      "ja": "ハクリュー (Shadow)",
+      "ko": "신뇽 (Shadow)",
+      "ru": "Драгонэйр (Shadow)",
+      "zh_hans": "哈克龙 (Shadow)",
+      "zh_hant": "哈克龍 (Shadow)"
+    }
   },
   "dragonite": {
     "legal": false,
@@ -3044,7 +3404,7 @@
     ]
   },
   "bayleef": {
-    "legal": false,
+    "legal": true,
     "dex": 153,
     "types": [
       "grass",
@@ -3052,7 +3412,19 @@
     ],
     "tags": [
       "starter"
-    ]
+    ],
+    "speciesName": {
+      "de": "Lorblatt",
+      "fr": "Macronium",
+      "en": "Bayleef",
+      "es": "Bayleef",
+      "th": "เบย์ลีฟ",
+      "ja": "ベイリーフ",
+      "ko": "베이리프",
+      "ru": "Бейлиф",
+      "zh_hans": "月桂叶",
+      "zh_hant": "月桂葉"
+    }
   },
   "meganium": {
     "legal": false,
@@ -3077,7 +3449,7 @@
     ]
   },
   "quilava": {
-    "legal": false,
+    "legal": true,
     "dex": 156,
     "types": [
       "fire",
@@ -3085,7 +3457,19 @@
     ],
     "tags": [
       "starter"
-    ]
+    ],
+    "speciesName": {
+      "de": "Igelavar",
+      "fr": "Feurisson",
+      "en": "Quilava",
+      "es": "Quilava",
+      "th": "แม็กมาราชิ",
+      "ja": "マグマラシ",
+      "ko": "마그케인",
+      "ru": "Квилава",
+      "zh_hans": "火岩鼠",
+      "zh_hant": "火岩鼠"
+    }
   },
   "typhlosion": {
     "legal": false,
@@ -3226,12 +3610,24 @@
     ]
   },
   "lanturn": {
-    "legal": false,
+    "legal": true,
     "dex": 171,
     "types": [
       "water",
       "electric"
-    ]
+    ],
+    "speciesName": {
+      "de": "Lanturn",
+      "fr": "Lanturn",
+      "en": "Lanturn",
+      "es": "Lanturn",
+      "th": "แลนเทอร์น",
+      "ja": "ランターン",
+      "ko": "랜턴",
+      "ru": "Лантурн",
+      "zh_hans": "电灯怪",
+      "zh_hant": "電燈怪"
+    }
   },
   "pichu": {
     "legal": false,
@@ -3282,12 +3678,24 @@
     ]
   },
   "xatu": {
-    "legal": false,
+    "legal": true,
     "dex": 178,
     "types": [
       "psychic",
       "flying"
-    ]
+    ],
+    "speciesName": {
+      "de": "Xatu",
+      "fr": "Xatu",
+      "en": "Xatu",
+      "es": "Xatu",
+      "th": "เนทิโอ",
+      "ja": "ネイティオ",
+      "ko": "네이티오",
+      "ru": "Ксату",
+      "zh_hans": "天然鸟",
+      "zh_hant": "天然鳥"
+    }
   },
   "mareep": {
     "legal": false,
@@ -3767,12 +4175,24 @@
     ]
   },
   "dunsparce": {
-    "legal": false,
+    "legal": true,
     "dex": 206,
     "types": [
       "normal",
       "none"
-    ]
+    ],
+    "speciesName": {
+      "de": "Dummisel",
+      "fr": "Insolourdo",
+      "en": "Dunsparce",
+      "es": "Dunsparce",
+      "th": "โนก็อจจิ",
+      "ja": "ノコッチ",
+      "ko": "노고치",
+      "ru": "Данспорс",
+      "zh_hans": "土龙弟弟",
+      "zh_hant": "土龍弟弟"
+    }
   },
   "gligar": {
     "legal": false,
@@ -4295,24 +4715,12 @@
     ]
   },
   "magby": {
-    "legal": true,
+    "legal": false,
     "dex": 240,
     "types": [
       "fire",
       "none"
-    ],
-    "speciesName": {
-      "de": "Magby",
-      "fr": "Magby",
-      "en": "Magby",
-      "es": "Magby",
-      "th": "บูบี",
-      "ja": "ブビィ",
-      "ko": "마그비",
-      "ru": "Магби",
-      "zh_hans": "小鸭嘴龙",
-      "zh_hant": "小鴨嘴龍"
-    }
+    ]
   },
   "miltank": {
     "legal": false,
@@ -4527,7 +4935,7 @@
     ]
   },
   "grovyle": {
-    "legal": false,
+    "legal": true,
     "dex": 253,
     "types": [
       "grass",
@@ -4535,7 +4943,19 @@
     ],
     "tags": [
       "starter"
-    ]
+    ],
+    "speciesName": {
+      "de": "Reptain",
+      "fr": "Massko",
+      "en": "Grovyle",
+      "es": "Grovyle",
+      "th": "จุปไทล์",
+      "ja": "ジュプトル",
+      "ko": "나무돌이",
+      "ru": "Гроувайл",
+      "zh_hans": "森林蜥蜴",
+      "zh_hant": "森林蜥蜴"
+    }
   },
   "sceptile": {
     "legal": false,
@@ -4560,7 +4980,7 @@
     ]
   },
   "combusken": {
-    "legal": false,
+    "legal": true,
     "dex": 256,
     "types": [
       "fire",
@@ -4568,7 +4988,19 @@
     ],
     "tags": [
       "starter"
-    ]
+    ],
+    "speciesName": {
+      "de": "Jungglut",
+      "fr": "Galifeu",
+      "en": "Combusken",
+      "es": "Combusken",
+      "th": "วาคาชาโม",
+      "ja": "ワカシャモ",
+      "ko": "영치코",
+      "ru": "Комбускен",
+      "zh_hans": "力壮鸡",
+      "zh_hant": "力壯雞"
+    }
   },
   "blaziken": {
     "legal": false,
@@ -4872,12 +5304,24 @@
     ]
   },
   "swellow": {
-    "legal": false,
+    "legal": true,
     "dex": 277,
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "speciesName": {
+      "de": "Schwalboss",
+      "fr": "Hélédelle",
+      "en": "Swellow",
+      "es": "Swellow",
+      "th": "โอโอสึบาเมะ",
+      "ja": "オオスバメ",
+      "ko": "스왈로",
+      "ru": "Свеллоу",
+      "zh_hans": "大王燕",
+      "zh_hant": "大王燕"
+    }
   },
   "wingull": {
     "legal": false,
@@ -5026,12 +5470,24 @@
     ]
   },
   "ninjask": {
-    "legal": false,
+    "legal": true,
     "dex": 291,
     "types": [
       "bug",
       "flying"
-    ]
+    ],
+    "speciesName": {
+      "de": "Ninjask",
+      "fr": "Ninjask",
+      "en": "Ninjask",
+      "es": "Ninjask",
+      "th": "เท็คคานิน",
+      "ja": "テッカニン",
+      "ko": "아이스크",
+      "ru": "Нинджаск",
+      "zh_hans": "铁面忍者",
+      "zh_hant": "鐵面忍者"
+    }
   },
   "shedinja": {
     "legal": false,
@@ -5156,7 +5612,7 @@
     ]
   },
   "sableye": {
-    "legal": false,
+    "legal": true,
     "dex": 302,
     "types": [
       "dark",
@@ -5164,10 +5620,22 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": {
+      "de": "Zobiris",
+      "fr": "Ténéfix",
+      "en": "Sableye",
+      "es": "Sableye",
+      "th": "ยามิรามิ",
+      "ja": "ヤミラミ",
+      "ko": "깜까미",
+      "ru": "Саблай",
+      "zh_hans": "勾魂眼",
+      "zh_hant": "勾魂眼"
+    }
   },
   "sableye_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 302,
     "types": [
       "dark",
@@ -5175,10 +5643,22 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": {
+      "de": "Zobiris (Schatten)",
+      "fr": "Ténéfix (Ombre)",
+      "en": "Sableye (Shadow)",
+      "es": "Sableye (Oscuro)",
+      "th": "ยามิรามิ (Shadow)",
+      "ja": "ヤミラミ (Shadow)",
+      "ko": "깜까미 (Shadow)",
+      "ru": "Саблай (Shadow)",
+      "zh_hans": "勾魂眼 (Shadow)",
+      "zh_hant": "勾魂眼 (Shadow)"
+    }
   },
   "mawile": {
-    "legal": false,
+    "legal": true,
     "dex": 303,
     "types": [
       "steel",
@@ -5186,10 +5666,22 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": {
+      "de": "Flunkifer",
+      "fr": "Mysdibule",
+      "en": "Mawile",
+      "es": "Mawile",
+      "th": "คูชีท",
+      "ja": "クチート",
+      "ko": "입치트",
+      "ru": "Мэвайл",
+      "zh_hans": "大嘴娃",
+      "zh_hant": "大嘴娃"
+    }
   },
   "mawile_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 303,
     "types": [
       "steel",
@@ -5197,7 +5689,19 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": {
+      "de": "Flunkifer (Schatten)",
+      "fr": "Mysdibule (Ombre)",
+      "en": "Mawile (Shadow)",
+      "es": "Mawile (Oscuro)",
+      "th": "คูชีท (Shadow)",
+      "ja": "クチート (Shadow)",
+      "ko": "입치트 (Shadow)",
+      "ru": "Мэвайл (Shadow)",
+      "zh_hans": "大嘴娃 (Shadow)",
+      "zh_hant": "大嘴娃 (Shadow)"
+    }
   },
   "aron": {
     "legal": false,
@@ -5353,7 +5857,7 @@
     ]
   },
   "volbeat": {
-    "legal": false,
+    "legal": true,
     "dex": 313,
     "types": [
       "bug",
@@ -5361,10 +5865,22 @@
     ],
     "tags": [
       "regional"
-    ]
+    ],
+    "speciesName": {
+      "de": "Volbeat",
+      "fr": "Muciole",
+      "en": "Volbeat",
+      "es": "Volbeat",
+      "th": "บารูบีท",
+      "ja": "バルビート",
+      "ko": "볼비트",
+      "ru": "Волбит",
+      "zh_hans": "电萤虫",
+      "zh_hant": "電螢蟲"
+    }
   },
   "illumise": {
-    "legal": false,
+    "legal": true,
     "dex": 314,
     "types": [
       "bug",
@@ -5372,7 +5888,19 @@
     ],
     "tags": [
       "regional"
-    ]
+    ],
+    "speciesName": {
+      "de": "Illumise",
+      "fr": "Lumivole",
+      "en": "Illumise",
+      "es": "Illumise",
+      "th": "อิลูมิเซะ",
+      "ja": "イルミーゼ",
+      "ko": "네오비트",
+      "ru": "Иллюмизи",
+      "zh_hans": "甜甜萤",
+      "zh_hant": "甜甜螢"
+    }
   },
   "roselia": {
     "legal": false,
@@ -5534,7 +6062,7 @@
     ]
   },
   "vibrava": {
-    "legal": false,
+    "legal": true,
     "dex": 329,
     "types": [
       "ground",
@@ -5542,10 +6070,22 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": {
+      "de": "Vibrava",
+      "fr": "Vibraninf",
+      "en": "Vibrava",
+      "es": "Vibrava",
+      "th": "วิบราวา",
+      "ja": "ビブラーバ",
+      "ko": "비브라바",
+      "ru": "Вибрава",
+      "zh_hans": "超音波幼虫",
+      "zh_hant": "超音波幼蟲"
+    }
   },
   "vibrava_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 329,
     "types": [
       "ground",
@@ -5553,7 +6093,19 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": {
+      "de": "Vibrava (Schatten)",
+      "fr": "Vibraninf (Ombre)",
+      "en": "Vibrava (Shadow)",
+      "es": "Vibrava (Oscuro)",
+      "th": "วิบราวา (Shadow)",
+      "ja": "ビブラーバ (Shadow)",
+      "ko": "비브라바 (Shadow)",
+      "ru": "Вибрава (Shadow)",
+      "zh_hans": "超音波幼虫 (Shadow)",
+      "zh_hant": "超音波幼蟲 (Shadow)"
+    }
   },
   "flygon": {
     "legal": false,
@@ -5673,12 +6225,24 @@
     ]
   },
   "whiscash": {
-    "legal": false,
+    "legal": true,
     "dex": 340,
     "types": [
       "water",
       "ground"
-    ]
+    ],
+    "speciesName": {
+      "de": "Welsar",
+      "fr": "Barbicha",
+      "en": "Whiscash",
+      "es": "Whiscash",
+      "th": "นามาซูน",
+      "ja": "ナマズン",
+      "ko": "메깅",
+      "ru": "Вискэш",
+      "zh_hans": "鲶鱼王",
+      "zh_hant": "鯰魚王"
+    }
   },
   "corphish": {
     "legal": false,
@@ -5882,7 +6446,7 @@
     ]
   },
   "banette": {
-    "legal": false,
+    "legal": true,
     "dex": 354,
     "types": [
       "ghost",
@@ -5890,10 +6454,22 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": {
+      "de": "Banette",
+      "fr": "Branette",
+      "en": "Banette",
+      "es": "Banette",
+      "th": "จุปเป็ตตะ",
+      "ja": "ジュペッタ",
+      "ko": "다크펫",
+      "ru": "Бэнетт",
+      "zh_hans": "诅咒娃娃",
+      "zh_hant": "詛咒娃娃"
+    }
   },
   "banette_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 354,
     "types": [
       "ghost",
@@ -5901,7 +6477,19 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": {
+      "de": "Banette (Schatten)",
+      "fr": "Branette (Ombre)",
+      "en": "Banette (Shadow)",
+      "es": "Banette (Oscuro)",
+      "th": "จุปเป็ตตะ (Shadow)",
+      "ja": "ジュペッタ (Shadow)",
+      "ko": "다크펫 (Shadow)",
+      "ru": "Бэнетт (Shadow)",
+      "zh_hans": "诅咒娃娃 (Shadow)",
+      "zh_hant": "詛咒娃娃 (Shadow)"
+    }
   },
   "duskull": {
     "legal": false,
@@ -6095,15 +6683,27 @@
     ]
   },
   "gorebyss": {
-    "legal": false,
+    "legal": true,
     "dex": 368,
     "types": [
       "water",
       "none"
-    ]
+    ],
+    "speciesName": {
+      "de": "Saganabyss",
+      "fr": "Rosabyss",
+      "en": "Gorebyss",
+      "es": "Gorebyss",
+      "th": "ซาคุราบีส",
+      "ja": "サクラビス",
+      "ko": "분홍장이",
+      "ru": "Горебисс",
+      "zh_hans": "樱花鱼",
+      "zh_hant": "櫻花魚"
+    }
   },
   "relicanth": {
-    "legal": false,
+    "legal": true,
     "dex": 369,
     "types": [
       "water",
@@ -6111,7 +6711,19 @@
     ],
     "tags": [
       "regional"
-    ]
+    ],
+    "speciesName": {
+      "de": "Relicanth",
+      "fr": "Relicanth",
+      "en": "Relicanth",
+      "es": "Relicanth",
+      "th": "จีแลนซ์",
+      "ja": "ジーランス",
+      "ko": "시라칸",
+      "ru": "Реликант",
+      "zh_hans": "古空棘鱼",
+      "zh_hant": "古空棘魚"
+    }
   },
   "luvdisc": {
     "legal": false,
@@ -6485,7 +7097,7 @@
     ]
   },
   "monferno": {
-    "legal": false,
+    "legal": true,
     "dex": 391,
     "types": [
       "fire",
@@ -6493,7 +7105,19 @@
     ],
     "tags": [
       "starter"
-    ]
+    ],
+    "speciesName": {
+      "de": "Panpyro",
+      "fr": "Chimpenfeu",
+      "en": "Monferno",
+      "es": "Monferno",
+      "th": "โมคาซารุ",
+      "ja": "モウカザル",
+      "ko": "파이숭이",
+      "ru": "Монферно",
+      "zh_hans": "猛火猴",
+      "zh_hant": "猛火猴"
+    }
   },
   "infernape": {
     "legal": false,
@@ -6518,7 +7142,7 @@
     ]
   },
   "prinplup": {
-    "legal": false,
+    "legal": true,
     "dex": 394,
     "types": [
       "water",
@@ -6526,7 +7150,19 @@
     ],
     "tags": [
       "starter"
-    ]
+    ],
+    "speciesName": {
+      "de": "Pliprin",
+      "fr": "Prinplouf",
+      "en": "Prinplup",
+      "es": "Prinplup",
+      "th": "โพจไทชิ",
+      "ja": "ポッタイシ",
+      "ko": "팽태자",
+      "ru": "Принплуп",
+      "zh_hans": "波皇子",
+      "zh_hant": "波皇子"
+    }
   },
   "empoleon": {
     "legal": false,
@@ -6584,7 +7220,7 @@
     ]
   },
   "staraptor": {
-    "legal": false,
+    "legal": true,
     "dex": 398,
     "types": [
       "normal",
@@ -6592,10 +7228,22 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": {
+      "de": "Staraptor",
+      "fr": "Étouraptor",
+      "en": "Staraptor",
+      "es": "Staraptor",
+      "th": "มุคูฮอว์ก",
+      "ja": "ムクホーク",
+      "ko": "찌르호크",
+      "ru": "Стараптор",
+      "zh_hans": "姆克鹰",
+      "zh_hant": "姆克鷹"
+    }
   },
   "staraptor_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 398,
     "types": [
       "normal",
@@ -6603,7 +7251,19 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": {
+      "de": "Staraptor (Schatten)",
+      "fr": "Étouraptor (Ombre)",
+      "en": "Staraptor (Shadow)",
+      "es": "Staraptor (Oscuro)",
+      "th": "มุคูฮอว์ก (Shadow)",
+      "ja": "ムクホーク (Shadow)",
+      "ko": "찌르호크 (Shadow)",
+      "ru": "Стараптор (Shadow)",
+      "zh_hans": "姆克鹰 (Shadow)",
+      "zh_hant": "姆克鷹 (Shadow)"
+    }
   },
   "bidoof": {
     "legal": false,
@@ -6698,12 +7358,24 @@
     ]
   },
   "roserade": {
-    "legal": false,
+    "legal": true,
     "dex": 407,
     "types": [
       "grass",
       "poison"
-    ]
+    ],
+    "speciesName": {
+      "de": "Roserade",
+      "fr": "Roserade",
+      "en": "Roserade",
+      "es": "Roserade",
+      "th": "โรสเรด",
+      "ja": "ロズレイド",
+      "ko": "로즈레이드",
+      "ru": "Роузрейд",
+      "zh_hans": "罗丝雷朵",
+      "zh_hant": "羅絲雷朵"
+    }
   },
   "cranidos": {
     "legal": false,
@@ -6786,12 +7458,24 @@
     ]
   },
   "mothim": {
-    "legal": false,
+    "legal": true,
     "dex": 414,
     "types": [
       "bug",
       "flying"
-    ]
+    ],
+    "speciesName": {
+      "de": "Moterpel",
+      "fr": "Papilord",
+      "en": "Mothim",
+      "es": "Mothim",
+      "th": "กาเมล",
+      "ja": "ガーメイル",
+      "ko": "나메일",
+      "ru": "Мотим",
+      "zh_hans": "绅士蛾",
+      "zh_hant": "紳士蛾"
+    }
   },
   "combee": {
     "legal": false,
@@ -6899,7 +7583,7 @@
     ]
   },
   "ambipom": {
-    "legal": false,
+    "legal": true,
     "dex": 424,
     "types": [
       "normal",
@@ -6907,10 +7591,22 @@
     ],
     "tags": [
       "shadoweligible"
-    ]
+    ],
+    "speciesName": {
+      "de": "Ambidiffel",
+      "fr": "Capidextre",
+      "en": "Ambipom",
+      "es": "Ambipom",
+      "th": "เอเทโบธ",
+      "ja": "エテボース",
+      "ko": "겟핸보숭",
+      "ru": "Эмбипом",
+      "zh_hans": "双尾怪手",
+      "zh_hant": "雙尾怪手"
+    }
   },
   "ambipom_shadow": {
-    "legal": false,
+    "legal": true,
     "dex": 424,
     "types": [
       "normal",
@@ -6918,7 +7614,19 @@
     ],
     "tags": [
       "shadow"
-    ]
+    ],
+    "speciesName": {
+      "de": "Ambidiffel (Schatten)",
+      "fr": "Capidextre (Ombre)",
+      "en": "Ambipom (Shadow)",
+      "es": "Ambipom (Oscuro)",
+      "th": "เอเทโบธ (Shadow)",
+      "ja": "エテボース (Shadow)",
+      "ko": "겟핸보숭 (Shadow)",
+      "ru": "Эмбипом (Shadow)",
+      "zh_hans": "双尾怪手 (Shadow)",
+      "zh_hant": "雙尾怪手 (Shadow)"
+    }
   },
   "drifloon": {
     "legal": false,
@@ -6929,12 +7637,24 @@
     ]
   },
   "drifblim": {
-    "legal": false,
+    "legal": true,
     "dex": 426,
     "types": [
       "ghost",
       "flying"
-    ]
+    ],
+    "speciesName": {
+      "de": "Drifzepeli",
+      "fr": "Grodrive",
+      "en": "Drifblim",
+      "es": "Drifblim",
+      "th": "ฟูวาไรด์",
+      "ja": "フワライド",
+      "ko": "둥실라이드",
+      "ru": "Дрифблим",
+      "zh_hans": "附和气球",
+      "zh_hant": "附和氣球"
+    }
   },
   "buneary": {
     "legal": false,
@@ -7290,12 +8010,24 @@
     ]
   },
   "lumineon": {
-    "legal": false,
+    "legal": true,
     "dex": 457,
     "types": [
       "water",
       "none"
-    ]
+    ],
+    "speciesName": {
+      "de": "Lumineon",
+      "fr": "Luminéon",
+      "en": "Lumineon",
+      "es": "Lumineon",
+      "th": "เนโอแลนท์",
+      "ja": "ネオラント",
+      "ko": "네오라이트",
+      "ru": "Люминеон",
+      "zh_hans": "霓虹鱼",
+      "zh_hant": "霓虹魚"
+    }
   },
   "mantyke": {
     "legal": false,
@@ -8110,7 +8842,7 @@
     ]
   },
   "servine": {
-    "legal": false,
+    "legal": true,
     "dex": 496,
     "types": [
       "grass",
@@ -8118,7 +8850,19 @@
     ],
     "tags": [
       "starter"
-    ]
+    ],
+    "speciesName": {
+      "de": "Efoserp",
+      "fr": "Lianaja",
+      "en": "Servine",
+      "es": "Servine",
+      "th": "จาโนวี",
+      "ja": "ジャノビー",
+      "ko": "샤비",
+      "ru": "Сервайн",
+      "zh_hans": "青藤蛇",
+      "zh_hant": "青藤蛇"
+    }
   },
   "serperior": {
     "legal": false,
@@ -8176,7 +8920,7 @@
     ]
   },
   "dewott": {
-    "legal": false,
+    "legal": true,
     "dex": 502,
     "types": [
       "water",
@@ -8184,7 +8928,19 @@
     ],
     "tags": [
       "starter"
-    ]
+    ],
+    "speciesName": {
+      "de": "Zwottronin",
+      "fr": "Mateloutre",
+      "en": "Dewott",
+      "es": "Dewott",
+      "th": "ฟุตาจิมารุ",
+      "ja": "フタチマル",
+      "ko": "쌍검자비",
+      "ru": "Девотт",
+      "zh_hans": "双刃丸",
+      "zh_hant": "雙刃丸"
+    }
   },
   "samurott": {
     "legal": false,
@@ -8344,12 +9100,24 @@
     ]
   },
   "tranquill": {
-    "legal": false,
+    "legal": true,
     "dex": 520,
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "speciesName": {
+      "de": "Navitaub",
+      "fr": "Colombeau",
+      "en": "Tranquill",
+      "es": "Tranquill",
+      "th": "ฮาโทโบ",
+      "ja": "ハトーボー",
+      "ko": "유토브",
+      "ru": "Транквилл",
+      "zh_hans": "波波鸽",
+      "zh_hant": "波波鴿"
+    }
   },
   "unfezant": {
     "legal": false,
@@ -8408,12 +9176,24 @@
     ]
   },
   "swoobat": {
-    "legal": false,
+    "legal": true,
     "dex": 528,
     "types": [
       "psychic",
       "flying"
-    ]
+    ],
+    "speciesName": {
+      "de": "Fletiamo",
+      "fr": "Rhinolove",
+      "en": "Swoobat",
+      "es": "Swoobat",
+      "th": "โคโคโรโมริ",
+      "ja": "ココロモリ",
+      "ko": "맘박쥐",
+      "ru": "Свубэт",
+      "zh_hans": "心蝙蝠",
+      "zh_hant": "心蝙蝠"
+    }
   },
   "drilbur": {
     "legal": false,
@@ -8472,12 +9252,24 @@
     ]
   },
   "palpitoad": {
-    "legal": false,
+    "legal": true,
     "dex": 536,
     "types": [
       "water",
       "ground"
-    ]
+    ],
+    "speciesName": {
+      "de": "Mebrana",
+      "fr": "Batracné",
+      "en": "Palpitoad",
+      "es": "Palpitoad",
+      "th": "กามาการุ",
+      "ja": "ガマガル",
+      "ko": "두까비",
+      "ru": "Палпитоад",
+      "zh_hans": "蓝蟾蜍",
+      "zh_hant": "藍蟾蜍"
+    }
   },
   "seismitoad": {
     "legal": false,
@@ -8520,12 +9312,24 @@
     ]
   },
   "leavanny": {
-    "legal": false,
+    "legal": true,
     "dex": 542,
     "types": [
       "bug",
       "grass"
-    ]
+    ],
+    "speciesName": {
+      "de": "Matrifol",
+      "fr": "Manternel",
+      "en": "Leavanny",
+      "es": "Leavanny",
+      "th": "ฮาฮาโคโมริ",
+      "ja": "ハハコモリ",
+      "ko": "모아머",
+      "ru": "Левани",
+      "zh_hans": "保母虫",
+      "zh_hant": "保母蟲"
+    }
   },
   "venipede": {
     "legal": false,
@@ -8576,15 +9380,27 @@
     ]
   },
   "lilligant": {
-    "legal": false,
+    "legal": true,
     "dex": 549,
     "types": [
       "grass",
       "none"
-    ]
+    ],
+    "speciesName": {
+      "de": "Dressella",
+      "fr": "Fragilady",
+      "en": "Lilligant",
+      "es": "Lilligant",
+      "th": "เดรเดีย",
+      "ja": "ドレディア",
+      "ko": "드레디어",
+      "ru": "Лиллигант",
+      "zh_hans": "裙儿小姐",
+      "zh_hant": "裙兒小姐"
+    }
   },
   "basculin": {
-    "legal": false,
+    "legal": true,
     "dex": 550,
     "types": [
       "water",
@@ -8592,7 +9408,19 @@
     ],
     "tags": [
       "regional"
-    ]
+    ],
+    "speciesName": {
+      "de": "Barschuft",
+      "fr": "Bargantua",
+      "en": "Basculin",
+      "es": "Basculin",
+      "th": "บาสราโอ",
+      "ja": "バスラオ",
+      "ko": "배쓰나이",
+      "ru": "Баскулин",
+      "zh_hans": "勇士鲈鱼",
+      "zh_hant": "勇士鱸魚"
+    }
   },
   "sandile": {
     "legal": false,
@@ -8691,12 +9519,24 @@
     ]
   },
   "dwebble": {
-    "legal": false,
+    "legal": true,
     "dex": 557,
     "types": [
       "bug",
       "rock"
-    ]
+    ],
+    "speciesName": {
+      "de": "Lithomith",
+      "fr": "Crabicoque",
+      "en": "Dwebble",
+      "es": "Dwebble",
+      "th": "อิชิซึไม",
+      "ja": "イシズマイ",
+      "ko": "돌살이",
+      "ru": "Двэббл",
+      "zh_hans": "石居蟹",
+      "zh_hant": "石居蟹"
+    }
   },
   "crustle": {
     "legal": false,
@@ -8707,24 +9547,12 @@
     ]
   },
   "scraggy": {
-    "legal": true,
+    "legal": false,
     "dex": 559,
     "types": [
       "dark",
       "fighting"
-    ],
-    "speciesName": {
-      "de": "Zurrokex",
-      "fr": "Baggiguane",
-      "en": "Scraggy",
-      "es": "Scraggy",
-      "th": "ซึรุกกุ",
-      "ja": "ズルッグ",
-      "ko": "곤율랭",
-      "ru": "Скрэгги",
-      "zh_hans": "滑头小子",
-      "zh_hant": "滑頭小子"
-    }
+    ]
   },
   "scrafty": {
     "legal": false,
@@ -8773,12 +9601,24 @@
     ]
   },
   "tirtouga": {
-    "legal": false,
+    "legal": true,
     "dex": 564,
     "types": [
       "water",
       "rock"
-    ]
+    ],
+    "speciesName": {
+      "de": "Galapaflos",
+      "fr": "Carapagos",
+      "en": "Tirtouga",
+      "es": "Tirtouga",
+      "th": "โปรโตกา",
+      "ja": "プロトーガ",
+      "ko": "프로토가",
+      "ru": "Тиртуга",
+      "zh_hans": "原盖海龟",
+      "zh_hant": "原蓋海龜"
+    }
   },
   "carracosta": {
     "legal": false,
@@ -8899,12 +9739,24 @@
     ]
   },
   "reuniclus": {
-    "legal": false,
+    "legal": true,
     "dex": 579,
     "types": [
       "psychic",
       "none"
-    ]
+    ],
+    "speciesName": {
+      "de": "Zytomega",
+      "fr": "Symbios",
+      "en": "Reuniclus",
+      "es": "Reuniclus",
+      "th": "แลนคูลัส",
+      "ja": "ランクルス",
+      "ko": "란쿨루스",
+      "ru": "Реониклус",
+      "zh_hans": "人造细胞卵",
+      "zh_hant": "人造細胞卵"
+    }
   },
   "ducklett": {
     "legal": false,
@@ -8915,12 +9767,24 @@
     ]
   },
   "swanna": {
-    "legal": false,
+    "legal": true,
     "dex": 581,
     "types": [
       "water",
       "flying"
-    ]
+    ],
+    "speciesName": {
+      "de": "Swaroness",
+      "fr": "Lakmécygne",
+      "en": "Swanna",
+      "es": "Swanna",
+      "th": "สวอนนา",
+      "ja": "スワンナ",
+      "ko": "스완나",
+      "ru": "Сванна",
+      "zh_hans": "首席天鹅",
+      "zh_hant": "首席天鵝"
+    }
   },
   "vanillite": {
     "legal": false,
@@ -8995,12 +9859,24 @@
     ]
   },
   "amoonguss": {
-    "legal": false,
+    "legal": true,
     "dex": 591,
     "types": [
       "grass",
       "poison"
-    ]
+    ],
+    "speciesName": {
+      "de": "Hutsassa",
+      "fr": "Gaulet",
+      "en": "Amoonguss",
+      "es": "Amoonguss",
+      "th": "โมโรบาเรรุ",
+      "ja": "モロバレル",
+      "ko": "뽀록나",
+      "ru": "Амунгус",
+      "zh_hans": "暴露菇",
+      "zh_hant": "暴露菇"
+    }
   },
   "frillish": {
     "legal": false,
@@ -9035,12 +9911,24 @@
     ]
   },
   "galvantula": {
-    "legal": false,
+    "legal": true,
     "dex": 596,
     "types": [
       "bug",
       "electric"
-    ]
+    ],
+    "speciesName": {
+      "de": "Voltula",
+      "fr": "Mygavolt",
+      "en": "Galvantula",
+      "es": "Galvantula",
+      "th": "เดนทูลา",
+      "ja": "デンチュラ",
+      "ko": "전툴라",
+      "ru": "Галвантула",
+      "zh_hans": "电蜘蛛",
+      "zh_hant": "電蜘蛛"
+    }
   },
   "ferroseed": {
     "legal": false,
@@ -9091,12 +9979,24 @@
     ]
   },
   "eelektrik": {
-    "legal": false,
+    "legal": true,
     "dex": 603,
     "types": [
       "electric",
       "none"
-    ]
+    ],
+    "speciesName": {
+      "de": "Zapplalek",
+      "fr": "Lampéroie",
+      "en": "Eelektrik",
+      "es": "Eelektrik",
+      "th": "ชิบิบีล",
+      "ja": "シビビール",
+      "ko": "저리릴",
+      "ru": "Илектрик",
+      "zh_hans": "麻麻鳗",
+      "zh_hant": "麻麻鰻"
+    }
   },
   "eelektross": {
     "legal": false,
@@ -9131,12 +10031,24 @@
     ]
   },
   "lampent": {
-    "legal": false,
+    "legal": true,
     "dex": 608,
     "types": [
       "ghost",
       "fire"
-    ]
+    ],
+    "speciesName": {
+      "de": "Laternecto",
+      "fr": "Mélancolux",
+      "en": "Lampent",
+      "es": "Lampent",
+      "th": "แลมพูลา",
+      "ja": "ランプラー",
+      "ko": "램프라",
+      "ru": "Лампент",
+      "zh_hans": "灯火幽灵",
+      "zh_hant": "燈火幽靈"
+    }
   },
   "chandelure": {
     "legal": false,
@@ -9211,12 +10123,24 @@
     ]
   },
   "stunfisk": {
-    "legal": false,
+    "legal": true,
     "dex": 618,
     "types": [
       "ground",
       "electric"
-    ]
+    ],
+    "speciesName": {
+      "de": "Flunschlik",
+      "fr": "Limonde",
+      "en": "Stunfisk",
+      "es": "Stunfisk",
+      "th": "แมกเกียว",
+      "ja": "マッギョ",
+      "ko": "메더",
+      "ru": "Станфиск",
+      "zh_hans": "泥巴鱼",
+      "zh_hant": "泥巴魚"
+    }
   },
   "stunfisk_galarian": {
     "legal": false,
@@ -9273,12 +10197,24 @@
     ]
   },
   "pawniard": {
-    "legal": false,
+    "legal": true,
     "dex": 624,
     "types": [
       "dark",
       "steel"
-    ]
+    ],
+    "speciesName": {
+      "de": "Gladiantri",
+      "fr": "Scalpion",
+      "en": "Pawniard",
+      "es": "Pawniard",
+      "th": "โคมาทานา",
+      "ja": "コマタナ",
+      "ko": "자망칼",
+      "ru": "Паониард",
+      "zh_hans": "驹刀小兵",
+      "zh_hant": "駒刀小兵"
+    }
   },
   "bisharp": {
     "legal": false,
@@ -9300,12 +10236,24 @@
     ]
   },
   "rufflet": {
-    "legal": false,
+    "legal": true,
     "dex": 627,
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "speciesName": {
+      "de": "Geronimatz",
+      "fr": "Furaiglon",
+      "en": "Rufflet",
+      "es": "Rufflet",
+      "th": "วาชิบอน",
+      "ja": "ワシボン",
+      "ko": "수리둥보",
+      "ru": "Раффлет",
+      "zh_hans": "毛头小鹰",
+      "zh_hant": "毛頭小鷹"
+    }
   },
   "braviary": {
     "legal": false,
@@ -9709,7 +10657,7 @@
     ]
   },
   "braixen": {
-    "legal": false,
+    "legal": true,
     "dex": 654,
     "types": [
       "fire",
@@ -9717,7 +10665,19 @@
     ],
     "tags": [
       "starter"
-    ]
+    ],
+    "speciesName": {
+      "de": "Rutena",
+      "fr": "Roussil",
+      "en": "Braixen",
+      "es": "Braixen",
+      "th": "ไทเรนาร์",
+      "ja": "テールナー",
+      "ko": "테르나",
+      "ru": "Брайксен",
+      "zh_hans": "长尾火狐",
+      "zh_hant": "長尾火狐"
+    }
   },
   "delphox": {
     "legal": false,
@@ -9742,7 +10702,7 @@
     ]
   },
   "frogadier": {
-    "legal": false,
+    "legal": true,
     "dex": 657,
     "types": [
       "water",
@@ -9750,7 +10710,19 @@
     ],
     "tags": [
       "starter"
-    ]
+    ],
+    "speciesName": {
+      "de": "Amphizel",
+      "fr": "Croâporal",
+      "en": "Frogadier",
+      "es": "Frogadier",
+      "th": "เกโคกาชิระ",
+      "ja": "ゲコガシラ",
+      "ko": "개굴반장",
+      "ru": "Фрогадир",
+      "zh_hans": "呱头蛙",
+      "zh_hant": "呱頭蛙"
+    }
   },
   "greninja": {
     "legal": false,
@@ -9796,12 +10768,24 @@
     ]
   },
   "talonflame": {
-    "legal": false,
+    "legal": true,
     "dex": 663,
     "types": [
       "fire",
       "flying"
-    ]
+    ],
+    "speciesName": {
+      "de": "Fiaro",
+      "fr": "Flambusard",
+      "en": "Talonflame",
+      "es": "Talonflame",
+      "th": "ไฟร์แอโรว์",
+      "ja": "ファイアロー",
+      "ko": "파이어로",
+      "ru": "Тэйлонфлейм",
+      "zh_hans": "烈箭鹟",
+      "zh_hant": "烈箭鶲"
+    }
   },
   "scatterbug": {
     "legal": false,
@@ -9837,12 +10821,24 @@
     ]
   },
   "litleo": {
-    "legal": false,
+    "legal": true,
     "dex": 667,
     "types": [
       "fire",
       "normal"
-    ]
+    ],
+    "speciesName": {
+      "de": "Leufeo",
+      "fr": "Hélionceau",
+      "en": "Litleo",
+      "es": "Litleo",
+      "th": "ชิชิโกะ",
+      "ja": "シシコ",
+      "ko": "레오꼬",
+      "ru": "Литлео",
+      "zh_hans": "小狮狮",
+      "zh_hant": "小獅獅"
+    }
   },
   "pyroar": {
     "legal": false,
@@ -10008,12 +11004,24 @@
     ]
   },
   "aromatisse": {
-    "legal": false,
+    "legal": true,
     "dex": 683,
     "types": [
       "fairy",
       "none"
-    ]
+    ],
+    "speciesName": {
+      "de": "Parfinesse",
+      "fr": "Cocotine",
+      "en": "Aromatisse",
+      "es": "Aromatisse",
+      "th": "เฟรฟุวัน",
+      "ja": "フレフワン",
+      "ko": "프레프티르",
+      "ru": "Ароматизз",
+      "zh_hans": "芳香精",
+      "zh_hant": "芳香精"
+    }
   },
   "swirlix": {
     "legal": false,
@@ -10162,12 +11170,24 @@
     ]
   },
   "sylveon": {
-    "legal": false,
+    "legal": true,
     "dex": 700,
     "types": [
       "fairy",
       "none"
-    ]
+    ],
+    "speciesName": {
+      "de": "Feelinara",
+      "fr": "Nymphali",
+      "en": "Sylveon",
+      "es": "Sylveon",
+      "th": "นิมเฟีย",
+      "ja": "ニンフィア",
+      "ko": "님피아",
+      "ru": "Сильвеон",
+      "zh_hans": "仙子精灵",
+      "zh_hant": "仙子精靈"
+    }
   },
   "hawlucha": {
     "legal": false,
@@ -10211,12 +11231,24 @@
     ]
   },
   "sliggoo": {
-    "legal": false,
+    "legal": true,
     "dex": 705,
     "types": [
       "dragon",
       "none"
-    ]
+    ],
+    "speciesName": {
+      "de": "Viscargot",
+      "fr": "Colimucus",
+      "en": "Sliggoo",
+      "es": "Sliggoo",
+      "th": "นูเมล",
+      "ja": "ヌメイル",
+      "ko": "미끄네일",
+      "ru": "Слигу",
+      "zh_hans": "黏美伊儿",
+      "zh_hant": "黏美伊兒"
+    }
   },
   "goodra": {
     "legal": false,
