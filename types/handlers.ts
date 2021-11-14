@@ -51,7 +51,17 @@ export interface Update {
   energy?: number,
   shields?: number,
   charge?: 1 | 2, // 1 if attacker, 2 if shielder,
-  message?: string
+  message?: string | Message[]
+}
+
+export interface Message {
+  messageKey: string,
+  substitutions: MessageSubsitution[]
+}
+
+export interface MessageSubsitution {
+  type: "untranslated" | "speciesId" | "moveId",
+  id: string
 }
 
 export interface ResolveTurnPayload {

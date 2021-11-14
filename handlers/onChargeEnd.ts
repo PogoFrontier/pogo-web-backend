@@ -3,14 +3,30 @@ import { reduceTeamMemberForPlayer } from "../actions/reduceInformation";
 import { pubClient } from "../redis/clients";
 import { rooms } from "../matchhandling_server";
 import { CODE } from "../types/actions";
-import { ResolveTurnPayload } from "../types/handlers";
+import { Message, ResolveTurnPayload } from "../types/handlers";
 import { RoomStatus } from "../types/room";
 import { calcDamage } from "../utils/damageUtils";
 import onChargeAnimationEnd from "./onChargeAnimationEnd";
 
-function getMessage(attacker: string | object, move: string, shield: number) {
-  const shielded = shield === 0 ? "" : " It was shielded!";
-  return `${attacker} used {${move}}!${shielded}`;
+function getMessage(attacker: string | object, move: string, shield: number): Message[] {
+  let messages: Message[] = [{
+    messageKey: "used_chargemove_message",
+    substitutions: [{
+      type: "speciesId",
+      id: attacker.toString()
+    }, {
+      type: "moveId",
+      id: move
+    }]
+  }];
+  if(shield !== 0) {
+    messages.push({
+      messageKey: "it_was_shielded_message",
+      substitutions: []
+    })
+  }
+
+  return messages;
 }
 
 function onChargeEnd(room: string) {
@@ -34,7 +50,7 @@ function onChargeEnd(room: string) {
         : opponent.current!.team[opponent.current!.active].current!.hp - 1;
       player.current!.team[player.current!.active].current!.energy -= currentRoom.charge.move.energy;
       player.current!.team[player.current!.active].current!.chargeMovesUsed++;
-      let message = getMessage(player.current.team[player.current.active].speciesName, currentRoom.charge.move.moveId, currentRoom.charge.shield);
+      let message = getMessage(player.current.team[player.current.active].speciesId, currentRoom.charge.move.moveId, currentRoom.charge.shield);
       // Apply buffs/debuffs
       const r = Math.random();
       if (currentRoom.charge.move.buffApplyChance && r <= parseFloat(currentRoom.charge.move.buffApplyChance)) {
@@ -56,7 +72,13 @@ function onChargeEnd(room: string) {
             : buffDivisor / (buffDivisor - opponent.current.team[opponent.current.active].current!.status[1]);
           opponent.current.team[opponent.current.active].current!.def *= defMult;
           // Change message
-          message = `${message} ${opponent.current!.team[opponent.current!.active].speciesName}'s stats were changed.`;
+          message.push({
+            messageKey: "stat_change_message",
+            substitutions: [{
+              type: "speciesId",
+              id: opponent.current!.team[opponent.current!.active].speciesId
+            }]
+          });
         } else if (currentRoom.charge.move.buffTarget === "self") {
           // Atk
           player.current.team[player.current.active].current!.status[0] = currentRoom.charge.move.buffs![0] > 0
@@ -75,7 +97,13 @@ function onChargeEnd(room: string) {
             : buffDivisor / (buffDivisor - player.current.team[player.current.active].current!.status[1]);
           player.current.team[player.current.active].current!.def *= defMult;
           // Change message
-          message = `${message} ${player.current!.team[player.current!.active].speciesName}'s stats were changed.`;
+          message.push({
+            messageKey: "stat_change_message",
+            substitutions: [{
+              type: "speciesId",
+              id: player.current!.team[player.current!.active].speciesId
+            }]
+          });
         }
       }
       const time = Math.ceil(Number((GAME_TIME - currentRoom.turn! * 0.5).toFixed(1)));
