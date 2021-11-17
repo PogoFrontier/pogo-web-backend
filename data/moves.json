@@ -1,2558 +1,5254 @@
-﻿{
-    "ACID": {
-        "moveId": "ACID",
-        "name": "Acid",
-        "abbreviation": "Ac",
-        "type": "poison",
-        "power": 6,
-        "energy": 0,
-        "energyGain": 5,
-        "cooldown": 1000
-    },
-    "ACID_SPRAY": {
-        "moveId": "ACID_SPRAY",
-        "name": "Acid Spray",
-        "type": "poison",
-        "power": 20,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            0, -2
-        ],
-        "buffTarget": "opponent",
-        "buffApplyChance": "1"
-    },
-    "AERIAL_ACE": {
-        "moveId": "AERIAL_ACE",
-        "name": "Aerial Ace",
-        "type": "flying",
-        "power": 55,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "AEROBLAST": {
-        "moveId": "AEROBLAST",
-        "name": "Aeroblast",
-        "type": "flying",
-        "power": 170,
-        "energy": 75,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            2,
-            0
-        ],
-        "buffTarget": "self",
-        "buffApplyChance": ".125"
-    },
-    "AIR_CUTTER": {
-        "moveId": "AIR_CUTTER",
-        "name": "Air Cutter",
-        "type": "flying",
-        "power": 60,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "AIR_SLASH": {
-        "moveId": "AIR_SLASH",
-        "name": "Air Slash",
-        "type": "flying",
-        "power": 9,
-        "energy": 0,
-        "energyGain": 9,
-        "cooldown": 1500
-    },
-    "ANCIENT_POWER": {
-        "moveId": "ANCIENT_POWER",
-        "name": "Ancient Power",
-        "type": "rock",
-        "power": 45,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            2,
-            2
-        ],
-        "buffTarget": "self",
-        "buffApplyChance": ".1"
-    },
-    "AQUA_JET": {
-        "moveId": "AQUA_JET",
-        "name": "Aqua Jet",
-        "type": "water",
-        "power": 45,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "AQUA_TAIL": {
-        "moveId": "AQUA_TAIL",
-        "name": "Aqua Tail",
-        "type": "water",
-        "power": 50,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "ASTONISH": {
-        "moveId": "ASTONISH",
-        "name": "Astonish",
-        "type": "ghost",
-        "power": 5,
-        "energy": 0,
-        "energyGain": 9,
-        "cooldown": 1500
-    },
-    "AURA_SPHERE": {
-        "moveId": "AURA_SPHERE",
-        "name": "Aura Sphere",
-        "type": "fighting",
-        "power": 100,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "AURORA_BEAM": {
-        "moveId": "AURORA_BEAM",
-        "name": "Aurora Beam",
-        "type": "ice",
-        "power": 80,
-        "energy": 60,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "AVALANCHE": {
-        "moveId": "AVALANCHE",
-        "name": "Avalanche",
-        "abbreviation": "Av",
-        "type": "ice",
-        "power": 90,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "BITE": {
-        "moveId": "BITE",
-        "name": "Bite",
-        "abbreviation": "Bi",
-        "type": "dark",
-        "power": 4,
-        "energy": 0,
-        "energyGain": 2,
-        "cooldown": 500
-    },
-    "BLAST_BURN": {
-        "moveId": "BLAST_BURN",
-        "name": "Blast Burn",
-        "type": "fire",
-        "power": 110,
-        "energy": 50,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "BLIZZARD": {
-        "moveId": "BLIZZARD",
-        "name": "Blizzard",
-        "abbreviation": "Bl",
-        "type": "ice",
-        "power": 140,
-        "energy": 75,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "BODY_SLAM": {
-        "moveId": "BODY_SLAM",
-        "name": "Body Slam",
-        "type": "normal",
-        "power": 60,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "BONE_CLUB": {
-        "moveId": "BONE_CLUB",
-        "name": "Bone Club",
-        "type": "ground",
-        "power": 40,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "BRAVE_BIRD": {
-        "moveId": "BRAVE_BIRD",
-        "name": "Brave Bird",
-        "abbreviation": "BrB",
-        "type": "flying",
-        "power": 130,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            0, -3
-        ],
-        "buffTarget": "self",
-        "buffApplyChance": "1"
-    },
-    "BRICK_BREAK": {
-        "moveId": "BRICK_BREAK",
-        "name": "Brick Break",
-        "abbreviation": "BkB",
-        "type": "fighting",
-        "power": 40,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "BRINE": {
-        "moveId": "BRINE",
-        "name": "Brine",
-        "abbreviation": "Bri",
-        "type": "water",
-        "power": 60,
-        "energy": 50,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "BUBBLE": {
-        "moveId": "BUBBLE",
-        "name": "Bubble",
-        "type": "water",
-        "power": 7,
-        "energy": 0,
-        "energyGain": 11,
-        "cooldown": 1500
-    },
-    "BUBBLE_BEAM": {
-        "moveId": "BUBBLE_BEAM",
-        "name": "Bubble Beam",
-        "abbreviation": "BuB",
-        "type": "water",
-        "power": 25,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [-1,
-            0
-        ],
-        "buffTarget": "opponent",
-        "buffApplyChance": "1"
-    },
-    "BUG_BITE": {
-        "moveId": "BUG_BITE",
-        "name": "Bug Bite",
-        "abbreviation": "BBi",
-        "type": "bug",
-        "power": 3,
-        "energy": 0,
-        "energyGain": 3,
-        "cooldown": 500
-    },
-    "BUG_BUZZ": {
-        "moveId": "BUG_BUZZ",
-        "name": "Bug Buzz",
-        "abbreviation": "BBu",
-        "type": "bug",
-        "power": 90,
-        "energy": 60,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            0, -1
-        ],
-        "buffTarget": "opponent",
-        "buffApplyChance": ".3"
-    },
-    "BULLDOZE": {
-        "moveId": "BULLDOZE",
-        "name": "Bulldoze",
-        "abbreviation": "Bd",
-        "type": "ground",
-        "power": 80,
-        "energy": 60,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "BULLET_PUNCH": {
-        "moveId": "BULLET_PUNCH",
-        "name": "Bullet Punch",
-        "type": "steel",
-        "power": 6,
-        "energy": 0,
-        "energyGain": 7,
-        "cooldown": 1000
-    },
-    "BULLET_SEED": {
-        "moveId": "BULLET_SEED",
-        "name": "Bullet Seed",
-        "type": "grass",
-        "power": 5,
-        "energy": 0,
-        "energyGain": 13,
-        "cooldown": 1500
-    },
-    "CHARGE_BEAM": {
-        "moveId": "CHARGE_BEAM",
-        "name": "Charge Beam",
-        "type": "electric",
-        "power": 5,
-        "energy": 0,
-        "energyGain": 11,
-        "cooldown": 1500
-    },
-    "CHARM": {
-        "moveId": "CHARM",
-        "name": "Charm",
-        "abbreviation": "Ch",
-        "type": "fairy",
-        "power": 16,
-        "energy": 0,
-        "energyGain": 6,
-        "cooldown": 1500
-    },
-    "CLOSE_COMBAT": {
-        "moveId": "CLOSE_COMBAT",
-        "name": "Close Combat",
-        "type": "fighting",
-        "power": 100,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            0, -2
-        ],
-        "buffTarget": "self",
-        "buffApplyChance": "1"
-    },
-    "CONFUSION": {
-        "moveId": "CONFUSION",
-        "name": "Confusion",
-        "abbreviation": "Cf",
-        "type": "psychic",
-        "power": 16,
-        "energy": 0,
-        "energyGain": 12,
-        "cooldown": 2000
-    },
-    "COUNTER": {
-        "moveId": "COUNTER",
-        "name": "Counter",
-        "abbreviation": "C",
-        "type": "fighting",
-        "power": 8,
-        "energy": 0,
-        "energyGain": 7,
-        "cooldown": 1000
-    },
-    "CRABHAMMER": {
-        "moveId": "CRABHAMMER",
-        "name": "Crabhammer",
-        "abbreviation": "Crbh",
-        "type": "water",
-        "power": 85,
-        "energy": 50,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            2,
-            0
-        ],
-        "buffTarget": "self",
-        "buffApplyChance": ".125"
-    },
-    "CROSS_CHOP": {
-        "moveId": "CROSS_CHOP",
-        "name": "Cross Chop",
-        "abbreviation": "CrC",
-        "type": "fighting",
-        "power": 50,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "CROSS_POISON": {
-        "moveId": "CROSS_POISON",
-        "name": "Cross Poison",
-        "type": "poison",
-        "power": 50,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            2, 0
-        ],
-        "buffTarget": "self",
-        "buffApplyChance": ".125"
-    },
-    "CRUNCH": {
-        "moveId": "CRUNCH",
-        "name": "Crunch",
-        "abbreviation": "Cr",
-        "type": "dark",
-        "power": 70,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "CUT": {
-        "moveId": "CUT",
-        "name": "Cut",
-        "abbreviation": "Cu",
-        "type": "normal",
-        "power": 3,
-        "energy": 0,
-        "energyGain": 2,
-        "cooldown": 500
-    },
-    "DARK_PULSE": {
-        "moveId": "DARK_PULSE",
-        "name": "Dark Pulse",
-        "type": "dark",
-        "power": 80,
-        "energy": 50,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "DAZZLING_GLEAM": {
-        "moveId": "DAZZLING_GLEAM",
-        "name": "Dazzling Gleam",
-        "type": "fairy",
-        "power": 110,
-        "energy": 70,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "DIG": {
-        "moveId": "DIG",
-        "name": "Dig",
-        "abbreviation": "Dg",
-        "type": "ground",
-        "power": 100,
-        "energy": 80,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "DISARMING_VOICE": {
-        "moveId": "DISARMING_VOICE",
-        "name": "Disarming Voice",
-        "type": "fairy",
-        "power": 70,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "DISCHARGE": {
-        "moveId": "DISCHARGE",
-        "name": "Discharge",
-        "type": "electric",
-        "power": 65,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "DOOM_DESIRE": {
-        "moveId": "DOOM_DESIRE",
-        "name": "Doom Desire",
-        "type": "steel",
-        "power": 75,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "DRACO_METEOR": {
-        "moveId": "DRACO_METEOR",
-        "name": "Draco Meteor",
-        "type": "dragon",
-        "power": 150,
-        "energy": 65,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [-2,
-            0
-        ],
-        "buffTarget": "self",
-        "buffApplyChance": "1"
-    },
-    "DRAGON_BREATH": {
-        "moveId": "DRAGON_BREATH",
-        "name": "Dragon Breath",
-        "type": "dragon",
-        "power": 4,
-        "energy": 0,
-        "energyGain": 3,
-        "cooldown": 500
-    },
-    "DRAGON_CLAW": {
-        "moveId": "DRAGON_CLAW",
-        "name": "Dragon Claw",
-        "type": "dragon",
-        "power": 50,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "DRAGON_PULSE": {
-        "moveId": "DRAGON_PULSE",
-        "name": "Dragon Pulse",
-        "abbreviation": "DgP",
-        "type": "dragon",
-        "power": 90,
-        "energy": 60,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "DRAGON_TAIL": {
-        "moveId": "DRAGON_TAIL",
-        "name": "Dragon Tail",
-        "type": "dragon",
-        "power": 13,
-        "energy": 0,
-        "energyGain": 9,
-        "cooldown": 1500
-    },
-    "DRAINING_KISS": {
-        "moveId": "DRAINING_KISS",
-        "name": "Draining Kiss",
-        "type": "fairy",
-        "power": 60,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "DRILL_PECK": {
-        "moveId": "DRILL_PECK",
-        "name": "Drill Peck",
-        "abbreviation": "DrlP",
-        "type": "flying",
-        "power": 65,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "DRILL_RUN": {
-        "moveId": "DRILL_RUN",
-        "name": "Drill Run",
-        "type": "ground",
-        "power": 80,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "DYNAMIC_PUNCH": {
-        "moveId": "DYNAMIC_PUNCH",
-        "name": "Dynamic Punch",
-        "abbreviation": "DyP",
-        "type": "fighting",
-        "power": 90,
-        "energy": 50,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "EARTHQUAKE": {
-        "moveId": "EARTHQUAKE",
-        "name": "Earthquake",
-        "abbreviation": "Eq",
-        "type": "ground",
-        "power": 120,
-        "energy": 65,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "EARTH_POWER": {
-        "moveId": "EARTH_POWER",
-        "name": "Earth Power",
-        "type": "ground",
-        "power": 90,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            0, -1
-        ],
-        "buffTarget": "opponent",
-        "buffApplyChance": ".1"
-    },
-    "EMBER": {
-        "moveId": "EMBER",
-        "name": "Ember",
-        "type": "fire",
-        "power": 7,
-        "energy": 0,
-        "energyGain": 6,
-        "cooldown": 1000
-    },
-    "ENERGY_BALL": {
-        "moveId": "ENERGY_BALL",
-        "name": "Energy Ball",
-        "type": "grass",
-        "power": 90,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            0, -1
-        ],
-        "buffTarget": "opponent",
-        "buffApplyChance": ".1"
-    },
-    "EXTRASENSORY": {
-        "moveId": "EXTRASENSORY",
-        "name": "Extrasensory",
-        "abbreviation": "Ex",
-        "type": "psychic",
-        "power": 8,
-        "energy": 0,
-        "energyGain": 10,
-        "cooldown": 1500
-    },
-    "FEATHER_DANCE": {
-        "moveId": "FEATHER_DANCE",
-        "name": "Feather Dance",
-        "type": "flying",
-        "power": 35,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [-2,
-            0
-        ],
-        "buffTarget": "opponent",
-        "buffApplyChance": "1"
-    },
-    "FEINT_ATTACK": {
-        "moveId": "FEINT_ATTACK",
-        "name": "Feint Attack",
-        "type": "dark",
-        "power": 6,
-        "energy": 0,
-        "energyGain": 6,
-        "cooldown": 1000
-    },
-    "FELL_STINGER": {
-        "moveId": "FELL_STINGER",
-        "name": "Fell Stinger",
-        "abbreviation": "FeS",
-        "type": "bug",
-        "power": 20,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            1,
-            0
-        ],
-        "buffTarget": "self",
-        "buffApplyChance": "1"
-    },
-    "FIRE_BLAST": {
-        "moveId": "FIRE_BLAST",
-        "name": "Fire Blast",
-        "abbreviation": "FiB",
-        "type": "fire",
-        "power": 140,
-        "energy": 80,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "FIRE_FANG": {
-        "moveId": "FIRE_FANG",
-        "name": "Fire Fang",
-        "type": "fire",
-        "power": 8,
-        "energy": 0,
-        "energyGain": 5,
-        "cooldown": 1000
-    },
-    "FIRE_PUNCH": {
-        "moveId": "FIRE_PUNCH",
-        "name": "Fire Punch",
-        "abbreviation": "FiP",
-        "type": "fire",
-        "power": 55,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "BLAZE_KICK": {
-        "moveId": "BLAZE_KICK",
-        "name": "Blaze Kick",
-        "type": "fire",
-        "power": 55,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "FIRE_SPIN": {
-        "moveId": "FIRE_SPIN",
-        "name": "Fire Spin",
-        "type": "fire",
-        "power": 9,
-        "energy": 0,
-        "energyGain": 10,
-        "cooldown": 1500
-    },
-    "FLAME_BURST": {
-        "moveId": "FLAME_BURST",
-        "name": "Flame Burst",
-        "abbreviation": "FmB",
-        "type": "fire",
-        "power": 70,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "FLAME_CHARGE": {
-        "moveId": "FLAME_CHARGE",
-        "name": "Flame Charge",
-        "abbreviation": "FmC",
-        "type": "fire",
-        "power": 65,
-        "energy": 50,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            1,
-            0
-        ],
-        "buffTarget": "self",
-        "buffApplyChance": "1"
-    },
-    "FLAME_WHEEL": {
-        "moveId": "FLAME_WHEEL",
-        "name": "Flame Wheel",
-        "type": "fire",
-        "power": 60,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "FLAMETHROWER": {
-        "moveId": "FLAMETHROWER",
-        "name": "Flamethrower",
-        "abbreviation": "Ft",
-        "type": "fire",
-        "power": 90,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "FLASH_CANNON": {
-        "moveId": "FLASH_CANNON",
-        "name": "Flash Cannon",
-        "type": "steel",
-        "power": 110,
-        "energy": 70,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "FLY": {
-        "moveId": "FLY",
-        "name": "Fly",
-        "type": "flying",
-        "power": 80,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "FLYING_PRESS": {
-        "moveId": "FLYING_PRESS",
-        "name": "Flying Press",
-        "abbreviation": "FlP",
-        "type": "fighting",
-        "power": 90,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "FOCUS_BLAST": {
-        "moveId": "FOCUS_BLAST",
-        "name": "Focus Blast",
-        "type": "fighting",
-        "power": 150,
-        "energy": 75,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "FOUL_PLAY": {
-        "moveId": "FOUL_PLAY",
-        "name": "Foul Play",
-        "abbreviation": "FoP",
-        "type": "dark",
-        "power": 70,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "FRENZY_PLANT": {
-        "moveId": "FRENZY_PLANT",
-        "name": "Frenzy Plant",
-        "type": "grass",
-        "power": 100,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "FROST_BREATH": {
-        "moveId": "FROST_BREATH",
-        "name": "Frost Breath",
-        "type": "ice",
-        "power": 7,
-        "energy": 0,
-        "energyGain": 5,
-        "cooldown": 1000
-    },
-    "FRUSTRATION": {
-        "moveId": "FRUSTRATION",
-        "name": "Frustration",
-        "type": "normal",
-        "power": 10,
-        "energy": 70,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "FURY_CUTTER": {
-        "moveId": "FURY_CUTTER",
-        "name": "Fury Cutter",
-        "type": "bug",
-        "power": 2,
-        "energy": 0,
-        "energyGain": 4,
-        "cooldown": 500
-    },
-    "FUTURE_SIGHT": {
-        "moveId": "FUTURE_SIGHT",
-        "name": "Future Sight",
-        "type": "psychic",
-        "power": 120,
-        "energy": 65,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "GIGA_DRAIN": {
-        "moveId": "GIGA_DRAIN",
-        "name": "Giga Drain",
-        "type": "grass",
-        "power": 50,
-        "energy": 80,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "GIGA_IMPACT": {
-        "moveId": "GIGA_IMPACT",
-        "name": "Giga Impact",
-        "type": "normal",
-        "power": 150,
-        "energy": 80,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "GRASS_KNOT": {
-        "moveId": "GRASS_KNOT",
-        "name": "Grass Knot",
-        "type": "grass",
-        "power": 90,
-        "energy": 50,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "GUNK_SHOT": {
-        "moveId": "GUNK_SHOT",
-        "name": "Gunk Shot",
-        "type": "poison",
-        "power": 130,
-        "energy": 75,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "GUST": {
-        "moveId": "GUST",
-        "name": "Gust",
-        "type": "flying",
-        "power": 16,
-        "energy": 0,
-        "energyGain": 12,
-        "cooldown": 2000
-    },
-    "GYRO_BALL": {
-        "moveId": "GYRO_BALL",
-        "name": "Gyro Ball",
-        "type": "steel",
-        "power": 80,
-        "energy": 60,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "HEART_STAMP": {
-        "moveId": "HEART_STAMP",
-        "name": "Heart Stamp",
-        "type": "psychic",
-        "power": 40,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "HEAT_WAVE": {
-        "moveId": "HEAT_WAVE",
-        "name": "Heat Wave",
-        "type": "fire",
-        "power": 95,
-        "energy": 75,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "HEAVY_SLAM": {
-        "moveId": "HEAVY_SLAM",
-        "name": "Heavy Slam",
-        "type": "steel",
-        "power": 70,
-        "energy": 50,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "HEX": {
-        "moveId": "HEX",
-        "name": "Hex",
-        "type": "ghost",
-        "power": 6,
-        "energy": 0,
-        "energyGain": 12,
-        "cooldown": 1500
-    },
-    "HIDDEN_POWER_BUG": {
-        "moveId": "HIDDEN_POWER_BUG",
-        "name": "Hidden Power (Bug)",
-        "type": "bug",
-        "power": 9,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1500
-    },
-    "HIDDEN_POWER_DARK": {
-        "moveId": "HIDDEN_POWER_DARK",
-        "name": "Hidden Power (Dark)",
-        "type": "dark",
-        "power": 9,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1500
-    },
-    "HIDDEN_POWER_DRAGON": {
-        "moveId": "HIDDEN_POWER_DRAGON",
-        "name": "Hidden Power (Dragon)",
-        "type": "dragon",
-        "power": 9,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1500
-    },
-    "HIDDEN_POWER_ELECTRIC": {
-        "moveId": "HIDDEN_POWER_ELECTRIC",
-        "name": "Hidden Power (Electric)",
-        "type": "electric",
-        "power": 9,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1500
-    },
-    "HIDDEN_POWER_FIGHTING": {
-        "moveId": "HIDDEN_POWER_FIGHTING",
-        "name": "Hidden Power (Fighting)",
-        "type": "fighting",
-        "power": 9,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1500
-    },
-    "HIDDEN_POWER_FIRE": {
-        "moveId": "HIDDEN_POWER_FIRE",
-        "name": "Hidden Power (Fire)",
-        "type": "fire",
-        "power": 9,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1500
-    },
-    "HIDDEN_POWER_FLYING": {
-        "moveId": "HIDDEN_POWER_FLYING",
-        "name": "Hidden Power (Flying)",
-        "type": "flying",
-        "power": 9,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1500
-    },
-    "HIDDEN_POWER_GHOST": {
-        "moveId": "HIDDEN_POWER_GHOST",
-        "name": "Hidden Power (Ghost)",
-        "type": "ghost",
-        "power": 9,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1500
-    },
-    "HIDDEN_POWER_GRASS": {
-        "moveId": "HIDDEN_POWER_GRASS",
-        "name": "Hidden Power (Grass)",
-        "type": "grass",
-        "power": 9,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1500
-    },
-    "HIDDEN_POWER_GROUND": {
-        "moveId": "HIDDEN_POWER_GROUND",
-        "name": "Hidden Power (Ground)",
-        "type": "ground",
-        "power": 9,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1500
-    },
-    "HIDDEN_POWER_ICE": {
-        "moveId": "HIDDEN_POWER_ICE",
-        "name": "Hidden Power (Ice)",
-        "type": "ice",
-        "power": 9,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1500
-    },
-    "HIDDEN_POWER_POISON": {
-        "moveId": "HIDDEN_POWER_POISON",
-        "name": "Hidden Power (Poison)",
-        "type": "poison",
-        "power": 9,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1500
-    },
-    "HIDDEN_POWER_PSYCHIC": {
-        "moveId": "HIDDEN_POWER_PSYCHIC",
-        "name": "Hidden Power (Psychic)",
-        "type": "psychic",
-        "power": 9,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1500
-    },
-    "HIDDEN_POWER_ROCK": {
-        "moveId": "HIDDEN_POWER_ROCK",
-        "name": "Hidden Power (Rock)",
-        "type": "rock",
-        "power": 9,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1500
-    },
-    "HIDDEN_POWER_STEEL": {
-        "moveId": "HIDDEN_POWER_STEEL",
-        "name": "Hidden Power (Steel)",
-        "type": "steel",
-        "power": 9,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1500
-    },
-    "HIDDEN_POWER_WATER": {
-        "moveId": "HIDDEN_POWER_WATER",
-        "name": "Hidden Power (Water)",
-        "type": "water",
-        "power": 9,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1500
-    },
-    "HORN_ATTACK": {
-        "moveId": "HORN_ATTACK",
-        "name": "Horn Attack",
-        "type": "normal",
-        "power": 40,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "HURRICANE": {
-        "moveId": "HURRICANE",
-        "name": "Hurricane",
-        "abbreviation": "Hu",
-        "type": "flying",
-        "power": 110,
-        "energy": 65,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "HYDRO_CANNON": {
-        "moveId": "HYDRO_CANNON",
-        "name": "Hydro Cannon",
-        "type": "water",
-        "power": 80,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "HYDRO_PUMP": {
-        "moveId": "HYDRO_PUMP",
-        "name": "Hydro Pump",
-        "type": "water",
-        "power": 130,
-        "energy": 75,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "HYDRO_PUMP_BLASTOISE": {
-        "moveId": "HYDRO_PUMP_BLASTOISE",
-        "name": "Hydro Pump Blastoise",
-        "type": "water",
-        "power": 90,
-        "energy": 80,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "HYPER_BEAM": {
-        "moveId": "HYPER_BEAM",
-        "name": "Hyper Beam",
-        "type": "normal",
-        "power": 150,
-        "energy": 80,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "HYPER_FANG": {
-        "moveId": "HYPER_FANG",
-        "name": "Hyper Fang",
-        "type": "normal",
-        "power": 80,
-        "energy": 50,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "ICE_BEAM": {
-        "moveId": "ICE_BEAM",
-        "name": "Ice Beam",
-        "type": "ice",
-        "power": 90,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "ICE_FANG": {
-        "moveId": "ICE_FANG",
-        "name": "Ice Fang",
-        "type": "ice",
-        "power": 8,
-        "energy": 0,
-        "energyGain": 5,
-        "cooldown": 1000
-    },
-    "ICE_PUNCH": {
-        "moveId": "ICE_PUNCH",
-        "name": "Ice Punch",
-        "type": "ice",
-        "power": 55,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "ICE_SHARD": {
-        "moveId": "ICE_SHARD",
-        "name": "Ice Shard",
-        "type": "ice",
-        "power": 9,
-        "energy": 0,
-        "energyGain": 10,
-        "cooldown": 1500
-    },
-    "ICY_WIND": {
-        "moveId": "ICY_WIND",
-        "name": "Icy Wind",
-        "type": "ice",
-        "power": 60,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [-1,
-            0
-        ],
-        "buffTarget": "opponent",
-        "buffApplyChance": "1"
-    },
-    "INCINERATE": {
-        "moveId": "INCINERATE",
-        "name": "Incinerate",
-        "type": "fire",
-        "power": 15,
-        "energy": 0,
-        "energyGain": 20,
-        "cooldown": 2500
-    },
-    "INFESTATION": {
-        "moveId": "INFESTATION",
-        "name": "Infestation",
-        "type": "bug",
-        "power": 6,
-        "energy": 0,
-        "energyGain": 12,
-        "cooldown": 1500
-    },
-    "IRON_HEAD": {
-        "moveId": "IRON_HEAD",
-        "name": "Iron Head",
-        "type": "steel",
-        "power": 70,
-        "energy": 50,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "IRON_TAIL": {
-        "moveId": "IRON_TAIL",
-        "name": "Iron Tail",
-        "type": "steel",
-        "power": 9,
-        "energy": 0,
-        "energyGain": 6,
-        "cooldown": 1500
-    },
-    "KARATE_CHOP": {
-        "moveId": "KARATE_CHOP",
-        "name": "Karate Chop",
-        "type": "fighting",
-        "power": 5,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1000
-    },
-    "LAST_RESORT": {
-        "moveId": "LAST_RESORT",
-        "name": "Last Resort",
-        "type": "normal",
-        "power": 90,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "LEAF_BLADE": {
-        "moveId": "LEAF_BLADE",
-        "name": "Leaf Blade",
-        "type": "grass",
-        "power": 70,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "LEAF_TORNADO": {
-        "moveId": "LEAF_TORNADO",
-        "name": "Leaf Tornado",
-        "type": "grass",
-        "power": 45,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [-2,
-            0
-        ],
-        "buffTarget": "opponent",
-        "buffApplyChance": ".5"
-    },
-    "LEAF_STORM": {
-        "moveId": "LEAF_STORM",
-        "name": "Leaf Storm",
-        "abbreviation": "LfS",
-        "type": "grass",
-        "power": 130,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [-2, 0],
-        "buffTarget": "self",
-        "buffApplyChance": "1"
-    },
-    "LICK": {
-        "moveId": "LICK",
-        "name": "Lick",
-        "type": "ghost",
-        "power": 3,
-        "energy": 0,
-        "energyGain": 3,
-        "cooldown": 500
-    },
-    "LOCK_ON": {
-        "moveId": "LOCK_ON",
-        "name": "Lock On",
-        "type": "normal",
-        "power": 1,
-        "energy": 0,
-        "energyGain": 5,
-        "cooldown": 500
-    },
-    "LOW_KICK": {
-        "moveId": "LOW_KICK",
-        "name": "Low Kick",
-        "type": "fighting",
-        "power": 4,
-        "energy": 0,
-        "energyGain": 5,
-        "cooldown": 1000
-    },
-    "LOW_SWEEP": {
-        "moveId": "LOW_SWEEP",
-        "name": "Low Sweep",
-        "type": "fighting",
-        "power": 40,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "LUNGE": {
-        "moveId": "LUNGE",
-        "name": "Lunge",
-        "abbreviation": "Lu",
-        "type": "bug",
-        "power": 60,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [-1,
-            0
-        ],
-        "buffTarget": "opponent",
-        "buffApplyChance": "1"
-    },
-    "MAGNET_BOMB": {
-        "moveId": "MAGNET_BOMB",
-        "name": "Magnet Bomb",
-        "abbreviation": "MgB",
-        "type": "steel",
-        "power": 70,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "MEGA_DRAIN": {
-        "moveId": "MEGA_DRAIN",
-        "name": "Mega Drain",
-        "type": "grass",
-        "power": 25,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "MEGAHORN": {
-        "moveId": "MEGAHORN",
-        "name": "Megahorn",
-        "abbreviation": "Mh",
-        "type": "bug",
-        "power": 100,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "METAL_CLAW": {
-        "moveId": "METAL_CLAW",
-        "name": "Metal Claw",
-        "type": "steel",
-        "power": 5,
-        "energy": 0,
-        "energyGain": 6,
-        "cooldown": 1000
-    },
-    "METEOR_MASH": {
-        "moveId": "METEOR_MASH",
-        "name": "Meteor Mash",
-        "type": "steel",
-        "power": 100,
-        "energy": 50,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "MIRROR_COAT": {
-        "moveId": "MIRROR_COAT",
-        "name": "Mirror Coat",
-        "abbreviation": "MrC",
-        "type": "psychic",
-        "power": 60,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "MIRROR_SHOT": {
-        "moveId": "MIRROR_SHOT",
-        "name": "Mirror Shot",
-        "abbreviation": "MrS",
-        "type": "steel",
-        "power": 35,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [-1,
-            0
-        ],
-        "buffTarget": "opponent",
-        "buffApplyChance": ".3"
-    },
-    "MOONBLAST": {
-        "moveId": "MOONBLAST",
-        "name": "Moonblast",
-        "type": "fairy",
-        "power": 110,
-        "energy": 60,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [-1,
-            0
-        ],
-        "buffTarget": "opponent",
-        "buffApplyChance": ".1"
-    },
-    "MUD_BOMB": {
-        "moveId": "MUD_BOMB",
-        "name": "Mud Bomb",
-        "type": "ground",
-        "power": 55,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "MUDDY_WATER": {
-        "moveId": "MUDDY_WATER",
-        "name": "Muddy Water",
-        "type": "water",
-        "power": 35,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 1000,
-        "buffs": [-1,
-            0
-        ],
-        "buffTarget": "opponent",
-        "buffApplyChance": ".3"
-    },
-    "MUD_SHOT": {
-        "moveId": "MUD_SHOT",
-        "name": "Mud Shot",
-        "type": "ground",
-        "power": 3,
-        "energy": 0,
-        "energyGain": 9,
-        "cooldown": 1000
-    },
-    "MUD_SLAP": {
-        "moveId": "MUD_SLAP",
-        "name": "Mud Slap",
-        "abbreviation": "MSl",
-        "type": "ground",
-        "power": 11,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1500
-    },
-    "NIGHT_SHADE": {
-        "moveId": "NIGHT_SHADE",
-        "name": "Night Shade",
-        "abbreviation": "NSh",
-        "type": "ghost",
-        "power": 60,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "NIGHT_SLASH": {
-        "moveId": "NIGHT_SLASH",
-        "name": "Night Slash",
-        "type": "dark",
-        "power": 50,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            2,
-            0
-        ],
-        "buffTarget": "self",
-        "buffApplyChance": ".125"
-    },
-    "OCTAZOOKA": {
-        "moveId": "OCTAZOOKA",
-        "name": "Octazooka",
-        "abbreviation": "Oc",
-        "type": "water",
-        "power": 50,
-        "energy": 50,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [-2,
-            0
-        ],
-        "buffTarget": "opponent",
-        "buffApplyChance": "0.5"
-    },
-    "OMINOUS_WIND": {
-        "moveId": "OMINOUS_WIND",
-        "name": "Ominous Wind",
-        "type": "ghost",
-        "power": 45,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            2,
-            2
-        ],
-        "buffTarget": "self",
-        "buffApplyChance": ".1"
-    },
-    "ORIGIN_PULSE": {
-        "moveId": "ORIGIN_PULSE",
-        "name": "Origin Pulse",
-        "type": "water",
-        "power": 130,
-        "energy": 60,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "OUTRAGE": {
-        "moveId": "OUTRAGE",
-        "name": "Outrage",
-        "type": "dragon",
-        "power": 110,
-        "energy": 60,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "OVERHEAT": {
-        "moveId": "OVERHEAT",
-        "name": "Overheat",
-        "abbreviation": "Ov",
-        "type": "fire",
-        "power": 130,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [-2,
-            0
-        ],
-        "buffTarget": "self",
-        "buffApplyChance": "1"
-    },
-    "PARABOLIC_CHARGE": {
-        "moveId": "PARABOLIC_CHARGE",
-        "name": "Parabolic Charge",
-        "abbreviation": "PbC",
-        "type": "electric",
-        "power": 25,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "PAYBACK": {
-        "moveId": "PAYBACK",
-        "name": "Payback",
-        "abbreviation": "Pbk",
-        "type": "dark",
-        "power": 110,
-        "energy": 60,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "PECK": {
-        "moveId": "PECK",
-        "name": "Peck",
-        "abbreviation": "Pk",
-        "type": "flying",
-        "power": 6,
-        "energy": 0,
-        "energyGain": 5,
-        "cooldown": 1000
-    },
-    "PETAL_BLIZZARD": {
-        "moveId": "PETAL_BLIZZARD",
-        "name": "Petal Blizzard",
-        "abbreviation": "PlB",
-        "type": "grass",
-        "power": 110,
-        "energy": 65,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "PLAY_ROUGH": {
-        "moveId": "PLAY_ROUGH",
-        "name": "Play Rough",
-        "type": "fairy",
-        "power": 90,
-        "energy": 60,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "POISON_FANG": {
-        "moveId": "POISON_FANG",
-        "name": "Poison Fang",
-        "type": "poison",
-        "power": 40,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            0, -1
-        ],
-        "buffTarget": "opponent",
-        "buffApplyChance": "1"
-    },
-    "POISON_JAB": {
-        "moveId": "POISON_JAB",
-        "name": "Poison Jab",
-        "type": "poison",
-        "power": 7,
-        "energy": 0,
-        "energyGain": 7,
-        "cooldown": 1000
-    },
-    "POISON_STING": {
-        "moveId": "POISON_STING",
-        "name": "Poison Sting",
-        "abbreviation": "PSt",
-        "type": "poison",
-        "power": 3,
-        "energy": 0,
-        "energyGain": 9,
-        "cooldown": 1000
-    },
-    "POUND": {
-        "moveId": "POUND",
-        "name": "Pound",
-        "abbreviation": "Pd",
-        "type": "normal",
-        "power": 5,
-        "energy": 0,
-        "energyGain": 4,
-        "cooldown": 1000
-    },
-    "POWDER_SNOW": {
-        "moveId": "POWDER_SNOW",
-        "name": "Powder Snow",
-        "type": "ice",
-        "power": 5,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1000
-    },
-    "POWER_GEM": {
-        "moveId": "POWER_GEM",
-        "name": "Power Gem",
-        "type": "rock",
-        "power": 80,
-        "energy": 60,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "POWER_UP_PUNCH": {
-        "moveId": "POWER_UP_PUNCH",
-        "name": "Power-Up Punch",
-        "type": "fighting",
-        "power": 20,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            1,
-            0
-        ],
-        "buffTarget": "self",
-        "buffApplyChance": "1"
-    },
-    "POWER_WHIP": {
-        "moveId": "POWER_WHIP",
-        "name": "Power Whip",
-        "type": "grass",
-        "power": 90,
-        "energy": 50,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "PRECIPICE_BLADES": {
-        "moveId": "PRECIPICE_BLADES",
-        "name": "Precipice Blades",
-        "abbreviation": "PrB",
-        "type": "ground",
-        "power": 130,
-        "energy": 60,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "PRESENT": {
-        "moveId": "PRESENT",
-        "name": "Present",
-        "abbreviation": "Pr",
-        "type": "normal",
-        "power": 3,
-        "energy": 0,
-        "energyGain": 12,
-        "cooldown": 1500
-    },
-    "PSYBEAM": {
-        "moveId": "PSYBEAM",
-        "name": "Psybeam",
-        "abbreviation": "Psb",
-        "type": "psychic",
-        "power": 70,
-        "energy": 60,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "PSYCHIC": {
-        "moveId": "PSYCHIC",
-        "name": "Psychic",
-        "type": "psychic",
-        "power": 90,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            0, -1
-        ],
-        "buffTarget": "opponent",
-        "buffApplyChance": ".1"
-    },
-    "PSYCHO_BOOST": {
-        "moveId": "PSYCHO_BOOST",
-        "name": "Psycho Boost",
-        "type": "psychic",
-        "power": 70,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [-2,
-            0
-        ],
-        "buffTarget": "self",
-        "buffApplyChance": "1"
-    },
-    "PSYCHO_CUT": {
-        "moveId": "PSYCHO_CUT",
-        "name": "Psycho Cut",
-        "type": "psychic",
-        "power": 3,
-        "energy": 0,
-        "energyGain": 9,
-        "cooldown": 1000
-    },
-    "PSYSHOCK": {
-        "moveId": "PSYSHOCK",
-        "name": "Psyshock",
-        "abbreviation": "Psh",
-        "type": "psychic",
-        "power": 70,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "PSYSTRIKE": {
-        "moveId": "PSYSTRIKE",
-        "name": "Psystrike",
-        "abbreviation": "Pst",
-        "type": "psychic",
-        "power": 90,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "QUICK_ATTACK": {
-        "moveId": "QUICK_ATTACK",
-        "name": "Quick Attack",
-        "type": "normal",
-        "power": 5,
-        "energy": 0,
-        "energyGain": 7,
-        "cooldown": 1000
-    },
-    "RAZOR_LEAF": {
-        "moveId": "RAZOR_LEAF",
-        "name": "Razor Leaf",
-        "type": "grass",
-        "power": 10,
-        "energy": 0,
-        "energyGain": 4,
-        "cooldown": 1000
-    },
-    "REST": {
-        "moveId": "REST",
-        "name": "Rest",
-        "type": "normal",
-        "power": 50,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "RETURN": {
-        "moveId": "RETURN",
-        "name": "Return",
-        "abbreviation": "Re",
-        "type": "normal",
-        "power": 130,
-        "energy": 70,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "ROCK_BLAST": {
-        "moveId": "ROCK_BLAST",
-        "name": "Rock Blast",
-        "type": "rock",
-        "power": 50,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "ROCK_SLIDE": {
-        "moveId": "ROCK_SLIDE",
-        "name": "Rock Slide",
-        "type": "rock",
-        "power": 75,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "ROCK_SMASH": {
-        "moveId": "ROCK_SMASH",
-        "name": "Rock Smash",
-        "abbreviation": "RSm",
-        "type": "fighting",
-        "power": 9,
-        "energy": 0,
-        "energyGain": 7,
-        "cooldown": 1500
-    },
-    "ROCK_THROW": {
-        "moveId": "ROCK_THROW",
-        "name": "Rock Throw",
-        "abbreviation": "RTh",
-        "type": "rock",
-        "power": 8,
-        "energy": 0,
-        "energyGain": 5,
-        "cooldown": 1000
-    },
-    "ROCK_TOMB": {
-        "moveId": "ROCK_TOMB",
-        "name": "Rock Tomb",
-        "type": "rock",
-        "power": 70,
-        "energy": 60,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "ROCK_WRECKER": {
-        "moveId": "ROCK_WRECKER",
-        "name": "Rock Wrecker",
-        "type": "rock",
-        "power": 110,
-        "energy": 50,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "SACRED_SWORD": {
-        "moveId": "SACRED_SWORD",
-        "name": "Sacred Sword",
-        "abbreviation": "SSw",
-        "type": "fighting",
-        "power": 60,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "SAND_TOMB": {
-        "moveId": "SAND_TOMB",
-        "name": "Sand Tomb",
-        "type": "ground",
-        "power": 25,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            0, -1
-        ],
-        "buffTarget": "opponent",
-        "buffApplyChance": "1"
-    },
-    "SCALD": {
-        "moveId": "SCALD",
-        "name": "Scald",
-        "abbreviation": "Sc",
-        "type": "water",
-        "power": 80,
-        "energy": 60,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "SCALD_BLASTOISE": {
-        "moveId": "SCALD_BLASTOISE",
-        "name": "Scald Blastoise",
-        "type": "water",
-        "power": 50,
-        "energy": 80,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "SCRATCH": {
-        "moveId": "SCRATCH",
-        "name": "Scratch",
-        "abbreviation": "Scr",
-        "type": "normal",
-        "power": 4,
-        "energy": 0,
-        "energyGain": 2,
-        "cooldown": 500
-    },
-    "SEED_BOMB": {
-        "moveId": "SEED_BOMB",
-        "name": "Seed Bomb",
-        "abbreviation": "SeB",
-        "type": "grass",
-        "power": 55,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "SHADOW_BALL": {
-        "moveId": "SHADOW_BALL",
-        "name": "Shadow Ball",
-        "type": "ghost",
-        "power": 100,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "SHADOW_BONE": {
-        "moveId": "SHADOW_BONE",
-        "name": "Shadow Bone",
-        "abbreviation": "SBo",
-        "type": "ghost",
-        "power": 75,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            0, -1
-        ],
-        "buffTarget": "opponent",
-        "buffApplyChance": ".2"
-    },
-    "SHADOW_CLAW": {
-        "moveId": "SHADOW_CLAW",
-        "name": "Shadow Claw",
-        "type": "ghost",
-        "power": 6,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1000
-    },
-    "SHADOW_PUNCH": {
-        "moveId": "SHADOW_PUNCH",
-        "name": "Shadow Punch",
-        "abbreviation": "ShP",
-        "type": "ghost",
-        "power": 40,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "SHADOW_SNEAK": {
-        "moveId": "SHADOW_SNEAK",
-        "name": "Shadow Sneak",
-        "type": "ghost",
-        "power": 50,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "SIGNAL_BEAM": {
-        "moveId": "SIGNAL_BEAM",
-        "name": "Signal Beam",
-        "type": "bug",
-        "power": 75,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [-1, -1],
-        "buffTarget": "opponent",
-        "buffApplyChance": ".2"
-    },
-    "SILVER_WIND": {
-        "moveId": "SILVER_WIND",
-        "name": "Silver Wind",
-        "abbreviation": "SvW",
-        "type": "bug",
-        "power": 45,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            2,
-            2
-        ],
-        "buffTarget": "self",
-        "buffApplyChance": ".1"
-    },
-    "SKULL_BASH": {
-        "moveId": "SKULL_BASH",
-        "name": "Skull Bash",
-        "abbreviation": "SkB",
-        "type": "normal",
-        "power": 130,
-        "energy": 75,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            0,
-            1
-        ],
-        "buffTarget": "self",
-        "buffApplyChance": "1"
-    },
-    "SKY_ATTACK": {
-        "moveId": "SKY_ATTACK",
-        "name": "Sky Attack",
-        "type": "flying",
-        "power": 75,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "SLUDGE": {
-        "moveId": "SLUDGE",
-        "name": "Sludge",
-        "type": "poison",
-        "power": 50,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "SLUDGE_BOMB": {
-        "moveId": "SLUDGE_BOMB",
-        "name": "Sludge Bomb",
-        "abbreviation": "SlB",
-        "type": "poison",
-        "power": 80,
-        "energy": 50,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "SLUDGE_WAVE": {
-        "moveId": "SLUDGE_WAVE",
-        "name": "Sludge Wave",
-        "type": "poison",
-        "power": 110,
-        "energy": 65,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "SMACK_DOWN": {
-        "moveId": "SMACK_DOWN",
-        "name": "Smack Down",
-        "type": "rock",
-        "power": 12,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1500
-    },
-    "SNARL": {
-        "moveId": "SNARL",
-        "name": "Snarl",
-        "abbreviation": "Sn",
-        "type": "dark",
-        "power": 5,
-        "energy": 0,
-        "energyGain": 13,
-        "cooldown": 1500
-    },
-    "SOLAR_BEAM": {
-        "moveId": "SOLAR_BEAM",
-        "name": "Solar Beam",
-        "abbreviation": "SoB",
-        "type": "grass",
-        "power": 150,
-        "energy": 80,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "SPARK": {
-        "moveId": "SPARK",
-        "name": "Spark",
-        "abbreviation": "Sp",
-        "type": "electric",
-        "power": 4,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1000
-    },
-    "SPLASH": {
-        "moveId": "SPLASH",
-        "name": "Splash",
-        "abbreviation": "Spl",
-        "type": "water",
-        "power": 0,
-        "energy": 0,
-        "energyGain": 12,
-        "cooldown": 2000
-    },
-    "STEEL_WING": {
-        "moveId": "STEEL_WING",
-        "name": "Steel Wing",
-        "abbreviation": "StW",
-        "type": "steel",
-        "power": 7,
-        "energy": 0,
-        "energyGain": 5,
-        "cooldown": 1000
-    },
-    "STOMP": {
-        "moveId": "STOMP",
-        "name": "Stomp",
-        "abbreviation": "St",
-        "type": "normal",
-        "power": 55,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "STONE_EDGE": {
-        "moveId": "STONE_EDGE",
-        "name": "Stone Edge",
-        "type": "rock",
-        "power": 100,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "STRUGGLE": {
-        "moveId": "STRUGGLE",
-        "name": "Struggle",
-        "abbreviation": "Str",
-        "type": "normal",
-        "power": 35,
-        "energy": 100,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "STRUGGLE_BUG": {
-        "moveId": "STRUGGLE_BUG",
-        "name": "Struggle Bug",
-        "abbreviation": "StB",
-        "type": "bug",
-        "power": 9,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1500
-    },
-    "SUBMISSION": {
-        "moveId": "SUBMISSION",
-        "name": "Submission",
-        "abbreviation": "Sm",
-        "type": "fighting",
-        "power": 60,
-        "energy": 50,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "SUCKER_PUNCH": {
-        "moveId": "SUCKER_PUNCH",
-        "name": "Sucker Punch",
-        "abbreviation": "SkP",
-        "type": "dark",
-        "power": 5,
-        "energy": 0,
-        "energyGain": 7,
-        "cooldown": 1000
-    },
-    "SUPER_POWER": {
-        "moveId": "SUPER_POWER",
-        "name": "Superpower",
-        "type": "fighting",
-        "power": 85,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [-1, -1],
-        "buffTarget": "self",
-        "buffApplyChance": "1"
-    },
-    "SURF": {
-        "moveId": "SURF",
-        "name": "Surf",
-        "type": "water",
-        "power": 65,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "SWIFT": {
-        "moveId": "SWIFT",
-        "name": "Swift",
-        "abbreviation": "Sw",
-        "type": "normal",
-        "power": 60,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "SYNCHRONOISE": {
-        "moveId": "SYNCHRONOISE",
-        "name": "Synchronoise",
-        "abbreviation": "Sy",
-        "type": "psychic",
-        "power": 80,
-        "energy": 50,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "TACKLE": {
-        "moveId": "TACKLE",
-        "name": "Tackle",
-        "abbreviation": "Tk",
-        "type": "normal",
-        "power": 3,
-        "energy": 0,
-        "energyGain": 2,
-        "cooldown": 500
-    },
-    "TAKE_DOWN": {
-        "moveId": "TAKE_DOWN",
-        "name": "Take Down",
-        "type": "normal",
-        "power": 5,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1500
-    },
-    "TECHNO_BLAST_NORMAL": {
-        "moveId": "TECHNO_BLAST_NORMAL",
-        "name": "Techno Blast (Normal)",
-        "type": "normal",
-        "power": 120,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "TECHNO_BLAST_BURN": {
-        "moveId": "TECHNO_BLAST_BURN",
-        "name": "Techno Blast (Burn)",
-        "type": "fire",
-        "power": 120,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "TECHNO_BLAST_CHILL": {
-        "moveId": "TECHNO_BLAST_CHILL",
-        "name": "Techno Blast (Chill)",
-        "type": "ice",
-        "power": 120,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "TECHNO_BLAST_DOUSE": {
-        "moveId": "TECHNO_BLAST_DOUSE",
-        "name": "Techno Blast (Douse)",
-        "type": "water",
-        "power": 120,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "TECHNO_BLAST_SHOCK": {
-        "moveId": "TECHNO_BLAST_SHOCK",
-        "name": "Techno Blast (Shock)",
-        "type": "electric",
-        "power": 120,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "THUNDER": {
-        "moveId": "THUNDER",
-        "name": "Thunder",
-        "type": "electric",
-        "power": 100,
-        "energy": 60,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "THUNDER_FANG": {
-        "moveId": "THUNDER_FANG",
-        "name": "Thunder Fang",
-        "type": "electric",
-        "power": 8,
-        "energy": 0,
-        "energyGain": 5,
-        "cooldown": 1000
-    },
-    "THUNDER_PUNCH": {
-        "moveId": "THUNDER_PUNCH",
-        "name": "Thunder Punch",
-        "type": "electric",
-        "power": 55,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "THUNDER_SHOCK": {
-        "moveId": "THUNDER_SHOCK",
-        "name": "Thunder Shock",
-        "type": "electric",
-        "power": 3,
-        "energy": 0,
-        "energyGain": 9,
-        "cooldown": 1000
-    },
-    "THUNDERBOLT": {
-        "moveId": "THUNDERBOLT",
-        "name": "Thunderbolt",
-        "abbreviation": "Tb",
-        "type": "electric",
-        "power": 90,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "TRANSFORM": {
-        "moveId": "TRANSFORM",
-        "name": "Transform",
-        "type": "normal",
-        "power": 0,
-        "energy": 0,
-        "energyGain": 0,
-        "cooldown": 1500
-    },
-    "TRI_ATTACK": {
-        "moveId": "TRI_ATTACK",
-        "name": "Tri Attack",
-        "type": "normal",
-        "power": 65,
-        "energy": 50,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [-1, -1],
-        "buffTarget": "opponent",
-        "buffApplyChance": ".5"
-    },
-    "TWISTER": {
-        "moveId": "TWISTER",
-        "name": "Twister",
-        "abbreviation": "Tw",
-        "type": "dragon",
-        "power": 45,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "V_CREATE": {
-        "moveId": "V_CREATE",
-        "name": "V-Create",
-        "type": "fire",
-        "power": 95,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            0, -3
-        ],
-        "buffTarget": "self",
-        "buffApplyChance": "1"
-    },
-    "VICE_GRIP": {
-        "moveId": "VICE_GRIP",
-        "name": "Vise Grip",
-        "type": "normal",
-        "power": 40,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "VINE_WHIP": {
-        "moveId": "VINE_WHIP",
-        "name": "Vine Whip",
-        "type": "grass",
-        "power": 5,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1000
-    },
-    "VOLT_SWITCH": {
-        "moveId": "VOLT_SWITCH",
-        "name": "Volt Switch",
-        "type": "electric",
-        "power": 12,
-        "energy": 0,
-        "energyGain": 16,
-        "cooldown": 2000
-    },
-    "WATER_GUN": {
-        "moveId": "WATER_GUN",
-        "name": "Water Gun",
-        "type": "water",
-        "power": 3,
-        "energy": 0,
-        "energyGain": 3,
-        "cooldown": 500
-    },
-    "WATER_GUN_FAST_BLASTOISE": {
-        "moveId": "WATER_GUN_FAST_BLASTOISE",
-        "name": "Water Gun Fast Blastoise",
-        "type": "water",
-        "power": 6,
-        "energy": 0,
-        "energyGain": 4,
-        "cooldown": 1000
-    },
-    "WATER_PULSE": {
-        "moveId": "WATER_PULSE",
-        "name": "Water Pulse",
-        "type": "water",
-        "power": 70,
-        "energy": 60,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "WATERFALL": {
-        "moveId": "WATERFALL",
-        "name": "Waterfall",
-        "type": "water",
-        "power": 12,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1500
-    },
-    "WEATHER_BALL_FIRE": {
-        "moveId": "WEATHER_BALL_FIRE",
-        "name": "Weather Ball (Fire)",
-        "type": "fire",
-        "power": 60,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "WEATHER_BALL_ICE": {
-        "moveId": "WEATHER_BALL_ICE",
-        "name": "Weather Ball (Ice)",
-        "type": "ice",
-        "power": 60,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "WEATHER_BALL_NORMAL": {
-        "moveId": "WEATHER_BALL_NORMAL",
-        "name": "Weather Ball (Normal)",
-        "type": "normal",
-        "power": 60,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "WEATHER_BALL_ROCK": {
-        "moveId": "WEATHER_BALL_ROCK",
-        "name": "Weather Ball (Rock)",
-        "type": "rock",
-        "power": 60,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "WEATHER_BALL_WATER": {
-        "moveId": "WEATHER_BALL_WATER",
-        "name": "Weather Ball (Water)",
-        "type": "water",
-        "power": 60,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "WILD_CHARGE": {
-        "moveId": "WILD_CHARGE",
-        "name": "Wild Charge",
-        "type": "electric",
-        "power": 100,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            0, -2
-        ],
-        "buffTarget": "self",
-        "buffApplyChance": "1"
-    },
-    "WING_ATTACK": {
-        "moveId": "WING_ATTACK",
-        "name": "Wing Attack",
-        "type": "flying",
-        "power": 5,
-        "energy": 0,
-        "energyGain": 7,
-        "cooldown": 1000
-    },
-    "WRAP": {
-        "moveId": "WRAP",
-        "name": "Wrap",
-        "abbreviation": "Wr",
-        "type": "normal",
-        "power": 60,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "WRAP_GREEN": {
-        "moveId": "WRAP_GREEN",
-        "name": "Wrap Green",
-        "type": "normal",
-        "power": 25,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "WRAP_PINK": {
-        "moveId": "WRAP_PINK",
-        "name": "Wrap Pink",
-        "type": "normal",
-        "power": 25,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "X_SCISSOR": {
-        "moveId": "X_SCISSOR",
-        "name": "X-Scissor",
-        "type": "bug",
-        "power": 45,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "YAWN": {
-        "moveId": "YAWN",
-        "name": "Yawn",
-        "type": "normal",
-        "power": 0,
-        "energy": 0,
-        "energyGain": 12,
-        "cooldown": 2000
-    },
-    "ZAP_CANNON": {
-        "moveId": "ZAP_CANNON",
-        "name": "Zap Cannon",
-        "type": "electric",
-        "power": 150,
-        "energy": 80,
-        "energyGain": 0,
-        "cooldown": 500
-    },
-    "ZEN_HEADBUTT": {
-        "moveId": "ZEN_HEADBUTT",
-        "name": "Zen Headbutt",
-        "type": "psychic",
-        "power": 8,
-        "energy": 0,
-        "energyGain": 6,
-        "cooldown": 1500
-    }
+{
+  "ACID": {
+    "moveId": "ACID",
+    "name": {
+      "ja-Hrkt": "ようかいえき",
+      "ko": "용해액",
+      "zh-Hant": "溶解液",
+      "fr": "Acide",
+      "de": "Säure",
+      "es": "Ácido",
+      "it": "Acido",
+      "en": "Acid",
+      "ja": "ようかいえき",
+      "zh-Hans": "溶解液"
+    },
+    "abbreviation": "Ac",
+    "type": "poison",
+    "power": 6,
+    "energy": 0,
+    "energyGain": 5,
+    "cooldown": 1000
+  },
+  "ACID_SPRAY": {
+    "moveId": "ACID_SPRAY",
+    "name": {
+      "ja-Hrkt": "アシッドボム",
+      "ko": "애시드봄",
+      "zh-Hant": "酸液炸彈",
+      "fr": "Bombe Acide",
+      "de": "Säurespeier",
+      "es": "Bomba Ácida",
+      "it": "Acidobomba",
+      "en": "Acid Spray",
+      "ja": "アシッドボム",
+      "zh-Hans": "酸液炸弹"
+    },
+    "type": "poison",
+    "power": 20,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      0,
+      -2
+    ],
+    "buffTarget": "opponent",
+    "buffApplyChance": "1"
+  },
+  "AERIAL_ACE": {
+    "moveId": "AERIAL_ACE",
+    "name": {
+      "ja-Hrkt": "つばめがえし",
+      "ko": "제비반환",
+      "zh-Hant": "燕返",
+      "fr": "Aéropique",
+      "de": "Aero-Ass",
+      "es": "Golpe Aéreo",
+      "it": "Aeroassalto",
+      "en": "Aerial Ace",
+      "ja": "つばめがえし",
+      "zh-Hans": "燕返"
+    },
+    "type": "flying",
+    "power": 55,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "AEROBLAST": {
+    "moveId": "AEROBLAST",
+    "name": {
+      "ja-Hrkt": "エアロブラスト",
+      "ko": "에어로블라스트",
+      "zh-Hant": "氣旋攻擊",
+      "fr": "Aéroblast",
+      "de": "Luftstoß",
+      "es": "Aerochorro",
+      "it": "Aerocolpo",
+      "en": "Aeroblast",
+      "ja": "エアロブラスト",
+      "zh-Hans": "气旋攻击"
+    },
+    "type": "flying",
+    "power": 170,
+    "energy": 75,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      2,
+      0
+    ],
+    "buffTarget": "self",
+    "buffApplyChance": ".125"
+  },
+  "AIR_CUTTER": {
+    "moveId": "AIR_CUTTER",
+    "name": {
+      "ja-Hrkt": "エアカッター",
+      "ko": "에어컷터",
+      "zh-Hant": "空氣利刃",
+      "fr": "Tranch’Air",
+      "de": "Windschnitt",
+      "es": "Aire Afilado",
+      "it": "Aerasoio",
+      "en": "Air Cutter",
+      "ja": "エアカッター",
+      "zh-Hans": "空气利刃"
+    },
+    "type": "flying",
+    "power": 60,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "AIR_SLASH": {
+    "moveId": "AIR_SLASH",
+    "name": {
+      "ja-Hrkt": "エアスラッシュ",
+      "ko": "에어슬래시",
+      "zh-Hant": "空氣斬",
+      "fr": "Lame d’Air",
+      "de": "Luftschnitt",
+      "es": "Tajo Aéreo",
+      "it": "Eterelama",
+      "en": "Air Slash",
+      "ja": "エアスラッシュ",
+      "zh-Hans": "空气斩"
+    },
+    "type": "flying",
+    "power": 9,
+    "energy": 0,
+    "energyGain": 9,
+    "cooldown": 1500
+  },
+  "ANCIENT_POWER": {
+    "moveId": "ANCIENT_POWER",
+    "name": {
+      "ja-Hrkt": "げんしのちから",
+      "ko": "원시의힘",
+      "zh-Hant": "原始之力",
+      "fr": "Pouvoir Antique",
+      "de": "Antik-Kraft",
+      "es": "Poder Pasado",
+      "it": "Forzantica",
+      "en": "Ancient Power",
+      "ja": "げんしのちから",
+      "zh-Hans": "原始之力"
+    },
+    "type": "rock",
+    "power": 45,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      2,
+      2
+    ],
+    "buffTarget": "self",
+    "buffApplyChance": ".1"
+  },
+  "AQUA_JET": {
+    "moveId": "AQUA_JET",
+    "name": {
+      "ja-Hrkt": "アクアジェット",
+      "ko": "아쿠아제트",
+      "zh-Hant": "水流噴射",
+      "fr": "Aqua-Jet",
+      "de": "Wasserdüse",
+      "es": "Acua Jet",
+      "it": "Acquagetto",
+      "en": "Aqua Jet",
+      "ja": "アクアジェット",
+      "zh-Hans": "水流喷���"
+    },
+    "type": "water",
+    "power": 45,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "AQUA_TAIL": {
+    "moveId": "AQUA_TAIL",
+    "name": {
+      "ja-Hrkt": "アクアテール",
+      "ko": "아쿠아테일",
+      "zh-Hant": "水流尾",
+      "fr": "Hydro-Queue",
+      "de": "Nassschweif",
+      "es": "Acua Cola",
+      "it": "Idrondata",
+      "en": "Aqua Tail",
+      "ja": "アクアテール",
+      "zh-Hans": "水流尾"
+    },
+    "type": "water",
+    "power": 50,
+    "energy": 35,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "ASTONISH": {
+    "moveId": "ASTONISH",
+    "name": {
+      "ja-Hrkt": "おどろかす",
+      "ko": "놀래키기",
+      "zh-Hant": "驚嚇",
+      "fr": "Étonnement",
+      "de": "Erstauner",
+      "es": "Impresionar",
+      "it": "Sgomento",
+      "en": "Astonish",
+      "ja": "おどろかす",
+      "zh-Hans": "惊吓"
+    },
+    "type": "ghost",
+    "power": 5,
+    "energy": 0,
+    "energyGain": 9,
+    "cooldown": 1500
+  },
+  "AURA_SPHERE": {
+    "moveId": "AURA_SPHERE",
+    "name": {
+      "ja-Hrkt": "はどうだん",
+      "ko": "파동탄",
+      "zh-Hant": "波導彈",
+      "fr": "Aurasphère",
+      "de": "Aurasphäre",
+      "es": "Esfera Aural",
+      "it": "Forzasfera",
+      "en": "Aura Sphere",
+      "ja": "はどうだん",
+      "zh-Hans": "波导弹"
+    },
+    "type": "fighting",
+    "power": 100,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "AURORA_BEAM": {
+    "moveId": "AURORA_BEAM",
+    "name": {
+      "ja-Hrkt": "オーロラビーム",
+      "ko": "오로라빔",
+      "zh-Hant": "極光束",
+      "fr": "Onde Boréale",
+      "de": "Aurorastrahl",
+      "es": "Rayo Aurora",
+      "it": "Raggiaurora",
+      "en": "Aurora Beam",
+      "ja": "オーロラビーム",
+      "zh-Hans": "极光束"
+    },
+    "type": "ice",
+    "power": 80,
+    "energy": 60,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "AVALANCHE": {
+    "moveId": "AVALANCHE",
+    "name": {
+      "ja-Hrkt": "ゆきなだれ",
+      "ko": "눈사태",
+      "zh-Hant": "雪崩",
+      "fr": "Avalanche",
+      "de": "Lawine",
+      "es": "Alud",
+      "it": "Slavina",
+      "en": "Avalanche",
+      "ja": "ゆきなだれ",
+      "zh-Hans": "雪崩"
+    },
+    "abbreviation": "Av",
+    "type": "ice",
+    "power": 90,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "BITE": {
+    "moveId": "BITE",
+    "name": {
+      "ja-Hrkt": "かみつく",
+      "ko": "물기",
+      "zh-Hant": "咬住",
+      "fr": "Morsure",
+      "de": "Biss",
+      "es": "Mordisco",
+      "it": "Morso",
+      "en": "Bite",
+      "ja": "かみつく",
+      "zh-Hans": "咬住"
+    },
+    "abbreviation": "Bi",
+    "type": "dark",
+    "power": 4,
+    "energy": 0,
+    "energyGain": 2,
+    "cooldown": 500
+  },
+  "BLAST_BURN": {
+    "moveId": "BLAST_BURN",
+    "name": {
+      "ja-Hrkt": "ブラストバーン",
+      "ko": "블러스트번",
+      "zh-Hant": "爆炸烈焰",
+      "fr": "Rafale Feu",
+      "de": "Lohekanonade",
+      "es": "Anillo Ígneo",
+      "it": "Incendio",
+      "en": "Blast Burn",
+      "ja": "ブラストバーン",
+      "zh-Hans": "爆炸烈焰"
+    },
+    "type": "fire",
+    "power": 110,
+    "energy": 50,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "BLIZZARD": {
+    "moveId": "BLIZZARD",
+    "name": {
+      "ja-Hrkt": "ふぶき",
+      "ko": "눈보라",
+      "zh-Hant": "暴風雪",
+      "fr": "Blizzard",
+      "de": "Blizzard",
+      "es": "Ventisca",
+      "it": "Bora",
+      "en": "Blizzard",
+      "ja": "ふぶき",
+      "zh-Hans": "暴风雪"
+    },
+    "abbreviation": "Bl",
+    "type": "ice",
+    "power": 140,
+    "energy": 75,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "BODY_SLAM": {
+    "moveId": "BODY_SLAM",
+    "name": {
+      "ja-Hrkt": "のしかかり",
+      "ko": "누르기",
+      "zh-Hant": "泰山壓頂",
+      "fr": "Plaquage",
+      "de": "Bodyslam",
+      "es": "Golpe Cuerpo",
+      "it": "Corposcontro",
+      "en": "Body Slam",
+      "ja": "のしかかり",
+      "zh-Hans": "泰山压顶"
+    },
+    "type": "normal",
+    "power": 60,
+    "energy": 35,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "BONE_CLUB": {
+    "moveId": "BONE_CLUB",
+    "name": {
+      "ja-Hrkt": "ホネこんぼう",
+      "ko": "뼈다귀치기",
+      "zh-Hant": "骨棒",
+      "fr": "Massd’Os",
+      "de": "Knochenkeule",
+      "es": "Hueso Palo",
+      "it": "Ossoclava",
+      "en": "Bone Club",
+      "ja": "ホネこんぼう",
+      "zh-Hans": "骨棒"
+    },
+    "type": "ground",
+    "power": 40,
+    "energy": 35,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "BRAVE_BIRD": {
+    "moveId": "BRAVE_BIRD",
+    "name": {
+      "ja-Hrkt": "ブレイブバード",
+      "ko": "브레이브버드",
+      "zh-Hant": "勇鳥猛攻",
+      "fr": "Rapace",
+      "de": "Sturzflug",
+      "es": "Pájaro Osado",
+      "it": "Baldeali",
+      "en": "Brave Bird",
+      "ja": "ブレイブバード",
+      "zh-Hans": "勇鸟猛攻"
+    },
+    "abbreviation": "BrB",
+    "type": "flying",
+    "power": 130,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      0,
+      -3
+    ],
+    "buffTarget": "self",
+    "buffApplyChance": "1"
+  },
+  "BRICK_BREAK": {
+    "moveId": "BRICK_BREAK",
+    "name": {
+      "ja-Hrkt": "かわらわり",
+      "ko": "깨트리다",
+      "zh-Hant": "劈瓦",
+      "fr": "Casse-Brique",
+      "de": "Durchbruch",
+      "es": "Demolición",
+      "it": "Breccia",
+      "en": "Brick Break",
+      "ja": "かわらわり",
+      "zh-Hans": "劈瓦"
+    },
+    "abbreviation": "BkB",
+    "type": "fighting",
+    "power": 40,
+    "energy": 35,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "BRINE": {
+    "moveId": "BRINE",
+    "name": {
+      "ja-Hrkt": "しおみず",
+      "ko": "소금물",
+      "zh-Hant": "鹽水",
+      "fr": "Saumure",
+      "de": "Lake",
+      "es": "Salmuera",
+      "it": "Acquadisale",
+      "en": "Brine",
+      "ja": "しおみず",
+      "zh-Hans": "盐水"
+    },
+    "abbreviation": "Bri",
+    "type": "water",
+    "power": 60,
+    "energy": 50,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "BUBBLE": {
+    "moveId": "BUBBLE",
+    "name": {
+      "ja-Hrkt": "あわ",
+      "ko": "거품",
+      "zh-Hant": "泡沫",
+      "fr": "Écume",
+      "de": "Blubber",
+      "es": "Burbuja",
+      "it": "Bolla",
+      "en": "Bubble",
+      "ja": "あわ",
+      "zh-Hans": "泡沫"
+    },
+    "type": "water",
+    "power": 7,
+    "energy": 0,
+    "energyGain": 11,
+    "cooldown": 1500
+  },
+  "BUBBLE_BEAM": {
+    "moveId": "BUBBLE_BEAM",
+    "name": {
+      "ja-Hrkt": "バブルこうせん",
+      "ko": "거품광선",
+      "zh-Hant": "泡沫光線",
+      "fr": "Bulles d’O",
+      "de": "Blubbstrahl",
+      "es": "Rayo Burbuja",
+      "it": "Bollaraggio",
+      "en": "Bubble Beam",
+      "ja": "バブルこうせん",
+      "zh-Hans": "泡沫光线"
+    },
+    "abbreviation": "BuB",
+    "type": "water",
+    "power": 25,
+    "energy": 40,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      -1,
+      0
+    ],
+    "buffTarget": "opponent",
+    "buffApplyChance": "1"
+  },
+  "BUG_BITE": {
+    "moveId": "BUG_BITE",
+    "name": {
+      "ja-Hrkt": "むしくい",
+      "ko": "벌레먹음",
+      "zh-Hant": "蟲咬",
+      "fr": "Piqûre",
+      "de": "Käferbiss",
+      "es": "Picadura",
+      "it": "Coleomorso",
+      "en": "Bug Bite",
+      "ja": "むしくい",
+      "zh-Hans": "虫咬"
+    },
+    "abbreviation": "BBi",
+    "type": "bug",
+    "power": 3,
+    "energy": 0,
+    "energyGain": 3,
+    "cooldown": 500
+  },
+  "BUG_BUZZ": {
+    "moveId": "BUG_BUZZ",
+    "name": {
+      "ja-Hrkt": "むしのさざめき",
+      "ko": "벌레의야단법석",
+      "zh-Hant": "蟲鳴",
+      "fr": "Bourdon",
+      "de": "Käfergebrumm",
+      "es": "Zumbido",
+      "it": "Ronzio",
+      "en": "Bug Buzz",
+      "ja": "むしのさざめき",
+      "zh-Hans": "虫鸣"
+    },
+    "abbreviation": "BBu",
+    "type": "bug",
+    "power": 90,
+    "energy": 60,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      0,
+      -1
+    ],
+    "buffTarget": "opponent",
+    "buffApplyChance": ".3"
+  },
+  "BULLDOZE": {
+    "moveId": "BULLDOZE",
+    "name": {
+      "ja-Hrkt": "じならし",
+      "ko": "땅고르기",
+      "zh-Hant": "重踏",
+      "fr": "Piétisol",
+      "de": "Dampfwalze",
+      "es": "Terratemblor",
+      "it": "Battiterra",
+      "en": "Bulldoze",
+      "ja": "じならし",
+      "zh-Hans": "重踏"
+    },
+    "abbreviation": "Bd",
+    "type": "ground",
+    "power": 80,
+    "energy": 60,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "BULLET_PUNCH": {
+    "moveId": "BULLET_PUNCH",
+    "name": {
+      "ja-Hrkt": "バレットパンチ",
+      "ko": "불릿펀치",
+      "zh-Hant": "子彈拳",
+      "fr": "Pisto-Poing",
+      "de": "Patronenhieb",
+      "es": "Puño Bala",
+      "it": "Pugnoscarica",
+      "en": "Bullet Punch",
+      "ja": "バレットパンチ",
+      "zh-Hans": "子弹拳"
+    },
+    "type": "steel",
+    "power": 6,
+    "energy": 0,
+    "energyGain": 7,
+    "cooldown": 1000
+  },
+  "BULLET_SEED": {
+    "moveId": "BULLET_SEED",
+    "name": {
+      "ja-Hrkt": "タネマシンガン",
+      "ko": "기관총",
+      "zh-Hant": "種子機關槍",
+      "fr": "Balle Graine",
+      "de": "Kugelsaat",
+      "es": "Semilladora",
+      "it": "Semitraglia",
+      "en": "Bullet Seed",
+      "ja": "タネマシンガン",
+      "zh-Hans": "种子机关枪"
+    },
+    "type": "grass",
+    "power": 5,
+    "energy": 0,
+    "energyGain": 13,
+    "cooldown": 1500
+  },
+  "CHARGE_BEAM": {
+    "moveId": "CHARGE_BEAM",
+    "name": {
+      "ja-Hrkt": "チャージビーム",
+      "ko": "차지빔",
+      "zh-Hant": "充電光束",
+      "fr": "Rayon Chargé",
+      "de": "Ladestrahl",
+      "es": "Rayo Carga",
+      "it": "Raggioscossa",
+      "en": "Charge Beam",
+      "ja": "チャージビーム",
+      "zh-Hans": "充电光束"
+    },
+    "type": "electric",
+    "power": 5,
+    "energy": 0,
+    "energyGain": 11,
+    "cooldown": 1500
+  },
+  "CHARM": {
+    "moveId": "CHARM",
+    "name": {
+      "ja-Hrkt": "あまえる",
+      "ko": "애교부리기",
+      "zh-Hant": "撒嬌",
+      "fr": "Charme",
+      "de": "Charme",
+      "es": "Encanto",
+      "it": "Fascino",
+      "en": "Charm",
+      "ja": "あまえる",
+      "zh-Hans": "撒娇"
+    },
+    "abbreviation": "Ch",
+    "type": "fairy",
+    "power": 16,
+    "energy": 0,
+    "energyGain": 6,
+    "cooldown": 1500
+  },
+  "CLOSE_COMBAT": {
+    "moveId": "CLOSE_COMBAT",
+    "name": {
+      "ja-Hrkt": "インファイト",
+      "ko": "인파이트",
+      "zh-Hant": "近身戰",
+      "fr": "Close Combat",
+      "de": "Nahkampf",
+      "es": "A Bocajarro",
+      "it": "Zuffa",
+      "en": "Close Combat",
+      "ja": "インファイト",
+      "zh-Hans": "近身战"
+    },
+    "type": "fighting",
+    "power": 100,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      0,
+      -2
+    ],
+    "buffTarget": "self",
+    "buffApplyChance": "1"
+  },
+  "CONFUSION": {
+    "moveId": "CONFUSION",
+    "name": {
+      "ja-Hrkt": "ねんりき",
+      "ko": "염동력",
+      "zh-Hant": "念力",
+      "fr": "Choc Mental",
+      "de": "Konfusion",
+      "es": "Confusión",
+      "it": "Confusione",
+      "en": "Confusion",
+      "ja": "ねんりき",
+      "zh-Hans": "念力"
+    },
+    "abbreviation": "Cf",
+    "type": "psychic",
+    "power": 16,
+    "energy": 0,
+    "energyGain": 12,
+    "cooldown": 2000
+  },
+  "COUNTER": {
+    "moveId": "COUNTER",
+    "name": {
+      "ja-Hrkt": "カウンター",
+      "ko": "카운터",
+      "zh-Hant": "雙倍奉還",
+      "fr": "Riposte",
+      "de": "Konter",
+      "es": "Contraataque",
+      "it": "Contrattacco",
+      "en": "Counter",
+      "ja": "カウンター",
+      "zh-Hans": "双倍奉还"
+    },
+    "abbreviation": "C",
+    "type": "fighting",
+    "power": 8,
+    "energy": 0,
+    "energyGain": 7,
+    "cooldown": 1000
+  },
+  "CRABHAMMER": {
+    "moveId": "CRABHAMMER",
+    "name": {
+      "ja-Hrkt": "クラブハンマー",
+      "ko": "찝게햄머",
+      "zh-Hant": "蟹鉗錘",
+      "fr": "Pince-Masse",
+      "de": "Krabbhammer",
+      "es": "Martillazo",
+      "it": "Martellata",
+      "en": "Crabhammer",
+      "ja": "クラブハンマー",
+      "zh-Hans": "蟹钳锤"
+    },
+    "abbreviation": "Crbh",
+    "type": "water",
+    "power": 85,
+    "energy": 50,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      2,
+      0
+    ],
+    "buffTarget": "self",
+    "buffApplyChance": ".125"
+  },
+  "CROSS_CHOP": {
+    "moveId": "CROSS_CHOP",
+    "name": {
+      "ja-Hrkt": "クロスチョップ",
+      "ko": "크로스촙",
+      "zh-Hant": "十字劈",
+      "fr": "Coup Croix",
+      "de": "Kreuzhieb",
+      "es": "Tajo Cruzado",
+      "it": "Incrocolpo",
+      "en": "Cross Chop",
+      "ja": "クロスチョップ",
+      "zh-Hans": "十字劈"
+    },
+    "abbreviation": "CrC",
+    "type": "fighting",
+    "power": 50,
+    "energy": 35,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "CROSS_POISON": {
+    "moveId": "CROSS_POISON",
+    "name": {
+      "ja-Hrkt": "クロスポイズン",
+      "ko": "크로스포이즌",
+      "zh-Hant": "十字毒刃",
+      "fr": "Poison Croix",
+      "de": "Giftstreich",
+      "es": "Veneno X",
+      "it": "Velenocroce",
+      "en": "Cross Poison",
+      "ja": "クロスポイズン",
+      "zh-Hans": "十字毒刃"
+    },
+    "type": "poison",
+    "power": 50,
+    "energy": 35,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      2,
+      0
+    ],
+    "buffTarget": "self",
+    "buffApplyChance": ".125"
+  },
+  "CRUNCH": {
+    "moveId": "CRUNCH",
+    "name": {
+      "ja-Hrkt": "かみくだく",
+      "ko": "깨물어부수기",
+      "zh-Hant": "咬碎",
+      "fr": "Mâchouille",
+      "de": "Knirscher",
+      "es": "Triturar",
+      "it": "Sgranocchio",
+      "en": "Crunch",
+      "ja": "かみくだく",
+      "zh-Hans": "咬碎"
+    },
+    "abbreviation": "Cr",
+    "type": "dark",
+    "power": 70,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "CUT": {
+    "moveId": "CUT",
+    "name": {
+      "ja-Hrkt": "いあいぎり",
+      "ko": "풀베기",
+      "zh-Hant": "居合斬",
+      "fr": "Coupe",
+      "de": "Zerschneider",
+      "es": "Corte",
+      "it": "Taglio",
+      "en": "Cut",
+      "ja": "いあいぎり",
+      "zh-Hans": "居合斩"
+    },
+    "abbreviation": "Cu",
+    "type": "normal",
+    "power": 3,
+    "energy": 0,
+    "energyGain": 2,
+    "cooldown": 500
+  },
+  "DARK_PULSE": {
+    "moveId": "DARK_PULSE",
+    "name": {
+      "ja-Hrkt": "あくのはどう",
+      "ko": "악의파동",
+      "zh-Hant": "惡之波動",
+      "fr": "Vibrobscur",
+      "de": "Finsteraura",
+      "es": "Pulso Umbrío",
+      "it": "Neropulsar",
+      "en": "Dark Pulse",
+      "ja": "あくのはどう",
+      "zh-Hans": "恶之波动"
+    },
+    "type": "dark",
+    "power": 80,
+    "energy": 50,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "DAZZLING_GLEAM": {
+    "moveId": "DAZZLING_GLEAM",
+    "name": {
+      "ja-Hrkt": "マジカルシャイン",
+      "ko": "매지컬샤인",
+      "zh-Hant": "魔法閃耀",
+      "fr": "Éclat Magique",
+      "de": "Zauberschein",
+      "es": "Brillo Mágico",
+      "it": "Magibrillio",
+      "en": "Dazzling Gleam",
+      "ja": "マジカルシャイン",
+      "zh-Hans": "魔法闪耀"
+    },
+    "type": "fairy",
+    "power": 110,
+    "energy": 70,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "DIG": {
+    "moveId": "DIG",
+    "name": {
+      "ja-Hrkt": "あなをほる",
+      "ko": "구멍파기",
+      "zh-Hant": "挖洞",
+      "fr": "Tunnel",
+      "de": "Schaufler",
+      "es": "Excavar",
+      "it": "Fossa",
+      "en": "Dig",
+      "ja": "あなをほる",
+      "zh-Hans": "挖洞"
+    },
+    "abbreviation": "Dg",
+    "type": "ground",
+    "power": 100,
+    "energy": 80,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "DISARMING_VOICE": {
+    "moveId": "DISARMING_VOICE",
+    "name": {
+      "ja-Hrkt": "チャームボイス",
+      "ko": "차밍보이스",
+      "zh-Hant": "魅惑之聲",
+      "fr": "Voix Enjôleuse",
+      "de": "Säuselstimme",
+      "es": "Voz Cautivadora",
+      "it": "Incantavoce",
+      "en": "Disarming Voice",
+      "ja": "チャームボイス",
+      "zh-Hans": "魅惑之声"
+    },
+    "type": "fairy",
+    "power": 70,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "DISCHARGE": {
+    "moveId": "DISCHARGE",
+    "name": {
+      "ja-Hrkt": "ほうでん",
+      "ko": "방전",
+      "zh-Hant": "放電",
+      "fr": "Coup d’Jus",
+      "de": "Ladungsstoß",
+      "es": "Chispazo",
+      "it": "Scarica",
+      "en": "Discharge",
+      "ja": "ほうでん",
+      "zh-Hans": "放电"
+    },
+    "type": "electric",
+    "power": 65,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "DOOM_DESIRE": {
+    "moveId": "DOOM_DESIRE",
+    "name": {
+      "ja-Hrkt": "はめつのねがい",
+      "ko": "파멸의소원",
+      "zh-Hant": "破滅之願",
+      "fr": "Vœu Destructeur",
+      "de": "Kismetwunsch",
+      "es": "Deseo Oculto",
+      "it": "Obbliderio",
+      "en": "Doom Desire",
+      "ja": "はめつのねがい",
+      "zh-Hans": "破灭之愿"
+    },
+    "type": "steel",
+    "power": 75,
+    "energy": 40,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "DRACO_METEOR": {
+    "moveId": "DRACO_METEOR",
+    "name": {
+      "ja-Hrkt": "りゅうせいぐん",
+      "ko": "용성군",
+      "zh-Hant": "流星群",
+      "fr": "Draco-Météore",
+      "de": "Draco Meteor",
+      "es": "Cometa Draco",
+      "it": "Dragobolide",
+      "en": "Draco Meteor",
+      "ja": "りゅうせいぐん",
+      "zh-Hans": "流星群"
+    },
+    "type": "dragon",
+    "power": 150,
+    "energy": 65,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      -2,
+      0
+    ],
+    "buffTarget": "self",
+    "buffApplyChance": "1"
+  },
+  "DRAGON_BREATH": {
+    "moveId": "DRAGON_BREATH",
+    "name": {
+      "ja-Hrkt": "りゅうのいぶき",
+      "ko": "용의숨결",
+      "zh-Hant": "龍息",
+      "fr": "Draco-Souffle",
+      "de": "Feuerodem",
+      "es": "Dragoaliento",
+      "it": "Dragospiro",
+      "en": "Dragon Breath",
+      "ja": "りゅうのいぶき",
+      "zh-Hans": "龙息"
+    },
+    "type": "dragon",
+    "power": 4,
+    "energy": 0,
+    "energyGain": 3,
+    "cooldown": 500
+  },
+  "DRAGON_CLAW": {
+    "moveId": "DRAGON_CLAW",
+    "name": {
+      "ja-Hrkt": "ドラゴンクロー",
+      "ko": "드래곤크루",
+      "zh-Hant": "龍爪",
+      "fr": "Draco-Griffe",
+      "de": "Drachenklaue",
+      "es": "Garra Dragón",
+      "it": "Dragartigli",
+      "en": "Dragon Claw",
+      "ja": "ドラゴンクロー",
+      "zh-Hans": "龙爪"
+    },
+    "type": "dragon",
+    "power": 50,
+    "energy": 35,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "DRAGON_PULSE": {
+    "moveId": "DRAGON_PULSE",
+    "name": {
+      "ja-Hrkt": "りゅうのはどう",
+      "ko": "용의파��",
+      "zh-Hant": "龍之波動",
+      "fr": "Draco-Choc",
+      "de": "Drachenpuls",
+      "es": "Pulso Dragón",
+      "it": "Dragopulsar",
+      "en": "Dragon Pulse",
+      "ja": "りゅうのはどう",
+      "zh-Hans": "龙之波动"
+    },
+    "abbreviation": "DgP",
+    "type": "dragon",
+    "power": 90,
+    "energy": 60,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "DRAGON_TAIL": {
+    "moveId": "DRAGON_TAIL",
+    "name": {
+      "ja-Hrkt": "ドラゴンテール",
+      "ko": "드래곤테일",
+      "zh-Hant": "龍尾",
+      "fr": "Draco-Queue",
+      "de": "Drachenrute",
+      "es": "Cola Dragón",
+      "it": "Codadrago",
+      "en": "Dragon Tail",
+      "ja": "ドラゴンテール",
+      "zh-Hans": "龙尾"
+    },
+    "type": "dragon",
+    "power": 13,
+    "energy": 0,
+    "energyGain": 9,
+    "cooldown": 1500
+  },
+  "DRAINING_KISS": {
+    "moveId": "DRAINING_KISS",
+    "name": {
+      "ja-Hrkt": "ドレインキッス",
+      "ko": "드레인키스",
+      "zh-Hant": "吸取之吻",
+      "fr": "Vampibaiser",
+      "de": "Diebeskuss",
+      "es": "Beso Drenaje",
+      "it": "Assorbibacio",
+      "en": "Draining Kiss",
+      "ja": "ドレインキッス",
+      "zh-Hans": "吸取之吻"
+    },
+    "type": "fairy",
+    "power": 60,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "DRILL_PECK": {
+    "moveId": "DRILL_PECK",
+    "name": {
+      "ja-Hrkt": "ドリルくちばし",
+      "ko": "회전부리",
+      "zh-Hant": "啄鑽",
+      "fr": "Bec Vrille",
+      "de": "Bohrschnabel",
+      "es": "Pico Taladro",
+      "it": "Perforbecco",
+      "en": "Drill Peck",
+      "ja": "ドリルくちばし",
+      "zh-Hans": "啄钻"
+    },
+    "abbreviation": "DrlP",
+    "type": "flying",
+    "power": 65,
+    "energy": 40,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "DRILL_RUN": {
+    "moveId": "DRILL_RUN",
+    "name": {
+      "ja-Hrkt": "ドリルライナー",
+      "ko": "드릴라이너",
+      "zh-Hant": "直衝鑽",
+      "fr": "Tunnelier",
+      "de": "Schlagbohrer",
+      "es": "Taladradora",
+      "it": "Giravvita",
+      "en": "Drill Run",
+      "ja": "ドリルライナー",
+      "zh-Hans": "直冲钻"
+    },
+    "type": "ground",
+    "power": 80,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "DYNAMIC_PUNCH": {
+    "moveId": "DYNAMIC_PUNCH",
+    "name": {
+      "ja-Hrkt": "ばくれつパン��",
+      "ko": "폭발펀치",
+      "zh-Hant": "爆裂拳",
+      "fr": "Dynamo-Poing",
+      "de": "Wuchtschlag",
+      "es": "Puño Dinámico",
+      "it": "Dinamipugno",
+      "en": "Dynamic Punch",
+      "ja": "ばくれつパンチ",
+      "zh-Hans": "爆裂拳"
+    },
+    "abbreviation": "DyP",
+    "type": "fighting",
+    "power": 90,
+    "energy": 50,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "EARTHQUAKE": {
+    "moveId": "EARTHQUAKE",
+    "name": {
+      "ja-Hrkt": "じしん",
+      "ko": "지진",
+      "zh-Hant": "地震",
+      "fr": "Séisme",
+      "de": "Erdbeben",
+      "es": "Terremoto",
+      "it": "Terremoto",
+      "en": "Earthquake",
+      "ja": "じしん",
+      "zh-Hans": "地震"
+    },
+    "abbreviation": "Eq",
+    "type": "ground",
+    "power": 120,
+    "energy": 65,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "EARTH_POWER": {
+    "moveId": "EARTH_POWER",
+    "name": {
+      "ja-Hrkt": "だいちのちから",
+      "ko": "대지의힘",
+      "zh-Hant": "大地之力",
+      "fr": "Telluriforce",
+      "de": "Erdkräfte",
+      "es": "Tierra Viva",
+      "it": "Geoforza",
+      "en": "Earth Power",
+      "ja": "だいちのちから",
+      "zh-Hans": "大地之力"
+    },
+    "type": "ground",
+    "power": 90,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      0,
+      -1
+    ],
+    "buffTarget": "opponent",
+    "buffApplyChance": ".1"
+  },
+  "EMBER": {
+    "moveId": "EMBER",
+    "name": {
+      "ja-Hrkt": "ひのこ",
+      "ko": "불꽃세례",
+      "zh-Hant": "火花",
+      "fr": "Flammèche",
+      "de": "Glut",
+      "es": "Ascuas",
+      "it": "Braciere",
+      "en": "Ember",
+      "ja": "ひのこ",
+      "zh-Hans": "火花"
+    },
+    "type": "fire",
+    "power": 7,
+    "energy": 0,
+    "energyGain": 6,
+    "cooldown": 1000
+  },
+  "ENERGY_BALL": {
+    "moveId": "ENERGY_BALL",
+    "name": {
+      "ja-Hrkt": "エナジーボール",
+      "ko": "에너지볼",
+      "zh-Hant": "能量球",
+      "fr": "Éco-Sphère",
+      "de": "Energieball",
+      "es": "Energibola",
+      "it": "Energipalla",
+      "en": "Energy Ball",
+      "ja": "エナジーボール",
+      "zh-Hans": "能量球"
+    },
+    "type": "grass",
+    "power": 90,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      0,
+      -1
+    ],
+    "buffTarget": "opponent",
+    "buffApplyChance": ".1"
+  },
+  "EXTRASENSORY": {
+    "moveId": "EXTRASENSORY",
+    "name": {
+      "ja-Hrkt": "じんつうりき",
+      "ko": "신통력",
+      "zh-Hant": "神通力",
+      "fr": "Extrasenseur",
+      "de": "Sondersensor",
+      "es": "Paranormal",
+      "it": "Extrasenso",
+      "en": "Extrasensory",
+      "ja": "じんつうりき",
+      "zh-Hans": "神通力"
+    },
+    "abbreviation": "Ex",
+    "type": "psychic",
+    "power": 8,
+    "energy": 0,
+    "energyGain": 10,
+    "cooldown": 1500
+  },
+  "FEATHER_DANCE": {
+    "moveId": "FEATHER_DANCE",
+    "name": {
+      "ja-Hrkt": "フェザーダンス",
+      "ko": "깃털댄스",
+      "zh-Hant": "羽毛舞",
+      "fr": "Danse Plumes",
+      "de": "Daunenreigen",
+      "es": "Danza Pluma",
+      "it": "Danzadipiume",
+      "en": "Feather Dance",
+      "ja": "フェザーダンス",
+      "zh-Hans": "羽毛舞"
+    },
+    "type": "flying",
+    "power": 35,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      -2,
+      0
+    ],
+    "buffTarget": "opponent",
+    "buffApplyChance": "1"
+  },
+  "FEINT_ATTACK": {
+    "moveId": "FEINT_ATTACK",
+    "name": {
+      "ja-Hrkt": "だましうち",
+      "ko": "속여때리기",
+      "zh-Hant": "出奇一擊",
+      "fr": "Feinte",
+      "de": "Finte",
+      "es": "Finta",
+      "it": "Finta",
+      "en": "Feint Attack",
+      "ja": "だましうち",
+      "zh-Hans": "出奇一击"
+    },
+    "type": "dark",
+    "power": 6,
+    "energy": 0,
+    "energyGain": 6,
+    "cooldown": 1000
+  },
+  "FELL_STINGER": {
+    "moveId": "FELL_STINGER",
+    "name": {
+      "ja-Hrkt": "とどめばり",
+      "ko": "마지막일침",
+      "zh-Hant": "致命針刺",
+      "fr": "Dard Mortel",
+      "de": "Stachelfinale",
+      "es": "Aguijón Letal",
+      "it": "Pungiglione",
+      "en": "Fell Stinger",
+      "ja": "とどめばり",
+      "zh-Hans": "致命针刺"
+    },
+    "abbreviation": "FeS",
+    "type": "bug",
+    "power": 20,
+    "energy": 35,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      1,
+      0
+    ],
+    "buffTarget": "self",
+    "buffApplyChance": "1"
+  },
+  "FIRE_BLAST": {
+    "moveId": "FIRE_BLAST",
+    "name": {
+      "ja-Hrkt": "だいもんじ",
+      "ko": "불대문자",
+      "zh-Hant": "大字爆炎",
+      "fr": "Déflagration",
+      "de": "Feuersturm",
+      "es": "Llamarada",
+      "it": "Fuocobomba",
+      "en": "Fire Blast",
+      "ja": "だいもんじ",
+      "zh-Hans": "大字爆炎"
+    },
+    "abbreviation": "FiB",
+    "type": "fire",
+    "power": 140,
+    "energy": 80,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "FIRE_FANG": {
+    "moveId": "FIRE_FANG",
+    "name": {
+      "ja-Hrkt": "ほのおのキバ",
+      "ko": "불꽃엄니",
+      "zh-Hant": "火焰牙",
+      "fr": "Crocs Feu",
+      "de": "Feuerzahn",
+      "es": "Colmillo Ígneo",
+      "it": "Rogodenti",
+      "en": "Fire Fang",
+      "ja": "ほのおのキバ",
+      "zh-Hans": "火焰牙"
+    },
+    "type": "fire",
+    "power": 8,
+    "energy": 0,
+    "energyGain": 5,
+    "cooldown": 1000
+  },
+  "FIRE_PUNCH": {
+    "moveId": "FIRE_PUNCH",
+    "name": {
+      "ja-Hrkt": "ほのおのパンチ",
+      "ko": "불꽃펀치",
+      "zh-Hant": "火焰拳",
+      "fr": "Poing Feu",
+      "de": "Feuerschlag",
+      "es": "Puño Fuego",
+      "it": "Fuocopugno",
+      "en": "Fire Punch",
+      "ja": "ほのおのパンチ",
+      "zh-Hans": "火焰拳"
+    },
+    "abbreviation": "FiP",
+    "type": "fire",
+    "power": 55,
+    "energy": 40,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "BLAZE_KICK": {
+    "moveId": "BLAZE_KICK",
+    "name": {
+      "ja-Hrkt": "ブレイズキック",
+      "ko": "브레이즈킥",
+      "zh-Hant": "火焰踢",
+      "fr": "Pied Brûleur",
+      "de": "Feuerfeger",
+      "es": "Patada Ígnea",
+      "it": "Calciardente",
+      "en": "Blaze Kick",
+      "ja": "ブレイズキック",
+      "zh-Hans": "火焰踢"
+    },
+    "type": "fire",
+    "power": 55,
+    "energy": 40,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "FIRE_SPIN": {
+    "moveId": "FIRE_SPIN",
+    "name": {
+      "ja-Hrkt": "ほのおのうず",
+      "ko": "회오리불꽃",
+      "zh-Hant": "火焰旋渦",
+      "fr": "Danse Flammes",
+      "de": "Feuerwirbel",
+      "es": "Giro Fuego",
+      "it": "Turbofuoco",
+      "en": "Fire Spin",
+      "ja": "ほのおのうず",
+      "zh-Hans": "火焰旋涡"
+    },
+    "type": "fire",
+    "power": 9,
+    "energy": 0,
+    "energyGain": 10,
+    "cooldown": 1500
+  },
+  "FLAME_BURST": {
+    "moveId": "FLAME_BURST",
+    "name": {
+      "ja-Hrkt": "はじけるほのお",
+      "ko": "불꽃튀기기",
+      "zh-Hant": "烈焰濺射",
+      "fr": "Rebondifeu",
+      "de": "Funkenflug",
+      "es": "Pirotecnia",
+      "it": "Pirolancio",
+      "en": "Flame Burst",
+      "ja": "はじけるほのお",
+      "zh-Hans": "烈焰溅射"
+    },
+    "abbreviation": "FmB",
+    "type": "fire",
+    "power": 70,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "FLAME_CHARGE": {
+    "moveId": "FLAME_CHARGE",
+    "name": {
+      "ja-Hrkt": "ニトロチャージ",
+      "ko": "니트로차지",
+      "zh-Hant": "蓄能焰襲",
+      "fr": "Nitrocharge",
+      "de": "Nitroladung",
+      "es": "Nitrocarga",
+      "it": "Nitrocarica",
+      "en": "Flame Charge",
+      "ja": "ニトロチャージ",
+      "zh-Hans": "蓄能焰袭"
+    },
+    "abbreviation": "FmC",
+    "type": "fire",
+    "power": 65,
+    "energy": 50,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      1,
+      0
+    ],
+    "buffTarget": "self",
+    "buffApplyChance": "1"
+  },
+  "FLAME_WHEEL": {
+    "moveId": "FLAME_WHEEL",
+    "name": {
+      "ja-Hrkt": "かえんぐるま",
+      "ko": "화염자동차",
+      "zh-Hant": "火焰輪",
+      "fr": "Roue de Feu",
+      "de": "Flammenrad",
+      "es": "Rueda Fuego",
+      "it": "Ruotafuoco",
+      "en": "Flame Wheel",
+      "ja": "かえんぐるま",
+      "zh-Hans": "火焰轮"
+    },
+    "type": "fire",
+    "power": 60,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "FLAMETHROWER": {
+    "moveId": "FLAMETHROWER",
+    "name": {
+      "ja-Hrkt": "かえんほうしゃ",
+      "ko": "화염방사",
+      "zh-Hant": "噴射火焰",
+      "fr": "Lance-Flammes",
+      "de": "Flammenwurf",
+      "es": "Lanzallamas",
+      "it": "Lanciafiamme",
+      "en": "Flamethrower",
+      "ja": "かえんほうしゃ",
+      "zh-Hans": "喷射火焰"
+    },
+    "abbreviation": "Ft",
+    "type": "fire",
+    "power": 90,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "FLASH_CANNON": {
+    "moveId": "FLASH_CANNON",
+    "name": {
+      "ja-Hrkt": "ラスターカノン",
+      "ko": "러스터캐논",
+      "zh-Hant": "加農光炮",
+      "fr": "Luminocanon",
+      "de": "Lichtkanone",
+      "es": "Foco Resplandor",
+      "it": "Cannonflash",
+      "en": "Flash Cannon",
+      "ja": "ラスターカノン",
+      "zh-Hans": "加农光炮"
+    },
+    "type": "steel",
+    "power": 110,
+    "energy": 70,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "FLY": {
+    "moveId": "FLY",
+    "name": {
+      "ja-Hrkt": "そらをとぶ",
+      "ko": "공중날기",
+      "zh-Hant": "飛翔",
+      "fr": "Vol",
+      "de": "Fliegen",
+      "es": "Vuelo",
+      "it": "Volo",
+      "en": "Fly",
+      "ja": "そらをとぶ",
+      "zh-Hans": "飞��"
+    },
+    "type": "flying",
+    "power": 80,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "FLYING_PRESS": {
+    "moveId": "FLYING_PRESS",
+    "name": {
+      "ja-Hrkt": "フライングプレス",
+      "ko": "플라잉프레스",
+      "zh-Hant": "飛身重壓",
+      "fr": "Flying Press",
+      "de": "Flying Press",
+      "es": "Plancha Voladora",
+      "it": "Schiacciatuffo",
+      "en": "Flying Press",
+      "ja": "フライングプレス",
+      "zh-Hans": "飞身重压"
+    },
+    "abbreviation": "FlP",
+    "type": "fighting",
+    "power": 90,
+    "energy": 40,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "FOCUS_BLAST": {
+    "moveId": "FOCUS_BLAST",
+    "name": {
+      "ja-Hrkt": "きあいだま",
+      "ko": "기합구슬",
+      "zh-Hant": "真氣彈",
+      "fr": "Exploforce",
+      "de": "Fokusstoß",
+      "es": "Onda Certera",
+      "it": "Focalcolpo",
+      "en": "Focus Blast",
+      "ja": "きあいだま",
+      "zh-Hans": "真气弹"
+    },
+    "type": "fighting",
+    "power": 150,
+    "energy": 75,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "FOUL_PLAY": {
+    "moveId": "FOUL_PLAY",
+    "name": {
+      "ja-Hrkt": "イカサマ",
+      "ko": "속임수",
+      "zh-Hant": "欺詐",
+      "fr": "Tricherie",
+      "de": "Schmarotzer",
+      "es": "Juego Sucio",
+      "it": "Ripicca",
+      "en": "Foul Play",
+      "ja": "イカサマ",
+      "zh-Hans": "欺诈"
+    },
+    "abbreviation": "FoP",
+    "type": "dark",
+    "power": 70,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "FRENZY_PLANT": {
+    "moveId": "FRENZY_PLANT",
+    "name": {
+      "ja-Hrkt": "ハードプラント",
+      "ko": "하드플랜트",
+      "zh-Hant": "瘋狂植物",
+      "fr": "Végé-Attaque",
+      "de": "Flora-Statue",
+      "es": "Planta Feroz",
+      "it": "Radicalbero",
+      "en": "Frenzy Plant",
+      "ja": "ハ���ドプラント",
+      "zh-Hans": "疯狂植物"
+    },
+    "type": "grass",
+    "power": 100,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "FROST_BREATH": {
+    "moveId": "FROST_BREATH",
+    "name": {
+      "ja-Hrkt": "こおりのいぶき",
+      "ko": "얼음숨결",
+      "zh-Hant": "冰息",
+      "fr": "Souffle Glacé",
+      "de": "Eisesodem",
+      "es": "Vaho Gélido",
+      "it": "Alitogelido",
+      "en": "Frost Breath",
+      "ja": "こおりのいぶき",
+      "zh-Hans": "冰息"
+    },
+    "type": "ice",
+    "power": 7,
+    "energy": 0,
+    "energyGain": 5,
+    "cooldown": 1000
+  },
+  "FRUSTRATION": {
+    "moveId": "FRUSTRATION",
+    "name": {
+      "ja-Hrkt": "やつあたり",
+      "ko": "화풀이",
+      "zh-Hant": "遷怒",
+      "fr": "Frustration",
+      "de": "Frustration",
+      "es": "Frustración",
+      "it": "Frustrazione",
+      "en": "Frustration",
+      "ja": "やつあたり",
+      "zh-Hans": "迁怒"
+    },
+    "type": "normal",
+    "power": 10,
+    "energy": 70,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "FURY_CUTTER": {
+    "moveId": "FURY_CUTTER",
+    "name": {
+      "ja-Hrkt": "れんぞくぎり",
+      "ko": "연속자르기",
+      "zh-Hant": "連斬",
+      "fr": "Taillade",
+      "de": "Zornklinge",
+      "es": "Corte Furia",
+      "it": "Tagliofuria",
+      "en": "Fury Cutter",
+      "ja": "れんぞくぎり",
+      "zh-Hans": "连斩"
+    },
+    "type": "bug",
+    "power": 2,
+    "energy": 0,
+    "energyGain": 4,
+    "cooldown": 500
+  },
+  "FUTURE_SIGHT": {
+    "moveId": "FUTURE_SIGHT",
+    "name": {
+      "ja-Hrkt": "みらいよち",
+      "ko": "미래예지",
+      "zh-Hant": "預知未來",
+      "fr": "Prescience",
+      "de": "Seher",
+      "es": "Premonición",
+      "it": "Divinazione",
+      "en": "Future Sight",
+      "ja": "みらいよち",
+      "zh-Hans": "预知未来"
+    },
+    "type": "psychic",
+    "power": 120,
+    "energy": 65,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "GIGA_DRAIN": {
+    "moveId": "GIGA_DRAIN",
+    "name": {
+      "ja-Hrkt": "ギガドレイン",
+      "ko": "기가드레인",
+      "zh-Hant": "終極吸取",
+      "fr": "Giga-Sangsue",
+      "de": "Gigasauger",
+      "es": "Gigadrenado",
+      "it": "Gigassorbimento",
+      "en": "Giga Drain",
+      "ja": "ギガドレイン",
+      "zh-Hans": "终极吸取"
+    },
+    "type": "grass",
+    "power": 50,
+    "energy": 80,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "GIGA_IMPACT": {
+    "moveId": "GIGA_IMPACT",
+    "name": {
+      "ja-Hrkt": "ギガインパクト",
+      "ko": "기가임팩트",
+      "zh-Hant": "終極衝擊",
+      "fr": "Giga Impact",
+      "de": "Gigastoß",
+      "es": "Gigaimpacto",
+      "it": "Gigaimpatto",
+      "en": "Giga Impact",
+      "ja": "ギガインパクト",
+      "zh-Hans": "终极冲击"
+    },
+    "type": "normal",
+    "power": 150,
+    "energy": 80,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "GRASS_KNOT": {
+    "moveId": "GRASS_KNOT",
+    "name": {
+      "ja-Hrkt": "くさむすび",
+      "ko": "풀묶기",
+      "zh-Hant": "打草結",
+      "fr": "Nœud Herbe",
+      "de": "Strauchler",
+      "es": "Hierba Lazo",
+      "it": "Laccioerboso",
+      "en": "Grass Knot",
+      "ja": "くさむすび",
+      "zh-Hans": "打草结"
+    },
+    "type": "grass",
+    "power": 90,
+    "energy": 50,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "GUNK_SHOT": {
+    "moveId": "GUNK_SHOT",
+    "name": {
+      "ja-Hrkt": "ダストシュート",
+      "ko": "더스트슈트",
+      "zh-Hant": "垃圾射擊",
+      "fr": "Détricanon",
+      "de": "Mülltreffer",
+      "es": "Lanzamugre",
+      "it": "Sporcolancio",
+      "en": "Gunk Shot",
+      "ja": "ダストシュート",
+      "zh-Hans": "垃圾射击"
+    },
+    "type": "poison",
+    "power": 130,
+    "energy": 75,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "GUST": {
+    "moveId": "GUST",
+    "name": {
+      "ja-Hrkt": "かぜおこし",
+      "ko": "바람일으키기",
+      "zh-Hant": "起風",
+      "fr": "Tornade",
+      "de": "Windstoß",
+      "es": "Tornado",
+      "it": "Raffica",
+      "en": "Gust",
+      "ja": "かぜおこし",
+      "zh-Hans": "起风"
+    },
+    "type": "flying",
+    "power": 16,
+    "energy": 0,
+    "energyGain": 12,
+    "cooldown": 2000
+  },
+  "GYRO_BALL": {
+    "moveId": "GYRO_BALL",
+    "name": {
+      "ja-Hrkt": "ジャイロボール",
+      "ko": "자이로볼",
+      "zh-Hant": "陀螺球",
+      "fr": "Gyroballe",
+      "de": "Gyroball",
+      "es": "Giro Bola",
+      "it": "Vortexpalla",
+      "en": "Gyro Ball",
+      "ja": "ジャイロボール",
+      "zh-Hans": "陀螺球"
+    },
+    "type": "steel",
+    "power": 80,
+    "energy": 60,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "HEART_STAMP": {
+    "moveId": "HEART_STAMP",
+    "name": {
+      "ja-Hrkt": "ハートスタンプ",
+      "ko": "하트스탬프",
+      "zh-Hant": "愛心印章",
+      "fr": "Crève-Cœur",
+      "de": "Herzstempel",
+      "es": "Arrumaco",
+      "it": "Cuorestampo",
+      "en": "Heart Stamp",
+      "ja": "ハートスタンプ",
+      "zh-Hans": "爱心印章"
+    },
+    "type": "psychic",
+    "power": 40,
+    "energy": 40,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "HEAT_WAVE": {
+    "moveId": "HEAT_WAVE",
+    "name": {
+      "ja-Hrkt": "ねっぷう",
+      "ko": "열풍",
+      "zh-Hant": "熱風",
+      "fr": "Canicule",
+      "de": "Hitzewelle",
+      "es": "Onda Ígnea",
+      "it": "Ondacalda",
+      "en": "Heat Wave",
+      "ja": "ねっぷう",
+      "zh-Hans": "热风"
+    },
+    "type": "fire",
+    "power": 95,
+    "energy": 75,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "HEAVY_SLAM": {
+    "moveId": "HEAVY_SLAM",
+    "name": {
+      "ja-Hrkt": "ヘビーボンバー",
+      "ko": "헤비봄버",
+      "zh-Hant": "重磅衝撞",
+      "fr": "Tacle Lourd",
+      "de": "Rammboss",
+      "es": "Cuerpo Pesado",
+      "it": "Pesobomba",
+      "en": "Heavy Slam",
+      "ja": "ヘビーボンバー",
+      "zh-Hans": "重磅冲撞"
+    },
+    "type": "steel",
+    "power": 70,
+    "energy": 50,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "HEX": {
+    "moveId": "HEX",
+    "name": {
+      "ja-Hrkt": "たたりめ",
+      "ko": "병상첨병",
+      "zh-Hant": "禍不單行",
+      "fr": "Châtiment",
+      "de": "Bürde",
+      "es": "Infortunio",
+      "it": "Sciagura",
+      "en": "Hex",
+      "ja": "たたりめ",
+      "zh-Hans": "祸不单行"
+    },
+    "type": "ghost",
+    "power": 6,
+    "energy": 0,
+    "energyGain": 12,
+    "cooldown": 1500
+  },
+  "HIDDEN_POWER_BUG": {
+    "moveId": "HIDDEN_POWER_BUG",
+    "name": {
+      "ko": "잠재파워 Bug",
+      "fr": "Puissance Cachée Bug",
+      "de": "Kraftreserve Käfer",
+      "es": "Poder Oculto Bicho",
+      "en": "Hidden Power Bug",
+      "ja": "めざめるパワー Bug"
+    },
+    "type": "bug",
+    "power": 9,
+    "energy": 0,
+    "energyGain": 8,
+    "cooldown": 1500
+  },
+  "HIDDEN_POWER_DARK": {
+    "moveId": "HIDDEN_POWER_DARK",
+    "name": {
+      "ko": "잠재파워 Dark",
+      "fr": "Puissance Cachée Dark",
+      "de": "Kraftreserve Unlicht",
+      "es": "Poder Oculto Siniestro",
+      "en": "Hidden Power Dark",
+      "ja": "めざめるパワー Dark"
+    },
+    "type": "dark",
+    "power": 9,
+    "energy": 0,
+    "energyGain": 8,
+    "cooldown": 1500
+  },
+  "HIDDEN_POWER_DRAGON": {
+    "moveId": "HIDDEN_POWER_DRAGON",
+    "name": {
+      "ko": "잠재파워 Dragon",
+      "fr": "Puissance Cachée Dragon",
+      "de": "Kraftreserve Drache",
+      "es": "Poder Oculto Dragón",
+      "en": "Hidden Power Dragon",
+      "ja": "めざめるパワー Dragon"
+    },
+    "type": "dragon",
+    "power": 9,
+    "energy": 0,
+    "energyGain": 8,
+    "cooldown": 1500
+  },
+  "HIDDEN_POWER_ELECTRIC": {
+    "moveId": "HIDDEN_POWER_ELECTRIC",
+    "name": {
+      "ko": "잠재파워 Electric",
+      "fr": "Puissance Cachée Electric",
+      "de": "Kraftreserve Elektro",
+      "es": "Poder Oculto Eléctrico",
+      "en": "Hidden Power Electric",
+      "ja": "めざめるパワー Electric"
+    },
+    "type": "electric",
+    "power": 9,
+    "energy": 0,
+    "energyGain": 8,
+    "cooldown": 1500
+  },
+  "HIDDEN_POWER_FIGHTING": {
+    "moveId": "HIDDEN_POWER_FIGHTING",
+    "name": {
+      "ko": "잠재파워 Fighting",
+      "fr": "Puissance Cachée Fighting",
+      "de": "Kraftreserve Kampf",
+      "es": "Poder Oculto Lucha",
+      "en": "Hidden Power Fighting",
+      "ja": "めざめるパワー Fighting"
+    },
+    "type": "fighting",
+    "power": 9,
+    "energy": 0,
+    "energyGain": 8,
+    "cooldown": 1500
+  },
+  "HIDDEN_POWER_FIRE": {
+    "moveId": "HIDDEN_POWER_FIRE",
+    "name": {
+      "ko": "잠재파워 Fire",
+      "fr": "Puissance Cachée Fire",
+      "de": "Kraftreserve Feuer",
+      "es": "Poder Oculto Fuego",
+      "en": "Hidden Power Fire",
+      "ja": "めざめるパワー Fire"
+    },
+    "type": "fire",
+    "power": 9,
+    "energy": 0,
+    "energyGain": 8,
+    "cooldown": 1500
+  },
+  "HIDDEN_POWER_FLYING": {
+    "moveId": "HIDDEN_POWER_FLYING",
+    "name": {
+      "ko": "잠재파워 Flying",
+      "fr": "Puissance Cachée Flying",
+      "de": "Kraftreserve Flug",
+      "es": "Poder Oculto Volador",
+      "en": "Hidden Power Flying",
+      "ja": "めざめるパワー Flying"
+    },
+    "type": "flying",
+    "power": 9,
+    "energy": 0,
+    "energyGain": 8,
+    "cooldown": 1500
+  },
+  "HIDDEN_POWER_GHOST": {
+    "moveId": "HIDDEN_POWER_GHOST",
+    "name": {
+      "ko": "잠재파워 Ghost",
+      "fr": "Puissance Cachée Ghost",
+      "de": "Kraftreserve Geist",
+      "es": "Poder Oculto Fantasma",
+      "en": "Hidden Power Ghost",
+      "ja": "めざめるパワー Ghost"
+    },
+    "type": "ghost",
+    "power": 9,
+    "energy": 0,
+    "energyGain": 8,
+    "cooldown": 1500
+  },
+  "HIDDEN_POWER_GRASS": {
+    "moveId": "HIDDEN_POWER_GRASS",
+    "name": {
+      "ko": "잠재파워 Grass",
+      "fr": "Puissance Cachée Grass",
+      "de": "Kraftreserve Pflanze",
+      "es": "Poder Oculto Planta",
+      "en": "Hidden Power Grass",
+      "ja": "めざめるパワー Grass"
+    },
+    "type": "grass",
+    "power": 9,
+    "energy": 0,
+    "energyGain": 8,
+    "cooldown": 1500
+  },
+  "HIDDEN_POWER_GROUND": {
+    "moveId": "HIDDEN_POWER_GROUND",
+    "name": {
+      "ko": "잠재파워 Ground",
+      "fr": "Puissance Cachée Ground",
+      "de": "Kraftreserve Boden",
+      "es": "Poder Oculto Tierra",
+      "en": "Hidden Power Ground",
+      "ja": "めざめるパワー Ground"
+    },
+    "type": "ground",
+    "power": 9,
+    "energy": 0,
+    "energyGain": 8,
+    "cooldown": 1500
+  },
+  "HIDDEN_POWER_ICE": {
+    "moveId": "HIDDEN_POWER_ICE",
+    "name": {
+      "ko": "잠재파워 Ice",
+      "fr": "Puissance Cachée Ice",
+      "de": "Kraftreserve Eis",
+      "es": "Poder Oculto Hielo",
+      "en": "Hidden Power Ice",
+      "ja": "めざめるパワー Ice"
+    },
+    "type": "ice",
+    "power": 9,
+    "energy": 0,
+    "energyGain": 8,
+    "cooldown": 1500
+  },
+  "HIDDEN_POWER_POISON": {
+    "moveId": "HIDDEN_POWER_POISON",
+    "name": {
+      "ko": "잠재파워 Poison",
+      "fr": "Puissance Cachée Poison",
+      "de": "Kraftreserve Gift",
+      "es": "Poder Oculto Veneno",
+      "en": "Hidden Power Poison",
+      "ja": "めざめるパワー Poison"
+    },
+    "type": "poison",
+    "power": 9,
+    "energy": 0,
+    "energyGain": 8,
+    "cooldown": 1500
+  },
+  "HIDDEN_POWER_PSYCHIC": {
+    "moveId": "HIDDEN_POWER_PSYCHIC",
+    "name": {
+      "ko": "잠재파워 Psychic",
+      "fr": "Puissance Cachée Psychic",
+      "de": "Kraftreserve Psycho",
+      "es": "Poder Oculto Psíquico",
+      "en": "Hidden Power Psychic",
+      "ja": "めざめるパワー Psychic"
+    },
+    "type": "psychic",
+    "power": 9,
+    "energy": 0,
+    "energyGain": 8,
+    "cooldown": 1500
+  },
+  "HIDDEN_POWER_ROCK": {
+    "moveId": "HIDDEN_POWER_ROCK",
+    "name": {
+      "ko": "잠재파워 Rock",
+      "fr": "Puissance Cachée Rock",
+      "de": "Kraftreserve Gestein",
+      "es": "Poder Oculto Roca",
+      "en": "Hidden Power Rock",
+      "ja": "めざめるパワー Rock"
+    },
+    "type": "rock",
+    "power": 9,
+    "energy": 0,
+    "energyGain": 8,
+    "cooldown": 1500
+  },
+  "HIDDEN_POWER_STEEL": {
+    "moveId": "HIDDEN_POWER_STEEL",
+    "name": {
+      "ko": "잠재파워 Steel",
+      "fr": "Puissance Cachée Steel",
+      "de": "Kraftreserve Stahl",
+      "es": "Poder Oculto Acero",
+      "en": "Hidden Power Steel",
+      "ja": "めざめるパワー Steel"
+    },
+    "type": "steel",
+    "power": 9,
+    "energy": 0,
+    "energyGain": 8,
+    "cooldown": 1500
+  },
+  "HIDDEN_POWER_WATER": {
+    "moveId": "HIDDEN_POWER_WATER",
+    "name": {
+      "ko": "잠재파워 Water",
+      "fr": "Puissance Cachée Water",
+      "de": "Kraftreserve Wasser",
+      "es": "Poder Oculto Agua",
+      "en": "Hidden Power Water",
+      "ja": "めざめるパワー Water"
+    },
+    "type": "water",
+    "power": 9,
+    "energy": 0,
+    "energyGain": 8,
+    "cooldown": 1500
+  },
+  "HORN_ATTACK": {
+    "moveId": "HORN_ATTACK",
+    "name": {
+      "ja-Hrkt": "つのでつく",
+      "ko": "뿔찌르기",
+      "zh-Hant": "角撞",
+      "fr": "Koud’Korne",
+      "de": "Hornattacke",
+      "es": "Cornada",
+      "it": "Incornata",
+      "en": "Horn Attack",
+      "ja": "つのでつく",
+      "zh-Hans": "角撞"
+    },
+    "type": "normal",
+    "power": 40,
+    "energy": 35,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "HURRICANE": {
+    "moveId": "HURRICANE",
+    "name": {
+      "ja-Hrkt": "ぼうふう",
+      "ko": "폭풍",
+      "zh-Hant": "暴風",
+      "fr": "Vent Violent",
+      "de": "Orkan",
+      "es": "Vendaval",
+      "it": "Tifone",
+      "en": "Hurricane",
+      "ja": "ぼうふう",
+      "zh-Hans": "暴风"
+    },
+    "abbreviation": "Hu",
+    "type": "flying",
+    "power": 110,
+    "energy": 65,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "HYDRO_CANNON": {
+    "moveId": "HYDRO_CANNON",
+    "name": {
+      "ja-Hrkt": "ハイドロカノン",
+      "ko": "하이드로캐논",
+      "zh-Hant": "加農水炮",
+      "fr": "Hydroblast",
+      "de": "Aquahaubitze",
+      "es": "Hidrocañón",
+      "it": "Idrocannone",
+      "en": "Hydro Cannon",
+      "ja": "ハイドロカノン",
+      "zh-Hans": "加农水炮"
+    },
+    "type": "water",
+    "power": 80,
+    "energy": 40,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "HYDRO_PUMP": {
+    "moveId": "HYDRO_PUMP",
+    "name": {
+      "ja-Hrkt": "ハイドロポンプ",
+      "ko": "하이드로펌프",
+      "zh-Hant": "水炮",
+      "fr": "Hydrocanon",
+      "de": "Hydropumpe",
+      "es": "Hidrobomba",
+      "it": "Idropompa",
+      "en": "Hydro Pump",
+      "ja": "ハイドロポンプ",
+      "zh-Hans": "水炮"
+    },
+    "type": "water",
+    "power": 130,
+    "energy": 75,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "HYDRO_PUMP_BLASTOISE": {
+    "moveId": "HYDRO_PUMP_BLASTOISE",
+    "name": {
+      "ko": "하이드로펌프 (Blastoise)",
+      "fr": "Hydrocanon (Blastoise)",
+      "de": "Hydropumpe (Blastoise)",
+      "es": "Hidrobomba (Blastoise)",
+      "en": "Hydro Pump (Blastoise)",
+      "ja": "ハイドロポンプ (Blastoise)"
+    },
+    "type": "water",
+    "power": 90,
+    "energy": 80,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "HYPER_BEAM": {
+    "moveId": "HYPER_BEAM",
+    "name": {
+      "ja-Hrkt": "はかいこうせん",
+      "ko": "파괴광선",
+      "zh-Hant": "破壞光線",
+      "fr": "Ultralaser",
+      "de": "Hyperstrahl",
+      "es": "Hiperrayo",
+      "it": "Iper Raggio",
+      "en": "Hyper Beam",
+      "ja": "はかいこうせん",
+      "zh-Hans": "破坏��线"
+    },
+    "type": "normal",
+    "power": 150,
+    "energy": 80,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "HYPER_FANG": {
+    "moveId": "HYPER_FANG",
+    "name": {
+      "ja-Hrkt": "ひっさつまえば",
+      "ko": "필살앞니",
+      "zh-Hant": "必殺門牙",
+      "fr": "Croc de Mort",
+      "de": "Hyperzahn",
+      "es": "Hipercolmillo",
+      "it": "Iperzanna",
+      "en": "Hyper Fang",
+      "ja": "ひっさつまえば",
+      "zh-Hans": "必杀门牙"
+    },
+    "type": "normal",
+    "power": 80,
+    "energy": 50,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "ICE_BEAM": {
+    "moveId": "ICE_BEAM",
+    "name": {
+      "ja-Hrkt": "れいとうビーム",
+      "ko": "냉동빔",
+      "zh-Hant": "冰凍光束",
+      "fr": "Laser Glace",
+      "de": "Eisstrahl",
+      "es": "Rayo Hielo",
+      "it": "Geloraggio",
+      "en": "Ice Beam",
+      "ja": "れいとうビーム",
+      "zh-Hans": "冰冻光束"
+    },
+    "type": "ice",
+    "power": 90,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "ICE_FANG": {
+    "moveId": "ICE_FANG",
+    "name": {
+      "ja-Hrkt": "こおりのキバ",
+      "ko": "얼��엄니",
+      "zh-Hant": "冰凍牙",
+      "fr": "Crocs Givre",
+      "de": "Eiszahn",
+      "es": "Colmillo Hielo",
+      "it": "Gelodenti",
+      "en": "Ice Fang",
+      "ja": "こおりのキバ",
+      "zh-Hans": "冰冻牙"
+    },
+    "type": "ice",
+    "power": 8,
+    "energy": 0,
+    "energyGain": 5,
+    "cooldown": 1000
+  },
+  "ICE_PUNCH": {
+    "moveId": "ICE_PUNCH",
+    "name": {
+      "ja-Hrkt": "れいとうパンチ",
+      "ko": "냉동펀치",
+      "zh-Hant": "冰凍拳",
+      "fr": "Poing Glace",
+      "de": "Eishieb",
+      "es": "Puño Hielo",
+      "it": "Gelopugno",
+      "en": "Ice Punch",
+      "ja": "れいとうパンチ",
+      "zh-Hans": "冰冻拳"
+    },
+    "type": "ice",
+    "power": 55,
+    "energy": 40,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "ICE_SHARD": {
+    "moveId": "ICE_SHARD",
+    "name": {
+      "ja-Hrkt": "こおりのつぶて",
+      "ko": "얼음뭉치",
+      "zh-Hant": "冰礫",
+      "fr": "Éclats Glace",
+      "de": "Eissplitter",
+      "es": "Canto Helado",
+      "it": "Geloscheggia",
+      "en": "Ice Shard",
+      "ja": "��おりのつぶて",
+      "zh-Hans": "冰砾"
+    },
+    "type": "ice",
+    "power": 9,
+    "energy": 0,
+    "energyGain": 10,
+    "cooldown": 1500
+  },
+  "ICY_WIND": {
+    "moveId": "ICY_WIND",
+    "name": {
+      "ja-Hrkt": "こごえるかぜ",
+      "ko": "얼다바람",
+      "zh-Hant": "冰凍之風",
+      "fr": "Vent Glace",
+      "de": "Eissturm",
+      "es": "Viento Hielo",
+      "it": "Ventogelato",
+      "en": "Icy Wind",
+      "ja": "こごえるかぜ",
+      "zh-Hans": "冰冻之风"
+    },
+    "type": "ice",
+    "power": 60,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      -1,
+      0
+    ],
+    "buffTarget": "opponent",
+    "buffApplyChance": "1"
+  },
+  "INCINERATE": {
+    "moveId": "INCINERATE",
+    "name": {
+      "ja-Hrkt": "やきつくす",
+      "ko": "불태우기",
+      "zh-Hant": "燒盡",
+      "fr": "Calcination",
+      "de": "Einäschern",
+      "es": "Calcinación",
+      "it": "Bruciatutto",
+      "en": "Incinerate",
+      "ja": "やきつくす",
+      "zh-Hans": "烧尽"
+    },
+    "type": "fire",
+    "power": 15,
+    "energy": 0,
+    "energyGain": 20,
+    "cooldown": 2500
+  },
+  "INFESTATION": {
+    "moveId": "INFESTATION",
+    "name": {
+      "ja-Hrkt": "まとわりつく",
+      "ko": "엉겨붙기",
+      "zh-Hant": "死纏爛打",
+      "fr": "Harcèlement",
+      "de": "Plage",
+      "es": "Acoso",
+      "it": "Assillo",
+      "en": "Infestation",
+      "ja": "まとわりつく",
+      "zh-Hans": "死缠烂打"
+    },
+    "type": "bug",
+    "power": 6,
+    "energy": 0,
+    "energyGain": 12,
+    "cooldown": 1500
+  },
+  "IRON_HEAD": {
+    "moveId": "IRON_HEAD",
+    "name": {
+      "ja-Hrkt": "アイアンヘッド",
+      "ko": "아이언헤드",
+      "zh-Hant": "鐵頭",
+      "fr": "Tête de Fer",
+      "de": "Eisenschädel",
+      "es": "Cabeza de Hierro",
+      "it": "Metaltestata",
+      "en": "Iron Head",
+      "ja": "アイアンヘッド",
+      "zh-Hans": "铁头"
+    },
+    "type": "steel",
+    "power": 70,
+    "energy": 50,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "IRON_TAIL": {
+    "moveId": "IRON_TAIL",
+    "name": {
+      "ja-Hrkt": "アイアンテール",
+      "ko": "아이언테일",
+      "zh-Hant": "鐵尾",
+      "fr": "Queue de Fer",
+      "de": "Eisenschweif",
+      "es": "Cola Férrea",
+      "it": "Codacciaio",
+      "en": "Iron Tail",
+      "ja": "アイアンテール",
+      "zh-Hans": "铁尾"
+    },
+    "type": "steel",
+    "power": 9,
+    "energy": 0,
+    "energyGain": 6,
+    "cooldown": 1500
+  },
+  "KARATE_CHOP": {
+    "moveId": "KARATE_CHOP",
+    "name": {
+      "ja-Hrkt": "からてチョップ",
+      "ko": "태권당수",
+      "zh-Hant": "空手劈",
+      "fr": "Poing Karaté",
+      "de": "Karateschlag",
+      "es": "Golpe Kárate",
+      "it": "Colpokarate",
+      "en": "Karate Chop",
+      "ja": "からてチョップ",
+      "zh-Hans": "空手劈"
+    },
+    "type": "fighting",
+    "power": 5,
+    "energy": 0,
+    "energyGain": 8,
+    "cooldown": 1000
+  },
+  "LAST_RESORT": {
+    "moveId": "LAST_RESORT",
+    "name": {
+      "ja-Hrkt": "とっておき",
+      "ko": "뒀다쓰기",
+      "zh-Hant": "珍藏",
+      "fr": "Dernier Recours",
+      "de": "Zuflucht",
+      "es": "Última Baza",
+      "it": "Ultimascelta",
+      "en": "Last Resort",
+      "ja": "とっておき",
+      "zh-Hans": "珍藏"
+    },
+    "type": "normal",
+    "power": 90,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "LEAF_BLADE": {
+    "moveId": "LEAF_BLADE",
+    "name": {
+      "ja-Hrkt": "リーフブレード",
+      "ko": "리프블레이드",
+      "zh-Hant": "葉刃",
+      "fr": "Lame Feuille",
+      "de": "Laubklinge",
+      "es": "Hoja Aguda",
+      "it": "Fendifoglia",
+      "en": "Leaf Blade",
+      "ja": "リーフブレード",
+      "zh-Hans": "叶刃"
+    },
+    "type": "grass",
+    "power": 70,
+    "energy": 35,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "LEAF_TORNADO": {
+    "moveId": "LEAF_TORNADO",
+    "name": {
+      "ja-Hrkt": "グラスミキサー",
+      "ko": "그래스믹서",
+      "zh-Hant": "青草攪拌器",
+      "fr": "Phytomixeur",
+      "de": "Grasmixer",
+      "es": "Ciclón de Hojas",
+      "it": "Vorticerba",
+      "en": "Leaf Tornado",
+      "ja": "グラスミキサー",
+      "zh-Hans": "青草搅拌器"
+    },
+    "type": "grass",
+    "power": 45,
+    "energy": 40,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      -2,
+      0
+    ],
+    "buffTarget": "opponent",
+    "buffApplyChance": ".5"
+  },
+  "LEAF_STORM": {
+    "moveId": "LEAF_STORM",
+    "name": {
+      "ja-Hrkt": "リーフストーム",
+      "ko": "리프스톰",
+      "zh-Hant": "飛葉風暴",
+      "fr": "Tempête Verte",
+      "de": "Blättersturm",
+      "es": "Lluevehojas",
+      "it": "Verdebufera",
+      "en": "Leaf Storm",
+      "ja": "リーフストーム",
+      "zh-Hans": "飞叶风暴"
+    },
+    "abbreviation": "LfS",
+    "type": "grass",
+    "power": 130,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      -2,
+      0
+    ],
+    "buffTarget": "self",
+    "buffApplyChance": "1"
+  },
+  "LICK": {
+    "moveId": "LICK",
+    "name": {
+      "ja-Hrkt": "したでなめる",
+      "ko": "핥기",
+      "zh-Hant": "舌舔",
+      "fr": "Léchouille",
+      "de": "Schlecker",
+      "es": "Lengüetazo",
+      "it": "Leccata",
+      "en": "Lick",
+      "ja": "したでなめる",
+      "zh-Hans": "舌舔"
+    },
+    "type": "ghost",
+    "power": 3,
+    "energy": 0,
+    "energyGain": 3,
+    "cooldown": 500
+  },
+  "LOCK_ON": {
+    "moveId": "LOCK_ON",
+    "name": {
+      "ja-Hrkt": "ロックオン",
+      "ko": "록온",
+      "zh-Hant": "鎖定",
+      "fr": "Verrouillage",
+      "de": "Zielschuss",
+      "es": "Fijar Blanco",
+      "it": "Localizza",
+      "en": "Lock-On",
+      "ja": "ロックオン",
+      "zh-Hans": "锁定"
+    },
+    "type": "normal",
+    "power": 1,
+    "energy": 0,
+    "energyGain": 5,
+    "cooldown": 500
+  },
+  "LOW_KICK": {
+    "moveId": "LOW_KICK",
+    "name": {
+      "ja-Hrkt": "けたぐり",
+      "ko": "안다리걸기",
+      "zh-Hant": "踢倒",
+      "fr": "Balayage",
+      "de": "Fußkick",
+      "es": "Patada Baja",
+      "it": "Colpo Basso",
+      "en": "Low Kick",
+      "ja": "けたぐり",
+      "zh-Hans": "踢倒"
+    },
+    "type": "fighting",
+    "power": 4,
+    "energy": 0,
+    "energyGain": 5,
+    "cooldown": 1000
+  },
+  "LOW_SWEEP": {
+    "moveId": "LOW_SWEEP",
+    "name": {
+      "ja-Hrkt": "ローキック",
+      "ko": "로킥",
+      "zh-Hant": "下盤踢",
+      "fr": "Balayette",
+      "de": "Fußtritt",
+      "es": "Puntapié",
+      "it": "Calciobasso",
+      "en": "Low Sweep",
+      "ja": "ローキック",
+      "zh-Hans": "下盘踢"
+    },
+    "type": "fighting",
+    "power": 40,
+    "energy": 40,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "LUNGE": {
+    "moveId": "LUNGE",
+    "name": {
+      "ja-Hrkt": "とびかかる",
+      "ko": "덤벼들기",
+      "zh-Hant": "猛撲",
+      "fr": "Furie-Bond",
+      "de": "Anfallen",
+      "es": "Plancha",
+      "it": "Assalto",
+      "en": "Lunge",
+      "ja": "とびかかる",
+      "zh-Hans": "猛扑"
+    },
+    "abbreviation": "Lu",
+    "type": "bug",
+    "power": 60,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      -1,
+      0
+    ],
+    "buffTarget": "opponent",
+    "buffApplyChance": "1"
+  },
+  "MAGNET_BOMB": {
+    "moveId": "MAGNET_BOMB",
+    "name": {
+      "ja-Hrkt": "マグネットボム",
+      "ko": "마그넷봄",
+      "zh-Hant": "磁鐵炸彈",
+      "fr": "Bombe Aimant",
+      "de": "Magnetbombe",
+      "es": "Bomba Imán",
+      "it": "Bombagnete",
+      "en": "Magnet Bomb",
+      "ja": "マグネットボム",
+      "zh-Hans": "磁铁炸弹"
+    },
+    "abbreviation": "MgB",
+    "type": "steel",
+    "power": 70,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "MEGA_DRAIN": {
+    "moveId": "MEGA_DRAIN",
+    "name": {
+      "ja-Hrkt": "メガドレイン",
+      "ko": "메가드레인",
+      "zh-Hant": "超級吸取",
+      "fr": "Méga-Sangsue",
+      "de": "Megasauger",
+      "es": "Megaagotar",
+      "it": "Megassorbimento",
+      "en": "Mega Drain",
+      "ja": "メガドレイン",
+      "zh-Hans": "超级吸取"
+    },
+    "type": "grass",
+    "power": 25,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "MEGAHORN": {
+    "moveId": "MEGAHORN",
+    "name": {
+      "ja-Hrkt": "メガホーン",
+      "ko": "메가폰",
+      "zh-Hant": "超級角擊",
+      "fr": "Mégacorne",
+      "de": "Vielender",
+      "es": "Megacuerno",
+      "it": "Megacorno",
+      "en": "Megahorn",
+      "ja": "メガホーン",
+      "zh-Hans": "超级角击"
+    },
+    "abbreviation": "Mh",
+    "type": "bug",
+    "power": 100,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "METAL_CLAW": {
+    "moveId": "METAL_CLAW",
+    "name": {
+      "ja-Hrkt": "メタルクロー",
+      "ko": "메탈크로우",
+      "zh-Hant": "金屬爪",
+      "fr": "Griffe Acier",
+      "de": "Metallklaue",
+      "es": "Garra Metal",
+      "it": "Ferrartigli",
+      "en": "Metal Claw",
+      "ja": "メタルクロー",
+      "zh-Hans": "金属爪"
+    },
+    "type": "steel",
+    "power": 5,
+    "energy": 0,
+    "energyGain": 6,
+    "cooldown": 1000
+  },
+  "METEOR_MASH": {
+    "moveId": "METEOR_MASH",
+    "name": {
+      "ja-Hrkt": "コメットパンチ",
+      "ko": "코멧펀치",
+      "zh-Hant": "彗星拳",
+      "fr": "Poing Météore",
+      "de": "Sternenhieb",
+      "es": "Puño Meteoro",
+      "it": "Meteorpugno",
+      "en": "Meteor Mash",
+      "ja": "コメットパンチ",
+      "zh-Hans": "彗星拳"
+    },
+    "type": "steel",
+    "power": 100,
+    "energy": 50,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "MIRROR_COAT": {
+    "moveId": "MIRROR_COAT",
+    "name": {
+      "ja-Hrkt": "ミラーコート",
+      "ko": "미러코트",
+      "zh-Hant": "鏡面反射",
+      "fr": "Voile Miroir",
+      "de": "Spiegelcape",
+      "es": "Manto Espejo",
+      "it": "Specchiovelo",
+      "en": "Mirror Coat",
+      "ja": "ミラーコート",
+      "zh-Hans": "镜面反射"
+    },
+    "abbreviation": "MrC",
+    "type": "psychic",
+    "power": 60,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "MIRROR_SHOT": {
+    "moveId": "MIRROR_SHOT",
+    "name": {
+      "ja-Hrkt": "ミラーショット",
+      "ko": "미러숏",
+      "zh-Hant": "鏡光射擊",
+      "fr": "Miroi-Tir",
+      "de": "Spiegelsalve",
+      "es": "Disparo Espejo",
+      "it": "Cristalcolpo",
+      "en": "Mirror Shot",
+      "ja": "ミラーショット",
+      "zh-Hans": "镜光射击"
+    },
+    "abbreviation": "MrS",
+    "type": "steel",
+    "power": 35,
+    "energy": 35,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      -1,
+      0
+    ],
+    "buffTarget": "opponent",
+    "buffApplyChance": ".3"
+  },
+  "MOONBLAST": {
+    "moveId": "MOONBLAST",
+    "name": {
+      "ja-Hrkt": "ムーンフォース",
+      "ko": "문포스",
+      "zh-Hant": "月亮之力",
+      "fr": "Pouvoir Lunaire",
+      "de": "Mondgewalt",
+      "es": "Fuerza Lunar",
+      "it": "Forza Lunare",
+      "en": "Moonblast",
+      "ja": "ムーンフォース",
+      "zh-Hans": "月亮之力"
+    },
+    "type": "fairy",
+    "power": 110,
+    "energy": 60,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      -1,
+      0
+    ],
+    "buffTarget": "opponent",
+    "buffApplyChance": ".1"
+  },
+  "MUD_BOMB": {
+    "moveId": "MUD_BOMB",
+    "name": {
+      "ja-Hrkt": "どろばくだん",
+      "ko": "진흙폭탄",
+      "zh-Hant": "泥巴炸彈",
+      "fr": "Boue-Bombe",
+      "de": "Schlammbombe",
+      "es": "Bomba Fango",
+      "it": "Pantanobomba",
+      "en": "Mud Bomb",
+      "ja": "どろばくだん",
+      "zh-Hans": "泥巴炸弹"
+    },
+    "type": "ground",
+    "power": 55,
+    "energy": 40,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "MUDDY_WATER": {
+    "moveId": "MUDDY_WATER",
+    "name": {
+      "ja-Hrkt": "だくりゅう",
+      "ko": "탁류",
+      "zh-Hant": "濁流",
+      "fr": "Ocroupi",
+      "de": "Lehmbrühe",
+      "es": "Agua Lodosa",
+      "it": "Fanghiglia",
+      "en": "Muddy Water",
+      "ja": "だくりゅう",
+      "zh-Hans": "浊流"
+    },
+    "type": "water",
+    "power": 35,
+    "energy": 35,
+    "energyGain": 0,
+    "cooldown": 1000,
+    "buffs": [
+      -1,
+      0
+    ],
+    "buffTarget": "opponent",
+    "buffApplyChance": ".3"
+  },
+  "MUD_SHOT": {
+    "moveId": "MUD_SHOT",
+    "name": {
+      "ja-Hrkt": "マッドショット",
+      "ko": "머드숏",
+      "zh-Hant": "泥巴射擊",
+      "fr": "Tir de Boue",
+      "de": "Lehmschuss",
+      "es": "Disparo Lodo",
+      "it": "Colpodifango",
+      "en": "Mud Shot",
+      "ja": "マッドショット",
+      "zh-Hans": "泥巴射击"
+    },
+    "type": "ground",
+    "power": 3,
+    "energy": 0,
+    "energyGain": 9,
+    "cooldown": 1000
+  },
+  "MUD_SLAP": {
+    "moveId": "MUD_SLAP",
+    "name": {
+      "ja-Hrkt": "どろかけ",
+      "ko": "진흙뿌리기",
+      "zh-Hant": "擲泥",
+      "fr": "Coud’Boue",
+      "de": "Lehmschelle",
+      "es": "Bofetón Lodo",
+      "it": "Fangosberla",
+      "en": "Mud-Slap",
+      "ja": "どろかけ",
+      "zh-Hans": "掷泥"
+    },
+    "abbreviation": "MSl",
+    "type": "ground",
+    "power": 11,
+    "energy": 0,
+    "energyGain": 8,
+    "cooldown": 1500
+  },
+  "NIGHT_SHADE": {
+    "moveId": "NIGHT_SHADE",
+    "name": {
+      "ja-Hrkt": "ナイトヘッド",
+      "ko": "나이트헤드",
+      "zh-Hant": "黑夜魔影",
+      "fr": "Ombre Nocturne",
+      "de": "Nachtnebel",
+      "es": "Tinieblas",
+      "it": "Ombra Notturna",
+      "en": "Night Shade",
+      "ja": "ナイトヘッド",
+      "zh-Hans": "黑夜魔影"
+    },
+    "abbreviation": "NSh",
+    "type": "ghost",
+    "power": 60,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "NIGHT_SLASH": {
+    "moveId": "NIGHT_SLASH",
+    "name": {
+      "ja-Hrkt": "つじぎり",
+      "ko": "깜짝베기",
+      "zh-Hant": "暗襲要害",
+      "fr": "Tranche-Nuit",
+      "de": "Nachthieb",
+      "es": "Tajo Umbrío",
+      "it": "Nottesferza",
+      "en": "Night Slash",
+      "ja": "つじぎり",
+      "zh-Hans": "暗袭要害"
+    },
+    "type": "dark",
+    "power": 50,
+    "energy": 35,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      2,
+      0
+    ],
+    "buffTarget": "self",
+    "buffApplyChance": ".125"
+  },
+  "OCTAZOOKA": {
+    "moveId": "OCTAZOOKA",
+    "name": {
+      "ja-Hrkt": "オクタンほう",
+      "ko": "대포무노포",
+      "zh-Hant": "章魚桶炮",
+      "fr": "Octazooka",
+      "de": "Octazooka",
+      "es": "Pulpocañón",
+      "it": "Octazooka",
+      "en": "Octazooka",
+      "ja": "オクタンほう",
+      "zh-Hans": "章鱼桶炮"
+    },
+    "abbreviation": "Oc",
+    "type": "water",
+    "power": 50,
+    "energy": 50,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      -2,
+      0
+    ],
+    "buffTarget": "opponent",
+    "buffApplyChance": "0.5"
+  },
+  "OMINOUS_WIND": {
+    "moveId": "OMINOUS_WIND",
+    "name": {
+      "ja-Hrkt": "あやしいかぜ",
+      "ko": "괴상한바람",
+      "zh-Hant": "奇異之風",
+      "fr": "Vent Mauvais",
+      "de": "Unheilböen",
+      "es": "Viento Aciago",
+      "it": "Funestovento",
+      "en": "Ominous Wind",
+      "ja": "あやしいかぜ",
+      "zh-Hans": "奇异之风"
+    },
+    "type": "ghost",
+    "power": 45,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      2,
+      2
+    ],
+    "buffTarget": "self",
+    "buffApplyChance": ".1"
+  },
+  "ORIGIN_PULSE": {
+    "moveId": "ORIGIN_PULSE",
+    "name": {
+      "ja-Hrkt": "こんげんのはどう",
+      "ko": "근원의파동",
+      "zh-Hant": "根源波動",
+      "fr": "Onde Originelle",
+      "de": "Ursprungswoge",
+      "es": "Pulso Primigenio",
+      "it": "Primopulsar",
+      "en": "Origin Pulse",
+      "ja": "こんげんのはどう",
+      "zh-Hans": "根源波动"
+    },
+    "type": "water",
+    "power": 130,
+    "energy": 60,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "OUTRAGE": {
+    "moveId": "OUTRAGE",
+    "name": {
+      "ja-Hrkt": "げきりん",
+      "ko": "역린",
+      "zh-Hant": "逆鱗",
+      "fr": "Colère",
+      "de": "Wutanfall",
+      "es": "Enfado",
+      "it": "Oltraggio",
+      "en": "Outrage",
+      "ja": "げきりん",
+      "zh-Hans": "逆鳞"
+    },
+    "type": "dragon",
+    "power": 110,
+    "energy": 60,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "OVERHEAT": {
+    "moveId": "OVERHEAT",
+    "name": {
+      "ja-Hrkt": "オーバーヒート",
+      "ko": "오버히트",
+      "zh-Hant": "過熱",
+      "fr": "Surchauffe",
+      "de": "Hitzekoller",
+      "es": "Sofoco",
+      "it": "Vampata",
+      "en": "Overheat",
+      "ja": "オーバーヒート",
+      "zh-Hans": "过热"
+    },
+    "abbreviation": "Ov",
+    "type": "fire",
+    "power": 130,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      -2,
+      0
+    ],
+    "buffTarget": "self",
+    "buffApplyChance": "1"
+  },
+  "PARABOLIC_CHARGE": {
+    "moveId": "PARABOLIC_CHARGE",
+    "name": {
+      "ja-Hrkt": "パラボラチャージ",
+      "ko": "파라볼라차지",
+      "zh-Hant": "拋物面充電",
+      "fr": "Parabocharge",
+      "de": "Parabolladung",
+      "es": "Carga Parábola",
+      "it": "Caricaparabola",
+      "en": "Parabolic Charge",
+      "ja": "パラボラチャージ",
+      "zh-Hans": "抛物面充电"
+    },
+    "abbreviation": "PbC",
+    "type": "electric",
+    "power": 25,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "PAYBACK": {
+    "moveId": "PAYBACK",
+    "name": {
+      "ja-Hrkt": "しっぺがえし",
+      "ko": "보복",
+      "zh-Hant": "以牙還牙",
+      "fr": "Représailles",
+      "de": "Gegenstoß",
+      "es": "Vendetta",
+      "it": "Rivincita",
+      "en": "Payback",
+      "ja": "しっぺがえし",
+      "zh-Hans": "以牙还牙"
+    },
+    "abbreviation": "Pbk",
+    "type": "dark",
+    "power": 110,
+    "energy": 60,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "PECK": {
+    "moveId": "PECK",
+    "name": {
+      "ja-Hrkt": "つつく",
+      "ko": "쪼기",
+      "zh-Hant": "啄",
+      "fr": "Picpic",
+      "de": "Pikser",
+      "es": "Picotazo",
+      "it": "Beccata",
+      "en": "Peck",
+      "ja": "つつく",
+      "zh-Hans": "啄"
+    },
+    "abbreviation": "Pk",
+    "type": "flying",
+    "power": 6,
+    "energy": 0,
+    "energyGain": 5,
+    "cooldown": 1000
+  },
+  "PETAL_BLIZZARD": {
+    "moveId": "PETAL_BLIZZARD",
+    "name": {
+      "ja-Hrkt": "はなふぶき",
+      "ko": "꽃보라",
+      "zh-Hant": "落英繽紛",
+      "fr": "Tempête Florale",
+      "de": "Blütenwirbel",
+      "es": "Tormenta Floral",
+      "it": "Fiortempesta",
+      "en": "Petal Blizzard",
+      "ja": "はなふぶき",
+      "zh-Hans": "落英缤纷"
+    },
+    "abbreviation": "PlB",
+    "type": "grass",
+    "power": 110,
+    "energy": 65,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "PLAY_ROUGH": {
+    "moveId": "PLAY_ROUGH",
+    "name": {
+      "ja-Hrkt": "じゃれつく",
+      "ko": "치근거리기",
+      "zh-Hant": "嬉鬧",
+      "fr": "Câlinerie",
+      "de": "Knuddler",
+      "es": "Carantoña",
+      "it": "Carineria",
+      "en": "Play Rough",
+      "ja": "じゃれつく",
+      "zh-Hans": "嬉闹"
+    },
+    "type": "fairy",
+    "power": 90,
+    "energy": 60,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "POISON_FANG": {
+    "moveId": "POISON_FANG",
+    "name": {
+      "ja-Hrkt": "どくどくのキバ",
+      "ko": "독엄니",
+      "zh-Hant": "劇毒牙",
+      "fr": "Crochet Venin",
+      "de": "Giftzahn",
+      "es": "Colmillo Veneno",
+      "it": "Velenodenti",
+      "en": "Poison Fang",
+      "ja": "どくどくのキバ",
+      "zh-Hans": "剧毒牙"
+    },
+    "type": "poison",
+    "power": 40,
+    "energy": 35,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      0,
+      -1
+    ],
+    "buffTarget": "opponent",
+    "buffApplyChance": "1"
+  },
+  "POISON_JAB": {
+    "moveId": "POISON_JAB",
+    "name": {
+      "ja-Hrkt": "どくづき",
+      "ko": "독찌르기",
+      "zh-Hant": "毒擊",
+      "fr": "Direct Toxik",
+      "de": "Gifthieb",
+      "es": "Puya Nociva",
+      "it": "Velenpuntura",
+      "en": "Poison Jab",
+      "ja": "どくづき",
+      "zh-Hans": "毒击"
+    },
+    "type": "poison",
+    "power": 7,
+    "energy": 0,
+    "energyGain": 7,
+    "cooldown": 1000
+  },
+  "POISON_STING": {
+    "moveId": "POISON_STING",
+    "name": {
+      "ja-Hrkt": "どくばり",
+      "ko": "독침",
+      "zh-Hant": "毒針",
+      "fr": "Dard-Venin",
+      "de": "Giftstachel",
+      "es": "Picotazo Veneno",
+      "it": "Velenospina",
+      "en": "Poison Sting",
+      "ja": "どくばり",
+      "zh-Hans": "毒针"
+    },
+    "abbreviation": "PSt",
+    "type": "poison",
+    "power": 3,
+    "energy": 0,
+    "energyGain": 9,
+    "cooldown": 1000
+  },
+  "POUND": {
+    "moveId": "POUND",
+    "name": {
+      "ja-Hrkt": "はたく",
+      "ko": "막치기",
+      "zh-Hant": "拍擊",
+      "fr": "Écras’Face",
+      "de": "Klaps",
+      "es": "Destructor",
+      "it": "Botta",
+      "en": "Pound",
+      "ja": "はたく",
+      "zh-Hans": "拍击"
+    },
+    "abbreviation": "Pd",
+    "type": "normal",
+    "power": 5,
+    "energy": 0,
+    "energyGain": 4,
+    "cooldown": 1000
+  },
+  "POWDER_SNOW": {
+    "moveId": "POWDER_SNOW",
+    "name": {
+      "ja-Hrkt": "こなゆき",
+      "ko": "눈싸라기",
+      "zh-Hant": "細雪",
+      "fr": "Poudreuse",
+      "de": "Pulverschnee",
+      "es": "Nieve Polvo",
+      "it": "Polneve",
+      "en": "Powder Snow",
+      "ja": "こなゆき",
+      "zh-Hans": "细雪"
+    },
+    "type": "ice",
+    "power": 5,
+    "energy": 0,
+    "energyGain": 8,
+    "cooldown": 1000
+  },
+  "POWER_GEM": {
+    "moveId": "POWER_GEM",
+    "name": {
+      "ja-Hrkt": "パワージェム",
+      "ko": "파워젬",
+      "zh-Hant": "力量寶石",
+      "fr": "Rayon Gemme",
+      "de": "Juwelenkraft",
+      "es": "Joya de Luz",
+      "it": "Gemmoforza",
+      "en": "Power Gem",
+      "ja": "パワージェム",
+      "zh-Hans": "力量宝石"
+    },
+    "type": "rock",
+    "power": 80,
+    "energy": 60,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "POWER_UP_PUNCH": {
+    "moveId": "POWER_UP_PUNCH",
+    "name": {
+      "ja-Hrkt": "グロウパンチ",
+      "ko": "그로우펀치",
+      "zh-Hant": "增強拳",
+      "fr": "Poing Boost",
+      "de": "Steigerungshieb",
+      "es": "Puño Incremento",
+      "it": "Crescipugno",
+      "en": "Power-Up Punch",
+      "ja": "グロウパンチ",
+      "zh-Hans": "增强拳"
+    },
+    "type": "fighting",
+    "power": 20,
+    "energy": 35,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      1,
+      0
+    ],
+    "buffTarget": "self",
+    "buffApplyChance": "1"
+  },
+  "POWER_WHIP": {
+    "moveId": "POWER_WHIP",
+    "name": {
+      "ja-Hrkt": "パワーウィップ",
+      "ko": "파워휩",
+      "zh-Hant": "強力鞭打",
+      "fr": "Mégafouet",
+      "de": "Blattgeißel",
+      "es": "Latigazo",
+      "it": "Vigorcolpo",
+      "en": "Power Whip",
+      "ja": "パワーウィップ",
+      "zh-Hans": "强力鞭打"
+    },
+    "type": "grass",
+    "power": 90,
+    "energy": 50,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "PRECIPICE_BLADES": {
+    "moveId": "PRECIPICE_BLADES",
+    "name": {
+      "ja-Hrkt": "だんがいのつるぎ",
+      "ko": "단애의칼",
+      "zh-Hant": "斷崖之劍",
+      "fr": "Lame Pangéenne",
+      "de": "Abgrundsklinge",
+      "es": "Filo del Abismo",
+      "it": "Spade Telluriche",
+      "en": "Precipice Blades",
+      "ja": "だんがいのつるぎ",
+      "zh-Hans": "断崖之剑"
+    },
+    "abbreviation": "PrB",
+    "type": "ground",
+    "power": 130,
+    "energy": 60,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "PRESENT": {
+    "moveId": "PRESENT",
+    "name": {
+      "ja-Hrkt": "プレゼント",
+      "ko": "프레젠트",
+      "zh-Hant": "禮物",
+      "fr": "Cadeau",
+      "de": "Geschenk",
+      "es": "Presente",
+      "it": "Regalino",
+      "en": "Present",
+      "ja": "プレゼント",
+      "zh-Hans": "礼物"
+    },
+    "abbreviation": "Pr",
+    "type": "normal",
+    "power": 3,
+    "energy": 0,
+    "energyGain": 12,
+    "cooldown": 1500
+  },
+  "PSYBEAM": {
+    "moveId": "PSYBEAM",
+    "name": {
+      "ja-Hrkt": "サイケこうせん",
+      "ko": "��상빔",
+      "zh-Hant": "幻象光線",
+      "fr": "Rafale Psy",
+      "de": "Psystrahl",
+      "es": "Psicorrayo",
+      "it": "Psicoraggio",
+      "en": "Psybeam",
+      "ja": "サイケこうせん",
+      "zh-Hans": "幻象光线"
+    },
+    "abbreviation": "Psb",
+    "type": "psychic",
+    "power": 70,
+    "energy": 60,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "PSYCHIC": {
+    "moveId": "PSYCHIC",
+    "name": {
+      "ja-Hrkt": "サイコキネシス",
+      "ko": "사이코키네시스",
+      "zh-Hant": "精神強念",
+      "fr": "Psyko",
+      "de": "Psychokinese",
+      "es": "Psíquico",
+      "it": "Psichico",
+      "en": "Psychic",
+      "ja": "サイコキネシス",
+      "zh-Hans": "精神强念"
+    },
+    "type": "psychic",
+    "power": 90,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      0,
+      -1
+    ],
+    "buffTarget": "opponent",
+    "buffApplyChance": ".1"
+  },
+  "PSYCHO_BOOST": {
+    "moveId": "PSYCHO_BOOST",
+    "name": {
+      "ja-Hrkt": "サイコブースト",
+      "ko": "사이코부스트",
+      "zh-Hant": "精神突進",
+      "fr": "Psycho-Boost",
+      "de": "Psyschub",
+      "es": "Psicoataque",
+      "it": "Psicoslancio",
+      "en": "Psycho Boost",
+      "ja": "サイコブースト",
+      "zh-Hans": "精神突进"
+    },
+    "type": "psychic",
+    "power": 70,
+    "energy": 35,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      -2,
+      0
+    ],
+    "buffTarget": "self",
+    "buffApplyChance": "1"
+  },
+  "PSYCHO_CUT": {
+    "moveId": "PSYCHO_CUT",
+    "name": {
+      "ja-Hrkt": "サイコカッター",
+      "ko": "사이코커터",
+      "zh-Hant": "精神利刃",
+      "fr": "Coupe Psycho",
+      "de": "Psychoklinge",
+      "es": "Psicocorte",
+      "it": "Psicotaglio",
+      "en": "Psycho Cut",
+      "ja": "サイコカッター",
+      "zh-Hans": "精神利刃"
+    },
+    "type": "psychic",
+    "power": 3,
+    "energy": 0,
+    "energyGain": 9,
+    "cooldown": 1000
+  },
+  "PSYSHOCK": {
+    "moveId": "PSYSHOCK",
+    "name": {
+      "ja-Hrkt": "サイコショック",
+      "ko": "사이코쇼크",
+      "zh-Hant": "精神衝擊",
+      "fr": "Choc Psy",
+      "de": "Psychoschock",
+      "es": "Psicocarga",
+      "it": "Psicoshock",
+      "en": "Psyshock",
+      "ja": "サイコショック",
+      "zh-Hans": "精神冲击"
+    },
+    "abbreviation": "Psh",
+    "type": "psychic",
+    "power": 70,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "PSYSTRIKE": {
+    "moveId": "PSYSTRIKE",
+    "name": {
+      "ja-Hrkt": "サイコブレイク",
+      "ko": "사이코브레이크",
+      "zh-Hant": "精神擊破",
+      "fr": "Frappe Psy",
+      "de": "Psychostoß",
+      "es": "Onda Mental",
+      "it": "Psicobotta",
+      "en": "Psystrike",
+      "ja": "サイコブレイク",
+      "zh-Hans": "精神击破"
+    },
+    "abbreviation": "Pst",
+    "type": "psychic",
+    "power": 90,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "QUICK_ATTACK": {
+    "moveId": "QUICK_ATTACK",
+    "name": {
+      "ja-Hrkt": "でんこうせっか",
+      "ko": "전광석화",
+      "zh-Hant": "電光一閃",
+      "fr": "Vive-Attaque",
+      "de": "Ruckzuckhieb",
+      "es": "Ataque Rápido",
+      "it": "Attacco Rapido",
+      "en": "Quick Attack",
+      "ja": "でんこうせっか",
+      "zh-Hans": "电光一闪"
+    },
+    "type": "normal",
+    "power": 5,
+    "energy": 0,
+    "energyGain": 7,
+    "cooldown": 1000
+  },
+  "RAZOR_LEAF": {
+    "moveId": "RAZOR_LEAF",
+    "name": {
+      "ja-Hrkt": "はっぱカッター",
+      "ko": "잎날가르기",
+      "zh-Hant": "飛葉快刀",
+      "fr": "Tranch’Herbe",
+      "de": "Rasierblatt",
+      "es": "Hoja Afilada",
+      "it": "Foglielama",
+      "en": "Razor Leaf",
+      "ja": "はっぱカッター",
+      "zh-Hans": "飞叶快刀"
+    },
+    "type": "grass",
+    "power": 10,
+    "energy": 0,
+    "energyGain": 4,
+    "cooldown": 1000
+  },
+  "REST": {
+    "moveId": "REST",
+    "name": {
+      "ja-Hrkt": "ねむる",
+      "ko": "잠자기",
+      "zh-Hant": "睡覺",
+      "fr": "Repos",
+      "de": "Erholung",
+      "es": "Descanso",
+      "it": "Riposo",
+      "en": "Rest",
+      "ja": "ねむる",
+      "zh-Hans": "睡觉"
+    },
+    "type": "normal",
+    "power": 50,
+    "energy": 35,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "RETURN": {
+    "moveId": "RETURN",
+    "name": {
+      "ja-Hrkt": "おんがえし",
+      "ko": "은혜갚기",
+      "zh-Hant": "報恩",
+      "fr": "Retour",
+      "de": "Rückkehr",
+      "es": "Retribución",
+      "it": "Ritorno",
+      "en": "Return",
+      "ja": "おんがえし",
+      "zh-Hans": "报恩"
+    },
+    "abbreviation": "Re",
+    "type": "normal",
+    "power": 130,
+    "energy": 70,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "ROCK_BLAST": {
+    "moveId": "ROCK_BLAST",
+    "name": {
+      "ja-Hrkt": "ロックブラスト",
+      "ko": "락블레스트",
+      "zh-Hant": "岩石爆擊",
+      "fr": "Boule Roc",
+      "de": "Felswurf",
+      "es": "Pedrada",
+      "it": "Cadutamassi",
+      "en": "Rock Blast",
+      "ja": "ロックブラスト",
+      "zh-Hans": "岩石爆击"
+    },
+    "type": "rock",
+    "power": 50,
+    "energy": 40,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "ROCK_SLIDE": {
+    "moveId": "ROCK_SLIDE",
+    "name": {
+      "ja-Hrkt": "いわなだれ",
+      "ko": "스톤샤워",
+      "zh-Hant": "岩崩",
+      "fr": "Éboulement",
+      "de": "Steinhagel",
+      "es": "Avalancha",
+      "it": "Frana",
+      "en": "Rock Slide",
+      "ja": "いわなだれ",
+      "zh-Hans": "岩崩"
+    },
+    "type": "rock",
+    "power": 75,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "ROCK_SMASH": {
+    "moveId": "ROCK_SMASH",
+    "name": {
+      "ja-Hrkt": "いわくだき",
+      "ko": "바위깨기",
+      "zh-Hant": "碎岩",
+      "fr": "Éclate-Roc",
+      "de": "Zertrümmerer",
+      "es": "Golpe Roca",
+      "it": "Spaccaroccia",
+      "en": "Rock Smash",
+      "ja": "いわくだき",
+      "zh-Hans": "碎岩"
+    },
+    "abbreviation": "RSm",
+    "type": "fighting",
+    "power": 9,
+    "energy": 0,
+    "energyGain": 7,
+    "cooldown": 1500
+  },
+  "ROCK_THROW": {
+    "moveId": "ROCK_THROW",
+    "name": {
+      "ja-Hrkt": "いわおとし",
+      "ko": "돌떨구기",
+      "zh-Hant": "落石",
+      "fr": "Jet-Pierres",
+      "de": "Steinwurf",
+      "es": "Lanzarrocas",
+      "it": "Sassata",
+      "en": "Rock Throw",
+      "ja": "いわおとし",
+      "zh-Hans": "落石"
+    },
+    "abbreviation": "RTh",
+    "type": "rock",
+    "power": 8,
+    "energy": 0,
+    "energyGain": 5,
+    "cooldown": 1000
+  },
+  "ROCK_TOMB": {
+    "moveId": "ROCK_TOMB",
+    "name": {
+      "ja-Hrkt": "がんせきふうじ",
+      "ko": "암석봉인",
+      "zh-Hant": "岩石封鎖",
+      "fr": "Tomberoche",
+      "de": "Felsgrab",
+      "es": "Tumba Rocas",
+      "it": "Rocciotomba",
+      "en": "Rock Tomb",
+      "ja": "がんせきふうじ",
+      "zh-Hans": "岩石封锁"
+    },
+    "type": "rock",
+    "power": 70,
+    "energy": 60,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "ROCK_WRECKER": {
+    "moveId": "ROCK_WRECKER",
+    "name": {
+      "ja-Hrkt": "がんせきほう",
+      "ko": "암석포",
+      "zh-Hant": "岩石炮",
+      "fr": "Roc-Boulet",
+      "de": "Felswerfer",
+      "es": "Romperrocas",
+      "it": "Devastomasso",
+      "en": "Rock Wrecker",
+      "ja": "がんせきほう",
+      "zh-Hans": "岩石炮"
+    },
+    "type": "rock",
+    "power": 110,
+    "energy": 50,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "SACRED_SWORD": {
+    "moveId": "SACRED_SWORD",
+    "name": {
+      "ja-Hrkt": "せいなるつるぎ",
+      "ko": "성스러운칼",
+      "zh-Hant": "聖劍",
+      "fr": "Lame Sainte",
+      "de": "Sanctoklinge",
+      "es": "Espada Santa",
+      "it": "Spadasolenne",
+      "en": "Sacred Sword",
+      "ja": "せいなるつるぎ",
+      "zh-Hans": "圣剑"
+    },
+    "abbreviation": "SSw",
+    "type": "fighting",
+    "power": 60,
+    "energy": 35,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "SAND_TOMB": {
+    "moveId": "SAND_TOMB",
+    "name": {
+      "ja-Hrkt": "すなじごく",
+      "ko": "모래지옥",
+      "zh-Hant": "流沙地獄",
+      "fr": "Tourbi-Sable",
+      "de": "Sandgrab",
+      "es": "Bucle Arena",
+      "it": "Sabbiotomba",
+      "en": "Sand Tomb",
+      "ja": "すなじごく",
+      "zh-Hans": "流沙地狱"
+    },
+    "type": "ground",
+    "power": 25,
+    "energy": 40,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      0,
+      -1
+    ],
+    "buffTarget": "opponent",
+    "buffApplyChance": "1"
+  },
+  "SCALD": {
+    "moveId": "SCALD",
+    "name": {
+      "ja-Hrkt": "ねっとう",
+      "ko": "열탕",
+      "zh-Hant": "熱水",
+      "fr": "Ébullition",
+      "de": "Siedewasser",
+      "es": "Escaldar",
+      "it": "Idrovampata",
+      "en": "Scald",
+      "ja": "ねっとう",
+      "zh-Hans": "热水"
+    },
+    "abbreviation": "Sc",
+    "type": "water",
+    "power": 80,
+    "energy": 60,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "SCALD_BLASTOISE": {
+    "moveId": "SCALD_BLASTOISE",
+    "name": {
+      "ko": "열탕 (Blastoise)",
+      "fr": "Ébullition (Blastoise)",
+      "de": "Siedewasser (Blastoise)",
+      "es": "Escaldar (Blastoise)",
+      "en": "Scald (Blastoise)",
+      "ja": "ねっとう (Blastoise)"
+    },
+    "type": "water",
+    "power": 50,
+    "energy": 80,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "SCRATCH": {
+    "moveId": "SCRATCH",
+    "name": {
+      "ja-Hrkt": "ひっかく",
+      "ko": "할퀴기",
+      "zh-Hant": "抓",
+      "fr": "Griffe",
+      "de": "Kratzer",
+      "es": "Arañazo",
+      "it": "Graffio",
+      "en": "Scratch",
+      "ja": "ひっかく",
+      "zh-Hans": "抓"
+    },
+    "abbreviation": "Scr",
+    "type": "normal",
+    "power": 4,
+    "energy": 0,
+    "energyGain": 2,
+    "cooldown": 500
+  },
+  "SEED_BOMB": {
+    "moveId": "SEED_BOMB",
+    "name": {
+      "ja-Hrkt": "タネばくだん",
+      "ko": "씨폭탄",
+      "zh-Hant": "種子炸彈",
+      "fr": "Canon Graine",
+      "de": "Samenbomben",
+      "es": "Bomba Germen",
+      "it": "Semebomba",
+      "en": "Seed Bomb",
+      "ja": "タネばくだん",
+      "zh-Hans": "种子炸弹"
+    },
+    "abbreviation": "SeB",
+    "type": "grass",
+    "power": 55,
+    "energy": 40,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "SHADOW_BALL": {
+    "moveId": "SHADOW_BALL",
+    "name": {
+      "ja-Hrkt": "シャドーボール",
+      "ko": "섀도볼",
+      "zh-Hant": "暗影球",
+      "fr": "Ball’Ombre",
+      "de": "Spukball",
+      "es": "Bola Sombra",
+      "it": "Palla Ombra",
+      "en": "Shadow Ball",
+      "ja": "シャドーボール",
+      "zh-Hans": "暗影球"
+    },
+    "type": "ghost",
+    "power": 100,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "SHADOW_BONE": {
+    "moveId": "SHADOW_BONE",
+    "name": {
+      "ja-Hrkt": "シャドーボーン",
+      "ko": "섀도본",
+      "zh-Hant": "暗影之骨",
+      "fr": "Os Ombre",
+      "de": "Schattenknochen",
+      "es": "Hueso Sombrío",
+      "it": "Ossotetro",
+      "en": "Shadow Bone",
+      "ja": "シャドーボーン",
+      "zh-Hans": "暗影之骨"
+    },
+    "abbreviation": "SBo",
+    "type": "ghost",
+    "power": 75,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      0,
+      -1
+    ],
+    "buffTarget": "opponent",
+    "buffApplyChance": ".2"
+  },
+  "SHADOW_CLAW": {
+    "moveId": "SHADOW_CLAW",
+    "name": {
+      "ja-Hrkt": "シャドークロー",
+      "ko": "섀도크루",
+      "zh-Hant": "暗影爪",
+      "fr": "Griffe Ombre",
+      "de": "Dunkelklaue",
+      "es": "Garra Umbría",
+      "it": "Ombrartigli",
+      "en": "Shadow Claw",
+      "ja": "シャドークロー",
+      "zh-Hans": "暗影爪"
+    },
+    "type": "ghost",
+    "power": 6,
+    "energy": 0,
+    "energyGain": 8,
+    "cooldown": 1000
+  },
+  "SHADOW_PUNCH": {
+    "moveId": "SHADOW_PUNCH",
+    "name": {
+      "ja-Hrkt": "シャドーパンチ",
+      "ko": "섀도펀치",
+      "zh-Hant": "暗影拳",
+      "fr": "Poing Ombre",
+      "de": "Finsterfaust",
+      "es": "Puño Sombra",
+      "it": "Pugnodombra",
+      "en": "Shadow Punch",
+      "ja": "シャドーパンチ",
+      "zh-Hans": "暗影拳"
+    },
+    "abbreviation": "ShP",
+    "type": "ghost",
+    "power": 40,
+    "energy": 35,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "SHADOW_SNEAK": {
+    "moveId": "SHADOW_SNEAK",
+    "name": {
+      "ja-Hrkt": "かげうち",
+      "ko": "야습",
+      "zh-Hant": "影子偷襲",
+      "fr": "Ombre Portée",
+      "de": "Schattenstoß",
+      "es": "Sombra Vil",
+      "it": "Furtivombra",
+      "en": "Shadow Sneak",
+      "ja": "かげうち",
+      "zh-Hans": "影子偷袭"
+    },
+    "type": "ghost",
+    "power": 50,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "SIGNAL_BEAM": {
+    "moveId": "SIGNAL_BEAM",
+    "name": {
+      "ja-Hrkt": "シグナルビーム",
+      "ko": "시그널빔",
+      "zh-Hant": "信號光束",
+      "fr": "Rayon Signal",
+      "de": "Ampelleuchte",
+      "es": "Doble Rayo",
+      "it": "Segnoraggio",
+      "en": "Signal Beam",
+      "ja": "シグナルビーム",
+      "zh-Hans": "信号光束"
+    },
+    "type": "bug",
+    "power": 75,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      -1,
+      -1
+    ],
+    "buffTarget": "opponent",
+    "buffApplyChance": ".2"
+  },
+  "SILVER_WIND": {
+    "moveId": "SILVER_WIND",
+    "name": {
+      "ja-Hrkt": "ぎんいろのかぜ",
+      "ko": "은빛바람",
+      "zh-Hant": "銀色旋風",
+      "fr": "Vent Argenté",
+      "de": "Silberhauch",
+      "es": "Viento Plata",
+      "it": "Ventargenteo",
+      "en": "Silver Wind",
+      "ja": "ぎんいろのかぜ",
+      "zh-Hans": "银色旋风"
+    },
+    "abbreviation": "SvW",
+    "type": "bug",
+    "power": 45,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      2,
+      2
+    ],
+    "buffTarget": "self",
+    "buffApplyChance": ".1"
+  },
+  "SKULL_BASH": {
+    "moveId": "SKULL_BASH",
+    "name": {
+      "ja-Hrkt": "ロケットずつき",
+      "ko": "로케트박치기",
+      "zh-Hant": "火箭頭錘",
+      "fr": "Coud’Krâne",
+      "de": "Schädelwumme",
+      "es": "Cabezazo",
+      "it": "Capocciata",
+      "en": "Skull Bash",
+      "ja": "ロケットずつき",
+      "zh-Hans": "火箭头锤"
+    },
+    "abbreviation": "SkB",
+    "type": "normal",
+    "power": 130,
+    "energy": 75,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      0,
+      1
+    ],
+    "buffTarget": "self",
+    "buffApplyChance": "1"
+  },
+  "SKY_ATTACK": {
+    "moveId": "SKY_ATTACK",
+    "name": {
+      "ja-Hrkt": "ゴッドバード",
+      "ko": "불새",
+      "zh-Hant": "神鳥猛擊",
+      "fr": "Piqué",
+      "de": "Himmelsfeger",
+      "es": "Ataque Aéreo",
+      "it": "Aeroattacco",
+      "en": "Sky Attack",
+      "ja": "ゴッドバード",
+      "zh-Hans": "神鸟猛击"
+    },
+    "type": "flying",
+    "power": 75,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "SLUDGE": {
+    "moveId": "SLUDGE",
+    "name": {
+      "ja-Hrkt": "ヘドロこうげき",
+      "ko": "오물공격",
+      "zh-Hant": "污泥攻擊",
+      "fr": "Détritus",
+      "de": "Schlammbad",
+      "es": "Residuos",
+      "it": "Fango",
+      "en": "Sludge",
+      "ja": "ヘドロこうげき",
+      "zh-Hans": "污泥攻击"
+    },
+    "type": "poison",
+    "power": 50,
+    "energy": 40,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "SLUDGE_BOMB": {
+    "moveId": "SLUDGE_BOMB",
+    "name": {
+      "ja-Hrkt": "ヘドロばくだん",
+      "ko": "오물폭탄",
+      "zh-Hant": "污泥炸彈",
+      "fr": "Bombe Beurk",
+      "de": "Matschbombe",
+      "es": "Bomba Lodo",
+      "it": "Fangobomba",
+      "en": "Sludge Bomb",
+      "ja": "ヘドロばくだん",
+      "zh-Hans": "污泥炸弹"
+    },
+    "abbreviation": "SlB",
+    "type": "poison",
+    "power": 80,
+    "energy": 50,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "SLUDGE_WAVE": {
+    "moveId": "SLUDGE_WAVE",
+    "name": {
+      "ja-Hrkt": "ヘドロウェーブ",
+      "ko": "오물웨이브",
+      "zh-Hant": "污泥波",
+      "fr": "Cradovague",
+      "de": "Schlammwoge",
+      "es": "Onda Tóxica",
+      "it": "Fangonda",
+      "en": "Sludge Wave",
+      "ja": "ヘドロウェーブ",
+      "zh-Hans": "污泥波"
+    },
+    "type": "poison",
+    "power": 110,
+    "energy": 65,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "SMACK_DOWN": {
+    "moveId": "SMACK_DOWN",
+    "name": {
+      "ja-Hrkt": "うちおとす",
+      "ko": "떨어뜨리기",
+      "zh-Hant": "擊落",
+      "fr": "Anti-Air",
+      "de": "Katapult",
+      "es": "Antiaéreo",
+      "it": "Abbattimento",
+      "en": "Smack Down",
+      "ja": "うちおとす",
+      "zh-Hans": "击落"
+    },
+    "type": "rock",
+    "power": 12,
+    "energy": 0,
+    "energyGain": 8,
+    "cooldown": 1500
+  },
+  "SNARL": {
+    "moveId": "SNARL",
+    "name": {
+      "ja-Hrkt": "バークアウト",
+      "ko": "바크아웃",
+      "zh-Hant": "大聲咆哮",
+      "fr": "Aboiement",
+      "de": "Standpauke",
+      "es": "Alarido",
+      "it": "Urlorabbia",
+      "en": "Snarl",
+      "ja": "バークアウト",
+      "zh-Hans": "大声咆哮"
+    },
+    "abbreviation": "Sn",
+    "type": "dark",
+    "power": 5,
+    "energy": 0,
+    "energyGain": 13,
+    "cooldown": 1500
+  },
+  "SOLAR_BEAM": {
+    "moveId": "SOLAR_BEAM",
+    "name": {
+      "ja-Hrkt": "ソーラービーム",
+      "ko": "솔라빔",
+      "zh-Hant": "日光束",
+      "fr": "Lance-Soleil",
+      "de": "Solarstrahl",
+      "es": "Rayo Solar",
+      "it": "Solarraggio",
+      "en": "Solar Beam",
+      "ja": "ソーラービーム",
+      "zh-Hans": "日光束"
+    },
+    "abbreviation": "SoB",
+    "type": "grass",
+    "power": 150,
+    "energy": 80,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "SPARK": {
+    "moveId": "SPARK",
+    "name": {
+      "ja-Hrkt": "スパーク",
+      "ko": "스파크",
+      "zh-Hant": "電光",
+      "fr": "Étincelle",
+      "de": "Funkensprung",
+      "es": "Chispa",
+      "it": "Scintilla",
+      "en": "Spark",
+      "ja": "スパーク",
+      "zh-Hans": "电光"
+    },
+    "abbreviation": "Sp",
+    "type": "electric",
+    "power": 4,
+    "energy": 0,
+    "energyGain": 8,
+    "cooldown": 1000
+  },
+  "SPLASH": {
+    "moveId": "SPLASH",
+    "name": {
+      "ja-Hrkt": "はねる",
+      "ko": "튀어오르기",
+      "zh-Hant": "躍起",
+      "fr": "Trempette",
+      "de": "Platscher",
+      "es": "Salpicadura",
+      "it": "Splash",
+      "en": "Splash",
+      "ja": "はねる",
+      "zh-Hans": "跃起"
+    },
+    "abbreviation": "Spl",
+    "type": "water",
+    "power": 0,
+    "energy": 0,
+    "energyGain": 12,
+    "cooldown": 2000
+  },
+  "STEEL_WING": {
+    "moveId": "STEEL_WING",
+    "name": {
+      "ja-Hrkt": "はがねのつばさ",
+      "ko": "강철날개",
+      "zh-Hant": "鋼翼",
+      "fr": "Ailes d’Acier",
+      "de": "Stahlflügel",
+      "es": "Ala de Acero",
+      "it": "Alacciaio",
+      "en": "Steel Wing",
+      "ja": "はがねのつばさ",
+      "zh-Hans": "钢翼"
+    },
+    "abbreviation": "StW",
+    "type": "steel",
+    "power": 7,
+    "energy": 0,
+    "energyGain": 5,
+    "cooldown": 1000
+  },
+  "STOMP": {
+    "moveId": "STOMP",
+    "name": {
+      "ja-Hrkt": "ふみつけ",
+      "ko": "짓밟기",
+      "zh-Hant": "踩踏",
+      "fr": "Écrasement",
+      "de": "Stampfer",
+      "es": "Pisotón",
+      "it": "Pestone",
+      "en": "Stomp",
+      "ja": "ふみつけ",
+      "zh-Hans": "踩踏"
+    },
+    "abbreviation": "St",
+    "type": "normal",
+    "power": 55,
+    "energy": 40,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "STONE_EDGE": {
+    "moveId": "STONE_EDGE",
+    "name": {
+      "ja-Hrkt": "ストーンエッジ",
+      "ko": "스톤에지",
+      "zh-Hant": "尖石攻擊",
+      "fr": "Lame de Roc",
+      "de": "Steinkante",
+      "es": "Roca Afilada",
+      "it": "Pietrataglio",
+      "en": "Stone Edge",
+      "ja": "ストーンエッジ",
+      "zh-Hans": "尖石攻击"
+    },
+    "type": "rock",
+    "power": 100,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "STRUGGLE": {
+    "moveId": "STRUGGLE",
+    "name": {
+      "ja-Hrkt": "わるあがき",
+      "ko": "발버둥",
+      "zh-Hant": "掙扎",
+      "fr": "Lutte",
+      "de": "Verzweifler",
+      "es": "Forcejeo",
+      "it": "Scontro",
+      "en": "Struggle",
+      "ja": "わるあがき",
+      "zh-Hans": "挣扎"
+    },
+    "abbreviation": "Str",
+    "type": "normal",
+    "power": 35,
+    "energy": 100,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "STRUGGLE_BUG": {
+    "moveId": "STRUGGLE_BUG",
+    "name": {
+      "ja-Hrkt": "むしのていこう",
+      "ko": "벌레의저항",
+      "zh-Hant": "蟲之抵抗",
+      "fr": "Survinsecte",
+      "de": "Käfertrutz",
+      "es": "Estoicismo",
+      "it": "Entomoblocco",
+      "en": "Struggle Bug",
+      "ja": "むしのていこう",
+      "zh-Hans": "虫之抵抗"
+    },
+    "abbreviation": "StB",
+    "type": "bug",
+    "power": 9,
+    "energy": 0,
+    "energyGain": 8,
+    "cooldown": 1500
+  },
+  "SUBMISSION": {
+    "moveId": "SUBMISSION",
+    "name": {
+      "ja-Hrkt": "じごくぐるま",
+      "ko": "지옥의바퀴",
+      "zh-Hant": "地獄翻滾",
+      "fr": "Sacrifice",
+      "de": "Überroller",
+      "es": "Sumisión",
+      "it": "Sottomissione",
+      "en": "Submission",
+      "ja": "じごくぐるま",
+      "zh-Hans": "地狱翻滚"
+    },
+    "abbreviation": "Sm",
+    "type": "fighting",
+    "power": 60,
+    "energy": 50,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "SUCKER_PUNCH": {
+    "moveId": "SUCKER_PUNCH",
+    "name": {
+      "ja-Hrkt": "ふいうち",
+      "ko": "기습",
+      "zh-Hant": "突襲",
+      "fr": "Coup Bas",
+      "de": "Tiefschlag",
+      "es": "Golpe Bajo",
+      "it": "Sbigoattacco",
+      "en": "Sucker Punch",
+      "ja": "ふいうち",
+      "zh-Hans": "突袭"
+    },
+    "abbreviation": "SkP",
+    "type": "dark",
+    "power": 5,
+    "energy": 0,
+    "energyGain": 7,
+    "cooldown": 1000
+  },
+  "SUPER_POWER": {
+    "moveId": "SUPER_POWER",
+    "name": {
+      "ja-Hrkt": "ばかぢから",
+      "ko": "엄청난힘",
+      "zh-Hant": "蠻力",
+      "fr": "Surpuissance",
+      "de": "Kraftkoloss",
+      "es": "Fuerza Bruta",
+      "it": "Troppoforte",
+      "en": "Superpower",
+      "ja": "ばかぢから",
+      "zh-Hans": "蛮力"
+    },
+    "type": "fighting",
+    "power": 85,
+    "energy": 40,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      -1,
+      -1
+    ],
+    "buffTarget": "self",
+    "buffApplyChance": "1"
+  },
+  "SURF": {
+    "moveId": "SURF",
+    "name": {
+      "ja-Hrkt": "なみのり",
+      "ko": "파도타기",
+      "zh-Hant": "衝浪",
+      "fr": "Surf",
+      "de": "Surfer",
+      "es": "Surf",
+      "it": "Surf",
+      "en": "Surf",
+      "ja": "なみのり",
+      "zh-Hans": "冲浪"
+    },
+    "type": "water",
+    "power": 65,
+    "energy": 40,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "SWIFT": {
+    "moveId": "SWIFT",
+    "name": {
+      "ja-Hrkt": "スピードスター",
+      "ko": "스피드스타",
+      "zh-Hant": "高速星星",
+      "fr": "Météores",
+      "de": "Sternschauer",
+      "es": "Rapidez",
+      "it": "Comete",
+      "en": "Swift",
+      "ja": "スピードスター",
+      "zh-Hans": "高速星星"
+    },
+    "abbreviation": "Sw",
+    "type": "normal",
+    "power": 60,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "SYNCHRONOISE": {
+    "moveId": "SYNCHRONOISE",
+    "name": {
+      "ja-Hrkt": "シンクロノイズ",
+      "ko": "싱크로노이즈",
+      "zh-Hant": "同步干擾",
+      "fr": "Synchropeine",
+      "de": "Synchrolärm",
+      "es": "Sincrorruido",
+      "it": "Sincrumore",
+      "en": "Synchronoise",
+      "ja": "シンクロノイズ",
+      "zh-Hans": "同步干扰"
+    },
+    "abbreviation": "Sy",
+    "type": "psychic",
+    "power": 80,
+    "energy": 50,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "TACKLE": {
+    "moveId": "TACKLE",
+    "name": {
+      "ja-Hrkt": "たいあたり",
+      "ko": "몸통박치기",
+      "zh-Hant": "撞擊",
+      "fr": "Charge",
+      "de": "Tackle",
+      "es": "Placaje",
+      "it": "Azione",
+      "en": "Tackle",
+      "ja": "たいあたり",
+      "zh-Hans": "撞击"
+    },
+    "abbreviation": "Tk",
+    "type": "normal",
+    "power": 3,
+    "energy": 0,
+    "energyGain": 2,
+    "cooldown": 500
+  },
+  "TAKE_DOWN": {
+    "moveId": "TAKE_DOWN",
+    "name": {
+      "ja-Hrkt": "とっしん",
+      "ko": "돌진",
+      "zh-Hant": "猛撞",
+      "fr": "Bélier",
+      "de": "Bodycheck",
+      "es": "Derribo",
+      "it": "Riduttore",
+      "en": "Take Down",
+      "ja": "とっしん",
+      "zh-Hans": "猛撞"
+    },
+    "type": "normal",
+    "power": 5,
+    "energy": 0,
+    "energyGain": 8,
+    "cooldown": 1500
+  },
+  "TECHNO_BLAST_NORMAL": {
+    "moveId": "TECHNO_BLAST_NORMAL",
+    "name": {
+      "ko": "테크노버스터 Normal",
+      "fr": "Techno-Buster Normal",
+      "de": "Techblaster Normal",
+      "es": "Tecno Shock Normal",
+      "en": "Techno Blast Normal",
+      "ja": "テクノバスター Normal"
+    },
+    "type": "normal",
+    "power": 120,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "TECHNO_BLAST_BURN": {
+    "moveId": "TECHNO_BLAST_BURN",
+    "name": {
+      "ko": "테크노버스터 burn",
+      "fr": "Techno-Buster burn",
+      "de": "Techblaster burn",
+      "es": "Tecno Shock burn",
+      "en": "Techno Blast burn",
+      "ja": "テクノバスター burn"
+    },
+    "type": "fire",
+    "power": 120,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "TECHNO_BLAST_CHILL": {
+    "moveId": "TECHNO_BLAST_CHILL",
+    "name": {
+      "ko": "테크노버스터 chill",
+      "fr": "Techno-Buster chill",
+      "de": "Techblaster chill",
+      "es": "Tecno Shock chill",
+      "en": "Techno Blast chill",
+      "ja": "テクノバスター chill"
+    },
+    "type": "ice",
+    "power": 120,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "TECHNO_BLAST_DOUSE": {
+    "moveId": "TECHNO_BLAST_DOUSE",
+    "name": {
+      "ko": "테크노버스터 douse",
+      "fr": "Techno-Buster douse",
+      "de": "Techblaster douse",
+      "es": "Tecno Shock douse",
+      "en": "Techno Blast douse",
+      "ja": "テクノバスター douse"
+    },
+    "type": "water",
+    "power": 120,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "TECHNO_BLAST_SHOCK": {
+    "moveId": "TECHNO_BLAST_SHOCK",
+    "name": {
+      "ko": "테크노버스터 shock",
+      "fr": "Techno-Buster shock",
+      "de": "Techblaster shock",
+      "es": "Tecno Shock shock",
+      "en": "Techno Blast shock",
+      "ja": "テクノバスター shock"
+    },
+    "type": "electric",
+    "power": 120,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "THUNDER": {
+    "moveId": "THUNDER",
+    "name": {
+      "ja-Hrkt": "かみなり",
+      "ko": "번개",
+      "zh-Hant": "打雷",
+      "fr": "Fatal-Foudre",
+      "de": "Donner",
+      "es": "Trueno",
+      "it": "Tuono",
+      "en": "Thunder",
+      "ja": "かみなり",
+      "zh-Hans": "打雷"
+    },
+    "type": "electric",
+    "power": 100,
+    "energy": 60,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "THUNDER_FANG": {
+    "moveId": "THUNDER_FANG",
+    "name": {
+      "ja-Hrkt": "かみなりのキバ",
+      "ko": "번개엄니",
+      "zh-Hant": "雷電牙",
+      "fr": "Crocs Éclair",
+      "de": "Donnerzahn",
+      "es": "Colmillo Rayo",
+      "it": "Fulmindenti",
+      "en": "Thunder Fang",
+      "ja": "かみなりのキバ",
+      "zh-Hans": "雷电牙"
+    },
+    "type": "electric",
+    "power": 8,
+    "energy": 0,
+    "energyGain": 5,
+    "cooldown": 1000
+  },
+  "THUNDER_PUNCH": {
+    "moveId": "THUNDER_PUNCH",
+    "name": {
+      "ja-Hrkt": "かみなりパンチ",
+      "ko": "번개펀치",
+      "zh-Hant": "雷電拳",
+      "fr": "Poing Éclair",
+      "de": "Donnerschlag",
+      "es": "Puño Trueno",
+      "it": "Tuonopugno",
+      "en": "Thunder Punch",
+      "ja": "かみなりパンチ",
+      "zh-Hans": "雷电拳"
+    },
+    "type": "electric",
+    "power": 55,
+    "energy": 40,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "THUNDER_SHOCK": {
+    "moveId": "THUNDER_SHOCK",
+    "name": {
+      "ja-Hrkt": "でんきショック",
+      "ko": "전기쇼크",
+      "zh-Hant": "電擊",
+      "fr": "Éclair",
+      "de": "Donnerschock",
+      "es": "Impactrueno",
+      "it": "Tuonoshock",
+      "en": "Thunder Shock",
+      "ja": "でんきショック",
+      "zh-Hans": "电击"
+    },
+    "type": "electric",
+    "power": 3,
+    "energy": 0,
+    "energyGain": 9,
+    "cooldown": 1000
+  },
+  "THUNDERBOLT": {
+    "moveId": "THUNDERBOLT",
+    "name": {
+      "ja-Hrkt": "１０まんボルト",
+      "ko": "10만볼트",
+      "zh-Hant": "十萬伏特",
+      "fr": "Tonnerre",
+      "de": "Donnerblitz",
+      "es": "Rayo",
+      "it": "Fulmine",
+      "en": "Thunderbolt",
+      "ja": "１０まんボルト",
+      "zh-Hans": "十万伏特"
+    },
+    "abbreviation": "Tb",
+    "type": "electric",
+    "power": 90,
+    "energy": 55,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "TRANSFORM": {
+    "moveId": "TRANSFORM",
+    "name": {
+      "ja-Hrkt": "へんしん",
+      "ko": "변신",
+      "zh-Hant": "變身",
+      "fr": "Morphing",
+      "de": "Wandler",
+      "es": "Transformación",
+      "it": "Trasformazione",
+      "en": "Transform",
+      "ja": "へんしん",
+      "zh-Hans": "变身"
+    },
+    "type": "normal",
+    "power": 0,
+    "energy": 0,
+    "energyGain": 0,
+    "cooldown": 1500
+  },
+  "TRI_ATTACK": {
+    "moveId": "TRI_ATTACK",
+    "name": {
+      "ja-Hrkt": "トライアタック",
+      "ko": "트라이어택",
+      "zh-Hant": "三重攻擊",
+      "fr": "Triplattaque",
+      "de": "Triplette",
+      "es": "Triataque",
+      "it": "Tripletta",
+      "en": "Tri Attack",
+      "ja": "トライアタック",
+      "zh-Hans": "三重攻击"
+    },
+    "type": "normal",
+    "power": 65,
+    "energy": 50,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      -1,
+      -1
+    ],
+    "buffTarget": "opponent",
+    "buffApplyChance": ".5"
+  },
+  "TWISTER": {
+    "moveId": "TWISTER",
+    "name": {
+      "ja-Hrkt": "たつまき",
+      "ko": "회오리",
+      "zh-Hant": "龍捲風",
+      "fr": "Ouragan",
+      "de": "Windhose",
+      "es": "Ciclón",
+      "it": "Tornado",
+      "en": "Twister",
+      "ja": "たつまき",
+      "zh-Hans": "龙卷风"
+    },
+    "abbreviation": "Tw",
+    "type": "dragon",
+    "power": 45,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "V_CREATE": {
+    "moveId": "V_CREATE",
+    "name": {
+      "ja-Hrkt": "Ｖジェネレート",
+      "ko": "V제너레이트",
+      "zh-Hant": "Ｖ熱焰",
+      "fr": "Coup Victoire",
+      "de": "V-Generator",
+      "es": "V de Fuego",
+      "it": "Generatore V",
+      "en": "V-create",
+      "ja": "Ｖジェネレート",
+      "zh-Hans": "Ｖ热焰"
+    },
+    "type": "fire",
+    "power": 95,
+    "energy": 40,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      0,
+      -3
+    ],
+    "buffTarget": "self",
+    "buffApplyChance": "1"
+  },
+  "VICE_GRIP": {
+    "moveId": "VICE_GRIP",
+    "name": {
+      "ja-Hrkt": "はさむ",
+      "ko": "찝기",
+      "zh-Hant": "夾住",
+      "fr": "Force Poigne",
+      "de": "Klammer",
+      "es": "Agarre",
+      "it": "Presa",
+      "en": "Vise Grip",
+      "ja": "はさむ",
+      "zh-Hans": "夹住"
+    },
+    "type": "normal",
+    "power": 40,
+    "energy": 40,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "VINE_WHIP": {
+    "moveId": "VINE_WHIP",
+    "name": {
+      "ja-Hrkt": "つるのムチ",
+      "ko": "덩굴채찍",
+      "zh-Hant": "藤鞭",
+      "fr": "Fouet Lianes",
+      "de": "Rankenhieb",
+      "es": "Látigo Cepa",
+      "it": "Frustata",
+      "en": "Vine Whip",
+      "ja": "つるのムチ",
+      "zh-Hans": "藤鞭"
+    },
+    "type": "grass",
+    "power": 5,
+    "energy": 0,
+    "energyGain": 8,
+    "cooldown": 1000
+  },
+  "VOLT_SWITCH": {
+    "moveId": "VOLT_SWITCH",
+    "name": {
+      "ja-Hrkt": "ボルトチェンジ",
+      "ko": "볼트체인지",
+      "zh-Hant": "伏特替換",
+      "fr": "Change Éclair",
+      "de": "Voltwechsel",
+      "es": "Voltiocambio",
+      "it": "Invertivolt",
+      "en": "Volt Switch",
+      "ja": "ボルトチェンジ",
+      "zh-Hans": "伏特替换"
+    },
+    "type": "electric",
+    "power": 12,
+    "energy": 0,
+    "energyGain": 16,
+    "cooldown": 2000
+  },
+  "WATER_GUN": {
+    "moveId": "WATER_GUN",
+    "name": {
+      "ja-Hrkt": "みずでっぽう",
+      "ko": "물대포",
+      "zh-Hant": "水槍",
+      "fr": "Pistolet à O",
+      "de": "Aquaknarre",
+      "es": "Pistola Agua",
+      "it": "Pistolacqua",
+      "en": "Water Gun",
+      "ja": "みずでっぽう",
+      "zh-Hans": "水枪"
+    },
+    "type": "water",
+    "power": 3,
+    "energy": 0,
+    "energyGain": 3,
+    "cooldown": 500
+  },
+  "WATER_GUN_FAST_BLASTOISE": {
+    "moveId": "WATER_GUN_FAST_BLASTOISE",
+    "name": {
+      "ko": "물대포 (Blastoise)",
+      "fr": "Pistolet à O (Blastoise)",
+      "de": "Aquaknarre (Blastoise)",
+      "es": "Pistola Agua (Blastoise)",
+      "en": "Water Gun (Blastoise)",
+      "ja": "みずでっぽう (Blastoise)"
+    },
+    "type": "water",
+    "power": 6,
+    "energy": 0,
+    "energyGain": 4,
+    "cooldown": 1000
+  },
+  "WATER_PULSE": {
+    "moveId": "WATER_PULSE",
+    "name": {
+      "ja-Hrkt": "みずのはどう",
+      "ko": "물의파동",
+      "zh-Hant": "水之波動",
+      "fr": "Vibraqua",
+      "de": "Aquawelle",
+      "es": "Hidropulso",
+      "it": "Idropulsar",
+      "en": "Water Pulse",
+      "ja": "みずのはどう",
+      "zh-Hans": "水之波动"
+    },
+    "type": "water",
+    "power": 70,
+    "energy": 60,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "WATERFALL": {
+    "moveId": "WATERFALL",
+    "name": {
+      "ja-Hrkt": "たきのぼり",
+      "ko": "폭포오르기",
+      "zh-Hant": "攀瀑",
+      "fr": "Cascade",
+      "de": "Kaskade",
+      "es": "Cascada",
+      "it": "Cascata",
+      "en": "Waterfall",
+      "ja": "たきのぼり",
+      "zh-Hans": "攀瀑"
+    },
+    "type": "water",
+    "power": 12,
+    "energy": 0,
+    "energyGain": 8,
+    "cooldown": 1500
+  },
+  "WEATHER_BALL_FIRE": {
+    "moveId": "WEATHER_BALL_FIRE",
+    "name": {
+      "ko": "웨더볼 Fire",
+      "fr": "Ball’Météo Fire",
+      "de": "Meteorologe Feuer",
+      "es": "Meteorobola Fuego",
+      "en": "Weather Ball Fire",
+      "ja": "ウェザーボール Fire"
+    },
+    "type": "fire",
+    "power": 60,
+    "energy": 35,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "WEATHER_BALL_ICE": {
+    "moveId": "WEATHER_BALL_ICE",
+    "name": {
+      "ko": "웨더볼 Ice",
+      "fr": "Ball’Météo Ice",
+      "de": "Meteorologe Eis",
+      "es": "Meteorobola Hielo",
+      "en": "Weather Ball Ice",
+      "ja": "ウェザーボール Ice"
+    },
+    "type": "ice",
+    "power": 60,
+    "energy": 35,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "WEATHER_BALL_NORMAL": {
+    "moveId": "WEATHER_BALL_NORMAL",
+    "name": {
+      "ko": "웨더볼 Normal",
+      "fr": "Ball’Météo Normal",
+      "de": "Meteorologe Normal",
+      "es": "Meteorobola Normal",
+      "en": "Weather Ball Normal",
+      "ja": "ウェザーボール Normal"
+    },
+    "type": "normal",
+    "power": 60,
+    "energy": 35,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "WEATHER_BALL_ROCK": {
+    "moveId": "WEATHER_BALL_ROCK",
+    "name": {
+      "ko": "웨더볼 Rock",
+      "fr": "Ball’Météo Rock",
+      "de": "Meteorologe Gestein",
+      "es": "Meteorobola Roca",
+      "en": "Weather Ball Rock",
+      "ja": "ウェザーボール Rock"
+    },
+    "type": "rock",
+    "power": 60,
+    "energy": 35,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "WEATHER_BALL_WATER": {
+    "moveId": "WEATHER_BALL_WATER",
+    "name": {
+      "ko": "웨더볼 Water",
+      "fr": "Ball’Météo Water",
+      "de": "Meteorologe Wasser",
+      "es": "Meteorobola Agua",
+      "en": "Weather Ball Water",
+      "ja": "ウェザーボール Water"
+    },
+    "type": "water",
+    "power": 60,
+    "energy": 35,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "WILD_CHARGE": {
+    "moveId": "WILD_CHARGE",
+    "name": {
+      "ja-Hrkt": "ワイルドボルト",
+      "ko": "와일드볼트",
+      "zh-Hant": "瘋狂伏特",
+      "fr": "Éclair Fou",
+      "de": "Stromstoß",
+      "es": "Voltio Cruel",
+      "it": "Sprizzalampo",
+      "en": "Wild Charge",
+      "ja": "ワイルドボルト",
+      "zh-Hans": "疯狂伏特"
+    },
+    "type": "electric",
+    "power": 100,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500,
+    "buffs": [
+      0,
+      -2
+    ],
+    "buffTarget": "self",
+    "buffApplyChance": "1"
+  },
+  "WING_ATTACK": {
+    "moveId": "WING_ATTACK",
+    "name": {
+      "ja-Hrkt": "つばさでうつ",
+      "ko": "날개치기",
+      "zh-Hant": "翅膀攻擊",
+      "fr": "Cru-Ailes",
+      "de": "Flügelschlag",
+      "es": "Ataque Ala",
+      "it": "Attacco d’Ala",
+      "en": "Wing Attack",
+      "ja": "つばさでうつ",
+      "zh-Hans": "翅膀攻击"
+    },
+    "type": "flying",
+    "power": 5,
+    "energy": 0,
+    "energyGain": 7,
+    "cooldown": 1000
+  },
+  "WRAP": {
+    "moveId": "WRAP",
+    "name": {
+      "ja-Hrkt": "まきつく",
+      "ko": "김밥말이",
+      "zh-Hant": "緊束",
+      "fr": "Ligotage",
+      "de": "Wickel",
+      "es": "Constricción",
+      "it": "Avvolgibotta",
+      "en": "Wrap",
+      "ja": "まきつく",
+      "zh-Hans": "紧束"
+    },
+    "abbreviation": "Wr",
+    "type": "normal",
+    "power": 60,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "WRAP_GREEN": {
+    "moveId": "WRAP_GREEN",
+    "name": {
+      "ko": "김밥말이 green",
+      "fr": "Ligotage green",
+      "de": "Wickel green",
+      "es": "Constricción green",
+      "en": "Wrap green",
+      "ja": "まきつく green"
+    },
+    "type": "normal",
+    "power": 25,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "WRAP_PINK": {
+    "moveId": "WRAP_PINK",
+    "name": {
+      "ko": "김밥말이 pink",
+      "fr": "Ligotage pink",
+      "de": "Wickel pink",
+      "es": "Constricción pink",
+      "en": "Wrap pink",
+      "ja": "まきつく pink"
+    },
+    "type": "normal",
+    "power": 25,
+    "energy": 45,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "X_SCISSOR": {
+    "moveId": "X_SCISSOR",
+    "name": {
+      "ja-Hrkt": "シザークロス",
+      "ko": "시저크로스",
+      "zh-Hant": "十字剪",
+      "fr": "Plaie Croix",
+      "de": "Kreuzschere",
+      "es": "Tijera X",
+      "it": "Forbice X",
+      "en": "X-Scissor",
+      "ja": "シザークロス",
+      "zh-Hans": "十字剪"
+    },
+    "type": "bug",
+    "power": 45,
+    "energy": 35,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "YAWN": {
+    "moveId": "YAWN",
+    "name": {
+      "ja-Hrkt": "あくび",
+      "ko": "하품",
+      "zh-Hant": "哈欠",
+      "fr": "Bâillement",
+      "de": "Gähner",
+      "es": "Bostezo",
+      "it": "Sbadiglio",
+      "en": "Yawn",
+      "ja": "あくび",
+      "zh-Hans": "哈欠"
+    },
+    "type": "normal",
+    "power": 0,
+    "energy": 0,
+    "energyGain": 12,
+    "cooldown": 2000
+  },
+  "ZAP_CANNON": {
+    "moveId": "ZAP_CANNON",
+    "name": {
+      "ja-Hrkt": "でんじほう",
+      "ko": "전자포",
+      "zh-Hant": "電磁炮",
+      "fr": "Élecanon",
+      "de": "Blitzkanone",
+      "es": "Electrocañón",
+      "it": "Falcecannone",
+      "en": "Zap Cannon",
+      "ja": "でんじほう",
+      "zh-Hans": "电磁炮"
+    },
+    "type": "electric",
+    "power": 150,
+    "energy": 80,
+    "energyGain": 0,
+    "cooldown": 500
+  },
+  "ZEN_HEADBUTT": {
+    "moveId": "ZEN_HEADBUTT",
+    "name": {
+      "ja-Hrkt": "しねんのずつき",
+      "ko": "사념의박치기",
+      "zh-Hant": "意念頭錘",
+      "fr": "Psykoud’Boul",
+      "de": "Zen-Kopfstoß",
+      "es": "Cabezazo Zen",
+      "it": "Cozzata Zen",
+      "en": "Zen Headbutt",
+      "ja": "しねんのずつき",
+      "zh-Hans": "意念头锤"
+    },
+    "type": "psychic",
+    "power": 8,
+    "energy": 0,
+    "energyGain": 6,
+    "cooldown": 1500
+  }
 }

@@ -4,6 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "translate_untranslated_moves": "node --loader ts-node/esm --experimental-specifier-resolution=node updateData/translateUntranslatedMoves.ts",
         "generate_mainseries_moveset_data": "node --loader ts-node/esm --experimental-specifier-resolution=node updateData/makeMainSeriesMoveset.ts",
         "generate_pokemonforformats_data": "node --loader ts-node/esm --experimental-specifier-resolution=node  updateData/preparePokemonForFormatsData.ts",
         "start_matchhandling": "node --loader ts-node/esm --experimental-specifier-resolution=node -r dotenv/config matchhandling_server.ts",

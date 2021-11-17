@@ -16,7 +16,7 @@ export enum RoomStatus {
 
 export interface Move {
   "moveId": string,
-  "name": string,
+  "name": { [language: string]: string; },
   "type": string,
   "power": number,
   "energy": number,
@@ -24,7 +24,7 @@ export interface Move {
   "cooldown": number,
   "buffs"?: [number, number],
   "buffTarget"?: string,
-  "buffApplyChance"?: string
+  "buffApplyChance"?: string;
 }
 
 export interface TurnAction {
@@ -32,7 +32,7 @@ export interface TurnAction {
   active: number,
   move?: Move,
   string?: string,
-  animated?: boolean
+  animated?: boolean;
 }
 
 export interface Player {
@@ -40,7 +40,7 @@ export interface Player {
   team: TeamMember[],
   username: string,
   isGuest: boolean,
-  current?: Playercurrent
+  current?: Playercurrent;
 }
 
 export interface Playercurrent {
@@ -72,9 +72,9 @@ export interface Room {
     move: Move,
     shield?: number,
     multiplier?: number,
-    cmp?: Move
+    cmp?: Move;
   },
   format: Rule,
   formatName?: string,
-  subClient: Cluster | Redis | any
+  subClient: Cluster | Redis | any;
 }
