@@ -3780,6 +3780,18 @@
       "ground"
     ]
   },
+  "steelix_mega": {
+    "legal": false,
+    "dex": 208,
+    "types": [
+      "steel",
+      "ground"
+    ],
+    "tags": [
+      "mega",
+      "unreleased"
+    ]
+  },
   "snubbull": {
     "legal": false,
     "dex": 209,
@@ -4464,7 +4476,20 @@
       "flying"
     ],
     "tags": [
-      "legendary"
+      "legendary",
+      "shadoweligible"
+    ]
+  },
+  "lugia_shadow": {
+    "legal": false,
+    "dex": 249,
+    "types": [
+      "psychic",
+      "flying"
+    ],
+    "tags": [
+      "legendary",
+      "shadow"
     ]
   },
   "ho_oh": {
@@ -5428,8 +5453,8 @@
       "dark"
     ],
     "tags": [
-      "shadow",
-      "include1500"
+      "shadoweligible",
+      "shadow"
     ]
   },
   "wailmer": {
@@ -5571,6 +5596,20 @@
     "types": [
       "grass",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "cacnea_shadow": {
+    "legal": false,
+    "dex": 331,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "cacturne": {
@@ -5579,6 +5618,20 @@
     "types": [
       "grass",
       "dark"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "cacturne_shadow": {
+    "legal": false,
+    "dex": 332,
+    "types": [
+      "grass",
+      "dark"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "swablu": {
@@ -5963,6 +6016,18 @@
     ],
     "tags": [
       "shadoweligible"
+    ]
+  },
+  "absol_mega": {
+    "legal": false,
+    "dex": 359,
+    "types": [
+      "dark",
+      "none"
+    ],
+    "tags": [
+      "mega",
+      "unreleased"
     ]
   },
   "absol_shadow": {
@@ -6848,14 +6913,6 @@
       "none"
     ]
   },
-  "shellos_east_sea": {
-    "legal": false,
-    "dex": 422,
-    "types": [
-      "water",
-      "none"
-    ]
-  },
   "shellos_west_sea": {
     "legal": false,
     "dex": 422,
@@ -6864,7 +6921,15 @@
       "none"
     ]
   },
-  "gastrodon_east_sea": {
+  "shellos_east_sea": {
+    "legal": false,
+    "dex": 422,
+    "types": [
+      "water",
+      "none"
+    ]
+  },
+  "gastrodon_west_sea": {
     "legal": false,
     "dex": 423,
     "types": [
@@ -6875,7 +6940,7 @@
       "regional"
     ]
   },
-  "gastrodon_west_sea": {
+  "gastrodon_east_sea": {
     "legal": false,
     "dex": 423,
     "types": [
@@ -9227,9 +9292,6 @@
     "types": [
       "dragon",
       "none"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "golett": {
@@ -10198,9 +10260,6 @@
     "types": [
       "electric",
       "fairy"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "carbink": {
@@ -10441,7 +10500,8 @@
       "ghost"
     ],
     "tags": [
-      "mythical"
+      "mythical",
+      "untradeable"
     ]
   },
   "hoopa_confined": {
@@ -10465,7 +10525,7 @@
     ],
     "tags": [
       "mythical",
-      "unreleased"
+      "untradeable"
     ]
   },
   "volcanion": {

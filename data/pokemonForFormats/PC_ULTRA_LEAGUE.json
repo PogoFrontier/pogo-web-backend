@@ -14908,6 +14908,19 @@
       "CRUNCH"
     ]
   },
+  "steelix_mega": {
+    "legal": true,
+    "dex": 208,
+    "types": [
+      "steel",
+      "ground"
+    ],
+    "tags": [
+      "mega",
+      "unreleased"
+    ],
+    "speciesName": {}
+  },
   "snubbull": {
     "legal": true,
     "dex": 209,
@@ -17556,7 +17569,20 @@
       "flying"
     ],
     "tags": [
-      "legendary"
+      "legendary",
+      "shadoweligible"
+    ]
+  },
+  "lugia_shadow": {
+    "legal": false,
+    "dex": 249,
+    "types": [
+      "psychic",
+      "flying"
+    ],
+    "tags": [
+      "legendary",
+      "shadow"
     ]
   },
   "ho_oh": {
@@ -20844,8 +20870,8 @@
       "dark"
     ],
     "tags": [
-      "shadow",
-      "include1500"
+      "shadoweligible",
+      "shadow"
     ],
     "speciesName": {
       "de": "Tohaido (Schatten)",
@@ -21416,6 +21442,9 @@
       "grass",
       "none"
     ],
+    "tags": [
+      "shadoweligible"
+    ],
     "speciesName": {
       "de": "Tuska",
       "fr": "Cacnea",
@@ -21429,12 +21458,38 @@
       "zh_hant": "沙漠奈亞"
     }
   },
+  "cacnea_shadow": {
+    "legal": true,
+    "dex": 331,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": {
+      "de": "Tuska (Schatten)",
+      "fr": "Cacnea (Ombre)",
+      "en": "Cacnea (Shadow)",
+      "es": "Cacnea (Oscuro)",
+      "th": "ซาโบเนีย (Shadow)",
+      "ja": "サボネア (Shadow)",
+      "ko": "선인왕 (Shadow)",
+      "ru": "Какния (Shadow)",
+      "zh_hans": "沙漠奈亚 (Shadow)",
+      "zh_hant": "沙漠奈亞 (Shadow)"
+    }
+  },
   "cacturne": {
     "legal": true,
     "dex": 332,
     "types": [
       "grass",
       "dark"
+    ],
+    "tags": [
+      "shadoweligible"
     ],
     "speciesName": {
       "de": "Noktuska",
@@ -21484,6 +21539,29 @@
       "GRASS_KNOT",
       "DARK_PULSE"
     ]
+  },
+  "cacturne_shadow": {
+    "legal": true,
+    "dex": 332,
+    "types": [
+      "grass",
+      "dark"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": {
+      "de": "Noktuska (Schatten)",
+      "fr": "Cacturne (Ombre)",
+      "en": "Cacturne (Shadow)",
+      "es": "Cacturne (Oscuro)",
+      "th": "น็อคทัส (Shadow)",
+      "ja": "ノクタス (Shadow)",
+      "ko": "밤선인 (Shadow)",
+      "ru": "Кактурн (Shadow)",
+      "zh_hans": "梦歌奈亚 (Shadow)",
+      "zh_hant": "夢歌奈亞 (Shadow)"
+    }
   },
   "swablu": {
     "legal": true,
@@ -22976,6 +23054,19 @@
       "DARK_PULSE",
       "MEGAHORN"
     ]
+  },
+  "absol_mega": {
+    "legal": true,
+    "dex": 359,
+    "types": [
+      "dark",
+      "none"
+    ],
+    "tags": [
+      "mega",
+      "unreleased"
+    ],
+    "speciesName": {}
   },
   "absol_shadow": {
     "legal": true,
@@ -26184,26 +26275,6 @@
       "SOLAR_BEAM"
     ]
   },
-  "shellos_east_sea": {
-    "legal": true,
-    "dex": 422,
-    "types": [
-      "water",
-      "none"
-    ],
-    "speciesName": {
-      "de": "Schalellos (Osten)",
-      "fr": "Sancoki (East)",
-      "en": "Shellos (East)",
-      "es": "Shellos (Este)",
-      "th": "คารานะคูชิ (East)",
-      "ja": "カラナクシ (East)",
-      "ko": "깝질무 (East)",
-      "ru": "Шеллос (East)",
-      "zh_hans": "无壳海牛 (East)",
-      "zh_hant": "無殼海牛 (East)"
-    }
-  },
   "shellos_west_sea": {
     "legal": true,
     "dex": 422,
@@ -26224,7 +26295,27 @@
       "zh_hant": "無殼海牛 (West)"
     }
   },
-  "gastrodon_east_sea": {
+  "shellos_east_sea": {
+    "legal": true,
+    "dex": 422,
+    "types": [
+      "water",
+      "none"
+    ],
+    "speciesName": {
+      "de": "Schalellos (Osten)",
+      "fr": "Sancoki (East)",
+      "en": "Shellos (East)",
+      "es": "Shellos (Este)",
+      "th": "คารานะคูชิ (East)",
+      "ja": "カラナクシ (East)",
+      "ko": "깝질무 (East)",
+      "ru": "Шеллос (East)",
+      "zh_hans": "无壳海牛 (East)",
+      "zh_hant": "無殼海牛 (East)"
+    }
+  },
+  "gastrodon_west_sea": {
     "legal": true,
     "dex": 423,
     "types": [
@@ -26235,16 +26326,16 @@
       "regional"
     ],
     "speciesName": {
-      "de": "Gastrodon (Osten)",
-      "fr": "Tritosor (East)",
-      "en": "Gastrodon (East)",
-      "es": "Gastrodon (Este)",
-      "th": "ไทรโทดอน (East)",
-      "ja": "トリトドン (East)",
-      "ko": "트리토돈 (East)",
-      "ru": "Гастродон (East)",
-      "zh_hans": "海牛兽 (East)",
-      "zh_hant": "海牛獸 (East)"
+      "de": "Gastrodon (Westen)",
+      "fr": "Tritosor (West)",
+      "en": "Gastrodon (West)",
+      "es": "Gastrodon (Oeste)",
+      "th": "ไทรโทดอน (West)",
+      "ja": "トリトドン (West)",
+      "ko": "트리토돈 (West)",
+      "ru": "Гастродон (West)",
+      "zh_hans": "海牛兽 (West)",
+      "zh_hant": "海牛獸 (West)"
     },
     "ranking": 616,
     "moves": {
@@ -26343,7 +26434,7 @@
       "EARTH_POWER"
     ]
   },
-  "gastrodon_west_sea": {
+  "gastrodon_east_sea": {
     "legal": true,
     "dex": 423,
     "types": [
@@ -26354,16 +26445,16 @@
       "regional"
     ],
     "speciesName": {
-      "de": "Gastrodon (Westen)",
-      "fr": "Tritosor (West)",
-      "en": "Gastrodon (West)",
-      "es": "Gastrodon (Oeste)",
-      "th": "ไทรโทดอน (West)",
-      "ja": "トリトドン (West)",
-      "ko": "트리토돈 (West)",
-      "ru": "Гастродон (West)",
-      "zh_hans": "海牛兽 (West)",
-      "zh_hant": "海牛獸 (West)"
+      "de": "Gastrodon (Osten)",
+      "fr": "Tritosor (East)",
+      "en": "Gastrodon (East)",
+      "es": "Gastrodon (Este)",
+      "th": "ไทรโทดอน (East)",
+      "ja": "トリトドン (East)",
+      "ko": "트리토돈 (East)",
+      "ru": "Гастродон (East)",
+      "zh_hans": "海牛兽 (East)",
+      "zh_hant": "海牛獸 (East)"
     },
     "ranking": 616,
     "moves": {
@@ -36204,9 +36295,6 @@
       "dragon",
       "none"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "speciesName": {
       "de": "Shardrago",
       "fr": "Drakkarmin",
@@ -38847,9 +38935,6 @@
       "electric",
       "fairy"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "speciesName": {
       "de": "Dedenne",
       "fr": "Dedenne",
@@ -39397,7 +39482,8 @@
       "ghost"
     ],
     "tags": [
-      "mythical"
+      "mythical",
+      "untradeable"
     ]
   },
   "hoopa_confined": {
@@ -39421,7 +39507,7 @@
     ],
     "tags": [
       "mythical",
-      "unreleased"
+      "untradeable"
     ]
   },
   "volcanion": {

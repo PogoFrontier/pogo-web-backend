@@ -41,6 +41,7 @@ export type typeId =
   fastMove: string
   chargeMoves: [string, string] | [string]
   sid: number
+  gender: "M" | "F" | "N"
   shiny?: boolean
   name?: string
   current?: Current
@@ -56,6 +57,7 @@ export interface TeamMemberDescription {
   }
   fastMove: string
   chargeMoves: [string, string] | [string]
+  gender: "M" | "F" | "N"
   name?: string
   shiny?: boolean
 }
@@ -75,6 +77,7 @@ export interface Pokemon {
   "tags"?: string[]
   "level25CP"?: number
   "eliteMoves"?: string[]
+  "gender"?: "M" | "F" | "N"
   "sid": number
 }
 
