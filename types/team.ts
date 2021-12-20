@@ -44,6 +44,7 @@ export type typeId =
   shiny?: boolean
   name?: string
   current?: Current
+  gender?: "M" | "F" | "N"
 }
   
 export interface TeamMemberDescription {
