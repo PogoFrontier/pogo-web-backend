@@ -67,7 +67,8 @@ function getRandomPokemon({
         : rule.advancedOptions.movesets
     const cap = rule.maxCP
     const pokemonSource = rule.advancedOptions?.movesets === "mainseries" ? pokemon2 : pokemon;
-    const baseStats = pokemonSource[randPokemon.speciesId].baseStats
+    const speciesData = pokemonSource[randPokemon.speciesId];
+    const baseStats = speciesData.baseStats
     const stats = getIVs({
         pokemon: randPokemon,
         baseStats,
@@ -85,8 +86,8 @@ function getRandomPokemon({
         if(rule.advancedOptions?.movesets === "norestrictions") {
             chargedMovePool = [...chargemoves]
         } else {
-            fastMovePool = pokemonSource[randPokemon.speciesId].fastMoves
-            chargedMovePool = [...pokemonSource[randPokemon.speciesId].chargedMoves]
+          fastMovePool = speciesData.fastMoves
+          chargedMovePool = [...speciesData.chargedMoves]
 
             const isShadow = randPokemon.tags?.includes('shadow')
             if (randPokemon.tags?.includes('shadoweligible')) {
@@ -103,24 +104,30 @@ function getRandomPokemon({
         fastMove = randomMoves.fastMove
         chargedMoves = randomMoves.chargedMoves
     }
-  
-    return {
-        speciesId: randPokemon.speciesId,
-        speciesName: (randPokemon.speciesName && randPokemon.speciesName[language]) ? randPokemon.speciesName[language] : randPokemon.speciesId,
-        hp: stats.hp,
-        atk: stats.atk,
-        def: stats.def,
-        level: stats.level,
-        iv: stats.ivs,
-        baseStats: baseStats,
-        cp: calculateCP(baseStats, stats.level, stats.ivs),
-        price: randPokemon.price,
-        types: randPokemon.types as [typeId, typeId],
-        fastMove,
-        chargeMoves: chargedMoves,
-        sid: pokemonSource[randPokemon.speciesId].sid,
-        dex: randPokemon.dex,
-    }
+
+    let gender = speciesData.gender;
+    if(!gender) {
+      gender = ["M", "F"][Math.round(Math.random())];
+  }
+
+  return {
+    speciesId: randPokemon.speciesId,
+    speciesName: (randPokemon.speciesName && randPokemon.speciesName[language]) ? randPokemon.speciesName[language] : randPokemon.speciesId,
+    hp: stats.hp,
+    atk: stats.atk,
+    def: stats.def,
+    level: stats.level,
+    iv: stats.ivs,
+    baseStats: baseStats,
+    cp: calculateCP(baseStats, stats.level, stats.ivs),
+    price: randPokemon.price,
+    types: randPokemon.types as [typeId, typeId],
+    fastMove,
+    chargeMoves: chargedMoves,
+    sid: speciesData.sid,
+    dex: randPokemon.dex,
+    gender: gender
+  }
 }
 
 function getAvailableSpecies(rule: Rule, previousPokemon: TeamMemberWithDex[], className: string | undefined): PokemonSpecies[] {

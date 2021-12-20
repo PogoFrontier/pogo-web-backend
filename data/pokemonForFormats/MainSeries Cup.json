@@ -8124,6 +8124,19 @@
       "zh_hant": "大鋼蛇"
     }
   },
+  "steelix_mega": {
+    "legal": true,
+    "dex": 208,
+    "types": [
+      "steel",
+      "ground"
+    ],
+    "tags": [
+      "mega",
+      "unreleased"
+    ],
+    "speciesName": {}
+  },
   "snubbull": {
     "legal": true,
     "dex": 209,
@@ -9528,7 +9541,8 @@
       "flying"
     ],
     "tags": [
-      "legendary"
+      "legendary",
+      "shadoweligible"
     ],
     "speciesName": {
       "de": "Lugia",
@@ -9541,6 +9555,30 @@
       "ru": "Люджия",
       "zh_hans": "洛奇亚",
       "zh_hant": "洛奇亞"
+    }
+  },
+  "lugia_shadow": {
+    "legal": true,
+    "dex": 249,
+    "types": [
+      "psychic",
+      "flying"
+    ],
+    "tags": [
+      "legendary",
+      "shadow"
+    ],
+    "speciesName": {
+      "de": "Lugia (Schatten)",
+      "fr": "Lugia (Ombre)",
+      "en": "Lugia (Shadow)",
+      "es": "Lugia (Oscuro)",
+      "th": "ลูเกีย (Shadow)",
+      "ja": "ルギア (Shadow)",
+      "ko": "루기아 (Shadow)",
+      "ru": "Люджия (Shadow)",
+      "zh_hans": "洛奇亚 (Shadow)",
+      "zh_hant": "洛奇亞 (Shadow)"
     }
   },
   "ho_oh": {
@@ -11656,8 +11694,8 @@
       "dark"
     ],
     "tags": [
-      "shadow",
-      "include1500"
+      "shadoweligible",
+      "shadow"
     ],
     "speciesName": {
       "de": "Tohaido (Schatten)",
@@ -11980,6 +12018,9 @@
       "grass",
       "none"
     ],
+    "tags": [
+      "shadoweligible"
+    ],
     "speciesName": {
       "de": "Tuska",
       "fr": "Cacnea",
@@ -11993,12 +12034,38 @@
       "zh_hant": "沙漠奈亞"
     }
   },
+  "cacnea_shadow": {
+    "legal": true,
+    "dex": 331,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": {
+      "de": "Tuska (Schatten)",
+      "fr": "Cacnea (Ombre)",
+      "en": "Cacnea (Shadow)",
+      "es": "Cacnea (Oscuro)",
+      "th": "ซาโบเนีย (Shadow)",
+      "ja": "サボネア (Shadow)",
+      "ko": "선인왕 (Shadow)",
+      "ru": "Какния (Shadow)",
+      "zh_hans": "沙漠奈亚 (Shadow)",
+      "zh_hant": "沙漠奈亞 (Shadow)"
+    }
+  },
   "cacturne": {
     "legal": true,
     "dex": 332,
     "types": [
       "grass",
       "dark"
+    ],
+    "tags": [
+      "shadoweligible"
     ],
     "speciesName": {
       "de": "Noktuska",
@@ -12011,6 +12078,29 @@
       "ru": "Кактурн",
       "zh_hans": "梦歌奈亚",
       "zh_hant": "夢歌奈亞"
+    }
+  },
+  "cacturne_shadow": {
+    "legal": true,
+    "dex": 332,
+    "types": [
+      "grass",
+      "dark"
+    ],
+    "tags": [
+      "shadow"
+    ],
+    "speciesName": {
+      "de": "Noktuska (Schatten)",
+      "fr": "Cacturne (Ombre)",
+      "en": "Cacturne (Shadow)",
+      "es": "Cacturne (Oscuro)",
+      "th": "น็อคทัส (Shadow)",
+      "ja": "ノクタス (Shadow)",
+      "ko": "밤선인 (Shadow)",
+      "ru": "Кактурн (Shadow)",
+      "zh_hans": "梦歌奈亚 (Shadow)",
+      "zh_hant": "夢歌奈亞 (Shadow)"
     }
   },
   "swablu": {
@@ -12864,6 +12954,19 @@
       "zh_hans": "阿勃梭鲁",
       "zh_hant": "阿勃梭魯"
     }
+  },
+  "absol_mega": {
+    "legal": true,
+    "dex": 359,
+    "types": [
+      "dark",
+      "none"
+    ],
+    "tags": [
+      "mega",
+      "unreleased"
+    ],
+    "speciesName": {}
   },
   "absol_shadow": {
     "legal": true,
@@ -14804,26 +14907,6 @@
       "zh_hant": "櫻花兒 (Sunny)"
     }
   },
-  "shellos_east_sea": {
-    "legal": true,
-    "dex": 422,
-    "types": [
-      "water",
-      "none"
-    ],
-    "speciesName": {
-      "de": "Schalellos (Osten)",
-      "fr": "Sancoki (East)",
-      "en": "Shellos (East)",
-      "es": "Shellos (Este)",
-      "th": "คารานะคูชิ (East)",
-      "ja": "カラナクシ (East)",
-      "ko": "깝질무 (East)",
-      "ru": "Шеллос (East)",
-      "zh_hans": "无壳海牛 (East)",
-      "zh_hant": "無殼海牛 (East)"
-    }
-  },
   "shellos_west_sea": {
     "legal": true,
     "dex": 422,
@@ -14844,27 +14927,24 @@
       "zh_hant": "無殼海牛 (West)"
     }
   },
-  "gastrodon_east_sea": {
+  "shellos_east_sea": {
     "legal": true,
-    "dex": 423,
+    "dex": 422,
     "types": [
       "water",
-      "ground"
-    ],
-    "tags": [
-      "regional"
+      "none"
     ],
     "speciesName": {
-      "de": "Gastrodon (Osten)",
-      "fr": "Tritosor (East)",
-      "en": "Gastrodon (East)",
-      "es": "Gastrodon (Este)",
-      "th": "ไทรโทดอน (East)",
-      "ja": "トリトドン (East)",
-      "ko": "트리토돈 (East)",
-      "ru": "Гастродон (East)",
-      "zh_hans": "海牛兽 (East)",
-      "zh_hant": "海牛獸 (East)"
+      "de": "Schalellos (Osten)",
+      "fr": "Sancoki (East)",
+      "en": "Shellos (East)",
+      "es": "Shellos (Este)",
+      "th": "คารานะคูชิ (East)",
+      "ja": "カラナクシ (East)",
+      "ko": "깝질무 (East)",
+      "ru": "Шеллос (East)",
+      "zh_hans": "无壳海牛 (East)",
+      "zh_hant": "無殼海牛 (East)"
     }
   },
   "gastrodon_west_sea": {
@@ -14888,6 +14968,29 @@
       "ru": "Гастродон (West)",
       "zh_hans": "海牛兽 (West)",
       "zh_hant": "海牛獸 (West)"
+    }
+  },
+  "gastrodon_east_sea": {
+    "legal": true,
+    "dex": 423,
+    "types": [
+      "water",
+      "ground"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "speciesName": {
+      "de": "Gastrodon (Osten)",
+      "fr": "Tritosor (East)",
+      "en": "Gastrodon (East)",
+      "es": "Gastrodon (Este)",
+      "th": "ไทรโทดอน (East)",
+      "ja": "トリトドン (East)",
+      "ko": "트리토돈 (East)",
+      "ru": "Гастродон (East)",
+      "zh_hans": "海牛兽 (East)",
+      "zh_hant": "海牛獸 (East)"
     }
   },
   "ambipom": {
@@ -20208,9 +20311,6 @@
       "dragon",
       "none"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "speciesName": {
       "de": "Shardrago",
       "fr": "Drakkarmin",
@@ -22259,9 +22359,6 @@
       "electric",
       "fairy"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "speciesName": {
       "de": "Dedenne",
       "fr": "Dedenne",
@@ -22701,7 +22798,8 @@
       "ghost"
     ],
     "tags": [
-      "mythical"
+      "mythical",
+      "untradeable"
     ],
     "speciesName": {
       "de": "Hoopa",
@@ -22749,7 +22847,7 @@
     ],
     "tags": [
       "mythical",
-      "unreleased"
+      "untradeable"
     ],
     "speciesName": {
       "de": "Hoopa (Entfesselt)",

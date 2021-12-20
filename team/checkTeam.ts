@@ -71,9 +71,9 @@ export function isTeamValid(team: TeamMember[], format: Rule, strings: any): {is
       const shouldUseMainSeriesData = format.advancedOptions && format.advancedOptions.movesets === "mainseries"
       let speciesData: Pokemon;
       if (shouldUseMainSeriesData === true) {
-        speciesData = mainSeriesPokeData[pokemon.speciesId as keyof typeof mainSeriesPokeData]
+        speciesData = mainSeriesPokeData[pokemon.speciesId as keyof typeof mainSeriesPokeData] as Pokemon;
       } else {
-        speciesData = pokeData[pokemon.speciesId as keyof typeof pokeData];
+        speciesData = pokeData[pokemon.speciesId as keyof typeof pokeData] as Pokemon;
       }
       
       // Check if pokémon violates any of the rules defined in flags
@@ -132,6 +132,7 @@ type reducedPoke = {
   speciesId: string
   fastMove?: string
   chargeMoves?: string[]
+  gender?: "M" | "F" | "N"
 }
 
 export function isSpeciesAllowed(pokemon: reducedPoke, format: Rule, position: number, strings? : any): {isValid: boolean, violations: string[]} {
@@ -141,9 +142,9 @@ export function isSpeciesAllowed(pokemon: reducedPoke, format: Rule, position: n
   const shouldUseMainSeriesData = format.advancedOptions && format.advancedOptions.movesets === "mainseries"
   let speciesData: Pokemon;
   if (shouldUseMainSeriesData === true) {
-    speciesData = mainSeriesPokeData[pokemon.speciesId as keyof typeof mainSeriesPokeData]
+    speciesData = mainSeriesPokeData[pokemon.speciesId as keyof typeof mainSeriesPokeData] as Pokemon;
   } else {
-    speciesData = pokeData[pokemon.speciesId as keyof typeof pokeData];
+    speciesData = pokeData[pokemon.speciesId as keyof typeof pokeData] as Pokemon;
   }
 
   // Check moves
@@ -162,6 +163,18 @@ export function isSpeciesAllowed(pokemon: reducedPoke, format: Rule, position: n
     for (let illegalChargeMove of illegalChargeMoves) {
       strings ? violations.push(strings.team_verify_invalid_move.replace("%1", position).replace("%2", illegalChargeMove)) : violations.push("invalid");
     }
+  }
+
+  // Check gender
+   if (!speciesData.gender && pokemon.gender === "N") {
+    violations.push(strings.team_verify_invalid_neutral_gender.replace("%1", position.toString()));
+  } else if (pokemon.gender && speciesData.gender && pokemon.gender !== speciesData.gender) {
+    const genderMap = {
+      M: strings.gender_male,
+      F: strings.gender_female, 
+      N: strings.gender_neutral
+    }
+    violations.push(strings.team_verify_invalid_wrong_gender.replace("%1", position.toString().replace("%2", genderMap[pokemon.gender])));
   }
 
   // Check if pokemon is included
@@ -236,7 +249,8 @@ export function parseToTeamMembers (team: TeamMemberDescription[]): TeamMember[]
           types: ["none", "none"],
           fastMove: "",
           chargeMoves: [""],
-          sid: 0
+          sid: 0,
+          gender: "N"
         };
       }
   
@@ -271,7 +285,8 @@ export function parseToTeamMembers (team: TeamMemberDescription[]): TeamMember[]
         chargeMoves: member.chargeMoves,
         shiny: member.shiny,
         name: member.name,
-        sid: speciesData.sid
+        sid: speciesData.sid,
+        gender: member.gender
       };
     })
 }

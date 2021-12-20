@@ -1,5 +1,7 @@
 import fs from "fs";
 import https from "https"
+import { Pokedex as pokedex } from "../data/pokedex";
+import { getLearnSetKey } from './util';
 
 let pokemonList: any = {}
 const unreleasedTag = "unreleased"
@@ -85,6 +87,20 @@ https.get("https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/gamem
                     delete pokemon.defaultIVs
         
                     pokemon.sid = getSid(pokemon.speciesId, sids)
+                    pokemon.gender = pokedex[getLearnSetKey(pokemon.speciesId)].gender
+
+                    if(["shellos", "gastrodon"].includes(pokemon.speciesId)) {
+                        let copy = { ...pokemon };
+                        copy.speciesId = pokemon.speciesId + "_west_sea"
+                        copy.speciesName = pokemon.speciesName + " (West)"
+                        copy.sid = getSid(copy.speciesId, sids)
+                        pokemonList[copy.speciesId] = copy
+
+                        pokemon.speciesId = pokemon.speciesId + "_east_sea"
+                        pokemon.speciesName = pokemon.speciesName + " (East)"
+                        pokemon.sid = getSid(pokemon.speciesId, sids)
+                    }
+
                     pokemonList[pokemon.speciesId] = pokemon
                 }
         

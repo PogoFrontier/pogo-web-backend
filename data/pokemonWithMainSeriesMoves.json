@@ -5378,7 +5378,8 @@
     "tags": [
       "shadoweligible"
     ],
-    "sid": 928
+    "sid": 928,
+    "gender": "F"
   },
   "nidoran_female_shadow": {
     "dex": 29,
@@ -5459,7 +5460,8 @@
     "tags": [
       "shadow"
     ],
-    "sid": 928
+    "sid": 928,
+    "gender": "F"
   },
   "nidorina": {
     "dex": 30,
@@ -5543,7 +5545,8 @@
     "tags": [
       "shadoweligible"
     ],
-    "sid": 960
+    "sid": 960,
+    "gender": "F"
   },
   "nidorina_shadow": {
     "dex": 30,
@@ -5626,7 +5629,8 @@
     "tags": [
       "shadow"
     ],
-    "sid": 960
+    "sid": 960,
+    "gender": "F"
   },
   "nidoqueen": {
     "dex": 31,
@@ -5746,7 +5750,8 @@
     ],
     "level25CP": 1519,
     "searchPriority": 2,
-    "sid": 992
+    "sid": 992,
+    "gender": "F"
   },
   "nidoqueen_shadow": {
     "dex": 31,
@@ -5864,7 +5869,9 @@
     "tags": [
       "shadow"
     ],
-    "sid": 992
+    "searchPriority": 2,
+    "sid": 992,
+    "gender": "F"
   },
   "nidoran_male": {
     "dex": 32,
@@ -5944,7 +5951,8 @@
     "tags": [
       "shadoweligible"
     ],
-    "sid": 1024
+    "sid": 1024,
+    "gender": "M"
   },
   "nidoran_male_shadow": {
     "dex": 32,
@@ -6023,7 +6031,8 @@
     "tags": [
       "shadow"
     ],
-    "sid": 1024
+    "sid": 1024,
+    "gender": "M"
   },
   "nidorino": {
     "dex": 33,
@@ -6105,7 +6114,8 @@
     "tags": [
       "shadoweligible"
     ],
-    "sid": 1056
+    "sid": 1056,
+    "gender": "M"
   },
   "nidorino_shadow": {
     "dex": 33,
@@ -6186,7 +6196,8 @@
     "tags": [
       "shadow"
     ],
-    "sid": 1056
+    "sid": 1056,
+    "gender": "M"
   },
   "nidoking": {
     "dex": 34,
@@ -6303,7 +6314,8 @@
     "tags": [
       "shadoweligible"
     ],
-    "sid": 1088
+    "sid": 1088,
+    "gender": "M"
   },
   "nidoking_shadow": {
     "dex": 34,
@@ -6419,7 +6431,8 @@
     "tags": [
       "shadow"
     ],
-    "sid": 1088
+    "sid": 1088,
+    "gender": "M"
   },
   "clefairy": {
     "dex": 35,
@@ -7638,6 +7651,7 @@
     "tags": [
       "shadow"
     ],
+    "searchPriority": 8,
     "sid": 1344
   },
   "oddish": {
@@ -14169,7 +14183,8 @@
     "tags": [
       "shadoweligible"
     ],
-    "sid": 2592
+    "sid": 2592,
+    "gender": "N"
   },
   "magnemite_shadow": {
     "dex": 81,
@@ -14241,7 +14256,8 @@
     "tags": [
       "shadow"
     ],
-    "sid": 2592
+    "sid": 2592,
+    "gender": "N"
   },
   "magneton": {
     "dex": 82,
@@ -14317,7 +14333,8 @@
     "tags": [
       "shadoweligible"
     ],
-    "sid": 2624
+    "sid": 2624,
+    "gender": "N"
   },
   "magneton_shadow": {
     "dex": 82,
@@ -14392,7 +14409,8 @@
     "tags": [
       "shadow"
     ],
-    "sid": 2624
+    "sid": 2624,
+    "gender": "N"
   },
   "farfetchd": {
     "dex": 83,
@@ -16650,7 +16668,8 @@
       "ZAP_CANNON",
       "STRUGGLE"
     ],
-    "sid": 3200
+    "sid": 3200,
+    "gender": "N"
   },
   "electrode": {
     "dex": 101,
@@ -16721,7 +16740,8 @@
       "ZAP_CANNON",
       "STRUGGLE"
     ],
-    "sid": 3232
+    "sid": 3232,
+    "gender": "N"
   },
   "exeggcute": {
     "dex": 102,
@@ -17667,7 +17687,8 @@
     "tags": [
       "shadoweligible"
     ],
-    "sid": 3392
+    "sid": 3392,
+    "gender": "M"
   },
   "hitmonlee_shadow": {
     "dex": 106,
@@ -17748,7 +17769,8 @@
     "tags": [
       "shadow"
     ],
-    "sid": 3392
+    "sid": 3392,
+    "gender": "M"
   },
   "hitmonchan": {
     "dex": 107,
@@ -17829,7 +17851,8 @@
     "tags": [
       "shadoweligible"
     ],
-    "sid": 3424
+    "sid": 3424,
+    "gender": "M"
   },
   "hitmonchan_shadow": {
     "dex": 107,
@@ -17909,7 +17932,8 @@
     "tags": [
       "shadow"
     ],
-    "sid": 3424
+    "sid": 3424,
+    "gender": "M"
   },
   "lickitung": {
     "dex": 108,
@@ -18689,7 +18713,8 @@
     "legacyMoves": [
       "PSYBEAM"
     ],
-    "sid": 3616
+    "sid": 3616,
+    "gender": "F"
   },
   "tangela": {
     "dex": 114,
@@ -18948,7 +18973,8 @@
       "regional"
     ],
     "level25CP": 1583,
-    "sid": 3680
+    "sid": 3680,
+    "gender": "F"
   },
   "horsea": {
     "dex": 116,
@@ -19509,7 +19535,8 @@
     "legacyMoves": [
       "QUICK_ATTACK"
     ],
-    "sid": 3840
+    "sid": 3840,
+    "gender": "N"
   },
   "starmie": {
     "dex": 121,
@@ -19597,7 +19624,8 @@
       "QUICK_ATTACK",
       "PSYBEAM"
     ],
-    "sid": 3872
+    "sid": 3872,
+    "gender": "N"
   },
   "mr_mime": {
     "dex": 122,
@@ -20024,7 +20052,8 @@
       "WATER_PULSE",
       "STRUGGLE"
     ],
-    "sid": 3968
+    "sid": 3968,
+    "gender": "F"
   },
   "electabuzz": {
     "dex": 125,
@@ -20621,7 +20650,8 @@
     "tags": [
       "regional"
     ],
-    "sid": 4096
+    "sid": 4096,
+    "gender": "M"
   },
   "magikarp": {
     "dex": 129,
@@ -21221,7 +21251,8 @@
     "chargedMoves": [
       "STRUGGLE"
     ],
-    "sid": 4224
+    "sid": 4224,
+    "gender": "N"
   },
   "eevee": {
     "dex": 133,
@@ -21620,7 +21651,8 @@
     "tags": [
       "shadoweligible"
     ],
-    "sid": 4384
+    "sid": 4384,
+    "gender": "N"
   },
   "porygon_shadow": {
     "dex": 137,
@@ -21702,7 +21734,8 @@
     "tags": [
       "shadow"
     ],
-    "sid": 4384
+    "sid": 4384,
+    "gender": "N"
   },
   "omanyte": {
     "dex": 138,
@@ -22714,7 +22747,8 @@
     ],
     "level25CP": 1893,
     "searchPriority": 6,
-    "sid": 4608
+    "sid": 4608,
+    "gender": "N"
   },
   "articuno_shadow": {
     "dex": 144,
@@ -22803,7 +22837,8 @@
       "shadow"
     ],
     "searchPriority": 6,
-    "sid": 4608
+    "sid": 4608,
+    "gender": "N"
   },
   "zapdos": {
     "dex": 145,
@@ -22889,7 +22924,8 @@
       "shadoweligible"
     ],
     "level25CP": 2208,
-    "sid": 4640
+    "sid": 4640,
+    "gender": "N"
   },
   "zapdos_shadow": {
     "dex": 145,
@@ -22974,7 +23010,8 @@
       "legendary",
       "shadow"
     ],
-    "sid": 4640
+    "sid": 4640,
+    "gender": "N"
   },
   "moltres": {
     "dex": 146,
@@ -23061,7 +23098,8 @@
       "shadoweligible"
     ],
     "level25CP": 2167,
-    "sid": 4672
+    "sid": 4672,
+    "gender": "N"
   },
   "moltres_shadow": {
     "dex": 146,
@@ -23147,7 +23185,8 @@
       "legendary",
       "shadow"
     ],
-    "sid": 4672
+    "sid": 4672,
+    "gender": "N"
   },
   "dratini": {
     "dex": 147,
@@ -23840,7 +23879,8 @@
       "shadoweligible"
     ],
     "level25CP": 2641,
-    "sid": 4800
+    "sid": 4800,
+    "gender": "N"
   },
   "mewtwo_armored": {
     "dex": 150,
@@ -23954,7 +23994,8 @@
     "tags": [
       "legendary"
     ],
-    "sid": 4800
+    "sid": 4800,
+    "gender": "N"
   },
   "mewtwo_shadow": {
     "dex": 150,
@@ -24069,7 +24110,8 @@
       "legendary",
       "shadow"
     ],
-    "sid": 4800
+    "sid": 4800,
+    "gender": "N"
   },
   "mew": {
     "dex": 151,
@@ -24264,7 +24306,8 @@
       "untradeable"
     ],
     "levelCap": 40,
-    "sid": 4832
+    "sid": 4832,
+    "gender": "N"
   },
   "chikorita": {
     "dex": 152,
@@ -25819,6 +25862,7 @@
       "MEGA_DRAIN",
       "STRUGGLE"
     ],
+    "searchPriority": 3,
     "tags": [
       "shadow"
     ],
@@ -29630,7 +29674,8 @@
     "chargedMoves": [
       "STRUGGLE"
     ],
-    "sid": 6432
+    "sid": 6432,
+    "gender": "N"
   },
   "wobbuffet": {
     "dex": 202,
@@ -30449,6 +30494,88 @@
     ],
     "sid": 6656
   },
+  "steelix_mega": {
+    "dex": 208,
+    "speciesName": {},
+    "speciesId": "steelix_mega",
+    "baseStats": {
+      "atk": 212,
+      "def": 327,
+      "hp": 181
+    },
+    "types": [
+      "steel",
+      "ground"
+    ],
+    "fastMoves": [
+      "CUT",
+      "DRAGON_BREATH",
+      "DRAGON_TAIL",
+      "FIRE_FANG",
+      "HIDDEN_POWER_BUG",
+      "HIDDEN_POWER_DARK",
+      "HIDDEN_POWER_DRAGON",
+      "HIDDEN_POWER_ELECTRIC",
+      "HIDDEN_POWER_FIGHTING",
+      "HIDDEN_POWER_FIRE",
+      "HIDDEN_POWER_FLYING",
+      "HIDDEN_POWER_GHOST",
+      "HIDDEN_POWER_GRASS",
+      "HIDDEN_POWER_GROUND",
+      "HIDDEN_POWER_ICE",
+      "HIDDEN_POWER_NORMAL",
+      "HIDDEN_POWER_POISON",
+      "HIDDEN_POWER_PSYCHIC",
+      "HIDDEN_POWER_ROCK",
+      "HIDDEN_POWER_STEEL",
+      "HIDDEN_POWER_WATER",
+      "ICE_FANG",
+      "IRON_TAIL",
+      "MUD_SLAP",
+      "ROCK_SMASH",
+      "ROCK_THROW",
+      "SMACK_DOWN",
+      "TACKLE",
+      "THUNDER_FANG",
+      "TAKE_DOWN"
+    ],
+    "chargedMoves": [
+      "ANCIENT_POWER",
+      "AQUA_TAIL",
+      "BODY_SLAM",
+      "BULLDOZE",
+      "CRUNCH",
+      "DARK_PULSE",
+      "DIG",
+      "DRAGON_PULSE",
+      "DRILL_RUN",
+      "EARTH_POWER",
+      "EARTHQUAKE",
+      "FLASH_CANNON",
+      "FRUSTRATION",
+      "GIGA_IMPACT",
+      "GYRO_BALL",
+      "HEAVY_SLAM",
+      "HYPER_BEAM",
+      "IRON_HEAD",
+      "PAYBACK",
+      "REST",
+      "RETURN",
+      "ROCK_BLAST",
+      "ROCK_SLIDE",
+      "ROCK_TOMB",
+      "SAND_TOMB",
+      "STONE_EDGE",
+      "TWISTER",
+      "SKULL_BASH",
+      "STRUGGLE"
+    ],
+    "tags": [
+      "mega",
+      "unreleased"
+    ],
+    "sid": 6657
+  },
   "snubbull": {
     "dex": 209,
     "speciesName": {
@@ -30855,6 +30982,7 @@
       "CLOSE_COMBAT",
       "STRUGGLE"
     ],
+    "searchPriority": 3,
     "tags": [
       "shadow"
     ],
@@ -32058,6 +32186,7 @@
       "STONE_EDGE",
       "STRUGGLE"
     ],
+    "searchPriority": 5,
     "sid": 7008
   },
   "swinub": {
@@ -33902,7 +34031,8 @@
     "tags": [
       "shadoweligible"
     ],
-    "sid": 7456
+    "sid": 7456,
+    "gender": "N"
   },
   "porygon2_shadow": {
     "dex": 233,
@@ -33984,7 +34114,8 @@
     "tags": [
       "shadow"
     ],
-    "sid": 7456
+    "sid": 7456,
+    "gender": "N"
   },
   "stantler": {
     "dex": 234,
@@ -34492,7 +34623,8 @@
       "SWIFT",
       "STRUGGLE"
     ],
-    "sid": 7552
+    "sid": 7552,
+    "gender": "M"
   },
   "hitmontop": {
     "dex": 237,
@@ -34566,7 +34698,8 @@
       "TWISTER",
       "STRUGGLE"
     ],
-    "sid": 7584
+    "sid": 7584,
+    "gender": "M"
   },
   "smoochum": {
     "dex": 238,
@@ -34642,7 +34775,8 @@
       "WATER_PULSE",
       "STRUGGLE"
     ],
-    "sid": 7616
+    "sid": 7616,
+    "gender": "F"
   },
   "elekid": {
     "dex": 239,
@@ -34883,7 +35017,8 @@
       "ZAP_CANNON",
       "STRUGGLE"
     ],
-    "sid": 7712
+    "sid": 7712,
+    "gender": "F"
   },
   "blissey": {
     "dex": 242,
@@ -34983,7 +35118,8 @@
       "SUBMISSION",
       "STRUGGLE"
     ],
-    "sid": 7744
+    "sid": 7744,
+    "gender": "F"
   },
   "raikou": {
     "dex": 243,
@@ -35070,7 +35206,8 @@
       "shadoweligible"
     ],
     "level25CP": 2160,
-    "sid": 7776
+    "sid": 7776,
+    "gender": "N"
   },
   "raikou_shadow": {
     "dex": 243,
@@ -35156,7 +35293,8 @@
       "legendary",
       "shadow"
     ],
-    "sid": 7776
+    "sid": 7776,
+    "gender": "N"
   },
   "entei": {
     "dex": 244,
@@ -35242,7 +35380,8 @@
       "shadoweligible"
     ],
     "level25CP": 2172,
-    "sid": 7808
+    "sid": 7808,
+    "gender": "N"
   },
   "entei_shadow": {
     "dex": 244,
@@ -35327,7 +35466,8 @@
       "legendary",
       "shadow"
     ],
-    "sid": 7808
+    "sid": 7808,
+    "gender": "N"
   },
   "suicune": {
     "dex": 245,
@@ -35419,7 +35559,8 @@
       "shadoweligible"
     ],
     "level25CP": 1846,
-    "sid": 7840
+    "sid": 7840,
+    "gender": "N"
   },
   "suicune_shadow": {
     "dex": 245,
@@ -35510,7 +35651,8 @@
       "legendary",
       "shadow"
     ],
-    "sid": 7840
+    "sid": 7840,
+    "gender": "N"
   },
   "larvitar": {
     "dex": 246,
@@ -36184,9 +36326,119 @@
       "STRUGGLE"
     ],
     "tags": [
-      "legendary"
+      "legendary",
+      "shadoweligible"
     ],
-    "sid": 7968
+    "level25CP": 2324,
+    "sid": 7968,
+    "gender": "N"
+  },
+  "lugia_shadow": {
+    "dex": 249,
+    "speciesName": {
+      "de": "Lugia (Schatten)",
+      "fr": "Lugia (Ombre)",
+      "en": "Lugia (Shadow)",
+      "es": "Lugia (Oscuro)",
+      "th": "ลูเกีย (Shadow)",
+      "ja": "ルギア (Shadow)",
+      "ko": "루기아 (Shadow)",
+      "ru": "Люджия (Shadow)",
+      "zh_hans": "洛奇亚 (Shadow)",
+      "zh_hant": "洛奇亞 (Shadow)"
+    },
+    "speciesId": "lugia_shadow",
+    "baseStats": {
+      "atk": 193,
+      "def": 310,
+      "hp": 235
+    },
+    "types": [
+      "psychic",
+      "flying"
+    ],
+    "fastMoves": [
+      "AIR_SLASH",
+      "CHARGE_BEAM",
+      "DRAGON_BREATH",
+      "DRAGON_TAIL",
+      "EXTRASENSORY",
+      "GUST",
+      "HIDDEN_POWER_BUG",
+      "HIDDEN_POWER_DARK",
+      "HIDDEN_POWER_DRAGON",
+      "HIDDEN_POWER_ELECTRIC",
+      "HIDDEN_POWER_FIGHTING",
+      "HIDDEN_POWER_FIRE",
+      "HIDDEN_POWER_FLYING",
+      "HIDDEN_POWER_GHOST",
+      "HIDDEN_POWER_GRASS",
+      "HIDDEN_POWER_GROUND",
+      "HIDDEN_POWER_ICE",
+      "HIDDEN_POWER_NORMAL",
+      "HIDDEN_POWER_POISON",
+      "HIDDEN_POWER_PSYCHIC",
+      "HIDDEN_POWER_ROCK",
+      "HIDDEN_POWER_STEEL",
+      "HIDDEN_POWER_WATER",
+      "IRON_TAIL",
+      "MUD_SLAP",
+      "ROCK_SMASH",
+      "STEEL_WING",
+      "WATERFALL",
+      "ZEN_HEADBUTT"
+    ],
+    "chargedMoves": [
+      "AERIAL_ACE",
+      "AEROBLAST",
+      "AIR_CUTTER",
+      "ANCIENT_POWER",
+      "AQUA_TAIL",
+      "AVALANCHE",
+      "BLIZZARD",
+      "BODY_SLAM",
+      "BRINE",
+      "BULLDOZE",
+      "DRAGON_PULSE",
+      "EARTH_POWER",
+      "EARTHQUAKE",
+      "FEATHER_DANCE",
+      "FLY",
+      "FRUSTRATION",
+      "FUTURE_SIGHT",
+      "GIGA_DRAIN",
+      "GIGA_IMPACT",
+      "HURRICANE",
+      "HYDRO_PUMP",
+      "HYPER_BEAM",
+      "ICE_BEAM",
+      "ICY_WIND",
+      "IRON_HEAD",
+      "OMINOUS_WIND",
+      "PSYCHIC",
+      "PSYCHO_BOOST",
+      "PSYSHOCK",
+      "REST",
+      "RETURN",
+      "SHADOW_BALL",
+      "SIGNAL_BEAM",
+      "SKY_ATTACK",
+      "SURF",
+      "SWIFT",
+      "THUNDER",
+      "THUNDERBOLT",
+      "TWISTER",
+      "WATER_PULSE",
+      "WEATHER_BALL_NORMAL",
+      "ZAP_CANNON",
+      "STRUGGLE"
+    ],
+    "tags": [
+      "legendary",
+      "shadow"
+    ],
+    "sid": 7968,
+    "gender": "N"
   },
   "ho_oh": {
     "dex": 250,
@@ -36282,8 +36534,9 @@
       "legendary",
       "shadoweligible"
     ],
-    "level25CP": 2457,
-    "sid": 8000
+    "level25CP": 2436,
+    "sid": 8000,
+    "gender": "N"
   },
   "ho_oh_shadow": {
     "dex": 250,
@@ -36379,7 +36632,8 @@
       "legendary",
       "shadow"
     ],
-    "sid": 8000
+    "sid": 8000,
+    "gender": "N"
   },
   "celebi": {
     "dex": 251,
@@ -36465,7 +36719,8 @@
       "untradeable"
     ],
     "levelCap": 40,
-    "sid": 8032
+    "sid": 8032,
+    "gender": "N"
   },
   "treecko": {
     "dex": 252,
@@ -40781,7 +41036,8 @@
       "SILVER_WIND",
       "STRUGGLE"
     ],
-    "sid": 9344
+    "sid": 9344,
+    "gender": "N"
   },
   "whismur": {
     "dex": 293,
@@ -43480,7 +43736,8 @@
     "tags": [
       "regional"
     ],
-    "sid": 10016
+    "sid": 10016,
+    "gender": "M"
   },
   "illumise": {
     "dex": 314,
@@ -43564,7 +43821,8 @@
     "tags": [
       "regional"
     ],
-    "sid": 10048
+    "sid": 10048,
+    "gender": "F"
   },
   "roselia": {
     "dex": 315,
@@ -44123,8 +44381,8 @@
       "STRUGGLE"
     ],
     "tags": [
-      "shadow",
-      "include1500"
+      "shadoweligible",
+      "shadow"
     ],
     "sid": 10208
   },
@@ -45383,6 +45641,87 @@
       "STRUGGLE"
     ],
     "level25CP": 700,
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 10592
+  },
+  "cacnea_shadow": {
+    "dex": 331,
+    "speciesName": {
+      "de": "Tuska (Schatten)",
+      "fr": "Cacnea (Ombre)",
+      "en": "Cacnea (Shadow)",
+      "es": "Cacnea (Oscuro)",
+      "th": "ซาโบเนีย (Shadow)",
+      "ja": "サボネア (Shadow)",
+      "ko": "선인왕 (Shadow)",
+      "ru": "Какния (Shadow)",
+      "zh_hans": "沙漠奈亚 (Shadow)",
+      "zh_hant": "沙漠奈亞 (Shadow)"
+    },
+    "speciesId": "cacnea_shadow",
+    "baseStats": {
+      "atk": 156,
+      "def": 74,
+      "hp": 137
+    },
+    "types": [
+      "grass",
+      "none"
+    ],
+    "fastMoves": [
+      "ACID",
+      "BULLET_SEED",
+      "COUNTER",
+      "CUT",
+      "FEINT_ATTACK",
+      "FURY_CUTTER",
+      "HIDDEN_POWER_BUG",
+      "HIDDEN_POWER_DARK",
+      "HIDDEN_POWER_DRAGON",
+      "HIDDEN_POWER_ELECTRIC",
+      "HIDDEN_POWER_FIGHTING",
+      "HIDDEN_POWER_FIRE",
+      "HIDDEN_POWER_FLYING",
+      "HIDDEN_POWER_GHOST",
+      "HIDDEN_POWER_GRASS",
+      "HIDDEN_POWER_GROUND",
+      "HIDDEN_POWER_ICE",
+      "HIDDEN_POWER_NORMAL",
+      "HIDDEN_POWER_POISON",
+      "HIDDEN_POWER_PSYCHIC",
+      "HIDDEN_POWER_ROCK",
+      "HIDDEN_POWER_STEEL",
+      "HIDDEN_POWER_WATER",
+      "LOW_KICK",
+      "MUD_SLAP",
+      "POISON_JAB",
+      "POISON_STING",
+      "SUCKER_PUNCH"
+    ],
+    "chargedMoves": [
+      "BODY_SLAM",
+      "BRICK_BREAK",
+      "DARK_PULSE",
+      "DYNAMIC_PUNCH",
+      "ENERGY_BALL",
+      "FELL_STINGER",
+      "FRUSTRATION",
+      "GIGA_DRAIN",
+      "GRASS_KNOT",
+      "PAYBACK",
+      "POWER_UP_PUNCH",
+      "REST",
+      "RETURN",
+      "SEED_BOMB",
+      "SOLAR_BEAM",
+      "THUNDER_PUNCH",
+      "STRUGGLE"
+    ],
+    "tags": [
+      "shadow"
+    ],
     "sid": 10592
   },
   "cacturne": {
@@ -45464,6 +45803,92 @@
       "STRUGGLE"
     ],
     "level25CP": 1386,
+    "tags": [
+      "shadoweligible"
+    ],
+    "sid": 10624
+  },
+  "cacturne_shadow": {
+    "dex": 332,
+    "speciesName": {
+      "de": "Noktuska (Schatten)",
+      "fr": "Cacturne (Ombre)",
+      "en": "Cacturne (Shadow)",
+      "es": "Cacturne (Oscuro)",
+      "th": "น็อคทัส (Shadow)",
+      "ja": "ノクタス (Shadow)",
+      "ko": "밤선인 (Shadow)",
+      "ru": "Кактурн (Shadow)",
+      "zh_hans": "梦歌奈亚 (Shadow)",
+      "zh_hant": "夢歌奈亞 (Shadow)"
+    },
+    "speciesId": "cacturne_shadow",
+    "baseStats": {
+      "atk": 221,
+      "def": 115,
+      "hp": 172
+    },
+    "types": [
+      "grass",
+      "dark"
+    ],
+    "fastMoves": [
+      "BULLET_SEED",
+      "COUNTER",
+      "CUT",
+      "FEINT_ATTACK",
+      "FURY_CUTTER",
+      "HIDDEN_POWER_BUG",
+      "HIDDEN_POWER_DARK",
+      "HIDDEN_POWER_DRAGON",
+      "HIDDEN_POWER_ELECTRIC",
+      "HIDDEN_POWER_FIGHTING",
+      "HIDDEN_POWER_FIRE",
+      "HIDDEN_POWER_FLYING",
+      "HIDDEN_POWER_GHOST",
+      "HIDDEN_POWER_GRASS",
+      "HIDDEN_POWER_GROUND",
+      "HIDDEN_POWER_ICE",
+      "HIDDEN_POWER_NORMAL",
+      "HIDDEN_POWER_POISON",
+      "HIDDEN_POWER_PSYCHIC",
+      "HIDDEN_POWER_ROCK",
+      "HIDDEN_POWER_STEEL",
+      "HIDDEN_POWER_WATER",
+      "LOW_KICK",
+      "MUD_SLAP",
+      "POISON_JAB",
+      "POISON_STING",
+      "SUCKER_PUNCH",
+      "ACID"
+    ],
+    "chargedMoves": [
+      "BODY_SLAM",
+      "BRICK_BREAK",
+      "DARK_PULSE",
+      "DYNAMIC_PUNCH",
+      "ENERGY_BALL",
+      "FOCUS_BLAST",
+      "FOUL_PLAY",
+      "FRUSTRATION",
+      "GIGA_DRAIN",
+      "GIGA_IMPACT",
+      "GRASS_KNOT",
+      "HYPER_BEAM",
+      "PAYBACK",
+      "POWER_UP_PUNCH",
+      "REST",
+      "RETURN",
+      "SEED_BOMB",
+      "SOLAR_BEAM",
+      "SUPER_POWER",
+      "THUNDER_PUNCH",
+      "FELL_STINGER",
+      "STRUGGLE"
+    ],
+    "tags": [
+      "shadow"
+    ],
     "sid": 10624
   },
   "swablu": {
@@ -45982,7 +46407,8 @@
     "tags": [
       "regional"
     ],
-    "sid": 10784
+    "sid": 10784,
+    "gender": "N"
   },
   "solrock": {
     "dex": 338,
@@ -46070,7 +46496,8 @@
     "tags": [
       "regional"
     ],
-    "sid": 10816
+    "sid": 10816,
+    "gender": "N"
   },
   "barboach": {
     "dex": 339,
@@ -46478,7 +46905,8 @@
       "SOLAR_BEAM",
       "STRUGGLE"
     ],
-    "sid": 10976
+    "sid": 10976,
+    "gender": "N"
   },
   "claydol": {
     "dex": 344,
@@ -46560,7 +46988,8 @@
       "STONE_EDGE",
       "STRUGGLE"
     ],
-    "sid": 11008
+    "sid": 11008,
+    "gender": "N"
   },
   "lileep": {
     "dex": 345,
@@ -48683,6 +49112,97 @@
     ],
     "sid": 11488
   },
+  "absol_mega": {
+    "dex": 359,
+    "speciesName": {},
+    "speciesId": "absol_mega",
+    "baseStats": {
+      "atk": 314,
+      "def": 130,
+      "hp": 163
+    },
+    "types": [
+      "dark",
+      "none"
+    ],
+    "fastMoves": [
+      "AIR_SLASH",
+      "BITE",
+      "CHARGE_BEAM",
+      "COUNTER",
+      "CUT",
+      "FEINT_ATTACK",
+      "FURY_CUTTER",
+      "HEX",
+      "HIDDEN_POWER_BUG",
+      "HIDDEN_POWER_DARK",
+      "HIDDEN_POWER_DRAGON",
+      "HIDDEN_POWER_ELECTRIC",
+      "HIDDEN_POWER_FIGHTING",
+      "HIDDEN_POWER_FIRE",
+      "HIDDEN_POWER_FLYING",
+      "HIDDEN_POWER_GHOST",
+      "HIDDEN_POWER_GRASS",
+      "HIDDEN_POWER_GROUND",
+      "HIDDEN_POWER_ICE",
+      "HIDDEN_POWER_NORMAL",
+      "HIDDEN_POWER_POISON",
+      "HIDDEN_POWER_PSYCHIC",
+      "HIDDEN_POWER_ROCK",
+      "HIDDEN_POWER_STEEL",
+      "HIDDEN_POWER_WATER",
+      "INCINERATE",
+      "IRON_TAIL",
+      "MUD_SLAP",
+      "PSYCHO_CUT",
+      "QUICK_ATTACK",
+      "ROCK_SMASH",
+      "SCRATCH",
+      "SHADOW_CLAW",
+      "SNARL",
+      "SUCKER_PUNCH",
+      "ZEN_HEADBUTT"
+    ],
+    "chargedMoves": [
+      "AERIAL_ACE",
+      "BLIZZARD",
+      "BODY_SLAM",
+      "CLOSE_COMBAT",
+      "DARK_PULSE",
+      "FIRE_BLAST",
+      "FLAMETHROWER",
+      "FOUL_PLAY",
+      "FRUSTRATION",
+      "FUTURE_SIGHT",
+      "GIGA_IMPACT",
+      "HYPER_BEAM",
+      "ICE_BEAM",
+      "ICY_WIND",
+      "MEGAHORN",
+      "NIGHT_SLASH",
+      "PAYBACK",
+      "PLAY_ROUGH",
+      "REST",
+      "RETURN",
+      "ROCK_SLIDE",
+      "ROCK_TOMB",
+      "SHADOW_BALL",
+      "STONE_EDGE",
+      "SUPER_POWER",
+      "SWIFT",
+      "THUNDER",
+      "THUNDERBOLT",
+      "WATER_PULSE",
+      "X_SCISSOR",
+      "STRUGGLE"
+    ],
+    "level25CP": 1534,
+    "tags": [
+      "mega",
+      "unreleased"
+    ],
+    "sid": 11489
+  },
   "absol_shadow": {
     "dex": 359,
     "speciesName": {
@@ -50360,7 +50880,8 @@
     "tags": [
       "shadoweligible"
     ],
-    "sid": 11968
+    "sid": 11968,
+    "gender": "N"
   },
   "beldum_shadow": {
     "dex": 374,
@@ -50398,7 +50919,8 @@
     "tags": [
       "shadow"
     ],
-    "sid": 11968
+    "sid": 11968,
+    "gender": "N"
   },
   "metang": {
     "dex": 375,
@@ -50488,7 +51010,8 @@
     "tags": [
       "shadoweligible"
     ],
-    "sid": 12000
+    "sid": 12000,
+    "gender": "N"
   },
   "metang_shadow": {
     "dex": 375,
@@ -50577,7 +51100,8 @@
     "tags": [
       "shadow"
     ],
-    "sid": 12000
+    "sid": 12000,
+    "gender": "N"
   },
   "metagross": {
     "dex": 376,
@@ -50669,7 +51193,8 @@
       "shadoweligible"
     ],
     "searchPriority": 20,
-    "sid": 12032
+    "sid": 12032,
+    "gender": "N"
   },
   "metagross_shadow": {
     "dex": 376,
@@ -50760,7 +51285,8 @@
       "shadow"
     ],
     "searchPriority": 20,
-    "sid": 12032
+    "sid": 12032,
+    "gender": "N"
   },
   "regirock": {
     "dex": 377,
@@ -50849,7 +51375,8 @@
     "tags": [
       "legendary"
     ],
-    "sid": 12064
+    "sid": 12064,
+    "gender": "N"
   },
   "regice": {
     "dex": 378,
@@ -50936,7 +51463,8 @@
     "tags": [
       "legendary"
     ],
-    "sid": 12096
+    "sid": 12096,
+    "gender": "N"
   },
   "registeel": {
     "dex": 379,
@@ -51022,7 +51550,8 @@
       "legendary"
     ],
     "searchPriority": 40,
-    "sid": 12128
+    "sid": 12128,
+    "gender": "N"
   },
   "latias": {
     "dex": 380,
@@ -51119,7 +51648,8 @@
     "tags": [
       "legendary"
     ],
-    "sid": 12160
+    "sid": 12160,
+    "gender": "F"
   },
   "latios": {
     "dex": 381,
@@ -51214,7 +51744,8 @@
     "tags": [
       "legendary"
     ],
-    "sid": 12192
+    "sid": 12192,
+    "gender": "M"
   },
   "kyogre": {
     "dex": 382,
@@ -51299,7 +51830,8 @@
       "legendary"
     ],
     "searchPriority": 10,
-    "sid": 12224
+    "sid": 12224,
+    "gender": "N"
   },
   "groudon": {
     "dex": 383,
@@ -51395,7 +51927,8 @@
       "legendary"
     ],
     "searchPriority": 20,
-    "sid": 12256
+    "sid": 12256,
+    "gender": "N"
   },
   "rayquaza": {
     "dex": 384,
@@ -51498,7 +52031,8 @@
     "tags": [
       "legendary"
     ],
-    "sid": 12288
+    "sid": 12288,
+    "gender": "N"
   },
   "jirachi": {
     "dex": 385,
@@ -51592,7 +52126,8 @@
       "untradeable"
     ],
     "levelCap": 40,
-    "sid": 12320
+    "sid": 12320,
+    "gender": "N"
   },
   "deoxys": {
     "dex": 386,
@@ -51692,7 +52227,8 @@
       "mythical",
       "untradeable"
     ],
-    "sid": 12352
+    "sid": 12352,
+    "gender": "N"
   },
   "deoxys_attack": {
     "dex": 386,
@@ -51792,7 +52328,8 @@
       "mythical",
       "untradeable"
     ],
-    "sid": 12353
+    "sid": 12353,
+    "gender": "N"
   },
   "deoxys_defense": {
     "dex": 386,
@@ -51893,7 +52430,8 @@
       "untradeable"
     ],
     "searchPriority": 15,
-    "sid": 12354
+    "sid": 12354,
+    "gender": "N"
   },
   "deoxys_speed": {
     "dex": 386,
@@ -51993,7 +52531,8 @@
       "mythical",
       "untradeable"
     ],
-    "sid": 12355
+    "sid": 12355,
+    "gender": "N"
   },
   "turtwig": {
     "dex": 387,
@@ -53505,7 +54044,7 @@
     "tags": [
       "shadoweligible"
     ],
-    "level25CP": 385,
+    "level25CP": 377,
     "sid": 12768
   },
   "bidoof_shadow": {
@@ -53585,7 +54124,6 @@
     "tags": [
       "shadow"
     ],
-    "level25CP": 385,
     "sid": 12768
   },
   "bibarel": {
@@ -53674,7 +54212,7 @@
     "tags": [
       "shadoweligible"
     ],
-    "level25CP": 1095,
+    "level25CP": 1081,
     "sid": 12800
   },
   "bibarel_shadow": {
@@ -53763,7 +54301,6 @@
     "tags": [
       "shadow"
     ],
-    "level25CP": 1095,
     "sid": 12800
   },
   "kricketot": {
@@ -54094,6 +54631,7 @@
       "NIGHT_SLASH",
       "STRUGGLE"
     ],
+    "searchPriority": 2,
     "sid": 12960
   },
   "budew": {
@@ -54793,7 +55331,8 @@
       "SOLAR_BEAM",
       "STRUGGLE"
     ],
-    "sid": 13216
+    "sid": 13216,
+    "gender": "F"
   },
   "wormadam_sandy": {
     "dex": 413,
@@ -54864,7 +55403,8 @@
       "SIGNAL_BEAM",
       "STRUGGLE"
     ],
-    "sid": 13217
+    "sid": 13217,
+    "gender": "F"
   },
   "wormadam_trash": {
     "dex": 413,
@@ -54934,7 +55474,8 @@
       "STRUGGLE"
     ],
     "searchPriority": 2,
-    "sid": 13218
+    "sid": 13218,
+    "gender": "F"
   },
   "mothim": {
     "dex": 414,
@@ -55010,7 +55551,8 @@
       "TWISTER",
       "STRUGGLE"
     ],
-    "sid": 13248
+    "sid": 13248,
+    "gender": "M"
   },
   "combee": {
     "dex": 415,
@@ -55124,7 +55666,8 @@
       "X_SCISSOR",
       "STRUGGLE"
     ],
-    "sid": 13312
+    "sid": 13312,
+    "gender": "F"
   },
   "pachirisu": {
     "dex": 417,
@@ -55555,78 +56098,6 @@
     "searchPriority": 7,
     "sid": 13473
   },
-  "shellos_east_sea": {
-    "dex": 422,
-    "speciesName": {
-      "de": "Schalellos (Osten)",
-      "fr": "Sancoki (East)",
-      "en": "Shellos (East)",
-      "es": "Shellos (Este)",
-      "th": "คารานะคูชิ (East)",
-      "ja": "カラナクシ (East)",
-      "ko": "깝질무 (East)",
-      "ru": "Шеллос (East)",
-      "zh_hans": "无壳海牛 (East)",
-      "zh_hant": "無殼海牛 (East)"
-    },
-    "speciesId": "shellos_east_sea",
-    "baseStats": {
-      "atk": 103,
-      "def": 105,
-      "hp": 183
-    },
-    "types": [
-      "water",
-      "none"
-    ],
-    "fastMoves": [
-      "COUNTER",
-      "HIDDEN_POWER_BUG",
-      "HIDDEN_POWER_DARK",
-      "HIDDEN_POWER_DRAGON",
-      "HIDDEN_POWER_ELECTRIC",
-      "HIDDEN_POWER_FIGHTING",
-      "HIDDEN_POWER_FIRE",
-      "HIDDEN_POWER_FLYING",
-      "HIDDEN_POWER_GHOST",
-      "HIDDEN_POWER_GRASS",
-      "HIDDEN_POWER_GROUND",
-      "HIDDEN_POWER_ICE",
-      "HIDDEN_POWER_NORMAL",
-      "HIDDEN_POWER_POISON",
-      "HIDDEN_POWER_PSYCHIC",
-      "HIDDEN_POWER_ROCK",
-      "HIDDEN_POWER_STEEL",
-      "HIDDEN_POWER_WATER",
-      "INFESTATION",
-      "MUD_SHOT",
-      "MUD_SLAP",
-      "WATER_GUN",
-      "YAWN"
-    ],
-    "chargedMoves": [
-      "ANCIENT_POWER",
-      "BLIZZARD",
-      "BODY_SLAM",
-      "BRINE",
-      "EARTH_POWER",
-      "FRUSTRATION",
-      "HYDRO_PUMP",
-      "ICE_BEAM",
-      "ICY_WIND",
-      "MIRROR_COAT",
-      "MUD_BOMB",
-      "MUDDY_WATER",
-      "REST",
-      "RETURN",
-      "SCALD",
-      "SLUDGE",
-      "SURF",
-      "WATER_PULSE",
-      "STRUGGLE"
-    ],
-    "sid": 13505
-  },
   "shellos_west_sea": {
     "dex": 422,
     "speciesName": {
@@ -55699,31 +56170,32 @@
     ],
     "sid": 13504
   },
-  "gastrodon_east_sea": {
-    "dex": 423,
+  "shellos_east_sea": {
+    "dex": 422,
     "speciesName": {
-      "de": "Gastrodon (Osten)",
-      "fr": "Tritosor (East)",
-      "en": "Gastrodon (East)",
-      "es": "Gastrodon (Este)",
-      "th": "ไทรโทดอน (East)",
-      "ja": "トリトドン (East)",
-      "ko": "트리토돈 (East)",
-      "ru": "Гастродон (East)",
-      "zh_hans": "海牛兽 (East)",
-      "zh_hant": "海牛獸 (East)"
+      "de": "Schalellos (Osten)",
+      "fr": "Sancoki (East)",
+      "en": "Shellos (East)",
+      "es": "Shellos (Este)",
+      "th": "คารานะคูชิ (East)",
+      "ja": "カラナクシ (East)",
+      "ko": "깝질무 (East)",
+      "ru": "Шеллос (East)",
+      "zh_hans": "无壳海牛 (East)",
+      "zh_hant": "無殼海牛 (East)"
     },
-    "speciesId": "gastrodon_east_sea",
+    "speciesId": "shellos_east_sea",
     "baseStats": {
-      "atk": 169,
-      "def": 143,
-      "hp": 244
+      "atk": 103,
+      "def": 105,
+      "hp": 183
     },
     "types": [
       "water",
-      "ground"
+      "none"
     ],
     "fastMoves": [
+      "COUNTER",
       "HIDDEN_POWER_BUG",
       "HIDDEN_POWER_DARK",
       "HIDDEN_POWER_DRAGON",
@@ -55744,10 +56216,7 @@
       "INFESTATION",
       "MUD_SHOT",
       "MUD_SLAP",
-      "ROCK_SMASH",
-      "WATERFALL",
       "WATER_GUN",
-      "COUNTER",
       "YAWN"
     ],
     "chargedMoves": [
@@ -55755,41 +56224,23 @@
       "BLIZZARD",
       "BODY_SLAM",
       "BRINE",
-      "BULLDOZE",
-      "DIG",
       "EARTH_POWER",
-      "EARTHQUAKE",
       "FRUSTRATION",
-      "GIGA_IMPACT",
       "HYDRO_PUMP",
-      "HYPER_BEAM",
       "ICE_BEAM",
       "ICY_WIND",
+      "MIRROR_COAT",
       "MUD_BOMB",
       "MUDDY_WATER",
       "REST",
       "RETURN",
-      "ROCK_SLIDE",
-      "ROCK_TOMB",
-      "SAND_TOMB",
       "SCALD",
-      "SLUDGE_BOMB",
-      "SLUDGE_WAVE",
-      "STONE_EDGE",
+      "SLUDGE",
       "SURF",
       "WATER_PULSE",
-      "WEATHER_BALL_ROCK",
-      "MIRROR_COAT",
-      "SLUDGE",
       "STRUGGLE"
     ],
-    "legacyMoves": [
-      "EARTHQUAKE"
-    ],
-    "tags": [
-      "regional"
-    ],
-    "sid": 13537
+    "sid": 13505
   },
   "gastrodon_west_sea": {
     "dex": 423,
@@ -55881,7 +56332,101 @@
     "tags": [
       "regional"
     ],
+    "searchPriority": 2,
     "sid": 13536
+  },
+  "gastrodon_east_sea": {
+    "dex": 423,
+    "speciesName": {
+      "de": "Gastrodon (Osten)",
+      "fr": "Tritosor (East)",
+      "en": "Gastrodon (East)",
+      "es": "Gastrodon (Este)",
+      "th": "ไทรโทดอน (East)",
+      "ja": "トリトドン (East)",
+      "ko": "트리토돈 (East)",
+      "ru": "Гастродон (East)",
+      "zh_hans": "海牛兽 (East)",
+      "zh_hant": "海牛獸 (East)"
+    },
+    "speciesId": "gastrodon_east_sea",
+    "baseStats": {
+      "atk": 169,
+      "def": 143,
+      "hp": 244
+    },
+    "types": [
+      "water",
+      "ground"
+    ],
+    "fastMoves": [
+      "HIDDEN_POWER_BUG",
+      "HIDDEN_POWER_DARK",
+      "HIDDEN_POWER_DRAGON",
+      "HIDDEN_POWER_ELECTRIC",
+      "HIDDEN_POWER_FIGHTING",
+      "HIDDEN_POWER_FIRE",
+      "HIDDEN_POWER_FLYING",
+      "HIDDEN_POWER_GHOST",
+      "HIDDEN_POWER_GRASS",
+      "HIDDEN_POWER_GROUND",
+      "HIDDEN_POWER_ICE",
+      "HIDDEN_POWER_NORMAL",
+      "HIDDEN_POWER_POISON",
+      "HIDDEN_POWER_PSYCHIC",
+      "HIDDEN_POWER_ROCK",
+      "HIDDEN_POWER_STEEL",
+      "HIDDEN_POWER_WATER",
+      "INFESTATION",
+      "MUD_SHOT",
+      "MUD_SLAP",
+      "ROCK_SMASH",
+      "WATERFALL",
+      "WATER_GUN",
+      "COUNTER",
+      "YAWN"
+    ],
+    "chargedMoves": [
+      "ANCIENT_POWER",
+      "BLIZZARD",
+      "BODY_SLAM",
+      "BRINE",
+      "BULLDOZE",
+      "DIG",
+      "EARTH_POWER",
+      "EARTHQUAKE",
+      "FRUSTRATION",
+      "GIGA_IMPACT",
+      "HYDRO_PUMP",
+      "HYPER_BEAM",
+      "ICE_BEAM",
+      "ICY_WIND",
+      "MUD_BOMB",
+      "MUDDY_WATER",
+      "REST",
+      "RETURN",
+      "ROCK_SLIDE",
+      "ROCK_TOMB",
+      "SAND_TOMB",
+      "SCALD",
+      "SLUDGE_BOMB",
+      "SLUDGE_WAVE",
+      "STONE_EDGE",
+      "SURF",
+      "WATER_PULSE",
+      "WEATHER_BALL_ROCK",
+      "MIRROR_COAT",
+      "SLUDGE",
+      "STRUGGLE"
+    ],
+    "legacyMoves": [
+      "EARTHQUAKE"
+    ],
+    "tags": [
+      "regional"
+    ],
+    "searchPriority": 2,
+    "sid": 13537
   },
   "ambipom": {
     "dex": 424,
@@ -57411,7 +57956,8 @@
       "SOLAR_BEAM",
       "STRUGGLE"
     ],
-    "sid": 13952
+    "sid": 13952,
+    "gender": "N"
   },
   "bronzong": {
     "dex": 437,
@@ -57491,7 +58037,8 @@
       "STRUGGLE"
     ],
     "searchPriority": 2,
-    "sid": 13984
+    "sid": 13984,
+    "gender": "N"
   },
   "bonsly": {
     "dex": 438,
@@ -57695,7 +58242,8 @@
       "WATER_PULSE",
       "STRUGGLE"
     ],
-    "sid": 14080
+    "sid": 14080,
+    "gender": "F"
   },
   "chatot": {
     "dex": 441,
@@ -60028,7 +60576,8 @@
       "shadoweligible"
     ],
     "searchPriority": 4,
-    "sid": 14784
+    "sid": 14784,
+    "gender": "N"
   },
   "magnezone_shadow": {
     "dex": 462,
@@ -60107,7 +60656,8 @@
       "shadow"
     ],
     "searchPriority": 4,
-    "sid": 14784
+    "sid": 14784,
+    "gender": "N"
   },
   "lickilicky": {
     "dex": 463,
@@ -61659,7 +62209,8 @@
       "shadoweligible"
     ],
     "searchPriority": 2,
-    "sid": 15168
+    "sid": 15168,
+    "gender": "N"
   },
   "porygon_z_shadow": {
     "dex": 474,
@@ -61743,7 +62294,8 @@
       "shadow"
     ],
     "searchPriority": 2,
-    "sid": 15168
+    "sid": 15168,
+    "gender": "N"
   },
   "gallade": {
     "dex": 475,
@@ -61847,7 +62399,8 @@
     "tags": [
       "shadoweligible"
     ],
-    "sid": 15200
+    "sid": 15200,
+    "gender": "M"
   },
   "gallade_shadow": {
     "dex": 475,
@@ -61950,7 +62503,8 @@
     "tags": [
       "shadow"
     ],
-    "sid": 15200
+    "sid": 15200,
+    "gender": "M"
   },
   "probopass": {
     "dex": 476,
@@ -62385,7 +62939,8 @@
       "STRUGGLE"
     ],
     "searchPriority": 7,
-    "sid": 15296
+    "sid": 15296,
+    "gender": "F"
   },
   "rotom": {
     "dex": 479,
@@ -62456,7 +63011,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15328
+    "sid": 15328,
+    "gender": "N"
   },
   "rotom_fan": {
     "dex": 479,
@@ -62528,7 +63084,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15332
+    "sid": 15332,
+    "gender": "N"
   },
   "rotom_frost": {
     "dex": 479,
@@ -62600,7 +63157,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15331
+    "sid": 15331,
+    "gender": "N"
   },
   "rotom_heat": {
     "dex": 479,
@@ -62672,7 +63230,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15329
+    "sid": 15329,
+    "gender": "N"
   },
   "rotom_mow": {
     "dex": 479,
@@ -62744,7 +63303,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15333
+    "sid": 15333,
+    "gender": "N"
   },
   "rotom_wash": {
     "dex": 479,
@@ -62814,7 +63374,8 @@
       "STRUGGLE"
     ],
     "searchPriority": 2,
-    "sid": 15330
+    "sid": 15330,
+    "gender": "N"
   },
   "uxie": {
     "dex": 480,
@@ -62901,7 +63462,8 @@
     "tags": [
       "legendary"
     ],
-    "sid": 15360
+    "sid": 15360,
+    "gender": "N"
   },
   "mesprit": {
     "dex": 481,
@@ -62987,7 +63549,8 @@
     "tags": [
       "legendary"
     ],
-    "sid": 15392
+    "sid": 15392,
+    "gender": "N"
   },
   "azelf": {
     "dex": 482,
@@ -63075,7 +63638,8 @@
     "tags": [
       "legendary"
     ],
-    "sid": 15424
+    "sid": 15424,
+    "gender": "N"
   },
   "dialga": {
     "dex": 483,
@@ -63170,7 +63734,8 @@
       "legendary"
     ],
     "searchPriority": 20,
-    "sid": 15456
+    "sid": 15456,
+    "gender": "N"
   },
   "palkia": {
     "dex": 484,
@@ -63266,7 +63831,8 @@
     "tags": [
       "legendary"
     ],
-    "sid": 15488
+    "sid": 15488,
+    "gender": "N"
   },
   "heatran": {
     "dex": 485,
@@ -63436,7 +64002,8 @@
     "tags": [
       "legendary"
     ],
-    "sid": 15552
+    "sid": 15552,
+    "gender": "N"
   },
   "giratina_altered": {
     "dex": 487,
@@ -63533,7 +64100,8 @@
       "legendary"
     ],
     "searchPriority": 32,
-    "sid": 15584
+    "sid": 15584,
+    "gender": "N"
   },
   "giratina_origin": {
     "dex": 487,
@@ -63629,7 +64197,8 @@
     "tags": [
       "legendary"
     ],
-    "sid": 15585
+    "sid": 15585,
+    "gender": "N"
   },
   "cresselia": {
     "dex": 488,
@@ -63707,7 +64276,8 @@
       "legendary"
     ],
     "searchPriority": 32,
-    "sid": 15616
+    "sid": 15616,
+    "gender": "F"
   },
   "phione": {
     "dex": 489,
@@ -63779,7 +64349,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15648
+    "sid": 15648,
+    "gender": "N"
   },
   "manaphy": {
     "dex": 490,
@@ -63856,7 +64427,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15680
+    "sid": 15680,
+    "gender": "N"
   },
   "darkrai": {
     "dex": 491,
@@ -63946,7 +64518,8 @@
       "mythical",
       "untradeable"
     ],
-    "sid": 15712
+    "sid": 15712,
+    "gender": "N"
   },
   "shaymin_land": {
     "dex": 492,
@@ -64020,7 +64593,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15744
+    "sid": 15744,
+    "gender": "N"
   },
   "shaymin_sky": {
     "dex": 492,
@@ -64094,7 +64668,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15745
+    "sid": 15745,
+    "gender": "N"
   },
   "arceus": {
     "dex": 493,
@@ -64214,7 +64789,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15776
+    "sid": 15776,
+    "gender": "N"
   },
   "arceus_bug": {
     "dex": 493,
@@ -64334,7 +64910,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15782
+    "sid": 15782,
+    "gender": "N"
   },
   "arceus_dark": {
     "dex": 493,
@@ -64454,7 +65031,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15792
+    "sid": 15792,
+    "gender": "N"
   },
   "arceus_dragon": {
     "dex": 493,
@@ -64574,7 +65152,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15791
+    "sid": 15791,
+    "gender": "N"
   },
   "arceus_electric": {
     "dex": 493,
@@ -64694,7 +65273,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15788
+    "sid": 15788,
+    "gender": "N"
   },
   "arceus_fairy": {
     "dex": 493,
@@ -64814,7 +65394,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15793
+    "sid": 15793,
+    "gender": "N"
   },
   "arceus_fighting": {
     "dex": 493,
@@ -64934,7 +65515,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15777
+    "sid": 15777,
+    "gender": "N"
   },
   "arceus_fire": {
     "dex": 493,
@@ -65054,7 +65636,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15785
+    "sid": 15785,
+    "gender": "N"
   },
   "arceus_flying": {
     "dex": 493,
@@ -65174,7 +65757,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15778
+    "sid": 15778,
+    "gender": "N"
   },
   "arceus_ghost": {
     "dex": 493,
@@ -65294,7 +65878,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15783
+    "sid": 15783,
+    "gender": "N"
   },
   "arceus_grass": {
     "dex": 493,
@@ -65414,7 +65999,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15787
+    "sid": 15787,
+    "gender": "N"
   },
   "arceus_ground": {
     "dex": 493,
@@ -65534,7 +66120,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15780
+    "sid": 15780,
+    "gender": "N"
   },
   "arceus_ice": {
     "dex": 493,
@@ -65654,7 +66241,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15790
+    "sid": 15790,
+    "gender": "N"
   },
   "arceus_poison": {
     "dex": 493,
@@ -65774,7 +66362,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15779
+    "sid": 15779,
+    "gender": "N"
   },
   "arceus_psychic": {
     "dex": 493,
@@ -65894,7 +66483,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15789
+    "sid": 15789,
+    "gender": "N"
   },
   "arceus_rock": {
     "dex": 493,
@@ -66014,7 +66604,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15781
+    "sid": 15781,
+    "gender": "N"
   },
   "arceus_steel": {
     "dex": 493,
@@ -66134,7 +66725,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15784
+    "sid": 15784,
+    "gender": "N"
   },
   "arceus_water": {
     "dex": 493,
@@ -66254,7 +66846,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 15786
+    "sid": 15786,
+    "gender": "N"
   },
   "victini": {
     "dex": 494,
@@ -66346,7 +66939,8 @@
       "untradeable"
     ],
     "levelCap": 40,
-    "sid": 15808
+    "sid": 15808,
+    "gender": "N"
   },
   "snivy": {
     "dex": 495,
@@ -69682,7 +70276,8 @@
       "THUNDER_PUNCH",
       "STRUGGLE"
     ],
-    "sid": 17216
+    "sid": 17216,
+    "gender": "M"
   },
   "sawk": {
     "dex": 539,
@@ -69757,7 +70352,8 @@
       "THUNDER_PUNCH",
       "STRUGGLE"
     ],
-    "sid": 17248
+    "sid": 17248,
+    "gender": "M"
   },
   "sewaddle": {
     "dex": 540,
@@ -70367,7 +70963,8 @@
       "SOLAR_BEAM",
       "STRUGGLE"
     ],
-    "sid": 17536
+    "sid": 17536,
+    "gender": "F"
   },
   "lilligant": {
     "dex": 549,
@@ -70431,7 +71028,8 @@
       "SOLAR_BEAM",
       "STRUGGLE"
     ],
-    "sid": 17568
+    "sid": 17568,
+    "gender": "F"
   },
   "basculin": {
     "dex": 550,
@@ -74482,7 +75080,8 @@
       "ZAP_CANNON",
       "STRUGGLE"
     ],
-    "sid": 19168
+    "sid": 19168,
+    "gender": "N"
   },
   "klang": {
     "dex": 600,
@@ -74547,7 +75146,8 @@
       "ZAP_CANNON",
       "STRUGGLE"
     ],
-    "sid": 19200
+    "sid": 19200,
+    "gender": "N"
   },
   "klinklang": {
     "dex": 601,
@@ -74614,7 +75214,8 @@
       "ZAP_CANNON",
       "STRUGGLE"
     ],
-    "sid": 19232
+    "sid": 19232,
+    "gender": "N"
   },
   "tynamo": {
     "dex": 602,
@@ -75619,7 +76220,8 @@
       "WATER_PULSE",
       "STRUGGLE"
     ],
-    "sid": 19680
+    "sid": 19680,
+    "gender": "N"
   },
   "shelmet": {
     "dex": 616,
@@ -76138,9 +76740,6 @@
       "THUNDER_PUNCH",
       "STRUGGLE"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "sid": 19872
   },
   "golett": {
@@ -76222,7 +76821,8 @@
       "THUNDER_PUNCH",
       "STRUGGLE"
     ],
-    "sid": 19904
+    "sid": 19904,
+    "gender": "N"
   },
   "golurk": {
     "dex": 623,
@@ -76314,7 +76914,8 @@
       "THUNDER_PUNCH",
       "STRUGGLE"
     ],
-    "sid": 19936
+    "sid": 19936,
+    "gender": "N"
   },
   "pawniard": {
     "dex": 624,
@@ -76620,7 +77221,8 @@
       "SWIFT",
       "STRUGGLE"
     ],
-    "sid": 20064
+    "sid": 20064,
+    "gender": "M"
   },
   "braviary": {
     "dex": 628,
@@ -76693,7 +77295,8 @@
       "SWIFT",
       "STRUGGLE"
     ],
-    "sid": 20096
+    "sid": 20096,
+    "gender": "M"
   },
   "vullaby": {
     "dex": 629,
@@ -76762,7 +77365,8 @@
       "SWIFT",
       "STRUGGLE"
     ],
-    "sid": 20128
+    "sid": 20128,
+    "gender": "F"
   },
   "mandibuzz": {
     "dex": 630,
@@ -76835,7 +77439,8 @@
       "STRUGGLE"
     ],
     "searchPriority": 5,
-    "sid": 20160
+    "sid": 20160,
+    "gender": "F"
   },
   "heatmor": {
     "dex": 631,
@@ -77463,7 +78068,8 @@
     "tags": [
       "legendary"
     ],
-    "sid": 20416
+    "sid": 20416,
+    "gender": "N"
   },
   "terrakion": {
     "dex": 639,
@@ -77544,7 +78150,8 @@
     "tags": [
       "legendary"
     ],
-    "sid": 20448
+    "sid": 20448,
+    "gender": "N"
   },
   "virizion": {
     "dex": 640,
@@ -77623,7 +78230,8 @@
     "tags": [
       "legendary"
     ],
-    "sid": 20480
+    "sid": 20480,
+    "gender": "N"
   },
   "tornadus_incarnate": {
     "dex": 641,
@@ -77707,7 +78315,8 @@
     "tags": [
       "legendary"
     ],
-    "sid": 20512
+    "sid": 20512,
+    "gender": "M"
   },
   "tornadus_therian": {
     "dex": 641,
@@ -77791,7 +78400,8 @@
     "tags": [
       "legendary"
     ],
-    "sid": 20513
+    "sid": 20513,
+    "gender": "M"
   },
   "thundurus_incarnate": {
     "dex": 642,
@@ -77876,7 +78486,8 @@
     "tags": [
       "legendary"
     ],
-    "sid": 20544
+    "sid": 20544,
+    "gender": "M"
   },
   "thundurus_therian": {
     "dex": 642,
@@ -77961,7 +78572,8 @@
     "tags": [
       "legendary"
     ],
-    "sid": 20545
+    "sid": 20545,
+    "gender": "M"
   },
   "reshiram": {
     "dex": 643,
@@ -78051,7 +78663,8 @@
       "legendary"
     ],
     "searchPriority": 4,
-    "sid": 20576
+    "sid": 20576,
+    "gender": "N"
   },
   "zekrom": {
     "dex": 644,
@@ -78141,7 +78754,8 @@
       "legendary"
     ],
     "searchPriority": 2,
-    "sid": 20608
+    "sid": 20608,
+    "gender": "N"
   },
   "landorus_incarnate": {
     "dex": 645,
@@ -78224,7 +78838,8 @@
       "legendary"
     ],
     "searchPriority": 2,
-    "sid": 20640
+    "sid": 20640,
+    "gender": "M"
   },
   "landorus_therian": {
     "dex": 645,
@@ -78307,7 +78922,8 @@
       "legendary"
     ],
     "searchPriority": 4,
-    "sid": 20641
+    "sid": 20641,
+    "gender": "M"
   },
   "kyurem": {
     "dex": 646,
@@ -78392,7 +79008,8 @@
     "tags": [
       "legendary"
     ],
-    "sid": 20672
+    "sid": 20672,
+    "gender": "N"
   },
   "kyurem_black": {
     "dex": 646,
@@ -78478,7 +79095,8 @@
       "legendary",
       "unreleased"
     ],
-    "sid": 20674
+    "sid": 20674,
+    "gender": "N"
   },
   "kyurem_white": {
     "dex": 646,
@@ -78564,7 +79182,8 @@
       "legendary",
       "unreleased"
     ],
-    "sid": 20673
+    "sid": 20673,
+    "gender": "N"
   },
   "keldeo_ordinary": {
     "dex": 647,
@@ -78647,7 +79266,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 20704
+    "sid": 20704,
+    "gender": "N"
   },
   "keldeo_resolute": {
     "dex": 647,
@@ -78730,7 +79350,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 20705
+    "sid": 20705,
+    "gender": "N"
   },
   "meloetta_aria": {
     "dex": 648,
@@ -78816,7 +79437,8 @@
       "untradeable"
     ],
     "levelCap": 40,
-    "sid": 20736
+    "sid": 20736,
+    "gender": "N"
   },
   "meloetta_pirouette": {
     "dex": 648,
@@ -78902,7 +79524,8 @@
       "untradeable",
       "unreleased"
     ],
-    "sid": 20737
+    "sid": 20737,
+    "gender": "N"
   },
   "genesect": {
     "dex": 649,
@@ -78995,7 +79618,8 @@
       "mythical",
       "untradeable"
     ],
-    "sid": 20768
+    "sid": 20768,
+    "gender": "N"
   },
   "genesect_burn": {
     "dex": 649,
@@ -79088,7 +79712,8 @@
       "mythical",
       "untradeable"
     ],
-    "sid": 20771
+    "sid": 20771,
+    "gender": "N"
   },
   "genesect_chill": {
     "dex": 649,
@@ -79182,7 +79807,8 @@
       "untradeable",
       "unreleased"
     ],
-    "sid": 20772
+    "sid": 20772,
+    "gender": "N"
   },
   "genesect_douse": {
     "dex": 649,
@@ -79275,7 +79901,8 @@
       "mythical",
       "untradeable"
     ],
-    "sid": 20769
+    "sid": 20769,
+    "gender": "N"
   },
   "genesect_shock": {
     "dex": 649,
@@ -79369,7 +79996,8 @@
       "untradeable",
       "unreleased"
     ],
-    "sid": 20770
+    "sid": 20770,
+    "gender": "N"
   },
   "chespin": {
     "dex": 650,
@@ -80907,7 +81535,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 21408
+    "sid": 21408,
+    "gender": "F"
   },
   "floette": {
     "dex": 670,
@@ -80973,7 +81602,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 21440
+    "sid": 21440,
+    "gender": "F"
   },
   "florges": {
     "dex": 671,
@@ -81042,7 +81672,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 21472
+    "sid": 21472,
+    "gender": "F"
   },
   "skiddo": {
     "dex": 672,
@@ -81587,7 +82218,8 @@
       "THUNDERBOLT",
       "STRUGGLE"
     ],
-    "sid": 21697
+    "sid": 21697,
+    "gender": "F"
   },
   "meowstic": {
     "dex": 678,
@@ -81663,7 +82295,8 @@
       "THUNDERBOLT",
       "STRUGGLE"
     ],
-    "sid": 21696
+    "sid": 21696,
+    "gender": "M"
   },
   "honedge": {
     "dex": 679,
@@ -83522,9 +84155,6 @@
       "WILD_CHARGE",
       "STRUGGLE"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "sid": 22464
   },
   "carbink": {
@@ -83594,7 +84224,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 22496
+    "sid": 22496,
+    "gender": "N"
   },
   "goomy": {
     "dex": 704,
@@ -84994,7 +85625,8 @@
     "tags": [
       "legendary"
     ],
-    "sid": 22913
+    "sid": 22913,
+    "gender": "N"
   },
   "yveltal": {
     "dex": 717,
@@ -85074,7 +85706,8 @@
       "legendary"
     ],
     "searchPriority": 10,
-    "sid": 22944
+    "sid": 22944,
+    "gender": "N"
   },
   "zygarde": {
     "dex": 718,
@@ -85155,7 +85788,8 @@
       "legendary",
       "unreleased"
     ],
-    "sid": 22976
+    "sid": 22976,
+    "gender": "N"
   },
   "diancie": {
     "dex": 719,
@@ -85230,7 +85864,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 23008
+    "sid": 23008,
+    "gender": "N"
   },
   "hoopa": {
     "dex": 720,
@@ -85306,9 +85941,12 @@
       "STRUGGLE"
     ],
     "tags": [
-      "mythical"
+      "mythical",
+      "untradeable"
     ],
-    "sid": 23040
+    "levelCap": 40,
+    "sid": 23040,
+    "gender": "N"
   },
   "hoopa_confined": {
     "dex": 720,
@@ -85387,7 +86025,9 @@
       "mythical",
       "unreleased"
     ],
-    "sid": 23040
+    "levelCap": 40,
+    "sid": 23040,
+    "gender": "N"
   },
   "hoopa_unbound": {
     "dex": 720,
@@ -85464,9 +86104,12 @@
     ],
     "tags": [
       "mythical",
-      "unreleased"
+      "untradeable"
     ],
-    "sid": 23041
+    "levelCap": 40,
+    "searchPriority": 2,
+    "sid": 23041,
+    "gender": "N"
   },
   "volcanion": {
     "dex": 721,
@@ -85556,7 +86199,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 23072
+    "sid": 23072,
+    "gender": "N"
   },
   "meltan": {
     "dex": 808,
@@ -85596,7 +86240,8 @@
       "mythical",
       "include1500"
     ],
-    "sid": 25856
+    "sid": 25856,
+    "gender": "N"
   },
   "melmetal": {
     "dex": 809,
@@ -85653,7 +86298,8 @@
       "mythical"
     ],
     "searchPriority": 18,
-    "sid": 25888
+    "sid": 25888,
+    "gender": "N"
   },
   "grookey": {
     "dex": 810,
@@ -87503,7 +88149,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 27328
+    "sid": 27328,
+    "gender": "N"
   },
   "sinistea_antique": {
     "dex": 854,
@@ -87538,7 +88185,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 27329
+    "sid": 27329,
+    "gender": "N"
   },
   "sinistea_phony": {
     "dex": 854,
@@ -87573,7 +88221,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 27328
+    "sid": 27328,
+    "gender": "N"
   },
   "polteageist": {
     "dex": 855,
@@ -87610,7 +88259,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 27360
+    "sid": 27360,
+    "gender": "N"
   },
   "polteageist_antique": {
     "dex": 855,
@@ -87647,7 +88297,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 27361
+    "sid": 27361,
+    "gender": "N"
   },
   "polteageist_phony": {
     "dex": 855,
@@ -87684,7 +88335,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 27360
+    "sid": 27360,
+    "gender": "N"
   },
   "hatenna": {
     "dex": 856,
@@ -87719,7 +88371,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 27392
+    "sid": 27392,
+    "gender": "F"
   },
   "hattrem": {
     "dex": 857,
@@ -87754,7 +88407,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 27424
+    "sid": 27424,
+    "gender": "F"
   },
   "hatterene": {
     "dex": 858,
@@ -87796,7 +88450,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 27456
+    "sid": 27456,
+    "gender": "F"
   },
   "impidimp": {
     "dex": 859,
@@ -87828,7 +88483,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 27488
+    "sid": 27488,
+    "gender": "M"
   },
   "morgrem": {
     "dex": 860,
@@ -87861,7 +88517,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 27520
+    "sid": 27520,
+    "gender": "M"
   },
   "grimmsnarl": {
     "dex": 861,
@@ -87907,7 +88564,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 27552
+    "sid": 27552,
+    "gender": "M"
   },
   "obstagoon": {
     "dex": 862,
@@ -88244,7 +88902,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 27776
+    "sid": 27776,
+    "gender": "F"
   },
   "alcremie": {
     "dex": 869,
@@ -88282,7 +88941,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 27808
+    "sid": 27808,
+    "gender": "F"
   },
   "falinks": {
     "dex": 870,
@@ -88319,7 +88979,8 @@
       "SUPER_POWER",
       "STRUGGLE"
     ],
-    "sid": 27840
+    "sid": 27840,
+    "gender": "N"
   },
   "pincurchin": {
     "dex": 871,
@@ -88627,7 +89288,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 28032
+    "sid": 28032,
+    "gender": "M"
   },
   "indeedee_female": {
     "dex": 876,
@@ -88666,7 +89328,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 28033
+    "sid": 28033,
+    "gender": "M"
   },
   "indeedee_male": {
     "dex": 876,
@@ -88705,7 +89368,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 28032
+    "sid": 28032,
+    "gender": "M"
   },
   "morpeko": {
     "dex": 877,
@@ -88990,7 +89654,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 28160
+    "sid": 28160,
+    "gender": "N"
   },
   "arctozolt": {
     "dex": 881,
@@ -89041,7 +89706,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 28192
+    "sid": 28192,
+    "gender": "N"
   },
   "dracovish": {
     "dex": 882,
@@ -89094,7 +89760,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 28224
+    "sid": 28224,
+    "gender": "N"
   },
   "arctovish": {
     "dex": 883,
@@ -89141,7 +89808,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 28256
+    "sid": 28256,
+    "gender": "N"
   },
   "duraludon": {
     "dex": 884,
@@ -89374,7 +90042,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 28416
+    "sid": 28416,
+    "gender": "N"
   },
   "zacian_hero": {
     "dex": 888,
@@ -89422,7 +90091,8 @@
       "legendary"
     ],
     "searchPriority": 5,
-    "sid": 28416
+    "sid": 28416,
+    "gender": "N"
   },
   "zacian_crowned_sword": {
     "dex": 888,
@@ -89469,7 +90139,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 28417
+    "sid": 28417,
+    "gender": "N"
   },
   "zamazenta": {
     "dex": 889,
@@ -89516,7 +90187,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 28448
+    "sid": 28448,
+    "gender": "N"
   },
   "zamazenta_hero": {
     "dex": 889,
@@ -89564,7 +90236,8 @@
       "legendary"
     ],
     "searchPriority": 5,
-    "sid": 28448
+    "sid": 28448,
+    "gender": "N"
   },
   "zamazenta_crowned_shield": {
     "dex": 889,
@@ -89611,7 +90284,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 28449
+    "sid": 28449,
+    "gender": "N"
   },
   "eternatus": {
     "dex": 890,
@@ -89650,7 +90324,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 28480
+    "sid": 28480,
+    "gender": "N"
   },
   "eternatus_eternamax": {
     "dex": 890,
@@ -89689,7 +90364,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 28481
+    "sid": 28481,
+    "gender": "N"
   },
   "kubfu": {
     "dex": 891,
@@ -89944,7 +90620,8 @@
       "untradeable"
     ],
     "levelCap": 40,
-    "sid": 28576
+    "sid": 28576,
+    "gender": "N"
   },
   "regieleki": {
     "dex": 894,
@@ -89980,7 +90657,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 28608
+    "sid": 28608,
+    "gender": "N"
   },
   "regidrago": {
     "dex": 895,
@@ -90018,7 +90696,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 28640
+    "sid": 28640,
+    "gender": "N"
   },
   "glastrier": {
     "dex": 896,
@@ -90062,7 +90741,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 28672
+    "sid": 28672,
+    "gender": "N"
   },
   "spectrier": {
     "dex": 897,
@@ -90103,7 +90783,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 28704
+    "sid": 28704,
+    "gender": "N"
   },
   "calyrex": {
     "dex": 898,
@@ -90146,7 +90827,8 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 28736
+    "sid": 28736,
+    "gender": "N"
   },
   "calyrex_ice_rider": {
     "dex": 898,
@@ -90189,6 +90871,7 @@
     "tags": [
       "unreleased"
     ],
-    "sid": 28737
+    "sid": 28737,
+    "gender": "N"
   }
 }
