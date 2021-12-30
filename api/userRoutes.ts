@@ -65,54 +65,53 @@ router.get('/profile',
 router.post('/', async (req, res) => {
     try{
         const {userAuth, username, teams} = req.body;
-        if(userAuth){
-
-            // Start transaction
-            await firestore.runTransaction(async (t) => {
-
-                //check if user already exists first
-                const docRef = firestore.collection('users').doc(userAuth.uid);
-                const user = await t.get(docRef);
-
-                if (user.data()) {
-                    res.sendStatus(401)
-                    return;
-                }
-
-                const un = username ? username : userAuth.displayName //.sanitize
-                // Send user info to client
-                const newUser = await t.get(docRef);
-                if(!newUser?.data()) {
-                    res.sendStatus(500)
-                    return;
-                }
-                t.set(docRef, {
-                    googleId: userAuth.uid,
-                    username: un,
-                    usernameNCS: un.toLowerCase(),
-                    email: userAuth.email,
-                    teams: teams ? teams : [],
-                    friends: [],
-                    requests: [],
-                    challenges: [],
-                    pendingChallenge: "",
-                    rank: 0,
-                    achievements: [],
-                    battleBackground: 'default',
-                    profilePic: 'default',
-                    favorite: null,
-                    createdAt: Date.now(),
-                    lastLogin: Date.now(),
-                    isDeleted: false
-                })
-
-                
-                res.json({
-                    userData: newUser.data(),
-                    token: generateToken(userAuth.uid)
-                });
-            });
+        if(!userAuth) {
+            res.sendStatus(400);
+            return;
         }
+
+        // Start transaction
+        await firestore.runTransaction(async (t) => {
+
+            //check if user already exists first
+            const docRef = firestore.collection('users').doc(userAuth.uid);
+            const user = await t.get(docRef);
+
+            if (user.data()) {
+                res.sendStatus(401)
+                return;
+            }
+
+            const un = username ? username : userAuth.displayName //.sanitize
+            const newUserData = {
+                googleId: userAuth.uid,
+                username: un,
+                usernameNCS: un.toLowerCase(),
+                email: userAuth.email,
+                teams: teams ? teams : [],
+                friends: [],
+                requests: [],
+                challenges: [],
+                pendingChallenge: "",
+                rank: 0,
+                achievements: [],
+                battleBackground: 'default',
+                profilePic: 'default',
+                favorite: null,
+                createdAt: Date.now(),
+                lastLogin: Date.now(),
+                isDeleted: false
+            }
+            t.set(docRef, newUserData)
+        });
+
+        const docRef = firestore.collection('users').doc(userAuth.uid);
+        const user = await docRef.get();
+        res.json({
+            userData: user.data(),
+            token: generateToken(userAuth.uid)
+        });
+
     }catch(err){
         console.log(err);
         res.sendStatus(500);
