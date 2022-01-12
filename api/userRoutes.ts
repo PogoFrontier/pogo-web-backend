@@ -40,19 +40,24 @@ router.get('/profile',
     async (req, res, next) => protect(req, res, next), 
     async (req: any, res) => {
     try{
+        // Get user
         const docRef = firestore.collection('users').doc(req.user.googleId);
-        docRef.get().then(user => {
-            if(user.data()){
-                docRef.update({lastLogin: Date.now()}).then(() => {
-                    res.json(user.data());
-                });
-            }else{
-                res.sendStatus(404)
-            }
-        }).catch(err => {
-            console.log(err);
-            res.sendStatus(500)
-        })
+        const user = await docRef.get();
+
+        // Does this user even exist?
+        const userdata = user.data();
+        if(!userdata) {
+            res.sendStatus(404);
+            return;
+        }
+
+        // Mark our last login
+        await docRef.update({lastLogin: Date.now()})
+
+        // Send data to client
+        res.json(userdata);
+    
+    // Handle errors
     }catch(err){
         console.log(err);
         res.sendStatus(500);
@@ -103,13 +108,12 @@ router.post('/', async (req, res) => {
                 isDeleted: false
             }
             t.set(docRef, newUserData)
-        });
 
-        const docRef = firestore.collection('users').doc(userAuth.uid);
-        const user = await docRef.get();
-        res.json({
-            userData: user.data(),
-            token: generateToken(userAuth.uid)
+
+            res.json({
+                userData: newUserData,
+                token: generateToken(userAuth.uid)
+            });
         });
 
     }catch(err){
@@ -205,24 +209,26 @@ router.get('/friends',
         const collRef = firestore.collection('users');
         collRef.where('friends', 'array-contains', req.user.googleId)
         .select("username", "lastActivity").get().then(querySnapshot => {
-            if (querySnapshot.size > 0) {
-                storeClient.mget(querySnapshot.docs.map(doc => getUserStatusKey(doc.id)), (err, reply) => {
-                    if (err) {
-                        console.log(err);
-                        res.sendStatus(500);
-                        return
-                    }
-
-                    res.json(querySnapshot.docs.map((doc, index) => {
-                        return {
-                            ...doc.data(),
-                            status: reply[index],
-                            id: doc.id
-                        }
-                    }));
-                })
-            } else
+            if (querySnapshot.size === 0) {
                 res.json([]);
+                return;
+            }
+
+            storeClient.mget(querySnapshot.docs.map(doc => getUserStatusKey(doc.id)), (err, reply) => {
+                if (err) {
+                    console.log(err);
+                    res.sendStatus(500);
+                    return
+                }
+
+                res.json(querySnapshot.docs.map((doc, index) => {
+                    return {
+                        ...doc.data(),
+                        status: reply[index],
+                        id: doc.id
+                    }
+                }));
+            })
         }).catch(err => {
             console.log(err);
             res.sendStatus(500);
@@ -315,6 +321,12 @@ router.post('/request/send',
                     res.sendStatus(401)
                     return
                 }
+                
+                // Define previous requests sent by user
+                let requestsSent = sender.data()!.requestsSent;
+                if(!requestsSent) {
+                    requestsSent = [];
+                }
 
                 // Get friend
                 const friendDocRef = firestore.collection('users').where("username", "==", username)
@@ -350,6 +362,11 @@ router.post('/request/send',
                     // Update friend
                     t.update(firestore.collection('users').doc(newFriendMaybe.id), {
                         requests: [...requests, { id: req.user.googleId, username: sender.data()?.username }]
+                    })
+
+                    // Update sender
+                    t.update(senderDocRef, {
+                        requestsSent: [...requestsSent, { id: newFriendMaybe.id, username: newFriendMaybe.data().username}]
                     })
 
                     // Send status
@@ -398,30 +415,37 @@ router.post('/request/accept',
                     return;
                 }
 
-                // Get lists from data
+                // Get lists for user
                 const usersRequests: { id: string, username: string }[] = userData.requests || [];
                 const usersFriends: string[] = userData.friends || [];
-                const friendsList: string[] = friendData.friends || [];
-                const reqIndex = usersRequests.map(r => r.id).indexOf(req.body.googleId)
+                const reqIndex = usersRequests.map(r => r.id).indexOf(req.body.googleId);
+
+                // Get lists for friend
+                const friendsOfFriend: string[] = friendData.friends || [];
+                const requestsSentByNewFriend: { id: string, username: string }[] = friendData.requestsSent || [];
+                const sentReqIndex = requestsSentByNewFriend.map(r => r.id).indexOf(userID);
 
                 // Are they already friends? Do we have a friend request?
                 if (
                     reqIndex === -1 ||
+                    sentReqIndex === -1 ||
                     usersFriends.includes(friendID) ||
-                    friendsList.includes(userID)
+                    friendsOfFriend.includes(userID)
                 ) {
                     res.sendStatus(403);
                     return
                 }
 
                 // Update data
-                usersRequests.splice(reqIndex, 1)
+                usersRequests.splice(reqIndex, 1);
+                requestsSentByNewFriend.splice(sentReqIndex, 1);
                 t.update(userDocRef, {
                     requests: usersRequests,
                     friends: [...usersFriends, friendID]
                 })
                 t.update(friendDocRef, {
-                    friends: [...friendsList, userID]
+                    friends: [...friendsOfFriend, userID],
+                    requestsSent: requestsSentByNewFriend
                 })
 
                 // Send status
@@ -439,7 +463,7 @@ router.post('/request/accept',
 // @desc Deny friend request: delete request ID from request list
 // @route POST /api/users/request/deny
 // @access Protected
-router.post('/request/deny', 
+router.post('/request/deny',
     (req, res, next) => protect(req, res, next),
     async (req: any, res) => {
         if (!req.body.googleId) {
@@ -447,7 +471,7 @@ router.post('/request/deny',
         }
 
         const userID = req.user.googleId;
-
+        const friendID = req.body.googleId;
 
         try {
             // Start transaction
@@ -455,9 +479,12 @@ router.post('/request/deny',
                 const userDocRef = firestore.collection('users').doc(userID)
                 const userToUpdate = await t.get(userDocRef)
                 const userData = userToUpdate.data()
+                const friendDocRef = firestore.collection('users').doc(friendID)
+                const friendToUpdate = await t.get(friendDocRef)
+                const friendData = friendToUpdate.data()
 
                 // Do the two users exist?
-                if (!userData) {
+                if (!userData || !friendData) {
                     res.sendStatus(500);
                     return;
                 }
@@ -466,18 +493,98 @@ router.post('/request/deny',
                 const usersRequests: { id: string, username: string }[] = userData.requests || [];
                 const reqIndex = usersRequests.map(r => r.id).indexOf(req.body.googleId)
 
+                // Get lists for friend
+                const requestsSentByNewFriend: { id: string, username: string }[] = friendData.requestsSent || [];
+                const sentReqIndex = requestsSentByNewFriend.map(r => r.id).indexOf(userID);
+
                 // Are they already friends? Do we have a friend request?
                 if (
-                    reqIndex === -1
+                    reqIndex === -1 ||
+                    sentReqIndex === -1
                 ) {
                     res.sendStatus(403);
                     return
                 }
 
-                // Update data
+                // Update user data
                 usersRequests.splice(reqIndex, 1)
                 t.update(userDocRef, {
                     requests: usersRequests
+                })
+
+                // Update friends data
+                requestsSentByNewFriend.splice(sentReqIndex, 1)
+                t.update(friendDocRef, {
+                    requestsSent: requestsSentByNewFriend
+                })
+
+                // Send status
+                res.sendStatus(200);
+
+            })
+        } catch (err) {
+            console.log(err);
+            res.sendStatus(500);
+        }
+    }
+);
+
+// @desc Cancel own friend request: delete request ID from request list
+// @route POST /api/users/request/cancel
+// @access Protected
+router.post('/request/cancel',
+    (req, res, next) => protect(req, res, next),
+    async (req: any, res) => {
+        if (!req.body.googleId) {
+            return;
+        }
+
+        const userID = req.user.googleId;
+        const friendID = req.body.googleId;
+
+        try {
+            // Start transaction
+            await firestore.runTransaction(async (t) => {
+                const userDocRef = firestore.collection('users').doc(userID)
+                const userToUpdate = await t.get(userDocRef)
+                const userData = userToUpdate.data()
+                const friendDocRef = firestore.collection('users').doc(friendID)
+                const friendToUpdate = await t.get(friendDocRef)
+                const friendData = friendToUpdate.data()
+
+                // Do the two users exist?
+                if (!userData || !friendData) {
+                    res.sendStatus(500);
+                    return;
+                }
+
+                // Get lists from data
+                const usersSentRequests: { id: string, username: string }[] = userData.requestsSent || [];
+                const sentReqIndex = usersSentRequests.map(r => r.id).indexOf(friendID);
+
+                // Get lists for friend
+                const requestsReceivedByNewFriend: { id: string, username: string }[] = friendData.requests || [];
+                const reqIndex = requestsReceivedByNewFriend.map(r => r.id).indexOf(userID);
+
+                // Do we have a friend request?
+                if (
+                    reqIndex === -1 ||
+                    sentReqIndex === -1
+                ) {
+                    res.sendStatus(404);
+                    return
+                }
+
+                // Update user data
+                usersSentRequests.splice(sentReqIndex, 1)
+                t.update(userDocRef, {
+                    requestsSent: usersSentRequests
+                })
+
+                // Update friends data
+                requestsReceivedByNewFriend.splice(reqIndex, 1)
+                t.update(friendDocRef, {
+                    requests: requestsReceivedByNewFriend
                 })
 
                 // Send status
