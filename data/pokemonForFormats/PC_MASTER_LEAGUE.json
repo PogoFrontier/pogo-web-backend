@@ -9157,6 +9157,18 @@
       "EARTH_POWER"
     ]
   },
+  "aerodactyl_mega": {
+    "legal": true,
+    "dex": 142,
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "tags": [
+      "mega"
+    ],
+    "speciesName": {}
+  },
   "snorlax": {
     "legal": true,
     "dex": 143,
@@ -30492,8 +30504,7 @@
     ],
     "tags": [
       "mythical",
-      "untradeable",
-      "unreleased"
+      "untradeable"
     ]
   },
   "chespin": {
@@ -32078,9 +32089,6 @@
       "ice",
       "none"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "speciesName": {
       "de": "Arktip",
       "fr": "Grelaçon",
@@ -32100,9 +32108,6 @@
     "types": [
       "ice",
       "none"
-    ],
-    "tags": [
-      "unreleased"
     ],
     "speciesName": {
       "de": "Arktilas",

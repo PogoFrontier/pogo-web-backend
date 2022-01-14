@@ -11088,6 +11088,36 @@
     ],
     "sid": 4544
   },
+  "aerodactyl_mega": {
+    "dex": 142,
+    "speciesName": {},
+    "speciesId": "aerodactyl_mega",
+    "baseStats": {
+      "atk": 292,
+      "def": 210,
+      "hp": 190
+    },
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "fastMoves": [
+      "BITE",
+      "STEEL_WING",
+      "ROCK_THROW"
+    ],
+    "chargedMoves": [
+      "ANCIENT_POWER",
+      "HYPER_BEAM",
+      "IRON_HEAD",
+      "ROCK_SLIDE",
+      "EARTH_POWER"
+    ],
+    "tags": [
+      "mega"
+    ],
+    "sid": 4545
+  },
   "snorlax": {
     "dex": 143,
     "speciesName": {
@@ -17951,6 +17981,7 @@
       "EARTHQUAKE"
     ],
     "level25CP": 2436,
+    "searchPriority": 4,
     "sid": 8000,
     "gender": "N"
   },
@@ -24163,17 +24194,24 @@
     ],
     "fastMoves": [
       "FROST_BREATH",
-      "WATERFALL"
+      "WATERFALL",
+      "POWDER_SNOW"
     ],
     "chargedMoves": [
       "BLIZZARD",
       "EARTHQUAKE",
-      "WATER_PULSE"
+      "WATER_PULSE",
+      "ICICLE_SPEAR"
+    ],
+    "eliteMoves": [
+      "POWDER_SNOW",
+      "ICICLE_SPEAR"
     ],
     "level25CP": 1675,
     "tags": [
       "shadoweligible"
     ],
+    "searchPriority": 10,
     "sid": 11680
   },
   "walrein_shadow": {
@@ -24202,12 +24240,18 @@
     ],
     "fastMoves": [
       "FROST_BREATH",
-      "WATERFALL"
+      "WATERFALL",
+      "POWDER_SNOW"
     ],
     "chargedMoves": [
       "BLIZZARD",
       "EARTHQUAKE",
-      "WATER_PULSE"
+      "WATER_PULSE",
+      "ICICLE_SPEAR"
+    ],
+    "eliteMoves": [
+      "POWDER_SNOW",
+      "ICICLE_SPEAR"
     ],
     "tags": [
       "shadow"
@@ -38537,12 +38581,12 @@
     "chargedMoves": [
       "X_SCISSOR",
       "MAGNET_BOMB",
-      "ZAP_CANNON"
+      "ZAP_CANNON",
+      "TECHNO_BLAST_SHOCK"
     ],
     "tags": [
       "mythical",
-      "untradeable",
-      "unreleased"
+      "untradeable"
     ],
     "sid": 20770,
     "gender": "N"
@@ -41111,9 +41155,6 @@
       "CRUNCH",
       "ICY_WIND"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "sid": 22784
   },
   "avalugg": {
@@ -41150,9 +41191,6 @@
       "EARTHQUAKE",
       "BODY_SLAM",
       "MIRROR_COAT"
-    ],
-    "tags": [
-      "unreleased"
     ],
     "sid": 22816
   },

@@ -40,6 +40,8 @@ for(let id of Object.keys(pokemonList)) {
         collectedChargemoves.push("TECHNO_BLAST_" + suffix.toUpperCase())
         continue;
     }
+
+    // Give smeargle almost every move
     if(pokemon.speciesId === "smeargle") {
         for (let move of Object.keys(localMoves)) {
             if (move.includes("BLASTOISE")){

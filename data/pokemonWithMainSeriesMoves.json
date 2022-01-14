@@ -22442,6 +22442,89 @@
     ],
     "sid": 4544
   },
+  "aerodactyl_mega": {
+    "dex": 142,
+    "speciesName": {},
+    "speciesId": "aerodactyl_mega",
+    "baseStats": {
+      "atk": 292,
+      "def": 210,
+      "hp": 190
+    },
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "fastMoves": [
+      "BITE",
+      "DRAGON_BREATH",
+      "FIRE_FANG",
+      "HIDDEN_POWER_BUG",
+      "HIDDEN_POWER_DARK",
+      "HIDDEN_POWER_DRAGON",
+      "HIDDEN_POWER_ELECTRIC",
+      "HIDDEN_POWER_FIGHTING",
+      "HIDDEN_POWER_FIRE",
+      "HIDDEN_POWER_FLYING",
+      "HIDDEN_POWER_GHOST",
+      "HIDDEN_POWER_GRASS",
+      "HIDDEN_POWER_GROUND",
+      "HIDDEN_POWER_ICE",
+      "HIDDEN_POWER_NORMAL",
+      "HIDDEN_POWER_POISON",
+      "HIDDEN_POWER_PSYCHIC",
+      "HIDDEN_POWER_ROCK",
+      "HIDDEN_POWER_STEEL",
+      "HIDDEN_POWER_WATER",
+      "ICE_FANG",
+      "INCINERATE",
+      "IRON_TAIL",
+      "ROCK_SMASH",
+      "ROCK_THROW",
+      "SMACK_DOWN",
+      "STEEL_WING",
+      "TAKE_DOWN",
+      "THUNDER_FANG",
+      "WING_ATTACK"
+    ],
+    "chargedMoves": [
+      "AERIAL_ACE",
+      "AIR_CUTTER",
+      "ANCIENT_POWER",
+      "AQUA_TAIL",
+      "BULLDOZE",
+      "CRUNCH",
+      "DRAGON_CLAW",
+      "DRAGON_PULSE",
+      "EARTH_POWER",
+      "EARTHQUAKE",
+      "FIRE_BLAST",
+      "FLAMETHROWER",
+      "FLY",
+      "FRUSTRATION",
+      "GIGA_IMPACT",
+      "HEAT_WAVE",
+      "HURRICANE",
+      "HYPER_BEAM",
+      "IRON_HEAD",
+      "OMINOUS_WIND",
+      "PAYBACK",
+      "REST",
+      "RETURN",
+      "ROCK_BLAST",
+      "ROCK_SLIDE",
+      "ROCK_TOMB",
+      "SKY_ATTACK",
+      "STONE_EDGE",
+      "SWIFT",
+      "TWISTER",
+      "STRUGGLE"
+    ],
+    "tags": [
+      "mega"
+    ],
+    "sid": 4545
+  },
   "snorlax": {
     "dex": 143,
     "speciesName": {
@@ -36535,6 +36618,7 @@
       "shadoweligible"
     ],
     "level25CP": 2436,
+    "searchPriority": 4,
     "sid": 8000,
     "gender": "N"
   },
@@ -49878,6 +49962,7 @@
     "tags": [
       "shadoweligible"
     ],
+    "searchPriority": 10,
     "sid": 11680
   },
   "walrein_shadow": {
@@ -79993,8 +80078,7 @@
     ],
     "tags": [
       "mythical",
-      "untradeable",
-      "unreleased"
+      "untradeable"
     ],
     "sid": 20770,
     "gender": "N"
@@ -85298,9 +85382,6 @@
       "WATER_PULSE",
       "STRUGGLE"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "sid": 22784
   },
   "avalugg": {
@@ -85381,9 +85462,6 @@
       "WATER_PULSE",
       "MIRROR_COAT",
       "STRUGGLE"
-    ],
-    "tags": [
-      "unreleased"
     ],
     "sid": 22816
   },
