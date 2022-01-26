@@ -192,6 +192,9 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
       delete currentRoom.players[j]!.current!.bufferedAction;
       const myActive = currentRoom.players[i]?.current?.active || 0;
       const myCurrent = currentRoom.players[i]?.current?.team[myActive];
+      if (myCurrent && myCurrent.current) {
+        myCurrent.current.energy -= currentRoom.charge.move.energy;
+      }
       payload[i] = {
         ...payload[i],
         id: currentRoom.players[i]!.id,
