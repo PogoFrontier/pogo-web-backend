@@ -2088,6 +2088,20 @@
     "types": [
       "electric",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "voltorb_shadow": {
+    "legal": false,
+    "dex": 100,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "electrode": {
@@ -2096,6 +2110,20 @@
     "types": [
       "electric",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "electrode_shadow": {
+    "legal": false,
+    "dex": 101,
+    "types": [
+      "electric",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "exeggcute": {
@@ -2790,6 +2818,17 @@
       "shadoweligible"
     ]
   },
+  "aerodactyl_mega": {
+    "legal": false,
+    "dex": 142,
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "tags": [
+      "mega"
+    ]
+  },
   "aerodactyl_shadow": {
     "legal": false,
     "dex": 142,
@@ -3016,7 +3055,20 @@
       "none"
     ],
     "tags": [
-      "starter"
+      "starter",
+      "shadoweligible"
+    ]
+  },
+  "chikorita_shadow": {
+    "legal": false,
+    "dex": 152,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "starter",
+      "shadow"
     ]
   },
   "bayleef": {
@@ -3027,7 +3079,20 @@
       "none"
     ],
     "tags": [
-      "starter"
+      "starter",
+      "shadoweligible"
+    ]
+  },
+  "bayleef_shadow": {
+    "legal": false,
+    "dex": 153,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "starter",
+      "shadow"
     ]
   },
   "meganium": {
@@ -3038,7 +3103,20 @@
       "none"
     ],
     "tags": [
-      "starter"
+      "starter",
+      "shadoweligible"
+    ]
+  },
+  "meganium_shadow": {
+    "legal": false,
+    "dex": 154,
+    "types": [
+      "grass",
+      "none"
+    ],
+    "tags": [
+      "starter",
+      "shadow"
     ]
   },
   "cyndaquil": {
@@ -3049,7 +3127,20 @@
       "none"
     ],
     "tags": [
-      "starter"
+      "starter",
+      "shadoweligible"
+    ]
+  },
+  "cyndaquil_shadow": {
+    "legal": false,
+    "dex": 155,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "starter",
+      "shadow"
     ]
   },
   "quilava": {
@@ -3060,7 +3151,20 @@
       "none"
     ],
     "tags": [
-      "starter"
+      "starter",
+      "shadoweligible"
+    ]
+  },
+  "quilava_shadow": {
+    "legal": false,
+    "dex": 156,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "starter",
+      "shadow"
     ]
   },
   "typhlosion": {
@@ -3071,7 +3175,20 @@
       "none"
     ],
     "tags": [
-      "starter"
+      "starter",
+      "shadoweligible"
+    ]
+  },
+  "typhlosion_shadow": {
+    "legal": false,
+    "dex": 157,
+    "types": [
+      "fire",
+      "none"
+    ],
+    "tags": [
+      "starter",
+      "shadow"
     ]
   },
   "totodile": {
@@ -3082,7 +3199,20 @@
       "none"
     ],
     "tags": [
-      "starter"
+      "starter",
+      "shadoweligible"
+    ]
+  },
+  "totodile_shadow": {
+    "legal": false,
+    "dex": 158,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "starter",
+      "shadow"
     ]
   },
   "croconaw": {
@@ -3093,7 +3223,20 @@
       "none"
     ],
     "tags": [
-      "starter"
+      "starter",
+      "shadoweligible"
+    ]
+  },
+  "croconaw_shadow": {
+    "legal": false,
+    "dex": 159,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "starter",
+      "shadow"
     ]
   },
   "feraligatr": {
@@ -3104,7 +3247,20 @@
       "none"
     ],
     "tags": [
-      "starter"
+      "starter",
+      "shadoweligible"
+    ]
+  },
+  "feraligatr_shadow": {
+    "legal": false,
+    "dex": 160,
+    "types": [
+      "water",
+      "none"
+    ],
+    "tags": [
+      "starter",
+      "shadow"
     ]
   },
   "sentret": {
@@ -3788,8 +3944,7 @@
       "ground"
     ],
     "tags": [
-      "mega",
-      "unreleased"
+      "mega"
     ]
   },
   "snubbull": {
@@ -5060,6 +5215,20 @@
     "types": [
       "normal",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "whismur_shadow": {
+    "legal": false,
+    "dex": 293,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "loudred": {
@@ -5068,6 +5237,20 @@
     "types": [
       "normal",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "loudred_shadow": {
+    "legal": false,
+    "dex": 294,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "exploud": {
@@ -5076,6 +5259,20 @@
     "types": [
       "normal",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "exploud_shadow": {
+    "legal": false,
+    "dex": 295,
+    "types": [
+      "normal",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "makuhita": {
@@ -7241,6 +7438,20 @@
     "types": [
       "ground",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "hippopotas_shadow": {
+    "legal": false,
+    "dex": 449,
+    "types": [
+      "ground",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "hippowdon": {
@@ -7249,6 +7460,20 @@
     "types": [
       "ground",
       "none"
+    ],
+    "tags": [
+      "shadoweligible"
+    ]
+  },
+  "hippowdon_shadow": {
+    "legal": false,
+    "dex": 450,
+    "types": [
+      "ground",
+      "none"
+    ],
+    "tags": [
+      "shadow"
     ]
   },
   "skorupi": {
@@ -9698,8 +9923,7 @@
     ],
     "tags": [
       "mythical",
-      "untradeable",
-      "unreleased"
+      "untradeable"
     ]
   },
   "chespin": {
@@ -10175,9 +10399,6 @@
     "types": [
       "electric",
       "normal"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "heliolisk": {
@@ -10186,9 +10407,6 @@
     "types": [
       "electric",
       "normal"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "tyrunt": {
@@ -10415,9 +10633,6 @@
     "types": [
       "ice",
       "none"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "avalugg": {
@@ -10426,9 +10641,6 @@
     "types": [
       "ice",
       "none"
-    ],
-    "tags": [
-      "unreleased"
     ]
   },
   "noibat": {

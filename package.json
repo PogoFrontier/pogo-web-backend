@@ -9,6 +9,7 @@
         "generate_pokemonforformats_data": "node --loader ts-node/esm --experimental-specifier-resolution=node  updateData/preparePokemonForFormatsData.ts",
         "start_matchhandling": "node --loader ts-node/esm --experimental-specifier-resolution=node -r dotenv/config matchhandling_server.ts",
         "start_rest": "node --loader ts-node/esm --experimental-specifier-resolution=node -r dotenv/config api/rest_server.ts",
+        "generate_unreleased_tags": "node --loader ts-node/esm --experimental-specifier-resolution=node updateData/addUnreleasedTags.ts",
         "update_data": "node --loader ts-node/esm --experimental-specifier-resolution=node updateData/addUnreleasedTags.ts && node --loader ts-node/esm --experimental-specifier-resolution=node updateData/mergePokemonTranslations.ts && node --loader ts-node/esm --experimental-specifier-resolution=node updateData/makeMainSeriesMoveset.ts && node --loader ts-node/esm --experimental-specifier-resolution=node updateData/preparePokemonForFormatsData.ts",
         "dev": "concurrently \"npm run start_matchhandling\" \"npm run start_rest\"",
         "start": "concurrently \"tsc\" \"npm run runbuild\"",

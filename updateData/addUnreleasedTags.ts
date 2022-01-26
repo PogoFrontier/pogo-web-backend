@@ -55,7 +55,7 @@ const getSid = (speciesId: string, sids: any) => {
         sidString = sidString.replace("-", "_").replace("’", "").replace(".", "").replace(" ", "_").replace(/é/g, "e").toLowerCase()
 
         return speciesId === sidString
-    })!)
+    })!.replace("s", ""))
 }
 
 https.get("https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/gamemaster.json", (res) => {
@@ -85,7 +85,7 @@ https.get("https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/gamem
                     delete pokemon.buddyDistance
                     delete pokemon.thirdMoveCost
                     delete pokemon.defaultIVs
-        
+
                     pokemon.sid = getSid(pokemon.speciesId, sids)
                     pokemon.gender = pokedex[getLearnSetKey(pokemon.speciesId)].gender
 
