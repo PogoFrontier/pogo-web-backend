@@ -108,6 +108,7 @@ dist
 
 # Ignore DevSpace cache and log folder
 .devspace/
+devspace.yaml
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
@@ -116,3 +117,5 @@ dist
 
 # dump files
 dump.rdb
+
+data/pokemonForFormats

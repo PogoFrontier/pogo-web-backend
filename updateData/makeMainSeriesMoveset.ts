@@ -11,7 +11,7 @@ let localMoves: any = m;
 
 const hpTypes = ['bug', 'dark', 'dragon', 'electric', 'fighting', 'fire', 'flying', 'ghost', 'grass', 'ground', 'ice', 'normal', 'poison', 'psychic', 'rock', 'steel', 'water']
 
-for(let id of Object.keys(pokemonList)) {
+OUTER: for(let id of Object.keys(pokemonList)) {
     let pokemon = pokemonList[id];
     
     let collectedQuickmoves: string[] = []
@@ -19,9 +19,12 @@ for(let id of Object.keys(pokemonList)) {
 
     let speciesId = pokemon.speciesId;
     while(true) {
-        const { quickmoves, chargemoves } = getLearnset(speciesId, collectedQuickmoves, collectedChargemoves)
-        collectedQuickmoves = quickmoves
-        collectedChargemoves = chargemoves
+        const learnset = getLearnset(speciesId, collectedQuickmoves, collectedChargemoves)
+        if(learnset === null) {
+            continue OUTER;
+        }
+        collectedQuickmoves = learnset.quickmoves
+        collectedChargemoves = learnset.chargemoves
 
         let key = getLearnSetKey(speciesId);
         const origin = dex[key].prevo || dex[key].baseSpecies
@@ -75,7 +78,7 @@ function getLearnset(speciesId: string, quickmoves: string[], chargemoves: strin
     let pokeWithLearnset = Learnsets[key];
     if (!pokeWithLearnset || !pokeWithLearnset.learnset) {
         console.error("Unidentified pokemon " + key + ". SpeciesId: " + speciesId);
-        process.exit(1);
+        return null;
     }
 
     for (let move of Object.keys(pokeWithLearnset.learnset)) {

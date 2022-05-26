@@ -4,6 +4,7 @@ import r from "../data/rules.json";
 import { isSpeciesAllowed, doesClassDescribePokemon } from "../team/checkTeam"
 import { Rule, PriceSetting } from "../types/rule"
 import https from 'https'
+import { exit } from "process";
 
 let pokemonList: any = p
 let rules: any = r;
@@ -18,8 +19,58 @@ type moveWithRating = {
     uses: number
 }
 
+function isRuleValid (rule: Rule) : string[] {
+    let violations = [];
+
+    if (rule.include) {
+        for (let inclusion of rule.include) {
+            if (inclusion.filterType === "id") {
+                for (let id of inclusion.values) {
+                    if (!Object.keys(pokemonList).includes(id)) {
+                        violations.push("The included pokémon " + id + " doesn't exist.")
+                    }
+                }
+            }
+        }
+    }
+
+    if (rule.exclude) {
+        for (let exclusion of rule.exclude) {
+            if (exclusion.filterType === "id") {
+                for (let id of exclusion.values) {
+                    if (!Object.keys(pokemonList).includes(id)) {
+                        violations.push("The excluded pokémon " + id + " doesn't exist.")
+                    }
+                }
+            }
+        }
+    }
+
+    if (rule.pointLimitOptions) {
+        for(let priceClass of rule.pointLimitOptions.prices) {
+            for (let id of priceClass.pokemonIds) {
+                if (!Object.keys(pokemonList).includes(id)) {
+                    violations.push("The pokémon in the priceclass" + priceClass.price + " with the id " + id + " doesn't exist.")
+                }
+            }
+        }
+    }
+
+    return violations;
+}
+
 for (let ruleName of Object.keys(rules)) {
     let rule: Rule = rules[ruleName];
+
+    // Validate rule
+    let violations = isRuleValid(rule);
+    if(violations.length) {
+        console.error("Rule " + rule.name + " has errors:");
+        for(let violation of violations) {
+            console.error(violation);
+        }
+        exit(1);
+    }
 
     const callback = () => {
         // Do we have a team pattern? Then make 6 files, one for each team position
