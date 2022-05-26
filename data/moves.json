@@ -169,7 +169,7 @@
             "it": "Acquagetto",
             "en": "Aqua Jet",
             "ja": "アクアジェット",
-            "zh-Hans": "水流喷���"
+            "zh-Hans": "水流喷射"
         },
         "type": "water",
         "power": 45,
@@ -976,7 +976,7 @@
         "moveId": "DRAGON_BREATH",
         "name": {
             "ja-Hrkt": "りゅうのいぶき",
-            "ko": "용의숨결",
+            "ko": "���의숨결",
             "zh-Hant": "龍息",
             "fr": "Draco-Souffle",
             "de": "Feuerodem",
@@ -1016,7 +1016,7 @@
         "moveId": "DRAGON_PULSE",
         "name": {
             "ja-Hrkt": "りゅうのはどう",
-            "ko": "용의파��",
+            "ko": "용의파동",
             "zh-Hant": "龍之波動",
             "fr": "Draco-Choc",
             "de": "Drachenpuls",
@@ -1117,7 +1117,7 @@
     "DYNAMIC_PUNCH": {
         "moveId": "DYNAMIC_PUNCH",
         "name": {
-            "ja-Hrkt": "ばくれつパン��",
+            "ja-Hrkt": "ばくれつパンチ",
             "ko": "폭발펀치",
             "zh-Hant": "爆裂拳",
             "fr": "Dynamo-Poing",
@@ -1542,7 +1542,7 @@
             "it": "Volo",
             "en": "Fly",
             "ja": "そらをとぶ",
-            "zh-Hans": "飞��"
+            "zh-Hans": "飞翔"
         },
         "type": "flying",
         "power": 80,
@@ -1623,7 +1623,7 @@
             "es": "Planta Feroz",
             "it": "Radicalbero",
             "en": "Frenzy Plant",
-            "ja": "ハ���ドプラント",
+            "ja": "ハードプラント",
             "zh-Hans": "疯狂植物"
         },
         "type": "grass",
@@ -2277,7 +2277,7 @@
             "it": "Iper Raggio",
             "en": "Hyper Beam",
             "ja": "はかいこうせん",
-            "zh-Hans": "破坏��线"
+            "zh-Hans": "破坏光线"
         },
         "type": "normal",
         "power": 150,
@@ -2289,7 +2289,7 @@
         "moveId": "HYPER_FANG",
         "name": {
             "ja-Hrkt": "ひっさつまえば",
-            "ko": "필살앞니",
+            "ko": "필살앞��",
             "zh-Hant": "必殺門牙",
             "fr": "Croc de Mort",
             "de": "Hyperzahn",
@@ -2329,7 +2329,7 @@
         "moveId": "ICE_FANG",
         "name": {
             "ja-Hrkt": "こおりのキバ",
-            "ko": "얼��엄니",
+            "ko": "얼음엄니",
             "zh-Hant": "冰凍牙",
             "fr": "Crocs Givre",
             "de": "Eiszahn",
@@ -2376,7 +2376,7 @@
             "es": "Canto Helado",
             "it": "Geloscheggia",
             "en": "Ice Shard",
-            "ja": "��おりのつぶて",
+            "ja": "こおりのつぶて",
             "zh-Hans": "冰砾"
         },
         "type": "ice",
@@ -2384,6 +2384,26 @@
         "energy": 0,
         "energyGain": 10,
         "cooldown": 1500
+    },
+    "ICICLE_SPEAR": {
+        "moveId": "ICICLE_SPEAR",
+        "name": {
+            "ja-Hrkt": "つららばり",
+            "ko": "고드름침",
+            "zh-Hant": "冰錐",
+            "fr": "Stalactite",
+            "de": "Eisspeer",
+            "es": "Carámbano",
+            "it": "Gelolancia",
+            "en": "Icicle Spear",
+            "ja": "つららばり",
+            "zh-Hans": "冰锥"
+        },
+        "type": "ice",
+        "power": 60,
+        "energy": 35,
+        "energyGain": 0,
+        "cooldown": 500
     },
     "ICY_WIND": {
         "moveId": "ICY_WIND",
@@ -2841,7 +2861,7 @@
             "es": "Disparo Espejo",
             "it": "Cristalcolpo",
             "en": "Mirror Shot",
-            "ja": "ミラーショット",
+            "ja": "ミラーショッ���",
             "zh-Hans": "镜光射击"
         },
         "abbreviation": "MrS",
@@ -3156,7 +3176,7 @@
     "PAYBACK": {
         "moveId": "PAYBACK",
         "name": {
-            "ja-Hrkt": "しっぺがえし",
+            "ja-Hrkt": "し��ぺがえし",
             "ko": "보복",
             "zh-Hant": "以牙還牙",
             "fr": "Représailles",
@@ -3455,7 +3475,7 @@
         "moveId": "PSYBEAM",
         "name": {
             "ja-Hrkt": "サイケこうせん",
-            "ko": "��상빔",
+            "ko": "환상빔",
             "zh-Hant": "幻象光線",
             "fr": "Rafale Psy",
             "de": "Psystrahl",
@@ -5147,7 +5167,7 @@
         "name": {
             "ja-Hrkt": "シザークロス",
             "ko": "시저크로스",
-            "zh-Hant": "十字剪",
+            "zh-Hant": "十��剪",
             "fr": "Plaie Croix",
             "de": "Kreuzschere",
             "es": "Tijera X",

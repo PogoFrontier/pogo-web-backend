@@ -48,7 +48,7 @@ function onChargeEnd(room: string) {
           currentRoom.charge.multiplier
         )
         : opponent.current!.team[opponent.current!.active].current!.hp - 1;
-      player.current!.team[player.current!.active].current!.energy -= currentRoom.charge.move.energy;
+      // player.current!.team[player.current!.active].current!.energy -= currentRoom.charge.move.energy;
       player.current!.team[player.current!.active].current!.chargeMovesUsed++;
       let message = getMessage(player.current.team[player.current.active].speciesId, currentRoom.charge.move.moveId, currentRoom.charge.shield);
       // Apply buffs/debuffs

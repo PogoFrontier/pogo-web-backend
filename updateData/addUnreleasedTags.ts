@@ -10,6 +10,7 @@ const replaceMap = {
     "_shadow": "",
     "_alolan": "_alola",
     "_galarian": "_galar",
+    "_hisuian": "",
     "_female": "_f",
     "indeedee_male": "indeedee",
     "_male": "_m",
@@ -29,6 +30,7 @@ const replaceMap = {
     "_ordinary": "",
     "_aria": "",
     "pyroar_f": "pyroar",
+    "_midday": "",
     "_average": "",
     "_confined": "",
     "_amped": "_low_key",
@@ -39,7 +41,10 @@ const replaceMap = {
     "_sword": "",
     "_shield": "",
     "_single_strike": "",
-    "_ice_rider": "_ice"
+    "_ice_rider": "_ice",
+    "_baile": "",
+    "_solo": "",
+    "_core": ""
 }
 
 const getSid = (speciesId: string, sids: object[]) => {
@@ -55,7 +60,7 @@ const getSid = (speciesId: string, sids: object[]) => {
         if (sidObj.forme) {
             sidString += "_" + sidObj.forme
         }
-        sidString = sidString.replace("-", "_").replace("’", "").replace(".", "").replace(" ", "_").replace(/é/g, "e").toLowerCase()
+        sidString = sidString.replace("-", "_").replace("’", "").replace("'", "").replace(".", "").replace(":", "").replace(" ", "_").replace(/é/g, "e").toLowerCase()
 
         return speciesId === sidString
     });
@@ -95,7 +100,7 @@ https.get("https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/gamem
                     delete pokemon.buddyDistance
                     delete pokemon.thirdMoveCost
                     delete pokemon.defaultIVs
-        
+
                     pokemon.sid = getSid(pokemon.speciesId, sids)
                     pokemon.gender = pokedex[getLearnSetKey(pokemon.speciesId)].gender
 
