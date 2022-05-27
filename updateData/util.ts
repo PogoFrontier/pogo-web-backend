@@ -6,7 +6,7 @@ export function getPokedexKey(speciesId: string): string {
         return dexkeyCache.get(speciesId);
     }
 
-    let key: string = speciesId.replace("shadow", "").replace("overcast", "").replace("altered", "").replace("sky", "").replace("incarnate", "").replace("galarian", "galar").replace("alolan", "alola").replace("_standard", "").replace("female", "f").replace("male", "m").replace(/_/g, "")
+    let key: string = speciesId.replace("shadow", "").replace("overcast", "").replace("altered", "").replace("sky", "").replace("incarnate", "").replace("galarian", "galar").replace("alolan", "alola").replace("hisuian", "hisui").replace("_standard", "").replace("_midday", "").replace("female", "f").replace("male", "m").replace(/_/g, "")
 
     if (key.startsWith("pikachu")) {
         key = "pikachu";
@@ -77,6 +77,15 @@ export function getPokedexKey(speciesId: string): string {
     if (key.startsWith("eiscue")) {
         key = "eiscue";
     }
+    if (key.startsWith("oricorio")) {
+        key = "oricorio";
+    }
+    if (key.startsWith("wishiwashi")) {
+        key = "wishiwashi";
+    }
+    if (key.startsWith("minior")) {
+        key = "minior";
+    }
 
     dexkeyCache.set(speciesId, key);
     return key;
@@ -123,6 +132,9 @@ export function getLearnSetKey(speciesId: string): string {
     }
     if (key.startsWith("hoopa")) {
         key = "hoopa";
+    }
+    if (key.startsWith("silvally")) {
+        key = "silvally";
     }
 
     // Save progress and return

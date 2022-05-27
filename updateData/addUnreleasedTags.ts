@@ -10,6 +10,7 @@ const replaceMap = {
     "_shadow": "",
     "_alolan": "_alola",
     "_galarian": "_galar",
+    "_hisuian": "",
     "_female": "_f",
     "indeedee_male": "indeedee",
     "_male": "_m",
@@ -29,6 +30,7 @@ const replaceMap = {
     "_ordinary": "",
     "_aria": "",
     "pyroar_f": "pyroar",
+    "_midday": "",
     "_average": "",
     "_confined": "",
     "_amped": "_low_key",
@@ -39,23 +41,36 @@ const replaceMap = {
     "_sword": "",
     "_shield": "",
     "_single_strike": "",
-    "_ice_rider": "_ice"
+    "_ice_rider": "_ice",
+    "_baile": "",
+    "_solo": "",
+    "_core": ""
 }
 
-const getSid = (speciesId: string, sids: any) => {
+const getSid = (speciesId: string, sids: object[]) => {
+    // Apply replacements of the replacemap to the speciesId to match the strings of the integrated data
     for(const needle of Object.keys(replaceMap)) {
         speciesId = speciesId.replace(needle, replaceMap[needle])
     }
-    return parseInt(Object.keys(sids).find(sid => {
+
+    // Search the object in the Array that matches the speciesId
+    const sidReference: string | undefined = Object.keys(sids).find(sid => {
         let sidObj = sids[sid]
         let sidString = sidObj.base
-        if(sidObj.forme) {
+        if (sidObj.forme) {
             sidString += "_" + sidObj.forme
         }
-        sidString = sidString.replace("-", "_").replace("’", "").replace(".", "").replace(" ", "_").replace(/é/g, "e").toLowerCase()
+        sidString = sidString.replace("-", "_").replace("’", "").replace("'", "").replace(".", "").replace(":", "").replace(" ", "_").replace(/é/g, "e").toLowerCase()
 
         return speciesId === sidString
-    })!.replace("s", ""))
+    });
+    
+    if(!sidReference)  {
+        return NaN;
+    }
+
+    // Remove the "s" at the beginning and return the number
+    return parseInt(sidReference.slice(1));
 }
 
 https.get("https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/gamemaster.json", (res) => {
