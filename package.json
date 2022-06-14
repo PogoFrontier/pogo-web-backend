@@ -6,11 +6,11 @@
     "scripts": {
         "translate_untranslated_moves": "node --loader ts-node/esm --experimental-specifier-resolution=node updateData/translateUntranslatedMoves.ts",
         "generate_mainseries_moveset_data": "node --loader ts-node/esm --experimental-specifier-resolution=node updateData/makeMainSeriesMoveset.ts",
-        "generate_pokemonforformats_data": "node --loader ts-node/esm --experimental-specifier-resolution=node  updateData/preparePokemonForFormatsData.ts",
+        "generate_rule_data": "node --loader ts-node/esm --experimental-specifier-resolution=node  updateData/compileRulesets.ts",
         "start_matchhandling": "node --loader ts-node/esm --experimental-specifier-resolution=node -r dotenv/config matchhandling_server.ts",
         "start_rest": "node --loader ts-node/esm --experimental-specifier-resolution=node -r dotenv/config api/rest_server.ts",
         "generate_unreleased_tags": "node --loader ts-node/esm --experimental-specifier-resolution=node updateData/addUnreleasedTags.ts",
-        "update_data": "node --loader ts-node/esm --experimental-specifier-resolution=node updateData/addUnreleasedTags.ts && node --loader ts-node/esm --experimental-specifier-resolution=node updateData/mergePokemonTranslations.ts && node --loader ts-node/esm --experimental-specifier-resolution=node updateData/makeMainSeriesMoveset.ts && node --loader ts-node/esm --experimental-specifier-resolution=node updateData/preparePokemonForFormatsData.ts",
+        "update_data": "node --loader ts-node/esm --experimental-specifier-resolution=node updateData/addUnreleasedTags.ts && node --loader ts-node/esm --experimental-specifier-resolution=node updateData/mergePokemonTranslations.ts && node --loader ts-node/esm --experimental-specifier-resolution=node updateData/makeMainSeriesMoveset.ts && node --loader ts-node/esm --experimental-specifier-resolution=node updateData/compileRulesets.ts",
         "dev": "concurrently \"npm run start_matchhandling\" \"npm run start_rest\"",
         "start": "concurrently \"tsc\" \"npm run runbuild\"",
         "test": "echo \"Error: no test specified\" && exit 1",
