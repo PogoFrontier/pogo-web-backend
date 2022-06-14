@@ -210,6 +210,8 @@ for (let ruleName of Object.keys(rules)) {
                 } catch(e) {
                     console.error(e);
                     console.log(ruleName);
+                    console.log(rule.rankingsLink);
+                    callback();
                 }
             })
         })

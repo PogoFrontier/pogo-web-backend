@@ -32707,10 +32707,14 @@
     "chargedMoves": [
       "ENERGY_BALL",
       "GRASS_KNOT",
-      "SOLAR_BEAM"
+      "SOLAR_BEAM",
+      "SEED_FLARE"
+    ],
+    "eliteMoves": [
+      "SEED_FLARE"
     ],
     "tags": [
-      "unreleased"
+      "mythical"
     ],
     "sid": 15744,
     "gender": "N"
@@ -32761,9 +32765,14 @@
     "chargedMoves": [
       "ENERGY_BALL",
       "GRASS_KNOT",
-      "SOLAR_BEAM"
+      "SOLAR_BEAM",
+      "SEED_FLARE"
+    ],
+    "eliteMoves": [
+      "SEED_FLARE"
     ],
     "tags": [
+      "mythical",
       "unreleased"
     ],
     "sid": 15745,
@@ -40942,7 +40951,6 @@
       "ROCK_SLIDE"
     ],
     "searchPriority": 5,
-    "levelFloor": 20,
     "sid": 21600
   },
   "furfrou": {
@@ -41730,9 +41738,6 @@
       "ANCIENT_POWER",
       "DRAGON_CLAW"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "sid": 22272
   },
   "tyrantrum": {
@@ -41770,9 +41775,6 @@
       "OUTRAGE",
       "EARTHQUAKE"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "sid": 22304
   },
   "amaura": {
@@ -41808,9 +41810,6 @@
       "ANCIENT_POWER",
       "AURORA_BEAM",
       "THUNDERBOLT"
-    ],
-    "tags": [
-      "unreleased"
     ],
     "sid": 22336
   },
@@ -41849,9 +41848,6 @@
       "BLIZZARD",
       "THUNDERBOLT",
       "HYPER_BEAM"
-    ],
-    "tags": [
-      "unreleased"
     ],
     "sid": 22368
   },
@@ -43428,10 +43424,13 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "BUG_BITE",
+      "SPARK"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "X_SCISSOR",
+      "VICE_GRIP",
+      "CRUNCH"
     ],
     "tags": [
       "unreleased"
@@ -43463,10 +43462,13 @@
       "electric"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "BUG_BITE",
+      "SPARK"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "X_SCISSOR",
+      "DISCHARGE",
+      "CRUNCH"
     ],
     "tags": [
       "unreleased"
@@ -43498,10 +43500,14 @@
       "electric"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "BUG_BITE",
+      "SPARK",
+      "MUD_SLAP"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "X_SCISSOR",
+      "DISCHARGE",
+      "CRUNCH"
     ],
     "tags": [
       "unreleased"
@@ -43533,10 +43539,13 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "ROCK_SMASH",
+      "PAYBACK"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "POWER_UP_PUNCH",
+      "CRABHAMMER",
+      "PAYBACK"
     ],
     "tags": [
       "unreleased"
@@ -43568,10 +43577,14 @@
       "ice"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "ROCK_SMASH",
+      "PAYBACK"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "POWER_UP_PUNCH",
+      "CRABHAMMER",
+      "PAYBACK",
+      "ICE_PUNCH"
     ],
     "tags": [
       "unreleased"
@@ -43699,10 +43712,12 @@
       "fairy"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "FAIRY_WIND",
+      "STRUGGLE_BUG"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "DAZZLING_GLEAM",
+      "BUG_BUZZ"
     ],
     "tags": [
       "unreleased"
@@ -43734,10 +43749,12 @@
       "fairy"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "FAIRY_WIND",
+      "STRUGGLE_BUG"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "DAZZLING_GLEAM",
+      "BUG_BUZZ"
     ],
     "tags": [
       "unreleased"
@@ -43793,10 +43810,13 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "CRUSH_CLAW",
+      "ROCK_THROW"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "STONE_EDGE",
+      "IRON_HEAD",
+      "CRUNCH"
     ],
     "tags": [
       "unreleased"
@@ -43877,10 +43897,14 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "WATER_GUN",
+      "WATERFALL",
+      "IRON_TAIL"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "BRINE",
+      "SURF",
+      "AQUA_TAIL"
     ],
     "tags": [
       "unreleased"
@@ -43901,10 +43925,14 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "WATER_GUN",
+      "WATERFALL",
+      "IRON_TAIL"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "BRINE",
+      "SURF",
+      "AQUA_TAIL"
     ],
     "tags": [
       "unreleased"
@@ -43925,10 +43953,14 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "WATER_GUN",
+      "WATERFALL",
+      "IRON_TAIL"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "BRINE",
+      "SURF",
+      "AQUA_TAIL"
     ],
     "tags": [
       "unreleased"
@@ -43960,10 +43992,13 @@
       "water"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "POISON_STING",
+      "BITE"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "MUDDY_WATER",
+      "GUNK_SHOT",
+      "SLUDGE_WAVE"
     ],
     "tags": [
       "unreleased"
@@ -43995,10 +44030,13 @@
       "water"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "POISON_JAB",
+      "BITE"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "MUDDY_WATER",
+      "GUNK_SHOT",
+      "SLUDGE_WAVE"
     ],
     "tags": [
       "unreleased"
@@ -44030,10 +44068,13 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "MUD_SLAP",
+      "ROCK_SMASH"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "BULLDOZE",
+      "BODY_SLAM",
+      "EARTHQUAKE"
     ],
     "tags": [
       "unreleased"
@@ -44065,10 +44106,14 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "MUD_SLAP",
+      "ROCK_SMASH"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "BULLDOZE",
+      "BODY_SLAM",
+      "EARTHQUAKE",
+      "HEAVY_SLAM"
     ],
     "tags": [
       "unreleased"
@@ -44242,10 +44287,12 @@
       "fairy"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "ASTONISH"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "GIGA_DRAIN",
+      "DAZZLING_GLEAM",
+      "SEED_BOMB"
     ],
     "tags": [
       "unreleased"
@@ -44277,10 +44324,13 @@
       "fairy"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "ASTONISH"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "GIGA_DRAIN",
+      "MOONBLAST",
+      "SEED_BOMB",
+      "SLUDGE_BOMB"
     ],
     "tags": [
       "unreleased"
@@ -44460,10 +44510,12 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "RAZOR_LEAF",
+      "CHARM"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "ENERGY_BALL",
+      "DRAINING_KISS"
     ],
     "tags": [
       "unreleased"
@@ -44496,10 +44548,13 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "RAZOR_LEAF",
+      "CHARM"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "ENERGY_BALL",
+      "DRAINING_KISS",
+      "GRASS_KNOT"
     ],
     "tags": [
       "unreleased"
@@ -44532,10 +44587,15 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "RAZOR_LEAF",
+      "CHARM",
+      "MAGICAL_LEAF"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "ENERGY_BALL",
+      "DRAINING_KISS",
+      "GRASS_KNOT",
+      "STOMP"
     ],
     "tags": [
       "unreleased"
@@ -44657,10 +44717,14 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "COUNTER",
+      "ROCK_SMASH",
+      "TAKE_DOWN"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "BRICK_BREAK",
+      "CLOSE_COMBAT",
+      "SUPER_POWER"
     ],
     "tags": [
       "unreleased"
@@ -44692,10 +44756,10 @@
       "water"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "STRUGGLE_BUG"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "BUG_BUZZ"
     ],
     "tags": [
       "unreleased"
@@ -44727,10 +44791,14 @@
       "water"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "FURY_CUTTER",
+      "METAL_CLAW",
+      "WATERFALL"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "X_SCISSOR",
+      "AQUA_JET",
+      "AERIAL_ACE"
     ],
     "tags": [
       "unreleased"
@@ -44762,10 +44830,13 @@
       "ground"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "ASTONISH",
+      "MUD_SHOT"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "SAND_TOMB",
+      "SHADOW_BALL",
+      "EARTH_POWER"
     ],
     "tags": [
       "unreleased"
@@ -44797,10 +44868,13 @@
       "ground"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "ASTONISH",
+      "MUD_SHOT"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "SAND_TOMB",
+      "SHADOW_BALL",
+      "EARTH_POWER"
     ],
     "tags": [
       "unreleased"
@@ -44832,10 +44906,10 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "COUNTER"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "MIRROR_COAT"
     ],
     "tags": [
       "unreleased"
@@ -44856,10 +44930,13 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "TACKLE",
+      "TAKE_DOWN"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "TRI_ATTACK",
+      "IRON_HEAD",
+      "AERIAL_ACE"
     ],
     "tags": [
       "unreleased"
@@ -44892,10 +44969,15 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "TACKLE",
+      "TAKE_DOWN",
+      "BITE"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "TRI_ATTACK",
+      "IRON_HEAD",
+      "AERIAL_ACE",
+      "X_SCISSOR"
     ],
     "tags": [
       "unreleased"
@@ -44917,10 +44999,15 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "TACKLE",
+      "TAKE_DOWN",
+      "BITE"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "TRI_ATTACK",
+      "IRON_HEAD",
+      "AERIAL_ACE",
+      "X_SCISSOR"
     ],
     "tags": [
       "unreleased"
@@ -44942,10 +45029,15 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "TACKLE",
+      "TAKE_DOWN",
+      "BITE"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "TRI_ATTACK",
+      "IRON_HEAD",
+      "AERIAL_ACE",
+      "X_SCISSOR"
     ],
     "tags": [
       "unreleased"
@@ -44967,10 +45059,15 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "TACKLE",
+      "TAKE_DOWN",
+      "BITE"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "TRI_ATTACK",
+      "IRON_HEAD",
+      "AERIAL_ACE",
+      "X_SCISSOR"
     ],
     "tags": [
       "unreleased"
@@ -44992,10 +45089,15 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "TACKLE",
+      "TAKE_DOWN",
+      "BITE"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "TRI_ATTACK",
+      "IRON_HEAD",
+      "AERIAL_ACE",
+      "X_SCISSOR"
     ],
     "tags": [
       "unreleased"
@@ -45017,10 +45119,15 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "TACKLE",
+      "TAKE_DOWN",
+      "BITE"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "TRI_ATTACK",
+      "IRON_HEAD",
+      "AERIAL_ACE",
+      "X_SCISSOR"
     ],
     "tags": [
       "unreleased"
@@ -45042,10 +45149,15 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "TACKLE",
+      "TAKE_DOWN",
+      "BITE"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "TRI_ATTACK",
+      "IRON_HEAD",
+      "AERIAL_ACE",
+      "X_SCISSOR"
     ],
     "tags": [
       "unreleased"
@@ -45067,10 +45179,15 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "TACKLE",
+      "TAKE_DOWN",
+      "BITE"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "TRI_ATTACK",
+      "IRON_HEAD",
+      "AERIAL_ACE",
+      "X_SCISSOR"
     ],
     "tags": [
       "unreleased"
@@ -45092,10 +45209,15 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "TACKLE",
+      "TAKE_DOWN",
+      "BITE"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "TRI_ATTACK",
+      "IRON_HEAD",
+      "AERIAL_ACE",
+      "X_SCISSOR"
     ],
     "tags": [
       "unreleased"
@@ -45117,10 +45239,15 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "TACKLE",
+      "TAKE_DOWN",
+      "BITE"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "TRI_ATTACK",
+      "IRON_HEAD",
+      "AERIAL_ACE",
+      "X_SCISSOR"
     ],
     "tags": [
       "unreleased"
@@ -45142,10 +45269,15 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "TACKLE",
+      "TAKE_DOWN",
+      "BITE"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "TRI_ATTACK",
+      "IRON_HEAD",
+      "AERIAL_ACE",
+      "X_SCISSOR"
     ],
     "tags": [
       "unreleased"
@@ -45167,10 +45299,15 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "TACKLE",
+      "TAKE_DOWN",
+      "BITE"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "TRI_ATTACK",
+      "IRON_HEAD",
+      "AERIAL_ACE",
+      "X_SCISSOR"
     ],
     "tags": [
       "unreleased"
@@ -45192,10 +45329,15 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "TACKLE",
+      "TAKE_DOWN",
+      "BITE"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "TRI_ATTACK",
+      "IRON_HEAD",
+      "AERIAL_ACE",
+      "X_SCISSOR"
     ],
     "tags": [
       "unreleased"
@@ -45217,10 +45359,15 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "TACKLE",
+      "TAKE_DOWN",
+      "BITE"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "TRI_ATTACK",
+      "IRON_HEAD",
+      "AERIAL_ACE",
+      "X_SCISSOR"
     ],
     "tags": [
       "unreleased"
@@ -45242,10 +45389,15 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "TACKLE",
+      "TAKE_DOWN",
+      "BITE"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "TRI_ATTACK",
+      "IRON_HEAD",
+      "AERIAL_ACE",
+      "X_SCISSOR"
     ],
     "tags": [
       "unreleased"
@@ -45267,10 +45419,15 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "TACKLE",
+      "TAKE_DOWN",
+      "BITE"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "TRI_ATTACK",
+      "IRON_HEAD",
+      "AERIAL_ACE",
+      "X_SCISSOR"
     ],
     "tags": [
       "unreleased"
@@ -45292,10 +45449,15 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "TACKLE",
+      "TAKE_DOWN",
+      "BITE"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "TRI_ATTACK",
+      "IRON_HEAD",
+      "AERIAL_ACE",
+      "X_SCISSOR"
     ],
     "tags": [
       "unreleased"
@@ -45317,10 +45479,15 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "TACKLE",
+      "TAKE_DOWN",
+      "BITE"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "TRI_ATTACK",
+      "IRON_HEAD",
+      "AERIAL_ACE",
+      "X_SCISSOR"
     ],
     "tags": [
       "unreleased"
@@ -45342,10 +45509,13 @@
       "flying"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "ROLLOUT",
+      "TAKE_DOWN"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "POWER_GEM",
+      "ANCIENT_POWER",
+      "ACROBATICS"
     ],
     "tags": [
       "unreleased"
@@ -45367,10 +45537,13 @@
       "flying"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "ROLLOUT",
+      "TAKE_DOWN"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "POWER_GEM",
+      "ANCIENT_POWER",
+      "ACROBATICS"
     ],
     "tags": [
       "unreleased"
@@ -45403,10 +45576,13 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "ROLLOUT",
+      "YAWN"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "PLAY_ROUGH",
+      "BULLDOZE",
+      "PAYBACK"
     ],
     "tags": [
       "unreleased"
@@ -45438,10 +45614,13 @@
       "dragon"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "EMBER",
+      "FIRE_SPIN"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "OVERHEAT",
+      "FLAMETHROWER",
+      "DRAGON_PULSE"
     ],
     "tags": [
       "unreleased"
@@ -45473,10 +45652,13 @@
       "steel"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "THUNDER_SHOCK",
+      "SPARK"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "FELL_STINGER",
+      "WILD_CHARGE",
+      "GYRO_BALL"
     ],
     "tags": [
       "unreleased"
@@ -45508,10 +45690,13 @@
       "fairy"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "SHADOW_CLAW",
+      "CHARM"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "SHADOW_SNEAK",
+      "PLAY_ROUGH",
+      "SHADOW_BALL"
     ],
     "tags": [
       "unreleased"
@@ -45543,10 +45728,14 @@
       "psychic"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "WATER_GUN",
+      "CONFUSION",
+      "BITE"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "PSYCHIC_FANGS",
+      "AQUA_TAIL",
+      "CRUNCH"
     ],
     "tags": [
       "unreleased"
@@ -45578,10 +45767,13 @@
       "dragon"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "DRAGON_BREATH",
+      "EXTRASENSORY"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "OUTRAGE",
+      "DRAGON_PULSE",
+      "FLY"
     ],
     "tags": [
       "unreleased"
@@ -45613,10 +45805,13 @@
       "grass"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "ASTONISH",
+      "SHADOW_CLAW"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "POWER_WHIP",
+      "SHADOW_BALL",
+      "HEAVY_SLAM"
     ],
     "tags": [
       "unreleased"
@@ -46078,13 +46273,17 @@
       "poison"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "ACID",
+      "POUND"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "POWER_GEM",
+      "GUNK_SHOT",
+      "SLUDGE_BOMB",
+      "ROCK_SLIDE"
     ],
     "tags": [
-      "unreleased"
+      "legendary"
     ],
     "sid": 25376,
     "gender": "N"
@@ -46114,10 +46313,14 @@
       "fighting"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "COUNTER",
+      "POISON_JAB"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "POWER_UP_PUNCH",
+      "FELL_STINGER",
+      "LUNGE",
+      "SUPER_POWER"
     ],
     "tags": [
       "unreleased"
@@ -46150,10 +46353,14 @@
       "fighting"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "BUG_BITE",
+      "LOW_KICK"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "FOCUS_BLAST",
+      "BUG_BUZZ",
+      "LUNGE",
+      "CLOSE_COMBAT"
     ],
     "tags": [
       "unreleased"
@@ -46186,10 +46393,14 @@
       "none"
     ],
     "fastMoves": [
-      "STRUGGLE"
+      "THUNDER_SHOCK",
+      "SPARK"
     ],
     "chargedMoves": [
-      "STRUGGLE"
+      "DISCHARGE",
+      "THUNDER",
+      "POWER_WHIP",
+      "DAZZLING_GLEAM"
     ],
     "tags": [
       "unreleased"
