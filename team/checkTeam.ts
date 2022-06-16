@@ -177,7 +177,7 @@ export function isSpeciesAllowed(pokemon: reducedPoke, format: Rule, position: n
       violations.push(strings.team_verify_invalid_move?.replace("%1", position).replace("%2", illegalChargeMove));
     }
     // Does this move even exist?
-    const nonExistentChargeMoves = pokemon.chargeMoves.filter(chargeMove => moves[chargeMove] === undefined)
+    const nonExistentChargeMoves = pokemon.chargeMoves.filter(chargeMove => chargeMove !== "NONE" && moves[chargeMove] === undefined)
     for (let illegalChargeMove of nonExistentChargeMoves) {
       violations.push(strings.team_verify_move_doesnt_exist?.replace("%1", illegalChargeMove));
     }

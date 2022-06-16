@@ -49,7 +49,7 @@ async function onJoin(user: User, payload: OnJoinPayload) {
                 to(room, JSON.stringify({
                     type: CODE.room_join,
                     payload: { team: reduceTeam(teamMembers) }
-                }), user.username)
+                }), user.googleId)
 
                 console.info(`Socket ${user.googleId} has joined ${room}.`);
 

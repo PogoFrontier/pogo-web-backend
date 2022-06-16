@@ -5,7 +5,7 @@ import { User } from "../../types/user";
 function quitAll(user: User, formatsUsedForMatchmaking: Array<Rule>) {
     // Delete Battle requests
     for (const format of formatsUsedForMatchmaking) {
-        quit(user, {format})
+        quit(user, {format}, () => {})
     }
 }
 
