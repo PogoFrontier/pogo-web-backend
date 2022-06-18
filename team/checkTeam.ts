@@ -3,6 +3,7 @@ import { ClassOption, Rule, Selector } from "../types/rule";
 import { Pokemon, TeamMember, TeamMemberDescription, typeId, PokemonSpecies } from "../types/team";
 import { calculateCP, calculateHP, calculateAtk,calculateDef } from "../utils/calcUtils";
 import pokeData from "../data/pokemon.json";
+import moves from "../data/moves.json";
 import mainSeriesPokeData from "../data/pokemonWithMainSeriesMoves.json";
 
 const curseWordFilter = new Filter() 
@@ -139,7 +140,7 @@ export function isSpeciesAllowed(pokemon: reducedPoke, format: Rule, position: n
   let violations: Array<string> = []
 
   // Get species data
-  const shouldUseMainSeriesData = format.advancedOptions && format.advancedOptions.movesets === "mainseries"
+  const shouldUseMainSeriesData = format.advancedOptions?.movesets === "mainseries"
   let speciesData: Pokemon;
   if (shouldUseMainSeriesData === true) {
     speciesData = mainSeriesPokeData[pokemon.speciesId as keyof typeof mainSeriesPokeData] as Pokemon;
@@ -147,21 +148,43 @@ export function isSpeciesAllowed(pokemon: reducedPoke, format: Rule, position: n
     speciesData = pokeData[pokemon.speciesId as keyof typeof pokeData] as Pokemon;
   }
 
-  // Check moves
-  if (pokemon.fastMove !== undefined && (!format.advancedOptions || format.advancedOptions.movesets !== "norestrictions")) {
-    if (!speciesData.fastMoves.includes(pokemon.fastMove)) {
+  // Check fast moves
+  if (pokemon.fastMove !== undefined) {
+    // Can the pokémon learn this move?
+    if ((format.advancedOptions?.movesets !== "norestrictions") && !speciesData.fastMoves.includes(pokemon.fastMove)) {
       violations.push(strings.team_verify_invalid_move.replace("%1", position).replace("%2", pokemon.fastMove));
     }
+    // Does this move even exist?
+    if(!Object.keys(moves).includes(pokemon.fastMove)) {
+      violations.push(strings.team_verify_move_doesnt_exist?.replace("%1", pokemon.fastMove))
+    // Is the fast move a fast move and not a charge move?
+    } else if (moves[pokemon.fastMove].energy) {
+      violations.push(strings.team_verify_fa_is_ca?.replace("%1", pokemon.fastMove))
+    }
   }
-  if (pokemon.chargeMoves !== undefined && (!format.advancedOptions || format.advancedOptions.movesets !== "norestrictions")) {
+
+  // Check fast moves
+  if (pokemon.chargeMoves !== undefined) {
+    // Can the pokémon learn the moves?
     const illegalChargeMoves = pokemon.chargeMoves.filter(chargeMove => {
-      return chargeMove !== "NONE" &&
+      return format.advancedOptions?.movesets !== "norestrictions" && 
+      chargeMove !== "NONE" &&
       !(chargeMove === "RETURN" && speciesData.tags && speciesData.tags.some(tag => tag === "shadoweligible")) &&
       !(chargeMove === "FRUSTRATION" && speciesData.tags && speciesData.tags.some(tag => tag === "shadow")) &&
       !speciesData.chargedMoves.includes(chargeMove);
     });
     for (let illegalChargeMove of illegalChargeMoves) {
-      strings ? violations.push(strings.team_verify_invalid_move.replace("%1", position).replace("%2", illegalChargeMove)) : violations.push("invalid");
+      violations.push(strings.team_verify_invalid_move?.replace("%1", position).replace("%2", illegalChargeMove));
+    }
+    // Does this move even exist?
+    const nonExistentChargeMoves = pokemon.chargeMoves.filter(chargeMove => chargeMove !== "NONE" && moves[chargeMove] === undefined)
+    for (let illegalChargeMove of nonExistentChargeMoves) {
+      violations.push(strings.team_verify_move_doesnt_exist?.replace("%1", illegalChargeMove));
+    }
+    // Is the charge move a charge move and not a fast move?
+    const chargeMovesThatAreFastMoves = pokemon.chargeMoves.filter(chargeMove => !!moves[chargeMove]?.energyGain);
+    for (let illegalChargeMove of chargeMovesThatAreFastMoves) {
+      violations.push(strings.team_verify_ca_is_fa?.replace("%1", illegalChargeMove));
     }
   }
 

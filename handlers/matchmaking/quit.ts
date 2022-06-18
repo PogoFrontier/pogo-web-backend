@@ -4,7 +4,7 @@ import { getBattleRequestKey } from "../../redis/getKey";
 import { User } from "../../types/user";
 import { parseToRule } from "../../actions/parseToRule";
 
-function quit(user: User, payload: SearchBattlePayload) {
+function quit(user: User, payload: SearchBattlePayload, callbackIfWorked: () => void) {
     try{
         const key = getBattleRequestKey(payload.format);
 
@@ -32,6 +32,9 @@ function quit(user: User, payload: SearchBattlePayload) {
                 if (removedRequests !== 1) {
                     console.warn("The removal of the battle request didn't work");
                 }
+
+                // It worked
+                callbackIfWorked();
             });
  
         })

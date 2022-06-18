@@ -135,9 +135,9 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
         } else if (isMatchmaking(data)) {
             const { type, payload } = JSON.parse(data)
 
-            room = "";
             switch (type) {
                 case CODE.matchmaking_search_battle:
+                    room = "";
                     if (!formatsUsedForMatchmaking.find(item => deepEqual(payload.format, item))) {
                         formatsUsedForMatchmaking.push(payload.format);
                     }
@@ -150,7 +150,9 @@ function onNewWebsocketConnection(ws: WebSocket, req: Request) {
                     if (!user.isGuest) {
                         storeClient.set(getUserStatusKey(user.googleId), "idle")
                     }
-                    onMatchmakingQuit(user, payload);
+                    onMatchmakingQuit(user, payload, () => {
+                        room = ""
+                    });
                     break;
                 default:
                     console.error(`Message not recognized: ${data}`);
