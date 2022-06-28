@@ -4978,6 +4978,9 @@
       "CROSS_CHOP",
       "LOW_SWEEP"
     ],
+    "tags": [
+      "include1500"
+    ],
     "sid": 1792
   },
   "primeape": {
@@ -22708,7 +22711,8 @@
     ],
     "tags": [
       "shadoweligible",
-      "shadow"
+      "shadow",
+      "include1500"
     ],
     "sid": 10208
   },
@@ -27941,6 +27945,9 @@
       "FLAMETHROWER",
       "OUTRAGE",
       "ROCK_SLIDE"
+    ],
+    "tags": [
+      "include1500"
     ],
     "sid": 13088
   },
@@ -38909,7 +38916,11 @@
     "chargedMoves": [
       "DRAGON_PULSE",
       "DARK_PULSE",
-      "FLASH_CANNON"
+      "FLASH_CANNON",
+      "BRUTAL_SWING"
+    ],
+    "eliteMoves": [
+      "BRUTAL_SWING"
     ],
     "sid": 20320
   },
@@ -43540,7 +43551,7 @@
     ],
     "fastMoves": [
       "ROCK_SMASH",
-      "PAYBACK"
+      "BUBBLE"
     ],
     "chargedMoves": [
       "POWER_UP_PUNCH",
@@ -43578,7 +43589,7 @@
     ],
     "fastMoves": [
       "ROCK_SMASH",
-      "PAYBACK"
+      "BUBBLE"
     ],
     "chargedMoves": [
       "POWER_UP_PUNCH",
@@ -43810,7 +43821,8 @@
       "none"
     ],
     "fastMoves": [
-      "CRUSH_CLAW",
+      "COUNTER",
+      "SUCKER_PUNCH",
       "ROCK_THROW"
     ],
     "chargedMoves": [
@@ -44761,9 +44773,6 @@
     "chargedMoves": [
       "BUG_BUZZ"
     ],
-    "tags": [
-      "unreleased"
-    ],
     "sid": 24544
   },
   "golisopod": {
@@ -44799,9 +44808,6 @@
       "X_SCISSOR",
       "AQUA_JET",
       "AERIAL_ACE"
-    ],
-    "tags": [
-      "unreleased"
     ],
     "sid": 24576
   },

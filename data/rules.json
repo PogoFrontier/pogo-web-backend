@@ -60,7 +60,7 @@
         "flags": {
             "speciesClauseByDex": "true"
         },
-        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/premier/overall/rankings-2500.json",
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/premierclassic/overall/rankings-2500.json",
         "exclude": [{
             "filterType": "tag",
             "values": ["legendary", "mythical"]
@@ -86,7 +86,7 @@
         "flags": {
             "speciesClauseByDex": "true"
         },
-        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/premier/overall/rankings-10000.json",
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/premierclassic/overall/rankings-10000.json",
         "exclude": [{
             "filterType": "tag",
             "values": ["legendary", "mythical"]
@@ -112,7 +112,7 @@
         "flags": {
             "speciesClauseByDex": "true"
         },
-        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/premier/overall/rankings-10000.json",
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/premierclassic/overall/rankings-10000.json",
         "exclude": [{
             "filterType": "tag",
             "values": ["legendary", "mythical"]
@@ -290,6 +290,84 @@
                 "values": [
                     "mega",
                     "unreleased"
+                ]
+            }
+        ]
+    },
+    "Architect Cup": {
+        "name": "Architect Cup",
+        "maxCP": 1500,
+        "maxLevel": 50,
+        "maxBestBuddy": 1,
+        "maxMega": 0,
+        "flags": {
+            "speciesClauseByDex": "true"
+        },
+        "rankingsLink": "https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/architect/overall/rankings-1500.json",
+        "included": [
+            {
+                "filterType": "id",
+                "values": [
+                    "ariados",
+                    "banette",
+                    "banette_shadow",
+                    "beedrill",
+                    "beedrill_shadow",
+                    "bewear",
+                    "charizard",
+                    "charizard_shadow",
+                    "cradily",
+                    "cradily_shadow",
+                    "donphan",
+                    "drapion",
+                    "drapion_shadow",
+                    "dusclops",
+                    "dusclops_shadow",
+                    "froslass",
+                    "slowbro_galarian",
+                    "gengar",
+                    "glalie",
+                    "golbat",
+                    "golbat_shadow",
+                    "gyarados",
+                    "gyarados_shadow",
+                    "haunter",
+                    "jumpluff",
+                    "lapras",
+                    "lapras_shadow",
+                    "lickilicky",
+                    "linoone",
+                    "malamar",
+                    "marowak_alolan",
+                    "marowak_alolan_shadow",
+                    "milotic",
+                    "muk",
+                    "muk_shadow",
+                    "muk_alolan",
+                    "munchlax",
+                    "castform",
+                    "pelipper",
+                    "poliwrath",
+                    "poliwrath_shadow",
+                    "qwilfish",
+                    "sandslash",
+                    "sandslash_shadow",
+                    "scolipede",
+                    "sealeo",
+                    "sealeo_shadow",
+                    "shiftry",
+                    "shiftry_shadow",
+                    "skuntank",
+                    "skuntank_shadow",
+                    "snorlax",
+                    "snorlax_shadow",
+                    "sudowoodo",
+                    "sudowoodo_shadow",
+                    "trevenant",
+                    "typhlosion",
+                    "typhlosion_shadow",
+                    "venomoth",
+                    "venomoth_shadow"
                 ]
             }
         ]

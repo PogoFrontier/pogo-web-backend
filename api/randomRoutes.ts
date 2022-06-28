@@ -24,7 +24,11 @@ const availableNames = [
 router.get('/:rule', async (req, res) => {
     const des: RuleDescription = req.params.rule
     try{
-      const rule = parseToRule(des)
+      if(!des) {
+        res.sendStatus(403).json("Requires parameter rule");
+      }
+
+      const rule = parseToRule(des);
       if (typeof req.query.language === "string" && availableNames.includes(req.query.language)) {
         res.json(getRandomTeam(rule, req.query.language))
       } else {

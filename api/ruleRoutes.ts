@@ -8,14 +8,18 @@ const router = e.Router();
 // @route GET /api/rule/name
 // @access Public (for now)
 router.get('/:rule', async (req, res) => {
-    const des: RuleDescription = req.params.rule
-    try{
-      const rule = parseToRule(des)
-      res.json(rule)
-    } catch(err) {
-        console.error(err);
-        res.sendStatus(500).json({message: "Could not find rule of name: " + req.params.rule});
+  const des: RuleDescription = req.params.rule
+  try {
+    if (!des) {
+      res.sendStatus(403).json("Requires parameter rule");
     }
+
+    const rule = parseToRule(des)
+    res.json(rule)
+  } catch (err) {
+    console.error(err);
+    res.sendStatus(500).json({ message: "Could not find rule of name: " + req.params.rule });
+  }
 });
 
 export default router;
