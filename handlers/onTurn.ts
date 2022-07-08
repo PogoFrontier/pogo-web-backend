@@ -110,7 +110,6 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
             payload[i] = {
               id: currentRoom.players[i]!.id,
               active: shouldSwitch[i],
-              hp: newActivePokemon && newActivePokemon.current?.hp ? newActivePokemon.current.hp / newActivePokemon.hp : 1,
               shouldReturn: true
             };
           } else {
@@ -140,7 +139,7 @@ function evaluatePayload(room: string): [Update | null, Update | null] {
               payload[i]!.wait = -1;
             }
           }
-          pubClient.publish("messagesToUser:" + currentRoom.players[[1, 0][i]]!.id, reduceActionForOpponent("#sw:" + player.current?.active, player.current!.team, player.current!.action?.move, currentRoom.turn ? currentRoom.turn : 0));
+          pubClient.publish("messagesToUser:" + currentRoom.players[[1, 0][i]]!.id, reduceActionForOpponent(`#${Actions.SWITCH}:` + player.current?.active, player.current!.team, player.current!.action?.move, currentRoom.turn ? currentRoom.turn : 0));
           delete player.current!.action;
         }
       }
