@@ -308,7 +308,7 @@ export function parseToTeamMembers (team: TeamMemberDescription[]): TeamMember[]
         chargeMoves: member.chargeMoves,
         shiny: member.shiny,
         name: member.name,
-        sid: speciesData.sid,
+        sid: speciesData.sid ?? 0,
         gender: member.gender
       };
     })

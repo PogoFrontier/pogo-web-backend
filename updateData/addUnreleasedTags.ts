@@ -102,7 +102,7 @@ https.get("https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/gamem
                     delete pokemon.defaultIVs
 
                     pokemon.sid = getSid(pokemon.speciesId, sids)
-                    pokemon.gender = pokedex[getLearnSetKey(pokemon.speciesId)].gender
+                    pokemon.gender = pokedex[getLearnSetKey(pokemon.speciesId)]?.gender ?? "male"
 
                     if(["shellos", "gastrodon"].includes(pokemon.speciesId)) {
                         let copy = { ...pokemon };
