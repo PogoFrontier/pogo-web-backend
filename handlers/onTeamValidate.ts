@@ -7,7 +7,7 @@ export function onTeamValidate(team: TeamMember[], chosenRule: RuleDescription, 
   let rule: Rule
   try{
     rule = parseToRule(chosenRule);
-  }catch(e) {
+  } catch(e: any) {
     return e.toString();
   }
 
